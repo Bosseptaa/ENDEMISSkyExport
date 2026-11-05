@@ -1,0 +1,73 @@
+Begin Object Class=/Script/Engine.Material Name="M_SC_VolumetricCloud_DensitySample" ExportPath="/Script/Engine.Material'/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricCloud_DensitySample.M_SC_VolumetricCloud_DensitySample'"
+   Begin Object Class=/Script/Engine.MaterialEditorOnlyData Name="M_SC_VolumetricCloud_DensitySampleEditorOnlyData" ExportPath="/Script/Engine.MaterialEditorOnlyData'/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricCloud_DensitySample.M_SC_VolumetricCloud_DensitySample:M_SC_VolumetricCloud_DensitySampleEditorOnlyData'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionCollectionParameter Name="MaterialExpressionCollectionParameter_0" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricCloud_DensitySample.M_SC_VolumetricCloud_DensitySample:MaterialExpressionCollectionParameter_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_16" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricCloud_DensitySample.M_SC_VolumetricCloud_DensitySample:MaterialExpressionMaterialFunctionCall_16'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_17" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricCloud_DensitySample.M_SC_VolumetricCloud_DensitySample:MaterialExpressionMaterialFunctionCall_17'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricCloud_DensitySample.M_SC_VolumetricCloud_DensitySample:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   Begin Object Name="M_SC_VolumetricCloud_DensitySampleEditorOnlyData" ExportPath="/Script/Engine.MaterialEditorOnlyData'/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricCloud_DensitySample.M_SC_VolumetricCloud_DensitySample:M_SC_VolumetricCloud_DensitySampleEditorOnlyData'"
+      EmissiveColor=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_VolumetricCloud_DensitySample:MaterialExpressionMaterialFunctionCall_17'")
+      ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_VolumetricCloud_DensitySample:MaterialExpressionMaterialFunctionCall_17'","/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_VolumetricCloud_DensitySample:MaterialExpressionMaterialFunctionCall_16'","/Script/Engine.MaterialExpressionCollectionParameter'M_SC_VolumetricCloud_DensitySample:MaterialExpressionCollectionParameter_0'"))
+   End Object
+   Begin Object Name="MaterialExpressionCollectionParameter_0" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricCloud_DensitySample.M_SC_VolumetricCloud_DensitySample:MaterialExpressionCollectionParameter_0'"
+      Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_VolumetricClouds'"
+      ParameterName="Cloud Density Sample Position"
+      ParameterId=7AE20E5D4D74B66C678C639A6A08B915
+      MaterialExpressionEditorX=-1280
+      MaterialExpressionEditorY=224
+      MaterialExpressionGuid=8B53684A4D8B949527C115B448CA8DF0
+      Material="/Script/Engine.Material'M_SC_VolumetricCloud_DensitySample'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_16" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricCloud_DensitySample.M_SC_VolumetricCloud_DensitySample:MaterialExpressionMaterialFunctionCall_16'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_VolumetricClouds_BaseDensity.MF_SC_VolumetricClouds_BaseDensity'"
+      FunctionInputs(0)=(ExpressionInputId=3585827C4A416429B06AF3AE575731CE,Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'M_SC_VolumetricCloud_DensitySample:MaterialExpressionCollectionParameter_0'",InputName="Position"))
+      FunctionOutputs(0)=(ExpressionOutputId=884ECF83420B3B54C0F2BC9938F7409F,Output=(OutputName="Result"))
+      FunctionOutputs(1)=(ExpressionOutputId=EE7B65CC4F0583B0C7CF338056A368B0,Output=(OutputName="Coverage"))
+      MaterialExpressionEditorX=-896
+      MaterialExpressionEditorY=128
+      MaterialExpressionGuid=F9CE4EDA4162B8564016849E97B23716
+      Material="/Script/Engine.Material'M_SC_VolumetricCloud_DensitySample'"
+      Outputs(0)=(OutputName="Result")
+      Outputs(1)=(OutputName="Coverage")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_17" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricCloud_DensitySample.M_SC_VolumetricCloud_DensitySample:MaterialExpressionMaterialFunctionCall_17'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_VolumetricClouds_DetailDensity.MF_SC_VolumetricClouds_DetailDensity'"
+      FunctionInputs(0)=(ExpressionInputId=8A78F3FC41E7A6A6CBA68E99A5D167E6,Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_VolumetricCloud_DensitySample:MaterialExpressionMaterialFunctionCall_16'",InputName="Base Density"))
+      FunctionInputs(1)=(ExpressionInputId=EBA7CC3F4CF3372F9D8DAA9F854D5FF7,Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'M_SC_VolumetricCloud_DensitySample:MaterialExpressionCollectionParameter_0'",InputName="Position"))
+      FunctionOutputs(0)=(ExpressionOutputId=CE31935E4E47734BDC2A29932F98A5D8,Output=(OutputName="Result"))
+      MaterialExpressionEditorX=-512
+      MaterialExpressionEditorY=128
+      MaterialExpressionGuid=7EE2E9B44E0ADC64E18483940EF343C6
+      Material="/Script/Engine.Material'M_SC_VolumetricCloud_DensitySample'"
+      Outputs(0)=(OutputName="Result")
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricCloud_DensitySample.M_SC_VolumetricCloud_DensitySample:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   ShadingModel=MSM_Unlit
+   ShadingModels=(ShadingModelField=1)
+   bUsedWithVolumetricCloud=True
+   bCanMaskedBeAssumedOpaque=True
+   PixelDepthOffsetMode=PDOM_Legacy
+   StateId=FC86CC954579FCC6D15797B13CB3E2AF
+   ReferencedTextureGuids(0)=C4DBAAA94604965F4B156C902DB16E4C
+   ReferencedTextureGuids(1)=4D976E3F41F11AB3AB32F282B753F82A
+   ReferencedTextureGuids(2)=8BA0B139DC01365A8A0DCEBFD62C7B38
+   ReferencedTextureGuids(3)=01DE2F6E469AAFD56A2FD68772B4ECAC
+   ReferencedTextureGuids(4)=B08EDF8F4731CBE2A421A5B678B8C8BE
+   ReferencedTextureGuids(5)=F1938B3A4DE2B4DA0A2FE3AD9135A4BE
+   EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'M_SC_VolumetricCloud_DensitySampleEditorOnlyData'"
+   ReferencedDefaultTextures(0)="/Script/Engine.VolumeTexture'/SkyCreatorPlugin/Textures/VolumetricClouds/VT_SC_CloudNoise_Detail_32.VT_SC_CloudNoise_Detail_32'"
+   ReferencedDefaultTextures(1)="/Script/Engine.VolumeTexture'/SkyCreatorPlugin/Textures/VolumetricClouds/VT_SC_CloudNoise_Shape_64.VT_SC_CloudNoise_Shape_64'"
+   ReferencedDefaultTextures(2)="/Script/Engine.Texture2D'/SkyCreatorPlugin/Textures/VolumetricClouds/T_SC_TurbulenceMap.T_SC_TurbulenceMap'"
+   ReferencedDefaultTextures(3)="/Script/Engine.CurveLinearColorAtlas'/SkyCreatorPlugin/Materials/Curves/Curve_SC_VolumetricClouds_Atlas.Curve_SC_VolumetricClouds_Atlas'"
+   ReferencedDefaultTextures(4)="/Script/Engine.Texture2D'/SkyCreatorPlugin/Textures/VolumetricClouds/T_SC_CloudMap.T_SC_CloudMap'"
+   ReferencedDefaultTextures(5)="/Script/Engine.Texture2D'/SkyCreatorPlugin/Textures/VolumetricClouds/T_SC_CoverageVariationMap.T_SC_CoverageVariationMap'"
+   ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+   ParameterOverviewExpansion=(("-12Global", True),("-12Global Cloud Layers", True),("-12Global Cloud Map", True),("-12Global Cloud Parameters", True),("-12Global Coverage Variation Map", True),("-12Global Noise Detail", True),("-12Global Noise Shape", True),("-12Global Turbulence Map", True),("-12Global Cloud Density Sample", True),("-12Global Lighting", True),("-12Global High Cloud Layer", True),("-12Global High Cloud Map", True),("-12Global Test", True))
+   LightingGuid=F1C77D5240994383EBF4C185EF0473A3
+End Object

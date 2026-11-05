@@ -1,0 +1,185 @@
+Begin Object Class=/Script/Engine.Material Name="M_SC_VolumetricRainSplash" ExportPath="/Script/Engine.Material'/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricRainSplash.M_SC_VolumetricRainSplash'"
+   Begin Object Class=/Script/Engine.MaterialEditorOnlyData Name="M_SC_VolumetricRainSplashEditorOnlyData" ExportPath="/Script/Engine.MaterialEditorOnlyData'/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricRainSplash.M_SC_VolumetricRainSplash:M_SC_VolumetricRainSplashEditorOnlyData'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDynamicParameter Name="MaterialExpressionDynamicParameter_0" ExportPath="/Script/Engine.MaterialExpressionDynamicParameter'/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricRainSplash.M_SC_VolumetricRainSplash:MaterialExpressionDynamicParameter_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDynamicParameter Name="MaterialExpressionDynamicParameter_1" ExportPath="/Script/Engine.MaterialExpressionDynamicParameter'/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricRainSplash.M_SC_VolumetricRainSplash:MaterialExpressionDynamicParameter_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDynamicParameter Name="MaterialExpressionDynamicParameter_2" ExportPath="/Script/Engine.MaterialExpressionDynamicParameter'/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricRainSplash.M_SC_VolumetricRainSplash:MaterialExpressionDynamicParameter_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_0" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricRainSplash.M_SC_VolumetricRainSplash:MaterialExpressionMaterialFunctionCall_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_1" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricRainSplash.M_SC_VolumetricRainSplash:MaterialExpressionMaterialFunctionCall_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_0" ExportPath="/Script/Engine.MaterialExpressionMultiply'/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricRainSplash.M_SC_VolumetricRainSplash:MaterialExpressionMultiply_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_1" ExportPath="/Script/Engine.MaterialExpressionMultiply'/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricRainSplash.M_SC_VolumetricRainSplash:MaterialExpressionMultiply_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_2" ExportPath="/Script/Engine.MaterialExpressionMultiply'/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricRainSplash.M_SC_VolumetricRainSplash:MaterialExpressionMultiply_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionParticleColor Name="MaterialExpressionParticleColor_0" ExportPath="/Script/Engine.MaterialExpressionParticleColor'/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricRainSplash.M_SC_VolumetricRainSplash:MaterialExpressionParticleColor_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionParticlePositionWS Name="MaterialExpressionParticlePositionWS_0" ExportPath="/Script/Engine.MaterialExpressionParticlePositionWS'/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricRainSplash.M_SC_VolumetricRainSplash:MaterialExpressionParticlePositionWS_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionParticleRadius Name="MaterialExpressionParticleRadius_0" ExportPath="/Script/Engine.MaterialExpressionParticleRadius'/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricRainSplash.M_SC_VolumetricRainSplash:MaterialExpressionParticleRadius_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSphereMask Name="MaterialExpressionSphereMask_1" ExportPath="/Script/Engine.MaterialExpressionSphereMask'/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricRainSplash.M_SC_VolumetricRainSplash:MaterialExpressionSphereMask_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionWorldPosition Name="MaterialExpressionWorldPosition_0" ExportPath="/Script/Engine.MaterialExpressionWorldPosition'/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricRainSplash.M_SC_VolumetricRainSplash:MaterialExpressionWorldPosition_0'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricRainSplash.M_SC_VolumetricRainSplash:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   Begin Object Name="M_SC_VolumetricRainSplashEditorOnlyData" ExportPath="/Script/Engine.MaterialEditorOnlyData'/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricRainSplash.M_SC_VolumetricRainSplash:M_SC_VolumetricRainSplashEditorOnlyData'"
+      BaseColor=(Constant=(R=0.501961,G=0.501961,B=0.501961,A=1.000000),Expression="/Script/Engine.MaterialExpressionParticleColor'M_SC_VolumetricRainSplash:MaterialExpressionParticleColor_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      SubsurfaceColor=(Constant=(R=0.000000,G=0.000000,B=0.000000,A=0.000000),Expression="/Script/Engine.MaterialExpressionMultiply'M_SC_VolumetricRainSplash:MaterialExpressionMultiply_0'")
+      ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionParticleColor'M_SC_VolumetricRainSplash:MaterialExpressionParticleColor_0'","/Script/Engine.MaterialExpressionMultiply'M_SC_VolumetricRainSplash:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionMultiply'M_SC_VolumetricRainSplash:MaterialExpressionMultiply_2'","/Script/Engine.MaterialExpressionSphereMask'M_SC_VolumetricRainSplash:MaterialExpressionSphereMask_1'","/Script/Engine.MaterialExpressionWorldPosition'M_SC_VolumetricRainSplash:MaterialExpressionWorldPosition_0'","/Script/Engine.MaterialExpressionParticlePositionWS'M_SC_VolumetricRainSplash:MaterialExpressionParticlePositionWS_0'","/Script/Engine.MaterialExpressionParticleRadius'M_SC_VolumetricRainSplash:MaterialExpressionParticleRadius_0'","/Script/Engine.MaterialExpressionDynamicParameter'M_SC_VolumetricRainSplash:MaterialExpressionDynamicParameter_0'","/Script/Engine.MaterialExpressionDynamicParameter'M_SC_VolumetricRainSplash:MaterialExpressionDynamicParameter_1'","/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_VolumetricRainSplash:MaterialExpressionMaterialFunctionCall_0'","/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_VolumetricRainSplash:MaterialExpressionMaterialFunctionCall_1'","/Script/Engine.MaterialExpressionDynamicParameter'M_SC_VolumetricRainSplash:MaterialExpressionDynamicParameter_2'","/Script/Engine.MaterialExpressionMultiply'M_SC_VolumetricRainSplash:MaterialExpressionMultiply_1'"))
+      ParameterGroupData(0)=(GroupName="None")
+      ParameterGroupData(1)=(GroupName="None")
+   End Object
+   Begin Object Name="MaterialExpressionDynamicParameter_0" ExportPath="/Script/Engine.MaterialExpressionDynamicParameter'/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricRainSplash.M_SC_VolumetricRainSplash:MaterialExpressionDynamicParameter_0'"
+      ParamNames(0)="Volumetric Density"
+      ParamNames(1)="Volumetric Hardness"
+      DefaultValue=(R=1.000000,G=0.000000,B=1.000000,A=1.000000)
+      ParameterIndex=1
+      MaterialExpressionEditorX=-1536
+      MaterialExpressionEditorY=592
+      MaterialExpressionGuid=63C96C9B4E7B5DCECF64888BCF739F2B
+      Material="/Script/Engine.Material'M_SC_VolumetricRainSplash'"
+      Outputs(0)=(OutputName="Volumetric Density")
+      Outputs(1)=(OutputName="Volumetric Hardness")
+      Outputs(2)=(OutputName="Param3")
+      Outputs(3)=(OutputName="Param4")
+      Outputs.RemoveIndex(5)
+      Outputs.RemoveIndex(4)
+   End Object
+   Begin Object Name="MaterialExpressionDynamicParameter_1" ExportPath="/Script/Engine.MaterialExpressionDynamicParameter'/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricRainSplash.M_SC_VolumetricRainSplash:MaterialExpressionDynamicParameter_1'"
+      ParamNames(0)="Volumetric Density"
+      ParamNames(1)="Volumetric Hardness"
+      DefaultValue=(R=1.000000,G=0.000000,B=1.000000,A=1.000000)
+      ParameterIndex=1
+      MaterialExpressionEditorX=-1920
+      MaterialExpressionEditorY=736
+      MaterialExpressionGuid=63C96C9B4E7B5DCECF64888BCF739F2B
+      Material="/Script/Engine.Material'M_SC_VolumetricRainSplash'"
+      Outputs(0)=(OutputName="Volumetric Density")
+      Outputs(1)=(OutputName="Volumetric Hardness")
+      Outputs(2)=(OutputName="Param3")
+      Outputs(3)=(OutputName="Param4")
+      Outputs.RemoveIndex(5)
+      Outputs.RemoveIndex(4)
+   End Object
+   Begin Object Name="MaterialExpressionDynamicParameter_2" ExportPath="/Script/Engine.MaterialExpressionDynamicParameter'/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricRainSplash.M_SC_VolumetricRainSplash:MaterialExpressionDynamicParameter_2'"
+      ParamNames(0)="Depth Fade Distance"
+      ParamNames(1)="Camera Fade Distance"
+      ParamNames(2)="Camera Fade Offset"
+      ParamNames(3)="Index Of Refraction"
+      DefaultValue=(R=10.000000,G=100.000000,B=50.000000,A=1.000000)
+      MaterialExpressionEditorX=-1536
+      MaterialExpressionEditorY=768
+      MaterialExpressionGuid=4012443D47AAFBF722DEA89D1256B8BC
+      Material="/Script/Engine.Material'M_SC_VolumetricRainSplash'"
+      Outputs(0)=(OutputName="Depth Fade Distance")
+      Outputs(1)=(OutputName="Camera Fade Distance")
+      Outputs(2)=(OutputName="Camera Fade Offset")
+      Outputs(3)=(OutputName="Index Of Refraction")
+      Outputs.RemoveIndex(5)
+      Outputs.RemoveIndex(4)
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_0" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricRainSplash.M_SC_VolumetricRainSplash:MaterialExpressionMaterialFunctionCall_0'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_Occlusion_NoFiltering.MF_SC_Occlusion_NoFiltering'"
+      FunctionInputs(0)=(ExpressionInputId=4D009B3C49D81339BD2931B31ECF6407,Input=(OutputIndex=-1,InputName="Occlusion Texture"))
+      FunctionInputs(1)=(ExpressionInputId=E139B0854DBFDF53F7B3B1AF077BE5B3,Input=(OutputIndex=-1,InputName="Occlusion Capture Position"))
+      FunctionInputs(2)=(ExpressionInputId=EAE96B464578D5715DA1ADA19215C67E,Input=(OutputIndex=-1,InputName="Occlusion Capture Width"))
+      FunctionOutputs(0)=(ExpressionOutputId=0C5BAE7D4B6E4560D98EE88816252DA8,Output=(OutputName="Result"))
+      MaterialExpressionEditorX=-768
+      MaterialExpressionEditorY=640
+      MaterialExpressionGuid=562FC5624D33286B6997B2990B5663A1
+      Material="/Script/Engine.Material'M_SC_VolumetricRainSplash'"
+      Outputs(0)=(OutputName="Result")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_1" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricRainSplash.M_SC_VolumetricRainSplash:MaterialExpressionMaterialFunctionCall_1'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_DepthFade.MF_SC_DepthFade'"
+      FunctionInputs(0)=(ExpressionInputId=40C4151341B2C651264958A9AFA056E2,Input=(Expression="/Script/Engine.MaterialExpressionDynamicParameter'M_SC_VolumetricRainSplash:MaterialExpressionDynamicParameter_2'",InputName="Depth Fade Distance",Mask=1,MaskR=1))
+      FunctionInputs(1)=(ExpressionInputId=970822664A2B82D50341FBBD46BCF4BB,Input=(Expression="/Script/Engine.MaterialExpressionDynamicParameter'M_SC_VolumetricRainSplash:MaterialExpressionDynamicParameter_2'",OutputIndex=1,InputName="Camera Fade Distance",Mask=1,MaskG=1))
+      FunctionInputs(2)=(ExpressionInputId=BE46EB724B391403C264A6B8AE584568,Input=(Expression="/Script/Engine.MaterialExpressionDynamicParameter'M_SC_VolumetricRainSplash:MaterialExpressionDynamicParameter_2'",OutputIndex=2,InputName="Camera Fade Offset",Mask=1,MaskB=1))
+      FunctionOutputs(0)=(ExpressionOutputId=36E6CAB74F526330BF71D9AA7309F926,Output=(OutputName="Result"))
+      FunctionOutputs(1)=(ExpressionOutputId=0D7A55CD44B7F3DDFEB425B51901B77C,Output=(OutputName="CameraFade"))
+      MaterialExpressionEditorX=-1152
+      MaterialExpressionEditorY=784
+      MaterialExpressionGuid=6235DB3D4814A107812AC7B2E2CF2744
+      Material="/Script/Engine.Material'M_SC_VolumetricRainSplash'"
+      Outputs(0)=(OutputName="Result")
+      Outputs(1)=(OutputName="CameraFade")
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_0" ExportPath="/Script/Engine.MaterialExpressionMultiply'/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricRainSplash.M_SC_VolumetricRainSplash:MaterialExpressionMultiply_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionMultiply'M_SC_VolumetricRainSplash:MaterialExpressionMultiply_1'")
+      B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_VolumetricRainSplash:MaterialExpressionMaterialFunctionCall_0'")
+      MaterialExpressionEditorX=-384
+      MaterialExpressionEditorY=432
+      MaterialExpressionGuid=038E9228404D225AA09C918C86192DBB
+      Material="/Script/Engine.Material'M_SC_VolumetricRainSplash'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_1" ExportPath="/Script/Engine.MaterialExpressionMultiply'/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricRainSplash.M_SC_VolumetricRainSplash:MaterialExpressionMultiply_1'"
+      A=(Expression="/Script/Engine.MaterialExpressionMultiply'M_SC_VolumetricRainSplash:MaterialExpressionMultiply_2'")
+      B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_VolumetricRainSplash:MaterialExpressionMaterialFunctionCall_1'")
+      MaterialExpressionEditorX=-768
+      MaterialExpressionEditorY=432
+      MaterialExpressionGuid=AEC20E5C46BF202E65C08B95AED93DEC
+      Material="/Script/Engine.Material'M_SC_VolumetricRainSplash'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_2" ExportPath="/Script/Engine.MaterialExpressionMultiply'/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricRainSplash.M_SC_VolumetricRainSplash:MaterialExpressionMultiply_2'"
+      A=(Expression="/Script/Engine.MaterialExpressionSphereMask'M_SC_VolumetricRainSplash:MaterialExpressionSphereMask_1'")
+      B=(Expression="/Script/Engine.MaterialExpressionDynamicParameter'M_SC_VolumetricRainSplash:MaterialExpressionDynamicParameter_0'",Mask=1,MaskR=1)
+      MaterialExpressionEditorX=-1152
+      MaterialExpressionEditorY=432
+      MaterialExpressionGuid=3D389A9A45D7CEBCFE9BD9A55F71F4EB
+      Material="/Script/Engine.Material'M_SC_VolumetricRainSplash'"
+   End Object
+   Begin Object Name="MaterialExpressionParticleColor_0" ExportPath="/Script/Engine.MaterialExpressionParticleColor'/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricRainSplash.M_SC_VolumetricRainSplash:MaterialExpressionParticleColor_0'"
+      MaterialExpressionEditorX=-384
+      MaterialExpressionEditorY=-16
+      MaterialExpressionGuid=3B698F8549E9A0C6DC12B684C8F5673A
+      Material="/Script/Engine.Material'M_SC_VolumetricRainSplash'"
+   End Object
+   Begin Object Name="MaterialExpressionParticlePositionWS_0" ExportPath="/Script/Engine.MaterialExpressionParticlePositionWS'/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricRainSplash.M_SC_VolumetricRainSplash:MaterialExpressionParticlePositionWS_0'"
+      MaterialExpressionEditorX=-1920
+      MaterialExpressionEditorY=576
+      MaterialExpressionGuid=B636ACED4FD64AD3D221E1A73DA8C4A3
+      Material="/Script/Engine.Material'M_SC_VolumetricRainSplash'"
+   End Object
+   Begin Object Name="MaterialExpressionParticleRadius_0" ExportPath="/Script/Engine.MaterialExpressionParticleRadius'/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricRainSplash.M_SC_VolumetricRainSplash:MaterialExpressionParticleRadius_0'"
+      MaterialExpressionEditorX=-1920
+      MaterialExpressionEditorY=656
+      MaterialExpressionGuid=CD509EAB46BD2F8B8D088988A4BD51CC
+      Material="/Script/Engine.Material'M_SC_VolumetricRainSplash'"
+   End Object
+   Begin Object Name="MaterialExpressionSphereMask_1" ExportPath="/Script/Engine.MaterialExpressionSphereMask'/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricRainSplash.M_SC_VolumetricRainSplash:MaterialExpressionSphereMask_1'"
+      A=(Expression="/Script/Engine.MaterialExpressionWorldPosition'M_SC_VolumetricRainSplash:MaterialExpressionWorldPosition_0'")
+      B=(Expression="/Script/Engine.MaterialExpressionParticlePositionWS'M_SC_VolumetricRainSplash:MaterialExpressionParticlePositionWS_0'")
+      Radius=(Expression="/Script/Engine.MaterialExpressionParticleRadius'M_SC_VolumetricRainSplash:MaterialExpressionParticleRadius_0'")
+      Hardness=(Expression="/Script/Engine.MaterialExpressionDynamicParameter'M_SC_VolumetricRainSplash:MaterialExpressionDynamicParameter_1'",OutputIndex=1,Mask=1,MaskG=1)
+      MaterialExpressionEditorX=-1536
+      MaterialExpressionEditorY=432
+      MaterialExpressionGuid=E24D61C04D30DE164F96DEA9C9CD3D5B
+      Material="/Script/Engine.Material'M_SC_VolumetricRainSplash'"
+   End Object
+   Begin Object Name="MaterialExpressionWorldPosition_0" ExportPath="/Script/Engine.MaterialExpressionWorldPosition'/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricRainSplash.M_SC_VolumetricRainSplash:MaterialExpressionWorldPosition_0'"
+      MaterialExpressionEditorX=-1920
+      MaterialExpressionEditorY=416
+      MaterialExpressionGuid=B57FD625437E934954ACB380BAC91894
+      Material="/Script/Engine.Material'M_SC_VolumetricRainSplash'"
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricRainSplash.M_SC_VolumetricRainSplash:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   MaterialDomain=MD_Volume
+   BlendMode=BLEND_Additive
+   bUsedWithNiagaraSprites=True
+   bCanMaskedBeAssumedOpaque=True
+   PixelDepthOffsetMode=PDOM_Legacy
+   StateId=2D896BC04B96DC65B50B29835C2C82B1
+   ReferencedTextureGuids(0)=D5317534477E6130E8161887F80332BF
+   EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'M_SC_VolumetricRainSplashEditorOnlyData'"
+   ReferencedDefaultTextures(0)="/Script/Engine.TextureRenderTarget2D'/SkyCreatorPlugin/Textures/Occlusion/RT_SC_OcclusionDepth.RT_SC_OcclusionDepth'"
+   ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+   LightingGuid=27811C51426DB556228F8288B97753FE
+End Object

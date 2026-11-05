@@ -1,0 +1,1 @@
+Mod( ((uint)(p.x) + 2 * (uint)(p.y)) , 5 )

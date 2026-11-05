@@ -1,0 +1,123 @@
+Begin Object Class=/Script/Engine.MaterialFunction Name="MF_SC_NormalStrength" ExportPath="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_NormalStrength.MF_SC_NormalStrength'"
+   Begin Object Class=/Script/Engine.MaterialFunctionEditorOnlyData Name="MF_SC_NormalStrengthEditorOnlyData" ExportPath="/Script/Engine.MaterialFunctionEditorOnlyData'/SkyCreatorPlugin/Materials/Functions/MF_SC_NormalStrength.MF_SC_NormalStrength:MF_SC_NormalStrengthEditorOnlyData'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant3Vector Name="MaterialExpressionConstant3Vector_0" ExportPath="/Script/Engine.MaterialExpressionConstant3Vector'/SkyCreatorPlugin/Materials/Functions/MF_SC_NormalStrength.MF_SC_NormalStrength:MaterialExpressionConstant3Vector_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant4Vector Name="MaterialExpressionConstant4Vector_1" ExportPath="/Script/Engine.MaterialExpressionConstant4Vector'/SkyCreatorPlugin/Materials/Functions/MF_SC_NormalStrength.MF_SC_NormalStrength:MaterialExpressionConstant4Vector_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/SkyCreatorPlugin/Materials/Functions/MF_SC_NormalStrength.MF_SC_NormalStrength:MaterialExpressionFunctionInput_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_2" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/SkyCreatorPlugin/Materials/Functions/MF_SC_NormalStrength.MF_SC_NormalStrength:MaterialExpressionFunctionInput_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_3" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/SkyCreatorPlugin/Materials/Functions/MF_SC_NormalStrength.MF_SC_NormalStrength:MaterialExpressionFunctionInput_3'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionOutput Name="MaterialExpressionFunctionOutput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/SkyCreatorPlugin/Materials/Functions/MF_SC_NormalStrength.MF_SC_NormalStrength:MaterialExpressionFunctionOutput_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionOutput Name="MaterialExpressionFunctionOutput_1" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/SkyCreatorPlugin/Materials/Functions/MF_SC_NormalStrength.MF_SC_NormalStrength:MaterialExpressionFunctionOutput_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_0" ExportPath="/Script/Engine.MaterialExpressionLinearInterpolate'/SkyCreatorPlugin/Materials/Functions/MF_SC_NormalStrength.MF_SC_NormalStrength:MaterialExpressionLinearInterpolate_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_1" ExportPath="/Script/Engine.MaterialExpressionLinearInterpolate'/SkyCreatorPlugin/Materials/Functions/MF_SC_NormalStrength.MF_SC_NormalStrength:MaterialExpressionLinearInterpolate_1'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/SkyCreatorPlugin/Materials/Functions/MF_SC_NormalStrength.MF_SC_NormalStrength:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   Begin Object Name="MF_SC_NormalStrengthEditorOnlyData" ExportPath="/Script/Engine.MaterialFunctionEditorOnlyData'/SkyCreatorPlugin/Materials/Functions/MF_SC_NormalStrength.MF_SC_NormalStrength:MF_SC_NormalStrengthEditorOnlyData'"
+      ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'MF_SC_NormalStrength:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionFunctionInput'MF_SC_NormalStrength:MaterialExpressionFunctionInput_2'","/Script/Engine.MaterialExpressionLinearInterpolate'MF_SC_NormalStrength:MaterialExpressionLinearInterpolate_0'","/Script/Engine.MaterialExpressionConstant3Vector'MF_SC_NormalStrength:MaterialExpressionConstant3Vector_0'","/Script/Engine.MaterialExpressionFunctionInput'MF_SC_NormalStrength:MaterialExpressionFunctionInput_3'","/Script/Engine.MaterialExpressionConstant4Vector'MF_SC_NormalStrength:MaterialExpressionConstant4Vector_1'","/Script/Engine.MaterialExpressionLinearInterpolate'MF_SC_NormalStrength:MaterialExpressionLinearInterpolate_1'","/Script/Engine.MaterialExpressionFunctionInput'MF_SC_NormalStrength:MaterialExpressionFunctionInput_0'","/Script/Engine.MaterialExpressionFunctionOutput'MF_SC_NormalStrength:MaterialExpressionFunctionOutput_1'"))
+   End Object
+   Begin Object Name="MaterialExpressionConstant3Vector_0" ExportPath="/Script/Engine.MaterialExpressionConstant3Vector'/SkyCreatorPlugin/Materials/Functions/MF_SC_NormalStrength.MF_SC_NormalStrength:MaterialExpressionConstant3Vector_0'"
+      Constant=(R=0.000000,G=0.000000,B=1.000000,A=0.000000)
+      MaterialExpressionEditorX=-512
+      MaterialExpressionEditorY=32
+      MaterialExpressionGuid=38B22E394E8FA630FA3BEF8337EC8738
+      Function="/Script/Engine.MaterialFunction'MF_SC_NormalStrength'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionConstant4Vector_1" ExportPath="/Script/Engine.MaterialExpressionConstant4Vector'/SkyCreatorPlugin/Materials/Functions/MF_SC_NormalStrength.MF_SC_NormalStrength:MaterialExpressionConstant4Vector_1'"
+      Constant=(R=0.000000,G=0.000000,B=1.000000,A=0.000000)
+      MaterialExpressionEditorX=-512
+      MaterialExpressionEditorY=384
+      MaterialExpressionGuid=430C647643AD28B2031EB9964AEE3B95
+      Function="/Script/Engine.MaterialFunction'MF_SC_NormalStrength'"
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/SkyCreatorPlugin/Materials/Functions/MF_SC_NormalStrength.MF_SC_NormalStrength:MaterialExpressionFunctionInput_0'"
+      InputName="Normal + Alpha"
+      Id=64BE6392436D73FECF7DE494DE211B4E
+      InputType=FunctionInput_Vector4
+      PreviewValue=(X=0.000000,Y=0.000000,Z=1.000000,W=1.000000)
+      bUsePreviewValueAsDefault=True
+      SortPriority=1
+      MaterialExpressionEditorX=-512
+      MaterialExpressionEditorY=576
+      MaterialExpressionGuid=CA3EA4C64F22B2FE859F31BFE2E83B32
+      Function="/Script/Engine.MaterialFunction'MF_SC_NormalStrength'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_2" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/SkyCreatorPlugin/Materials/Functions/MF_SC_NormalStrength.MF_SC_NormalStrength:MaterialExpressionFunctionInput_2'"
+      InputName="Normal"
+      Id=8758E70E42E0E81160E74EAAB91268E8
+      PreviewValue=(X=0.000000,Y=0.000000,Z=1.000000,W=1.000000)
+      bUsePreviewValueAsDefault=True
+      MaterialExpressionEditorX=-512
+      MaterialExpressionEditorY=208
+      MaterialExpressionGuid=B3893AD34849519C137970A3908FA30B
+      Function="/Script/Engine.MaterialFunction'MF_SC_NormalStrength'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_3" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/SkyCreatorPlugin/Materials/Functions/MF_SC_NormalStrength.MF_SC_NormalStrength:MaterialExpressionFunctionInput_3'"
+      InputName="Strength"
+      Id=568EFA084E7B5AD222F231A6F374737D
+      InputType=FunctionInput_Scalar
+      PreviewValue=(X=1.000000,Y=0.000000,Z=0.000000,W=1.000000)
+      bUsePreviewValueAsDefault=True
+      SortPriority=2
+      MaterialExpressionEditorX=-512
+      MaterialExpressionEditorY=288
+      MaterialExpressionGuid=2EA25CE940CCEEF19EA6EBB822D0AB60
+      Function="/Script/Engine.MaterialFunction'MF_SC_NormalStrength'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionOutput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/SkyCreatorPlugin/Materials/Functions/MF_SC_NormalStrength.MF_SC_NormalStrength:MaterialExpressionFunctionOutput_0'"
+      OutputName="RGB"
+      A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'MF_SC_NormalStrength:MaterialExpressionLinearInterpolate_0'")
+      bLastPreviewed=True
+      Id=BEBAA4144C9BEEC689CB93B491900FF5
+      MaterialExpressionGuid=06FD8A7E4BC9C496D300D1B9C6971DB5
+      Function="/Script/Engine.MaterialFunction'MF_SC_NormalStrength'"
+   End Object
+   Begin Object Name="MaterialExpressionFunctionOutput_1" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/SkyCreatorPlugin/Materials/Functions/MF_SC_NormalStrength.MF_SC_NormalStrength:MaterialExpressionFunctionOutput_1'"
+      OutputName="RGBA"
+      SortPriority=1
+      A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'MF_SC_NormalStrength:MaterialExpressionLinearInterpolate_1'")
+      bLastPreviewed=True
+      Id=FFC0492A42384EC956B7588CBBD65332
+      MaterialExpressionEditorY=384
+      MaterialExpressionGuid=6966DA2B484F37C8FE6073A9EBCD5FCC
+      Function="/Script/Engine.MaterialFunction'MF_SC_NormalStrength'"
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_0" ExportPath="/Script/Engine.MaterialExpressionLinearInterpolate'/SkyCreatorPlugin/Materials/Functions/MF_SC_NormalStrength.MF_SC_NormalStrength:MaterialExpressionLinearInterpolate_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionConstant3Vector'MF_SC_NormalStrength:MaterialExpressionConstant3Vector_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_NormalStrength:MaterialExpressionFunctionInput_2'")
+      Alpha=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_NormalStrength:MaterialExpressionFunctionInput_3'")
+      MaterialExpressionEditorX=-128
+      MaterialExpressionEditorY=32
+      MaterialExpressionGuid=91E124524B09D981AD088989987E8611
+      Function="/Script/Engine.MaterialFunction'MF_SC_NormalStrength'"
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_1" ExportPath="/Script/Engine.MaterialExpressionLinearInterpolate'/SkyCreatorPlugin/Materials/Functions/MF_SC_NormalStrength.MF_SC_NormalStrength:MaterialExpressionLinearInterpolate_1'"
+      A=(Expression="/Script/Engine.MaterialExpressionConstant4Vector'MF_SC_NormalStrength:MaterialExpressionConstant4Vector_1'",Mask=1,MaskR=1,MaskG=1,MaskB=1,MaskA=1)
+      B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_NormalStrength:MaterialExpressionFunctionInput_0'")
+      Alpha=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_NormalStrength:MaterialExpressionFunctionInput_3'")
+      MaterialExpressionEditorX=-128
+      MaterialExpressionEditorY=384
+      MaterialExpressionGuid=DE7DFB344AD3AC0455A46F85EAC0624E
+      Function="/Script/Engine.MaterialFunction'MF_SC_NormalStrength'"
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/SkyCreatorPlugin/Materials/Functions/MF_SC_NormalStrength.MF_SC_NormalStrength:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   LibraryCategoriesText(0)=NSLOCTEXT("", "16DF1CC84E611E3B44DF9DB6AEA77836", "Sky Creator")
+   EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'MF_SC_NormalStrengthEditorOnlyData'"
+   StateId=5A9BF9324A04845F4EA5ED99C13BF93B
+   CombinedInputTypes=15
+   CombinedOutputTypes=15
+   ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+End Object
