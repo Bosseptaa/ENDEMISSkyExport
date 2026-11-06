@@ -1,0 +1,1 @@
+float Result = 0.5;\r\nfloat Strength = 1;\r\n\r\nwhile (Octaves > 0.3) {\r\n\r\nResult += (Tex.SampleLevel(TexSampler,frac(UVW),0, 0).x - 0.55) * Strength * saturate(Octaves * 4);\r\n\r\nStrength *= 0.6;\r\n\r\nUVW *= 2;\r\n\r\nOctaves -= 1;\r\n}\r\n\r\nreturn Result;

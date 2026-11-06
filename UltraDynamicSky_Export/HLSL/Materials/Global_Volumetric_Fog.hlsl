@@ -1,0 +1,1 @@
+float2 Result = 0.5;\r\nfloat Strength = 1;\r\n\r\nwhile (Samples > 0) {\r\n\r\nResult += (Tex.SampleLevel(TexSampler,UVW + Movement,0, 0).xy - 0.55) * Strength * saturate(Samples);\r\n\r\nStrength *= 0.7;\r\n\r\nMovement *= -1;\r\n\r\nUVW *= 1.8;\r\n\r\nSamples -= 1;\r\n}\r\n\r\nreturn Result;
