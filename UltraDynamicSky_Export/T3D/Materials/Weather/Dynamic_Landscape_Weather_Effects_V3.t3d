@@ -1,3 +1,996 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b35886c8da4e9d828a57a3383ac132f993d8a484557d41775c78106281337f92
-size 105890
+Begin Object Class=/Script/Engine.MaterialFunction Name="Dynamic_Landscape_Weather_Effects_V3" ExportPath="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3'"
+   Begin Object Class=/Script/Engine.MaterialFunctionEditorOnlyData Name="Dynamic_Landscape_Weather_Effects_V3EditorOnlyData" ExportPath="/Script/Engine.MaterialFunctionEditorOnlyData'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:Dynamic_Landscape_Weather_Effects_V3EditorOnlyData'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAppendVector Name="MaterialExpressionAppendVector_4" ExportPath="/Script/Engine.MaterialExpressionAppendVector'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionAppendVector_4'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAppendVector Name="MaterialExpressionAppendVector_5" ExportPath="/Script/Engine.MaterialExpressionAppendVector'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionAppendVector_5'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionCollectionParameter Name="MaterialExpressionCollectionParameter_10" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionCollectionParameter_10'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionCollectionParameter Name="MaterialExpressionCollectionParameter_9" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionCollectionParameter_9'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_30" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionComment_30'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_32" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionComment_32'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_33" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionComment_33'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_6" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionComponentMask_6'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_9" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionComponentMask_9'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_12" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionConstant_12'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_14" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionConstant_14'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_15" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionConstant_15'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_16" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionConstant_16'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_7" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionConstant_7'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant4Vector Name="MaterialExpressionConstant4Vector_3" ExportPath="/Script/Engine.MaterialExpressionConstant4Vector'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionConstant4Vector_3'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_1" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_10" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_10'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_11" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_11'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_12" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_12'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_13" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_13'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_14" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_14'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_15" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_15'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_16" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_16'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_17" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_17'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_18" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_18'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_19" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_19'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_2" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_20" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_20'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_22" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_22'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_23" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_23'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_24" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_24'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_25" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_25'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_26" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_26'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_27" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_27'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_28" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_28'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_29" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_29'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_3" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_3'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_30" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_30'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_31" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_31'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_32" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_32'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_33" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_33'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_6" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_6'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_8" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_8'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionOutput Name="MaterialExpressionFunctionOutput_11" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionOutput_11'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionOutput Name="MaterialExpressionFunctionOutput_7" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionOutput_7'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionOutput Name="MaterialExpressionFunctionOutput_8" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionOutput_8'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_10" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionMaterialFunctionCall_10'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_6" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionMaterialFunctionCall_6'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNamedRerouteDeclaration Name="MaterialExpressionNamedRerouteDeclaration_10" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteDeclaration_10'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNamedRerouteDeclaration Name="MaterialExpressionNamedRerouteDeclaration_46" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteDeclaration_46'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNamedRerouteDeclaration Name="MaterialExpressionNamedRerouteDeclaration_47" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteDeclaration_47'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNamedRerouteDeclaration Name="MaterialExpressionNamedRerouteDeclaration_48" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteDeclaration_48'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNamedRerouteDeclaration Name="MaterialExpressionNamedRerouteDeclaration_5" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteDeclaration_5'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNamedRerouteUsage Name="MaterialExpressionNamedRerouteUsage_110" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteUsage_110'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNamedRerouteUsage Name="MaterialExpressionNamedRerouteUsage_111" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteUsage_111'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNamedRerouteUsage Name="MaterialExpressionNamedRerouteUsage_112" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteUsage_112'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNamedRerouteUsage Name="MaterialExpressionNamedRerouteUsage_113" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteUsage_113'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNamedRerouteUsage Name="MaterialExpressionNamedRerouteUsage_114" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteUsage_114'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNamedRerouteUsage Name="MaterialExpressionNamedRerouteUsage_65" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteUsage_65'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNamedRerouteUsage Name="MaterialExpressionNamedRerouteUsage_66" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteUsage_66'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNamedRerouteUsage Name="MaterialExpressionNamedRerouteUsage_8" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteUsage_8'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionStaticBool Name="MaterialExpressionStaticBool_0" ExportPath="/Script/Engine.MaterialExpressionStaticBool'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticBool_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionStaticBool Name="MaterialExpressionStaticBool_1" ExportPath="/Script/Engine.MaterialExpressionStaticBool'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticBool_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionStaticBool Name="MaterialExpressionStaticBool_11" ExportPath="/Script/Engine.MaterialExpressionStaticBool'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticBool_11'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionStaticBool Name="MaterialExpressionStaticBool_12" ExportPath="/Script/Engine.MaterialExpressionStaticBool'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticBool_12'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionStaticBool Name="MaterialExpressionStaticBool_3" ExportPath="/Script/Engine.MaterialExpressionStaticBool'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticBool_3'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionStaticBool Name="MaterialExpressionStaticBool_4" ExportPath="/Script/Engine.MaterialExpressionStaticBool'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticBool_4'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionStaticBool Name="MaterialExpressionStaticBool_5" ExportPath="/Script/Engine.MaterialExpressionStaticBool'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticBool_5'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionStaticBool Name="MaterialExpressionStaticBool_7" ExportPath="/Script/Engine.MaterialExpressionStaticBool'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticBool_7'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionStaticBool Name="MaterialExpressionStaticBool_8" ExportPath="/Script/Engine.MaterialExpressionStaticBool'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticBool_8'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionStaticSwitch Name="MaterialExpressionStaticSwitch_2" ExportPath="/Script/Engine.MaterialExpressionStaticSwitch'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticSwitch_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionStaticSwitch Name="MaterialExpressionStaticSwitch_3" ExportPath="/Script/Engine.MaterialExpressionStaticSwitch'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticSwitch_3'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionStaticSwitch Name="MaterialExpressionStaticSwitch_5" ExportPath="/Script/Engine.MaterialExpressionStaticSwitch'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticSwitch_5'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionStaticSwitch Name="MaterialExpressionStaticSwitch_6" ExportPath="/Script/Engine.MaterialExpressionStaticSwitch'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticSwitch_6'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   Begin Object Name="Dynamic_Landscape_Weather_Effects_V3EditorOnlyData" ExportPath="/Script/Engine.MaterialFunctionEditorOnlyData'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:Dynamic_Landscape_Weather_Effects_V3EditorOnlyData'"
+      ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_3'","/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_11'","/Script/Engine.MaterialExpressionFunctionOutput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionOutput_7'","/Script/Engine.MaterialExpressionFunctionOutput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionOutput_8'","/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_10'","/Script/Engine.MaterialExpressionConstant4Vector'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionConstant4Vector_3'","/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_13'","/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_14'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteDeclaration_10'","/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_15'","/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_16'","/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_17'","/Script/Engine.MaterialExpressionStaticBool'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticBool_5'","/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_18'","/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_19'","/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_12'","/Script/Engine.MaterialExpressionStaticBool'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticBool_3'","/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_20'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteDeclaration_5'","/Script/Engine.MaterialExpressionStaticBool'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticBool_7'","/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_22'","/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_23'","/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_24'","/Script/Engine.MaterialExpressionStaticBool'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticBool_8'","/Script/Engine.MaterialExpressionStaticBool'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticBool_11'","/Script/Engine.MaterialExpressionStaticBool'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticBool_12'","/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_6'","/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_25'","/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_26'","/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_27'","/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_28'","/Script/Engine.MaterialExpressionStaticBool'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticBool_0'","/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_29'","/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_33'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionMaterialFunctionCall_6'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionMaterialFunctionCall_10'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteDeclaration_46'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteUsage_8'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteDeclaration_47'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteUsage_65'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteUsage_66'","/Script/Engine.MaterialExpressionStaticSwitch'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticSwitch_2'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteUsage_110'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteDeclaration_48'","/Script/Engine.MaterialExpressionStaticSwitch'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticSwitch_3'","/Script/Engine.MaterialExpressionStaticSwitch'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticSwitch_5'","/Script/Engine.MaterialExpressionConstant'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionConstant_12'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteUsage_111'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteUsage_112'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteUsage_113'","/Script/Engine.MaterialExpressionStaticSwitch'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticSwitch_6'","/Script/Engine.MaterialExpressionConstant'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionConstant_14'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteUsage_114'","/Script/Engine.MaterialExpressionCollectionParameter'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionCollectionParameter_9'","/Script/Engine.MaterialExpressionComponentMask'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionComponentMask_6'","/Script/Engine.MaterialExpressionAppendVector'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionAppendVector_4'","/Script/Engine.MaterialExpressionConstant'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionConstant_15'","/Script/Engine.MaterialExpressionCollectionParameter'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionCollectionParameter_10'","/Script/Engine.MaterialExpressionComponentMask'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionComponentMask_9'","/Script/Engine.MaterialExpressionAppendVector'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionAppendVector_5'","/Script/Engine.MaterialExpressionConstant'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionConstant_16'","/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_8'","/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_30'","/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_31'","/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_32'","/Script/Engine.MaterialExpressionStaticBool'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticBool_4'","/Script/Engine.MaterialExpressionFunctionOutput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionOutput_11'","/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_0'","/Script/Engine.MaterialExpressionStaticBool'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticBool_1'","/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_1'","/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_2'","/Script/Engine.MaterialExpressionConstant'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionConstant_7'"),EditorComments=("/Script/Engine.MaterialExpressionComment'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionComment_30'","/Script/Engine.MaterialExpressionComment'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionComment_32'","/Script/Engine.MaterialExpressionComment'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionComment_33'"))
+   End Object
+   Begin Object Name="MaterialExpressionAppendVector_4" ExportPath="/Script/Engine.MaterialExpressionAppendVector'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionAppendVector_4'"
+      A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionComponentMask_6'")
+      B=(Expression="/Script/Engine.MaterialExpressionConstant'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionConstant_15'")
+      MaterialExpressionEditorX=2168
+      MaterialExpressionEditorY=7424
+      MaterialExpressionGuid=55F999AD4350E9E3CBAD6FB166985AE8
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+   End Object
+   Begin Object Name="MaterialExpressionAppendVector_5" ExportPath="/Script/Engine.MaterialExpressionAppendVector'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionAppendVector_5'"
+      A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionComponentMask_9'")
+      B=(Expression="/Script/Engine.MaterialExpressionConstant'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionConstant_16'")
+      MaterialExpressionEditorX=2164
+      MaterialExpressionEditorY=7640
+      MaterialExpressionGuid=3E9EE42C49D7E8391E59B4B505BCACA9
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+   End Object
+   Begin Object Name="MaterialExpressionCollectionParameter_10" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionCollectionParameter_10'"
+      Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+      ParameterName="Dust Color"
+      ParameterId=8E71B748449BFA6BA47C35B6D457CED7
+      MaterialExpressionEditorX=1744
+      MaterialExpressionEditorY=7612
+      MaterialExpressionGuid=75B4DBD84B8811052BD124B59627D9DE
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionCollectionParameter_9" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionCollectionParameter_9'"
+      Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+      ParameterName="Snow Color"
+      ParameterId=41EF58A04048471568AC36A883FCB6AF
+      MaterialExpressionEditorX=1760
+      MaterialExpressionEditorY=7396
+      MaterialExpressionGuid=C7A7526947E9BCA79C88D0916E1D125C
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionComment_30" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionComment_30'"
+      SizeX=828
+      SizeY=652
+      Text="Inputs"
+      CommentColor=(R=0.185100,G=1.000000,B=0.218663,A=1.000000)
+      MaterialExpressionEditorX=-1571
+      MaterialExpressionEditorY=7085
+      MaterialExpressionGuid=6DE7DCE14091AE64564464B169B46CE8
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+   End Object
+   Begin Object Name="MaterialExpressionComment_32" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionComment_32'"
+      SizeX=1888
+      SizeY=796
+      Text="Apply Puddles/Wetness"
+      CommentColor=(R=1.000000,G=0.522801,B=0.247544,A=1.000000)
+      MaterialExpressionEditorX=-578
+      MaterialExpressionEditorY=7146
+      MaterialExpressionGuid=97D3747B4B04F660C5A49482CE1458B5
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+   End Object
+   Begin Object Name="MaterialExpressionComment_33" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionComment_33'"
+      SizeX=3128
+      SizeY=1620
+      Text="Apply Snow/Dust"
+      CommentColor=(R=0.189773,G=0.392330,B=1.000000,A=1.000000)
+      MaterialExpressionEditorX=1534
+      MaterialExpressionEditorY=7142
+      MaterialExpressionGuid=0F263D9D43FB8F4CF43A12994522F66F
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_6" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionComponentMask_6'"
+      Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionCollectionParameter_9'")
+      R=True
+      G=True
+      B=True
+      MaterialExpressionEditorX=2016
+      MaterialExpressionEditorY=7424
+      MaterialExpressionGuid=9C6198034525E25CF2B5629A41122DE4
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_9" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionComponentMask_9'"
+      Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionCollectionParameter_10'")
+      R=True
+      G=True
+      B=True
+      MaterialExpressionEditorX=2004
+      MaterialExpressionEditorY=7640
+      MaterialExpressionGuid=73BD4FE04B71BB7F2B04E1B07F1F1FD2
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+   End Object
+   Begin Object Name="MaterialExpressionConstant_12" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionConstant_12'"
+      MaterialExpressionEditorX=745
+      MaterialExpressionEditorY=7381
+      MaterialExpressionGuid=43229AFD4918901E85CECC8F0CD6208A
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+   End Object
+   Begin Object Name="MaterialExpressionConstant_14" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionConstant_14'"
+      MaterialExpressionEditorX=4000
+      MaterialExpressionEditorY=7388
+      MaterialExpressionGuid=C91754764AB0643A37522793635EE062
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+   End Object
+   Begin Object Name="MaterialExpressionConstant_15" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionConstant_15'"
+      R=8.000000
+      MaterialExpressionEditorX=2008
+      MaterialExpressionEditorY=7520
+      MaterialExpressionGuid=84D5D3BA45639B75F9DF6FBF05ABD587
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+   End Object
+   Begin Object Name="MaterialExpressionConstant_16" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionConstant_16'"
+      R=3.600000
+      MaterialExpressionEditorX=2004
+      MaterialExpressionEditorY=7756
+      MaterialExpressionGuid=A72ADF5047460F37BBC6BD82FE85A37B
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+   End Object
+   Begin Object Name="MaterialExpressionConstant_7" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionConstant_7'"
+      MaterialExpressionEditorX=2484
+      MaterialExpressionEditorY=7896
+      MaterialExpressionGuid=1F7F37E24F4D6B7A1977AB9BBE1C3645
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+   End Object
+   Begin Object Name="MaterialExpressionConstant4Vector_3" ExportPath="/Script/Engine.MaterialExpressionConstant4Vector'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionConstant4Vector_3'"
+      Constant=(R=0.020833,G=0.018607,B=0.016168,A=0.350000)
+      MaterialExpressionEditorX=-528
+      MaterialExpressionEditorY=7448
+      MaterialExpressionGuid=B2653DA44AB6A108AB667295EFFBE9CA
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_0'"
+      Preview=(Expression="/Script/Engine.MaterialExpressionStaticBool'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticBool_1'")
+      InputName="Nanite Snow/Dust Depth Disable with Camera Intersection"
+      Description="True by default. If true, snow depth from nanite displacement will be disabled when the camera gets close enough to intersect the snow. This can help correct for the camera going below the landscape mesh due to the snow not having collision."
+      Id=F511218940C9598B75A8D68D8B779E1F
+      InputType=FunctionInput_StaticBool
+      bUsePreviewValueAsDefault=True
+      SortPriority=291
+      MaterialExpressionEditorX=2436
+      MaterialExpressionEditorY=8204
+      MaterialExpressionGuid=7305CD8C4BB439E30810118D9C8D284E
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_1" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_1'"
+      InputName="Snow/Dust Normal Map Intensity"
+      Description="Scales intensity of the general snow/dust normal map."
+      Id=8E0C656D416CE27D426FEEBC976CAB7E
+      InputType=FunctionInput_Scalar
+      PreviewValue=(X=1.000000,Y=0.000000,Z=0.000000,W=1.000000)
+      bUsePreviewValueAsDefault=True
+      SortPriority=205
+      MaterialExpressionEditorX=2588
+      MaterialExpressionEditorY=7576
+      MaterialExpressionGuid=310E0D5947EAFEA1161BA087E99DBE9D
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_10" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_10'"
+      Preview=(Expression="/Script/Engine.MaterialExpressionConstant4Vector'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionConstant4Vector_3'")
+      InputName="Puddle Color and Opacity"
+      Description="Determines the color and how opaque the puddles are. The alpha channel is a multiplier for the puddle mask, not in a 0 to 1 range. The default alpha of 5 produces a slightly foggy liquid. Higher values will be more opaque and lower values will be more transparent."
+      Id=D769C1D747E1C2474A94A3B6C1125032
+      InputType=FunctionInput_Vector4
+      PreviewValue=(X=0.000000,Y=0.000000,Z=0.000000,W=10.000000)
+      bUsePreviewValueAsDefault=True
+      SortPriority=102
+      MaterialExpressionEditorX=-332
+      MaterialExpressionEditorY=7448
+      MaterialExpressionGuid=7ABD565646593331E1EC0AB4DB99A76A
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_11" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_11'"
+      InputName="Mask Wetness/Puddles"
+      Description="Use this input to mask the wetness/puddle effect. A value of 0 plugged in here will stay completely dry."
+      Id=59FD6DA04EDDE565DA544DBFC87BB301
+      InputType=FunctionInput_Scalar
+      PreviewValue=(X=1.000000,Y=0.000000,Z=0.000000,W=1.000000)
+      bUsePreviewValueAsDefault=True
+      SortPriority=101
+      MaterialExpressionEditorX=-324
+      MaterialExpressionEditorY=7380
+      MaterialExpressionGuid=C31BD48F42797D73299517AA767C24C6
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_12" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_12'"
+      Preview=(Expression="/Script/Engine.MaterialExpressionStaticBool'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticBool_3'")
+      InputName="Render Snow/Dust Depth"
+      Description="(True by default) Deforms the mesh surface with the snow/dust coverage, to give the effect actual depth. This is achieved with World Position Offset and Pixel Depth Offset by default, intended for non-nanite landscapes. If the input \"For Nanite Tessellation\" is true, the displacement output will be used instead."
+      Id=DFCCB25D468DC0894225ED8F989A55DF
+      InputType=FunctionInput_StaticBool
+      bUsePreviewValueAsDefault=True
+      SortPriority=270
+      MaterialExpressionEditorX=2612
+      MaterialExpressionEditorY=7828
+      MaterialExpressionGuid=72CB9F124F76AA8FAB2740993A9B9159
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_13" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_13'"
+      InputName="Snow/Dust Roughness"
+      Description="The roughness value for the snow/dust coverage"
+      Id=0A7885154DC93ECB3D37A69CB8034BE9
+      InputType=FunctionInput_Scalar
+      PreviewValue=(X=0.700000,Y=0.000000,Z=0.000000,W=1.000000)
+      bUsePreviewValueAsDefault=True
+      SortPriority=204
+      MaterialExpressionEditorX=2656
+      MaterialExpressionEditorY=7516
+      MaterialExpressionGuid=CF09FF6040011CD04A868095CE60F438
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_14" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_14'"
+      InputName="Offset Coverage"
+      Description="Takes positive and negative values and offsets the puddle/snow/dust coverage. Good for high frequency details/displacement/height information affecting coverage formation."
+      Id=FC11F834421618C0C50E7E8909FBE9AB
+      InputType=FunctionInput_Scalar
+      bUsePreviewValueAsDefault=True
+      SortPriority=7
+      MaterialExpressionEditorX=-1440
+      MaterialExpressionEditorY=7456
+      MaterialExpressionGuid=2AB97FC4410F24C00F2ACF9A529BCF4A
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_15" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_15'"
+      Preview=(Expression="/Script/Engine.MaterialExpressionAppendVector'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionAppendVector_4'")
+      InputName="Snow Color and Alpha"
+      Description="RGB is the Base Color for the snow, and A controls the snow alpha. Note that default A channel is 8, to scale the snow mask appropriately."
+      Id=0430021443C957551454C9A1F170B01A
+      InputType=FunctionInput_Vector4
+      bUsePreviewValueAsDefault=True
+      SortPriority=202
+      MaterialExpressionEditorX=2652
+      MaterialExpressionEditorY=7420
+      MaterialExpressionGuid=CF09FF6040011CD04A868095CE60F438
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_16" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_16'"
+      Preview=(Expression="/Script/Engine.MaterialExpressionAppendVector'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionAppendVector_5'")
+      InputName="Dust Color and Alpha"
+      Description="RGB is the Base Color of the dust, and A scales the dust mask/opacity. Note the alpha channel\'s default is above 1, to scale the mask appropriately."
+      Id=957801FB4EA5305592D488AD4094C38A
+      InputType=FunctionInput_Vector4
+      bUsePreviewValueAsDefault=True
+      SortPriority=203
+      MaterialExpressionEditorX=2656
+      MaterialExpressionEditorY=7484
+      MaterialExpressionGuid=CF09FF6040011CD04A868095CE60F438
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_17" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_17'"
+      Preview=(Expression="/Script/Engine.MaterialExpressionStaticBool'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticBool_5'")
+      InputName="Mask Below Water Level Height"
+      Description="If true, the coverage will be masked below the world Z position set by UDS for water level."
+      Id=DD25D20A42A9B265E4B39E86388BEC04
+      InputType=FunctionInput_StaticBool
+      bUsePreviewValueAsDefault=True
+      SortPriority=8
+      MaterialExpressionEditorX=-1324
+      MaterialExpressionEditorY=7572
+      MaterialExpressionGuid=D3D9277C48CD55AE7F76409F64504490
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_18" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_18'"
+      InputName="Snow/Dust Trail Normal Intensity"
+      Description="Scales the intensity of the normal inside the snow/dust interaction trails"
+      Id=B1CACE344986E35BFE7CF0BC1BE741E0
+      InputType=FunctionInput_Scalar
+      PreviewValue=(X=2.000000,Y=0.000000,Z=0.000000,W=1.000000)
+      bUsePreviewValueAsDefault=True
+      SortPriority=251
+      MaterialExpressionEditorX=2592
+      MaterialExpressionEditorY=7760
+      MaterialExpressionGuid=371FAAE94F487C94A10AA9B3DFC4B44D
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_19" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_19'"
+      InputName="Snow/Dust Depth Falloff Distance"
+      Description="Distance from the camera that the snow/dust depth WPO/displacement will reduce to 0."
+      Id=9148C10E40BC1E1A13C8499DE264BFDE
+      InputType=FunctionInput_Scalar
+      PreviewValue=(X=6000.000000,Y=0.000000,Z=0.000000,W=1.000000)
+      bUsePreviewValueAsDefault=True
+      SortPriority=275
+      MaterialExpressionEditorX=2588
+      MaterialExpressionEditorY=8120
+      MaterialExpressionGuid=6619DBE044E43463212D4E9630269459
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_2" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_2'"
+      Preview=(Expression="/Script/Engine.MaterialExpressionConstant'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionConstant_7'")
+      InputName="Custom Trail Surface Mask"
+      Description="This is for applying snow/dust trails beyond the actual snow/dust coverage. For example for applying the trails to your own underlying mud or sand surface. This value is a 0-1 mask which should be 1 in the areas with these custom trail surfaces. Make sure to also configure the Custom Trail Surface Physical Materials in the DLWE Interaction settings to use physical materials which align with this mask."
+      Id=19A0D1F84CEBE90504876BA8D3A2530C
+      InputType=FunctionInput_Scalar
+      bUsePreviewValueAsDefault=True
+      SortPriority=251
+      MaterialExpressionEditorX=2628
+      MaterialExpressionEditorY=7896
+      MaterialExpressionGuid=7A468DC14A9E9578C415BE8787E3A1A7
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_20" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_20'"
+      Preview=(Expression="/Script/Engine.MaterialExpressionStaticBool'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticBool_7'")
+      InputName="For Nanite Tessellation"
+      Description="(False by default) Configures the function to output Displacement for its snow/dust depth, for nanite tessellation surfaces. Make sure to read the info on setting up the DLWE nanite tessellation support, in the DLWE entry in the documentation."
+      Id=4A54F95B4E048DDE58C48E813BAFABFD
+      InputType=FunctionInput_StaticBool
+      bUsePreviewValueAsDefault=True
+      SortPriority=280
+      MaterialExpressionEditorX=-1300
+      MaterialExpressionEditorY=7336
+      MaterialExpressionGuid=E78A66C54755A5C5DD24ECAE4878C8E2
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_22" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_22'"
+      Preview=(Expression="/Script/Engine.MaterialExpressionStaticBool'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticBool_12'")
+      InputName="Apply Wetness/Puddles"
+      Description="Applies low roughness to wet areas and forms noise based puddles"
+      Id=8CDC57F04D31ACF8F4BE4CB379B11A6F
+      InputType=FunctionInput_StaticBool
+      SortPriority=100
+      MaterialExpressionEditorX=624
+      MaterialExpressionEditorY=7468
+      MaterialExpressionGuid=1537DCF040DFA74E64028B935B2B662A
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_23" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_23'"
+      Preview=(Expression="/Script/Engine.MaterialExpressionStaticBool'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticBool_11'")
+      InputName="Apply Snow/Dust"
+      Description="Applies coverage of snow/dust to the surface"
+      Id=5DE4BC824156BD1C5FB2B1893E11CAC7
+      InputType=FunctionInput_StaticBool
+      SortPriority=200
+      MaterialExpressionEditorX=3872
+      MaterialExpressionEditorY=7484
+      MaterialExpressionGuid=1537DCF040DFA74E64028B935B2B662A
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_24" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_24'"
+      Preview=(Expression="/Script/Engine.MaterialExpressionStaticBool'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticBool_8'")
+      InputName="Apply Snow/Dust Trails"
+      Description="(True by default) Enables the logic to support the DLWE interaction trails which objects can draw into the snow/dust"
+      Id=099E41CE4025D4D9279A63A5E2203FF2
+      InputType=FunctionInput_StaticBool
+      bUsePreviewValueAsDefault=True
+      SortPriority=250
+      MaterialExpressionEditorX=2628
+      MaterialExpressionEditorY=7700
+      MaterialExpressionGuid=9A40CD474CDC9DD316B9B98131CD5435
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_25" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_25'"
+      InputName="Nanite Tessellation Puddle Height"
+      Description="If using nanite tessellation, the puddles will be flattened to this level of displacement"
+      Id=A6EFF3DE45B7401A91A04085589D9BD3
+      InputType=FunctionInput_Scalar
+      bUsePreviewValueAsDefault=True
+      SortPriority=300
+      MaterialExpressionEditorX=-372
+      MaterialExpressionEditorY=7720
+      MaterialExpressionGuid=EE1B9AC74CBA5171BC23F2B68EF95EBF
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_26" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_26'"
+      InputName="Mask Puddle Rain Ripples"
+      Description="Masks the tiling rain ripple effect in puddles."
+      Id=7418634E405C92CCDB3D35A52A0473A0
+      InputType=FunctionInput_Scalar
+      PreviewValue=(X=1.000000,Y=0.000000,Z=0.000000,W=1.000000)
+      bUsePreviewValueAsDefault=True
+      SortPriority=102
+      MaterialExpressionEditorX=-324
+      MaterialExpressionEditorY=7516
+      MaterialExpressionGuid=F3D46A324729ED46E91F15AC21BB4342
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_27" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_27'"
+      InputName="Mask Puddle Wind Ripples"
+      Description="Masks the turbulent wind rippling effect in puddles."
+      Id=791EC1534BDF1F91A27D47B4C0E6B9AA
+      InputType=FunctionInput_Scalar
+      PreviewValue=(X=1.000000,Y=0.000000,Z=0.000000,W=1.000000)
+      bUsePreviewValueAsDefault=True
+      SortPriority=102
+      MaterialExpressionEditorX=-328
+      MaterialExpressionEditorY=7584
+      MaterialExpressionGuid=F3D46A324729ED46E91F15AC21BB4342
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_28" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_28'"
+      Preview=(Expression="/Script/Engine.MaterialExpressionStaticBool'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticBool_0'")
+      InputName="Enable Snow Sparkle"
+      Description="Enable an emissive color effect of sparkling light on snow coverage"
+      Id=2E721A7E4B88754CF0C792AC89AB2643
+      InputType=FunctionInput_StaticBool
+      bUsePreviewValueAsDefault=True
+      SortPriority=271
+      MaterialExpressionEditorX=2644
+      MaterialExpressionEditorY=7988
+      MaterialExpressionGuid=AFB69B034B552694CC12BFAE149A2D09
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_29" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_29'"
+      InputName="Snow Sparkle Intensity"
+      Description="Scale the intensity of the snow sparkle emissive color"
+      Id=8F10541B4A59BAACF336DCAD13CFD836
+      InputType=FunctionInput_Scalar
+      PreviewValue=(X=1.000000,Y=0.000000,Z=0.000000,W=1.000000)
+      bUsePreviewValueAsDefault=True
+      SortPriority=272
+      MaterialExpressionEditorX=2648
+      MaterialExpressionEditorY=8056
+      MaterialExpressionGuid=B27EF9D341AD1F8F1AD0FCAB167B0FA7
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_3" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_3'"
+      InputName="Mask Snow/Dust Coverage"
+      Description="Use this input to mask the buildup of snow/dust on the material. A value of 0 plugged in here will gather no snow."
+      Id=00A9DC0547A3358222AE06AFF7BCA3A0
+      InputType=FunctionInput_Scalar
+      PreviewValue=(X=1.000000,Y=0.000000,Z=0.000000,W=1.000000)
+      bUsePreviewValueAsDefault=True
+      SortPriority=201
+      MaterialExpressionEditorX=2632
+      MaterialExpressionEditorY=7364
+      MaterialExpressionGuid=B886855247184543881C698D66B2C65D
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_30" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_30'"
+      InputName="Nanite Tessellation Magnitude"
+      Description="Should be set to match the material\'s Magnitude setting for nanite tessellation"
+      Id=53820BDD4D939949D74C04B37CD11C79
+      InputType=FunctionInput_Scalar
+      PreviewValue=(X=1.000000,Y=0.000000,Z=0.000000,W=1.000000)
+      bUsePreviewValueAsDefault=True
+      SortPriority=285
+      MaterialExpressionEditorX=2616
+      MaterialExpressionEditorY=8280
+      MaterialExpressionGuid=554B722E4098B285248478BA01D1CA4C
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_31" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_31'"
+      InputName="Nanite Tessellation Center"
+      Description="Should be set to match the material\'s Center setting for nanite tessellation"
+      Id=DCB253BD473B08EF920A0C969BD10BE3
+      InputType=FunctionInput_Scalar
+      bUsePreviewValueAsDefault=True
+      SortPriority=286
+      MaterialExpressionEditorX=2644
+      MaterialExpressionEditorY=8348
+      MaterialExpressionGuid=7334D9EC42FB882C069C0180655C5471
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_32" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_32'"
+      Preview=(Expression="/Script/Engine.MaterialExpressionStaticBool'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticBool_4'")
+      InputName="Displacement Input is World Scale"
+      Description="If true, the Displacement input will be interpreted as a world scale value where 0 is no displacement, 1 is 1cm of displacement, etc. If false, the displacement for the underlying surface will be used unchanged. True by default."
+      Id=D6F20F5C4F07BB5FF536C5BFCFE83DEB
+      InputType=FunctionInput_StaticBool
+      bUsePreviewValueAsDefault=True
+      SortPriority=288
+      MaterialExpressionEditorX=2580
+      MaterialExpressionEditorY=8416
+      MaterialExpressionGuid=B8964943434F47B7EC0A5080D5D46971
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_33" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_33'"
+      InputName="Snow/Dust Windswept Normal Intensity"
+      Description="Scales intensity of a windswept normal texture on the snow/dust which will align with the general wind direction."
+      Id=DDF58BA740D1B8B499085DB76F5CF695
+      InputType=FunctionInput_Scalar
+      PreviewValue=(X=0.700000,Y=0.000000,Z=0.000000,W=1.000000)
+      bUsePreviewValueAsDefault=True
+      SortPriority=206
+      MaterialExpressionEditorX=2552
+      MaterialExpressionEditorY=7640
+      MaterialExpressionGuid=104D0A484890EA865A505192C637277B
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_6" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_6'"
+      InputName="Nanite Snow/Dust Depth Variation"
+      Description="Uses a noise texture to vary the snow depth, when using nanite tessellation for snow. This input scales that variation."
+      Id=78AFE0B84C39703B81A528819FA5CA9D
+      InputType=FunctionInput_Scalar
+      PreviewValue=(X=0.450000,Y=0.000000,Z=0.000000,W=1.000000)
+      bUsePreviewValueAsDefault=True
+      SortPriority=290
+      MaterialExpressionEditorX=2596
+      MaterialExpressionEditorY=8548
+      MaterialExpressionGuid=9A560F4E40C8DBDEA2BC50B0CA8028C5
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_8" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_8'"
+      InputName="Material Attributes"
+      Description="The material attributes which puddles/snow/dust will be applied to."
+      Id=9F33456F4B6BD1A6868AFA926D094C84
+      InputType=FunctionInput_MaterialAttributes
+      MaterialExpressionEditorX=-1228
+      MaterialExpressionEditorY=7196
+      MaterialExpressionGuid=592AA891440566DEFA6A6EAD47EC73E2
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionOutput_11" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionOutput_11'"
+      OutputName="Material Attributes"
+      Description="The material attributes with the puddles/snow/dust coverage."
+      A=(Expression="/Script/Engine.MaterialExpressionStaticSwitch'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticSwitch_3'")
+      Id=27DF5586411C8B24F72191A7A2838806
+      MaterialExpressionEditorX=4364
+      MaterialExpressionEditorY=7192
+      MaterialExpressionGuid=02B7E1B740C44C4D787480B331062F0E
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionOutput_7" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionOutput_7'"
+      OutputName="Puddles"
+      Description="A single channel mask. White areas are puddles."
+      SortPriority=9
+      A=(Expression="/Script/Engine.MaterialExpressionStaticSwitch'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticSwitch_5'")
+      bLastPreviewed=True
+      Id=90460CF346C3E52D46A0A2A6F266B808
+      MaterialExpressionEditorX=1116
+      MaterialExpressionEditorY=7308
+      MaterialExpressionGuid=DBD5216B490EE2CA508C61B8CF634ACB
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionOutput_8" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionOutput_8'"
+      OutputName="Snow/Dust"
+      Description="A single channel mask. White areas have snow or dust coverage."
+      SortPriority=8
+      A=(Expression="/Script/Engine.MaterialExpressionStaticSwitch'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticSwitch_6'")
+      Id=F16BB55C4F020D71AB19C4AB2D6BEF27
+      MaterialExpressionEditorX=4348
+      MaterialExpressionEditorY=7344
+      MaterialExpressionGuid=2EDAF8B64778E135D902E4BF0C9EFFFA
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_10" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionMaterialFunctionCall_10'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Weather/DLWE_Snow.DLWE_Snow'"
+      FunctionInputs(0)=(ExpressionInputId=8FBBB97342B6847572E6FB92B48A4078,Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteDeclaration_48'",InputName="Input Material Attributes"))
+      FunctionInputs(1)=(ExpressionInputId=FC11F834421618C0C50E7E8909FBE9AB,Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteUsage_111'",InputName="Offset Coverage"))
+      FunctionInputs(2)=(ExpressionInputId=DD25D20A42A9B265E4B39E86388BEC04,Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteUsage_112'",InputName="Mask Below Water Level Height"))
+      FunctionInputs(3)=(ExpressionInputId=00A9DC0547A3358222AE06AFF7BCA3A0,Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_3'",InputName="Mask Snow/Dust Coverage"))
+      FunctionInputs(4)=(ExpressionInputId=0430021443C957551454C9A1F170B01A,Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_15'",InputName="Snow Color and Alpha"))
+      FunctionInputs(5)=(ExpressionInputId=957801FB4EA5305592D488AD4094C38A,Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_16'",InputName="Dust Color and Alpha"))
+      FunctionInputs(6)=(ExpressionInputId=0A7885154DC93ECB3D37A69CB8034BE9,Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_13'",InputName="Snow/Dust Roughness"))
+      FunctionInputs(7)=(ExpressionInputId=C96C9D6747B9898BA6CCCE8494F99689,Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_1'",InputName="Snow/Dust Normal Map Intensity"))
+      FunctionInputs(8)=(ExpressionInputId=DDF58BA740D1B8B499085DB76F5CF695,Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_33'",InputName="Snow/Dust Windswept Normal Intensity"))
+      FunctionInputs(9)=(ExpressionInputId=099E41CE4025D4D9279A63A5E2203FF2,Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_24'",InputName="Apply Snow/Dust Trails"))
+      FunctionInputs(10)=(ExpressionInputId=B1CACE344986E35BFE7CF0BC1BE741E0,Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_18'",InputName="Snow/Dust Trail Normal Intensity"))
+      FunctionInputs(11)=(ExpressionInputId=24157AEA49D6A303808B008D037FF9EE,Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_2'",InputName="Custom Trail Surface Mask"))
+      FunctionInputs(12)=(ExpressionInputId=DFCCB25D468DC0894225ED8F989A55DF,Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_12'",InputName="Render Snow/Dust Depth"))
+      FunctionInputs(13)=(ExpressionInputId=2E721A7E4B88754CF0C792AC89AB2643,Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_28'",InputName="Enable Snow Sparkle"))
+      FunctionInputs(14)=(ExpressionInputId=8F10541B4A59BAACF336DCAD13CFD836,Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_29'",InputName="Snow Sparkle Intensity"))
+      FunctionInputs(15)=(ExpressionInputId=9148C10E40BC1E1A13C8499DE264BFDE,Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_19'",InputName="Snow/Dust Depth Falloff Distance"))
+      FunctionInputs(16)=(ExpressionInputId=40DBFAAC4BD6FEA659960FB852E71F02,Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_0'",InputName="Snow Depth Disable with Camera Intersection"))
+      FunctionInputs(17)=(ExpressionInputId=4A54F95B4E048DDE58C48E813BAFABFD,Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteUsage_114'",InputName="For Nanite Tessellation"))
+      FunctionInputs(18)=(ExpressionInputId=F66F1A724B8F224C6FF756A5062B2050,Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_30'",InputName="Nanite Tessellation Magnitude"))
+      FunctionInputs(19)=(ExpressionInputId=D242BE7A419D05C94CFD4D96A61D1B39,Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_31'",InputName="Nanite Tessellation Center"))
+      FunctionInputs(20)=(ExpressionInputId=A176591F44B8D85C8B85C5ADC49FB980,Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_32'",InputName="Displacement Input is World Scale"))
+      FunctionInputs(21)=(ExpressionInputId=78AFE0B84C39703B81A528819FA5CA9D,Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_6'",InputName="Nanite Snow/Dust Depth Variation"))
+      FunctionOutputs(0)=(ExpressionOutputId=5539868944ACF80E1E1E2398629CC0E3,Output=(OutputName="Output Attributes"))
+      FunctionOutputs(1)=(ExpressionOutputId=F16BB55C4F020D71AB19C4AB2D6BEF27,Output=(OutputName="Snow/Dust"))
+      MaterialExpressionEditorX=3252
+      MaterialExpressionEditorY=7196
+      MaterialExpressionGuid=566670FC4B8B6C845FF95B865C727802
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+      Outputs(0)=(OutputName="Output Attributes")
+      Outputs(1)=(OutputName="Snow/Dust")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_6" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionMaterialFunctionCall_6'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Weather/DLWE_Puddles.DLWE_Puddles'"
+      FunctionInputs(0)=(ExpressionInputId=88BE4E74439C1F638A1EE58875382216,Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteDeclaration_46'",InputName="Input Material Attributes"))
+      FunctionInputs(1)=(ExpressionInputId=FC11F834421618C0C50E7E8909FBE9AB,Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteUsage_8'",InputName="Offset Coverage"))
+      FunctionInputs(2)=(ExpressionInputId=DD25D20A42A9B265E4B39E86388BEC04,Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteUsage_65'",InputName="Mask Below Water Level Height"))
+      FunctionInputs(3)=(ExpressionInputId=59FD6DA04EDDE565DA544DBFC87BB301,Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_11'",InputName="Mask Wetness/Puddles"))
+      FunctionInputs(4)=(ExpressionInputId=D769C1D747E1C2474A94A3B6C1125032,Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_10'",InputName="Puddle Color and Opacity"))
+      FunctionInputs(5)=(ExpressionInputId=7418634E405C92CCDB3D35A52A0473A0,Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_26'",InputName="Mask Puddle Rain Ripples"))
+      FunctionInputs(6)=(ExpressionInputId=791EC1534BDF1F91A27D47B4C0E6B9AA,Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_27'",InputName="Mask Puddle Wind Ripples"))
+      FunctionInputs(7)=(ExpressionInputId=4A54F95B4E048DDE58C48E813BAFABFD,Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteUsage_66'",InputName="For Nanite Tessellation"))
+      FunctionInputs(8)=(ExpressionInputId=A6EFF3DE45B7401A91A04085589D9BD3,Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_25'",InputName="Nanite Tessellation Puddle Height"))
+      FunctionOutputs(0)=(ExpressionOutputId=76E21DF94D4B688C659D3DBC261B4EB6,Output=(OutputName="Output Attributes"))
+      FunctionOutputs(1)=(ExpressionOutputId=90460CF346C3E52D46A0A2A6F266B808,Output=(OutputName="Puddles"))
+      MaterialExpressionEditorX=52
+      MaterialExpressionEditorY=7196
+      MaterialExpressionGuid=9B2872C8412944E359F6B9886D0CC6E2
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+      Outputs(0)=(OutputName="Output Attributes")
+      Outputs(1)=(OutputName="Puddles")
+   End Object
+   Begin Object Name="MaterialExpressionNamedRerouteDeclaration_10" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteDeclaration_10'"
+      Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_14'")
+      Name="DLWE Coverage Modulation"
+      NodeColor=(R=1.000000,G=0.037429,B=0.000000,A=1.000000)
+      VariableGuid=40315A244CBD11A74F87B58194C8E09A
+      MaterialExpressionEditorX=-1160
+      MaterialExpressionEditorY=7456
+      MaterialExpressionGuid=E87BDD9544FBCAFC88E2B9BCA8AC4FDE
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+   End Object
+   Begin Object Name="MaterialExpressionNamedRerouteDeclaration_46" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteDeclaration_46'"
+      Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_8'")
+      Name="Input MA"
+      NodeColor=(R=1.000000,G=0.000000,B=0.890625,A=1.000000)
+      VariableGuid=523E779641E71C3FFF64E899EA7D96A6
+      MaterialExpressionEditorX=-896
+      MaterialExpressionEditorY=7196
+      MaterialExpressionGuid=E7B7F2C64C17FD335851908BBA83F64B
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+   End Object
+   Begin Object Name="MaterialExpressionNamedRerouteDeclaration_47" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteDeclaration_47'"
+      Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_17'")
+      Name="Use Water Level"
+      NodeColor=(R=0.000000,G=1.000000,B=0.789063,A=1.000000)
+      VariableGuid=95C1C5794D1B8FE354677BB78A439F6F
+      MaterialExpressionEditorX=-956
+      MaterialExpressionEditorY=7576
+      MaterialExpressionGuid=753CC4A84CD4D13CBBF9D7B001B1F140
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+   End Object
+   Begin Object Name="MaterialExpressionNamedRerouteDeclaration_48" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteDeclaration_48'"
+      Input=(Expression="/Script/Engine.MaterialExpressionStaticSwitch'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticSwitch_2'")
+      Name="Wet Attributes"
+      NodeColor=(R=1.000000,G=0.468750,B=0.000000,A=1.000000)
+      VariableGuid=AA34022446E048167867229949930258
+      MaterialExpressionEditorX=1120
+      MaterialExpressionEditorY=7196
+      MaterialExpressionGuid=129523A14B7679810ED7819F5EDF3ECD
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+   End Object
+   Begin Object Name="MaterialExpressionNamedRerouteDeclaration_5" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteDeclaration_5'"
+      Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_20'")
+      Name="Nanite Tess"
+      NodeColor=(R=1.000000,G=0.726563,B=0.000000,A=1.000000)
+      VariableGuid=41439370476DABC3C3DA9EA813C9E0C4
+      MaterialExpressionEditorX=-972
+      MaterialExpressionEditorY=7336
+      MaterialExpressionGuid=8E23AFD64494972E2484A88EBB1F2C72
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+   End Object
+   Begin Object Name="MaterialExpressionNamedRerouteUsage_110" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteUsage_110'"
+      Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteDeclaration_46'"
+      DeclarationGuid=523E779641E71C3FFF64E899EA7D96A6
+      MaterialExpressionEditorX=820
+      MaterialExpressionEditorY=7248
+      MaterialExpressionGuid=CB86016C428CADFCC1537BA7A852203E
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+   End Object
+   Begin Object Name="MaterialExpressionNamedRerouteUsage_111" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteUsage_111'"
+      Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteDeclaration_10'"
+      DeclarationGuid=40315A244CBD11A74F87B58194C8E09A
+      MaterialExpressionEditorX=2712
+      MaterialExpressionEditorY=7248
+      MaterialExpressionGuid=D23FFB23411FE14F17075D96B9BEB51F
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+   End Object
+   Begin Object Name="MaterialExpressionNamedRerouteUsage_112" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteUsage_112'"
+      Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteDeclaration_47'"
+      DeclarationGuid=95C1C5794D1B8FE354677BB78A439F6F
+      MaterialExpressionEditorX=2776
+      MaterialExpressionEditorY=7300
+      MaterialExpressionGuid=0FA90F364AF0458E5939F08A619D6963
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+   End Object
+   Begin Object Name="MaterialExpressionNamedRerouteUsage_113" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteUsage_113'"
+      Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteDeclaration_48'"
+      DeclarationGuid=AA34022446E048167867229949930258
+      MaterialExpressionEditorX=4004
+      MaterialExpressionEditorY=7248
+      MaterialExpressionGuid=9E604BAA494747F7C5A3F987FB94DD63
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+   End Object
+   Begin Object Name="MaterialExpressionNamedRerouteUsage_114" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteUsage_114'"
+      Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteDeclaration_5'"
+      DeclarationGuid=41439370476DABC3C3DA9EA813C9E0C4
+      MaterialExpressionEditorX=2808
+      MaterialExpressionEditorY=8484
+      MaterialExpressionGuid=7A614C4F4410873C3F821989228E445C
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+   End Object
+   Begin Object Name="MaterialExpressionNamedRerouteUsage_65" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteUsage_65'"
+      Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteDeclaration_47'"
+      DeclarationGuid=95C1C5794D1B8FE354677BB78A439F6F
+      MaterialExpressionEditorX=-200
+      MaterialExpressionEditorY=7316
+      MaterialExpressionGuid=F8979CEB49B7022A1C92FF806A6358B2
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+   End Object
+   Begin Object Name="MaterialExpressionNamedRerouteUsage_66" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteUsage_66'"
+      Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteDeclaration_5'"
+      DeclarationGuid=41439370476DABC3C3DA9EA813C9E0C4
+      MaterialExpressionEditorX=-160
+      MaterialExpressionEditorY=7648
+      MaterialExpressionGuid=51E6C649490EFB0866417B95B02E1730
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+   End Object
+   Begin Object Name="MaterialExpressionNamedRerouteUsage_8" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteUsage_8'"
+      Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteDeclaration_10'"
+      DeclarationGuid=40315A244CBD11A74F87B58194C8E09A
+      MaterialExpressionEditorX=-260
+      MaterialExpressionEditorY=7252
+      MaterialExpressionGuid=7C43C2C64E79A5CA88D865B774A87FCF
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+   End Object
+   Begin Object Name="MaterialExpressionStaticBool_0" ExportPath="/Script/Engine.MaterialExpressionStaticBool'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticBool_0'"
+      MaterialExpressionEditorX=2452
+      MaterialExpressionEditorY=7974
+      MaterialExpressionGuid=FB4415ED410F86F7C20B4C8A6676FB7E
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+   End Object
+   Begin Object Name="MaterialExpressionStaticBool_1" ExportPath="/Script/Engine.MaterialExpressionStaticBool'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticBool_1'"
+      Value=True
+      MaterialExpressionEditorX=2260
+      MaterialExpressionEditorY=8188
+      MaterialExpressionGuid=A542068C49708D42622AA090EBBBC162
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+   End Object
+   Begin Object Name="MaterialExpressionStaticBool_11" ExportPath="/Script/Engine.MaterialExpressionStaticBool'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticBool_11'"
+      Value=True
+      MaterialExpressionEditorX=3692
+      MaterialExpressionEditorY=7468
+      MaterialExpressionGuid=F8DB67584D834623A559E0BD81525AC7
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+   End Object
+   Begin Object Name="MaterialExpressionStaticBool_12" ExportPath="/Script/Engine.MaterialExpressionStaticBool'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticBool_12'"
+      Value=True
+      MaterialExpressionEditorX=436
+      MaterialExpressionEditorY=7452
+      MaterialExpressionGuid=F8DB67584D834623A559E0BD81525AC7
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+   End Object
+   Begin Object Name="MaterialExpressionStaticBool_3" ExportPath="/Script/Engine.MaterialExpressionStaticBool'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticBool_3'"
+      Value=True
+      MaterialExpressionEditorX=2432
+      MaterialExpressionEditorY=7812
+      MaterialExpressionGuid=827A98AB4C530388C6BE95B4FD1DAA38
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+   End Object
+   Begin Object Name="MaterialExpressionStaticBool_4" ExportPath="/Script/Engine.MaterialExpressionStaticBool'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticBool_4'"
+      Value=True
+      MaterialExpressionEditorX=2408
+      MaterialExpressionEditorY=8400
+      MaterialExpressionGuid=FD97DF924F4619B3A36356BEB9968530
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+   End Object
+   Begin Object Name="MaterialExpressionStaticBool_5" ExportPath="/Script/Engine.MaterialExpressionStaticBool'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticBool_5'"
+      MaterialExpressionEditorX=-1492
+      MaterialExpressionEditorY=7560
+      MaterialExpressionGuid=56CEA9D04A010498B32068886D68212A
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+   End Object
+   Begin Object Name="MaterialExpressionStaticBool_7" ExportPath="/Script/Engine.MaterialExpressionStaticBool'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticBool_7'"
+      MaterialExpressionEditorX=-1472
+      MaterialExpressionEditorY=7320
+      MaterialExpressionGuid=827A98AB4C530388C6BE95B4FD1DAA38
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+   End Object
+   Begin Object Name="MaterialExpressionStaticBool_8" ExportPath="/Script/Engine.MaterialExpressionStaticBool'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticBool_8'"
+      Value=True
+      MaterialExpressionEditorX=2400
+      MaterialExpressionEditorY=7684
+      MaterialExpressionGuid=6C4F68DE48E48628FFB2A5BB6D68D734
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+   End Object
+   Begin Object Name="MaterialExpressionStaticSwitch_2" ExportPath="/Script/Engine.MaterialExpressionStaticSwitch'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticSwitch_2'"
+      A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionMaterialFunctionCall_6'")
+      B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteUsage_110'")
+      Value=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_22'")
+      MaterialExpressionEditorX=972
+      MaterialExpressionEditorY=7196
+      MaterialExpressionGuid=CC07F78947BBF753F5A6798ECCF8861B
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+   End Object
+   Begin Object Name="MaterialExpressionStaticSwitch_3" ExportPath="/Script/Engine.MaterialExpressionStaticSwitch'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticSwitch_3'"
+      A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionMaterialFunctionCall_10'")
+      B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionNamedRerouteUsage_113'")
+      Value=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_23'")
+      MaterialExpressionEditorX=4196
+      MaterialExpressionEditorY=7192
+      MaterialExpressionGuid=F190FE8246C627FC93A57DB3C35A596C
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+   End Object
+   Begin Object Name="MaterialExpressionStaticSwitch_5" ExportPath="/Script/Engine.MaterialExpressionStaticSwitch'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticSwitch_5'"
+      A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionMaterialFunctionCall_6'",OutputIndex=1)
+      B=(Expression="/Script/Engine.MaterialExpressionConstant'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionConstant_12'")
+      Value=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_22'")
+      MaterialExpressionEditorX=972
+      MaterialExpressionEditorY=7336
+      MaterialExpressionGuid=0FF4B8A64D47C011158A2883B836D092
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+   End Object
+   Begin Object Name="MaterialExpressionStaticSwitch_6" ExportPath="/Script/Engine.MaterialExpressionStaticSwitch'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionStaticSwitch_6'"
+      A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionMaterialFunctionCall_10'",OutputIndex=1)
+      B=(Expression="/Script/Engine.MaterialExpressionConstant'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionConstant_14'")
+      Value=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Dynamic_Landscape_Weather_Effects_V3:MaterialExpressionFunctionInput_23'")
+      MaterialExpressionEditorX=4200
+      MaterialExpressionEditorY=7344
+      MaterialExpressionGuid=341F3D7E4D5D944B8FE9BC88A6E69F5B
+      Function="/Script/Engine.MaterialFunction'Dynamic_Landscape_Weather_Effects_V3'"
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   Description="Add puddles, snow, and dust coverage to a landscape material. To be used in conjuction with the Dynamic Landscape features on Ultra Dynamic Weather. See the readme for more information about setting this up."
+   UserExposedCaption="Dynamic Landscape Weather Effects V3"
+   bExposeToLibrary=True
+   LibraryCategoriesText(0)=NSLOCTEXT("", "B15C558140FFF63DE0E2BC8C7D23EF74", "Weather")
+   DependentFunctionExpressionCandidates(0)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_6'"
+   DependentFunctionExpressionCandidates(1)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_10'"
+   EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'Dynamic_Landscape_Weather_Effects_V3EditorOnlyData'"
+   StateId=1261EDA940BA1BB62BD68EB661F89533
+   CombinedInputTypes=2575
+   CombinedOutputTypes=2063
+   ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+End Object

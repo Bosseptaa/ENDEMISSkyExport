@@ -1,3 +1,94 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2f27c0543190aaa2d0c6cd8dce8f1e5dbe888ce003985cfb62450242e4b01b02
-size 9519
+Begin Object Class=/Script/Engine.MaterialFunction Name="DLWE_VariationClouds" ExportPath="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/DLWE_VariationClouds.DLWE_VariationClouds'"
+   Begin Object Class=/Script/Engine.MaterialFunctionEditorOnlyData Name="DLWE_VariationCloudsEditorOnlyData" ExportPath="/Script/Engine.MaterialFunctionEditorOnlyData'/Game/UltraDynamicSky/Materials/Material_Functions/DLWE_VariationClouds.DLWE_VariationClouds:DLWE_VariationCloudsEditorOnlyData'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionCollectionParameter Name="MaterialExpressionCollectionParameter_0" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/Game/UltraDynamicSky/Materials/Material_Functions/DLWE_VariationClouds.DLWE_VariationClouds:MaterialExpressionCollectionParameter_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_42" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/DLWE_VariationClouds.DLWE_VariationClouds:MaterialExpressionComponentMask_42'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDivide Name="MaterialExpressionDivide_0" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/Material_Functions/DLWE_VariationClouds.DLWE_VariationClouds:MaterialExpressionDivide_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Material_Functions/DLWE_VariationClouds.DLWE_VariationClouds:MaterialExpressionFunctionInput_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionOutput Name="MaterialExpressionFunctionOutput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/UltraDynamicSky/Materials/Material_Functions/DLWE_VariationClouds.DLWE_VariationClouds:MaterialExpressionFunctionOutput_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_8" ExportPath="/Script/Engine.MaterialExpressionTextureSample'/Game/UltraDynamicSky/Materials/Material_Functions/DLWE_VariationClouds.DLWE_VariationClouds:MaterialExpressionTextureSample_8'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionWorldPosition Name="MaterialExpressionWorldPosition_6" ExportPath="/Script/Engine.MaterialExpressionWorldPosition'/Game/UltraDynamicSky/Materials/Material_Functions/DLWE_VariationClouds.DLWE_VariationClouds:MaterialExpressionWorldPosition_6'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/Material_Functions/DLWE_VariationClouds.DLWE_VariationClouds:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   Begin Object Name="DLWE_VariationCloudsEditorOnlyData" ExportPath="/Script/Engine.MaterialFunctionEditorOnlyData'/Game/UltraDynamicSky/Materials/Material_Functions/DLWE_VariationClouds.DLWE_VariationClouds:DLWE_VariationCloudsEditorOnlyData'"
+      ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'DLWE_VariationClouds:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionWorldPosition'DLWE_VariationClouds:MaterialExpressionWorldPosition_6'","/Script/Engine.MaterialExpressionComponentMask'DLWE_VariationClouds:MaterialExpressionComponentMask_42'","/Script/Engine.MaterialExpressionDivide'DLWE_VariationClouds:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionTextureSample'DLWE_VariationClouds:MaterialExpressionTextureSample_8'","/Script/Engine.MaterialExpressionCollectionParameter'DLWE_VariationClouds:MaterialExpressionCollectionParameter_0'","/Script/Engine.MaterialExpressionFunctionInput'DLWE_VariationClouds:MaterialExpressionFunctionInput_0'"))
+   End Object
+   Begin Object Name="MaterialExpressionCollectionParameter_0" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/Game/UltraDynamicSky/Materials/Material_Functions/DLWE_VariationClouds.DLWE_VariationClouds:MaterialExpressionCollectionParameter_0'"
+      Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+      ParameterName="DLWE_Clouds Scale"
+      ParameterId=4160FFD545BB123FF41A319EA7B77F62
+      MaterialExpressionEditorX=-976
+      MaterialExpressionEditorY=396
+      MaterialExpressionGuid=B6B8ADA04AA240654FDCCBB33634F603
+      Function="/Script/Engine.MaterialFunction'DLWE_VariationClouds'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_42" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/DLWE_VariationClouds.DLWE_VariationClouds:MaterialExpressionComponentMask_42'"
+      Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'DLWE_VariationClouds:MaterialExpressionFunctionInput_0'")
+      R=True
+      G=True
+      MaterialExpressionEditorX=-920
+      MaterialExpressionEditorY=284
+      MaterialExpressionGuid=4F785F4F4929E43ACF8180AEACAE326F
+      Function="/Script/Engine.MaterialFunction'DLWE_VariationClouds'"
+   End Object
+   Begin Object Name="MaterialExpressionDivide_0" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/Material_Functions/DLWE_VariationClouds.DLWE_VariationClouds:MaterialExpressionDivide_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionComponentMask'DLWE_VariationClouds:MaterialExpressionComponentMask_42'")
+      B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'DLWE_VariationClouds:MaterialExpressionCollectionParameter_0'")
+      ConstB=2150.000000
+      MaterialExpressionEditorX=-692
+      MaterialExpressionEditorY=280
+      MaterialExpressionGuid=3D4600A248EE31C1C8EC69A141204917
+      Function="/Script/Engine.MaterialFunction'DLWE_VariationClouds'"
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Material_Functions/DLWE_VariationClouds.DLWE_VariationClouds:MaterialExpressionFunctionInput_0'"
+      Preview=(Expression="/Script/Engine.MaterialExpressionWorldPosition'DLWE_VariationClouds:MaterialExpressionWorldPosition_6'")
+      InputName="Position"
+      Id=11EA88BA47A460300ECB9194AE4C66D0
+      bUsePreviewValueAsDefault=True
+      MaterialExpressionEditorX=-1144
+      MaterialExpressionEditorY=284
+      MaterialExpressionGuid=A4CC6B254BC9BC269065ACA9C50E1AB7
+      Function="/Script/Engine.MaterialFunction'DLWE_VariationClouds'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionOutput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/UltraDynamicSky/Materials/Material_Functions/DLWE_VariationClouds.DLWE_VariationClouds:MaterialExpressionFunctionOutput_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionTextureSample'DLWE_VariationClouds:MaterialExpressionTextureSample_8'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      bLastPreviewed=True
+      Id=C561DF354B1F8B6113421FA33C06A397
+      MaterialExpressionEditorX=-332
+      MaterialExpressionEditorY=252
+      MaterialExpressionGuid=FB4543B34789A3DD452C2E89D8372328
+      Function="/Script/Engine.MaterialFunction'DLWE_VariationClouds'"
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_8" ExportPath="/Script/Engine.MaterialExpressionTextureSample'/Game/UltraDynamicSky/Materials/Material_Functions/DLWE_VariationClouds.DLWE_VariationClouds:MaterialExpressionTextureSample_8'"
+      Coordinates=(Expression="/Script/Engine.MaterialExpressionDivide'DLWE_VariationClouds:MaterialExpressionDivide_0'")
+      SamplerSource=SSM_Wrap_WorldGroupSettings
+      Texture="/Script/Engine.Texture2D'/Game/UltraDynamicSky/Textures/Weather/DLWE_Noise.DLWE_Noise'"
+      SamplerType=SAMPLERTYPE_LinearColor
+      MaterialExpressionEditorX=-584
+      MaterialExpressionEditorY=280
+      MaterialExpressionGuid=04E7DFCE4D8F63251302C4ADEA1D597B
+      Function="/Script/Engine.MaterialFunction'DLWE_VariationClouds'"
+   End Object
+   Begin Object Name="MaterialExpressionWorldPosition_6" ExportPath="/Script/Engine.MaterialExpressionWorldPosition'/Game/UltraDynamicSky/Materials/Material_Functions/DLWE_VariationClouds.DLWE_VariationClouds:MaterialExpressionWorldPosition_6'"
+      MaterialExpressionEditorX=-1356
+      MaterialExpressionEditorY=272
+      MaterialExpressionGuid=3AFA866E448D3B647E3D3D81769516C1
+      Function="/Script/Engine.MaterialFunction'DLWE_VariationClouds'"
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/Material_Functions/DLWE_VariationClouds.DLWE_VariationClouds:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'DLWE_VariationCloudsEditorOnlyData'"
+   StateId=8085D1D648B3D64FB3B52BAE745C68E5
+   CombinedInputTypes=4
+   CombinedOutputTypes=15
+   ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+End Object

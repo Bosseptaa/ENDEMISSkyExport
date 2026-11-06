@@ -1,3 +1,546 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:af4d72d6c87b43a37ccd562292abc5801fb46e85424800399cbee78ecdb7d673
-size 56547
+Begin Object Class=/Script/Engine.MaterialFunction Name="Shading_Gradients" ExportPath="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients'"
+   Begin Object Class=/Script/Engine.MaterialFunctionEditorOnlyData Name="Shading_GradientsEditorOnlyData" ExportPath="/Script/Engine.MaterialFunctionEditorOnlyData'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:Shading_GradientsEditorOnlyData'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAdd Name="MaterialExpressionAdd_10" ExportPath="/Script/Engine.MaterialExpressionAdd'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionAdd_10'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAppendVector Name="MaterialExpressionAppendVector_0" ExportPath="/Script/Engine.MaterialExpressionAppendVector'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionAppendVector_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_0" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionComment_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_1" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionComment_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_2" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionComment_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_0" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionComponentMask_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_2" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionComponentMask_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_4" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionComponentMask_4'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_5" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionComponentMask_5'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_0" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionConstant_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_1" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionConstant_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_10" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionConstant_10'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_5" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionConstant_5'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_7" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionConstant_7'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_8" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionConstant_8'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionFunctionInput_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionOutput Name="MaterialExpressionFunctionOutput_1" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionFunctionOutput_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionOutput Name="MaterialExpressionFunctionOutput_2" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionFunctionOutput_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionOutput Name="MaterialExpressionFunctionOutput_3" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionFunctionOutput_3'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionOutput Name="MaterialExpressionFunctionOutput_4" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionFunctionOutput_4'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_0" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionMaterialFunctionCall_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_1" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionMaterialFunctionCall_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_10" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionMaterialFunctionCall_10'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_11" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionMaterialFunctionCall_11'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_2" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionMaterialFunctionCall_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_3" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionMaterialFunctionCall_3'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_4" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionMaterialFunctionCall_4'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_5" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionMaterialFunctionCall_5'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_6" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionMaterialFunctionCall_6'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_7" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionMaterialFunctionCall_7'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_12" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionMultiply_12'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_16" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionMultiply_16'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_2" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionMultiply_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_39" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionMultiply_39'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_4" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionMultiply_4'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionPower Name="MaterialExpressionPower_2" ExportPath="/Script/Engine.MaterialExpressionPower'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionPower_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionPower Name="MaterialExpressionPower_5" ExportPath="/Script/Engine.MaterialExpressionPower'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionPower_5'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_0" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionScalarParameter_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_1" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionScalarParameter_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_13" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionScalarParameter_13'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_14" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionScalarParameter_14'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionStaticBool Name="MaterialExpressionStaticBool_0" ExportPath="/Script/Engine.MaterialExpressionStaticBool'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionStaticBool_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionStaticSwitch Name="MaterialExpressionStaticSwitch_0" ExportPath="/Script/Engine.MaterialExpressionStaticSwitch'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionStaticSwitch_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionStaticSwitch Name="MaterialExpressionStaticSwitch_1" ExportPath="/Script/Engine.MaterialExpressionStaticSwitch'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionStaticSwitch_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureCoordinate Name="MaterialExpressionTextureCoordinate_0" ExportPath="/Script/Engine.MaterialExpressionTextureCoordinate'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionTextureCoordinate_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureCoordinate Name="MaterialExpressionTextureCoordinate_1" ExportPath="/Script/Engine.MaterialExpressionTextureCoordinate'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionTextureCoordinate_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureCoordinate Name="MaterialExpressionTextureCoordinate_3" ExportPath="/Script/Engine.MaterialExpressionTextureCoordinate'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionTextureCoordinate_3'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureCoordinate Name="MaterialExpressionTextureCoordinate_4" ExportPath="/Script/Engine.MaterialExpressionTextureCoordinate'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionTextureCoordinate_4'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   Begin Object Name="Shading_GradientsEditorOnlyData" ExportPath="/Script/Engine.MaterialFunctionEditorOnlyData'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:Shading_GradientsEditorOnlyData'"
+      ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionAdd'Shading_Gradients:MaterialExpressionAdd_10'","/Script/Engine.MaterialExpressionMultiply'Shading_Gradients:MaterialExpressionMultiply_12'","/Script/Engine.MaterialExpressionMultiply'Shading_Gradients:MaterialExpressionMultiply_16'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Shading_Gradients:MaterialExpressionMaterialFunctionCall_0'","/Script/Engine.MaterialExpressionConstant'Shading_Gradients:MaterialExpressionConstant_5'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Shading_Gradients:MaterialExpressionMaterialFunctionCall_4'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Shading_Gradients:MaterialExpressionMaterialFunctionCall_5'","/Script/Engine.MaterialExpressionConstant'Shading_Gradients:MaterialExpressionConstant_7'","/Script/Engine.MaterialExpressionConstant'Shading_Gradients:MaterialExpressionConstant_8'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Shading_Gradients:MaterialExpressionMaterialFunctionCall_10'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Shading_Gradients:MaterialExpressionMaterialFunctionCall_11'","/Script/Engine.MaterialExpressionScalarParameter'Shading_Gradients:MaterialExpressionScalarParameter_13'","/Script/Engine.MaterialExpressionMultiply'Shading_Gradients:MaterialExpressionMultiply_39'","/Script/Engine.MaterialExpressionPower'Shading_Gradients:MaterialExpressionPower_5'","/Script/Engine.MaterialExpressionAppendVector'Shading_Gradients:MaterialExpressionAppendVector_0'","/Script/Engine.MaterialExpressionConstant'Shading_Gradients:MaterialExpressionConstant_10'","/Script/Engine.MaterialExpressionFunctionOutput'Shading_Gradients:MaterialExpressionFunctionOutput_1'","/Script/Engine.MaterialExpressionFunctionOutput'Shading_Gradients:MaterialExpressionFunctionOutput_2'","/Script/Engine.MaterialExpressionFunctionOutput'Shading_Gradients:MaterialExpressionFunctionOutput_3'","/Script/Engine.MaterialExpressionFunctionOutput'Shading_Gradients:MaterialExpressionFunctionOutput_4'","/Script/Engine.MaterialExpressionScalarParameter'Shading_Gradients:MaterialExpressionScalarParameter_14'","/Script/Engine.MaterialExpressionScalarParameter'Shading_Gradients:MaterialExpressionScalarParameter_0'","/Script/Engine.MaterialExpressionScalarParameter'Shading_Gradients:MaterialExpressionScalarParameter_1'","/Script/Engine.MaterialExpressionPower'Shading_Gradients:MaterialExpressionPower_2'","/Script/Engine.MaterialExpressionMultiply'Shading_Gradients:MaterialExpressionMultiply_2'","/Script/Engine.MaterialExpressionMultiply'Shading_Gradients:MaterialExpressionMultiply_4'","/Script/Engine.MaterialExpressionConstant'Shading_Gradients:MaterialExpressionConstant_0'","/Script/Engine.MaterialExpressionTextureCoordinate'Shading_Gradients:MaterialExpressionTextureCoordinate_0'","/Script/Engine.MaterialExpressionComponentMask'Shading_Gradients:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionTextureCoordinate'Shading_Gradients:MaterialExpressionTextureCoordinate_1'","/Script/Engine.MaterialExpressionComponentMask'Shading_Gradients:MaterialExpressionComponentMask_2'","/Script/Engine.MaterialExpressionTextureCoordinate'Shading_Gradients:MaterialExpressionTextureCoordinate_3'","/Script/Engine.MaterialExpressionComponentMask'Shading_Gradients:MaterialExpressionComponentMask_4'","/Script/Engine.MaterialExpressionTextureCoordinate'Shading_Gradients:MaterialExpressionTextureCoordinate_4'","/Script/Engine.MaterialExpressionComponentMask'Shading_Gradients:MaterialExpressionComponentMask_5'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Shading_Gradients:MaterialExpressionMaterialFunctionCall_1'","/Script/Engine.MaterialExpressionConstant'Shading_Gradients:MaterialExpressionConstant_1'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Shading_Gradients:MaterialExpressionMaterialFunctionCall_2'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Shading_Gradients:MaterialExpressionMaterialFunctionCall_3'","/Script/Engine.MaterialExpressionFunctionInput'Shading_Gradients:MaterialExpressionFunctionInput_0'","/Script/Engine.MaterialExpressionStaticBool'Shading_Gradients:MaterialExpressionStaticBool_0'","/Script/Engine.MaterialExpressionStaticSwitch'Shading_Gradients:MaterialExpressionStaticSwitch_0'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Shading_Gradients:MaterialExpressionMaterialFunctionCall_6'","/Script/Engine.MaterialExpressionStaticSwitch'Shading_Gradients:MaterialExpressionStaticSwitch_1'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Shading_Gradients:MaterialExpressionMaterialFunctionCall_7'"),EditorComments=("/Script/Engine.MaterialExpressionComment'Shading_Gradients:MaterialExpressionComment_0'","/Script/Engine.MaterialExpressionComment'Shading_Gradients:MaterialExpressionComment_1'","/Script/Engine.MaterialExpressionComment'Shading_Gradients:MaterialExpressionComment_2'"))
+   End Object
+   Begin Object Name="MaterialExpressionAdd_10" ExportPath="/Script/Engine.MaterialExpressionAdd'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionAdd_10'"
+      A=(Expression="/Script/Engine.MaterialExpressionMultiply'Shading_Gradients:MaterialExpressionMultiply_12'")
+      B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Shading_Gradients:MaterialExpressionMaterialFunctionCall_5'")
+      MaterialExpressionEditorX=-856
+      MaterialExpressionEditorY=832
+      MaterialExpressionGuid=F01E6E9B4FA6291C86823FA9F656ABD2
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+   End Object
+   Begin Object Name="MaterialExpressionAppendVector_0" ExportPath="/Script/Engine.MaterialExpressionAppendVector'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionAppendVector_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionMultiply'Shading_Gradients:MaterialExpressionMultiply_16'")
+      B=(Expression="/Script/Engine.MaterialExpressionMultiply'Shading_Gradients:MaterialExpressionMultiply_39'")
+      MaterialExpressionEditorX=-64
+      MaterialExpressionEditorY=1516
+      MaterialExpressionGuid=EC91535449DE83311213159F641E788B
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+   End Object
+   Begin Object Name="MaterialExpressionComment_0" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionComment_0'"
+      SizeX=2468
+      SizeY=740
+      Text="Cloud Shine Gradients"
+      CommentColor=(R=0.000000,G=1.000000,B=0.157130,A=1.000000)
+      FontSize=45
+      MaterialExpressionEditorX=-2140
+      MaterialExpressionEditorY=1268
+      MaterialExpressionGuid=F6DF51294A88242E5A54BFABB307CC9C
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+   End Object
+   Begin Object Name="MaterialExpressionComment_1" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionComment_1'"
+      SizeX=1616
+      SizeY=528
+      Text="Wide Lighting Gradients"
+      CommentColor=(R=1.000000,G=0.000000,B=0.141360,A=1.000000)
+      FontSize=45
+      MaterialExpressionEditorX=-1880
+      MaterialExpressionEditorY=648
+      MaterialExpressionGuid=E847E7B84D921473711DD2A2A79282FC
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+   End Object
+   Begin Object Name="MaterialExpressionComment_2" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionComment_2'"
+      SizeX=992
+      SizeY=456
+      Text="Simplified Color Glow Gradients"
+      CommentColor=(R=1.000000,G=0.987935,B=0.355091,A=1.000000)
+      FontSize=25
+      MaterialExpressionEditorX=-184
+      MaterialExpressionEditorY=704
+      MaterialExpressionGuid=9C6B2A584F3A371EF9AC30A98657FF9D
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_0" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionComponentMask_0'"
+      Input=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'Shading_Gradients:MaterialExpressionTextureCoordinate_0'")
+      R=True
+      MaterialExpressionEditorX=-1640
+      MaterialExpressionEditorY=864
+      MaterialExpressionGuid=54C527FB49A01DEAB8EF73BD95154F6D
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_2" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionComponentMask_2'"
+      Input=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'Shading_Gradients:MaterialExpressionTextureCoordinate_1'")
+      G=True
+      MaterialExpressionEditorX=-1392
+      MaterialExpressionEditorY=1036
+      MaterialExpressionGuid=54C527FB49A01DEAB8EF73BD95154F6D
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_4" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionComponentMask_4'"
+      Input=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'Shading_Gradients:MaterialExpressionTextureCoordinate_3'")
+      R=True
+      MaterialExpressionEditorX=-1768
+      MaterialExpressionEditorY=1512
+      MaterialExpressionGuid=54C527FB49A01DEAB8EF73BD95154F6D
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_5" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionComponentMask_5'"
+      Input=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'Shading_Gradients:MaterialExpressionTextureCoordinate_4'")
+      G=True
+      MaterialExpressionEditorX=-1680
+      MaterialExpressionEditorY=1724
+      MaterialExpressionGuid=54C527FB49A01DEAB8EF73BD95154F6D
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+   End Object
+   Begin Object Name="MaterialExpressionConstant_0" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionConstant_0'"
+      R=0.100000
+      MaterialExpressionEditorX=-716
+      MaterialExpressionEditorY=1828
+      MaterialExpressionGuid=EDCCA8A24FF0460A40DAE09B963136E2
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+   End Object
+   Begin Object Name="MaterialExpressionConstant_1" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionConstant_1'"
+      R=0.500000
+      MaterialExpressionEditorX=32
+      MaterialExpressionEditorY=781
+      MaterialExpressionGuid=7B24EEFA4E62F165AFA3709EB2A2851A
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+   End Object
+   Begin Object Name="MaterialExpressionConstant_10" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionConstant_10'"
+      R=0.250000
+      MaterialExpressionEditorX=-1583
+      MaterialExpressionEditorY=1661
+      MaterialExpressionGuid=1013219A46EB7658E1BCF5A1750F378C
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+   End Object
+   Begin Object Name="MaterialExpressionConstant_5" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionConstant_5'"
+      R=0.350000
+      MaterialExpressionEditorX=34
+      MaterialExpressionEditorY=924
+      MaterialExpressionGuid=7B24EEFA4E62F165AFA3709EB2A2851A
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+   End Object
+   Begin Object Name="MaterialExpressionConstant_7" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionConstant_7'"
+      R=1.500000
+      MaterialExpressionEditorX=-1656
+      MaterialExpressionEditorY=782
+      MaterialExpressionGuid=7B24EEFA4E62F165AFA3709EB2A2851A
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+   End Object
+   Begin Object Name="MaterialExpressionConstant_8" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionConstant_8'"
+      R=0.500000
+      MaterialExpressionEditorX=-1416
+      MaterialExpressionEditorY=954
+      MaterialExpressionGuid=7B24EEFA4E62F165AFA3709EB2A2851A
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionFunctionInput_0'"
+      Preview=(Expression="/Script/Engine.MaterialExpressionStaticBool'Shading_Gradients:MaterialExpressionStaticBool_0'")
+      InputName="Use Custom UVs"
+      Id=A287143A418994EAC18F44950B1BE059
+      InputType=FunctionInput_StaticBool
+      bUsePreviewValueAsDefault=True
+      MaterialExpressionEditorX=-1909
+      MaterialExpressionEditorY=1889
+      MaterialExpressionGuid=9573E67144828A811EC42A90EC001FA2
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionOutput_1" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionFunctionOutput_1'"
+      OutputName="Wide"
+      A=(Expression="/Script/Engine.MaterialExpressionAdd'Shading_Gradients:MaterialExpressionAdd_10'")
+      bLastPreviewed=True
+      Id=74E2690342B880804BE757909F254C8C
+      MaterialExpressionEditorX=-716
+      MaterialExpressionEditorY=804
+      MaterialExpressionGuid=4CAE5C5F431523B452039694AA7E67B9
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+   End Object
+   Begin Object Name="MaterialExpressionFunctionOutput_2" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionFunctionOutput_2'"
+      OutputName="Shine"
+      A=(Expression="/Script/Engine.MaterialExpressionAppendVector'Shading_Gradients:MaterialExpressionAppendVector_0'")
+      bLastPreviewed=True
+      Id=B865B1D2468F3782F27687AA9BDEFE71
+      MaterialExpressionEditorX=68
+      MaterialExpressionEditorY=1512
+      MaterialExpressionGuid=4CAE5C5F431523B452039694AA7E67B9
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+   End Object
+   Begin Object Name="MaterialExpressionFunctionOutput_3" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionFunctionOutput_3'"
+      OutputName="Sun Glow"
+      A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Shading_Gradients:MaterialExpressionMaterialFunctionCall_0'")
+      Id=487EDAA84B68ACAED3FCF8A1DC13B02E
+      MaterialExpressionEditorX=548
+      MaterialExpressionEditorY=919
+      MaterialExpressionGuid=8A649D094F41358A43D22AABE454C01B
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionOutput_4" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionFunctionOutput_4'"
+      OutputName="Moon Glow"
+      A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Shading_Gradients:MaterialExpressionMaterialFunctionCall_1'")
+      Id=34F1A61542D243381EF582B746117542
+      MaterialExpressionEditorX=548
+      MaterialExpressionEditorY=783
+      MaterialExpressionGuid=8A649D094F41358A43D22AABE454C01B
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_0" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionMaterialFunctionCall_0'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Scale_Radial_Gradient_Around_White.Scale_Radial_Gradient_Around_White'"
+      FunctionInputs(0)=(ExpressionInputId=351133A148C40D0DCA409B95C8AE0E22,Input=(Expression="/Script/Engine.MaterialExpressionConstant'Shading_Gradients:MaterialExpressionConstant_5'",InputName="New Scale"))
+      FunctionInputs(1)=(ExpressionInputId=BDA69BBC4246F6F0026EFEA4972FC8A4,Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Shading_Gradients:MaterialExpressionMaterialFunctionCall_3'",InputName="In"))
+      FunctionOutputs(0)=(ExpressionOutputId=F94A8BE2453A353D34A44A99EDF62D2D,Output=(OutputName="Result"))
+      MaterialExpressionEditorX=230
+      MaterialExpressionEditorY=925
+      MaterialExpressionGuid=3C13586844BB12EB72AB07B8B590A653
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+      Outputs(0)=(OutputName="Result")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_1" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionMaterialFunctionCall_1'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Scale_Radial_Gradient_Around_White.Scale_Radial_Gradient_Around_White'"
+      FunctionInputs(0)=(ExpressionInputId=351133A148C40D0DCA409B95C8AE0E22,Input=(Expression="/Script/Engine.MaterialExpressionConstant'Shading_Gradients:MaterialExpressionConstant_1'",InputName="New Scale"))
+      FunctionInputs(1)=(ExpressionInputId=BDA69BBC4246F6F0026EFEA4972FC8A4,Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Shading_Gradients:MaterialExpressionMaterialFunctionCall_2'",InputName="In"))
+      FunctionOutputs(0)=(ExpressionOutputId=F94A8BE2453A353D34A44A99EDF62D2D,Output=(OutputName="Result"))
+      MaterialExpressionEditorX=228
+      MaterialExpressionEditorY=788
+      MaterialExpressionGuid=3C13586844BB12EB72AB07B8B590A653
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+      Outputs(0)=(OutputName="Result")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_10" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionMaterialFunctionCall_10'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Scale_Radial_Gradient_Around_White.Scale_Radial_Gradient_Around_White'"
+      FunctionInputs(0)=(ExpressionInputId=351133A148C40D0DCA409B95C8AE0E22,Input=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Shading_Gradients:MaterialExpressionScalarParameter_13'",InputName="New Scale"))
+      FunctionInputs(1)=(ExpressionInputId=BDA69BBC4246F6F0026EFEA4972FC8A4,Input=(Expression="/Script/Engine.MaterialExpressionStaticSwitch'Shading_Gradients:MaterialExpressionStaticSwitch_1'",InputName="In"))
+      FunctionOutputs(0)=(ExpressionOutputId=F94A8BE2453A353D34A44A99EDF62D2D,Output=(OutputName="Result"))
+      MaterialExpressionEditorX=-1404
+      MaterialExpressionEditorY=1428
+      MaterialExpressionGuid=3C13586844BB12EB72AB07B8B590A653
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+      Outputs(0)=(OutputName="Result")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_11" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionMaterialFunctionCall_11'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Scale_Radial_Gradient_Around_White.Scale_Radial_Gradient_Around_White'"
+      FunctionInputs(0)=(ExpressionInputId=351133A148C40D0DCA409B95C8AE0E22,Input=(Expression="/Script/Engine.MaterialExpressionConstant'Shading_Gradients:MaterialExpressionConstant_10'",InputName="New Scale"))
+      FunctionInputs(1)=(ExpressionInputId=BDA69BBC4246F6F0026EFEA4972FC8A4,Input=(Expression="/Script/Engine.MaterialExpressionStaticSwitch'Shading_Gradients:MaterialExpressionStaticSwitch_0'",InputName="In"))
+      FunctionOutputs(0)=(ExpressionOutputId=F94A8BE2453A353D34A44A99EDF62D2D,Output=(OutputName="Result"))
+      MaterialExpressionEditorX=-1384
+      MaterialExpressionEditorY=1664
+      MaterialExpressionGuid=3C13586844BB12EB72AB07B8B590A653
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+      Outputs(0)=(OutputName="Result")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_2" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionMaterialFunctionCall_2'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Moon_Centered_Gradient.Moon_Centered_Gradient'"
+      FunctionOutputs(0)=(ExpressionOutputId=AD5C86EB4E0E243FD93EC281BE2B32BC,Output=(OutputName="Result"))
+      MaterialExpressionEditorX=-24
+      MaterialExpressionEditorY=856
+      MaterialExpressionGuid=F6A84E2B4BA94CABFFAAD4A8520B24E4
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+      Outputs(0)=(OutputName="Result")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_3" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionMaterialFunctionCall_3'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Sun_Centered_Gradient.Sun_Centered_Gradient'"
+      FunctionOutputs(0)=(ExpressionOutputId=B787B6444F2E76D716783AB5573FC1DB,Output=(OutputName="Result"))
+      MaterialExpressionEditorX=-12
+      MaterialExpressionEditorY=1012
+      MaterialExpressionGuid=73DC79BA45C29C18E8386E9DC13F5C02
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+      Outputs(0)=(OutputName="Result")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_4" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionMaterialFunctionCall_4'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Scale_Radial_Gradient_Around_White.Scale_Radial_Gradient_Around_White'"
+      FunctionInputs(0)=(ExpressionInputId=351133A148C40D0DCA409B95C8AE0E22,Input=(Expression="/Script/Engine.MaterialExpressionConstant'Shading_Gradients:MaterialExpressionConstant_7'",InputName="New Scale"))
+      FunctionInputs(1)=(ExpressionInputId=BDA69BBC4246F6F0026EFEA4972FC8A4,Input=(Expression="/Script/Engine.MaterialExpressionComponentMask'Shading_Gradients:MaterialExpressionComponentMask_0'",InputName="In"))
+      FunctionOutputs(0)=(ExpressionOutputId=F94A8BE2453A353D34A44A99EDF62D2D,Output=(OutputName="Result"))
+      MaterialExpressionEditorX=-1500
+      MaterialExpressionEditorY=784
+      MaterialExpressionGuid=3C13586844BB12EB72AB07B8B590A653
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+      Outputs(0)=(OutputName="Result")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_5" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionMaterialFunctionCall_5'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Scale_Radial_Gradient_Around_White.Scale_Radial_Gradient_Around_White'"
+      FunctionInputs(0)=(ExpressionInputId=351133A148C40D0DCA409B95C8AE0E22,Input=(Expression="/Script/Engine.MaterialExpressionConstant'Shading_Gradients:MaterialExpressionConstant_8'",InputName="New Scale"))
+      FunctionInputs(1)=(ExpressionInputId=BDA69BBC4246F6F0026EFEA4972FC8A4,Input=(Expression="/Script/Engine.MaterialExpressionComponentMask'Shading_Gradients:MaterialExpressionComponentMask_2'",InputName="In"))
+      FunctionOutputs(0)=(ExpressionOutputId=F94A8BE2453A353D34A44A99EDF62D2D,Output=(OutputName="Result"))
+      MaterialExpressionEditorX=-1228
+      MaterialExpressionEditorY=956
+      MaterialExpressionGuid=3C13586844BB12EB72AB07B8B590A653
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+      Outputs(0)=(OutputName="Result")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_6" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionMaterialFunctionCall_6'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Moon_Centered_Gradient.Moon_Centered_Gradient'"
+      FunctionOutputs(0)=(ExpressionOutputId=AD5C86EB4E0E243FD93EC281BE2B32BC,Output=(OutputName="Result"))
+      MaterialExpressionEditorX=-1852
+      MaterialExpressionEditorY=1824
+      MaterialExpressionGuid=7A1CE790487382CE5BE58D8B57261D3D
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+      Outputs(0)=(OutputName="Result")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_7" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionMaterialFunctionCall_7'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Sun_Centered_Gradient.Sun_Centered_Gradient'"
+      FunctionOutputs(0)=(ExpressionOutputId=B787B6444F2E76D716783AB5573FC1DB,Output=(OutputName="Result"))
+      MaterialExpressionEditorX=-1840
+      MaterialExpressionEditorY=1600
+      MaterialExpressionGuid=E4AE2CCB4C3C3774868149870967964F
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+      Outputs(0)=(OutputName="Result")
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_12" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionMultiply_12'"
+      A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Shading_Gradients:MaterialExpressionMaterialFunctionCall_4'")
+      B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Shading_Gradients:MaterialExpressionScalarParameter_0'")
+      MaterialExpressionEditorX=-1000
+      MaterialExpressionEditorY=782
+      MaterialExpressionGuid=151711E64F20E607155A44AEA0D411D9
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_16" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionMultiply_16'"
+      A=(Expression="/Script/Engine.MaterialExpressionMultiply'Shading_Gradients:MaterialExpressionMultiply_2'")
+      B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Shading_Gradients:MaterialExpressionScalarParameter_1'")
+      MaterialExpressionEditorX=-276
+      MaterialExpressionEditorY=1430
+      MaterialExpressionGuid=D5735A314EB9519BF47961957C5AD180
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_2" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionMultiply_2'"
+      A=(Expression="/Script/Engine.MaterialExpressionPower'Shading_Gradients:MaterialExpressionPower_2'")
+      ConstB=0.100000
+      MaterialExpressionEditorX=-657
+      MaterialExpressionEditorY=1429
+      MaterialExpressionGuid=BA1BF3944E3C151F79F8629C584ABEC7
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_39" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionMultiply_39'"
+      A=(Expression="/Script/Engine.MaterialExpressionPower'Shading_Gradients:MaterialExpressionPower_5'")
+      B=(Expression="/Script/Engine.MaterialExpressionMultiply'Shading_Gradients:MaterialExpressionMultiply_4'")
+      ConstB=0.300000
+      MaterialExpressionEditorX=-400
+      MaterialExpressionEditorY=1664
+      MaterialExpressionGuid=213DA86144BF17C36C4317B881CD96BD
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_4" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionMultiply_4'"
+      A=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Shading_Gradients:MaterialExpressionScalarParameter_14'")
+      B=(Expression="/Script/Engine.MaterialExpressionConstant'Shading_Gradients:MaterialExpressionConstant_0'")
+      ConstB=0.150000
+      MaterialExpressionEditorX=-532
+      MaterialExpressionEditorY=1744
+      MaterialExpressionGuid=6E5EE21D4C6F2E2F8A1C6BB53A6E3F77
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+   End Object
+   Begin Object Name="MaterialExpressionPower_2" ExportPath="/Script/Engine.MaterialExpressionPower'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionPower_2'"
+      Base=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Shading_Gradients:MaterialExpressionMaterialFunctionCall_10'")
+      ConstExponent=15.000000
+      MaterialExpressionEditorX=-865
+      MaterialExpressionEditorY=1429
+      MaterialExpressionGuid=C3058EE443B2BC3FA02DE584FC790611
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+   End Object
+   Begin Object Name="MaterialExpressionPower_5" ExportPath="/Script/Engine.MaterialExpressionPower'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionPower_5'"
+      Base=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Shading_Gradients:MaterialExpressionMaterialFunctionCall_11'")
+      ConstExponent=8.000000
+      MaterialExpressionEditorX=-996
+      MaterialExpressionEditorY=1662
+      MaterialExpressionGuid=03B273FA42B9C403ACCF299332F1605D
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_0" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionScalarParameter_0'"
+      DefaultValue=1.000000
+      ParameterName="Sun Brightness"
+      ExpressionGUID=365E1F4C40189FA9F661069B759F90D4
+      MaterialExpressionEditorX=-1208
+      MaterialExpressionEditorY=848
+      MaterialExpressionGuid=AAE5ACA04E4930A70EA653971F7CBE1E
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_1" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionScalarParameter_1'"
+      DefaultValue=1.000000
+      ParameterName="Sun Brightness"
+      ExpressionGUID=1D21B3194291DF7D90B7D0A0CC7D65C7
+      MaterialExpressionEditorX=-465
+      MaterialExpressionEditorY=1485
+      MaterialExpressionGuid=AAE5ACA04E4930A70EA653971F7CBE1E
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_13" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionScalarParameter_13'"
+      DefaultValue=0.100000
+      ParameterName="Sun Highlight Radius"
+      ExpressionGUID=0B899992421EB608699833A762E68522
+      MaterialExpressionEditorX=-1628
+      MaterialExpressionEditorY=1412
+      MaterialExpressionGuid=191740F84235AD98A51F8582AA521C3C
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_14" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionScalarParameter_14'"
+      DefaultValue=0.600000
+      ParameterName="Moon_Lit_Percent"
+      ExpressionGUID=9861C0134EBEDBF81338BEBAA6CF68DD
+      MaterialExpressionEditorX=-756
+      MaterialExpressionEditorY=1728
+      MaterialExpressionGuid=2FB231B44789F343892A3A871D96C32D
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+   End Object
+   Begin Object Name="MaterialExpressionStaticBool_0" ExportPath="/Script/Engine.MaterialExpressionStaticBool'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionStaticBool_0'"
+      Value=True
+      MaterialExpressionEditorX=-2061
+      MaterialExpressionEditorY=1873
+      MaterialExpressionGuid=1705110E4CF008491DB9B0A008E7F795
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+   End Object
+   Begin Object Name="MaterialExpressionStaticSwitch_0" ExportPath="/Script/Engine.MaterialExpressionStaticSwitch'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionStaticSwitch_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Shading_Gradients:MaterialExpressionComponentMask_5'")
+      B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Shading_Gradients:MaterialExpressionMaterialFunctionCall_6'")
+      Value=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Shading_Gradients:MaterialExpressionFunctionInput_0'")
+      MaterialExpressionEditorX=-1516
+      MaterialExpressionEditorY=1724
+      MaterialExpressionGuid=E7013A0B4249E3A652C993A19FA39FC9
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+   End Object
+   Begin Object Name="MaterialExpressionStaticSwitch_1" ExportPath="/Script/Engine.MaterialExpressionStaticSwitch'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionStaticSwitch_1'"
+      A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Shading_Gradients:MaterialExpressionComponentMask_4'")
+      B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Shading_Gradients:MaterialExpressionMaterialFunctionCall_7'")
+      Value=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Shading_Gradients:MaterialExpressionFunctionInput_0'")
+      MaterialExpressionEditorX=-1600
+      MaterialExpressionEditorY=1512
+      MaterialExpressionGuid=E7013A0B4249E3A652C993A19FA39FC9
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+   End Object
+   Begin Object Name="MaterialExpressionTextureCoordinate_0" ExportPath="/Script/Engine.MaterialExpressionTextureCoordinate'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionTextureCoordinate_0'"
+      CoordinateIndex=2
+      MaterialExpressionEditorX=-1832
+      MaterialExpressionEditorY=864
+      MaterialExpressionGuid=5514D4C34E648EF5A1BBC0A0F1EA40AC
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+   End Object
+   Begin Object Name="MaterialExpressionTextureCoordinate_1" ExportPath="/Script/Engine.MaterialExpressionTextureCoordinate'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionTextureCoordinate_1'"
+      CoordinateIndex=2
+      MaterialExpressionEditorX=-1596
+      MaterialExpressionEditorY=1036
+      MaterialExpressionGuid=5514D4C34E648EF5A1BBC0A0F1EA40AC
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+   End Object
+   Begin Object Name="MaterialExpressionTextureCoordinate_3" ExportPath="/Script/Engine.MaterialExpressionTextureCoordinate'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionTextureCoordinate_3'"
+      CoordinateIndex=2
+      MaterialExpressionEditorX=-2008
+      MaterialExpressionEditorY=1512
+      MaterialExpressionGuid=5514D4C34E648EF5A1BBC0A0F1EA40AC
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+   End Object
+   Begin Object Name="MaterialExpressionTextureCoordinate_4" ExportPath="/Script/Engine.MaterialExpressionTextureCoordinate'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:MaterialExpressionTextureCoordinate_4'"
+      CoordinateIndex=2
+      MaterialExpressionEditorX=-1900
+      MaterialExpressionEditorY=1724
+      MaterialExpressionGuid=5514D4C34E648EF5A1BBC0A0F1EA40AC
+      Function="/Script/Engine.MaterialFunction'Shading_Gradients'"
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/Material_Functions/Shading_Gradients.Shading_Gradients:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   DependentFunctionExpressionCandidates(0)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_0'"
+   DependentFunctionExpressionCandidates(1)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_4'"
+   DependentFunctionExpressionCandidates(2)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_5'"
+   DependentFunctionExpressionCandidates(3)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_10'"
+   DependentFunctionExpressionCandidates(4)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_11'"
+   DependentFunctionExpressionCandidates(5)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_1'"
+   DependentFunctionExpressionCandidates(6)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_2'"
+   DependentFunctionExpressionCandidates(7)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_3'"
+   DependentFunctionExpressionCandidates(8)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_6'"
+   DependentFunctionExpressionCandidates(9)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_7'"
+   EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'Shading_GradientsEditorOnlyData'"
+   StateId=B34B955D464D70EF9E9566837B3A4439
+   CombinedInputTypes=512
+   CombinedOutputTypes=15
+   ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+End Object

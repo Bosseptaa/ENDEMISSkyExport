@@ -1,3 +1,137 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:684a7c33a3ca90c98ce9a546447a683556d81b65ce1c635bb60a331aae0e9fba
-size 14541
+Begin Object Class=/Script/Engine.Material Name="Static_Clouds_Cubemap_Transform" ExportPath="/Script/Engine.Material'/Game/UltraDynamicSky/Materials/Tools/Static_Clouds_Cubemap_Transform.Static_Clouds_Cubemap_Transform'"
+   Begin Object Class=/Script/Engine.MaterialEditorOnlyData Name="Static_Clouds_Cubemap_TransformEditorOnlyData" ExportPath="/Script/Engine.MaterialEditorOnlyData'/Game/UltraDynamicSky/Materials/Tools/Static_Clouds_Cubemap_Transform.Static_Clouds_Cubemap_Transform:Static_Clouds_Cubemap_TransformEditorOnlyData'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAppendVector Name="MaterialExpressionAppendVector_0" ExportPath="/Script/Engine.MaterialExpressionAppendVector'/Game/UltraDynamicSky/Materials/Tools/Static_Clouds_Cubemap_Transform.Static_Clouds_Cubemap_Transform:MaterialExpressionAppendVector_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant2Vector Name="MaterialExpressionConstant2Vector_0" ExportPath="/Script/Engine.MaterialExpressionConstant2Vector'/Game/UltraDynamicSky/Materials/Tools/Static_Clouds_Cubemap_Transform.Static_Clouds_Cubemap_Transform:MaterialExpressionConstant2Vector_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant2Vector Name="MaterialExpressionConstant2Vector_1" ExportPath="/Script/Engine.MaterialExpressionConstant2Vector'/Game/UltraDynamicSky/Materials/Tools/Static_Clouds_Cubemap_Transform.Static_Clouds_Cubemap_Transform:MaterialExpressionConstant2Vector_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDistance Name="MaterialExpressionDistance_0" ExportPath="/Script/Engine.MaterialExpressionDistance'/Game/UltraDynamicSky/Materials/Tools/Static_Clouds_Cubemap_Transform.Static_Clouds_Cubemap_Transform:MaterialExpressionDistance_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_0" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Tools/Static_Clouds_Cubemap_Transform.Static_Clouds_Cubemap_Transform:MaterialExpressionMultiply_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_2" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Tools/Static_Clouds_Cubemap_Transform.Static_Clouds_Cubemap_Transform:MaterialExpressionMultiply_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionOneMinus Name="MaterialExpressionOneMinus_0" ExportPath="/Script/Engine.MaterialExpressionOneMinus'/Game/UltraDynamicSky/Materials/Tools/Static_Clouds_Cubemap_Transform.Static_Clouds_Cubemap_Transform:MaterialExpressionOneMinus_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSaturate Name="MaterialExpressionSaturate_0" ExportPath="/Script/Engine.MaterialExpressionSaturate'/Game/UltraDynamicSky/Materials/Tools/Static_Clouds_Cubemap_Transform.Static_Clouds_Cubemap_Transform:MaterialExpressionSaturate_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSubtract Name="MaterialExpressionSubtract_0" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/Tools/Static_Clouds_Cubemap_Transform.Static_Clouds_Cubemap_Transform:MaterialExpressionSubtract_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureCoordinate Name="MaterialExpressionTextureCoordinate_0" ExportPath="/Script/Engine.MaterialExpressionTextureCoordinate'/Game/UltraDynamicSky/Materials/Tools/Static_Clouds_Cubemap_Transform.Static_Clouds_Cubemap_Transform:MaterialExpressionTextureCoordinate_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSampleParameterCube Name="MaterialExpressionTextureSampleParameterCube_0" ExportPath="/Script/Engine.MaterialExpressionTextureSampleParameterCube'/Game/UltraDynamicSky/Materials/Tools/Static_Clouds_Cubemap_Transform.Static_Clouds_Cubemap_Transform:MaterialExpressionTextureSampleParameterCube_0'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/Tools/Static_Clouds_Cubemap_Transform.Static_Clouds_Cubemap_Transform:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   Begin Object Name="Static_Clouds_Cubemap_TransformEditorOnlyData" ExportPath="/Script/Engine.MaterialEditorOnlyData'/Game/UltraDynamicSky/Materials/Tools/Static_Clouds_Cubemap_Transform.Static_Clouds_Cubemap_Transform:Static_Clouds_Cubemap_TransformEditorOnlyData'"
+      EmissiveColor=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameterCube'Static_Clouds_Cubemap_Transform:MaterialExpressionTextureSampleParameterCube_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionTextureSampleParameterCube'Static_Clouds_Cubemap_Transform:MaterialExpressionTextureSampleParameterCube_0'","/Script/Engine.MaterialExpressionTextureCoordinate'Static_Clouds_Cubemap_Transform:MaterialExpressionTextureCoordinate_0'","/Script/Engine.MaterialExpressionDistance'Static_Clouds_Cubemap_Transform:MaterialExpressionDistance_0'","/Script/Engine.MaterialExpressionConstant2Vector'Static_Clouds_Cubemap_Transform:MaterialExpressionConstant2Vector_0'","/Script/Engine.MaterialExpressionMultiply'Static_Clouds_Cubemap_Transform:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionOneMinus'Static_Clouds_Cubemap_Transform:MaterialExpressionOneMinus_0'","/Script/Engine.MaterialExpressionAppendVector'Static_Clouds_Cubemap_Transform:MaterialExpressionAppendVector_0'","/Script/Engine.MaterialExpressionSubtract'Static_Clouds_Cubemap_Transform:MaterialExpressionSubtract_0'","/Script/Engine.MaterialExpressionSaturate'Static_Clouds_Cubemap_Transform:MaterialExpressionSaturate_0'","/Script/Engine.MaterialExpressionMultiply'Static_Clouds_Cubemap_Transform:MaterialExpressionMultiply_2'","/Script/Engine.MaterialExpressionConstant2Vector'Static_Clouds_Cubemap_Transform:MaterialExpressionConstant2Vector_1'"))
+      ParameterGroupData(0)=(GroupName="None")
+   End Object
+   Begin Object Name="MaterialExpressionAppendVector_0" ExportPath="/Script/Engine.MaterialExpressionAppendVector'/Game/UltraDynamicSky/Materials/Tools/Static_Clouds_Cubemap_Transform.Static_Clouds_Cubemap_Transform:MaterialExpressionAppendVector_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionMultiply'Static_Clouds_Cubemap_Transform:MaterialExpressionMultiply_2'")
+      B=(Expression="/Script/Engine.MaterialExpressionSaturate'Static_Clouds_Cubemap_Transform:MaterialExpressionSaturate_0'")
+      MaterialExpressionEditorX=-1284
+      MaterialExpressionEditorY=148
+      MaterialExpressionGuid=859216F3475FCE3EBB009AB1BF640F4C
+      Material="/Script/Engine.Material'Static_Clouds_Cubemap_Transform'"
+   End Object
+   Begin Object Name="MaterialExpressionConstant2Vector_0" ExportPath="/Script/Engine.MaterialExpressionConstant2Vector'/Game/UltraDynamicSky/Materials/Tools/Static_Clouds_Cubemap_Transform.Static_Clouds_Cubemap_Transform:MaterialExpressionConstant2Vector_0'"
+      R=0.500000
+      G=0.500000
+      MaterialExpressionEditorX=-1968
+      MaterialExpressionEditorY=440
+      MaterialExpressionGuid=4842548A41FEE9B06E9343B5738AA2D2
+      Material="/Script/Engine.Material'Static_Clouds_Cubemap_Transform'"
+   End Object
+   Begin Object Name="MaterialExpressionConstant2Vector_1" ExportPath="/Script/Engine.MaterialExpressionConstant2Vector'/Game/UltraDynamicSky/Materials/Tools/Static_Clouds_Cubemap_Transform.Static_Clouds_Cubemap_Transform:MaterialExpressionConstant2Vector_1'"
+      R=-4.000000
+      G=4.000000
+      MaterialExpressionEditorX=-1764
+      MaterialExpressionEditorY=240
+      MaterialExpressionGuid=AC18520044F554D75A516988BC81A5CD
+      Material="/Script/Engine.Material'Static_Clouds_Cubemap_Transform'"
+   End Object
+   Begin Object Name="MaterialExpressionDistance_0" ExportPath="/Script/Engine.MaterialExpressionDistance'/Game/UltraDynamicSky/Materials/Tools/Static_Clouds_Cubemap_Transform.Static_Clouds_Cubemap_Transform:MaterialExpressionDistance_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'Static_Clouds_Cubemap_Transform:MaterialExpressionTextureCoordinate_0'")
+      B=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'Static_Clouds_Cubemap_Transform:MaterialExpressionConstant2Vector_0'")
+      MaterialExpressionEditorX=-1836
+      MaterialExpressionEditorY=380
+      MaterialExpressionGuid=2B9AC0804D8363A8B5C5A5A3BEC3FF1C
+      Material="/Script/Engine.Material'Static_Clouds_Cubemap_Transform'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_0" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Tools/Static_Clouds_Cubemap_Transform.Static_Clouds_Cubemap_Transform:MaterialExpressionMultiply_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionDistance'Static_Clouds_Cubemap_Transform:MaterialExpressionDistance_0'")
+      ConstB=2.000000
+      MaterialExpressionEditorX=-1688
+      MaterialExpressionEditorY=380
+      MaterialExpressionGuid=AF1175FE49C8A11F586DAA8EC2DE190F
+      Material="/Script/Engine.Material'Static_Clouds_Cubemap_Transform'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_2" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Tools/Static_Clouds_Cubemap_Transform.Static_Clouds_Cubemap_Transform:MaterialExpressionMultiply_2'"
+      A=(Expression="/Script/Engine.MaterialExpressionSubtract'Static_Clouds_Cubemap_Transform:MaterialExpressionSubtract_0'")
+      B=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'Static_Clouds_Cubemap_Transform:MaterialExpressionConstant2Vector_1'")
+      ConstB=-6.000000
+      MaterialExpressionEditorX=-1620
+      MaterialExpressionEditorY=148
+      MaterialExpressionGuid=156FF90D4B628A6195E5AC89EBD62598
+      Material="/Script/Engine.Material'Static_Clouds_Cubemap_Transform'"
+   End Object
+   Begin Object Name="MaterialExpressionOneMinus_0" ExportPath="/Script/Engine.MaterialExpressionOneMinus'/Game/UltraDynamicSky/Materials/Tools/Static_Clouds_Cubemap_Transform.Static_Clouds_Cubemap_Transform:MaterialExpressionOneMinus_0'"
+      Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Static_Clouds_Cubemap_Transform:MaterialExpressionMultiply_0'")
+      MaterialExpressionEditorX=-1552
+      MaterialExpressionEditorY=380
+      MaterialExpressionGuid=A6449E7C477AE42DF7BBA98A3C7253CB
+      Material="/Script/Engine.Material'Static_Clouds_Cubemap_Transform'"
+   End Object
+   Begin Object Name="MaterialExpressionSaturate_0" ExportPath="/Script/Engine.MaterialExpressionSaturate'/Game/UltraDynamicSky/Materials/Tools/Static_Clouds_Cubemap_Transform.Static_Clouds_Cubemap_Transform:MaterialExpressionSaturate_0'"
+      Input=(Expression="/Script/Engine.MaterialExpressionOneMinus'Static_Clouds_Cubemap_Transform:MaterialExpressionOneMinus_0'")
+      MaterialExpressionEditorX=-1468
+      MaterialExpressionEditorY=380
+      MaterialExpressionGuid=AA8CD0DD4613591B0EE603BF31AD4519
+      Material="/Script/Engine.Material'Static_Clouds_Cubemap_Transform'"
+   End Object
+   Begin Object Name="MaterialExpressionSubtract_0" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/Tools/Static_Clouds_Cubemap_Transform.Static_Clouds_Cubemap_Transform:MaterialExpressionSubtract_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'Static_Clouds_Cubemap_Transform:MaterialExpressionTextureCoordinate_0'")
+      ConstB=0.500000
+      MaterialExpressionEditorX=-1920
+      MaterialExpressionEditorY=148
+      MaterialExpressionGuid=7A36D7604A098140B42ECBB2BEDC4AC0
+      Material="/Script/Engine.Material'Static_Clouds_Cubemap_Transform'"
+   End Object
+   Begin Object Name="MaterialExpressionTextureCoordinate_0" ExportPath="/Script/Engine.MaterialExpressionTextureCoordinate'/Game/UltraDynamicSky/Materials/Tools/Static_Clouds_Cubemap_Transform.Static_Clouds_Cubemap_Transform:MaterialExpressionTextureCoordinate_0'"
+      MaterialExpressionEditorX=-2232
+      MaterialExpressionEditorY=148
+      MaterialExpressionGuid=B7F8108E4E3AF36E81F4C896620871D9
+      Material="/Script/Engine.Material'Static_Clouds_Cubemap_Transform'"
+   End Object
+   Begin Object Name="MaterialExpressionTextureSampleParameterCube_0" ExportPath="/Script/Engine.MaterialExpressionTextureSampleParameterCube'/Game/UltraDynamicSky/Materials/Tools/Static_Clouds_Cubemap_Transform.Static_Clouds_Cubemap_Transform:MaterialExpressionTextureSampleParameterCube_0'"
+      ParameterName="Cubemap"
+      ExpressionGUID=913E43EE452020310B9D06B6C3FEDCF3
+      Coordinates=(Expression="/Script/Engine.MaterialExpressionAppendVector'Static_Clouds_Cubemap_Transform:MaterialExpressionAppendVector_0'")
+      Texture="/Script/Engine.TextureRenderTargetCube'/Game/UltraDynamicSky/Textures/Tools/Static_Clouds_Authoring_Target.Static_Clouds_Authoring_Target'"
+      MaterialExpressionEditorX=-1104
+      MaterialExpressionEditorY=136
+      MaterialExpressionGuid=19A33D174B950A53D6138B920B238C05
+      Material="/Script/Engine.Material'Static_Clouds_Cubemap_Transform'"
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/Tools/Static_Clouds_Cubemap_Transform.Static_Clouds_Cubemap_Transform:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   MaterialDecalResponse=MDR_None
+   ShadingModel=MSM_Unlit
+   ShadingModels=(ShadingModelField=1)
+   bTangentSpaceNormal=False
+   EditorX=-740
+   bCanMaskedBeAssumedOpaque=True
+   bCastRayTracedShadows=False
+   PixelDepthOffsetMode=PDOM_Legacy
+   StateId=69A0F723AF7E87876C53519347F5FB9E
+   ReferencedTextureGuids(0)=57549A7045832E014B706694F3AF4999
+   EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'Static_Clouds_Cubemap_TransformEditorOnlyData'"
+   ReferencedDefaultTextures(0)="/Script/Engine.TextureRenderTargetCube'/Game/UltraDynamicSky/Textures/Tools/Static_Clouds_Authoring_Target.Static_Clouds_Authoring_Target'"
+   ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+   ParameterOverviewExpansion=(("-12Global", True))
+   LightingGuid=085919C44CE770C8FDEB8B9FCED9E5B7
+End Object

@@ -1,3 +1,48 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3132ac48b3dbdb2085c2c9460bae6c23a821991a5100cef606e9e22bd5f3e0be
-size 7377
+Begin Object Class=/Script/Engine.Blueprint Name="UDS_SharedConfig" ExportPath="/Script/Engine.Blueprint'/Game/UltraDynamicSky/Blueprints/System/UDS_SharedConfig.UDS_SharedConfig'"
+   Begin Object Class=/Script/Engine.EdGraph Name="ExecuteUbergraph_UDS_SharedConfig" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_SharedConfig.UDS_SharedConfig:ExecuteUbergraph_UDS_SharedConfig'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfo Name="SceneThumbnailInfo_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfo'/Game/UltraDynamicSky/Blueprints/System/UDS_SharedConfig.UDS_SharedConfig:SceneThumbnailInfo_0'"
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="EventGraph" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_SharedConfig.UDS_SharedConfig:EventGraph'"
+   End Object
+   Begin Object Name="ExecuteUbergraph_UDS_SharedConfig" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_SharedConfig.UDS_SharedConfig:ExecuteUbergraph_UDS_SharedConfig'"
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      GraphGuid=F4C20B4D4C315D6EC58F4A85C9780E50
+   End Object
+   Begin Object Name="SceneThumbnailInfo_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfo'/Game/UltraDynamicSky/Blueprints/System/UDS_SharedConfig.UDS_SharedConfig:SceneThumbnailInfo_0'"
+   End Object
+   Begin Object Name="EventGraph" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_SharedConfig.UDS_SharedConfig:EventGraph'"
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      bAllowDeletion=False
+      GraphGuid=A4EC97B94FD8AC9BF8FFABBC1692E81C
+   End Object
+   ParentClass="/Script/CoreUObject.Class'/Script/Engine.PrimaryDataAsset'"
+   BlueprintCategory="UltraDynamicSky|Configuration"
+   BlueprintSystemVersion=2
+   UbergraphPages(0)="/Script/Engine.EdGraph'EventGraph'"
+   NewVariables(0)=(VarName="Name",VarGuid=A84C27B845C2128FC0232095FC1ACC86,VarType=(PinCategory="string"),FriendlyName="Name",Category=NSLOCTEXT("", "866EAD1C4DC63DDA891735B6A306B578", "Config Metadata"),PropertyFlags=65541,MetaDataArray=((DataKey="MultiLine",DataValue="true")))
+   NewVariables(1)=(VarName="Thumbnail",VarGuid=C0F03A924DDFE9D3FA3261B400D16094,VarType=(PinCategory="object",PinSubCategoryObject="/Script/CoreUObject.Class'/Script/Engine.Texture2D'"),FriendlyName="Thumbnail",Category=NSLOCTEXT("", "62CCF4C24678ACF1CBF4E487CB45E4B8", "Config Metadata"),PropertyFlags=65541,MetaDataArray=((DataKey="MultiLine",DataValue="true")))
+   NewVariables(2)=(VarName="UDS Version",VarGuid=A30D434A4123C534AD6ADA875BDCCFA2,VarType=(PinCategory="string"),FriendlyName="UDS Version",Category=NSLOCTEXT("", "CA0AF7E04B67718639FCA589D3081CCB", "Config Metadata"),PropertyFlags=65541)
+   NewVariables(3)=(VarName="Runtime Float Properties",VarGuid=DF0BA36B47222260A0C386ABADED1625,VarType=(PinCategory="real",PinSubCategory="double",ContainerType=Array),FriendlyName="Runtime Float Properties",Category=NSLOCTEXT("", "30C73EDE476E5A8B0EFC5FBF62DCA04C", "Runtime Properties"),PropertyFlags=65541)
+   NewVariables(4)=(VarName="Runtime Int Properties",VarGuid=745931864E0816D7F7B18596B7E85EF4,VarType=(PinCategory="int",ContainerType=Array),FriendlyName="Runtime Int Properties",Category=NSLOCTEXT("", "6F217C3247F199109936C0A0C53ACDEC", "Runtime Properties"),PropertyFlags=65541)
+   NewVariables(5)=(VarName="Runtime Color Properties",VarGuid=8D050E2147527DD11CCEDCABF0FB89D7,VarType=(PinCategory="struct",PinSubCategoryObject="/Script/CoreUObject.ScriptStruct'/Script/CoreUObject.LinearColor'",ContainerType=Array),FriendlyName="Runtime Color Properties",Category=NSLOCTEXT("", "CF52D7AE4EE97362F98385ADD3D7EF17", "Runtime Properties"),PropertyFlags=65541)
+   NewVariables(6)=(VarName="Runtime Hard Object Properties",VarGuid=12CA388F471D5988B0D750ADF0E0FF94,VarType=(PinCategory="object",PinSubCategoryObject="/Script/CoreUObject.Class'/Script/CoreUObject.Object'",ContainerType=Array),FriendlyName="Runtime Hard Object Properties",Category=NSLOCTEXT("", "DE2F4B044416CEE302E4699471108BAB", "Runtime Properties"),PropertyFlags=65541)
+   NewVariables(7)=(VarName="Runtime Soft Object Properties",VarGuid=359875D3463FF0EFF54C4990F62766EA,VarType=(PinCategory="softobject",PinSubCategoryObject="/Script/CoreUObject.Class'/Script/CoreUObject.Object'",ContainerType=Array),FriendlyName="Runtime Soft Object Properties",Category=NSLOCTEXT("", "544B44294078371D16E07F8EB5DD03E6", "Runtime Properties"),PropertyFlags=65541)
+   NewVariables(8)=(VarName="Runtime Bool Properties",VarGuid=0B2C8CA64BBB03579FA5BA9AD282C83B,VarType=(PinCategory="bool",ContainerType=Array),FriendlyName="Runtime Bool Properties",Category=NSLOCTEXT("", "FBBF0E874C5244CB584D488F4A5E6155", "Runtime Properties"),PropertyFlags=65541)
+   NewVariables(9)=(VarName="Runtime Byte Properties",VarGuid=E5E40F014E0FEB3193998BBE0E9653E0,VarType=(PinCategory="byte",ContainerType=Array),FriendlyName="Runtime Byte Properties",Category=NSLOCTEXT("", "BB3AB8E24BE9CC74B2053BA01A237CAF", "Runtime Properties"),PropertyFlags=65541)
+   NewVariables(10)=(VarName="Runtime Vector2D Properties",VarGuid=D1A551554C839D1C1EEA9BB238198867,VarType=(PinCategory="struct",PinSubCategoryObject="/Script/CoreUObject.ScriptStruct'/Script/CoreUObject.Vector2D'",ContainerType=Array),FriendlyName="Runtime Vector 2D Properties",Category=NSLOCTEXT("", "EC42CA2A43E7E73EFE7057A087F99A5E", "Runtime Properties"),PropertyFlags=65541)
+   NewVariables(11)=(VarName="Runtime Vector Properties",VarGuid=752E8F1D4463B9F0D5E3B9A86E6B17D8,VarType=(PinCategory="struct",PinSubCategoryObject="/Script/CoreUObject.ScriptStruct'/Script/CoreUObject.Vector'",ContainerType=Array),FriendlyName="Runtime Vector Properties",Category=NSLOCTEXT("", "12FC64344F5672C17515DC8927671880", "Runtime Properties"),PropertyFlags=65541)
+   NewVariables(12)=(VarName="Runtime Float Range Properties",VarGuid=3E0BF0D140BC357066BB0486946AAE89,VarType=(PinCategory="struct",PinSubCategoryObject="/Script/CoreUObject.ScriptStruct'/Script/CoreUObject.FloatRange'",ContainerType=Array),FriendlyName="Runtime Float Range Properties",Category=NSLOCTEXT("", "59C16C5644B26D5E829086BDB66ABC73", "Runtime Properties"),PropertyFlags=65541)
+   NewVariables(13)=(VarName="Runtime Soft Class Properties",VarGuid=49F069454540F874A6C8638E1158E80B,VarType=(PinCategory="softclass",PinSubCategoryObject="/Script/CoreUObject.Class'/Script/CoreUObject.Object'",ContainerType=Array),FriendlyName="Runtime Soft Class Properties",Category=NSLOCTEXT("", "F83E3EC949CF69C6632770856E1827D6", "Runtime Properties"),PropertyFlags=65541)
+   CategorySorting(0)="Default"
+   CategorySorting(1)="Config Metadata"
+   CategorySorting(2)="Editor Properties"
+   CategorySorting(3)="Runtime Properties"
+   CategorySorting(4)="Sky Properties"
+   CategorySorting(5)="Weather Properties"
+   LastEditedDocuments(0)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/System/UDS_SharedConfig.UDS_SharedConfig:EventGraph",SavedZoomAmount=1.000000)
+   ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfo'SceneThumbnailInfo_0'"
+   GeneratedClass="/Script/Engine.BlueprintGeneratedClass'UDS_SharedConfig_C'"
+   bLegacyNeedToPurgeSkelRefs=False
+   BlueprintGuid=E29FC8584DC505CE51DA7585A8F4F13F
+End Object

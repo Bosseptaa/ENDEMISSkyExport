@@ -1,3 +1,277 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:548a0a82ff83e9238e814c8f2423baef6eb3858f451d419e26165e793c85abb1
-size 28067
+Begin Object Class=/Script/Engine.MaterialFunction Name="Puddle_SceneDepth" ExportPath="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth'"
+   Begin Object Class=/Script/Engine.MaterialFunctionEditorOnlyData Name="Puddle_SceneDepthEditorOnlyData" ExportPath="/Script/Engine.MaterialFunctionEditorOnlyData'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:Puddle_SceneDepthEditorOnlyData'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAdd Name="MaterialExpressionAdd_0" ExportPath="/Script/Engine.MaterialExpressionAdd'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionAdd_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAdd Name="MaterialExpressionAdd_38" ExportPath="/Script/Engine.MaterialExpressionAdd'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionAdd_38'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAppendVector Name="MaterialExpressionAppendVector_0" ExportPath="/Script/Engine.MaterialExpressionAppendVector'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionAppendVector_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionCameraPositionWS Name="MaterialExpressionCameraPositionWS_5" ExportPath="/Script/Engine.MaterialExpressionCameraPositionWS'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionCameraPositionWS_5'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_11" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionComponentMask_11'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_12" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionComponentMask_12'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_6" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionComponentMask_6'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDivide Name="MaterialExpressionDivide_1" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionDivide_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDivide Name="MaterialExpressionDivide_33" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionDivide_33'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionOutput Name="MaterialExpressionFunctionOutput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionFunctionOutput_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_33" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionMultiply_33'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_5" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionMultiply_5'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionPixelDepth Name="MaterialExpressionPixelDepth_1" ExportPath="/Script/Engine.MaterialExpressionPixelDepth'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionPixelDepth_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionReroute Name="MaterialExpressionReroute_1" ExportPath="/Script/Engine.MaterialExpressionReroute'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionReroute_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_0" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionScalarParameter_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_1" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionScalarParameter_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_2" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionScalarParameter_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_3" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionScalarParameter_3'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSceneDepth Name="MaterialExpressionSceneDepth_12" ExportPath="/Script/Engine.MaterialExpressionSceneDepth'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionSceneDepth_12'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSubtract Name="MaterialExpressionSubtract_0" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionSubtract_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSubtract Name="MaterialExpressionSubtract_2" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionSubtract_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSubtract Name="MaterialExpressionSubtract_3" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionSubtract_3'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSubtract Name="MaterialExpressionSubtract_40" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionSubtract_40'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_1" ExportPath="/Script/Engine.MaterialExpressionTextureSample'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionTextureSample_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionWorldPosition Name="MaterialExpressionWorldPosition_2" ExportPath="/Script/Engine.MaterialExpressionWorldPosition'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionWorldPosition_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionWorldPosition Name="MaterialExpressionWorldPosition_7" ExportPath="/Script/Engine.MaterialExpressionWorldPosition'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionWorldPosition_7'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   Begin Object Name="Puddle_SceneDepthEditorOnlyData" ExportPath="/Script/Engine.MaterialFunctionEditorOnlyData'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:Puddle_SceneDepthEditorOnlyData'"
+      ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'Puddle_SceneDepth:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionComponentMask'Puddle_SceneDepth:MaterialExpressionComponentMask_6'","/Script/Engine.MaterialExpressionDivide'Puddle_SceneDepth:MaterialExpressionDivide_1'","/Script/Engine.MaterialExpressionTextureSample'Puddle_SceneDepth:MaterialExpressionTextureSample_1'","/Script/Engine.MaterialExpressionMultiply'Puddle_SceneDepth:MaterialExpressionMultiply_5'","/Script/Engine.MaterialExpressionScalarParameter'Puddle_SceneDepth:MaterialExpressionScalarParameter_3'","/Script/Engine.MaterialExpressionSubtract'Puddle_SceneDepth:MaterialExpressionSubtract_2'","/Script/Engine.MaterialExpressionComponentMask'Puddle_SceneDepth:MaterialExpressionComponentMask_11'","/Script/Engine.MaterialExpressionComponentMask'Puddle_SceneDepth:MaterialExpressionComponentMask_12'","/Script/Engine.MaterialExpressionSubtract'Puddle_SceneDepth:MaterialExpressionSubtract_3'","/Script/Engine.MaterialExpressionDivide'Puddle_SceneDepth:MaterialExpressionDivide_33'","/Script/Engine.MaterialExpressionPixelDepth'Puddle_SceneDepth:MaterialExpressionPixelDepth_1'","/Script/Engine.MaterialExpressionMultiply'Puddle_SceneDepth:MaterialExpressionMultiply_33'","/Script/Engine.MaterialExpressionSubtract'Puddle_SceneDepth:MaterialExpressionSubtract_40'","/Script/Engine.MaterialExpressionCameraPositionWS'Puddle_SceneDepth:MaterialExpressionCameraPositionWS_5'","/Script/Engine.MaterialExpressionAdd'Puddle_SceneDepth:MaterialExpressionAdd_38'","/Script/Engine.MaterialExpressionWorldPosition'Puddle_SceneDepth:MaterialExpressionWorldPosition_7'","/Script/Engine.MaterialExpressionSceneDepth'Puddle_SceneDepth:MaterialExpressionSceneDepth_12'","/Script/Engine.MaterialExpressionReroute'Puddle_SceneDepth:MaterialExpressionReroute_1'","/Script/Engine.MaterialExpressionScalarParameter'Puddle_SceneDepth:MaterialExpressionScalarParameter_0'","/Script/Engine.MaterialExpressionScalarParameter'Puddle_SceneDepth:MaterialExpressionScalarParameter_1'","/Script/Engine.MaterialExpressionAppendVector'Puddle_SceneDepth:MaterialExpressionAppendVector_0'","/Script/Engine.MaterialExpressionAdd'Puddle_SceneDepth:MaterialExpressionAdd_0'","/Script/Engine.MaterialExpressionWorldPosition'Puddle_SceneDepth:MaterialExpressionWorldPosition_2'","/Script/Engine.MaterialExpressionScalarParameter'Puddle_SceneDepth:MaterialExpressionScalarParameter_2'","/Script/Engine.MaterialExpressionSubtract'Puddle_SceneDepth:MaterialExpressionSubtract_0'"))
+   End Object
+   Begin Object Name="MaterialExpressionAdd_0" ExportPath="/Script/Engine.MaterialExpressionAdd'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionAdd_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionDivide'Puddle_SceneDepth:MaterialExpressionDivide_1'")
+      B=(Expression="/Script/Engine.MaterialExpressionAppendVector'Puddle_SceneDepth:MaterialExpressionAppendVector_0'")
+      MaterialExpressionEditorX=-596
+      MaterialExpressionEditorY=536
+      MaterialExpressionGuid=20647B0845AD8020EA99B491115A4825
+      Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+   End Object
+   Begin Object Name="MaterialExpressionAdd_38" ExportPath="/Script/Engine.MaterialExpressionAdd'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionAdd_38'"
+      A=(Expression="/Script/Engine.MaterialExpressionMultiply'Puddle_SceneDepth:MaterialExpressionMultiply_33'")
+      B=(Expression="/Script/Engine.MaterialExpressionReroute'Puddle_SceneDepth:MaterialExpressionReroute_1'")
+      MaterialExpressionEditorX=-1052
+      MaterialExpressionEditorY=428
+      MaterialExpressionGuid=2B9A30074BC9EE67AD6613AB28F89797
+      Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+   End Object
+   Begin Object Name="MaterialExpressionAppendVector_0" ExportPath="/Script/Engine.MaterialExpressionAppendVector'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionAppendVector_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Puddle_SceneDepth:MaterialExpressionScalarParameter_0'")
+      B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Puddle_SceneDepth:MaterialExpressionScalarParameter_1'")
+      MaterialExpressionEditorX=-732
+      MaterialExpressionEditorY=832
+      MaterialExpressionGuid=02F413554AD30A55DF4E038BA7C20F33
+      Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+   End Object
+   Begin Object Name="MaterialExpressionCameraPositionWS_5" ExportPath="/Script/Engine.MaterialExpressionCameraPositionWS'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionCameraPositionWS_5'"
+      MaterialExpressionEditorX=-1624
+      MaterialExpressionEditorY=588
+      MaterialExpressionGuid=E72D8B294CC20023ACBB928FDB36699C
+      Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_11" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionComponentMask_11'"
+      Input=(Expression="/Script/Engine.MaterialExpressionAdd'Puddle_SceneDepth:MaterialExpressionAdd_38'")
+      B=True
+      MaterialExpressionEditorX=-640
+      MaterialExpressionEditorY=428
+      MaterialExpressionGuid=310C75A448F80C30C210EEBCC2DCB414
+      Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_12" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionComponentMask_12'"
+      Input=(Expression="/Script/Engine.MaterialExpressionWorldPosition'Puddle_SceneDepth:MaterialExpressionWorldPosition_2'")
+      B=True
+      MaterialExpressionEditorX=-640
+      MaterialExpressionEditorY=312
+      MaterialExpressionGuid=38F45E054C4D1683D0F7BE8D1B620D66
+      Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_6" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionComponentMask_6'"
+      Input=(Expression="/Script/Engine.MaterialExpressionAdd'Puddle_SceneDepth:MaterialExpressionAdd_38'")
+      R=True
+      G=True
+      MaterialExpressionEditorX=-912
+      MaterialExpressionEditorY=536
+      MaterialExpressionGuid=F809BBC94B1EAC6739C1D1B1FC5DD6F1
+      Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+   End Object
+   Begin Object Name="MaterialExpressionDivide_1" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionDivide_1'"
+      A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Puddle_SceneDepth:MaterialExpressionComponentMask_6'")
+      B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Puddle_SceneDepth:MaterialExpressionScalarParameter_2'")
+      ConstB=300.000000
+      MaterialExpressionEditorX=-776
+      MaterialExpressionEditorY=536
+      MaterialExpressionGuid=01356EC64AC6AEE9BD9EA39A590D8E49
+      Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+   End Object
+   Begin Object Name="MaterialExpressionDivide_33" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionDivide_33'"
+      A=(Expression="/Script/Engine.MaterialExpressionSceneDepth'Puddle_SceneDepth:MaterialExpressionSceneDepth_12'",Mask=1,MaskR=1)
+      B=(Expression="/Script/Engine.MaterialExpressionPixelDepth'Puddle_SceneDepth:MaterialExpressionPixelDepth_1'",Mask=1,MaskR=1)
+      MaterialExpressionEditorX=-1408
+      MaterialExpressionEditorY=332
+      MaterialExpressionGuid=138F09DA44EDC41B5B420392092DEFFF
+      Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+   End Object
+   Begin Object Name="MaterialExpressionFunctionOutput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionFunctionOutput_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionSubtract'Puddle_SceneDepth:MaterialExpressionSubtract_2'")
+      bLastPreviewed=True
+      Id=FA38150842BD943C81F26482697479B1
+      MaterialExpressionEditorX=316
+      MaterialExpressionEditorY=288
+      MaterialExpressionGuid=F2DE1079494765DE240C8FB2369063A6
+      Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_33" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionMultiply_33'"
+      A=(Expression="/Script/Engine.MaterialExpressionDivide'Puddle_SceneDepth:MaterialExpressionDivide_33'")
+      B=(Expression="/Script/Engine.MaterialExpressionSubtract'Puddle_SceneDepth:MaterialExpressionSubtract_40'")
+      MaterialExpressionEditorX=-1264
+      MaterialExpressionEditorY=428
+      MaterialExpressionGuid=6DC218E1408141B1D4AD68B810EBBFE2
+      Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_5" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionMultiply_5'"
+      A=(Expression="/Script/Engine.MaterialExpressionSubtract'Puddle_SceneDepth:MaterialExpressionSubtract_0'")
+      B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Puddle_SceneDepth:MaterialExpressionScalarParameter_3'")
+      MaterialExpressionEditorX=-24
+      MaterialExpressionEditorY=564
+      MaterialExpressionGuid=B55B700F4EF1F2405464AA96F2C635CE
+      Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+   End Object
+   Begin Object Name="MaterialExpressionPixelDepth_1" ExportPath="/Script/Engine.MaterialExpressionPixelDepth'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionPixelDepth_1'"
+      MaterialExpressionEditorX=-1560
+      MaterialExpressionEditorY=384
+      MaterialExpressionGuid=69C542EE450EF702622AC1AF51D9397F
+      Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+   End Object
+   Begin Object Name="MaterialExpressionReroute_1" ExportPath="/Script/Engine.MaterialExpressionReroute'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionReroute_1'"
+      Input=(Expression="/Script/Engine.MaterialExpressionCameraPositionWS'Puddle_SceneDepth:MaterialExpressionCameraPositionWS_5'")
+      MaterialExpressionEditorX=-1136
+      MaterialExpressionEditorY=636
+      MaterialExpressionGuid=98F7E9604181EAF4370FF2A33F42E202
+      Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_0" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionScalarParameter_0'"
+      bUseCustomPrimitiveData=True
+      PrimitiveDataIndex=14
+      ParameterName="NoiseOffset X"
+      ExpressionGUID=119F4C764C7148F574F61592C2535712
+      MaterialExpressionEditorX=-960
+      MaterialExpressionEditorY=804
+      MaterialExpressionGuid=D6F2EB8842F10BFB364A53ADC9826751
+      Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_1" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionScalarParameter_1'"
+      bUseCustomPrimitiveData=True
+      PrimitiveDataIndex=15
+      ParameterName="NoiseOffset Y"
+      ExpressionGUID=74A80D004D6916C3D57E1BA27CECE9C3
+      MaterialExpressionEditorX=-972
+      MaterialExpressionEditorY=904
+      MaterialExpressionGuid=D6F2EB8842F10BFB364A53ADC9826751
+      Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_2" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionScalarParameter_2'"
+      DefaultValue=500.000000
+      ParameterName="Small Clouds Scale"
+      ExpressionGUID=40D120AB402F62CC16951696D117414F
+      MaterialExpressionEditorX=-992
+      MaterialExpressionEditorY=644
+      MaterialExpressionGuid=FFF5734A4443EDE46ED99DBAA329A418
+      Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_3" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionScalarParameter_3'"
+      DefaultValue=7.500000
+      bUseCustomPrimitiveData=True
+      PrimitiveDataIndex=6
+      ParameterName="Depth Clouds"
+      ExpressionGUID=637656424FF0DE2DB72B528D89259625
+      MaterialExpressionEditorX=-252
+      MaterialExpressionEditorY=740
+      MaterialExpressionGuid=12C453C94A65C55647A5FC83AFEA8109
+      Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+   End Object
+   Begin Object Name="MaterialExpressionSceneDepth_12" ExportPath="/Script/Engine.MaterialExpressionSceneDepth'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionSceneDepth_12'"
+      MaterialExpressionEditorX=-1636
+      MaterialExpressionEditorY=276
+      MaterialExpressionGuid=2BB654AF4BA8AC56B0A341AAE1D9B706
+      Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+   End Object
+   Begin Object Name="MaterialExpressionSubtract_0" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionSubtract_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionTextureSample'Puddle_SceneDepth:MaterialExpressionTextureSample_1'",OutputIndex=1,Mask=1,MaskR=1)
+      ConstB=0.300000
+      MaterialExpressionEditorX=-212
+      MaterialExpressionEditorY=564
+      MaterialExpressionGuid=25F5DF8A4E5D1A189ACA18BDFA63075F
+      Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+   End Object
+   Begin Object Name="MaterialExpressionSubtract_2" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionSubtract_2'"
+      A=(Expression="/Script/Engine.MaterialExpressionSubtract'Puddle_SceneDepth:MaterialExpressionSubtract_3'")
+      B=(Expression="/Script/Engine.MaterialExpressionMultiply'Puddle_SceneDepth:MaterialExpressionMultiply_5'")
+      MaterialExpressionEditorX=156
+      MaterialExpressionEditorY=312
+      MaterialExpressionGuid=2DC55521408FA9289A23DD91CFD053C6
+      Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+   End Object
+   Begin Object Name="MaterialExpressionSubtract_3" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionSubtract_3'"
+      A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Puddle_SceneDepth:MaterialExpressionComponentMask_12'")
+      B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Puddle_SceneDepth:MaterialExpressionComponentMask_11'")
+      MaterialExpressionEditorX=-496
+      MaterialExpressionEditorY=312
+      MaterialExpressionGuid=EED49E564D85ACD851BF41A6890705D2
+      Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+   End Object
+   Begin Object Name="MaterialExpressionSubtract_40" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionSubtract_40'"
+      A=(Expression="/Script/Engine.MaterialExpressionWorldPosition'Puddle_SceneDepth:MaterialExpressionWorldPosition_7'")
+      B=(Expression="/Script/Engine.MaterialExpressionCameraPositionWS'Puddle_SceneDepth:MaterialExpressionCameraPositionWS_5'")
+      MaterialExpressionEditorX=-1416
+      MaterialExpressionEditorY=528
+      MaterialExpressionGuid=38797C95446748F71C1F569F377F83F6
+      Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_1" ExportPath="/Script/Engine.MaterialExpressionTextureSample'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionTextureSample_1'"
+      Coordinates=(Expression="/Script/Engine.MaterialExpressionAdd'Puddle_SceneDepth:MaterialExpressionAdd_0'")
+      Texture="/Script/Engine.Texture2D'/Game/UltraDynamicSky/Textures/Clouds/CloudsAlpha.CloudsAlpha'"
+      SamplerType=SAMPLERTYPE_Alpha
+      MaterialExpressionEditorX=-488
+      MaterialExpressionEditorY=536
+      MaterialExpressionGuid=2AE3325346E23543452FCA9C18DDA6F5
+      Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+   End Object
+   Begin Object Name="MaterialExpressionWorldPosition_2" ExportPath="/Script/Engine.MaterialExpressionWorldPosition'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionWorldPosition_2'"
+      MaterialExpressionEditorX=-852
+      MaterialExpressionEditorY=296
+      MaterialExpressionGuid=3C2CBEE14D17D9C49D95328F6C83356E
+      Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+   End Object
+   Begin Object Name="MaterialExpressionWorldPosition_7" ExportPath="/Script/Engine.MaterialExpressionWorldPosition'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:MaterialExpressionWorldPosition_7'"
+      MaterialExpressionEditorX=-1664
+      MaterialExpressionEditorY=480
+      MaterialExpressionGuid=FD2E4F334946B7420B9E46B3E274F1B4
+      Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth.Puddle_SceneDepth:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   PreviewBlendMode=BLEND_Translucent
+   EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'Puddle_SceneDepthEditorOnlyData'"
+   StateId=A3C87C3F4709D2E4A2B7D1AA96B807D7
+   CombinedOutputTypes=15
+   ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+End Object

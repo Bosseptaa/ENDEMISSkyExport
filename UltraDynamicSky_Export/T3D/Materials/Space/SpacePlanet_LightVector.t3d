@@ -1,3 +1,152 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:21bec31c557df58aa0967795986866b6340fa017d57f6c4d7973d9acafa8dd55
-size 15027
+Begin Object Class=/Script/Engine.MaterialFunction Name="SpacePlanet_LightVector" ExportPath="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Space/SpacePlanet_LightVector.SpacePlanet_LightVector'"
+   Begin Object Class=/Script/Engine.MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_0" ExportPath="/Script/Engine.MaterialExpressionVectorParameter'/Game/UltraDynamicSky/Materials/Space/SpacePlanet_LightVector.SpacePlanet_LightVector:MaterialExpressionVectorParameter_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_1" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/Space/SpacePlanet_LightVector.SpacePlanet_LightVector:MaterialExpressionScalarParameter_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_0" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/Space/SpacePlanet_LightVector.SpacePlanet_LightVector:MaterialExpressionScalarParameter_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_1" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Space/SpacePlanet_LightVector.SpacePlanet_LightVector:MaterialExpressionMultiply_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_0" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Space/SpacePlanet_LightVector.SpacePlanet_LightVector:MaterialExpressionMultiply_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionOutput Name="MaterialExpressionFunctionOutput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/UltraDynamicSky/Materials/Space/SpacePlanet_LightVector.SpacePlanet_LightVector:MaterialExpressionFunctionOutput_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_2" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Space/SpacePlanet_LightVector.SpacePlanet_LightVector:MaterialExpressionComponentMask_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_1" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Space/SpacePlanet_LightVector.SpacePlanet_LightVector:MaterialExpressionComponentMask_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_0" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Space/SpacePlanet_LightVector.SpacePlanet_LightVector:MaterialExpressionComponentMask_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionCollectionParameter Name="MaterialExpressionCollectionParameter_1" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/Game/UltraDynamicSky/Materials/Space/SpacePlanet_LightVector.SpacePlanet_LightVector:MaterialExpressionCollectionParameter_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionCollectionParameter Name="MaterialExpressionCollectionParameter_0" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/Game/UltraDynamicSky/Materials/Space/SpacePlanet_LightVector.SpacePlanet_LightVector:MaterialExpressionCollectionParameter_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAdd Name="MaterialExpressionAdd_1" ExportPath="/Script/Engine.MaterialExpressionAdd'/Game/UltraDynamicSky/Materials/Space/SpacePlanet_LightVector.SpacePlanet_LightVector:MaterialExpressionAdd_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAdd Name="MaterialExpressionAdd_0" ExportPath="/Script/Engine.MaterialExpressionAdd'/Game/UltraDynamicSky/Materials/Space/SpacePlanet_LightVector.SpacePlanet_LightVector:MaterialExpressionAdd_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialFunctionEditorOnlyData Name="SpacePlanet_LightVectorEditorOnlyData" ExportPath="/Script/Engine.MaterialFunctionEditorOnlyData'/Game/UltraDynamicSky/Materials/Space/SpacePlanet_LightVector.SpacePlanet_LightVector:SpacePlanet_LightVectorEditorOnlyData'"
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_0" ExportPath="/Script/Engine.MaterialExpressionVectorParameter'/Game/UltraDynamicSky/Materials/Space/SpacePlanet_LightVector.SpacePlanet_LightVector:MaterialExpressionVectorParameter_0'"
+      ParameterName="Custom Light Vector"
+      ExpressionGUID=FC453683490CE298D33CEFBBF5AB654B
+      MaterialExpressionEditorX=-692
+      MaterialExpressionEditorY=160
+      MaterialExpressionGuid=C9774FEF4282CAF1C05523839E9E3257
+      Function="/Script/Engine.MaterialFunction'SpacePlanet_LightVector'"
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_1" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/Space/SpacePlanet_LightVector.SpacePlanet_LightVector:MaterialExpressionScalarParameter_1'"
+      ParameterName="Use Moon Vector"
+      ExpressionGUID=B4ED48804C46C988FD69A7A71555E690
+      MaterialExpressionEditorX=-708
+      MaterialExpressionEditorY=712
+      MaterialExpressionGuid=5C8324B5486775E21BC7518EAE0DF10C
+      Function="/Script/Engine.MaterialFunction'SpacePlanet_LightVector'"
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_0" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/Space/SpacePlanet_LightVector.SpacePlanet_LightVector:MaterialExpressionScalarParameter_0'"
+      DefaultValue=1.000000
+      ParameterName="Use Sun Vector"
+      ExpressionGUID=9278A35A4BACDB13149B608323ADAD40
+      MaterialExpressionEditorX=-704
+      MaterialExpressionEditorY=488
+      MaterialExpressionGuid=1A25B9584A8F004D07B37386A57D427E
+      Function="/Script/Engine.MaterialFunction'SpacePlanet_LightVector'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_1" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Space/SpacePlanet_LightVector.SpacePlanet_LightVector:MaterialExpressionMultiply_1'"
+      A=(Expression="/Script/Engine.MaterialExpressionComponentMask'SpacePlanet_LightVector:MaterialExpressionComponentMask_1'")
+      B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'SpacePlanet_LightVector:MaterialExpressionScalarParameter_1'")
+      MaterialExpressionEditorX=-480
+      MaterialExpressionEditorY=596
+      MaterialExpressionGuid=29471FF2456B181A9F610986D67C85E1
+      Function="/Script/Engine.MaterialFunction'SpacePlanet_LightVector'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_0" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Space/SpacePlanet_LightVector.SpacePlanet_LightVector:MaterialExpressionMultiply_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionComponentMask'SpacePlanet_LightVector:MaterialExpressionComponentMask_0'")
+      B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'SpacePlanet_LightVector:MaterialExpressionScalarParameter_0'")
+      MaterialExpressionEditorX=-472
+      MaterialExpressionEditorY=392
+      MaterialExpressionGuid=B387AEAC461DDD97409B25A71EAD8C9F
+      Function="/Script/Engine.MaterialFunction'SpacePlanet_LightVector'"
+   End Object
+   Begin Object Name="MaterialExpressionFunctionOutput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/UltraDynamicSky/Materials/Space/SpacePlanet_LightVector.SpacePlanet_LightVector:MaterialExpressionFunctionOutput_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionAdd'SpacePlanet_LightVector:MaterialExpressionAdd_1'")
+      bLastPreviewed=True
+      Id=62BD3F324B30A27A5999DEB4C10A25B4
+      MaterialExpressionEditorX=52
+      MaterialExpressionEditorY=328
+      MaterialExpressionGuid=995A21444216971A24FE67B2BA1135F7
+      Function="/Script/Engine.MaterialFunction'SpacePlanet_LightVector'"
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_2" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Space/SpacePlanet_LightVector.SpacePlanet_LightVector:MaterialExpressionComponentMask_2'"
+      Input=(Expression="/Script/Engine.MaterialExpressionVectorParameter'SpacePlanet_LightVector:MaterialExpressionVectorParameter_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      R=True
+      G=True
+      B=True
+      MaterialExpressionEditorX=-484
+      MaterialExpressionEditorY=172
+      MaterialExpressionGuid=E6B2A8FA43BC4B1E5A7091A43CD624D3
+      Function="/Script/Engine.MaterialFunction'SpacePlanet_LightVector'"
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_1" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Space/SpacePlanet_LightVector.SpacePlanet_LightVector:MaterialExpressionComponentMask_1'"
+      Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'SpacePlanet_LightVector:MaterialExpressionCollectionParameter_1'")
+      R=True
+      G=True
+      B=True
+      MaterialExpressionEditorX=-664
+      MaterialExpressionEditorY=596
+      MaterialExpressionGuid=4CB8D2514CCDDF4EAAED73A85571C540
+      Function="/Script/Engine.MaterialFunction'SpacePlanet_LightVector'"
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_0" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Space/SpacePlanet_LightVector.SpacePlanet_LightVector:MaterialExpressionComponentMask_0'"
+      Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'SpacePlanet_LightVector:MaterialExpressionCollectionParameter_0'")
+      R=True
+      G=True
+      B=True
+      MaterialExpressionEditorX=-656
+      MaterialExpressionEditorY=392
+      MaterialExpressionGuid=BC5D98A1407A23600C8150AC985786CE
+      Function="/Script/Engine.MaterialFunction'SpacePlanet_LightVector'"
+   End Object
+   Begin Object Name="MaterialExpressionCollectionParameter_1" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/Game/UltraDynamicSky/Materials/Space/SpacePlanet_LightVector.SpacePlanet_LightVector:MaterialExpressionCollectionParameter_1'"
+      Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+      ParameterName="Moon Vector"
+      ParameterId=8CEA313D47D706F8C060D5BA112E274B
+      MaterialExpressionEditorX=-936
+      MaterialExpressionEditorY=568
+      MaterialExpressionGuid=CD3BBEB34B2365D50A87999D166DCCBD
+      Function="/Script/Engine.MaterialFunction'SpacePlanet_LightVector'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionCollectionParameter_0" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/Game/UltraDynamicSky/Materials/Space/SpacePlanet_LightVector.SpacePlanet_LightVector:MaterialExpressionCollectionParameter_0'"
+      Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+      ParameterName="Sun Vector"
+      ParameterId=618AEFCB40106BAF34FCDD876EDC3DCE
+      MaterialExpressionEditorX=-928
+      MaterialExpressionEditorY=364
+      MaterialExpressionGuid=4D9C849643A13261FCD627857D033E02
+      Function="/Script/Engine.MaterialFunction'SpacePlanet_LightVector'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionAdd_1" ExportPath="/Script/Engine.MaterialExpressionAdd'/Game/UltraDynamicSky/Materials/Space/SpacePlanet_LightVector.SpacePlanet_LightVector:MaterialExpressionAdd_1'"
+      A=(Expression="/Script/Engine.MaterialExpressionAdd'SpacePlanet_LightVector:MaterialExpressionAdd_0'")
+      B=(Expression="/Script/Engine.MaterialExpressionMultiply'SpacePlanet_LightVector:MaterialExpressionMultiply_1'")
+      MaterialExpressionEditorX=-88
+      MaterialExpressionEditorY=352
+      MaterialExpressionGuid=83C49AEE472E5A74C551D0A5338A32FE
+      Function="/Script/Engine.MaterialFunction'SpacePlanet_LightVector'"
+   End Object
+   Begin Object Name="MaterialExpressionAdd_0" ExportPath="/Script/Engine.MaterialExpressionAdd'/Game/UltraDynamicSky/Materials/Space/SpacePlanet_LightVector.SpacePlanet_LightVector:MaterialExpressionAdd_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionComponentMask'SpacePlanet_LightVector:MaterialExpressionComponentMask_2'")
+      B=(Expression="/Script/Engine.MaterialExpressionMultiply'SpacePlanet_LightVector:MaterialExpressionMultiply_0'")
+      MaterialExpressionEditorX=-292
+      MaterialExpressionEditorY=352
+      MaterialExpressionGuid=B79588474ADB31B9D0E9B59C301B118F
+      Function="/Script/Engine.MaterialFunction'SpacePlanet_LightVector'"
+   End Object
+   Begin Object Name="SpacePlanet_LightVectorEditorOnlyData" ExportPath="/Script/Engine.MaterialFunctionEditorOnlyData'/Game/UltraDynamicSky/Materials/Space/SpacePlanet_LightVector.SpacePlanet_LightVector:SpacePlanet_LightVectorEditorOnlyData'"
+      ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'SpacePlanet_LightVector:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionCollectionParameter'SpacePlanet_LightVector:MaterialExpressionCollectionParameter_0'","/Script/Engine.MaterialExpressionComponentMask'SpacePlanet_LightVector:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionCollectionParameter'SpacePlanet_LightVector:MaterialExpressionCollectionParameter_1'","/Script/Engine.MaterialExpressionComponentMask'SpacePlanet_LightVector:MaterialExpressionComponentMask_1'","/Script/Engine.MaterialExpressionVectorParameter'SpacePlanet_LightVector:MaterialExpressionVectorParameter_0'","/Script/Engine.MaterialExpressionMultiply'SpacePlanet_LightVector:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionScalarParameter'SpacePlanet_LightVector:MaterialExpressionScalarParameter_0'","/Script/Engine.MaterialExpressionScalarParameter'SpacePlanet_LightVector:MaterialExpressionScalarParameter_1'","/Script/Engine.MaterialExpressionMultiply'SpacePlanet_LightVector:MaterialExpressionMultiply_1'","/Script/Engine.MaterialExpressionComponentMask'SpacePlanet_LightVector:MaterialExpressionComponentMask_2'","/Script/Engine.MaterialExpressionAdd'SpacePlanet_LightVector:MaterialExpressionAdd_0'","/Script/Engine.MaterialExpressionAdd'SpacePlanet_LightVector:MaterialExpressionAdd_1'"))
+   End Object
+   EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'SpacePlanet_LightVectorEditorOnlyData'"
+   StateId=1E9B9AD64CF0F44DBCFF7AAA74C3B0DB
+   CombinedOutputTypes=15
+End Object

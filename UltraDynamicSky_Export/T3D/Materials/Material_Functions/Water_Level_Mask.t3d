@@ -1,3 +1,144 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0eba7ffec7d203809db830a8016c2a37887c0ae3a6b134b54e20beac98906002
-size 14834
+Begin Object Class=/Script/Engine.MaterialFunction Name="Water_Level_Mask" ExportPath="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Water_Level_Mask.Water_Level_Mask'"
+   Begin Object Class=/Script/Engine.MaterialFunctionEditorOnlyData Name="Water_Level_MaskEditorOnlyData" ExportPath="/Script/Engine.MaterialFunctionEditorOnlyData'/Game/UltraDynamicSky/Materials/Material_Functions/Water_Level_Mask.Water_Level_Mask:Water_Level_MaskEditorOnlyData'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAdd Name="MaterialExpressionAdd_0" ExportPath="/Script/Engine.MaterialExpressionAdd'/Game/UltraDynamicSky/Materials/Material_Functions/Water_Level_Mask.Water_Level_Mask:MaterialExpressionAdd_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionCollectionParameter Name="MaterialExpressionCollectionParameter_1" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/Game/UltraDynamicSky/Materials/Material_Functions/Water_Level_Mask.Water_Level_Mask:MaterialExpressionCollectionParameter_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_0" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/Water_Level_Mask.Water_Level_Mask:MaterialExpressionComponentMask_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_1" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/Water_Level_Mask.Water_Level_Mask:MaterialExpressionComponentMask_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDivide Name="MaterialExpressionDivide_0" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/Material_Functions/Water_Level_Mask.Water_Level_Mask:MaterialExpressionDivide_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDivide Name="MaterialExpressionDivide_1" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/Material_Functions/Water_Level_Mask.Water_Level_Mask:MaterialExpressionDivide_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Material_Functions/Water_Level_Mask.Water_Level_Mask:MaterialExpressionFunctionInput_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionOutput Name="MaterialExpressionFunctionOutput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/UltraDynamicSky/Materials/Material_Functions/Water_Level_Mask.Water_Level_Mask:MaterialExpressionFunctionOutput_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_0" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Material_Functions/Water_Level_Mask.Water_Level_Mask:MaterialExpressionMaterialFunctionCall_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSaturate Name="MaterialExpressionSaturate_0" ExportPath="/Script/Engine.MaterialExpressionSaturate'/Game/UltraDynamicSky/Materials/Material_Functions/Water_Level_Mask.Water_Level_Mask:MaterialExpressionSaturate_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSubtract Name="MaterialExpressionSubtract_0" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/Material_Functions/Water_Level_Mask.Water_Level_Mask:MaterialExpressionSubtract_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionWorldPosition Name="MaterialExpressionWorldPosition_0" ExportPath="/Script/Engine.MaterialExpressionWorldPosition'/Game/UltraDynamicSky/Materials/Material_Functions/Water_Level_Mask.Water_Level_Mask:MaterialExpressionWorldPosition_0'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/Material_Functions/Water_Level_Mask.Water_Level_Mask:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   Begin Object Name="Water_Level_MaskEditorOnlyData" ExportPath="/Script/Engine.MaterialFunctionEditorOnlyData'/Game/UltraDynamicSky/Materials/Material_Functions/Water_Level_Mask.Water_Level_Mask:Water_Level_MaskEditorOnlyData'"
+      ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'Water_Level_Mask:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionCollectionParameter'Water_Level_Mask:MaterialExpressionCollectionParameter_1'","/Script/Engine.MaterialExpressionWorldPosition'Water_Level_Mask:MaterialExpressionWorldPosition_0'","/Script/Engine.MaterialExpressionComponentMask'Water_Level_Mask:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionSubtract'Water_Level_Mask:MaterialExpressionSubtract_0'","/Script/Engine.MaterialExpressionDivide'Water_Level_Mask:MaterialExpressionDivide_1'","/Script/Engine.MaterialExpressionSaturate'Water_Level_Mask:MaterialExpressionSaturate_0'","/Script/Engine.MaterialExpressionAdd'Water_Level_Mask:MaterialExpressionAdd_0'","/Script/Engine.MaterialExpressionDivide'Water_Level_Mask:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionFunctionInput'Water_Level_Mask:MaterialExpressionFunctionInput_0'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Water_Level_Mask:MaterialExpressionMaterialFunctionCall_0'","/Script/Engine.MaterialExpressionComponentMask'Water_Level_Mask:MaterialExpressionComponentMask_1'"))
+   End Object
+   Begin Object Name="MaterialExpressionAdd_0" ExportPath="/Script/Engine.MaterialExpressionAdd'/Game/UltraDynamicSky/Materials/Material_Functions/Water_Level_Mask.Water_Level_Mask:MaterialExpressionAdd_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionSubtract'Water_Level_Mask:MaterialExpressionSubtract_0'")
+      B=(Expression="/Script/Engine.MaterialExpressionDivide'Water_Level_Mask:MaterialExpressionDivide_0'")
+      MaterialExpressionEditorX=-416
+      MaterialExpressionEditorY=552
+      MaterialExpressionGuid=585EF65D4881F154DF7AB0B54F9A87B0
+      Function="/Script/Engine.MaterialFunction'Water_Level_Mask'"
+   End Object
+   Begin Object Name="MaterialExpressionCollectionParameter_1" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/Game/UltraDynamicSky/Materials/Material_Functions/Water_Level_Mask.Water_Level_Mask:MaterialExpressionCollectionParameter_1'"
+      Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+      ParameterName="Water Level Falloff"
+      ParameterId=4BEA8ED34654D9269DDD329CE20405F3
+      MaterialExpressionEditorX=-908
+      MaterialExpressionEditorY=744
+      MaterialExpressionGuid=28F68FA54DB78D59075E56B7FFB4B2EA
+      Function="/Script/Engine.MaterialFunction'Water_Level_Mask'"
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_0" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/Water_Level_Mask.Water_Level_Mask:MaterialExpressionComponentMask_0'"
+      Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Water_Level_Mask:MaterialExpressionFunctionInput_0'")
+      B=True
+      MaterialExpressionEditorX=-1088
+      MaterialExpressionEditorY=552
+      MaterialExpressionGuid=D54B3F184438F1D121DF6689DB89F5A4
+      Function="/Script/Engine.MaterialFunction'Water_Level_Mask'"
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_1" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/Water_Level_Mask.Water_Level_Mask:MaterialExpressionComponentMask_1'"
+      Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Water_Level_Mask:MaterialExpressionFunctionInput_0'")
+      R=True
+      G=True
+      MaterialExpressionEditorX=-1305
+      MaterialExpressionEditorY=655
+      MaterialExpressionGuid=9CCC1F1E4580F9E7EC7F8698A6651A26
+      Function="/Script/Engine.MaterialFunction'Water_Level_Mask'"
+   End Object
+   Begin Object Name="MaterialExpressionDivide_0" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/Material_Functions/Water_Level_Mask.Water_Level_Mask:MaterialExpressionDivide_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Water_Level_Mask:MaterialExpressionCollectionParameter_1'")
+      ConstB=2.500000
+      MaterialExpressionEditorX=-620
+      MaterialExpressionEditorY=652
+      MaterialExpressionGuid=ACCD078644BEA93C679C84834FF3A04A
+      Function="/Script/Engine.MaterialFunction'Water_Level_Mask'"
+   End Object
+   Begin Object Name="MaterialExpressionDivide_1" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/Material_Functions/Water_Level_Mask.Water_Level_Mask:MaterialExpressionDivide_1'"
+      A=(Expression="/Script/Engine.MaterialExpressionAdd'Water_Level_Mask:MaterialExpressionAdd_0'")
+      B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Water_Level_Mask:MaterialExpressionCollectionParameter_1'")
+      MaterialExpressionEditorX=-144
+      MaterialExpressionEditorY=552
+      MaterialExpressionGuid=891696C847F3554F49B764979372EA0E
+      Function="/Script/Engine.MaterialFunction'Water_Level_Mask'"
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Material_Functions/Water_Level_Mask.Water_Level_Mask:MaterialExpressionFunctionInput_0'"
+      Preview=(Expression="/Script/Engine.MaterialExpressionWorldPosition'Water_Level_Mask:MaterialExpressionWorldPosition_0'")
+      InputName="Sample Position"
+      Id=77A2370E4C169A5F5D00A796274F8815
+      bUsePreviewValueAsDefault=True
+      MaterialExpressionEditorX=-1568
+      MaterialExpressionEditorY=552
+      MaterialExpressionGuid=6316D9B94765FDF48CDEA1812FFCA48F
+      Function="/Script/Engine.MaterialFunction'Water_Level_Mask'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionOutput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/UltraDynamicSky/Materials/Material_Functions/Water_Level_Mask.Water_Level_Mask:MaterialExpressionFunctionOutput_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionSaturate'Water_Level_Mask:MaterialExpressionSaturate_0'")
+      bLastPreviewed=True
+      Id=215155DF408D7A7D2849F2B2E9993D43
+      MaterialExpressionEditorX=116
+      MaterialExpressionEditorY=524
+      MaterialExpressionGuid=F57DDF8F4DDAC007204F7D92808B116D
+      Function="/Script/Engine.MaterialFunction'Water_Level_Mask'"
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_0" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Material_Functions/Water_Level_Mask.Water_Level_Mask:MaterialExpressionMaterialFunctionCall_0'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Water_Level_Local.Water_Level_Local'"
+      FunctionInputs(0)=(ExpressionInputId=CDB4E7DA4E2E17B40AECDE94BBB5570B,Input=(Expression="/Script/Engine.MaterialExpressionComponentMask'Water_Level_Mask:MaterialExpressionComponentMask_1'",InputName="Position XY"))
+      FunctionOutputs(0)=(ExpressionOutputId=A4D2A93C433A1CA7443B299E4A06180F,Output=(OutputName="Result"))
+      MaterialExpressionEditorX=-1164
+      MaterialExpressionEditorY=656
+      MaterialExpressionGuid=A52F6775491608DC87898195D0B1D8AB
+      Function="/Script/Engine.MaterialFunction'Water_Level_Mask'"
+      Outputs(0)=(OutputName="Result")
+   End Object
+   Begin Object Name="MaterialExpressionSaturate_0" ExportPath="/Script/Engine.MaterialExpressionSaturate'/Game/UltraDynamicSky/Materials/Material_Functions/Water_Level_Mask.Water_Level_Mask:MaterialExpressionSaturate_0'"
+      Input=(Expression="/Script/Engine.MaterialExpressionDivide'Water_Level_Mask:MaterialExpressionDivide_1'")
+      MaterialExpressionEditorX=-16
+      MaterialExpressionEditorY=552
+      MaterialExpressionGuid=7F26C3634F3A8F5599F2F9BD005B875A
+      Function="/Script/Engine.MaterialFunction'Water_Level_Mask'"
+   End Object
+   Begin Object Name="MaterialExpressionSubtract_0" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/Material_Functions/Water_Level_Mask.Water_Level_Mask:MaterialExpressionSubtract_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Water_Level_Mask:MaterialExpressionComponentMask_0'")
+      B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Water_Level_Mask:MaterialExpressionMaterialFunctionCall_0'")
+      MaterialExpressionEditorX=-904
+      MaterialExpressionEditorY=552
+      MaterialExpressionGuid=9D50BB094112AD9A7F0C98BDAAB443F8
+      Function="/Script/Engine.MaterialFunction'Water_Level_Mask'"
+   End Object
+   Begin Object Name="MaterialExpressionWorldPosition_0" ExportPath="/Script/Engine.MaterialExpressionWorldPosition'/Game/UltraDynamicSky/Materials/Material_Functions/Water_Level_Mask.Water_Level_Mask:MaterialExpressionWorldPosition_0'"
+      MaterialExpressionEditorX=-1772
+      MaterialExpressionEditorY=540
+      MaterialExpressionGuid=6012DADF42D0C769F9C168B663925789
+      Function="/Script/Engine.MaterialFunction'Water_Level_Mask'"
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/Material_Functions/Water_Level_Mask.Water_Level_Mask:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   Description="Samples the water level from Ultra Dynamic Sky / Weather, creating a mask which is 1 above water and 0 below water. Note this is just derived from world position, it doesn\'t have any actual connection to water surfaces/materials in the level."
+   bExposeToLibrary=True
+   DependentFunctionExpressionCandidates(0)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_0'"
+   EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'Water_Level_MaskEditorOnlyData'"
+   StateId=9770D2D940D00172DC61DEA96C6D2F0C
+   CombinedInputTypes=4
+   CombinedOutputTypes=15
+   ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+End Object

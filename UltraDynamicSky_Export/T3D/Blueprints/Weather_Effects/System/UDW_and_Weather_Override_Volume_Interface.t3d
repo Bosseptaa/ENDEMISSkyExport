@@ -1,3 +1,395 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:82fb40701ce01b66e98587af88e0e17845e92139fc1ce341742adbc671aed4fe
-size 74818
+Begin Object Class=/Script/Engine.Blueprint Name="UDW_and_Weather_Override_Volume_Interface" ExportPath="/Script/Engine.Blueprint'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface'"
+   Begin Object Class=/Script/Engine.EdGraph Name="Get Random Weather Probability Maps" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Random Weather Probability Maps'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionResult Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Random Weather Probability Maps.K2Node_FunctionResult_0'"
+      End Object
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Random Weather Probability Maps.K2Node_FunctionEntry_0'"
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="Get Season Temperature Ranges" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Season Temperature Ranges'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Season Temperature Ranges.K2Node_FunctionEntry_0'"
+      End Object
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionResult Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Season Temperature Ranges.K2Node_FunctionResult_0'"
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="Get Random Weather Mode" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Random Weather Mode'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Random Weather Mode.K2Node_FunctionEntry_0'"
+      End Object
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionResult Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Random Weather Mode.K2Node_FunctionResult_0'"
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="Force WOV Tick" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Force WOV Tick'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Force WOV Tick.K2Node_FunctionEntry_0'"
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="Check for Material Refresh" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Check for Material Refresh'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Check for Material Refresh.K2Node_FunctionEntry_0'"
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="Get Next Random Weather and Timer Length" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Next Random Weather and Timer Length'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Next Random Weather and Timer Length.K2Node_FunctionEntry_0'"
+      End Object
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionResult Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Next Random Weather and Timer Length.K2Node_FunctionResult_0'"
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="Instant Material State Update" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Instant Material State Update'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Instant Material State Update.K2Node_FunctionEntry_0'"
+      End Object
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfo Name="SceneThumbnailInfo_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfo'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:SceneThumbnailInfo_0'"
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="Get Season Temperature Ranges_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Season Temperature Ranges_MERGED'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Season Temperature Ranges_MERGED.K2Node_FunctionEntry_0'"
+      End Object
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionResult Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Season Temperature Ranges_MERGED.K2Node_FunctionResult_0'"
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="Get Random Weather Mode_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Random Weather Mode_MERGED'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Random Weather Mode_MERGED.K2Node_FunctionEntry_0'"
+      End Object
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionResult Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Random Weather Mode_MERGED.K2Node_FunctionResult_0'"
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="Get Random Weather Probability Maps_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Random Weather Probability Maps_MERGED'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Random Weather Probability Maps_MERGED.K2Node_FunctionEntry_0'"
+      End Object
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionResult Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Random Weather Probability Maps_MERGED.K2Node_FunctionResult_0'"
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="Check for Material Refresh_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Check for Material Refresh_MERGED'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Check for Material Refresh_MERGED.K2Node_FunctionEntry_0'"
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="Force WOV Tick_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Force WOV Tick_MERGED'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Force WOV Tick_MERGED.K2Node_FunctionEntry_0'"
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="Get Next Random Weather and Timer Length_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Next Random Weather and Timer Length_MERGED'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Next Random Weather and Timer Length_MERGED.K2Node_FunctionEntry_0'"
+      End Object
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionResult Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Next Random Weather and Timer Length_MERGED.K2Node_FunctionResult_0'"
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="Instant Material State Update_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Instant Material State Update_MERGED'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Instant Material State Update_MERGED.K2Node_FunctionEntry_0'"
+      End Object
+   End Object
+   Begin Object Name="Get Random Weather Probability Maps" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Random Weather Probability Maps'"
+      Begin Object Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Random Weather Probability Maps.K2Node_FunctionResult_0'"
+         FunctionReference=(MemberName="Get Random Weather Probability Maps")
+         bIsEditable=True
+         NodePosX=256
+         NodeGuid=4AA1385B426A940A8ECB3689BFB2E3E4
+         CustomProperties Pin (PinId=5CEEE1CB4A61CD7FAD4902877C8B9F4C,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionEntry_0 BB2CA3F74D98101075947A97D6F92752,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=BD7C7CBF44F5A6DCC2CDACA30F096F50,PinName="Spring",PinType.PinCategory="object",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.UDS_Weather_Settings_C'",PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(TerminalCategory="real",TerminalSubCategory="double"),PinType.ContainerType=Map,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=812E17F444FE78566428D7849486583D,PinName="Summer",PinType.PinCategory="object",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.UDS_Weather_Settings_C'",PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(TerminalCategory="real",TerminalSubCategory="double"),PinType.ContainerType=Map,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=B2DD5BDA42DE25A9A73FC8B671FAEAD8,PinName="Autumn",PinType.PinCategory="object",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.UDS_Weather_Settings_C'",PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(TerminalCategory="real",TerminalSubCategory="double"),PinType.ContainerType=Map,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=3E84E72D4082303DB918039FAD0B3630,PinName="Winter",PinType.PinCategory="object",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.UDS_Weather_Settings_C'",PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(TerminalCategory="real",TerminalSubCategory="double"),PinType.ContainerType=Map,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties UserDefinedPin (PinName="Spring",PinType=(PinCategory="object",PinSubCategoryObject="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.UDS_Weather_Settings_C'",PinValueType=(TerminalCategory="real",TerminalSubCategory="double"),ContainerType=Map),DesiredPinDirection=EGPD_Input)
+         CustomProperties UserDefinedPin (PinName="Summer",PinType=(PinCategory="object",PinSubCategoryObject="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.UDS_Weather_Settings_C'",PinValueType=(TerminalCategory="real",TerminalSubCategory="double"),ContainerType=Map),DesiredPinDirection=EGPD_Input)
+         CustomProperties UserDefinedPin (PinName="Autumn",PinType=(PinCategory="object",PinSubCategoryObject="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.UDS_Weather_Settings_C'",PinValueType=(TerminalCategory="real",TerminalSubCategory="double"),ContainerType=Map),DesiredPinDirection=EGPD_Input)
+         CustomProperties UserDefinedPin (PinName="Winter",PinType=(PinCategory="object",PinSubCategoryObject="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.UDS_Weather_Settings_C'",PinValueType=(TerminalCategory="real",TerminalSubCategory="double"),ContainerType=Map),DesiredPinDirection=EGPD_Input)
+      End Object
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Random Weather Probability Maps.K2Node_FunctionEntry_0'"
+         MetaData=(Category=NSLOCTEXT("", "47AA718A4B2C9B5DC0992581B65D98F2", "Random Weather"))
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Get Random Weather Probability Maps")
+         bIsEditable=True
+         NodeGuid=9636A6E04910C4E21B0F9DABB81758BA
+         CustomProperties Pin (PinId=BB2CA3F74D98101075947A97D6F92752,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionResult_0 5CEEE1CB4A61CD7FAD4902877C8B9F4C,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+      GraphGuid=4197717F429F6FEB0B776ABA667B56B7
+   End Object
+   Begin Object Name="Get Season Temperature Ranges" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Season Temperature Ranges'"
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Season Temperature Ranges.K2Node_FunctionEntry_0'"
+         MetaData=(Category=NSLOCTEXT("", "54DC0E434B2DAF0A8EF035A096E17028", "Season"))
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Get Season Temperature Ranges")
+         bIsEditable=True
+         NodeGuid=FD9944D349717C4A412D1383E6972923
+         CustomProperties Pin (PinId=D93942FD407D2B140352918FB2101142,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionResult_0 0D5A93B0486CF49EC7A32C8C04E58512,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Begin Object Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Season Temperature Ranges.K2Node_FunctionResult_0'"
+         FunctionReference=(MemberName="Get Season Temperature Ranges")
+         bIsEditable=True
+         NodePosX=256
+         NodeGuid=AB21D6C14B9B95693D57ACAD2CEF1C2B
+         CustomProperties Pin (PinId=0D5A93B0486CF49EC7A32C8C04E58512,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionEntry_0 D93942FD407D2B140352918FB2101142,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=6AED752C4FA19BC1DC643888DCE2DD39,PinName="Spring",PinType.PinCategory="struct",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/CoreUObject.ScriptStruct'/Script/CoreUObject.Vector2D'",PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=CD9770AB46901C794602FDA23EF144B3,PinName="Summer",PinType.PinCategory="struct",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/CoreUObject.ScriptStruct'/Script/CoreUObject.Vector2D'",PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=F9D262E7435A42011947AE814D142BD3,PinName="Autumn",PinType.PinCategory="struct",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/CoreUObject.ScriptStruct'/Script/CoreUObject.Vector2D'",PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=DE3682464097DCBA44EC769B90AEF133,PinName="Winter",PinType.PinCategory="struct",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/CoreUObject.ScriptStruct'/Script/CoreUObject.Vector2D'",PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties UserDefinedPin (PinName="Spring",PinType=(PinCategory="struct",PinSubCategoryObject="/Script/CoreUObject.ScriptStruct'/Script/CoreUObject.Vector2D'"),DesiredPinDirection=EGPD_Input)
+         CustomProperties UserDefinedPin (PinName="Summer",PinType=(PinCategory="struct",PinSubCategoryObject="/Script/CoreUObject.ScriptStruct'/Script/CoreUObject.Vector2D'"),DesiredPinDirection=EGPD_Input)
+         CustomProperties UserDefinedPin (PinName="Autumn",PinType=(PinCategory="struct",PinSubCategoryObject="/Script/CoreUObject.ScriptStruct'/Script/CoreUObject.Vector2D'"),DesiredPinDirection=EGPD_Input)
+         CustomProperties UserDefinedPin (PinName="Winter",PinType=(PinCategory="struct",PinSubCategoryObject="/Script/CoreUObject.ScriptStruct'/Script/CoreUObject.Vector2D'"),DesiredPinDirection=EGPD_Input)
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+      GraphGuid=300CA6564A75BBB5B93242880E539573
+   End Object
+   Begin Object Name="Get Random Weather Mode" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Random Weather Mode'"
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Random Weather Mode.K2Node_FunctionEntry_0'"
+         MetaData=(Category=NSLOCTEXT("", "AEFE85474BB4D7D7D8C88F892C681F85", "Random Weather"))
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Get Random Weather Mode")
+         bIsEditable=True
+         NodeGuid=46990CEB4412A6F91CDCC79C5737B482
+         CustomProperties Pin (PinId=5C5E1363477EBB5A97CB42A9A8952DC0,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionResult_0 22277F2841DD2B1C6DFAEE885B5159A7,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Begin Object Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Random Weather Mode.K2Node_FunctionResult_0'"
+         FunctionReference=(MemberName="Get Random Weather Mode")
+         bIsEditable=True
+         NodePosX=256
+         NodeGuid=137359CC4D1B50221BA01998D300517C
+         CustomProperties Pin (PinId=22277F2841DD2B1C6DFAEE885B5159A7,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionEntry_0 5C5E1363477EBB5A97CB42A9A8952DC0,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=59A90F6B4C1CF371B9C712819B597FED,PinName="Mode",PinType.PinCategory="byte",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/Engine.UserDefinedEnum'/Game/UltraDynamicSky/Blueprints/Enum/UDS_RandomWeatherTiming.UDS_RandomWeatherTiming'",PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue="NewEnumerator3",AutogeneratedDefaultValue="NewEnumerator3",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties UserDefinedPin (PinName="Mode",PinType=(PinCategory="byte",PinSubCategoryObject="/Script/Engine.UserDefinedEnum'/Game/UltraDynamicSky/Blueprints/Enum/UDS_RandomWeatherTiming.UDS_RandomWeatherTiming'"),DesiredPinDirection=EGPD_Input,PinDefaultValue="NewEnumerator3")
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+      GraphGuid=BA6ED0CE49E920EEDD0042A3BC70871B
+   End Object
+   Begin Object Name="Force WOV Tick" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Force WOV Tick'"
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Force WOV Tick.K2Node_FunctionEntry_0'"
+         MetaData=(Category=NSLOCTEXT("", "1185C16D4DEDBE450FD51FBD702EF7A6", "Weather Override Volumes"))
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Force WOV Tick")
+         bIsEditable=True
+         NodeGuid=06A8BBBD4DC8B6AF8BAFDCA3E3D0BE6B
+         CustomProperties Pin (PinId=B91BD22C4C8A6AE0AD6B7DA6104B2027,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      GraphGuid=F40868B54BCD1E76EDF7A3BC0F4B0C1D
+   End Object
+   Begin Object Name="Check for Material Refresh" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Check for Material Refresh'"
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Check for Material Refresh.K2Node_FunctionEntry_0'"
+         MetaData=(Category=NSLOCTEXT("", "CB9F43054E61B4FF84D9528E2F5756E6", "Material Effects"))
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Check for Material Refresh")
+         bIsEditable=True
+         NodeGuid=04DF507D465EE583651F47A0BD3993AB
+         CustomProperties Pin (PinId=4C724EA24EFEB88DBFAFD798630A6FC0,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      GraphGuid=5457BBF944C07117268CF49649659DD3
+   End Object
+   Begin Object Name="Get Next Random Weather and Timer Length" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Next Random Weather and Timer Length'"
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Next Random Weather and Timer Length.K2Node_FunctionEntry_0'"
+         MetaData=(Category=NSLOCTEXT("", "0F76A5FE4955935D61C5A186035E66AD", "Random Weather"))
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Get Next Random Weather and Timer Length")
+         bIsEditable=True
+         NodeGuid=CD88BF7044B68FE5B926279C14A06B88
+         CustomProperties Pin (PinId=C9A663674BA786388D7B4AA790E8AB4B,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionResult_0 FBD70894472C07644BD235ACDD4BEEA6,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=0018F1EE445D347FCEFFCCAA80DC2E89,PinName="Random Weather Component",Direction="EGPD_Output",PinType.PinCategory="object",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/Random_Weather_Variation.Random_Weather_Variation_C'",PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties UserDefinedPin (PinName="Random Weather Component",PinType=(PinCategory="object",PinSubCategoryObject="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/Random_Weather_Variation.Random_Weather_Variation_C'"),DesiredPinDirection=EGPD_Output)
+      End Object
+      Begin Object Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Next Random Weather and Timer Length.K2Node_FunctionResult_0'"
+         FunctionReference=(MemberName="Get Next Random Weather and Timer Length")
+         bIsEditable=True
+         NodePosX=256
+         NodeGuid=18E88FBE476C59BF69B5EF9232D8813B
+         CustomProperties Pin (PinId=FBD70894472C07644BD235ACDD4BEEA6,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionEntry_0 C9A663674BA786388D7B4AA790E8AB4B,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=B4A89F86478D8D094A7BA283C27247BF,PinName="Next Preset",PinType.PinCategory="object",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.UDS_Weather_Settings_C'",PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=2EE0A2BF4FD23383CE4A9F8AEB724B63,PinName="Timer Length",PinType.PinCategory="real",PinType.PinSubCategory="double",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue="0.0",AutogeneratedDefaultValue="0.0",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties UserDefinedPin (PinName="Next Preset",PinType=(PinCategory="object",PinSubCategoryObject="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.UDS_Weather_Settings_C'"),DesiredPinDirection=EGPD_Input)
+         CustomProperties UserDefinedPin (PinName="Timer Length",PinType=(PinCategory="real",PinSubCategory="double"),DesiredPinDirection=EGPD_Input,PinDefaultValue="0.0")
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+      GraphGuid=8092805F447E9A437FBAE3B9CFBD6592
+   End Object
+   Begin Object Name="Instant Material State Update" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Instant Material State Update'"
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Instant Material State Update.K2Node_FunctionEntry_0'"
+         MetaData=(Category=NSLOCTEXT("", "D840EEC946D7DA432F226C806342A095", "Material Effects"))
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Instant Material State Update")
+         bIsEditable=True
+         NodeGuid=02BCB9594783E663646858B8066AF4A3
+         CustomProperties Pin (PinId=B67B7C604351EB69F8563FA1B8E853AF,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      GraphGuid=1C80BADC4D86D748EDF6C7B7165F876C
+   End Object
+   Begin Object Name="SceneThumbnailInfo_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfo'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:SceneThumbnailInfo_0'"
+   End Object
+   Begin Object Name="Get Season Temperature Ranges_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Season Temperature Ranges_MERGED'"
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Season Temperature Ranges_MERGED.K2Node_FunctionEntry_0'"
+         MetaData=(Category=NSLOCTEXT("", "54DC0E434B2DAF0A8EF035A096E17028", "Season"))
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Get Season Temperature Ranges")
+         bIsEditable=True
+         NodeGuid=FD9944D349717C4A412D1383E6972923
+         CustomProperties Pin (PinId=D93942FD407D2B140352918FB2101142,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionResult_0 0D5A93B0486CF49EC7A32C8C04E58512,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Begin Object Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Season Temperature Ranges_MERGED.K2Node_FunctionResult_0'"
+         FunctionReference=(MemberName="Get Season Temperature Ranges")
+         bIsEditable=True
+         NodePosX=256
+         NodeGuid=AB21D6C14B9B95693D57ACAD2CEF1C2B
+         CustomProperties Pin (PinId=0D5A93B0486CF49EC7A32C8C04E58512,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionEntry_0 D93942FD407D2B140352918FB2101142,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=6AED752C4FA19BC1DC643888DCE2DD39,PinName="Spring",PinType.PinCategory="struct",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/CoreUObject.ScriptStruct'/Script/CoreUObject.Vector2D'",PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=CD9770AB46901C794602FDA23EF144B3,PinName="Summer",PinType.PinCategory="struct",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/CoreUObject.ScriptStruct'/Script/CoreUObject.Vector2D'",PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=F9D262E7435A42011947AE814D142BD3,PinName="Autumn",PinType.PinCategory="struct",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/CoreUObject.ScriptStruct'/Script/CoreUObject.Vector2D'",PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=DE3682464097DCBA44EC769B90AEF133,PinName="Winter",PinType.PinCategory="struct",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/CoreUObject.ScriptStruct'/Script/CoreUObject.Vector2D'",PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties UserDefinedPin (PinName="Spring",PinType=(PinCategory="struct",PinSubCategoryObject="/Script/CoreUObject.ScriptStruct'/Script/CoreUObject.Vector2D'"),DesiredPinDirection=EGPD_Input)
+         CustomProperties UserDefinedPin (PinName="Summer",PinType=(PinCategory="struct",PinSubCategoryObject="/Script/CoreUObject.ScriptStruct'/Script/CoreUObject.Vector2D'"),DesiredPinDirection=EGPD_Input)
+         CustomProperties UserDefinedPin (PinName="Autumn",PinType=(PinCategory="struct",PinSubCategoryObject="/Script/CoreUObject.ScriptStruct'/Script/CoreUObject.Vector2D'"),DesiredPinDirection=EGPD_Input)
+         CustomProperties UserDefinedPin (PinName="Winter",PinType=(PinCategory="struct",PinSubCategoryObject="/Script/CoreUObject.ScriptStruct'/Script/CoreUObject.Vector2D'"),DesiredPinDirection=EGPD_Input)
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+      GraphGuid=300CA6564A75BBB5B93242880E539573
+   End Object
+   Begin Object Name="Get Random Weather Mode_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Random Weather Mode_MERGED'"
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Random Weather Mode_MERGED.K2Node_FunctionEntry_0'"
+         MetaData=(Category=NSLOCTEXT("", "AEFE85474BB4D7D7D8C88F892C681F85", "Random Weather"))
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Get Random Weather Mode")
+         bIsEditable=True
+         NodeGuid=46990CEB4412A6F91CDCC79C5737B482
+         CustomProperties Pin (PinId=5C5E1363477EBB5A97CB42A9A8952DC0,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionResult_0 22277F2841DD2B1C6DFAEE885B5159A7,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Begin Object Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Random Weather Mode_MERGED.K2Node_FunctionResult_0'"
+         FunctionReference=(MemberName="Get Random Weather Mode")
+         bIsEditable=True
+         NodePosX=256
+         NodeGuid=137359CC4D1B50221BA01998D300517C
+         CustomProperties Pin (PinId=22277F2841DD2B1C6DFAEE885B5159A7,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionEntry_0 5C5E1363477EBB5A97CB42A9A8952DC0,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=59A90F6B4C1CF371B9C712819B597FED,PinName="Mode",PinType.PinCategory="byte",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/Engine.UserDefinedEnum'/Game/UltraDynamicSky/Blueprints/Enum/UDS_RandomWeatherTiming.UDS_RandomWeatherTiming'",PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue="NewEnumerator3",AutogeneratedDefaultValue="NewEnumerator3",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties UserDefinedPin (PinName="Mode",PinType=(PinCategory="byte",PinSubCategoryObject="/Script/Engine.UserDefinedEnum'/Game/UltraDynamicSky/Blueprints/Enum/UDS_RandomWeatherTiming.UDS_RandomWeatherTiming'"),DesiredPinDirection=EGPD_Input,PinDefaultValue="NewEnumerator3")
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+      GraphGuid=BA6ED0CE49E920EEDD0042A3BC70871B
+   End Object
+   Begin Object Name="Get Random Weather Probability Maps_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Random Weather Probability Maps_MERGED'"
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Random Weather Probability Maps_MERGED.K2Node_FunctionEntry_0'"
+         MetaData=(Category=NSLOCTEXT("", "47AA718A4B2C9B5DC0992581B65D98F2", "Random Weather"))
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Get Random Weather Probability Maps")
+         bIsEditable=True
+         NodeGuid=9636A6E04910C4E21B0F9DABB81758BA
+         CustomProperties Pin (PinId=BB2CA3F74D98101075947A97D6F92752,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionResult_0 5CEEE1CB4A61CD7FAD4902877C8B9F4C,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Begin Object Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Random Weather Probability Maps_MERGED.K2Node_FunctionResult_0'"
+         FunctionReference=(MemberName="Get Random Weather Probability Maps")
+         bIsEditable=True
+         NodePosX=256
+         NodeGuid=4AA1385B426A940A8ECB3689BFB2E3E4
+         CustomProperties Pin (PinId=5CEEE1CB4A61CD7FAD4902877C8B9F4C,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionEntry_0 BB2CA3F74D98101075947A97D6F92752,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=BD7C7CBF44F5A6DCC2CDACA30F096F50,PinName="Spring",PinType.PinCategory="object",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.UDS_Weather_Settings_C'",PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(TerminalCategory="real",TerminalSubCategory="double"),PinType.ContainerType=Map,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=812E17F444FE78566428D7849486583D,PinName="Summer",PinType.PinCategory="object",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.UDS_Weather_Settings_C'",PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(TerminalCategory="real",TerminalSubCategory="double"),PinType.ContainerType=Map,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=B2DD5BDA42DE25A9A73FC8B671FAEAD8,PinName="Autumn",PinType.PinCategory="object",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.UDS_Weather_Settings_C'",PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(TerminalCategory="real",TerminalSubCategory="double"),PinType.ContainerType=Map,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=3E84E72D4082303DB918039FAD0B3630,PinName="Winter",PinType.PinCategory="object",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.UDS_Weather_Settings_C'",PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(TerminalCategory="real",TerminalSubCategory="double"),PinType.ContainerType=Map,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties UserDefinedPin (PinName="Spring",PinType=(PinCategory="object",PinSubCategoryObject="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.UDS_Weather_Settings_C'",PinValueType=(TerminalCategory="real",TerminalSubCategory="double"),ContainerType=Map),DesiredPinDirection=EGPD_Input)
+         CustomProperties UserDefinedPin (PinName="Summer",PinType=(PinCategory="object",PinSubCategoryObject="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.UDS_Weather_Settings_C'",PinValueType=(TerminalCategory="real",TerminalSubCategory="double"),ContainerType=Map),DesiredPinDirection=EGPD_Input)
+         CustomProperties UserDefinedPin (PinName="Autumn",PinType=(PinCategory="object",PinSubCategoryObject="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.UDS_Weather_Settings_C'",PinValueType=(TerminalCategory="real",TerminalSubCategory="double"),ContainerType=Map),DesiredPinDirection=EGPD_Input)
+         CustomProperties UserDefinedPin (PinName="Winter",PinType=(PinCategory="object",PinSubCategoryObject="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.UDS_Weather_Settings_C'",PinValueType=(TerminalCategory="real",TerminalSubCategory="double"),ContainerType=Map),DesiredPinDirection=EGPD_Input)
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+      GraphGuid=4197717F429F6FEB0B776ABA667B56B7
+   End Object
+   Begin Object Name="Check for Material Refresh_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Check for Material Refresh_MERGED'"
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Check for Material Refresh_MERGED.K2Node_FunctionEntry_0'"
+         MetaData=(Category=NSLOCTEXT("", "CB9F43054E61B4FF84D9528E2F5756E6", "Material Effects"))
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Check for Material Refresh")
+         bIsEditable=True
+         NodeGuid=04DF507D465EE583651F47A0BD3993AB
+         CustomProperties Pin (PinId=4C724EA24EFEB88DBFAFD798630A6FC0,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      GraphGuid=5457BBF944C07117268CF49649659DD3
+   End Object
+   Begin Object Name="Force WOV Tick_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Force WOV Tick_MERGED'"
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Force WOV Tick_MERGED.K2Node_FunctionEntry_0'"
+         MetaData=(Category=NSLOCTEXT("", "1185C16D4DEDBE450FD51FBD702EF7A6", "Weather Override Volumes"))
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Force WOV Tick")
+         bIsEditable=True
+         NodeGuid=06A8BBBD4DC8B6AF8BAFDCA3E3D0BE6B
+         CustomProperties Pin (PinId=B91BD22C4C8A6AE0AD6B7DA6104B2027,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      GraphGuid=F40868B54BCD1E76EDF7A3BC0F4B0C1D
+   End Object
+   Begin Object Name="Get Next Random Weather and Timer Length_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Next Random Weather and Timer Length_MERGED'"
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Next Random Weather and Timer Length_MERGED.K2Node_FunctionEntry_0'"
+         MetaData=(Category=NSLOCTEXT("", "0F76A5FE4955935D61C5A186035E66AD", "Random Weather"))
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Get Next Random Weather and Timer Length")
+         bIsEditable=True
+         NodeGuid=CD88BF7044B68FE5B926279C14A06B88
+         CustomProperties Pin (PinId=C9A663674BA786388D7B4AA790E8AB4B,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionResult_0 FBD70894472C07644BD235ACDD4BEEA6,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=0018F1EE445D347FCEFFCCAA80DC2E89,PinName="Random Weather Component",Direction="EGPD_Output",PinType.PinCategory="object",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/Random_Weather_Variation.Random_Weather_Variation_C'",PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties UserDefinedPin (PinName="Random Weather Component",PinType=(PinCategory="object",PinSubCategoryObject="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/Random_Weather_Variation.Random_Weather_Variation_C'"),DesiredPinDirection=EGPD_Output)
+      End Object
+      Begin Object Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Next Random Weather and Timer Length_MERGED.K2Node_FunctionResult_0'"
+         FunctionReference=(MemberName="Get Next Random Weather and Timer Length")
+         bIsEditable=True
+         NodePosX=256
+         NodeGuid=18E88FBE476C59BF69B5EF9232D8813B
+         CustomProperties Pin (PinId=FBD70894472C07644BD235ACDD4BEEA6,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionEntry_0 C9A663674BA786388D7B4AA790E8AB4B,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=B4A89F86478D8D094A7BA283C27247BF,PinName="Next Preset",PinType.PinCategory="object",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.UDS_Weather_Settings_C'",PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=2EE0A2BF4FD23383CE4A9F8AEB724B63,PinName="Timer Length",PinType.PinCategory="real",PinType.PinSubCategory="double",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue="0.0",AutogeneratedDefaultValue="0.0",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties UserDefinedPin (PinName="Next Preset",PinType=(PinCategory="object",PinSubCategoryObject="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.UDS_Weather_Settings_C'"),DesiredPinDirection=EGPD_Input)
+         CustomProperties UserDefinedPin (PinName="Timer Length",PinType=(PinCategory="real",PinSubCategory="double"),DesiredPinDirection=EGPD_Input,PinDefaultValue="0.0")
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+      GraphGuid=8092805F447E9A437FBAE3B9CFBD6592
+   End Object
+   Begin Object Name="Instant Material State Update_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Instant Material State Update_MERGED'"
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Instant Material State Update_MERGED.K2Node_FunctionEntry_0'"
+         MetaData=(Category=NSLOCTEXT("", "D840EEC946D7DA432F226C806342A095", "Material Effects"))
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Instant Material State Update")
+         bIsEditable=True
+         NodeGuid=02BCB9594783E663646858B8066AF4A3
+         CustomProperties Pin (PinId=B67B7C604351EB69F8563FA1B8E853AF,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      GraphGuid=1C80BADC4D86D748EDF6C7B7165F876C
+   End Object
+   ParentClass="/Script/CoreUObject.Class'/Script/CoreUObject.Interface'"
+   BlueprintType=BPTYPE_Interface
+   bDeprecate=True
+   BlueprintCategory="UltraDynamicWeather|System"
+   BlueprintSystemVersion=2
+   FunctionGraphs(0)="/Script/Engine.EdGraph'Get Season Temperature Ranges'"
+   FunctionGraphs(1)="/Script/Engine.EdGraph'Get Random Weather Mode'"
+   FunctionGraphs(2)="/Script/Engine.EdGraph'Get Random Weather Probability Maps'"
+   FunctionGraphs(3)="/Script/Engine.EdGraph'Check for Material Refresh'"
+   FunctionGraphs(4)="/Script/Engine.EdGraph'Force WOV Tick'"
+   FunctionGraphs(5)="/Script/Engine.EdGraph'Get Next Random Weather and Timer Length'"
+   FunctionGraphs(6)="/Script/Engine.EdGraph'Instant Material State Update'"
+   CategorySorting(0)="Season"
+   CategorySorting(1)="Random Weather"
+   CategorySorting(2)="Material Effects"
+   CategorySorting(3)="Weather Override Volumes"
+   CategorySorting(4)=""
+   LastEditedDocuments(0)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Random Weather Mode",SavedViewOffset=(X=-1407.000000,Y=-631.625000),SavedZoomAmount=1.000000)
+   LastEditedDocuments(1)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Next Random Weather and Timer Length",SavedViewOffset=(X=-1185.764771,Y=-561.125000),SavedZoomAmount=1.000000)
+   ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfo'SceneThumbnailInfo_0'"
+   GeneratedClass="/Script/Engine.BlueprintGeneratedClass'UDW_and_Weather_Override_Volume_Interface_C'"
+   bLegacyNeedToPurgeSkelRefs=False
+   BlueprintGuid=B423203C45BC16A1919929A71F41EC7B
+End Object

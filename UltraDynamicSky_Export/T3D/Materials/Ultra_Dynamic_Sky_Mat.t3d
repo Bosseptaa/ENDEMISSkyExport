@@ -1,3 +1,852 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:47688a351fea733a56dcf5bc9281e970415c1b998a3e113bbfea881b7111c4e0
-size 84007
+Begin Object Class=/Script/Engine.Material Name="Ultra_Dynamic_Sky_Mat" ExportPath="/Script/Engine.Material'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat'"
+   Begin Object Class=/Script/Engine.MaterialEditorOnlyData Name="Ultra_Dynamic_Sky_MatEditorOnlyData" ExportPath="/Script/Engine.MaterialEditorOnlyData'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:Ultra_Dynamic_Sky_MatEditorOnlyData'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAdd Name="MaterialExpressionAdd_10" ExportPath="/Script/Engine.MaterialExpressionAdd'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionAdd_10'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAdd Name="MaterialExpressionAdd_11" ExportPath="/Script/Engine.MaterialExpressionAdd'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionAdd_11'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAdd Name="MaterialExpressionAdd_12" ExportPath="/Script/Engine.MaterialExpressionAdd'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionAdd_12'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAdd Name="MaterialExpressionAdd_13" ExportPath="/Script/Engine.MaterialExpressionAdd'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionAdd_13'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAdd Name="MaterialExpressionAdd_15" ExportPath="/Script/Engine.MaterialExpressionAdd'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionAdd_15'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAppendVector Name="MaterialExpressionAppendVector_0" ExportPath="/Script/Engine.MaterialExpressionAppendVector'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionAppendVector_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_10" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionComment_10'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_12" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionComment_12'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_13" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionComment_13'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_14" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionComment_14'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_15" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionComment_15'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_18" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionComment_18'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_2" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionComment_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_4" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionComment_4'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_5" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionComment_5'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_6" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionComment_6'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_7" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionComment_7'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_8" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionComment_8'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_9" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionComment_9'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_3" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionConstant_3'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDesaturation Name="MaterialExpressionDesaturation_0" ExportPath="/Script/Engine.MaterialExpressionDesaturation'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionDesaturation_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_3" ExportPath="/Script/Engine.MaterialExpressionLinearInterpolate'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionLinearInterpolate_3'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_15" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_15'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_16" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_16'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_17" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_17'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_2" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_21" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_21'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_22" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_22'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_23" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_23'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_24" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_24'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_25" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_25'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_26" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_26'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_27" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_27'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_29" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_29'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_30" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_30'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_31" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_31'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_34" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_34'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_4" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_4'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_40" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_40'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_5" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_5'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_6" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_6'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_8" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_8'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_14" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionMultiply_14'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_15" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionMultiply_15'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionReroute Name="MaterialExpressionReroute_10" ExportPath="/Script/Engine.MaterialExpressionReroute'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionReroute_10'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionReroute Name="MaterialExpressionReroute_11" ExportPath="/Script/Engine.MaterialExpressionReroute'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionReroute_11'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionReroute Name="MaterialExpressionReroute_12" ExportPath="/Script/Engine.MaterialExpressionReroute'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionReroute_12'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionReroute Name="MaterialExpressionReroute_14" ExportPath="/Script/Engine.MaterialExpressionReroute'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionReroute_14'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionReroute Name="MaterialExpressionReroute_15" ExportPath="/Script/Engine.MaterialExpressionReroute'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionReroute_15'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionReroute Name="MaterialExpressionReroute_16" ExportPath="/Script/Engine.MaterialExpressionReroute'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionReroute_16'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionReroute Name="MaterialExpressionReroute_19" ExportPath="/Script/Engine.MaterialExpressionReroute'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionReroute_19'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionReroute Name="MaterialExpressionReroute_2" ExportPath="/Script/Engine.MaterialExpressionReroute'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionReroute_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionReroute Name="MaterialExpressionReroute_20" ExportPath="/Script/Engine.MaterialExpressionReroute'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionReroute_20'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionReroute Name="MaterialExpressionReroute_21" ExportPath="/Script/Engine.MaterialExpressionReroute'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionReroute_21'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_1" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionScalarParameter_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_2" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionScalarParameter_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_25" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionScalarParameter_25'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_33" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionScalarParameter_33'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionStaticSwitchParameter Name="MaterialExpressionStaticSwitchParameter_1" ExportPath="/Script/Engine.MaterialExpressionStaticSwitchParameter'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionStaticSwitchParameter_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionStaticSwitchParameter Name="MaterialExpressionStaticSwitchParameter_14" ExportPath="/Script/Engine.MaterialExpressionStaticSwitchParameter'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionStaticSwitchParameter_14'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionStaticSwitchParameter Name="MaterialExpressionStaticSwitchParameter_15" ExportPath="/Script/Engine.MaterialExpressionStaticSwitchParameter'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionStaticSwitchParameter_15'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionStaticSwitchParameter Name="MaterialExpressionStaticSwitchParameter_16" ExportPath="/Script/Engine.MaterialExpressionStaticSwitchParameter'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionStaticSwitchParameter_16'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionStaticSwitchParameter Name="MaterialExpressionStaticSwitchParameter_17" ExportPath="/Script/Engine.MaterialExpressionStaticSwitchParameter'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionStaticSwitchParameter_17'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionStaticSwitchParameter Name="MaterialExpressionStaticSwitchParameter_19" ExportPath="/Script/Engine.MaterialExpressionStaticSwitchParameter'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionStaticSwitchParameter_19'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionStaticSwitchParameter Name="MaterialExpressionStaticSwitchParameter_3" ExportPath="/Script/Engine.MaterialExpressionStaticSwitchParameter'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionStaticSwitchParameter_3'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionStaticSwitchParameter Name="MaterialExpressionStaticSwitchParameter_6" ExportPath="/Script/Engine.MaterialExpressionStaticSwitchParameter'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionStaticSwitchParameter_6'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionStaticSwitchParameter Name="MaterialExpressionStaticSwitchParameter_8" ExportPath="/Script/Engine.MaterialExpressionStaticSwitchParameter'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionStaticSwitchParameter_8'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureCoordinate Name="MaterialExpressionTextureCoordinate_1" ExportPath="/Script/Engine.MaterialExpressionTextureCoordinate'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionTextureCoordinate_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureCoordinate Name="MaterialExpressionTextureCoordinate_2" ExportPath="/Script/Engine.MaterialExpressionTextureCoordinate'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionTextureCoordinate_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureCoordinate Name="MaterialExpressionTextureCoordinate_5" ExportPath="/Script/Engine.MaterialExpressionTextureCoordinate'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionTextureCoordinate_5'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   Begin Object Name="Ultra_Dynamic_Sky_MatEditorOnlyData" ExportPath="/Script/Engine.MaterialEditorOnlyData'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:Ultra_Dynamic_Sky_MatEditorOnlyData'"
+      BaseColor=(UseConstant=True,Constant=(R=0.501961,G=0.501961,B=0.501961,A=1.000000))
+      Metallic=(UseConstant=True)
+      Specular=(UseConstant=True)
+      Roughness=(UseConstant=True)
+      Anisotropy=(UseConstant=True)
+      Normal=(UseConstant=True)
+      Tangent=(UseConstant=True)
+      EmissiveColor=(Expression="/Script/Engine.MaterialExpressionDesaturation'Ultra_Dynamic_Sky_Mat:MaterialExpressionDesaturation_0'")
+      Opacity=(UseConstant=True)
+      OpacityMask=(UseConstant=True)
+      WorldPositionOffset=(UseConstant=True)
+      Displacement=(UseConstant=True)
+      SubsurfaceColor=(UseConstant=True)
+      ClearCoat=(UseConstant=True)
+      ClearCoatRoughness=(UseConstant=True)
+      AmbientOcclusion=(UseConstant=True)
+      Refraction=(UseConstant=True)
+      CustomizedUVs(0)=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Ultra_Dynamic_Sky_Mat:MaterialExpressionStaticSwitchParameter_14'")
+      CustomizedUVs(1)=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Ultra_Dynamic_Sky_Mat:MaterialExpressionStaticSwitchParameter_8'")
+      CustomizedUVs(2)=(Expression="/Script/Engine.MaterialExpressionAppendVector'Ultra_Dynamic_Sky_Mat:MaterialExpressionAppendVector_0'")
+      CustomizedUVs(3)=(UseConstant=True)
+      CustomizedUVs(4)=(UseConstant=True)
+      CustomizedUVs(5)=(UseConstant=True)
+      CustomizedUVs(6)=(UseConstant=True)
+      CustomizedUVs(7)=(UseConstant=True)
+      PixelDepthOffset=(UseConstant=True)
+      SurfaceThickness=(UseConstant=True)
+      ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionDesaturation'Ultra_Dynamic_Sky_Mat:MaterialExpressionDesaturation_0'","/Script/Engine.MaterialExpressionStaticSwitchParameter'Ultra_Dynamic_Sky_Mat:MaterialExpressionStaticSwitchParameter_14'","/Script/Engine.MaterialExpressionStaticSwitchParameter'Ultra_Dynamic_Sky_Mat:MaterialExpressionStaticSwitchParameter_8'","/Script/Engine.MaterialExpressionAppendVector'Ultra_Dynamic_Sky_Mat:MaterialExpressionAppendVector_0'","/Script/Engine.MaterialExpressionStaticSwitchParameter'Ultra_Dynamic_Sky_Mat:MaterialExpressionStaticSwitchParameter_3'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_2'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_40'","/Script/Engine.MaterialExpressionReroute'Ultra_Dynamic_Sky_Mat:MaterialExpressionReroute_2'","/Script/Engine.MaterialExpressionStaticSwitchParameter'Ultra_Dynamic_Sky_Mat:MaterialExpressionStaticSwitchParameter_1'","/Script/Engine.MaterialExpressionTextureCoordinate'Ultra_Dynamic_Sky_Mat:MaterialExpressionTextureCoordinate_5'","/Script/Engine.MaterialExpressionScalarParameter'Ultra_Dynamic_Sky_Mat:MaterialExpressionScalarParameter_1'","/Script/Engine.MaterialExpressionTextureCoordinate'Ultra_Dynamic_Sky_Mat:MaterialExpressionTextureCoordinate_1'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_21'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_23'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_4'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_5'","/Script/Engine.MaterialExpressionStaticSwitchParameter'Ultra_Dynamic_Sky_Mat:MaterialExpressionStaticSwitchParameter_16'","/Script/Engine.MaterialExpressionReroute'Ultra_Dynamic_Sky_Mat:MaterialExpressionReroute_14'","/Script/Engine.MaterialExpressionReroute'Ultra_Dynamic_Sky_Mat:MaterialExpressionReroute_15'","/Script/Engine.MaterialExpressionReroute'Ultra_Dynamic_Sky_Mat:MaterialExpressionReroute_16'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_6'","/Script/Engine.MaterialExpressionStaticSwitchParameter'Ultra_Dynamic_Sky_Mat:MaterialExpressionStaticSwitchParameter_17'","/Script/Engine.MaterialExpressionTextureCoordinate'Ultra_Dynamic_Sky_Mat:MaterialExpressionTextureCoordinate_2'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_8'","/Script/Engine.MaterialExpressionScalarParameter'Ultra_Dynamic_Sky_Mat:MaterialExpressionScalarParameter_2'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_15'","/Script/Engine.MaterialExpressionScalarParameter'Ultra_Dynamic_Sky_Mat:MaterialExpressionScalarParameter_25'","/Script/Engine.MaterialExpressionScalarParameter'Ultra_Dynamic_Sky_Mat:MaterialExpressionScalarParameter_33'","/Script/Engine.MaterialExpressionConstant'Ultra_Dynamic_Sky_Mat:MaterialExpressionConstant_3'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_16'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_17'","/Script/Engine.MaterialExpressionAdd'Ultra_Dynamic_Sky_Mat:MaterialExpressionAdd_10'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_22'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_24'","/Script/Engine.MaterialExpressionMultiply'Ultra_Dynamic_Sky_Mat:MaterialExpressionMultiply_14'","/Script/Engine.MaterialExpressionAdd'Ultra_Dynamic_Sky_Mat:MaterialExpressionAdd_11'","/Script/Engine.MaterialExpressionAdd'Ultra_Dynamic_Sky_Mat:MaterialExpressionAdd_12'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_25'","/Script/Engine.MaterialExpressionStaticSwitchParameter'Ultra_Dynamic_Sky_Mat:MaterialExpressionStaticSwitchParameter_6'","/Script/Engine.MaterialExpressionReroute'Ultra_Dynamic_Sky_Mat:MaterialExpressionReroute_10'","/Script/Engine.MaterialExpressionLinearInterpolate'Ultra_Dynamic_Sky_Mat:MaterialExpressionLinearInterpolate_3'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_26'","/Script/Engine.MaterialExpressionStaticSwitchParameter'Ultra_Dynamic_Sky_Mat:MaterialExpressionStaticSwitchParameter_15'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_27'","/Script/Engine.MaterialExpressionStaticSwitchParameter'Ultra_Dynamic_Sky_Mat:MaterialExpressionStaticSwitchParameter_19'","/Script/Engine.MaterialExpressionAdd'Ultra_Dynamic_Sky_Mat:MaterialExpressionAdd_13'","/Script/Engine.MaterialExpressionReroute'Ultra_Dynamic_Sky_Mat:MaterialExpressionReroute_11'","/Script/Engine.MaterialExpressionReroute'Ultra_Dynamic_Sky_Mat:MaterialExpressionReroute_12'","/Script/Engine.MaterialExpressionReroute'Ultra_Dynamic_Sky_Mat:MaterialExpressionReroute_19'","/Script/Engine.MaterialExpressionAdd'Ultra_Dynamic_Sky_Mat:MaterialExpressionAdd_15'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_29'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_30'","/Script/Engine.MaterialExpressionMultiply'Ultra_Dynamic_Sky_Mat:MaterialExpressionMultiply_15'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_31'","/Script/Engine.MaterialExpressionReroute'Ultra_Dynamic_Sky_Mat:MaterialExpressionReroute_20'","/Script/Engine.MaterialExpressionReroute'Ultra_Dynamic_Sky_Mat:MaterialExpressionReroute_21'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_34'"),EditorComments=("/Script/Engine.MaterialExpressionComment'Ultra_Dynamic_Sky_Mat:MaterialExpressionComment_18'","/Script/Engine.MaterialExpressionComment'Ultra_Dynamic_Sky_Mat:MaterialExpressionComment_4'","/Script/Engine.MaterialExpressionComment'Ultra_Dynamic_Sky_Mat:MaterialExpressionComment_2'","/Script/Engine.MaterialExpressionComment'Ultra_Dynamic_Sky_Mat:MaterialExpressionComment_5'","/Script/Engine.MaterialExpressionComment'Ultra_Dynamic_Sky_Mat:MaterialExpressionComment_6'","/Script/Engine.MaterialExpressionComment'Ultra_Dynamic_Sky_Mat:MaterialExpressionComment_7'","/Script/Engine.MaterialExpressionComment'Ultra_Dynamic_Sky_Mat:MaterialExpressionComment_8'","/Script/Engine.MaterialExpressionComment'Ultra_Dynamic_Sky_Mat:MaterialExpressionComment_9'","/Script/Engine.MaterialExpressionComment'Ultra_Dynamic_Sky_Mat:MaterialExpressionComment_10'","/Script/Engine.MaterialExpressionComment'Ultra_Dynamic_Sky_Mat:MaterialExpressionComment_12'","/Script/Engine.MaterialExpressionComment'Ultra_Dynamic_Sky_Mat:MaterialExpressionComment_13'","/Script/Engine.MaterialExpressionComment'Ultra_Dynamic_Sky_Mat:MaterialExpressionComment_14'","/Script/Engine.MaterialExpressionComment'Ultra_Dynamic_Sky_Mat:MaterialExpressionComment_15'"))
+      ParameterGroupData(0)=(GroupName="None")
+   End Object
+   Begin Object Name="MaterialExpressionAdd_10" ExportPath="/Script/Engine.MaterialExpressionAdd'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionAdd_10'"
+      A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_16'")
+      B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_17'")
+      MaterialExpressionEditorX=4314
+      MaterialExpressionEditorY=1766
+      MaterialExpressionGuid=0E81EA9C4B70A7036504078BC10DE699
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionAdd_11" ExportPath="/Script/Engine.MaterialExpressionAdd'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionAdd_11'"
+      A=(Expression="/Script/Engine.MaterialExpressionMultiply'Ultra_Dynamic_Sky_Mat:MaterialExpressionMultiply_14'")
+      B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_24'",OutputIndex=1)
+      MaterialExpressionEditorX=5202
+      MaterialExpressionEditorY=1766
+      MaterialExpressionGuid=262F96B646E6AC06484587A0A0F39627
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionAdd_12" ExportPath="/Script/Engine.MaterialExpressionAdd'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionAdd_12'"
+      A=(Expression="/Script/Engine.MaterialExpressionReroute'Ultra_Dynamic_Sky_Mat:MaterialExpressionReroute_10'")
+      B=(Expression="/Script/Engine.MaterialExpressionMultiply'Ultra_Dynamic_Sky_Mat:MaterialExpressionMultiply_15'")
+      MaterialExpressionEditorX=6728
+      MaterialExpressionEditorY=1828
+      MaterialExpressionGuid=929694AF470509CA2BA4F480550877EF
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionAdd_13" ExportPath="/Script/Engine.MaterialExpressionAdd'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionAdd_13'"
+      A=(Expression="/Script/Engine.MaterialExpressionReroute'Ultra_Dynamic_Sky_Mat:MaterialExpressionReroute_12'")
+      B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_27'")
+      MaterialExpressionEditorX=5694
+      MaterialExpressionEditorY=1762
+      MaterialExpressionGuid=F6D447084ED20835699EACAA5A923D97
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionAdd_15" ExportPath="/Script/Engine.MaterialExpressionAdd'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionAdd_15'"
+      A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_34'")
+      B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_29'")
+      MaterialExpressionEditorX=10621
+      MaterialExpressionEditorY=1774
+      MaterialExpressionGuid=88287D314E957E2175CF6D8916701AD9
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionAppendVector_0" ExportPath="/Script/Engine.MaterialExpressionAppendVector'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionAppendVector_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_21'")
+      B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_23'")
+      MaterialExpressionEditorX=11092
+      MaterialExpressionEditorY=2668
+      MaterialExpressionGuid=97F1D751428C2313B2D449B21D8F9CB2
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionComment_10" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionComment_10'"
+      SizeX=322
+      SizeY=218
+      Text="Sky Glow"
+      CommentColor=(R=0.392701,G=1.000000,B=0.388869,A=1.000000)
+      MaterialExpressionEditorX=10435
+      MaterialExpressionEditorY=1724
+      MaterialExpressionGuid=4CF2BC4A48A4908A43F016A2F7DA263B
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionComment_12" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionComment_12'"
+      SizeX=324
+      SizeY=164
+      Text="Ambient Fog"
+      CommentColor=(R=0.975290,G=0.412958,B=1.000000,A=1.000000)
+      MaterialExpressionEditorX=9550
+      MaterialExpressionEditorY=1718
+      MaterialExpressionGuid=85DFB64846C738462D53A4A899492556
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionComment_13" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionComment_13'"
+      SizeX=730
+      SizeY=238
+      Text="2D Dynamic Clouds"
+      CommentColor=(R=1.000000,G=0.317534,B=0.257781,A=1.000000)
+      MaterialExpressionEditorX=7952
+      MaterialExpressionEditorY=1704
+      MaterialExpressionGuid=C0952AE94BDC5C5D0242BEAF3F6F7FAB
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionComment_14" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionComment_14'"
+      SizeX=396
+      SizeY=216
+      Text="Static Overcast Effect"
+      CommentColor=(R=0.319799,G=0.433509,B=1.000000,A=1.000000)
+      MaterialExpressionEditorX=9944
+      MaterialExpressionEditorY=1716
+      MaterialExpressionGuid=603A06444CB1C9D5EC7B6095A9EA1395
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionComment_15" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionComment_15'"
+      SizeX=678
+      SizeY=253
+      Text="Contrast and Saturation"
+      CommentColor=(R=1.000000,G=0.361444,B=0.251593,A=1.000000)
+      MaterialExpressionEditorX=10820
+      MaterialExpressionEditorY=1722
+      MaterialExpressionGuid=DB9F56954986883D6F87C3A97E02E931
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionComment_18" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionComment_18'"
+      SizeX=2068
+      SizeY=696
+      Text="Custom UVs"
+      CommentColor=(R=0.204268,G=0.421875,B=0.264605,A=1.000000)
+      MaterialExpressionEditorX=9308
+      MaterialExpressionEditorY=2136
+      MaterialExpressionGuid=5591F74A4E644F22C2E19B98220858F1
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionComment_2" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionComment_2'"
+      SizeX=334
+      SizeY=246
+      Text="Sun and Stars"
+      CommentColor=(R=1.000000,G=0.464813,B=0.063542,A=1.000000)
+      MaterialExpressionEditorX=4138
+      MaterialExpressionEditorY=1714
+      MaterialExpressionGuid=9DA907594F2348F2D18F5B9F6B0C96AA
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionComment_4" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionComment_4'"
+      SizeX=760
+      SizeY=296
+      Text="Static Clouds"
+      CommentColor=(R=0.433426,G=0.380143,B=1.000000,A=1.000000)
+      MaterialExpressionEditorX=8750
+      MaterialExpressionEditorY=1710
+      MaterialExpressionGuid=F90B4EA54FFA3CDDB0DB299A61976266
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionComment_5" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionComment_5'"
+      SizeX=280
+      SizeY=158
+      Text="Space Layer"
+      CommentColor=(R=0.629133,G=0.218472,B=1.000000,A=1.000000)
+      MaterialExpressionEditorX=4538
+      MaterialExpressionEditorY=1718
+      MaterialExpressionGuid=6AB678C4499A269F24E74CBDFEA00F56
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionComment_6" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionComment_6'"
+      SizeX=446
+      SizeY=261
+      Text="Moon"
+      CommentColor=(R=0.278012,G=0.444440,B=1.000000,A=1.000000)
+      MaterialExpressionEditorX=4892
+      MaterialExpressionEditorY=1716
+      MaterialExpressionGuid=105669C1499E428B194BEA9DA772136D
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionComment_7" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionComment_7'"
+      SizeX=880
+      SizeY=348
+      Text="Atmosphere Color"
+      CommentColor=(R=0.498183,G=1.000000,B=0.276810,A=1.000000)
+      MaterialExpressionEditorX=6205
+      MaterialExpressionEditorY=1706
+      MaterialExpressionGuid=763C98184038D72019883DBF7D38FA79
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionComment_8" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionComment_8'"
+      SizeX=639
+      SizeY=324
+      Text="Cloud Wisps"
+      CommentColor=(R=0.234040,G=0.708333,B=0.665996,A=1.000000)
+      MaterialExpressionEditorX=7208
+      MaterialExpressionEditorY=1708
+      MaterialExpressionGuid=48FB874A4161FE8AA88776BF094492A4
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionComment_9" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionComment_9'"
+      SizeX=640
+      SizeY=272
+      Text="Aurora"
+      CommentColor=(R=1.000000,G=0.749602,B=0.195485,A=1.000000)
+      MaterialExpressionEditorX=5432
+      MaterialExpressionEditorY=1700
+      MaterialExpressionGuid=1E65088C43C0C8F3197D0B85390536D2
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionConstant_3" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionConstant_3'"
+      R=0.600000
+      MaterialExpressionEditorX=10176
+      MaterialExpressionEditorY=2392
+      MaterialExpressionGuid=74C5C2074BBF29EE72223B85CD03683B
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionDesaturation_0" ExportPath="/Script/Engine.MaterialExpressionDesaturation'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionDesaturation_0'"
+      Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_2'")
+      Fraction=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Ultra_Dynamic_Sky_Mat:MaterialExpressionScalarParameter_1'")
+      MaterialExpressionEditorX=11322
+      MaterialExpressionEditorY=1772
+      MaterialExpressionGuid=E034CB6C4934043BFE3053ADAC958FAA
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_3" ExportPath="/Script/Engine.MaterialExpressionLinearInterpolate'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionLinearInterpolate_3'"
+      A=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Ultra_Dynamic_Sky_Mat:MaterialExpressionStaticSwitchParameter_6'")
+      B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_26'")
+      Alpha=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_26'",OutputIndex=1)
+      MaterialExpressionEditorX=7426
+      MaterialExpressionEditorY=1822
+      MaterialExpressionGuid=E57C32934F9F72D9333E448AFDAE5176
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_15" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_15'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Cloud_UVs.Cloud_UVs'"
+      FunctionInputs(0)=(ExpressionInputId=61CEB0D640927963EE179E81FC06F59C,Input=(Expression="/Script/Engine.MaterialExpressionConstant'Ultra_Dynamic_Sky_Mat:MaterialExpressionConstant_3'",InputName="Speed"))
+      FunctionInputs(1)=(ExpressionInputId=3B4354D74A900B14AAE220B2C00025AC,Input=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Ultra_Dynamic_Sky_Mat:MaterialExpressionScalarParameter_25'",InputName="Tiling"))
+      FunctionInputs(2)=(ExpressionInputId=3C8F99EA4E0A534DE7D979B5CF1D97CF,Input=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Ultra_Dynamic_Sky_Mat:MaterialExpressionScalarParameter_33'",InputName="Height"))
+      FunctionOutputs(0)=(ExpressionOutputId=7317C26444EC691404F42EB535E0CF49,Output=(OutputName="Unpanned_UVs"))
+      MaterialExpressionEditorX=10368
+      MaterialExpressionEditorY=2396
+      MaterialExpressionGuid=E71E1C8C45FD0193390223A710E51486
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+      Outputs(0)=(OutputName="Unpanned_UVs")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_16" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_16'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Sun_Disk.Sun_Disk'"
+      FunctionOutputs(0)=(ExpressionOutputId=BD30180F4FB5FC35E44C21AEF50D693F,Output=(OutputName="Result"))
+      MaterialExpressionEditorX=4188
+      MaterialExpressionEditorY=1768
+      MaterialExpressionGuid=374E8874496727578876859462769F39
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+      Outputs(0)=(OutputName="Result")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_17" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_17'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Stars.Stars'"
+      FunctionOutputs(0)=(ExpressionOutputId=C82DBB2148A9AF68882EDF81DD66B969,Output=(OutputName="Result"))
+      MaterialExpressionEditorX=4210
+      MaterialExpressionEditorY=1834
+      MaterialExpressionGuid=015E2FD44A48AF37629C359C06BA8DCC
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+      Outputs(0)=(OutputName="Result")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_2" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_2'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Contrast_Control.Contrast_Control'"
+      FunctionInputs(0)=(ExpressionInputId=1145F7BD4FDD3A876664FFB09FD1CE68,Input=(Expression="/Script/Engine.MaterialExpressionAdd'Ultra_Dynamic_Sky_Mat:MaterialExpressionAdd_15'",InputName="In"))
+      FunctionOutputs(0)=(ExpressionOutputId=0B9BADB941E05AF04330FEB40D80B29A,Output=(OutputName="Result"))
+      MaterialExpressionEditorX=10870
+      MaterialExpressionEditorY=1776
+      MaterialExpressionGuid=D9D5057A45500AACFFA99090924C0123
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+      Outputs(0)=(OutputName="Result")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_21" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_21'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Sun_Centered_Gradient.Sun_Centered_Gradient'"
+      FunctionOutputs(0)=(ExpressionOutputId=B787B6444F2E76D716783AB5573FC1DB,Output=(OutputName="Result"))
+      MaterialExpressionEditorX=10868
+      MaterialExpressionEditorY=2668
+      MaterialExpressionGuid=F86FF6EC42C38E2D46B4E6A8330FAC6F
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+      Outputs(0)=(OutputName="Result")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_22" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_22'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/CompositeSpaceLayer.CompositeSpaceLayer'"
+      FunctionInputs(0)=(ExpressionInputId=33DBE4E84DA242CEE38648B71E7BE967,Input=(Expression="/Script/Engine.MaterialExpressionAdd'Ultra_Dynamic_Sky_Mat:MaterialExpressionAdd_10'",InputName="In"))
+      FunctionOutputs(0)=(ExpressionOutputId=FA65381641E2D6DC99EDE8B72CA9A7B9,Output=(OutputName="Result"))
+      MaterialExpressionEditorX=4588
+      MaterialExpressionEditorY=1768
+      MaterialExpressionGuid=412BF1494EED1B9D460CEBAB0041BB2C
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+      Outputs(0)=(OutputName="Result")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_23" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_23'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Moon_Centered_Gradient.Moon_Centered_Gradient'"
+      FunctionOutputs(0)=(ExpressionOutputId=AD5C86EB4E0E243FD93EC281BE2B32BC,Output=(OutputName="Result"))
+      MaterialExpressionEditorX=10860
+      MaterialExpressionEditorY=2732
+      MaterialExpressionGuid=4C414E1140B7322B212F2995FBAC90AB
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+      Outputs(0)=(OutputName="Result")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_24" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_24'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Moon.Moon'"
+      FunctionOutputs(0)=(ExpressionOutputId=DACBDC7B4433E3F5972FDDB72B8BF8F6,Output=(OutputName="Moon Mask"))
+      FunctionOutputs(1)=(ExpressionOutputId=E5634E3741C520A8155148B3146EAEBB,Output=(OutputName="Color"))
+      MaterialExpressionEditorX=4942
+      MaterialExpressionEditorY=1838
+      MaterialExpressionGuid=2C53A03D4432F5D37419B78667B7BD97
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+      Outputs(0)=(OutputName="Moon Mask")
+      Outputs(1)=(OutputName="Color")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_25" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_25'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Base_Sky_Color.Base_Sky_Color'"
+      FunctionOutputs(0)=(ExpressionOutputId=C439A1B6425C4A3CDB1B63B8581634AA,Output=(OutputName="Result"))
+      MaterialExpressionEditorX=6390
+      MaterialExpressionEditorY=1878
+      MaterialExpressionGuid=C73B5232442CA399858C7AB2F9322791
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+      Outputs(0)=(OutputName="Result")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_26" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_26'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Cloud_Wisps.Cloud_Wisps'"
+      FunctionOutputs(0)=(ExpressionOutputId=9166D5B24E1152B3422520933687CC86,Output=(OutputName="Color"))
+      FunctionOutputs(1)=(ExpressionOutputId=F75EED2242900336FE72A0AEE2B3F52D,Output=(OutputName="Opacity"))
+      MaterialExpressionEditorX=7278
+      MaterialExpressionEditorY=1878
+      MaterialExpressionGuid=E7E4693640FA0D58B12B129EC8639F8F
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+      Outputs(0)=(OutputName="Color")
+      Outputs(1)=(OutputName="Opacity")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_27" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_27'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Aurora.Aurora'"
+      FunctionOutputs(0)=(ExpressionOutputId=A1ABC7A849486D5AE01E86A2AB1A9CBF,Output=(OutputName="Result"))
+      MaterialExpressionEditorX=5578
+      MaterialExpressionEditorY=1818
+      MaterialExpressionGuid=4DB403A2493D1E1F6C3116A5402EDF8A
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+      Outputs(0)=(OutputName="Result")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_29" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_29'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/SkyGlow.SkyGlow'"
+      FunctionOutputs(0)=(ExpressionOutputId=E6CAE08E410A8666932401B628CBA12C,Output=(OutputName="Result"))
+      MaterialExpressionEditorX=10485
+      MaterialExpressionEditorY=1834
+      MaterialExpressionGuid=E8DCFDC744A227281F8C2BAB41859F30
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+      Outputs(0)=(OutputName="Result")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_30" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_30'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Sky_Material_Ambient_Fog.Sky_Material_Ambient_Fog'"
+      FunctionInputs(0)=(ExpressionInputId=1D51D994487F61CD34F244BD8E9D5E4F,Input=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Ultra_Dynamic_Sky_Mat:MaterialExpressionStaticSwitchParameter_16'",InputName="In"))
+      FunctionOutputs(0)=(ExpressionOutputId=BC9F54F34F1065E66841A092EB1D976D,Output=(OutputName="Result"))
+      MaterialExpressionEditorX=9618
+      MaterialExpressionEditorY=1774
+      MaterialExpressionGuid=8642A657401830A9D29C2C95BAE617D3
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+      Outputs(0)=(OutputName="Result")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_31" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_31'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Scale_Intensity_Around_Sun.Scale_Intensity_Around_Sun'"
+      FunctionOutputs(0)=(ExpressionOutputId=6F13AEB94B2ED3CAD3944DA5BD6370B0,Output=(OutputName="Result"))
+      MaterialExpressionEditorX=6316
+      MaterialExpressionEditorY=1948
+      MaterialExpressionGuid=A6CD7A6F4F85FC723B33B583AE47F679
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+      Outputs(0)=(OutputName="Result")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_34" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_34'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/FlatOvercast_Texture.FlatOvercast_Texture'"
+      FunctionInputs(0)=(ExpressionInputId=F9EF1B5E40CB81C89AD72D95ABF10F9D,Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_30'",InputName="In"))
+      FunctionOutputs(0)=(ExpressionOutputId=6FDA554B42C85A94B36283A4A8E3DFBE,Output=(OutputName="Result"))
+      MaterialExpressionEditorX=10048
+      MaterialExpressionEditorY=1776
+      MaterialExpressionGuid=5E58B0564840E059299AC98561EFAE81
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+      Outputs(0)=(OutputName="Result")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_4" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_4'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Tiling_Stars_UVs.Tiling_Stars_UVs'"
+      FunctionOutputs(0)=(ExpressionOutputId=DB53F5124A0B2041C2A19D82F9EA3F36,Output=(OutputName="Star UVs Top"))
+      FunctionOutputs(1)=(ExpressionOutputId=ADD6B20F4034BAA0F200DC804FB733F9,Output=(OutputName="Star UVs Bottom"))
+      MaterialExpressionEditorX=10840
+      MaterialExpressionEditorY=2220
+      MaterialExpressionGuid=4567D0FD46121740F00970B7312D34B5
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+      Outputs(0)=(OutputName="Star UVs Top")
+      Outputs(1)=(OutputName="Star UVs Bottom")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_40" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_40'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers'"
+      FunctionInputs(0)=(ExpressionInputId=CAE42F7343FD156B96E183A6985C8011,Input=(Expression="/Script/Engine.MaterialExpressionReroute'Ultra_Dynamic_Sky_Mat:MaterialExpressionReroute_2'",InputName="In"))
+      FunctionOutputs(0)=(ExpressionOutputId=114DC06046141B21D84F7AA575402CFE,Output=(OutputName="Result"))
+      FunctionOutputs(1)=(ExpressionOutputId=62EE279843486F1227FE38ADB3D8A4B3,Output=(OutputName="Mask Alpha"))
+      MaterialExpressionEditorX=8178
+      MaterialExpressionEditorY=1770
+      MaterialExpressionGuid=D739FA6C483081BED90C409C10709098
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+      Outputs(0)=(OutputName="Result")
+      Outputs(1)=(OutputName="Mask Alpha")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_5" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_5'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Tiling_Stars_UVs.Tiling_Stars_UVs'"
+      FunctionOutputs(0)=(ExpressionOutputId=DB53F5124A0B2041C2A19D82F9EA3F36,Output=(OutputName="Star UVs Top"))
+      FunctionOutputs(1)=(ExpressionOutputId=ADD6B20F4034BAA0F200DC804FB733F9,Output=(OutputName="Star UVs Bottom"))
+      MaterialExpressionEditorX=10824
+      MaterialExpressionEditorY=2527
+      MaterialExpressionGuid=56CCFE3F4BDEF5F6237BF0A8F2D90B0C
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+      Outputs(0)=(OutputName="Star UVs Top")
+      Outputs(1)=(OutputName="Star UVs Bottom")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_6" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_6'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Static_Clouds.Composite_Static_Clouds'"
+      FunctionInputs(0)=(ExpressionInputId=D77E20824A1BA0C27BA737BF7393153C,Input=(Expression="/Script/Engine.MaterialExpressionReroute'Ultra_Dynamic_Sky_Mat:MaterialExpressionReroute_15'",InputName="In"))
+      FunctionOutputs(0)=(ExpressionOutputId=430F02F34ED35EDA55C8B29B5BEFA1CD,Output=(OutputName="Result"))
+      FunctionOutputs(1)=(ExpressionOutputId=6887BE8F4A533D05CD4D94A03A74DBF0,Output=(OutputName="Clouds Alpha"))
+      MaterialExpressionEditorX=8956
+      MaterialExpressionEditorY=1772
+      MaterialExpressionGuid=8548AFE84CA17CAA5E0682AAF873E17F
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+      Outputs(0)=(OutputName="Result")
+      Outputs(1)=(OutputName="Clouds Alpha")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_8" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_8'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Engine/Functions/Engine_MaterialFunctions02/Texturing/CustomRotator.CustomRotator'"
+      FunctionInputs(0)=(ExpressionInputId=45DE7CC04BCC975C664A2AA5DA134FEF,Input=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'Ultra_Dynamic_Sky_Mat:MaterialExpressionTextureCoordinate_1'",InputName="UVs"))
+      FunctionInputs(1)=(ExpressionInputId=9B6953874136DCE4D8E4E8878152CCCE,Input=(OutputIndex=-1,InputName="Rotation Center"))
+      FunctionInputs(2)=(ExpressionInputId=D58F67D84CFD4C9D289810AEE4A3EBC8,Input=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Ultra_Dynamic_Sky_Mat:MaterialExpressionScalarParameter_2'",InputName="Rotation Angle (0-1)"))
+      FunctionOutputs(0)=(ExpressionOutputId=35E8F8F94CC8CE3D65F114A234D0BD5E,Output=(OutputName="Rotated Values"))
+      MaterialExpressionEditorX=9624
+      MaterialExpressionEditorY=2320
+      MaterialExpressionGuid=7654AB324CB14CC1FB90F78F8AB967EB
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+      Outputs(0)=(OutputName="Rotated Values")
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_14" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionMultiply_14'"
+      A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_22'")
+      B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_24'")
+      MaterialExpressionEditorX=5074
+      MaterialExpressionEditorY=1766
+      MaterialExpressionGuid=CD2774C34A83D4B0F7741DB7E2D6F733
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_15" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionMultiply_15'"
+      A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_25'")
+      B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_31'")
+      MaterialExpressionEditorX=6572
+      MaterialExpressionEditorY=1876
+      MaterialExpressionGuid=F2E292624E4B4DBF36523385C9A5DFAF
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionReroute_10" ExportPath="/Script/Engine.MaterialExpressionReroute'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionReroute_10'"
+      Input=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Ultra_Dynamic_Sky_Mat:MaterialExpressionStaticSwitchParameter_19'")
+      MaterialExpressionEditorX=6544
+      MaterialExpressionEditorY=1800
+      MaterialExpressionGuid=997FE9DE410653BCA5A87E9D79C38E45
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionReroute_11" ExportPath="/Script/Engine.MaterialExpressionReroute'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionReroute_11'"
+      Input=(Expression="/Script/Engine.MaterialExpressionReroute'Ultra_Dynamic_Sky_Mat:MaterialExpressionReroute_12'")
+      MaterialExpressionEditorX=5534
+      MaterialExpressionEditorY=1906
+      MaterialExpressionGuid=75FF5E6B44E13038581876817B31C750
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionReroute_12" ExportPath="/Script/Engine.MaterialExpressionReroute'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionReroute_12'"
+      Input=(Expression="/Script/Engine.MaterialExpressionAdd'Ultra_Dynamic_Sky_Mat:MaterialExpressionAdd_11'")
+      MaterialExpressionEditorX=5482
+      MaterialExpressionEditorY=1798
+      MaterialExpressionGuid=0B5EF7144B4A04E08A4F2C82E9D481AB
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionReroute_14" ExportPath="/Script/Engine.MaterialExpressionReroute'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionReroute_14'"
+      Input=(Expression="/Script/Engine.MaterialExpressionReroute'Ultra_Dynamic_Sky_Mat:MaterialExpressionReroute_16'")
+      MaterialExpressionEditorX=9198
+      MaterialExpressionEditorY=1874
+      MaterialExpressionGuid=4BB48FBF4DC7336F07E133864E73200A
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionReroute_15" ExportPath="/Script/Engine.MaterialExpressionReroute'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionReroute_15'"
+      Input=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Ultra_Dynamic_Sky_Mat:MaterialExpressionStaticSwitchParameter_1'")
+      MaterialExpressionEditorX=8878
+      MaterialExpressionEditorY=1802
+      MaterialExpressionGuid=ADABDD9E43F0AC36C4860DB249CA7C23
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionReroute_16" ExportPath="/Script/Engine.MaterialExpressionReroute'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionReroute_16'"
+      Input=(Expression="/Script/Engine.MaterialExpressionReroute'Ultra_Dynamic_Sky_Mat:MaterialExpressionReroute_15'")
+      MaterialExpressionEditorX=8962
+      MaterialExpressionEditorY=1878
+      MaterialExpressionGuid=F90497C24EE80F0FFE64BAAFBAD8EE10
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionReroute_19" ExportPath="/Script/Engine.MaterialExpressionReroute'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionReroute_19'"
+      Input=(Expression="/Script/Engine.MaterialExpressionReroute'Ultra_Dynamic_Sky_Mat:MaterialExpressionReroute_11'")
+      MaterialExpressionEditorX=5770
+      MaterialExpressionEditorY=1906
+      MaterialExpressionGuid=F55D8AF54C6ED61BA332DBAFB999B967
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionReroute_2" ExportPath="/Script/Engine.MaterialExpressionReroute'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionReroute_2'"
+      Input=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Ultra_Dynamic_Sky_Mat:MaterialExpressionStaticSwitchParameter_15'")
+      MaterialExpressionEditorX=8002
+      MaterialExpressionEditorY=1804
+      MaterialExpressionGuid=6CF3E93C4BC24019416A10A7131502E4
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionReroute_20" ExportPath="/Script/Engine.MaterialExpressionReroute'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionReroute_20'"
+      Input=(Expression="/Script/Engine.MaterialExpressionReroute'Ultra_Dynamic_Sky_Mat:MaterialExpressionReroute_2'")
+      MaterialExpressionEditorX=8112
+      MaterialExpressionEditorY=1876
+      MaterialExpressionGuid=7967C27A4E7352D3A46E6FAB23EFAC58
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionReroute_21" ExportPath="/Script/Engine.MaterialExpressionReroute'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionReroute_21'"
+      Input=(Expression="/Script/Engine.MaterialExpressionReroute'Ultra_Dynamic_Sky_Mat:MaterialExpressionReroute_20'")
+      MaterialExpressionEditorX=8364
+      MaterialExpressionEditorY=1876
+      MaterialExpressionGuid=3C389905407F5C386D8C3BA071ACBC83
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_1" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionScalarParameter_1'"
+      DefaultValue=1.000000
+      ParameterName="Saturation"
+      ExpressionGUID=FD698E8C46D42524E0BB7A81F1100FEB
+      MaterialExpressionEditorX=11100
+      MaterialExpressionEditorY=1836
+      MaterialExpressionGuid=A97279C845E5D281742354A1C8955016
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_2" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionScalarParameter_2'"
+      ParameterName="Static Clouds Rotation"
+      ExpressionGUID=4C62556840A47717D9C1D4A0692ECDB7
+      MaterialExpressionEditorX=9420
+      MaterialExpressionEditorY=2388
+      MaterialExpressionGuid=94D5506B4B9F28293F087380689826F7
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_25" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionScalarParameter_25'"
+      DefaultValue=1.000000
+      ParameterName="Cloud Tiling"
+      ExpressionGUID=FC2A35274055F5D25827E4B55C524C92
+      MaterialExpressionEditorX=10132
+      MaterialExpressionEditorY=2460
+      MaterialExpressionGuid=B1213ACB4D488F4E0CD630942CA3055F
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_33" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionScalarParameter_33'"
+      DefaultValue=0.700000
+      ParameterName="Cloud Height"
+      ExpressionGUID=FB868E694495A415CAB34E926D8C410E
+      MaterialExpressionEditorX=10132
+      MaterialExpressionEditorY=2548
+      MaterialExpressionGuid=F130CC68471E49E369FE52BBC9960327
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionStaticSwitchParameter_1" ExportPath="/Script/Engine.MaterialExpressionStaticSwitchParameter'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionStaticSwitchParameter_1'"
+      A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_40'")
+      B=(Expression="/Script/Engine.MaterialExpressionReroute'Ultra_Dynamic_Sky_Mat:MaterialExpressionReroute_21'")
+      ParameterName="Use_Dynamic_Clouds"
+      ExpressionGUID=0EF0A02F46C16A54E458F0B77DF5D77E
+      SortPriority=4
+      MaterialExpressionEditorX=8458
+      MaterialExpressionEditorY=1754
+      MaterialExpressionGuid=A86A862845A1228176FC42BC62FDDADD
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionStaticSwitchParameter_14" ExportPath="/Script/Engine.MaterialExpressionStaticSwitchParameter'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionStaticSwitchParameter_14'"
+      A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_4'",OutputIndex=1)
+      B=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Ultra_Dynamic_Sky_Mat:MaterialExpressionStaticSwitchParameter_3'")
+      ParameterName="Space"
+      ExpressionGUID=F0073AA44827698E1F251FB18E9B4079
+      MaterialExpressionEditorX=11028
+      MaterialExpressionEditorY=2248
+      MaterialExpressionGuid=B7093F254307577F5F54CEBCD7BA0581
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionStaticSwitchParameter_15" ExportPath="/Script/Engine.MaterialExpressionStaticSwitchParameter'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionStaticSwitchParameter_15'"
+      A=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Ultra_Dynamic_Sky_Mat:MaterialExpressionStaticSwitchParameter_6'")
+      B=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Ultra_Dynamic_Sky_Mat:MaterialExpressionLinearInterpolate_3'")
+      ParameterName="Space"
+      ExpressionGUID=775A766D4176BED7A35D46A8406F1F57
+      MaterialExpressionEditorX=7626
+      MaterialExpressionEditorY=1758
+      MaterialExpressionGuid=7352C0234734C9D3E632BB9E41696FF4
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionStaticSwitchParameter_16" ExportPath="/Script/Engine.MaterialExpressionStaticSwitchParameter'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionStaticSwitchParameter_16'"
+      A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_6'")
+      B=(Expression="/Script/Engine.MaterialExpressionReroute'Ultra_Dynamic_Sky_Mat:MaterialExpressionReroute_14'")
+      ParameterName="Static Clouds"
+      ExpressionGUID=D87EF4184A14C7BD6510FDA9C39F196F
+      SortPriority=0
+      MaterialExpressionEditorX=9296
+      MaterialExpressionEditorY=1760
+      MaterialExpressionGuid=9B5A54A04573EB1414014988F3EABB7D
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionStaticSwitchParameter_17" ExportPath="/Script/Engine.MaterialExpressionStaticSwitchParameter'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionStaticSwitchParameter_17'"
+      A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_8'")
+      B=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'Ultra_Dynamic_Sky_Mat:MaterialExpressionTextureCoordinate_2'")
+      ParameterName="Static Clouds"
+      ExpressionGUID=D87EF4184A14C7BD6510FDA9C39F196F
+      SortPriority=0
+      MaterialExpressionEditorX=9944
+      MaterialExpressionEditorY=2304
+      MaterialExpressionGuid=9B5A54A04573EB1414014988F3EABB7D
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionStaticSwitchParameter_19" ExportPath="/Script/Engine.MaterialExpressionStaticSwitchParameter'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionStaticSwitchParameter_19'"
+      A=(Expression="/Script/Engine.MaterialExpressionAdd'Ultra_Dynamic_Sky_Mat:MaterialExpressionAdd_13'")
+      B=(Expression="/Script/Engine.MaterialExpressionReroute'Ultra_Dynamic_Sky_Mat:MaterialExpressionReroute_19'")
+      ParameterName="Aurora"
+      ExpressionGUID=82DAE3E54AE63781907BC8BCABCB5F87
+      SortPriority=1
+      MaterialExpressionEditorX=5858
+      MaterialExpressionEditorY=1750
+      MaterialExpressionGuid=617D3F0944B1EEC4A1929C85FAFE7646
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionStaticSwitchParameter_3" ExportPath="/Script/Engine.MaterialExpressionStaticSwitchParameter'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionStaticSwitchParameter_3'"
+      A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_15'")
+      B=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Ultra_Dynamic_Sky_Mat:MaterialExpressionStaticSwitchParameter_17'")
+      ParameterName="Use_Dynamic_Clouds"
+      ExpressionGUID=0EF0A02F46C16A54E458F0B77DF5D77E
+      SortPriority=4
+      MaterialExpressionEditorX=10616
+      MaterialExpressionEditorY=2276
+      MaterialExpressionGuid=A86A862845A1228176FC42BC62FDDADD
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionStaticSwitchParameter_6" ExportPath="/Script/Engine.MaterialExpressionStaticSwitchParameter'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionStaticSwitchParameter_6'"
+      A=(Expression="/Script/Engine.MaterialExpressionReroute'Ultra_Dynamic_Sky_Mat:MaterialExpressionReroute_10'")
+      B=(Expression="/Script/Engine.MaterialExpressionAdd'Ultra_Dynamic_Sky_Mat:MaterialExpressionAdd_12'")
+      ParameterName="Space"
+      ExpressionGUID=BB56C37A47CFFAB9EBDBDCBF4F07FDF1
+      MaterialExpressionEditorX=6864
+      MaterialExpressionEditorY=1756
+      MaterialExpressionGuid=74350F92491F8DD1C5922A9068BBC164
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionStaticSwitchParameter_8" ExportPath="/Script/Engine.MaterialExpressionStaticSwitchParameter'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionStaticSwitchParameter_8'"
+      A=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'Ultra_Dynamic_Sky_Mat:MaterialExpressionTextureCoordinate_5'")
+      B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Ultra_Dynamic_Sky_Mat:MaterialExpressionMaterialFunctionCall_5'")
+      ParameterName="Real Stars"
+      ExpressionGUID=0114BA8043B1DE2D2F15F2A1E01A5070
+      SortPriority=2
+      MaterialExpressionEditorX=11028
+      MaterialExpressionEditorY=2416
+      MaterialExpressionGuid=563AE19141C610E54F99A19ADB7B94A4
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionTextureCoordinate_1" ExportPath="/Script/Engine.MaterialExpressionTextureCoordinate'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionTextureCoordinate_1'"
+      CoordinateIndex=1
+      MaterialExpressionEditorX=9413
+      MaterialExpressionEditorY=2290
+      MaterialExpressionGuid=B316EC7F4D412B9C927FFF97364B7389
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionTextureCoordinate_2" ExportPath="/Script/Engine.MaterialExpressionTextureCoordinate'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionTextureCoordinate_2'"
+      MaterialExpressionEditorX=9716
+      MaterialExpressionEditorY=2460
+      MaterialExpressionGuid=B316EC7F4D412B9C927FFF97364B7389
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="MaterialExpressionTextureCoordinate_5" ExportPath="/Script/Engine.MaterialExpressionTextureCoordinate'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:MaterialExpressionTextureCoordinate_5'"
+      CoordinateIndex=2
+      MaterialExpressionEditorX=10804
+      MaterialExpressionEditorY=2432
+      MaterialExpressionGuid=C5AB310E4BD4985C2467789AF1326205
+      Material="/Script/Engine.Material'Ultra_Dynamic_Sky_Mat'"
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/Ultra_Dynamic_Sky_Mat.Ultra_Dynamic_Sky_Mat:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   MaterialDecalResponse=MDR_None
+   ShadingModel=MSM_Unlit
+   ShadingModels=(ShadingModelField=1)
+   NumCustomizedUVs=3
+   bTangentSpaceNormal=False
+   bAutomaticallySetUsageInEditor=False
+   FloatPrecisionMode=MFPM_Full
+   bUseLightmapDirectionality=False
+   bAllowFrontLayerTranslucency=False
+   EditorX=11780
+   EditorY=1624
+   bCanMaskedBeAssumedOpaque=True
+   bCastRayTracedShadows=False
+   bIsSky=True
+   PixelDepthOffsetMode=PDOM_Legacy
+   StateId=031A50F849D078B734A85A95D1C1F8DB
+   ReferencedTextureGuids(0)=9080AA1E47B0FE7B95E79A93A36D2556
+   ReferencedTextureGuids(1)=86D3E12A4A6C69D928BA0A9696718322
+   ReferencedTextureGuids(2)=BB4DF9ED448DBD0D9801DDA576518923
+   EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'Ultra_Dynamic_Sky_MatEditorOnlyData'"
+   TextureStreamingDataVersion=1
+   TextureStreamingData(0)=(SamplingScale=2.000000,UVChannelIndex=1,TextureName="Stars_Noise",TextureReference="/Game/UltraDynamicSky/Textures/Sky/Stars_Noise.Stars_Noise")
+   ReferencedDefaultTextures(0)="/Script/Engine.Texture2D'/Game/UltraDynamicSky/Textures/Weather/ParticleClouds.ParticleClouds'"
+   ReferencedDefaultTextures(1)=None
+   ReferencedDefaultTextures(2)="/Script/Engine.VolumeTexture'/Game/UltraDynamicSky/Textures/3D_Clouds/3D_Cells_32.3D_Cells_32'"
+   ReferencedDefaultTextures(3)="/Script/Engine.Texture2D'/Game/UltraDynamicSky/Textures/Sky/Stars_Noise.Stars_Noise'"
+   ReferencedDefaultTextures(4)="/Script/Engine.Texture2D'/Engine/EngineMaterials/Good64x64TilingNoiseHighFreq.Good64x64TilingNoiseHighFreq'"
+   ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+   ParameterOverviewExpansion=(("-12Sun", True),("-12None", True),("-12Global", True),("-12Global Sun", True),("-12Global Mobile Feature Toggles", True))
+   LightingGuid=A2EAF2324C9965C8C1FDBDB33A0553B9
+End Object

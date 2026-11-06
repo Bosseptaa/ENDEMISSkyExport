@@ -1,3 +1,68 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fdda4fa89f94440027389a74b30d3a26223fc97951e62559b8c36c27c7faa1f7
-size 9897
+Begin Object Class=/Script/Engine.Blueprint Name="UDW_SnowPileSpline_Interface" ExportPath="/Script/Engine.Blueprint'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_SnowPileSpline_Interface.UDW_SnowPileSpline_Interface'"
+   Begin Object Class=/Script/Engine.EdGraph Name="Report Interaction" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_SnowPileSpline_Interface.UDW_SnowPileSpline_Interface:Report Interaction'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_SnowPileSpline_Interface.UDW_SnowPileSpline_Interface:Report Interaction.K2Node_FunctionEntry_0'"
+      End Object
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionResult Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_SnowPileSpline_Interface.UDW_SnowPileSpline_Interface:Report Interaction.K2Node_FunctionResult_0'"
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="Report Interaction_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_SnowPileSpline_Interface.UDW_SnowPileSpline_Interface:Report Interaction_MERGED'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_SnowPileSpline_Interface.UDW_SnowPileSpline_Interface:Report Interaction_MERGED.K2Node_FunctionEntry_0'"
+      End Object
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionResult Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_SnowPileSpline_Interface.UDW_SnowPileSpline_Interface:Report Interaction_MERGED.K2Node_FunctionResult_0'"
+      End Object
+   End Object
+   Begin Object Name="Report Interaction" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_SnowPileSpline_Interface.UDW_SnowPileSpline_Interface:Report Interaction'"
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_SnowPileSpline_Interface.UDW_SnowPileSpline_Interface:Report Interaction.K2Node_FunctionEntry_0'"
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Report Interaction")
+         bIsEditable=True
+         NodeGuid=1475CE9147ACFDE09E4981B2B82615C9
+         CustomProperties Pin (PinId=551F384D4F6C5B31AADA879CFFB21B9F,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionResult_0 A80CD342496DE7876FCC828620671A5D,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Begin Object Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_SnowPileSpline_Interface.UDW_SnowPileSpline_Interface:Report Interaction.K2Node_FunctionResult_0'"
+         FunctionReference=(MemberName="Report Interaction")
+         bIsEditable=True
+         NodePosX=256
+         NodeGuid=C522482749C41E68FB1570A203B0DF11
+         CustomProperties Pin (PinId=A80CD342496DE7876FCC828620671A5D,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionEntry_0 551F384D4F6C5B31AADA879CFFB21B9F,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=1BC7CD2A4853AA52A1558AAC5BEBE7F9,PinName="Success",PinType.PinCategory="bool",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue="false",AutogeneratedDefaultValue="false",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties UserDefinedPin (PinName="Success",PinType=(PinCategory="bool"),DesiredPinDirection=EGPD_Input,PinDefaultValue="false")
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+      GraphGuid=8C3BA92F4BB885266C553A9CE91BD570
+   End Object
+   Begin Object Name="Report Interaction_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_SnowPileSpline_Interface.UDW_SnowPileSpline_Interface:Report Interaction_MERGED'"
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_SnowPileSpline_Interface.UDW_SnowPileSpline_Interface:Report Interaction_MERGED.K2Node_FunctionEntry_0'"
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Report Interaction")
+         bIsEditable=True
+         NodeGuid=1475CE9147ACFDE09E4981B2B82615C9
+         CustomProperties Pin (PinId=551F384D4F6C5B31AADA879CFFB21B9F,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionResult_0 A80CD342496DE7876FCC828620671A5D,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Begin Object Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_SnowPileSpline_Interface.UDW_SnowPileSpline_Interface:Report Interaction_MERGED.K2Node_FunctionResult_0'"
+         FunctionReference=(MemberName="Report Interaction")
+         bIsEditable=True
+         NodePosX=256
+         NodeGuid=C522482749C41E68FB1570A203B0DF11
+         CustomProperties Pin (PinId=A80CD342496DE7876FCC828620671A5D,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionEntry_0 551F384D4F6C5B31AADA879CFFB21B9F,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=1BC7CD2A4853AA52A1558AAC5BEBE7F9,PinName="Success",PinType.PinCategory="bool",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue="false",AutogeneratedDefaultValue="false",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties UserDefinedPin (PinName="Success",PinType=(PinCategory="bool"),DesiredPinDirection=EGPD_Input,PinDefaultValue="false")
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+      GraphGuid=8C3BA92F4BB885266C553A9CE91BD570
+   End Object
+   ParentClass="/Script/CoreUObject.Class'/Script/CoreUObject.Interface'"
+   BlueprintType=BPTYPE_Interface
+   bDeprecate=True
+   BlueprintCategory="UltraDynamicWeather|SnowPileSpline"
+   BlueprintSystemVersion=2
+   FunctionGraphs(0)="/Script/Engine.EdGraph'Report Interaction'"
+   CategorySorting(0)=""
+   GeneratedClass="/Script/Engine.BlueprintGeneratedClass'UDW_SnowPileSpline_Interface_C'"
+   bLegacyNeedToPurgeSkelRefs=False
+   BlueprintGuid=FE8341FE420706CE66FF35A321D2F0B9
+End Object

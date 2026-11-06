@@ -1,3 +1,118 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:215b26a20f0275bf82f5f4872e1b55aa29f4f3c045bab38960b22caf9559e79f
-size 10950
+Begin Object Class=/Script/Engine.MaterialFunction Name="Filter_Clouds" ExportPath="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Filter_Clouds.Filter_Clouds'"
+   Begin Object Class=/Script/Engine.MaterialFunctionEditorOnlyData Name="Filter_CloudsEditorOnlyData" ExportPath="/Script/Engine.MaterialFunctionEditorOnlyData'/Game/UltraDynamicSky/Materials/Material_Functions/Filter_Clouds.Filter_Clouds:Filter_CloudsEditorOnlyData'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDivide Name="MaterialExpressionDivide_1" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/Material_Functions/Filter_Clouds.Filter_Clouds:MaterialExpressionDivide_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Material_Functions/Filter_Clouds.Filter_Clouds:MaterialExpressionFunctionInput_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_1" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Material_Functions/Filter_Clouds.Filter_Clouds:MaterialExpressionFunctionInput_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_2" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Material_Functions/Filter_Clouds.Filter_Clouds:MaterialExpressionFunctionInput_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_3" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Material_Functions/Filter_Clouds.Filter_Clouds:MaterialExpressionFunctionInput_3'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionOutput Name="MaterialExpressionFunctionOutput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/UltraDynamicSky/Materials/Material_Functions/Filter_Clouds.Filter_Clouds:MaterialExpressionFunctionOutput_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_0" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/Filter_Clouds.Filter_Clouds:MaterialExpressionMultiply_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSaturate Name="MaterialExpressionSaturate_0" ExportPath="/Script/Engine.MaterialExpressionSaturate'/Game/UltraDynamicSky/Materials/Material_Functions/Filter_Clouds.Filter_Clouds:MaterialExpressionSaturate_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSubtract Name="MaterialExpressionSubtract_0" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/Material_Functions/Filter_Clouds.Filter_Clouds:MaterialExpressionSubtract_0'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/Material_Functions/Filter_Clouds.Filter_Clouds:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   Begin Object Name="Filter_CloudsEditorOnlyData" ExportPath="/Script/Engine.MaterialFunctionEditorOnlyData'/Game/UltraDynamicSky/Materials/Material_Functions/Filter_Clouds.Filter_Clouds:Filter_CloudsEditorOnlyData'"
+      ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'Filter_Clouds:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionFunctionInput'Filter_Clouds:MaterialExpressionFunctionInput_0'","/Script/Engine.MaterialExpressionFunctionInput'Filter_Clouds:MaterialExpressionFunctionInput_1'","/Script/Engine.MaterialExpressionFunctionInput'Filter_Clouds:MaterialExpressionFunctionInput_2'","/Script/Engine.MaterialExpressionSubtract'Filter_Clouds:MaterialExpressionSubtract_0'","/Script/Engine.MaterialExpressionSaturate'Filter_Clouds:MaterialExpressionSaturate_0'","/Script/Engine.MaterialExpressionMultiply'Filter_Clouds:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionFunctionInput'Filter_Clouds:MaterialExpressionFunctionInput_3'","/Script/Engine.MaterialExpressionDivide'Filter_Clouds:MaterialExpressionDivide_1'"))
+   End Object
+   Begin Object Name="MaterialExpressionDivide_1" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/Material_Functions/Filter_Clouds.Filter_Clouds:MaterialExpressionDivide_1'"
+      A=(Expression="/Script/Engine.MaterialExpressionSubtract'Filter_Clouds:MaterialExpressionSubtract_0'")
+      B=(Expression="/Script/Engine.MaterialExpressionMultiply'Filter_Clouds:MaterialExpressionMultiply_0'")
+      MaterialExpressionEditorX=96
+      MaterialExpressionEditorY=416
+      MaterialExpressionGuid=6FD40FA042C1A84A284BA8AA814A459E
+      Function="/Script/Engine.MaterialFunction'Filter_Clouds'"
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Material_Functions/Filter_Clouds.Filter_Clouds:MaterialExpressionFunctionInput_0'"
+      Id=644DB8264CF13A6982F55582A6116D55
+      InputType=FunctionInput_Scalar
+      MaterialExpressionEditorX=-688
+      MaterialExpressionEditorY=416
+      MaterialExpressionGuid=40C71C3C444A829E0C6C4BA1B6870234
+      Function="/Script/Engine.MaterialFunction'Filter_Clouds'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_1" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Material_Functions/Filter_Clouds.Filter_Clouds:MaterialExpressionFunctionInput_1'"
+      InputName="middle_threshold"
+      Description="The input point that will correspond to the ouput middle point"
+      Id=955F71B04A50A2B9765A569868832125
+      InputType=FunctionInput_Scalar
+      PreviewValue=(X=-0.050000,Y=0.000000,Z=0.000000,W=1.000000)
+      MaterialExpressionEditorX=-780
+      MaterialExpressionEditorY=488
+      MaterialExpressionGuid=85F8C64F402B7B0E0D581C9611AC47D8
+      Function="/Script/Engine.MaterialFunction'Filter_Clouds'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_2" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Material_Functions/Filter_Clouds.Filter_Clouds:MaterialExpressionFunctionInput_2'"
+      InputName="Gradient Width"
+      Description="The amount of the inputs 0 to 1 range which should be stretched out to the ouput"
+      Id=A0E0E74C4743D00B9B028089034F8F56
+      InputType=FunctionInput_Scalar
+      PreviewValue=(X=0.100000,Y=0.000000,Z=0.000000,W=1.000000)
+      MaterialExpressionEditorX=-320
+      MaterialExpressionEditorY=496
+      MaterialExpressionGuid=04F441014D9E34C105AA9A8CA86E5BC8
+      Function="/Script/Engine.MaterialFunction'Filter_Clouds'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_3" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Material_Functions/Filter_Clouds.Filter_Clouds:MaterialExpressionFunctionInput_3'"
+      InputName="Soften"
+      Id=64BF9B104842B0C117E20AAD82D0D255
+      InputType=FunctionInput_Scalar
+      PreviewValue=(X=1.000000,Y=0.000000,Z=0.000000,W=1.000000)
+      MaterialExpressionEditorX=-276
+      MaterialExpressionEditorY=568
+      MaterialExpressionGuid=B80E96394924F8CD16B872B3763155CB
+      Function="/Script/Engine.MaterialFunction'Filter_Clouds'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionOutput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/UltraDynamicSky/Materials/Material_Functions/Filter_Clouds.Filter_Clouds:MaterialExpressionFunctionOutput_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionSaturate'Filter_Clouds:MaterialExpressionSaturate_0'")
+      bLastPreviewed=True
+      Id=C9CAF83A455C77CD6D9002BA1703F24D
+      MaterialExpressionEditorX=352
+      MaterialExpressionEditorY=388
+      MaterialExpressionGuid=F7DFFD7B43C468E7CF35CF947885863F
+      Function="/Script/Engine.MaterialFunction'Filter_Clouds'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_0" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/Filter_Clouds.Filter_Clouds:MaterialExpressionMultiply_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Filter_Clouds:MaterialExpressionFunctionInput_2'")
+      B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Filter_Clouds:MaterialExpressionFunctionInput_3'")
+      MaterialExpressionEditorX=-64
+      MaterialExpressionEditorY=496
+      MaterialExpressionGuid=4E7D4526430981325003D083A75818EE
+      Function="/Script/Engine.MaterialFunction'Filter_Clouds'"
+   End Object
+   Begin Object Name="MaterialExpressionSaturate_0" ExportPath="/Script/Engine.MaterialExpressionSaturate'/Game/UltraDynamicSky/Materials/Material_Functions/Filter_Clouds.Filter_Clouds:MaterialExpressionSaturate_0'"
+      Input=(Expression="/Script/Engine.MaterialExpressionDivide'Filter_Clouds:MaterialExpressionDivide_1'")
+      MaterialExpressionEditorX=208
+      MaterialExpressionEditorY=416
+      MaterialExpressionGuid=705213AA40E73D838984E49539A777EF
+      Function="/Script/Engine.MaterialFunction'Filter_Clouds'"
+   End Object
+   Begin Object Name="MaterialExpressionSubtract_0" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/Material_Functions/Filter_Clouds.Filter_Clouds:MaterialExpressionSubtract_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Filter_Clouds:MaterialExpressionFunctionInput_0'")
+      B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Filter_Clouds:MaterialExpressionFunctionInput_1'")
+      MaterialExpressionEditorX=-480
+      MaterialExpressionEditorY=416
+      MaterialExpressionGuid=59C0F68A4605C52AD70F13B3011E8F7D
+      Function="/Script/Engine.MaterialFunction'Filter_Clouds'"
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/Material_Functions/Filter_Clouds.Filter_Clouds:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'Filter_CloudsEditorOnlyData'"
+   StateId=6242C78B4233924B5E8338B38ACA096D
+   CombinedInputTypes=15
+   CombinedOutputTypes=15
+   ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+End Object

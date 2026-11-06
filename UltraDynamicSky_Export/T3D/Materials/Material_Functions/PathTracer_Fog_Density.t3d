@@ -1,3 +1,412 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7946b5b0bcef142d8b9efa18dd553e635370e8b356b43d9bbd1b47cc6e41554d
-size 43217
+Begin Object Class=/Script/Engine.MaterialFunction Name="PathTracer_Fog_Density" ExportPath="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density'"
+   Begin Object Class=/Script/Engine.MaterialFunctionEditorOnlyData Name="PathTracer_Fog_DensityEditorOnlyData" ExportPath="/Script/Engine.MaterialFunctionEditorOnlyData'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:PathTracer_Fog_DensityEditorOnlyData'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAdd Name="MaterialExpressionAdd_4" ExportPath="/Script/Engine.MaterialExpressionAdd'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionAdd_4'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionCameraPositionWS Name="MaterialExpressionCameraPositionWS_10" ExportPath="/Script/Engine.MaterialExpressionCameraPositionWS'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionCameraPositionWS_10'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionCameraPositionWS Name="MaterialExpressionCameraPositionWS_8" ExportPath="/Script/Engine.MaterialExpressionCameraPositionWS'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionCameraPositionWS_8'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_5" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionComponentMask_5'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_9" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionComponentMask_9'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionCustom Name="MaterialExpressionCustom_0" ExportPath="/Script/Engine.MaterialExpressionCustom'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionCustom_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDistance Name="MaterialExpressionDistance_1" ExportPath="/Script/Engine.MaterialExpressionDistance'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionDistance_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDistance Name="MaterialExpressionDistance_2" ExportPath="/Script/Engine.MaterialExpressionDistance'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionDistance_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDistance Name="MaterialExpressionDistance_3" ExportPath="/Script/Engine.MaterialExpressionDistance'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionDistance_3'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDivide Name="MaterialExpressionDivide_0" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionDivide_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDivide Name="MaterialExpressionDivide_2" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionDivide_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionFunctionInput_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_1" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionFunctionInput_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_2" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionFunctionInput_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_3" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionFunctionInput_3'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_4" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionFunctionInput_4'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_5" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionFunctionInput_5'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_6" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionFunctionInput_6'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionOutput Name="MaterialExpressionFunctionOutput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionFunctionOutput_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMax Name="MaterialExpressionMax_0" ExportPath="/Script/Engine.MaterialExpressionMax'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionMax_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_0" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionMultiply_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_9" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionMultiply_9'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNamedRerouteDeclaration Name="MaterialExpressionNamedRerouteDeclaration_0" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionNamedRerouteDeclaration_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNamedRerouteUsage Name="MaterialExpressionNamedRerouteUsage_0" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionNamedRerouteUsage_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNamedRerouteUsage Name="MaterialExpressionNamedRerouteUsage_1" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionNamedRerouteUsage_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNamedRerouteUsage Name="MaterialExpressionNamedRerouteUsage_2" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionNamedRerouteUsage_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNamedRerouteUsage Name="MaterialExpressionNamedRerouteUsage_3" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionNamedRerouteUsage_3'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNormalize Name="MaterialExpressionNormalize_0" ExportPath="/Script/Engine.MaterialExpressionNormalize'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionNormalize_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionPower Name="MaterialExpressionPower_1" ExportPath="/Script/Engine.MaterialExpressionPower'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionPower_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionReroute Name="MaterialExpressionReroute_0" ExportPath="/Script/Engine.MaterialExpressionReroute'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionReroute_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionReroute Name="MaterialExpressionReroute_2" ExportPath="/Script/Engine.MaterialExpressionReroute'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionReroute_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSaturate Name="MaterialExpressionSaturate_0" ExportPath="/Script/Engine.MaterialExpressionSaturate'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionSaturate_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSaturate Name="MaterialExpressionSaturate_4" ExportPath="/Script/Engine.MaterialExpressionSaturate'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionSaturate_4'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSubtract Name="MaterialExpressionSubtract_2" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionSubtract_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSubtract Name="MaterialExpressionSubtract_6" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionSubtract_6'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSubtract Name="MaterialExpressionSubtract_7" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionSubtract_7'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSubtract Name="MaterialExpressionSubtract_8" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionSubtract_8'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   Begin Object Name="PathTracer_Fog_DensityEditorOnlyData" ExportPath="/Script/Engine.MaterialFunctionEditorOnlyData'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:PathTracer_Fog_DensityEditorOnlyData'"
+      ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'PathTracer_Fog_Density:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionSaturate'PathTracer_Fog_Density:MaterialExpressionSaturate_0'","/Script/Engine.MaterialExpressionCustom'PathTracer_Fog_Density:MaterialExpressionCustom_0'","/Script/Engine.MaterialExpressionComponentMask'PathTracer_Fog_Density:MaterialExpressionComponentMask_5'","/Script/Engine.MaterialExpressionSubtract'PathTracer_Fog_Density:MaterialExpressionSubtract_2'","/Script/Engine.MaterialExpressionComponentMask'PathTracer_Fog_Density:MaterialExpressionComponentMask_9'","/Script/Engine.MaterialExpressionSubtract'PathTracer_Fog_Density:MaterialExpressionSubtract_6'","/Script/Engine.MaterialExpressionDivide'PathTracer_Fog_Density:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionDistance'PathTracer_Fog_Density:MaterialExpressionDistance_2'","/Script/Engine.MaterialExpressionCameraPositionWS'PathTracer_Fog_Density:MaterialExpressionCameraPositionWS_8'","/Script/Engine.MaterialExpressionSubtract'PathTracer_Fog_Density:MaterialExpressionSubtract_7'","/Script/Engine.MaterialExpressionMax'PathTracer_Fog_Density:MaterialExpressionMax_0'","/Script/Engine.MaterialExpressionAdd'PathTracer_Fog_Density:MaterialExpressionAdd_4'","/Script/Engine.MaterialExpressionCameraPositionWS'PathTracer_Fog_Density:MaterialExpressionCameraPositionWS_10'","/Script/Engine.MaterialExpressionSubtract'PathTracer_Fog_Density:MaterialExpressionSubtract_8'","/Script/Engine.MaterialExpressionNormalize'PathTracer_Fog_Density:MaterialExpressionNormalize_0'","/Script/Engine.MaterialExpressionMultiply'PathTracer_Fog_Density:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionDistance'PathTracer_Fog_Density:MaterialExpressionDistance_3'","/Script/Engine.MaterialExpressionReroute'PathTracer_Fog_Density:MaterialExpressionReroute_2'","/Script/Engine.MaterialExpressionDivide'PathTracer_Fog_Density:MaterialExpressionDivide_2'","/Script/Engine.MaterialExpressionDistance'PathTracer_Fog_Density:MaterialExpressionDistance_1'","/Script/Engine.MaterialExpressionReroute'PathTracer_Fog_Density:MaterialExpressionReroute_0'","/Script/Engine.MaterialExpressionMultiply'PathTracer_Fog_Density:MaterialExpressionMultiply_9'","/Script/Engine.MaterialExpressionSaturate'PathTracer_Fog_Density:MaterialExpressionSaturate_4'","/Script/Engine.MaterialExpressionPower'PathTracer_Fog_Density:MaterialExpressionPower_1'","/Script/Engine.MaterialExpressionFunctionInput'PathTracer_Fog_Density:MaterialExpressionFunctionInput_0'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'PathTracer_Fog_Density:MaterialExpressionNamedRerouteDeclaration_0'","/Script/Engine.MaterialExpressionNamedRerouteUsage'PathTracer_Fog_Density:MaterialExpressionNamedRerouteUsage_0'","/Script/Engine.MaterialExpressionNamedRerouteUsage'PathTracer_Fog_Density:MaterialExpressionNamedRerouteUsage_1'","/Script/Engine.MaterialExpressionNamedRerouteUsage'PathTracer_Fog_Density:MaterialExpressionNamedRerouteUsage_2'","/Script/Engine.MaterialExpressionNamedRerouteUsage'PathTracer_Fog_Density:MaterialExpressionNamedRerouteUsage_3'","/Script/Engine.MaterialExpressionFunctionInput'PathTracer_Fog_Density:MaterialExpressionFunctionInput_1'","/Script/Engine.MaterialExpressionFunctionInput'PathTracer_Fog_Density:MaterialExpressionFunctionInput_2'","/Script/Engine.MaterialExpressionFunctionInput'PathTracer_Fog_Density:MaterialExpressionFunctionInput_3'","/Script/Engine.MaterialExpressionFunctionInput'PathTracer_Fog_Density:MaterialExpressionFunctionInput_4'","/Script/Engine.MaterialExpressionFunctionInput'PathTracer_Fog_Density:MaterialExpressionFunctionInput_5'","/Script/Engine.MaterialExpressionFunctionInput'PathTracer_Fog_Density:MaterialExpressionFunctionInput_6'"))
+   End Object
+   Begin Object Name="MaterialExpressionAdd_4" ExportPath="/Script/Engine.MaterialExpressionAdd'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionAdd_4'"
+      A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'PathTracer_Fog_Density:MaterialExpressionNamedRerouteUsage_0'")
+      B=(Expression="/Script/Engine.MaterialExpressionMultiply'PathTracer_Fog_Density:MaterialExpressionMultiply_0'")
+      MaterialExpressionEditorX=-2144
+      MaterialExpressionEditorY=296
+      MaterialExpressionGuid=1E7A1A1E48A28C85EF3DC59481311393
+      Function="/Script/Engine.MaterialFunction'PathTracer_Fog_Density'"
+   End Object
+   Begin Object Name="MaterialExpressionCameraPositionWS_10" ExportPath="/Script/Engine.MaterialExpressionCameraPositionWS'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionCameraPositionWS_10'"
+      MaterialExpressionEditorX=-2816
+      MaterialExpressionEditorY=432
+      MaterialExpressionGuid=AC0EA9CB4CCFF068923E3F8C60A17284
+      Function="/Script/Engine.MaterialFunction'PathTracer_Fog_Density'"
+   End Object
+   Begin Object Name="MaterialExpressionCameraPositionWS_8" ExportPath="/Script/Engine.MaterialExpressionCameraPositionWS'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionCameraPositionWS_8'"
+      MaterialExpressionEditorX=-2920
+      MaterialExpressionEditorY=668
+      MaterialExpressionGuid=AC0EA9CB4CCFF068923E3F8C60A17284
+      Function="/Script/Engine.MaterialFunction'PathTracer_Fog_Density'"
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_5" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionComponentMask_5'"
+      Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'PathTracer_Fog_Density:MaterialExpressionNamedRerouteUsage_3'")
+      B=True
+      MaterialExpressionEditorX=-1484
+      MaterialExpressionEditorY=404
+      MaterialExpressionGuid=C955A77C40172572263E4E9640F054FB
+      Function="/Script/Engine.MaterialFunction'PathTracer_Fog_Density'"
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_9" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionComponentMask_9'"
+      Input=(Expression="/Script/Engine.MaterialExpressionAdd'PathTracer_Fog_Density:MaterialExpressionAdd_4'")
+      B=True
+      MaterialExpressionEditorX=-1480
+      MaterialExpressionEditorY=296
+      MaterialExpressionGuid=C955A77C40172572263E4E9640F054FB
+      Function="/Script/Engine.MaterialFunction'PathTracer_Fog_Density'"
+   End Object
+   Begin Object Name="MaterialExpressionCustom_0" ExportPath="/Script/Engine.MaterialExpressionCustom'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionCustom_0'"
+      Code="float Distance = RayLength;\r\nfloat Opacity = 0;\r\nfloat StepDensity = 0;\r\nfloat StepLength = RayLength / Steps;\r\nfloat StepFraction = 0;\r\nfloat StepZ = 0;\r\nfloat StepExp = 0;\r\nfloat StepCount = 0;\r\n\r\nif (DistantCheckDepth > MaxRayLength) {\r\nreturn FogSkyOpacity;\r\n}\r\n\r\nif (RayLength == 0) {\r\nreturn 0;\r\n}\r\n\r\nwhile (StepCount <= Steps) {\r\n\r\nStepFraction = saturate(StepCount / Steps);\r\n\r\nStepZ = lerp(RayStartZ, RayEndZ, StepFraction);\r\n\r\nStepExp = exp((StepZ + 1) * HeightFalloff * -1);\r\n\r\nStepExp = clamp(StepExp, 0, 150);\r\n\r\nStepDensity = FogDensity * StepExp;\r\n\r\nOpacity += 1 - exp(StepDensity * (-1 * StepLength));\r\n\r\nStepCount += 1;\r\n\r\n}\r\n\r\nreturn Opacity;"
+      OutputType=CMOT_Float1
+      Description="Exponential Height Fog Opacity"
+      Inputs(0)=(InputName="RayStartZ",Input=(Expression="/Script/Engine.MaterialExpressionSubtract'PathTracer_Fog_Density:MaterialExpressionSubtract_6'"))
+      Inputs(1)=(InputName="RayEndZ",Input=(Expression="/Script/Engine.MaterialExpressionSubtract'PathTracer_Fog_Density:MaterialExpressionSubtract_2'"))
+      Inputs(2)=(InputName="HeightFalloff",Input=(Expression="/Script/Engine.MaterialExpressionDivide'PathTracer_Fog_Density:MaterialExpressionDivide_2'"))
+      Inputs(3)=(InputName="Steps",Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'PathTracer_Fog_Density:MaterialExpressionFunctionInput_4'"))
+      Inputs(4)=(InputName="RayLength",Input=(Expression="/Script/Engine.MaterialExpressionReroute'PathTracer_Fog_Density:MaterialExpressionReroute_2'"))
+      Inputs(5)=(InputName="FogDensity",Input=(Expression="/Script/Engine.MaterialExpressionDivide'PathTracer_Fog_Density:MaterialExpressionDivide_0'"))
+      Inputs(6)=(InputName="MaxRayLength",Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'PathTracer_Fog_Density:MaterialExpressionFunctionInput_6'"))
+      Inputs(7)=(InputName="DistantCheckDepth",Input=(Expression="/Script/Engine.MaterialExpressionReroute'PathTracer_Fog_Density:MaterialExpressionReroute_0'"))
+      Inputs(8)=(InputName="FogSkyOpacity",Input=(Expression="/Script/Engine.MaterialExpressionPower'PathTracer_Fog_Density:MaterialExpressionPower_1'"))
+      MaterialExpressionEditorX=-360
+      MaterialExpressionEditorY=296
+      MaterialExpressionGuid=BD2250E44A057FB92460AEB069633EE4
+      Function="/Script/Engine.MaterialFunction'PathTracer_Fog_Density'"
+   End Object
+   Begin Object Name="MaterialExpressionDistance_1" ExportPath="/Script/Engine.MaterialExpressionDistance'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionDistance_1'"
+      A=(Expression="/Script/Engine.MaterialExpressionAdd'PathTracer_Fog_Density:MaterialExpressionAdd_4'")
+      B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'PathTracer_Fog_Density:MaterialExpressionNamedRerouteUsage_2'")
+      MaterialExpressionEditorX=-1756
+      MaterialExpressionEditorY=976
+      MaterialExpressionGuid=68A1D34A42DC3E7FA9631183582F3B29
+      Function="/Script/Engine.MaterialFunction'PathTracer_Fog_Density'"
+   End Object
+   Begin Object Name="MaterialExpressionDistance_2" ExportPath="/Script/Engine.MaterialExpressionDistance'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionDistance_2'"
+      A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'PathTracer_Fog_Density:MaterialExpressionNamedRerouteUsage_1'")
+      B=(Expression="/Script/Engine.MaterialExpressionCameraPositionWS'PathTracer_Fog_Density:MaterialExpressionCameraPositionWS_8'")
+      MaterialExpressionEditorX=-2732
+      MaterialExpressionEditorY=584
+      MaterialExpressionGuid=68A1D34A42DC3E7FA9631183582F3B29
+      Function="/Script/Engine.MaterialFunction'PathTracer_Fog_Density'"
+   End Object
+   Begin Object Name="MaterialExpressionDistance_3" ExportPath="/Script/Engine.MaterialExpressionDistance'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionDistance_3'"
+      A=(Expression="/Script/Engine.MaterialExpressionAdd'PathTracer_Fog_Density:MaterialExpressionAdd_4'")
+      B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'PathTracer_Fog_Density:MaterialExpressionNamedRerouteUsage_2'")
+      MaterialExpressionEditorX=-1760
+      MaterialExpressionEditorY=708
+      MaterialExpressionGuid=68A1D34A42DC3E7FA9631183582F3B29
+      Function="/Script/Engine.MaterialFunction'PathTracer_Fog_Density'"
+   End Object
+   Begin Object Name="MaterialExpressionDivide_0" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionDivide_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'PathTracer_Fog_Density:MaterialExpressionFunctionInput_5'")
+      ConstB=2000.000000
+      MaterialExpressionEditorX=-660
+      MaterialExpressionEditorY=800
+      MaterialExpressionGuid=3FC8752D4AA0FEC059AA71A9EBB43502
+      Function="/Script/Engine.MaterialFunction'PathTracer_Fog_Density'"
+   End Object
+   Begin Object Name="MaterialExpressionDivide_2" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionDivide_2'"
+      A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'PathTracer_Fog_Density:MaterialExpressionFunctionInput_3'")
+      ConstB=2000.000000
+      MaterialExpressionEditorX=-716
+      MaterialExpressionEditorY=520
+      MaterialExpressionGuid=DC0E216F406163C8BBABFE8847CE109F
+      Function="/Script/Engine.MaterialFunction'PathTracer_Fog_Density'"
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionFunctionInput_0'"
+      InputName="World Position"
+      Id=86692AEF4C10348794043789AE7F5583
+      MaterialExpressionEditorX=-2868
+      MaterialExpressionEditorY=1028
+      MaterialExpressionGuid=7D4BE76940BA6B32BAF6F2B1EC354E20
+      Function="/Script/Engine.MaterialFunction'PathTracer_Fog_Density'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_1" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionFunctionInput_1'"
+      InputName="Start Distance"
+      Id=F27AEDC249078F403DC3E7808CAB3ACA
+      InputType=FunctionInput_Scalar
+      bUsePreviewValueAsDefault=True
+      MaterialExpressionEditorX=-2876
+      MaterialExpressionEditorY=784
+      MaterialExpressionGuid=6AA22B2E47886D678B5353830528F2EA
+      Function="/Script/Engine.MaterialFunction'PathTracer_Fog_Density'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_2" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionFunctionInput_2'"
+      InputName="Fog Height"
+      Id=1E8E8C2F48FF4A3130FC97A297DF4C0D
+      InputType=FunctionInput_Scalar
+      bUsePreviewValueAsDefault=True
+      MaterialExpressionEditorX=-1288
+      MaterialExpressionEditorY=484
+      MaterialExpressionGuid=6AA22B2E47886D678B5353830528F2EA
+      Function="/Script/Engine.MaterialFunction'PathTracer_Fog_Density'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_3" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionFunctionInput_3'"
+      InputName="Height Falloff"
+      Id=A3D5CB074AEC984F70173590C49F4C22
+      InputType=FunctionInput_Scalar
+      bUsePreviewValueAsDefault=True
+      MaterialExpressionEditorX=-976
+      MaterialExpressionEditorY=532
+      MaterialExpressionGuid=6AA22B2E47886D678B5353830528F2EA
+      Function="/Script/Engine.MaterialFunction'PathTracer_Fog_Density'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_4" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionFunctionInput_4'"
+      InputName="Loop Steps"
+      Id=1E7FDBD149F8F5E025B239A9EDA06064
+      InputType=FunctionInput_Scalar
+      PreviewValue=(X=100.000000,Y=0.000000,Z=0.000000,W=1.000000)
+      bUsePreviewValueAsDefault=True
+      MaterialExpressionEditorX=-780
+      MaterialExpressionEditorY=640
+      MaterialExpressionGuid=6AA22B2E47886D678B5353830528F2EA
+      Function="/Script/Engine.MaterialFunction'PathTracer_Fog_Density'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_5" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionFunctionInput_5'"
+      InputName="Fog Density"
+      Id=4CF206524167E968106ED2B60B928B23
+      InputType=FunctionInput_Scalar
+      PreviewValue=(X=0.010000,Y=0.000000,Z=0.000000,W=1.000000)
+      bUsePreviewValueAsDefault=True
+      MaterialExpressionEditorX=-1136
+      MaterialExpressionEditorY=796
+      MaterialExpressionGuid=6AA22B2E47886D678B5353830528F2EA
+      Function="/Script/Engine.MaterialFunction'PathTracer_Fog_Density'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_6" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionFunctionInput_6'"
+      InputName="Max Ray Length"
+      Id=F7F55ABD4A15780DFE9BDE91AFD7CCDE
+      InputType=FunctionInput_Scalar
+      PreviewValue=(X=97903832.000000,Y=0.000000,Z=0.000000,W=1.000000)
+      bUsePreviewValueAsDefault=True
+      MaterialExpressionEditorX=-732
+      MaterialExpressionEditorY=920
+      MaterialExpressionGuid=6AA22B2E47886D678B5353830528F2EA
+      Function="/Script/Engine.MaterialFunction'PathTracer_Fog_Density'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionOutput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionFunctionOutput_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionSaturate'PathTracer_Fog_Density:MaterialExpressionSaturate_0'")
+      bLastPreviewed=True
+      Id=0386A8E442890EB16AFFFBA797005277
+      MaterialExpressionEditorX=116
+      MaterialExpressionEditorY=268
+      MaterialExpressionGuid=DBF535DD425A55536414BEAE1494B5C4
+      Function="/Script/Engine.MaterialFunction'PathTracer_Fog_Density'"
+   End Object
+   Begin Object Name="MaterialExpressionMax_0" ExportPath="/Script/Engine.MaterialExpressionMax'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionMax_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionSubtract'PathTracer_Fog_Density:MaterialExpressionSubtract_7'")
+      ConstB=0.000000
+      MaterialExpressionEditorX=-2460
+      MaterialExpressionEditorY=584
+      MaterialExpressionGuid=AC29A9A94F667710BC66838998BC7428
+      Function="/Script/Engine.MaterialFunction'PathTracer_Fog_Density'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_0" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionMultiply_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionNormalize'PathTracer_Fog_Density:MaterialExpressionNormalize_0'")
+      B=(Expression="/Script/Engine.MaterialExpressionMax'PathTracer_Fog_Density:MaterialExpressionMax_0'")
+      MaterialExpressionEditorX=-2280
+      MaterialExpressionEditorY=432
+      MaterialExpressionGuid=D48F76C14D4193A3F00BCFA28AB9887C
+      Function="/Script/Engine.MaterialFunction'PathTracer_Fog_Density'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_9" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionMultiply_9'"
+      A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'PathTracer_Fog_Density:MaterialExpressionFunctionInput_5'")
+      ConstB=10.000000
+      MaterialExpressionEditorX=-868
+      MaterialExpressionEditorY=1040
+      MaterialExpressionGuid=E1B8B64D4C7B74E05BB8B9894791BA7A
+      Function="/Script/Engine.MaterialFunction'PathTracer_Fog_Density'"
+   End Object
+   Begin Object Name="MaterialExpressionNamedRerouteDeclaration_0" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionNamedRerouteDeclaration_0'"
+      Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'PathTracer_Fog_Density:MaterialExpressionFunctionInput_0'")
+      Name="Position Input"
+      NodeColor=(R=1.000000,G=0.000000,B=0.562500,A=1.000000)
+      VariableGuid=143B8D92406350BA046DE6BE42DC2226
+      MaterialExpressionEditorX=-2608
+      MaterialExpressionEditorY=1032
+      MaterialExpressionGuid=4028B1AB4386F7BFFB9AA6816EAFA565
+      Function="/Script/Engine.MaterialFunction'PathTracer_Fog_Density'"
+   End Object
+   Begin Object Name="MaterialExpressionNamedRerouteUsage_0" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionNamedRerouteUsage_0'"
+      Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'PathTracer_Fog_Density:MaterialExpressionNamedRerouteDeclaration_0'"
+      DeclarationGuid=143B8D92406350BA046DE6BE42DC2226
+      MaterialExpressionEditorX=-2784
+      MaterialExpressionEditorY=296
+      MaterialExpressionGuid=5B00A8FA4BBC475154C4249EDB8287C0
+      Function="/Script/Engine.MaterialFunction'PathTracer_Fog_Density'"
+   End Object
+   Begin Object Name="MaterialExpressionNamedRerouteUsage_1" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionNamedRerouteUsage_1'"
+      Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'PathTracer_Fog_Density:MaterialExpressionNamedRerouteDeclaration_0'"
+      DeclarationGuid=143B8D92406350BA046DE6BE42DC2226
+      MaterialExpressionEditorX=-2908
+      MaterialExpressionEditorY=580
+      MaterialExpressionGuid=5B00A8FA4BBC475154C4249EDB8287C0
+      Function="/Script/Engine.MaterialFunction'PathTracer_Fog_Density'"
+   End Object
+   Begin Object Name="MaterialExpressionNamedRerouteUsage_2" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionNamedRerouteUsage_2'"
+      Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'PathTracer_Fog_Density:MaterialExpressionNamedRerouteDeclaration_0'"
+      DeclarationGuid=143B8D92406350BA046DE6BE42DC2226
+      MaterialExpressionEditorX=-1960
+      MaterialExpressionEditorY=796
+      MaterialExpressionGuid=5B00A8FA4BBC475154C4249EDB8287C0
+      Function="/Script/Engine.MaterialFunction'PathTracer_Fog_Density'"
+   End Object
+   Begin Object Name="MaterialExpressionNamedRerouteUsage_3" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionNamedRerouteUsage_3'"
+      Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'PathTracer_Fog_Density:MaterialExpressionNamedRerouteDeclaration_0'"
+      DeclarationGuid=143B8D92406350BA046DE6BE42DC2226
+      MaterialExpressionEditorX=-1640
+      MaterialExpressionEditorY=404
+      MaterialExpressionGuid=5B00A8FA4BBC475154C4249EDB8287C0
+      Function="/Script/Engine.MaterialFunction'PathTracer_Fog_Density'"
+   End Object
+   Begin Object Name="MaterialExpressionNormalize_0" ExportPath="/Script/Engine.MaterialExpressionNormalize'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionNormalize_0'"
+      VectorInput=(Expression="/Script/Engine.MaterialExpressionSubtract'PathTracer_Fog_Density:MaterialExpressionSubtract_8'")
+      MaterialExpressionEditorX=-2476
+      MaterialExpressionEditorY=436
+      MaterialExpressionGuid=ADA58EFB42CFA9DB02D0BBBA1A9DA56C
+      Function="/Script/Engine.MaterialFunction'PathTracer_Fog_Density'"
+   End Object
+   Begin Object Name="MaterialExpressionPower_1" ExportPath="/Script/Engine.MaterialExpressionPower'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionPower_1'"
+      Base=(Expression="/Script/Engine.MaterialExpressionSaturate'PathTracer_Fog_Density:MaterialExpressionSaturate_4'")
+      ConstExponent=3.000000
+      MaterialExpressionEditorX=-584
+      MaterialExpressionEditorY=1040
+      MaterialExpressionGuid=879A3E394126AF32796404B7FFAEBE94
+      Function="/Script/Engine.MaterialFunction'PathTracer_Fog_Density'"
+   End Object
+   Begin Object Name="MaterialExpressionReroute_0" ExportPath="/Script/Engine.MaterialExpressionReroute'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionReroute_0'"
+      Input=(Expression="/Script/Engine.MaterialExpressionDistance'PathTracer_Fog_Density:MaterialExpressionDistance_1'")
+      MaterialExpressionEditorX=-464
+      MaterialExpressionEditorY=1016
+      MaterialExpressionGuid=3C34E7044F7DCED406F4D58B79B779F8
+      Function="/Script/Engine.MaterialFunction'PathTracer_Fog_Density'"
+   End Object
+   Begin Object Name="MaterialExpressionReroute_2" ExportPath="/Script/Engine.MaterialExpressionReroute'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionReroute_2'"
+      Input=(Expression="/Script/Engine.MaterialExpressionDistance'PathTracer_Fog_Density:MaterialExpressionDistance_3'")
+      MaterialExpressionEditorX=-592
+      MaterialExpressionEditorY=744
+      MaterialExpressionGuid=6AB6E8394D951B51808CB49DD7C12A43
+      Function="/Script/Engine.MaterialFunction'PathTracer_Fog_Density'"
+   End Object
+   Begin Object Name="MaterialExpressionSaturate_0" ExportPath="/Script/Engine.MaterialExpressionSaturate'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionSaturate_0'"
+      Input=(Expression="/Script/Engine.MaterialExpressionCustom'PathTracer_Fog_Density:MaterialExpressionCustom_0'")
+      MaterialExpressionEditorX=-80
+      MaterialExpressionEditorY=296
+      MaterialExpressionGuid=8CAB15CC48CC3E85C6437E95CBED61E8
+      Function="/Script/Engine.MaterialFunction'PathTracer_Fog_Density'"
+   End Object
+   Begin Object Name="MaterialExpressionSaturate_4" ExportPath="/Script/Engine.MaterialExpressionSaturate'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionSaturate_4'"
+      Input=(Expression="/Script/Engine.MaterialExpressionMultiply'PathTracer_Fog_Density:MaterialExpressionMultiply_9'")
+      MaterialExpressionEditorX=-716
+      MaterialExpressionEditorY=1040
+      MaterialExpressionGuid=11D53B7D42C5A705F2137FA4F5E6F4E3
+      Function="/Script/Engine.MaterialFunction'PathTracer_Fog_Density'"
+   End Object
+   Begin Object Name="MaterialExpressionSubtract_2" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionSubtract_2'"
+      A=(Expression="/Script/Engine.MaterialExpressionComponentMask'PathTracer_Fog_Density:MaterialExpressionComponentMask_5'")
+      B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'PathTracer_Fog_Density:MaterialExpressionFunctionInput_2'")
+      MaterialExpressionEditorX=-996
+      MaterialExpressionEditorY=404
+      MaterialExpressionGuid=08C5314F42D63EA7DC04B1895EFACEC0
+      Function="/Script/Engine.MaterialFunction'PathTracer_Fog_Density'"
+   End Object
+   Begin Object Name="MaterialExpressionSubtract_6" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionSubtract_6'"
+      A=(Expression="/Script/Engine.MaterialExpressionComponentMask'PathTracer_Fog_Density:MaterialExpressionComponentMask_9'")
+      B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'PathTracer_Fog_Density:MaterialExpressionFunctionInput_2'")
+      MaterialExpressionEditorX=-996
+      MaterialExpressionEditorY=296
+      MaterialExpressionGuid=08C5314F42D63EA7DC04B1895EFACEC0
+      Function="/Script/Engine.MaterialFunction'PathTracer_Fog_Density'"
+   End Object
+   Begin Object Name="MaterialExpressionSubtract_7" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionSubtract_7'"
+      A=(Expression="/Script/Engine.MaterialExpressionDistance'PathTracer_Fog_Density:MaterialExpressionDistance_2'")
+      B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'PathTracer_Fog_Density:MaterialExpressionFunctionInput_1'")
+      MaterialExpressionEditorX=-2576
+      MaterialExpressionEditorY=584
+      MaterialExpressionGuid=D8AD06EF477CB4852BBB3F93B3D64A7A
+      Function="/Script/Engine.MaterialFunction'PathTracer_Fog_Density'"
+   End Object
+   Begin Object Name="MaterialExpressionSubtract_8" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:MaterialExpressionSubtract_8'"
+      A=(Expression="/Script/Engine.MaterialExpressionCameraPositionWS'PathTracer_Fog_Density:MaterialExpressionCameraPositionWS_10'")
+      B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'PathTracer_Fog_Density:MaterialExpressionNamedRerouteUsage_0'")
+      MaterialExpressionEditorX=-2604
+      MaterialExpressionEditorY=436
+      MaterialExpressionGuid=270980814E5F37E295A668B744142021
+      Function="/Script/Engine.MaterialFunction'PathTracer_Fog_Density'"
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/Material_Functions/PathTracer_Fog_Density.PathTracer_Fog_Density:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'PathTracer_Fog_DensityEditorOnlyData'"
+   StateId=431D04CC4CFE9E2F177C8181608201F8
+   CombinedInputTypes=15
+   CombinedOutputTypes=15
+   ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+End Object

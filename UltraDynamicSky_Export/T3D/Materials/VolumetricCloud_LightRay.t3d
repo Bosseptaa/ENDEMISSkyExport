@@ -1,3 +1,1372 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4a24570385f1ee379a8894d78b89e0a7ac982470d152f1737a939c306da65eb5
-size 139090
+Begin Object Class=/Script/Engine.Material Name="VolumetricCloud_LightRay" ExportPath="/Script/Engine.Material'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay'"
+   Begin Object Class=/Script/Engine.MaterialEditorOnlyData Name="VolumetricCloud_LightRayEditorOnlyData" ExportPath="/Script/Engine.MaterialEditorOnlyData'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:VolumetricCloud_LightRayEditorOnlyData'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAdd Name="MaterialExpressionAdd_1" ExportPath="/Script/Engine.MaterialExpressionAdd'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionAdd_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAdd Name="MaterialExpressionAdd_2" ExportPath="/Script/Engine.MaterialExpressionAdd'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionAdd_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAdd Name="MaterialExpressionAdd_3" ExportPath="/Script/Engine.MaterialExpressionAdd'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionAdd_3'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAdd Name="MaterialExpressionAdd_6" ExportPath="/Script/Engine.MaterialExpressionAdd'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionAdd_6'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAppendVector Name="MaterialExpressionAppendVector_0" ExportPath="/Script/Engine.MaterialExpressionAppendVector'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionAppendVector_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAppendVector Name="MaterialExpressionAppendVector_1" ExportPath="/Script/Engine.MaterialExpressionAppendVector'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionAppendVector_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAppendVector Name="MaterialExpressionAppendVector_2" ExportPath="/Script/Engine.MaterialExpressionAppendVector'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionAppendVector_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionCameraPositionWS Name="MaterialExpressionCameraPositionWS_0" ExportPath="/Script/Engine.MaterialExpressionCameraPositionWS'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionCameraPositionWS_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionCameraPositionWS Name="MaterialExpressionCameraPositionWS_1" ExportPath="/Script/Engine.MaterialExpressionCameraPositionWS'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionCameraPositionWS_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionCollectionParameter Name="MaterialExpressionCollectionParameter_0" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionCollectionParameter_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionCollectionParameter Name="MaterialExpressionCollectionParameter_1" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionCollectionParameter_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_0" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionComment_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_1" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionComment_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_2" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionComment_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_3" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionComment_3'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_4" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionComment_4'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_5" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionComment_5'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_6" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionComment_6'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_7" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionComment_7'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_0" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionComponentMask_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_2" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionComponentMask_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_0" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionConstant_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_1" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionConstant_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_2" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionConstant_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_3" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionConstant_3'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant3Vector Name="MaterialExpressionConstant3Vector_0" ExportPath="/Script/Engine.MaterialExpressionConstant3Vector'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionConstant3Vector_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDepthFade Name="MaterialExpressionDepthFade_1" ExportPath="/Script/Engine.MaterialExpressionDepthFade'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionDepthFade_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDistance Name="MaterialExpressionDistance_0" ExportPath="/Script/Engine.MaterialExpressionDistance'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionDistance_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDivide Name="MaterialExpressionDivide_0" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionDivide_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDivide Name="MaterialExpressionDivide_1" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionDivide_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDivide Name="MaterialExpressionDivide_2" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionDivide_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDivide Name="MaterialExpressionDivide_3" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionDivide_3'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDivide Name="MaterialExpressionDivide_4" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionDivide_4'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDivide Name="MaterialExpressionDivide_5" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionDivide_5'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDivide Name="MaterialExpressionDivide_9" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionDivide_9'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDynamicParameter Name="MaterialExpressionDynamicParameter_0" ExportPath="/Script/Engine.MaterialExpressionDynamicParameter'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionDynamicParameter_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDynamicParameter Name="MaterialExpressionDynamicParameter_1" ExportPath="/Script/Engine.MaterialExpressionDynamicParameter'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionDynamicParameter_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionIf Name="MaterialExpressionIf_0" ExportPath="/Script/Engine.MaterialExpressionIf'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionIf_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_0" ExportPath="/Script/Engine.MaterialExpressionLinearInterpolate'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionLinearInterpolate_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_2" ExportPath="/Script/Engine.MaterialExpressionLinearInterpolate'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionLinearInterpolate_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_0" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMaterialFunctionCall_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_1" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMaterialFunctionCall_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_2" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMaterialFunctionCall_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMax Name="MaterialExpressionMax_2" ExportPath="/Script/Engine.MaterialExpressionMax'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMax_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_0" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMultiply_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_1" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMultiply_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_10" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMultiply_10'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_11" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMultiply_11'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_12" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMultiply_12'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_13" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMultiply_13'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_14" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMultiply_14'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_15" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMultiply_15'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_16" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMultiply_16'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_18" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMultiply_18'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_2" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMultiply_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_22" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMultiply_22'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_24" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMultiply_24'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_4" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMultiply_4'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_5" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMultiply_5'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_6" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMultiply_6'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_7" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMultiply_7'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_8" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMultiply_8'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_9" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMultiply_9'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNamedRerouteDeclaration Name="MaterialExpressionNamedRerouteDeclaration_0" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionNamedRerouteDeclaration_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNamedRerouteDeclaration Name="MaterialExpressionNamedRerouteDeclaration_1" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionNamedRerouteDeclaration_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNamedRerouteDeclaration Name="MaterialExpressionNamedRerouteDeclaration_2" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionNamedRerouteDeclaration_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNamedRerouteUsage Name="MaterialExpressionNamedRerouteUsage_0" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionNamedRerouteUsage_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNamedRerouteUsage Name="MaterialExpressionNamedRerouteUsage_1" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionNamedRerouteUsage_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNamedRerouteUsage Name="MaterialExpressionNamedRerouteUsage_2" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionNamedRerouteUsage_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNormalize Name="MaterialExpressionNormalize_0" ExportPath="/Script/Engine.MaterialExpressionNormalize'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionNormalize_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionOneMinus Name="MaterialExpressionOneMinus_1" ExportPath="/Script/Engine.MaterialExpressionOneMinus'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionOneMinus_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionOneMinus Name="MaterialExpressionOneMinus_2" ExportPath="/Script/Engine.MaterialExpressionOneMinus'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionOneMinus_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionOneMinus Name="MaterialExpressionOneMinus_3" ExportPath="/Script/Engine.MaterialExpressionOneMinus'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionOneMinus_3'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionParticleColor Name="MaterialExpressionParticleColor_0" ExportPath="/Script/Engine.MaterialExpressionParticleColor'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionParticleColor_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionParticlePositionWS Name="MaterialExpressionParticlePositionWS_0" ExportPath="/Script/Engine.MaterialExpressionParticlePositionWS'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionParticlePositionWS_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionParticlePositionWS Name="MaterialExpressionParticlePositionWS_1" ExportPath="/Script/Engine.MaterialExpressionParticlePositionWS'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionParticlePositionWS_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionParticlePositionWS Name="MaterialExpressionParticlePositionWS_2" ExportPath="/Script/Engine.MaterialExpressionParticlePositionWS'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionParticlePositionWS_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionQualitySwitch Name="MaterialExpressionQualitySwitch_0" ExportPath="/Script/Engine.MaterialExpressionQualitySwitch'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionQualitySwitch_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionReroute Name="MaterialExpressionReroute_0" ExportPath="/Script/Engine.MaterialExpressionReroute'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionReroute_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionReroute Name="MaterialExpressionReroute_1" ExportPath="/Script/Engine.MaterialExpressionReroute'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionReroute_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionReroute Name="MaterialExpressionReroute_3" ExportPath="/Script/Engine.MaterialExpressionReroute'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionReroute_3'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSaturate Name="MaterialExpressionSaturate_0" ExportPath="/Script/Engine.MaterialExpressionSaturate'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionSaturate_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSaturate Name="MaterialExpressionSaturate_2" ExportPath="/Script/Engine.MaterialExpressionSaturate'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionSaturate_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSaturate Name="MaterialExpressionSaturate_3" ExportPath="/Script/Engine.MaterialExpressionSaturate'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionSaturate_3'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSaturate Name="MaterialExpressionSaturate_4" ExportPath="/Script/Engine.MaterialExpressionSaturate'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionSaturate_4'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSaturate Name="MaterialExpressionSaturate_6" ExportPath="/Script/Engine.MaterialExpressionSaturate'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionSaturate_6'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSaturate Name="MaterialExpressionSaturate_7" ExportPath="/Script/Engine.MaterialExpressionSaturate'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionSaturate_7'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSaturate Name="MaterialExpressionSaturate_8" ExportPath="/Script/Engine.MaterialExpressionSaturate'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionSaturate_8'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_1" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionScalarParameter_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_10" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionScalarParameter_10'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_11" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionScalarParameter_11'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_12" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionScalarParameter_12'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_13" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionScalarParameter_13'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_15" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionScalarParameter_15'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_16" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionScalarParameter_16'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_2" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionScalarParameter_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_3" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionScalarParameter_3'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_4" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionScalarParameter_4'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_5" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionScalarParameter_5'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_6" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionScalarParameter_6'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_7" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionScalarParameter_7'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_8" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionScalarParameter_8'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_9" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionScalarParameter_9'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSubtract Name="MaterialExpressionSubtract_0" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionSubtract_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSubtract Name="MaterialExpressionSubtract_1" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionSubtract_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSubtract Name="MaterialExpressionSubtract_10" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionSubtract_10'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSubtract Name="MaterialExpressionSubtract_12" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionSubtract_12'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSubtract Name="MaterialExpressionSubtract_13" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionSubtract_13'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSubtract Name="MaterialExpressionSubtract_2" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionSubtract_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSubtract Name="MaterialExpressionSubtract_3" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionSubtract_3'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSubtract Name="MaterialExpressionSubtract_4" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionSubtract_4'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSubtract Name="MaterialExpressionSubtract_5" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionSubtract_5'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSubtract Name="MaterialExpressionSubtract_6" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionSubtract_6'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSubtract Name="MaterialExpressionSubtract_8" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionSubtract_8'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSubtract Name="MaterialExpressionSubtract_9" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionSubtract_9'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureObject Name="MaterialExpressionTextureObject_0" ExportPath="/Script/Engine.MaterialExpressionTextureObject'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionTextureObject_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureObject Name="MaterialExpressionTextureObject_1" ExportPath="/Script/Engine.MaterialExpressionTextureObject'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionTextureObject_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_0" ExportPath="/Script/Engine.MaterialExpressionTextureSample'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionTextureSample_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_1" ExportPath="/Script/Engine.MaterialExpressionTextureSample'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionTextureSample_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_2" ExportPath="/Script/Engine.MaterialExpressionTextureSample'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionTextureSample_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_0" ExportPath="/Script/Engine.MaterialExpressionVectorParameter'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionVectorParameter_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_2" ExportPath="/Script/Engine.MaterialExpressionVectorParameter'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionVectorParameter_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVertexInterpolator Name="MaterialExpressionVertexInterpolator_0" ExportPath="/Script/Engine.MaterialExpressionVertexInterpolator'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionVertexInterpolator_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVertexInterpolator Name="MaterialExpressionVertexInterpolator_1" ExportPath="/Script/Engine.MaterialExpressionVertexInterpolator'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionVertexInterpolator_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionWorldPosition Name="MaterialExpressionWorldPosition_0" ExportPath="/Script/Engine.MaterialExpressionWorldPosition'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionWorldPosition_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionWorldPosition Name="MaterialExpressionWorldPosition_1" ExportPath="/Script/Engine.MaterialExpressionWorldPosition'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionWorldPosition_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionWorldPosition Name="MaterialExpressionWorldPosition_2" ExportPath="/Script/Engine.MaterialExpressionWorldPosition'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionWorldPosition_2'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   Begin Object Name="VolumetricCloud_LightRayEditorOnlyData" ExportPath="/Script/Engine.MaterialEditorOnlyData'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:VolumetricCloud_LightRayEditorOnlyData'"
+      BaseColor=(UseConstant=True,Constant=(R=0.501961,G=0.501961,B=0.501961,A=1.000000))
+      Metallic=(UseConstant=True)
+      Specular=(UseConstant=True)
+      Roughness=(UseConstant=True)
+      Anisotropy=(UseConstant=True)
+      Normal=(UseConstant=True)
+      Tangent=(UseConstant=True)
+      EmissiveColor=(Expression="/Script/Engine.MaterialExpressionMultiply'VolumetricCloud_LightRay:MaterialExpressionMultiply_1'")
+      Opacity=(UseConstant=True)
+      OpacityMask=(UseConstant=True)
+      WorldPositionOffset=(Expression="/Script/Engine.MaterialExpressionIf'VolumetricCloud_LightRay:MaterialExpressionIf_0'")
+      Displacement=(UseConstant=True)
+      SubsurfaceColor=(UseConstant=True)
+      ClearCoat=(UseConstant=True)
+      ClearCoatRoughness=(UseConstant=True)
+      AmbientOcclusion=(UseConstant=True)
+      Refraction=(UseConstant=True)
+      CustomizedUVs(0)=(UseConstant=True)
+      CustomizedUVs(1)=(UseConstant=True)
+      CustomizedUVs(2)=(UseConstant=True)
+      CustomizedUVs(3)=(UseConstant=True)
+      CustomizedUVs(4)=(UseConstant=True)
+      CustomizedUVs(5)=(UseConstant=True)
+      CustomizedUVs(6)=(UseConstant=True)
+      CustomizedUVs(7)=(UseConstant=True)
+      PixelDepthOffset=(UseConstant=True)
+      SurfaceThickness=(UseConstant=True)
+      ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionMultiply'VolumetricCloud_LightRay:MaterialExpressionMultiply_1'","/Script/Engine.MaterialExpressionIf'VolumetricCloud_LightRay:MaterialExpressionIf_0'","/Script/Engine.MaterialExpressionMultiply'VolumetricCloud_LightRay:MaterialExpressionMultiply_7'","/Script/Engine.MaterialExpressionMultiply'VolumetricCloud_LightRay:MaterialExpressionMultiply_2'","/Script/Engine.MaterialExpressionMultiply'VolumetricCloud_LightRay:MaterialExpressionMultiply_8'","/Script/Engine.MaterialExpressionParticlePositionWS'VolumetricCloud_LightRay:MaterialExpressionParticlePositionWS_0'","/Script/Engine.MaterialExpressionParticlePositionWS'VolumetricCloud_LightRay:MaterialExpressionParticlePositionWS_1'","/Script/Engine.MaterialExpressionWorldPosition'VolumetricCloud_LightRay:MaterialExpressionWorldPosition_0'","/Script/Engine.MaterialExpressionSubtract'VolumetricCloud_LightRay:MaterialExpressionSubtract_0'","/Script/Engine.MaterialExpressionVectorParameter'VolumetricCloud_LightRay:MaterialExpressionVectorParameter_0'","/Script/Engine.MaterialExpressionParticleColor'VolumetricCloud_LightRay:MaterialExpressionParticleColor_0'","/Script/Engine.MaterialExpressionVertexInterpolator'VolumetricCloud_LightRay:MaterialExpressionVertexInterpolator_0'","/Script/Engine.MaterialExpressionCollectionParameter'VolumetricCloud_LightRay:MaterialExpressionCollectionParameter_1'","/Script/Engine.MaterialExpressionSubtract'VolumetricCloud_LightRay:MaterialExpressionSubtract_2'","/Script/Engine.MaterialExpressionDivide'VolumetricCloud_LightRay:MaterialExpressionDivide_5'","/Script/Engine.MaterialExpressionSaturate'VolumetricCloud_LightRay:MaterialExpressionSaturate_2'","/Script/Engine.MaterialExpressionOneMinus'VolumetricCloud_LightRay:MaterialExpressionOneMinus_1'","/Script/Engine.MaterialExpressionCameraPositionWS'VolumetricCloud_LightRay:MaterialExpressionCameraPositionWS_0'","/Script/Engine.MaterialExpressionWorldPosition'VolumetricCloud_LightRay:MaterialExpressionWorldPosition_2'","/Script/Engine.MaterialExpressionComponentMask'VolumetricCloud_LightRay:MaterialExpressionComponentMask_2'","/Script/Engine.MaterialExpressionDynamicParameter'VolumetricCloud_LightRay:MaterialExpressionDynamicParameter_1'","/Script/Engine.MaterialExpressionVectorParameter'VolumetricCloud_LightRay:MaterialExpressionVectorParameter_2'","/Script/Engine.MaterialExpressionMultiply'VolumetricCloud_LightRay:MaterialExpressionMultiply_4'","/Script/Engine.MaterialExpressionMultiply'VolumetricCloud_LightRay:MaterialExpressionMultiply_5'","/Script/Engine.MaterialExpressionScalarParameter'VolumetricCloud_LightRay:MaterialExpressionScalarParameter_1'","/Script/Engine.MaterialExpressionAdd'VolumetricCloud_LightRay:MaterialExpressionAdd_1'","/Script/Engine.MaterialExpressionTextureSample'VolumetricCloud_LightRay:MaterialExpressionTextureSample_2'","/Script/Engine.MaterialExpressionMaterialFunctionCall'VolumetricCloud_LightRay:MaterialExpressionMaterialFunctionCall_1'","/Script/Engine.MaterialExpressionMultiply'VolumetricCloud_LightRay:MaterialExpressionMultiply_14'","/Script/Engine.MaterialExpressionDynamicParameter'VolumetricCloud_LightRay:MaterialExpressionDynamicParameter_0'","/Script/Engine.MaterialExpressionDepthFade'VolumetricCloud_LightRay:MaterialExpressionDepthFade_1'","/Script/Engine.MaterialExpressionTextureSample'VolumetricCloud_LightRay:MaterialExpressionTextureSample_0'","/Script/Engine.MaterialExpressionWorldPosition'VolumetricCloud_LightRay:MaterialExpressionWorldPosition_1'","/Script/Engine.MaterialExpressionDivide'VolumetricCloud_LightRay:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionMultiply'VolumetricCloud_LightRay:MaterialExpressionMultiply_6'","/Script/Engine.MaterialExpressionQualitySwitch'VolumetricCloud_LightRay:MaterialExpressionQualitySwitch_0'","/Script/Engine.MaterialExpressionTextureObject'VolumetricCloud_LightRay:MaterialExpressionTextureObject_0'","/Script/Engine.MaterialExpressionTextureObject'VolumetricCloud_LightRay:MaterialExpressionTextureObject_1'","/Script/Engine.MaterialExpressionScalarParameter'VolumetricCloud_LightRay:MaterialExpressionScalarParameter_3'","/Script/Engine.MaterialExpressionCollectionParameter'VolumetricCloud_LightRay:MaterialExpressionCollectionParameter_0'","/Script/Engine.MaterialExpressionSubtract'VolumetricCloud_LightRay:MaterialExpressionSubtract_1'","/Script/Engine.MaterialExpressionDivide'VolumetricCloud_LightRay:MaterialExpressionDivide_2'","/Script/Engine.MaterialExpressionSaturate'VolumetricCloud_LightRay:MaterialExpressionSaturate_0'","/Script/Engine.MaterialExpressionOneMinus'VolumetricCloud_LightRay:MaterialExpressionOneMinus_2'","/Script/Engine.MaterialExpressionComponentMask'VolumetricCloud_LightRay:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionAdd'VolumetricCloud_LightRay:MaterialExpressionAdd_2'","/Script/Engine.MaterialExpressionMultiply'VolumetricCloud_LightRay:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'VolumetricCloud_LightRay:MaterialExpressionNamedRerouteDeclaration_0'","/Script/Engine.MaterialExpressionNamedRerouteUsage'VolumetricCloud_LightRay:MaterialExpressionNamedRerouteUsage_0'","/Script/Engine.MaterialExpressionCameraPositionWS'VolumetricCloud_LightRay:MaterialExpressionCameraPositionWS_1'","/Script/Engine.MaterialExpressionSubtract'VolumetricCloud_LightRay:MaterialExpressionSubtract_3'","/Script/Engine.MaterialExpressionNormalize'VolumetricCloud_LightRay:MaterialExpressionNormalize_0'","/Script/Engine.MaterialExpressionMultiply'VolumetricCloud_LightRay:MaterialExpressionMultiply_10'","/Script/Engine.MaterialExpressionMaterialFunctionCall'VolumetricCloud_LightRay:MaterialExpressionMaterialFunctionCall_0'","/Script/Engine.MaterialExpressionConstant'VolumetricCloud_LightRay:MaterialExpressionConstant_0'","/Script/Engine.MaterialExpressionMaterialFunctionCall'VolumetricCloud_LightRay:MaterialExpressionMaterialFunctionCall_2'","/Script/Engine.MaterialExpressionMultiply'VolumetricCloud_LightRay:MaterialExpressionMultiply_11'","/Script/Engine.MaterialExpressionConstant3Vector'VolumetricCloud_LightRay:MaterialExpressionConstant3Vector_0'","/Script/Engine.MaterialExpressionParticlePositionWS'VolumetricCloud_LightRay:MaterialExpressionParticlePositionWS_2'","/Script/Engine.MaterialExpressionSaturate'VolumetricCloud_LightRay:MaterialExpressionSaturate_8'","/Script/Engine.MaterialExpressionMultiply'VolumetricCloud_LightRay:MaterialExpressionMultiply_18'","/Script/Engine.MaterialExpressionScalarParameter'VolumetricCloud_LightRay:MaterialExpressionScalarParameter_9'","/Script/Engine.MaterialExpressionSubtract'VolumetricCloud_LightRay:MaterialExpressionSubtract_8'","/Script/Engine.MaterialExpressionScalarParameter'VolumetricCloud_LightRay:MaterialExpressionScalarParameter_5'","/Script/Engine.MaterialExpressionScalarParameter'VolumetricCloud_LightRay:MaterialExpressionScalarParameter_10'","/Script/Engine.MaterialExpressionDivide'VolumetricCloud_LightRay:MaterialExpressionDivide_3'","/Script/Engine.MaterialExpressionSaturate'VolumetricCloud_LightRay:MaterialExpressionSaturate_6'","/Script/Engine.MaterialExpressionSubtract'VolumetricCloud_LightRay:MaterialExpressionSubtract_9'","/Script/Engine.MaterialExpressionDivide'VolumetricCloud_LightRay:MaterialExpressionDivide_4'","/Script/Engine.MaterialExpressionSaturate'VolumetricCloud_LightRay:MaterialExpressionSaturate_7'","/Script/Engine.MaterialExpressionSubtract'VolumetricCloud_LightRay:MaterialExpressionSubtract_10'","/Script/Engine.MaterialExpressionMax'VolumetricCloud_LightRay:MaterialExpressionMax_2'","/Script/Engine.MaterialExpressionSubtract'VolumetricCloud_LightRay:MaterialExpressionSubtract_12'","/Script/Engine.MaterialExpressionScalarParameter'VolumetricCloud_LightRay:MaterialExpressionScalarParameter_12'","/Script/Engine.MaterialExpressionSubtract'VolumetricCloud_LightRay:MaterialExpressionSubtract_13'","/Script/Engine.MaterialExpressionScalarParameter'VolumetricCloud_LightRay:MaterialExpressionScalarParameter_13'","/Script/Engine.MaterialExpressionAdd'VolumetricCloud_LightRay:MaterialExpressionAdd_6'","/Script/Engine.MaterialExpressionMultiply'VolumetricCloud_LightRay:MaterialExpressionMultiply_24'","/Script/Engine.MaterialExpressionScalarParameter'VolumetricCloud_LightRay:MaterialExpressionScalarParameter_15'","/Script/Engine.MaterialExpressionScalarParameter'VolumetricCloud_LightRay:MaterialExpressionScalarParameter_16'","/Script/Engine.MaterialExpressionSubtract'VolumetricCloud_LightRay:MaterialExpressionSubtract_5'","/Script/Engine.MaterialExpressionScalarParameter'VolumetricCloud_LightRay:MaterialExpressionScalarParameter_4'","/Script/Engine.MaterialExpressionMultiply'VolumetricCloud_LightRay:MaterialExpressionMultiply_12'","/Script/Engine.MaterialExpressionConstant'VolumetricCloud_LightRay:MaterialExpressionConstant_1'","/Script/Engine.MaterialExpressionReroute'VolumetricCloud_LightRay:MaterialExpressionReroute_0'","/Script/Engine.MaterialExpressionReroute'VolumetricCloud_LightRay:MaterialExpressionReroute_1'","/Script/Engine.MaterialExpressionTextureSample'VolumetricCloud_LightRay:MaterialExpressionTextureSample_1'","/Script/Engine.MaterialExpressionDivide'VolumetricCloud_LightRay:MaterialExpressionDivide_1'","/Script/Engine.MaterialExpressionScalarParameter'VolumetricCloud_LightRay:MaterialExpressionScalarParameter_2'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'VolumetricCloud_LightRay:MaterialExpressionNamedRerouteDeclaration_1'","/Script/Engine.MaterialExpressionNamedRerouteUsage'VolumetricCloud_LightRay:MaterialExpressionNamedRerouteUsage_1'","/Script/Engine.MaterialExpressionAppendVector'VolumetricCloud_LightRay:MaterialExpressionAppendVector_0'","/Script/Engine.MaterialExpressionSubtract'VolumetricCloud_LightRay:MaterialExpressionSubtract_4'","/Script/Engine.MaterialExpressionMultiply'VolumetricCloud_LightRay:MaterialExpressionMultiply_9'","/Script/Engine.MaterialExpressionScalarParameter'VolumetricCloud_LightRay:MaterialExpressionScalarParameter_6'","/Script/Engine.MaterialExpressionAppendVector'VolumetricCloud_LightRay:MaterialExpressionAppendVector_1'","/Script/Engine.MaterialExpressionConstant'VolumetricCloud_LightRay:MaterialExpressionConstant_2'","/Script/Engine.MaterialExpressionAdd'VolumetricCloud_LightRay:MaterialExpressionAdd_3'","/Script/Engine.MaterialExpressionScalarParameter'VolumetricCloud_LightRay:MaterialExpressionScalarParameter_7'","/Script/Engine.MaterialExpressionMultiply'VolumetricCloud_LightRay:MaterialExpressionMultiply_13'","/Script/Engine.MaterialExpressionMultiply'VolumetricCloud_LightRay:MaterialExpressionMultiply_15'","/Script/Engine.MaterialExpressionReroute'VolumetricCloud_LightRay:MaterialExpressionReroute_3'","/Script/Engine.MaterialExpressionLinearInterpolate'VolumetricCloud_LightRay:MaterialExpressionLinearInterpolate_2'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'VolumetricCloud_LightRay:MaterialExpressionNamedRerouteDeclaration_2'","/Script/Engine.MaterialExpressionNamedRerouteUsage'VolumetricCloud_LightRay:MaterialExpressionNamedRerouteUsage_2'","/Script/Engine.MaterialExpressionAppendVector'VolumetricCloud_LightRay:MaterialExpressionAppendVector_2'","/Script/Engine.MaterialExpressionConstant'VolumetricCloud_LightRay:MaterialExpressionConstant_3'","/Script/Engine.MaterialExpressionScalarParameter'VolumetricCloud_LightRay:MaterialExpressionScalarParameter_8'","/Script/Engine.MaterialExpressionDistance'VolumetricCloud_LightRay:MaterialExpressionDistance_0'","/Script/Engine.MaterialExpressionDivide'VolumetricCloud_LightRay:MaterialExpressionDivide_9'","/Script/Engine.MaterialExpressionSaturate'VolumetricCloud_LightRay:MaterialExpressionSaturate_3'","/Script/Engine.MaterialExpressionSaturate'VolumetricCloud_LightRay:MaterialExpressionSaturate_4'","/Script/Engine.MaterialExpressionSubtract'VolumetricCloud_LightRay:MaterialExpressionSubtract_6'","/Script/Engine.MaterialExpressionLinearInterpolate'VolumetricCloud_LightRay:MaterialExpressionLinearInterpolate_0'","/Script/Engine.MaterialExpressionMultiply'VolumetricCloud_LightRay:MaterialExpressionMultiply_22'","/Script/Engine.MaterialExpressionOneMinus'VolumetricCloud_LightRay:MaterialExpressionOneMinus_3'","/Script/Engine.MaterialExpressionScalarParameter'VolumetricCloud_LightRay:MaterialExpressionScalarParameter_11'","/Script/Engine.MaterialExpressionMultiply'VolumetricCloud_LightRay:MaterialExpressionMultiply_16'","/Script/Engine.MaterialExpressionVertexInterpolator'VolumetricCloud_LightRay:MaterialExpressionVertexInterpolator_1'"),EditorComments=("/Script/Engine.MaterialExpressionComment'VolumetricCloud_LightRay:MaterialExpressionComment_0'","/Script/Engine.MaterialExpressionComment'VolumetricCloud_LightRay:MaterialExpressionComment_1'","/Script/Engine.MaterialExpressionComment'VolumetricCloud_LightRay:MaterialExpressionComment_2'","/Script/Engine.MaterialExpressionComment'VolumetricCloud_LightRay:MaterialExpressionComment_3'","/Script/Engine.MaterialExpressionComment'VolumetricCloud_LightRay:MaterialExpressionComment_4'","/Script/Engine.MaterialExpressionComment'VolumetricCloud_LightRay:MaterialExpressionComment_5'","/Script/Engine.MaterialExpressionComment'VolumetricCloud_LightRay:MaterialExpressionComment_6'","/Script/Engine.MaterialExpressionComment'VolumetricCloud_LightRay:MaterialExpressionComment_7'"))
+      ParameterGroupData(0)=(GroupName="None")
+   End Object
+   Begin Object Name="MaterialExpressionAdd_1" ExportPath="/Script/Engine.MaterialExpressionAdd'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionAdd_1'"
+      A=(Expression="/Script/Engine.MaterialExpressionDivide'VolumetricCloud_LightRay:MaterialExpressionDivide_5'")
+      B=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'VolumetricCloud_LightRay:MaterialExpressionLinearInterpolate_2'")
+      ConstB=0.000000
+      MaterialExpressionEditorX=-2798
+      MaterialExpressionEditorY=-166
+      MaterialExpressionGuid=84FD538C48F94662EECE9DB5A83D97C7
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionAdd_2" ExportPath="/Script/Engine.MaterialExpressionAdd'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionAdd_2'"
+      A=(Expression="/Script/Engine.MaterialExpressionDivide'VolumetricCloud_LightRay:MaterialExpressionDivide_2'")
+      ConstB=0.300000
+      MaterialExpressionEditorX=-1366
+      MaterialExpressionEditorY=1042
+      MaterialExpressionGuid=84FD538C48F94662EECE9DB5A83D97C7
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionAdd_3" ExportPath="/Script/Engine.MaterialExpressionAdd'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionAdd_3'"
+      A=(Expression="/Script/Engine.MaterialExpressionMultiply'VolumetricCloud_LightRay:MaterialExpressionMultiply_5'")
+      B=(Expression="/Script/Engine.MaterialExpressionAppendVector'VolumetricCloud_LightRay:MaterialExpressionAppendVector_1'")
+      MaterialExpressionEditorX=282
+      MaterialExpressionEditorY=834
+      MaterialExpressionGuid=1EB5B69146B67E2B89FD958A580DF9F0
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionAdd_6" ExportPath="/Script/Engine.MaterialExpressionAdd'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionAdd_6'"
+      A=(Expression="/Script/Engine.MaterialExpressionSaturate'VolumetricCloud_LightRay:MaterialExpressionSaturate_4'")
+      B=(Expression="/Script/Engine.MaterialExpressionSaturate'VolumetricCloud_LightRay:MaterialExpressionSaturate_8'")
+      MaterialExpressionEditorX=-2316
+      MaterialExpressionEditorY=928
+      MaterialExpressionGuid=5242530D492A8F25BD51899DB4F99A65
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionAppendVector_0" ExportPath="/Script/Engine.MaterialExpressionAppendVector'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionAppendVector_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionTextureSample'VolumetricCloud_LightRay:MaterialExpressionTextureSample_1'",OutputIndex=1,Mask=1,MaskR=1)
+      B=(Expression="/Script/Engine.MaterialExpressionTextureSample'VolumetricCloud_LightRay:MaterialExpressionTextureSample_1'",OutputIndex=2,Mask=1,MaskG=1)
+      MaterialExpressionEditorX=-360
+      MaterialExpressionEditorY=1228
+      MaterialExpressionGuid=7E7AB394497B926810CDCBBAC90039C7
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionAppendVector_1" ExportPath="/Script/Engine.MaterialExpressionAppendVector'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionAppendVector_1'"
+      A=(Expression="/Script/Engine.MaterialExpressionMultiply'VolumetricCloud_LightRay:MaterialExpressionMultiply_9'")
+      B=(Expression="/Script/Engine.MaterialExpressionConstant'VolumetricCloud_LightRay:MaterialExpressionConstant_2'")
+      MaterialExpressionEditorX=108
+      MaterialExpressionEditorY=1232
+      MaterialExpressionGuid=9CE003464616911A929F5BA2C0592224
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionAppendVector_2" ExportPath="/Script/Engine.MaterialExpressionAppendVector'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionAppendVector_2'"
+      A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'VolumetricCloud_LightRay:MaterialExpressionNamedRerouteUsage_2'")
+      B=(Expression="/Script/Engine.MaterialExpressionConstant'VolumetricCloud_LightRay:MaterialExpressionConstant_3'")
+      MaterialExpressionEditorX=-1208
+      MaterialExpressionEditorY=1200
+      MaterialExpressionGuid=A92618D84166C70E54C5219C94DA7487
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionCameraPositionWS_0" ExportPath="/Script/Engine.MaterialExpressionCameraPositionWS'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionCameraPositionWS_0'"
+      MaterialExpressionEditorX=-1978
+      MaterialExpressionEditorY=994
+      MaterialExpressionGuid=AB37D8E742812509BEA31096D73B52CA
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionCameraPositionWS_1" ExportPath="/Script/Engine.MaterialExpressionCameraPositionWS'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionCameraPositionWS_1'"
+      MaterialExpressionEditorX=-5732
+      MaterialExpressionEditorY=1408
+      MaterialExpressionGuid=AB37D8E742812509BEA31096D73B52CA
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionCollectionParameter_0" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionCollectionParameter_0'"
+      Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+      ParameterName="Cloud Main Layer Bottom Altitude"
+      ParameterId=BBD47376422A19FCCFE30798ECA41759
+      MaterialExpressionEditorX=-1922
+      MaterialExpressionEditorY=1078
+      MaterialExpressionGuid=D27E62B9411CCDE296A99EB6A63006FD
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionCollectionParameter_1" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionCollectionParameter_1'"
+      Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+      ParameterName="Cloud Main Layer Bottom Altitude"
+      ParameterId=BBD47376422A19FCCFE30798ECA41759
+      MaterialExpressionEditorX=-3626
+      MaterialExpressionEditorY=-118
+      MaterialExpressionGuid=D27E62B9411CCDE296A99EB6A63006FD
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionComment_0" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionComment_0'"
+      SizeX=1272
+      SizeY=292
+      Text="Mask Above Cloud Altitude"
+      CommentColor=(R=1.000000,G=0.441663,B=0.572278,A=1.000000)
+      MaterialExpressionEditorX=-3711
+      MaterialExpressionEditorY=-289
+      MaterialExpressionGuid=D62E32534E2D927ACE34A68A31613B44
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionComment_1" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionComment_1'"
+      SizeX=1056
+      SizeY=580
+      Text="3D Noise"
+      CommentColor=(R=0.361517,G=0.641491,B=1.000000,A=1.000000)
+      MaterialExpressionEditorX=-4224
+      MaterialExpressionEditorY=56
+      MaterialExpressionGuid=AE4FCF394B44938942949E9C151B07C7
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionComment_2" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionComment_2'"
+      SizeX=3108
+      SizeY=976
+      Text="Mask with Cloud Density and Dynamic Parameters (Vertex Shader)"
+      CommentColor=(R=0.568686,G=0.418903,B=1.000000,A=1.000000)
+      MaterialExpressionEditorX=-2029
+      MaterialExpressionEditorY=642
+      MaterialExpressionGuid=1E44E6914D1C7C6B3DAB67B1EA0AB9BA
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionComment_3" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionComment_3'"
+      SizeX=816
+      SizeY=412
+      Text="Texture and Light Color"
+      CommentColor=(R=0.330929,G=0.604167,B=0.537331,A=1.000000)
+      MaterialExpressionEditorX=-128
+      MaterialExpressionEditorY=-220
+      MaterialExpressionGuid=9FD624854CCBAD2809DDB9965D86B7F5
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionComment_4" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionComment_4'"
+      SizeX=636
+      SizeY=352
+      Text="Scene Depth Fade"
+      CommentColor=(R=1.000000,G=0.289238,B=0.179460,A=1.000000)
+      MaterialExpressionEditorX=-939
+      MaterialExpressionEditorY=-216
+      MaterialExpressionGuid=77A31CB047426355AC7B1D9F1E927DBF
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionComment_5" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionComment_5'"
+      SizeX=572
+      SizeY=280
+      Text="Mask with Local Cloud Coverage"
+      CommentColor=(R=1.000000,G=0.720551,B=0.135668,A=1.000000)
+      MaterialExpressionEditorX=-1560
+      MaterialExpressionEditorY=-218
+      MaterialExpressionGuid=F2AB06914060342F0ECCB281F5065C31
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionComment_6" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionComment_6'"
+      SizeX=459
+      SizeY=374
+      Text="Mask with Particle Alpha"
+      CommentColor=(R=0.391538,G=1.000000,B=0.473144,A=1.000000)
+      MaterialExpressionEditorX=-2090
+      MaterialExpressionEditorY=-214
+      MaterialExpressionGuid=E1C79DA84D22036A82C5A2A1C172CDE9
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionComment_7" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionComment_7'"
+      SizeX=3704
+      SizeY=1028
+      Text="Sample Cloud Layer to see if this light ray should be rendered (Vertex Shader)"
+      CommentColor=(R=0.405513,G=0.500000,B=0.231127,A=1.000000)
+      MaterialExpressionEditorX=-5776
+      MaterialExpressionEditorY=660
+      MaterialExpressionGuid=16C4206A4D65F04F3F6DCCAE3D95E3E9
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_0" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionComponentMask_0'"
+      Input=(Expression="/Script/Engine.MaterialExpressionCameraPositionWS'VolumetricCloud_LightRay:MaterialExpressionCameraPositionWS_0'")
+      B=True
+      MaterialExpressionEditorX=-1794
+      MaterialExpressionEditorY=1010
+      MaterialExpressionGuid=B09F137B49443D186C85D182C6EAF0C7
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_2" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionComponentMask_2'"
+      Input=(Expression="/Script/Engine.MaterialExpressionWorldPosition'VolumetricCloud_LightRay:MaterialExpressionWorldPosition_2'")
+      B=True
+      MaterialExpressionEditorX=-3492
+      MaterialExpressionEditorY=-196
+      MaterialExpressionGuid=B09F137B49443D186C85D182C6EAF0C7
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionConstant_0" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionConstant_0'"
+      R=0.500000
+      MaterialExpressionEditorX=-5271
+      MaterialExpressionEditorY=978
+      MaterialExpressionGuid=4AE6783046D938BBF18192B3E6C0B2A3
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionConstant_1" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionConstant_1'"
+      R=0.500000
+      MaterialExpressionEditorX=-4488
+      MaterialExpressionEditorY=1272
+      MaterialExpressionGuid=4AE6783046D938BBF18192B3E6C0B2A3
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionConstant_2" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionConstant_2'"
+      MaterialExpressionEditorX=4
+      MaterialExpressionEditorY=1360
+      MaterialExpressionGuid=6FF965264844E3E3FFBD7DB216D38829
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionConstant_3" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionConstant_3'"
+      MaterialExpressionEditorX=-1372
+      MaterialExpressionEditorY=1280
+      MaterialExpressionGuid=4AFD7C9047A785EC5960E19BCF55DBFE
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionConstant3Vector_0" ExportPath="/Script/Engine.MaterialExpressionConstant3Vector'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionConstant3Vector_0'"
+      Constant=(R=1.000000,G=1.000000,B=0.000000,A=0.000000)
+      MaterialExpressionEditorX=-5540
+      MaterialExpressionEditorY=1500
+      MaterialExpressionGuid=78318F0B493C6DB421E5199FAECD51D2
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionDepthFade_1" ExportPath="/Script/Engine.MaterialExpressionDepthFade'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionDepthFade_1'"
+      FadeDistance=(Expression="/Script/Engine.MaterialExpressionScalarParameter'VolumetricCloud_LightRay:MaterialExpressionScalarParameter_1'")
+      MaterialExpressionEditorX=-684
+      MaterialExpressionEditorY=-76
+      MaterialExpressionGuid=40D8AA7F4F672E3384B38BA06C9A4732
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionDistance_0" ExportPath="/Script/Engine.MaterialExpressionDistance'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionDistance_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'VolumetricCloud_LightRay:MaterialExpressionMaterialFunctionCall_1'",OutputIndex=1)
+      B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'VolumetricCloud_LightRay:MaterialExpressionScalarParameter_15'")
+      MaterialExpressionEditorX=-4336
+      MaterialExpressionEditorY=952
+      MaterialExpressionGuid=9D4856184898D0498E836AA2ADF106D3
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionDivide_0" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionDivide_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionWorldPosition'VolumetricCloud_LightRay:MaterialExpressionWorldPosition_1'")
+      B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'VolumetricCloud_LightRay:MaterialExpressionScalarParameter_3'")
+      ConstB=1000000.000000
+      MaterialExpressionEditorX=-3884
+      MaterialExpressionEditorY=144
+      MaterialExpressionGuid=7B5443924419DB10BA1C199DDB2E1417
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionDivide_1" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionDivide_1'"
+      A=(Expression="/Script/Engine.MaterialExpressionAppendVector'VolumetricCloud_LightRay:MaterialExpressionAppendVector_2'")
+      B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'VolumetricCloud_LightRay:MaterialExpressionScalarParameter_2'")
+      ConstB=1000000.000000
+      MaterialExpressionEditorX=-920
+      MaterialExpressionEditorY=1200
+      MaterialExpressionGuid=7B5443924419DB10BA1C199DDB2E1417
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionDivide_2" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionDivide_2'"
+      A=(Expression="/Script/Engine.MaterialExpressionSubtract'VolumetricCloud_LightRay:MaterialExpressionSubtract_1'")
+      ConstB=80000.000000
+      MaterialExpressionEditorX=-1514
+      MaterialExpressionEditorY=1042
+      MaterialExpressionGuid=504D221E4AA6A6479D03ADAC94FD8175
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionDivide_3" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionDivide_3'"
+      A=(Expression="/Script/Engine.MaterialExpressionSubtract'VolumetricCloud_LightRay:MaterialExpressionSubtract_8'")
+      B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'VolumetricCloud_LightRay:MaterialExpressionScalarParameter_5'")
+      MaterialExpressionEditorX=-3488
+      MaterialExpressionEditorY=1252
+      MaterialExpressionGuid=ED15AE9F49F9FCBB6930FCA1AC668448
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionDivide_4" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionDivide_4'"
+      A=(Expression="/Script/Engine.MaterialExpressionSubtract'VolumetricCloud_LightRay:MaterialExpressionSubtract_9'")
+      B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'VolumetricCloud_LightRay:MaterialExpressionScalarParameter_5'")
+      MaterialExpressionEditorX=-3484
+      MaterialExpressionEditorY=1392
+      MaterialExpressionGuid=ED15AE9F49F9FCBB6930FCA1AC668448
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionDivide_5" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionDivide_5'"
+      A=(Expression="/Script/Engine.MaterialExpressionSubtract'VolumetricCloud_LightRay:MaterialExpressionSubtract_2'")
+      ConstB=25000.000000
+      MaterialExpressionEditorX=-3212
+      MaterialExpressionEditorY=-164
+      MaterialExpressionGuid=504D221E4AA6A6479D03ADAC94FD8175
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionDivide_9" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionDivide_9'"
+      A=(Expression="/Script/Engine.MaterialExpressionDistance'VolumetricCloud_LightRay:MaterialExpressionDistance_0'")
+      B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'VolumetricCloud_LightRay:MaterialExpressionScalarParameter_16'")
+      MaterialExpressionEditorX=-4024
+      MaterialExpressionEditorY=952
+      MaterialExpressionGuid=63C07C454ADB5F9F40AEB493B5463441
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionDynamicParameter_0" ExportPath="/Script/Engine.MaterialExpressionDynamicParameter'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionDynamicParameter_0'"
+      MaterialExpressionEditorX=-1300
+      MaterialExpressionEditorY=800
+      MaterialExpressionGuid=36F08CDF469D8F398C9269BD2850CF08
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionDynamicParameter_1" ExportPath="/Script/Engine.MaterialExpressionDynamicParameter'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionDynamicParameter_1'"
+      MaterialExpressionEditorX=-536
+      MaterialExpressionEditorY=784
+      MaterialExpressionGuid=36F08CDF469D8F398C9269BD2850CF08
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionIf_0" ExportPath="/Script/Engine.MaterialExpressionIf'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionIf_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'VolumetricCloud_LightRay:MaterialExpressionNamedRerouteDeclaration_0'")
+      AGreaterThanB=(Expression="/Script/Engine.MaterialExpressionAdd'VolumetricCloud_LightRay:MaterialExpressionAdd_3'")
+      AEqualsB=(Expression="/Script/Engine.MaterialExpressionSubtract'VolumetricCloud_LightRay:MaterialExpressionSubtract_0'")
+      ALessThanB=(Expression="/Script/Engine.MaterialExpressionSubtract'VolumetricCloud_LightRay:MaterialExpressionSubtract_0'")
+      MaterialExpressionEditorX=792
+      MaterialExpressionEditorY=712
+      MaterialExpressionGuid=1C2CD9854D683102A10141A4DC72224E
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_0" ExportPath="/Script/Engine.MaterialExpressionLinearInterpolate'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionLinearInterpolate_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionScalarParameter'VolumetricCloud_LightRay:MaterialExpressionScalarParameter_8'")
+      Alpha=(Expression="/Script/Engine.MaterialExpressionSaturate'VolumetricCloud_LightRay:MaterialExpressionSaturate_3'")
+      ConstB=-0.200000
+      MaterialExpressionEditorX=-3728
+      MaterialExpressionEditorY=860
+      MaterialExpressionGuid=4A99176F48D57575211C9EB39A9E2702
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_2" ExportPath="/Script/Engine.MaterialExpressionLinearInterpolate'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionLinearInterpolate_2'"
+      A=(OutputIndex=2,Mask=1,MaskG=1)
+      Alpha=(Expression="/Script/Engine.MaterialExpressionTextureSample'VolumetricCloud_LightRay:MaterialExpressionTextureSample_0'",OutputIndex=2,Mask=1,MaskG=1)
+      ConstB=0.500000
+      MaterialExpressionEditorX=-2984
+      MaterialExpressionEditorY=-124
+      MaterialExpressionGuid=84D9262F4F832A9390D805ADE8FE48BC
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_0" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMaterialFunctionCall_0'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Volumetric_Clouds_Conservative_Density.Volumetric_Clouds_Conservative_Density'"
+      FunctionInputs(0)=(ExpressionInputId=349CF674473503C71A2E0B86837C6F70,Input=(Expression="/Script/Engine.MaterialExpressionSubtract'VolumetricCloud_LightRay:MaterialExpressionSubtract_5'",InputName="Sample Position"))
+      FunctionInputs(1)=(ExpressionInputId=B75E610A482ADF8626F7AC8B00F96DAB,Input=(Expression="/Script/Engine.MaterialExpressionConstant'VolumetricCloud_LightRay:MaterialExpressionConstant_1'",InputName="NormAltitudeInLayer"))
+      FunctionOutputs(0)=(ExpressionOutputId=54A40AD44558CB769F97EB866E4406C5,Output=(OutputName="2D Cloud Coverage"))
+      FunctionOutputs(1)=(ExpressionOutputId=A0382B074C5AE0AD883B28A920C50721,Output=(OutputName="Final Density"))
+      FunctionOutputs(2)=(ExpressionOutputId=F576F3DE48314F39697B8AAF9E35C721,Output=(OutputName="Unscaled Cloud Position"))
+      FunctionOutputs(3)=(ExpressionOutputId=5448368A4B2FD26A50DD589B4109185E,Output=(OutputName="Conservative Density"))
+      MaterialExpressionEditorX=-4307
+      MaterialExpressionEditorY=1226
+      MaterialExpressionGuid=0C168CC7426117755E7BD4A8F543A926
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+      Outputs(0)=(OutputName="2D Cloud Coverage")
+      Outputs(1)=(OutputName="Final Density")
+      Outputs(2)=(OutputName="Unscaled Cloud Position")
+      Outputs(3)=(OutputName="Conservative Density")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_1" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMaterialFunctionCall_1'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Volumetric_Clouds_Conservative_Density.Volumetric_Clouds_Conservative_Density'"
+      FunctionInputs(0)=(ExpressionInputId=349CF674473503C71A2E0B86837C6F70,Input=(Expression="/Script/Engine.MaterialExpressionParticlePositionWS'VolumetricCloud_LightRay:MaterialExpressionParticlePositionWS_0'",InputName="Sample Position"))
+      FunctionInputs(1)=(ExpressionInputId=B75E610A482ADF8626F7AC8B00F96DAB,Input=(Expression="/Script/Engine.MaterialExpressionConstant'VolumetricCloud_LightRay:MaterialExpressionConstant_0'",InputName="NormAltitudeInLayer"))
+      FunctionOutputs(0)=(ExpressionOutputId=54A40AD44558CB769F97EB866E4406C5,Output=(OutputName="2D Cloud Coverage"))
+      FunctionOutputs(1)=(ExpressionOutputId=A0382B074C5AE0AD883B28A920C50721,Output=(OutputName="Final Density"))
+      FunctionOutputs(2)=(ExpressionOutputId=F576F3DE48314F39697B8AAF9E35C721,Output=(OutputName="Unscaled Cloud Position"))
+      FunctionOutputs(3)=(ExpressionOutputId=5448368A4B2FD26A50DD589B4109185E,Output=(OutputName="Conservative Density"))
+      MaterialExpressionEditorX=-5131
+      MaterialExpressionEditorY=926
+      MaterialExpressionGuid=0C168CC7426117755E7BD4A8F543A926
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+      Outputs(0)=(OutputName="2D Cloud Coverage")
+      Outputs(1)=(OutputName="Final Density")
+      Outputs(2)=(OutputName="Unscaled Cloud Position")
+      Outputs(3)=(OutputName="Conservative Density")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_2" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMaterialFunctionCall_2'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Volumetric_Clouds_Conservative_Density.Volumetric_Clouds_Conservative_Density'"
+      FunctionInputs(0)=(ExpressionInputId=349CF674473503C71A2E0B86837C6F70,Input=(Expression="/Script/Engine.MaterialExpressionSubtract'VolumetricCloud_LightRay:MaterialExpressionSubtract_12'",InputName="Sample Position"))
+      FunctionInputs(1)=(ExpressionInputId=B75E610A482ADF8626F7AC8B00F96DAB,Input=(Expression="/Script/Engine.MaterialExpressionConstant'VolumetricCloud_LightRay:MaterialExpressionConstant_1'",InputName="NormAltitudeInLayer"))
+      FunctionOutputs(0)=(ExpressionOutputId=54A40AD44558CB769F97EB866E4406C5,Output=(OutputName="2D Cloud Coverage"))
+      FunctionOutputs(1)=(ExpressionOutputId=A0382B074C5AE0AD883B28A920C50721,Output=(OutputName="Final Density"))
+      FunctionOutputs(2)=(ExpressionOutputId=F576F3DE48314F39697B8AAF9E35C721,Output=(OutputName="Unscaled Cloud Position"))
+      FunctionOutputs(3)=(ExpressionOutputId=5448368A4B2FD26A50DD589B4109185E,Output=(OutputName="Conservative Density"))
+      MaterialExpressionEditorX=-4311
+      MaterialExpressionEditorY=1366
+      MaterialExpressionGuid=0C168CC7426117755E7BD4A8F543A926
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+      Outputs(0)=(OutputName="2D Cloud Coverage")
+      Outputs(1)=(OutputName="Final Density")
+      Outputs(2)=(OutputName="Unscaled Cloud Position")
+      Outputs(3)=(OutputName="Conservative Density")
+   End Object
+   Begin Object Name="MaterialExpressionMax_2" ExportPath="/Script/Engine.MaterialExpressionMax'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMax_2'"
+      A=(Expression="/Script/Engine.MaterialExpressionSubtract'VolumetricCloud_LightRay:MaterialExpressionSubtract_10'")
+      ConstB=0.000000
+      MaterialExpressionEditorX=-3025
+      MaterialExpressionEditorY=1346
+      MaterialExpressionGuid=EC47DE7548AF9E246E5FBF89D0CD1B2D
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_0" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMultiply_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionMultiply'VolumetricCloud_LightRay:MaterialExpressionMultiply_14'")
+      B=(Expression="/Script/Engine.MaterialExpressionOneMinus'VolumetricCloud_LightRay:MaterialExpressionOneMinus_2'")
+      MaterialExpressionEditorX=-828
+      MaterialExpressionEditorY=716
+      MaterialExpressionGuid=15B6D4904F0A96FE4BB99B99EE291859
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_1" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMultiply_1'"
+      A=(Expression="/Script/Engine.MaterialExpressionMultiply'VolumetricCloud_LightRay:MaterialExpressionMultiply_16'")
+      B=(Expression="/Script/Engine.MaterialExpressionVectorParameter'VolumetricCloud_LightRay:MaterialExpressionVectorParameter_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      MaterialExpressionEditorX=526
+      MaterialExpressionEditorY=-162
+      MaterialExpressionGuid=115D4BA24BAB71B76E81B2A3132340F6
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_10" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMultiply_10'"
+      A=(Expression="/Script/Engine.MaterialExpressionNormalize'VolumetricCloud_LightRay:MaterialExpressionNormalize_0'")
+      B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'VolumetricCloud_LightRay:MaterialExpressionScalarParameter_12'")
+      MaterialExpressionEditorX=-4628
+      MaterialExpressionEditorY=1388
+      MaterialExpressionGuid=EBE973324E7D15FC96D8918B818B47FB
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_11" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMultiply_11'"
+      A=(Expression="/Script/Engine.MaterialExpressionSubtract'VolumetricCloud_LightRay:MaterialExpressionSubtract_3'")
+      B=(Expression="/Script/Engine.MaterialExpressionConstant3Vector'VolumetricCloud_LightRay:MaterialExpressionConstant3Vector_0'")
+      MaterialExpressionEditorX=-5288
+      MaterialExpressionEditorY=1392
+      MaterialExpressionGuid=0216D43B422267CC0115DE95E71D9DDD
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_12" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMultiply_12'"
+      A=(Expression="/Script/Engine.MaterialExpressionScalarParameter'VolumetricCloud_LightRay:MaterialExpressionScalarParameter_4'")
+      B=(Expression="/Script/Engine.MaterialExpressionNormalize'VolumetricCloud_LightRay:MaterialExpressionNormalize_0'")
+      MaterialExpressionEditorX=-4883
+      MaterialExpressionEditorY=1306
+      MaterialExpressionGuid=EA3A544B4F53C412F7905DBEBE93BBB1
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_13" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMultiply_13'"
+      A=(Expression="/Script/Engine.MaterialExpressionScalarParameter'VolumetricCloud_LightRay:MaterialExpressionScalarParameter_6'")
+      B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'VolumetricCloud_LightRay:MaterialExpressionScalarParameter_7'")
+      MaterialExpressionEditorX=-160
+      MaterialExpressionEditorY=1380
+      MaterialExpressionGuid=8764072742F2B1538B4A329BF3077F4E
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_14" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMultiply_14'"
+      A=(Expression="/Script/Engine.MaterialExpressionReroute'VolumetricCloud_LightRay:MaterialExpressionReroute_1'")
+      B=(Expression="/Script/Engine.MaterialExpressionDynamicParameter'VolumetricCloud_LightRay:MaterialExpressionDynamicParameter_0'",Mask=1,MaskR=1)
+      MaterialExpressionEditorX=-980
+      MaterialExpressionEditorY=712
+      MaterialExpressionGuid=228F65624DC42975532CEBB0F4E25F82
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_15" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMultiply_15'"
+      A=(Expression="/Script/Engine.MaterialExpressionDivide'VolumetricCloud_LightRay:MaterialExpressionDivide_1'")
+      ConstB=3.000000
+      MaterialExpressionEditorX=-804
+      MaterialExpressionEditorY=1200
+      MaterialExpressionGuid=731C09E0422F40F811A421BC6E16E0D5
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_16" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMultiply_16'"
+      A=(Expression="/Script/Engine.MaterialExpressionMultiply'VolumetricCloud_LightRay:MaterialExpressionMultiply_7'")
+      B=(Expression="/Script/Engine.MaterialExpressionTextureSample'VolumetricCloud_LightRay:MaterialExpressionTextureSample_2'",OutputIndex=1,Mask=1,MaskR=1)
+      MaterialExpressionEditorX=228
+      MaterialExpressionEditorY=-164
+      MaterialExpressionGuid=374BD2ED4FEBEDA02FC3A19A7FEF960C
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_18" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMultiply_18'"
+      A=(Expression="/Script/Engine.MaterialExpressionSubtract'VolumetricCloud_LightRay:MaterialExpressionSubtract_13'")
+      B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'VolumetricCloud_LightRay:MaterialExpressionScalarParameter_9'")
+      ConstB=3.000000
+      MaterialExpressionEditorX=-2649
+      MaterialExpressionEditorY=1346
+      MaterialExpressionGuid=76BE1A1E4B670B35B72FBDBE1F7B7D38
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_2" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMultiply_2'"
+      A=(Expression="/Script/Engine.MaterialExpressionMultiply'VolumetricCloud_LightRay:MaterialExpressionMultiply_8'")
+      B=(Expression="/Script/Engine.MaterialExpressionVertexInterpolator'VolumetricCloud_LightRay:MaterialExpressionVertexInterpolator_0'")
+      MaterialExpressionEditorX=-1136
+      MaterialExpressionEditorY=-164
+      MaterialExpressionGuid=A42A24AB44300F3B461068B116AD2FF5
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_22" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMultiply_22'"
+      A=(Expression="/Script/Engine.MaterialExpressionMultiply'VolumetricCloud_LightRay:MaterialExpressionMultiply_24'")
+      B=(Expression="/Script/Engine.MaterialExpressionOneMinus'VolumetricCloud_LightRay:MaterialExpressionOneMinus_3'")
+      MaterialExpressionEditorX=-3156
+      MaterialExpressionEditorY=928
+      MaterialExpressionGuid=6711CCD1429B38833ECCD9A44679CBAD
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_24" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMultiply_24'"
+      A=(Expression="/Script/Engine.MaterialExpressionSubtract'VolumetricCloud_LightRay:MaterialExpressionSubtract_6'")
+      B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'VolumetricCloud_LightRay:MaterialExpressionScalarParameter_11'")
+      ConstB=-10.000000
+      MaterialExpressionEditorX=-3320
+      MaterialExpressionEditorY=756
+      MaterialExpressionGuid=D6FA15C34F779D5809C444B9C299A552
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_4" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMultiply_4'"
+      A=(Expression="/Script/Engine.MaterialExpressionDynamicParameter'VolumetricCloud_LightRay:MaterialExpressionDynamicParameter_1'",OutputIndex=1,Mask=1,MaskG=1)
+      ConstB=-0.500000
+      MaterialExpressionEditorX=-300
+      MaterialExpressionEditorY=832
+      MaterialExpressionGuid=5E9A3F6E483E0F0F2E20B8B5A8388CCD
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_5" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMultiply_5'"
+      A=(Expression="/Script/Engine.MaterialExpressionMultiply'VolumetricCloud_LightRay:MaterialExpressionMultiply_4'")
+      B=(Expression="/Script/Engine.MaterialExpressionVectorParameter'VolumetricCloud_LightRay:MaterialExpressionVectorParameter_2'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      MaterialExpressionEditorX=24
+      MaterialExpressionEditorY=832
+      MaterialExpressionGuid=9B1F8F9347811B48F1FE639B00ABB765
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_6" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMultiply_6'"
+      A=(Expression="/Script/Engine.MaterialExpressionOneMinus'VolumetricCloud_LightRay:MaterialExpressionOneMinus_1'")
+      B=(Expression="/Script/Engine.MaterialExpressionReroute'VolumetricCloud_LightRay:MaterialExpressionReroute_3'")
+      MaterialExpressionEditorX=-2200
+      MaterialExpressionEditorY=-164
+      MaterialExpressionGuid=1ADFDB36405BFCCD2A4226BB4F3C7920
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_7" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMultiply_7'"
+      A=(Expression="/Script/Engine.MaterialExpressionMultiply'VolumetricCloud_LightRay:MaterialExpressionMultiply_2'")
+      B=(Expression="/Script/Engine.MaterialExpressionDepthFade'VolumetricCloud_LightRay:MaterialExpressionDepthFade_1'")
+      MaterialExpressionEditorX=-452
+      MaterialExpressionEditorY=-164
+      MaterialExpressionGuid=30E1768A45175D4FC4EBDB956CBD6D95
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_8" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMultiply_8'"
+      A=(Expression="/Script/Engine.MaterialExpressionMultiply'VolumetricCloud_LightRay:MaterialExpressionMultiply_6'")
+      B=(Expression="/Script/Engine.MaterialExpressionParticleColor'VolumetricCloud_LightRay:MaterialExpressionParticleColor_0'",OutputIndex=4,Mask=1,MaskA=1)
+      MaterialExpressionEditorX=-1776
+      MaterialExpressionEditorY=-164
+      MaterialExpressionGuid=AD8A06284207064B9C6D41996276FC2F
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_9" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionMultiply_9'"
+      A=(Expression="/Script/Engine.MaterialExpressionSubtract'VolumetricCloud_LightRay:MaterialExpressionSubtract_4'")
+      B=(Expression="/Script/Engine.MaterialExpressionMultiply'VolumetricCloud_LightRay:MaterialExpressionMultiply_13'")
+      MaterialExpressionEditorX=-60
+      MaterialExpressionEditorY=1232
+      MaterialExpressionGuid=7C599CA64FD41EF701430997D744B4AE
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionNamedRerouteDeclaration_0" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionNamedRerouteDeclaration_0'"
+      Input=(Expression="/Script/Engine.MaterialExpressionMultiply'VolumetricCloud_LightRay:MaterialExpressionMultiply_0'")
+      Name="Cloud Coverage Mask"
+      NodeColor=(R=0.000000,G=0.976562,B=1.000000,A=1.000000)
+      VariableGuid=780D5B4541D3DD470F94869CBB348A5C
+      MaterialExpressionEditorX=-692
+      MaterialExpressionEditorY=712
+      MaterialExpressionGuid=11E5A5CE40E5D65D5E10A9BFFD6EB386
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionNamedRerouteDeclaration_1" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionNamedRerouteDeclaration_1'"
+      Input=(Expression="/Script/Engine.MaterialExpressionQualitySwitch'VolumetricCloud_LightRay:MaterialExpressionQualitySwitch_0'")
+      Name="3D Noise Texture"
+      NodeColor=(R=0.000000,G=0.742187,B=1.000000,A=1.000000)
+      VariableGuid=5B99F12942D6BEC6BA925AB3EF62F55C
+      MaterialExpressionEditorX=-3720
+      MaterialExpressionEditorY=296
+      MaterialExpressionGuid=05A2CC8349D5E5B99639D59C5DC9A441
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionNamedRerouteDeclaration_2" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionNamedRerouteDeclaration_2'"
+      Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'VolumetricCloud_LightRay:MaterialExpressionMaterialFunctionCall_1'",OutputIndex=2)
+      Name="Cloud Position"
+      NodeColor=(R=0.000000,G=1.000000,B=0.250000,A=1.000000)
+      VariableGuid=B5D8E472495042A10FCF019BB2E88DCC
+      MaterialExpressionEditorX=-4748
+      MaterialExpressionEditorY=1084
+      MaterialExpressionGuid=A5BFE73F40B8BDCDA443658620803B06
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionNamedRerouteUsage_0" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionNamedRerouteUsage_0'"
+      Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'VolumetricCloud_LightRay:MaterialExpressionNamedRerouteDeclaration_0'"
+      DeclarationGuid=780D5B4541D3DD470F94869CBB348A5C
+      MaterialExpressionEditorX=-1528
+      MaterialExpressionEditorY=-44
+      MaterialExpressionGuid=A3DD4B5E466397597DECC492902EB0E6
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionNamedRerouteUsage_1" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionNamedRerouteUsage_1'"
+      Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'VolumetricCloud_LightRay:MaterialExpressionNamedRerouteDeclaration_1'"
+      DeclarationGuid=5B99F12942D6BEC6BA925AB3EF62F55C
+      MaterialExpressionEditorX=-868
+      MaterialExpressionEditorY=1292
+      MaterialExpressionGuid=CCAC79E442E41F3501EDC981B193A176
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionNamedRerouteUsage_2" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionNamedRerouteUsage_2'"
+      Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'VolumetricCloud_LightRay:MaterialExpressionNamedRerouteDeclaration_2'"
+      DeclarationGuid=B5D8E472495042A10FCF019BB2E88DCC
+      MaterialExpressionEditorX=-1364
+      MaterialExpressionEditorY=1200
+      MaterialExpressionGuid=0AA49B384B6F93675D007BAC82564F9C
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionNormalize_0" ExportPath="/Script/Engine.MaterialExpressionNormalize'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionNormalize_0'"
+      VectorInput=(Expression="/Script/Engine.MaterialExpressionMultiply'VolumetricCloud_LightRay:MaterialExpressionMultiply_11'")
+      MaterialExpressionEditorX=-5127
+      MaterialExpressionEditorY=1390
+      MaterialExpressionGuid=16557B4C4B904F49855D728B74A83A6D
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionOneMinus_1" ExportPath="/Script/Engine.MaterialExpressionOneMinus'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionOneMinus_1'"
+      Input=(Expression="/Script/Engine.MaterialExpressionSaturate'VolumetricCloud_LightRay:MaterialExpressionSaturate_2'")
+      MaterialExpressionEditorX=-2558
+      MaterialExpressionEditorY=-166
+      MaterialExpressionGuid=E4C159B3418DC0BE7A304DA857616302
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionOneMinus_2" ExportPath="/Script/Engine.MaterialExpressionOneMinus'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionOneMinus_2'"
+      Input=(Expression="/Script/Engine.MaterialExpressionSaturate'VolumetricCloud_LightRay:MaterialExpressionSaturate_0'")
+      MaterialExpressionEditorX=-1126
+      MaterialExpressionEditorY=1042
+      MaterialExpressionGuid=E4C159B3418DC0BE7A304DA857616302
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionOneMinus_3" ExportPath="/Script/Engine.MaterialExpressionOneMinus'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionOneMinus_3'"
+      Input=(Expression="/Script/Engine.MaterialExpressionSaturate'VolumetricCloud_LightRay:MaterialExpressionSaturate_3'")
+      MaterialExpressionEditorX=-3436
+      MaterialExpressionEditorY=952
+      MaterialExpressionGuid=FF7D2ADA4E29C443A4626A80B64D2C8E
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionParticleColor_0" ExportPath="/Script/Engine.MaterialExpressionParticleColor'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionParticleColor_0'"
+      MaterialExpressionEditorX=-2040
+      MaterialExpressionEditorY=-64
+      MaterialExpressionGuid=2579516C424E1273116A98AAADFA199D
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionParticlePositionWS_0" ExportPath="/Script/Engine.MaterialExpressionParticlePositionWS'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionParticlePositionWS_0'"
+      MaterialExpressionEditorX=-5684
+      MaterialExpressionEditorY=912
+      MaterialExpressionGuid=B5F1FED246A55E4C0F1461BB6994548C
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionParticlePositionWS_1" ExportPath="/Script/Engine.MaterialExpressionParticlePositionWS'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionParticlePositionWS_1'"
+      MaterialExpressionEditorX=384
+      MaterialExpressionEditorY=948
+      MaterialExpressionGuid=B5F1FED246A55E4C0F1461BB6994548C
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionParticlePositionWS_2" ExportPath="/Script/Engine.MaterialExpressionParticlePositionWS'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionParticlePositionWS_2'"
+      MaterialExpressionEditorX=-4943
+      MaterialExpressionEditorY=1206
+      MaterialExpressionGuid=B5F1FED246A55E4C0F1461BB6994548C
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionQualitySwitch_0" ExportPath="/Script/Engine.MaterialExpressionQualitySwitch'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionQualitySwitch_0'"
+      Default=(Expression="/Script/Engine.MaterialExpressionTextureObject'VolumetricCloud_LightRay:MaterialExpressionTextureObject_0'")
+      Inputs(0)=(Expression="/Script/Engine.MaterialExpressionTextureObject'VolumetricCloud_LightRay:MaterialExpressionTextureObject_1'")
+      MaterialExpressionEditorX=-3878
+      MaterialExpressionEditorY=298
+      MaterialExpressionGuid=87F54D6843F611923C1E61B91E66E95F
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionReroute_0" ExportPath="/Script/Engine.MaterialExpressionReroute'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionReroute_0'"
+      Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'VolumetricCloud_LightRay:MaterialExpressionMaterialFunctionCall_1'")
+      MaterialExpressionEditorX=-4576
+      MaterialExpressionEditorY=792
+      MaterialExpressionGuid=E3042783420D8306729D04AD45E0334D
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionReroute_1" ExportPath="/Script/Engine.MaterialExpressionReroute'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionReroute_1'"
+      Input=(Expression="/Script/Engine.MaterialExpressionAdd'VolumetricCloud_LightRay:MaterialExpressionAdd_6'")
+      MaterialExpressionEditorX=-1960
+      MaterialExpressionEditorY=744
+      MaterialExpressionGuid=1FCFD312494AC16E559D44AA08564846
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionReroute_3" ExportPath="/Script/Engine.MaterialExpressionReroute'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionReroute_3'"
+      Input=(Expression="/Script/Engine.MaterialExpressionTextureSample'VolumetricCloud_LightRay:MaterialExpressionTextureSample_0'",OutputIndex=1,Mask=1,MaskR=1)
+      MaterialExpressionEditorX=-2260
+      MaterialExpressionEditorY=208
+      MaterialExpressionGuid=9665071144D5929347D95A9B28B86E85
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionSaturate_0" ExportPath="/Script/Engine.MaterialExpressionSaturate'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionSaturate_0'"
+      Input=(Expression="/Script/Engine.MaterialExpressionAdd'VolumetricCloud_LightRay:MaterialExpressionAdd_2'")
+      MaterialExpressionEditorX=-1234
+      MaterialExpressionEditorY=1042
+      MaterialExpressionGuid=B9524814481E8ABA1712F8B3F589358D
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionSaturate_2" ExportPath="/Script/Engine.MaterialExpressionSaturate'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionSaturate_2'"
+      Input=(Expression="/Script/Engine.MaterialExpressionAdd'VolumetricCloud_LightRay:MaterialExpressionAdd_1'")
+      MaterialExpressionEditorX=-2666
+      MaterialExpressionEditorY=-166
+      MaterialExpressionGuid=B9524814481E8ABA1712F8B3F589358D
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionSaturate_3" ExportPath="/Script/Engine.MaterialExpressionSaturate'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionSaturate_3'"
+      Input=(Expression="/Script/Engine.MaterialExpressionDivide'VolumetricCloud_LightRay:MaterialExpressionDivide_9'")
+      MaterialExpressionEditorX=-3916
+      MaterialExpressionEditorY=952
+      MaterialExpressionGuid=24EB74FF4FBC3D9B102E8084DFAE134E
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionSaturate_4" ExportPath="/Script/Engine.MaterialExpressionSaturate'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionSaturate_4'"
+      Input=(Expression="/Script/Engine.MaterialExpressionMultiply'VolumetricCloud_LightRay:MaterialExpressionMultiply_22'")
+      MaterialExpressionEditorX=-2672
+      MaterialExpressionEditorY=924
+      MaterialExpressionGuid=DBF9B79F4EA0E84B66451FBF8E2B6553
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionSaturate_6" ExportPath="/Script/Engine.MaterialExpressionSaturate'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionSaturate_6'"
+      Input=(Expression="/Script/Engine.MaterialExpressionDivide'VolumetricCloud_LightRay:MaterialExpressionDivide_3'")
+      MaterialExpressionEditorX=-3360
+      MaterialExpressionEditorY=1252
+      MaterialExpressionGuid=78FDD8C449EA16984E1D298B16117D1B
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionSaturate_7" ExportPath="/Script/Engine.MaterialExpressionSaturate'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionSaturate_7'"
+      Input=(Expression="/Script/Engine.MaterialExpressionDivide'VolumetricCloud_LightRay:MaterialExpressionDivide_4'")
+      MaterialExpressionEditorX=-3360
+      MaterialExpressionEditorY=1392
+      MaterialExpressionGuid=78FDD8C449EA16984E1D298B16117D1B
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionSaturate_8" ExportPath="/Script/Engine.MaterialExpressionSaturate'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionSaturate_8'"
+      Input=(Expression="/Script/Engine.MaterialExpressionMultiply'VolumetricCloud_LightRay:MaterialExpressionMultiply_18'")
+      MaterialExpressionEditorX=-2513
+      MaterialExpressionEditorY=1350
+      MaterialExpressionGuid=7EB4662344E2375ED79F828590396F89
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_1" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionScalarParameter_1'"
+      DefaultValue=100000.000000
+      ParameterName="Depth Fade Distance"
+      ExpressionGUID=99851F884A954C7FD064599823734464
+      MaterialExpressionEditorX=-920
+      MaterialExpressionEditorY=-52
+      MaterialExpressionGuid=E0EDC09841F59145E55E45AEC5AD96BD
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_10" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionScalarParameter_10'"
+      DefaultValue=1.350000
+      ParameterName="Coverage Min"
+      ExpressionGUID=08C27B214505E4E0DE521381BB20FFC1
+      MaterialExpressionEditorX=-3931
+      MaterialExpressionEditorY=1318
+      MaterialExpressionGuid=9E047C734A90400CC7D1AB807A3A2A9B
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_11" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionScalarParameter_11'"
+      DefaultValue=-6.000000
+      ParameterName="Ind Strength"
+      ExpressionGUID=0E1FDD634B387F3EC0C241B30DCBAFD3
+      MaterialExpressionEditorX=-3512
+      MaterialExpressionEditorY=844
+      MaterialExpressionGuid=70164B3042BB89FD11D0AEB4CC9567F3
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_12" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionScalarParameter_12'"
+      DefaultValue=70000.000000
+      ParameterName="Test Distance"
+      ExpressionGUID=0CE7DA8842E1DBC82979639C06279009
+      MaterialExpressionEditorX=-4912
+      MaterialExpressionEditorY=1472
+      MaterialExpressionGuid=1A3278A8483CC74E04FBBF921F33A432
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_13" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionScalarParameter_13'"
+      DefaultValue=0.150000
+      ParameterName="Difference Threshold"
+      ExpressionGUID=41FF734E4B218D0AEC4951974BD07B1B
+      MaterialExpressionEditorX=-3128
+      MaterialExpressionEditorY=1464
+      MaterialExpressionGuid=3A1E6EB94B269B14C43C9A8D74325693
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_15" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionScalarParameter_15'"
+      DefaultValue=2.150000
+      ParameterName="Cloud Coverage Add Min"
+      ExpressionGUID=C79D01704B13D9EF7B9DA489BCCA0680
+      MaterialExpressionEditorX=-4576
+      MaterialExpressionEditorY=1040
+      MaterialExpressionGuid=00777D8B43277868F0EFCEB766B6813C
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_16" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionScalarParameter_16'"
+      DefaultValue=0.800000
+      ParameterName="Cloud Coverage Add Range"
+      ExpressionGUID=C785CC6940B2891FBE0EB49DF8D93C90
+      MaterialExpressionEditorX=-4248
+      MaterialExpressionEditorY=1040
+      MaterialExpressionGuid=52E4BFA641D5B180EE6B84BFA9437FB8
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_2" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionScalarParameter_2'"
+      DefaultValue=1000000.000000
+      ParameterName="3D Noise Scale"
+      ExpressionGUID=0CF58B19483C25731158188AB51B4AE6
+      MaterialExpressionEditorX=-1172
+      MaterialExpressionEditorY=1324
+      MaterialExpressionGuid=3E8B6DE24162B8DE76CC9B9B1F444724
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_3" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionScalarParameter_3'"
+      DefaultValue=1000000.000000
+      ParameterName="3D Noise Scale"
+      ExpressionGUID=6BAA1F3249BD7F329245ACA6A7D8044C
+      MaterialExpressionEditorX=-4130
+      MaterialExpressionEditorY=210
+      MaterialExpressionGuid=3E8B6DE24162B8DE76CC9B9B1F444724
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_4" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionScalarParameter_4'"
+      DefaultValue=50000.000000
+      ParameterName="Test Offset"
+      ExpressionGUID=50140DE64F2A18E4E5288380345A431C
+      MaterialExpressionEditorX=-5168
+      MaterialExpressionEditorY=1272
+      MaterialExpressionGuid=A2CE05A14A39AF309C372989F14FD6B0
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_5" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionScalarParameter_5'"
+      DefaultValue=1.000000
+      ParameterName="Coverage Range"
+      ExpressionGUID=1E7B796A40DF65817AC74E8676F3C999
+      MaterialExpressionEditorX=-3727
+      MaterialExpressionEditorY=1494
+      MaterialExpressionGuid=F0ED1DA549B4D4118ED3B4BE4B60BE20
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_6" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionScalarParameter_6'"
+      DefaultValue=20000.000000
+      ParameterName="Grid Distance"
+      ExpressionGUID=205C0BEB4B4DBCBFB82FA9AF2FE83CD8
+      MaterialExpressionEditorX=-396
+      MaterialExpressionEditorY=1352
+      MaterialExpressionGuid=B5D123594099D75F76B2DBA1E5E29503
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_7" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionScalarParameter_7'"
+      DefaultValue=2.000000
+      ExpressionGUID=5CA7FB964B7A910C9EA96E80163BC50D
+      MaterialExpressionEditorX=-392
+      MaterialExpressionEditorY=1444
+      MaterialExpressionGuid=210932334FC72FC7DA9B208DBAA75600
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_8" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionScalarParameter_8'"
+      ParameterName="Cloud Coverage Factor"
+      ExpressionGUID=575706D545BD710201EC1880E7C64253
+      MaterialExpressionEditorX=-3992
+      MaterialExpressionEditorY=844
+      MaterialExpressionGuid=F6DE7CAD4A4838C8AC887D8BC72900B5
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_9" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionScalarParameter_9'"
+      DefaultValue=10.000000
+      ParameterName="Density Mask"
+      ExpressionGUID=F82F5CDF4C58FD73EDE493A7FBA0A419
+      MaterialExpressionEditorX=-2868
+      MaterialExpressionEditorY=1460
+      MaterialExpressionGuid=2E8133D1438BF8E50116E984901118B9
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionSubtract_0" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionSubtract_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionParticlePositionWS'VolumetricCloud_LightRay:MaterialExpressionParticlePositionWS_1'")
+      B=(Expression="/Script/Engine.MaterialExpressionWorldPosition'VolumetricCloud_LightRay:MaterialExpressionWorldPosition_0'")
+      MaterialExpressionEditorX=548
+      MaterialExpressionEditorY=964
+      MaterialExpressionGuid=1CC6FD1746FD7F82CDE76784F7A64E1F
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionSubtract_1" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionSubtract_1'"
+      A=(Expression="/Script/Engine.MaterialExpressionComponentMask'VolumetricCloud_LightRay:MaterialExpressionComponentMask_0'")
+      B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'VolumetricCloud_LightRay:MaterialExpressionCollectionParameter_0'")
+      MaterialExpressionEditorX=-1638
+      MaterialExpressionEditorY=1042
+      MaterialExpressionGuid=636E0F1F4E114CD32F1C48BEEF88FEF0
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionSubtract_10" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionSubtract_10'"
+      A=(Expression="/Script/Engine.MaterialExpressionSaturate'VolumetricCloud_LightRay:MaterialExpressionSaturate_7'")
+      B=(Expression="/Script/Engine.MaterialExpressionSaturate'VolumetricCloud_LightRay:MaterialExpressionSaturate_6'")
+      MaterialExpressionEditorX=-3216
+      MaterialExpressionEditorY=1344
+      MaterialExpressionGuid=10B4245A4C73B90135D31A8F09EDCF86
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionSubtract_12" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionSubtract_12'"
+      A=(Expression="/Script/Engine.MaterialExpressionSubtract'VolumetricCloud_LightRay:MaterialExpressionSubtract_5'")
+      B=(Expression="/Script/Engine.MaterialExpressionMultiply'VolumetricCloud_LightRay:MaterialExpressionMultiply_10'")
+      MaterialExpressionEditorX=-4448
+      MaterialExpressionEditorY=1364
+      MaterialExpressionGuid=E3372E7A4862FF545E3BED84F21FE893
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionSubtract_13" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionSubtract_13'"
+      A=(Expression="/Script/Engine.MaterialExpressionMax'VolumetricCloud_LightRay:MaterialExpressionMax_2'")
+      B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'VolumetricCloud_LightRay:MaterialExpressionScalarParameter_13'")
+      MaterialExpressionEditorX=-2865
+      MaterialExpressionEditorY=1346
+      MaterialExpressionGuid=682CA6A1416C8A354A9D9CA383D5B2BC
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionSubtract_2" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionSubtract_2'"
+      A=(Expression="/Script/Engine.MaterialExpressionComponentMask'VolumetricCloud_LightRay:MaterialExpressionComponentMask_2'")
+      B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'VolumetricCloud_LightRay:MaterialExpressionCollectionParameter_1'")
+      MaterialExpressionEditorX=-3336
+      MaterialExpressionEditorY=-164
+      MaterialExpressionGuid=636E0F1F4E114CD32F1C48BEEF88FEF0
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionSubtract_3" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionSubtract_3'"
+      A=(Expression="/Script/Engine.MaterialExpressionParticlePositionWS'VolumetricCloud_LightRay:MaterialExpressionParticlePositionWS_0'")
+      B=(Expression="/Script/Engine.MaterialExpressionCameraPositionWS'VolumetricCloud_LightRay:MaterialExpressionCameraPositionWS_1'")
+      MaterialExpressionEditorX=-5486
+      MaterialExpressionEditorY=1390
+      MaterialExpressionGuid=129F553F49BBE54DF8D1DABCFCE35137
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionSubtract_4" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionSubtract_4'"
+      A=(Expression="/Script/Engine.MaterialExpressionAppendVector'VolumetricCloud_LightRay:MaterialExpressionAppendVector_0'")
+      ConstB=0.500000
+      MaterialExpressionEditorX=-236
+      MaterialExpressionEditorY=1228
+      MaterialExpressionGuid=4A0A1D56400126D5D35E8BA1FCE2EB53
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionSubtract_5" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionSubtract_5'"
+      A=(Expression="/Script/Engine.MaterialExpressionParticlePositionWS'VolumetricCloud_LightRay:MaterialExpressionParticlePositionWS_2'")
+      B=(Expression="/Script/Engine.MaterialExpressionMultiply'VolumetricCloud_LightRay:MaterialExpressionMultiply_12'")
+      MaterialExpressionEditorX=-4671
+      MaterialExpressionEditorY=1222
+      MaterialExpressionGuid=C1F6D55A4B24B9D80834EF8DD21DB8F9
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionSubtract_6" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionSubtract_6'"
+      A=(Expression="/Script/Engine.MaterialExpressionReroute'VolumetricCloud_LightRay:MaterialExpressionReroute_0'")
+      B=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'VolumetricCloud_LightRay:MaterialExpressionLinearInterpolate_0'")
+      MaterialExpressionEditorX=-3580
+      MaterialExpressionEditorY=756
+      MaterialExpressionGuid=9839BCD84F9E2758F9E20B9F1576CF92
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionSubtract_8" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionSubtract_8'"
+      A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'VolumetricCloud_LightRay:MaterialExpressionMaterialFunctionCall_0'",OutputIndex=1)
+      B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'VolumetricCloud_LightRay:MaterialExpressionScalarParameter_10'")
+      MaterialExpressionEditorX=-3703
+      MaterialExpressionEditorY=1250
+      MaterialExpressionGuid=E808C070445B460D556A75BD7245AF14
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionSubtract_9" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionSubtract_9'"
+      A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'VolumetricCloud_LightRay:MaterialExpressionMaterialFunctionCall_2'",OutputIndex=1)
+      B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'VolumetricCloud_LightRay:MaterialExpressionScalarParameter_10'")
+      MaterialExpressionEditorX=-3699
+      MaterialExpressionEditorY=1390
+      MaterialExpressionGuid=E808C070445B460D556A75BD7245AF14
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionTextureObject_0" ExportPath="/Script/Engine.MaterialExpressionTextureObject'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionTextureObject_0'"
+      Texture="/Script/Engine.VolumeTexture'/Game/UltraDynamicSky/Textures/3D_Clouds/3D_Cells_64.3D_Cells_64'"
+      SamplerType=SAMPLERTYPE_LinearColor
+      MaterialExpressionEditorX=-4090
+      MaterialExpressionEditorY=298
+      MaterialExpressionGuid=9CF7F3154E36F509F2CFFDADB38D6B5B
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionTextureObject_1" ExportPath="/Script/Engine.MaterialExpressionTextureObject'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionTextureObject_1'"
+      Texture="/Script/Engine.VolumeTexture'/Game/UltraDynamicSky/Textures/3D_Clouds/3D_Cells_32.3D_Cells_32'"
+      SamplerType=SAMPLERTYPE_LinearColor
+      MaterialExpressionEditorX=-4086
+      MaterialExpressionEditorY=450
+      MaterialExpressionGuid=9CF7F3154E36F509F2CFFDADB38D6B5B
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_0" ExportPath="/Script/Engine.MaterialExpressionTextureSample'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionTextureSample_0'"
+      Coordinates=(Expression="/Script/Engine.MaterialExpressionVertexInterpolator'VolumetricCloud_LightRay:MaterialExpressionVertexInterpolator_1'")
+      TextureObject=(Expression="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'VolumetricCloud_LightRay:MaterialExpressionNamedRerouteDeclaration_1'")
+      SamplerType=SAMPLERTYPE_LinearColor
+      MaterialExpressionEditorX=-3496
+      MaterialExpressionEditorY=148
+      MaterialExpressionGuid=37B9865F4B2CACF8441FBDAAB11740BB
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_1" ExportPath="/Script/Engine.MaterialExpressionTextureSample'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionTextureSample_1'"
+      Coordinates=(Expression="/Script/Engine.MaterialExpressionMultiply'VolumetricCloud_LightRay:MaterialExpressionMultiply_15'")
+      TextureObject=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'VolumetricCloud_LightRay:MaterialExpressionNamedRerouteUsage_1'")
+      SamplerType=SAMPLERTYPE_LinearColor
+      MaterialExpressionEditorX=-636
+      MaterialExpressionEditorY=1200
+      MaterialExpressionGuid=37B9865F4B2CACF8441FBDAAB11740BB
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_2" ExportPath="/Script/Engine.MaterialExpressionTextureSample'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionTextureSample_2'"
+      SamplerSource=SSM_Clamp_WorldGroupSettings
+      Texture="/Script/Engine.Texture2D'/Game/UltraDynamicSky/Textures/Weather/Mask_Brushes/Brush_Falloff.Brush_Falloff'"
+      SamplerType=SAMPLERTYPE_LinearColor
+      MaterialExpressionEditorX=-76
+      MaterialExpressionEditorY=-120
+      MaterialExpressionGuid=0E4908EF43B575993282759416AD610F
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_0" ExportPath="/Script/Engine.MaterialExpressionVectorParameter'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionVectorParameter_0'"
+      ParameterName="Light Color"
+      ExpressionGUID=233AF752478B1E7E0F65D98FEC9D124F
+      MaterialExpressionEditorX=332
+      MaterialExpressionEditorY=-52
+      MaterialExpressionGuid=6E92C6FB474F35E658980BAF1A48035C
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_2" ExportPath="/Script/Engine.MaterialExpressionVectorParameter'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionVectorParameter_2'"
+      DefaultValue=(R=0.000000,G=0.000000,B=-1.000000,A=0.000000)
+      ParameterName="Light Vector"
+      ExpressionGUID=01158A97474FEAD1960C6D889FF56373
+      MaterialExpressionEditorX=-192
+      MaterialExpressionEditorY=936
+      MaterialExpressionGuid=3470D84F49A2DC878BA08EAB22F9CB41
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionVertexInterpolator_0" ExportPath="/Script/Engine.MaterialExpressionVertexInterpolator'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionVertexInterpolator_0'"
+      Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'VolumetricCloud_LightRay:MaterialExpressionNamedRerouteUsage_0'")
+      MaterialExpressionEditorX=-1324
+      MaterialExpressionEditorY=-44
+      MaterialExpressionGuid=72C1D05F4EF499019E591C9D9110C933
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionVertexInterpolator_1" ExportPath="/Script/Engine.MaterialExpressionVertexInterpolator'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionVertexInterpolator_1'"
+      Input=(Expression="/Script/Engine.MaterialExpressionDivide'VolumetricCloud_LightRay:MaterialExpressionDivide_0'")
+      MaterialExpressionEditorX=-3748
+      MaterialExpressionEditorY=148
+      MaterialExpressionGuid=B3EA621A4AD84FCAC1560E8CACB81CA3
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionWorldPosition_0" ExportPath="/Script/Engine.MaterialExpressionWorldPosition'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionWorldPosition_0'"
+      MaterialExpressionEditorX=332
+      MaterialExpressionEditorY=1044
+      MaterialExpressionGuid=7991DA0F41CDAC0DCDA4558E01DE7EFC
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionWorldPosition_1" ExportPath="/Script/Engine.MaterialExpressionWorldPosition'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionWorldPosition_1'"
+      MaterialExpressionEditorX=-4104
+      MaterialExpressionEditorY=112
+      MaterialExpressionGuid=4A42BF0D46DB146D43203C8985E3E4AC
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="MaterialExpressionWorldPosition_2" ExportPath="/Script/Engine.MaterialExpressionWorldPosition'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:MaterialExpressionWorldPosition_2'"
+      MaterialExpressionEditorX=-3708
+      MaterialExpressionEditorY=-208
+      MaterialExpressionGuid=4A42BF0D46DB146D43203C8985E3E4AC
+      Material="/Script/Engine.Material'VolumetricCloud_LightRay'"
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/VolumetricCloud_LightRay.VolumetricCloud_LightRay:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   BlendMode=BLEND_Additive
+   MaterialDecalResponse=MDR_None
+   ShadingModel=MSM_Unlit
+   ShadingModels=(ShadingModelField=1)
+   TranslucencyPass=MTP_BeforeDOF
+   bTangentSpaceNormal=False
+   bUsedWithNiagaraSprites=True
+   EditorX=834
+   EditorY=-286
+   bCanMaskedBeAssumedOpaque=True
+   bCastRayTracedShadows=False
+   PixelDepthOffsetMode=PDOM_Legacy
+   StateId=D0EC68E542D1445ED4A46A89CDD30B81
+   ReferencedTextureGuids(0)=E3460A1B4A13AEBC097F769EA8E670D8
+   ReferencedTextureGuids(1)=662D98D14A3FF346A893F98A18992DE8
+   ReferencedTextureGuids(2)=BB4DF9ED448DBD0D9801DDA576518923
+   EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'VolumetricCloud_LightRayEditorOnlyData'"
+   TextureStreamingDataVersion=1
+   TextureStreamingData(0)=(SamplingScale=1.000000,UVChannelIndex=0,TextureName="Brush_Falloff",TextureReference="/Game/UltraDynamicSky/Textures/Weather/Mask_Brushes/Brush_Falloff.Brush_Falloff")
+   ReferencedDefaultTextures(0)="/Script/Engine.Texture2D'/Game/UltraDynamicSky/Textures/Weather/Mask_Brushes/Brush_Falloff.Brush_Falloff'"
+   ReferencedDefaultTextures(1)="/Script/Engine.TextureRenderTarget2D'/Game/UltraDynamicSky/Textures/Sky/CloudLayersMap.CloudLayersMap'"
+   ReferencedDefaultTextures(2)="/Script/Engine.Texture2D'/Game/UltraDynamicSky/Textures/Volumetric_Clouds/Cloud_Profile.Cloud_Profile'"
+   ReferencedDefaultTextures(3)="/Script/Engine.VolumeTexture'/Game/UltraDynamicSky/Textures/3D_Clouds/3D_Cells_32.3D_Cells_32'"
+   ReferencedDefaultTextures(4)="/Script/Engine.TextureRenderTarget2D'/Game/UltraDynamicSky/Textures/Sky/CloudPaintTarget.CloudPaintTarget'"
+   ReferencedDefaultTextures(5)=None
+   ReferencedDefaultTextures(6)="/Script/Engine.VolumeTexture'/Game/UltraDynamicSky/Textures/3D_Clouds/3D_Cells_64.3D_Cells_64'"
+   ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+   ParameterOverviewExpansion=(("-12Global", True))
+   LightingGuid=87E3ECA24D99D6993E54DB83202F0214
+End Object

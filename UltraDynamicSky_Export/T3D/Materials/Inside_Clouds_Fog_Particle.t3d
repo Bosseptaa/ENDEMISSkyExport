@@ -1,3 +1,174 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c41c178c85d7c5cd85036729cf8f3cd2daa3f77296f293e9ded573a9cef2cfe0
-size 16393
+Begin Object Class=/Script/Engine.Material Name="Inside_Clouds_Fog_Particle" ExportPath="/Script/Engine.Material'/Game/UltraDynamicSky/Materials/Inside_Clouds_Fog_Particle.Inside_Clouds_Fog_Particle'"
+   Begin Object Class=/Script/Engine.MaterialEditorOnlyData Name="Inside_Clouds_Fog_ParticleEditorOnlyData" ExportPath="/Script/Engine.MaterialEditorOnlyData'/Game/UltraDynamicSky/Materials/Inside_Clouds_Fog_Particle.Inside_Clouds_Fog_Particle:Inside_Clouds_Fog_ParticleEditorOnlyData'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionCameraPositionWS Name="MaterialExpressionCameraPositionWS_0" ExportPath="/Script/Engine.MaterialExpressionCameraPositionWS'/Game/UltraDynamicSky/Materials/Inside_Clouds_Fog_Particle.Inside_Clouds_Fog_Particle:MaterialExpressionCameraPositionWS_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionCameraPositionWS Name="MaterialExpressionCameraPositionWS_1" ExportPath="/Script/Engine.MaterialExpressionCameraPositionWS'/Game/UltraDynamicSky/Materials/Inside_Clouds_Fog_Particle.Inside_Clouds_Fog_Particle:MaterialExpressionCameraPositionWS_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_0" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Inside_Clouds_Fog_Particle.Inside_Clouds_Fog_Particle:MaterialExpressionComment_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_1" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Inside_Clouds_Fog_Particle.Inside_Clouds_Fog_Particle:MaterialExpressionComment_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_4" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Inside_Clouds_Fog_Particle.Inside_Clouds_Fog_Particle:MaterialExpressionMaterialFunctionCall_4'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_5" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Inside_Clouds_Fog_Particle.Inside_Clouds_Fog_Particle:MaterialExpressionMaterialFunctionCall_5'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_0" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Inside_Clouds_Fog_Particle.Inside_Clouds_Fog_Particle:MaterialExpressionMultiply_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_0" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/Inside_Clouds_Fog_Particle.Inside_Clouds_Fog_Particle:MaterialExpressionScalarParameter_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionStaticBool Name="MaterialExpressionStaticBool_0" ExportPath="/Script/Engine.MaterialExpressionStaticBool'/Game/UltraDynamicSky/Materials/Inside_Clouds_Fog_Particle.Inside_Clouds_Fog_Particle:MaterialExpressionStaticBool_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_0" ExportPath="/Script/Engine.MaterialExpressionVectorParameter'/Game/UltraDynamicSky/Materials/Inside_Clouds_Fog_Particle.Inside_Clouds_Fog_Particle:MaterialExpressionVectorParameter_0'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/Inside_Clouds_Fog_Particle.Inside_Clouds_Fog_Particle:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   Begin Object Name="Inside_Clouds_Fog_ParticleEditorOnlyData" ExportPath="/Script/Engine.MaterialEditorOnlyData'/Game/UltraDynamicSky/Materials/Inside_Clouds_Fog_Particle.Inside_Clouds_Fog_Particle:Inside_Clouds_Fog_ParticleEditorOnlyData'"
+      BaseColor=(Constant=(R=0.501961,G=0.501961,B=0.501961,A=1.000000),Expression="/Script/Engine.MaterialExpressionVectorParameter'Inside_Clouds_Fog_Particle:MaterialExpressionVectorParameter_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      Metallic=(UseConstant=True)
+      Specular=(UseConstant=True)
+      Roughness=(UseConstant=True)
+      Anisotropy=(UseConstant=True)
+      Normal=(UseConstant=True)
+      Tangent=(UseConstant=True)
+      EmissiveColor=(UseConstant=True)
+      Opacity=(UseConstant=True)
+      OpacityMask=(UseConstant=True)
+      WorldPositionOffset=(UseConstant=True)
+      Displacement=(UseConstant=True)
+      SubsurfaceColor=(Constant=(R=0.000000,G=0.000000,B=0.000000,A=0.000000),Expression="/Script/Engine.MaterialExpressionMultiply'Inside_Clouds_Fog_Particle:MaterialExpressionMultiply_0'")
+      ClearCoat=(UseConstant=True)
+      ClearCoatRoughness=(UseConstant=True)
+      AmbientOcclusion=(UseConstant=True)
+      Refraction=(UseConstant=True)
+      CustomizedUVs(0)=(UseConstant=True)
+      CustomizedUVs(1)=(UseConstant=True)
+      CustomizedUVs(2)=(UseConstant=True)
+      CustomizedUVs(3)=(UseConstant=True)
+      CustomizedUVs(4)=(UseConstant=True)
+      CustomizedUVs(5)=(UseConstant=True)
+      CustomizedUVs(6)=(UseConstant=True)
+      CustomizedUVs(7)=(UseConstant=True)
+      PixelDepthOffset=(UseConstant=True)
+      SurfaceThickness=(UseConstant=True)
+      ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionVectorParameter'Inside_Clouds_Fog_Particle:MaterialExpressionVectorParameter_0'","/Script/Engine.MaterialExpressionMultiply'Inside_Clouds_Fog_Particle:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionStaticBool'Inside_Clouds_Fog_Particle:MaterialExpressionStaticBool_0'","/Script/Engine.MaterialExpressionScalarParameter'Inside_Clouds_Fog_Particle:MaterialExpressionScalarParameter_0'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Inside_Clouds_Fog_Particle:MaterialExpressionMaterialFunctionCall_4'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Inside_Clouds_Fog_Particle:MaterialExpressionMaterialFunctionCall_5'","/Script/Engine.MaterialExpressionCameraPositionWS'Inside_Clouds_Fog_Particle:MaterialExpressionCameraPositionWS_0'","/Script/Engine.MaterialExpressionCameraPositionWS'Inside_Clouds_Fog_Particle:MaterialExpressionCameraPositionWS_1'"),EditorComments=("/Script/Engine.MaterialExpressionComment'Inside_Clouds_Fog_Particle:MaterialExpressionComment_0'","/Script/Engine.MaterialExpressionComment'Inside_Clouds_Fog_Particle:MaterialExpressionComment_1'"))
+      ParameterGroupData(0)=(GroupName="None")
+   End Object
+   Begin Object Name="MaterialExpressionCameraPositionWS_0" ExportPath="/Script/Engine.MaterialExpressionCameraPositionWS'/Game/UltraDynamicSky/Materials/Inside_Clouds_Fog_Particle.Inside_Clouds_Fog_Particle:MaterialExpressionCameraPositionWS_0'"
+      MaterialExpressionEditorX=-384
+      MaterialExpressionEditorY=348
+      MaterialExpressionGuid=84A4657C434C4C54960FEAACBA31E121
+      Material="/Script/Engine.Material'Inside_Clouds_Fog_Particle'"
+   End Object
+   Begin Object Name="MaterialExpressionCameraPositionWS_1" ExportPath="/Script/Engine.MaterialExpressionCameraPositionWS'/Game/UltraDynamicSky/Materials/Inside_Clouds_Fog_Particle.Inside_Clouds_Fog_Particle:MaterialExpressionCameraPositionWS_1'"
+      MaterialExpressionEditorX=-32
+      MaterialExpressionEditorY=524
+      MaterialExpressionGuid=84A4657C434C4C54960FEAACBA31E121
+      Material="/Script/Engine.Material'Inside_Clouds_Fog_Particle'"
+   End Object
+   Begin Object Name="MaterialExpressionComment_0" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Inside_Clouds_Fog_Particle.Inside_Clouds_Fog_Particle:MaterialExpressionComment_0'"
+      SizeX=1164
+      SizeY=484
+      Text="Volumetric Sample of the Cloud Layer Density at World Position"
+      CommentColor=(R=0.336433,G=0.474181,B=1.000000,A=1.000000)
+      MaterialExpressionEditorX=-472
+      MaterialExpressionEditorY=292
+      MaterialExpressionGuid=30E3FB4B4FDDD02DC14C2598BBE67169
+      Material="/Script/Engine.Material'Inside_Clouds_Fog_Particle'"
+   End Object
+   Begin Object Name="MaterialExpressionComment_1" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Inside_Clouds_Fog_Particle.Inside_Clouds_Fog_Particle:MaterialExpressionComment_1'"
+      SizeX=392
+      SizeY=300
+      Text="Color of the Volumetric Particle"
+      CommentColor=(R=0.864232,G=1.000000,B=0.426232,A=1.000000)
+      MaterialExpressionEditorX=300
+      MaterialExpressionEditorY=-63
+      MaterialExpressionGuid=9B8BCAF14AF8A2160DC8C3993C065D5F
+      Material="/Script/Engine.Material'Inside_Clouds_Fog_Particle'"
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_4" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Inside_Clouds_Fog_Particle.Inside_Clouds_Fog_Particle:MaterialExpressionMaterialFunctionCall_4'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Volumetric_Clouds_Conservative_Density.Volumetric_Clouds_Conservative_Density'"
+      FunctionInputs(0)=(ExpressionInputId=349CF674473503C71A2E0B86837C6F70,Input=(Expression="/Script/Engine.MaterialExpressionCameraPositionWS'Inside_Clouds_Fog_Particle:MaterialExpressionCameraPositionWS_0'",InputName="Sample Position"))
+      FunctionInputs(1)=(ExpressionInputId=B75E610A482ADF8626F7AC8B00F96DAB,Input=(InputName="NormAltitudeInLayer"))
+      FunctionOutputs(0)=(ExpressionOutputId=54A40AD44558CB769F97EB866E4406C5,Output=(OutputName="2D Cloud Coverage"))
+      FunctionOutputs(1)=(ExpressionOutputId=A0382B074C5AE0AD883B28A920C50721,Output=(OutputName="Final Density"))
+      FunctionOutputs(2)=(ExpressionOutputId=F576F3DE48314F39697B8AAF9E35C721,Output=(OutputName="Unscaled Cloud Position"))
+      FunctionOutputs(3)=(ExpressionOutputId=5448368A4B2FD26A50DD589B4109185E,Output=(OutputName="Conservative Density"))
+      MaterialExpressionEditorX=-214
+      MaterialExpressionEditorY=366
+      MaterialExpressionGuid=1C1C8F7444854CAD85D6A1956DBC1273
+      Material="/Script/Engine.Material'Inside_Clouds_Fog_Particle'"
+      Outputs(0)=(OutputName="2D Cloud Coverage")
+      Outputs(1)=(OutputName="Final Density")
+      Outputs(2)=(OutputName="Unscaled Cloud Position")
+      Outputs(3)=(OutputName="Conservative Density")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_5" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Inside_Clouds_Fog_Particle.Inside_Clouds_Fog_Particle:MaterialExpressionMaterialFunctionCall_5'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Volumetric_Clouds_Extinction.Volumetric_Clouds_Extinction'"
+      FunctionInputs(0)=(ExpressionInputId=4774E41849E318B82F3883AD6B88B342,Input=(Expression="/Script/Engine.MaterialExpressionCameraPositionWS'Inside_Clouds_Fog_Particle:MaterialExpressionCameraPositionWS_1'",InputName="Sample Position"))
+      FunctionInputs(1)=(ExpressionInputId=18EE8D574B117B06B2834987A1C0BDC4,Input=(Expression="/Script/Engine.MaterialExpressionStaticBool'Inside_Clouds_Fog_Particle:MaterialExpressionStaticBool_0'",InputName="Allow High Frequency Layer"))
+      FunctionInputs(2)=(ExpressionInputId=F1FA440045ECD335D5A1CB9181D70872,Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Inside_Clouds_Fog_Particle:MaterialExpressionMaterialFunctionCall_4'",OutputIndex=3,InputName="Conservative Density"))
+      FunctionOutputs(0)=(ExpressionOutputId=99110DBD41A7C4044032CAA0E0BF6557,Output=(OutputName="Split Altitude"))
+      FunctionOutputs(1)=(ExpressionOutputId=F91848C845991472E2EF1DA58B72E2B0,Output=(OutputName="Extinction"))
+      MaterialExpressionEditorX=172
+      MaterialExpressionEditorY=424
+      MaterialExpressionGuid=C3E7D34D44B1C28766C5C5BA51A559AF
+      Material="/Script/Engine.Material'Inside_Clouds_Fog_Particle'"
+      Outputs(0)=(OutputName="Split Altitude")
+      Outputs(1)=(OutputName="Extinction")
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_0" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Inside_Clouds_Fog_Particle.Inside_Clouds_Fog_Particle:MaterialExpressionMultiply_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Inside_Clouds_Fog_Particle:MaterialExpressionMaterialFunctionCall_5'",OutputIndex=1)
+      B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Inside_Clouds_Fog_Particle:MaterialExpressionScalarParameter_0'")
+      MaterialExpressionEditorX=556
+      MaterialExpressionEditorY=492
+      MaterialExpressionGuid=68BC342241BB5A5E7F6EA3B8ED6DFA96
+      Material="/Script/Engine.Material'Inside_Clouds_Fog_Particle'"
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_0" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/Inside_Clouds_Fog_Particle.Inside_Clouds_Fog_Particle:MaterialExpressionScalarParameter_0'"
+      DefaultValue=1.000000
+      ParameterName="Fog Amount"
+      ExpressionGUID=BCD38B8C42B4CD1EBF641A9D42D260E3
+      MaterialExpressionEditorX=316
+      MaterialExpressionEditorY=572
+      MaterialExpressionGuid=1129E5CB4A55C8AC2AAF91ADB8F2E7D8
+      Material="/Script/Engine.Material'Inside_Clouds_Fog_Particle'"
+   End Object
+   Begin Object Name="MaterialExpressionStaticBool_0" ExportPath="/Script/Engine.MaterialExpressionStaticBool'/Game/UltraDynamicSky/Materials/Inside_Clouds_Fog_Particle.Inside_Clouds_Fog_Particle:MaterialExpressionStaticBool_0'"
+      MaterialExpressionEditorX=-44
+      MaterialExpressionEditorY=608
+      MaterialExpressionGuid=520E449440A5FC060157D1B77631AEF8
+      Material="/Script/Engine.Material'Inside_Clouds_Fog_Particle'"
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_0" ExportPath="/Script/Engine.MaterialExpressionVectorParameter'/Game/UltraDynamicSky/Materials/Inside_Clouds_Fog_Particle.Inside_Clouds_Fog_Particle:MaterialExpressionVectorParameter_0'"
+      DefaultValue=(R=0.588542,G=0.588542,B=0.588542,A=0.000000)
+      ParameterName="Color"
+      ExpressionGUID=1A082C8247C85B4A4D58BDAA971F23BC
+      MaterialExpressionEditorX=444
+      MaterialExpressionEditorY=8
+      MaterialExpressionGuid=974B9AB74D7DCCEB42B01FBEA5111C3F
+      Material="/Script/Engine.Material'Inside_Clouds_Fog_Particle'"
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/Inside_Clouds_Fog_Particle.Inside_Clouds_Fog_Particle:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   MaterialDomain=MD_Volume
+   BlendMode=BLEND_Additive
+   bUsedWithNiagaraSprites=True
+   bUsedWithVolumetricCloud=True
+   EditorX=732
+   EditorY=24
+   bCanMaskedBeAssumedOpaque=True
+   PixelDepthOffsetMode=PDOM_Legacy
+   StateId=EDA9E8C149B7FC70F0C946A2602E644A
+   ReferencedTextureGuids(0)=E3460A1B4A13AEBC097F769EA8E670D8
+   ReferencedTextureGuids(1)=18254D41441E997CFD46858CF89DAC68
+   ReferencedTextureGuids(2)=BB4DF9ED448DBD0D9801DDA576518923
+   EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'Inside_Clouds_Fog_ParticleEditorOnlyData'"
+   ReferencedDefaultTextures(0)="/Script/Engine.TextureRenderTarget2D'/Game/UltraDynamicSky/Textures/Sky/CloudLayersMap.CloudLayersMap'"
+   ReferencedDefaultTextures(1)="/Script/Engine.Texture2D'/Game/UltraDynamicSky/Textures/Volumetric_Clouds/Cloud_Profile.Cloud_Profile'"
+   ReferencedDefaultTextures(2)="/Script/Engine.VolumeTexture'/Game/UltraDynamicSky/Textures/3D_Clouds/3D_Cells_32.3D_Cells_32'"
+   ReferencedDefaultTextures(3)="/Script/Engine.TextureRenderTarget2D'/Game/UltraDynamicSky/Textures/Sky/CloudPaintTarget.CloudPaintTarget'"
+   ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+   ParameterOverviewExpansion=(("-12Global", True))
+   LightingGuid=D112977D43AD634429D890A3CD2BC80D
+End Object

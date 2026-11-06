@@ -1,3 +1,525 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:be0f3aeda7bef0700f77c7da62f0a26475fb04ac0f63321cb2f086d6033f5cf8
-size 56745
+Begin Object Class=/Script/Engine.MaterialFunction Name="Composite_Cloud_Layers" ExportPath="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers'"
+   Begin Object Class=/Script/Engine.MaterialFunctionEditorOnlyData Name="Composite_Cloud_LayersEditorOnlyData" ExportPath="/Script/Engine.MaterialFunctionEditorOnlyData'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:Composite_Cloud_LayersEditorOnlyData'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_1" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionComment_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_2" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionComment_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_3" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionComment_3'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_4" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionComment_4'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionFunctionInput_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionOutput Name="MaterialExpressionFunctionOutput_5" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionFunctionOutput_5'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionOutput Name="MaterialExpressionFunctionOutput_6" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionFunctionOutput_6'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_1" ExportPath="/Script/Engine.MaterialExpressionLinearInterpolate'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionLinearInterpolate_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_17" ExportPath="/Script/Engine.MaterialExpressionLinearInterpolate'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionLinearInterpolate_17'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_2" ExportPath="/Script/Engine.MaterialExpressionLinearInterpolate'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionLinearInterpolate_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_6" ExportPath="/Script/Engine.MaterialExpressionLinearInterpolate'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionLinearInterpolate_6'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_0" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionMaterialFunctionCall_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_1" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionMaterialFunctionCall_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_26" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionMaterialFunctionCall_26'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_27" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionMaterialFunctionCall_27'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_32" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionMaterialFunctionCall_32'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_33" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionMaterialFunctionCall_33'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMax Name="MaterialExpressionMax_0" ExportPath="/Script/Engine.MaterialExpressionMax'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionMax_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_0" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionMultiply_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_1" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionMultiply_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_16" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionMultiply_16'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_2" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionMultiply_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_3" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionMultiply_3'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_4" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionMultiply_4'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNamedRerouteDeclaration Name="MaterialExpressionNamedRerouteDeclaration_2" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionNamedRerouteDeclaration_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNamedRerouteDeclaration Name="MaterialExpressionNamedRerouteDeclaration_3" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionNamedRerouteDeclaration_3'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNamedRerouteDeclaration Name="MaterialExpressionNamedRerouteDeclaration_4" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionNamedRerouteDeclaration_4'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNamedRerouteDeclaration Name="MaterialExpressionNamedRerouteDeclaration_5" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionNamedRerouteDeclaration_5'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNamedRerouteUsage Name="MaterialExpressionNamedRerouteUsage_2" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionNamedRerouteUsage_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNamedRerouteUsage Name="MaterialExpressionNamedRerouteUsage_3" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionNamedRerouteUsage_3'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNamedRerouteUsage Name="MaterialExpressionNamedRerouteUsage_4" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionNamedRerouteUsage_4'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNamedRerouteUsage Name="MaterialExpressionNamedRerouteUsage_5" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionNamedRerouteUsage_5'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNamedRerouteUsage Name="MaterialExpressionNamedRerouteUsage_6" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionNamedRerouteUsage_6'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNamedRerouteUsage Name="MaterialExpressionNamedRerouteUsage_7" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionNamedRerouteUsage_7'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionReroute Name="MaterialExpressionReroute_0" ExportPath="/Script/Engine.MaterialExpressionReroute'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionReroute_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionReroute Name="MaterialExpressionReroute_1" ExportPath="/Script/Engine.MaterialExpressionReroute'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionReroute_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionReroute Name="MaterialExpressionReroute_2" ExportPath="/Script/Engine.MaterialExpressionReroute'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionReroute_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionReroute Name="MaterialExpressionReroute_3" ExportPath="/Script/Engine.MaterialExpressionReroute'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionReroute_3'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_0" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionScalarParameter_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_4" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionScalarParameter_4'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionShadingPathSwitch Name="MaterialExpressionShadingPathSwitch_1" ExportPath="/Script/Engine.MaterialExpressionShadingPathSwitch'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionShadingPathSwitch_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionStaticBool Name="MaterialExpressionStaticBool_2" ExportPath="/Script/Engine.MaterialExpressionStaticBool'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionStaticBool_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionStaticBool Name="MaterialExpressionStaticBool_3" ExportPath="/Script/Engine.MaterialExpressionStaticBool'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionStaticBool_3'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionStaticSwitchParameter Name="MaterialExpressionStaticSwitchParameter_0" ExportPath="/Script/Engine.MaterialExpressionStaticSwitchParameter'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionStaticSwitchParameter_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_0" ExportPath="/Script/Engine.MaterialExpressionVectorParameter'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionVectorParameter_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_1" ExportPath="/Script/Engine.MaterialExpressionVectorParameter'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionVectorParameter_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVertexColor Name="MaterialExpressionVertexColor_2" ExportPath="/Script/Engine.MaterialExpressionVertexColor'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionVertexColor_2'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   Begin Object Name="Composite_Cloud_LayersEditorOnlyData" ExportPath="/Script/Engine.MaterialFunctionEditorOnlyData'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:Composite_Cloud_LayersEditorOnlyData'"
+      ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionMaterialFunctionCall'Composite_Cloud_Layers:MaterialExpressionMaterialFunctionCall_26'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Composite_Cloud_Layers:MaterialExpressionMaterialFunctionCall_27'","/Script/Engine.MaterialExpressionStaticBool'Composite_Cloud_Layers:MaterialExpressionStaticBool_2'","/Script/Engine.MaterialExpressionStaticBool'Composite_Cloud_Layers:MaterialExpressionStaticBool_3'","/Script/Engine.MaterialExpressionMultiply'Composite_Cloud_Layers:MaterialExpressionMultiply_4'","/Script/Engine.MaterialExpressionMultiply'Composite_Cloud_Layers:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionVectorParameter'Composite_Cloud_Layers:MaterialExpressionVectorParameter_0'","/Script/Engine.MaterialExpressionVectorParameter'Composite_Cloud_Layers:MaterialExpressionVectorParameter_1'","/Script/Engine.MaterialExpressionMultiply'Composite_Cloud_Layers:MaterialExpressionMultiply_1'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Composite_Cloud_Layers:MaterialExpressionMaterialFunctionCall_0'","/Script/Engine.MaterialExpressionMultiply'Composite_Cloud_Layers:MaterialExpressionMultiply_2'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Composite_Cloud_Layers:MaterialExpressionMaterialFunctionCall_1'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Composite_Cloud_Layers:MaterialExpressionNamedRerouteDeclaration_2'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Composite_Cloud_Layers:MaterialExpressionNamedRerouteDeclaration_3'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Composite_Cloud_Layers:MaterialExpressionNamedRerouteDeclaration_4'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Composite_Cloud_Layers:MaterialExpressionNamedRerouteDeclaration_5'","/Script/Engine.MaterialExpressionFunctionInput'Composite_Cloud_Layers:MaterialExpressionFunctionInput_0'","/Script/Engine.MaterialExpressionFunctionOutput'Composite_Cloud_Layers:MaterialExpressionFunctionOutput_5'","/Script/Engine.MaterialExpressionLinearInterpolate'Composite_Cloud_Layers:MaterialExpressionLinearInterpolate_17'","/Script/Engine.MaterialExpressionLinearInterpolate'Composite_Cloud_Layers:MaterialExpressionLinearInterpolate_1'","/Script/Engine.MaterialExpressionStaticSwitchParameter'Composite_Cloud_Layers:MaterialExpressionStaticSwitchParameter_0'","/Script/Engine.MaterialExpressionLinearInterpolate'Composite_Cloud_Layers:MaterialExpressionLinearInterpolate_2'","/Script/Engine.MaterialExpressionReroute'Composite_Cloud_Layers:MaterialExpressionReroute_2'","/Script/Engine.MaterialExpressionReroute'Composite_Cloud_Layers:MaterialExpressionReroute_3'","/Script/Engine.MaterialExpressionScalarParameter'Composite_Cloud_Layers:MaterialExpressionScalarParameter_4'","/Script/Engine.MaterialExpressionShadingPathSwitch'Composite_Cloud_Layers:MaterialExpressionShadingPathSwitch_1'","/Script/Engine.MaterialExpressionVertexColor'Composite_Cloud_Layers:MaterialExpressionVertexColor_2'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Composite_Cloud_Layers:MaterialExpressionMaterialFunctionCall_32'","/Script/Engine.MaterialExpressionLinearInterpolate'Composite_Cloud_Layers:MaterialExpressionLinearInterpolate_6'","/Script/Engine.MaterialExpressionMultiply'Composite_Cloud_Layers:MaterialExpressionMultiply_16'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Composite_Cloud_Layers:MaterialExpressionMaterialFunctionCall_33'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Composite_Cloud_Layers:MaterialExpressionNamedRerouteUsage_2'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Composite_Cloud_Layers:MaterialExpressionNamedRerouteUsage_3'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Composite_Cloud_Layers:MaterialExpressionNamedRerouteUsage_4'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Composite_Cloud_Layers:MaterialExpressionNamedRerouteUsage_5'","/Script/Engine.MaterialExpressionFunctionOutput'Composite_Cloud_Layers:MaterialExpressionFunctionOutput_6'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Composite_Cloud_Layers:MaterialExpressionNamedRerouteUsage_6'","/Script/Engine.MaterialExpressionMax'Composite_Cloud_Layers:MaterialExpressionMax_0'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Composite_Cloud_Layers:MaterialExpressionNamedRerouteUsage_7'","/Script/Engine.MaterialExpressionMultiply'Composite_Cloud_Layers:MaterialExpressionMultiply_3'","/Script/Engine.MaterialExpressionScalarParameter'Composite_Cloud_Layers:MaterialExpressionScalarParameter_0'","/Script/Engine.MaterialExpressionReroute'Composite_Cloud_Layers:MaterialExpressionReroute_0'","/Script/Engine.MaterialExpressionReroute'Composite_Cloud_Layers:MaterialExpressionReroute_1'"),EditorComments=("/Script/Engine.MaterialExpressionComment'Composite_Cloud_Layers:MaterialExpressionComment_1'","/Script/Engine.MaterialExpressionComment'Composite_Cloud_Layers:MaterialExpressionComment_2'","/Script/Engine.MaterialExpressionComment'Composite_Cloud_Layers:MaterialExpressionComment_3'","/Script/Engine.MaterialExpressionComment'Composite_Cloud_Layers:MaterialExpressionComment_4'"))
+   End Object
+   Begin Object Name="MaterialExpressionComment_1" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionComment_1'"
+      SizeX=1060
+      SizeY=532
+      Text="Cloud Layer 2"
+      CommentColor=(R=0.320916,G=0.532919,B=1.000000,A=1.000000)
+      MaterialExpressionEditorX=-656
+      MaterialExpressionEditorY=1216
+      MaterialExpressionGuid=0883CC0846A4D4D96918AFAE7D5B6227
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+   End Object
+   Begin Object Name="MaterialExpressionComment_2" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionComment_2'"
+      SizeX=1124
+      SizeY=480
+      Text="Cloud Layer 1"
+      CommentColor=(R=0.261645,G=0.760417,B=0.283928,A=1.000000)
+      MaterialExpressionEditorX=-1840
+      MaterialExpressionEditorY=1260
+      MaterialExpressionGuid=3B67C2434A2F93F0E98B1ABB947762D0
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+   End Object
+   Begin Object Name="MaterialExpressionComment_3" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionComment_3'"
+      SizeX=2704
+      SizeY=704
+      Text="Composite with Input"
+      CommentColor=(R=1.000000,G=0.583480,B=0.380580,A=1.000000)
+      MaterialExpressionEditorX=-1864
+      MaterialExpressionEditorY=1880
+      MaterialExpressionGuid=8EC05E3243DF86CCD1421E8A7A7BC5EE
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+   End Object
+   Begin Object Name="MaterialExpressionComment_4" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionComment_4'"
+      SizeX=722
+      SizeY=365
+      Text="Mask Alpha"
+      MaterialExpressionEditorX=478
+      MaterialExpressionEditorY=1366
+      MaterialExpressionGuid=232A3C86442D911BB70524B23ABD5139
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionFunctionInput_0'"
+      Id=CAE42F7343FD156B96E183A6985C8011
+      MaterialExpressionEditorX=-1632
+      MaterialExpressionEditorY=1960
+      MaterialExpressionGuid=FC5FADB845C8A4110BDADEA3C1574C70
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+   End Object
+   Begin Object Name="MaterialExpressionFunctionOutput_5" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionFunctionOutput_5'"
+      A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Composite_Cloud_Layers:MaterialExpressionLinearInterpolate_2'")
+      bLastPreviewed=True
+      Id=114DC06046141B21D84F7AA575402CFE
+      MaterialExpressionEditorX=648
+      MaterialExpressionEditorY=2012
+      MaterialExpressionGuid=A478E8E1453A980DC683558059C867DC
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+   End Object
+   Begin Object Name="MaterialExpressionFunctionOutput_6" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionFunctionOutput_6'"
+      OutputName="Mask Alpha"
+      SortPriority=1
+      A=(Expression="/Script/Engine.MaterialExpressionMultiply'Composite_Cloud_Layers:MaterialExpressionMultiply_3'")
+      Id=62EE279843486F1227FE38ADB3D8A4B3
+      MaterialExpressionEditorX=988
+      MaterialExpressionEditorY=1416
+      MaterialExpressionGuid=7EC5512E4D382CA8ABAF7AA45E827779
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_1" ExportPath="/Script/Engine.MaterialExpressionLinearInterpolate'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionLinearInterpolate_1'"
+      A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Composite_Cloud_Layers:MaterialExpressionLinearInterpolate_17'")
+      B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Composite_Cloud_Layers:MaterialExpressionNamedRerouteUsage_4'")
+      Alpha=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Composite_Cloud_Layers:MaterialExpressionNamedRerouteUsage_5'")
+      MaterialExpressionEditorX=-1016
+      MaterialExpressionEditorY=2296
+      MaterialExpressionGuid=D2FF3E784D763A4186AE0593013B319A
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_17" ExportPath="/Script/Engine.MaterialExpressionLinearInterpolate'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionLinearInterpolate_17'"
+      A=(Expression="/Script/Engine.MaterialExpressionReroute'Composite_Cloud_Layers:MaterialExpressionReroute_2'")
+      B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Composite_Cloud_Layers:MaterialExpressionNamedRerouteUsage_2'")
+      Alpha=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Composite_Cloud_Layers:MaterialExpressionNamedRerouteUsage_3'")
+      ConstAlpha=1.000000
+      MaterialExpressionEditorX=-1204
+      MaterialExpressionEditorY=2167
+      MaterialExpressionGuid=F2620E834450B6284DB76BAFFF3B0CC7
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_2" ExportPath="/Script/Engine.MaterialExpressionLinearInterpolate'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionLinearInterpolate_2'"
+      A=(Expression="/Script/Engine.MaterialExpressionReroute'Composite_Cloud_Layers:MaterialExpressionReroute_3'")
+      B=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Composite_Cloud_Layers:MaterialExpressionLinearInterpolate_6'")
+      Alpha=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Composite_Cloud_Layers:MaterialExpressionScalarParameter_4'")
+      MaterialExpressionEditorX=500
+      MaterialExpressionEditorY=2039
+      MaterialExpressionGuid=362A3233406FA028AEFF199A1D2EBF59
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_6" ExportPath="/Script/Engine.MaterialExpressionLinearInterpolate'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionLinearInterpolate_6'"
+      A=(Expression="/Script/Engine.MaterialExpressionMultiply'Composite_Cloud_Layers:MaterialExpressionMultiply_16'")
+      B=(Expression="/Script/Engine.MaterialExpressionShadingPathSwitch'Composite_Cloud_Layers:MaterialExpressionShadingPathSwitch_1'")
+      Alpha=(Expression="/Script/Engine.MaterialExpressionVertexColor'Composite_Cloud_Layers:MaterialExpressionVertexColor_2'",OutputIndex=1,Mask=1,MaskR=1)
+      MaterialExpressionEditorX=160
+      MaterialExpressionEditorY=2115
+      MaterialExpressionGuid=68293CE847600BDD71D3EC86A8AAFE8A
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_0" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionMaterialFunctionCall_0'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Scale_Intensity_Around_Sun.Scale_Intensity_Around_Sun'"
+      FunctionOutputs(0)=(ExpressionOutputId=6F13AEB94B2ED3CAD3944DA5BD6370B0,Output=(OutputName="Result"))
+      MaterialExpressionEditorX=-1304
+      MaterialExpressionEditorY=1596
+      MaterialExpressionGuid=EC74C5A746C5B5AC284A85BA13FBCF5E
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+      Outputs(0)=(OutputName="Result")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_1" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionMaterialFunctionCall_1'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Scale_Intensity_Around_Sun.Scale_Intensity_Around_Sun'"
+      FunctionOutputs(0)=(ExpressionOutputId=6F13AEB94B2ED3CAD3944DA5BD6370B0,Output=(OutputName="Result"))
+      MaterialExpressionEditorX=-428
+      MaterialExpressionEditorY=1660
+      MaterialExpressionGuid=932CA8104B58F69A54091180D9AF8BCD
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+      Outputs(0)=(OutputName="Result")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_26" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionMaterialFunctionCall_26'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Cloud_Layer.Cloud_Layer'"
+      FunctionInputs(0)=(ExpressionInputId=213FBAD04A264E6AB98EC9A214F47C04,Input=(Expression="/Script/Engine.MaterialExpressionStaticBool'Composite_Cloud_Layers:MaterialExpressionStaticBool_3'",InputName="Cloud Layer 1"))
+      FunctionOutputs(0)=(ExpressionOutputId=44491027499AA169A40360BED819F0B6,Output=(OutputName="Blend Alpha"))
+      FunctionOutputs(1)=(ExpressionOutputId=DD27FD064B65BE70B7E3AAAC508AAD39,Output=(OutputName="Color"))
+      MaterialExpressionEditorX=-276
+      MaterialExpressionEditorY=1295
+      MaterialExpressionGuid=73127C52457E7A447263A19A0F60E875
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+      Outputs(0)=(OutputName="Blend Alpha")
+      Outputs(1)=(OutputName="Color")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_27" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionMaterialFunctionCall_27'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Cloud_Layer.Cloud_Layer'"
+      FunctionInputs(0)=(ExpressionInputId=213FBAD04A264E6AB98EC9A214F47C04,Input=(Expression="/Script/Engine.MaterialExpressionStaticBool'Composite_Cloud_Layers:MaterialExpressionStaticBool_2'",InputName="Cloud Layer 1"))
+      FunctionOutputs(0)=(ExpressionOutputId=44491027499AA169A40360BED819F0B6,Output=(OutputName="Blend Alpha"))
+      FunctionOutputs(1)=(ExpressionOutputId=DD27FD064B65BE70B7E3AAAC508AAD39,Output=(OutputName="Color"))
+      MaterialExpressionEditorX=-1517
+      MaterialExpressionEditorY=1343
+      MaterialExpressionGuid=73127C52457E7A447263A19A0F60E875
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+      Outputs(0)=(OutputName="Blend Alpha")
+      Outputs(1)=(OutputName="Color")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_32" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionMaterialFunctionCall_32'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Base_Sky_Color.Base_Sky_Color'"
+      FunctionOutputs(0)=(ExpressionOutputId=C439A1B6425C4A3CDB1B63B8581634AA,Output=(OutputName="Result"))
+      MaterialExpressionEditorX=-212
+      MaterialExpressionEditorY=2039
+      MaterialExpressionGuid=F907984141328209361ED888AC183712
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+      Outputs(0)=(OutputName="Result")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_33" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionMaterialFunctionCall_33'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Scale_Intensity_Around_Sun.Scale_Intensity_Around_Sun'"
+      FunctionOutputs(0)=(ExpressionOutputId=6F13AEB94B2ED3CAD3944DA5BD6370B0,Output=(OutputName="Result"))
+      MaterialExpressionEditorX=-272
+      MaterialExpressionEditorY=2115
+      MaterialExpressionGuid=BC51109E421CE9D583FE2EB99840B0A2
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+      Outputs(0)=(OutputName="Result")
+   End Object
+   Begin Object Name="MaterialExpressionMax_0" ExportPath="/Script/Engine.MaterialExpressionMax'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionMax_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Composite_Cloud_Layers:MaterialExpressionNamedRerouteUsage_6'")
+      B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Composite_Cloud_Layers:MaterialExpressionNamedRerouteUsage_7'")
+      MaterialExpressionEditorX=692
+      MaterialExpressionEditorY=1416
+      MaterialExpressionGuid=B98E08F54DADE19CB71AE5954AAED1FF
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_0" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionMultiply_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Composite_Cloud_Layers:MaterialExpressionMaterialFunctionCall_26'",OutputIndex=1)
+      B=(Expression="/Script/Engine.MaterialExpressionMultiply'Composite_Cloud_Layers:MaterialExpressionMultiply_2'")
+      MaterialExpressionEditorX=12
+      MaterialExpressionEditorY=1488
+      MaterialExpressionGuid=ECAC08AB41C8D8387FADE098CA956AA7
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_1" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionMultiply_1'"
+      A=(Expression="/Script/Engine.MaterialExpressionMultiply'Composite_Cloud_Layers:MaterialExpressionMultiply_4'")
+      B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Composite_Cloud_Layers:MaterialExpressionMaterialFunctionCall_0'")
+      MaterialExpressionEditorX=-1048
+      MaterialExpressionEditorY=1492
+      MaterialExpressionGuid=2D28186F4E58E02C79E55EBB11F8ECE0
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_16" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionMultiply_16'"
+      A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Composite_Cloud_Layers:MaterialExpressionMaterialFunctionCall_32'")
+      B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Composite_Cloud_Layers:MaterialExpressionMaterialFunctionCall_33'")
+      MaterialExpressionEditorX=-40
+      MaterialExpressionEditorY=2035
+      MaterialExpressionGuid=AA80CD4E4E3AB29C92C1B9AF3931C372
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_2" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionMultiply_2'"
+      A=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Composite_Cloud_Layers:MaterialExpressionVectorParameter_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Composite_Cloud_Layers:MaterialExpressionMaterialFunctionCall_1'")
+      MaterialExpressionEditorX=-128
+      MaterialExpressionEditorY=1532
+      MaterialExpressionGuid=550F105B4E89BB6F4082A793F61992BD
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_3" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionMultiply_3'"
+      A=(Expression="/Script/Engine.MaterialExpressionMax'Composite_Cloud_Layers:MaterialExpressionMax_0'")
+      B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Composite_Cloud_Layers:MaterialExpressionScalarParameter_0'")
+      MaterialExpressionEditorX=832
+      MaterialExpressionEditorY=1416
+      MaterialExpressionGuid=9D498A02479F6000E9704382E0E5DC67
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_4" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionMultiply_4'"
+      A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Composite_Cloud_Layers:MaterialExpressionMaterialFunctionCall_27'",OutputIndex=1)
+      B=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Composite_Cloud_Layers:MaterialExpressionVectorParameter_1'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      MaterialExpressionEditorX=-1228
+      MaterialExpressionEditorY=1492
+      MaterialExpressionGuid=ECAC08AB41C8D8387FADE098CA956AA7
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+   End Object
+   Begin Object Name="MaterialExpressionNamedRerouteDeclaration_2" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionNamedRerouteDeclaration_2'"
+      Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Composite_Cloud_Layers:MaterialExpressionMaterialFunctionCall_27'")
+      Name="L1 Blend Alpha"
+      NodeColor=(R=1.000000,G=0.000000,B=0.515625,A=1.000000)
+      VariableGuid=862DE0FB4194D034C7495DB6D2FEBF14
+      MaterialExpressionEditorX=-1228
+      MaterialExpressionEditorY=1340
+      MaterialExpressionGuid=8558F07A46FADB2D7602F58FEB68104E
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+   End Object
+   Begin Object Name="MaterialExpressionNamedRerouteDeclaration_3" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionNamedRerouteDeclaration_3'"
+      Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Composite_Cloud_Layers:MaterialExpressionMultiply_1'")
+      Name="L1 Color"
+      NodeColor=(R=0.000000,G=0.835937,B=1.000000,A=1.000000)
+      VariableGuid=B931A4CD4CBE67C353E78A9277FCC088
+      MaterialExpressionEditorX=-924
+      MaterialExpressionEditorY=1492
+      MaterialExpressionGuid=0B7269214B2809F099346395DC52E720
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+   End Object
+   Begin Object Name="MaterialExpressionNamedRerouteDeclaration_4" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionNamedRerouteDeclaration_4'"
+      Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Composite_Cloud_Layers:MaterialExpressionMaterialFunctionCall_26'")
+      Name="L2 Blend Alpha"
+      NodeColor=(R=1.000000,G=0.843750,B=0.000000,A=1.000000)
+      VariableGuid=0B45726C4D513B6E94CF85B5608A0590
+      MaterialExpressionEditorX=32
+      MaterialExpressionEditorY=1292
+      MaterialExpressionGuid=64BD22394F6F7171FC15BCBE3632DD1A
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+   End Object
+   Begin Object Name="MaterialExpressionNamedRerouteDeclaration_5" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionNamedRerouteDeclaration_5'"
+      Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Composite_Cloud_Layers:MaterialExpressionMultiply_0'")
+      Name="L2 Color"
+      NodeColor=(R=0.523438,G=0.000000,B=1.000000,A=1.000000)
+      VariableGuid=5A303AC84B176342C4B4038C847BE600
+      MaterialExpressionEditorX=128
+      MaterialExpressionEditorY=1492
+      MaterialExpressionGuid=0C86B43B45425D8CEC6AF38D7557F926
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+   End Object
+   Begin Object Name="MaterialExpressionNamedRerouteUsage_2" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionNamedRerouteUsage_2'"
+      Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Composite_Cloud_Layers:MaterialExpressionNamedRerouteDeclaration_3'"
+      DeclarationGuid=B931A4CD4CBE67C353E78A9277FCC088
+      MaterialExpressionEditorX=-1376
+      MaterialExpressionEditorY=2203
+      MaterialExpressionGuid=3CC15C0746F11A8C46621AA6515A4754
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+   End Object
+   Begin Object Name="MaterialExpressionNamedRerouteUsage_3" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionNamedRerouteUsage_3'"
+      Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Composite_Cloud_Layers:MaterialExpressionNamedRerouteDeclaration_2'"
+      DeclarationGuid=862DE0FB4194D034C7495DB6D2FEBF14
+      MaterialExpressionEditorX=-1408
+      MaterialExpressionEditorY=2271
+      MaterialExpressionGuid=59C3567742FFF0D2E04F2BA1DABBDF3A
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+   End Object
+   Begin Object Name="MaterialExpressionNamedRerouteUsage_4" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionNamedRerouteUsage_4'"
+      Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Composite_Cloud_Layers:MaterialExpressionNamedRerouteDeclaration_5'"
+      DeclarationGuid=5A303AC84B176342C4B4038C847BE600
+      MaterialExpressionEditorX=-1184
+      MaterialExpressionEditorY=2324
+      MaterialExpressionGuid=13B4128047C2B5C84BCB53AFBD4C9D42
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+   End Object
+   Begin Object Name="MaterialExpressionNamedRerouteUsage_5" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionNamedRerouteUsage_5'"
+      Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Composite_Cloud_Layers:MaterialExpressionNamedRerouteDeclaration_4'"
+      DeclarationGuid=0B45726C4D513B6E94CF85B5608A0590
+      MaterialExpressionEditorX=-1220
+      MaterialExpressionEditorY=2392
+      MaterialExpressionGuid=41CCDFFF4C11C70BCABE508BCC95BB7E
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+   End Object
+   Begin Object Name="MaterialExpressionNamedRerouteUsage_6" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionNamedRerouteUsage_6'"
+      Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Composite_Cloud_Layers:MaterialExpressionNamedRerouteDeclaration_4'"
+      DeclarationGuid=0B45726C4D513B6E94CF85B5608A0590
+      MaterialExpressionEditorX=536
+      MaterialExpressionEditorY=1416
+      MaterialExpressionGuid=F6193D114E58FF4BF1728CA3E572CFD2
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+   End Object
+   Begin Object Name="MaterialExpressionNamedRerouteUsage_7" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionNamedRerouteUsage_7'"
+      Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Composite_Cloud_Layers:MaterialExpressionNamedRerouteDeclaration_2'"
+      DeclarationGuid=862DE0FB4194D034C7495DB6D2FEBF14
+      MaterialExpressionEditorX=528
+      MaterialExpressionEditorY=1488
+      MaterialExpressionGuid=E2A2556F412F09500E12C69CFDA82829
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+   End Object
+   Begin Object Name="MaterialExpressionReroute_0" ExportPath="/Script/Engine.MaterialExpressionReroute'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionReroute_0'"
+      Input=(Expression="/Script/Engine.MaterialExpressionReroute'Composite_Cloud_Layers:MaterialExpressionReroute_1'")
+      MaterialExpressionEditorX=-528
+      MaterialExpressionEditorY=2377
+      MaterialExpressionGuid=3EEC2D8A489521E2EDC27AB9EF46FE9D
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+   End Object
+   Begin Object Name="MaterialExpressionReroute_1" ExportPath="/Script/Engine.MaterialExpressionReroute'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionReroute_1'"
+      Input=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Composite_Cloud_Layers:MaterialExpressionLinearInterpolate_17'")
+      MaterialExpressionEditorX=-768
+      MaterialExpressionEditorY=2377
+      MaterialExpressionGuid=126CD1F04B9F5219D60FC49E6072237A
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+   End Object
+   Begin Object Name="MaterialExpressionReroute_2" ExportPath="/Script/Engine.MaterialExpressionReroute'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionReroute_2'"
+      Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Composite_Cloud_Layers:MaterialExpressionFunctionInput_0'")
+      MaterialExpressionEditorX=-1400
+      MaterialExpressionEditorY=1992
+      MaterialExpressionGuid=EB42B2134017D363AF618A9963349235
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+   End Object
+   Begin Object Name="MaterialExpressionReroute_3" ExportPath="/Script/Engine.MaterialExpressionReroute'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionReroute_3'"
+      Input=(Expression="/Script/Engine.MaterialExpressionReroute'Composite_Cloud_Layers:MaterialExpressionReroute_2'")
+      MaterialExpressionEditorX=372
+      MaterialExpressionEditorY=1983
+      MaterialExpressionGuid=4937A71D45D92671B8F3EEAC6AF75177
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_0" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionScalarParameter_0'"
+      DefaultValue=1.000000
+      ParameterName="Cloud Opacity"
+      ExpressionGUID=80A8BB6F4D1F1E545264A38AD96DDC7B
+      MaterialExpressionEditorX=588
+      MaterialExpressionEditorY=1600
+      MaterialExpressionGuid=C9D9422241CBE02B39EE39A04BECAAFA
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_4" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionScalarParameter_4'"
+      DefaultValue=1.000000
+      ParameterName="Cloud Opacity"
+      ExpressionGUID=93AB21F044619C9993963F8BCB64EC92
+      MaterialExpressionEditorX=276
+      MaterialExpressionEditorY=2243
+      MaterialExpressionGuid=1B57A29C473F57DD2322158F3E44A3A2
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+   End Object
+   Begin Object Name="MaterialExpressionShadingPathSwitch_1" ExportPath="/Script/Engine.MaterialExpressionShadingPathSwitch'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionShadingPathSwitch_1'"
+      Default=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Composite_Cloud_Layers:MaterialExpressionStaticSwitchParameter_0'")
+      Inputs(2)=(Expression="/Script/Engine.MaterialExpressionReroute'Composite_Cloud_Layers:MaterialExpressionReroute_0'")
+      MaterialExpressionEditorX=-440
+      MaterialExpressionEditorY=2164
+      MaterialExpressionGuid=C4EA477D4AC0E6BC2EF4BAB064631CCF
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+   End Object
+   Begin Object Name="MaterialExpressionStaticBool_2" ExportPath="/Script/Engine.MaterialExpressionStaticBool'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionStaticBool_2'"
+      Value=True
+      MaterialExpressionEditorX=-1713
+      MaterialExpressionEditorY=1327
+      MaterialExpressionGuid=F2A5D5AC420652FE0E1C7593C09F91D1
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+   End Object
+   Begin Object Name="MaterialExpressionStaticBool_3" ExportPath="/Script/Engine.MaterialExpressionStaticBool'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionStaticBool_3'"
+      MaterialExpressionEditorX=-464
+      MaterialExpressionEditorY=1280
+      MaterialExpressionGuid=F2A5D5AC420652FE0E1C7593C09F91D1
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+   End Object
+   Begin Object Name="MaterialExpressionStaticSwitchParameter_0" ExportPath="/Script/Engine.MaterialExpressionStaticSwitchParameter'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionStaticSwitchParameter_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Composite_Cloud_Layers:MaterialExpressionLinearInterpolate_17'")
+      B=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Composite_Cloud_Layers:MaterialExpressionLinearInterpolate_1'")
+      DefaultValue=True
+      ParameterName="One Cloud Layer"
+      ExpressionGUID=A23CE90F43603DF310E40B83468DAA06
+      SortPriority=5
+      MaterialExpressionEditorX=-804
+      MaterialExpressionEditorY=2152
+      MaterialExpressionGuid=4C9F43F144AB635AC74D3DB4D08AE27B
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_0" ExportPath="/Script/Engine.MaterialExpressionVectorParameter'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionVectorParameter_0'"
+      DefaultValue=(R=1.000000,G=1.000000,B=1.000000,A=0.000000)
+      ParameterName="2D Cloud Tint"
+      ExpressionGUID=D060B40B4127275E0FA3729DB09AE84F
+      MaterialExpressionEditorX=-380
+      MaterialExpressionEditorY=1452
+      MaterialExpressionGuid=6E081BF94DB0CE27EFDDB9907920C14A
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_1" ExportPath="/Script/Engine.MaterialExpressionVectorParameter'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionVectorParameter_1'"
+      DefaultValue=(R=1.000000,G=1.000000,B=1.000000,A=0.000000)
+      ParameterName="2D Cloud Tint"
+      ExpressionGUID=F6E31A0D42FAF20848951C96133EE67A
+      MaterialExpressionEditorX=-1508
+      MaterialExpressionEditorY=1512
+      MaterialExpressionGuid=6E081BF94DB0CE27EFDDB9907920C14A
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+   End Object
+   Begin Object Name="MaterialExpressionVertexColor_2" ExportPath="/Script/Engine.MaterialExpressionVertexColor'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:MaterialExpressionVertexColor_2'"
+      MaterialExpressionEditorX=-68
+      MaterialExpressionEditorY=2219
+      MaterialExpressionGuid=3A8E28EC43B4209CF9E02ABDFC8BF28A
+      Function="/Script/Engine.MaterialFunction'Composite_Cloud_Layers'"
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   DependentFunctionExpressionCandidates(0)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_26'"
+   DependentFunctionExpressionCandidates(1)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_27'"
+   DependentFunctionExpressionCandidates(2)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_0'"
+   DependentFunctionExpressionCandidates(3)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_1'"
+   DependentFunctionExpressionCandidates(4)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_32'"
+   DependentFunctionExpressionCandidates(5)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_33'"
+   EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'Composite_Cloud_LayersEditorOnlyData'"
+   StateId=2FF60D1D44C3D6B94354F8BD402EA3DD
+   CombinedInputTypes=4
+   CombinedOutputTypes=15
+   ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+End Object

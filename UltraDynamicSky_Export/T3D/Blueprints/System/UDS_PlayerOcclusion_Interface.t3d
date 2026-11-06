@@ -1,3 +1,860 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8f18b22fd70c4a6956d6f74ae220e1c55482bb77970b3d5c61828f11d5a60353
-size 141124
+Begin Object Class=/Script/Engine.Blueprint Name="UDS_PlayerOcclusion_Interface" ExportPath="/Script/Engine.Blueprint'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface'"
+   Begin Object Class=/Script/Engine.EdGraph Name="Get GPU DF Sample Count_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get GPU DF Sample Count_MERGED'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionResult Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get GPU DF Sample Count_MERGED.K2Node_FunctionResult_0'"
+      End Object
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get GPU DF Sample Count_MERGED.K2Node_FunctionEntry_0'"
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="Get GPU Distance Field Toggle_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get GPU Distance Field Toggle_MERGED'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionResult Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get GPU Distance Field Toggle_MERGED.K2Node_FunctionResult_0'"
+      End Object
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get GPU Distance Field Toggle_MERGED.K2Node_FunctionEntry_0'"
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="Get Query Occlusion Portals_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Query Occlusion Portals_MERGED'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionResult Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Query Occlusion Portals_MERGED.K2Node_FunctionResult_0'"
+      End Object
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Query Occlusion Portals_MERGED.K2Node_FunctionEntry_0'"
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="Get Current Camera Location_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Current Camera Location_MERGED'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionResult Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Current Camera Location_MERGED.K2Node_FunctionResult_0'"
+      End Object
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Current Camera Location_MERGED.K2Node_FunctionEntry_0'"
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="Get Occlusion Sampling Location_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Sampling Location_MERGED'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionResult Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Sampling Location_MERGED.K2Node_FunctionResult_0'"
+      End Object
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Sampling Location_MERGED.K2Node_FunctionEntry_0'"
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="Get Show Trace Debugs_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Show Trace Debugs_MERGED'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionResult Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Show Trace Debugs_MERGED.K2Node_FunctionResult_0'"
+      End Object
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Show Trace Debugs_MERGED.K2Node_FunctionEntry_0'"
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="Get Occlusion Trace Steps_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Trace Steps_MERGED'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionResult Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Trace Steps_MERGED.K2Node_FunctionResult_0'"
+      End Object
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Trace Steps_MERGED.K2Node_FunctionEntry_0'"
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="Get Occlusion Trace Max Distance_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Trace Max Distance_MERGED'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionResult Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Trace Max Distance_MERGED.K2Node_FunctionResult_0'"
+      End Object
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Trace Max Distance_MERGED.K2Node_FunctionEntry_0'"
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="Get Occlusion Min and Max Fraction_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Min and Max Fraction_MERGED'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionResult Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Min and Max Fraction_MERGED.K2Node_FunctionResult_0'"
+      End Object
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Min and Max Fraction_MERGED.K2Node_FunctionEntry_0'"
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="Get Occlusion Trace Channel_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Trace Channel_MERGED'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionResult Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Trace Channel_MERGED.K2Node_FunctionResult_0'"
+      End Object
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Trace Channel_MERGED.K2Node_FunctionEntry_0'"
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="Get Occlusion Update Period_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Update Period_MERGED'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionResult Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Update Period_MERGED.K2Node_FunctionResult_0'"
+      End Object
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Update Period_MERGED.K2Node_FunctionEntry_0'"
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="Occlusion Hard Update_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Occlusion Hard Update_MERGED'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionResult Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Occlusion Hard Update_MERGED.K2Node_FunctionResult_0'"
+      End Object
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Occlusion Hard Update_MERGED.K2Node_FunctionEntry_0'"
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="Finished Occlusion Cycle_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Finished Occlusion Cycle_MERGED'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionResult Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Finished Occlusion Cycle_MERGED.K2Node_FunctionResult_0'"
+      End Object
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Finished Occlusion Cycle_MERGED.K2Node_FunctionEntry_0'"
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="Get Occlusion Mode_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Mode_MERGED'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionResult Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Mode_MERGED.K2Node_FunctionResult_0'"
+      End Object
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Mode_MERGED.K2Node_FunctionEntry_0'"
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="Get GPU DF Sample Count" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get GPU DF Sample Count'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get GPU DF Sample Count.K2Node_FunctionEntry_0'"
+      End Object
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionResult Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get GPU DF Sample Count.K2Node_FunctionResult_0'"
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="Get GPU Distance Field Toggle" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get GPU Distance Field Toggle'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get GPU Distance Field Toggle.K2Node_FunctionEntry_0'"
+      End Object
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionResult Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get GPU Distance Field Toggle.K2Node_FunctionResult_0'"
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="Get Query Occlusion Portals" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Query Occlusion Portals'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Query Occlusion Portals.K2Node_FunctionEntry_0'"
+      End Object
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionResult Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Query Occlusion Portals.K2Node_FunctionResult_0'"
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="Get Current Camera Location" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Current Camera Location'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Current Camera Location.K2Node_FunctionEntry_0'"
+      End Object
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionResult Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Current Camera Location.K2Node_FunctionResult_0'"
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="Get Occlusion Sampling Location" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Sampling Location'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Sampling Location.K2Node_FunctionEntry_0'"
+      End Object
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionResult Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Sampling Location.K2Node_FunctionResult_0'"
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="Get Show Trace Debugs" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Show Trace Debugs'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Show Trace Debugs.K2Node_FunctionEntry_0'"
+      End Object
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionResult Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Show Trace Debugs.K2Node_FunctionResult_0'"
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="Get Occlusion Trace Steps" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Trace Steps'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Trace Steps.K2Node_FunctionEntry_0'"
+      End Object
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionResult Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Trace Steps.K2Node_FunctionResult_0'"
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="Get Occlusion Trace Max Distance" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Trace Max Distance'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Trace Max Distance.K2Node_FunctionEntry_0'"
+      End Object
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionResult Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Trace Max Distance.K2Node_FunctionResult_0'"
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="Get Occlusion Min and Max Fraction" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Min and Max Fraction'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionResult Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Min and Max Fraction.K2Node_FunctionResult_0'"
+      End Object
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Min and Max Fraction.K2Node_FunctionEntry_0'"
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="Get Occlusion Trace Channel" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Trace Channel'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Trace Channel.K2Node_FunctionEntry_0'"
+      End Object
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionResult Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Trace Channel.K2Node_FunctionResult_0'"
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="Get Occlusion Update Period" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Update Period'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Update Period.K2Node_FunctionEntry_0'"
+      End Object
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionResult Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Update Period.K2Node_FunctionResult_0'"
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="Occlusion Hard Update" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Occlusion Hard Update'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionResult Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Occlusion Hard Update.K2Node_FunctionResult_0'"
+      End Object
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Occlusion Hard Update.K2Node_FunctionEntry_0'"
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="Finished Occlusion Cycle" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Finished Occlusion Cycle'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionResult Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Finished Occlusion Cycle.K2Node_FunctionResult_0'"
+      End Object
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Finished Occlusion Cycle.K2Node_FunctionEntry_0'"
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="Get Occlusion Mode" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Mode'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionResult Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Mode.K2Node_FunctionResult_0'"
+      End Object
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Mode.K2Node_FunctionEntry_0'"
+      End Object
+   End Object
+   Begin Object Name="Get GPU DF Sample Count_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get GPU DF Sample Count_MERGED'"
+      Begin Object Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get GPU DF Sample Count_MERGED.K2Node_FunctionResult_0'"
+         FunctionReference=(MemberName="Get GPU DF Sample Count")
+         bIsEditable=True
+         NodePosX=256
+         NodeGuid=298C90A04F75A92AEDFC089F7AD29B3A
+         CustomProperties Pin (PinId=3D33F6ED41F4D606C8F1CC9667AB1966,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionEntry_0 CE6BFD9C4CFBD1B8200B1CA71D1D9FDB,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=583A297E4FE50AEE4422EE910FB47A82,PinName="Out",PinType.PinCategory="int",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue="0",AutogeneratedDefaultValue="0",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties UserDefinedPin (PinName="Out",PinType=(PinCategory="int"),DesiredPinDirection=EGPD_Input,PinDefaultValue="0")
+      End Object
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get GPU DF Sample Count_MERGED.K2Node_FunctionEntry_0'"
+         MetaData=(Category=NSLOCTEXT("", "5A8E4CD749AD156C433505B15326099C", "Player Occlusion"))
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Get GPU DF Sample Count")
+         bIsEditable=True
+         NodeGuid=DE7FD58A4F4F9391E4F6298E7C41A20D
+         CustomProperties Pin (PinId=CE6BFD9C4CFBD1B8200B1CA71D1D9FDB,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionResult_0 3D33F6ED41F4D606C8F1CC9667AB1966,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+      GraphGuid=AE5CD3924C9233201FC9B7BD76EA6A3A
+   End Object
+   Begin Object Name="Get GPU Distance Field Toggle_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get GPU Distance Field Toggle_MERGED'"
+      Begin Object Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get GPU Distance Field Toggle_MERGED.K2Node_FunctionResult_0'"
+         FunctionReference=(MemberName="Get GPU Distance Field Toggle")
+         bIsEditable=True
+         NodePosX=256
+         NodeGuid=0029DE894A877E1862DC4FA6FD3B91F6
+         CustomProperties Pin (PinId=AC70CC4A4681F5A8E2EB7B924F68D9FB,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionEntry_0 ED80E48A4A800C97474652AFAE8E757F,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=88F3A75D4E9BCF19D373B58D441F8280,PinName="Out",PinType.PinCategory="bool",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue="false",AutogeneratedDefaultValue="false",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties UserDefinedPin (PinName="Out",PinType=(PinCategory="bool"),DesiredPinDirection=EGPD_Input,PinDefaultValue="false")
+      End Object
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get GPU Distance Field Toggle_MERGED.K2Node_FunctionEntry_0'"
+         MetaData=(Category=NSLOCTEXT("", "10ABAB9540420DFDFBFAB88B2C9BCCF0", "Player Occlusion"))
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Get GPU Distance Field Toggle")
+         bIsEditable=True
+         NodeGuid=359BA9A945DC5EEDEBDDE1A25490541B
+         CustomProperties Pin (PinId=ED80E48A4A800C97474652AFAE8E757F,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionResult_0 AC70CC4A4681F5A8E2EB7B924F68D9FB,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+      GraphGuid=D26487E9453024854EE2F7BD4F09F011
+   End Object
+   Begin Object Name="Get Query Occlusion Portals_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Query Occlusion Portals_MERGED'"
+      Begin Object Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Query Occlusion Portals_MERGED.K2Node_FunctionResult_0'"
+         FunctionReference=(MemberName="Get Query Occlusion Portals")
+         bIsEditable=True
+         NodePosX=256
+         NodeGuid=DD44D73340C7AEA428FF9DA28BC87F19
+         CustomProperties Pin (PinId=EEC520ED40D3B6DAAC87F3A325A23649,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionEntry_0 F3C4503C4D4ABB6450E25FBED85C9E84,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=FCB6E941499F2CA8A875278E4DE4803C,PinName="Out",PinType.PinCategory="bool",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue="false",AutogeneratedDefaultValue="false",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties UserDefinedPin (PinName="Out",PinType=(PinCategory="bool"),DesiredPinDirection=EGPD_Input,PinDefaultValue="false")
+      End Object
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Query Occlusion Portals_MERGED.K2Node_FunctionEntry_0'"
+         MetaData=(Category=NSLOCTEXT("", "59040693436CBAA7EC7BB4AE387C963E", "Player Occlusion"))
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Get Query Occlusion Portals")
+         bIsEditable=True
+         NodeGuid=9BDC7A7E4DF9A6BF7063A5946E64A5C4
+         CustomProperties Pin (PinId=F3C4503C4D4ABB6450E25FBED85C9E84,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionResult_0 EEC520ED40D3B6DAAC87F3A325A23649,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+      GraphGuid=E68AA1D34963BDC23E99F5A63636D381
+   End Object
+   Begin Object Name="Get Current Camera Location_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Current Camera Location_MERGED'"
+      Begin Object Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Current Camera Location_MERGED.K2Node_FunctionResult_0'"
+         FunctionReference=(MemberName="Get Current Camera Location")
+         bIsEditable=True
+         NodePosX=256
+         NodeGuid=A31B2039422744067CF48398E274F00B
+         CustomProperties Pin (PinId=3B93C01949CB39AF2D2F0AB879567316,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionEntry_0 548641494D13ABEFB4700E8AD1FBB39C,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=6D8B733F4934ADEAC90352A08841E32C,PinName="Out",PinType.PinCategory="struct",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/CoreUObject.ScriptStruct'/Script/CoreUObject.Vector'",PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue="0, 0, 0",AutogeneratedDefaultValue="0, 0, 0",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties UserDefinedPin (PinName="Out",PinType=(PinCategory="struct",PinSubCategoryObject="/Script/CoreUObject.ScriptStruct'/Script/CoreUObject.Vector'"),DesiredPinDirection=EGPD_Input,PinDefaultValue="0, 0, 0")
+      End Object
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Current Camera Location_MERGED.K2Node_FunctionEntry_0'"
+         MetaData=(Category=NSLOCTEXT("", "404833574521EA569B6E40BF2FF9680F", "Player Occlusion"))
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Get Current Camera Location")
+         bIsEditable=True
+         NodeGuid=800854CD42DA705ABF4FACB58EF3F098
+         CustomProperties Pin (PinId=548641494D13ABEFB4700E8AD1FBB39C,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionResult_0 3B93C01949CB39AF2D2F0AB879567316,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+      GraphGuid=EB0DCED04E5E8DC2B48055A3D7BFC61E
+   End Object
+   Begin Object Name="Get Occlusion Sampling Location_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Sampling Location_MERGED'"
+      Begin Object Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Sampling Location_MERGED.K2Node_FunctionResult_0'"
+         FunctionReference=(MemberName="Get Occlusion Sampling Location")
+         bIsEditable=True
+         NodePosX=256
+         NodeGuid=5E73DE0B48AB72FAD1E1BD8DDF80F584
+         CustomProperties Pin (PinId=41DABE6A4D0307C1417B419038DF6608,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionEntry_0 A244507744ACADECE0147883B07EE21A,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=8B8F9D304B086507CDA32EB433676C9F,PinName="Out",PinType.PinCategory="byte",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/Engine.UserDefinedEnum'/Game/UltraDynamicSky/Blueprints/Enum/UDS_OcclusionSamplingLocation.UDS_OcclusionSamplingLocation'",PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue="NewEnumerator0",AutogeneratedDefaultValue="NewEnumerator0",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties UserDefinedPin (PinName="Out",PinType=(PinCategory="byte",PinSubCategoryObject="/Script/Engine.UserDefinedEnum'/Game/UltraDynamicSky/Blueprints/Enum/UDS_OcclusionSamplingLocation.UDS_OcclusionSamplingLocation'"),DesiredPinDirection=EGPD_Input,PinDefaultValue="NewEnumerator0")
+      End Object
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Sampling Location_MERGED.K2Node_FunctionEntry_0'"
+         MetaData=(Category=NSLOCTEXT("", "94071CA848F546871A577690B0E48447", "Player Occlusion"))
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Get Occlusion Sampling Location")
+         bIsEditable=True
+         NodeGuid=63F8F60A43AE246EE5DE8EB4DD23735D
+         CustomProperties Pin (PinId=A244507744ACADECE0147883B07EE21A,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionResult_0 41DABE6A4D0307C1417B419038DF6608,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+      GraphGuid=AB57A5904E769A037CA671BBDC24C2B9
+   End Object
+   Begin Object Name="Get Show Trace Debugs_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Show Trace Debugs_MERGED'"
+      Begin Object Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Show Trace Debugs_MERGED.K2Node_FunctionResult_0'"
+         FunctionReference=(MemberName="Get Show Trace Debugs")
+         bIsEditable=True
+         NodePosX=256
+         NodeGuid=09F522A94E9ADDB5F90A8E9576B3D276
+         CustomProperties Pin (PinId=5ADA559B4ACBFCE2547A0E8FB4A075DD,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionEntry_0 2E8D966A47E56418EF250F98726DD4A4,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=5DB32733462A7841AF40C6BD2755B4F1,PinName="Out",PinType.PinCategory="bool",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue="false",AutogeneratedDefaultValue="false",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties UserDefinedPin (PinName="Out",PinType=(PinCategory="bool"),DesiredPinDirection=EGPD_Input,PinDefaultValue="false")
+      End Object
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Show Trace Debugs_MERGED.K2Node_FunctionEntry_0'"
+         MetaData=(Category=NSLOCTEXT("", "518819794BBBAAF057CEF5B0561E8835", "Player Occlusion"))
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Get Show Trace Debugs")
+         bIsEditable=True
+         NodeGuid=F11EC4B945F2EAA21475EB9DCDC9ABCA
+         CustomProperties Pin (PinId=2E8D966A47E56418EF250F98726DD4A4,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionResult_0 5ADA559B4ACBFCE2547A0E8FB4A075DD,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+      GraphGuid=ED8FC70845F3041E2252C2A32A3B28A5
+   End Object
+   Begin Object Name="Get Occlusion Trace Steps_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Trace Steps_MERGED'"
+      Begin Object Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Trace Steps_MERGED.K2Node_FunctionResult_0'"
+         FunctionReference=(MemberName="Get Occlusion Trace Steps")
+         bIsEditable=True
+         NodePosX=256
+         NodeGuid=837D90D04B4DF273879AD199C8469B19
+         CustomProperties Pin (PinId=C49265D14B9F22956381E28D499FB45F,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionEntry_0 A0A50E0A493C3F1ABE38FB8DC5FA6F10,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=85F20F3B4593411745381E977E086449,PinName="Vertical",PinType.PinCategory="int",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue="0",AutogeneratedDefaultValue="0",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=DD3A0E0F463F7766433A088F1E3D713F,PinName="Horizontal",PinType.PinCategory="int",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue="0",AutogeneratedDefaultValue="0",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties UserDefinedPin (PinName="Vertical",PinType=(PinCategory="int"),DesiredPinDirection=EGPD_Input,PinDefaultValue="0")
+         CustomProperties UserDefinedPin (PinName="Horizontal",PinType=(PinCategory="int"),DesiredPinDirection=EGPD_Input,PinDefaultValue="0")
+      End Object
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Trace Steps_MERGED.K2Node_FunctionEntry_0'"
+         MetaData=(Category=NSLOCTEXT("", "A50B90C74127EA84AD186C95BE6A868C", "Player Occlusion"))
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Get Occlusion Trace Steps")
+         bIsEditable=True
+         NodeGuid=7532B4E5434FE6285A416BB25534985A
+         CustomProperties Pin (PinId=A0A50E0A493C3F1ABE38FB8DC5FA6F10,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionResult_0 C49265D14B9F22956381E28D499FB45F,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+      GraphGuid=097537A640CB8200DE5B8DB2A9FCAB1E
+   End Object
+   Begin Object Name="Get Occlusion Trace Max Distance_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Trace Max Distance_MERGED'"
+      Begin Object Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Trace Max Distance_MERGED.K2Node_FunctionResult_0'"
+         FunctionReference=(MemberName="Get Occlusion Trace Max Distance")
+         bIsEditable=True
+         NodePosX=256
+         NodeGuid=A4B7BCE14AACE090918443A2A9B4625C
+         CustomProperties Pin (PinId=2068500645F04C8A4322EC8E2A29F1CD,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionEntry_0 0079999549CC6368BF4FE197A8D50B7F,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=8FBE576C493AA8639ECCD09F14DE02A7,PinName="Out",PinType.PinCategory="real",PinType.PinSubCategory="double",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue="0.0",AutogeneratedDefaultValue="0.0",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties UserDefinedPin (PinName="Out",PinType=(PinCategory="real",PinSubCategory="double"),DesiredPinDirection=EGPD_Input,PinDefaultValue="0.0")
+      End Object
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Trace Max Distance_MERGED.K2Node_FunctionEntry_0'"
+         MetaData=(Category=NSLOCTEXT("", "A65E52DB4371D66907752487CBA50624", "Player Occlusion"))
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Get Occlusion Trace Max Distance")
+         bIsEditable=True
+         NodeGuid=DB7529BC4E67D0418CFAB49510899EAE
+         CustomProperties Pin (PinId=0079999549CC6368BF4FE197A8D50B7F,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionResult_0 2068500645F04C8A4322EC8E2A29F1CD,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+      GraphGuid=F5654F4A4427CD22AFFA2CB61BB4DDD0
+   End Object
+   Begin Object Name="Get Occlusion Min and Max Fraction_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Min and Max Fraction_MERGED'"
+      Begin Object Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Min and Max Fraction_MERGED.K2Node_FunctionResult_0'"
+         FunctionReference=(MemberName="Get Occlusion Min and Max Fraction")
+         bIsEditable=True
+         NodePosX=256
+         NodeGuid=D47158E144B73F59E9F94DA8D7BB0EDB
+         CustomProperties Pin (PinId=66DA9186464772F8C12E678230259BF1,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionEntry_0 5342EBC04B43C720CF1B498118925A57,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=7D5F3C2B47E698584477CCB1E488CF0A,PinName="Min",PinType.PinCategory="real",PinType.PinSubCategory="double",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue="0.0",AutogeneratedDefaultValue="0.0",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=59C29E0742E75443A9F413AFD1D2FFDA,PinName="Max",PinType.PinCategory="real",PinType.PinSubCategory="double",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue="0.0",AutogeneratedDefaultValue="0.0",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties UserDefinedPin (PinName="Min",PinType=(PinCategory="real",PinSubCategory="double"),DesiredPinDirection=EGPD_Input,PinDefaultValue="0.0")
+         CustomProperties UserDefinedPin (PinName="Max",PinType=(PinCategory="real",PinSubCategory="double"),DesiredPinDirection=EGPD_Input,PinDefaultValue="0.0")
+      End Object
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Min and Max Fraction_MERGED.K2Node_FunctionEntry_0'"
+         MetaData=(Category=NSLOCTEXT("", "2A9F876D455D97DC817B32AAAEF9FD2D", "Player Occlusion"))
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Get Occlusion Min and Max Fraction")
+         bIsEditable=True
+         NodeGuid=D3ED7C2640583BA4A792CFB84FA2C70C
+         CustomProperties Pin (PinId=5342EBC04B43C720CF1B498118925A57,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionResult_0 66DA9186464772F8C12E678230259BF1,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+      GraphGuid=3D9F40D24FC19457440DFAA4F18E8A63
+   End Object
+   Begin Object Name="Get Occlusion Trace Channel_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Trace Channel_MERGED'"
+      Begin Object Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Trace Channel_MERGED.K2Node_FunctionResult_0'"
+         FunctionReference=(MemberName="Get Occlusion Trace Channel")
+         bIsEditable=True
+         NodePosX=256
+         NodeGuid=F80E23114F72F4FB6394DAA3EDD6E951
+         CustomProperties Pin (PinId=5D1CA1BA4A20A6B6E6B8FB993DDB5575,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionEntry_0 AD98173B40077FF33A41BCB8E563754D,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=312549DA428565340759D4BAC6900EC5,PinName="Out",PinType.PinCategory="byte",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/CoreUObject.Enum'/Script/Engine.ETraceTypeQuery'",PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue="TraceTypeQuery1",AutogeneratedDefaultValue="TraceTypeQuery1",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties UserDefinedPin (PinName="Out",PinType=(PinCategory="byte",PinSubCategoryObject="/Script/CoreUObject.Enum'/Script/Engine.ETraceTypeQuery'"),DesiredPinDirection=EGPD_Input,PinDefaultValue="TraceTypeQuery1")
+      End Object
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Trace Channel_MERGED.K2Node_FunctionEntry_0'"
+         MetaData=(Category=NSLOCTEXT("", "4FCB95AA40585834AC6F33B79355535C", "Player Occlusion"))
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Get Occlusion Trace Channel")
+         bIsEditable=True
+         NodeGuid=39FFF79E4E92150A601762A5E50C75A0
+         CustomProperties Pin (PinId=AD98173B40077FF33A41BCB8E563754D,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionResult_0 5D1CA1BA4A20A6B6E6B8FB993DDB5575,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+      GraphGuid=6256C09B4D9F675254921B876E37FE90
+   End Object
+   Begin Object Name="Get Occlusion Update Period_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Update Period_MERGED'"
+      Begin Object Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Update Period_MERGED.K2Node_FunctionResult_0'"
+         FunctionReference=(MemberName="Get Occlusion Update Period")
+         bIsEditable=True
+         NodePosX=256
+         NodeGuid=AACF8CA947A8078C827145B6BDDB8413
+         CustomProperties Pin (PinId=DB5E91D84D0439319EF0B583F2FFC95E,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionEntry_0 138B7DFC4E528A4DAC2148BE8F1826FA,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=EB5BE435437467E03042D5B20E90A35E,PinName="Out",PinType.PinCategory="real",PinType.PinSubCategory="double",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue="0.0",AutogeneratedDefaultValue="0.0",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties UserDefinedPin (PinName="Out",PinType=(PinCategory="real",PinSubCategory="double"),DesiredPinDirection=EGPD_Input,PinDefaultValue="0.0")
+      End Object
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Update Period_MERGED.K2Node_FunctionEntry_0'"
+         MetaData=(Category=NSLOCTEXT("", "2E8A2F7E44607923A27BEFA7CADC460F", "Player Occlusion"))
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Get Occlusion Update Period")
+         bIsEditable=True
+         NodeGuid=AAB99D6D4FF596E96CC4A3B180C4853C
+         CustomProperties Pin (PinId=138B7DFC4E528A4DAC2148BE8F1826FA,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionResult_0 DB5E91D84D0439319EF0B583F2FFC95E,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+      GraphGuid=39EFB1954B89D4C380128284BE784924
+   End Object
+   Begin Object Name="Occlusion Hard Update_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Occlusion Hard Update_MERGED'"
+      Begin Object Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Occlusion Hard Update_MERGED.K2Node_FunctionResult_0'"
+         FunctionReference=(MemberName="Occlusion Hard Update")
+         bIsEditable=True
+         NodePosX=256
+         NodeGuid=D2C5A3F04B61637EDC45FEBD3785FDA0
+         CustomProperties Pin (PinId=03B63D8E4ED52BFE47030CA91084C1E1,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionEntry_0 D57488D446BCD52BF3EDC3A4C74CE17B,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=F9421D4A43A9B47C40D69A8D70C31CE3,PinName="Success",PinType.PinCategory="bool",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue="false",AutogeneratedDefaultValue="false",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties UserDefinedPin (PinName="Success",PinType=(PinCategory="bool"),DesiredPinDirection=EGPD_Input,PinDefaultValue="false")
+      End Object
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Occlusion Hard Update_MERGED.K2Node_FunctionEntry_0'"
+         MetaData=(Category=NSLOCTEXT("", "D40D096744F9A7DC6909B5B5D233B348", "Player Occlusion"))
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Occlusion Hard Update")
+         bIsEditable=True
+         NodeGuid=BBB522DC4E47AD9367BD13967CD49D83
+         CustomProperties Pin (PinId=D57488D446BCD52BF3EDC3A4C74CE17B,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionResult_0 03B63D8E4ED52BFE47030CA91084C1E1,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+      GraphGuid=D6487EC34F5F3881AA1DFA94B3312CBB
+   End Object
+   Begin Object Name="Finished Occlusion Cycle_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Finished Occlusion Cycle_MERGED'"
+      Begin Object Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Finished Occlusion Cycle_MERGED.K2Node_FunctionResult_0'"
+         FunctionReference=(MemberName="Finished Occlusion Cycle")
+         bIsEditable=True
+         NodePosX=256
+         NodeGuid=0592B5A04B7A9E98765D108A8C9FB9B8
+         CustomProperties Pin (PinId=AA899A0143077325D7D2CEA56C946964,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionEntry_0 6B774954441F90092ADD3BAAF354A7F3,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=AFE0EB844FA58F65856204944123290E,PinName="Success",PinType.PinCategory="bool",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue="false",AutogeneratedDefaultValue="false",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties UserDefinedPin (PinName="Success",PinType=(PinCategory="bool"),DesiredPinDirection=EGPD_Input,PinDefaultValue="false")
+      End Object
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Finished Occlusion Cycle_MERGED.K2Node_FunctionEntry_0'"
+         MetaData=(Category=NSLOCTEXT("", "6C5C798F47115904AA7540A568EABCA5", "Player Occlusion"))
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Finished Occlusion Cycle")
+         bIsEditable=True
+         NodeGuid=4D595F0842597DC64800A1A4256477D8
+         CustomProperties Pin (PinId=6B774954441F90092ADD3BAAF354A7F3,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionResult_0 AA899A0143077325D7D2CEA56C946964,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+      GraphGuid=2938BC094F29C4A74CB531A012EE8B87
+   End Object
+   Begin Object Name="Get Occlusion Mode_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Mode_MERGED'"
+      Begin Object Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Mode_MERGED.K2Node_FunctionResult_0'"
+         FunctionReference=(MemberName="Get Occlusion Mode")
+         bIsEditable=True
+         NodePosX=256
+         NodeGuid=0E22C02043D09924B7F30BBD3C16F1F1
+         CustomProperties Pin (PinId=AAC4AE9140C1E6371A49C59C4DF489A1,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionEntry_0 AE24A88F4B3761406BE74DA9E2AA83B7,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=7CC8D4284101FBD401A69D9D9DC36741,PinName="Out",PinType.PinCategory="byte",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/Engine.UserDefinedEnum'/Game/UltraDynamicSky/Blueprints/Enum/UDS_Occlusion_Mode.UDS_Occlusion_Mode'",PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue="NewEnumerator0",AutogeneratedDefaultValue="NewEnumerator0",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties UserDefinedPin (PinName="Out",PinType=(PinCategory="byte",PinSubCategoryObject="/Script/Engine.UserDefinedEnum'/Game/UltraDynamicSky/Blueprints/Enum/UDS_Occlusion_Mode.UDS_Occlusion_Mode'"),DesiredPinDirection=EGPD_Input,PinDefaultValue="NewEnumerator0")
+      End Object
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Mode_MERGED.K2Node_FunctionEntry_0'"
+         MetaData=(Category=NSLOCTEXT("", "914D84DF483DAD73EDFF76ACC411AC0C", "Player Occlusion"))
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Get Occlusion Mode")
+         bIsEditable=True
+         NodeGuid=048E416146AAE1A8F24B4BB4F928C26B
+         CustomProperties Pin (PinId=AE24A88F4B3761406BE74DA9E2AA83B7,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionResult_0 AAC4AE9140C1E6371A49C59C4DF489A1,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+      GraphGuid=7599953840CCB9098896649E2D64633C
+   End Object
+   Begin Object Name="Get GPU DF Sample Count" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get GPU DF Sample Count'"
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get GPU DF Sample Count.K2Node_FunctionEntry_0'"
+         MetaData=(Category=NSLOCTEXT("", "5A8E4CD749AD156C433505B15326099C", "Player Occlusion"))
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Get GPU DF Sample Count")
+         bIsEditable=True
+         NodeGuid=DE7FD58A4F4F9391E4F6298E7C41A20D
+         CustomProperties Pin (PinId=CE6BFD9C4CFBD1B8200B1CA71D1D9FDB,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionResult_0 3D33F6ED41F4D606C8F1CC9667AB1966,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Begin Object Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get GPU DF Sample Count.K2Node_FunctionResult_0'"
+         FunctionReference=(MemberName="Get GPU DF Sample Count")
+         bIsEditable=True
+         NodePosX=256
+         NodeGuid=298C90A04F75A92AEDFC089F7AD29B3A
+         CustomProperties Pin (PinId=3D33F6ED41F4D606C8F1CC9667AB1966,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionEntry_0 CE6BFD9C4CFBD1B8200B1CA71D1D9FDB,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=583A297E4FE50AEE4422EE910FB47A82,PinName="Out",PinType.PinCategory="int",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue="0",AutogeneratedDefaultValue="0",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties UserDefinedPin (PinName="Out",PinType=(PinCategory="int"),DesiredPinDirection=EGPD_Input,PinDefaultValue="0")
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+      GraphGuid=AE5CD3924C9233201FC9B7BD76EA6A3A
+   End Object
+   Begin Object Name="Get GPU Distance Field Toggle" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get GPU Distance Field Toggle'"
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get GPU Distance Field Toggle.K2Node_FunctionEntry_0'"
+         MetaData=(Category=NSLOCTEXT("", "10ABAB9540420DFDFBFAB88B2C9BCCF0", "Player Occlusion"))
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Get GPU Distance Field Toggle")
+         bIsEditable=True
+         NodeGuid=359BA9A945DC5EEDEBDDE1A25490541B
+         CustomProperties Pin (PinId=ED80E48A4A800C97474652AFAE8E757F,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionResult_0 AC70CC4A4681F5A8E2EB7B924F68D9FB,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Begin Object Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get GPU Distance Field Toggle.K2Node_FunctionResult_0'"
+         FunctionReference=(MemberName="Get GPU Distance Field Toggle")
+         bIsEditable=True
+         NodePosX=256
+         NodeGuid=0029DE894A877E1862DC4FA6FD3B91F6
+         CustomProperties Pin (PinId=AC70CC4A4681F5A8E2EB7B924F68D9FB,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionEntry_0 ED80E48A4A800C97474652AFAE8E757F,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=88F3A75D4E9BCF19D373B58D441F8280,PinName="Out",PinType.PinCategory="bool",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue="false",AutogeneratedDefaultValue="false",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties UserDefinedPin (PinName="Out",PinType=(PinCategory="bool"),DesiredPinDirection=EGPD_Input,PinDefaultValue="false")
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+      GraphGuid=D26487E9453024854EE2F7BD4F09F011
+   End Object
+   Begin Object Name="Get Query Occlusion Portals" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Query Occlusion Portals'"
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Query Occlusion Portals.K2Node_FunctionEntry_0'"
+         MetaData=(Category=NSLOCTEXT("", "59040693436CBAA7EC7BB4AE387C963E", "Player Occlusion"))
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Get Query Occlusion Portals")
+         bIsEditable=True
+         NodeGuid=9BDC7A7E4DF9A6BF7063A5946E64A5C4
+         CustomProperties Pin (PinId=F3C4503C4D4ABB6450E25FBED85C9E84,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionResult_0 EEC520ED40D3B6DAAC87F3A325A23649,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Begin Object Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Query Occlusion Portals.K2Node_FunctionResult_0'"
+         FunctionReference=(MemberName="Get Query Occlusion Portals")
+         bIsEditable=True
+         NodePosX=256
+         NodeGuid=DD44D73340C7AEA428FF9DA28BC87F19
+         CustomProperties Pin (PinId=EEC520ED40D3B6DAAC87F3A325A23649,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionEntry_0 F3C4503C4D4ABB6450E25FBED85C9E84,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=FCB6E941499F2CA8A875278E4DE4803C,PinName="Out",PinType.PinCategory="bool",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue="false",AutogeneratedDefaultValue="false",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties UserDefinedPin (PinName="Out",PinType=(PinCategory="bool"),DesiredPinDirection=EGPD_Input,PinDefaultValue="false")
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+      GraphGuid=E68AA1D34963BDC23E99F5A63636D381
+   End Object
+   Begin Object Name="Get Current Camera Location" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Current Camera Location'"
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Current Camera Location.K2Node_FunctionEntry_0'"
+         MetaData=(Category=NSLOCTEXT("", "404833574521EA569B6E40BF2FF9680F", "Player Occlusion"))
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Get Current Camera Location")
+         bIsEditable=True
+         NodeGuid=800854CD42DA705ABF4FACB58EF3F098
+         CustomProperties Pin (PinId=548641494D13ABEFB4700E8AD1FBB39C,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionResult_0 3B93C01949CB39AF2D2F0AB879567316,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Begin Object Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Current Camera Location.K2Node_FunctionResult_0'"
+         FunctionReference=(MemberName="Get Current Camera Location")
+         bIsEditable=True
+         NodePosX=256
+         NodeGuid=A31B2039422744067CF48398E274F00B
+         CustomProperties Pin (PinId=3B93C01949CB39AF2D2F0AB879567316,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionEntry_0 548641494D13ABEFB4700E8AD1FBB39C,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=6D8B733F4934ADEAC90352A08841E32C,PinName="Out",PinType.PinCategory="struct",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/CoreUObject.ScriptStruct'/Script/CoreUObject.Vector'",PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue="0, 0, 0",AutogeneratedDefaultValue="0, 0, 0",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties UserDefinedPin (PinName="Out",PinType=(PinCategory="struct",PinSubCategoryObject="/Script/CoreUObject.ScriptStruct'/Script/CoreUObject.Vector'"),DesiredPinDirection=EGPD_Input,PinDefaultValue="0, 0, 0")
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+      GraphGuid=EB0DCED04E5E8DC2B48055A3D7BFC61E
+   End Object
+   Begin Object Name="Get Occlusion Sampling Location" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Sampling Location'"
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Sampling Location.K2Node_FunctionEntry_0'"
+         MetaData=(Category=NSLOCTEXT("", "94071CA848F546871A577690B0E48447", "Player Occlusion"))
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Get Occlusion Sampling Location")
+         bIsEditable=True
+         NodeGuid=63F8F60A43AE246EE5DE8EB4DD23735D
+         CustomProperties Pin (PinId=A244507744ACADECE0147883B07EE21A,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionResult_0 41DABE6A4D0307C1417B419038DF6608,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Begin Object Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Sampling Location.K2Node_FunctionResult_0'"
+         FunctionReference=(MemberName="Get Occlusion Sampling Location")
+         bIsEditable=True
+         NodePosX=256
+         NodeGuid=5E73DE0B48AB72FAD1E1BD8DDF80F584
+         CustomProperties Pin (PinId=41DABE6A4D0307C1417B419038DF6608,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionEntry_0 A244507744ACADECE0147883B07EE21A,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=8B8F9D304B086507CDA32EB433676C9F,PinName="Out",PinType.PinCategory="byte",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/Engine.UserDefinedEnum'/Game/UltraDynamicSky/Blueprints/Enum/UDS_OcclusionSamplingLocation.UDS_OcclusionSamplingLocation'",PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue="NewEnumerator0",AutogeneratedDefaultValue="NewEnumerator0",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties UserDefinedPin (PinName="Out",PinType=(PinCategory="byte",PinSubCategoryObject="/Script/Engine.UserDefinedEnum'/Game/UltraDynamicSky/Blueprints/Enum/UDS_OcclusionSamplingLocation.UDS_OcclusionSamplingLocation'"),DesiredPinDirection=EGPD_Input,PinDefaultValue="NewEnumerator0")
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+      GraphGuid=AB57A5904E769A037CA671BBDC24C2B9
+   End Object
+   Begin Object Name="Get Show Trace Debugs" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Show Trace Debugs'"
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Show Trace Debugs.K2Node_FunctionEntry_0'"
+         MetaData=(Category=NSLOCTEXT("", "518819794BBBAAF057CEF5B0561E8835", "Player Occlusion"))
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Get Show Trace Debugs")
+         bIsEditable=True
+         NodeGuid=F11EC4B945F2EAA21475EB9DCDC9ABCA
+         CustomProperties Pin (PinId=2E8D966A47E56418EF250F98726DD4A4,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionResult_0 5ADA559B4ACBFCE2547A0E8FB4A075DD,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Begin Object Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Show Trace Debugs.K2Node_FunctionResult_0'"
+         FunctionReference=(MemberName="Get Show Trace Debugs")
+         bIsEditable=True
+         NodePosX=256
+         NodeGuid=09F522A94E9ADDB5F90A8E9576B3D276
+         CustomProperties Pin (PinId=5ADA559B4ACBFCE2547A0E8FB4A075DD,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionEntry_0 2E8D966A47E56418EF250F98726DD4A4,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=5DB32733462A7841AF40C6BD2755B4F1,PinName="Out",PinType.PinCategory="bool",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue="false",AutogeneratedDefaultValue="false",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties UserDefinedPin (PinName="Out",PinType=(PinCategory="bool"),DesiredPinDirection=EGPD_Input,PinDefaultValue="false")
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+      GraphGuid=ED8FC70845F3041E2252C2A32A3B28A5
+   End Object
+   Begin Object Name="Get Occlusion Trace Steps" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Trace Steps'"
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Trace Steps.K2Node_FunctionEntry_0'"
+         MetaData=(Category=NSLOCTEXT("", "A50B90C74127EA84AD186C95BE6A868C", "Player Occlusion"))
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Get Occlusion Trace Steps")
+         bIsEditable=True
+         NodeGuid=7532B4E5434FE6285A416BB25534985A
+         CustomProperties Pin (PinId=A0A50E0A493C3F1ABE38FB8DC5FA6F10,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionResult_0 C49265D14B9F22956381E28D499FB45F,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Begin Object Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Trace Steps.K2Node_FunctionResult_0'"
+         FunctionReference=(MemberName="Get Occlusion Trace Steps")
+         bIsEditable=True
+         NodePosX=256
+         NodeGuid=837D90D04B4DF273879AD199C8469B19
+         CustomProperties Pin (PinId=C49265D14B9F22956381E28D499FB45F,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionEntry_0 A0A50E0A493C3F1ABE38FB8DC5FA6F10,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=85F20F3B4593411745381E977E086449,PinName="Vertical",PinType.PinCategory="int",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue="0",AutogeneratedDefaultValue="0",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=DD3A0E0F463F7766433A088F1E3D713F,PinName="Horizontal",PinType.PinCategory="int",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue="0",AutogeneratedDefaultValue="0",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties UserDefinedPin (PinName="Vertical",PinType=(PinCategory="int"),DesiredPinDirection=EGPD_Input,PinDefaultValue="0")
+         CustomProperties UserDefinedPin (PinName="Horizontal",PinType=(PinCategory="int"),DesiredPinDirection=EGPD_Input,PinDefaultValue="0")
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+      GraphGuid=097537A640CB8200DE5B8DB2A9FCAB1E
+   End Object
+   Begin Object Name="Get Occlusion Trace Max Distance" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Trace Max Distance'"
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Trace Max Distance.K2Node_FunctionEntry_0'"
+         MetaData=(Category=NSLOCTEXT("", "A65E52DB4371D66907752487CBA50624", "Player Occlusion"))
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Get Occlusion Trace Max Distance")
+         bIsEditable=True
+         NodeGuid=DB7529BC4E67D0418CFAB49510899EAE
+         CustomProperties Pin (PinId=0079999549CC6368BF4FE197A8D50B7F,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionResult_0 2068500645F04C8A4322EC8E2A29F1CD,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Begin Object Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Trace Max Distance.K2Node_FunctionResult_0'"
+         FunctionReference=(MemberName="Get Occlusion Trace Max Distance")
+         bIsEditable=True
+         NodePosX=256
+         NodeGuid=A4B7BCE14AACE090918443A2A9B4625C
+         CustomProperties Pin (PinId=2068500645F04C8A4322EC8E2A29F1CD,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionEntry_0 0079999549CC6368BF4FE197A8D50B7F,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=8FBE576C493AA8639ECCD09F14DE02A7,PinName="Out",PinType.PinCategory="real",PinType.PinSubCategory="double",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue="0.0",AutogeneratedDefaultValue="0.0",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties UserDefinedPin (PinName="Out",PinType=(PinCategory="real",PinSubCategory="double"),DesiredPinDirection=EGPD_Input,PinDefaultValue="0.0")
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+      GraphGuid=F5654F4A4427CD22AFFA2CB61BB4DDD0
+   End Object
+   Begin Object Name="Get Occlusion Min and Max Fraction" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Min and Max Fraction'"
+      Begin Object Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Min and Max Fraction.K2Node_FunctionResult_0'"
+         FunctionReference=(MemberName="Get Occlusion Min and Max Fraction")
+         bIsEditable=True
+         NodePosX=256
+         NodeGuid=D47158E144B73F59E9F94DA8D7BB0EDB
+         CustomProperties Pin (PinId=66DA9186464772F8C12E678230259BF1,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionEntry_0 5342EBC04B43C720CF1B498118925A57,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=7D5F3C2B47E698584477CCB1E488CF0A,PinName="Min",PinType.PinCategory="real",PinType.PinSubCategory="double",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue="0.0",AutogeneratedDefaultValue="0.0",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=59C29E0742E75443A9F413AFD1D2FFDA,PinName="Max",PinType.PinCategory="real",PinType.PinSubCategory="double",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue="0.0",AutogeneratedDefaultValue="0.0",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties UserDefinedPin (PinName="Min",PinType=(PinCategory="real",PinSubCategory="double"),DesiredPinDirection=EGPD_Input,PinDefaultValue="0.0")
+         CustomProperties UserDefinedPin (PinName="Max",PinType=(PinCategory="real",PinSubCategory="double"),DesiredPinDirection=EGPD_Input,PinDefaultValue="0.0")
+      End Object
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Min and Max Fraction.K2Node_FunctionEntry_0'"
+         MetaData=(Category=NSLOCTEXT("", "2A9F876D455D97DC817B32AAAEF9FD2D", "Player Occlusion"))
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Get Occlusion Min and Max Fraction")
+         bIsEditable=True
+         NodeGuid=D3ED7C2640583BA4A792CFB84FA2C70C
+         CustomProperties Pin (PinId=5342EBC04B43C720CF1B498118925A57,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionResult_0 66DA9186464772F8C12E678230259BF1,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+      GraphGuid=3D9F40D24FC19457440DFAA4F18E8A63
+   End Object
+   Begin Object Name="Get Occlusion Trace Channel" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Trace Channel'"
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Trace Channel.K2Node_FunctionEntry_0'"
+         MetaData=(Category=NSLOCTEXT("", "4FCB95AA40585834AC6F33B79355535C", "Player Occlusion"))
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Get Occlusion Trace Channel")
+         bIsEditable=True
+         NodeGuid=39FFF79E4E92150A601762A5E50C75A0
+         CustomProperties Pin (PinId=AD98173B40077FF33A41BCB8E563754D,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionResult_0 5D1CA1BA4A20A6B6E6B8FB993DDB5575,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Begin Object Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Trace Channel.K2Node_FunctionResult_0'"
+         FunctionReference=(MemberName="Get Occlusion Trace Channel")
+         bIsEditable=True
+         NodePosX=256
+         NodeGuid=F80E23114F72F4FB6394DAA3EDD6E951
+         CustomProperties Pin (PinId=5D1CA1BA4A20A6B6E6B8FB993DDB5575,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionEntry_0 AD98173B40077FF33A41BCB8E563754D,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=312549DA428565340759D4BAC6900EC5,PinName="Out",PinType.PinCategory="byte",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/CoreUObject.Enum'/Script/Engine.ETraceTypeQuery'",PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue="TraceTypeQuery1",AutogeneratedDefaultValue="TraceTypeQuery1",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties UserDefinedPin (PinName="Out",PinType=(PinCategory="byte",PinSubCategoryObject="/Script/CoreUObject.Enum'/Script/Engine.ETraceTypeQuery'"),DesiredPinDirection=EGPD_Input,PinDefaultValue="TraceTypeQuery1")
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+      GraphGuid=6256C09B4D9F675254921B876E37FE90
+   End Object
+   Begin Object Name="Get Occlusion Update Period" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Update Period'"
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Update Period.K2Node_FunctionEntry_0'"
+         MetaData=(Category=NSLOCTEXT("", "2E8A2F7E44607923A27BEFA7CADC460F", "Player Occlusion"))
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Get Occlusion Update Period")
+         bIsEditable=True
+         NodeGuid=AAB99D6D4FF596E96CC4A3B180C4853C
+         CustomProperties Pin (PinId=138B7DFC4E528A4DAC2148BE8F1826FA,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionResult_0 DB5E91D84D0439319EF0B583F2FFC95E,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Begin Object Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Update Period.K2Node_FunctionResult_0'"
+         FunctionReference=(MemberName="Get Occlusion Update Period")
+         bIsEditable=True
+         NodePosX=256
+         NodeGuid=AACF8CA947A8078C827145B6BDDB8413
+         CustomProperties Pin (PinId=DB5E91D84D0439319EF0B583F2FFC95E,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionEntry_0 138B7DFC4E528A4DAC2148BE8F1826FA,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=EB5BE435437467E03042D5B20E90A35E,PinName="Out",PinType.PinCategory="real",PinType.PinSubCategory="double",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue="0.0",AutogeneratedDefaultValue="0.0",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties UserDefinedPin (PinName="Out",PinType=(PinCategory="real",PinSubCategory="double"),DesiredPinDirection=EGPD_Input,PinDefaultValue="0.0")
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+      GraphGuid=39EFB1954B89D4C380128284BE784924
+   End Object
+   Begin Object Name="Occlusion Hard Update" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Occlusion Hard Update'"
+      Begin Object Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Occlusion Hard Update.K2Node_FunctionResult_0'"
+         FunctionReference=(MemberName="Occlusion Hard Update")
+         bIsEditable=True
+         NodePosX=256
+         NodeGuid=D2C5A3F04B61637EDC45FEBD3785FDA0
+         CustomProperties Pin (PinId=03B63D8E4ED52BFE47030CA91084C1E1,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionEntry_0 D57488D446BCD52BF3EDC3A4C74CE17B,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=F9421D4A43A9B47C40D69A8D70C31CE3,PinName="Success",PinType.PinCategory="bool",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue="false",AutogeneratedDefaultValue="false",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties UserDefinedPin (PinName="Success",PinType=(PinCategory="bool"),DesiredPinDirection=EGPD_Input,PinDefaultValue="false")
+      End Object
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Occlusion Hard Update.K2Node_FunctionEntry_0'"
+         MetaData=(Category=NSLOCTEXT("", "D40D096744F9A7DC6909B5B5D233B348", "Player Occlusion"))
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Occlusion Hard Update")
+         bIsEditable=True
+         NodeGuid=BBB522DC4E47AD9367BD13967CD49D83
+         CustomProperties Pin (PinId=D57488D446BCD52BF3EDC3A4C74CE17B,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionResult_0 03B63D8E4ED52BFE47030CA91084C1E1,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+      GraphGuid=D6487EC34F5F3881AA1DFA94B3312CBB
+   End Object
+   Begin Object Name="Finished Occlusion Cycle" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Finished Occlusion Cycle'"
+      Begin Object Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Finished Occlusion Cycle.K2Node_FunctionResult_0'"
+         FunctionReference=(MemberName="Finished Occlusion Cycle")
+         bIsEditable=True
+         NodePosX=256
+         NodeGuid=0592B5A04B7A9E98765D108A8C9FB9B8
+         CustomProperties Pin (PinId=AA899A0143077325D7D2CEA56C946964,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionEntry_0 6B774954441F90092ADD3BAAF354A7F3,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=AFE0EB844FA58F65856204944123290E,PinName="Success",PinType.PinCategory="bool",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue="false",AutogeneratedDefaultValue="false",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties UserDefinedPin (PinName="Success",PinType=(PinCategory="bool"),DesiredPinDirection=EGPD_Input,PinDefaultValue="false")
+      End Object
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Finished Occlusion Cycle.K2Node_FunctionEntry_0'"
+         MetaData=(Category=NSLOCTEXT("", "6C5C798F47115904AA7540A568EABCA5", "Player Occlusion"))
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Finished Occlusion Cycle")
+         bIsEditable=True
+         NodeGuid=4D595F0842597DC64800A1A4256477D8
+         CustomProperties Pin (PinId=6B774954441F90092ADD3BAAF354A7F3,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionResult_0 AA899A0143077325D7D2CEA56C946964,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+      GraphGuid=2938BC094F29C4A74CB531A012EE8B87
+   End Object
+   Begin Object Name="Get Occlusion Mode" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Mode'"
+      Begin Object Name="K2Node_FunctionResult_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionResult'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Mode.K2Node_FunctionResult_0'"
+         FunctionReference=(MemberName="Get Occlusion Mode")
+         bIsEditable=True
+         NodePosX=256
+         NodeGuid=0E22C02043D09924B7F30BBD3C16F1F1
+         CustomProperties Pin (PinId=AAC4AE9140C1E6371A49C59C4DF489A1,PinName="execute",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionEntry_0 AE24A88F4B3761406BE74DA9E2AA83B7,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=7CC8D4284101FBD401A69D9D9DC36741,PinName="Out",PinType.PinCategory="byte",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/Engine.UserDefinedEnum'/Game/UltraDynamicSky/Blueprints/Enum/UDS_Occlusion_Mode.UDS_Occlusion_Mode'",PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,DefaultValue="NewEnumerator0",AutogeneratedDefaultValue="NewEnumerator0",PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties UserDefinedPin (PinName="Out",PinType=(PinCategory="byte",PinSubCategoryObject="/Script/Engine.UserDefinedEnum'/Game/UltraDynamicSky/Blueprints/Enum/UDS_Occlusion_Mode.UDS_Occlusion_Mode'"),DesiredPinDirection=EGPD_Input,PinDefaultValue="NewEnumerator0")
+      End Object
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Mode.K2Node_FunctionEntry_0'"
+         MetaData=(Category=NSLOCTEXT("", "914D84DF483DAD73EDFF76ACC411AC0C", "Player Occlusion"))
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Get Occlusion Mode")
+         bIsEditable=True
+         NodeGuid=048E416146AAE1A8F24B4BB4F928C26B
+         CustomProperties Pin (PinId=AE24A88F4B3761406BE74DA9E2AA83B7,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(K2Node_FunctionResult_0 AAC4AE9140C1E6371A49C59C4DF489A1,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+      GraphGuid=7599953840CCB9098896649E2D64633C
+   End Object
+   ParentClass="/Script/CoreUObject.Class'/Script/CoreUObject.Interface'"
+   BlueprintType=BPTYPE_Interface
+   bDeprecate=True
+   BlueprintCategory="UltraDynamicSky|System"
+   BlueprintSystemVersion=2
+   FunctionGraphs(0)="/Script/Engine.EdGraph'Get Occlusion Mode'"
+   FunctionGraphs(1)="/Script/Engine.EdGraph'Finished Occlusion Cycle'"
+   FunctionGraphs(2)="/Script/Engine.EdGraph'Occlusion Hard Update'"
+   FunctionGraphs(3)="/Script/Engine.EdGraph'Get Occlusion Update Period'"
+   FunctionGraphs(4)="/Script/Engine.EdGraph'Get Occlusion Trace Channel'"
+   FunctionGraphs(5)="/Script/Engine.EdGraph'Get Occlusion Min and Max Fraction'"
+   FunctionGraphs(6)="/Script/Engine.EdGraph'Get Occlusion Trace Max Distance'"
+   FunctionGraphs(7)="/Script/Engine.EdGraph'Get Occlusion Trace Steps'"
+   FunctionGraphs(8)="/Script/Engine.EdGraph'Get Show Trace Debugs'"
+   FunctionGraphs(9)="/Script/Engine.EdGraph'Get Occlusion Sampling Location'"
+   FunctionGraphs(10)="/Script/Engine.EdGraph'Get Current Camera Location'"
+   FunctionGraphs(11)="/Script/Engine.EdGraph'Get Query Occlusion Portals'"
+   FunctionGraphs(12)="/Script/Engine.EdGraph'Get GPU Distance Field Toggle'"
+   FunctionGraphs(13)="/Script/Engine.EdGraph'Get GPU DF Sample Count'"
+   CategorySorting(0)=""
+   CategorySorting(1)="Player Occlusion"
+   LastEditedDocuments(0)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Mode",SavedViewOffset=(X=-1072.772827,Y=-584.625000),SavedZoomAmount=1.000000)
+   LastEditedDocuments(1)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Finished Occlusion Cycle",SavedViewOffset=(X=-1068.102417,Y=-581.625000),SavedZoomAmount=1.000000)
+   LastEditedDocuments(2)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Occlusion Hard Update",SavedViewOffset=(X=-1068.102417,Y=-581.625000),SavedZoomAmount=1.000000)
+   LastEditedDocuments(3)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Update Period",SavedViewOffset=(X=-1068.102417,Y=-581.625000),SavedZoomAmount=1.000000)
+   LastEditedDocuments(4)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Trace Channel",SavedViewOffset=(X=-1068.102417,Y=-581.625000),SavedZoomAmount=1.000000)
+   LastEditedDocuments(5)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Min and Max Fraction",SavedViewOffset=(X=-1072.772827,Y=-584.625000),SavedZoomAmount=1.000000)
+   LastEditedDocuments(6)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Trace Max Distance",SavedViewOffset=(X=-1072.772827,Y=-584.625000),SavedZoomAmount=1.000000)
+   LastEditedDocuments(7)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Trace Steps",SavedViewOffset=(X=-1072.772827,Y=-584.625000),SavedZoomAmount=1.000000)
+   LastEditedDocuments(8)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Show Trace Debugs",SavedViewOffset=(X=-1072.772827,Y=-584.625000),SavedZoomAmount=1.000000)
+   LastEditedDocuments(9)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Sampling Location",SavedViewOffset=(X=-1072.772827,Y=-584.625000),SavedZoomAmount=1.000000)
+   LastEditedDocuments(10)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Current Camera Location",SavedViewOffset=(X=-1072.772827,Y=-584.625000),SavedZoomAmount=1.000000)
+   LastEditedDocuments(11)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Query Occlusion Portals",SavedViewOffset=(X=-1072.772827,Y=-584.625000),SavedZoomAmount=1.000000)
+   LastEditedDocuments(12)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get GPU Distance Field Toggle",SavedViewOffset=(X=-1072.772827,Y=-584.625000),SavedZoomAmount=1.000000)
+   LastEditedDocuments(13)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get GPU DF Sample Count",SavedViewOffset=(X=-1072.772827,Y=-584.625000),SavedZoomAmount=1.000000)
+   GeneratedClass="/Script/Engine.BlueprintGeneratedClass'UDS_PlayerOcclusion_Interface_C'"
+   bLegacyNeedToPurgeSkelRefs=False
+   BlueprintGuid=FC9A1F0544042BB3FDE6C381FB4EEA1B
+End Object

@@ -1,3 +1,114 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3c4825455e6dc93889f49b02ce2d59688b26b636b9f9d4180f957524055b3cb0
-size 11077
+Begin Object Class=/Script/Engine.MaterialFunction Name="SkyGlow" ExportPath="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/SkyGlow.SkyGlow'"
+   Begin Object Class=/Script/Engine.MaterialFunctionEditorOnlyData Name="SkyGlowEditorOnlyData" ExportPath="/Script/Engine.MaterialFunctionEditorOnlyData'/Game/UltraDynamicSky/Materials/Material_Functions/SkyGlow.SkyGlow:SkyGlowEditorOnlyData'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionOutput Name="MaterialExpressionFunctionOutput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/UltraDynamicSky/Materials/Material_Functions/SkyGlow.SkyGlow:MaterialExpressionFunctionOutput_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_4" ExportPath="/Script/Engine.MaterialExpressionLinearInterpolate'/Game/UltraDynamicSky/Materials/Material_Functions/SkyGlow.SkyGlow:MaterialExpressionLinearInterpolate_4'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_0" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/SkyGlow.SkyGlow:MaterialExpressionMultiply_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_10" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/SkyGlow.SkyGlow:MaterialExpressionMultiply_10'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_5" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/SkyGlow.SkyGlow:MaterialExpressionMultiply_5'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionReflectionCapturePassSwitch Name="MaterialExpressionReflectionCapturePassSwitch_0" ExportPath="/Script/Engine.MaterialExpressionReflectionCapturePassSwitch'/Game/UltraDynamicSky/Materials/Material_Functions/SkyGlow.SkyGlow:MaterialExpressionReflectionCapturePassSwitch_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_0" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/Material_Functions/SkyGlow.SkyGlow:MaterialExpressionScalarParameter_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionStaticSwitchParameter Name="MaterialExpressionStaticSwitchParameter_11" ExportPath="/Script/Engine.MaterialExpressionStaticSwitchParameter'/Game/UltraDynamicSky/Materials/Material_Functions/SkyGlow.SkyGlow:MaterialExpressionStaticSwitchParameter_11'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_1" ExportPath="/Script/Engine.MaterialExpressionVectorParameter'/Game/UltraDynamicSky/Materials/Material_Functions/SkyGlow.SkyGlow:MaterialExpressionVectorParameter_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVertexColor Name="MaterialExpressionVertexColor_1" ExportPath="/Script/Engine.MaterialExpressionVertexColor'/Game/UltraDynamicSky/Materials/Material_Functions/SkyGlow.SkyGlow:MaterialExpressionVertexColor_1'"
+   End Object
+   Begin Object Name="SkyGlowEditorOnlyData" ExportPath="/Script/Engine.MaterialFunctionEditorOnlyData'/Game/UltraDynamicSky/Materials/Material_Functions/SkyGlow.SkyGlow:SkyGlowEditorOnlyData'"
+      ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'SkyGlow:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionVectorParameter'SkyGlow:MaterialExpressionVectorParameter_1'","/Script/Engine.MaterialExpressionMultiply'SkyGlow:MaterialExpressionMultiply_5'","/Script/Engine.MaterialExpressionVertexColor'SkyGlow:MaterialExpressionVertexColor_1'","/Script/Engine.MaterialExpressionLinearInterpolate'SkyGlow:MaterialExpressionLinearInterpolate_4'","/Script/Engine.MaterialExpressionStaticSwitchParameter'SkyGlow:MaterialExpressionStaticSwitchParameter_11'","/Script/Engine.MaterialExpressionMultiply'SkyGlow:MaterialExpressionMultiply_10'","/Script/Engine.MaterialExpressionReflectionCapturePassSwitch'SkyGlow:MaterialExpressionReflectionCapturePassSwitch_0'","/Script/Engine.MaterialExpressionMultiply'SkyGlow:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionScalarParameter'SkyGlow:MaterialExpressionScalarParameter_0'"))
+   End Object
+   Begin Object Name="MaterialExpressionFunctionOutput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/UltraDynamicSky/Materials/Material_Functions/SkyGlow.SkyGlow:MaterialExpressionFunctionOutput_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionReflectionCapturePassSwitch'SkyGlow:MaterialExpressionReflectionCapturePassSwitch_0'")
+      bLastPreviewed=True
+      Id=E6CAE08E410A8666932401B628CBA12C
+      MaterialExpressionEditorX=-260
+      MaterialExpressionEditorY=308
+      MaterialExpressionGuid=753ACD694FE26C7503521CA7B977A978
+      Function="/Script/Engine.MaterialFunction'SkyGlow'"
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_4" ExportPath="/Script/Engine.MaterialExpressionLinearInterpolate'/Game/UltraDynamicSky/Materials/Material_Functions/SkyGlow.SkyGlow:MaterialExpressionLinearInterpolate_4'"
+      Alpha=(Expression="/Script/Engine.MaterialExpressionVertexColor'SkyGlow:MaterialExpressionVertexColor_1'",OutputIndex=1,Mask=1,MaskR=1)
+      ConstA=1.300000
+      ConstB=0.600000
+      MaterialExpressionEditorX=-1452
+      MaterialExpressionEditorY=552
+      MaterialExpressionGuid=FF00D34142FC19CBFD34C1BA4B199E07
+      Function="/Script/Engine.MaterialFunction'SkyGlow'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_0" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/SkyGlow.SkyGlow:MaterialExpressionMultiply_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'SkyGlow:MaterialExpressionStaticSwitchParameter_11'")
+      B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'SkyGlow:MaterialExpressionScalarParameter_0'")
+      MaterialExpressionEditorX=-700
+      MaterialExpressionEditorY=416
+      MaterialExpressionGuid=B0EA6D054F0865AFC1EA1DAF5AC23E82
+      Function="/Script/Engine.MaterialFunction'SkyGlow'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_10" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/SkyGlow.SkyGlow:MaterialExpressionMultiply_10'"
+      A=(Expression="/Script/Engine.MaterialExpressionVectorParameter'SkyGlow:MaterialExpressionVectorParameter_1'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      ConstB=0.600000
+      MaterialExpressionEditorX=-1220
+      MaterialExpressionEditorY=340
+      MaterialExpressionGuid=DC03A2D442BDD63715E4CEB5D796FCD1
+      Function="/Script/Engine.MaterialFunction'SkyGlow'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_5" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/SkyGlow.SkyGlow:MaterialExpressionMultiply_5'"
+      A=(Expression="/Script/Engine.MaterialExpressionVectorParameter'SkyGlow:MaterialExpressionVectorParameter_1'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      B=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'SkyGlow:MaterialExpressionLinearInterpolate_4'")
+      MaterialExpressionEditorX=-1228
+      MaterialExpressionEditorY=464
+      MaterialExpressionGuid=ECF390A54D44962A241203A9C5177F0C
+      Function="/Script/Engine.MaterialFunction'SkyGlow'"
+   End Object
+   Begin Object Name="MaterialExpressionReflectionCapturePassSwitch_0" ExportPath="/Script/Engine.MaterialExpressionReflectionCapturePassSwitch'/Game/UltraDynamicSky/Materials/Material_Functions/SkyGlow.SkyGlow:MaterialExpressionReflectionCapturePassSwitch_0'"
+      Default=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'SkyGlow:MaterialExpressionStaticSwitchParameter_11'")
+      Reflection=(Expression="/Script/Engine.MaterialExpressionMultiply'SkyGlow:MaterialExpressionMultiply_0'")
+      MaterialExpressionEditorX=-532
+      MaterialExpressionEditorY=336
+      MaterialExpressionGuid=2302A4E74D4058AF3527CF8A4BFA1BC5
+      Function="/Script/Engine.MaterialFunction'SkyGlow'"
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_0" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/Material_Functions/SkyGlow.SkyGlow:MaterialExpressionScalarParameter_0'"
+      DefaultValue=1.000000
+      ParameterName="Night Sky Glow Reflection Intensity"
+      ExpressionGUID=B6999B804EC944FDC2566CBE5E0BA026
+      MaterialExpressionEditorX=-1040
+      MaterialExpressionEditorY=516
+      MaterialExpressionGuid=54CF30E9419B18F1D7D2ECA372D4EA8D
+      Function="/Script/Engine.MaterialFunction'SkyGlow'"
+   End Object
+   Begin Object Name="MaterialExpressionStaticSwitchParameter_11" ExportPath="/Script/Engine.MaterialExpressionStaticSwitchParameter'/Game/UltraDynamicSky/Materials/Material_Functions/SkyGlow.SkyGlow:MaterialExpressionStaticSwitchParameter_11'"
+      A=(Expression="/Script/Engine.MaterialExpressionMultiply'SkyGlow:MaterialExpressionMultiply_10'")
+      B=(Expression="/Script/Engine.MaterialExpressionMultiply'SkyGlow:MaterialExpressionMultiply_5'")
+      ParameterName="Space"
+      ExpressionGUID=A2E169E548D626FE0D36E4879BA1E385
+      MaterialExpressionEditorX=-1048
+      MaterialExpressionEditorY=324
+      MaterialExpressionGuid=6763AE4C474D46F9281B4CBF51DB00E4
+      Function="/Script/Engine.MaterialFunction'SkyGlow'"
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_1" ExportPath="/Script/Engine.MaterialExpressionVectorParameter'/Game/UltraDynamicSky/Materials/Material_Functions/SkyGlow.SkyGlow:MaterialExpressionVectorParameter_1'"
+      DefaultValue=(R=0.122287,G=0.143774,B=0.255208,A=0.000000)
+      ParameterName="Night Sky Glow Color"
+      ExpressionGUID=6C4ECBF14BBF45EF0B0C4586D9AAA576
+      MaterialExpressionEditorX=-1524
+      MaterialExpressionEditorY=324
+      MaterialExpressionGuid=00E903944727D6D5226698A3583127B2
+      Function="/Script/Engine.MaterialFunction'SkyGlow'"
+   End Object
+   Begin Object Name="MaterialExpressionVertexColor_1" ExportPath="/Script/Engine.MaterialExpressionVertexColor'/Game/UltraDynamicSky/Materials/Material_Functions/SkyGlow.SkyGlow:MaterialExpressionVertexColor_1'"
+      MaterialExpressionEditorX=-1612
+      MaterialExpressionEditorY=536
+      MaterialExpressionGuid=01A5473641B30CA91722A5A735F16898
+      Function="/Script/Engine.MaterialFunction'SkyGlow'"
+   End Object
+   EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'SkyGlowEditorOnlyData'"
+   StateId=0108E2EE4D56B8812CC94CAB646F2344
+   CombinedOutputTypes=15
+End Object

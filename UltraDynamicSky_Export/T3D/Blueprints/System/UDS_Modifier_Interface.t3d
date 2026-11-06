@@ -1,3 +1,59 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:516e6da941845513669f32705eaa295b55d418cf1f4ff62c5b3dec355ce8e030
-size 9461
+Begin Object Class=/Script/Engine.Blueprint Name="UDS_Modifier_Interface" ExportPath="/Script/Engine.Blueprint'/Game/UltraDynamicSky/Blueprints/System/UDS_Modifier_Interface.UDS_Modifier_Interface'"
+   Begin Object Class=/Script/Engine.EdGraph Name="Set UDS Modifier State_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_Modifier_Interface.UDS_Modifier_Interface:Set UDS Modifier State_MERGED'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_Modifier_Interface.UDS_Modifier_Interface:Set UDS Modifier State_MERGED.K2Node_FunctionEntry_0'"
+      End Object
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfo Name="SceneThumbnailInfo_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfo'/Game/UltraDynamicSky/Blueprints/System/UDS_Modifier_Interface.UDS_Modifier_Interface:SceneThumbnailInfo_0'"
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="Set UDS Modifier State" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_Modifier_Interface.UDS_Modifier_Interface:Set UDS Modifier State'"
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_Modifier_Interface.UDS_Modifier_Interface:Set UDS Modifier State.K2Node_FunctionEntry_0'"
+      End Object
+   End Object
+   Begin Object Name="Set UDS Modifier State_MERGED" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_Modifier_Interface.UDS_Modifier_Interface:Set UDS Modifier State_MERGED'"
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_Modifier_Interface.UDS_Modifier_Interface:Set UDS Modifier State_MERGED.K2Node_FunctionEntry_0'"
+         MetaData=(ToolTip=NSLOCTEXT("", "933FB3904B6BDB194F2350BCD68356BB", "Directly set the applied alpha of a UDS Modifier on the sky. This can be used to add a new modifier or remove one, with an alpha value that does not change after this function is called."))
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Set UDS Modifier State")
+         bIsEditable=True
+         NodeGuid=A36A875044ADC997F1F77DBFE60ADC85
+         CustomProperties Pin (PinId=C9A810B74AACE3372D6D15A6DDF8AB01,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=09E4D5944D8E723A38F0EFA61EBAFFEB,PinName="Modifier",Direction="EGPD_Output",PinType.PinCategory="object",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/System/UDS_Modifier.UDS_Modifier_C'",PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=94B384B24894B8F2CCCC219D906AA34C,PinName="Alpha",Direction="EGPD_Output",PinType.PinCategory="real",PinType.PinSubCategory="double",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties UserDefinedPin (PinName="Modifier",PinType=(PinCategory="object",PinSubCategoryObject="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/System/UDS_Modifier.UDS_Modifier_C'"),DesiredPinDirection=EGPD_Output)
+         CustomProperties UserDefinedPin (PinName="Alpha",PinType=(PinCategory="real",PinSubCategory="double"),DesiredPinDirection=EGPD_Output)
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      GraphGuid=6A801A58405F741CB2D7BCA5DE6817B2
+   End Object
+   Begin Object Name="SceneThumbnailInfo_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfo'/Game/UltraDynamicSky/Blueprints/System/UDS_Modifier_Interface.UDS_Modifier_Interface:SceneThumbnailInfo_0'"
+   End Object
+   Begin Object Name="Set UDS Modifier State" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_Modifier_Interface.UDS_Modifier_Interface:Set UDS Modifier State'"
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath="/Script/BlueprintGraph.K2Node_FunctionEntry'/Game/UltraDynamicSky/Blueprints/System/UDS_Modifier_Interface.UDS_Modifier_Interface:Set UDS Modifier State.K2Node_FunctionEntry_0'"
+         MetaData=(ToolTip=NSLOCTEXT("", "933FB3904B6BDB194F2350BCD68356BB", "Directly set the applied alpha of a UDS Modifier on the sky. This can be used to add a new modifier or remove one, with an alpha value that does not change after this function is called."))
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Set UDS Modifier State")
+         bIsEditable=True
+         NodeGuid=A36A875044ADC997F1F77DBFE60ADC85
+         CustomProperties Pin (PinId=C9A810B74AACE3372D6D15A6DDF8AB01,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=09E4D5944D8E723A38F0EFA61EBAFFEB,PinName="Modifier",Direction="EGPD_Output",PinType.PinCategory="object",PinType.PinSubCategory="",PinType.PinSubCategoryObject="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/System/UDS_Modifier.UDS_Modifier_C'",PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=94B384B24894B8F2CCCC219D906AA34C,PinName="Alpha",Direction="EGPD_Output",PinType.PinCategory="real",PinType.PinSubCategory="double",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties UserDefinedPin (PinName="Modifier",PinType=(PinCategory="object",PinSubCategoryObject="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/System/UDS_Modifier.UDS_Modifier_C'"),DesiredPinDirection=EGPD_Output)
+         CustomProperties UserDefinedPin (PinName="Alpha",PinType=(PinCategory="real",PinSubCategory="double"),DesiredPinDirection=EGPD_Output)
+      End Object
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+      GraphGuid=6A801A58405F741CB2D7BCA5DE6817B2
+   End Object
+   ParentClass="/Script/CoreUObject.Class'/Script/CoreUObject.Interface'"
+   BlueprintType=BPTYPE_Interface
+   bDeprecate=True
+   BlueprintCategory="UltraDynamicSky|System"
+   BlueprintSystemVersion=2
+   FunctionGraphs(0)="/Script/Engine.EdGraph'Set UDS Modifier State'"
+   CategorySorting(0)=""
+   ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfo'SceneThumbnailInfo_0'"
+   GeneratedClass="/Script/Engine.BlueprintGeneratedClass'UDS_Modifier_Interface_C'"
+   bLegacyNeedToPurgeSkelRefs=False
+   BlueprintGuid=71587A4545CD06126439D590E21A9F58
+End Object

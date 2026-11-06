@@ -1,3 +1,113 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:94c30ee18d9e24f896682c1f3e3b02163ddca5ece951c3c9812164106e8ecfd4
-size 11414
+Begin Object Class=/Script/Engine.MaterialFunction Name="SampleDLWETrailTarget" ExportPath="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Weather/SampleDLWETrailTarget.SampleDLWETrailTarget'"
+   Begin Object Class=/Script/Engine.MaterialFunctionEditorOnlyData Name="SampleDLWETrailTargetEditorOnlyData" ExportPath="/Script/Engine.MaterialFunctionEditorOnlyData'/Game/UltraDynamicSky/Materials/Weather/SampleDLWETrailTarget.SampleDLWETrailTarget:SampleDLWETrailTargetEditorOnlyData'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionCollectionParameter Name="MaterialExpressionCollectionParameter_9" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/Game/UltraDynamicSky/Materials/Weather/SampleDLWETrailTarget.SampleDLWETrailTarget:MaterialExpressionCollectionParameter_9'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_16" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Weather/SampleDLWETrailTarget.SampleDLWETrailTarget:MaterialExpressionComponentMask_16'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_17" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Weather/SampleDLWETrailTarget.SampleDLWETrailTarget:MaterialExpressionComponentMask_17'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_9" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Weather/SampleDLWETrailTarget.SampleDLWETrailTarget:MaterialExpressionComponentMask_9'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDivide Name="MaterialExpressionDivide_11" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/Weather/SampleDLWETrailTarget.SampleDLWETrailTarget:MaterialExpressionDivide_11'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionOutput Name="MaterialExpressionFunctionOutput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/UltraDynamicSky/Materials/Weather/SampleDLWETrailTarget.SampleDLWETrailTarget:MaterialExpressionFunctionOutput_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSubtract Name="MaterialExpressionSubtract_1" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/Weather/SampleDLWETrailTarget.SampleDLWETrailTarget:MaterialExpressionSubtract_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_0" ExportPath="/Script/Engine.MaterialExpressionTextureSample'/Game/UltraDynamicSky/Materials/Weather/SampleDLWETrailTarget.SampleDLWETrailTarget:MaterialExpressionTextureSample_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionWorldPosition Name="MaterialExpressionWorldPosition_4" ExportPath="/Script/Engine.MaterialExpressionWorldPosition'/Game/UltraDynamicSky/Materials/Weather/SampleDLWETrailTarget.SampleDLWETrailTarget:MaterialExpressionWorldPosition_4'"
+   End Object
+   Begin Object Name="SampleDLWETrailTargetEditorOnlyData" ExportPath="/Script/Engine.MaterialFunctionEditorOnlyData'/Game/UltraDynamicSky/Materials/Weather/SampleDLWETrailTarget.SampleDLWETrailTarget:SampleDLWETrailTargetEditorOnlyData'"
+      ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'SampleDLWETrailTarget:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionDivide'SampleDLWETrailTarget:MaterialExpressionDivide_11'","/Script/Engine.MaterialExpressionComponentMask'SampleDLWETrailTarget:MaterialExpressionComponentMask_9'","/Script/Engine.MaterialExpressionSubtract'SampleDLWETrailTarget:MaterialExpressionSubtract_1'","/Script/Engine.MaterialExpressionCollectionParameter'SampleDLWETrailTarget:MaterialExpressionCollectionParameter_9'","/Script/Engine.MaterialExpressionComponentMask'SampleDLWETrailTarget:MaterialExpressionComponentMask_16'","/Script/Engine.MaterialExpressionComponentMask'SampleDLWETrailTarget:MaterialExpressionComponentMask_17'","/Script/Engine.MaterialExpressionWorldPosition'SampleDLWETrailTarget:MaterialExpressionWorldPosition_4'","/Script/Engine.MaterialExpressionTextureSample'SampleDLWETrailTarget:MaterialExpressionTextureSample_0'"))
+   End Object
+   Begin Object Name="MaterialExpressionCollectionParameter_9" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/Game/UltraDynamicSky/Materials/Weather/SampleDLWETrailTarget.SampleDLWETrailTarget:MaterialExpressionCollectionParameter_9'"
+      Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+      ParameterName="DLWE_Render Target Mapping"
+      ParameterId=D88ABE3B4B0695382525D6936A055ABE
+      MaterialExpressionEditorX=-1124
+      MaterialExpressionEditorY=468
+      MaterialExpressionGuid=1F9F39384B62DE5B2051C6A21A7A7A98
+      Function="/Script/Engine.MaterialFunction'SampleDLWETrailTarget'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_16" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Weather/SampleDLWETrailTarget.SampleDLWETrailTarget:MaterialExpressionComponentMask_16'"
+      Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'SampleDLWETrailTarget:MaterialExpressionCollectionParameter_9'")
+      R=True
+      G=True
+      MaterialExpressionEditorX=-836
+      MaterialExpressionEditorY=424
+      MaterialExpressionGuid=D6146E724B17665B301F278BA7C7D75A
+      Function="/Script/Engine.MaterialFunction'SampleDLWETrailTarget'"
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_17" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Weather/SampleDLWETrailTarget.SampleDLWETrailTarget:MaterialExpressionComponentMask_17'"
+      Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'SampleDLWETrailTarget:MaterialExpressionCollectionParameter_9'")
+      B=True
+      MaterialExpressionEditorX=-680
+      MaterialExpressionEditorY=492
+      MaterialExpressionGuid=53B68B83402851B8D42317937FC4719C
+      Function="/Script/Engine.MaterialFunction'SampleDLWETrailTarget'"
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_9" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Weather/SampleDLWETrailTarget.SampleDLWETrailTarget:MaterialExpressionComponentMask_9'"
+      Input=(Expression="/Script/Engine.MaterialExpressionWorldPosition'SampleDLWETrailTarget:MaterialExpressionWorldPosition_4'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      R=True
+      G=True
+      MaterialExpressionEditorX=-836
+      MaterialExpressionEditorY=324
+      MaterialExpressionGuid=B153971642E2D8EF682E5897ACF1DF1B
+      Function="/Script/Engine.MaterialFunction'SampleDLWETrailTarget'"
+   End Object
+   Begin Object Name="MaterialExpressionDivide_11" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/Weather/SampleDLWETrailTarget.SampleDLWETrailTarget:MaterialExpressionDivide_11'"
+      A=(Expression="/Script/Engine.MaterialExpressionSubtract'SampleDLWETrailTarget:MaterialExpressionSubtract_1'")
+      B=(Expression="/Script/Engine.MaterialExpressionComponentMask'SampleDLWETrailTarget:MaterialExpressionComponentMask_17'")
+      MaterialExpressionEditorX=-508
+      MaterialExpressionEditorY=324
+      MaterialExpressionGuid=4AB8BA974CD8A1AAE015308C6B540A36
+      Function="/Script/Engine.MaterialFunction'SampleDLWETrailTarget'"
+   End Object
+   Begin Object Name="MaterialExpressionFunctionOutput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/UltraDynamicSky/Materials/Weather/SampleDLWETrailTarget.SampleDLWETrailTarget:MaterialExpressionFunctionOutput_0'"
+      OutputName="Trail Depth"
+      Description="0-1 value. 0.75 is the value everywhere unaffected by trails. Values below 0.75 for the trails themselves, and values above 0.75 for piling up around trails."
+      A=(Expression="/Script/Engine.MaterialExpressionTextureSample'SampleDLWETrailTarget:MaterialExpressionTextureSample_0'",OutputIndex=1,Mask=1,MaskR=1)
+      bLastPreviewed=True
+      Id=D1A3FAD046E42A4756C8D7829F4D8BCF
+      MaterialExpressionEditorX=-108
+      MaterialExpressionEditorY=328
+      MaterialExpressionGuid=8EF9A587488F276AADA03CA48DB03B54
+      Function="/Script/Engine.MaterialFunction'SampleDLWETrailTarget'"
+   End Object
+   Begin Object Name="MaterialExpressionSubtract_1" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/Weather/SampleDLWETrailTarget.SampleDLWETrailTarget:MaterialExpressionSubtract_1'"
+      A=(Expression="/Script/Engine.MaterialExpressionComponentMask'SampleDLWETrailTarget:MaterialExpressionComponentMask_9'")
+      B=(Expression="/Script/Engine.MaterialExpressionComponentMask'SampleDLWETrailTarget:MaterialExpressionComponentMask_16'")
+      MaterialExpressionEditorX=-676
+      MaterialExpressionEditorY=324
+      MaterialExpressionGuid=084CCA31473DC23147F7E1A3669CCBE8
+      Function="/Script/Engine.MaterialFunction'SampleDLWETrailTarget'"
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_0" ExportPath="/Script/Engine.MaterialExpressionTextureSample'/Game/UltraDynamicSky/Materials/Weather/SampleDLWETrailTarget.SampleDLWETrailTarget:MaterialExpressionTextureSample_0'"
+      Coordinates=(Expression="/Script/Engine.MaterialExpressionDivide'SampleDLWETrailTarget:MaterialExpressionDivide_11'")
+      MipValueMode=TMVM_MipLevel
+      AutomaticViewMipBias=False
+      Texture="/Script/Engine.TextureRenderTarget2D'/Game/UltraDynamicSky/Textures/Weather/DLWE_MaskTarget.DLWE_MaskTarget'"
+      SamplerType=SAMPLERTYPE_LinearColor
+      MaterialExpressionEditorX=-368
+      MaterialExpressionEditorY=324
+      MaterialExpressionGuid=55B7165940F2D7C429701A9C6CFBB49A
+      Function="/Script/Engine.MaterialFunction'SampleDLWETrailTarget'"
+   End Object
+   Begin Object Name="MaterialExpressionWorldPosition_4" ExportPath="/Script/Engine.MaterialExpressionWorldPosition'/Game/UltraDynamicSky/Materials/Weather/SampleDLWETrailTarget.SampleDLWETrailTarget:MaterialExpressionWorldPosition_4'"
+      WorldPositionShaderOffset=WPT_ExcludeAllShaderOffsets
+      MaterialExpressionEditorX=-1220
+      MaterialExpressionEditorY=312
+      MaterialExpressionGuid=AEF20DF84473A1637C702ABBF1DC187B
+      Function="/Script/Engine.MaterialFunction'SampleDLWETrailTarget'"
+   End Object
+   Description="Does a direct sample of the render target used for DLWE Snow/Dust trails. Useful for a case where you want to use the trail target for additional effects beyond the normal trail rendering in the DLWE function."
+   UserExposedCaption="Sample DLWE Trail Target"
+   bExposeToLibrary=True
+   LibraryCategoriesText(0)=NSLOCTEXT("", "9A5BC9EF4CF6DA452B6FAABC09AB4C40", "Weather")
+   EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'SampleDLWETrailTargetEditorOnlyData'"
+   StateId=7F769B6849A794A5025124A736781C68
+   CombinedOutputTypes=15
+End Object

@@ -1,3 +1,84 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a5d5ed93ddaa0d253c765b23a799e1dd216297a822ff50a2f5e4abe17b6ab9dc
-size 6537
+Begin Object Class=/Script/Engine.Material Name="VehicleDropletsOutsideMat" ExportPath="/Script/Engine.Material'/Game/UltraDynamicSky/Materials/Weather/VehicleDropletsOutsideMat.VehicleDropletsOutsideMat'"
+   Begin Object Class=/Script/Engine.MaterialEditorOnlyData Name="VehicleDropletsOutsideMatEditorOnlyData" ExportPath="/Script/Engine.MaterialEditorOnlyData'/Game/UltraDynamicSky/Materials/Weather/VehicleDropletsOutsideMat.VehicleDropletsOutsideMat:VehicleDropletsOutsideMatEditorOnlyData'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_3" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Weather/VehicleDropletsOutsideMat.VehicleDropletsOutsideMat:MaterialExpressionMaterialFunctionCall_3'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_2" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Weather/VehicleDropletsOutsideMat.VehicleDropletsOutsideMat:MaterialExpressionMultiply_2'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/Weather/VehicleDropletsOutsideMat.VehicleDropletsOutsideMat:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   Begin Object Name="VehicleDropletsOutsideMatEditorOnlyData" ExportPath="/Script/Engine.MaterialEditorOnlyData'/Game/UltraDynamicSky/Materials/Weather/VehicleDropletsOutsideMat.VehicleDropletsOutsideMat:VehicleDropletsOutsideMatEditorOnlyData'"
+      BaseColor=(UseConstant=True,Constant=(R=0.635294,G=0.635294,B=0.635294,A=1.000000))
+      Metallic=(UseConstant=True)
+      Specular=(UseConstant=True,Constant=1.000000)
+      Roughness=(UseConstant=True,Constant=0.000000)
+      Anisotropy=(UseConstant=True)
+      Normal=(UseConstant=True,OutputIndex=-1)
+      Tangent=(UseConstant=True)
+      EmissiveColor=(Expression="/Script/Engine.MaterialExpressionMultiply'VehicleDropletsOutsideMat:MaterialExpressionMultiply_2'")
+      Opacity=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'VehicleDropletsOutsideMat:MaterialExpressionMaterialFunctionCall_3'",OutputIndex=1)
+      OpacityMask=(UseConstant=True)
+      WorldPositionOffset=(UseConstant=True)
+      Displacement=(UseConstant=True)
+      SubsurfaceColor=(UseConstant=True,Constant=(R=1.000000,G=1.000000,B=1.000000,A=1.000000))
+      ClearCoat=(UseConstant=True)
+      ClearCoatRoughness=(UseConstant=True)
+      AmbientOcclusion=(UseConstant=True)
+      Refraction=(UseConstant=True)
+      CustomizedUVs(0)=(UseConstant=True)
+      CustomizedUVs(1)=(UseConstant=True)
+      CustomizedUVs(2)=(UseConstant=True)
+      CustomizedUVs(3)=(UseConstant=True)
+      CustomizedUVs(4)=(UseConstant=True)
+      CustomizedUVs(5)=(UseConstant=True)
+      CustomizedUVs(6)=(UseConstant=True)
+      CustomizedUVs(7)=(UseConstant=True)
+      PixelDepthOffset=(UseConstant=True)
+      SurfaceThickness=(UseConstant=True)
+      ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionMultiply'VehicleDropletsOutsideMat:MaterialExpressionMultiply_2'","/Script/Engine.MaterialExpressionMaterialFunctionCall'VehicleDropletsOutsideMat:MaterialExpressionMaterialFunctionCall_3'"))
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_3" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Weather/VehicleDropletsOutsideMat.VehicleDropletsOutsideMat:MaterialExpressionMaterialFunctionCall_3'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Weather/VehicleWindowDroplets_Attributes.VehicleWindowDroplets_Attributes'"
+      FunctionOutputs(0)=(ExpressionOutputId=CECF15044AF51F371D8B64A5AECCD2B7,Output=(OutputName="Inside Emissive"))
+      FunctionOutputs(1)=(ExpressionOutputId=F5D70FEC47B4F26B84C57BAAEEAF58F5,Output=(OutputName="Opacity"))
+      MaterialExpressionEditorX=672
+      MaterialExpressionEditorY=132
+      MaterialExpressionGuid=5777BEE746D3368D9915E1AFFB7ABC07
+      Material="/Script/Engine.Material'VehicleDropletsOutsideMat'"
+      Outputs(0)=(OutputName="Inside Emissive")
+      Outputs(1)=(OutputName="Opacity")
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_2" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Weather/VehicleDropletsOutsideMat.VehicleDropletsOutsideMat:MaterialExpressionMultiply_2'"
+      A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'VehicleDropletsOutsideMat:MaterialExpressionMaterialFunctionCall_3'")
+      ConstB=1.500000
+      MaterialExpressionEditorX=1044
+      MaterialExpressionEditorY=84
+      MaterialExpressionGuid=BCEAC8A34137F47A746F2FA0C87F4D1A
+      Material="/Script/Engine.Material'VehicleDropletsOutsideMat'"
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/Weather/VehicleDropletsOutsideMat.VehicleDropletsOutsideMat:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   BlendMode=BLEND_Translucent
+   MaterialDecalResponse=MDR_None
+   ShadingModel=MSM_Unlit
+   ShadingModels=(ShadingModelField=1)
+   bEnableResponsiveAA=True
+   TranslucencyPass=MTP_BeforeDOF
+   TranslucencyLightingMode=TLM_Surface
+   TranslucencyDirectionalLightingIntensity=2.000000
+   bUsedWithNiagaraSprites=True
+   bAllowFrontLayerTranslucency=False
+   EditorX=1280
+   EditorY=-24
+   bCanMaskedBeAssumedOpaque=True
+   bCastRayTracedShadows=False
+   bUseTranslucencyVertexFog=False
+   StateId=2BB7DB0740C857B5ED665BA9C4D133F8
+   ReferencedTextureGuids(0)=9080AA1E47B0FE7B95E79A93A36D2556
+   EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'VehicleDropletsOutsideMatEditorOnlyData'"
+   TextureStreamingDataVersion=1
+   TextureStreamingData(0)=(SamplingScale=0.406250,UVChannelIndex=0,TextureName="ParticleClouds",TextureReference="/Game/UltraDynamicSky/Textures/Weather/ParticleClouds.ParticleClouds")
+   ReferencedDefaultTextures(0)="/Script/Engine.Texture2D'/Game/UltraDynamicSky/Textures/Weather/ParticleClouds.ParticleClouds'"
+   ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+   LightingGuid=4A5D2EF544BF5281CC6B98A0342F520E
+End Object

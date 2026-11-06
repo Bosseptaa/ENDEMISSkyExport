@@ -1,3 +1,128 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a2ffa71ffca280126d45a5ac48db18b2ae7cd19e74b1fca4a607778f94d8354a
-size 13726
+Begin Object Class=/Script/Engine.MaterialFunction Name="Scale_Intensity_Around_Sun" ExportPath="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Scale_Intensity_Around_Sun.Scale_Intensity_Around_Sun'"
+   Begin Object Class=/Script/Engine.MaterialFunctionEditorOnlyData Name="Scale_Intensity_Around_SunEditorOnlyData" ExportPath="/Script/Engine.MaterialFunctionEditorOnlyData'/Game/UltraDynamicSky/Materials/Material_Functions/Scale_Intensity_Around_Sun.Scale_Intensity_Around_Sun:Scale_Intensity_Around_SunEditorOnlyData'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAdd Name="MaterialExpressionAdd_24" ExportPath="/Script/Engine.MaterialExpressionAdd'/Game/UltraDynamicSky/Materials/Material_Functions/Scale_Intensity_Around_Sun.Scale_Intensity_Around_Sun:MaterialExpressionAdd_24'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAdd Name="MaterialExpressionAdd_4" ExportPath="/Script/Engine.MaterialExpressionAdd'/Game/UltraDynamicSky/Materials/Material_Functions/Scale_Intensity_Around_Sun.Scale_Intensity_Around_Sun:MaterialExpressionAdd_4'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_0" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/Scale_Intensity_Around_Sun.Scale_Intensity_Around_Sun:MaterialExpressionComponentMask_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_1" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/Scale_Intensity_Around_Sun.Scale_Intensity_Around_Sun:MaterialExpressionComponentMask_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionOutput Name="MaterialExpressionFunctionOutput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/UltraDynamicSky/Materials/Material_Functions/Scale_Intensity_Around_Sun.Scale_Intensity_Around_Sun:MaterialExpressionFunctionOutput_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_0" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/Scale_Intensity_Around_Sun.Scale_Intensity_Around_Sun:MaterialExpressionMultiply_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_2" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/Scale_Intensity_Around_Sun.Scale_Intensity_Around_Sun:MaterialExpressionMultiply_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_6" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/Scale_Intensity_Around_Sun.Scale_Intensity_Around_Sun:MaterialExpressionMultiply_6'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_0" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/Material_Functions/Scale_Intensity_Around_Sun.Scale_Intensity_Around_Sun:MaterialExpressionScalarParameter_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionShadingPathSwitch Name="MaterialExpressionShadingPathSwitch_0" ExportPath="/Script/Engine.MaterialExpressionShadingPathSwitch'/Game/UltraDynamicSky/Materials/Material_Functions/Scale_Intensity_Around_Sun.Scale_Intensity_Around_Sun:MaterialExpressionShadingPathSwitch_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureCoordinate Name="MaterialExpressionTextureCoordinate_0" ExportPath="/Script/Engine.MaterialExpressionTextureCoordinate'/Game/UltraDynamicSky/Materials/Material_Functions/Scale_Intensity_Around_Sun.Scale_Intensity_Around_Sun:MaterialExpressionTextureCoordinate_0'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/Material_Functions/Scale_Intensity_Around_Sun.Scale_Intensity_Around_Sun:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   Begin Object Name="Scale_Intensity_Around_SunEditorOnlyData" ExportPath="/Script/Engine.MaterialFunctionEditorOnlyData'/Game/UltraDynamicSky/Materials/Material_Functions/Scale_Intensity_Around_Sun.Scale_Intensity_Around_Sun:Scale_Intensity_Around_SunEditorOnlyData'"
+      ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'Scale_Intensity_Around_Sun:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionMultiply'Scale_Intensity_Around_Sun:MaterialExpressionMultiply_6'","/Script/Engine.MaterialExpressionAdd'Scale_Intensity_Around_Sun:MaterialExpressionAdd_4'","/Script/Engine.MaterialExpressionMultiply'Scale_Intensity_Around_Sun:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionScalarParameter'Scale_Intensity_Around_Sun:MaterialExpressionScalarParameter_0'","/Script/Engine.MaterialExpressionAdd'Scale_Intensity_Around_Sun:MaterialExpressionAdd_24'","/Script/Engine.MaterialExpressionTextureCoordinate'Scale_Intensity_Around_Sun:MaterialExpressionTextureCoordinate_0'","/Script/Engine.MaterialExpressionComponentMask'Scale_Intensity_Around_Sun:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionComponentMask'Scale_Intensity_Around_Sun:MaterialExpressionComponentMask_1'","/Script/Engine.MaterialExpressionShadingPathSwitch'Scale_Intensity_Around_Sun:MaterialExpressionShadingPathSwitch_0'","/Script/Engine.MaterialExpressionMultiply'Scale_Intensity_Around_Sun:MaterialExpressionMultiply_2'"))
+   End Object
+   Begin Object Name="MaterialExpressionAdd_24" ExportPath="/Script/Engine.MaterialExpressionAdd'/Game/UltraDynamicSky/Materials/Material_Functions/Scale_Intensity_Around_Sun.Scale_Intensity_Around_Sun:MaterialExpressionAdd_24'"
+      A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Scale_Intensity_Around_Sun:MaterialExpressionComponentMask_0'")
+      B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Scale_Intensity_Around_Sun:MaterialExpressionComponentMask_1'")
+      MaterialExpressionEditorX=-1056
+      MaterialExpressionEditorY=432
+      MaterialExpressionGuid=8D9CAD9943810B1E6D87DD983E8D984F
+      Function="/Script/Engine.MaterialFunction'Scale_Intensity_Around_Sun'"
+   End Object
+   Begin Object Name="MaterialExpressionAdd_4" ExportPath="/Script/Engine.MaterialExpressionAdd'/Game/UltraDynamicSky/Materials/Material_Functions/Scale_Intensity_Around_Sun.Scale_Intensity_Around_Sun:MaterialExpressionAdd_4'"
+      A=(Expression="/Script/Engine.MaterialExpressionMultiply'Scale_Intensity_Around_Sun:MaterialExpressionMultiply_6'")
+      ConstB=2.300000
+      MaterialExpressionEditorX=-804
+      MaterialExpressionEditorY=432
+      MaterialExpressionGuid=DE70F2D0421EE32B170645A425B70A14
+      Function="/Script/Engine.MaterialFunction'Scale_Intensity_Around_Sun'"
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_0" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/Scale_Intensity_Around_Sun.Scale_Intensity_Around_Sun:MaterialExpressionComponentMask_0'"
+      Input=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'Scale_Intensity_Around_Sun:MaterialExpressionTextureCoordinate_0'")
+      R=True
+      MaterialExpressionEditorX=-1192
+      MaterialExpressionEditorY=432
+      MaterialExpressionGuid=54C527FB49A01DEAB8EF73BD95154F6D
+      Function="/Script/Engine.MaterialFunction'Scale_Intensity_Around_Sun'"
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_1" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/Scale_Intensity_Around_Sun.Scale_Intensity_Around_Sun:MaterialExpressionComponentMask_1'"
+      Input=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'Scale_Intensity_Around_Sun:MaterialExpressionTextureCoordinate_0'")
+      G=True
+      MaterialExpressionEditorX=-1192
+      MaterialExpressionEditorY=512
+      MaterialExpressionGuid=54C527FB49A01DEAB8EF73BD95154F6D
+      Function="/Script/Engine.MaterialFunction'Scale_Intensity_Around_Sun'"
+   End Object
+   Begin Object Name="MaterialExpressionFunctionOutput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/UltraDynamicSky/Materials/Material_Functions/Scale_Intensity_Around_Sun.Scale_Intensity_Around_Sun:MaterialExpressionFunctionOutput_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionShadingPathSwitch'Scale_Intensity_Around_Sun:MaterialExpressionShadingPathSwitch_0'")
+      bLastPreviewed=True
+      Id=6F13AEB94B2ED3CAD3944DA5BD6370B0
+      MaterialExpressionEditorX=-200
+      MaterialExpressionEditorY=404
+      MaterialExpressionGuid=6D169ECE4F8FA193CE3DE6908CE8F465
+      Function="/Script/Engine.MaterialFunction'Scale_Intensity_Around_Sun'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_0" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/Scale_Intensity_Around_Sun.Scale_Intensity_Around_Sun:MaterialExpressionMultiply_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionAdd'Scale_Intensity_Around_Sun:MaterialExpressionAdd_4'")
+      B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Scale_Intensity_Around_Sun:MaterialExpressionScalarParameter_0'")
+      ConstB=3.000000
+      MaterialExpressionEditorX=-660
+      MaterialExpressionEditorY=432
+      MaterialExpressionGuid=9FFAC4D743AE9345ABB477A5933DF937
+      Function="/Script/Engine.MaterialFunction'Scale_Intensity_Around_Sun'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_2" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/Scale_Intensity_Around_Sun.Scale_Intensity_Around_Sun:MaterialExpressionMultiply_2'"
+      A=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Scale_Intensity_Around_Sun:MaterialExpressionScalarParameter_0'")
+      ConstB=3.750000
+      MaterialExpressionEditorX=-584
+      MaterialExpressionEditorY=560
+      MaterialExpressionGuid=E35B1A9C40D2478CC632B1BAC91FB2FA
+      Function="/Script/Engine.MaterialFunction'Scale_Intensity_Around_Sun'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_6" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/Scale_Intensity_Around_Sun.Scale_Intensity_Around_Sun:MaterialExpressionMultiply_6'"
+      A=(Expression="/Script/Engine.MaterialExpressionAdd'Scale_Intensity_Around_Sun:MaterialExpressionAdd_24'")
+      ConstB=1.800000
+      MaterialExpressionEditorX=-948
+      MaterialExpressionEditorY=432
+      MaterialExpressionGuid=3F06D2D44E0B324854ED8EB7710D9488
+      Function="/Script/Engine.MaterialFunction'Scale_Intensity_Around_Sun'"
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_0" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/Material_Functions/Scale_Intensity_Around_Sun.Scale_Intensity_Around_Sun:MaterialExpressionScalarParameter_0'"
+      DefaultValue=1.000000
+      ParameterName="Lit_Intensity"
+      ExpressionGUID=19E4D40641A44213B265B5A191B4E139
+      MaterialExpressionEditorX=-864
+      MaterialExpressionEditorY=548
+      MaterialExpressionGuid=68D716F34BF2BECEFB97B4A299653735
+      Function="/Script/Engine.MaterialFunction'Scale_Intensity_Around_Sun'"
+   End Object
+   Begin Object Name="MaterialExpressionShadingPathSwitch_0" ExportPath="/Script/Engine.MaterialExpressionShadingPathSwitch'/Game/UltraDynamicSky/Materials/Material_Functions/Scale_Intensity_Around_Sun.Scale_Intensity_Around_Sun:MaterialExpressionShadingPathSwitch_0'"
+      Default=(Expression="/Script/Engine.MaterialExpressionMultiply'Scale_Intensity_Around_Sun:MaterialExpressionMultiply_0'")
+      Inputs(2)=(Expression="/Script/Engine.MaterialExpressionMultiply'Scale_Intensity_Around_Sun:MaterialExpressionMultiply_2'")
+      MaterialExpressionEditorX=-400
+      MaterialExpressionEditorY=432
+      MaterialExpressionGuid=FCE8721B4FE6423D5EB0548D04F70D46
+      Function="/Script/Engine.MaterialFunction'Scale_Intensity_Around_Sun'"
+   End Object
+   Begin Object Name="MaterialExpressionTextureCoordinate_0" ExportPath="/Script/Engine.MaterialExpressionTextureCoordinate'/Game/UltraDynamicSky/Materials/Material_Functions/Scale_Intensity_Around_Sun.Scale_Intensity_Around_Sun:MaterialExpressionTextureCoordinate_0'"
+      CoordinateIndex=2
+      MaterialExpressionEditorX=-1464
+      MaterialExpressionEditorY=432
+      MaterialExpressionGuid=5514D4C34E648EF5A1BBC0A0F1EA40AC
+      Function="/Script/Engine.MaterialFunction'Scale_Intensity_Around_Sun'"
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/Material_Functions/Scale_Intensity_Around_Sun.Scale_Intensity_Around_Sun:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'Scale_Intensity_Around_SunEditorOnlyData'"
+   StateId=E03B4F284ED20473A4A499893E97B8E4
+   CombinedOutputTypes=15
+   ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+End Object

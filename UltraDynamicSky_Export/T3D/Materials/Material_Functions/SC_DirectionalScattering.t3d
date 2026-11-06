@@ -1,3 +1,892 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:569f5c867a810535cd7630b5e73538f62e4678d5aea66fce1acd4f994bce5fcc
-size 95015
+Begin Object Class=/Script/Engine.MaterialFunction Name="SC_DirectionalScattering" ExportPath="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering'"
+   Begin Object Class=/Script/Engine.MaterialFunctionEditorOnlyData Name="SC_DirectionalScatteringEditorOnlyData" ExportPath="/Script/Engine.MaterialFunctionEditorOnlyData'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:SC_DirectionalScatteringEditorOnlyData'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAdd Name="MaterialExpressionAdd_0" ExportPath="/Script/Engine.MaterialExpressionAdd'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionAdd_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAdd Name="MaterialExpressionAdd_3" ExportPath="/Script/Engine.MaterialExpressionAdd'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionAdd_3'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAppendVector Name="MaterialExpressionAppendVector_0" ExportPath="/Script/Engine.MaterialExpressionAppendVector'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionAppendVector_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAppendVector Name="MaterialExpressionAppendVector_1" ExportPath="/Script/Engine.MaterialExpressionAppendVector'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionAppendVector_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAppendVector Name="MaterialExpressionAppendVector_2" ExportPath="/Script/Engine.MaterialExpressionAppendVector'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionAppendVector_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAppendVector Name="MaterialExpressionAppendVector_3" ExportPath="/Script/Engine.MaterialExpressionAppendVector'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionAppendVector_3'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAppendVector Name="MaterialExpressionAppendVector_4" ExportPath="/Script/Engine.MaterialExpressionAppendVector'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionAppendVector_4'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionArccosineFast Name="MaterialExpressionArccosineFast_0" ExportPath="/Script/Engine.MaterialExpressionArccosineFast'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionArccosineFast_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionArccosineFast Name="MaterialExpressionArccosineFast_1" ExportPath="/Script/Engine.MaterialExpressionArccosineFast'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionArccosineFast_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionArctangent2Fast Name="MaterialExpressionArctangent2Fast_0" ExportPath="/Script/Engine.MaterialExpressionArctangent2Fast'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionArctangent2Fast_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionArctangent2Fast Name="MaterialExpressionArctangent2Fast_1" ExportPath="/Script/Engine.MaterialExpressionArctangent2Fast'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionArctangent2Fast_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionClamp Name="MaterialExpressionClamp_0" ExportPath="/Script/Engine.MaterialExpressionClamp'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionClamp_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionCollectionParameter Name="MaterialExpressionCollectionParameter_0" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionCollectionParameter_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionCollectionParameter Name="MaterialExpressionCollectionParameter_1" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionCollectionParameter_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_0" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionComponentMask_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_1" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionComponentMask_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_2" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionComponentMask_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_20" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionComponentMask_20'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_21" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionComponentMask_21'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_22" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionComponentMask_22'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_3" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionComponentMask_3'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_4" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionComponentMask_4'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_5" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionComponentMask_5'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_6" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionComponentMask_6'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_7" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionComponentMask_7'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_8" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionComponentMask_8'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_9" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionComponentMask_9'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_0" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionConstant_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_1" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionConstant_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_9" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionConstant_9'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant2Vector Name="MaterialExpressionConstant2Vector_0" ExportPath="/Script/Engine.MaterialExpressionConstant2Vector'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionConstant2Vector_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant2Vector Name="MaterialExpressionConstant2Vector_1" ExportPath="/Script/Engine.MaterialExpressionConstant2Vector'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionConstant2Vector_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDistance Name="MaterialExpressionDistance_0" ExportPath="/Script/Engine.MaterialExpressionDistance'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionDistance_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDivide Name="MaterialExpressionDivide_0" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionDivide_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDivide Name="MaterialExpressionDivide_1" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionDivide_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDivide Name="MaterialExpressionDivide_2" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionDivide_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDivide Name="MaterialExpressionDivide_3" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionDivide_3'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDivide Name="MaterialExpressionDivide_4" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionDivide_4'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDivide Name="MaterialExpressionDivide_5" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionDivide_5'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDivide Name="MaterialExpressionDivide_6" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionDivide_6'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFrac Name="MaterialExpressionFrac_0" ExportPath="/Script/Engine.MaterialExpressionFrac'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionFrac_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFrac Name="MaterialExpressionFrac_4" ExportPath="/Script/Engine.MaterialExpressionFrac'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionFrac_4'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionInput Name="MaterialExpressionFunctionInput_5" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionFunctionInput_5'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionOutput Name="MaterialExpressionFunctionOutput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionFunctionOutput_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFunctionOutput Name="MaterialExpressionFunctionOutput_1" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionFunctionOutput_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_0" ExportPath="/Script/Engine.MaterialExpressionLinearInterpolate'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionLinearInterpolate_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_0" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionMultiply_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_1" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionMultiply_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_11" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionMultiply_11'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_12" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionMultiply_12'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_3" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionMultiply_3'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_4" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionMultiply_4'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_6" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionMultiply_6'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_8" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionMultiply_8'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNamedRerouteDeclaration Name="MaterialExpressionNamedRerouteDeclaration_1" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionNamedRerouteDeclaration_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNamedRerouteDeclaration Name="MaterialExpressionNamedRerouteDeclaration_2" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionNamedRerouteDeclaration_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNamedRerouteDeclaration Name="MaterialExpressionNamedRerouteDeclaration_3" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionNamedRerouteDeclaration_3'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNamedRerouteUsage Name="MaterialExpressionNamedRerouteUsage_1" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionNamedRerouteUsage_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNamedRerouteUsage Name="MaterialExpressionNamedRerouteUsage_2" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionNamedRerouteUsage_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNamedRerouteUsage Name="MaterialExpressionNamedRerouteUsage_3" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionNamedRerouteUsage_3'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNamedRerouteUsage Name="MaterialExpressionNamedRerouteUsage_4" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionNamedRerouteUsage_4'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNamedRerouteUsage Name="MaterialExpressionNamedRerouteUsage_5" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionNamedRerouteUsage_5'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNamedRerouteUsage Name="MaterialExpressionNamedRerouteUsage_6" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionNamedRerouteUsage_6'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNormalize Name="MaterialExpressionNormalize_1" ExportPath="/Script/Engine.MaterialExpressionNormalize'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionNormalize_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNormalize Name="MaterialExpressionNormalize_2" ExportPath="/Script/Engine.MaterialExpressionNormalize'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionNormalize_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNormalize Name="MaterialExpressionNormalize_3" ExportPath="/Script/Engine.MaterialExpressionNormalize'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionNormalize_3'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionOneMinus Name="MaterialExpressionOneMinus_0" ExportPath="/Script/Engine.MaterialExpressionOneMinus'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionOneMinus_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionOneMinus Name="MaterialExpressionOneMinus_3" ExportPath="/Script/Engine.MaterialExpressionOneMinus'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionOneMinus_3'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionPower Name="MaterialExpressionPower_2" ExportPath="/Script/Engine.MaterialExpressionPower'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionPower_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSaturate Name="MaterialExpressionSaturate_0" ExportPath="/Script/Engine.MaterialExpressionSaturate'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionSaturate_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSaturate Name="MaterialExpressionSaturate_2" ExportPath="/Script/Engine.MaterialExpressionSaturate'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionSaturate_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_0" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionScalarParameter_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionStaticBool Name="MaterialExpressionStaticBool_0" ExportPath="/Script/Engine.MaterialExpressionStaticBool'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionStaticBool_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionStaticSwitch Name="MaterialExpressionStaticSwitch_0" ExportPath="/Script/Engine.MaterialExpressionStaticSwitch'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionStaticSwitch_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionStaticSwitch Name="MaterialExpressionStaticSwitch_1" ExportPath="/Script/Engine.MaterialExpressionStaticSwitch'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionStaticSwitch_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionStaticSwitch Name="MaterialExpressionStaticSwitch_2" ExportPath="/Script/Engine.MaterialExpressionStaticSwitch'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionStaticSwitch_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSubtract Name="MaterialExpressionSubtract_1" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionSubtract_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureObjectParameter Name="MaterialExpressionTextureObjectParameter_0" ExportPath="/Script/Engine.MaterialExpressionTextureObjectParameter'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionTextureObjectParameter_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureObjectParameter Name="MaterialExpressionTextureObjectParameter_1" ExportPath="/Script/Engine.MaterialExpressionTextureObjectParameter'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionTextureObjectParameter_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_0" ExportPath="/Script/Engine.MaterialExpressionTextureSample'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionTextureSample_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_1" ExportPath="/Script/Engine.MaterialExpressionTextureSample'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionTextureSample_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_2" ExportPath="/Script/Engine.MaterialExpressionTextureSample'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionTextureSample_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_5" ExportPath="/Script/Engine.MaterialExpressionVectorParameter'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionVectorParameter_5'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_6" ExportPath="/Script/Engine.MaterialExpressionVectorParameter'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionVectorParameter_6'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionWorldPosition Name="MaterialExpressionWorldPosition_1" ExportPath="/Script/Engine.MaterialExpressionWorldPosition'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionWorldPosition_1'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   Begin Object Name="SC_DirectionalScatteringEditorOnlyData" ExportPath="/Script/Engine.MaterialFunctionEditorOnlyData'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:SC_DirectionalScatteringEditorOnlyData'"
+      ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'SC_DirectionalScattering:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionTextureSample'SC_DirectionalScattering:MaterialExpressionTextureSample_0'","/Script/Engine.MaterialExpressionNormalize'SC_DirectionalScattering:MaterialExpressionNormalize_1'","/Script/Engine.MaterialExpressionComponentMask'SC_DirectionalScattering:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionAppendVector'SC_DirectionalScattering:MaterialExpressionAppendVector_2'","/Script/Engine.MaterialExpressionMultiply'SC_DirectionalScattering:MaterialExpressionMultiply_6'","/Script/Engine.MaterialExpressionMultiply'SC_DirectionalScattering:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionWorldPosition'SC_DirectionalScattering:MaterialExpressionWorldPosition_1'","/Script/Engine.MaterialExpressionNormalize'SC_DirectionalScattering:MaterialExpressionNormalize_2'","/Script/Engine.MaterialExpressionNormalize'SC_DirectionalScattering:MaterialExpressionNormalize_3'","/Script/Engine.MaterialExpressionComponentMask'SC_DirectionalScattering:MaterialExpressionComponentMask_2'","/Script/Engine.MaterialExpressionComponentMask'SC_DirectionalScattering:MaterialExpressionComponentMask_5'","/Script/Engine.MaterialExpressionComponentMask'SC_DirectionalScattering:MaterialExpressionComponentMask_6'","/Script/Engine.MaterialExpressionMultiply'SC_DirectionalScattering:MaterialExpressionMultiply_3'","/Script/Engine.MaterialExpressionAppendVector'SC_DirectionalScattering:MaterialExpressionAppendVector_3'","/Script/Engine.MaterialExpressionFrac'SC_DirectionalScattering:MaterialExpressionFrac_0'","/Script/Engine.MaterialExpressionDistance'SC_DirectionalScattering:MaterialExpressionDistance_0'","/Script/Engine.MaterialExpressionConstant'SC_DirectionalScattering:MaterialExpressionConstant_0'","/Script/Engine.MaterialExpressionMultiply'SC_DirectionalScattering:MaterialExpressionMultiply_4'","/Script/Engine.MaterialExpressionSaturate'SC_DirectionalScattering:MaterialExpressionSaturate_0'","/Script/Engine.MaterialExpressionSubtract'SC_DirectionalScattering:MaterialExpressionSubtract_1'","/Script/Engine.MaterialExpressionAdd'SC_DirectionalScattering:MaterialExpressionAdd_3'","/Script/Engine.MaterialExpressionMultiply'SC_DirectionalScattering:MaterialExpressionMultiply_8'","/Script/Engine.MaterialExpressionClamp'SC_DirectionalScattering:MaterialExpressionClamp_0'","/Script/Engine.MaterialExpressionComponentMask'SC_DirectionalScattering:MaterialExpressionComponentMask_20'","/Script/Engine.MaterialExpressionComponentMask'SC_DirectionalScattering:MaterialExpressionComponentMask_21'","/Script/Engine.MaterialExpressionComponentMask'SC_DirectionalScattering:MaterialExpressionComponentMask_22'","/Script/Engine.MaterialExpressionDivide'SC_DirectionalScattering:MaterialExpressionDivide_3'","/Script/Engine.MaterialExpressionConstant'SC_DirectionalScattering:MaterialExpressionConstant_9'","/Script/Engine.MaterialExpressionFrac'SC_DirectionalScattering:MaterialExpressionFrac_4'","/Script/Engine.MaterialExpressionDivide'SC_DirectionalScattering:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionSaturate'SC_DirectionalScattering:MaterialExpressionSaturate_2'","/Script/Engine.MaterialExpressionOneMinus'SC_DirectionalScattering:MaterialExpressionOneMinus_3'","/Script/Engine.MaterialExpressionPower'SC_DirectionalScattering:MaterialExpressionPower_2'","/Script/Engine.MaterialExpressionArctangent2Fast'SC_DirectionalScattering:MaterialExpressionArctangent2Fast_0'","/Script/Engine.MaterialExpressionFunctionOutput'SC_DirectionalScattering:MaterialExpressionFunctionOutput_1'","/Script/Engine.MaterialExpressionTextureSample'SC_DirectionalScattering:MaterialExpressionTextureSample_1'","/Script/Engine.MaterialExpressionAppendVector'SC_DirectionalScattering:MaterialExpressionAppendVector_4'","/Script/Engine.MaterialExpressionConstant2Vector'SC_DirectionalScattering:MaterialExpressionConstant2Vector_0'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'SC_DirectionalScattering:MaterialExpressionNamedRerouteDeclaration_1'","/Script/Engine.MaterialExpressionNamedRerouteUsage'SC_DirectionalScattering:MaterialExpressionNamedRerouteUsage_1'","/Script/Engine.MaterialExpressionFunctionInput'SC_DirectionalScattering:MaterialExpressionFunctionInput_5'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'SC_DirectionalScattering:MaterialExpressionNamedRerouteDeclaration_2'","/Script/Engine.MaterialExpressionStaticSwitch'SC_DirectionalScattering:MaterialExpressionStaticSwitch_0'","/Script/Engine.MaterialExpressionNamedRerouteUsage'SC_DirectionalScattering:MaterialExpressionNamedRerouteUsage_2'","/Script/Engine.MaterialExpressionTextureObjectParameter'SC_DirectionalScattering:MaterialExpressionTextureObjectParameter_0'","/Script/Engine.MaterialExpressionTextureObjectParameter'SC_DirectionalScattering:MaterialExpressionTextureObjectParameter_1'","/Script/Engine.MaterialExpressionStaticSwitch'SC_DirectionalScattering:MaterialExpressionStaticSwitch_1'","/Script/Engine.MaterialExpressionNamedRerouteUsage'SC_DirectionalScattering:MaterialExpressionNamedRerouteUsage_3'","/Script/Engine.MaterialExpressionStaticBool'SC_DirectionalScattering:MaterialExpressionStaticBool_0'","/Script/Engine.MaterialExpressionVectorParameter'SC_DirectionalScattering:MaterialExpressionVectorParameter_5'","/Script/Engine.MaterialExpressionVectorParameter'SC_DirectionalScattering:MaterialExpressionVectorParameter_6'","/Script/Engine.MaterialExpressionStaticSwitch'SC_DirectionalScattering:MaterialExpressionStaticSwitch_2'","/Script/Engine.MaterialExpressionNamedRerouteUsage'SC_DirectionalScattering:MaterialExpressionNamedRerouteUsage_4'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'SC_DirectionalScattering:MaterialExpressionNamedRerouteDeclaration_3'","/Script/Engine.MaterialExpressionMultiply'SC_DirectionalScattering:MaterialExpressionMultiply_11'","/Script/Engine.MaterialExpressionNamedRerouteUsage'SC_DirectionalScattering:MaterialExpressionNamedRerouteUsage_5'","/Script/Engine.MaterialExpressionMultiply'SC_DirectionalScattering:MaterialExpressionMultiply_12'","/Script/Engine.MaterialExpressionNamedRerouteUsage'SC_DirectionalScattering:MaterialExpressionNamedRerouteUsage_6'","/Script/Engine.MaterialExpressionDivide'SC_DirectionalScattering:MaterialExpressionDivide_1'","/Script/Engine.MaterialExpressionDivide'SC_DirectionalScattering:MaterialExpressionDivide_2'","/Script/Engine.MaterialExpressionAdd'SC_DirectionalScattering:MaterialExpressionAdd_0'","/Script/Engine.MaterialExpressionComponentMask'SC_DirectionalScattering:MaterialExpressionComponentMask_1'","/Script/Engine.MaterialExpressionComponentMask'SC_DirectionalScattering:MaterialExpressionComponentMask_3'","/Script/Engine.MaterialExpressionDivide'SC_DirectionalScattering:MaterialExpressionDivide_4'","/Script/Engine.MaterialExpressionMultiply'SC_DirectionalScattering:MaterialExpressionMultiply_1'","/Script/Engine.MaterialExpressionDivide'SC_DirectionalScattering:MaterialExpressionDivide_5'","/Script/Engine.MaterialExpressionAppendVector'SC_DirectionalScattering:MaterialExpressionAppendVector_0'","/Script/Engine.MaterialExpressionComponentMask'SC_DirectionalScattering:MaterialExpressionComponentMask_4'","/Script/Engine.MaterialExpressionDivide'SC_DirectionalScattering:MaterialExpressionDivide_6'","/Script/Engine.MaterialExpressionArctangent2Fast'SC_DirectionalScattering:MaterialExpressionArctangent2Fast_1'","/Script/Engine.MaterialExpressionArccosineFast'SC_DirectionalScattering:MaterialExpressionArccosineFast_0'","/Script/Engine.MaterialExpressionArccosineFast'SC_DirectionalScattering:MaterialExpressionArccosineFast_1'","/Script/Engine.MaterialExpressionCollectionParameter'SC_DirectionalScattering:MaterialExpressionCollectionParameter_1'","/Script/Engine.MaterialExpressionComponentMask'SC_DirectionalScattering:MaterialExpressionComponentMask_7'","/Script/Engine.MaterialExpressionCollectionParameter'SC_DirectionalScattering:MaterialExpressionCollectionParameter_0'","/Script/Engine.MaterialExpressionComponentMask'SC_DirectionalScattering:MaterialExpressionComponentMask_8'","/Script/Engine.MaterialExpressionTextureSample'SC_DirectionalScattering:MaterialExpressionTextureSample_2'","/Script/Engine.MaterialExpressionComponentMask'SC_DirectionalScattering:MaterialExpressionComponentMask_9'","/Script/Engine.MaterialExpressionAppendVector'SC_DirectionalScattering:MaterialExpressionAppendVector_1'","/Script/Engine.MaterialExpressionConstant'SC_DirectionalScattering:MaterialExpressionConstant_1'","/Script/Engine.MaterialExpressionLinearInterpolate'SC_DirectionalScattering:MaterialExpressionLinearInterpolate_0'","/Script/Engine.MaterialExpressionScalarParameter'SC_DirectionalScattering:MaterialExpressionScalarParameter_0'","/Script/Engine.MaterialExpressionOneMinus'SC_DirectionalScattering:MaterialExpressionOneMinus_0'","/Script/Engine.MaterialExpressionConstant2Vector'SC_DirectionalScattering:MaterialExpressionConstant2Vector_1'"))
+   End Object
+   Begin Object Name="MaterialExpressionAdd_0" ExportPath="/Script/Engine.MaterialExpressionAdd'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionAdd_0'"
+      B=(Expression="/Script/Engine.MaterialExpressionDivide'SC_DirectionalScattering:MaterialExpressionDivide_4'")
+      ConstA=1.000000
+      MaterialExpressionEditorX=-2452
+      MaterialExpressionEditorY=2164
+      MaterialExpressionGuid=3D78B2B647BAADBBFA3A2EB1507F77ED
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionAdd_3" ExportPath="/Script/Engine.MaterialExpressionAdd'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionAdd_3'"
+      A=(Expression="/Script/Engine.MaterialExpressionSubtract'SC_DirectionalScattering:MaterialExpressionSubtract_1'")
+      ConstB=0.250000
+      MaterialExpressionEditorX=-1588
+      MaterialExpressionEditorY=1892
+      MaterialExpressionGuid=EE227B5B4E3A95B0181384ACA28C9AA2
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionAppendVector_0" ExportPath="/Script/Engine.MaterialExpressionAppendVector'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionAppendVector_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionDivide'SC_DirectionalScattering:MaterialExpressionDivide_5'")
+      B=(Expression="/Script/Engine.MaterialExpressionDivide'SC_DirectionalScattering:MaterialExpressionDivide_6'")
+      MaterialExpressionEditorX=-2104
+      MaterialExpressionEditorY=2164
+      MaterialExpressionGuid=9BE0805D4F14EB4780B32A8731437B7C
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionAppendVector_1" ExportPath="/Script/Engine.MaterialExpressionAppendVector'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionAppendVector_1'"
+      A=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'SC_DirectionalScattering:MaterialExpressionConstant2Vector_1'",Mask=1,MaskR=1,MaskG=1)
+      B=(Expression="/Script/Engine.MaterialExpressionComponentMask'SC_DirectionalScattering:MaterialExpressionComponentMask_9'")
+      MaterialExpressionEditorX=80
+      MaterialExpressionEditorY=1848
+      MaterialExpressionGuid=ACC019CD47F7BA9011642C9115E3FAAB
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionAppendVector_2" ExportPath="/Script/Engine.MaterialExpressionAppendVector'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionAppendVector_2'"
+      A=(Expression="/Script/Engine.MaterialExpressionAppendVector'SC_DirectionalScattering:MaterialExpressionAppendVector_3'")
+      B=(Expression="/Script/Engine.MaterialExpressionPower'SC_DirectionalScattering:MaterialExpressionPower_2'")
+      MaterialExpressionEditorX=-284
+      MaterialExpressionEditorY=2140
+      MaterialExpressionGuid=344C48964D97A85B4E06B5B52BFFFBD2
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionAppendVector_3" ExportPath="/Script/Engine.MaterialExpressionAppendVector'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionAppendVector_3'"
+      A=(Expression="/Script/Engine.MaterialExpressionSaturate'SC_DirectionalScattering:MaterialExpressionSaturate_0'")
+      B=(Expression="/Script/Engine.MaterialExpressionClamp'SC_DirectionalScattering:MaterialExpressionClamp_0'")
+      MaterialExpressionEditorX=-776
+      MaterialExpressionEditorY=2136
+      MaterialExpressionGuid=BE9E6EC64F8653E2A04833BAFD0417DD
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionAppendVector_4" ExportPath="/Script/Engine.MaterialExpressionAppendVector'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionAppendVector_4'"
+      A=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'SC_DirectionalScattering:MaterialExpressionConstant2Vector_0'",Mask=1,MaskR=1,MaskG=1)
+      B=(Expression="/Script/Engine.MaterialExpressionPower'SC_DirectionalScattering:MaterialExpressionPower_2'")
+      MaterialExpressionEditorX=-211
+      MaterialExpressionEditorY=2424
+      MaterialExpressionGuid=5DC0518F47DDC8B64818938834A6F04D
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionArccosineFast_0" ExportPath="/Script/Engine.MaterialExpressionArccosineFast'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionArccosineFast_0'"
+      Input=(Expression="/Script/Engine.MaterialExpressionComponentMask'SC_DirectionalScattering:MaterialExpressionComponentMask_4'")
+      MaterialExpressionEditorX=-2756
+      MaterialExpressionEditorY=2416
+      MaterialExpressionGuid=31BA25F34442B0FD9A8106BEE74039D0
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionArccosineFast_1" ExportPath="/Script/Engine.MaterialExpressionArccosineFast'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionArccosineFast_1'"
+      Input=(Expression="/Script/Engine.MaterialExpressionMultiply'SC_DirectionalScattering:MaterialExpressionMultiply_0'")
+      MaterialExpressionEditorX=-1240
+      MaterialExpressionEditorY=2456
+      MaterialExpressionGuid=ABFB57CD407F9D9CBD507F8A76D270CC
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionArctangent2Fast_0" ExportPath="/Script/Engine.MaterialExpressionArctangent2Fast'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionArctangent2Fast_0'"
+      Y=(Expression="/Script/Engine.MaterialExpressionComponentMask'SC_DirectionalScattering:MaterialExpressionComponentMask_21'")
+      X=(Expression="/Script/Engine.MaterialExpressionComponentMask'SC_DirectionalScattering:MaterialExpressionComponentMask_20'")
+      MaterialExpressionEditorX=-2456
+      MaterialExpressionEditorY=1700
+      MaterialExpressionGuid=F29B12BE4ECBC4EA49FA94B521266A94
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionArctangent2Fast_1" ExportPath="/Script/Engine.MaterialExpressionArctangent2Fast'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionArctangent2Fast_1'"
+      Y=(Expression="/Script/Engine.MaterialExpressionComponentMask'SC_DirectionalScattering:MaterialExpressionComponentMask_3'")
+      X=(Expression="/Script/Engine.MaterialExpressionMultiply'SC_DirectionalScattering:MaterialExpressionMultiply_1'")
+      MaterialExpressionEditorX=-2796
+      MaterialExpressionEditorY=2196
+      MaterialExpressionGuid=409FD55C4B0B7667B1D7EF97F4A4C4E8
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionClamp_0" ExportPath="/Script/Engine.MaterialExpressionClamp'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionClamp_0'"
+      Input=(Expression="/Script/Engine.MaterialExpressionMultiply'SC_DirectionalScattering:MaterialExpressionMultiply_8'")
+      MaxDefault=0.950000
+      MaterialExpressionEditorX=-1356
+      MaterialExpressionEditorY=2168
+      MaterialExpressionGuid=E7ACAD5949B2CF24B87E068A34EEA5F4
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionCollectionParameter_0" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionCollectionParameter_0'"
+      Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+      ParameterName="Sun Vector"
+      ParameterId=618AEFCB40106BAF34FCDD876EDC3DCE
+      MaterialExpressionEditorX=-3764
+      MaterialExpressionEditorY=1676
+      MaterialExpressionGuid=15C1FEA24B19C1A2E55191B583EBBB03
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionCollectionParameter_1" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionCollectionParameter_1'"
+      Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+      ParameterName="Moon Vector"
+      ParameterId=8CEA313D47D706F8C060D5BA112E274B
+      MaterialExpressionEditorX=-3764
+      MaterialExpressionEditorY=1784
+      MaterialExpressionGuid=3F90E0CC4C4E21A84FEED3B5C3E517E7
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_0" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionComponentMask_0'"
+      Input=(Expression="/Script/Engine.MaterialExpressionNormalize'SC_DirectionalScattering:MaterialExpressionNormalize_1'")
+      B=True
+      MaterialExpressionEditorX=-1512
+      MaterialExpressionEditorY=2456
+      MaterialExpressionGuid=7B6026914D72FB92025335B5D6006B8C
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_1" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionComponentMask_1'"
+      Input=(Expression="/Script/Engine.MaterialExpressionNormalize'SC_DirectionalScattering:MaterialExpressionNormalize_2'")
+      G=True
+      MaterialExpressionEditorX=-3060
+      MaterialExpressionEditorY=2296
+      MaterialExpressionGuid=9CD404554E0CA90B79C46F91A040481C
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_2" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionComponentMask_2'"
+      Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'SC_DirectionalScattering:MaterialExpressionNamedRerouteDeclaration_1'")
+      R=True
+      G=True
+      MaterialExpressionEditorX=-2904
+      MaterialExpressionEditorY=1700
+      MaterialExpressionGuid=B595A3E14769B974903F6B8A1C9DF5CD
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_20" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionComponentMask_20'"
+      Input=(Expression="/Script/Engine.MaterialExpressionNormalize'SC_DirectionalScattering:MaterialExpressionNormalize_3'")
+      R=True
+      MaterialExpressionEditorX=-2576
+      MaterialExpressionEditorY=1788
+      MaterialExpressionGuid=59C2C5AA4292C7A52A491499D991CB60
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_21" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionComponentMask_21'"
+      Input=(Expression="/Script/Engine.MaterialExpressionNormalize'SC_DirectionalScattering:MaterialExpressionNormalize_3'")
+      G=True
+      MaterialExpressionEditorX=-2584
+      MaterialExpressionEditorY=1700
+      MaterialExpressionGuid=1DAE07BE4ED637DD5979FD8C6E3C0F54
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_22" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionComponentMask_22'"
+      Input=(Expression="/Script/Engine.MaterialExpressionArctangent2Fast'SC_DirectionalScattering:MaterialExpressionArctangent2Fast_0'")
+      R=True
+      MaterialExpressionEditorX=-2284
+      MaterialExpressionEditorY=1700
+      MaterialExpressionGuid=B69F238949A286F909381E9FC7424A0B
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_3" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionComponentMask_3'"
+      Input=(Expression="/Script/Engine.MaterialExpressionNormalize'SC_DirectionalScattering:MaterialExpressionNormalize_2'")
+      R=True
+      MaterialExpressionEditorX=-3040
+      MaterialExpressionEditorY=2196
+      MaterialExpressionGuid=A2CA72A542DA45173D1107B488C25836
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_4" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionComponentMask_4'"
+      Input=(Expression="/Script/Engine.MaterialExpressionNormalize'SC_DirectionalScattering:MaterialExpressionNormalize_2'")
+      B=True
+      MaterialExpressionEditorX=-3064
+      MaterialExpressionEditorY=2415
+      MaterialExpressionGuid=2EC30EF04E8EFCF1EDE067AB399C44CC
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_5" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionComponentMask_5'"
+      Input=(Expression="/Script/Engine.MaterialExpressionAppendVector'SC_DirectionalScattering:MaterialExpressionAppendVector_0'")
+      R=True
+      MaterialExpressionEditorX=-1908
+      MaterialExpressionEditorY=2008
+      MaterialExpressionGuid=7291E6F0440C1B3588834CBD328F61D1
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_6" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionComponentMask_6'"
+      Input=(Expression="/Script/Engine.MaterialExpressionAppendVector'SC_DirectionalScattering:MaterialExpressionAppendVector_0'")
+      G=True
+      MaterialExpressionEditorX=-1888
+      MaterialExpressionEditorY=2164
+      MaterialExpressionGuid=0F2658BF42B30E7990088CBBDFF3A493
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_7" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionComponentMask_7'"
+      Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'SC_DirectionalScattering:MaterialExpressionCollectionParameter_1'")
+      R=True
+      G=True
+      B=True
+      MaterialExpressionEditorX=-3516
+      MaterialExpressionEditorY=1808
+      MaterialExpressionGuid=309A296C4A0645C40F05CDA170F47A11
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_8" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionComponentMask_8'"
+      Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'SC_DirectionalScattering:MaterialExpressionCollectionParameter_0'")
+      R=True
+      G=True
+      B=True
+      MaterialExpressionEditorX=-3516
+      MaterialExpressionEditorY=1700
+      MaterialExpressionGuid=E5B10C2D4DEACA69F0035EACCD58FC25
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_9" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionComponentMask_9'"
+      Input=(Expression="/Script/Engine.MaterialExpressionAppendVector'SC_DirectionalScattering:MaterialExpressionAppendVector_2'")
+      B=True
+      MaterialExpressionEditorX=-100
+      MaterialExpressionEditorY=1992
+      MaterialExpressionGuid=C96AB4704AC2D27730485F8795240E31
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionConstant_0" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionConstant_0'"
+      R=0.500000
+      MaterialExpressionEditorX=-1436
+      MaterialExpressionEditorY=1976
+      MaterialExpressionGuid=21C72E81427C2ADD1DB7BFA6E71D358B
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionConstant_1" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionConstant_1'"
+      R=0.500000
+      MaterialExpressionEditorX=-108
+      MaterialExpressionEditorY=1848
+      MaterialExpressionGuid=F15A1C9043781EC8B8FD039E99DCA8A3
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionConstant_9" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionConstant_9'"
+      R=6.283185
+      MaterialExpressionEditorX=-2276
+      MaterialExpressionEditorY=1812
+      MaterialExpressionGuid=5D7ED92047372450A004D9B507B3F935
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionConstant2Vector_0" ExportPath="/Script/Engine.MaterialExpressionConstant2Vector'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionConstant2Vector_0'"
+      R=0.500000
+      G=0.990000
+      MaterialExpressionEditorX=-360
+      MaterialExpressionEditorY=2424
+      MaterialExpressionGuid=99D6C0DD4D49EC67FAC091970D96C322
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionConstant2Vector_1" ExportPath="/Script/Engine.MaterialExpressionConstant2Vector'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionConstant2Vector_1'"
+      R=0.500000
+      G=0.650000
+      MaterialExpressionEditorX=-360
+      MaterialExpressionEditorY=1844
+      MaterialExpressionGuid=54D9998346C80A57BEBFB883F377401B
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionDistance_0" ExportPath="/Script/Engine.MaterialExpressionDistance'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionDistance_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionFrac'SC_DirectionalScattering:MaterialExpressionFrac_0'")
+      B=(Expression="/Script/Engine.MaterialExpressionConstant'SC_DirectionalScattering:MaterialExpressionConstant_0'")
+      MaterialExpressionEditorX=-1264
+      MaterialExpressionEditorY=1896
+      MaterialExpressionGuid=DE3B972B4AD298286E13B9A7B821F488
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionDivide_0" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionDivide_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionMultiply'SC_DirectionalScattering:MaterialExpressionMultiply_6'")
+      ConstB=99.000000
+      MaterialExpressionEditorX=-916
+      MaterialExpressionEditorY=2456
+      MaterialExpressionGuid=7225845A406EE93D41BF06B2E42C4AF8
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionDivide_1" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionDivide_1'"
+      A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'SC_DirectionalScattering:MaterialExpressionLinearInterpolate_0'")
+      ConstB=10.000000
+      MaterialExpressionEditorX=1100
+      MaterialExpressionEditorY=2108
+      MaterialExpressionGuid=5D597C29470285783DAA43B20E227D51
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionDivide_2" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionDivide_2'"
+      A=(Expression="/Script/Engine.MaterialExpressionTextureSample'SC_DirectionalScattering:MaterialExpressionTextureSample_1'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      ConstB=10.000000
+      MaterialExpressionEditorX=556
+      MaterialExpressionEditorY=2424
+      MaterialExpressionGuid=D823792E41E0E3F8F2B60AAA57653F6A
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionDivide_3" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionDivide_3'"
+      A=(Expression="/Script/Engine.MaterialExpressionComponentMask'SC_DirectionalScattering:MaterialExpressionComponentMask_22'")
+      B=(Expression="/Script/Engine.MaterialExpressionConstant'SC_DirectionalScattering:MaterialExpressionConstant_9'")
+      MaterialExpressionEditorX=-2060
+      MaterialExpressionEditorY=1700
+      MaterialExpressionGuid=7E18DAAA4DF74D1F377541A36E2449EE
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionDivide_4" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionDivide_4'"
+      A=(Expression="/Script/Engine.MaterialExpressionArctangent2Fast'SC_DirectionalScattering:MaterialExpressionArctangent2Fast_1'")
+      ConstB=3.141593
+      MaterialExpressionEditorX=-2632
+      MaterialExpressionEditorY=2196
+      MaterialExpressionGuid=033CDBD04DEFCFCE6B164E95134AE0C3
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionDivide_5" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionDivide_5'"
+      A=(Expression="/Script/Engine.MaterialExpressionAdd'SC_DirectionalScattering:MaterialExpressionAdd_0'")
+      MaterialExpressionEditorX=-2316
+      MaterialExpressionEditorY=2164
+      MaterialExpressionGuid=D0ED8D0F4B63BBC47A66F084A3999234
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionDivide_6" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionDivide_6'"
+      A=(Expression="/Script/Engine.MaterialExpressionArccosineFast'SC_DirectionalScattering:MaterialExpressionArccosineFast_0'")
+      ConstB=3.141593
+      MaterialExpressionEditorX=-2428
+      MaterialExpressionEditorY=2416
+      MaterialExpressionGuid=50E320A14FE4478BE06DC28E63FA121F
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionFrac_0" ExportPath="/Script/Engine.MaterialExpressionFrac'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionFrac_0'"
+      Input=(Expression="/Script/Engine.MaterialExpressionAdd'SC_DirectionalScattering:MaterialExpressionAdd_3'")
+      MaterialExpressionEditorX=-1420
+      MaterialExpressionEditorY=1896
+      MaterialExpressionGuid=0B69FD9148737F87970D72925D96DDFC
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionFrac_4" ExportPath="/Script/Engine.MaterialExpressionFrac'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionFrac_4'"
+      Input=(Expression="/Script/Engine.MaterialExpressionDivide'SC_DirectionalScattering:MaterialExpressionDivide_3'")
+      MaterialExpressionEditorX=-1940
+      MaterialExpressionEditorY=1700
+      MaterialExpressionGuid=EB8F82E3432101F8908148A3D5385243
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionFunctionInput_5" ExportPath="/Script/Engine.MaterialExpressionFunctionInput'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionFunctionInput_5'"
+      Preview=(Expression="/Script/Engine.MaterialExpressionStaticBool'SC_DirectionalScattering:MaterialExpressionStaticBool_0'")
+      InputName="Sun or Moon"
+      Description="True for Sun, False for Moon"
+      Id=5C19C82342B0FF569D420C9E9592A992
+      InputType=FunctionInput_StaticBool
+      bUsePreviewValueAsDefault=True
+      MaterialExpressionEditorX=-2452
+      MaterialExpressionEditorY=2828
+      MaterialExpressionGuid=5C11413949791DDEADB83488948DE605
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionFunctionOutput_0" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionFunctionOutput_0'"
+      OutputName="Atmosphere Color"
+      A=(Expression="/Script/Engine.MaterialExpressionMultiply'SC_DirectionalScattering:MaterialExpressionMultiply_12'")
+      bLastPreviewed=True
+      Id=AFC3D3F640CA1B583A32AF91AD2D1806
+      MaterialExpressionEditorX=1576
+      MaterialExpressionEditorY=2080
+      MaterialExpressionGuid=CADD0AD24899BE30881910AE93955323
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionFunctionOutput_1" ExportPath="/Script/Engine.MaterialExpressionFunctionOutput'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionFunctionOutput_1'"
+      OutputName="Light on Ground"
+      A=(Expression="/Script/Engine.MaterialExpressionMultiply'SC_DirectionalScattering:MaterialExpressionMultiply_11'")
+      bLastPreviewed=True
+      Id=3905A7B7497C3F4304480E939A19A34E
+      MaterialExpressionEditorX=1108
+      MaterialExpressionEditorY=2424
+      MaterialExpressionGuid=8F32622D4365C5495AEB309A18B4FE0D
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_0" ExportPath="/Script/Engine.MaterialExpressionLinearInterpolate'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionLinearInterpolate_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionTextureSample'SC_DirectionalScattering:MaterialExpressionTextureSample_2'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      B=(Expression="/Script/Engine.MaterialExpressionTextureSample'SC_DirectionalScattering:MaterialExpressionTextureSample_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      Alpha=(Expression="/Script/Engine.MaterialExpressionOneMinus'SC_DirectionalScattering:MaterialExpressionOneMinus_0'")
+      MaterialExpressionEditorX=856
+      MaterialExpressionEditorY=2108
+      MaterialExpressionGuid=027ADB2E4BF74BB966B2D584ADACED29
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_0" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionMultiply_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionComponentMask'SC_DirectionalScattering:MaterialExpressionComponentMask_0'")
+      ConstB=-1.000000
+      MaterialExpressionEditorX=-1384
+      MaterialExpressionEditorY=2456
+      MaterialExpressionGuid=D518F867482A47AD23F016B2622B1C9C
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_1" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionMultiply_1'"
+      A=(Expression="/Script/Engine.MaterialExpressionComponentMask'SC_DirectionalScattering:MaterialExpressionComponentMask_1'")
+      ConstB=-1.000000
+      MaterialExpressionEditorX=-2932
+      MaterialExpressionEditorY=2296
+      MaterialExpressionGuid=F22E64F841BC6DF1F9FE08A3E02062F4
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_11" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionMultiply_11'"
+      A=(Expression="/Script/Engine.MaterialExpressionDivide'SC_DirectionalScattering:MaterialExpressionDivide_2'")
+      B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'SC_DirectionalScattering:MaterialExpressionNamedRerouteUsage_5'")
+      MaterialExpressionEditorX=948
+      MaterialExpressionEditorY=2424
+      MaterialExpressionGuid=3A7C28D24F834FFF83B222918B34DEE7
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_12" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionMultiply_12'"
+      A=(Expression="/Script/Engine.MaterialExpressionDivide'SC_DirectionalScattering:MaterialExpressionDivide_1'")
+      B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'SC_DirectionalScattering:MaterialExpressionNamedRerouteUsage_6'")
+      MaterialExpressionEditorX=1428
+      MaterialExpressionEditorY=2108
+      MaterialExpressionGuid=D8AFB3584D65BC18273ABBA6A9C05B7D
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_3" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionMultiply_3'"
+      A=(Expression="/Script/Engine.MaterialExpressionComponentMask'SC_DirectionalScattering:MaterialExpressionComponentMask_6'")
+      ConstB=2.000000
+      MaterialExpressionEditorX=-1760
+      MaterialExpressionEditorY=2168
+      MaterialExpressionGuid=A4455CDA419CF0D2A8D60283CD98CBDF
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_4" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionMultiply_4'"
+      A=(Expression="/Script/Engine.MaterialExpressionDistance'SC_DirectionalScattering:MaterialExpressionDistance_0'")
+      ConstB=2.000000
+      MaterialExpressionEditorX=-1128
+      MaterialExpressionEditorY=1892
+      MaterialExpressionGuid=EF463CE7443BA19031AF90876C53FD36
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_6" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionMultiply_6'"
+      A=(Expression="/Script/Engine.MaterialExpressionArccosineFast'SC_DirectionalScattering:MaterialExpressionArccosineFast_1'")
+      ConstB=57.295780
+      MaterialExpressionEditorX=-1092
+      MaterialExpressionEditorY=2456
+      MaterialExpressionGuid=30564F644BAA3E8842567E8DD97030A6
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+      Desc="Output in degrees"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_8" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionMultiply_8'"
+      A=(Expression="/Script/Engine.MaterialExpressionMultiply'SC_DirectionalScattering:MaterialExpressionMultiply_3'")
+      ConstB=0.950000
+      MaterialExpressionEditorX=-1616
+      MaterialExpressionEditorY=2168
+      MaterialExpressionGuid=C7A60FD046A92B30E4AA8690CB1527B0
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionNamedRerouteDeclaration_1" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionNamedRerouteDeclaration_1'"
+      Input=(Expression="/Script/Engine.MaterialExpressionStaticSwitch'SC_DirectionalScattering:MaterialExpressionStaticSwitch_0'")
+      Name="Light Vector"
+      NodeColor=(R=0.031250,G=1.000000,B=0.000000,A=1.000000)
+      VariableGuid=BCC69B6C46AB7647003E308FC60A50A5
+      MaterialExpressionEditorX=-3056
+      MaterialExpressionEditorY=1700
+      MaterialExpressionGuid=AAE3D5E34C3F2BA9804C1598FEA9ADB9
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionNamedRerouteDeclaration_2" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionNamedRerouteDeclaration_2'"
+      Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'SC_DirectionalScattering:MaterialExpressionFunctionInput_5'")
+      Name="Is Sun"
+      NodeColor=(R=0.000000,G=1.000000,B=0.367188,A=1.000000)
+      VariableGuid=079A724440D1D00DF07AFFBA6303D655
+      MaterialExpressionEditorX=-2188
+      MaterialExpressionEditorY=2828
+      MaterialExpressionGuid=99291B7742FF195AADEEADBBE1796E86
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionNamedRerouteDeclaration_3" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionNamedRerouteDeclaration_3'"
+      Input=(Expression="/Script/Engine.MaterialExpressionStaticSwitch'SC_DirectionalScattering:MaterialExpressionStaticSwitch_2'")
+      Name="Color Multiplier"
+      NodeColor=(R=0.523438,G=0.000000,B=1.000000,A=1.000000)
+      VariableGuid=5B081AE74EB1ADF11A49C2809F76F0CA
+      MaterialExpressionEditorX=756
+      MaterialExpressionEditorY=2796
+      MaterialExpressionGuid=166399C546486C05A09B1F87CEC323FE
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionNamedRerouteUsage_1" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionNamedRerouteUsage_1'"
+      Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'SC_DirectionalScattering:MaterialExpressionNamedRerouteDeclaration_1'"
+      DeclarationGuid=BCC69B6C46AB7647003E308FC60A50A5
+      MaterialExpressionEditorX=-1796
+      MaterialExpressionEditorY=2456
+      MaterialExpressionGuid=E048281C4E6EE9D42B258C88F580E4C0
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionNamedRerouteUsage_2" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionNamedRerouteUsage_2'"
+      Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'SC_DirectionalScattering:MaterialExpressionNamedRerouteDeclaration_2'"
+      DeclarationGuid=079A724440D1D00DF07AFFBA6303D655
+      MaterialExpressionEditorX=-3272
+      MaterialExpressionEditorY=1900
+      MaterialExpressionGuid=4E5A757F438BD609B5162F872826CCAF
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionNamedRerouteUsage_3" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionNamedRerouteUsage_3'"
+      Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'SC_DirectionalScattering:MaterialExpressionNamedRerouteDeclaration_2'"
+      DeclarationGuid=079A724440D1D00DF07AFFBA6303D655
+      MaterialExpressionEditorX=-236
+      MaterialExpressionEditorY=2808
+      MaterialExpressionGuid=1C56B37241E55904B7C2BF82F3D25FFE
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionNamedRerouteUsage_4" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionNamedRerouteUsage_4'"
+      Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'SC_DirectionalScattering:MaterialExpressionNamedRerouteDeclaration_2'"
+      DeclarationGuid=079A724440D1D00DF07AFFBA6303D655
+      MaterialExpressionEditorX=472
+      MaterialExpressionEditorY=2888
+      MaterialExpressionGuid=7A1DF974463BC41403445A909CA2CC51
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionNamedRerouteUsage_5" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionNamedRerouteUsage_5'"
+      Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'SC_DirectionalScattering:MaterialExpressionNamedRerouteDeclaration_3'"
+      DeclarationGuid=5B081AE74EB1ADF11A49C2809F76F0CA
+      MaterialExpressionEditorX=776
+      MaterialExpressionEditorY=2516
+      MaterialExpressionGuid=52121FCB4859C4735AC091BBA521D6C8
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionNamedRerouteUsage_6" ExportPath="/Script/Engine.MaterialExpressionNamedRerouteUsage'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionNamedRerouteUsage_6'"
+      Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'SC_DirectionalScattering:MaterialExpressionNamedRerouteDeclaration_3'"
+      DeclarationGuid=5B081AE74EB1ADF11A49C2809F76F0CA
+      MaterialExpressionEditorX=1256
+      MaterialExpressionEditorY=2184
+      MaterialExpressionGuid=5631FB694428BD259AFB76A3D9C0D48C
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionNormalize_1" ExportPath="/Script/Engine.MaterialExpressionNormalize'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionNormalize_1'"
+      VectorInput=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'SC_DirectionalScattering:MaterialExpressionNamedRerouteUsage_1'")
+      MaterialExpressionEditorX=-1656
+      MaterialExpressionEditorY=2456
+      MaterialExpressionGuid=99010585464965409AF268AB048CBA24
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionNormalize_2" ExportPath="/Script/Engine.MaterialExpressionNormalize'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionNormalize_2'"
+      VectorInput=(Expression="/Script/Engine.MaterialExpressionWorldPosition'SC_DirectionalScattering:MaterialExpressionWorldPosition_1'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      MaterialExpressionEditorX=-3308
+      MaterialExpressionEditorY=2196
+      MaterialExpressionGuid=A08F52A842CB9E169E97B9A0FA8323A0
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionNormalize_3" ExportPath="/Script/Engine.MaterialExpressionNormalize'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionNormalize_3'"
+      VectorInput=(Expression="/Script/Engine.MaterialExpressionComponentMask'SC_DirectionalScattering:MaterialExpressionComponentMask_2'")
+      MaterialExpressionEditorX=-2756
+      MaterialExpressionEditorY=1700
+      MaterialExpressionGuid=D32FAED34179996A09B1A0ADC8825527
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionOneMinus_0" ExportPath="/Script/Engine.MaterialExpressionOneMinus'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionOneMinus_0'"
+      Input=(Expression="/Script/Engine.MaterialExpressionScalarParameter'SC_DirectionalScattering:MaterialExpressionScalarParameter_0'")
+      MaterialExpressionEditorX=740
+      MaterialExpressionEditorY=2236
+      MaterialExpressionGuid=A0E5ED04441E2823835BC8B922DDED23
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionOneMinus_3" ExportPath="/Script/Engine.MaterialExpressionOneMinus'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionOneMinus_3'"
+      Input=(Expression="/Script/Engine.MaterialExpressionSaturate'SC_DirectionalScattering:MaterialExpressionSaturate_2'")
+      MaterialExpressionEditorX=-668
+      MaterialExpressionEditorY=2456
+      MaterialExpressionGuid=CB1191244ABCA8029BF109A0A0E2582B
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionPower_2" ExportPath="/Script/Engine.MaterialExpressionPower'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionPower_2'"
+      Base=(Expression="/Script/Engine.MaterialExpressionOneMinus'SC_DirectionalScattering:MaterialExpressionOneMinus_3'")
+      ConstExponent=0.500000
+      MaterialExpressionEditorX=-576
+      MaterialExpressionEditorY=2456
+      MaterialExpressionGuid=7B88BDDC4C49931DFD22619F5F78D508
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionSaturate_0" ExportPath="/Script/Engine.MaterialExpressionSaturate'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionSaturate_0'"
+      Input=(Expression="/Script/Engine.MaterialExpressionMultiply'SC_DirectionalScattering:MaterialExpressionMultiply_4'")
+      MaterialExpressionEditorX=-976
+      MaterialExpressionEditorY=1892
+      MaterialExpressionGuid=2E682614466B7DD0A1A94E9395033098
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionSaturate_2" ExportPath="/Script/Engine.MaterialExpressionSaturate'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionSaturate_2'"
+      Input=(Expression="/Script/Engine.MaterialExpressionDivide'SC_DirectionalScattering:MaterialExpressionDivide_0'")
+      MaterialExpressionEditorX=-788
+      MaterialExpressionEditorY=2456
+      MaterialExpressionGuid=AE5584C546C0CF87E9A8928BCB066B7B
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_0" ExportPath="/Script/Engine.MaterialExpressionScalarParameter'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionScalarParameter_0'"
+      ParameterName="Flatten Simplified Color"
+      ExpressionGUID=6EEB49B34FAB5E0E2B87328CDED889C5
+      MaterialExpressionEditorX=540
+      MaterialExpressionEditorY=2220
+      MaterialExpressionGuid=9B04F31B4599DE430CE1A680A7E87775
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionStaticBool_0" ExportPath="/Script/Engine.MaterialExpressionStaticBool'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionStaticBool_0'"
+      Value=True
+      MaterialExpressionEditorX=-2636
+      MaterialExpressionEditorY=2816
+      MaterialExpressionGuid=480C219C4FC2100624FD5598938DFF3F
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionStaticSwitch_0" ExportPath="/Script/Engine.MaterialExpressionStaticSwitch'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionStaticSwitch_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionComponentMask'SC_DirectionalScattering:MaterialExpressionComponentMask_8'")
+      B=(Expression="/Script/Engine.MaterialExpressionComponentMask'SC_DirectionalScattering:MaterialExpressionComponentMask_7'")
+      Value=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'SC_DirectionalScattering:MaterialExpressionNamedRerouteUsage_2'")
+      MaterialExpressionEditorX=-3200
+      MaterialExpressionEditorY=1700
+      MaterialExpressionGuid=D2997BB84C9D48D79ECAD692D8D29212
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionStaticSwitch_1" ExportPath="/Script/Engine.MaterialExpressionStaticSwitch'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionStaticSwitch_1'"
+      A=(Expression="/Script/Engine.MaterialExpressionTextureObjectParameter'SC_DirectionalScattering:MaterialExpressionTextureObjectParameter_0'")
+      B=(Expression="/Script/Engine.MaterialExpressionTextureObjectParameter'SC_DirectionalScattering:MaterialExpressionTextureObjectParameter_1'")
+      Value=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'SC_DirectionalScattering:MaterialExpressionNamedRerouteUsage_3'")
+      MaterialExpressionEditorX=-104
+      MaterialExpressionEditorY=2644
+      MaterialExpressionGuid=42552AFF4945DB93A3F8A89ABA1AD6BF
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionStaticSwitch_2" ExportPath="/Script/Engine.MaterialExpressionStaticSwitch'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionStaticSwitch_2'"
+      A=(Expression="/Script/Engine.MaterialExpressionVectorParameter'SC_DirectionalScattering:MaterialExpressionVectorParameter_5'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      B=(Expression="/Script/Engine.MaterialExpressionVectorParameter'SC_DirectionalScattering:MaterialExpressionVectorParameter_6'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      Value=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'SC_DirectionalScattering:MaterialExpressionNamedRerouteUsage_4'")
+      MaterialExpressionEditorX=616
+      MaterialExpressionEditorY=2796
+      MaterialExpressionGuid=09DF03374C01EEF7A331DDB711F63451
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionSubtract_1" ExportPath="/Script/Engine.MaterialExpressionSubtract'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionSubtract_1'"
+      A=(Expression="/Script/Engine.MaterialExpressionComponentMask'SC_DirectionalScattering:MaterialExpressionComponentMask_5'")
+      B=(Expression="/Script/Engine.MaterialExpressionFrac'SC_DirectionalScattering:MaterialExpressionFrac_4'")
+      MaterialExpressionEditorX=-1760
+      MaterialExpressionEditorY=1892
+      MaterialExpressionGuid=976CB5894379063A687800A5710D0BEB
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionTextureObjectParameter_0" ExportPath="/Script/Engine.MaterialExpressionTextureObjectParameter'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionTextureObjectParameter_0'"
+      ParameterName="SunAtmosphereLUT"
+      ExpressionGUID=248D5A64407C072181A80FAC3B1E5DD0
+      Texture="/Script/Engine.VolumeTexture'/Game/UltraDynamicSky/Textures/3D_Clouds/3D_Cells_32.3D_Cells_32'"
+      SamplerType=SAMPLERTYPE_LinearColor
+      MaterialExpressionEditorX=-548
+      MaterialExpressionEditorY=2628
+      MaterialExpressionGuid=658F2C7D4E7AAEDE27202CBDE519E247
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionTextureObjectParameter_1" ExportPath="/Script/Engine.MaterialExpressionTextureObjectParameter'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionTextureObjectParameter_1'"
+      ParameterName="MoonAtmosphereLUT"
+      ExpressionGUID=54B6C1844662129C39EE54A82136174E
+      Texture="/Script/Engine.VolumeTexture'/Game/UltraDynamicSky/Textures/3D_Clouds/3D_Cells_32.3D_Cells_32'"
+      SamplerType=SAMPLERTYPE_LinearColor
+      MaterialExpressionEditorX=-548
+      MaterialExpressionEditorY=2832
+      MaterialExpressionGuid=6B012A9747EFAB4650255EB1B8CA4B6D
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_0" ExportPath="/Script/Engine.MaterialExpressionTextureSample'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionTextureSample_0'"
+      Coordinates=(Expression="/Script/Engine.MaterialExpressionAppendVector'SC_DirectionalScattering:MaterialExpressionAppendVector_2'")
+      TextureObject=(Expression="/Script/Engine.MaterialExpressionStaticSwitch'SC_DirectionalScattering:MaterialExpressionStaticSwitch_1'")
+      AutomaticViewMipBias=False
+      ConstMipValue=0
+      SamplerType=SAMPLERTYPE_LinearColor
+      MaterialExpressionEditorX=252
+      MaterialExpressionEditorY=2140
+      MaterialExpressionGuid=B2647CED420982E2E4C18BAF0CFE070B
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_1" ExportPath="/Script/Engine.MaterialExpressionTextureSample'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionTextureSample_1'"
+      Coordinates=(Expression="/Script/Engine.MaterialExpressionAppendVector'SC_DirectionalScattering:MaterialExpressionAppendVector_4'")
+      TextureObject=(Expression="/Script/Engine.MaterialExpressionStaticSwitch'SC_DirectionalScattering:MaterialExpressionStaticSwitch_1'")
+      AutomaticViewMipBias=False
+      ConstMipValue=0
+      SamplerType=SAMPLERTYPE_LinearColor
+      MaterialExpressionEditorX=244
+      MaterialExpressionEditorY=2424
+      MaterialExpressionGuid=564737E044D0D35CEA0FDE8933D657B8
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_2" ExportPath="/Script/Engine.MaterialExpressionTextureSample'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionTextureSample_2'"
+      Coordinates=(Expression="/Script/Engine.MaterialExpressionAppendVector'SC_DirectionalScattering:MaterialExpressionAppendVector_1'")
+      TextureObject=(Expression="/Script/Engine.MaterialExpressionStaticSwitch'SC_DirectionalScattering:MaterialExpressionStaticSwitch_1'")
+      AutomaticViewMipBias=False
+      ConstMipValue=0
+      SamplerType=SAMPLERTYPE_LinearColor
+      MaterialExpressionEditorX=256
+      MaterialExpressionEditorY=1848
+      MaterialExpressionGuid=E50164B54F6E53F9ED7DE3B3A8DF125E
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_5" ExportPath="/Script/Engine.MaterialExpressionVectorParameter'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionVectorParameter_5'"
+      DefaultValue=(R=1.000000,G=1.000000,B=1.000000,A=0.000000)
+      ParameterName="Sun Scattering Color"
+      ExpressionGUID=494DECB14CDF5422567C56A1E5353CE5
+      MaterialExpressionEditorX=244
+      MaterialExpressionEditorY=2784
+      MaterialExpressionGuid=83EE59A544355E2F7FCF629B6CACFDBF
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_6" ExportPath="/Script/Engine.MaterialExpressionVectorParameter'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionVectorParameter_6'"
+      ParameterName="Moon Scattering Color"
+      ExpressionGUID=311C57E54ABFAB106E803CAE9068C0F7
+      MaterialExpressionEditorX=240
+      MaterialExpressionEditorY=2984
+      MaterialExpressionGuid=425FF2C64A041AA1C557C5B02989B1D9
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="MaterialExpressionWorldPosition_1" ExportPath="/Script/Engine.MaterialExpressionWorldPosition'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:MaterialExpressionWorldPosition_1'"
+      WorldPositionShaderOffset=WPT_CameraRelative
+      MaterialExpressionEditorX=-3576
+      MaterialExpressionEditorY=2180
+      MaterialExpressionGuid=DDA352964AC22274DE4BDDBFF7C60C15
+      Function="/Script/Engine.MaterialFunction'SC_DirectionalScattering'"
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'SC_DirectionalScatteringEditorOnlyData'"
+   StateId=AA635C4A41F91B7B3AF2EC889202E54A
+   CombinedInputTypes=512
+   CombinedOutputTypes=15
+   ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+End Object

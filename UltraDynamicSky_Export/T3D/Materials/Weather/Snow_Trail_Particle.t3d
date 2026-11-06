@@ -1,3 +1,146 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a513b9e4a2ce975039bffe14727ee6df292aeaad55feb71fb9fa81fe1055a97a
-size 12957
+Begin Object Class=/Script/Engine.Material Name="Snow_Trail_Particle" ExportPath="/Script/Engine.Material'/Game/UltraDynamicSky/Materials/Weather/Snow_Trail_Particle.Snow_Trail_Particle'"
+   Begin Object Class=/Script/Engine.MaterialEditorOnlyData Name="Snow_Trail_ParticleEditorOnlyData" ExportPath="/Script/Engine.MaterialEditorOnlyData'/Game/UltraDynamicSky/Materials/Weather/Snow_Trail_Particle.Snow_Trail_Particle:Snow_Trail_ParticleEditorOnlyData'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionCollectionParameter Name="MaterialExpressionCollectionParameter_0" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/Game/UltraDynamicSky/Materials/Weather/Snow_Trail_Particle.Snow_Trail_Particle:MaterialExpressionCollectionParameter_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_0" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Weather/Snow_Trail_Particle.Snow_Trail_Particle:MaterialExpressionComponentMask_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant3Vector Name="MaterialExpressionConstant3Vector_1" ExportPath="/Script/Engine.MaterialExpressionConstant3Vector'/Game/UltraDynamicSky/Materials/Weather/Snow_Trail_Particle.Snow_Trail_Particle:MaterialExpressionConstant3Vector_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_0" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Weather/Snow_Trail_Particle.Snow_Trail_Particle:MaterialExpressionMultiply_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_1" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Weather/Snow_Trail_Particle.Snow_Trail_Particle:MaterialExpressionMultiply_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_2" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Weather/Snow_Trail_Particle.Snow_Trail_Particle:MaterialExpressionMultiply_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionParticleColor Name="MaterialExpressionParticleColor_0" ExportPath="/Script/Engine.MaterialExpressionParticleColor'/Game/UltraDynamicSky/Materials/Weather/Snow_Trail_Particle.Snow_Trail_Particle:MaterialExpressionParticleColor_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionShadingPathSwitch Name="MaterialExpressionShadingPathSwitch_0" ExportPath="/Script/Engine.MaterialExpressionShadingPathSwitch'/Game/UltraDynamicSky/Materials/Weather/Snow_Trail_Particle.Snow_Trail_Particle:MaterialExpressionShadingPathSwitch_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_0" ExportPath="/Script/Engine.MaterialExpressionTextureSample'/Game/UltraDynamicSky/Materials/Weather/Snow_Trail_Particle.Snow_Trail_Particle:MaterialExpressionTextureSample_0'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/Weather/Snow_Trail_Particle.Snow_Trail_Particle:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   Begin Object Name="Snow_Trail_ParticleEditorOnlyData" ExportPath="/Script/Engine.MaterialEditorOnlyData'/Game/UltraDynamicSky/Materials/Weather/Snow_Trail_Particle.Snow_Trail_Particle:Snow_Trail_ParticleEditorOnlyData'"
+      BaseColor=(Constant=(R=0.501961,G=0.501961,B=0.501961,A=1.000000),Expression="/Script/Engine.MaterialExpressionMultiply'Snow_Trail_Particle:MaterialExpressionMultiply_2'")
+      Metallic=(UseConstant=True)
+      Specular=(UseConstant=True)
+      Roughness=(UseConstant=True)
+      Anisotropy=(UseConstant=True)
+      Normal=(Constant=(X=0.000000,Y=0.000000,Z=0.000000),Expression="/Script/Engine.MaterialExpressionConstant3Vector'Snow_Trail_Particle:MaterialExpressionConstant3Vector_1'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      Tangent=(UseConstant=True)
+      EmissiveColor=(UseConstant=True)
+      Opacity=(Expression="/Script/Engine.MaterialExpressionShadingPathSwitch'Snow_Trail_Particle:MaterialExpressionShadingPathSwitch_0'")
+      OpacityMask=(UseConstant=True)
+      WorldPositionOffset=(UseConstant=True)
+      Displacement=(UseConstant=True)
+      SubsurfaceColor=(UseConstant=True)
+      ClearCoat=(UseConstant=True)
+      ClearCoatRoughness=(UseConstant=True)
+      AmbientOcclusion=(UseConstant=True)
+      Refraction=(UseConstant=True)
+      CustomizedUVs(0)=(UseConstant=True)
+      CustomizedUVs(1)=(UseConstant=True)
+      CustomizedUVs(2)=(UseConstant=True)
+      CustomizedUVs(3)=(UseConstant=True)
+      CustomizedUVs(4)=(UseConstant=True)
+      CustomizedUVs(5)=(UseConstant=True)
+      CustomizedUVs(6)=(UseConstant=True)
+      CustomizedUVs(7)=(UseConstant=True)
+      PixelDepthOffset=(UseConstant=True)
+      SurfaceThickness=(UseConstant=True)
+      ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionMultiply'Snow_Trail_Particle:MaterialExpressionMultiply_2'","/Script/Engine.MaterialExpressionConstant3Vector'Snow_Trail_Particle:MaterialExpressionConstant3Vector_1'","/Script/Engine.MaterialExpressionMultiply'Snow_Trail_Particle:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionParticleColor'Snow_Trail_Particle:MaterialExpressionParticleColor_0'","/Script/Engine.MaterialExpressionTextureSample'Snow_Trail_Particle:MaterialExpressionTextureSample_0'","/Script/Engine.MaterialExpressionCollectionParameter'Snow_Trail_Particle:MaterialExpressionCollectionParameter_0'","/Script/Engine.MaterialExpressionComponentMask'Snow_Trail_Particle:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionMultiply'Snow_Trail_Particle:MaterialExpressionMultiply_1'","/Script/Engine.MaterialExpressionShadingPathSwitch'Snow_Trail_Particle:MaterialExpressionShadingPathSwitch_0'"))
+   End Object
+   Begin Object Name="MaterialExpressionCollectionParameter_0" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/Game/UltraDynamicSky/Materials/Weather/Snow_Trail_Particle.Snow_Trail_Particle:MaterialExpressionCollectionParameter_0'"
+      Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+      ParameterName="Snow Color"
+      ParameterId=41EF58A04048471568AC36A883FCB6AF
+      MaterialExpressionEditorX=-940
+      MaterialExpressionEditorY=-140
+      MaterialExpressionGuid=23EAB8774E7D4159602A15A525F3E11F
+      Material="/Script/Engine.Material'Snow_Trail_Particle'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_0" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Weather/Snow_Trail_Particle.Snow_Trail_Particle:MaterialExpressionComponentMask_0'"
+      Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Snow_Trail_Particle:MaterialExpressionCollectionParameter_0'")
+      R=True
+      G=True
+      B=True
+      MaterialExpressionEditorX=-660
+      MaterialExpressionEditorY=-104
+      MaterialExpressionGuid=D4AAECF141893A8BF51096A78FEFFE61
+      Material="/Script/Engine.Material'Snow_Trail_Particle'"
+   End Object
+   Begin Object Name="MaterialExpressionConstant3Vector_1" ExportPath="/Script/Engine.MaterialExpressionConstant3Vector'/Game/UltraDynamicSky/Materials/Weather/Snow_Trail_Particle.Snow_Trail_Particle:MaterialExpressionConstant3Vector_1'"
+      Constant=(R=0.000000,G=0.000000,B=1.000000,A=0.000000)
+      MaterialExpressionEditorX=-120
+      MaterialExpressionEditorY=316
+      MaterialExpressionGuid=FB44C11A4A2AE6825F4B03B425244ED0
+      Material="/Script/Engine.Material'Snow_Trail_Particle'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_0" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Weather/Snow_Trail_Particle.Snow_Trail_Particle:MaterialExpressionMultiply_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionParticleColor'Snow_Trail_Particle:MaterialExpressionParticleColor_0'",OutputIndex=4,Mask=1,MaskA=1)
+      B=(Expression="/Script/Engine.MaterialExpressionTextureSample'Snow_Trail_Particle:MaterialExpressionTextureSample_0'",OutputIndex=2,Mask=1,MaskG=1)
+      MaterialExpressionEditorX=-660
+      MaterialExpressionEditorY=196
+      MaterialExpressionGuid=07C99DD04303D15A1BA65487B8AF1D6C
+      Material="/Script/Engine.Material'Snow_Trail_Particle'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_1" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Weather/Snow_Trail_Particle.Snow_Trail_Particle:MaterialExpressionMultiply_1'"
+      A=(Expression="/Script/Engine.MaterialExpressionMultiply'Snow_Trail_Particle:MaterialExpressionMultiply_0'")
+      ConstB=0.100000
+      MaterialExpressionEditorX=-508
+      MaterialExpressionEditorY=312
+      MaterialExpressionGuid=D79D897D4CC45AF1DB8709B0D65E037D
+      Material="/Script/Engine.Material'Snow_Trail_Particle'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_2" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Weather/Snow_Trail_Particle.Snow_Trail_Particle:MaterialExpressionMultiply_2'"
+      A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Snow_Trail_Particle:MaterialExpressionComponentMask_0'")
+      B=(Expression="/Script/Engine.MaterialExpressionParticleColor'Snow_Trail_Particle:MaterialExpressionParticleColor_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      MaterialExpressionEditorX=-427
+      MaterialExpressionEditorY=-16
+      MaterialExpressionGuid=354F988B45392BC517F18487D32FCFB1
+      Material="/Script/Engine.Material'Snow_Trail_Particle'"
+   End Object
+   Begin Object Name="MaterialExpressionParticleColor_0" ExportPath="/Script/Engine.MaterialExpressionParticleColor'/Game/UltraDynamicSky/Materials/Weather/Snow_Trail_Particle.Snow_Trail_Particle:MaterialExpressionParticleColor_0'"
+      MaterialExpressionEditorX=-880
+      MaterialExpressionGuid=F9E12FFA4B41F1F591CCD099F36432BA
+      Material="/Script/Engine.Material'Snow_Trail_Particle'"
+   End Object
+   Begin Object Name="MaterialExpressionShadingPathSwitch_0" ExportPath="/Script/Engine.MaterialExpressionShadingPathSwitch'/Game/UltraDynamicSky/Materials/Weather/Snow_Trail_Particle.Snow_Trail_Particle:MaterialExpressionShadingPathSwitch_0'"
+      Default=(Expression="/Script/Engine.MaterialExpressionMultiply'Snow_Trail_Particle:MaterialExpressionMultiply_0'")
+      Inputs(2)=(Expression="/Script/Engine.MaterialExpressionMultiply'Snow_Trail_Particle:MaterialExpressionMultiply_1'")
+      MaterialExpressionEditorX=-332
+      MaterialExpressionEditorY=200
+      MaterialExpressionGuid=7844B86B44006B3E96570CB782BA2A34
+      Material="/Script/Engine.Material'Snow_Trail_Particle'"
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_0" ExportPath="/Script/Engine.MaterialExpressionTextureSample'/Game/UltraDynamicSky/Materials/Weather/Snow_Trail_Particle.Snow_Trail_Particle:MaterialExpressionTextureSample_0'"
+      Texture="/Script/Engine.Texture2D'/Game/UltraDynamicSky/Textures/Weather/RainSnow_Sheet.RainSnow_Sheet'"
+      SamplerType=SAMPLERTYPE_LinearColor
+      MaterialExpressionEditorX=-968
+      MaterialExpressionEditorY=240
+      MaterialExpressionGuid=DBEF45C9423C7DA8EE668C96025A083D
+      Material="/Script/Engine.Material'Snow_Trail_Particle'"
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/Weather/Snow_Trail_Particle.Snow_Trail_Particle:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   MaterialDomain=MD_DeferredDecal
+   BlendMode=BLEND_Translucent
+   MaterialDecalResponse=MDR_None
+   DitherOpacityMask=True
+   TranslucencyPass=MTP_BeforeDOF
+   bTangentSpaceNormal=False
+   bUsedWithNiagaraSprites=True
+   bFullyRough=True
+   EditorX=192
+   bCanMaskedBeAssumedOpaque=True
+   bCastRayTracedShadows=False
+   PixelDepthOffsetMode=PDOM_Legacy
+   StateId=433DB5F6456F65395436F5988A8D4415
+   ReferencedTextureGuids(0)=E055944A46A9B3F590E00F9BB10BAA44
+   EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'Snow_Trail_ParticleEditorOnlyData'"
+   ReferencedDefaultTextures(0)="/Script/Engine.Texture2D'/Game/UltraDynamicSky/Textures/Weather/RainSnow_Sheet.RainSnow_Sheet'"
+   ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+   LightingGuid=051E324A4AEE92A9FB4950AB0296C8DF
+End Object

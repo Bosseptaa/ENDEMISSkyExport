@@ -1,3 +1,127 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:853fe928e29bb360ee6a657fe8977bb2c201e7728240b0cc5c48af961093b06f
-size 11477
+Begin Object Class=/Script/Engine.Material Name="Editor_SunHandle_Material" ExportPath="/Script/Engine.Material'/Game/UltraDynamicSky/Blueprints/System/Editor_UI/Editor_Materials/Editor_SunHandle_Material.Editor_SunHandle_Material'"
+   Begin Object Class=/Script/Engine.MaterialExpressionViewProperty Name="MaterialExpressionViewProperty_0" ExportPath="/Script/Engine.MaterialExpressionViewProperty'/Game/UltraDynamicSky/Blueprints/System/Editor_UI/Editor_Materials/Editor_SunHandle_Material.Editor_SunHandle_Material:MaterialExpressionViewProperty_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_1" ExportPath="/Script/Engine.MaterialExpressionVectorParameter'/Game/UltraDynamicSky/Blueprints/System/Editor_UI/Editor_Materials/Editor_SunHandle_Material.Editor_SunHandle_Material:MaterialExpressionVectorParameter_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_0" ExportPath="/Script/Engine.MaterialExpressionVectorParameter'/Game/UltraDynamicSky/Blueprints/System/Editor_UI/Editor_Materials/Editor_SunHandle_Material.Editor_SunHandle_Material:MaterialExpressionVectorParameter_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_2" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Blueprints/System/Editor_UI/Editor_Materials/Editor_SunHandle_Material.Editor_SunHandle_Material:MaterialExpressionMultiply_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_0" ExportPath="/Script/Engine.MaterialExpressionLinearInterpolate'/Game/UltraDynamicSky/Blueprints/System/Editor_UI/Editor_Materials/Editor_SunHandle_Material.Editor_SunHandle_Material:MaterialExpressionLinearInterpolate_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFresnel Name="MaterialExpressionFresnel_0" ExportPath="/Script/Engine.MaterialExpressionFresnel'/Game/UltraDynamicSky/Blueprints/System/Editor_UI/Editor_Materials/Editor_SunHandle_Material.Editor_SunHandle_Material:MaterialExpressionFresnel_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDivide Name="MaterialExpressionDivide_0" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Blueprints/System/Editor_UI/Editor_Materials/Editor_SunHandle_Material.Editor_SunHandle_Material:MaterialExpressionDivide_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_0" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Blueprints/System/Editor_UI/Editor_Materials/Editor_SunHandle_Material.Editor_SunHandle_Material:MaterialExpressionComponentMask_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialEditorOnlyData Name="Editor_SunHandle_MaterialEditorOnlyData" ExportPath="/Script/Engine.MaterialEditorOnlyData'/Game/UltraDynamicSky/Blueprints/System/Editor_UI/Editor_Materials/Editor_SunHandle_Material.Editor_SunHandle_Material:Editor_SunHandle_MaterialEditorOnlyData'"
+   End Object
+   Begin Object Name="MaterialExpressionViewProperty_0" ExportPath="/Script/Engine.MaterialExpressionViewProperty'/Game/UltraDynamicSky/Blueprints/System/Editor_UI/Editor_Materials/Editor_SunHandle_Material.Editor_SunHandle_Material:MaterialExpressionViewProperty_0'"
+      Property=MEVP_PreExposure
+      MaterialExpressionEditorX=-44
+      MaterialExpressionEditorY=252
+      MaterialExpressionGuid=EBFB7E044AC91E8DF362E58C8738F689
+      Material="/Script/Engine.Material'Editor_SunHandle_Material'"
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_1" ExportPath="/Script/Engine.MaterialExpressionVectorParameter'/Game/UltraDynamicSky/Blueprints/System/Editor_UI/Editor_Materials/Editor_SunHandle_Material.Editor_SunHandle_Material:MaterialExpressionVectorParameter_1'"
+      DefaultValue=(R=2.000000,G=1.326002,B=0.364583,A=1.000000)
+      ParameterName="Color2"
+      ExpressionGUID=C71903F043DB9475C3C07ABE247434C8
+      MaterialExpressionEditorX=-568
+      MaterialExpressionEditorY=236
+      MaterialExpressionGuid=FCE1636042B901888E07839192F3BE7D
+      Material="/Script/Engine.Material'Editor_SunHandle_Material'"
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_0" ExportPath="/Script/Engine.MaterialExpressionVectorParameter'/Game/UltraDynamicSky/Blueprints/System/Editor_UI/Editor_Materials/Editor_SunHandle_Material.Editor_SunHandle_Material:MaterialExpressionVectorParameter_0'"
+      DefaultValue=(R=0.286458,G=0.160418,B=0.031331,A=1.000000)
+      ParameterName="Color1"
+      ExpressionGUID=EB2EEE0B4B5884797D944E8E1C4E7FBE
+      MaterialExpressionEditorX=-580
+      MaterialExpressionEditorY=20
+      MaterialExpressionGuid=48DFE13849DCD4B5C297179E8445FC6A
+      Material="/Script/Engine.Material'Editor_SunHandle_Material'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_2" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Blueprints/System/Editor_UI/Editor_Materials/Editor_SunHandle_Material.Editor_SunHandle_Material:MaterialExpressionMultiply_2'"
+      A=(Expression="/Script/Engine.MaterialExpressionDivide'Editor_SunHandle_Material:MaterialExpressionDivide_0'")
+      ConstB=2.000000
+      MaterialExpressionEditorX=384
+      MaterialExpressionEditorY=152
+      MaterialExpressionGuid=9771A80F45AF559CC68E9DB89FF324C3
+      Material="/Script/Engine.Material'Editor_SunHandle_Material'"
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_0" ExportPath="/Script/Engine.MaterialExpressionLinearInterpolate'/Game/UltraDynamicSky/Blueprints/System/Editor_UI/Editor_Materials/Editor_SunHandle_Material.Editor_SunHandle_Material:MaterialExpressionLinearInterpolate_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Editor_SunHandle_Material:MaterialExpressionVectorParameter_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      B=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Editor_SunHandle_Material:MaterialExpressionVectorParameter_1'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      Alpha=(Expression="/Script/Engine.MaterialExpressionFresnel'Editor_SunHandle_Material:MaterialExpressionFresnel_0'")
+      MaterialExpressionEditorX=-180
+      MaterialExpressionEditorY=152
+      MaterialExpressionGuid=7FEF3101430F8D9D5A6832809089349C
+      Material="/Script/Engine.Material'Editor_SunHandle_Material'"
+   End Object
+   Begin Object Name="MaterialExpressionFresnel_0" ExportPath="/Script/Engine.MaterialExpressionFresnel'/Game/UltraDynamicSky/Blueprints/System/Editor_UI/Editor_Materials/Editor_SunHandle_Material.Editor_SunHandle_Material:MaterialExpressionFresnel_0'"
+      Exponent=3.000000
+      MaterialExpressionEditorX=-556
+      MaterialExpressionEditorY=472
+      MaterialExpressionGuid=38C64CEB4375F70A563965A1CC5A08CC
+      Material="/Script/Engine.Material'Editor_SunHandle_Material'"
+   End Object
+   Begin Object Name="MaterialExpressionDivide_0" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Blueprints/System/Editor_UI/Editor_Materials/Editor_SunHandle_Material.Editor_SunHandle_Material:MaterialExpressionDivide_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Editor_SunHandle_Material:MaterialExpressionLinearInterpolate_0'")
+      B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Editor_SunHandle_Material:MaterialExpressionComponentMask_0'")
+      MaterialExpressionEditorX=244
+      MaterialExpressionEditorY=152
+      MaterialExpressionGuid=69A9F7DE4D7BA078BB6D23822F7ACD90
+      Material="/Script/Engine.Material'Editor_SunHandle_Material'"
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_0" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Blueprints/System/Editor_UI/Editor_Materials/Editor_SunHandle_Material.Editor_SunHandle_Material:MaterialExpressionComponentMask_0'"
+      Input=(Expression="/Script/Engine.MaterialExpressionViewProperty'Editor_SunHandle_Material:MaterialExpressionViewProperty_0'")
+      R=True
+      MaterialExpressionEditorX=96
+      MaterialExpressionEditorY=268
+      MaterialExpressionGuid=B3F4B824416B6631CAE9B288FB492FD4
+      Material="/Script/Engine.Material'Editor_SunHandle_Material'"
+   End Object
+   Begin Object Name="Editor_SunHandle_MaterialEditorOnlyData" ExportPath="/Script/Engine.MaterialEditorOnlyData'/Game/UltraDynamicSky/Blueprints/System/Editor_UI/Editor_Materials/Editor_SunHandle_Material.Editor_SunHandle_Material:Editor_SunHandle_MaterialEditorOnlyData'"
+      BaseColor=(UseConstant=True,Constant=(R=0.501961,G=0.501961,B=0.501961,A=1.000000))
+      Metallic=(UseConstant=True)
+      Specular=(UseConstant=True)
+      Roughness=(UseConstant=True)
+      Anisotropy=(UseConstant=True)
+      Normal=(UseConstant=True,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      Tangent=(UseConstant=True)
+      EmissiveColor=(Expression="/Script/Engine.MaterialExpressionMultiply'Editor_SunHandle_Material:MaterialExpressionMultiply_2'")
+      Opacity=(UseConstant=True)
+      OpacityMask=(UseConstant=True)
+      WorldPositionOffset=(UseConstant=True)
+      Displacement=(UseConstant=True)
+      SubsurfaceColor=(UseConstant=True)
+      ClearCoat=(UseConstant=True)
+      ClearCoatRoughness=(UseConstant=True)
+      AmbientOcclusion=(UseConstant=True)
+      Refraction=(UseConstant=True)
+      CustomizedUVs(0)=(UseConstant=True)
+      CustomizedUVs(1)=(UseConstant=True)
+      CustomizedUVs(2)=(UseConstant=True)
+      CustomizedUVs(3)=(UseConstant=True)
+      CustomizedUVs(4)=(UseConstant=True)
+      CustomizedUVs(5)=(UseConstant=True)
+      CustomizedUVs(6)=(UseConstant=True)
+      CustomizedUVs(7)=(UseConstant=True)
+      PixelDepthOffset=(UseConstant=True)
+      SurfaceThickness=(UseConstant=True)
+      ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionLinearInterpolate'Editor_SunHandle_Material:MaterialExpressionLinearInterpolate_0'","/Script/Engine.MaterialExpressionVectorParameter'Editor_SunHandle_Material:MaterialExpressionVectorParameter_0'","/Script/Engine.MaterialExpressionFresnel'Editor_SunHandle_Material:MaterialExpressionFresnel_0'","/Script/Engine.MaterialExpressionVectorParameter'Editor_SunHandle_Material:MaterialExpressionVectorParameter_1'","/Script/Engine.MaterialExpressionViewProperty'Editor_SunHandle_Material:MaterialExpressionViewProperty_0'","/Script/Engine.MaterialExpressionComponentMask'Editor_SunHandle_Material:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionDivide'Editor_SunHandle_Material:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionMultiply'Editor_SunHandle_Material:MaterialExpressionMultiply_2'"))
+      ParameterGroupData(0)=(GroupName="None")
+   End Object
+   MaterialDecalResponse=MDR_None
+   ShadingModel=MSM_Unlit
+   ShadingModels=(ShadingModelField=1)
+   TranslucencyPass=MTP_AfterMotionBlur
+   bTangentSpaceNormal=False
+   EditorX=812
+   EditorY=8
+   bCanMaskedBeAssumedOpaque=True
+   StateId=683492F2483F367FB6548FA87E87AF1E
+   EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'Editor_SunHandle_MaterialEditorOnlyData'"
+   LightingGuid=7F1055754A5A4219A311F3AD8B646879
+End Object
