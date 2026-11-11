@@ -1,0 +1,314 @@
+### /Game/UltraDynamicSky/Blueprints/Weather_Effects/Temperature_Volume
+  Blueprint (Temperature_Volume)
+    .ParentClass="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/System/UDS_Volume_Actor.UDS_Volume_Actor_C'"
+    .BlueprintDescription="Modifies the temperature when it is sampled inside this volume. To be used with the Get Current Temperature function on Ultra Dynamic Weather."
+    .BlueprintCategory="UltraDynamicWeather|Temperature"
+    .HideCategories(0)="Actor"
+    .BlueprintSystemVersion=2
+    .SimpleConstructionScript="/Script/Engine.SimpleConstructionScript'Temperature_Volume_C:SimpleConstructionScript_0'"
+    .UbergraphPages(0)="/Script/Engine.EdGraph'EventGraph'"
+    .FunctionGraphs(0)="/Script/Engine.EdGraph'UserConstructionScript'"
+    .FunctionGraphs(1)="/Script/Engine.EdGraph'📘 Temperature'"
+    .InheritableComponentHandler="/Script/Engine.InheritableComponentHandler'Temperature_Volume_C:InheritableComponentHandler'"
+    .NewVariables(0)=(VarName="Temperature Offset",VarGuid=B163570745E130905AF2E0BB776FDC15,VarType=(PinCategory="real",PinSubCategory="double"),FriendlyName="Temperature Offset",Category=NSLOCTEXT("", "0E91AFBF4709222A2AF225A5F2F5D744", "Temperature Effects"),PropertyFlags=5,MetaDataArray=((DataKey="UIMin",DataValue="-50"),(DataKey="UIMax",DataValue="50"),(DataKey="tooltip",DataValue="This value is added to temperature inside this volume. The scale is that selected on UDW for Temperature Scale."),(DataKey="ExposeOnSpawn",DataValue="true")))
+    .NewVariables(1)=(VarName="Replace Temperature",VarGuid=172C479B418E16DB6ED526BDE596E224,VarType=(PinCategory="bool"),FriendlyName="Replace Temperature",Category=NSLOCTEXT("", "DF775AD24E006EEB56E3989AABD42282", "Temperature Effects"),PropertyFlags=5,MetaDataArray=((DataKey="tooltip",DataValue="If true, the Replacement Temperature value will be used directly when temperature is sampled inside this volume, replacing the temperature calculated from weather."),(DataKey="ExposeOnSpawn",DataValue="true")))
+    .NewVariables(2)=(VarName="Replacement Temperature",VarGuid=CBD9B1464B117FABF2FA5AA477E3CBC5,VarType=(PinCategory="real",PinSubCategory="double"),FriendlyName="Replacement Temperature",Category=INVTEXT("Temperature Effects"),PropertyFlags=5,MetaDataArray=((DataKey="tooltip",DataValue="The value which will be returned for temperature sampled inside this volume, if Replace Temperature is true.\r\nThe scale is that selected on UDW for Temperature Scale."),(DataKey="ExposeOnSpawn",DataValue="true")))
+    .NewVariables(3)=(VarName="Apply Local Interior Temperature",VarGuid=F795E22A42047FE832F04F96B6EBEFA2,VarType=(PinCategory="bool"),FriendlyName="Apply Local Interior Temperature",Category=NSLOCTEXT("", "40CE79274EF0B9801BD7ED9419638CFE", "Temperature Effects"),PropertyFlags=5,MetaDataArray=((DataKey="tooltip",DataValue="If enabled, the Interior Temperature setting will be replaced with the Local Interior Temperature value below. Note, Interior in this context doesn\'t mean the interior of this volume. It refers to the Interior Temperature applied inside interiors, based on the player occlusion."),(DataKey="ExposeOnSpawn",DataValue="true")))
+    .NewVariables(4)=(VarName="Local Interior Temperature",VarGuid=A022B1034CC5F64239530EA06A1B0A52,VarType=(PinCategory="real",PinSubCategory="double"),FriendlyName="Local Interior Temperature",Category=INVTEXT("Temperature Effects"),PropertyFlags=5,MetaDataArray=((DataKey="tooltip",DataValue="If Apply Local Interior Temperature is true, this value will replace UDW\'s setting for Interior Temperature when inside this volume. The scale is that selected on UDW for Temperature Scale."),(DataKey="ExposeOnSpawn",DataValue="true")))
+    .NewVariables(5)=(VarName="Overall Effect Multiplier",VarGuid=A13FF46D4ACC8C5BEE8320A36812D755,VarType=(PinCategory="real",PinSubCategory="double"),FriendlyName="Overall Effect Multiplier",Category=NSLOCTEXT("", "886195B540CC403350F0019D375FC372", "Temperature Effects"),PropertyFlags=5,MetaDataArray=((DataKey="UIMin",DataValue="0"),(DataKey="UIMax",DataValue="1"),(DataKey="tooltip",DataValue="Scales all the effects of this volume. You could use this variable to fade the effects in and out."),(DataKey="ExposeOnSpawn",DataValue="true")))
+    .CategorySorting(0)="Default"
+    .CategorySorting(1)="Shape"
+    .CategorySorting(2)="Temperature Effects"
+    .CategorySorting(3)="System"
+    .CategorySorting(4)="Replication"
+    .CategorySorting(5)="Rendering"
+    .CategorySorting(6)="Actor"
+    .CategorySorting(7)="Collision"
+    .CategorySorting(8)="HLOD"
+    .CategorySorting(9)="Transformation"
+    .CategorySorting(10)="Game"
+    .CategorySorting(11)="Input"
+    .CategorySorting(12)=""
+    .CategorySorting(13)="Event Graph"
+    .ImplementedInterfaces(0)=(Interface="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/Temperature_Volume_Interface.Temperature_Volume_Interface_C'",Graphs=("/Script/Engine.EdGraph'Query Temperature Volume'"))
+    .LastEditedDocuments(0)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Weather_Effects/Temperature_Volume.Temperature_Volume:UserConstructionScript",SavedViewOffset=(X=-922.749634,Y=-461.592957),SavedZoomAmount=1.000000)
+    .LastEditedDocuments(1)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Weather_Effects/Temperature_Volume.Temperature_Volume:EventGraph",SavedViewOffset=(X=-2348.749512,Y=-1925.618042),SavedZoomAmount=0.375000)
+    .LastEditedDocuments(2)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Weather_Effects/Temperature_Volume.Temperature_Volume:Query Temperature Volume",SavedViewOffset=(X=-32.511765,Y=-589.965759),SavedZoomAmount=0.675000)
+    .LastEditedDocuments(3)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Weather_Effects/Temperature_Volume.Temperature_Volume:📘 Temperature",SavedViewOffset=(X=-430.068665,Y=-262.188751),SavedZoomAmount=1.000000)
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfo'SceneThumbnailInfo_0'"
+    .GeneratedClass="/Script/Engine.BlueprintGeneratedClass'Temperature_Volume_C'"
+    .bLegacyNeedToPurgeSkelRefs=False
+    .BlueprintGuid=B811F13F4AEEE1A1B10CE08B51DEF9E5
+  EdGraph (UserConstructionScript)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallParentFunction'K2Node_CallParentFunction_0'"
+    .bAllowDeletion=False
+    .GraphGuid=E5595128468533E3F8E2228C8D159BF6
+  K2Node_FunctionEntry (K2Node_FunctionEntry_0)
+    .FunctionReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/Temperature_Volume_Interface.Temperature_Volume_Interface_C'",MemberName="Query Temperature Volume",MemberGuid=041A245D43B863E26F8CF4A73EBE9E55)
+    .NodeGuid=8E4D458348FC843986E2C3BFD084E7D1
+    .LocalVariables(0)=(VarName="Multiplier",VarGuid=6F4CBC6040C3E79D8B17C0927C1421D9,VarType=(PinCategory="real",PinSubCategory="double"),FriendlyName="Multiplier",Category=NSLOCTEXT("KismetSchema", "Default", "Default"),PropertyFlags=5)
+    .NodePosX=-200
+    .NodePosY=-4
+    .MetaData=(Category=NSLOCTEXT("UObjectCategory", "Shape", "Shape"),bCallInEditor=True)
+    .ExtraFlags=201588736
+    .bIsEditable=True
+  K2Node_CallParentFunction (K2Node_CallParentFunction_0)
+    .FunctionReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/System/UDS_Volume_Actor.UDS_Volume_Actor_C'",MemberName="UserConstructionScript",MemberGuid=9C15A896425AE520003DF3AAC3818BAB)
+    .NodePosX=200
+    .NodeGuid=2C14433C4ADE70D21763808EA9AA5252
+    .EnabledState=Disabled
+    .NodeComment="This node is disabled and will not be called.\nDrag off pins to build functionality."
+  EdGraph (EventGraph)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_Event'K2Node_Event_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallParentFunction'K2Node_CallParentFunction_0'"
+    .bAllowDeletion=False
+    .GraphGuid=F4F36AA045417A5003D6CE9A6B831E36
+  K2Node_Event (K2Node_Event_0)
+    .EventReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.Actor'",MemberName="ReceiveBeginPlay")
+    .bOverrideFunction=True
+    .EnabledState=Disabled
+    .bCommentBubblePinned=True
+    .NodeComment="This node is disabled and will not be called.\nDrag off pins to build functionality."
+    .NodeGuid=82F8938B486E10C7B2152E82D7F294A9
+  EdGraph (Query Temperature Volume)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_1'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_3'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_PromotableOperator'K2Node_PromotableOperator_0'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_2'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .Nodes(7)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(8)="/Script/BlueprintGraph.K2Node_PromotableOperator'K2Node_PromotableOperator_1'"
+    .Nodes(9)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_4'"
+    .Nodes(10)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_10'"
+    .Nodes(11)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_8'"
+    .Nodes(12)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_2'"
+    .Nodes(13)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(14)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .Nodes(15)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_9'"
+    .Nodes(16)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_7'"
+    .bAllowDeletion=False
+    .GraphGuid=BCF21C5B4B52191EE54C39BF16EABCC1
+    .InterfaceGuid=041A245D43B863E26F8CF4A73EBE9E55
+  K2Node_CallFunction (K2Node_CallFunction_0)
+    .FunctionReference=(MemberName="Query Blend Radius",MemberGuid=3E5A697C4B5550A51442CEB29F260F44,bSelfContext=True)
+    .NodePosX=60
+    .NodePosY=-20
+    .NodeGuid=EE95FCA04D98278D0D3C5AA59ABDE85B
+    .bIsIntermediateNode=True
+  K2Node_VariableGet (K2Node_VariableGet_1)
+    .VariableReference=(MemberName="Apply Local Interior Temperature",MemberGuid=F795E22A42047FE832F04F96B6EBEFA2,bSelfContext=True)
+    .NodePosX=592
+    .NodePosY=280
+    .NodeGuid=405255BE4A2E716A4A992595E5901193
+  K2Node_VariableGet (K2Node_VariableGet_3)
+    .VariableReference=(MemberName="Overall Effect Multiplier",MemberGuid=A13FF46D4ACC8C5BEE8320A36812D755,bSelfContext=True)
+    .NodePosX=100
+    .NodePosY=144
+    .NodeGuid=349425B84992CB0DC1E04381A2A177D8
+  K2Node_PromotableOperator (K2Node_PromotableOperator_0)
+    .OperationName="Multiply"
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Multiply_DoubleDouble")
+    .NodePosX=308
+    .NodePosY=76
+    .NodeGuid=2D5D065C4E90743F8A319C986D671703
+  K2Node_VariableSet (K2Node_VariableSet_2)
+    .VariableReference=(MemberScope="Query Temperature Volume",MemberName="Multiplier",MemberGuid=6F4CBC6040C3E79D8B17C0927C1421D9)
+    .NodePosX=468
+    .NodePosY=12
+    .NodeGuid=5C56346D4DE427802FB9FCBAC63A95D2
+  K2Node_FunctionResult (K2Node_FunctionResult_0)
+    .FunctionReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/Temperature_Volume_Interface.Temperature_Volume_Interface_C'",MemberName="Query Temperature Volume",MemberGuid=041A245D43B863E26F8CF4A73EBE9E55)
+    .NodePosX=1188
+    .NodePosY=-4
+    .NodeGuid=67C9E1CC46235DDE7D710DA12BE9ABCA
+  K2Node_VariableGet (K2Node_VariableGet_0)
+    .VariableReference=(MemberName="Temperature Offset",MemberGuid=B163570745E130905AF2E0BB776FDC15,bSelfContext=True)
+    .NodePosX=700
+    .NodePosY=52
+    .NodeGuid=5E1ED2434ED356D5FCA90AAA995F413D
+  K2Node_PromotableOperator (K2Node_PromotableOperator_1)
+    .OperationName="Multiply"
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Multiply_DoubleDouble")
+    .NodePosX=884
+    .NodePosY=52
+    .NodeGuid=36636A5B46E283937236B591DBB3335C
+  K2Node_VariableGet (K2Node_VariableGet_4)
+    .VariableReference=(MemberScope="Query Temperature Volume",MemberName="Multiplier",MemberGuid=6F4CBC6040C3E79D8B17C0927C1421D9)
+    .NodePosX=724
+    .NodePosY=100
+    .NodeGuid=8D84A2D64F54439D3F85FB9BBDB339F1
+  K2Node_VariableGet (K2Node_VariableGet_10)
+    .VariableReference=(MemberScope="Query Temperature Volume",MemberName="Multiplier",MemberGuid=6F4CBC6040C3E79D8B17C0927C1421D9)
+    .NodePosX=676
+    .NodePosY=208
+    .NodeGuid=7C715554463120556F79A28D92BF0F1A
+  K2Node_VariableGet (K2Node_VariableGet_8)
+    .VariableReference=(MemberName="Local Interior Temperature",MemberGuid=A022B1034CC5F64239530EA06A1B0A52,bSelfContext=True)
+    .NodePosX=848
+    .NodePosY=136
+    .NodeGuid=B3364247461E50D20B1814834DB84C2C
+  K2Node_VariableGet (K2Node_VariableGet_2)
+    .VariableReference=(MemberName="Replacement Temperature",MemberGuid=CBD9B1464B117FABF2FA5AA477E3CBC5,bSelfContext=True)
+    .NodePosX=872
+    .NodePosY=324
+    .NodeGuid=E7A1895B44CB6196D5836C8BE38E8833
+  K2Node_CallFunction (K2Node_CallFunction_1)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="SelectFloat")
+    .NodePosX=828
+    .NodePosY=184
+    .NodeGuid=7A9A9FBE4B86428FA2DF68804299C5A6
+  K2Node_CallFunction (K2Node_CallFunction_2)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="SelectFloat")
+    .NodePosX=836
+    .NodePosY=380
+    .NodeGuid=1E9EE91D466B38838E46118BA408D91F
+  K2Node_VariableGet (K2Node_VariableGet_9)
+    .VariableReference=(MemberName="Replace Temperature",MemberGuid=172C479B418E16DB6ED526BDE596E224,bSelfContext=True)
+    .NodePosX=608
+    .NodePosY=492
+    .NodeGuid=EA48A32444809D29E5D5928371187CAE
+  K2Node_VariableGet (K2Node_VariableGet_7)
+    .VariableReference=(MemberScope="Query Temperature Volume",MemberName="Multiplier",MemberGuid=6F4CBC6040C3E79D8B17C0927C1421D9)
+    .NodePosX=684
+    .NodePosY=408
+    .NodeGuid=457E26414786F023BF408A8BFA05BA4B
+  EdGraph (📘 Temperature)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_1'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_MacroInstance'K2Node_MacroInstance_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_Message'K2Node_Message_1'"
+    .GraphGuid=8BB4BD084D1010267FCC99AF11E7291A
+  K2Node_MacroInstance (K2Node_MacroInstance_0)
+    .MacroGraphReference=(MacroGraph="/Script/Engine.EdGraph'/Engine/EditorBlueprintResources/StandardMacros.StandardMacros:IsValid'",GraphBlueprint="/Script/Engine.Blueprint'/Engine/EditorBlueprintResources/StandardMacros.StandardMacros'",GraphGuid=64422BCD430703FF5CAEA8B79A32AA65)
+    .NodePosX=304
+    .NodeGuid=D083F24F458F2B0FDB085E98637DAA05
+    .OutputSourceNode="/Script/BlueprintGraph.K2Node_Tunnel'Temperature_Volume:📘 Temperature_MERGED.K2Node_Tunnel_91'"
+    .InputSinkNode="/Script/BlueprintGraph.K2Node_Tunnel'Temperature_Volume:📘 Temperature_MERGED.K2Node_Tunnel_90'"
+  K2Node_Message (K2Node_Message_1)
+    .FunctionReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/System/Editor_UI/UDS_Utility_Opener_Interface.UDS_Utility_Opener_Interface_C'",MemberName="Open UDS Readme",MemberGuid=BD9190364A31595779AA87B65C10EC5B)
+    .NodePosX=568
+    .NodePosY=-16
+    .NodeGuid=B08ED88C41739C331FFC47BEB0E0683C
+  EdGraph (EdGraph_0)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_Tunnel'K2Node_Tunnel_90'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_Tunnel'K2Node_Tunnel_91'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_15'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_4347'"
+    .GraphGuid=64422BCD430703FF5CAEA8B79A32AA65
+  K2Node_Tunnel (K2Node_Tunnel_90)
+    .bCanHaveOutputs=True
+    .MetaData=(ToolTip=NSLOCTEXT("", "C2A2C43144F43B04AD0E6EBF3956A75A", "Determines if an object is valid"),Category=NSLOCTEXT("", "A824D3BC4E8FDA956A0FB29E0E653805", "Utilities"))
+    .NodePosX=-496
+    .NodePosY=-272
+    .NodeGuid=AD5E251140C16EF1608BB3AADB3750EF
+    .OutputSourceNode="/Script/BlueprintGraph.K2Node_MacroInstance'Temperature_Volume:📘 Temperature_MERGED.K2Node_MacroInstance_0'"
+  K2Node_Tunnel (K2Node_Tunnel_91)
+    .bCanHaveInputs=True
+    .NodePosX=288
+    .NodePosY=-272
+    .NodeGuid=25BB8F27486C272CD1228A9D682B1834
+    .InputSinkNode="/Script/BlueprintGraph.K2Node_MacroInstance'Temperature_Volume:📘 Temperature_MERGED.K2Node_MacroInstance_0'"
+  K2Node_IfThenElse (K2Node_IfThenElse_15)
+    .NodePosX=-16
+    .NodePosY=-272
+    .NodeGuid=4623B8A14B5A39FAEE284A8022D12E15
+  K2Node_CallFunction (K2Node_CallFunction_4347)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetSystemLibrary'",MemberName="IsValid")
+    .NodePosX=-304
+    .NodePosY=-208
+    .NodeGuid=A30AA81440C8EAB13D4B33AEB64E9859
+  EdGraph (ExecuteUbergraph_Temperature_Volume)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .GraphGuid=8D7596AD49145B3E5B7239B23BFDE7EF
+  EdGraph (UserConstructionScript_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallParentFunction'K2Node_CallParentFunction_0'"
+    .bAllowDeletion=False
+    .GraphGuid=E5595128468533E3F8E2228C8D159BF6
+  EdGraph (📘 Temperature_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_1'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_TunnelBoundary'K2Node_TunnelBoundary_3'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_4347'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_15'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_TunnelBoundary'K2Node_TunnelBoundary_2'"
+    .Nodes(7)="/Script/BlueprintGraph.K2Node_DynamicCast'K2Node_DynamicCast_0'"
+    .Nodes(8)="/Script/BlueprintGraph.K2Node_TunnelBoundary'K2Node_TunnelBoundary_0'"
+    .Nodes(9)="/Script/BlueprintGraph.K2Node_TunnelBoundary'K2Node_TunnelBoundary_1'"
+    .GraphGuid=8BB4BD084D1010267FCC99AF11E7291A
+  K2Node_TunnelBoundary (K2Node_TunnelBoundary_0)
+    .NodePosX=288
+    .NodePosY=-272
+    .bIsIntermediateNode=True
+    .NodeGuid=4A9991916AC53C0781CFEC83C5D93ACC
+  K2Node_TunnelBoundary (K2Node_TunnelBoundary_1)
+    .NodePosX=288
+    .NodePosY=-272
+    .bIsIntermediateNode=True
+    .NodeGuid=3543A7C599B5337BB9E596603802797C
+  K2Node_TunnelBoundary (K2Node_TunnelBoundary_2)
+    .NodePosX=304
+    .bIsIntermediateNode=True
+    .NodeGuid=DA0444F938963F1A9FB26885B8F272E4
+  K2Node_TunnelBoundary (K2Node_TunnelBoundary_3)
+    .NodePosX=-496
+    .NodePosY=-272
+    .bIsIntermediateNode=True
+    .NodeGuid=A15718332FD23E118C8779D511D7CFB2
+  K2Node_DynamicCast (K2Node_DynamicCast_0)
+    .TargetType="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/System/Editor_UI/UDS_Utility_Opener_Interface.UDS_Utility_Opener_Interface_C'"
+    .PureState=Impure
+    .NodePosX=-1040
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=520C99EB6EC335C4BB3C8CA3F1600D10
+  EdGraph (Query Temperature Volume_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_1'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_3'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_4'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_2'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .Nodes(7)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(8)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_3'"
+    .Nodes(9)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_4'"
+    .Nodes(10)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_10'"
+    .Nodes(11)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_8'"
+    .Nodes(12)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_2'"
+    .Nodes(13)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(14)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .Nodes(15)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_9'"
+    .Nodes(16)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_7'"
+    .bAllowDeletion=False
+    .GraphGuid=BCF21C5B4B52191EE54C39BF16EABCC1
+    .InterfaceGuid=041A245D43B863E26F8CF4A73EBE9E55
+  K2Node_CallFunction (K2Node_CallFunction_3)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Multiply_DoubleDouble")
+    .NodePosX=316
+    .NodePosY=126
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_4)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Multiply_DoubleDouble")
+    .NodePosX=892
+    .NodePosY=102
+    .bIsIntermediateNode=True

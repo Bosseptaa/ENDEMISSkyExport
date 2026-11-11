@@ -1,0 +1,163 @@
+### /Game/UltraDynamicSky/Materials/Weather/Lightning_Glow
+  Material (Lightning_Glow)
+    .BlendMode=BLEND_Additive
+    .MaterialDecalResponse=MDR_None
+    .ShadingModel=MSM_Unlit
+    .ShadingModels=(ShadingModelField=1)
+    .TranslucencyPass=MTP_BeforeDOF
+    .bTangentSpaceNormal=False
+    .bUsedWithNiagaraSprites=True
+    .EditorX=356
+    .bCanMaskedBeAssumedOpaque=True
+    .bCastRayTracedShadows=False
+    .bUseTranslucencyVertexFog=False
+    .PixelDepthOffsetMode=PDOM_Legacy
+    .StateId=91ABCF1241715AB5B03C8DACC1B4A360
+    .ReferencedTextureGuids(0)=E3460A1B4A13AEBC097F769EA8E670D8
+    .EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'Lightning_GlowEditorOnlyData'"
+    .ReferencedDefaultTextures(0)="/Script/Engine.TextureRenderTarget2D'/Game/UltraDynamicSky/Textures/Sky/CloudLayersMap.CloudLayersMap'"
+    .ReferencedDefaultTextures(1)="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/VolumetricClouds/T_Cloud_Profile.T_Cloud_Profile'"
+    .ReferencedDefaultTextures(2)="/Script/Engine.VolumeTexture'/Game/ENDEMIS/Weather/Clouds/3D_Cells_32.3D_Cells_32'"
+    .ReferencedDefaultTextures(3)="/Script/Engine.TextureRenderTarget2D'/Game/UltraDynamicSky/Textures/Sky/CloudPaintTarget.CloudPaintTarget'"
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+    .ParameterOverviewExpansion=(("-12Global", True))
+    .LightingGuid=8B1D2B9B4FBC4055B0AC1EB3B1FB0171
+  MaterialEditorOnlyData (Lightning_GlowEditorOnlyData)
+    EmissiveColor          <- MaterialExpressionMultiply
+    Opacity                <- MaterialExpressionConstant
+    WorldPositionOffset    <- MaterialExpressionMaterialFunctionCall
+    ExpressionCollection   <- MaterialExpressionMultiply
+    .BaseColor=(UseConstant=True,Constant=(R=0.501961,G=0.501961,B=0.501961,A=1.000000))
+    .Metallic=(UseConstant=True)
+    .Specular=(UseConstant=True)
+    .Roughness=(UseConstant=True)
+    .Anisotropy=(UseConstant=True)
+    .Normal=(UseConstant=True)
+    .Tangent=(UseConstant=True)
+    .EmissiveColor=(Expression="/Script/Engine.MaterialExpressionMultiply'Lightning_Glow:MaterialExpressionMultiply_3'")
+    .Opacity=(Expression="/Script/Engine.MaterialExpressionConstant'Lightning_Glow:MaterialExpressionConstant_0'")
+    .OpacityMask=(UseConstant=True)
+    .WorldPositionOffset=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Lightning_Glow:MaterialExpressionMaterialFunctionCall_0'")
+    .Displacement=(UseConstant=True)
+    .SubsurfaceColor=(UseConstant=True)
+    .ClearCoat=(UseConstant=True)
+    .ClearCoatRoughness=(UseConstant=True)
+    .AmbientOcclusion=(UseConstant=True)
+    .Refraction=(UseConstant=True)
+    .CustomizedUVs(0)=(UseConstant=True)
+    .CustomizedUVs(1)=(UseConstant=True)
+    .CustomizedUVs(2)=(UseConstant=True)
+    .CustomizedUVs(3)=(UseConstant=True)
+    .CustomizedUVs(4)=(UseConstant=True)
+    .CustomizedUVs(5)=(UseConstant=True)
+    .CustomizedUVs(6)=(UseConstant=True)
+    .CustomizedUVs(7)=(UseConstant=True)
+    .PixelDepthOffset=(UseConstant=True)
+    .SurfaceThickness=(UseConstant=True)
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionMultiply'Lightning_Glow:MaterialExpressionMultiply_3'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Lightning_Glow:MaterialExpressionMaterialFunctionCall_0'","/Script/Engine.MaterialExpressionMultiply'Lightning_Glow:MaterialExpressionMultiply_1'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Lightning_Glow:MaterialExpressionMaterialFunctionCall_1'","/Script/Engine.MaterialExpressionParticleColor'Lightning_Glow:MaterialExpressionParticleColor_0'","/Script/Engine.MaterialExpressionMultiply'Lightning_Glow:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionConstant'Lightning_Glow:MaterialExpressionConstant_0'","/Script/Engine.MaterialExpressionConstant'Lightning_Glow:MaterialExpressionConstant_1'","/Script/Engine.MaterialExpressionTextureCoordinate'Lightning_Glow:MaterialExpressionTextureCoordinate_0'","/Script/Engine.MaterialExpressionFrac'Lightning_Glow:MaterialExpressionFrac_0'","/Script/Engine.MaterialExpressionPower'Lightning_Glow:MaterialExpressionPower_0'","/Script/Engine.MaterialExpressionCollectionParameter'Lightning_Glow:MaterialExpressionCollectionParameter_0'","/Script/Engine.MaterialExpressionComponentMask'Lightning_Glow:MaterialExpressionComponentMask_0'"))
+    .ParameterGroupData(0)=(GroupName="None")
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_0)
+    .ParameterName="Lightning Color"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+    .ParameterId=E134592B4A73E848EDC3559BC9DD34E8
+    .MaterialExpressionEditorX=-592
+    .MaterialExpressionEditorY=272
+    .MaterialExpressionGuid=473CCCAB474F99FCA10A9699529066A3
+    .Material="/Script/Engine.Material'Lightning_Glow'"
+    .bCollapsed=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionCollectionParameter
+    .R=True
+    .G=True
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Lightning_Glow:MaterialExpressionCollectionParameter_0'")
+    .MaterialExpressionEditorX=-344
+    .MaterialExpressionEditorY=300
+    .MaterialExpressionGuid=BBADD56F4D710EF5FFAADA8219224CC4
+    .Material="/Script/Engine.Material'Lightning_Glow'"
+  MaterialExpressionConstant (MaterialExpressionConstant_0)
+    .R=1.000000
+    .MaterialExpressionEditorX=64
+    .MaterialExpressionEditorY=224
+    .MaterialExpressionGuid=FB300F8B41A45506181536A71D04505C
+    .Material="/Script/Engine.Material'Lightning_Glow'"
+  MaterialExpressionConstant (MaterialExpressionConstant_1)
+    .R=1.000000
+    .MaterialExpressionEditorX=-1196
+    .MaterialExpressionEditorY=408
+    .MaterialExpressionGuid=AD5296B34E829E60581C9FA7728B63BA
+    .Material="/Script/Engine.Material'Lightning_Glow'"
+  MaterialExpressionFrac (MaterialExpressionFrac_0)
+    Input                  <- MaterialExpressionTextureCoordinate
+    .Input=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'Lightning_Glow:MaterialExpressionTextureCoordinate_0'")
+    .MaterialExpressionEditorX=-1148
+    .MaterialExpressionEditorY=296
+    .MaterialExpressionGuid=0F00A1A74DA4610024D27D960AD90608
+    .Material="/Script/Engine.Material'Lightning_Glow'"
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_0)
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Weather/Hide_Weather_Particle_With_Local_Cloud_Coverage.Hide_Weather_Particle_With_Local_Cloud_Coverage'"
+    .FunctionOutputs(0)=(ExpressionOutputId=48D42EC348B0D6DDBFAF1CAE91661FA6,Output=(OutputName="WPO"))
+    .MaterialExpressionEditorX=-144
+    .MaterialExpressionEditorY=364
+    .MaterialExpressionGuid=4BCDF7AC49863E472ADD15B481E69B52
+    .Material="/Script/Engine.Material'Lightning_Glow'"
+    .Outputs(0)=(OutputName="WPO")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_1)
+    FunctionInputs(0)      <- MaterialExpressionFrac
+    FunctionInputs(3)      <- MaterialExpressionConstant
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/RadialGradientBasic.RadialGradientBasic'"
+    .FunctionInputs(0)=(ExpressionInputId=3D670BAB449CC330AF1A0D98994C2A90,Input=(Expression="/Script/Engine.MaterialExpressionFrac'Lightning_Glow:MaterialExpressionFrac_0'",InputName="UV"))
+    .FunctionInputs(1)=(ExpressionInputId=08954A7C4248905A30D7B0B88B75B62F,Input=(OutputIndex=-1,InputName="Center"))
+    .FunctionInputs(2)=(ExpressionInputId=131CA7274C02CDA166B9749B5EE24A64,Input=(OutputIndex=-1,InputName="Radius"))
+    .FunctionInputs(3)=(ExpressionInputId=3FBB53124DEA3B7CC52CEAA08FF6C9ED,Input=(Expression="/Script/Engine.MaterialExpressionConstant'Lightning_Glow:MaterialExpressionConstant_1'",InputName="Density"))
+    .FunctionOutputs(0)=(ExpressionOutputId=327E073F424BB1EF2B65E58605E267EE,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-1044
+    .MaterialExpressionEditorY=300
+    .MaterialExpressionGuid=3C9BC4704BDEECE05365D79A83B1E172
+    .Material="/Script/Engine.Material'Lightning_Glow'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionParticleColor
+    B                      <- MaterialExpressionPower
+    .B=(Expression="/Script/Engine.MaterialExpressionPower'Lightning_Glow:MaterialExpressionPower_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionParticleColor'Lightning_Glow:MaterialExpressionParticleColor_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .MaterialExpressionEditorX=-644
+    .MaterialExpressionEditorY=60
+    .MaterialExpressionGuid=1808D64B4BB932CB7B724AA51F4A6F4C
+    .Material="/Script/Engine.Material'Lightning_Glow'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionParticleColor
+    .B=(Expression="/Script/Engine.MaterialExpressionParticleColor'Lightning_Glow:MaterialExpressionParticleColor_0'",OutputIndex=4,Mask=1,MaskA=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Lightning_Glow:MaterialExpressionMultiply_0'")
+    .MaterialExpressionEditorX=-512
+    .MaterialExpressionEditorY=144
+    .MaterialExpressionGuid=364531D4484A291F98BE41A2B89164D7
+    .Material="/Script/Engine.Material'Lightning_Glow'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_3)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Lightning_Glow:MaterialExpressionComponentMask_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Lightning_Glow:MaterialExpressionMultiply_1'")
+    .MaterialExpressionEditorX=-96
+    .MaterialExpressionEditorY=148
+    .MaterialExpressionGuid=3E684EF54F386C249823B3A8AE512784
+    .Material="/Script/Engine.Material'Lightning_Glow'"
+  MaterialExpressionParticleColor (MaterialExpressionParticleColor_0)
+    .MaterialExpressionEditorX=-852
+    .MaterialExpressionEditorY=44
+    .MaterialExpressionGuid=04A1CD084046160CA417B38F831CE4BE
+    .Material="/Script/Engine.Material'Lightning_Glow'"
+  MaterialExpressionPower (MaterialExpressionPower_0)
+    Base                   <- MaterialExpressionMaterialFunctionCall
+    .Base=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Lightning_Glow:MaterialExpressionMaterialFunctionCall_1'")
+    .ConstExponent=1.300000
+    .MaterialExpressionEditorX=-852
+    .MaterialExpressionEditorY=300
+    .MaterialExpressionGuid=170C2E5B424F6770008F71BE53F1EA77
+    .Material="/Script/Engine.Material'Lightning_Glow'"
+  MaterialExpressionTextureCoordinate (MaterialExpressionTextureCoordinate_0)
+    .MaterialExpressionEditorX=-1352
+    .MaterialExpressionEditorY=300
+    .MaterialExpressionGuid=6F4FAE5C4333197E0F3A6993E1A4E8AC
+    .Material="/Script/Engine.Material'Lightning_Glow'"

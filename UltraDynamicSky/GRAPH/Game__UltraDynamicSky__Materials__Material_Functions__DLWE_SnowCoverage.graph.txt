@@ -1,0 +1,318 @@
+### /Game/UltraDynamicSky/Materials/Material_Functions/DLWE_SnowCoverage
+  MaterialFunction (DLWE_SnowCoverage)
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'DLWE_SnowCoverageEditorOnlyData'"
+    .StateId=328CB9C24D050BE3597856B29B5FA20A
+    .CombinedInputTypes=15
+    .CombinedOutputTypes=15
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+  MaterialFunctionEditorOnlyData (DLWE_SnowCoverageEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'DLWE_SnowCoverage:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionSubtract'DLWE_SnowCoverage:MaterialExpressionSubtract_1'","/Script/Engine.MaterialExpressionMultiply'DLWE_SnowCoverage:MaterialExpressionMultiply_6'","/Script/Engine.MaterialExpressionVertexNormalWS'DLWE_SnowCoverage:MaterialExpressionVertexNormalWS_0'","/Script/Engine.MaterialExpressionComponentMask'DLWE_SnowCoverage:MaterialExpressionComponentMask_5'","/Script/Engine.MaterialExpressionSubtract'DLWE_SnowCoverage:MaterialExpressionSubtract_3'","/Script/Engine.MaterialExpressionMultiply'DLWE_SnowCoverage:MaterialExpressionMultiply_10'","/Script/Engine.MaterialExpressionComponentMask'DLWE_SnowCoverage:MaterialExpressionComponentMask_33'","/Script/Engine.MaterialExpressionCollectionParameter'DLWE_SnowCoverage:MaterialExpressionCollectionParameter_7'","/Script/Engine.MaterialExpressionComponentMask'DLWE_SnowCoverage:MaterialExpressionComponentMask_15'","/Script/Engine.MaterialExpressionComponentMask'DLWE_SnowCoverage:MaterialExpressionComponentMask_29'","/Script/Engine.MaterialExpressionFunctionInput'DLWE_SnowCoverage:MaterialExpressionFunctionInput_1'","/Script/Engine.MaterialExpressionFunctionInput'DLWE_SnowCoverage:MaterialExpressionFunctionInput_2'","/Script/Engine.MaterialExpressionSaturate'DLWE_SnowCoverage:MaterialExpressionSaturate_0'","/Script/Engine.MaterialExpressionFunctionInput'DLWE_SnowCoverage:MaterialExpressionFunctionInput_0'","/Script/Engine.MaterialExpressionTransform'DLWE_SnowCoverage:MaterialExpressionTransform_4'","/Script/Engine.MaterialExpressionComponentMask'DLWE_SnowCoverage:MaterialExpressionComponentMask_4'","/Script/Engine.MaterialExpressionMultiply'DLWE_SnowCoverage:MaterialExpressionMultiply_1'","/Script/Engine.MaterialExpressionConstant3Vector'DLWE_SnowCoverage:MaterialExpressionConstant3Vector_0'","/Script/Engine.MaterialExpressionOneMinus'DLWE_SnowCoverage:MaterialExpressionOneMinus_0'","/Script/Engine.MaterialExpressionMultiply'DLWE_SnowCoverage:MaterialExpressionMultiply_4'","/Script/Engine.MaterialExpressionMultiply'DLWE_SnowCoverage:MaterialExpressionMultiply_5'","/Script/Engine.MaterialExpressionAdd'DLWE_SnowCoverage:MaterialExpressionAdd_1'","/Script/Engine.MaterialExpressionMultiply'DLWE_SnowCoverage:MaterialExpressionMultiply_8'","/Script/Engine.MaterialExpressionSaturate'DLWE_SnowCoverage:MaterialExpressionSaturate_3'","/Script/Engine.MaterialExpressionFunctionInput'DLWE_SnowCoverage:MaterialExpressionFunctionInput_4'","/Script/Engine.MaterialExpressionShaderStageSwitch'DLWE_SnowCoverage:MaterialExpressionShaderStageSwitch_0'","/Script/Engine.MaterialExpressionReroute'DLWE_SnowCoverage:MaterialExpressionReroute_1'","/Script/Engine.MaterialExpressionFunctionOutput'DLWE_SnowCoverage:MaterialExpressionFunctionOutput_1'","/Script/Engine.MaterialExpressionMultiply'DLWE_SnowCoverage:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionSubtract'DLWE_SnowCoverage:MaterialExpressionSubtract_0'","/Script/Engine.MaterialExpressionSubtract'DLWE_SnowCoverage:MaterialExpressionSubtract_2'","/Script/Engine.MaterialExpressionMultiply'DLWE_SnowCoverage:MaterialExpressionMultiply_2'"),EditorComments=("/Script/Engine.MaterialExpressionComment'DLWE_SnowCoverage:MaterialExpressionComment_1'","/Script/Engine.MaterialExpressionComment'DLWE_SnowCoverage:MaterialExpressionComment_2'","/Script/Engine.MaterialExpressionComment'DLWE_SnowCoverage:MaterialExpressionComment_0'"))
+  MaterialExpressionAdd (MaterialExpressionAdd_1)
+    A                      <- MaterialExpressionSaturate
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'DLWE_SnowCoverage:MaterialExpressionMultiply_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSaturate'DLWE_SnowCoverage:MaterialExpressionSaturate_0'")
+    .MaterialExpressionEditorX=-608
+    .MaterialExpressionEditorY=604
+    .MaterialExpressionGuid=72DD57E24C24C3712FD507ACD5193EBE
+    .Function="/Script/Engine.MaterialFunction'DLWE_SnowCoverage'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_7)
+    .ParameterName="DLWE Cutoff/Falloff"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+    .ParameterId=B5E1B7164FEFB66C5511DCB67F8FF7D7
+    .MaterialExpressionEditorX=-2096
+    .MaterialExpressionEditorY=708
+    .MaterialExpressionGuid=B6B8ADA04AA240654FDCCBB33634F603
+    .Function="/Script/Engine.MaterialFunction'DLWE_SnowCoverage'"
+    .bCollapsed=True
+  MaterialExpressionComment (MaterialExpressionComment_0)
+    .SizeX=1956
+    .SizeY=220
+    .Text="Nanite Mask"
+    .CommentColor=(R=1.000000,G=0.792243,B=0.197105,A=1.000000)
+    .MaterialExpressionEditorX=-672
+    .MaterialExpressionEditorY=169
+    .MaterialExpressionGuid=94029A924FFB5B95DA4E7E9D24444DDD
+    .Function="/Script/Engine.MaterialFunction'DLWE_SnowCoverage'"
+  MaterialExpressionComment (MaterialExpressionComment_1)
+    .SizeX=2188
+    .SizeY=720
+    .Text="Vertex Normal Mask"
+    .CommentColor=(R=1.000000,G=0.468750,B=0.717309,A=1.000000)
+    .MaterialExpressionEditorX=-2146
+    .MaterialExpressionEditorY=466
+    .MaterialExpressionGuid=53BBD26E4C79C7B88D3FF9AAFDFE9DDF
+    .Function="/Script/Engine.MaterialFunction'DLWE_SnowCoverage'"
+  MaterialExpressionComment (MaterialExpressionComment_2)
+    .SizeX=664
+    .SizeY=264
+    .Text="Subtract Variation Clouds"
+    .CommentColor=(R=0.247112,G=0.468750,B=0.166765,A=1.000000)
+    .MaterialExpressionEditorX=88
+    .MaterialExpressionEditorY=448
+    .MaterialExpressionGuid=0020860F4A0D5217E7E3FFAD74A42D24
+    .Function="/Script/Engine.MaterialFunction'DLWE_SnowCoverage'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_15)
+    Input                  <- MaterialExpressionCollectionParameter
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'DLWE_SnowCoverage:MaterialExpressionCollectionParameter_7'")
+    .MaterialExpressionEditorX=-1772
+    .MaterialExpressionEditorY=684
+    .MaterialExpressionGuid=0513B2ED4613B8644DD19ABAA6DCDAE9
+    .Function="/Script/Engine.MaterialFunction'DLWE_SnowCoverage'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_29)
+    Input                  <- MaterialExpressionCollectionParameter
+    .A=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'DLWE_SnowCoverage:MaterialExpressionCollectionParameter_7'")
+    .MaterialExpressionEditorX=-1576
+    .MaterialExpressionEditorY=736
+    .MaterialExpressionGuid=816E13574624190097FCDE851E4F6C4F
+    .Function="/Script/Engine.MaterialFunction'DLWE_SnowCoverage'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_33)
+    Input                  <- MaterialExpressionFunctionInput
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'DLWE_SnowCoverage:MaterialExpressionFunctionInput_1'")
+    .MaterialExpressionEditorX=424
+    .MaterialExpressionEditorY=596
+    .MaterialExpressionGuid=3D682EA44C77465D731FD9A4D79A7B6D
+    .Function="/Script/Engine.MaterialFunction'DLWE_SnowCoverage'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_4)
+    Input                  <- MaterialExpressionTransform
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionTransform'DLWE_SnowCoverage:MaterialExpressionTransform_4'")
+    .MaterialExpressionEditorX=-1160
+    .MaterialExpressionEditorY=916
+    .MaterialExpressionGuid=98900E2E478DF8E6DD3BAF8769EBAA4A
+    .Function="/Script/Engine.MaterialFunction'DLWE_SnowCoverage'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_5)
+    Input                  <- MaterialExpressionVertexNormalWS
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionVertexNormalWS'DLWE_SnowCoverage:MaterialExpressionVertexNormalWS_0'")
+    .MaterialExpressionEditorX=-1904
+    .MaterialExpressionEditorY=588
+    .MaterialExpressionGuid=D9FAB87D4D4B6AF817DA06A732249746
+    .Function="/Script/Engine.MaterialFunction'DLWE_SnowCoverage'"
+  MaterialExpressionConstant3Vector (MaterialExpressionConstant3Vector_0)
+    .Constant=(R=1.000000,G=1.000000,B=0.000000,A=0.000000)
+    .MaterialExpressionEditorX=-1760
+    .MaterialExpressionEditorY=980
+    .MaterialExpressionGuid=5D02C13A415AFE4FAA0C2BA8A499F5A6
+    .Function="/Script/Engine.MaterialFunction'DLWE_SnowCoverage'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_0)
+    .InputName="Normal Input"
+    .Id=10FFBE644ABFA66CC9E8DBA9EBC4DC1A
+    .PreviewValue=(X=0.000000,Y=0.000000,Z=1.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .MaterialExpressionEditorX=-1756
+    .MaterialExpressionEditorY=912
+    .MaterialExpressionGuid=FE87D44345092D30E338B08EC23F01D1
+    .Function="/Script/Engine.MaterialFunction'DLWE_SnowCoverage'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_1)
+    .InputName="Variation Clouds"
+    .Id=B065956F4505617C563313A180111CE1
+    .MaterialExpressionEditorX=148
+    .MaterialExpressionEditorY=596
+    .MaterialExpressionGuid=FEBE7E534FF15A1093F9178FE7FF106D
+    .Function="/Script/Engine.MaterialFunction'DLWE_SnowCoverage'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_2)
+    Preview                <- MaterialExpressionComponentMask
+    .Preview=(Expression="/Script/Engine.MaterialExpressionComponentMask'DLWE_SnowCoverage:MaterialExpressionComponentMask_5'")
+    .InputName="Vertex Normal"
+    .Id=45E437BF49D5513BF8CE988FE4A98FD7
+    .InputType=FunctionInput_Scalar
+    .bUsePreviewValueAsDefault=True
+    .MaterialExpressionEditorX=-1768
+    .MaterialExpressionEditorY=588
+    .MaterialExpressionGuid=CFC47DC24627002378828E9021194264
+    .Function="/Script/Engine.MaterialFunction'DLWE_SnowCoverage'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_4)
+    .InputName="Material Snow"
+    .Id=8824124649B3409411DADC825AB63F02
+    .InputType=FunctionInput_Scalar
+    .MaterialExpressionEditorX=-612
+    .MaterialExpressionEditorY=240
+    .MaterialExpressionGuid=B9DEABEE47F2CBF6E81C9F82C11B65A5
+    .Function="/Script/Engine.MaterialFunction'DLWE_SnowCoverage'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionSubtract
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'DLWE_SnowCoverage:MaterialExpressionSubtract_1'")
+    .OutputName="Base Snow Mask"
+    .bLastPreviewed=True
+    .Id=78EB66C9414A4EBD7765168482652788
+    .MaterialExpressionEditorX=804
+    .MaterialExpressionEditorY=484
+    .MaterialExpressionGuid=7EB041554275EAA5A9731D84CACD7D01
+    .Function="/Script/Engine.MaterialFunction'DLWE_SnowCoverage'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_1)
+    A                      <- MaterialExpressionMultiply
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'DLWE_SnowCoverage:MaterialExpressionMultiply_2'")
+    .OutputName="Nanite Snow Mask"
+    .SortPriority=1
+    .Id=629EAC9A4F0A66E20E8A2687CB9A95B5
+    .MaterialExpressionEditorX=1016
+    .MaterialExpressionEditorY=240
+    .MaterialExpressionGuid=632217364E1A2C0C67C05D875BE683AB
+    .Function="/Script/Engine.MaterialFunction'DLWE_SnowCoverage'"
+    .bCollapsed=True
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionReroute
+    .B=(Expression="/Script/Engine.MaterialExpressionReroute'DLWE_SnowCoverage:MaterialExpressionReroute_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'DLWE_SnowCoverage:MaterialExpressionFunctionInput_4'")
+    .MaterialExpressionEditorX=-96
+    .MaterialExpressionEditorY=240
+    .MaterialExpressionGuid=D844823D4C4831E369882DA7DA2566A5
+    .Function="/Script/Engine.MaterialFunction'DLWE_SnowCoverage'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionConstant3Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant3Vector'DLWE_SnowCoverage:MaterialExpressionConstant3Vector_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'DLWE_SnowCoverage:MaterialExpressionFunctionInput_0'")
+    .MaterialExpressionEditorX=-1504
+    .MaterialExpressionEditorY=912
+    .MaterialExpressionGuid=EFCEA10C47D1D74167C1949335EB8E84
+    .Function="/Script/Engine.MaterialFunction'DLWE_SnowCoverage'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_10)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'DLWE_SnowCoverage:MaterialExpressionComponentMask_29'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'DLWE_SnowCoverage:MaterialExpressionSubtract_3'")
+    .ConstB=3.000000
+    .MaterialExpressionEditorX=-1408
+    .MaterialExpressionEditorY=604
+    .MaterialExpressionGuid=9E35C3A446780D90A18E69A735ED22E6
+    .Function="/Script/Engine.MaterialFunction'DLWE_SnowCoverage'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_2)
+    A                      <- MaterialExpressionSubtract
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'DLWE_SnowCoverage:MaterialExpressionSubtract_2'")
+    .ConstB=1.250000
+    .MaterialExpressionEditorX=848
+    .MaterialExpressionEditorY=240
+    .MaterialExpressionGuid=5F6C7F7B41932A31194CF084FB8EB642
+    .Function="/Script/Engine.MaterialFunction'DLWE_SnowCoverage'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_4)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'DLWE_SnowCoverage:MaterialExpressionMultiply_8'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'DLWE_SnowCoverage:MaterialExpressionMultiply_5'")
+    .MaterialExpressionEditorX=-748
+    .MaterialExpressionEditorY=696
+    .MaterialExpressionGuid=6232995E451D23BAC2101481A2BA7E56
+    .Function="/Script/Engine.MaterialFunction'DLWE_SnowCoverage'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_5)
+    A                      <- MaterialExpressionSaturate
+    B                      <- MaterialExpressionOneMinus
+    .B=(Expression="/Script/Engine.MaterialExpressionOneMinus'DLWE_SnowCoverage:MaterialExpressionOneMinus_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSaturate'DLWE_SnowCoverage:MaterialExpressionSaturate_0'")
+    .MaterialExpressionEditorX=-1024
+    .MaterialExpressionEditorY=696
+    .MaterialExpressionGuid=307A68054210D5506CD2B880D11618EE
+    .Function="/Script/Engine.MaterialFunction'DLWE_SnowCoverage'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_6)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionSaturate
+    .B=(Expression="/Script/Engine.MaterialExpressionSaturate'DLWE_SnowCoverage:MaterialExpressionSaturate_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'DLWE_SnowCoverage:MaterialExpressionFunctionInput_4'")
+    .MaterialExpressionEditorX=-116
+    .MaterialExpressionEditorY=516
+    .MaterialExpressionGuid=D844823D4C4831E369882DA7DA2566A5
+    .Function="/Script/Engine.MaterialFunction'DLWE_SnowCoverage'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_8)
+    A                      <- MaterialExpressionComponentMask
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'DLWE_SnowCoverage:MaterialExpressionComponentMask_4'")
+    .ConstB=4.000000
+    .MaterialExpressionEditorX=-1028
+    .MaterialExpressionEditorY=916
+    .MaterialExpressionGuid=1C02AAFB4BF0075C41E37D8DAF3A257D
+    .Function="/Script/Engine.MaterialFunction'DLWE_SnowCoverage'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_0)
+    Input                  <- MaterialExpressionSaturate
+    .Input=(Expression="/Script/Engine.MaterialExpressionSaturate'DLWE_SnowCoverage:MaterialExpressionSaturate_0'")
+    .MaterialExpressionEditorX=-1120
+    .MaterialExpressionEditorY=760
+    .MaterialExpressionGuid=4EC660C6417C0EC49911E8B1369FFD84
+    .Function="/Script/Engine.MaterialFunction'DLWE_SnowCoverage'"
+  MaterialExpressionReroute (MaterialExpressionReroute_1)
+    Input                  <- MaterialExpressionSaturate
+    .Input=(Expression="/Script/Engine.MaterialExpressionSaturate'DLWE_SnowCoverage:MaterialExpressionSaturate_0'")
+    .MaterialExpressionEditorX=-584
+    .MaterialExpressionEditorY=564
+    .MaterialExpressionGuid=723C719949E650665224EDB77FA62DB4
+    .Function="/Script/Engine.MaterialFunction'DLWE_SnowCoverage'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_0)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'DLWE_SnowCoverage:MaterialExpressionMultiply_10'")
+    .MaterialExpressionEditorX=-1296
+    .MaterialExpressionEditorY=604
+    .MaterialExpressionGuid=1CF3FFF04A40221D7F4550A7DE45B1EA
+    .Function="/Script/Engine.MaterialFunction'DLWE_SnowCoverage'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_3)
+    Input                  <- MaterialExpressionShaderStageSwitch
+    .Input=(Expression="/Script/Engine.MaterialExpressionShaderStageSwitch'DLWE_SnowCoverage:MaterialExpressionShaderStageSwitch_0'")
+    .MaterialExpressionEditorX=-252
+    .MaterialExpressionEditorY=604
+    .MaterialExpressionGuid=AE1BEF7F40E5B7E9776A5FA522955CEB
+    .Function="/Script/Engine.MaterialFunction'DLWE_SnowCoverage'"
+  MaterialExpressionShaderStageSwitch (MaterialExpressionShaderStageSwitch_0)
+    PixelShader            <- MaterialExpressionAdd
+    VertexShader           <- MaterialExpressionReroute
+    .PixelShader=(Expression="/Script/Engine.MaterialExpressionAdd'DLWE_SnowCoverage:MaterialExpressionAdd_1'")
+    .VertexShader=(Expression="/Script/Engine.MaterialExpressionReroute'DLWE_SnowCoverage:MaterialExpressionReroute_1'")
+    .MaterialExpressionEditorX=-452
+    .MaterialExpressionEditorY=604
+    .MaterialExpressionGuid=138FA08242FE3F00E92B6098A54D532C
+    .Function="/Script/Engine.MaterialFunction'DLWE_SnowCoverage'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_0)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'DLWE_SnowCoverage:MaterialExpressionComponentMask_33'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'DLWE_SnowCoverage:MaterialExpressionMultiply_0'")
+    .MaterialExpressionEditorX=556
+    .MaterialExpressionEditorY=240
+    .MaterialExpressionGuid=2F577D074B259B43AE0EE1BDAF3992F9
+    .Function="/Script/Engine.MaterialFunction'DLWE_SnowCoverage'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_1)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'DLWE_SnowCoverage:MaterialExpressionComponentMask_33'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'DLWE_SnowCoverage:MaterialExpressionMultiply_6'")
+    .MaterialExpressionEditorX=594
+    .MaterialExpressionEditorY=514
+    .MaterialExpressionGuid=FBACA7EE45496DC6B28A2ABE7E30D3D4
+    .Function="/Script/Engine.MaterialFunction'DLWE_SnowCoverage'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_2)
+    A                      <- MaterialExpressionSubtract
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'DLWE_SnowCoverage:MaterialExpressionSubtract_0'")
+    .ConstB=0.200000
+    .MaterialExpressionEditorX=696
+    .MaterialExpressionEditorY=240
+    .MaterialExpressionGuid=8A561AD447C8D67D38AB41A276C6EC98
+    .Function="/Script/Engine.MaterialFunction'DLWE_SnowCoverage'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_3)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'DLWE_SnowCoverage:MaterialExpressionComponentMask_15'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'DLWE_SnowCoverage:MaterialExpressionFunctionInput_2'")
+    .MaterialExpressionEditorX=-1528
+    .MaterialExpressionEditorY=604
+    .MaterialExpressionGuid=F2FE8D1F4BBFF6AE5C489EB4A04AACF1
+    .Function="/Script/Engine.MaterialFunction'DLWE_SnowCoverage'"
+  MaterialExpressionTransform (MaterialExpressionTransform_4)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'DLWE_SnowCoverage:MaterialExpressionMultiply_1'")
+    .MaterialExpressionEditorX=-1388
+    .MaterialExpressionEditorY=900
+    .MaterialExpressionGuid=1B78406C493C88A5DA918B9A1DFC1687
+    .Function="/Script/Engine.MaterialFunction'DLWE_SnowCoverage'"
+  MaterialExpressionVertexNormalWS (MaterialExpressionVertexNormalWS_0)
+    .MaterialExpressionEditorX=-2076
+    .MaterialExpressionEditorY=572
+    .MaterialExpressionGuid=F4DDF5524C4079BD6BD5E789E71960B1
+    .Function="/Script/Engine.MaterialFunction'DLWE_SnowCoverage'"

@@ -1,0 +1,53 @@
+### /Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Temperature_Manager_Interface
+  Blueprint (UDW_Temperature_Manager_Interface)
+    .ParentClass="/Script/CoreUObject.Class'/Script/CoreUObject.Interface'"
+    .BlueprintType=BPTYPE_Interface
+    .bDeprecate=True
+    .BlueprintCategory="UltraDynamicWeather|System"
+    .BlueprintSystemVersion=2
+    .FunctionGraphs(0)="/Script/Engine.EdGraph'Set Up Temperature Manager'"
+    .FunctionGraphs(1)="/Script/Engine.EdGraph'Runtime Start Temperature Manager'"
+    .FunctionGraphs(2)="/Script/Engine.EdGraph'Get Current Value'"
+    .CategorySorting(0)=""
+    .LastEditedDocuments(0)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Temperature_Manager_Interface.UDW_Temperature_Manager_Interface:Set Up Temperature Manager",SavedViewOffset=(X=-1340.617676,Y=-608.625000),SavedZoomAmount=1.000000)
+    .LastEditedDocuments(1)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Temperature_Manager_Interface.UDW_Temperature_Manager_Interface:Runtime Start Temperature Manager",SavedViewOffset=(X=-1340.617676,Y=-608.625000),SavedZoomAmount=1.000000)
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfo'SceneThumbnailInfo_0'"
+    .GeneratedClass="/Script/Engine.BlueprintGeneratedClass'UDW_Temperature_Manager_Interface_C'"
+    .bLegacyNeedToPurgeSkelRefs=False
+    .BlueprintGuid=665D0A85410BD81AFCC1C1B227222D63
+  EdGraph (Set Up Temperature Manager)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .GraphGuid=201F72BB49541644246BDBADB510D155
+  K2Node_FunctionEntry (K2Node_FunctionEntry_0)
+    .ExtraFlags=201457664
+    .FunctionReference=(MemberName="Get Current Value")
+    .bIsEditable=True
+    .NodeGuid=2EE44D784A4522170AA54F94A46E07AB
+  EdGraph (Runtime Start Temperature Manager)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .GraphGuid=18DA5B984CFE5A52962B9999C27D3774
+  EdGraph (Get Current Value)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=25F6AC2A4071ED543AB7EE90382EB265
+  K2Node_FunctionResult (K2Node_FunctionResult_0)
+    .FunctionReference=(MemberName="Get Current Value")
+    .bIsEditable=True
+    .NodePosX=256
+    .NodeGuid=F8A39A7C49D171E9F5DAB185C641F08D
+  EdGraph (Set Up Temperature Manager_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .GraphGuid=201F72BB49541644246BDBADB510D155
+  EdGraph (Runtime Start Temperature Manager_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .GraphGuid=18DA5B984CFE5A52962B9999C27D3774
+  EdGraph (Get Current Value_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=25F6AC2A4071ED543AB7EE90382EB265

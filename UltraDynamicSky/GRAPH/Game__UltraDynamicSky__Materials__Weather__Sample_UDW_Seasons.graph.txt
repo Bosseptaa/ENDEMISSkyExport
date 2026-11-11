@@ -1,0 +1,97 @@
+### /Game/UltraDynamicSky/Materials/Weather/Sample_UDW_Seasons
+  MaterialFunction (Sample_UDW_Seasons)
+    .Description="Samples the current season values from Ultra Dynamic Weather, for use in material effects which respond to seasonal changes."
+    .UserExposedCaption="Sample UDW Seasons"
+    .bExposeToLibrary=True
+    .LibraryCategoriesText(0)=NSLOCTEXT("", "2090F1A64FE03B4B680400B82B97B06E", "Weather")
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'Sample_UDW_SeasonsEditorOnlyData'"
+    .StateId=B1B09847478F76CBE9974F9E2EC46050
+    .CombinedOutputTypes=15
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+  MaterialFunctionEditorOnlyData (Sample_UDW_SeasonsEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'Sample_UDW_Seasons:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionCollectionParameter'Sample_UDW_Seasons:MaterialExpressionCollectionParameter_0'","/Script/Engine.MaterialExpressionComponentMask'Sample_UDW_Seasons:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionFunctionOutput'Sample_UDW_Seasons:MaterialExpressionFunctionOutput_1'","/Script/Engine.MaterialExpressionFunctionOutput'Sample_UDW_Seasons:MaterialExpressionFunctionOutput_2'","/Script/Engine.MaterialExpressionFunctionOutput'Sample_UDW_Seasons:MaterialExpressionFunctionOutput_3'","/Script/Engine.MaterialExpressionComponentMask'Sample_UDW_Seasons:MaterialExpressionComponentMask_1'","/Script/Engine.MaterialExpressionComponentMask'Sample_UDW_Seasons:MaterialExpressionComponentMask_2'","/Script/Engine.MaterialExpressionComponentMask'Sample_UDW_Seasons:MaterialExpressionComponentMask_3'"))
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_0)
+    .ParameterName="UDW Seasons"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+    .ParameterId=824E7D42404E3F04EACDBD82D1A54DEB
+    .MaterialExpressionEditorX=-708
+    .MaterialExpressionEditorY=276
+    .MaterialExpressionGuid=6D8BC643437DBE8CC4361CBBBAC15AFF
+    .Function="/Script/Engine.MaterialFunction'Sample_UDW_Seasons'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionCollectionParameter
+    .R=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Sample_UDW_Seasons:MaterialExpressionCollectionParameter_0'")
+    .MaterialExpressionEditorX=-328
+    .MaterialExpressionEditorY=304
+    .MaterialExpressionGuid=1E81EA37486AB7D028BD5899A81C28DC
+    .Function="/Script/Engine.MaterialFunction'Sample_UDW_Seasons'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_1)
+    Input                  <- MaterialExpressionCollectionParameter
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Sample_UDW_Seasons:MaterialExpressionCollectionParameter_0'")
+    .MaterialExpressionEditorX=-328
+    .MaterialExpressionEditorY=480
+    .MaterialExpressionGuid=1E81EA37486AB7D028BD5899A81C28DC
+    .Function="/Script/Engine.MaterialFunction'Sample_UDW_Seasons'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_2)
+    Input                  <- MaterialExpressionCollectionParameter
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Sample_UDW_Seasons:MaterialExpressionCollectionParameter_0'")
+    .MaterialExpressionEditorX=-328
+    .MaterialExpressionEditorY=648
+    .MaterialExpressionGuid=1E81EA37486AB7D028BD5899A81C28DC
+    .Function="/Script/Engine.MaterialFunction'Sample_UDW_Seasons'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_3)
+    Input                  <- MaterialExpressionCollectionParameter
+    .A=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Sample_UDW_Seasons:MaterialExpressionCollectionParameter_0'")
+    .MaterialExpressionEditorX=-328
+    .MaterialExpressionEditorY=816
+    .MaterialExpressionGuid=1E81EA37486AB7D028BD5899A81C28DC
+    .Function="/Script/Engine.MaterialFunction'Sample_UDW_Seasons'"
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionComponentMask
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Sample_UDW_Seasons:MaterialExpressionComponentMask_0'")
+    .OutputName="Spring"
+    .Description="Peaks at 1 in the middle of Spring"
+    .bLastPreviewed=True
+    .Id=3251E85C468AC2CB9A11649D80AC6E2A
+    .MaterialExpressionEditorX=-48
+    .MaterialExpressionEditorY=272
+    .MaterialExpressionGuid=9104EEB04B7B0E133AD8C6B037AD8746
+    .Function="/Script/Engine.MaterialFunction'Sample_UDW_Seasons'"
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_1)
+    A                      <- MaterialExpressionComponentMask
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Sample_UDW_Seasons:MaterialExpressionComponentMask_1'")
+    .OutputName="Summer"
+    .Description="Peaks at 1 in the middle of Summer"
+    .SortPriority=1
+    .Id=58847EA34EE90D4FDF43B8B57363EDB2
+    .MaterialExpressionEditorX=-56
+    .MaterialExpressionEditorY=480
+    .MaterialExpressionGuid=BB582BBD47E5A55D369A4CAB6E82150F
+    .Function="/Script/Engine.MaterialFunction'Sample_UDW_Seasons'"
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_2)
+    A                      <- MaterialExpressionComponentMask
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Sample_UDW_Seasons:MaterialExpressionComponentMask_2'")
+    .OutputName="Autumn"
+    .Description="Peaks at 1 at the middle of Autumn"
+    .SortPriority=2
+    .Id=3D09D0254748FA93B697228FC3756C11
+    .MaterialExpressionEditorX=-56
+    .MaterialExpressionEditorY=648
+    .MaterialExpressionGuid=BB582BBD47E5A55D369A4CAB6E82150F
+    .Function="/Script/Engine.MaterialFunction'Sample_UDW_Seasons'"
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_3)
+    A                      <- MaterialExpressionComponentMask
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Sample_UDW_Seasons:MaterialExpressionComponentMask_3'")
+    .OutputName="Winter"
+    .Description="Peaks at 1 at the middle of Winter"
+    .SortPriority=3
+    .Id=090458144F7DFFCA1C1981B4586153F2
+    .MaterialExpressionEditorX=-56
+    .MaterialExpressionEditorY=816
+    .MaterialExpressionGuid=BB582BBD47E5A55D369A4CAB6E82150F
+    .Function="/Script/Engine.MaterialFunction'Sample_UDW_Seasons'"

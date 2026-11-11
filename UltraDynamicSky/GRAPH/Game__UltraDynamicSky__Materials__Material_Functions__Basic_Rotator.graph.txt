@@ -1,0 +1,109 @@
+### /Game/UltraDynamicSky/Materials/Material_Functions/Basic_Rotator
+  MaterialFunction (Basic_Rotator)
+    .Description="Rotates UVs around 0"
+    .bExposeToLibrary=True
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'Basic_RotatorEditorOnlyData'"
+    .StateId=D7BB3B764AF9FC3E2074A6B7B0D0B8BB
+    .CombinedInputTypes=15
+    .CombinedOutputTypes=15
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+  MaterialFunctionEditorOnlyData (Basic_RotatorEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'Basic_Rotator:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionFunctionInput'Basic_Rotator:MaterialExpressionFunctionInput_0'","/Script/Engine.MaterialExpressionFunctionInput'Basic_Rotator:MaterialExpressionFunctionInput_1'","/Script/Engine.MaterialExpressionDotProduct'Basic_Rotator:MaterialExpressionDotProduct_0'","/Script/Engine.MaterialExpressionDotProduct'Basic_Rotator:MaterialExpressionDotProduct_2'","/Script/Engine.MaterialExpressionAppendVector'Basic_Rotator:MaterialExpressionAppendVector_18'","/Script/Engine.MaterialExpressionAppendVector'Basic_Rotator:MaterialExpressionAppendVector_20'","/Script/Engine.MaterialExpressionAppendVector'Basic_Rotator:MaterialExpressionAppendVector_22'","/Script/Engine.MaterialExpressionCosine'Basic_Rotator:MaterialExpressionCosine_3'","/Script/Engine.MaterialExpressionSine'Basic_Rotator:MaterialExpressionSine_3'","/Script/Engine.MaterialExpressionMultiply'Basic_Rotator:MaterialExpressionMultiply_31'"))
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_18)
+    A                      <- MaterialExpressionCosine
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Basic_Rotator:MaterialExpressionMultiply_31'")
+    .A=(Expression="/Script/Engine.MaterialExpressionCosine'Basic_Rotator:MaterialExpressionCosine_3'")
+    .MaterialExpressionEditorX=-192
+    .MaterialExpressionEditorY=776
+    .MaterialExpressionGuid=3A12410F4886F29C1DD28A80E8FCE3A1
+    .Function="/Script/Engine.MaterialFunction'Basic_Rotator'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_20)
+    A                      <- MaterialExpressionSine
+    B                      <- MaterialExpressionCosine
+    .B=(Expression="/Script/Engine.MaterialExpressionCosine'Basic_Rotator:MaterialExpressionCosine_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSine'Basic_Rotator:MaterialExpressionSine_3'")
+    .MaterialExpressionEditorX=-188
+    .MaterialExpressionEditorY=940
+    .MaterialExpressionGuid=9434D7E24C9F139B270629815E9A3B61
+    .Function="/Script/Engine.MaterialFunction'Basic_Rotator'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_22)
+    A                      <- MaterialExpressionDotProduct
+    B                      <- MaterialExpressionDotProduct
+    .B=(Expression="/Script/Engine.MaterialExpressionDotProduct'Basic_Rotator:MaterialExpressionDotProduct_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionDotProduct'Basic_Rotator:MaterialExpressionDotProduct_2'")
+    .MaterialExpressionEditorX=344
+    .MaterialExpressionEditorY=748
+    .MaterialExpressionGuid=BA9334B142C3BCFE81E349998CBEFD77
+    .Function="/Script/Engine.MaterialFunction'Basic_Rotator'"
+  MaterialExpressionCosine (MaterialExpressionCosine_3)
+    Input                  <- MaterialExpressionFunctionInput
+    .Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Basic_Rotator:MaterialExpressionFunctionInput_1'")
+    .MaterialExpressionEditorX=-584
+    .MaterialExpressionEditorY=964
+    .MaterialExpressionGuid=10F5ECDC4D9DE38684A01DA9BCBDB8A8
+    .Function="/Script/Engine.MaterialFunction'Basic_Rotator'"
+  MaterialExpressionDotProduct (MaterialExpressionDotProduct_0)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionAppendVector
+    .B=(Expression="/Script/Engine.MaterialExpressionAppendVector'Basic_Rotator:MaterialExpressionAppendVector_20'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Basic_Rotator:MaterialExpressionFunctionInput_0'")
+    .MaterialExpressionEditorX=224
+    .MaterialExpressionEditorY=908
+    .MaterialExpressionGuid=97383741479C9A4FE9C60ABE922F1949
+    .Function="/Script/Engine.MaterialFunction'Basic_Rotator'"
+  MaterialExpressionDotProduct (MaterialExpressionDotProduct_2)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionAppendVector
+    .B=(Expression="/Script/Engine.MaterialExpressionAppendVector'Basic_Rotator:MaterialExpressionAppendVector_18'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Basic_Rotator:MaterialExpressionFunctionInput_0'")
+    .MaterialExpressionEditorX=224
+    .MaterialExpressionEditorY=748
+    .MaterialExpressionGuid=25AD24E74308F5A4BF5CE6911BCC89C6
+    .Function="/Script/Engine.MaterialFunction'Basic_Rotator'"
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_0)
+    .InputName="UV"
+    .Description="UVs to be rotated around 0,0"
+    .Id=6081F034494951E682ED1A85AAE52963
+    .InputType=FunctionInput_Vector2
+    .MaterialExpressionEditorX=-8
+    .MaterialExpressionEditorY=592
+    .MaterialExpressionGuid=C1C9F4FC4A4CCBE0136FFEBD536EBBB0
+    .Function="/Script/Engine.MaterialFunction'Basic_Rotator'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_1)
+    .InputName="Rotation Angle"
+    .Description="0-1 range for 0-360 degrees"
+    .Id=7367AA464E7FC9FA6B3BB08D2B7F223B
+    .InputType=FunctionInput_Scalar
+    .SortPriority=1
+    .MaterialExpressionEditorX=-840
+    .MaterialExpressionEditorY=776
+    .MaterialExpressionGuid=C1C9F4FC4A4CCBE0136FFEBD536EBBB0
+    .Function="/Script/Engine.MaterialFunction'Basic_Rotator'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionAppendVector
+    .A=(Expression="/Script/Engine.MaterialExpressionAppendVector'Basic_Rotator:MaterialExpressionAppendVector_22'")
+    .bLastPreviewed=True
+    .Id=6765217D4F702C6AC7640CB709BBCFBD
+    .MaterialExpressionEditorX=484
+    .MaterialExpressionEditorY=720
+    .MaterialExpressionGuid=6A6682BE40EF98999F55BE871F3DFC6E
+    .Function="/Script/Engine.MaterialFunction'Basic_Rotator'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_31)
+    A                      <- MaterialExpressionSine
+    .A=(Expression="/Script/Engine.MaterialExpressionSine'Basic_Rotator:MaterialExpressionSine_3'")
+    .ConstB=-1.000000
+    .MaterialExpressionEditorX=-384
+    .MaterialExpressionEditorY=780
+    .MaterialExpressionGuid=4B5627C548D9D21102C9B48ABB4DD304
+    .Function="/Script/Engine.MaterialFunction'Basic_Rotator'"
+  MaterialExpressionSine (MaterialExpressionSine_3)
+    Input                  <- MaterialExpressionFunctionInput
+    .Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Basic_Rotator:MaterialExpressionFunctionInput_1'")
+    .MaterialExpressionEditorX=-584
+    .MaterialExpressionEditorY=776
+    .MaterialExpressionGuid=24B4852A4EB92C645FB73F8A236F2CAA
+    .Function="/Script/Engine.MaterialFunction'Basic_Rotator'"

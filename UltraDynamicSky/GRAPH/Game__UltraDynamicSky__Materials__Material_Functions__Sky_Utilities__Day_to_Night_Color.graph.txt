@@ -1,0 +1,209 @@
+### /Game/UltraDynamicSky/Materials/Material_Functions/Sky_Utilities/Day_to_Night_Color
+  MaterialFunction (Day_to_Night_Color)
+    .Description="To be used with Ultra Dynamic Sky. Takes in a Day color and a Night color and lerps them together based on where the sun is."
+    .UserExposedCaption="Day to Night Color"
+    .bExposeToLibrary=True
+    .LibraryCategoriesText(0)=NSLOCTEXT("", "AD4FFC154E0F3297049BFC8E0A175902", "Ultra Dynamic Sky")
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'Day_to_Night_ColorEditorOnlyData'"
+    .StateId=B1116E9E4FFBB84C94D44580E61271CD
+    .CombinedInputTypes=527
+    .CombinedOutputTypes=15
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+  MaterialFunctionEditorOnlyData (Day_to_Night_ColorEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'Day_to_Night_Color:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionFunctionInput'Day_to_Night_Color:MaterialExpressionFunctionInput_0'","/Script/Engine.MaterialExpressionFunctionInput'Day_to_Night_Color:MaterialExpressionFunctionInput_1'","/Script/Engine.MaterialExpressionCollectionParameter'Day_to_Night_Color:MaterialExpressionCollectionParameter_0'","/Script/Engine.MaterialExpressionComponentMask'Day_to_Night_Color:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionFunctionInput'Day_to_Night_Color:MaterialExpressionFunctionInput_2'","/Script/Engine.MaterialExpressionFunctionInput'Day_to_Night_Color:MaterialExpressionFunctionInput_3'","/Script/Engine.MaterialExpressionLinearInterpolate'Day_to_Night_Color:MaterialExpressionLinearInterpolate_0'","/Script/Engine.MaterialExpressionAdd'Day_to_Night_Color:MaterialExpressionAdd_0'","/Script/Engine.MaterialExpressionDivide'Day_to_Night_Color:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionAdd'Day_to_Night_Color:MaterialExpressionAdd_1'","/Script/Engine.MaterialExpressionSaturate'Day_to_Night_Color:MaterialExpressionSaturate_0'","/Script/Engine.MaterialExpressionFunctionInput'Day_to_Night_Color:MaterialExpressionFunctionInput_4'","/Script/Engine.MaterialExpressionStaticBool'Day_to_Night_Color:MaterialExpressionStaticBool_0'","/Script/Engine.MaterialExpressionStaticSwitch'Day_to_Night_Color:MaterialExpressionStaticSwitch_0'","/Script/Engine.MaterialExpressionAdd'Day_to_Night_Color:MaterialExpressionAdd_2'","/Script/Engine.MaterialExpressionPerInstanceRandom'Day_to_Night_Color:MaterialExpressionPerInstanceRandom_0'","/Script/Engine.MaterialExpressionSaturate'Day_to_Night_Color:MaterialExpressionSaturate_1'","/Script/Engine.MaterialExpressionSubtract'Day_to_Night_Color:MaterialExpressionSubtract_0'","/Script/Engine.MaterialExpressionMultiply'Day_to_Night_Color:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionFunctionInput'Day_to_Night_Color:MaterialExpressionFunctionInput_5'"))
+  MaterialExpressionAdd (MaterialExpressionAdd_0)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionStaticSwitch
+    .B=(Expression="/Script/Engine.MaterialExpressionStaticSwitch'Day_to_Night_Color:MaterialExpressionStaticSwitch_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Day_to_Night_Color:MaterialExpressionComponentMask_0'")
+    .MaterialExpressionEditorX=-995
+    .MaterialExpressionEditorY=538
+    .MaterialExpressionGuid=216B137E40E897A9337AE884479AFFF0
+    .Function="/Script/Engine.MaterialFunction'Day_to_Night_Color'"
+  MaterialExpressionAdd (MaterialExpressionAdd_1)
+    A                      <- MaterialExpressionDivide
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'Day_to_Night_Color:MaterialExpressionDivide_0'")
+    .ConstB=0.500000
+    .MaterialExpressionEditorX=-700
+    .MaterialExpressionEditorY=540
+    .MaterialExpressionGuid=E28A0FDE4A707F4601583398A78BD4B6
+    .Function="/Script/Engine.MaterialFunction'Day_to_Night_Color'"
+  MaterialExpressionAdd (MaterialExpressionAdd_2)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Day_to_Night_Color:MaterialExpressionMultiply_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Day_to_Night_Color:MaterialExpressionFunctionInput_2'")
+    .MaterialExpressionEditorX=-1696
+    .MaterialExpressionEditorY=708
+    .MaterialExpressionGuid=B1044ED948647CD51A0916930127A184
+    .Function="/Script/Engine.MaterialFunction'Day_to_Night_Color'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_0)
+    .ParameterName="Sun Vector"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+    .ParameterId=618AEFCB40106BAF34FCDD876EDC3DCE
+    .MaterialExpressionEditorX=-1436
+    .MaterialExpressionEditorY=512
+    .MaterialExpressionGuid=7CDC090A423A82C40F000A92481F6F44
+    .Function="/Script/Engine.MaterialFunction'Day_to_Night_Color'"
+    .bCollapsed=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionCollectionParameter
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Day_to_Night_Color:MaterialExpressionCollectionParameter_0'")
+    .MaterialExpressionEditorX=-1175
+    .MaterialExpressionEditorY=538
+    .MaterialExpressionGuid=F5FBE47C4E6D024D5280259EE1AC620F
+    .Function="/Script/Engine.MaterialFunction'Day_to_Night_Color'"
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Day_to_Night_Color:MaterialExpressionFunctionInput_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Day_to_Night_Color:MaterialExpressionAdd_0'")
+    .MaterialExpressionEditorX=-827
+    .MaterialExpressionEditorY=538
+    .MaterialExpressionGuid=1F76B52B49EA52E23B69889A93F851B8
+    .Function="/Script/Engine.MaterialFunction'Day_to_Night_Color'"
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_0)
+    .InputName="Day"
+    .Description="The value to output when it\'s daytime."
+    .Id=199149AF48987363E82A55A654B42865
+    .MaterialExpressionEditorX=-688
+    .MaterialExpressionEditorY=312
+    .MaterialExpressionGuid=B97496A24593BE52EF912F9571DC394D
+    .Function="/Script/Engine.MaterialFunction'Day_to_Night_Color'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_1)
+    .InputName="Night"
+    .Description="The value to output when it\'s night."
+    .Id=1BF379C4445B9ACDAE9E93AC7EEA083C
+    .SortPriority=1
+    .MaterialExpressionEditorX=-696
+    .MaterialExpressionEditorY=380
+    .MaterialExpressionGuid=B97496A24593BE52EF912F9571DC394D
+    .Function="/Script/Engine.MaterialFunction'Day_to_Night_Color'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_2)
+    .InputName="Threshold Offset"
+    .Description="Offset the center of the transition from day to night. At 0, the transition will be centered right on the horizon."
+    .Id=B6499C9549F6B9F7570D55B99B1B8BB9
+    .InputType=FunctionInput_Scalar
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=3
+    .MaterialExpressionEditorX=-2060
+    .MaterialExpressionEditorY=856
+    .MaterialExpressionGuid=E3B8081D4EF7D617F19569ACC4B81B6A
+    .Function="/Script/Engine.MaterialFunction'Day_to_Night_Color'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_3)
+    .InputName="Transition Width"
+    .Description="The width of the transition from day to night. This will determine how long it takes for the day value to fade to the night value as the sun goes down."
+    .Id=23A47AAE442140BF2DDC5FAB03F18BEB
+    .InputType=FunctionInput_Scalar
+    .PreviewValue=(X=0.300000,Y=0.000000,Z=0.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=2
+    .MaterialExpressionEditorX=-1096
+    .MaterialExpressionEditorY=756
+    .MaterialExpressionGuid=E3B8081D4EF7D617F19569ACC4B81B6A
+    .Function="/Script/Engine.MaterialFunction'Day_to_Night_Color'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_4)
+    Preview                <- MaterialExpressionStaticBool
+    .Preview=(Expression="/Script/Engine.MaterialExpressionStaticBool'Day_to_Night_Color:MaterialExpressionStaticBool_0'")
+    .InputName="Randomize Threshold Per Instance"
+    .Description="If enabled, the cutoff threshold will be randomized for each instance. Useful for something like instanced static meshes used for city buildings, to make their window lights turn off at different times as night falls."
+    .Id=3042F1ED4ACBA112A0939084FBA861A6
+    .InputType=FunctionInput_StaticBool
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=4
+    .MaterialExpressionEditorX=-2056
+    .MaterialExpressionEditorY=1044
+    .MaterialExpressionGuid=D6E3CC944767ABE1589F06AB44E57E33
+    .Function="/Script/Engine.MaterialFunction'Day_to_Night_Color'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_5)
+    .InputName="Per Instance Randomize Amount"
+    .Description="If Randomize Threshold Per Instance is enabled, this value scales the amount the threshold is randomized."
+    .Id=2B33CFFC44CA4CB4ECEBC4A0A9B81F1C
+    .InputType=FunctionInput_Scalar
+    .PreviewValue=(X=0.100000,Y=0.000000,Z=0.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=5
+    .MaterialExpressionEditorX=-2452
+    .MaterialExpressionEditorY=688
+    .MaterialExpressionGuid=7569FEAC4E04BD37DA3705AE547C26A8
+    .Function="/Script/Engine.MaterialFunction'Day_to_Night_Color'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionLinearInterpolate
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Day_to_Night_Color:MaterialExpressionLinearInterpolate_0'")
+    .bLastPreviewed=True
+    .Id=8E1C3F20445ADE680498DD95F7A2DD1F
+    .MaterialExpressionEditorX=-196
+    .MaterialExpressionEditorY=284
+    .MaterialExpressionGuid=21B6F7A449EC6AA28668268FC162E4B6
+    .Function="/Script/Engine.MaterialFunction'Day_to_Night_Color'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_0)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionFunctionInput
+    Alpha                  <- MaterialExpressionSaturate
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Day_to_Night_Color:MaterialExpressionFunctionInput_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Day_to_Night_Color:MaterialExpressionFunctionInput_0'")
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionSaturate'Day_to_Night_Color:MaterialExpressionSaturate_0'")
+    .MaterialExpressionEditorX=-372
+    .MaterialExpressionEditorY=312
+    .MaterialExpressionGuid=86856259402DBD746C0A799A3242E13A
+    .Function="/Script/Engine.MaterialFunction'Day_to_Night_Color'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Day_to_Night_Color:MaterialExpressionFunctionInput_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'Day_to_Night_Color:MaterialExpressionSubtract_0'")
+    .MaterialExpressionEditorX=-2092
+    .MaterialExpressionEditorY=576
+    .MaterialExpressionGuid=0301EF8E4E4B636D6B033BA758C2F956
+    .Function="/Script/Engine.MaterialFunction'Day_to_Night_Color'"
+  MaterialExpressionPerInstanceRandom (MaterialExpressionPerInstanceRandom_0)
+    .MaterialExpressionEditorX=-2556
+    .MaterialExpressionEditorY=564
+    .MaterialExpressionGuid=D5A79C2C4B4A602CBAF2589657C6FD7D
+    .Function="/Script/Engine.MaterialFunction'Day_to_Night_Color'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_0)
+    Input                  <- MaterialExpressionAdd
+    .Input=(Expression="/Script/Engine.MaterialExpressionAdd'Day_to_Night_Color:MaterialExpressionAdd_1'")
+    .MaterialExpressionEditorX=-572
+    .MaterialExpressionEditorY=540
+    .MaterialExpressionGuid=E0822EE746A6220F5B61E6B875D4DF2A
+    .Function="/Script/Engine.MaterialFunction'Day_to_Night_Color'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_1)
+    Input                  <- MaterialExpressionPerInstanceRandom
+    .Input=(Expression="/Script/Engine.MaterialExpressionPerInstanceRandom'Day_to_Night_Color:MaterialExpressionPerInstanceRandom_0'")
+    .MaterialExpressionEditorX=-2372
+    .MaterialExpressionEditorY=576
+    .MaterialExpressionGuid=4F5DF44E45858EF1FBF65893FD2FC02D
+    .Function="/Script/Engine.MaterialFunction'Day_to_Night_Color'"
+  MaterialExpressionStaticBool (MaterialExpressionStaticBool_0)
+    .MaterialExpressionEditorX=-2220
+    .MaterialExpressionEditorY=1028
+    .MaterialExpressionGuid=A2022FE24D70D9BAE87C1896CA0D9B58
+    .Function="/Script/Engine.MaterialFunction'Day_to_Night_Color'"
+  MaterialExpressionStaticSwitch (MaterialExpressionStaticSwitch_0)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionFunctionInput
+    Value                  <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Day_to_Night_Color:MaterialExpressionFunctionInput_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Day_to_Night_Color:MaterialExpressionAdd_2'")
+    .Value=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Day_to_Night_Color:MaterialExpressionFunctionInput_4'")
+    .MaterialExpressionEditorX=-1428
+    .MaterialExpressionEditorY=824
+    .MaterialExpressionGuid=475156ED4668DCEB18E203AD476037A8
+    .Function="/Script/Engine.MaterialFunction'Day_to_Night_Color'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_0)
+    A                      <- MaterialExpressionSaturate
+    .A=(Expression="/Script/Engine.MaterialExpressionSaturate'Day_to_Night_Color:MaterialExpressionSaturate_1'")
+    .ConstB=0.500000
+    .MaterialExpressionEditorX=-2264
+    .MaterialExpressionEditorY=576
+    .MaterialExpressionGuid=8595C74C4B2646C0783FA49EB69CD72E
+    .Function="/Script/Engine.MaterialFunction'Day_to_Night_Color'"

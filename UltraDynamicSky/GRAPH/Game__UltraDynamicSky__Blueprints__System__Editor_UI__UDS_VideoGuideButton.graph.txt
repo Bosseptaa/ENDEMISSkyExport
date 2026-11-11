@@ -1,0 +1,471 @@
+### /Game/UltraDynamicSky/Blueprints/System/Editor_UI/UDS_VideoGuideButton
+  WidgetBlueprint (UDS_VideoGuideButton)
+    .Animations(0)="/Script/UMG.WidgetAnimation'HoverPlay'"
+    .WidgetVariableNameToGuidMap=(("BackgroundBlur_289", 557125B5040D3B25981BF52687A38EC8),("CanvasPanel_0", A0B612C96CE030F5A2550A96CD88EE6A),("PlayButton", 3BE6ED4D70D6318EB982F3DFD6A30DEE),("VerticalBox_101", C940BA60B59F3AFA94F723D496C987B2),("CanvasPanel_1", 817377430E153706B9F0493D74FE3E43),("CanvasPanel_148", 908394CFA9903662A2CB4EF023A84548),("MainCanvasPanel", 7D7501678F6E34CAB32FAADCFD9B8407),("Image", 033962BEF249324EAE2955CACCC5CB69),("Image_94", 1556D4BB1F413B37BCD2ED3DC9416BBB),("TextBlock", DC835E7DCC0B3469835ACE001062ABBE),("TextBlock_139", 9EE0A72D32283463B9A5BAABBC82FE08),("TextBlock_1", 5CAD86B10AC9333185B2B482711DA2B7),("LabelText", 8A076CF4249039E7AF788607F7FACDB2),("HoverPlay", 275300BCC00536C9ABE4DBEC4442B808))
+    .PaletteCategory="UDS_Tools"
+    .TickPrediction=WillTick
+    .TickPredictionReason="Native|Anim"
+    .WidgetTree="WidgetTree"
+    .ParentClass="/Script/CoreUObject.Class'/Script/Blutility.EditorUtilityWidget'"
+    .BlueprintCategory="UltraDynamicSky|Editor"
+    .BlueprintSystemVersion=2
+    .UbergraphPages(0)="/Script/Engine.EdGraph'EventGraph'"
+    .NewVariables(0)=(VarName="Video URL",VarGuid=3F4F6B864038242511E560800E38073E,VarType=(PinCategory="string"),FriendlyName="Video URL",Category=NSLOCTEXT("KismetSchema", "Default", "Default"),PropertyFlags=5,MetaDataArray=((DataKey="ExposeOnSpawn",DataValue="true")))
+    .NewVariables(1)=(VarName="Label Text",VarGuid=2DA9FB304D62668D2742478DA73D75BC,VarType=(PinCategory="string"),FriendlyName="Label Text",Category=NSLOCTEXT("KismetSchema", "Default", "Default"),PropertyFlags=5,MetaDataArray=((DataKey="MultiLine",DataValue="true"),(DataKey="ExposeOnSpawn",DataValue="true")))
+    .NewVariables(2)=(VarName="Tooltip Text",VarGuid=B5736E3B48737041BBB55C9028CE6EC0,VarType=(PinCategory="string"),FriendlyName="Tooltip Text",Category=NSLOCTEXT("KismetSchema", "Default", "Default"),PropertyFlags=5,MetaDataArray=((DataKey="MultiLine",DataValue="true"),(DataKey="ExposeOnSpawn",DataValue="true")))
+    .NewVariables(3)=(VarName="Thumbnail URL",VarGuid=D0A1FC264D942CEFD7F946BE02F4F113,VarType=(PinCategory="string"),FriendlyName="Thumbnail URL",Category=NSLOCTEXT("KismetSchema", "Default", "Default"),PropertyFlags=5,MetaDataArray=((DataKey="ExposeOnSpawn",DataValue="true")))
+    .GeneratedVariables(0)=(VarName="PlayButton",VarGuid=3BE6ED4D70D6318EB982F3DFD6A30DEE,VarType=(PinCategory="object",PinSubCategoryObject="/Script/CoreUObject.Class'/Script/UMG.Button'"),FriendlyName="Play Button",PropertyFlags=562952101494812,MetaDataArray=((DataKey="Category",DataValue="UDS_VideoGuideButton")))
+    .GeneratedVariables(1)=(VarName="MainCanvasPanel",VarGuid=7D7501678F6E34CAB32FAADCFD9B8407,VarType=(PinCategory="object",PinSubCategoryObject="/Script/CoreUObject.Class'/Script/UMG.CanvasPanel'"),FriendlyName="Main Canvas Panel",PropertyFlags=562952101494812,MetaDataArray=((DataKey="Category",DataValue="UDS_VideoGuideButton")))
+    .GeneratedVariables(2)=(VarName="LabelText",VarGuid=8A076CF4249039E7AF788607F7FACDB2,VarType=(PinCategory="object",PinSubCategoryObject="/Script/CoreUObject.Class'/Script/UMG.TextBlock'"),FriendlyName="Label Text",PropertyFlags=562952101494812,MetaDataArray=((DataKey="Category",DataValue="UDS_VideoGuideButton")))
+    .GeneratedVariables(3)=(VarName="Image",VarGuid=033962BEF249324EAE2955CACCC5CB69,VarType=(PinCategory="object",PinSubCategoryObject="/Script/CoreUObject.Class'/Script/UMG.Image'"),FriendlyName="Image",PropertyFlags=562952101494812,MetaDataArray=((DataKey="Category",DataValue="UDS_VideoGuideButton")))
+    .GeneratedVariables(4)=(VarName="HoverPlay",VarGuid=275300BCC00536C9ABE4DBEC4442B808,VarType=(PinCategory="object",PinSubCategoryObject="/Script/CoreUObject.Class'/Script/UMG.WidgetAnimation'",bIsReference=True),FriendlyName="HoverPlay",PropertyFlags=2147491860,MetaDataArray=((DataKey="Category",DataValue="Animations")))
+    .CategorySorting(0)="Default"
+    .CategorySorting(1)="Event Graph"
+    .CategorySorting(2)=""
+    .CategorySorting(3)="Config"
+    .CategorySorting(4)="Settings"
+    .CategorySorting(5)="Appearance"
+    .CategorySorting(6)="Input"
+    .CategorySorting(7)="Interaction"
+    .CategorySorting(8)="Performance"
+    .CategorySorting(9)="Layout"
+    .CategorySorting(10)="Behavior"
+    .CategorySorting(11)="Render Transform"
+    .CategorySorting(12)="Localization"
+    .CategorySorting(13)="Rendering"
+    .CategorySorting(14)="Navigation"
+    .CategorySorting(15)="UDS Video Guide Button"
+    .CategorySorting(16)="Animations"
+    .LastEditedDocuments(0)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/System/Editor_UI/UDS_VideoGuideButton.UDS_VideoGuideButton:EventGraph",SavedViewOffset=(X=-991.117676,Y=-558.204956),SavedZoomAmount=1.000000)
+    .GeneratedClass="/Script/UMG.WidgetBlueprintGeneratedClass'UDS_VideoGuideButton_C'"
+    .bLegacyNeedToPurgeSkelRefs=False
+    .BlueprintGuid=E5B59F7B4CF139C8D5D860A8595CC6E8
+  WidgetTree (WidgetTree)
+    .RootWidget="/Script/UMG.CanvasPanel'MainCanvasPanel'"
+  BackgroundBlur (BackgroundBlur_289)
+    .bApplyAlphaToBlur=False
+    .BlurStrength=2.000000
+    .CornerRadius=(X=10.000000,Y=10.000000,Z=10.000000,W=10.000000)
+    .Slot="/Script/UMG.CanvasPanelSlot'UDS_VideoGuideButton:WidgetTree.CanvasPanel_0.CanvasPanelSlot_8'"
+  CanvasPanel (CanvasPanel_0)
+    .Slots(0)="/Script/UMG.CanvasPanelSlot'CanvasPanelSlot_0'"
+    .Slots(1)="/Script/UMG.CanvasPanelSlot'CanvasPanelSlot_1'"
+    .Slots(2)="/Script/UMG.CanvasPanelSlot'CanvasPanelSlot_5'"
+    .Slots(3)="/Script/UMG.CanvasPanelSlot'CanvasPanelSlot_8'"
+    .Slot="/Script/UMG.ButtonSlot'UDS_VideoGuideButton:WidgetTree.PlayButton.ButtonSlot_0'"
+    .bExpandedInDesigner=True
+  Button (PlayButton)
+    .WidgetStyle=(Normal=(TintColor=(SpecifiedColor=(R=0.208333,G=0.148445,B=0.060764,A=1.000000)),OutlineSettings=(CornerRadii=(X=12.000000,Y=12.000000,Z=12.000000,W=12.000000),Color=(SpecifiedColor=(R=0.101454,G=0.104956,B=0.114583,A=0.000000)),Width=0.000000,bUseBrushTransparency=False)),Hovered=(TintColor=(SpecifiedColor=(R=0.348958,G=0.248646,B=0.101780,A=1.000000)),OutlineSettings=(CornerRadii=(X=12.000000,Y=12.000000,Z=12.000000,W=12.000000),Color=(SpecifiedColor=(R=0.101454,G=0.104956,B=0.114583,A=0.000000)),Width=0.000000,bUseBrushTransparency=False)),Pressed=(TintColor=(SpecifiedColor=(R=0.593750,G=0.423069,B=0.173178,A=1.000000)),OutlineSettings=(CornerRadii=(X=12.000000,Y=12.000000,Z=12.000000,W=12.000000),Color=(SpecifiedColor=(R=0.101454,G=0.104956,B=0.114583,A=0.000000)),Width=0.000000,bUseBrushTransparency=False)),NormalPadding=(Left=0.000000,Top=0.000000,Right=0.000000,Bottom=0.000000),PressedPadding=(Left=0.000000,Top=0.000000,Right=0.000000,Bottom=0.000000))
+    .Slots(0)="/Script/UMG.ButtonSlot'ButtonSlot_0'"
+    .Slot="/Script/UMG.VerticalBoxSlot'UDS_VideoGuideButton:WidgetTree.VerticalBox_101.VerticalBoxSlot_5'"
+    .bExpandedInDesigner=True
+    .DisplayLabel="Play Button"
+  VerticalBox (VerticalBox_101)
+    .Slots(0)="/Script/UMG.VerticalBoxSlot'VerticalBoxSlot_5'"
+    .Slots(1)="/Script/UMG.VerticalBoxSlot'VerticalBoxSlot_0'"
+    .Slot="/Script/UMG.CanvasPanelSlot'UDS_VideoGuideButton:WidgetTree.MainCanvasPanel.CanvasPanelSlot_0'"
+    .bExpandedInDesigner=True
+  CanvasPanel (CanvasPanel_1)
+    .Slots(0)="/Script/UMG.CanvasPanelSlot'CanvasPanelSlot_1'"
+    .Slots(1)="/Script/UMG.CanvasPanelSlot'CanvasPanelSlot_3'"
+    .Slots(2)="/Script/UMG.CanvasPanelSlot'CanvasPanelSlot_2'"
+    .Slot="/Script/UMG.CanvasPanelSlot'UDS_VideoGuideButton:WidgetTree.CanvasPanel_0.CanvasPanelSlot_5'"
+    .bExpandedInDesigner=True
+    .PixelSnapping=Disabled
+  CanvasPanel (CanvasPanel_148)
+    .Slots(0)="/Script/UMG.CanvasPanelSlot'CanvasPanelSlot_0'"
+    .Slot="/Script/UMG.VerticalBoxSlot'UDS_VideoGuideButton:WidgetTree.VerticalBox_101.VerticalBoxSlot_0'"
+    .bExpandedInDesigner=True
+  CanvasPanel (MainCanvasPanel)
+    .Slots(0)="/Script/UMG.CanvasPanelSlot'CanvasPanelSlot_0'"
+    .bIsVariable=True
+    .bExpandedInDesigner=True
+    .Visibility=Visible
+    .DisplayLabel="Main Canvas Panel"
+  Image (Image)
+    .Brush=(DrawAs=RoundedBox,ImageType=FullColor,ImageSize=(X=345.000000,Y=195.000000),ResourceObject="/Script/Engine.Texture2D'/Game/UltraDynamicSky/Textures/Sky/Black.Black'",OutlineSettings=(CornerRadii=(X=10.000000,Y=10.000000,Z=10.000000,W=10.000000),Color=(SpecifiedColor=(R=0.005000,G=0.005000,B=0.005000,A=1.000000)),Width=3.000000,RoundingType=FixedRadius))
+    .Slot="/Script/UMG.CanvasPanelSlot'UDS_VideoGuideButton:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'"
+    .DisplayLabel="Image"
+  Image (Image_94)
+    .Brush=(TintColor=(SpecifiedColor=(R=0.008626,G=0.010550,B=0.015625,A=0.200000)),DrawAs=RoundedBox,ImageType=FullColor,ImageSize=(X=345.000000,Y=195.000000),OutlineSettings=(CornerRadii=(X=10.000000,Y=10.000000,Z=10.000000,W=10.000000),Color=(SpecifiedColor=(R=0.005000,G=0.005000,B=0.005000,A=0.000000)),Width=3.000000,RoundingType=FixedRadius))
+    .Slot="/Script/UMG.CanvasPanelSlot'UDS_VideoGuideButton:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1'"
+    .bIsVariable=False
+  TextBlock (TextBlock)
+    .Text=NSLOCTEXT("[6F97A0C477AFD7382B00C467BA350641]", "CC325C604525B31C529A84A0E4CB860F", "●")
+    .ColorAndOpacity=(SpecifiedColor=(R=0.000000,G=0.000000,B=0.000000,A=0.300000))
+    .Font=(OutlineSettings=(OutlineColor=(R=0.000000,G=0.000000,B=0.000000,A=0.300000)),Size=82.500000)
+    .Justification=Center
+    .Slot="/Script/UMG.CanvasPanelSlot'UDS_VideoGuideButton:WidgetTree.CanvasPanel_1.CanvasPanelSlot_1'"
+    .RenderTransform=(Translation=(X=3.000000,Y=7.000000),Scale=(X=1.200000,Y=1.200000))
+    .Visibility=HitTestInvisible
+    .PixelSnapping=Disabled
+  TextBlock (TextBlock_139)
+    .Text=NSLOCTEXT("[6F97A0C477AFD7382B00C467BA350641]", "7ED982DB47D6653C666938ADB7849EE0", "▶")
+    .ColorAndOpacity=(SpecifiedColor=(R=0.005208,G=0.005208,B=0.005208,A=1.000000))
+    .Font=(OutlineSettings=(OutlineColor=(R=0.031250,G=0.031250,B=0.031250,A=1.000000)),Size=31.500000)
+    .Justification=Center
+    .Slot="/Script/UMG.CanvasPanelSlot'UDS_VideoGuideButton:WidgetTree.CanvasPanel_1.CanvasPanelSlot_2'"
+    .RenderTransform=(Translation=(X=1.000000,Y=2.500000),Scale=(X=1.200000,Y=1.200000))
+    .Visibility=HitTestInvisible
+  TextBlock (TextBlock_1)
+    .Text=NSLOCTEXT("[6F97A0C477AFD7382B00C467BA350641]", "CC325C604525B31C529A84A0E4CB860F", "●")
+    .ColorAndOpacity=(SpecifiedColor=(R=0.661458,G=0.463353,B=0.168052,A=1.000000))
+    .Font=(OutlineSettings=(OutlineSize=3,OutlineColor=(R=0.031250,G=0.031250,B=0.031250,A=1.000000)),Size=72.000000)
+    .Justification=Center
+    .Slot="/Script/UMG.CanvasPanelSlot'UDS_VideoGuideButton:WidgetTree.CanvasPanel_1.CanvasPanelSlot_3'"
+    .RenderTransform=(Translation=(X=1.000000,Y=4.000000),Scale=(X=1.200000,Y=1.200000))
+    .Visibility=HitTestInvisible
+  TextBlock (LabelText)
+    .Text=NSLOCTEXT("[6F97A0C477AFD7382B00C467BA350641]", "E6861AF647C007F5D9E08F9A631CB607", "Adding UDS to a Level")
+    .ColorAndOpacity=(SpecifiedColor=(R=0.656250,G=0.656250,B=0.656250,A=1.000000))
+    .Font=(TypefaceFontName="Italic",Size=13.500000)
+    .Justification=Center
+    .WrapTextAt=500.000000
+    .Margin=(Left=10.000000,Top=10.000000,Right=10.000000,Bottom=4.000000)
+    .LineHeightPercentage=1.250000
+    .Slot="/Script/UMG.CanvasPanelSlot'UDS_VideoGuideButton:WidgetTree.CanvasPanel_148.CanvasPanelSlot_0'"
+    .bIsVariable=True
+    .DisplayLabel="Label Text"
+  WidgetAnimation (HoverPlay)
+    .Possessables(0)=(Guid=8F3CA9AF4EB37F425547DDAF340C8136,Name="CanvasPanel_1",PossessedObjectClass="/Script/UMG.CanvasPanel")
+    .Possessables(1)=(Guid=BF32503D48CBC0C1CA996C8317920D97,Name="TextBlock",PossessedObjectClass="/Script/UMG.TextBlock")
+    .Possessables(2)=(Guid=FFC2F91C40A4AE5E0BE2FFA709DF8533,Name="TextBlock_1",PossessedObjectClass="/Script/UMG.TextBlock")
+    .ObjectBindings(0)=(ObjectGuid=8F3CA9AF4EB37F425547DDAF340C8136,Tracks=("/Script/UMG.MovieScene2DTransformTrack'MovieScene2DTransformTrack_0'"))
+    .ObjectBindings(1)=(ObjectGuid=BF32503D48CBC0C1CA996C8317920D97,Tracks=("/Script/UMG.MovieScene2DTransformTrack'MovieScene2DTransformTrack_1'"))
+    .ObjectBindings(2)=(ObjectGuid=FFC2F91C40A4AE5E0BE2FFA709DF8533,Tracks=("/Script/MovieSceneTracks.MovieSceneColorTrack'MovieSceneColorTrack_0'"))
+    .PlaybackRange=Inclusive:0:Exclusive:6001
+    .DisplayRate=(Numerator=20)
+    .EditorData=(ExpansionStates=(("B77C018A4E3CBEF0D05DFBA455B45B9D.MovieScene2DTransformTrack_0", ()),("B77C018A4E3CBEF0D05DFBA455B45B9D.MovieSceneColorTrack_0", (bExpanded=False)),("BDDFA19846B255D9595ABC89C8C585A2.MovieSceneColorTrack_1", ()),("BDDFA19846B255D9595ABC89C8C585A2.MovieScene2DTransformTrack_1", (bExpanded=False)),("BDDFA19846B255D9595ABC89C8C585A2.MovieSceneFloatTrack_0", (bExpanded=False)),("1B79D3304872B3C41C46A191D9D01C56.MovieScene2DTransformTrack_0", (bExpanded=False)),("FE8FC7404989AD6970F86D99A748498A.MovieSceneFloatTrack_1", (bExpanded=False)),("FFC2F91C40A4AE5E0BE2FFA709DF8533.MovieSceneColorTrack_0", (bExpanded=False)),("8F3CA9AF4EB37F425547DDAF340C8136.MovieScene2DTransformTrack_0", (bExpanded=False)),("BF32503D48CBC0C1CA996C8317920D97.MovieScene2DTransformTrack_1", (bExpanded=False))))
+    .NodeGroupCollection="NodeGroupCollection"
+    .Signature=B78CC7C6415D7CE24F00CA8CCB101532
+    .MovieScene="/Script/MovieScene.MovieScene'HoverPlay'"
+    .AnimationBindings(0)=(WidgetName="TextBlock_1",AnimationGuid=FFC2F91C40A4AE5E0BE2FFA709DF8533)
+    .AnimationBindings(1)=(WidgetName="CanvasPanel_1",AnimationGuid=8F3CA9AF4EB37F425547DDAF340C8136)
+    .AnimationBindings(2)=(WidgetName="TextBlock",AnimationGuid=BF32503D48CBC0C1CA996C8317920D97)
+    .DisplayLabel="HoverPlay"
+  EdGraph (EventGraph)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_Event'K2Node_Event_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_AsyncAction'K2Node_AsyncAction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_3'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_27'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_28'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_20'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_21'"
+    .Nodes(7)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_29'"
+    .Nodes(8)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_22'"
+    .Nodes(9)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .Nodes(10)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_1'"
+    .Nodes(11)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_4'"
+    .Nodes(12)="/Script/BlueprintGraph.K2Node_ComponentBoundEvent'K2Node_ComponentBoundEvent_0'"
+    .Nodes(13)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(14)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(15)="/Script/BlueprintGraph.K2Node_ComponentBoundEvent'K2Node_ComponentBoundEvent_1'"
+    .Nodes(16)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_4'"
+    .Nodes(17)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_7'"
+    .Nodes(18)="/Script/BlueprintGraph.K2Node_ComponentBoundEvent'K2Node_ComponentBoundEvent_2'"
+    .Nodes(19)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_2'"
+    .Nodes(20)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_5'"
+    .Nodes(21)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_5'"
+    .bAllowDeletion=False
+    .GraphGuid=1B00911343518281A1DFD4B1C916F6D3
+  K2Node_Event (K2Node_Event_0)
+    .EventReference=(MemberParent="/Script/CoreUObject.Class'/Script/UMG.UserWidget'",MemberName="Construct")
+    .bOverrideFunction=True
+    .NodePosX=-984
+    .NodePosY=-112
+    .NodeGuid=EA94704744E45634AE55A8BFF581BF86
+  K2Node_AsyncAction (K2Node_AsyncAction_0)
+    .ProxyFactoryFunctionName="DownloadImage"
+    .ProxyFactoryClass="/Script/CoreUObject.Class'/Script/UMG.AsyncTaskDownloadImage'"
+    .ProxyClass="/Script/CoreUObject.Class'/Script/UMG.AsyncTaskDownloadImage'"
+    .NodePosX=260
+    .NodePosY=-112
+    .NodeGuid=F229ECB544346FB9997394AD4827FD66
+  K2Node_VariableGet (K2Node_VariableGet_3)
+    .VariableReference=(MemberName="Thumbnail URL",MemberGuid=D0A1FC264D942CEFD7F946BE02F4F113,bSelfContext=True)
+    .NodePosX=92
+    .NodePosY=-36
+    .NodeGuid=93C268694C6D1A3A5D2015BB475DD0B9
+  K2Node_VariableGet (K2Node_VariableGet_27)
+    .VariableReference=(MemberName="Label Text",MemberGuid=2DA9FB304D62668D2742478DA73D75BC,bSelfContext=True)
+    .NodePosX=-1156
+    .NodePosY=36
+    .NodeGuid=F53D154B4D3818078660F1A4912F5F35
+  K2Node_VariableGet (K2Node_VariableGet_28)
+    .VariableReference=(MemberName="LabelText",MemberGuid=8A076CF4249039E7AF788607F7FACDB2,bSelfContext=True)
+    .NodePosX=-952
+    .NodePosY=-40
+    .NodeGuid=EEF65B4D4AD720E16BA6758EE2CC9B34
+  K2Node_CallFunction (K2Node_CallFunction_20)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/UMG.TextBlock'",MemberName="SetText")
+    .NodePosX=-732
+    .NodePosY=-128
+    .NodeGuid=DA4BCCD54CEF134990E15893225F58FD
+  K2Node_CallFunction (K2Node_CallFunction_21)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetTextLibrary'",MemberName="Conv_StringToText")
+    .NodePosX=-1008
+    .NodePosY=16
+    .NodeGuid=6E6C508946FCD3BCEA6339BE9C9B4127
+  K2Node_VariableGet (K2Node_VariableGet_29)
+    .VariableReference=(MemberName="Image",MemberGuid=033962BEF249324EAE2955CACCC5CB69,bSelfContext=True)
+    .NodePosX=516
+    .NodePosY=-20
+    .NodeGuid=9022CB4443C776B45E62B4B7B16C1EBC
+  K2Node_CallFunction (K2Node_CallFunction_22)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/UMG.Image'",MemberName="SetBrushFromTextureDynamic")
+    .NodePosX=664
+    .NodePosY=-96
+    .NodeGuid=15ED10DE4CA98A244539AB9C7CD17B50
+  K2Node_CallFunction (K2Node_CallFunction_2)
+    .FunctionReference=(MemberName="SetToolTipText",bSelfContext=True)
+    .NodePosX=-156
+    .NodePosY=-128
+    .NodeGuid=F4249D36403BFB2CEC63348CFBEE6880
+  K2Node_VariableGet (K2Node_VariableGet_1)
+    .VariableReference=(MemberName="Tooltip Text",MemberGuid=B5736E3B48737041BBB55C9028CE6EC0,bSelfContext=True)
+    .NodePosX=-556
+    .NodePosY=8
+    .NodeGuid=2739032B43DE8E688F6340915E55A957
+  K2Node_CallFunction (K2Node_CallFunction_4)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetTextLibrary'",MemberName="Conv_StringToText")
+    .NodePosX=-408
+    .NodePosY=-16
+    .NodeGuid=224B2C624DC34B08ED9E468EFB981DD5
+  K2Node_ComponentBoundEvent (K2Node_ComponentBoundEvent_0)
+    .DelegatePropertyName="OnClicked"
+    .DelegateOwnerClass="/Script/CoreUObject.Class'/Script/UMG.Button'"
+    .ComponentPropertyName="PlayButton"
+    .EventReference=(MemberParent="/Script/CoreUObject.Package'/Script/UMG'",MemberName="OnButtonClickedEvent__DelegateSignature")
+    .bInternalEvent=True
+    .CustomFunctionName="BndEvt__UDS_VideoGuideButton_PlayButton_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature"
+    .NodePosX=-1100
+    .NodePosY=316
+    .NodeGuid=62E73E07482C571FB395229B4AA77CB0
+  K2Node_VariableGet (K2Node_VariableGet_0)
+    .VariableReference=(MemberName="Video URL",MemberGuid=3F4F6B864038242511E560800E38073E,bSelfContext=True)
+    .NodePosX=-1012
+    .NodePosY=408
+    .NodeGuid=E86BF71444B1B6EC5758AA9A0E895960
+  K2Node_CallFunction (K2Node_CallFunction_1)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetSystemLibrary'",MemberName="LaunchURL")
+    .NodePosX=-848
+    .NodePosY=320
+    .NodeGuid=F9681CDF46ED1927D8F6A4867CE7F52E
+  K2Node_ComponentBoundEvent (K2Node_ComponentBoundEvent_1)
+    .DelegatePropertyName="OnHovered"
+    .DelegateOwnerClass="/Script/CoreUObject.Class'/Script/UMG.Button'"
+    .ComponentPropertyName="PlayButton"
+    .EventReference=(MemberParent="/Script/CoreUObject.Package'/Script/UMG'",MemberName="OnButtonHoverEvent__DelegateSignature")
+    .bInternalEvent=True
+    .CustomFunctionName="BndEvt__UDS_VideoGuideButton_PlayButton_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature"
+    .NodePosX=-1124
+    .NodePosY=596
+    .NodeGuid=4A71CF7245298DACDF596DB6D74F507A
+  K2Node_VariableGet (K2Node_VariableGet_4)
+    .VariableReference=(MemberName="HoverPlay",MemberGuid=275300BCC00536C9ABE4DBEC4442B808,bSelfContext=True)
+    .NodePosX=-1048
+    .NodePosY=692
+    .NodeGuid=244B2C3E4D60E630393C0080423F6CB2
+  K2Node_CallFunction (K2Node_CallFunction_7)
+    .FunctionReference=(MemberName="PlayAnimation",bSelfContext=True)
+    .NodePosX=-868
+    .NodePosY=580
+    .NodeGuid=10A267E647760B878328558328BA1B90
+  K2Node_ComponentBoundEvent (K2Node_ComponentBoundEvent_2)
+    .DelegatePropertyName="OnUnhovered"
+    .DelegateOwnerClass="/Script/CoreUObject.Class'/Script/UMG.Button'"
+    .ComponentPropertyName="PlayButton"
+    .EventReference=(MemberParent="/Script/CoreUObject.Package'/Script/UMG'",MemberName="OnButtonHoverEvent__DelegateSignature")
+    .bInternalEvent=True
+    .CustomFunctionName="BndEvt__UDS_VideoGuideButton_PlayButton_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature"
+    .NodePosX=-1164
+    .NodePosY=984
+    .NodeGuid=BCCFCAA341E7C1AC066791AC8D69D4A8
+  K2Node_VariableGet (K2Node_VariableGet_2)
+    .VariableReference=(MemberName="HoverPlay",MemberGuid=275300BCC00536C9ABE4DBEC4442B808,bSelfContext=True)
+    .NodePosX=-1048
+    .NodePosY=1092
+    .NodeGuid=78E058FD40845C6B240E00B3EE05FFCE
+  K2Node_CallFunction (K2Node_CallFunction_5)
+    .FunctionReference=(MemberName="PlayAnimation",bSelfContext=True)
+    .NodePosX=-876
+    .NodePosY=968
+    .NodeGuid=E041226848DC8BCAEB89F1B01D6974F7
+  K2Node_VariableGet (K2Node_VariableGet_5)
+    .VariableReference=(MemberName="PlayButton",MemberGuid=3BE6ED4D70D6318EB982F3DFD6A30DEE,bSelfContext=True)
+    .NodePosX=-364
+    .NodePosY=-56
+    .NodeGuid=1D11D2E54BA7FD3E41B12C9F7021DB19
+  EdGraph (ExecuteUbergraph_UDS_VideoGuideButton)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_5'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_5'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_2'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_ComponentBoundEvent'K2Node_ComponentBoundEvent_2'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_7'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_4'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_ComponentBoundEvent'K2Node_ComponentBoundEvent_1'"
+    .Nodes(7)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(8)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(9)="/Script/BlueprintGraph.K2Node_ComponentBoundEvent'K2Node_ComponentBoundEvent_0'"
+    .Nodes(10)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_4'"
+    .Nodes(11)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_1'"
+    .Nodes(12)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .Nodes(13)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_22'"
+    .Nodes(14)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_29'"
+    .Nodes(15)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_21'"
+    .Nodes(16)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_20'"
+    .Nodes(17)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_28'"
+    .Nodes(18)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_27'"
+    .Nodes(19)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_3'"
+    .Nodes(20)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_6'"
+    .Nodes(21)="/Script/BlueprintGraph.K2Node_Event'K2Node_Event_0'"
+    .Nodes(22)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(23)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(24)="/Script/BlueprintGraph.K2Node_TemporaryVariable'K2Node_TemporaryVariable_0'"
+    .Nodes(25)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_3'"
+    .Nodes(26)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(27)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_0'"
+    .Nodes(28)="/Script/BlueprintGraph.K2Node_AddDelegate'K2Node_AddDelegate_0'"
+    .Nodes(29)="/Script/BlueprintGraph.K2Node_Self'K2Node_Self_0'"
+    .Nodes(30)="/Script/BlueprintGraph.K2Node_CreateDelegate'K2Node_CreateDelegate_0'"
+    .Nodes(31)="/Script/BlueprintGraph.K2Node_AssignmentStatement'K2Node_AssignmentStatement_0'"
+    .Nodes(32)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_1'"
+    .Nodes(33)="/Script/BlueprintGraph.K2Node_AddDelegate'K2Node_AddDelegate_1'"
+    .Nodes(34)="/Script/BlueprintGraph.K2Node_Self'K2Node_Self_1'"
+    .Nodes(35)="/Script/BlueprintGraph.K2Node_CreateDelegate'K2Node_CreateDelegate_1'"
+    .Nodes(36)="/Script/BlueprintGraph.K2Node_AssignmentStatement'K2Node_AssignmentStatement_1'"
+    .GraphGuid=E9B09A13430DB0FADD7BA982AF488762
+  K2Node_FunctionEntry (K2Node_FunctionEntry_0)
+    .CustomGeneratedFunctionName="OnFail_F229ECB544346FB9997394ADD94A918D"
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/UMG.UserWidget'",MemberName="Construct")
+    .NodePosX=-200
+    .NodePosY=-1600
+    .bIsIntermediateNode=True
+    .NodeGuid=17E24F06D0473FC9A2452C73133F6827
+  K2Node_CallFunction (K2Node_CallFunction_0)
+    .FunctionReference=(MemberName="ExecuteUbergraph_UDS_VideoGuideButton",bSelfContext=True)
+    .NodePosX=300
+    .NodePosY=-1600
+    .bIsIntermediateNode=True
+    .NodeGuid=76167E0465DF3211B79E1E8F3B887321
+  K2Node_TemporaryVariable (K2Node_TemporaryVariable_0)
+    .VariableType=(PinCategory="object",PinSubCategoryObject="/Script/CoreUObject.Class'/Script/Engine.Texture2DDynamic'")
+    .NodePosX=-1520
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=9F3CC17D44FA3EE3883BE8DB77E2AD33
+  K2Node_CallFunction (K2Node_CallFunction_3)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetSystemLibrary'",MemberName="IsValid")
+    .NodePosX=-1280
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=29DBA989BBB83834919EDFAA43C7D00F
+  K2Node_IfThenElse (K2Node_IfThenElse_0)
+    .NodePosX=-1040
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=9E7BC077E86A3216B9F3FD7C2D5C78EE
+  K2Node_CustomEvent (K2Node_CustomEvent_0)
+    .CustomFunctionName="OnSuccess_F229ECB544346FB9997394ADD94A918D"
+    .NodePosX=-800
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=41CF3882DC223181935FE1E8ABD80283
+  K2Node_AddDelegate (K2Node_AddDelegate_0)
+    .DelegateReference=(MemberParent="/Script/CoreUObject.Class'/Script/UMG.AsyncTaskDownloadImage'",MemberName="OnSuccess")
+    .NodePosX=-560
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=81C709C08D2634C793AA183D57626C83
+  K2Node_Self (K2Node_Self_0)
+    .NodePosX=-320
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=42B76830F9103642A1B93CAAF7AC37BC
+  K2Node_CreateDelegate (K2Node_CreateDelegate_0)
+    .SelectedFunctionName="OnSuccess_F229ECB544346FB9997394ADD94A918D"
+    .NodePosX=-80
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=8A900F52C65132399F3F4515E9C3454C
+  K2Node_AssignmentStatement (K2Node_AssignmentStatement_0)
+    .NodePosX=160
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=341FB3016E94389A917139D98790EB54
+  K2Node_CustomEvent (K2Node_CustomEvent_1)
+    .CustomFunctionName="OnFail_F229ECB544346FB9997394ADD94A918D"
+    .NodePosX=400
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=C1442FEB3A8D3EBEA3C6C7F4CB43CE05
+  K2Node_AddDelegate (K2Node_AddDelegate_1)
+    .DelegateReference=(MemberParent="/Script/CoreUObject.Class'/Script/UMG.AsyncTaskDownloadImage'",MemberName="OnFail")
+    .NodePosX=640
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=700EF3F6E29C31E09FAF27192C4AF6C9
+  K2Node_Self (K2Node_Self_1)
+    .NodePosX=880
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=2D6CB10EBD2E3AA5A026A4FF2F33D8D3
+  K2Node_CreateDelegate (K2Node_CreateDelegate_1)
+    .SelectedFunctionName="OnFail_F229ECB544346FB9997394ADD94A918D"
+    .NodePosX=1120
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=67D2B804D609381A81417FE8B528AB9B
+  K2Node_AssignmentStatement (K2Node_AssignmentStatement_1)
+    .NodePosX=1360
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=3484145ECE5036D0A4AA09309562FC09
+  K2Node_CallFunction (K2Node_CallFunction_6)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/UMG.AsyncTaskDownloadImage'",MemberName="Activate")
+    .NodePosX=1600
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=2187C89634343B63A4CC51231463F353
+  EdGraph (BndEvt__UDS_VideoGuideButton_PlayButton_K2Node_ComponentBoundEvent_2_OnButtonHoverEvent__DelegateSignature)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=FA3FB7D8414F4B5008980C9C22A27C29
+  EdGraph (BndEvt__UDS_VideoGuideButton_PlayButton_K2Node_ComponentBoundEvent_1_OnButtonHoverEvent__DelegateSignature)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=D36553C5422230AA4585519E08B62C42
+  EdGraph (BndEvt__UDS_VideoGuideButton_PlayButton_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=75259CC0443588B4192DD2A58055045E
+  EdGraph (Construct)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=7C6023DA451386426215E0B55F1729F1
+  EdGraph (OnSuccess_F229ECB544346FB9997394ADD94A918D)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_SetVariableOnPersistentFrame'K2Node_SetVariableOnPersistentFrame_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=005950624DB62335FDAB33BA5DB8DCD5
+  K2Node_SetVariableOnPersistentFrame (K2Node_SetVariableOnPersistentFrame_0)
+    .NodePosX=640
+    .NodePosY=-1600
+    .bIsIntermediateNode=True
+    .NodeGuid=478F099CD2A43FFF885AC1E54CB9DBFF
+  EdGraph (OnFail_F229ECB544346FB9997394ADD94A918D)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_SetVariableOnPersistentFrame'K2Node_SetVariableOnPersistentFrame_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=24AFB1B74E245E26090395A74EC21FD3

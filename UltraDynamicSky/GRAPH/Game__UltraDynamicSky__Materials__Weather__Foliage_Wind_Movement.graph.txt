@@ -1,0 +1,2432 @@
+### /Game/UltraDynamicSky/Materials/Weather/Foliage_Wind_Movement
+  MaterialFunction (Foliage_Wind_Movement)
+    DependentFunctionExpressionCandidates(0) <- MaterialExpressionMaterialFunctionCall
+    DependentFunctionExpressionCandidates(1) <- MaterialExpressionMaterialFunctionCall
+    DependentFunctionExpressionCandidates(2) <- MaterialExpressionMaterialFunctionCall
+    DependentFunctionExpressionCandidates(3) <- MaterialExpressionMaterialFunctionCall
+    DependentFunctionExpressionCandidates(4) <- MaterialExpressionMaterialFunctionCall
+    .Description="Generates 3 levels of simple noise-based wind movement for foliage models. To be used with Ultra Dynamic Weather. Intensity, speed, and direction of movement will be controlled by the wind state on UDW."
+    .UserExposedCaption="Foliage Wind Movement"
+    .bExposeToLibrary=True
+    .LibraryCategoriesText(0)=NSLOCTEXT("", "D438A08E430E98BF56E691AA976C382A", "Weather")
+    .DependentFunctionExpressionCandidates(0)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_4'"
+    .DependentFunctionExpressionCandidates(1)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_0'"
+    .DependentFunctionExpressionCandidates(2)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_10'"
+    .DependentFunctionExpressionCandidates(3)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_1'"
+    .DependentFunctionExpressionCandidates(4)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_7'"
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'Foliage_Wind_MovementEditorOnlyData'"
+    .StateId=3F3939FB4D0EEE0EEEA4F2AD199163EF
+    .CombinedInputTypes=527
+    .CombinedOutputTypes=15
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+  MaterialFunctionEditorOnlyData (Foliage_Wind_MovementEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'Foliage_Wind_Movement:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionSubtract'Foliage_Wind_Movement:MaterialExpressionSubtract_2'","/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_0'","/Script/Engine.MaterialExpressionTextureSample'Foliage_Wind_Movement:MaterialExpressionTextureSample_1'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Foliage_Wind_Movement:MaterialExpressionMaterialFunctionCall_4'","/Script/Engine.MaterialExpressionWorldPosition'Foliage_Wind_Movement:MaterialExpressionWorldPosition_0'","/Script/Engine.MaterialExpressionComponentMask'Foliage_Wind_Movement:MaterialExpressionComponentMask_1'","/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_2'","/Script/Engine.MaterialExpressionFloor'Foliage_Wind_Movement:MaterialExpressionFloor_0'","/Script/Engine.MaterialExpressionFrac'Foliage_Wind_Movement:MaterialExpressionFrac_1'","/Script/Engine.MaterialExpressionDivide'Foliage_Wind_Movement:MaterialExpressionDivide_1'","/Script/Engine.MaterialExpressionComponentMask'Foliage_Wind_Movement:MaterialExpressionComponentMask_2'","/Script/Engine.MaterialExpressionDivide'Foliage_Wind_Movement:MaterialExpressionDivide_2'","/Script/Engine.MaterialExpressionComponentMask'Foliage_Wind_Movement:MaterialExpressionComponentMask_5'","/Script/Engine.MaterialExpressionDivide'Foliage_Wind_Movement:MaterialExpressionDivide_6'","/Script/Engine.MaterialExpressionOneMinus'Foliage_Wind_Movement:MaterialExpressionOneMinus_0'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_0'","/Script/Engine.MaterialExpressionTextureSample'Foliage_Wind_Movement:MaterialExpressionTextureSample_2'","/Script/Engine.MaterialExpressionLinearInterpolate'Foliage_Wind_Movement:MaterialExpressionLinearInterpolate_0'","/Script/Engine.MaterialExpressionTextureSample'Foliage_Wind_Movement:MaterialExpressionTextureSample_3'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_0'","/Script/Engine.MaterialExpressionTime'Foliage_Wind_Movement:MaterialExpressionTime_1'","/Script/Engine.MaterialExpressionAdd'Foliage_Wind_Movement:MaterialExpressionAdd_0'","/Script/Engine.MaterialExpressionAppendVector'Foliage_Wind_Movement:MaterialExpressionAppendVector_1'","/Script/Engine.MaterialExpressionAdd'Foliage_Wind_Movement:MaterialExpressionAdd_3'","/Script/Engine.MaterialExpressionAppendVector'Foliage_Wind_Movement:MaterialExpressionAppendVector_2'","/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_3'","/Script/Engine.MaterialExpressionAdd'Foliage_Wind_Movement:MaterialExpressionAdd_4'","/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_11'","/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_1'","/Script/Engine.MaterialExpressionSaturate'Foliage_Wind_Movement:MaterialExpressionSaturate_0'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_4'","/Script/Engine.MaterialExpressionWorldPosition'Foliage_Wind_Movement:MaterialExpressionWorldPosition_4'","/Script/Engine.MaterialExpressionTransformPosition'Foliage_Wind_Movement:MaterialExpressionTransformPosition_1'","/Script/Engine.MaterialExpressionComponentMask'Foliage_Wind_Movement:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionDivide'Foliage_Wind_Movement:MaterialExpressionDivide_7'","/Script/Engine.MaterialExpressionSaturate'Foliage_Wind_Movement:MaterialExpressionSaturate_2'","/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_5'","/Script/Engine.MaterialExpressionDivide'Foliage_Wind_Movement:MaterialExpressionDivide_8'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_5'","/Script/Engine.MaterialExpressionSaturate'Foliage_Wind_Movement:MaterialExpressionSaturate_3'","/Script/Engine.MaterialExpressionSubtract'Foliage_Wind_Movement:MaterialExpressionSubtract_0'","/Script/Engine.MaterialExpressionComponentMask'Foliage_Wind_Movement:MaterialExpressionComponentMask_3'","/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_2'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_6'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_7'","/Script/Engine.MaterialExpressionAdd'Foliage_Wind_Movement:MaterialExpressionAdd_2'","/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_9'","/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_13'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_6'","/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_3'","/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_14'","/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_15'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_9'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_7'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_8'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_10'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_9'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_10'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_11'","/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_12'","/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_4'","/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_20'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Foliage_Wind_Movement:MaterialExpressionMaterialFunctionCall_0'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_11'","/Script/Engine.MaterialExpressionAdd'Foliage_Wind_Movement:MaterialExpressionAdd_8'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_13'","/Script/Engine.MaterialExpressionWorldPosition'Foliage_Wind_Movement:MaterialExpressionWorldPosition_3'","/Script/Engine.MaterialExpressionTransformPosition'Foliage_Wind_Movement:MaterialExpressionTransformPosition_4'","/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_21'","/Script/Engine.MaterialExpressionAbs'Foliage_Wind_Movement:MaterialExpressionAbs_0'","/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_22'","/Script/Engine.MaterialExpressionPower'Foliage_Wind_Movement:MaterialExpressionPower_1'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_14'","/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_27'","/Script/Engine.MaterialExpressionSubtract'Foliage_Wind_Movement:MaterialExpressionSubtract_11'","/Script/Engine.MaterialExpressionComponentMask'Foliage_Wind_Movement:MaterialExpressionComponentMask_12'","/Script/Engine.MaterialExpressionPower'Foliage_Wind_Movement:MaterialExpressionPower_3'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_2'","/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_8'","/Script/Engine.MaterialExpressionOneMinus'Foliage_Wind_Movement:MaterialExpressionOneMinus_1'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_4'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_15'","/Script/Engine.MaterialExpressionAdd'Foliage_Wind_Movement:MaterialExpressionAdd_7'","/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_26'","/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_28'","/Script/Engine.MaterialExpressionWorldPosition'Foliage_Wind_Movement:MaterialExpressionWorldPosition_5'","/Script/Engine.MaterialExpressionTransformPosition'Foliage_Wind_Movement:MaterialExpressionTransformPosition_5'","/Script/Engine.MaterialExpressionComponentMask'Foliage_Wind_Movement:MaterialExpressionComponentMask_7'","/Script/Engine.MaterialExpressionSubtract'Foliage_Wind_Movement:MaterialExpressionSubtract_4'","/Script/Engine.MaterialExpressionDivide'Foliage_Wind_Movement:MaterialExpressionDivide_12'","/Script/Engine.MaterialExpressionSaturate'Foliage_Wind_Movement:MaterialExpressionSaturate_8'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_16'","/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_5'","/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_6'","/Script/Engine.MaterialExpressionStaticSwitch'Foliage_Wind_Movement:MaterialExpressionStaticSwitch_0'","/Script/Engine.MaterialExpressionConstant'Foliage_Wind_Movement:MaterialExpressionConstant_0'","/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_7'","/Script/Engine.MaterialExpressionStaticSwitch'Foliage_Wind_Movement:MaterialExpressionStaticSwitch_1'","/Script/Engine.MaterialExpressionConstant'Foliage_Wind_Movement:MaterialExpressionConstant_1'","/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_8'","/Script/Engine.MaterialExpressionStaticSwitch'Foliage_Wind_Movement:MaterialExpressionStaticSwitch_2'","/Script/Engine.MaterialExpressionConstant'Foliage_Wind_Movement:MaterialExpressionConstant_3'","/Script/Engine.MaterialExpressionVertexNormalWS'Foliage_Wind_Movement:MaterialExpressionVertexNormalWS_1'","/Script/Engine.MaterialExpressionComponentMask'Foliage_Wind_Movement:MaterialExpressionComponentMask_14'","/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_31'","/Script/Engine.MaterialExpressionComponentMask'Foliage_Wind_Movement:MaterialExpressionComponentMask_15'","/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_33'","/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_9'","/Script/Engine.MaterialExpressionStaticBoolParameter'Foliage_Wind_Movement:MaterialExpressionStaticBoolParameter_0'","/Script/Engine.MaterialExpressionStaticBoolParameter'Foliage_Wind_Movement:MaterialExpressionStaticBoolParameter_1'","/Script/Engine.MaterialExpressionStaticBoolParameter'Foliage_Wind_Movement:MaterialExpressionStaticBoolParameter_2'","/Script/Engine.MaterialExpressionTextureSample'Foliage_Wind_Movement:MaterialExpressionTextureSample_6'","/Script/Engine.MaterialExpressionDivide'Foliage_Wind_Movement:MaterialExpressionDivide_10'","/Script/Engine.MaterialExpressionWorldPosition'Foliage_Wind_Movement:MaterialExpressionWorldPosition_7'","/Script/Engine.MaterialExpressionComponentMask'Foliage_Wind_Movement:MaterialExpressionComponentMask_17'","/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_24'","/Script/Engine.MaterialExpressionAdd'Foliage_Wind_Movement:MaterialExpressionAdd_11'","/Script/Engine.MaterialExpressionTextureSample'Foliage_Wind_Movement:MaterialExpressionTextureSample_5'","/Script/Engine.MaterialExpressionAppendVector'Foliage_Wind_Movement:MaterialExpressionAppendVector_3'","/Script/Engine.MaterialExpressionAdd'Foliage_Wind_Movement:MaterialExpressionAdd_16'","/Script/Engine.MaterialExpressionAdd'Foliage_Wind_Movement:MaterialExpressionAdd_21'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_26'","/Script/Engine.MaterialExpressionAdd'Foliage_Wind_Movement:MaterialExpressionAdd_14'","/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_18'","/Script/Engine.MaterialExpressionComponentMask'Foliage_Wind_Movement:MaterialExpressionComponentMask_20'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_13'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_1'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_14'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_24'","/Script/Engine.MaterialExpressionComponentMask'Foliage_Wind_Movement:MaterialExpressionComponentMask_11'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_25'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_15'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_17'","/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_6'","/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_11'","/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_10'","/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_13'","/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_14'","/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_15'","/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_16'","/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_17'","/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_18'","/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_21'","/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_12'","/Script/Engine.MaterialExpressionConstant3Vector'Foliage_Wind_Movement:MaterialExpressionConstant3Vector_2'","/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_19'","/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_20'","/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_22'","/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_23'","/Script/Engine.MaterialExpressionLinearInterpolate'Foliage_Wind_Movement:MaterialExpressionLinearInterpolate_1'","/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_24'","/Script/Engine.MaterialExpressionLinearInterpolate'Foliage_Wind_Movement:MaterialExpressionLinearInterpolate_2'","/Script/Engine.MaterialExpressionPower'Foliage_Wind_Movement:MaterialExpressionPower_5'","/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_25'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Foliage_Wind_Movement:MaterialExpressionMaterialFunctionCall_10'","/Script/Engine.MaterialExpressionPower'Foliage_Wind_Movement:MaterialExpressionPower_6'","/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_26'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_1'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_2'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_19'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_20'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_21'","/Script/Engine.MaterialExpressionAdd'Foliage_Wind_Movement:MaterialExpressionAdd_6'","/Script/Engine.MaterialExpressionDivide'Foliage_Wind_Movement:MaterialExpressionDivide_11'","/Script/Engine.MaterialExpressionWorldPosition'Foliage_Wind_Movement:MaterialExpressionWorldPosition_1'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_8'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_12'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_22'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_23'","/Script/Engine.MaterialExpressionTextureSample'Foliage_Wind_Movement:MaterialExpressionTextureSample_4'","/Script/Engine.MaterialExpressionTextureSample'Foliage_Wind_Movement:MaterialExpressionTextureSample_7'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_27'","/Script/Engine.MaterialExpressionAppendVector'Foliage_Wind_Movement:MaterialExpressionAppendVector_4'","/Script/Engine.MaterialExpressionAppendVector'Foliage_Wind_Movement:MaterialExpressionAppendVector_5'","/Script/Engine.MaterialExpressionLinearInterpolate'Foliage_Wind_Movement:MaterialExpressionLinearInterpolate_3'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_29'","/Script/Engine.MaterialExpressionSubtract'Foliage_Wind_Movement:MaterialExpressionSubtract_5'","/Script/Engine.MaterialExpressionDivide'Foliage_Wind_Movement:MaterialExpressionDivide_14'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_31'","/Script/Engine.MaterialExpressionDivide'Foliage_Wind_Movement:MaterialExpressionDivide_15'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_32'","/Script/Engine.MaterialExpressionAdd'Foliage_Wind_Movement:MaterialExpressionAdd_17'","/Script/Engine.MaterialExpressionAdd'Foliage_Wind_Movement:MaterialExpressionAdd_18'","/Script/Engine.MaterialExpressionAdd'Foliage_Wind_Movement:MaterialExpressionAdd_20'","/Script/Engine.MaterialExpressionComponentMask'Foliage_Wind_Movement:MaterialExpressionComponentMask_8'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_33'","/Script/Engine.MaterialExpressionComponentMask'Foliage_Wind_Movement:MaterialExpressionComponentMask_13'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_35'","/Script/Engine.MaterialExpressionWorldPosition'Foliage_Wind_Movement:MaterialExpressionWorldPosition_6'","/Script/Engine.MaterialExpressionTransformPosition'Foliage_Wind_Movement:MaterialExpressionTransformPosition_6'","/Script/Engine.MaterialExpressionNormalize'Foliage_Wind_Movement:MaterialExpressionNormalize_1'","/Script/Engine.MaterialExpressionComponentMask'Foliage_Wind_Movement:MaterialExpressionComponentMask_19'","/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_35'","/Script/Engine.MaterialExpressionComponentMask'Foliage_Wind_Movement:MaterialExpressionComponentMask_21'","/Script/Engine.MaterialExpressionCrossProduct'Foliage_Wind_Movement:MaterialExpressionCrossProduct_0'","/Script/Engine.MaterialExpressionConstant3Vector'Foliage_Wind_Movement:MaterialExpressionConstant3Vector_3'","/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_36'","/Script/Engine.MaterialExpressionAdd'Foliage_Wind_Movement:MaterialExpressionAdd_24'","/Script/Engine.MaterialExpressionAbs'Foliage_Wind_Movement:MaterialExpressionAbs_2'","/Script/Engine.MaterialExpressionComponentMask'Foliage_Wind_Movement:MaterialExpressionComponentMask_22'","/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_37'","/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_38'","/Script/Engine.MaterialExpressionAdd'Foliage_Wind_Movement:MaterialExpressionAdd_25'","/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_39'","/Script/Engine.MaterialExpressionConstant3Vector'Foliage_Wind_Movement:MaterialExpressionConstant3Vector_4'","/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_28'","/Script/Engine.MaterialExpressionReroute'Foliage_Wind_Movement:MaterialExpressionReroute_0'","/Script/Engine.MaterialExpressionAdd'Foliage_Wind_Movement:MaterialExpressionAdd_5'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_16'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_3'","/Script/Engine.MaterialExpressionDivide'Foliage_Wind_Movement:MaterialExpressionDivide_3'","/Script/Engine.MaterialExpressionSubtract'Foliage_Wind_Movement:MaterialExpressionSubtract_1'","/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionSaturate'Foliage_Wind_Movement:MaterialExpressionSaturate_1'","/Script/Engine.MaterialExpressionPower'Foliage_Wind_Movement:MaterialExpressionPower_4'","/Script/Engine.MaterialExpressionSubtract'Foliage_Wind_Movement:MaterialExpressionSubtract_3'","/Script/Engine.MaterialExpressionCollectionParameter'Foliage_Wind_Movement:MaterialExpressionCollectionParameter_3'","/Script/Engine.MaterialExpressionLinearInterpolate'Foliage_Wind_Movement:MaterialExpressionLinearInterpolate_7'","/Script/Engine.MaterialExpressionSaturate'Foliage_Wind_Movement:MaterialExpressionSaturate_4'","/Script/Engine.MaterialExpressionAdd'Foliage_Wind_Movement:MaterialExpressionAdd_13'","/Script/Engine.MaterialExpressionSubtract'Foliage_Wind_Movement:MaterialExpressionSubtract_6'","/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_16'","/Script/Engine.MaterialExpressionNormalize'Foliage_Wind_Movement:MaterialExpressionNormalize_0'","/Script/Engine.MaterialExpressionAppendVector'Foliage_Wind_Movement:MaterialExpressionAppendVector_0'","/Script/Engine.MaterialExpressionAppendVector'Foliage_Wind_Movement:MaterialExpressionAppendVector_7'","/Script/Engine.MaterialExpressionConstant'Foliage_Wind_Movement:MaterialExpressionConstant_2'","/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_27'","/Script/Engine.MaterialExpressionPower'Foliage_Wind_Movement:MaterialExpressionPower_9'","/Script/Engine.MaterialExpressionAdd'Foliage_Wind_Movement:MaterialExpressionAdd_10'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_5'","/Script/Engine.MaterialExpressionPower'Foliage_Wind_Movement:MaterialExpressionPower_7'","/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_17'","/Script/Engine.MaterialExpressionAdd'Foliage_Wind_Movement:MaterialExpressionAdd_12'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Foliage_Wind_Movement:MaterialExpressionMaterialFunctionCall_1'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Foliage_Wind_Movement:MaterialExpressionMaterialFunctionCall_7'","/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_19'","/Script/Engine.MaterialExpressionConstant3Vector'Foliage_Wind_Movement:MaterialExpressionConstant3Vector_1'","/Script/Engine.MaterialExpressionAdd'Foliage_Wind_Movement:MaterialExpressionAdd_19'","/Script/Engine.MaterialExpressionConstant3Vector'Foliage_Wind_Movement:MaterialExpressionConstant3Vector_5'","/Script/Engine.MaterialExpressionTransformPosition'Foliage_Wind_Movement:MaterialExpressionTransformPosition_2'","/Script/Engine.MaterialExpressionTextureSample'Foliage_Wind_Movement:MaterialExpressionTextureSample_0'","/Script/Engine.MaterialExpressionDivide'Foliage_Wind_Movement:MaterialExpressionDivide_5'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_3'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_36'","/Script/Engine.MaterialExpressionComponentMask'Foliage_Wind_Movement:MaterialExpressionComponentMask_6'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_37'","/Script/Engine.MaterialExpressionComponentMask'Foliage_Wind_Movement:MaterialExpressionComponentMask_9'","/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_23'","/Script/Engine.MaterialExpressionLength'Foliage_Wind_Movement:MaterialExpressionLength_0'","/Script/Engine.MaterialExpressionMin'Foliage_Wind_Movement:MaterialExpressionMin_0'","/Script/Engine.MaterialExpressionMin'Foliage_Wind_Movement:MaterialExpressionMin_1'","/Script/Engine.MaterialExpressionMin'Foliage_Wind_Movement:MaterialExpressionMin_2'"),EditorComments=("/Script/Engine.MaterialExpressionComment'Foliage_Wind_Movement:MaterialExpressionComment_1'","/Script/Engine.MaterialExpressionComment'Foliage_Wind_Movement:MaterialExpressionComment_2'","/Script/Engine.MaterialExpressionComment'Foliage_Wind_Movement:MaterialExpressionComment_3'","/Script/Engine.MaterialExpressionComment'Foliage_Wind_Movement:MaterialExpressionComment_4'","/Script/Engine.MaterialExpressionComment'Foliage_Wind_Movement:MaterialExpressionComment_5'","/Script/Engine.MaterialExpressionComment'Foliage_Wind_Movement:MaterialExpressionComment_6'","/Script/Engine.MaterialExpressionComment'Foliage_Wind_Movement:MaterialExpressionComment_7'","/Script/Engine.MaterialExpressionComment'Foliage_Wind_Movement:MaterialExpressionComment_0'","/Script/Engine.MaterialExpressionComment'Foliage_Wind_Movement:MaterialExpressionComment_8'","/Script/Engine.MaterialExpressionComment'Foliage_Wind_Movement:MaterialExpressionComment_9'"))
+  MaterialExpressionAbs (MaterialExpressionAbs_0)
+    Input                  <- MaterialExpressionAdd
+    .Input=(Expression="/Script/Engine.MaterialExpressionAdd'Foliage_Wind_Movement:MaterialExpressionAdd_6'")
+    .MaterialExpressionEditorX=2032
+    .MaterialExpressionEditorY=4980
+    .MaterialExpressionGuid=3CDBCAE64A50DD1DD76612A234BD434C
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionAbs (MaterialExpressionAbs_2)
+    Input                  <- MaterialExpressionNormalize
+    .Input=(Expression="/Script/Engine.MaterialExpressionNormalize'Foliage_Wind_Movement:MaterialExpressionNormalize_1'")
+    .MaterialExpressionEditorX=3572
+    .MaterialExpressionEditorY=3464
+    .MaterialExpressionGuid=CECE4E814F1AEFD78CB280977030EABD
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionAdd (MaterialExpressionAdd_0)
+    A                      <- MaterialExpressionDivide
+    B                      <- MaterialExpressionAdd
+    .B=(Expression="/Script/Engine.MaterialExpressionAdd'Foliage_Wind_Movement:MaterialExpressionAdd_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'Foliage_Wind_Movement:MaterialExpressionDivide_2'")
+    .MaterialExpressionEditorX=-2464
+    .MaterialExpressionEditorY=1421
+    .MaterialExpressionGuid=101C92014F7E7800F78F7B8640BE051A
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionAdd (MaterialExpressionAdd_10)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_17'")
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_27'")
+    .MaterialExpressionEditorX=2060
+    .MaterialExpressionEditorY=3296
+    .MaterialExpressionGuid=C29823A745C4855BEEB7EFBD734FAC0A
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionAdd (MaterialExpressionAdd_11)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_31'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_24'")
+    .MaterialExpressionEditorX=-1768
+    .MaterialExpressionEditorY=836
+    .MaterialExpressionGuid=B708F85246D72C7CA746BD8863FBE441
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionAdd (MaterialExpressionAdd_12)
+    A                      <- MaterialExpressionDivide
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'Foliage_Wind_Movement:MaterialExpressionDivide_1'")
+    .ConstB=0.125000
+    .MaterialExpressionEditorX=-4780
+    .MaterialExpressionEditorY=3608
+    .MaterialExpressionGuid=7F03BD80411BD643536BF49994D97443
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionAdd (MaterialExpressionAdd_13)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Foliage_Wind_Movement:MaterialExpressionMaterialFunctionCall_0'",OutputIndex=4)
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_16'")
+    .MaterialExpressionEditorX=2420
+    .MaterialExpressionEditorY=4564
+    .MaterialExpressionGuid=DC63498A429E2368B86E66A9E6A95F36
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionAdd (MaterialExpressionAdd_14)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_26'")
+    .MaterialExpressionEditorX=-340
+    .MaterialExpressionEditorY=3576
+    .MaterialExpressionGuid=0997148642A7F4EBA1BD56BCA2DF96BD
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionAdd (MaterialExpressionAdd_16)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_6'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Foliage_Wind_Movement:MaterialExpressionAdd_21'")
+    .MaterialExpressionEditorX=-160
+    .MaterialExpressionEditorY=4564
+    .MaterialExpressionGuid=236FC70E49FB352CCDAF6A85F97EC77A
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionAdd (MaterialExpressionAdd_17)
+    A                      <- MaterialExpressionDivide
+    B                      <- MaterialExpressionReroute
+    .B=(Expression="/Script/Engine.MaterialExpressionReroute'Foliage_Wind_Movement:MaterialExpressionReroute_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'Foliage_Wind_Movement:MaterialExpressionDivide_15'")
+    .MaterialExpressionEditorX=1004
+    .MaterialExpressionEditorY=3148
+    .MaterialExpressionGuid=101C92014F7E7800F78F7B8640BE051A
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionAdd (MaterialExpressionAdd_18)
+    A                      <- MaterialExpressionReroute
+    B                      <- MaterialExpressionDivide
+    .B=(Expression="/Script/Engine.MaterialExpressionDivide'Foliage_Wind_Movement:MaterialExpressionDivide_14'")
+    .A=(Expression="/Script/Engine.MaterialExpressionReroute'Foliage_Wind_Movement:MaterialExpressionReroute_0'")
+    .MaterialExpressionEditorX=1012
+    .MaterialExpressionEditorY=3400
+    .MaterialExpressionGuid=101C92014F7E7800F78F7B8640BE051A
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionAdd (MaterialExpressionAdd_19)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    B                      <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_17'")
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_14'")
+    .MaterialExpressionEditorX=-428
+    .MaterialExpressionEditorY=4776
+    .MaterialExpressionGuid=F521720A4AD364DAD6D8BA911B95F725
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionAdd (MaterialExpressionAdd_2)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    B                      <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_8'")
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_7'")
+    .MaterialExpressionEditorX=6994
+    .MaterialExpressionEditorY=4968
+    .MaterialExpressionGuid=83B5CEAC4F0FF290CC43F2AB010BB8A5
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionAdd (MaterialExpressionAdd_20)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_18'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_15'")
+    .MaterialExpressionEditorX=12
+    .MaterialExpressionEditorY=3288
+    .MaterialExpressionGuid=E0216D5A42D4161B319C7B9F8F2DD7ED
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionAdd (MaterialExpressionAdd_21)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Foliage_Wind_Movement:MaterialExpressionComponentMask_6'")
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_11'")
+    .MaterialExpressionEditorX=-820
+    .MaterialExpressionEditorY=4564
+    .MaterialExpressionGuid=ED274C7A4FF04CF6871C9A8CE2802285
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionAdd (MaterialExpressionAdd_24)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_36'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_35'")
+    .MaterialExpressionEditorX=4148
+    .MaterialExpressionEditorY=3092
+    .MaterialExpressionGuid=242B9EB24B39A617D705FBB6E06119D4
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionAdd (MaterialExpressionAdd_25)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_38'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Foliage_Wind_Movement:MaterialExpressionAdd_24'")
+    .MaterialExpressionEditorX=4348
+    .MaterialExpressionEditorY=3092
+    .MaterialExpressionGuid=06F90AC849391E03E77434BF14FF7B69
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionAdd (MaterialExpressionAdd_3)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionDivide
+    .B=(Expression="/Script/Engine.MaterialExpressionDivide'Foliage_Wind_Movement:MaterialExpressionDivide_6'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Foliage_Wind_Movement:MaterialExpressionAdd_4'")
+    .MaterialExpressionEditorX=-2456
+    .MaterialExpressionEditorY=1673
+    .MaterialExpressionGuid=101C92014F7E7800F78F7B8640BE051A
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionAdd (MaterialExpressionAdd_4)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Foliage_Wind_Movement:MaterialExpressionComponentMask_15'")
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_9'")
+    .MaterialExpressionEditorX=-2624
+    .MaterialExpressionEditorY=1545
+    .MaterialExpressionGuid=E0216D5A42D4161B319C7B9F8F2DD7ED
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionAdd (MaterialExpressionAdd_5)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionDivide
+    .B=(Expression="/Script/Engine.MaterialExpressionDivide'Foliage_Wind_Movement:MaterialExpressionDivide_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Foliage_Wind_Movement:MaterialExpressionAdd_20'")
+    .MaterialExpressionEditorX=456
+    .MaterialExpressionEditorY=3288
+    .MaterialExpressionGuid=5FC61B9D4147EA36B4F2259DFBC0FA61
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionAdd (MaterialExpressionAdd_6)
+    A                      <- MaterialExpressionTextureSample
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'Foliage_Wind_Movement:MaterialExpressionTextureSample_5'",OutputIndex=4,Mask=1,MaskA=1)
+    .ConstB=0.150000
+    .MaterialExpressionEditorX=1380
+    .MaterialExpressionEditorY=4980
+    .MaterialExpressionGuid=D5C58FB8495EF772EDD2C286AC2D27BC
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionAdd (MaterialExpressionAdd_7)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_15'")
+    .MaterialExpressionEditorX=-1532
+    .MaterialExpressionEditorY=948
+    .MaterialExpressionGuid=0997148642A7F4EBA1BD56BCA2DF96BD
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionAdd (MaterialExpressionAdd_8)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_13'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Foliage_Wind_Movement:MaterialExpressionAdd_2'")
+    .MaterialExpressionEditorX=7174
+    .MaterialExpressionEditorY=4968
+    .MaterialExpressionGuid=E34FF18746F81EDFB92769B2EC6BF141
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_0)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_27'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_27'")
+    .MaterialExpressionEditorX=1747
+    .MaterialExpressionEditorY=4685
+    .MaterialExpressionGuid=0637B14B4369FAEE2A53C0B5B4D39285
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_1)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Foliage_Wind_Movement:MaterialExpressionComponentMask_11'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Foliage_Wind_Movement:MaterialExpressionAdd_0'")
+    .MaterialExpressionEditorX=-1920
+    .MaterialExpressionEditorY=1421
+    .MaterialExpressionGuid=750B22C148FABD3038C886B9EE9F5E54
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_2)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Foliage_Wind_Movement:MaterialExpressionComponentMask_11'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Foliage_Wind_Movement:MaterialExpressionAdd_3'")
+    .MaterialExpressionEditorX=-1904
+    .MaterialExpressionEditorY=1673
+    .MaterialExpressionGuid=750B22C148FABD3038C886B9EE9F5E54
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_3)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Foliage_Wind_Movement:MaterialExpressionComponentMask_9'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_12'")
+    .MaterialExpressionEditorX=696
+    .MaterialExpressionEditorY=4564
+    .MaterialExpressionGuid=F2D4D2294DDE14FA99BE27BA06F0C729
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_4)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Foliage_Wind_Movement:MaterialExpressionComponentMask_13'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Foliage_Wind_Movement:MaterialExpressionAdd_17'")
+    .MaterialExpressionEditorX=1564
+    .MaterialExpressionEditorY=3148
+    .MaterialExpressionGuid=750B22C148FABD3038C886B9EE9F5E54
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_5)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Foliage_Wind_Movement:MaterialExpressionComponentMask_13'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Foliage_Wind_Movement:MaterialExpressionAdd_18'")
+    .MaterialExpressionEditorX=1556
+    .MaterialExpressionEditorY=3400
+    .MaterialExpressionGuid=750B22C148FABD3038C886B9EE9F5E54
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_7)
+    A                      <- MaterialExpressionAppendVector
+    B                      <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'Foliage_Wind_Movement:MaterialExpressionConstant_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAppendVector'Foliage_Wind_Movement:MaterialExpressionAppendVector_0'")
+    .MaterialExpressionEditorX=1855
+    .MaterialExpressionEditorY=4685
+    .MaterialExpressionGuid=0637B14B4369FAEE2A53C0B5B4D39285
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_3)
+    .ParameterName="Raining"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+    .ParameterId=B52A80194AADF62C0690D99C9BD64FFA
+    .MaterialExpressionEditorX=-2364
+    .MaterialExpressionEditorY=1840
+    .MaterialExpressionGuid=A9B8C7574718393E397BC38FB3824F36
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+    .bCollapsed=True
+  MaterialExpressionComment (MaterialExpressionComment_0)
+    .SizeX=732
+    .SizeY=296
+    .Text="Movement Texture MIP"
+    .CommentColor=(R=0.308644,G=1.000000,B=0.318043,A=1.000000)
+    .MaterialExpressionEditorX=-5789
+    .MaterialExpressionEditorY=4989
+    .MaterialExpressionGuid=0ACB36C44D0D5565B9A836B9D82547A9
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionComment (MaterialExpressionComment_1)
+    .SizeX=656
+    .SizeY=252
+    .Text="Time"
+    .CommentColor=(R=0.262179,G=1.000000,B=0.268913,A=1.000000)
+    .MaterialExpressionEditorX=-5792
+    .MaterialExpressionEditorY=4116
+    .MaterialExpressionGuid=E973353842CF07B37AA93F8627891645
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionComment (MaterialExpressionComment_2)
+    .SizeX=4968
+    .SizeY=1296
+    .Text="High Frequency / Small Noise"
+    .CommentColor=(R=1.000000,G=0.237873,B=0.367876,A=1.000000)
+    .FontSize=35
+    .MaterialExpressionEditorX=-3588
+    .MaterialExpressionEditorY=676
+    .MaterialExpressionGuid=BFAD55B74B491116B894338E4C18CC87
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionComment (MaterialExpressionComment_3)
+    .SizeX=2600
+    .SizeY=704
+    .Text="Mid Frequency Mask"
+    .CommentColor=(R=1.000000,G=0.707998,B=0.227058,A=1.000000)
+    .FontSize=35
+    .MaterialExpressionEditorX=-3492
+    .MaterialExpressionEditorY=3064
+    .MaterialExpressionGuid=666DAF0F49B6D336372F28A58DEFEE16
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionComment (MaterialExpressionComment_4)
+    .SizeX=7256
+    .SizeY=1192
+    .Text="Mid Frequency Noise"
+    .CommentColor=(R=1.000000,G=0.707998,B=0.227058,A=1.000000)
+    .FontSize=35
+    .MaterialExpressionEditorX=-780
+    .MaterialExpressionEditorY=2576
+    .MaterialExpressionGuid=63701ACA435AA4E8471BEA94A487065B
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionComment (MaterialExpressionComment_5)
+    .SizeX=6804
+    .SizeY=1172
+    .Text="Low Frequency Noise"
+    .CommentColor=(R=0.201442,G=0.209151,B=1.000000,A=1.000000)
+    .MaterialExpressionEditorX=-1292
+    .MaterialExpressionEditorY=4104
+    .MaterialExpressionGuid=EC1B17B04990685701BD7CA7FB93FE9C
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionComment (MaterialExpressionComment_6)
+    .SizeX=2056
+    .SizeY=504
+    .Text="Low Frequency Mask"
+    .CommentColor=(R=0.206075,G=0.312895,B=1.000000,A=1.000000)
+    .FontSize=35
+    .MaterialExpressionEditorX=-3480
+    .MaterialExpressionEditorY=4768
+    .MaterialExpressionGuid=06335680412DA6E7BF8949A663ECEDBE
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionComment (MaterialExpressionComment_7)
+    .SizeX=1076
+    .SizeY=376
+    .Text="Final Output"
+    .CommentColor=(R=0.320916,G=1.000000,B=0.348886,A=1.000000)
+    .MaterialExpressionEditorX=6604
+    .MaterialExpressionEditorY=4840
+    .MaterialExpressionGuid=6CAFC6C04C6CD03CFE6463A3995F0A2E
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionComment (MaterialExpressionComment_8)
+    .SizeX=980
+    .SizeY=262
+    .Text="Wind Intensity Input"
+    .CommentColor=(R=0.308644,G=1.000000,B=0.318043,A=1.000000)
+    .MaterialExpressionEditorX=-5780
+    .MaterialExpressionEditorY=4564
+    .MaterialExpressionGuid=966E781E40576DC9EBA2F8B655F92B0E
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionComment (MaterialExpressionComment_9)
+    .SizeX=1788
+    .SizeY=580
+    .Text="Directional Offsets"
+    .CommentColor=(R=0.185675,G=1.000000,B=0.183437,A=1.000000)
+    .MaterialExpressionEditorX=-5804
+    .MaterialExpressionEditorY=3184
+    .MaterialExpressionGuid=5B0FA7C64AA1162C8EF30AA14E88131A
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionTransformPosition
+    .R=True
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionTransformPosition'Foliage_Wind_Movement:MaterialExpressionTransformPosition_1'")
+    .MaterialExpressionEditorX=-2728
+    .MaterialExpressionEditorY=3224
+    .MaterialExpressionGuid=33DC7ADB4D7100E4B41D1CA865543621
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_1)
+    Input                  <- MaterialExpressionWorldPosition
+    .R=True
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionWorldPosition'Foliage_Wind_Movement:MaterialExpressionWorldPosition_0'")
+    .MaterialExpressionEditorX=-4854
+    .MaterialExpressionEditorY=3285
+    .MaterialExpressionGuid=E53916CD47221E322275FCA2F24662DB
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_11)
+    Input                  <- MaterialExpressionNamedRerouteUsage
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_25'")
+    .MaterialExpressionEditorX=-2116
+    .MaterialExpressionEditorY=1552
+    .MaterialExpressionGuid=3EC3239D493A69F22CAE7C97114825CD
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_12)
+    Input                  <- MaterialExpressionTransformPosition
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionTransformPosition'Foliage_Wind_Movement:MaterialExpressionTransformPosition_4'")
+    .MaterialExpressionEditorX=3444
+    .MaterialExpressionEditorY=5020
+    .MaterialExpressionGuid=3013182E4A80099056F38CAD4D4AF751
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_13)
+    Input                  <- MaterialExpressionNamedRerouteUsage
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_35'")
+    .MaterialExpressionEditorX=1388
+    .MaterialExpressionEditorY=3272
+    .MaterialExpressionGuid=7BEFBAA14539BC7B8981F28DD02C55B9
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_14)
+    Input                  <- MaterialExpressionTextureSample
+    .R=True
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionTextureSample'Foliage_Wind_Movement:MaterialExpressionTextureSample_6'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .MaterialExpressionEditorX=-2348
+    .MaterialExpressionEditorY=1052
+    .MaterialExpressionGuid=63085750473A0B6C32EB87A0F52D27D1
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_15)
+    Input                  <- MaterialExpressionNamedRerouteUsage
+    .R=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_24'")
+    .MaterialExpressionEditorX=-2752
+    .MaterialExpressionEditorY=1613
+    .MaterialExpressionGuid=3EC3239D493A69F22CAE7C97114825CD
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_17)
+    Input                  <- MaterialExpressionVertexNormalWS
+    .R=True
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionVertexNormalWS'Foliage_Wind_Movement:MaterialExpressionVertexNormalWS_1'")
+    .MaterialExpressionEditorX=-2920
+    .MaterialExpressionEditorY=836
+    .MaterialExpressionGuid=63085750473A0B6C32EB87A0F52D27D1
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_19)
+    Input                  <- MaterialExpressionSubtract
+    .R=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionSubtract'Foliage_Wind_Movement:MaterialExpressionSubtract_5'")
+    .MaterialExpressionEditorX=3248
+    .MaterialExpressionEditorY=3064
+    .MaterialExpressionGuid=8FB128E94328963E311A5B9FABE70C3E
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_2)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+    .R=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Foliage_Wind_Movement:MaterialExpressionMaterialFunctionCall_1'")
+    .MaterialExpressionEditorX=-4352
+    .MaterialExpressionEditorY=3288
+    .MaterialExpressionGuid=DFE885944A8BB2D6CD71EDA6147889F7
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_20)
+    Input                  <- MaterialExpressionNamedRerouteDeclaration
+    .R=True
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_13'")
+    .MaterialExpressionEditorX=329
+    .MaterialExpressionEditorY=2785
+    .MaterialExpressionGuid=D902BBC9424BD667B63E11BE943640C3
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_21)
+    Input                  <- MaterialExpressionSubtract
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionSubtract'Foliage_Wind_Movement:MaterialExpressionSubtract_5'")
+    .MaterialExpressionEditorX=3248
+    .MaterialExpressionEditorY=3180
+    .MaterialExpressionGuid=8FB128E94328963E311A5B9FABE70C3E
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_22)
+    Input                  <- MaterialExpressionSubtract
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionSubtract'Foliage_Wind_Movement:MaterialExpressionSubtract_5'")
+    .MaterialExpressionEditorX=3244
+    .MaterialExpressionEditorY=3284
+    .MaterialExpressionGuid=8FB128E94328963E311A5B9FABE70C3E
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_3)
+    Input                  <- MaterialExpressionTransformPosition
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionTransformPosition'Foliage_Wind_Movement:MaterialExpressionTransformPosition_1'")
+    .MaterialExpressionEditorX=-2620
+    .MaterialExpressionEditorY=3524
+    .MaterialExpressionGuid=C406BFD0416965B17792B0A86570E5D6
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_5)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+    .R=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Foliage_Wind_Movement:MaterialExpressionMaterialFunctionCall_7'")
+    .MaterialExpressionEditorX=-4384
+    .MaterialExpressionEditorY=3464
+    .MaterialExpressionGuid=DFE885944A8BB2D6CD71EDA6147889F7
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_6)
+    Input                  <- MaterialExpressionNamedRerouteUsage
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_36'")
+    .MaterialExpressionEditorX=-968
+    .MaterialExpressionEditorY=4636
+    .MaterialExpressionGuid=1946E99B4F86C2772B5AC8AAE6E45E43
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_7)
+    Input                  <- MaterialExpressionTransformPosition
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionTransformPosition'Foliage_Wind_Movement:MaterialExpressionTransformPosition_5'")
+    .MaterialExpressionEditorX=-2764
+    .MaterialExpressionEditorY=4976
+    .MaterialExpressionGuid=3013182E4A80099056F38CAD4D4AF751
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_8)
+    Input                  <- MaterialExpressionNamedRerouteUsage
+    .R=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_33'")
+    .MaterialExpressionEditorX=-344
+    .MaterialExpressionEditorY=3484
+    .MaterialExpressionGuid=7BEFBAA14539BC7B8981F28DD02C55B9
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_9)
+    Input                  <- MaterialExpressionNamedRerouteUsage
+    .R=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_37'")
+    .MaterialExpressionEditorX=548
+    .MaterialExpressionEditorY=4656
+    .MaterialExpressionGuid=1946E99B4F86C2772B5AC8AAE6E45E43
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionConstant (MaterialExpressionConstant_0)
+    .MaterialExpressionEditorX=5724
+    .MaterialExpressionEditorY=3156
+    .MaterialExpressionGuid=EA542F4A45B0484C4AB9AF85A909DB28
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionConstant (MaterialExpressionConstant_1)
+    .MaterialExpressionEditorX=4728
+    .MaterialExpressionEditorY=4772
+    .MaterialExpressionGuid=EA542F4A45B0484C4AB9AF85A909DB28
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionConstant (MaterialExpressionConstant_2)
+    .MaterialExpressionEditorX=1688
+    .MaterialExpressionEditorY=4808
+    .MaterialExpressionGuid=442B327B4C95ADA1A84F4DB4917C48DA
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionConstant (MaterialExpressionConstant_3)
+    .MaterialExpressionEditorX=860
+    .MaterialExpressionEditorY=1475
+    .MaterialExpressionGuid=EA542F4A45B0484C4AB9AF85A909DB28
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionConstant3Vector (MaterialExpressionConstant3Vector_1)
+    .Constant=(R=0.000000,G=0.000000,B=1.000000,A=0.000000)
+    .MaterialExpressionEditorX=3496
+    .MaterialExpressionEditorY=3124
+    .MaterialExpressionGuid=3DBC95CF4B9EDF5A6F9AF29D3450273A
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+    .bCollapsed=True
+  MaterialExpressionConstant3Vector (MaterialExpressionConstant3Vector_2)
+    .Constant=(R=0.000000,G=0.000000,B=0.300000,A=0.000000)
+    .MaterialExpressionEditorX=2176
+    .MaterialExpressionEditorY=5096
+    .MaterialExpressionGuid=F6C06AEF43F7EDE48B605EBCA226BA47
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+    .bCollapsed=True
+  MaterialExpressionConstant3Vector (MaterialExpressionConstant3Vector_3)
+    .Constant=(R=0.000000,G=0.000000,B=1.000000,A=0.000000)
+    .MaterialExpressionEditorX=3720
+    .MaterialExpressionEditorY=3264
+    .MaterialExpressionGuid=3DBC95CF4B9EDF5A6F9AF29D3450273A
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+    .bCollapsed=True
+  MaterialExpressionConstant3Vector (MaterialExpressionConstant3Vector_4)
+    .Constant=(R=1.000000,G=1.000000,B=0.001000,A=0.000000)
+    .MaterialExpressionEditorX=3032
+    .MaterialExpressionEditorY=3552
+    .MaterialExpressionGuid=24B476DE4BF70930A35854B0F5471087
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionConstant3Vector (MaterialExpressionConstant3Vector_5)
+    .MaterialExpressionEditorX=-1044
+    .MaterialExpressionEditorY=4199
+    .MaterialExpressionGuid=06D70BAB46EFFD2D07E9CC94B9908BE7
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+    .bCollapsed=True
+  MaterialExpressionCrossProduct (MaterialExpressionCrossProduct_0)
+    A                      <- MaterialExpressionAbs
+    B                      <- MaterialExpressionConstant3Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant3Vector'Foliage_Wind_Movement:MaterialExpressionConstant3Vector_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAbs'Foliage_Wind_Movement:MaterialExpressionAbs_2'")
+    .MaterialExpressionEditorX=3768
+    .MaterialExpressionEditorY=3120
+    .MaterialExpressionGuid=A5A8D5F4497A26E5230411A338AB794D
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionDivide (MaterialExpressionDivide_1)
+    A                      <- MaterialExpressionFloor
+    .A=(Expression="/Script/Engine.MaterialExpressionFloor'Foliage_Wind_Movement:MaterialExpressionFloor_0'")
+    .ConstB=8.000000
+    .MaterialExpressionEditorX=-5000
+    .MaterialExpressionEditorY=3608
+    .MaterialExpressionGuid=B7450DF74BD333A8B118CDB9A612586C
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionDivide (MaterialExpressionDivide_10)
+    A                      <- MaterialExpressionWorldPosition
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_14'")
+    .A=(Expression="/Script/Engine.MaterialExpressionWorldPosition'Foliage_Wind_Movement:MaterialExpressionWorldPosition_7'")
+    .ConstB=500.000000
+    .MaterialExpressionEditorX=-2768
+    .MaterialExpressionEditorY=1052
+    .MaterialExpressionGuid=F7EFCDF740B7C86A9E9D9096A9B5FE89
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionDivide (MaterialExpressionDivide_11)
+    A                      <- MaterialExpressionWorldPosition
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_18'")
+    .A=(Expression="/Script/Engine.MaterialExpressionWorldPosition'Foliage_Wind_Movement:MaterialExpressionWorldPosition_1'")
+    .MaterialExpressionEditorX=-220
+    .MaterialExpressionEditorY=2784
+    .MaterialExpressionGuid=83F2E28146D51042C7CDCC8D558DEA4B
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionDivide (MaterialExpressionDivide_12)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_22'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'Foliage_Wind_Movement:MaterialExpressionSubtract_4'")
+    .MaterialExpressionEditorX=-2132
+    .MaterialExpressionEditorY=4976
+    .MaterialExpressionGuid=92E580A34B41C98B9E087D96954B2576
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionDivide (MaterialExpressionDivide_14)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_31'")
+    .ConstB=-12000.000000
+    .MaterialExpressionEditorX=804
+    .MaterialExpressionEditorY=3424
+    .MaterialExpressionGuid=247CB3794DA47EE9DF2AB594B21FA1B2
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionDivide (MaterialExpressionDivide_15)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_32'")
+    .ConstB=-12000.000000
+    .MaterialExpressionEditorX=812
+    .MaterialExpressionEditorY=3148
+    .MaterialExpressionGuid=247CB3794DA47EE9DF2AB594B21FA1B2
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionDivide (MaterialExpressionDivide_2)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_10'")
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_22'")
+    .ConstB=5000.000000
+    .MaterialExpressionEditorX=-2944
+    .MaterialExpressionEditorY=1424
+    .MaterialExpressionGuid=247CB3794DA47EE9DF2AB594B21FA1B2
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionDivide (MaterialExpressionDivide_3)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_3'")
+    .ConstB=-7000.000000
+    .MaterialExpressionEditorX=276
+    .MaterialExpressionEditorY=3400
+    .MaterialExpressionGuid=8408FF8C4E4F626E96C0FDBA9E7AFFE0
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionDivide (MaterialExpressionDivide_5)
+    A                      <- MaterialExpressionTransformPosition
+    .A=(Expression="/Script/Engine.MaterialExpressionTransformPosition'Foliage_Wind_Movement:MaterialExpressionTransformPosition_2'")
+    .ConstB=3000.000000
+    .MaterialExpressionEditorX=-472
+    .MaterialExpressionEditorY=4196
+    .MaterialExpressionGuid=12383EBA49A7B83EBB692E91AAC96464
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionDivide (MaterialExpressionDivide_6)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_10'")
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_23'")
+    .ConstB=5000.000000
+    .MaterialExpressionEditorX=-2912
+    .MaterialExpressionEditorY=1700
+    .MaterialExpressionGuid=247CB3794DA47EE9DF2AB594B21FA1B2
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionDivide (MaterialExpressionDivide_7)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_12'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'Foliage_Wind_Movement:MaterialExpressionSubtract_0'")
+    .MaterialExpressionEditorX=-1932
+    .MaterialExpressionEditorY=3224
+    .MaterialExpressionGuid=176555464DF640E63B3EF0BAC2527783
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionDivide (MaterialExpressionDivide_8)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_21'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'Foliage_Wind_Movement:MaterialExpressionSubtract_3'")
+    .MaterialExpressionEditorX=-2232
+    .MaterialExpressionEditorY=3524
+    .MaterialExpressionGuid=9B3F306D40166FE32967F4A25F0B854F
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionFloor (MaterialExpressionFloor_0)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_2'")
+    .MaterialExpressionEditorX=-5100
+    .MaterialExpressionEditorY=3608
+    .MaterialExpressionGuid=A520B4724EC14B54D92D9B81978DF600
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionFrac (MaterialExpressionFrac_1)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_2'")
+    .MaterialExpressionEditorX=-5108
+    .MaterialExpressionEditorY=3416
+    .MaterialExpressionGuid=D1982E4C4C68309E2C338AA36C0E19D7
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_0)
+    .InputName="Small Movement Mask"
+    .Description="Typically a vertex color channel, this will mask the amplitude of the Small Movement layer."
+    .Id=CECAEC614037623F2B2E25AB5548C52F
+    .InputType=FunctionInput_Scalar
+    .SortPriority=1
+    .MaterialExpressionEditorX=-468
+    .MaterialExpressionEditorY=1775
+    .MaterialExpressionGuid=CEEDE8534F180A8CA28D23AEA0417EA1
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_1)
+    .InputName="Small Movement Amplitude Max"
+    .Description="Scales the amount that the Small Movement layer can move each vertex in high wind."
+    .Id=726C025649E4DCF38D67CCB3055D97E0
+    .InputType=FunctionInput_Scalar
+    .PreviewValue=(X=15.000000,Y=0.000000,Z=0.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=3
+    .MaterialExpressionEditorX=-556
+    .MaterialExpressionEditorY=1575
+    .MaterialExpressionGuid=CC9C2ACA40CED1741FABDBB6509A7D37
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_11)
+    .InputName="Small Movement Loop Distance"
+    .Description="The amount of distance in world space covered by a \"loop\" of the movement texture, as it pans in the direction of the wind."
+    .Id=24D58E744C6CD1FD68219697329F4E95
+    .InputType=FunctionInput_Scalar
+    .PreviewValue=(X=15000.000000,Y=0.000000,Z=0.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=4
+    .MaterialExpressionEditorX=-3476
+    .MaterialExpressionEditorY=1584
+    .MaterialExpressionGuid=F5CAF131400FF7458194CC9CA26623FF
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_12)
+    .InputName="Medium Movement Auto Mask 2D Distance Falloff"
+    .Description="Scale of the XY distance falloff used for the Medium Movement mask when there is no input given."
+    .Id=D57A0A5E4191E628551E10A06C453A2C
+    .InputType=FunctionInput_Scalar
+    .PreviewValue=(X=800.000000,Y=0.000000,Z=0.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=26
+    .MaterialExpressionEditorX=-2592
+    .MaterialExpressionEditorY=3420
+    .MaterialExpressionGuid=66C36A48425093784ADA7CBB816739F2
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_13)
+    .InputName="Small Movement Vertex Normal Variation"
+    .Description="Scales variation of the small movement sample using the X and Y channels of the vertex normal."
+    .Id=FFE87DAC48DB5DABA124E29C80B100B8
+    .InputType=FunctionInput_Scalar
+    .PreviewValue=(X=0.120000,Y=0.000000,Z=0.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=5
+    .MaterialExpressionEditorX=-3180
+    .MaterialExpressionEditorY=932
+    .MaterialExpressionGuid=0E6B03DE44C71349D01E2084AA1D44EB
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_14)
+    .InputName="Small Movement 3D Noise Scale"
+    .Description="World space scale of the 3D noise texture used for the 3D variation of the small movement layer."
+    .Id=5D871EB448A189FE889FBD9FE02755E0
+    .InputType=FunctionInput_Scalar
+    .PreviewValue=(X=1000.000000,Y=0.000000,Z=0.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=6
+    .MaterialExpressionEditorX=-3120
+    .MaterialExpressionEditorY=1144
+    .MaterialExpressionGuid=BBFF9BB54F9207A6DD398D9C27FF67A5
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_15)
+    .InputName="Small Movement 3D Noise Variation"
+    .Description="Scales variation of the small movement sample using the 3D noise sample."
+    .Id=048363664F23D339026E25BB1F9EB9EA
+    .InputType=FunctionInput_Scalar
+    .PreviewValue=(X=0.300000,Y=0.000000,Z=0.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=6
+    .MaterialExpressionEditorX=-2380
+    .MaterialExpressionEditorY=1144
+    .MaterialExpressionGuid=EBFFC6CB431F49A817E226822E225D9D
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_16)
+    .InputName="Medium Movement Time Scale"
+    .Description="Multiplied over the time value used by the Medium Movement layer."
+    .Id=F88DAC014A1EF3350933DB80170C37F9
+    .InputType=FunctionInput_Scalar
+    .PreviewValue=(X=1.000000,Y=0.000000,Z=0.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=23
+    .MaterialExpressionEditorX=-532
+    .MaterialExpressionEditorY=3352
+    .MaterialExpressionGuid=E23528FD4C49142EA5578C8F1016DB97
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_17)
+    .InputName="Medium Movement 3D Noise Variation"
+    .Description="Scales variation of the medium movement sample using the 3D noise sample."
+    .Id=AAD560D243714F2ADA6ACBB416CD1AFF
+    .InputType=FunctionInput_Scalar
+    .PreviewValue=(X=0.300000,Y=0.000000,Z=0.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=24
+    .MaterialExpressionEditorX=256
+    .MaterialExpressionEditorY=2876
+    .MaterialExpressionGuid=16B7E7184912ED665EBC7E95609A76FF
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_18)
+    .InputName="Medium Movement 3D Noise Scale"
+    .Description="World space scale of the 3D noise texture used for the 3D variation of the medium movement layer."
+    .Id=7C4CAE654EF99094A1FF629B2757E5D7
+    .InputType=FunctionInput_Scalar
+    .PreviewValue=(X=5000.000000,Y=0.000000,Z=0.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=24
+    .MaterialExpressionEditorX=-592
+    .MaterialExpressionEditorY=2856
+    .MaterialExpressionGuid=7584F542424FDABB73AAFFAD10F174D9
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_19)
+    .InputName="Large Movement Time Scale"
+    .Description="Multiplied over the time value used by the Large Movement layer."
+    .Id=9A2E1DF54A9D808285B72CAB18D05ED8
+    .InputType=FunctionInput_Scalar
+    .PreviewValue=(X=0.150000,Y=0.000000,Z=0.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=43
+    .MaterialExpressionEditorX=-40
+    .MaterialExpressionEditorY=4648
+    .MaterialExpressionGuid=FD70ED5B49CC9D8668CDD484C6D42F28
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_2)
+    Preview                <- MaterialExpressionSaturate
+    .Preview=(Expression="/Script/Engine.MaterialExpressionSaturate'Foliage_Wind_Movement:MaterialExpressionSaturate_8'")
+    .InputName="Large Movement Mask"
+    .Description="Masks the strength of the Large Movement layer. There will typically be a vertex color channel authored for this, on most foliage models. If no input is given, a mask will be generated based on the vertex height relative to the pivot point."
+    .Id=2533CD1648301CA85FF15DACC4BB86EC
+    .InputType=FunctionInput_Scalar
+    .PreviewValue=(X=1.000000,Y=0.000000,Z=0.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=41
+    .MaterialExpressionEditorX=-1904
+    .MaterialExpressionEditorY=4976
+    .MaterialExpressionGuid=849DE35E44F8DC93AEE34880B12F35E0
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_20)
+    .InputName="Large Movement Mask Time Offset"
+    .Description="Offsets the time used for the Large Movement layer using the mask for the Large and Medium layers."
+    .Id=CB7270944F37FB0C1D9C1B8165B1512E
+    .InputType=FunctionInput_Scalar
+    .PreviewValue=(X=-0.075000,Y=0.000000,Z=0.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=44
+    .MaterialExpressionEditorX=-696
+    .MaterialExpressionEditorY=4664
+    .MaterialExpressionGuid=0B65327B4AA17C93C26AE1AD75BAA1F0
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_21)
+    .InputName="Medium Movement Auto Mask Height Falloff"
+    .Description="Scale of the height falloff used for the Medium Movement Mask when there is no input given."
+    .Id=BE3DA6B14967F94D6EBF728FC782EC12
+    .InputType=FunctionInput_Scalar
+    .PreviewValue=(X=300.000000,Y=0.000000,Z=0.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=25
+    .MaterialExpressionEditorX=-2656
+    .MaterialExpressionEditorY=3636
+    .MaterialExpressionGuid=FB0681AF4A2C2C3392F3218A6EFB21BE
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_22)
+    .InputName="Large Movement Auto Mask Falloff Range"
+    .Description="When no mask is input for the large movement layer, this is the height range of the gradient mask, using Z position relative to the pivot."
+    .Id=C5C300DE4FC8DEC5C1FF059CF55ADA2C
+    .InputType=FunctionInput_Scalar
+    .PreviewValue=(X=3000.000000,Y=0.000000,Z=0.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=46
+    .MaterialExpressionEditorX=-2544
+    .MaterialExpressionEditorY=5104
+    .MaterialExpressionGuid=984D905B48D46D84FEBBBC8616CDAD06
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_23)
+    .InputName="Large Movement Auto Mask Base Height"
+    .Description="When no mask is input for the large movement layer, this is the base height of the gradient mask, using Z position relative to the pivot. This is the height above the pivot where large movement will start fading in across the falloff range."
+    .Id=9B73F33E4FFAB11108DEA395BBD811AF
+    .InputType=FunctionInput_Scalar
+    .PreviewValue=(X=250.000000,Y=0.000000,Z=0.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=45
+    .MaterialExpressionEditorX=-2992
+    .MaterialExpressionEditorY=5104
+    .MaterialExpressionGuid=32D910324EBA587FBF2B93975A490178
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_24)
+    .InputName="Small Movement Amplitude Min"
+    .Description="Scales the amount that the Small Movement layer can move each vertex in low wind."
+    .Id=2B24EDFE47AA12E7B91EF3AA1F687CF6
+    .InputType=FunctionInput_Scalar
+    .PreviewValue=(X=1.000000,Y=0.000000,Z=0.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=2
+    .MaterialExpressionEditorX=-556
+    .MaterialExpressionEditorY=1515
+    .MaterialExpressionGuid=CC9C2ACA40CED1741FABDBB6509A7D37
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_25)
+    .InputName="Medium Movement Amplitude Min"
+    .Description="Scales the amount that the Medium Movement layer can move each vertex in low wind."
+    .Id=C0ED21A5432ACFB5F854A3B43EB9AC63
+    .InputType=FunctionInput_Scalar
+    .PreviewValue=(X=15.000000,Y=0.000000,Z=0.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=22
+    .MaterialExpressionEditorX=4408
+    .MaterialExpressionEditorY=3212
+    .MaterialExpressionGuid=CC9C2ACA40CED1741FABDBB6509A7D37
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_26)
+    .InputName="Wind Intensity Exponent"
+    .Description="Can be used to adjust the curve of the 0-1 Wind Intensity value used as the input for the entire function."
+    .Id=172A86674B75E56F42B8BC98E9E75511
+    .InputType=FunctionInput_Scalar
+    .PreviewValue=(X=1.000000,Y=0.000000,Z=0.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=51
+    .MaterialExpressionEditorX=-5464
+    .MaterialExpressionEditorY=4696
+    .MaterialExpressionGuid=E78A1A814CB11C77C50598ADE384F3CA
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_27)
+    .InputName="Large Movement Direction Variation"
+    .Description="Varies the direction that the wind is pushing the swaying movement of the large layer."
+    .Id=AB034D3748D80D1F6C24EC804A859B54
+    .InputType=FunctionInput_Scalar
+    .PreviewValue=(X=1.000000,Y=0.000000,Z=0.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=44
+    .MaterialExpressionEditorX=1363
+    .MaterialExpressionEditorY=4697
+    .MaterialExpressionGuid=53AFC9384D1BB7AF7171928EBEEC1BD9
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_28)
+    .InputName="Medium Movement Auto Mask 2D Distance Floor"
+    .Description="Floor of the XY distance falloff used for the Medium Movement mask when there is no input given."
+    .Id=735E4A33489050F15451DD9A78A43FB4
+    .InputType=FunctionInput_Scalar
+    .PreviewValue=(X=50.000000,Y=0.000000,Z=0.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=26
+    .MaterialExpressionEditorX=-2592
+    .MaterialExpressionEditorY=3344
+    .MaterialExpressionGuid=66C36A48425093784ADA7CBB816739F2
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_3)
+    .InputName="Medium Movement Amplitude Max"
+    .Description="Scales the amount that the Medium Movement layer can move each vertex in high wind."
+    .Id=41D358F543053BAE06D87496DF6D2C7F
+    .InputType=FunctionInput_Scalar
+    .PreviewValue=(X=250.000000,Y=0.000000,Z=0.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=22
+    .MaterialExpressionEditorX=4404
+    .MaterialExpressionEditorY=3292
+    .MaterialExpressionGuid=CC9C2ACA40CED1741FABDBB6509A7D37
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_4)
+    .InputName="Large Movement Strength"
+    .Description="0-1 value, scales how much the Large Movement will affect the mesh."
+    .Id=49F2D59149BA163F25D8DB9F01AE82B4
+    .InputType=FunctionInput_Scalar
+    .PreviewValue=(X=0.300000,Y=0.000000,Z=0.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=42
+    .MaterialExpressionEditorX=3368
+    .MaterialExpressionEditorY=4800
+    .MaterialExpressionGuid=CC9C2ACA40CED1741FABDBB6509A7D37
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_5)
+    Preview                <- MaterialExpressionMultiply
+    .Preview=(Expression="/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_5'")
+    .InputName="Medium Movement Mask"
+    .Description="Masks the amplitude of the Medium Movement layer. Some foliage models may have a vertex color channel well suited for this but some may not. With no input, a simple gradient mask will be generated based on the vertex location relative to the model\'s pivot location."
+    .Id=D84C835647A3431F4D06BDBB26F5D826
+    .InputType=FunctionInput_Scalar
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=21
+    .MaterialExpressionEditorX=-1460
+    .MaterialExpressionEditorY=3496
+    .MaterialExpressionGuid=334CE6264A345DEE7D7EDFAA1D401248
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_6)
+    Preview                <- MaterialExpressionStaticBoolParameter
+    .Preview=(Expression="/Script/Engine.MaterialExpressionStaticBoolParameter'Foliage_Wind_Movement:MaterialExpressionStaticBoolParameter_1'")
+    .InputName="Apply Medium Movement (Branches / Clusters)"
+    .Description="Adds movement intended for medium elements of foliage. Branch movement, frond movement, etc."
+    .Id=2154D1824C328B30F8942BA6658A7A20
+    .InputType=FunctionInput_StaticBool
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=20
+    .MaterialExpressionEditorX=5428
+    .MaterialExpressionEditorY=3240
+    .MaterialExpressionGuid=45EC76AA48106EEE795A8B8B37E1BEF1
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_7)
+    Preview                <- MaterialExpressionStaticBoolParameter
+    .Preview=(Expression="/Script/Engine.MaterialExpressionStaticBoolParameter'Foliage_Wind_Movement:MaterialExpressionStaticBoolParameter_2'")
+    .InputName="Apply Large Movement (Whole Tree Sway)"
+    .Description="Adds a swaying movement, intended for trees mainly. Moves each vertex using its height above the pivot location."
+    .Id=6859A97140F65FEDF404ADAA15D7234D
+    .InputType=FunctionInput_StaticBool
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=40
+    .MaterialExpressionEditorX=4464
+    .MaterialExpressionEditorY=4844
+    .MaterialExpressionGuid=45EC76AA48106EEE795A8B8B37E1BEF1
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_8)
+    Preview                <- MaterialExpressionStaticBoolParameter
+    .Preview=(Expression="/Script/Engine.MaterialExpressionStaticBoolParameter'Foliage_Wind_Movement:MaterialExpressionStaticBoolParameter_0'")
+    .InputName="Apply Small Movement (Grass / Leaves)"
+    .Description="Adds movement intended for small foliage elements, like leaves, blades of grass, etc."
+    .Id=180B9F2B49F0FD93031340AE6A01C197
+    .InputType=FunctionInput_StaticBool
+    .bUsePreviewValueAsDefault=True
+    .MaterialExpressionEditorX=592
+    .MaterialExpressionEditorY=1547
+    .MaterialExpressionGuid=45EC76AA48106EEE795A8B8B37E1BEF1
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_9)
+    .InputName="Overall Time Scale"
+    .Description="Multiplied over the Time value used for movement."
+    .Id=CCE24AF34FB23455A0C92A97481AD672
+    .InputType=FunctionInput_Scalar
+    .PreviewValue=(X=0.450000,Y=0.000000,Z=0.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=50
+    .MaterialExpressionEditorX=-5752
+    .MaterialExpressionEditorY=4252
+    .MaterialExpressionGuid=BF210586479728AD1CBC138CF919ECF0
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionAdd
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Foliage_Wind_Movement:MaterialExpressionAdd_8'")
+    .OutputName="World Position Offset"
+    .bLastPreviewed=True
+    .Id=33ED8D0B4472B44A23A30681A06AA3D1
+    .MaterialExpressionEditorX=7402
+    .MaterialExpressionEditorY=4940
+    .MaterialExpressionGuid=EF08F584468A65C33DCA2991CAE6A606
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionLength (MaterialExpressionLength_0)
+    Input                  <- MaterialExpressionComponentMask
+    .Input=(Expression="/Script/Engine.MaterialExpressionComponentMask'Foliage_Wind_Movement:MaterialExpressionComponentMask_0'")
+    .MaterialExpressionEditorX=-2556
+    .MaterialExpressionEditorY=3224
+    .MaterialExpressionGuid=A10E1C4A47038F93DA9810A42CAE475E
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_0)
+    A                      <- MaterialExpressionTextureSample
+    B                      <- MaterialExpressionTextureSample
+    Alpha                  <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionTextureSample'Foliage_Wind_Movement:MaterialExpressionTextureSample_3'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'Foliage_Wind_Movement:MaterialExpressionTextureSample_2'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_0'")
+    .MaterialExpressionEditorX=-920
+    .MaterialExpressionEditorY=1419
+    .MaterialExpressionGuid=6653AED344E395E46BBD1C99883A44BD
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_1)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionFunctionInput
+    Alpha                  <- MaterialExpressionPower
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_24'")
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionPower'Foliage_Wind_Movement:MaterialExpressionPower_9'")
+    .MaterialExpressionEditorX=-152
+    .MaterialExpressionEditorY=1515
+    .MaterialExpressionGuid=2B42738C42A5131EBC64D8B6715170E0
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_2)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionFunctionInput
+    Alpha                  <- MaterialExpressionPower
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_25'")
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionPower'Foliage_Wind_Movement:MaterialExpressionPower_5'")
+    .MaterialExpressionEditorX=4844
+    .MaterialExpressionEditorY=3268
+    .MaterialExpressionGuid=2B42738C42A5131EBC64D8B6715170E0
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_3)
+    A                      <- MaterialExpressionTextureSample
+    B                      <- MaterialExpressionTextureSample
+    Alpha                  <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionTextureSample'Foliage_Wind_Movement:MaterialExpressionTextureSample_7'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'Foliage_Wind_Movement:MaterialExpressionTextureSample_4'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_29'")
+    .MaterialExpressionEditorX=2812
+    .MaterialExpressionEditorY=3144
+    .MaterialExpressionGuid=6653AED344E395E46BBD1C99883A44BD
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_7)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    Alpha                  <- MaterialExpressionSaturate
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_4'")
+    .ConstB=0.000000
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionSaturate'Foliage_Wind_Movement:MaterialExpressionSaturate_4'")
+    .MaterialExpressionEditorX=-1892
+    .MaterialExpressionEditorY=1780
+    .MaterialExpressionGuid=D0CF1B80484389C87231AAA0CD2CD9A2
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_0)
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Weather/Sample_UDW_Wind.Sample_UDW_Wind'"
+    .FunctionOutputs(0)=(ExpressionOutputId=2F554A5F4CF8ECCF5F069BB8554EBC39,Output=(OutputName="Wind Intensity (0 to 1)"))
+    .FunctionOutputs(1)=(ExpressionOutputId=0779A203465C7886AA035E8215094A1B,Output=(OutputName="Wind Yaw (0-360)"))
+    .FunctionOutputs(2)=(ExpressionOutputId=19F8DC4B428D20B2312B1ABBC57895EC,Output=(OutputName="Wind Yaw (0-1)"))
+    .FunctionOutputs(3)=(ExpressionOutputId=B40ECACF427E595BEA0D38A5AF950384,Output=(OutputName="Wind Force/Velocity (Vector3)"))
+    .FunctionOutputs(4)=(ExpressionOutputId=07B6D5A5490F3562CE4446808D3A7A01,Output=(OutputName="Wind Direction (Vector3)"))
+    .MaterialExpressionEditorX=2124
+    .MaterialExpressionEditorY=4636
+    .MaterialExpressionGuid=9254AB504A0F3396342BE9B44A4B39C9
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+    .Outputs(0)=(OutputName="Wind Intensity (0 to 1)")
+    .Outputs(1)=(OutputName="Wind Yaw (0-360)")
+    .Outputs(2)=(OutputName="Wind Yaw (0-1)")
+    .Outputs(3)=(OutputName="Wind Force/Velocity (Vector3)")
+    .Outputs(4)=(OutputName="Wind Direction (Vector3)")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_1)
+    FunctionInputs(0)      <- MaterialExpressionComponentMask
+    FunctionInputs(1)      <- MaterialExpressionDivide
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Basic_Rotator.Basic_Rotator'"
+    .FunctionInputs(0)=(ExpressionInputId=6081F034494951E682ED1A85AAE52963,Input=(Expression="/Script/Engine.MaterialExpressionComponentMask'Foliage_Wind_Movement:MaterialExpressionComponentMask_1'",InputName="UV"))
+    .FunctionInputs(1)=(ExpressionInputId=7367AA464E7FC9FA6B3BB08D2B7F223B,Input=(Expression="/Script/Engine.MaterialExpressionDivide'Foliage_Wind_Movement:MaterialExpressionDivide_1'",InputName="Rotation Angle"))
+    .FunctionOutputs(0)=(ExpressionOutputId=6765217D4F702C6AC7640CB709BBCFBD,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-4584
+    .MaterialExpressionEditorY=3292
+    .MaterialExpressionGuid=66D1392544A9F5C0EC52E2B45C18C3AC
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_10)
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Weather/Sample_UDW_Wind.Sample_UDW_Wind'"
+    .FunctionOutputs(0)=(ExpressionOutputId=2F554A5F4CF8ECCF5F069BB8554EBC39,Output=(OutputName="Wind Intensity (0 to 1)"))
+    .FunctionOutputs(1)=(ExpressionOutputId=0779A203465C7886AA035E8215094A1B,Output=(OutputName="Wind Yaw (0-360)"))
+    .FunctionOutputs(2)=(ExpressionOutputId=19F8DC4B428D20B2312B1ABBC57895EC,Output=(OutputName="Wind Yaw (0-1)"))
+    .FunctionOutputs(3)=(ExpressionOutputId=B40ECACF427E595BEA0D38A5AF950384,Output=(OutputName="Wind Force/Velocity (Vector3)"))
+    .FunctionOutputs(4)=(ExpressionOutputId=07B6D5A5490F3562CE4446808D3A7A01,Output=(OutputName="Wind Direction (Vector3)"))
+    .MaterialExpressionEditorX=-5730
+    .MaterialExpressionEditorY=4618
+    .MaterialExpressionGuid=9254AB504A0F3396342BE9B44A4B39C9
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+    .Outputs(0)=(OutputName="Wind Intensity (0 to 1)")
+    .Outputs(1)=(OutputName="Wind Yaw (0-360)")
+    .Outputs(2)=(OutputName="Wind Yaw (0-1)")
+    .Outputs(3)=(OutputName="Wind Force/Velocity (Vector3)")
+    .Outputs(4)=(OutputName="Wind Direction (Vector3)")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_4)
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Weather/Sample_UDW_Wind.Sample_UDW_Wind'"
+    .FunctionOutputs(0)=(ExpressionOutputId=2F554A5F4CF8ECCF5F069BB8554EBC39,Output=(OutputName="Wind Intensity (0 to 1)"))
+    .FunctionOutputs(1)=(ExpressionOutputId=0779A203465C7886AA035E8215094A1B,Output=(OutputName="Wind Yaw (0-360)"))
+    .FunctionOutputs(2)=(ExpressionOutputId=19F8DC4B428D20B2312B1ABBC57895EC,Output=(OutputName="Wind Yaw (0-1)"))
+    .FunctionOutputs(3)=(ExpressionOutputId=B40ECACF427E595BEA0D38A5AF950384,Output=(OutputName="Wind Force/Velocity (Vector3)"))
+    .FunctionOutputs(4)=(ExpressionOutputId=07B6D5A5490F3562CE4446808D3A7A01,Output=(OutputName="Wind Direction (Vector3)"))
+    .MaterialExpressionEditorX=-5754
+    .MaterialExpressionEditorY=3560
+    .MaterialExpressionGuid=9254AB504A0F3396342BE9B44A4B39C9
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+    .Outputs(0)=(OutputName="Wind Intensity (0 to 1)")
+    .Outputs(1)=(OutputName="Wind Yaw (0-360)")
+    .Outputs(2)=(OutputName="Wind Yaw (0-1)")
+    .Outputs(3)=(OutputName="Wind Force/Velocity (Vector3)")
+    .Outputs(4)=(OutputName="Wind Direction (Vector3)")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_7)
+    FunctionInputs(0)      <- MaterialExpressionComponentMask
+    FunctionInputs(1)      <- MaterialExpressionAdd
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Basic_Rotator.Basic_Rotator'"
+    .FunctionInputs(0)=(ExpressionInputId=6081F034494951E682ED1A85AAE52963,Input=(Expression="/Script/Engine.MaterialExpressionComponentMask'Foliage_Wind_Movement:MaterialExpressionComponentMask_1'",InputName="UV"))
+    .FunctionInputs(1)=(ExpressionInputId=7367AA464E7FC9FA6B3BB08D2B7F223B,Input=(Expression="/Script/Engine.MaterialExpressionAdd'Foliage_Wind_Movement:MaterialExpressionAdd_12'",InputName="Rotation Angle"))
+    .FunctionOutputs(0)=(ExpressionOutputId=6765217D4F702C6AC7640CB709BBCFBD,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-4588
+    .MaterialExpressionEditorY=3468
+    .MaterialExpressionGuid=66D1392544A9F5C0EC52E2B45C18C3AC
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMin (MaterialExpressionMin_0)
+    A                      <- MaterialExpressionLinearInterpolate
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Foliage_Wind_Movement:MaterialExpressionLinearInterpolate_7'")
+    .ConstB=3.000000
+    .MaterialExpressionEditorX=-1668
+    .MaterialExpressionEditorY=1780
+    .MaterialExpressionGuid=4F89778E40D5992FC6283C9373F2B9C8
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionMin (MaterialExpressionMin_1)
+    A                      <- MaterialExpressionAdd
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Foliage_Wind_Movement:MaterialExpressionAdd_10'")
+    .ConstB=3.000000
+    .MaterialExpressionEditorX=2176
+    .MaterialExpressionEditorY=3296
+    .MaterialExpressionGuid=4F89778E40D5992FC6283C9373F2B9C8
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionMin (MaterialExpressionMin_2)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_1'")
+    .ConstB=3.000000
+    .MaterialExpressionEditorX=716
+    .MaterialExpressionEditorY=4784
+    .MaterialExpressionGuid=2AB06FAB43919ADA62EBCFA85E76986C
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionSubtract
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'Foliage_Wind_Movement:MaterialExpressionSubtract_1'")
+    .ConstB=2.000000
+    .MaterialExpressionEditorX=3294
+    .MaterialExpressionEditorY=4902
+    .MaterialExpressionGuid=5736724A4B96FA0689610D83D15DD34F
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_10)
+    A                      <- MaterialExpressionFunctionInput
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_11'")
+    .ConstB=-1.000000
+    .MaterialExpressionEditorX=-3132
+    .MaterialExpressionEditorY=1584
+    .MaterialExpressionGuid=33A1BA724132A9FB466D1FBB5BB51A46
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_11)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_19'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'Foliage_Wind_Movement:MaterialExpressionSubtract_2'")
+    .MaterialExpressionEditorX=148
+    .MaterialExpressionEditorY=1419
+    .MaterialExpressionGuid=B61B786C4C55B1530F84898A7D1BDA82
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_12)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_19'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Foliage_Wind_Movement:MaterialExpressionAdd_16'")
+    .MaterialExpressionEditorX=308
+    .MaterialExpressionEditorY=4564
+    .MaterialExpressionGuid=4E04C63842DB9344DC0FAFB4EF64D5F8
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_13)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_14'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Foliage_Wind_Movement:MaterialExpressionAdd_25'")
+    .MaterialExpressionEditorX=5144
+    .MaterialExpressionEditorY=3092
+    .MaterialExpressionGuid=DE8AC8D9471D9268DB6097AE061F3DD4
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_14)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    B                      <- MaterialExpressionLinearInterpolate
+    .B=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Foliage_Wind_Movement:MaterialExpressionLinearInterpolate_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_6'")
+    .MaterialExpressionEditorX=5028
+    .MaterialExpressionEditorY=3180
+    .MaterialExpressionGuid=DFCCD0A14F3983E6C7C2559B2F580491
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_15)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_16'")
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_10'")
+    .ConstB=0.350000
+    .MaterialExpressionEditorX=-200
+    .MaterialExpressionEditorY=3288
+    .MaterialExpressionGuid=696DAD9C40980A0C944DCBAF74D92928
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_16)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionAppendVector
+    .B=(Expression="/Script/Engine.MaterialExpressionAppendVector'Foliage_Wind_Movement:MaterialExpressionAppendVector_7'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'Foliage_Wind_Movement:MaterialExpressionSubtract_6'")
+    .ConstB=0.100000
+    .MaterialExpressionEditorX=1975
+    .MaterialExpressionEditorY=4565
+    .MaterialExpressionGuid=8E61E30049A5AD2F131451A4DC589663
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_17)
+    A                      <- MaterialExpressionPower
+    .A=(Expression="/Script/Engine.MaterialExpressionPower'Foliage_Wind_Movement:MaterialExpressionPower_7'")
+    .ConstB=2.000000
+    .MaterialExpressionEditorX=1848
+    .MaterialExpressionEditorY=3584
+    .MaterialExpressionGuid=3AD41CE8409F0F5D8FF237BF29F4511D
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_18)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionAdd
+    .B=(Expression="/Script/Engine.MaterialExpressionAdd'Foliage_Wind_Movement:MaterialExpressionAdd_14'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Foliage_Wind_Movement:MaterialExpressionComponentMask_8'")
+    .MaterialExpressionEditorX=-212
+    .MaterialExpressionEditorY=3504
+    .MaterialExpressionGuid=C3CA939946D351013FC1F5B572F61909
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_19)
+    A                      <- MaterialExpressionLinearInterpolate
+    B                      <- MaterialExpressionNamedRerouteDeclaration
+    .B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Foliage_Wind_Movement:MaterialExpressionLinearInterpolate_1'")
+    .MaterialExpressionEditorX=12
+    .MaterialExpressionEditorY=1515
+    .MaterialExpressionGuid=C7A6454B4298004F9D1483A77E96F8D1
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_2)
+    A                      <- MaterialExpressionOneMinus
+    .A=(Expression="/Script/Engine.MaterialExpressionOneMinus'Foliage_Wind_Movement:MaterialExpressionOneMinus_0'")
+    .ConstB=8.000000
+    .MaterialExpressionEditorX=-5294
+    .MaterialExpressionEditorY=3608
+    .MaterialExpressionGuid=45E5583E45CD43006E429ABF53F92B96
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_20)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_21'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'Foliage_Wind_Movement:MaterialExpressionSubtract_11'")
+    .MaterialExpressionEditorX=4080
+    .MaterialExpressionEditorY=4720
+    .MaterialExpressionGuid=56059A8B4DB206CF0DBF97885F21A7CB
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_21)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_26'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_28'")
+    .MaterialExpressionEditorX=3898
+    .MaterialExpressionEditorY=4802
+    .MaterialExpressionGuid=11D5DE60410892B17C26C1A2855F0FAF
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_22)
+    A                      <- MaterialExpressionPower
+    B                      <- MaterialExpressionConstant3Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant3Vector'Foliage_Wind_Movement:MaterialExpressionConstant3Vector_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionPower'Foliage_Wind_Movement:MaterialExpressionPower_1'")
+    .MaterialExpressionEditorX=2456
+    .MaterialExpressionEditorY=4980
+    .MaterialExpressionGuid=59A39E474089283D9045C89DEFE812DB
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_23)
+    A                      <- MaterialExpressionTextureSample
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'Foliage_Wind_Movement:MaterialExpressionTextureSample_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .ConstB=0.700000
+    .MaterialExpressionEditorX=-60
+    .MaterialExpressionEditorY=4196
+    .MaterialExpressionGuid=DDDD498D4AF6C768532CA19CD9FF24C5
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_24)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_13'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Foliage_Wind_Movement:MaterialExpressionComponentMask_17'")
+    .MaterialExpressionEditorX=-2748
+    .MaterialExpressionEditorY=836
+    .MaterialExpressionGuid=E50A008B4D8FB710A09E2386EDCAAD9F
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_26)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_16'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Foliage_Wind_Movement:MaterialExpressionComponentMask_12'")
+    .MaterialExpressionEditorX=3616
+    .MaterialExpressionEditorY=5020
+    .MaterialExpressionGuid=B9B41D864B75676EF3C89E9762140B69
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_27)
+    A                      <- MaterialExpressionNormalize
+    B                      <- MaterialExpressionAdd
+    .B=(Expression="/Script/Engine.MaterialExpressionAdd'Foliage_Wind_Movement:MaterialExpressionAdd_6'")
+    .A=(Expression="/Script/Engine.MaterialExpressionNormalize'Foliage_Wind_Movement:MaterialExpressionNormalize_0'")
+    .MaterialExpressionEditorX=2700
+    .MaterialExpressionEditorY=4720
+    .MaterialExpressionGuid=F5E95B8D4D03E93A3A54EAAE8F5E0BC5
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_28)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionSaturate
+    .B=(Expression="/Script/Engine.MaterialExpressionSaturate'Foliage_Wind_Movement:MaterialExpressionSaturate_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_4'")
+    .MaterialExpressionEditorX=3698
+    .MaterialExpressionEditorY=4802
+    .MaterialExpressionGuid=6EF20AAB4DFDACD512BDA580BD489B72
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_3)
+    A                      <- MaterialExpressionTime
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_9'")
+    .A=(Expression="/Script/Engine.MaterialExpressionTime'Foliage_Wind_Movement:MaterialExpressionTime_1'")
+    .MaterialExpressionEditorX=-5456
+    .MaterialExpressionEditorY=4176
+    .MaterialExpressionGuid=20D9C0B242952373BF1BEC9EBA768831
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_31)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_15'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Foliage_Wind_Movement:MaterialExpressionComponentMask_14'")
+    .MaterialExpressionEditorX=-1976
+    .MaterialExpressionEditorY=1052
+    .MaterialExpressionGuid=E50A008B4D8FB710A09E2386EDCAAD9F
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_33)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionAdd
+    .B=(Expression="/Script/Engine.MaterialExpressionAdd'Foliage_Wind_Movement:MaterialExpressionAdd_7'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Foliage_Wind_Movement:MaterialExpressionAdd_11'")
+    .MaterialExpressionEditorX=-1396
+    .MaterialExpressionEditorY=836
+    .MaterialExpressionGuid=5A52EEE646457555C98077825B8D5611
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_35)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionCrossProduct
+    .B=(Expression="/Script/Engine.MaterialExpressionCrossProduct'Foliage_Wind_Movement:MaterialExpressionCrossProduct_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Foliage_Wind_Movement:MaterialExpressionComponentMask_19'")
+    .MaterialExpressionEditorX=3984
+    .MaterialExpressionEditorY=3064
+    .MaterialExpressionGuid=D930897749305706682F0187E29C15C5
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_36)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionConstant3Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant3Vector'Foliage_Wind_Movement:MaterialExpressionConstant3Vector_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Foliage_Wind_Movement:MaterialExpressionComponentMask_21'")
+    .MaterialExpressionEditorX=3984
+    .MaterialExpressionEditorY=3184
+    .MaterialExpressionGuid=823D155B46EF9821E45911B1450FA808
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_37)
+    A                      <- MaterialExpressionComponentMask
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Foliage_Wind_Movement:MaterialExpressionComponentMask_22'")
+    .ConstB=0.300000
+    .MaterialExpressionEditorX=3384
+    .MaterialExpressionEditorY=3284
+    .MaterialExpressionGuid=6DC6A15B4F1DB27D351105B65EA19B5F
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_38)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionAbs
+    .B=(Expression="/Script/Engine.MaterialExpressionAbs'Foliage_Wind_Movement:MaterialExpressionAbs_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_37'")
+    .MaterialExpressionEditorX=3980
+    .MaterialExpressionEditorY=3284
+    .MaterialExpressionGuid=E8529AF84D3F48371211A492378343ED
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_39)
+    A                      <- MaterialExpressionTransformPosition
+    B                      <- MaterialExpressionConstant3Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant3Vector'Foliage_Wind_Movement:MaterialExpressionConstant3Vector_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionTransformPosition'Foliage_Wind_Movement:MaterialExpressionTransformPosition_6'")
+    .MaterialExpressionEditorX=3308
+    .MaterialExpressionEditorY=3464
+    .MaterialExpressionGuid=737825114C2D668C182669B73C593734
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_5)
+    A                      <- MaterialExpressionSaturate
+    B                      <- MaterialExpressionPower
+    .B=(Expression="/Script/Engine.MaterialExpressionPower'Foliage_Wind_Movement:MaterialExpressionPower_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSaturate'Foliage_Wind_Movement:MaterialExpressionSaturate_2'")
+    .MaterialExpressionEditorX=-1596
+    .MaterialExpressionEditorY=3496
+    .MaterialExpressionGuid=87964A9A4298AE37B031DFB4B8542B9F
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_6)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionAdd
+    .B=(Expression="/Script/Engine.MaterialExpressionAdd'Foliage_Wind_Movement:MaterialExpressionAdd_19'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_20'")
+    .MaterialExpressionEditorX=-292
+    .MaterialExpressionEditorY=4664
+    .MaterialExpressionGuid=C61DD17C4C6A24027EA5598A3F04A371
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_8)
+    A                      <- MaterialExpressionOneMinus
+    .A=(Expression="/Script/Engine.MaterialExpressionOneMinus'Foliage_Wind_Movement:MaterialExpressionOneMinus_1'")
+    .ConstB=4.000000
+    .MaterialExpressionEditorX=-5468
+    .MaterialExpressionEditorY=5120
+    .MaterialExpressionGuid=ED23C7A24F1521FF41F89ABF1814D8D9
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_9)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_17'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Foliage_Wind_Movement:MaterialExpressionComponentMask_20'")
+    .MaterialExpressionEditorX=644
+    .MaterialExpressionEditorY=2784
+    .MaterialExpressionGuid=E1E24CDF4999596D52D22D9237B4F7EB
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_0)
+    Input                  <- MaterialExpressionFrac
+    .Input=(Expression="/Script/Engine.MaterialExpressionFrac'Foliage_Wind_Movement:MaterialExpressionFrac_1'")
+    .Name="Angle Blend"
+    .NodeColor=(R=0.000000,G=1.000000,B=0.648438,A=1.000000)
+    .VariableGuid=D3F67FE7409948207F7FC6A2BCCEE1E2
+    .MaterialExpressionEditorX=-5004
+    .MaterialExpressionEditorY=3416
+    .MaterialExpressionGuid=31525524415A117CAA53BCA0DDB4F34B
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_1)
+    Input                  <- MaterialExpressionPower
+    .Input=(Expression="/Script/Engine.MaterialExpressionPower'Foliage_Wind_Movement:MaterialExpressionPower_6'")
+    .Name="Curved Wind Intensity"
+    .NodeColor=(R=0.000000,G=1.000000,B=0.109375,A=1.000000)
+    .VariableGuid=D9A4AC724BC6FF977DCC2C9D0A6BB64D
+    .MaterialExpressionEditorX=-5020
+    .MaterialExpressionEditorY=4620
+    .MaterialExpressionGuid=539DE15941F81408FBF163AA7C821EA6
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_10)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_3'")
+    .Name="Time with Speed"
+    .NodeColor=(R=1.000000,G=0.656250,B=0.000000,A=1.000000)
+    .VariableGuid=BE5056584A1836E4A8A23399AD49D866
+    .MaterialExpressionEditorX=-5324
+    .MaterialExpressionEditorY=4176
+    .MaterialExpressionGuid=C29AC6FF4EC3148B9FDC6192CD314C50
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_11)
+    Input                  <- MaterialExpressionStaticSwitch
+    .Input=(Expression="/Script/Engine.MaterialExpressionStaticSwitch'Foliage_Wind_Movement:MaterialExpressionStaticSwitch_1'")
+    .Name="Low Frequency Movement"
+    .NodeColor=(R=1.000000,G=0.000000,B=0.773437,A=1.000000)
+    .VariableGuid=29A1E1B24E475A013F86CEAC970FBC02
+    .MaterialExpressionEditorX=5104
+    .MaterialExpressionEditorY=4712
+    .MaterialExpressionGuid=B5A92BF54889A4112A32B5B98341C767
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_12)
+    Input                  <- MaterialExpressionComponentMask
+    .Input=(Expression="/Script/Engine.MaterialExpressionComponentMask'Foliage_Wind_Movement:MaterialExpressionComponentMask_5'")
+    .Name="Directional Offset B"
+    .NodeColor=(R=0.195312,G=0.000000,B=1.000000,A=1.000000)
+    .VariableGuid=884215C34CF9EDFEF3AF7A85DB08877F
+    .MaterialExpressionEditorX=-4260
+    .MaterialExpressionEditorY=3464
+    .MaterialExpressionGuid=FCE926B742CDF5B7E75CE0ADCB07EB06
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_13)
+    Input                  <- MaterialExpressionTextureSample
+    .Input=(Expression="/Script/Engine.MaterialExpressionTextureSample'Foliage_Wind_Movement:MaterialExpressionTextureSample_1'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .Name="Large 3D Sample"
+    .NodeColor=(R=1.000000,G=0.000000,B=0.843750,A=1.000000)
+    .VariableGuid=6CEDA4824936B994D60AACB105562214
+    .MaterialExpressionEditorX=133
+    .MaterialExpressionEditorY=2785
+    .MaterialExpressionGuid=C174C01C40525D2FD9F5BF8CAF4E6E6F
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_14)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_33'")
+    .Name="HF Variation RG"
+    .NodeColor=(R=0.476562,G=0.000000,B=1.000000,A=1.000000)
+    .VariableGuid=1F96331344D25CF4CA32DD930C1B1AD4
+    .MaterialExpressionEditorX=-1260
+    .MaterialExpressionEditorY=836
+    .MaterialExpressionGuid=825F168C45873B0E18BBB7A1E1D681F8
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_15)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_9'")
+    .Name="Mid Variation RG"
+    .NodeColor=(R=0.101562,G=1.000000,B=0.000000,A=1.000000)
+    .VariableGuid=DAA2F3AD4094DB389312669E7C7A00C6
+    .MaterialExpressionEditorX=868
+    .MaterialExpressionEditorY=2784
+    .MaterialExpressionGuid=45E55D3946FB1823BB894490E5C7963E
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_16)
+    Input                  <- MaterialExpressionLength
+    .Input=(Expression="/Script/Engine.MaterialExpressionLength'Foliage_Wind_Movement:MaterialExpressionLength_0'")
+    .Name="Middle Distance"
+    .NodeColor=(R=1.000000,G=0.000000,B=0.046875,A=1.000000)
+    .VariableGuid=B9F2CCC64D36D45A71BCA69A57C21DF7
+    .MaterialExpressionEditorX=-2340
+    .MaterialExpressionEditorY=3164
+    .MaterialExpressionGuid=FEA173C347D48F7B209E1AB50CB63A16
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_2)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_8'")
+    .Name="Movement Texture MIP"
+    .NodeColor=(R=0.007812,G=0.000000,B=1.000000,A=1.000000)
+    .VariableGuid=B7F91E504B5F66B3B51B46A8BD134AEA
+    .MaterialExpressionEditorX=-5338
+    .MaterialExpressionEditorY=5118
+    .MaterialExpressionGuid=838FF6BB4034E3383E09B89A03E2E294
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_3)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_23'")
+    .Name="Pivot Noise"
+    .NodeColor=(R=1.000000,G=0.000000,B=0.210937,A=1.000000)
+    .VariableGuid=D0C3146F4F69A1308DB4BCB1579777BB
+    .MaterialExpressionEditorX=96
+    .MaterialExpressionEditorY=4196
+    .MaterialExpressionGuid=2C2E7A5642ABC0327DD78499DDE89ABA
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_4)
+    Input                  <- MaterialExpressionFunctionInput
+    .Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_0'")
+    .Name="HF Mask"
+    .NodeColor=(R=0.640625,G=0.000000,B=1.000000,A=1.000000)
+    .VariableGuid=6383732F49C48900E91DCE9D3D464770
+    .MaterialExpressionEditorX=-180
+    .MaterialExpressionEditorY=1775
+    .MaterialExpressionGuid=D5239C1C4AC493A9C3F720B7B9501F14
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_5)
+    Input                  <- MaterialExpressionFunctionInput
+    .Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_5'")
+    .Name="Mid Frequency Mask"
+    .NodeColor=(R=1.000000,G=0.000000,B=0.539062,A=1.000000)
+    .VariableGuid=FC2751DE40533005C60E11B7D2B6B555
+    .MaterialExpressionEditorX=-1152
+    .MaterialExpressionEditorY=3496
+    .MaterialExpressionGuid=D4D6299B40C297379AD0308AFE1F12B2
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_6)
+    Input                  <- MaterialExpressionFunctionInput
+    .Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_2'")
+    .Name="LF Mask"
+    .NodeColor=(R=1.000000,G=0.585938,B=0.000000,A=1.000000)
+    .VariableGuid=D47BE21C45D919DB7988D8AE5E9F76A8
+    .MaterialExpressionEditorX=-1616
+    .MaterialExpressionEditorY=4976
+    .MaterialExpressionGuid=7ADB5EA14B9DFF917F319289AAE898DD
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_7)
+    Input                  <- MaterialExpressionStaticSwitch
+    .Input=(Expression="/Script/Engine.MaterialExpressionStaticSwitch'Foliage_Wind_Movement:MaterialExpressionStaticSwitch_2'")
+    .Name="High Frequency Movement"
+    .NodeColor=(R=0.804688,G=0.000000,B=1.000000,A=1.000000)
+    .VariableGuid=E810098B40EA078A80B7719181F28F02
+    .MaterialExpressionEditorX=1232
+    .MaterialExpressionEditorY=1419
+    .MaterialExpressionGuid=A4F5CACF481A10787BFB9B949FE70F50
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_8)
+    Input                  <- MaterialExpressionComponentMask
+    .Input=(Expression="/Script/Engine.MaterialExpressionComponentMask'Foliage_Wind_Movement:MaterialExpressionComponentMask_2'")
+    .Name="Directional Offset A"
+    .NodeColor=(R=0.500000,G=1.000000,B=0.000000,A=1.000000)
+    .VariableGuid=365D82414EC8DCCDAC09B493B13D6C83
+    .MaterialExpressionEditorX=-4228
+    .MaterialExpressionEditorY=3287
+    .MaterialExpressionGuid=3528652C4CA840A7C815F5AC0CFDE691
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_9)
+    Input                  <- MaterialExpressionStaticSwitch
+    .Input=(Expression="/Script/Engine.MaterialExpressionStaticSwitch'Foliage_Wind_Movement:MaterialExpressionStaticSwitch_0'")
+    .Name="Mid Frequency Movement"
+    .NodeColor=(R=1.000000,G=0.445312,B=0.000000,A=1.000000)
+    .VariableGuid=D1BF8908495A3090D36D19AA2E3A3268
+    .MaterialExpressionEditorX=6112
+    .MaterialExpressionEditorY=3092
+    .MaterialExpressionGuid=A88B03414911056B881C8981ECFABD2D
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_0)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_0'"
+    .DeclarationGuid=D3F67FE7409948207F7FC6A2BCCEE1E2
+    .MaterialExpressionEditorX=-1080
+    .MaterialExpressionEditorY=1487
+    .MaterialExpressionGuid=6F510629421DFA8294DE1FA96A09C33F
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_1)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_2'"
+    .DeclarationGuid=B7F91E504B5F66B3B51B46A8BD134AEA
+    .MaterialExpressionEditorX=496
+    .MaterialExpressionEditorY=4784
+    .MaterialExpressionGuid=F221C89F4E9B88C4FC5D9EB2E53D2E00
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_10)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_10'"
+    .DeclarationGuid=BE5056584A1836E4A8A23399AD49D866
+    .MaterialExpressionEditorX=-364
+    .MaterialExpressionEditorY=3288
+    .MaterialExpressionGuid=C592D03B43B92B33DF93AFB9C9115F92
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_11)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_10'"
+    .DeclarationGuid=BE5056584A1836E4A8A23399AD49D866
+    .MaterialExpressionEditorX=-1004
+    .MaterialExpressionEditorY=4564
+    .MaterialExpressionGuid=4A62C61A491EC9E40FB64BA07DA593C5
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_13)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_11'"
+    .DeclarationGuid=29A1E1B24E475A013F86CEAC970FBC02
+    .MaterialExpressionEditorX=6830
+    .MaterialExpressionEditorY=5108
+    .MaterialExpressionGuid=C80DCFBB40F539A80F0C25B8D7386EB4
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_14)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_5'"
+    .DeclarationGuid=FC2751DE40533005C60E11B7D2B6B555
+    .MaterialExpressionEditorX=-616
+    .MaterialExpressionEditorY=4756
+    .MaterialExpressionGuid=0FFE36504C5791A1231DBB8B7E491576
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_15)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_2'"
+    .DeclarationGuid=B7F91E504B5F66B3B51B46A8BD134AEA
+    .MaterialExpressionEditorX=-1732
+    .MaterialExpressionEditorY=948
+    .MaterialExpressionGuid=6018EA7F4D2E9D17B17AC1B01C3F4FC8
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_16)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_6'"
+    .DeclarationGuid=D47BE21C45D919DB7988D8AE5E9F76A8
+    .MaterialExpressionEditorX=3452
+    .MaterialExpressionEditorY=5124
+    .MaterialExpressionGuid=E4448B7F41A326A6C920EA80DE500018
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_17)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_6'"
+    .DeclarationGuid=D47BE21C45D919DB7988D8AE5E9F76A8
+    .MaterialExpressionEditorX=-548
+    .MaterialExpressionEditorY=4828
+    .MaterialExpressionGuid=5282A59244DA91E1139A23BC28AB7FC1
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_19)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_1'"
+    .DeclarationGuid=D9A4AC724BC6FF977DCC2C9D0A6BB64D
+    .MaterialExpressionEditorX=-596
+    .MaterialExpressionEditorY=1659
+    .MaterialExpressionGuid=987F90784B6EB6CD5A7082A45E906A62
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_2)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_1'"
+    .DeclarationGuid=D9A4AC724BC6FF977DCC2C9D0A6BB64D
+    .MaterialExpressionEditorX=-5736
+    .MaterialExpressionEditorY=5120
+    .MaterialExpressionGuid=2CCBD5AA446B25D4B3448CAD958FF9C4
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_20)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_1'"
+    .DeclarationGuid=D9A4AC724BC6FF977DCC2C9D0A6BB64D
+    .MaterialExpressionEditorX=4416
+    .MaterialExpressionEditorY=3376
+    .MaterialExpressionGuid=987F90784B6EB6CD5A7082A45E906A62
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_21)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_1'"
+    .DeclarationGuid=D9A4AC724BC6FF977DCC2C9D0A6BB64D
+    .MaterialExpressionEditorX=2958
+    .MaterialExpressionEditorY=4902
+    .MaterialExpressionGuid=987F90784B6EB6CD5A7082A45E906A62
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_22)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_8'"
+    .DeclarationGuid=365D82414EC8DCCDAC09B493B13D6C83
+    .MaterialExpressionEditorX=-3128
+    .MaterialExpressionEditorY=1428
+    .MaterialExpressionGuid=34DC814B4E8A43B276AD9AA516D7D8CF
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_23)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_12'"
+    .DeclarationGuid=884215C34CF9EDFEF3AF7A85DB08877F
+    .MaterialExpressionEditorX=-3120
+    .MaterialExpressionEditorY=1720
+    .MaterialExpressionGuid=FFB15BD949BDA5437845D0B7211509EA
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_24)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_14'"
+    .DeclarationGuid=1F96331344D25CF4CA32DD930C1B1AD4
+    .MaterialExpressionEditorX=-2908
+    .MaterialExpressionEditorY=1613
+    .MaterialExpressionGuid=BF9B08B143C22515B1FE1BA0D8E9DFC3
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_25)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_14'"
+    .DeclarationGuid=1F96331344D25CF4CA32DD930C1B1AD4
+    .MaterialExpressionEditorX=-2272
+    .MaterialExpressionEditorY=1552
+    .MaterialExpressionGuid=BF9B08B143C22515B1FE1BA0D8E9DFC3
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_26)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_2'"
+    .DeclarationGuid=B7F91E504B5F66B3B51B46A8BD134AEA
+    .MaterialExpressionEditorX=-544
+    .MaterialExpressionEditorY=3576
+    .MaterialExpressionGuid=6018EA7F4D2E9D17B17AC1B01C3F4FC8
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_27)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_2'"
+    .DeclarationGuid=B7F91E504B5F66B3B51B46A8BD134AEA
+    .MaterialExpressionEditorX=1820
+    .MaterialExpressionEditorY=3300
+    .MaterialExpressionGuid=F221C89F4E9B88C4FC5D9EB2E53D2E00
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_29)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_0'"
+    .DeclarationGuid=D3F67FE7409948207F7FC6A2BCCEE1E2
+    .MaterialExpressionEditorX=2664
+    .MaterialExpressionEditorY=3212
+    .MaterialExpressionGuid=6F510629421DFA8294DE1FA96A09C33F
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_3)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_16'"
+    .DeclarationGuid=B9F2CCC64D36D45A71BCA69A57C21DF7
+    .MaterialExpressionEditorX=104
+    .MaterialExpressionEditorY=3400
+    .MaterialExpressionGuid=54B11FD44B01FFC7C85DD9A6ECE165E3
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_31)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_12'"
+    .DeclarationGuid=884215C34CF9EDFEF3AF7A85DB08877F
+    .MaterialExpressionEditorX=604
+    .MaterialExpressionEditorY=3424
+    .MaterialExpressionGuid=FFB15BD949BDA5437845D0B7211509EA
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_32)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_8'"
+    .DeclarationGuid=365D82414EC8DCCDAC09B493B13D6C83
+    .MaterialExpressionEditorX=584
+    .MaterialExpressionEditorY=3148
+    .MaterialExpressionGuid=34DC814B4E8A43B276AD9AA516D7D8CF
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_33)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_15'"
+    .DeclarationGuid=DAA2F3AD4094DB389312669E7C7A00C6
+    .MaterialExpressionEditorX=-524
+    .MaterialExpressionEditorY=3484
+    .MaterialExpressionGuid=AD4DA2E14D893D426F99DDB45E6E10C1
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_35)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_15'"
+    .DeclarationGuid=DAA2F3AD4094DB389312669E7C7A00C6
+    .MaterialExpressionEditorX=1220
+    .MaterialExpressionEditorY=3276
+    .MaterialExpressionGuid=AD4DA2E14D893D426F99DDB45E6E10C1
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_36)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_3'"
+    .DeclarationGuid=D0C3146F4F69A1308DB4BCB1579777BB
+    .MaterialExpressionEditorX=-1112
+    .MaterialExpressionEditorY=4636
+    .MaterialExpressionGuid=4A4017344442741B264C669F11D769F8
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_37)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_3'"
+    .DeclarationGuid=D0C3146F4F69A1308DB4BCB1579777BB
+    .MaterialExpressionEditorX=404
+    .MaterialExpressionEditorY=4656
+    .MaterialExpressionGuid=4A4017344442741B264C669F11D769F8
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_4)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_2'"
+    .DeclarationGuid=B7F91E504B5F66B3B51B46A8BD134AEA
+    .MaterialExpressionEditorX=-2164
+    .MaterialExpressionEditorY=1780
+    .MaterialExpressionGuid=F221C89F4E9B88C4FC5D9EB2E53D2E00
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_5)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_5'"
+    .DeclarationGuid=FC2751DE40533005C60E11B7D2B6B555
+    .MaterialExpressionEditorX=1484
+    .MaterialExpressionEditorY=3584
+    .MaterialExpressionGuid=339AC6854BEE94BF6D2E58B4FB4786EA
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_6)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_5'"
+    .DeclarationGuid=FC2751DE40533005C60E11B7D2B6B555
+    .MaterialExpressionEditorX=4820
+    .MaterialExpressionEditorY=3164
+    .MaterialExpressionGuid=82DA253C4556CEDC8866AE97F43B4CB9
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_7)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_9'"
+    .DeclarationGuid=D1BF8908495A3090D36D19AA2E3A3268
+    .MaterialExpressionEditorX=6654
+    .MaterialExpressionEditorY=4958
+    .MaterialExpressionGuid=5E16EB4042D689E4380F0E9A0604655E
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_8)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_7'"
+    .DeclarationGuid=E810098B40EA078A80B7719181F28F02
+    .MaterialExpressionEditorX=6654
+    .MaterialExpressionEditorY=5020
+    .MaterialExpressionGuid=F18EE16F4B1859876B3FA79D4211A24D
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_9)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Foliage_Wind_Movement:MaterialExpressionNamedRerouteDeclaration_10'"
+    .DeclarationGuid=BE5056584A1836E4A8A23399AD49D866
+    .MaterialExpressionEditorX=-2784
+    .MaterialExpressionEditorY=1545
+    .MaterialExpressionGuid=02234781422659DC5EF410A847B6F43F
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNormalize (MaterialExpressionNormalize_0)
+    VectorInput            <- MaterialExpressionAdd
+    .VectorInput=(Expression="/Script/Engine.MaterialExpressionAdd'Foliage_Wind_Movement:MaterialExpressionAdd_13'")
+    .MaterialExpressionEditorX=2516
+    .MaterialExpressionEditorY=4564
+    .MaterialExpressionGuid=5FB715984EDD39A9D4709DA66CF10326
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionNormalize (MaterialExpressionNormalize_1)
+    VectorInput            <- MaterialExpressionMultiply
+    .VectorInput=(Expression="/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_39'")
+    .MaterialExpressionEditorX=3436
+    .MaterialExpressionEditorY=3464
+    .MaterialExpressionGuid=738E511B493D31F3D9940A92DE584B5A
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_0)
+    Input                  <- MaterialExpressionSaturate
+    .Input=(Expression="/Script/Engine.MaterialExpressionSaturate'Foliage_Wind_Movement:MaterialExpressionSaturate_0'")
+    .MaterialExpressionEditorX=-5390
+    .MaterialExpressionEditorY=3608
+    .MaterialExpressionGuid=B37C7E37437686891483E09B50208AE6
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_1)
+    Input                  <- MaterialExpressionNamedRerouteUsage
+    .Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_2'")
+    .MaterialExpressionEditorX=-5544
+    .MaterialExpressionEditorY=5120
+    .MaterialExpressionGuid=0B6E12CF48A3B35738BF00AF94A8F96F
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionPower (MaterialExpressionPower_1)
+    Base                   <- MaterialExpressionAbs
+    .Base=(Expression="/Script/Engine.MaterialExpressionAbs'Foliage_Wind_Movement:MaterialExpressionAbs_0'")
+    .MaterialExpressionEditorX=2188
+    .MaterialExpressionEditorY=4980
+    .MaterialExpressionGuid=6701332D42A104E7B4ACD8B3A9FFF771
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionPower (MaterialExpressionPower_3)
+    Base                   <- MaterialExpressionMultiply
+    .Base=(Expression="/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_0'")
+    .MaterialExpressionEditorX=3418
+    .MaterialExpressionEditorY=4902
+    .MaterialExpressionGuid=4EAA1EDE42A6C0FA9E72188AC815F266
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionPower (MaterialExpressionPower_4)
+    Base                   <- MaterialExpressionSaturate
+    .Base=(Expression="/Script/Engine.MaterialExpressionSaturate'Foliage_Wind_Movement:MaterialExpressionSaturate_3'")
+    .MaterialExpressionEditorX=-1820
+    .MaterialExpressionEditorY=3524
+    .MaterialExpressionGuid=B3D9B0574DD2A529CECB15996F2C0EB6
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionPower (MaterialExpressionPower_5)
+    Base                   <- MaterialExpressionNamedRerouteUsage
+    .Base=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_20'")
+    .ConstExponent=4.000000
+    .MaterialExpressionEditorX=4612
+    .MaterialExpressionEditorY=3376
+    .MaterialExpressionGuid=CED39E6941BA63F74B00A99944E5AEF7
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionPower (MaterialExpressionPower_6)
+    Base                   <- MaterialExpressionMaterialFunctionCall
+    Exponent               <- MaterialExpressionFunctionInput
+    .Base=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Foliage_Wind_Movement:MaterialExpressionMaterialFunctionCall_10'")
+    .Exponent=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_26'")
+    .MaterialExpressionEditorX=-5142
+    .MaterialExpressionEditorY=4618
+    .MaterialExpressionGuid=090EA25F4808CCAA5B6257A8677D3CA8
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionPower (MaterialExpressionPower_7)
+    Base                   <- MaterialExpressionNamedRerouteUsage
+    .Base=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_5'")
+    .MaterialExpressionEditorX=1704
+    .MaterialExpressionEditorY=3584
+    .MaterialExpressionGuid=10794D714BD3A64E6D124CB84694F61C
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionPower (MaterialExpressionPower_9)
+    Base                   <- MaterialExpressionNamedRerouteUsage
+    .Base=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_19'")
+    .ConstExponent=1.450000
+    .MaterialExpressionEditorX=-376
+    .MaterialExpressionEditorY=1659
+    .MaterialExpressionGuid=9E88884441E687788D8DF1A625A76C70
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionReroute (MaterialExpressionReroute_0)
+    Input                  <- MaterialExpressionAdd
+    .Input=(Expression="/Script/Engine.MaterialExpressionAdd'Foliage_Wind_Movement:MaterialExpressionAdd_5'")
+    .MaterialExpressionEditorX=932
+    .MaterialExpressionEditorY=3320
+    .MaterialExpressionGuid=36CE099247CB6EB126B7AF8AD6D8FAE5
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_0)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+    .Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Foliage_Wind_Movement:MaterialExpressionMaterialFunctionCall_4'",OutputIndex=2)
+    .MaterialExpressionEditorX=-5534
+    .MaterialExpressionEditorY=3608
+    .MaterialExpressionGuid=BE58C8DB42DA273A3FBF19924D07CBD7
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_1)
+    Input                  <- MaterialExpressionPower
+    .Input=(Expression="/Script/Engine.MaterialExpressionPower'Foliage_Wind_Movement:MaterialExpressionPower_3'")
+    .MaterialExpressionEditorX=3550
+    .MaterialExpressionEditorY=4902
+    .MaterialExpressionGuid=6EF103C7470B82F545C8198E16F05FAD
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_2)
+    Input                  <- MaterialExpressionDivide
+    .Input=(Expression="/Script/Engine.MaterialExpressionDivide'Foliage_Wind_Movement:MaterialExpressionDivide_7'")
+    .MaterialExpressionEditorX=-1788
+    .MaterialExpressionEditorY=3224
+    .MaterialExpressionGuid=259BF66F4F034199CFF512B994E3C533
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_3)
+    Input                  <- MaterialExpressionDivide
+    .Input=(Expression="/Script/Engine.MaterialExpressionDivide'Foliage_Wind_Movement:MaterialExpressionDivide_8'")
+    .MaterialExpressionEditorX=-2024
+    .MaterialExpressionEditorY=3524
+    .MaterialExpressionGuid=55740BED4B194101E140A5966AB4BF10
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_4)
+    Input                  <- MaterialExpressionCollectionParameter
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Foliage_Wind_Movement:MaterialExpressionCollectionParameter_3'")
+    .MaterialExpressionEditorX=-2072
+    .MaterialExpressionEditorY=1868
+    .MaterialExpressionGuid=2B62286B4D60CBD69C0FF08B9BDC8A48
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_8)
+    Input                  <- MaterialExpressionDivide
+    .Input=(Expression="/Script/Engine.MaterialExpressionDivide'Foliage_Wind_Movement:MaterialExpressionDivide_12'")
+    .MaterialExpressionEditorX=-2028
+    .MaterialExpressionEditorY=4976
+    .MaterialExpressionGuid=47EF04954C24B8478AC295B1605CE01D
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionStaticBoolParameter (MaterialExpressionStaticBoolParameter_0)
+    .ParameterName="Apply Small Movement"
+    .DefaultValue=True
+    .ExpressionGUID=729C278A4BD9F5B124419D96F2806A58
+    .Group="Foliage Wind Movement"
+    .SortPriority=0
+    .MaterialExpressionEditorX=376
+    .MaterialExpressionEditorY=1531
+    .MaterialExpressionGuid=33A8C1CD4C45A7B8BFB1988F85924E09
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+    .Desc="Adds movement intended for small foliage elements, like leaves, blades of grass, etc."
+  MaterialExpressionStaticBoolParameter (MaterialExpressionStaticBoolParameter_1)
+    .ParameterName="Apply Medium Movement"
+    .DefaultValue=True
+    .ExpressionGUID=B5D6D09640D026A7126638B9B143C51A
+    .Group="Foliage Wind Movement"
+    .SortPriority=20
+    .MaterialExpressionEditorX=5200
+    .MaterialExpressionEditorY=3224
+    .MaterialExpressionGuid=33A8C1CD4C45A7B8BFB1988F85924E09
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+    .Desc="Adds movement intended for medium elements of foliage. Branch movement, frond movement, etc."
+  MaterialExpressionStaticBoolParameter (MaterialExpressionStaticBoolParameter_2)
+    .ParameterName="Apply Large Movement"
+    .DefaultValue=True
+    .ExpressionGUID=70B3813648532503830CAE8FC6CC2022
+    .Group="Foliage Wind Movement"
+    .SortPriority=40
+    .MaterialExpressionEditorX=4248
+    .MaterialExpressionEditorY=4832
+    .MaterialExpressionGuid=33A8C1CD4C45A7B8BFB1988F85924E09
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+    .Desc="Adds a swaying movement, intended for trees mainly. Moves each vertex using its height above the pivot location."
+  MaterialExpressionStaticSwitch (MaterialExpressionStaticSwitch_0)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionConstant
+    Value                  <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'Foliage_Wind_Movement:MaterialExpressionConstant_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_13'")
+    .Value=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_6'")
+    .MaterialExpressionEditorX=5904
+    .MaterialExpressionEditorY=3092
+    .MaterialExpressionGuid=137541734D2E6CE04CFAB4B493CC7DB9
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionStaticSwitch (MaterialExpressionStaticSwitch_1)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionConstant
+    Value                  <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'Foliage_Wind_Movement:MaterialExpressionConstant_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_20'")
+    .Value=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_7'")
+    .MaterialExpressionEditorX=4924
+    .MaterialExpressionEditorY=4716
+    .MaterialExpressionGuid=137541734D2E6CE04CFAB4B493CC7DB9
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionStaticSwitch (MaterialExpressionStaticSwitch_2)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionConstant
+    Value                  <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'Foliage_Wind_Movement:MaterialExpressionConstant_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_11'")
+    .Value=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_8'")
+    .MaterialExpressionEditorX=1092
+    .MaterialExpressionEditorY=1419
+    .MaterialExpressionGuid=137541734D2E6CE04CFAB4B493CC7DB9
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_0)
+    A                      <- MaterialExpressionLength
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_28'")
+    .A=(Expression="/Script/Engine.MaterialExpressionLength'Foliage_Wind_Movement:MaterialExpressionLength_0'")
+    .MaterialExpressionEditorX=-2096
+    .MaterialExpressionEditorY=3224
+    .MaterialExpressionGuid=337070B444986CA0E93B86B64AAEBE43
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_1)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Foliage_Wind_Movement:MaterialExpressionNamedRerouteUsage_21'")
+    .ConstB=0.500000
+    .MaterialExpressionEditorX=3154
+    .MaterialExpressionEditorY=4902
+    .MaterialExpressionGuid=4FF5707F438BB61D90C4B993634FF9FB
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_11)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_22'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Foliage_Wind_Movement:MaterialExpressionMultiply_27'")
+    .MaterialExpressionEditorX=2888
+    .MaterialExpressionEditorY=4720
+    .MaterialExpressionGuid=19751FCD441A37344A9BA383C2C1D437
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_2)
+    A                      <- MaterialExpressionLinearInterpolate
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Foliage_Wind_Movement:MaterialExpressionLinearInterpolate_0'")
+    .ConstB=0.500000
+    .MaterialExpressionEditorX=-688
+    .MaterialExpressionEditorY=1419
+    .MaterialExpressionGuid=15EEBC564B36E242DDFACB8510441407
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_3)
+    A                      <- MaterialExpressionComponentMask
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Foliage_Wind_Movement:MaterialExpressionComponentMask_3'")
+    .ConstB=50.000000
+    .MaterialExpressionEditorX=-2492
+    .MaterialExpressionEditorY=3524
+    .MaterialExpressionGuid=561B48CE44ED33B93DD459941B329EE7
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_4)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Foliage_Wind_Movement:MaterialExpressionFunctionInput_23'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Foliage_Wind_Movement:MaterialExpressionComponentMask_7'")
+    .MaterialExpressionEditorX=-2556
+    .MaterialExpressionEditorY=4976
+    .MaterialExpressionGuid=DE1DCC67495CA6D96A0C92B8B976173C
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_5)
+    A                      <- MaterialExpressionLinearInterpolate
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Foliage_Wind_Movement:MaterialExpressionLinearInterpolate_3'")
+    .ConstB=0.500000
+    .MaterialExpressionEditorX=2960
+    .MaterialExpressionEditorY=3144
+    .MaterialExpressionGuid=15EEBC564B36E242DDFACB8510441407
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_6)
+    A                      <- MaterialExpressionTextureSample
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'Foliage_Wind_Movement:MaterialExpressionTextureSample_5'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .ConstB=0.500000
+    .MaterialExpressionEditorX=1752
+    .MaterialExpressionEditorY=4564
+    .MaterialExpressionGuid=4CC40D97466668DF593936851B352A96
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_0)
+    Coordinates            <- MaterialExpressionDivide
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.VolumeTexture'/Game/ENDEMIS/Weather/Clouds/3D_Cells_32.3D_Cells_32'"
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionDivide'Foliage_Wind_Movement:MaterialExpressionDivide_5'")
+    .SamplerSource=SSM_Wrap_WorldGroupSettings
+    .AutomaticViewMipBias=False
+    .MaterialExpressionEditorX=-328
+    .MaterialExpressionEditorY=4196
+    .MaterialExpressionGuid=D9CD81DF48D75C1D85D7F182446C044E
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_1)
+    Coordinates            <- MaterialExpressionDivide
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.VolumeTexture'/Game/ENDEMIS/Weather/Clouds/3D_Cells_32.3D_Cells_32'"
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionDivide'Foliage_Wind_Movement:MaterialExpressionDivide_11'")
+    .SamplerSource=SSM_Wrap_WorldGroupSettings
+    .AutomaticViewMipBias=False
+    .MaterialExpressionEditorX=-104
+    .MaterialExpressionEditorY=2784
+    .MaterialExpressionGuid=D9CD81DF48D75C1D85D7F182446C044E
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_2)
+    Coordinates            <- MaterialExpressionAppendVector
+    MipValue               <- MaterialExpressionMin
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/MaterialFX/T_Wind_Movement.T_Wind_Movement'"
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionAppendVector'Foliage_Wind_Movement:MaterialExpressionAppendVector_1'")
+    .MipValue=(Expression="/Script/Engine.MaterialExpressionMin'Foliage_Wind_Movement:MaterialExpressionMin_0'")
+    .MipValueMode=TMVM_MipLevel
+    .SamplerSource=SSM_Wrap_WorldGroupSettings
+    .AutomaticViewMipBias=False
+    .MaterialExpressionEditorX=-1328
+    .MaterialExpressionEditorY=1420
+    .MaterialExpressionGuid=5E75749D4643D7B9A6669CB8E5DDC9C9
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_3)
+    Coordinates            <- MaterialExpressionAppendVector
+    MipValue               <- MaterialExpressionMin
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/MaterialFX/T_Wind_Movement.T_Wind_Movement'"
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionAppendVector'Foliage_Wind_Movement:MaterialExpressionAppendVector_2'")
+    .MipValue=(Expression="/Script/Engine.MaterialExpressionMin'Foliage_Wind_Movement:MaterialExpressionMin_0'")
+    .MipValueMode=TMVM_MipLevel
+    .SamplerSource=SSM_Wrap_WorldGroupSettings
+    .AutomaticViewMipBias=False
+    .MaterialExpressionEditorX=-1332
+    .MaterialExpressionEditorY=1668
+    .MaterialExpressionGuid=5E75749D4643D7B9A6669CB8E5DDC9C9
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_4)
+    Coordinates            <- MaterialExpressionAppendVector
+    MipValue               <- MaterialExpressionMin
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/MaterialFX/T_Wind_Movement.T_Wind_Movement'"
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionAppendVector'Foliage_Wind_Movement:MaterialExpressionAppendVector_4'")
+    .MipValue=(Expression="/Script/Engine.MaterialExpressionMin'Foliage_Wind_Movement:MaterialExpressionMin_1'")
+    .MipValueMode=TMVM_MipLevel
+    .SamplerSource=SSM_Wrap_WorldGroupSettings
+    .AutomaticViewMipBias=False
+    .MaterialExpressionEditorX=2400
+    .MaterialExpressionEditorY=3140
+    .MaterialExpressionGuid=5E75749D4643D7B9A6669CB8E5DDC9C9
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_5)
+    Coordinates            <- MaterialExpressionAppendVector
+    MipValue               <- MaterialExpressionMin
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/MaterialFX/T_Wind_Movement.T_Wind_Movement'"
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionAppendVector'Foliage_Wind_Movement:MaterialExpressionAppendVector_3'")
+    .MipValue=(Expression="/Script/Engine.MaterialExpressionMin'Foliage_Wind_Movement:MaterialExpressionMin_2'")
+    .MipValueMode=TMVM_MipLevel
+    .SamplerSource=SSM_Wrap_WorldGroupSettings
+    .MaterialExpressionEditorX=1072
+    .MaterialExpressionEditorY=4564
+    .MaterialExpressionGuid=5E75749D4643D7B9A6669CB8E5DDC9C9
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_6)
+    Coordinates            <- MaterialExpressionDivide
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.VolumeTexture'/Game/ENDEMIS/Weather/Clouds/3D_Cells_32.3D_Cells_32'"
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionDivide'Foliage_Wind_Movement:MaterialExpressionDivide_10'")
+    .SamplerSource=SSM_Wrap_WorldGroupSettings
+    .AutomaticViewMipBias=False
+    .MaterialExpressionEditorX=-2640
+    .MaterialExpressionEditorY=1052
+    .MaterialExpressionGuid=D9CD81DF48D75C1D85D7F182446C044E
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_7)
+    Coordinates            <- MaterialExpressionAppendVector
+    MipValue               <- MaterialExpressionMin
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/MaterialFX/T_Wind_Movement.T_Wind_Movement'"
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionAppendVector'Foliage_Wind_Movement:MaterialExpressionAppendVector_5'")
+    .MipValue=(Expression="/Script/Engine.MaterialExpressionMin'Foliage_Wind_Movement:MaterialExpressionMin_1'")
+    .MipValueMode=TMVM_MipLevel
+    .SamplerSource=SSM_Wrap_WorldGroupSettings
+    .AutomaticViewMipBias=False
+    .MaterialExpressionEditorX=2400
+    .MaterialExpressionEditorY=3404
+    .MaterialExpressionGuid=5E75749D4643D7B9A6669CB8E5DDC9C9
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionTime (MaterialExpressionTime_1)
+    .MaterialExpressionEditorX=-5620
+    .MaterialExpressionEditorY=4160
+    .MaterialExpressionGuid=A1613EF6413346C623CED993522EF843
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionTransformPosition (MaterialExpressionTransformPosition_1)
+    Input                  <- MaterialExpressionWorldPosition
+    .Input=(Expression="/Script/Engine.MaterialExpressionWorldPosition'Foliage_Wind_Movement:MaterialExpressionWorldPosition_4'")
+    .TransformSourceType=TRANSFORMPOSSOURCE_World
+    .TransformType=TRANSFORMPOSSOURCE_Instance
+    .MaterialExpressionEditorX=-3168
+    .MaterialExpressionEditorY=3208
+    .MaterialExpressionGuid=35AA45204399CBCE9FA8698DB00B5236
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionTransformPosition (MaterialExpressionTransformPosition_2)
+    Input                  <- MaterialExpressionConstant3Vector
+    .Input=(Expression="/Script/Engine.MaterialExpressionConstant3Vector'Foliage_Wind_Movement:MaterialExpressionConstant3Vector_5'")
+    .TransformSourceType=TRANSFORMPOSSOURCE_Instance
+    .TransformType=TRANSFORMPOSSOURCE_World
+    .MaterialExpressionEditorX=-800
+    .MaterialExpressionEditorY=4184
+    .MaterialExpressionGuid=56EDBF66439260EDBF3D378D575AB3AE
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionTransformPosition (MaterialExpressionTransformPosition_4)
+    Input                  <- MaterialExpressionWorldPosition
+    .Input=(Expression="/Script/Engine.MaterialExpressionWorldPosition'Foliage_Wind_Movement:MaterialExpressionWorldPosition_3'")
+    .TransformSourceType=TRANSFORMPOSSOURCE_World
+    .TransformType=TRANSFORMPOSSOURCE_Instance
+    .MaterialExpressionEditorX=3084
+    .MaterialExpressionEditorY=5008
+    .MaterialExpressionGuid=D75EA7144137E887DFF744953523F78D
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionTransformPosition (MaterialExpressionTransformPosition_5)
+    Input                  <- MaterialExpressionWorldPosition
+    .Input=(Expression="/Script/Engine.MaterialExpressionWorldPosition'Foliage_Wind_Movement:MaterialExpressionWorldPosition_5'")
+    .TransformSourceType=TRANSFORMPOSSOURCE_World
+    .TransformType=TRANSFORMPOSSOURCE_Instance
+    .MaterialExpressionEditorX=-3132
+    .MaterialExpressionEditorY=4960
+    .MaterialExpressionGuid=D75EA7144137E887DFF744953523F78D
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionTransformPosition (MaterialExpressionTransformPosition_6)
+    Input                  <- MaterialExpressionWorldPosition
+    .Input=(Expression="/Script/Engine.MaterialExpressionWorldPosition'Foliage_Wind_Movement:MaterialExpressionWorldPosition_6'")
+    .TransformSourceType=TRANSFORMPOSSOURCE_World
+    .TransformType=TRANSFORMPOSSOURCE_Instance
+    .MaterialExpressionEditorX=2932
+    .MaterialExpressionEditorY=3452
+    .MaterialExpressionGuid=F0F4489845A53F07744402938319D3BC
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionVertexNormalWS (MaterialExpressionVertexNormalWS_1)
+    .MaterialExpressionEditorX=-3080
+    .MaterialExpressionEditorY=824
+    .MaterialExpressionGuid=FC43670F4DC130434E321B99B293F46A
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionWorldPosition (MaterialExpressionWorldPosition_0)
+    .MaterialExpressionEditorX=-5070
+    .MaterialExpressionEditorY=3268
+    .MaterialExpressionGuid=7DEBA0DC4B32CA6A75B54DA8C6C08B51
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionWorldPosition (MaterialExpressionWorldPosition_1)
+    .MaterialExpressionEditorX=-448
+    .MaterialExpressionEditorY=2768
+    .MaterialExpressionGuid=899C7D2E4A8A7D54C6627E87E6ACEBC3
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionWorldPosition (MaterialExpressionWorldPosition_3)
+    .MaterialExpressionEditorX=2832
+    .MaterialExpressionEditorY=5008
+    .MaterialExpressionGuid=899C7D2E4A8A7D54C6627E87E6ACEBC3
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionWorldPosition (MaterialExpressionWorldPosition_4)
+    .MaterialExpressionEditorX=-3396
+    .MaterialExpressionEditorY=3208
+    .MaterialExpressionGuid=BF377B9F41E74D02F152E0808AE0DCA9
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionWorldPosition (MaterialExpressionWorldPosition_5)
+    .MaterialExpressionEditorX=-3384
+    .MaterialExpressionEditorY=4960
+    .MaterialExpressionGuid=899C7D2E4A8A7D54C6627E87E6ACEBC3
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionWorldPosition (MaterialExpressionWorldPosition_6)
+    .MaterialExpressionEditorX=2728
+    .MaterialExpressionEditorY=3452
+    .MaterialExpressionGuid=899C7D2E4A8A7D54C6627E87E6ACEBC3
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"
+  MaterialExpressionWorldPosition (MaterialExpressionWorldPosition_7)
+    .MaterialExpressionEditorX=-2980
+    .MaterialExpressionEditorY=1036
+    .MaterialExpressionGuid=899C7D2E4A8A7D54C6627E87E6ACEBC3
+    .Function="/Script/Engine.MaterialFunction'Foliage_Wind_Movement'"

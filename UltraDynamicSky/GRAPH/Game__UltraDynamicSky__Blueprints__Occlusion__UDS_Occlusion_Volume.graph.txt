@@ -1,0 +1,336 @@
+### /Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Volume
+  Blueprint (UDS_Occlusion_Volume)
+    .ParentClass="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/System/UDS_Volume_Actor.UDS_Volume_Actor_C'"
+    .BlueprintDescription="Used to manually direct the occlusion systems on Ultra Dynamic Sky and Ultra Dynamic Weather. See the Player Occlusion category on UDS for more settings relating to how these are sampled."
+    .BlueprintCategory="UltraDynamicSky|Occlusion"
+    .HideCategories(0)="Replication"
+    .HideCategories(1)="Rendering"
+    .HideCategories(2)="Collision"
+    .HideCategories(3)="HLOD"
+    .HideCategories(4)="Transformation"
+    .HideCategories(5)="Input"
+    .HideCategories(6)="Cooking"
+    .HideCategories(7)="Physics"
+    .HideCategories(8)="Networking"
+    .BlueprintSystemVersion=2
+    .SimpleConstructionScript="/Script/Engine.SimpleConstructionScript'UDS_Occlusion_Volume_C:SimpleConstructionScript_0'"
+    .UbergraphPages(0)="/Script/Engine.EdGraph'EventGraph'"
+    .FunctionGraphs(0)="/Script/Engine.EdGraph'UserConstructionScript'"
+    .FunctionGraphs(1)="/Script/Engine.EdGraph'Configure Weather Particle Blocking'"
+    .FunctionGraphs(2)="/Script/Engine.EdGraph'Query Occlusion Multiplier'"
+    .FunctionGraphs(3)="/Script/Engine.EdGraph'📘 Player Occlusion'"
+    .InheritableComponentHandler="/Script/Engine.InheritableComponentHandler'UDS_Occlusion_Volume_C:InheritableComponentHandler'"
+    .NewVariables(0)=(VarName="Affects Sound Occlusion / Interior Adjusments",VarGuid=912548DD446C0CC590D245B23C9332C9,VarType=(PinCategory="bool"),FriendlyName="Affects Sound Occlusion / Interior Adjusments",Category=NSLOCTEXT("", "B34BEFBE42D3298D71993E966A6D408C", "Occlusion"),PropertyFlags=5,MetaDataArray=((DataKey="MultiLine",DataValue="true"),(DataKey="tooltip",DataValue="If this is enabled, being inside this volume will affect UDS\' Interior Adjustments and UDW\'s Sound Occlusion, as long as the Occlusion Sampling Mode is set to take these volumes into account."),(DataKey="ExposeOnSpawn",DataValue="true")))
+    .NewVariables(1)=(VarName="Occlusion Multiplier",VarGuid=A3C4A6E848752C734CF122845FEBDD7D,VarType=(PinCategory="real",PinSubCategory="double"),FriendlyName="Occlusion Multiplier",Category=NSLOCTEXT("", "7838962044EC12B63901E38A3F3BC882", "Occlusion"),PropertyFlags=5,MetaDataArray=((DataKey="UIMin",DataValue="0"),(DataKey="UIMax",DataValue="1"),(DataKey="ClampMin",DataValue="0"),(DataKey="ClampMax",DataValue="1"),(DataKey="tooltip",DataValue="The value that occlusion is multiplied by when inside the volume.")))
+    .NewVariables(2)=(VarName="Block Weather Particles",VarGuid=7BBAB68E445F26647FC3419AC21F3DBA,VarType=(PinCategory="bool"),FriendlyName="Block Weather Particles",Category=NSLOCTEXT("", "B34BEFBE42D3298D71993E966A6D408C", "Occlusion"),PropertyFlags=5,MetaDataArray=((DataKey="MultiLine",DataValue="true"),(DataKey="tooltip",DataValue="If this is enabled, the collision primitive will be automatically configred to block the channel selected on UDW for Weather Particle Collision Channel, so this volume will block rain/snow/dust/debris.\r\nNote if weather particle collision and player occlusion queries use the same trace channel (which they do by default) this option will negate the effect of Blend Radius and Occlusion Multiplier on this volume."),(DataKey="ExposeOnSpawn",DataValue="true")))
+    .CategorySorting(0)="Default"
+    .CategorySorting(1)="Shape"
+    .CategorySorting(2)="Occlusion"
+    .CategorySorting(3)="Replication"
+    .CategorySorting(4)="Rendering"
+    .CategorySorting(5)="Actor"
+    .CategorySorting(6)="Collision"
+    .CategorySorting(7)="HLOD"
+    .CategorySorting(8)="Transformation"
+    .CategorySorting(9)="Game"
+    .CategorySorting(10)="Input"
+    .CategorySorting(11)=""
+    .CategorySorting(12)="Event Graph"
+    .CategorySorting(13)="System"
+    .LastEditedDocuments(0)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Volume.UDS_Occlusion_Volume:EventGraph",SavedViewOffset=(X=-1131.964966,Y=-386.217926),SavedZoomAmount=1.000000)
+    .LastEditedDocuments(1)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Volume.UDS_Occlusion_Volume:Configure Weather Particle Blocking",SavedViewOffset=(X=-436.764771,Y=-282.383118),SavedZoomAmount=1.000000)
+    .LastEditedDocuments(2)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Volume.UDS_Occlusion_Volume:📘 Player Occlusion",SavedViewOffset=(X=-381.962097,Y=-506.598114),SavedZoomAmount=1.000000)
+    .LastEditedDocuments(3)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Volume.UDS_Occlusion_Volume:Query Occlusion Multiplier",SavedViewOffset=(X=-3448.769043,Y=-653.859070),SavedZoomAmount=0.750000)
+    .ComponentTemplateNameIndex=(("BoxComponent", 1),("SphereComponent", 1),("CapsuleComponent", 1))
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfo'SceneThumbnailInfo_0'"
+    .GeneratedClass="/Script/Engine.BlueprintGeneratedClass'UDS_Occlusion_Volume_C'"
+    .bLegacyNeedToPurgeSkelRefs=False
+    .BlueprintGuid=A674C49C43DCCF02F58E529B2FF91A9F
+  EdGraph (📘 Player Occlusion_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_1'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_TunnelBoundary'K2Node_TunnelBoundary_3'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_4347'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_15'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_TunnelBoundary'K2Node_TunnelBoundary_2'"
+    .Nodes(7)="/Script/BlueprintGraph.K2Node_DynamicCast'K2Node_DynamicCast_0'"
+    .Nodes(8)="/Script/BlueprintGraph.K2Node_TunnelBoundary'K2Node_TunnelBoundary_0'"
+    .Nodes(9)="/Script/BlueprintGraph.K2Node_TunnelBoundary'K2Node_TunnelBoundary_1'"
+    .GraphGuid=516956394614F7D8E874E7BFFF5C2825
+  K2Node_CallFunction (K2Node_CallFunction_0)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Round")
+    .NodePosX=684
+    .NodePosY=84
+    .bIsIntermediateNode=True
+    .NodeGuid=E4862C34421B29EF5D606D8E52A4589C
+    .bDefaultsToPureFunc=True
+  K2Node_DynamicCast (K2Node_DynamicCast_0)
+    .TargetType="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/System/Editor_UI/UDS_Utility_Opener_Interface.UDS_Utility_Opener_Interface_C'"
+    .PureState=Impure
+    .NodePosX=160
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=2007359497C93752A1299ADD94B2A296
+  K2Node_TunnelBoundary (K2Node_TunnelBoundary_3)
+    .NodePosX=-496
+    .NodePosY=-272
+    .bIsIntermediateNode=True
+    .NodeGuid=456B40D062F83D899E91DAF7133AA685
+  K2Node_TunnelBoundary (K2Node_TunnelBoundary_2)
+    .NodePosX=288
+    .NodePosY=-4
+    .bIsIntermediateNode=True
+    .NodeGuid=B4B317F9C3EC3B4A815EC82BC5E9A318
+  K2Node_TunnelBoundary (K2Node_TunnelBoundary_1)
+    .NodePosX=288
+    .NodePosY=-272
+    .bIsIntermediateNode=True
+    .NodeGuid=183C3919B6213DB28D4386D08DE42B52
+  K2Node_TunnelBoundary (K2Node_TunnelBoundary_0)
+    .NodePosX=288
+    .NodePosY=-272
+    .bIsIntermediateNode=True
+    .NodeGuid=0911491035FC3F268B44592D164645AC
+  K2Node_CallFunction (K2Node_CallFunction_4347)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetSystemLibrary'",MemberName="IsValid")
+    .NodePosX=-304
+    .NodePosY=-208
+    .NodeGuid=A30AA81440C8EAB13D4B33AEB64E9859
+  K2Node_IfThenElse (K2Node_IfThenElse_15)
+    .NodePosX=-16
+    .NodePosY=-272
+    .NodeGuid=4623B8A14B5A39FAEE284A8022D12E15
+  K2Node_Tunnel (K2Node_Tunnel_91)
+    .InputSinkNode="/Script/BlueprintGraph.K2Node_MacroInstance'UDS_Occlusion_Volume:📘 Player Occlusion_MERGED.K2Node_MacroInstance_0'"
+    .bCanHaveInputs=True
+    .NodePosX=288
+    .NodePosY=-272
+    .NodeGuid=25BB8F27486C272CD1228A9D682B1834
+  K2Node_Tunnel (K2Node_Tunnel_90)
+    .OutputSourceNode="/Script/BlueprintGraph.K2Node_MacroInstance'UDS_Occlusion_Volume:📘 Player Occlusion_MERGED.K2Node_MacroInstance_0'"
+    .bCanHaveOutputs=True
+    .MetaData=(ToolTip=NSLOCTEXT("", "C2A2C43144F43B04AD0E6EBF3956A75A", "Determines if an object is valid"),Category=NSLOCTEXT("", "A824D3BC4E8FDA956A0FB29E0E653805", "Utilities"))
+    .NodePosX=-496
+    .NodePosY=-272
+    .NodeGuid=AD5E251140C16EF1608BB3AADB3750EF
+  K2Node_Message (K2Node_Message_0)
+    .FunctionReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/System/Editor_UI/UDS_Utility_Opener_Interface.UDS_Utility_Opener_Interface_C'",MemberName="Open UDS Readme",MemberGuid=BD9190364A31595779AA87B65C10EC5B)
+    .NodePosX=620
+    .NodePosY=-20
+    .NodeGuid=72E235D546E13AC9893C12A3DED5AE01
+  K2Node_MacroInstance (K2Node_MacroInstance_0)
+    .MacroGraphReference=(MacroGraph="/Script/Engine.EdGraph'/Engine/EditorBlueprintResources/StandardMacros.StandardMacros:IsValid'",GraphBlueprint="/Script/Engine.Blueprint'/Engine/EditorBlueprintResources/StandardMacros.StandardMacros'",GraphGuid=64422BCD430703FF5CAEA8B79A32AA65)
+    .OutputSourceNode="/Script/BlueprintGraph.K2Node_Tunnel'UDS_Occlusion_Volume:📘 Player Occlusion_MERGED.K2Node_Tunnel_91'"
+    .InputSinkNode="/Script/BlueprintGraph.K2Node_Tunnel'UDS_Occlusion_Volume:📘 Player Occlusion_MERGED.K2Node_Tunnel_90'"
+    .NodePosX=288
+    .NodePosY=-4
+    .NodeGuid=D4E361E141B75F82FA2C31824E516270
+  K2Node_VariableGet (K2Node_VariableGet_1)
+    .VariableReference=(MemberName="Affects Sound Occlusion / Interior Adjusments",MemberGuid=912548DD446C0CC590D245B23C9332C9,bSelfContext=True)
+    .NodePosX=-3192
+    .NodePosY=132
+    .NodeGuid=F79354DE45219B63B07905BEFBE171B8
+  K2Node_FunctionEntry (K2Node_FunctionEntry_0)
+    .MetaData=(Category=NSLOCTEXT("", "47EDDE1E4CE8BD4904DB1DBF06BA632B", "Occlusion"),bCallInEditor=True)
+    .ExtraFlags=201850880
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.Actor'",MemberName="UserConstructionScript")
+    .bIsEditable=True
+    .NodePosX=1888
+    .NodePosY=-44
+    .NodeGuid=BAD4D763417D50CF685C08AE9D3A1BAE
+    .CustomGeneratedFunctionName="ExecuteUbergraph_UDS_Occlusion_Volume"
+    .bIsIntermediateNode=True
+  EdGraph (Query Occlusion Multiplier_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_1'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_2'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_21'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_3'"
+    .Nodes(7)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_24'"
+    .Nodes(8)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_4'"
+    .GraphGuid=0395C4D6448B82F0F00CA5A5DD6BE961
+  K2Node_CallFunction (K2Node_CallFunction_4)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Lerp")
+    .NodePosX=-1672
+    .NodePosY=72
+    .NodeGuid=456D40904A7E13486A8C878718C9D7ED
+  K2Node_VariableGet (K2Node_VariableGet_24)
+    .VariableReference=(MemberScope="Query Occlusion Multiplier",MemberName="Location")
+    .NodePosX=-2328
+    .NodePosY=112
+    .NodeGuid=A41E6C4E449637F3D70552A2078E98EA
+  K2Node_CallFunction (K2Node_CallFunction_3)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.PrimitiveComponent'",MemberName="SetCollisionResponseToChannel")
+    .NodePosX=1164
+    .NodePosY=-24
+    .NodeGuid=2BFF906348B7512815269EB888C87613
+  K2Node_VariableGet (K2Node_VariableGet_21)
+    .VariableReference=(MemberName="Occlusion Multiplier",MemberGuid=A3C4A6E848752C734CF122845FEBDD7D,bSelfContext=True)
+    .NodePosX=-1872
+    .NodePosY=128
+    .NodeGuid=D12A79F74C9214C0C810F9899B3A4528
+  K2Node_FunctionResult (K2Node_FunctionResult_1)
+    .FunctionReference=(MemberName="Query Occlusion Multiplier")
+    .bIsEditable=True
+    .NodePosX=-1368
+    .NodePosY=4
+    .NodeGuid=36B9CFCB44F04D886001B69EC9CB473C
+  K2Node_FunctionResult (K2Node_FunctionResult_2)
+    .FunctionReference=(MemberName="Query Occlusion Multiplier")
+    .bIsEditable=True
+    .NodePosX=-2540
+    .NodePosY=128
+    .NodeGuid=601FF35B454CF6A4E6E58D905621C9E1
+  K2Node_IfThenElse (K2Node_IfThenElse_0)
+    .NodePosX=-2776
+    .NodePosY=8
+    .NodeGuid=090829614F5B43715F7C038FA9DEFB76
+  EdGraph (Configure Weather Particle Blocking_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_4'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_1'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_3'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_2'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_CallMaterialParameterCollectionFunction'K2Node_CallMaterialParameterCollectionFunction_0'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(7)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(8)="/Script/BlueprintGraph.K2Node_CastByteToEnum'K2Node_CastByteToEnum_1'"
+    .Nodes(9)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .GraphGuid=A8921FE348887BF81D6F41B8F69839B5
+  K2Node_CastByteToEnum (K2Node_CastByteToEnum_1)
+    .Enum="/Script/CoreUObject.Enum'/Script/Engine.ECollisionChannel'"
+    .NodePosX=-1040
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=B97713349019366697ED34382FBBB1E2
+  K2Node_CallFunction (K2Node_CallFunction_2)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetNodeHelperLibrary'",MemberName="GetValidValue")
+    .NodePosX=-1280
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=1272A8B661C236B580284833D8E8E096
+  K2Node_CastByteToEnum (K2Node_CastByteToEnum_0)
+    .Enum="/Script/CoreUObject.Enum'/Script/Engine.ECollisionChannel'"
+    .bSafe=True
+    .NodePosX=1000
+    .NodePosY=112
+    .NodeGuid=3ED396DA436CAEE68F1C679FE0E532E1
+  K2Node_CallFunction (K2Node_CallFunction_1)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Conv_IntToByte")
+    .NodePosX=864
+    .NodePosY=108
+    .NodeGuid=0E250FBF46A23B4B52B9C8AA81418573
+  K2Node_CallMaterialParameterCollectionFunction (K2Node_CallMaterialParameterCollectionFunction_0)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMaterialLibrary'",MemberName="GetScalarParameterValue")
+    .NodePosX=240
+    .NodePosY=-8
+    .NodeGuid=D8988D5042F642B0F473ABA56781928E
+  K2Node_VariableGet (K2Node_VariableGet_2)
+    .VariableReference=(MemberName="Collision Component",MemberGuid=1FD3600C49E20752150843A2524E5379,bSelfContext=True)
+    .NodePosX=952
+    .NodePosY=48
+    .NodeGuid=17ED0BD946E72576CCB87887C3F62C80
+  K2Node_IfThenElse (K2Node_IfThenElse_1)
+    .NodePosX=40
+    .NodePosY=-8
+    .NodeGuid=BF504A2D45BF7AB396D8CA8592151DF5
+  K2Node_VariableGet (K2Node_VariableGet_4)
+    .VariableReference=(MemberName="Block Weather Particles",MemberGuid=7BBAB68E445F26647FC3419AC21F3DBA,bSelfContext=True)
+    .NodePosX=-184
+    .NodePosY=76
+    .NodeGuid=DAA8541D4FE07F0BD95FEA9B818D28E6
+  EdGraph (UserConstructionScript_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_6'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallParentFunction'K2Node_CallParentFunction_0'"
+    .bAllowDeletion=False
+    .GraphGuid=9C15A896425AE520003DF3AAC3818BAB
+  K2Node_CallParentFunction (K2Node_CallParentFunction_0)
+    .FunctionReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/System/UDS_Volume_Actor.UDS_Volume_Actor_C'",MemberName="UserConstructionScript",MemberGuid=9C15A896425AE520003DF3AAC3818BAB)
+    .NodePosX=2080
+    .NodePosY=-44
+    .NodeGuid=2C6A4474456C31A633FDBFB93FAE6AAF
+  K2Node_CallFunction (K2Node_CallFunction_6)
+    .FunctionReference=(MemberName="Configure Weather Particle Blocking",MemberGuid=A8921FE348887BF81D6F41B8F69839B5,bSelfContext=True)
+    .NodePosX=2344
+    .NodePosY=-60
+    .NodeGuid=24BAED304E3BE1C44823EE92B13928AE
+  EdGraph (ReceiveBeginPlay)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=B9C4961048E9F5729E07129DAFB72EBB
+  EdGraph (ExecuteUbergraph_UDS_Occlusion_Volume)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_Event'K2Node_Event_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .GraphGuid=34224F094C330AB5C2333E8CA17FBEC9
+  K2Node_Event (K2Node_Event_0)
+    .EventReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.Actor'",MemberName="ReceiveBeginPlay")
+    .bOverrideFunction=True
+    .NodePosX=-528
+    .NodePosY=176
+    .NodeGuid=91502B994F136AFA3C979096C57A7AB2
+  EdGraph (EdGraph_0)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_Tunnel'K2Node_Tunnel_90'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_Tunnel'K2Node_Tunnel_91'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_15'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_4347'"
+    .GraphGuid=64422BCD430703FF5CAEA8B79A32AA65
+  EdGraph (EventGraph)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_Event'K2Node_Event_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .bAllowDeletion=False
+    .GraphGuid=EC56A26F4E04B4F00CEF7885F28FF6F7
+  EdGraph (📘 Player Occlusion)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_1'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_MacroInstance'K2Node_MacroInstance_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_Message'K2Node_Message_0'"
+    .GraphGuid=516956394614F7D8E874E7BFFF5C2825
+  EdGraph (Query Occlusion Multiplier)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_1'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_2'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_21'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_3'"
+    .Nodes(7)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_24'"
+    .Nodes(8)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_4'"
+    .GraphGuid=0395C4D6448B82F0F00CA5A5DD6BE961
+  EdGraph (Configure Weather Particle Blocking)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_4'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_1'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_3'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_2'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_CallMaterialParameterCollectionFunction'K2Node_CallMaterialParameterCollectionFunction_0'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(7)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(8)="/Script/BlueprintGraph.K2Node_CastByteToEnum'K2Node_CastByteToEnum_0'"
+    .GraphGuid=A8921FE348887BF81D6F41B8F69839B5
+  EdGraph (UserConstructionScript)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_6'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallParentFunction'K2Node_CallParentFunction_0'"
+    .bAllowDeletion=False
+    .GraphGuid=9C15A896425AE520003DF3AAC3818BAB

@@ -1,0 +1,842 @@
+### /Game/UltraDynamicSky/Materials/Weather/Heat_Distortion
+  Material (Heat_Distortion)
+    .MaterialDomain=MD_PostProcess
+    .EditorX=1808
+    .EditorY=2000
+    .bCanMaskedBeAssumedOpaque=True
+    .bCastRayTracedShadows=False
+    .BlendableLocation=BL_SceneColorAfterDOF
+    .BlendableOutputAlpha=True
+    .PixelDepthOffsetMode=PDOM_Legacy
+    .StateId=053A6C5FA76E83C7952C38BD30F0EED1
+    .ReferencedTextureGuids(0)=307757E1458E615C7D97A39E32219707
+    .ReferencedTextureGuids(1)=2F8AA006438068BC53AB49891FC912D4
+    .EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'Heat_DistortionEditorOnlyData'"
+    .ReferencedDefaultTextures(0)="/Script/Engine.Texture2D'/Engine/EngineMaterials/Good64x64TilingNoiseHighFreq.Good64x64TilingNoiseHighFreq'"
+    .ReferencedDefaultTextures(1)="/Script/Engine.VolumeTexture'/Game/ENDEMIS/Weather/Clouds/3D_Cells_64.3D_Cells_64'"
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+    .ParameterOverviewExpansion=(("-12Global", True))
+    .LightingGuid=B3B01136457A1073BD27C6B63DFA57CD
+  MaterialEditorOnlyData (Heat_DistortionEditorOnlyData)
+    EmissiveColor          <- MaterialExpressionShadingPathSwitch
+    Opacity                <- MaterialExpressionComponentMask
+    ExpressionCollection   <- MaterialExpressionShadingPathSwitch
+    .EmissiveColor=(Expression="/Script/Engine.MaterialExpressionShadingPathSwitch'Heat_Distortion:MaterialExpressionShadingPathSwitch_0'")
+    .Opacity=(Expression="/Script/Engine.MaterialExpressionComponentMask'Heat_Distortion:MaterialExpressionComponentMask_0'")
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionShadingPathSwitch'Heat_Distortion:MaterialExpressionShadingPathSwitch_0'","/Script/Engine.MaterialExpressionComponentMask'Heat_Distortion:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionLinearInterpolate'Heat_Distortion:MaterialExpressionLinearInterpolate_3'","/Script/Engine.MaterialExpressionDivide'Heat_Distortion:MaterialExpressionDivide_2'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Heat_Distortion:MaterialExpressionMaterialFunctionCall_0'","/Script/Engine.MaterialExpressionMultiply'Heat_Distortion:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionSceneTexture'Heat_Distortion:MaterialExpressionSceneTexture_0'","/Script/Engine.MaterialExpressionSceneTexture'Heat_Distortion:MaterialExpressionSceneTexture_1'","/Script/Engine.MaterialExpressionScalarParameter'Heat_Distortion:MaterialExpressionScalarParameter_0'","/Script/Engine.MaterialExpressionScalarParameter'Heat_Distortion:MaterialExpressionScalarParameter_1'","/Script/Engine.MaterialExpressionScalarParameter'Heat_Distortion:MaterialExpressionScalarParameter_2'","/Script/Engine.MaterialExpressionScalarParameter'Heat_Distortion:MaterialExpressionScalarParameter_3'","/Script/Engine.MaterialExpressionScalarParameter'Heat_Distortion:MaterialExpressionScalarParameter_4'","/Script/Engine.MaterialExpressionWorldPosition'Heat_Distortion:MaterialExpressionWorldPosition_0'","/Script/Engine.MaterialExpressionCameraPositionWS'Heat_Distortion:MaterialExpressionCameraPositionWS_0'","/Script/Engine.MaterialExpressionSubtract'Heat_Distortion:MaterialExpressionSubtract_0'","/Script/Engine.MaterialExpressionNormalize'Heat_Distortion:MaterialExpressionNormalize_0'","/Script/Engine.MaterialExpressionLength'Heat_Distortion:MaterialExpressionLength_1'","/Script/Engine.MaterialExpressionSubtract'Heat_Distortion:MaterialExpressionSubtract_1'","/Script/Engine.MaterialExpressionDivide'Heat_Distortion:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionSaturate'Heat_Distortion:MaterialExpressionSaturate_0'","/Script/Engine.MaterialExpressionComponentMask'Heat_Distortion:MaterialExpressionComponentMask_1'","/Script/Engine.MaterialExpressionSaturate'Heat_Distortion:MaterialExpressionSaturate_1'","/Script/Engine.MaterialExpressionLinearInterpolate'Heat_Distortion:MaterialExpressionLinearInterpolate_1'","/Script/Engine.MaterialExpressionOneMinus'Heat_Distortion:MaterialExpressionOneMinus_0'","/Script/Engine.MaterialExpressionPower'Heat_Distortion:MaterialExpressionPower_0'","/Script/Engine.MaterialExpressionTextureSample'Heat_Distortion:MaterialExpressionTextureSample_0'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Heat_Distortion:MaterialExpressionNamedRerouteDeclaration_0'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Heat_Distortion:MaterialExpressionNamedRerouteUsage_0'","/Script/Engine.MaterialExpressionMultiply'Heat_Distortion:MaterialExpressionMultiply_1'","/Script/Engine.MaterialExpressionScalarParameter'Heat_Distortion:MaterialExpressionScalarParameter_6'","/Script/Engine.MaterialExpressionTime'Heat_Distortion:MaterialExpressionTime_0'","/Script/Engine.MaterialExpressionMultiply'Heat_Distortion:MaterialExpressionMultiply_2'","/Script/Engine.MaterialExpressionScalarParameter'Heat_Distortion:MaterialExpressionScalarParameter_7'","/Script/Engine.MaterialExpressionMultiply'Heat_Distortion:MaterialExpressionMultiply_3'","/Script/Engine.MaterialExpressionConstant3Vector'Heat_Distortion:MaterialExpressionConstant3Vector_0'","/Script/Engine.MaterialExpressionSubtract'Heat_Distortion:MaterialExpressionSubtract_2'","/Script/Engine.MaterialExpressionMultiply'Heat_Distortion:MaterialExpressionMultiply_4'","/Script/Engine.MaterialExpressionConstant3Vector'Heat_Distortion:MaterialExpressionConstant3Vector_1'","/Script/Engine.MaterialExpressionSubtract'Heat_Distortion:MaterialExpressionSubtract_3'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Heat_Distortion:MaterialExpressionNamedRerouteDeclaration_1'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Heat_Distortion:MaterialExpressionNamedRerouteUsage_1'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Heat_Distortion:MaterialExpressionNamedRerouteUsage_2'","/Script/Engine.MaterialExpressionMultiply'Heat_Distortion:MaterialExpressionMultiply_5'","/Script/Engine.MaterialExpressionTextureSample'Heat_Distortion:MaterialExpressionTextureSample_1'","/Script/Engine.MaterialExpressionLinearInterpolate'Heat_Distortion:MaterialExpressionLinearInterpolate_2'","/Script/Engine.MaterialExpressionSubtract'Heat_Distortion:MaterialExpressionSubtract_4'","/Script/Engine.MaterialExpressionComponentMask'Heat_Distortion:MaterialExpressionComponentMask_4'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Heat_Distortion:MaterialExpressionNamedRerouteDeclaration_2'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Heat_Distortion:MaterialExpressionNamedRerouteUsage_3'","/Script/Engine.MaterialExpressionMultiply'Heat_Distortion:MaterialExpressionMultiply_6'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Heat_Distortion:MaterialExpressionNamedRerouteDeclaration_4'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Heat_Distortion:MaterialExpressionNamedRerouteUsage_5'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Heat_Distortion:MaterialExpressionMaterialFunctionCall_2'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Heat_Distortion:MaterialExpressionNamedRerouteUsage_6'","/Script/Engine.MaterialExpressionConstant'Heat_Distortion:MaterialExpressionConstant_0'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Heat_Distortion:MaterialExpressionMaterialFunctionCall_3'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Heat_Distortion:MaterialExpressionNamedRerouteUsage_7'","/Script/Engine.MaterialExpressionConstant'Heat_Distortion:MaterialExpressionConstant_1'","/Script/Engine.MaterialExpressionAdd'Heat_Distortion:MaterialExpressionAdd_0'","/Script/Engine.MaterialExpressionAdd'Heat_Distortion:MaterialExpressionAdd_1'","/Script/Engine.MaterialExpressionScalarParameter'Heat_Distortion:MaterialExpressionScalarParameter_8'","/Script/Engine.MaterialExpressionScalarParameter'Heat_Distortion:MaterialExpressionScalarParameter_9'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Heat_Distortion:MaterialExpressionNamedRerouteDeclaration_3'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Heat_Distortion:MaterialExpressionNamedRerouteUsage_4'","/Script/Engine.MaterialExpressionScalarParameter'Heat_Distortion:MaterialExpressionScalarParameter_10'","/Script/Engine.MaterialExpressionScalarParameter'Heat_Distortion:MaterialExpressionScalarParameter_11'","/Script/Engine.MaterialExpressionScalarParameter'Heat_Distortion:MaterialExpressionScalarParameter_12'","/Script/Engine.MaterialExpressionScalarParameter'Heat_Distortion:MaterialExpressionScalarParameter_13'","/Script/Engine.MaterialExpressionComponentMask'Heat_Distortion:MaterialExpressionComponentMask_5'","/Script/Engine.MaterialExpressionComponentMask'Heat_Distortion:MaterialExpressionComponentMask_6'","/Script/Engine.MaterialExpressionComponentMask'Heat_Distortion:MaterialExpressionComponentMask_7'","/Script/Engine.MaterialExpressionAppendVector'Heat_Distortion:MaterialExpressionAppendVector_0'","/Script/Engine.MaterialExpressionAppendVector'Heat_Distortion:MaterialExpressionAppendVector_1'","/Script/Engine.MaterialExpressionScalarParameter'Heat_Distortion:MaterialExpressionScalarParameter_5'","/Script/Engine.MaterialExpressionMultiply'Heat_Distortion:MaterialExpressionMultiply_11'","/Script/Engine.MaterialExpressionComponentMask'Heat_Distortion:MaterialExpressionComponentMask_11'","/Script/Engine.MaterialExpressionComponentMask'Heat_Distortion:MaterialExpressionComponentMask_12'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Heat_Distortion:MaterialExpressionNamedRerouteDeclaration_5'","/Script/Engine.MaterialExpressionComponentMask'Heat_Distortion:MaterialExpressionComponentMask_13'","/Script/Engine.MaterialExpressionComponentMask'Heat_Distortion:MaterialExpressionComponentMask_14'","/Script/Engine.MaterialExpressionAppendVector'Heat_Distortion:MaterialExpressionAppendVector_3'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Heat_Distortion:MaterialExpressionNamedRerouteDeclaration_6'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Heat_Distortion:MaterialExpressionNamedRerouteUsage_12'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Heat_Distortion:MaterialExpressionNamedRerouteUsage_13'","/Script/Engine.MaterialExpressionScalarParameter'Heat_Distortion:MaterialExpressionScalarParameter_14'","/Script/Engine.MaterialExpressionMultiply'Heat_Distortion:MaterialExpressionMultiply_7'","/Script/Engine.MaterialExpressionScalarParameter'Heat_Distortion:MaterialExpressionScalarParameter_15'","/Script/Engine.MaterialExpressionReroute'Heat_Distortion:MaterialExpressionReroute_0'","/Script/Engine.MaterialExpressionReroute'Heat_Distortion:MaterialExpressionReroute_1'"),EditorComments=("/Script/Engine.MaterialExpressionComment'Heat_Distortion:MaterialExpressionComment_0'","/Script/Engine.MaterialExpressionComment'Heat_Distortion:MaterialExpressionComment_1'","/Script/Engine.MaterialExpressionComment'Heat_Distortion:MaterialExpressionComment_2'"))
+    .ParameterGroupData(0)=(GroupName="None")
+    .ParameterGroupData(1)=(GroupName="None")
+    .ParameterGroupData(2)=(GroupName="None")
+    .ParameterGroupData(3)=(GroupName="None")
+    .ParameterGroupData(4)=(GroupName="None")
+    .ParameterGroupData(5)=(GroupName="None")
+    .ParameterGroupData(6)=(GroupName="None")
+    .ParameterGroupData(7)=(GroupName="None")
+    .ParameterGroupData(8)=(GroupName="None")
+    .ParameterGroupData(9)=(GroupName="None")
+    .ParameterGroupData(10)=(GroupName="None")
+    .ParameterGroupData(11)=(GroupName="None")
+    .ParameterGroupData(12)=(GroupName="None")
+    .ParameterGroupData(13)=(GroupName="None")
+    .ParameterGroupData(14)=(GroupName="None")
+    .ParameterGroupData(15)=(GroupName="None")
+  MaterialExpressionAdd (MaterialExpressionAdd_0)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionAdd
+    .B=(Expression="/Script/Engine.MaterialExpressionAdd'Heat_Distortion:MaterialExpressionAdd_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Heat_Distortion:MaterialExpressionMaterialFunctionCall_0'")
+    .MaterialExpressionEditorX=748
+    .MaterialExpressionEditorY=1948
+    .MaterialExpressionGuid=FCDFBE474484AD730AEAAA92D5AB9D63
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionAdd (MaterialExpressionAdd_1)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Heat_Distortion:MaterialExpressionMaterialFunctionCall_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Heat_Distortion:MaterialExpressionMaterialFunctionCall_2'")
+    .MaterialExpressionEditorX=413
+    .MaterialExpressionEditorY=2265
+    .MaterialExpressionGuid=B64CA5434AA567DCF36AECB339D5332A
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_0)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Heat_Distortion:MaterialExpressionComponentMask_6'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Heat_Distortion:MaterialExpressionComponentMask_5'")
+    .MaterialExpressionEditorX=789
+    .MaterialExpressionEditorY=2361
+    .MaterialExpressionGuid=D77B367644A3AE8F22734D987F3731A5
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_1)
+    A                      <- MaterialExpressionAppendVector
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Heat_Distortion:MaterialExpressionComponentMask_7'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAppendVector'Heat_Distortion:MaterialExpressionAppendVector_0'")
+    .MaterialExpressionEditorX=1017
+    .MaterialExpressionEditorY=2361
+    .MaterialExpressionGuid=0B1A73AB4CFE18AE03EF45881E275B79
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_3)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Heat_Distortion:MaterialExpressionComponentMask_14'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Heat_Distortion:MaterialExpressionComponentMask_13'")
+    .MaterialExpressionEditorX=-1172
+    .MaterialExpressionEditorY=2556
+    .MaterialExpressionGuid=510E53314C9CD20EA9D7678F3A2AB37D
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionCameraPositionWS (MaterialExpressionCameraPositionWS_0)
+    .MaterialExpressionEditorX=-3480
+    .MaterialExpressionEditorY=1544
+    .MaterialExpressionGuid=F65AA1024519D492331F61BAB0828410
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionComment (MaterialExpressionComment_0)
+    .SizeX=2348
+    .SizeY=792
+    .Text="Mask with Distance and Angle"
+    .CommentColor=(R=0.347647,G=0.440248,B=1.000000,A=1.000000)
+    .FontSize=35
+    .MaterialExpressionEditorX=-3596
+    .MaterialExpressionEditorY=1132
+    .MaterialExpressionGuid=06F3C1374EB2E76E98365886F3E04AEF
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionComment (MaterialExpressionComment_1)
+    .SizeX=2856
+    .SizeY=912
+    .Text="Distortion"
+    .CommentColor=(R=0.589007,G=0.357705,B=1.000000,A=1.000000)
+    .FontSize=35
+    .MaterialExpressionEditorX=-3744
+    .MaterialExpressionEditorY=2128
+    .MaterialExpressionGuid=F58CDBCD47EF47C913B4F4AB2A071672
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionComment (MaterialExpressionComment_2)
+    .SizeX=2656
+    .SizeY=1444
+    .Text="Sample Scene Texture"
+    .CommentColor=(R=1.000000,G=0.743633,B=0.427936,A=1.000000)
+    .FontSize=35
+    .MaterialExpressionEditorX=-548
+    .MaterialExpressionEditorY=1612
+    .MaterialExpressionGuid=55CCAD3E4686061D7B4BA1AA70FB0486
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionSceneTexture
+    .A=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionSceneTexture'Heat_Distortion:MaterialExpressionSceneTexture_1'",Mask=1,MaskR=1,MaskG=1,MaskB=1,MaskA=1)
+    .MaterialExpressionEditorX=1585
+    .MaterialExpressionEditorY=2391
+    .MaterialExpressionGuid=63193A6B4C6ECD53D2858B9C04CD6044
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_1)
+    Input                  <- MaterialExpressionNamedRerouteDeclaration
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Heat_Distortion:MaterialExpressionNamedRerouteDeclaration_0'")
+    .MaterialExpressionEditorX=-2610
+    .MaterialExpressionEditorY=1453
+    .MaterialExpressionGuid=4C9B782F489593BA58EEF3B23FCF1A12
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_11)
+    Input                  <- MaterialExpressionMultiply
+    .R=True
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Heat_Distortion:MaterialExpressionMultiply_6'")
+    .MaterialExpressionEditorX=-1308
+    .MaterialExpressionEditorY=2276
+    .MaterialExpressionGuid=18B2F18244E6C1EE3339E5AFE9D2B285
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_12)
+    Input                  <- MaterialExpressionMultiply
+    .G=True
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Heat_Distortion:MaterialExpressionMultiply_6'")
+    .MaterialExpressionEditorX=-1308
+    .MaterialExpressionEditorY=2436
+    .MaterialExpressionGuid=18B2F18244E6C1EE3339E5AFE9D2B285
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_13)
+    Input                  <- MaterialExpressionMultiply
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Heat_Distortion:MaterialExpressionMultiply_6'")
+    .MaterialExpressionEditorX=-1308
+    .MaterialExpressionEditorY=2556
+    .MaterialExpressionGuid=18B2F18244E6C1EE3339E5AFE9D2B285
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_14)
+    Input                  <- MaterialExpressionMultiply
+    .R=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Heat_Distortion:MaterialExpressionMultiply_6'")
+    .MaterialExpressionEditorX=-1308
+    .MaterialExpressionEditorY=2656
+    .MaterialExpressionGuid=18B2F18244E6C1EE3339E5AFE9D2B285
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_4)
+    Input                  <- MaterialExpressionSceneTexture
+    .R=True
+    .G=True
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionSceneTexture'Heat_Distortion:MaterialExpressionSceneTexture_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1,MaskA=1)
+    .MaterialExpressionEditorX=-119
+    .MaterialExpressionEditorY=1737
+    .MaterialExpressionGuid=E43FFC344731D2B100CC91A6707DCEEE
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_5)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+    .R=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Heat_Distortion:MaterialExpressionMaterialFunctionCall_0'")
+    .MaterialExpressionEditorX=613
+    .MaterialExpressionEditorY=2293
+    .MaterialExpressionGuid=47D813EA4AC8F52C1C14E788C4DC496A
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_6)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Heat_Distortion:MaterialExpressionMaterialFunctionCall_2'")
+    .MaterialExpressionEditorX=613
+    .MaterialExpressionEditorY=2409
+    .MaterialExpressionGuid=47D813EA4AC8F52C1C14E788C4DC496A
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_7)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Heat_Distortion:MaterialExpressionMaterialFunctionCall_3'")
+    .MaterialExpressionEditorX=329
+    .MaterialExpressionEditorY=2653
+    .MaterialExpressionGuid=47D813EA4AC8F52C1C14E788C4DC496A
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionConstant (MaterialExpressionConstant_0)
+    .R=1.000000
+    .MaterialExpressionEditorX=-227
+    .MaterialExpressionEditorY=2329
+    .MaterialExpressionGuid=71ECDA9442F10ACE162B93A47238AA19
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionConstant (MaterialExpressionConstant_1)
+    .R=1.000000
+    .MaterialExpressionEditorX=-267
+    .MaterialExpressionEditorY=2717
+    .MaterialExpressionGuid=71ECDA9442F10ACE162B93A47238AA19
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionConstant3Vector (MaterialExpressionConstant3Vector_0)
+    .Constant=(R=0.200000,G=-0.350000,B=1.000000,A=0.000000)
+    .MaterialExpressionEditorX=-2753
+    .MaterialExpressionEditorY=2418
+    .MaterialExpressionGuid=9B9A7D9247F2EAEAB99499908C5418E8
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+    .bCollapsed=True
+  MaterialExpressionConstant3Vector (MaterialExpressionConstant3Vector_1)
+    .Constant=(R=-0.150000,G=0.180000,B=1.000000,A=0.000000)
+    .MaterialExpressionEditorX=-3041
+    .MaterialExpressionEditorY=2822
+    .MaterialExpressionGuid=9B9A7D9247F2EAEAB99499908C5418E8
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+    .bCollapsed=True
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Heat_Distortion:MaterialExpressionScalarParameter_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'Heat_Distortion:MaterialExpressionSubtract_1'")
+    .MaterialExpressionEditorX=-2218
+    .MaterialExpressionEditorY=1693
+    .MaterialExpressionGuid=511C03B340C1CDB03B10B68FCB759F9F
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionDivide (MaterialExpressionDivide_2)
+    A                      <- MaterialExpressionAdd
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Heat_Distortion:MaterialExpressionAdd_0'")
+    .ConstB=3.000000
+    .MaterialExpressionEditorX=1116
+    .MaterialExpressionEditorY=1948
+    .MaterialExpressionGuid=E5B68DD64B5F55CAFFB04CA59341194E
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionLength (MaterialExpressionLength_1)
+    Input                  <- MaterialExpressionSubtract
+    .Input=(Expression="/Script/Engine.MaterialExpressionSubtract'Heat_Distortion:MaterialExpressionSubtract_0'")
+    .MaterialExpressionEditorX=-3108
+    .MaterialExpressionEditorY=1560
+    .MaterialExpressionGuid=B1E84CAD45A791E815C4DDAD53537442
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_1)
+    A                      <- MaterialExpressionScalarParameter
+    B                      <- MaterialExpressionScalarParameter
+    Alpha                  <- MaterialExpressionPower
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Heat_Distortion:MaterialExpressionScalarParameter_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Heat_Distortion:MaterialExpressionScalarParameter_3'")
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionPower'Heat_Distortion:MaterialExpressionPower_0'")
+    .MaterialExpressionEditorX=-2058
+    .MaterialExpressionEditorY=1269
+    .MaterialExpressionGuid=3EEBA0134FC5DBEEEF40E7900A8703AB
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_2)
+    A                      <- MaterialExpressionTextureSample
+    B                      <- MaterialExpressionTextureSample
+    .B=(Expression="/Script/Engine.MaterialExpressionTextureSample'Heat_Distortion:MaterialExpressionTextureSample_1'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'Heat_Distortion:MaterialExpressionTextureSample_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .ConstAlpha=0.300000
+    .MaterialExpressionEditorX=-1904
+    .MaterialExpressionEditorY=2432
+    .MaterialExpressionGuid=BCE366924A1B37E913B6EEA10DF70FB9
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_3)
+    A                      <- MaterialExpressionDivide
+    B                      <- MaterialExpressionAppendVector
+    Alpha                  <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionAppendVector'Heat_Distortion:MaterialExpressionAppendVector_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'Heat_Distortion:MaterialExpressionDivide_2'")
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Heat_Distortion:MaterialExpressionScalarParameter_5'")
+    .MaterialExpressionEditorX=1369
+    .MaterialExpressionEditorY=2145
+    .MaterialExpressionGuid=116262464E2033C95174B69460EF8FFF
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_0)
+    FunctionInputs(0)      <- MaterialExpressionNamedRerouteUsage
+    FunctionInputs(2)      <- MaterialExpressionNamedRerouteUsage
+    FunctionInputs(3)      <- MaterialExpressionScalarParameter
+    FunctionInputs(4)      <- MaterialExpressionScalarParameter
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Heat_Distortion_Sample.Heat_Distortion_Sample'"
+    .FunctionInputs(0)=(ExpressionInputId=EB707C374D58C5DB44C6BA8D875163BF,Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Heat_Distortion:MaterialExpressionNamedRerouteUsage_3'",InputName="Undistorted Color"))
+    .FunctionInputs(1)=(ExpressionInputId=064B95A1483EA15DEFD329846C0E5F84,Input=(InputName="Scale Distort",Mask=1,MaskR=1,MaskG=1))
+    .FunctionInputs(2)=(ExpressionInputId=7C77190144369396BEDC988A7C6612A3,Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Heat_Distortion:MaterialExpressionNamedRerouteUsage_4'",InputName="Distort Vector"))
+    .FunctionInputs(3)=(ExpressionInputId=0B96E7C14A6B00635F7A42AF57112C5F,Input=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Heat_Distortion:MaterialExpressionScalarParameter_12'",InputName="Distance"))
+    .FunctionInputs(4)=(ExpressionInputId=35B9ABF34280A4C71AD52C8E601D3233,Input=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Heat_Distortion:MaterialExpressionScalarParameter_13'",InputName="Falloff"))
+    .FunctionOutputs(0)=(ExpressionOutputId=6DCCE0A448336C5FEB12628C5026E3A0,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-15
+    .MaterialExpressionEditorY=1949
+    .MaterialExpressionGuid=73CA6BD6401B04175D06DB80F2E9C037
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_2)
+    FunctionInputs(0)      <- MaterialExpressionNamedRerouteUsage
+    FunctionInputs(1)      <- MaterialExpressionConstant
+    FunctionInputs(2)      <- MaterialExpressionNamedRerouteUsage
+    FunctionInputs(3)      <- MaterialExpressionScalarParameter
+    FunctionInputs(4)      <- MaterialExpressionScalarParameter
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Heat_Distortion_Sample.Heat_Distortion_Sample'"
+    .FunctionInputs(0)=(ExpressionInputId=EB707C374D58C5DB44C6BA8D875163BF,Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Heat_Distortion:MaterialExpressionNamedRerouteUsage_6'",InputName="Undistorted Color"))
+    .FunctionInputs(1)=(ExpressionInputId=064B95A1483EA15DEFD329846C0E5F84,Input=(Expression="/Script/Engine.MaterialExpressionConstant'Heat_Distortion:MaterialExpressionConstant_0'",InputName="Scale Distort"))
+    .FunctionInputs(2)=(ExpressionInputId=7C77190144369396BEDC988A7C6612A3,Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Heat_Distortion:MaterialExpressionNamedRerouteUsage_12'",InputName="Distort Vector"))
+    .FunctionInputs(3)=(ExpressionInputId=0B96E7C14A6B00635F7A42AF57112C5F,Input=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Heat_Distortion:MaterialExpressionScalarParameter_10'",InputName="Distance"))
+    .FunctionInputs(4)=(ExpressionInputId=35B9ABF34280A4C71AD52C8E601D3233,Input=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Heat_Distortion:MaterialExpressionScalarParameter_11'",InputName="Falloff"))
+    .FunctionOutputs(0)=(ExpressionOutputId=6DCCE0A448336C5FEB12628C5026E3A0,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-23
+    .MaterialExpressionEditorY=2265
+    .MaterialExpressionGuid=73CA6BD6401B04175D06DB80F2E9C037
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_3)
+    FunctionInputs(0)      <- MaterialExpressionNamedRerouteUsage
+    FunctionInputs(1)      <- MaterialExpressionConstant
+    FunctionInputs(2)      <- MaterialExpressionNamedRerouteUsage
+    FunctionInputs(3)      <- MaterialExpressionScalarParameter
+    FunctionInputs(4)      <- MaterialExpressionScalarParameter
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Heat_Distortion_Sample.Heat_Distortion_Sample'"
+    .FunctionInputs(0)=(ExpressionInputId=EB707C374D58C5DB44C6BA8D875163BF,Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Heat_Distortion:MaterialExpressionNamedRerouteUsage_7'",InputName="Undistorted Color"))
+    .FunctionInputs(1)=(ExpressionInputId=064B95A1483EA15DEFD329846C0E5F84,Input=(Expression="/Script/Engine.MaterialExpressionConstant'Heat_Distortion:MaterialExpressionConstant_1'",InputName="Scale Distort"))
+    .FunctionInputs(2)=(ExpressionInputId=7C77190144369396BEDC988A7C6612A3,Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Heat_Distortion:MaterialExpressionNamedRerouteUsage_13'",InputName="Distort Vector"))
+    .FunctionInputs(3)=(ExpressionInputId=0B96E7C14A6B00635F7A42AF57112C5F,Input=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Heat_Distortion:MaterialExpressionScalarParameter_8'",InputName="Distance"))
+    .FunctionInputs(4)=(ExpressionInputId=35B9ABF34280A4C71AD52C8E601D3233,Input=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Heat_Distortion:MaterialExpressionScalarParameter_9'",InputName="Falloff"))
+    .FunctionOutputs(0)=(ExpressionOutputId=6DCCE0A448336C5FEB12628C5026E3A0,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=25
+    .MaterialExpressionEditorY=2657
+    .MaterialExpressionGuid=73CA6BD6401B04175D06DB80F2E9C037
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionLinearInterpolate
+    B                      <- MaterialExpressionSaturate
+    .B=(Expression="/Script/Engine.MaterialExpressionSaturate'Heat_Distortion:MaterialExpressionSaturate_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Heat_Distortion:MaterialExpressionLinearInterpolate_1'")
+    .MaterialExpressionEditorX=-1818
+    .MaterialExpressionEditorY=1381
+    .MaterialExpressionGuid=BBA6940A420188415E4FB7A38A0A90D5
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Heat_Distortion:MaterialExpressionScalarParameter_6'")
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Heat_Distortion:MaterialExpressionNamedRerouteUsage_0'")
+    .MaterialExpressionEditorX=-2944
+    .MaterialExpressionEditorY=2248
+    .MaterialExpressionGuid=AE7E8AA24A764BD8E659F987BDDF5CE1
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_11)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Heat_Distortion:MaterialExpressionScalarParameter_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Heat_Distortion:MaterialExpressionNamedRerouteUsage_5'")
+    .MaterialExpressionEditorX=-1580
+    .MaterialExpressionEditorY=2592
+    .MaterialExpressionGuid=AD79BD33449220419DD59C9D98F3D2E3
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_2)
+    A                      <- MaterialExpressionTime
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Heat_Distortion:MaterialExpressionScalarParameter_7'")
+    .A=(Expression="/Script/Engine.MaterialExpressionTime'Heat_Distortion:MaterialExpressionTime_0'")
+    .MaterialExpressionEditorX=-3345
+    .MaterialExpressionEditorY=2635
+    .MaterialExpressionGuid=E900EBFF426C72339FAA49A4A7EAA7A3
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_3)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    B                      <- MaterialExpressionConstant3Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant3Vector'Heat_Distortion:MaterialExpressionConstant3Vector_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Heat_Distortion:MaterialExpressionNamedRerouteUsage_2'")
+    .MaterialExpressionEditorX=-2509
+    .MaterialExpressionEditorY=2358
+    .MaterialExpressionGuid=AD684EF24E01FF0177F8B1A8D083C7BF
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_4)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    B                      <- MaterialExpressionConstant3Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant3Vector'Heat_Distortion:MaterialExpressionConstant3Vector_1'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Heat_Distortion:MaterialExpressionNamedRerouteUsage_1'")
+    .MaterialExpressionEditorX=-2793
+    .MaterialExpressionEditorY=2754
+    .MaterialExpressionGuid=AD684EF24E01FF0177F8B1A8D083C7BF
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_5)
+    A                      <- MaterialExpressionSubtract
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'Heat_Distortion:MaterialExpressionSubtract_3'")
+    .ConstB=5.200000
+    .MaterialExpressionEditorX=-2505
+    .MaterialExpressionEditorY=2642
+    .MaterialExpressionGuid=57C3B28F4C8485475A1679A2403DC185
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_6)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Heat_Distortion:MaterialExpressionMultiply_11'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'Heat_Distortion:MaterialExpressionSubtract_4'")
+    .MaterialExpressionEditorX=-1463
+    .MaterialExpressionEditorY=2434
+    .MaterialExpressionGuid=41F5DAC74A3FE77A6B137FA727B20037
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_7)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Heat_Distortion:MaterialExpressionScalarParameter_14'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Heat_Distortion:MaterialExpressionMultiply_0'")
+    .MaterialExpressionEditorX=-1600
+    .MaterialExpressionEditorY=1380
+    .MaterialExpressionGuid=F41569794DD7EB5112F9909EA76E3604
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_0)
+    Input                  <- MaterialExpressionNormalize
+    .Input=(Expression="/Script/Engine.MaterialExpressionNormalize'Heat_Distortion:MaterialExpressionNormalize_0'")
+    .Name="Camera Vector"
+    .NodeColor=(R=1.000000,G=0.234375,B=0.000000,A=1.000000)
+    .VariableGuid=15EEA3944683F056D4806F92E8D4C0DE
+    .MaterialExpressionEditorX=-2860
+    .MaterialExpressionEditorY=1452
+    .MaterialExpressionGuid=2CABCC9B4AD474BBDF232495C023BC53
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_1)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Heat_Distortion:MaterialExpressionMultiply_2'")
+    .Name="Local Time"
+    .NodeColor=(R=0.593750,G=1.000000,B=0.000000,A=1.000000)
+    .VariableGuid=5317F6EE47545DBA5F78749F7C64ADCB
+    .MaterialExpressionEditorX=-3217
+    .MaterialExpressionEditorY=2639
+    .MaterialExpressionGuid=96F917C944CFF41B4A05A1BA29BF26F4
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_2)
+    Input                  <- MaterialExpressionComponentMask
+    .Input=(Expression="/Script/Engine.MaterialExpressionComponentMask'Heat_Distortion:MaterialExpressionComponentMask_4'")
+    .Name="Undistorted Color"
+    .NodeColor=(R=1.000000,G=0.000000,B=0.773437,A=1.000000)
+    .VariableGuid=BE2640414DE5448E6629D1BE2A132F5D
+    .MaterialExpressionEditorX=85
+    .MaterialExpressionEditorY=1737
+    .MaterialExpressionGuid=7416667C4F8DD261C7B622BAF1BEEDE5
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_3)
+    Input                  <- MaterialExpressionComponentMask
+    .Input=(Expression="/Script/Engine.MaterialExpressionComponentMask'Heat_Distortion:MaterialExpressionComponentMask_11'")
+    .Name="Distort Vector A"
+    .NodeColor=(R=0.000000,G=0.671875,B=1.000000,A=1.000000)
+    .VariableGuid=421DBD884BD65DE8399E96808CCF7C0D
+    .MaterialExpressionEditorX=-1148
+    .MaterialExpressionEditorY=2276
+    .MaterialExpressionGuid=35AF01294A4189BCB32B3F93B4BFFC7A
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_4)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Heat_Distortion:MaterialExpressionMultiply_7'")
+    .Name="Intensity Mask"
+    .NodeColor=(R=0.242187,G=1.000000,B=0.000000,A=1.000000)
+    .VariableGuid=914BA3B84DC02646AA3C26A812AE356C
+    .MaterialExpressionEditorX=-1444
+    .MaterialExpressionEditorY=1380
+    .MaterialExpressionGuid=9B88DF8B4E731374AA2DB5BC3A3B2B29
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_5)
+    Input                  <- MaterialExpressionComponentMask
+    .Input=(Expression="/Script/Engine.MaterialExpressionComponentMask'Heat_Distortion:MaterialExpressionComponentMask_12'")
+    .Name="Distort Vector B"
+    .NodeColor=(R=0.710937,G=1.000000,B=0.000000,A=1.000000)
+    .VariableGuid=6468F9F34ECC84D50DF71BB8705E7266
+    .MaterialExpressionEditorX=-1156
+    .MaterialExpressionEditorY=2436
+    .MaterialExpressionGuid=741275E344776B4C7BABF0A35751F914
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_6)
+    Input                  <- MaterialExpressionAppendVector
+    .Input=(Expression="/Script/Engine.MaterialExpressionAppendVector'Heat_Distortion:MaterialExpressionAppendVector_3'")
+    .Name="Distort Vector C"
+    .NodeColor=(R=1.000000,G=0.000000,B=0.070312,A=1.000000)
+    .VariableGuid=4B511DB049C355127AA46B9BCF16B463
+    .MaterialExpressionEditorX=-1052
+    .MaterialExpressionEditorY=2556
+    .MaterialExpressionGuid=EA057FF94DD9FD80DB2FE99DEF4BD343
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_0)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Heat_Distortion:MaterialExpressionNamedRerouteDeclaration_0'"
+    .DeclarationGuid=15EEA3944683F056D4806F92E8D4C0DE
+    .MaterialExpressionEditorX=-3388
+    .MaterialExpressionEditorY=2248
+    .MaterialExpressionGuid=2932A5B0405F1FE38BAE4DB17F3EFC4B
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_1)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Heat_Distortion:MaterialExpressionNamedRerouteDeclaration_1'"
+    .DeclarationGuid=5317F6EE47545DBA5F78749F7C64ADCB
+    .MaterialExpressionEditorX=-2929
+    .MaterialExpressionEditorY=2758
+    .MaterialExpressionGuid=5619E247422CC48182640EB0EAE03D43
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_12)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Heat_Distortion:MaterialExpressionNamedRerouteDeclaration_5'"
+    .DeclarationGuid=6468F9F34ECC84D50DF71BB8705E7266
+    .MaterialExpressionEditorX=-224
+    .MaterialExpressionEditorY=2400
+    .MaterialExpressionGuid=29BB5FCF47657B8B018B46BD892BDB53
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_13)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Heat_Distortion:MaterialExpressionNamedRerouteDeclaration_6'"
+    .DeclarationGuid=4B511DB049C355127AA46B9BCF16B463
+    .MaterialExpressionEditorX=-236
+    .MaterialExpressionEditorY=2792
+    .MaterialExpressionGuid=DE106B664D0553CF645465A63923A069
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_2)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Heat_Distortion:MaterialExpressionNamedRerouteDeclaration_1'"
+    .DeclarationGuid=5317F6EE47545DBA5F78749F7C64ADCB
+    .MaterialExpressionEditorX=-2665
+    .MaterialExpressionEditorY=2358
+    .MaterialExpressionGuid=5619E247422CC48182640EB0EAE03D43
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_3)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Heat_Distortion:MaterialExpressionNamedRerouteDeclaration_2'"
+    .DeclarationGuid=BE2640414DE5448E6629D1BE2A132F5D
+    .MaterialExpressionEditorX=-243
+    .MaterialExpressionEditorY=1949
+    .MaterialExpressionGuid=74A4B87E4F2616F8D7CE1FA10C7DCED3
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_4)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Heat_Distortion:MaterialExpressionNamedRerouteDeclaration_3'"
+    .DeclarationGuid=421DBD884BD65DE8399E96808CCF7C0D
+    .MaterialExpressionEditorX=-215
+    .MaterialExpressionEditorY=2009
+    .MaterialExpressionGuid=22EC900A4FE7072148CA6EA6E7CDE2E9
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_5)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Heat_Distortion:MaterialExpressionNamedRerouteDeclaration_4'"
+    .DeclarationGuid=914BA3B84DC02646AA3C26A812AE356C
+    .MaterialExpressionEditorX=-1756
+    .MaterialExpressionEditorY=2560
+    .MaterialExpressionGuid=A47C262E4D54E16F1A60C1B8F4675720
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_6)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Heat_Distortion:MaterialExpressionNamedRerouteDeclaration_2'"
+    .DeclarationGuid=BE2640414DE5448E6629D1BE2A132F5D
+    .MaterialExpressionEditorX=-239
+    .MaterialExpressionEditorY=2265
+    .MaterialExpressionGuid=74A4B87E4F2616F8D7CE1FA10C7DCED3
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_7)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Heat_Distortion:MaterialExpressionNamedRerouteDeclaration_2'"
+    .DeclarationGuid=BE2640414DE5448E6629D1BE2A132F5D
+    .MaterialExpressionEditorX=-271
+    .MaterialExpressionEditorY=2653
+    .MaterialExpressionGuid=74A4B87E4F2616F8D7CE1FA10C7DCED3
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionNormalize (MaterialExpressionNormalize_0)
+    VectorInput            <- MaterialExpressionSubtract
+    .VectorInput=(Expression="/Script/Engine.MaterialExpressionSubtract'Heat_Distortion:MaterialExpressionSubtract_0'")
+    .MaterialExpressionEditorX=-3100
+    .MaterialExpressionEditorY=1452
+    .MaterialExpressionGuid=9E9ED1BF44A1FCDDA91C529F5C0B082E
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_0)
+    Input                  <- MaterialExpressionSaturate
+    .Input=(Expression="/Script/Engine.MaterialExpressionSaturate'Heat_Distortion:MaterialExpressionSaturate_1'")
+    .MaterialExpressionEditorX=-2362
+    .MaterialExpressionEditorY=1453
+    .MaterialExpressionGuid=F96059D946DD3F5BDA19E2981AA34FF6
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionPower (MaterialExpressionPower_0)
+    Base                   <- MaterialExpressionOneMinus
+    Exponent               <- MaterialExpressionScalarParameter
+    .Base=(Expression="/Script/Engine.MaterialExpressionOneMinus'Heat_Distortion:MaterialExpressionOneMinus_0'")
+    .Exponent=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Heat_Distortion:MaterialExpressionScalarParameter_15'")
+    .MaterialExpressionEditorX=-2266
+    .MaterialExpressionEditorY=1453
+    .MaterialExpressionGuid=E18939294D444F2B182587A3BA476838
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionReroute (MaterialExpressionReroute_0)
+    Input                  <- MaterialExpressionReroute
+    .Input=(Expression="/Script/Engine.MaterialExpressionReroute'Heat_Distortion:MaterialExpressionReroute_1'")
+    .MaterialExpressionEditorX=1352
+    .MaterialExpressionEditorY=1884
+    .MaterialExpressionGuid=EF411BBC49FFA80FA55475A66DBCDB6F
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionReroute (MaterialExpressionReroute_1)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+    .Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Heat_Distortion:MaterialExpressionMaterialFunctionCall_0'")
+    .MaterialExpressionEditorX=332
+    .MaterialExpressionEditorY=1880
+    .MaterialExpressionGuid=CC500A3340720D0820CDAB9C0BEA528D
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_0)
+    Input                  <- MaterialExpressionDivide
+    .Input=(Expression="/Script/Engine.MaterialExpressionDivide'Heat_Distortion:MaterialExpressionDivide_0'")
+    .MaterialExpressionEditorX=-2078
+    .MaterialExpressionEditorY=1693
+    .MaterialExpressionGuid=3408D6914499CAAE723475BCA7F840B7
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_1)
+    Input                  <- MaterialExpressionComponentMask
+    .Input=(Expression="/Script/Engine.MaterialExpressionComponentMask'Heat_Distortion:MaterialExpressionComponentMask_1'")
+    .MaterialExpressionEditorX=-2490
+    .MaterialExpressionEditorY=1453
+    .MaterialExpressionGuid=B108B53948A6F3FD76F0CC909EB3A76B
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_0)
+    .ParameterName="Scale_Distortion"
+    .DefaultValue=0.100000
+    .ExpressionGUID=D2FC7F7346703311DD67B6A351DA32FF
+    .MaterialExpressionEditorX=-1800
+    .MaterialExpressionEditorY=2656
+    .MaterialExpressionGuid=690073E34552388BFD1EB397A7C81FFB
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_1)
+    .ParameterName="Distance"
+    .DefaultValue=5000.000000
+    .ExpressionGUID=15D04F28452ABFB28685FBBBC8A3ADCF
+    .MaterialExpressionEditorX=-2830
+    .MaterialExpressionEditorY=1789
+    .MaterialExpressionGuid=35FFF9AD4F1ED1BF8851508D14E615E7
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_10)
+    .ParameterName="Distance"
+    .DefaultValue=5000.000000
+    .ExpressionGUID=23722BE24DADD0C4D17DAD92113B71CF
+    .MaterialExpressionEditorX=-279
+    .MaterialExpressionEditorY=2477
+    .MaterialExpressionGuid=35FFF9AD4F1ED1BF8851508D14E615E7
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_11)
+    .ParameterName="Falloff"
+    .DefaultValue=30000.000000
+    .ExpressionGUID=0B46C7DE41F407ABA12FDAB29171DD56
+    .MaterialExpressionEditorX=-287
+    .MaterialExpressionEditorY=2561
+    .MaterialExpressionGuid=2239942048D16D88E5C4CA90B1AC57BB
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_12)
+    .ParameterName="Distance"
+    .DefaultValue=5000.000000
+    .ExpressionGUID=2693D1604CEA93B003C35F8F21CD4724
+    .MaterialExpressionEditorX=-279
+    .MaterialExpressionEditorY=2081
+    .MaterialExpressionGuid=35FFF9AD4F1ED1BF8851508D14E615E7
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_13)
+    .ParameterName="Falloff"
+    .DefaultValue=30000.000000
+    .ExpressionGUID=CD857C234D03727CDB4873A23276C6FD
+    .MaterialExpressionEditorX=-287
+    .MaterialExpressionEditorY=2165
+    .MaterialExpressionGuid=2239942048D16D88E5C4CA90B1AC57BB
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_14)
+    .ParameterName="Effect Mask"
+    .DefaultValue=1.000000
+    .ExpressionGUID=3BEA6DC6428CC6BBA4973F89A6179A6B
+    .MaterialExpressionEditorX=-1808
+    .MaterialExpressionEditorY=1492
+    .MaterialExpressionGuid=19665027453F90CD666FBB8110453679
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_15)
+    .ParameterName="Horizon Exponent"
+    .DefaultValue=2.000000
+    .ExpressionGUID=9D15F97547C80389161FECADFD65B141
+    .MaterialExpressionEditorX=-2488
+    .MaterialExpressionEditorY=1560
+    .MaterialExpressionGuid=8BB844124451FF0DCB665282082B32BE
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_2)
+    .ParameterName="Falloff"
+    .DefaultValue=30000.000000
+    .ExpressionGUID=19D8B667414C1741CD1305AB34A51F0A
+    .MaterialExpressionEditorX=-2458
+    .MaterialExpressionEditorY=1793
+    .MaterialExpressionGuid=2239942048D16D88E5C4CA90B1AC57BB
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_3)
+    .ParameterName="Zenith Multiplier"
+    .ExpressionGUID=470AB0C64C953412DF0194B5D0398763
+    .MaterialExpressionEditorX=-2374
+    .MaterialExpressionEditorY=1229
+    .MaterialExpressionGuid=78BEA8674E9AA31B67CD14B14E5953B6
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_4)
+    .ParameterName="Horizon Multiplier"
+    .DefaultValue=1.000000
+    .ExpressionGUID=7B717920452E05B3C9D739BF2F8BD31A
+    .MaterialExpressionEditorX=-2378
+    .MaterialExpressionEditorY=1321
+    .MaterialExpressionGuid=CEFD3C3648AF0320B5CE94901CB09540
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_5)
+    .ParameterName="Chromatic Distortion"
+    .DefaultValue=0.500000
+    .ExpressionGUID=99CE2E8746A679F04142B3AC15ECD0B4
+    .MaterialExpressionEditorX=948
+    .MaterialExpressionEditorY=2196
+    .MaterialExpressionGuid=FE4C0B3A466564BFAA71D284C1C63BC8
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_6)
+    .ParameterName="Texture Tiling"
+    .DefaultValue=1.700000
+    .ExpressionGUID=310911C6426DAD4646DA6A90C5CB81EE
+    .MaterialExpressionEditorX=-3184
+    .MaterialExpressionEditorY=2336
+    .MaterialExpressionGuid=3AA2124342E76F7C48DAFE914540B305
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_7)
+    .ParameterName="Speed"
+    .DefaultValue=0.100000
+    .ExpressionGUID=FEA3972E43EF3441737218BB5E47097E
+    .MaterialExpressionEditorX=-3561
+    .MaterialExpressionEditorY=2719
+    .MaterialExpressionGuid=758B114046242F5E651318A9EDF93860
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_8)
+    .ParameterName="Distance"
+    .DefaultValue=5000.000000
+    .ExpressionGUID=DE6BE49C4F1FE312D1F59BB680EF6401
+    .MaterialExpressionEditorX=-288
+    .MaterialExpressionEditorY=2856
+    .MaterialExpressionGuid=35FFF9AD4F1ED1BF8851508D14E615E7
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_9)
+    .ParameterName="Falloff"
+    .DefaultValue=30000.000000
+    .ExpressionGUID=4EFBB44A44BA616FE08E63A8873C129D
+    .MaterialExpressionEditorX=-296
+    .MaterialExpressionEditorY=2940
+    .MaterialExpressionGuid=2239942048D16D88E5C4CA90B1AC57BB
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionSceneTexture (MaterialExpressionSceneTexture_0)
+    .SceneTextureId=PPI_PostProcessInput0
+    .MaterialExpressionEditorX=-439
+    .MaterialExpressionEditorY=1721
+    .MaterialExpressionGuid=C09EFEA743E4E387EBB344A2AC4DE3C6
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionSceneTexture (MaterialExpressionSceneTexture_1)
+    .SceneTextureId=PPI_PostProcessInput0
+    .MaterialExpressionEditorX=1309
+    .MaterialExpressionEditorY=2375
+    .MaterialExpressionGuid=C09EFEA743E4E387EBB344A2AC4DE3C6
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionShadingPathSwitch (MaterialExpressionShadingPathSwitch_0)
+    Default                <- MaterialExpressionLinearInterpolate
+    Inputs(2)              <- MaterialExpressionReroute
+    .Default=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Heat_Distortion:MaterialExpressionLinearInterpolate_3'")
+    .Inputs(2)=(Expression="/Script/Engine.MaterialExpressionReroute'Heat_Distortion:MaterialExpressionReroute_0'")
+    .MaterialExpressionEditorX=1548
+    .MaterialExpressionEditorY=2144
+    .MaterialExpressionGuid=F87DAF8741310BD386F902BE6683CCFF
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_0)
+    A                      <- MaterialExpressionWorldPosition
+    B                      <- MaterialExpressionCameraPositionWS
+    .B=(Expression="/Script/Engine.MaterialExpressionCameraPositionWS'Heat_Distortion:MaterialExpressionCameraPositionWS_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionWorldPosition'Heat_Distortion:MaterialExpressionWorldPosition_0'")
+    .MaterialExpressionEditorX=-3272
+    .MaterialExpressionEditorY=1452
+    .MaterialExpressionGuid=B4C3BDDF49D6ED4ECA0629B5F82B53EC
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_1)
+    A                      <- MaterialExpressionLength
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Heat_Distortion:MaterialExpressionScalarParameter_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionLength'Heat_Distortion:MaterialExpressionLength_1'")
+    .MaterialExpressionEditorX=-2554
+    .MaterialExpressionEditorY=1693
+    .MaterialExpressionGuid=D9F3C5C54BA5098ABF0E2A8327305B9F
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_2)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Heat_Distortion:MaterialExpressionMultiply_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Heat_Distortion:MaterialExpressionMultiply_1'")
+    .MaterialExpressionEditorX=-2393
+    .MaterialExpressionEditorY=2246
+    .MaterialExpressionGuid=FAEBC2884E03154C6E93539707877A2B
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_3)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Heat_Distortion:MaterialExpressionMultiply_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Heat_Distortion:MaterialExpressionMultiply_1'")
+    .MaterialExpressionEditorX=-2677
+    .MaterialExpressionEditorY=2642
+    .MaterialExpressionGuid=FAEBC2884E03154C6E93539707877A2B
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_4)
+    A                      <- MaterialExpressionLinearInterpolate
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Heat_Distortion:MaterialExpressionLinearInterpolate_2'")
+    .ConstB=0.500000
+    .MaterialExpressionEditorX=-1700
+    .MaterialExpressionEditorY=2432
+    .MaterialExpressionGuid=CBE23ED84EA717228E9742A28DD14B90
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_0)
+    Coordinates            <- MaterialExpressionSubtract
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.VolumeTexture'/Game/ENDEMIS/Weather/Clouds/3D_Cells_64.3D_Cells_64'"
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionSubtract'Heat_Distortion:MaterialExpressionSubtract_2'")
+    .MaterialExpressionEditorX=-2205
+    .MaterialExpressionEditorY=2246
+    .MaterialExpressionGuid=15B7CA7A4E7A214426A641AB7B90A2AE
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_1)
+    Coordinates            <- MaterialExpressionMultiply
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.VolumeTexture'/Game/ENDEMIS/Weather/Clouds/3D_Cells_64.3D_Cells_64'"
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionMultiply'Heat_Distortion:MaterialExpressionMultiply_5'")
+    .MaterialExpressionEditorX=-2301
+    .MaterialExpressionEditorY=2642
+    .MaterialExpressionGuid=15B7CA7A4E7A214426A641AB7B90A2AE
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionTime (MaterialExpressionTime_0)
+    .MaterialExpressionEditorX=-3521
+    .MaterialExpressionEditorY=2622
+    .MaterialExpressionGuid=5941474B443306A5465D5A965CBA1080
+    .Material="/Script/Engine.Material'Heat_Distortion'"
+  MaterialExpressionWorldPosition (MaterialExpressionWorldPosition_0)
+    .MaterialExpressionEditorX=-3512
+    .MaterialExpressionEditorY=1440
+    .MaterialExpressionGuid=C2A689774D40EB1DD94E54AE81EFAC51
+    .Material="/Script/Engine.Material'Heat_Distortion'"

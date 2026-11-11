@@ -1,0 +1,594 @@
+### /Game/UltraDynamicSky/Materials/Weather/Screen_Droplets
+  Material (Screen_Droplets)
+    .MaterialDomain=MD_PostProcess
+    .EditorX=1652
+    .EditorY=372
+    .bCanMaskedBeAssumedOpaque=True
+    .bCastRayTracedShadows=False
+    .BlendableOutputAlpha=True
+    .bDisablePreExposureScale=True
+    .PixelDepthOffsetMode=PDOM_Legacy
+    .bIsBlendable=False
+    .StateId=0A6E07B2409A14781D2AAA9CFE682F1B
+    .ReferencedTextureGuids(0)=307757E1458E615C7D97A39E32219707
+    .ReferencedTextureGuids(1)=9080AA1E47B0FE7B95E79A93A36D2556
+    .ReferencedTextureGuids(2)=DBBB281A456C6F47465570865AB0B206
+    .ReferencedTextureGuids(3)=F2A02B00490895A65AC248B2DD51816A
+    .EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'Screen_DropletsEditorOnlyData'"
+    .ReferencedDefaultTextures(0)="/Script/Engine.Texture2D'/Game/UltraDynamicSky/Textures/Weather/WaterDroplets_Small.WaterDroplets_Small'"
+    .ReferencedDefaultTextures(1)="/Script/Engine.Texture2D'/Game/UltraDynamicSky/Textures/Weather/Drips_Vertical_Mask.Drips_Vertical_Mask'"
+    .ReferencedDefaultTextures(2)="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_ParticleClouds.T_ParticleClouds'"
+    .ReferencedDefaultTextures(3)="/Script/Engine.Texture2D'/Engine/EngineMaterials/Good64x64TilingNoiseHighFreq.Good64x64TilingNoiseHighFreq'"
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+    .ParameterOverviewExpansion=(("-12Global", True))
+    .LightingGuid=8E5C9E974B53E21479A3B5A57FA5F2E2
+  MaterialEditorOnlyData (Screen_DropletsEditorOnlyData)
+    EmissiveColor          <- MaterialExpressionShadingPathSwitch
+    Opacity                <- MaterialExpressionComponentMask
+    ExpressionCollection   <- MaterialExpressionShadingPathSwitch
+    .BaseColor=(UseConstant=True,Constant=(R=0.501961,G=0.501961,B=0.501961,A=1.000000))
+    .Metallic=(UseConstant=True)
+    .Specular=(UseConstant=True)
+    .Roughness=(UseConstant=True)
+    .Anisotropy=(UseConstant=True)
+    .Normal=(UseConstant=True)
+    .Tangent=(UseConstant=True)
+    .EmissiveColor=(Expression="/Script/Engine.MaterialExpressionShadingPathSwitch'Screen_Droplets:MaterialExpressionShadingPathSwitch_0'")
+    .Opacity=(Expression="/Script/Engine.MaterialExpressionComponentMask'Screen_Droplets:MaterialExpressionComponentMask_0'")
+    .OpacityMask=(UseConstant=True)
+    .WorldPositionOffset=(UseConstant=True)
+    .Displacement=(UseConstant=True)
+    .SubsurfaceColor=(UseConstant=True)
+    .ClearCoat=(UseConstant=True)
+    .ClearCoatRoughness=(UseConstant=True)
+    .AmbientOcclusion=(UseConstant=True)
+    .Refraction=(UseConstant=True)
+    .CustomizedUVs(0)=(UseConstant=True)
+    .CustomizedUVs(1)=(UseConstant=True)
+    .CustomizedUVs(2)=(UseConstant=True)
+    .CustomizedUVs(3)=(UseConstant=True)
+    .CustomizedUVs(4)=(UseConstant=True)
+    .CustomizedUVs(5)=(UseConstant=True)
+    .CustomizedUVs(6)=(UseConstant=True)
+    .CustomizedUVs(7)=(UseConstant=True)
+    .PixelDepthOffset=(UseConstant=True)
+    .SurfaceThickness=(UseConstant=True)
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionShadingPathSwitch'Screen_Droplets:MaterialExpressionShadingPathSwitch_0'","/Script/Engine.MaterialExpressionComponentMask'Screen_Droplets:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Screen_Droplets:MaterialExpressionMaterialFunctionCall_2'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Screen_Droplets:MaterialExpressionMaterialFunctionCall_3'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Screen_Droplets:MaterialExpressionMaterialFunctionCall_4'","/Script/Engine.MaterialExpressionAdd'Screen_Droplets:MaterialExpressionAdd_0'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Screen_Droplets:MaterialExpressionMaterialFunctionCall_5'","/Script/Engine.MaterialExpressionAdd'Screen_Droplets:MaterialExpressionAdd_1'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Screen_Droplets:MaterialExpressionMaterialFunctionCall_6'","/Script/Engine.MaterialExpressionAdd'Screen_Droplets:MaterialExpressionAdd_2'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Screen_Droplets:MaterialExpressionMaterialFunctionCall_7'","/Script/Engine.MaterialExpressionAdd'Screen_Droplets:MaterialExpressionAdd_3'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Screen_Droplets:MaterialExpressionMaterialFunctionCall_8'","/Script/Engine.MaterialExpressionAdd'Screen_Droplets:MaterialExpressionAdd_4'","/Script/Engine.MaterialExpressionAdd'Screen_Droplets:MaterialExpressionAdd_5'","/Script/Engine.MaterialExpressionAdd'Screen_Droplets:MaterialExpressionAdd_6'","/Script/Engine.MaterialExpressionDivide'Screen_Droplets:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionScalarParameter'Screen_Droplets:MaterialExpressionScalarParameter_0'","/Script/Engine.MaterialExpressionAppendVector'Screen_Droplets:MaterialExpressionAppendVector_0'","/Script/Engine.MaterialExpressionAdd'Screen_Droplets:MaterialExpressionAdd_7'","/Script/Engine.MaterialExpressionMultiply'Screen_Droplets:MaterialExpressionMultiply_2'","/Script/Engine.MaterialExpressionScalarParameter'Screen_Droplets:MaterialExpressionScalarParameter_1'","/Script/Engine.MaterialExpressionTextureSample'Screen_Droplets:MaterialExpressionTextureSample_3'","/Script/Engine.MaterialExpressionPanner'Screen_Droplets:MaterialExpressionPanner_2'","/Script/Engine.MaterialExpressionTextureSample'Screen_Droplets:MaterialExpressionTextureSample_4'","/Script/Engine.MaterialExpressionComponentMask'Screen_Droplets:MaterialExpressionComponentMask_2'","/Script/Engine.MaterialExpressionAdd'Screen_Droplets:MaterialExpressionAdd_13'","/Script/Engine.MaterialExpressionMultiply'Screen_Droplets:MaterialExpressionMultiply_13'","/Script/Engine.MaterialExpressionConstant2Vector'Screen_Droplets:MaterialExpressionConstant2Vector_3'","/Script/Engine.MaterialExpressionDivide'Screen_Droplets:MaterialExpressionDivide_3'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Screen_Droplets:MaterialExpressionNamedRerouteDeclaration_0'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Screen_Droplets:MaterialExpressionNamedRerouteUsage_0'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Screen_Droplets:MaterialExpressionNamedRerouteDeclaration_1'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Screen_Droplets:MaterialExpressionNamedRerouteUsage_1'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Screen_Droplets:MaterialExpressionNamedRerouteUsage_2'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Screen_Droplets:MaterialExpressionNamedRerouteUsage_3'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Screen_Droplets:MaterialExpressionNamedRerouteUsage_4'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Screen_Droplets:MaterialExpressionNamedRerouteUsage_5'","/Script/Engine.MaterialExpressionSceneTexture'Screen_Droplets:MaterialExpressionSceneTexture_0'","/Script/Engine.MaterialExpressionAdd'Screen_Droplets:MaterialExpressionAdd_12'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Screen_Droplets:MaterialExpressionMaterialFunctionCall_1'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Screen_Droplets:MaterialExpressionMaterialFunctionCall_9'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Screen_Droplets:MaterialExpressionNamedRerouteUsage_6'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Screen_Droplets:MaterialExpressionNamedRerouteUsage_7'","/Script/Engine.MaterialExpressionReroute'Screen_Droplets:MaterialExpressionReroute_1'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Screen_Droplets:MaterialExpressionMaterialFunctionCall_10'","/Script/Engine.MaterialExpressionConstant2Vector'Screen_Droplets:MaterialExpressionConstant2Vector_0'","/Script/Engine.MaterialExpressionDivide'Screen_Droplets:MaterialExpressionDivide_1'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Screen_Droplets:MaterialExpressionMaterialFunctionCall_11'","/Script/Engine.MaterialExpressionConstant2Vector'Screen_Droplets:MaterialExpressionConstant2Vector_2'","/Script/Engine.MaterialExpressionTransform'Screen_Droplets:MaterialExpressionTransform_0'","/Script/Engine.MaterialExpressionConstant3Vector'Screen_Droplets:MaterialExpressionConstant3Vector_0'","/Script/Engine.MaterialExpressionComponentMask'Screen_Droplets:MaterialExpressionComponentMask_1'","/Script/Engine.MaterialExpressionArccosineFast'Screen_Droplets:MaterialExpressionArccosineFast_0'","/Script/Engine.MaterialExpressionDivide'Screen_Droplets:MaterialExpressionDivide_5'","/Script/Engine.MaterialExpressionAdd'Screen_Droplets:MaterialExpressionAdd_8'"),EditorComments=("/Script/Engine.MaterialExpressionComment'Screen_Droplets:MaterialExpressionComment_0'","/Script/Engine.MaterialExpressionComment'Screen_Droplets:MaterialExpressionComment_1'"))
+    .ParameterGroupData(0)=(GroupName="None")
+  MaterialExpressionAdd (MaterialExpressionAdd_0)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Screen_Droplets:MaterialExpressionMaterialFunctionCall_4'",OutputIndex=4)
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Screen_Droplets:MaterialExpressionAdd_12'")
+    .MaterialExpressionEditorX=-12
+    .MaterialExpressionEditorY=620
+    .MaterialExpressionGuid=85A326BC42A2CA2658EC4083A816D95B
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionAdd (MaterialExpressionAdd_1)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Screen_Droplets:MaterialExpressionMaterialFunctionCall_4'",OutputIndex=5)
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Screen_Droplets:MaterialExpressionAdd_12'")
+    .MaterialExpressionEditorX=-8
+    .MaterialExpressionEditorY=720
+    .MaterialExpressionGuid=85A326BC42A2CA2658EC4083A816D95B
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionAdd (MaterialExpressionAdd_12)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Screen_Droplets:MaterialExpressionMaterialFunctionCall_10'")
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Screen_Droplets:MaterialExpressionNamedRerouteUsage_0'")
+    .MaterialExpressionEditorX=-248
+    .MaterialExpressionEditorY=524
+    .MaterialExpressionGuid=2682D4C840259C722707E0A32B8EF36C
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionAdd (MaterialExpressionAdd_13)
+    A                      <- MaterialExpressionDivide
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Screen_Droplets:MaterialExpressionMultiply_13'")
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'Screen_Droplets:MaterialExpressionDivide_3'")
+    .MaterialExpressionEditorX=851
+    .MaterialExpressionEditorY=1250
+    .MaterialExpressionGuid=BF84C5ED4B77E4E265FEAFBDC89E4F1B
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionAdd (MaterialExpressionAdd_2)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Screen_Droplets:MaterialExpressionMaterialFunctionCall_4'",OutputIndex=6)
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Screen_Droplets:MaterialExpressionAdd_12'")
+    .MaterialExpressionEditorX=-12
+    .MaterialExpressionEditorY=812
+    .MaterialExpressionGuid=85A326BC42A2CA2658EC4083A816D95B
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionAdd (MaterialExpressionAdd_3)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Screen_Droplets:MaterialExpressionMaterialFunctionCall_4'",OutputIndex=7)
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Screen_Droplets:MaterialExpressionAdd_12'")
+    .MaterialExpressionEditorX=-8
+    .MaterialExpressionEditorY=900
+    .MaterialExpressionGuid=85A326BC42A2CA2658EC4083A816D95B
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionAdd (MaterialExpressionAdd_4)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Screen_Droplets:MaterialExpressionMaterialFunctionCall_6'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Screen_Droplets:MaterialExpressionMaterialFunctionCall_5'")
+    .MaterialExpressionEditorX=600
+    .MaterialExpressionEditorY=636
+    .MaterialExpressionGuid=7A7446B744BAE493A4683C98862B305D
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionAdd (MaterialExpressionAdd_5)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Screen_Droplets:MaterialExpressionMaterialFunctionCall_8'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Screen_Droplets:MaterialExpressionMaterialFunctionCall_7'")
+    .MaterialExpressionEditorX=616
+    .MaterialExpressionEditorY=812
+    .MaterialExpressionGuid=7A7446B744BAE493A4683C98862B305D
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionAdd (MaterialExpressionAdd_6)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionAdd
+    .B=(Expression="/Script/Engine.MaterialExpressionAdd'Screen_Droplets:MaterialExpressionAdd_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Screen_Droplets:MaterialExpressionAdd_4'")
+    .MaterialExpressionEditorX=704
+    .MaterialExpressionEditorY=716
+    .MaterialExpressionGuid=BABBF11941CEA7F78C8A22A9CB7B2365
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionAdd (MaterialExpressionAdd_7)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionAdd
+    .B=(Expression="/Script/Engine.MaterialExpressionAdd'Screen_Droplets:MaterialExpressionAdd_6'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Screen_Droplets:MaterialExpressionMaterialFunctionCall_2'")
+    .MaterialExpressionEditorX=824
+    .MaterialExpressionEditorY=692
+    .MaterialExpressionGuid=7A7446B744BAE493A4683C98862B305D
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionAdd (MaterialExpressionAdd_8)
+    A                      <- MaterialExpressionDivide
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'Screen_Droplets:MaterialExpressionDivide_5'")
+    .ConstB=0.750000
+    .MaterialExpressionEditorX=-429
+    .MaterialExpressionEditorY=1505
+    .MaterialExpressionGuid=822103344CE98C0880837DA2506E64C0
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_0)
+    A                      <- MaterialExpressionScalarParameter
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Screen_Droplets:MaterialExpressionScalarParameter_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Screen_Droplets:MaterialExpressionScalarParameter_0'")
+    .MaterialExpressionEditorX=-848
+    .MaterialExpressionEditorY=772
+    .MaterialExpressionGuid=3D0B99964A2F34995E72CFB492FCFB63
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionArccosineFast (MaterialExpressionArccosineFast_0)
+    Input                  <- MaterialExpressionComponentMask
+    .Input=(Expression="/Script/Engine.MaterialExpressionComponentMask'Screen_Droplets:MaterialExpressionComponentMask_1'")
+    .MaterialExpressionEditorX=-813
+    .MaterialExpressionEditorY=1505
+    .MaterialExpressionGuid=9FF775A4438F2C90D56937A333DF5706
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionComment (MaterialExpressionComment_0)
+    .SizeX=3240
+    .SizeY=628
+    .Text="Map Drips Texture"
+    .CommentColor=(R=0.479896,G=1.000000,B=0.503606,A=1.000000)
+    .MaterialExpressionEditorX=-1612
+    .MaterialExpressionEditorY=1136
+    .MaterialExpressionGuid=6ACB682F43182C2674484993DFC4A324
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionComment (MaterialExpressionComment_1)
+    .SizeX=2732
+    .SizeY=672
+    .Text="Drops Samples"
+    .CommentColor=(R=0.847556,G=0.454242,B=1.000000,A=1.000000)
+    .MaterialExpressionEditorX=-1215
+    .MaterialExpressionEditorY=362
+    .MaterialExpressionGuid=C0F2322B4C2170D65B5BEAB59AB2CD0F
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionSceneTexture
+    .A=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionSceneTexture'Screen_Droplets:MaterialExpressionSceneTexture_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1,MaskA=1)
+    .MaterialExpressionEditorX=1348
+    .MaterialExpressionEditorY=804
+    .MaterialExpressionGuid=1DC2E370442EECF029E021B2DD084FD4
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_1)
+    Input                  <- MaterialExpressionTransform
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionTransform'Screen_Droplets:MaterialExpressionTransform_0'")
+    .MaterialExpressionEditorX=-1013
+    .MaterialExpressionEditorY=1505
+    .MaterialExpressionGuid=0370886A4065AF0969BDF880F333BDD0
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_2)
+    Input                  <- MaterialExpressionTextureSample
+    .R=True
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionTextureSample'Screen_Droplets:MaterialExpressionTextureSample_4'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .MaterialExpressionEditorX=491
+    .MaterialExpressionEditorY=1322
+    .MaterialExpressionGuid=0C3DCD4143433A4777C48198C22E6211
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionConstant2Vector (MaterialExpressionConstant2Vector_0)
+    .MaterialExpressionEditorX=-960
+    .MaterialExpressionEditorY=616
+    .MaterialExpressionGuid=E391AB2D4EB9D32B98E4F6B3680FF981
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionConstant2Vector (MaterialExpressionConstant2Vector_2)
+    .R=0.500000
+    .G=0.500000
+    .MaterialExpressionEditorX=-436
+    .MaterialExpressionEditorY=1372
+    .MaterialExpressionGuid=32DAE3E24E46681BF6EBC089492A8B81
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionConstant2Vector (MaterialExpressionConstant2Vector_3)
+    .R=0.020000
+    .G=0.400000
+    .MaterialExpressionEditorX=539
+    .MaterialExpressionEditorY=1398
+    .MaterialExpressionGuid=C7A460B04873C0AEDD148CB0458EB4F1
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionConstant3Vector (MaterialExpressionConstant3Vector_0)
+    .Constant=(R=1.000000,G=0.000000,B=0.000000,A=0.000000)
+    .MaterialExpressionEditorX=-1504
+    .MaterialExpressionEditorY=1504
+    .MaterialExpressionGuid=4382DED447928AC3218A4DB3062D0119
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionAdd
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Screen_Droplets:MaterialExpressionAdd_7'")
+    .ConstB=5.000000
+    .MaterialExpressionEditorX=928
+    .MaterialExpressionEditorY=692
+    .MaterialExpressionGuid=1F49A9A14DD69410E8914FA63DDC307D
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionDivide (MaterialExpressionDivide_1)
+    A                      <- MaterialExpressionAppendVector
+    .A=(Expression="/Script/Engine.MaterialExpressionAppendVector'Screen_Droplets:MaterialExpressionAppendVector_0'")
+    .MaterialExpressionEditorX=-724
+    .MaterialExpressionEditorY=684
+    .MaterialExpressionGuid=775A3CC94C38FD6650CD7A88BEDE719F
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionDivide (MaterialExpressionDivide_3)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Screen_Droplets:MaterialExpressionMaterialFunctionCall_11'")
+    .ConstB=3.500000
+    .MaterialExpressionEditorX=91
+    .MaterialExpressionEditorY=1250
+    .MaterialExpressionGuid=C9953C48416C8E40392F79BEBB198F02
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionDivide (MaterialExpressionDivide_5)
+    A                      <- MaterialExpressionArccosineFast
+    .A=(Expression="/Script/Engine.MaterialExpressionArccosineFast'Screen_Droplets:MaterialExpressionArccosineFast_0'")
+    .ConstB=6.283186
+    .MaterialExpressionEditorX=-617
+    .MaterialExpressionEditorY=1505
+    .MaterialExpressionGuid=6C663471430210883AE1499E2FD9732F
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_1)
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Engine/Functions/Engine_MaterialFunctions02/Utility/DitherTemporalAA.DitherTemporalAA'"
+    .FunctionInputs(0)=(ExpressionInputId=982BCAE7401F814CDC0AE2955DEE46F3,Input=(OutputIndex=-1,InputName="Alpha Threshold"))
+    .FunctionInputs(1)=(ExpressionInputId=E8A932AF4299B0D6C16EDB8B1E912796,Input=(OutputIndex=-1,InputName="Random"))
+    .FunctionOutputs(0)=(ExpressionOutputId=9BC32B084665F3D2D59A90AA45CA8A9F,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-836
+    .MaterialExpressionEditorY=516
+    .MaterialExpressionGuid=5506373A4A95DAB93C17B1855DD9702F
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_10)
+    FunctionInputs(0)      <- MaterialExpressionDivide
+    FunctionInputs(1)      <- MaterialExpressionConstant2Vector
+    FunctionInputs(2)      <- MaterialExpressionMaterialFunctionCall
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Engine/Functions/Engine_MaterialFunctions02/Texturing/CustomRotator.CustomRotator'"
+    .FunctionInputs(0)=(ExpressionInputId=45DE7CC04BCC975C664A2AA5DA134FEF,Input=(Expression="/Script/Engine.MaterialExpressionDivide'Screen_Droplets:MaterialExpressionDivide_1'",InputName="UVs"))
+    .FunctionInputs(1)=(ExpressionInputId=9B6953874136DCE4D8E4E8878152CCCE,Input=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'Screen_Droplets:MaterialExpressionConstant2Vector_0'",InputName="Rotation Center",Mask=1,MaskR=1,MaskG=1))
+    .FunctionInputs(2)=(ExpressionInputId=D58F67D84CFD4C9D289810AEE4A3EBC8,Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Screen_Droplets:MaterialExpressionMaterialFunctionCall_1'",InputName="Rotation Angle (0-1)"))
+    .FunctionOutputs(0)=(ExpressionOutputId=35E8F8F94CC8CE3D65F114A234D0BD5E,Output=(OutputName="Rotated Values"))
+    .MaterialExpressionEditorX=-560
+    .MaterialExpressionEditorY=584
+    .MaterialExpressionGuid=21EF86C540395CEA366300A2BD588EE9
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+    .Outputs(0)=(OutputName="Rotated Values")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_11)
+    FunctionInputs(0)      <- MaterialExpressionNamedRerouteDeclaration
+    FunctionInputs(1)      <- MaterialExpressionConstant2Vector
+    FunctionInputs(2)      <- MaterialExpressionAdd
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Engine/Functions/Engine_MaterialFunctions02/Texturing/CustomRotator.CustomRotator'"
+    .FunctionInputs(0)=(ExpressionInputId=45DE7CC04BCC975C664A2AA5DA134FEF,Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Screen_Droplets:MaterialExpressionNamedRerouteDeclaration_0'",InputName="UVs"))
+    .FunctionInputs(1)=(ExpressionInputId=9B6953874136DCE4D8E4E8878152CCCE,Input=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'Screen_Droplets:MaterialExpressionConstant2Vector_2'",InputName="Rotation Center",Mask=1,MaskR=1,MaskG=1))
+    .FunctionInputs(2)=(ExpressionInputId=D58F67D84CFD4C9D289810AEE4A3EBC8,Input=(Expression="/Script/Engine.MaterialExpressionAdd'Screen_Droplets:MaterialExpressionAdd_8'",InputName="Rotation Angle (0-1)"))
+    .FunctionOutputs(0)=(ExpressionOutputId=35E8F8F94CC8CE3D65F114A234D0BD5E,Output=(OutputName="Rotated Values"))
+    .MaterialExpressionEditorX=-244
+    .MaterialExpressionEditorY=1252
+    .MaterialExpressionGuid=055786A04FE7BCDED3D7E28265F450F6
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+    .Outputs(0)=(OutputName="Rotated Values")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_2)
+    FunctionInputs(0)      <- MaterialExpressionNamedRerouteUsage
+    FunctionInputs(1)      <- MaterialExpressionAdd
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Screen_Droplet_Sample.Screen_Droplet_Sample'"
+    .FunctionInputs(0)=(ExpressionInputId=310FFDCF41909CDAF9051CA1714BAD8F,Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Screen_Droplets:MaterialExpressionNamedRerouteUsage_5'",InputName="Drips"))
+    .FunctionInputs(1)=(ExpressionInputId=2FCA4E844968D52351F587AE05B88D5A,Input=(Expression="/Script/Engine.MaterialExpressionAdd'Screen_Droplets:MaterialExpressionAdd_12'",InputName="UV"))
+    .FunctionOutputs(0)=(ExpressionOutputId=E8EF171F4A2C23F9F08D7EBF31A136AF,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=296
+    .MaterialExpressionEditorY=504
+    .MaterialExpressionGuid=AAAF9D6049F2A76B15D506AAD4C40EA9
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_3)
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Engine/Functions/Engine_MaterialFunctions02/Texturing/ScreenAlignedUVs.ScreenAlignedUVs'"
+    .FunctionInputs(0)=(ExpressionInputId=171B9A424E2AFE2A77A885B10D226783,Input=(OutputIndex=-1,InputName="Texture Dimensions"))
+    .FunctionOutputs(0)=(ExpressionOutputId=0B62F82A4407238F0BA4FE86805D8B50,Output=(OutputName="X 100%, Y 100%"))
+    .FunctionOutputs(1)=(ExpressionOutputId=454DEEEF4E56FE982167C3BFB1A643DB,Output=(OutputName="X 100%, Y Scale to Ratio"))
+    .FunctionOutputs(2)=(ExpressionOutputId=062C44A6472525194EA716AA80688F9D,Output=(OutputName="X Scale to Ratio, Y 100%"))
+    .MaterialExpressionEditorX=-1176
+    .MaterialExpressionEditorY=1192
+    .MaterialExpressionGuid=72A7F34344433AFD6A7F9AB117A5B47E
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+    .Outputs(0)=(OutputName="X 100%, Y 100%")
+    .Outputs(1)=(OutputName="X 100%, Y Scale to Ratio")
+    .Outputs(2)=(OutputName="X Scale to Ratio, Y 100%")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_4)
+    FunctionInputs(0)      <- MaterialExpressionAppendVector
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Engine/Functions/Engine_MaterialFunctions01/ImageAdjustment/BlurSampleOffsets.BlurSampleOffsets'"
+    .FunctionInputs(0)=(ExpressionInputId=921F6BFF4FA2F278E271D496CBECD681,Input=(Expression="/Script/Engine.MaterialExpressionAppendVector'Screen_Droplets:MaterialExpressionAppendVector_0'",InputName="OffsetAmount"))
+    .FunctionOutputs(0)=(ExpressionOutputId=9CDA70FC40389C3A8490C3A1A75C13AE,Output=(OutputName="0,1"))
+    .FunctionOutputs(1)=(ExpressionOutputId=1697BA66418D588F37CCC585DA88DD23,Output=(OutputName="1,0"))
+    .FunctionOutputs(2)=(ExpressionOutputId=94A022074B50AAF5B86E289EE6E7C3B0,Output=(OutputName="0,-1"))
+    .FunctionOutputs(3)=(ExpressionOutputId=0F558E7F4AF90A7880076082F32A3BDD,Output=(OutputName="-1,0"))
+    .FunctionOutputs(4)=(ExpressionOutputId=CCCD9FE246F5A3E1DC5E5382485BF4FE,Output=(OutputName="-.5,.5"))
+    .FunctionOutputs(5)=(ExpressionOutputId=C64FD8DA4F3F047C606C09A3265CEED4,Output=(OutputName=".5,.5"))
+    .FunctionOutputs(6)=(ExpressionOutputId=C47CB29F486375F73FCA1CA946AC417E,Output=(OutputName=".5,-.5"))
+    .FunctionOutputs(7)=(ExpressionOutputId=94D5C4C347CE5A1DE8EA6DB927249629,Output=(OutputName="-.5,-.5"))
+    .MaterialExpressionEditorX=-296
+    .MaterialExpressionEditorY=712
+    .MaterialExpressionGuid=EAF2F69B4F1E82C9E8504CAF4684AA86
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+    .Outputs(0)=(OutputName="0,1")
+    .Outputs(1)=(OutputName="1,0")
+    .Outputs(2)=(OutputName="0,-1")
+    .Outputs(3)=(OutputName="-1,0")
+    .Outputs(4)=(OutputName="-.5,.5")
+    .Outputs(5)=(OutputName=".5,.5")
+    .Outputs(6)=(OutputName=".5,-.5")
+    .Outputs(7)=(OutputName="-.5,-.5")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_5)
+    FunctionInputs(0)      <- MaterialExpressionNamedRerouteUsage
+    FunctionInputs(1)      <- MaterialExpressionAdd
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Screen_Droplet_Sample.Screen_Droplet_Sample'"
+    .FunctionInputs(0)=(ExpressionInputId=310FFDCF41909CDAF9051CA1714BAD8F,Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Screen_Droplets:MaterialExpressionNamedRerouteUsage_4'",InputName="Drips"))
+    .FunctionInputs(1)=(ExpressionInputId=2FCA4E844968D52351F587AE05B88D5A,Input=(Expression="/Script/Engine.MaterialExpressionAdd'Screen_Droplets:MaterialExpressionAdd_0'",InputName="UV"))
+    .FunctionOutputs(0)=(ExpressionOutputId=E8EF171F4A2C23F9F08D7EBF31A136AF,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=296
+    .MaterialExpressionEditorY=596
+    .MaterialExpressionGuid=AAAF9D6049F2A76B15D506AAD4C40EA9
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_6)
+    FunctionInputs(0)      <- MaterialExpressionNamedRerouteUsage
+    FunctionInputs(1)      <- MaterialExpressionAdd
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Screen_Droplet_Sample.Screen_Droplet_Sample'"
+    .FunctionInputs(0)=(ExpressionInputId=310FFDCF41909CDAF9051CA1714BAD8F,Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Screen_Droplets:MaterialExpressionNamedRerouteUsage_3'",InputName="Drips"))
+    .FunctionInputs(1)=(ExpressionInputId=2FCA4E844968D52351F587AE05B88D5A,Input=(Expression="/Script/Engine.MaterialExpressionAdd'Screen_Droplets:MaterialExpressionAdd_1'",InputName="UV"))
+    .FunctionOutputs(0)=(ExpressionOutputId=E8EF171F4A2C23F9F08D7EBF31A136AF,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=296
+    .MaterialExpressionEditorY=692
+    .MaterialExpressionGuid=AAAF9D6049F2A76B15D506AAD4C40EA9
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_7)
+    FunctionInputs(0)      <- MaterialExpressionNamedRerouteUsage
+    FunctionInputs(1)      <- MaterialExpressionAdd
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Screen_Droplet_Sample.Screen_Droplet_Sample'"
+    .FunctionInputs(0)=(ExpressionInputId=310FFDCF41909CDAF9051CA1714BAD8F,Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Screen_Droplets:MaterialExpressionNamedRerouteUsage_2'",InputName="Drips"))
+    .FunctionInputs(1)=(ExpressionInputId=2FCA4E844968D52351F587AE05B88D5A,Input=(Expression="/Script/Engine.MaterialExpressionAdd'Screen_Droplets:MaterialExpressionAdd_2'",InputName="UV"))
+    .FunctionOutputs(0)=(ExpressionOutputId=E8EF171F4A2C23F9F08D7EBF31A136AF,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=296
+    .MaterialExpressionEditorY=788
+    .MaterialExpressionGuid=AAAF9D6049F2A76B15D506AAD4C40EA9
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_8)
+    FunctionInputs(0)      <- MaterialExpressionNamedRerouteUsage
+    FunctionInputs(1)      <- MaterialExpressionAdd
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Screen_Droplet_Sample.Screen_Droplet_Sample'"
+    .FunctionInputs(0)=(ExpressionInputId=310FFDCF41909CDAF9051CA1714BAD8F,Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Screen_Droplets:MaterialExpressionNamedRerouteUsage_1'",InputName="Drips"))
+    .FunctionInputs(1)=(ExpressionInputId=2FCA4E844968D52351F587AE05B88D5A,Input=(Expression="/Script/Engine.MaterialExpressionAdd'Screen_Droplets:MaterialExpressionAdd_3'",InputName="UV"))
+    .FunctionOutputs(0)=(ExpressionOutputId=E8EF171F4A2C23F9F08D7EBF31A136AF,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=296
+    .MaterialExpressionEditorY=876
+    .MaterialExpressionGuid=AAAF9D6049F2A76B15D506AAD4C40EA9
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_9)
+    FunctionInputs(0)      <- MaterialExpressionNamedRerouteUsage
+    FunctionInputs(1)      <- MaterialExpressionNamedRerouteUsage
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Screen_Droplet_Sample.Screen_Droplet_Sample'"
+    .FunctionInputs(0)=(ExpressionInputId=310FFDCF41909CDAF9051CA1714BAD8F,Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Screen_Droplets:MaterialExpressionNamedRerouteUsage_6'",InputName="Drips"))
+    .FunctionInputs(1)=(ExpressionInputId=2FCA4E844968D52351F587AE05B88D5A,Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Screen_Droplets:MaterialExpressionNamedRerouteUsage_7'",InputName="UV"))
+    .FunctionOutputs(0)=(ExpressionOutputId=E8EF171F4A2C23F9F08D7EBF31A136AF,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=864
+    .MaterialExpressionEditorY=480
+    .MaterialExpressionGuid=AAAF9D6049F2A76B15D506AAD4C40EA9
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_13)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionConstant2Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'Screen_Droplets:MaterialExpressionConstant2Vector_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Screen_Droplets:MaterialExpressionComponentMask_2'")
+    .ConstB=0.020000
+    .MaterialExpressionEditorX=707
+    .MaterialExpressionEditorY=1322
+    .MaterialExpressionGuid=86337A884BF46200729ECAAA472DFEBC
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_2)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Screen_Droplets:MaterialExpressionScalarParameter_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Screen_Droplets:MaterialExpressionMaterialFunctionCall_3'",OutputIndex=2)
+    .MaterialExpressionEditorX=-508
+    .MaterialExpressionEditorY=1252
+    .MaterialExpressionGuid=7098EDF74A01AB93DC3713A6902E1E50
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_0)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Screen_Droplets:MaterialExpressionMultiply_2'")
+    .Name="Scaled UVs"
+    .NodeColor=(R=0.000000,G=1.000000,B=0.882813,A=1.000000)
+    .VariableGuid=0708187346939DC3E0ED26A0970101F9
+    .MaterialExpressionEditorX=-388
+    .MaterialExpressionEditorY=1252
+    .MaterialExpressionGuid=0C6731E84190AF8EA6800C8677410CE6
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_1)
+    Input                  <- MaterialExpressionTextureSample
+    .Input=(Expression="/Script/Engine.MaterialExpressionTextureSample'Screen_Droplets:MaterialExpressionTextureSample_3'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .Name="Drips Texture RGB"
+    .NodeColor=(R=0.242187,G=1.000000,B=0.000000,A=1.000000)
+    .VariableGuid=97D4594C411B37CC241297A105F13948
+    .MaterialExpressionEditorX=1405
+    .MaterialExpressionEditorY=1246
+    .MaterialExpressionGuid=83C1222E4DE981C5930294950F32BACC
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_0)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Screen_Droplets:MaterialExpressionNamedRerouteDeclaration_0'"
+    .DeclarationGuid=0708187346939DC3E0ED26A0970101F9
+    .MaterialExpressionEditorX=-384
+    .MaterialExpressionEditorY=524
+    .MaterialExpressionGuid=716DEDB9442BE1D39D7050B9254E914F
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_1)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Screen_Droplets:MaterialExpressionNamedRerouteDeclaration_1'"
+    .DeclarationGuid=97D4594C411B37CC241297A105F13948
+    .MaterialExpressionEditorX=92
+    .MaterialExpressionEditorY=876
+    .MaterialExpressionGuid=B009B2554FA4CBAF976454AC980836BB
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_2)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Screen_Droplets:MaterialExpressionNamedRerouteDeclaration_1'"
+    .DeclarationGuid=97D4594C411B37CC241297A105F13948
+    .MaterialExpressionEditorX=92
+    .MaterialExpressionEditorY=788
+    .MaterialExpressionGuid=B009B2554FA4CBAF976454AC980836BB
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_3)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Screen_Droplets:MaterialExpressionNamedRerouteDeclaration_1'"
+    .DeclarationGuid=97D4594C411B37CC241297A105F13948
+    .MaterialExpressionEditorX=92
+    .MaterialExpressionEditorY=688
+    .MaterialExpressionGuid=B009B2554FA4CBAF976454AC980836BB
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_4)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Screen_Droplets:MaterialExpressionNamedRerouteDeclaration_1'"
+    .DeclarationGuid=97D4594C411B37CC241297A105F13948
+    .MaterialExpressionEditorX=92
+    .MaterialExpressionEditorY=596
+    .MaterialExpressionGuid=B009B2554FA4CBAF976454AC980836BB
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_5)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Screen_Droplets:MaterialExpressionNamedRerouteDeclaration_1'"
+    .DeclarationGuid=97D4594C411B37CC241297A105F13948
+    .MaterialExpressionEditorX=92
+    .MaterialExpressionEditorY=500
+    .MaterialExpressionGuid=B009B2554FA4CBAF976454AC980836BB
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_6)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Screen_Droplets:MaterialExpressionNamedRerouteDeclaration_1'"
+    .DeclarationGuid=97D4594C411B37CC241297A105F13948
+    .MaterialExpressionEditorX=660
+    .MaterialExpressionEditorY=476
+    .MaterialExpressionGuid=B009B2554FA4CBAF976454AC980836BB
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_7)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Screen_Droplets:MaterialExpressionNamedRerouteDeclaration_0'"
+    .DeclarationGuid=0708187346939DC3E0ED26A0970101F9
+    .MaterialExpressionEditorX=696
+    .MaterialExpressionEditorY=540
+    .MaterialExpressionGuid=716DEDB9442BE1D39D7050B9254E914F
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionPanner (MaterialExpressionPanner_2)
+    Coordinate             <- MaterialExpressionAdd
+    .Coordinate=(Expression="/Script/Engine.MaterialExpressionAdd'Screen_Droplets:MaterialExpressionAdd_13'")
+    .SpeedX=-0.001000
+    .SpeedY=-0.300000
+    .bFractionalPart=True
+    .MaterialExpressionEditorX=956
+    .MaterialExpressionEditorY=1248
+    .MaterialExpressionGuid=D5007B814C42F7802E10448DAD28B6CD
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionReroute (MaterialExpressionReroute_1)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+    .Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Screen_Droplets:MaterialExpressionMaterialFunctionCall_9'")
+    .MaterialExpressionEditorX=1172
+    .MaterialExpressionEditorY=512
+    .MaterialExpressionGuid=DF9C10D348F9243BF8616E838B1B4D07
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_0)
+    .ParameterName="Blur Amount"
+    .DefaultValue=0.002000
+    .ExpressionGUID=04B471C345452068DEBCD585B62AD0D5
+    .MaterialExpressionEditorX=-1096
+    .MaterialExpressionEditorY=776
+    .MaterialExpressionGuid=7D10DE38440C41E5F35F7E86C30C59EF
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_1)
+    .ParameterName="Droplet Tiling"
+    .DefaultValue=1.000000
+    .ExpressionGUID=7ABD1481481DD2A1B1055DB6A1D0C06B
+    .MaterialExpressionEditorX=-727
+    .MaterialExpressionEditorY=1330
+    .MaterialExpressionGuid=B573518A446405ABBAD836A52C5F0981
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionSceneTexture (MaterialExpressionSceneTexture_0)
+    .SceneTextureId=PPI_PostProcessInput0
+    .MaterialExpressionEditorX=1084
+    .MaterialExpressionEditorY=788
+    .MaterialExpressionGuid=9605CD6349CECBEA3C57C6B848C97DC7
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionShadingPathSwitch (MaterialExpressionShadingPathSwitch_0)
+    Default                <- MaterialExpressionDivide
+    Inputs(2)              <- MaterialExpressionReroute
+    .Default=(Expression="/Script/Engine.MaterialExpressionDivide'Screen_Droplets:MaterialExpressionDivide_0'")
+    .Inputs(2)=(Expression="/Script/Engine.MaterialExpressionReroute'Screen_Droplets:MaterialExpressionReroute_1'")
+    .MaterialExpressionEditorX=1280
+    .MaterialExpressionEditorY=524
+    .MaterialExpressionGuid=3FEFD4B04953EC32643BC29F3A681F29
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_3)
+    Coordinates            <- MaterialExpressionPanner
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.Texture2D'/Game/UltraDynamicSky/Textures/Weather/Drips_Vertical_Mask.Drips_Vertical_Mask'"
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionPanner'Screen_Droplets:MaterialExpressionPanner_2'")
+    .MaterialExpressionEditorX=1188
+    .MaterialExpressionEditorY=1248
+    .MaterialExpressionGuid=1BD535AA45C25AC882BFD2A78B77161A
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_4)
+    Coordinates            <- MaterialExpressionDivide
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_ParticleClouds.T_ParticleClouds'"
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionDivide'Screen_Droplets:MaterialExpressionDivide_3'")
+    .ConstMipValue=1
+    .MaterialExpressionEditorX=251
+    .MaterialExpressionEditorY=1322
+    .MaterialExpressionGuid=5606AFE346C559B66F66C686E9E0D623
+    .Material="/Script/Engine.Material'Screen_Droplets'"
+  MaterialExpressionTransform (MaterialExpressionTransform_0)
+    Input                  <- MaterialExpressionConstant3Vector
+    .Input=(Expression="/Script/Engine.MaterialExpressionConstant3Vector'Screen_Droplets:MaterialExpressionConstant3Vector_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .TransformSourceType=TRANSFORMSOURCE_Camera
+    .MaterialExpressionEditorX=-1261
+    .MaterialExpressionEditorY=1489
+    .MaterialExpressionGuid=5A8F3D0A4D1D278FFEB95A9C56E78113
+    .Material="/Script/Engine.Material'Screen_Droplets'"

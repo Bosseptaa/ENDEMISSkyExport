@@ -1,0 +1,350 @@
+### /Game/UltraDynamicSky/Blueprints/System/Editor_UI/Editor_Materials/Stepped_Mesh_Yaw
+  MaterialFunction (Stepped_Mesh_Yaw)
+    DependentFunctionExpressionCandidates(0) <- MaterialExpressionMaterialFunctionCall
+    DependentFunctionExpressionCandidates(1) <- MaterialExpressionMaterialFunctionCall
+    DependentFunctionExpressionCandidates(2) <- MaterialExpressionMaterialFunctionCall
+    DependentFunctionExpressionCandidates(3) <- MaterialExpressionMaterialFunctionCall
+    .DependentFunctionExpressionCandidates(0)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_1'"
+    .DependentFunctionExpressionCandidates(1)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_2'"
+    .DependentFunctionExpressionCandidates(2)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_5'"
+    .DependentFunctionExpressionCandidates(3)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_0'"
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'Stepped_Mesh_YawEditorOnlyData'"
+    .StateId=086E78904DC5F2905D328B9B5BB4CAE5
+    .CombinedOutputTypes=15
+  MaterialExpressionWorldPosition (MaterialExpressionWorldPosition_2)
+    .MaterialExpressionEditorX=-232
+    .MaterialExpressionEditorY=456
+    .MaterialExpressionGuid=8AFD7F2B4B7B9487EA3D58B252CE370B
+    .Function="/Script/Engine.MaterialFunction'Stepped_Mesh_Yaw'"
+  MaterialExpressionWorldPosition (MaterialExpressionWorldPosition_1)
+    .MaterialExpressionEditorX=-1700
+    .MaterialExpressionEditorY=140
+    .MaterialExpressionGuid=4B8910D74EA1C256D856D4B70C4C9A9C
+    .Function="/Script/Engine.MaterialFunction'Stepped_Mesh_Yaw'"
+  MaterialExpressionVertexNormalWS (MaterialExpressionVertexNormalWS_1)
+    .MaterialExpressionEditorX=-688
+    .MaterialExpressionEditorY=980
+    .MaterialExpressionGuid=05844431473368F7C7E155B66AED951F
+    .Function="/Script/Engine.MaterialFunction'Stepped_Mesh_Yaw'"
+  MaterialExpressionVertexNormalWS (MaterialExpressionVertexNormalWS_0)
+    .MaterialExpressionEditorX=-1080
+    .MaterialExpressionEditorY=800
+    .MaterialExpressionGuid=070DF61143A0AB6673EC4A97C6A8DCA9
+    .Function="/Script/Engine.MaterialFunction'Stepped_Mesh_Yaw'"
+  MaterialExpressionTransform (MaterialExpressionTransform_0)
+    Input                  <- MaterialExpressionConstant3Vector
+    .Input=(Expression="/Script/Engine.MaterialExpressionConstant3Vector'Stepped_Mesh_Yaw:MaterialExpressionConstant3Vector_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .TransformSourceType=TRANSFORMSOURCE_Local
+    .MaterialExpressionEditorX=-1816
+    .MaterialExpressionEditorY=944
+    .MaterialExpressionGuid=05D53FB44598123FAA0BE4BAF3C5FF69
+    .Function="/Script/Engine.MaterialFunction'Stepped_Mesh_Yaw'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_5)
+    A                      <- MaterialExpressionFrac
+    .A=(Expression="/Script/Engine.MaterialExpressionFrac'Stepped_Mesh_Yaw:MaterialExpressionFrac_0'")
+    .ConstB=0.500000
+    .MaterialExpressionEditorX=-2224
+    .MaterialExpressionEditorY=820
+    .MaterialExpressionGuid=25FDDAEF41778FF75E28159DA68FFD2D
+    .Function="/Script/Engine.MaterialFunction'Stepped_Mesh_Yaw'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_4)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Stepped_Mesh_Yaw:MaterialExpressionMaterialFunctionCall_5'",OutputIndex=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'Stepped_Mesh_Yaw:MaterialExpressionSubtract_0'")
+    .MaterialExpressionEditorX=-1048
+    .MaterialExpressionEditorY=604
+    .MaterialExpressionGuid=49F91719407CCC004261ADB58DC51B86
+    .Function="/Script/Engine.MaterialFunction'Stepped_Mesh_Yaw'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_3)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionWorldPosition
+    .B=(Expression="/Script/Engine.MaterialExpressionWorldPosition'Stepped_Mesh_Yaw:MaterialExpressionWorldPosition_2'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Stepped_Mesh_Yaw:MaterialExpressionAdd_1'")
+    .MaterialExpressionEditorX=8
+    .MaterialExpressionEditorY=340
+    .MaterialExpressionGuid=FBDDEBAE4242025CB1FF178C659F143C
+    .Function="/Script/Engine.MaterialFunction'Stepped_Mesh_Yaw'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_2)
+    A                      <- MaterialExpressionActorPositionWS
+    B                      <- MaterialExpressionCameraPositionWS
+    .B=(Expression="/Script/Engine.MaterialExpressionCameraPositionWS'Stepped_Mesh_Yaw:MaterialExpressionCameraPositionWS_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionActorPositionWS'Stepped_Mesh_Yaw:MaterialExpressionActorPositionWS_0'")
+    .MaterialExpressionEditorX=-3168
+    .MaterialExpressionEditorY=584
+    .MaterialExpressionGuid=D768B5CC47BFB27747886FB5B3DF50BD
+    .Function="/Script/Engine.MaterialFunction'Stepped_Mesh_Yaw'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_1)
+    A                      <- MaterialExpressionWorldPosition
+    B                      <- MaterialExpressionObjectPositionWS
+    .B=(Expression="/Script/Engine.MaterialExpressionObjectPositionWS'Stepped_Mesh_Yaw:MaterialExpressionObjectPositionWS_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionWorldPosition'Stepped_Mesh_Yaw:MaterialExpressionWorldPosition_1'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .MaterialExpressionEditorX=-1452
+    .MaterialExpressionEditorY=204
+    .MaterialExpressionGuid=E1220E3D4EA9A977D8A94D8EA1AF1F1B
+    .Function="/Script/Engine.MaterialFunction'Stepped_Mesh_Yaw'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_0)
+    A                      <- MaterialExpressionLinearInterpolate
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Stepped_Mesh_Yaw:MaterialExpressionLinearInterpolate_5'")
+    .ConstB=0.250000
+    .MaterialExpressionEditorX=-1264
+    .MaterialExpressionEditorY=604
+    .MaterialExpressionGuid=A093F380409FD87D50306FA18B82E317
+    .Function="/Script/Engine.MaterialFunction'Stepped_Mesh_Yaw'"
+  MaterialExpressionRound (MaterialExpressionRound_0)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Stepped_Mesh_Yaw:MaterialExpressionMultiply_7'")
+    .MaterialExpressionEditorX=-2316
+    .MaterialExpressionEditorY=680
+    .MaterialExpressionGuid=90ED6F314A037C2B70897DACAE561D18
+    .Function="/Script/Engine.MaterialFunction'Stepped_Mesh_Yaw'"
+  MaterialExpressionPower (MaterialExpressionPower_0)
+    Base                   <- MaterialExpressionOneMinus
+    .Base=(Expression="/Script/Engine.MaterialExpressionOneMinus'Stepped_Mesh_Yaw:MaterialExpressionOneMinus_0'")
+    .ConstExponent=8.000000
+    .MaterialExpressionEditorX=-1612
+    .MaterialExpressionEditorY=776
+    .MaterialExpressionGuid=51C7F3BF4F2046AD2E9816AB91C5706D
+    .Function="/Script/Engine.MaterialFunction'Stepped_Mesh_Yaw'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_0)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Stepped_Mesh_Yaw:MaterialExpressionMultiply_8'")
+    .MaterialExpressionEditorX=-1800
+    .MaterialExpressionEditorY=824
+    .MaterialExpressionGuid=109C69304678B15336E97CAA101FE7DB
+    .Function="/Script/Engine.MaterialFunction'Stepped_Mesh_Yaw'"
+  MaterialExpressionObjectPositionWS (MaterialExpressionObjectPositionWS_3)
+    .MaterialExpressionEditorX=-516
+    .MaterialExpressionEditorY=464
+    .MaterialExpressionGuid=0F15518D402251EFA587DEBC7C0D1295
+    .Function="/Script/Engine.MaterialFunction'Stepped_Mesh_Yaw'"
+  MaterialExpressionObjectPositionWS (MaterialExpressionObjectPositionWS_1)
+    .MaterialExpressionEditorX=-1708
+    .MaterialExpressionEditorY=320
+    .MaterialExpressionGuid=2448D9254CD79029D5CD5199FCC6A3AD
+    .Function="/Script/Engine.MaterialFunction'Stepped_Mesh_Yaw'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_8)
+    A                      <- MaterialExpressionAbs
+    .A=(Expression="/Script/Engine.MaterialExpressionAbs'Stepped_Mesh_Yaw:MaterialExpressionAbs_0'")
+    .ConstB=2.000000
+    .MaterialExpressionEditorX=-1976
+    .MaterialExpressionEditorY=820
+    .MaterialExpressionGuid=EAC36CEF43FA20C17028D8BD40CC2F7D
+    .Function="/Script/Engine.MaterialFunction'Stepped_Mesh_Yaw'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_7)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Stepped_Mesh_Yaw:MaterialExpressionMaterialFunctionCall_2'",OutputIndex=1)
+    .ConstB=4.000000
+    .MaterialExpressionEditorX=-2460
+    .MaterialExpressionEditorY=680
+    .MaterialExpressionGuid=9317C00344E55A3841D8189CF3575665
+    .Function="/Script/Engine.MaterialFunction'Stepped_Mesh_Yaw'"
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_5)
+    FunctionInputs(0)      <- MaterialExpressionTransform
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Engine/Functions/Engine_MaterialFunctions02/Utility/VectorToRadialValue.VectorToRadialValue'"
+    .FunctionInputs(0)=(ExpressionInputId=F76C36864101996D4D30F19DE33AE17B,Input=(Expression="/Script/Engine.MaterialExpressionTransform'Stepped_Mesh_Yaw:MaterialExpressionTransform_0'",InputName="Vector or UVs"))
+    .FunctionInputs(1)=(ExpressionInputId=9D6745D9443E616DF97D4B987DA06F15,Input=(OutputIndex=-1,InputName="Swizzle Coordinate Output"))
+    .FunctionOutputs(0)=(ExpressionOutputId=34B566714F67FBF3D916EBB5CE5BF50D,Output=(OutputName="Radial Coordinates"))
+    .FunctionOutputs(1)=(ExpressionOutputId=3533EC794F30962B3725BB8301E0DD34,Output=(OutputName="Vector Converted to Angle"))
+    .FunctionOutputs(2)=(ExpressionOutputId=98AC11FC46ECEDC0D53818A07F4C8CED,Output=(OutputName="Linear Distance"))
+    .MaterialExpressionEditorX=-1604
+    .MaterialExpressionEditorY=960
+    .MaterialExpressionGuid=28A17FB249EEB315BECAA4BE497232BA
+    .Function="/Script/Engine.MaterialFunction'Stepped_Mesh_Yaw'"
+    .Outputs(0)=(OutputName="Radial Coordinates")
+    .Outputs(1)=(OutputName="Vector Converted to Angle")
+    .Outputs(2)=(OutputName="Linear Distance")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_2)
+    FunctionInputs(0)      <- MaterialExpressionComponentMask
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Engine/Functions/Engine_MaterialFunctions02/Utility/VectorToRadialValue.VectorToRadialValue'"
+    .FunctionInputs(0)=(ExpressionInputId=F76C36864101996D4D30F19DE33AE17B,Input=(Expression="/Script/Engine.MaterialExpressionComponentMask'Stepped_Mesh_Yaw:MaterialExpressionComponentMask_1'",InputName="Vector or UVs"))
+    .FunctionInputs(1)=(ExpressionInputId=9D6745D9443E616DF97D4B987DA06F15,Input=(OutputIndex=-1,InputName="Swizzle Coordinate Output"))
+    .FunctionOutputs(0)=(ExpressionOutputId=34B566714F67FBF3D916EBB5CE5BF50D,Output=(OutputName="Radial Coordinates"))
+    .FunctionOutputs(1)=(ExpressionOutputId=3533EC794F30962B3725BB8301E0DD34,Output=(OutputName="Vector Converted to Angle"))
+    .FunctionOutputs(2)=(ExpressionOutputId=98AC11FC46ECEDC0D53818A07F4C8CED,Output=(OutputName="Linear Distance"))
+    .MaterialExpressionEditorX=-2916
+    .MaterialExpressionEditorY=588
+    .MaterialExpressionGuid=D50733014BEFCD7718350192071C9F59
+    .Function="/Script/Engine.MaterialFunction'Stepped_Mesh_Yaw'"
+    .Outputs(0)=(OutputName="Radial Coordinates")
+    .Outputs(1)=(OutputName="Vector Converted to Angle")
+    .Outputs(2)=(OutputName="Linear Distance")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_1)
+    FunctionInputs(0)      <- MaterialExpressionComponentMask
+    FunctionInputs(1)      <- MaterialExpressionConstant2Vector
+    FunctionInputs(2)      <- MaterialExpressionSubtract
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Engine/Functions/Engine_MaterialFunctions02/Texturing/CustomRotator.CustomRotator'"
+    .FunctionInputs(0)=(ExpressionInputId=45DE7CC04BCC975C664A2AA5DA134FEF,Input=(Expression="/Script/Engine.MaterialExpressionComponentMask'Stepped_Mesh_Yaw:MaterialExpressionComponentMask_0'",InputName="UVs"))
+    .FunctionInputs(1)=(ExpressionInputId=9B6953874136DCE4D8E4E8878152CCCE,Input=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'Stepped_Mesh_Yaw:MaterialExpressionConstant2Vector_1'",InputName="Rotation Center",Mask=1,MaskR=1,MaskG=1))
+    .FunctionInputs(2)=(ExpressionInputId=D58F67D84CFD4C9D289810AEE4A3EBC8,Input=(Expression="/Script/Engine.MaterialExpressionSubtract'Stepped_Mesh_Yaw:MaterialExpressionSubtract_4'",InputName="Rotation Angle (0-1)"))
+    .FunctionOutputs(0)=(ExpressionOutputId=35E8F8F94CC8CE3D65F114A234D0BD5E,Output=(OutputName="Rotated Values"))
+    .MaterialExpressionEditorX=-808
+    .MaterialExpressionEditorY=208
+    .MaterialExpressionGuid=1B1B93C14FF8A3C3B51136AF22819EBB
+    .Function="/Script/Engine.MaterialFunction'Stepped_Mesh_Yaw'"
+    .Outputs(0)=(OutputName="Rotated Values")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_0)
+    FunctionInputs(0)      <- MaterialExpressionComponentMask
+    FunctionInputs(1)      <- MaterialExpressionConstant2Vector
+    FunctionInputs(2)      <- MaterialExpressionSubtract
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Engine/Functions/Engine_MaterialFunctions02/Texturing/CustomRotator.CustomRotator'"
+    .FunctionInputs(0)=(ExpressionInputId=45DE7CC04BCC975C664A2AA5DA134FEF,Input=(Expression="/Script/Engine.MaterialExpressionComponentMask'Stepped_Mesh_Yaw:MaterialExpressionComponentMask_3'",InputName="UVs"))
+    .FunctionInputs(1)=(ExpressionInputId=9B6953874136DCE4D8E4E8878152CCCE,Input=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'Stepped_Mesh_Yaw:MaterialExpressionConstant2Vector_0'",InputName="Rotation Center",Mask=1,MaskR=1,MaskG=1))
+    .FunctionInputs(2)=(ExpressionInputId=D58F67D84CFD4C9D289810AEE4A3EBC8,Input=(Expression="/Script/Engine.MaterialExpressionSubtract'Stepped_Mesh_Yaw:MaterialExpressionSubtract_4'",InputName="Rotation Angle (0-1)"))
+    .FunctionOutputs(0)=(ExpressionOutputId=35E8F8F94CC8CE3D65F114A234D0BD5E,Output=(OutputName="Rotated Values"))
+    .MaterialExpressionEditorX=-664
+    .MaterialExpressionEditorY=812
+    .MaterialExpressionGuid=05B7DE014C3E93B2D3CFFCB4D0823692
+    .Function="/Script/Engine.MaterialFunction'Stepped_Mesh_Yaw'"
+    .Outputs(0)=(OutputName="Rotated Values")
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_5)
+    A                      <- MaterialExpressionDivide
+    B                      <- MaterialExpressionMaterialFunctionCall
+    Alpha                  <- MaterialExpressionPower
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Stepped_Mesh_Yaw:MaterialExpressionMaterialFunctionCall_2'",OutputIndex=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'Stepped_Mesh_Yaw:MaterialExpressionDivide_0'")
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionPower'Stepped_Mesh_Yaw:MaterialExpressionPower_0'")
+    .MaterialExpressionEditorX=-1412
+    .MaterialExpressionEditorY=604
+    .MaterialExpressionGuid=CBABAA114BB3A78B74AC3CBBB27914AD
+    .Function="/Script/Engine.MaterialFunction'Stepped_Mesh_Yaw'"
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_1)
+    A                      <- MaterialExpressionAppendVector
+    .A=(Expression="/Script/Engine.MaterialExpressionAppendVector'Stepped_Mesh_Yaw:MaterialExpressionAppendVector_1'")
+    .OutputName="Rotated Normal"
+    .SortPriority=-1
+    .Id=8B71D5BD4185E39DF6942A87DCE73C32
+    .MaterialExpressionEditorX=-200
+    .MaterialExpressionEditorY=804
+    .MaterialExpressionGuid=1DF1A0014795FCA3C1565EBB5B80F1C8
+    .Function="/Script/Engine.MaterialFunction'Stepped_Mesh_Yaw'"
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionSubtract
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'Stepped_Mesh_Yaw:MaterialExpressionSubtract_3'")
+    .bLastPreviewed=True
+    .Id=B1FAA2E94D4C0FB55372ADA0F18CE788
+    .MaterialExpressionEditorX=232
+    .MaterialExpressionEditorY=304
+    .MaterialExpressionGuid=39C523E649C32E5022C745AD7E6A2D6C
+    .Function="/Script/Engine.MaterialFunction'Stepped_Mesh_Yaw'"
+  MaterialExpressionFrac (MaterialExpressionFrac_0)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Stepped_Mesh_Yaw:MaterialExpressionMultiply_7'")
+    .MaterialExpressionEditorX=-2316
+    .MaterialExpressionEditorY=824
+    .MaterialExpressionGuid=B3E993644CAE4CEAA2678E8EA5C7E9C6
+    .Function="/Script/Engine.MaterialFunction'Stepped_Mesh_Yaw'"
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionRound
+    .A=(Expression="/Script/Engine.MaterialExpressionRound'Stepped_Mesh_Yaw:MaterialExpressionRound_0'")
+    .ConstB=4.000000
+    .MaterialExpressionEditorX=-2088
+    .MaterialExpressionEditorY=676
+    .MaterialExpressionGuid=21B9F84347E4114852F801B730CCD5A7
+    .Function="/Script/Engine.MaterialFunction'Stepped_Mesh_Yaw'"
+  MaterialExpressionConstant3Vector (MaterialExpressionConstant3Vector_0)
+    .Constant=(R=1.000000,G=0.000000,B=0.000000,A=0.000000)
+    .MaterialExpressionEditorX=-2084
+    .MaterialExpressionEditorY=956
+    .MaterialExpressionGuid=1C875E7A4530EA10B87C39ABE9D1FEA8
+    .Function="/Script/Engine.MaterialFunction'Stepped_Mesh_Yaw'"
+  MaterialExpressionConstant2Vector (MaterialExpressionConstant2Vector_1)
+    .MaterialExpressionEditorX=-1012
+    .MaterialExpressionEditorY=244
+    .MaterialExpressionGuid=BF024E5C41038FD419B931A9BDE65AC4
+    .Function="/Script/Engine.MaterialFunction'Stepped_Mesh_Yaw'"
+  MaterialExpressionConstant2Vector (MaterialExpressionConstant2Vector_0)
+    .MaterialExpressionEditorX=-874
+    .MaterialExpressionEditorY=920
+    .MaterialExpressionGuid=EA0FB261443D1EB8F2D9AE8836DE59DD
+    .Function="/Script/Engine.MaterialFunction'Stepped_Mesh_Yaw'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_4)
+    Input                  <- MaterialExpressionVertexNormalWS
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionVertexNormalWS'Stepped_Mesh_Yaw:MaterialExpressionVertexNormalWS_1'")
+    .MaterialExpressionEditorX=-516
+    .MaterialExpressionEditorY=992
+    .MaterialExpressionGuid=ECF3C4C94B6D7A185D0E23BFEC92C7E5
+    .Function="/Script/Engine.MaterialFunction'Stepped_Mesh_Yaw'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_3)
+    Input                  <- MaterialExpressionVertexNormalWS
+    .R=True
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionVertexNormalWS'Stepped_Mesh_Yaw:MaterialExpressionVertexNormalWS_0'")
+    .MaterialExpressionEditorX=-888
+    .MaterialExpressionEditorY=812
+    .MaterialExpressionGuid=C1522A934E4A5567AE862A91C46108C8
+    .Function="/Script/Engine.MaterialFunction'Stepped_Mesh_Yaw'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_2)
+    Input                  <- MaterialExpressionSubtract
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionSubtract'Stepped_Mesh_Yaw:MaterialExpressionSubtract_1'")
+    .MaterialExpressionEditorX=-1176
+    .MaterialExpressionEditorY=376
+    .MaterialExpressionGuid=A859872A42AC282D2AF7508AD520A05B
+    .Function="/Script/Engine.MaterialFunction'Stepped_Mesh_Yaw'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_1)
+    Input                  <- MaterialExpressionSubtract
+    .R=True
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionSubtract'Stepped_Mesh_Yaw:MaterialExpressionSubtract_2'")
+    .MaterialExpressionEditorX=-3048
+    .MaterialExpressionEditorY=588
+    .MaterialExpressionGuid=B19B33D446C2650A29CAF8A6A5315B34
+    .Function="/Script/Engine.MaterialFunction'Stepped_Mesh_Yaw'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionSubtract
+    .R=True
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionSubtract'Stepped_Mesh_Yaw:MaterialExpressionSubtract_1'")
+    .MaterialExpressionEditorX=-1180
+    .MaterialExpressionEditorY=204
+    .MaterialExpressionGuid=8FB631364BB9FFD93CD898B7318F713D
+    .Function="/Script/Engine.MaterialFunction'Stepped_Mesh_Yaw'"
+  MaterialExpressionCameraPositionWS (MaterialExpressionCameraPositionWS_0)
+    .MaterialExpressionEditorX=-3356
+    .MaterialExpressionEditorY=648
+    .MaterialExpressionGuid=6A197F7448BF69FE2925F3AC1891868D
+    .Function="/Script/Engine.MaterialFunction'Stepped_Mesh_Yaw'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_1)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Stepped_Mesh_Yaw:MaterialExpressionComponentMask_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Stepped_Mesh_Yaw:MaterialExpressionMaterialFunctionCall_0'")
+    .MaterialExpressionEditorX=-332
+    .MaterialExpressionEditorY=804
+    .MaterialExpressionGuid=F5D3E6A64221CB95111A1C82675554CA
+    .Function="/Script/Engine.MaterialFunction'Stepped_Mesh_Yaw'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_0)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Stepped_Mesh_Yaw:MaterialExpressionComponentMask_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Stepped_Mesh_Yaw:MaterialExpressionMaterialFunctionCall_1'")
+    .MaterialExpressionEditorX=-396
+    .MaterialExpressionEditorY=340
+    .MaterialExpressionGuid=57F50BCA42F50A771862938ED821A536
+    .Function="/Script/Engine.MaterialFunction'Stepped_Mesh_Yaw'"
+  MaterialExpressionAdd (MaterialExpressionAdd_1)
+    A                      <- MaterialExpressionAppendVector
+    B                      <- MaterialExpressionObjectPositionWS
+    .B=(Expression="/Script/Engine.MaterialExpressionObjectPositionWS'Stepped_Mesh_Yaw:MaterialExpressionObjectPositionWS_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAppendVector'Stepped_Mesh_Yaw:MaterialExpressionAppendVector_0'")
+    .MaterialExpressionEditorX=-252
+    .MaterialExpressionEditorY=340
+    .MaterialExpressionGuid=93200A414318197F65EBCABD0AD8869C
+    .Function="/Script/Engine.MaterialFunction'Stepped_Mesh_Yaw'"
+  MaterialExpressionActorPositionWS (MaterialExpressionActorPositionWS_0)
+    .MaterialExpressionEditorX=-3392
+    .MaterialExpressionEditorY=560
+    .MaterialExpressionGuid=EA5257C540F60E84661ACD8DAC5B513D
+    .Function="/Script/Engine.MaterialFunction'Stepped_Mesh_Yaw'"
+  MaterialExpressionAbs (MaterialExpressionAbs_0)
+    Input                  <- MaterialExpressionSubtract
+    .Input=(Expression="/Script/Engine.MaterialExpressionSubtract'Stepped_Mesh_Yaw:MaterialExpressionSubtract_5'")
+    .MaterialExpressionEditorX=-2072
+    .MaterialExpressionEditorY=820
+    .MaterialExpressionGuid=CEFDEC5A4AECD78C0412F88B41C81539
+    .Function="/Script/Engine.MaterialFunction'Stepped_Mesh_Yaw'"
+  MaterialFunctionEditorOnlyData (Stepped_Mesh_YawEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'Stepped_Mesh_Yaw:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionSubtract'Stepped_Mesh_Yaw:MaterialExpressionSubtract_3'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Stepped_Mesh_Yaw:MaterialExpressionMaterialFunctionCall_1'","/Script/Engine.MaterialExpressionWorldPosition'Stepped_Mesh_Yaw:MaterialExpressionWorldPosition_1'","/Script/Engine.MaterialExpressionSubtract'Stepped_Mesh_Yaw:MaterialExpressionSubtract_1'","/Script/Engine.MaterialExpressionObjectPositionWS'Stepped_Mesh_Yaw:MaterialExpressionObjectPositionWS_1'","/Script/Engine.MaterialExpressionComponentMask'Stepped_Mesh_Yaw:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionCameraPositionWS'Stepped_Mesh_Yaw:MaterialExpressionCameraPositionWS_0'","/Script/Engine.MaterialExpressionSubtract'Stepped_Mesh_Yaw:MaterialExpressionSubtract_2'","/Script/Engine.MaterialExpressionComponentMask'Stepped_Mesh_Yaw:MaterialExpressionComponentMask_1'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Stepped_Mesh_Yaw:MaterialExpressionMaterialFunctionCall_2'","/Script/Engine.MaterialExpressionConstant2Vector'Stepped_Mesh_Yaw:MaterialExpressionConstant2Vector_1'","/Script/Engine.MaterialExpressionAppendVector'Stepped_Mesh_Yaw:MaterialExpressionAppendVector_0'","/Script/Engine.MaterialExpressionComponentMask'Stepped_Mesh_Yaw:MaterialExpressionComponentMask_2'","/Script/Engine.MaterialExpressionWorldPosition'Stepped_Mesh_Yaw:MaterialExpressionWorldPosition_2'","/Script/Engine.MaterialExpressionAdd'Stepped_Mesh_Yaw:MaterialExpressionAdd_1'","/Script/Engine.MaterialExpressionObjectPositionWS'Stepped_Mesh_Yaw:MaterialExpressionObjectPositionWS_3'","/Script/Engine.MaterialExpressionMultiply'Stepped_Mesh_Yaw:MaterialExpressionMultiply_7'","/Script/Engine.MaterialExpressionRound'Stepped_Mesh_Yaw:MaterialExpressionRound_0'","/Script/Engine.MaterialExpressionDivide'Stepped_Mesh_Yaw:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionLinearInterpolate'Stepped_Mesh_Yaw:MaterialExpressionLinearInterpolate_5'","/Script/Engine.MaterialExpressionFrac'Stepped_Mesh_Yaw:MaterialExpressionFrac_0'","/Script/Engine.MaterialExpressionSubtract'Stepped_Mesh_Yaw:MaterialExpressionSubtract_5'","/Script/Engine.MaterialExpressionAbs'Stepped_Mesh_Yaw:MaterialExpressionAbs_0'","/Script/Engine.MaterialExpressionMultiply'Stepped_Mesh_Yaw:MaterialExpressionMultiply_8'","/Script/Engine.MaterialExpressionPower'Stepped_Mesh_Yaw:MaterialExpressionPower_0'","/Script/Engine.MaterialExpressionOneMinus'Stepped_Mesh_Yaw:MaterialExpressionOneMinus_0'","/Script/Engine.MaterialExpressionSubtract'Stepped_Mesh_Yaw:MaterialExpressionSubtract_0'","/Script/Engine.MaterialExpressionTransform'Stepped_Mesh_Yaw:MaterialExpressionTransform_0'","/Script/Engine.MaterialExpressionConstant3Vector'Stepped_Mesh_Yaw:MaterialExpressionConstant3Vector_0'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Stepped_Mesh_Yaw:MaterialExpressionMaterialFunctionCall_5'","/Script/Engine.MaterialExpressionSubtract'Stepped_Mesh_Yaw:MaterialExpressionSubtract_4'","/Script/Engine.MaterialExpressionActorPositionWS'Stepped_Mesh_Yaw:MaterialExpressionActorPositionWS_0'","/Script/Engine.MaterialExpressionFunctionOutput'Stepped_Mesh_Yaw:MaterialExpressionFunctionOutput_1'","/Script/Engine.MaterialExpressionVertexNormalWS'Stepped_Mesh_Yaw:MaterialExpressionVertexNormalWS_0'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Stepped_Mesh_Yaw:MaterialExpressionMaterialFunctionCall_0'","/Script/Engine.MaterialExpressionComponentMask'Stepped_Mesh_Yaw:MaterialExpressionComponentMask_3'","/Script/Engine.MaterialExpressionConstant2Vector'Stepped_Mesh_Yaw:MaterialExpressionConstant2Vector_0'","/Script/Engine.MaterialExpressionAppendVector'Stepped_Mesh_Yaw:MaterialExpressionAppendVector_1'","/Script/Engine.MaterialExpressionVertexNormalWS'Stepped_Mesh_Yaw:MaterialExpressionVertexNormalWS_1'","/Script/Engine.MaterialExpressionComponentMask'Stepped_Mesh_Yaw:MaterialExpressionComponentMask_4'"))

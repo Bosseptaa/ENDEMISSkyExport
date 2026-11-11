@@ -1,0 +1,471 @@
+### /Game/UltraDynamicSky/Materials/Weather/PuddleSplash_Particle
+  Material (PuddleSplash_Particle)
+    .BlendMode=BLEND_Translucent
+    .MaterialDecalResponse=MDR_None
+    .bEnableResponsiveAA=True
+    .TranslucencyPass=MTP_AfterMotionBlur
+    .bUsedWithNiagaraSprites=True
+    .bUsesDistortion=True
+    .EditorX=1424
+    .EditorY=-4
+    .bCanMaskedBeAssumedOpaque=True
+    .bCastRayTracedShadows=False
+    .bUseTranslucencyVertexFog=False
+    .RefractionMethod=RM_PixelNormalOffset
+    .PixelDepthOffsetMode=PDOM_Legacy
+    .StateId=AF2A92614945310249BEE9AA6E7C3176
+    .ReferencedTextureGuids(0)=1A8A9D8D43D20C7D4E91EBB68D27D44A
+    .EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'PuddleSplash_ParticleEditorOnlyData'"
+    .TextureStreamingDataVersion=1
+    .TextureStreamingData(0)=(SamplingScale=1.000000,UVChannelIndex=0,TextureName="PuddleSplashParticle",TextureReference="/Game/ENDEMIS/Weather/MaterialFX/T_PuddleSplashParticle.T_PuddleSplashParticle")
+    .ReferencedDefaultTextures(0)="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/MaterialFX/T_PuddleSplashParticle.T_PuddleSplashParticle'"
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+    .LightingGuid=74DD9B804FA3DD986DF0FEACAE77C13C
+  MaterialEditorOnlyData (PuddleSplash_ParticleEditorOnlyData)
+    BaseColor              <- MaterialExpressionMultiply
+    Normal                 <- MaterialExpressionAppendVector
+    EmissiveColor          <- MaterialExpressionShadingPathSwitch
+    Opacity                <- MaterialExpressionMultiply
+    Refraction             <- MaterialExpressionShadingPathSwitch
+    ExpressionCollection   <- MaterialExpressionMultiply
+    .BaseColor=(Constant=(R=0.501961,G=0.501961,B=0.501961,A=1.000000),Expression="/Script/Engine.MaterialExpressionMultiply'PuddleSplash_Particle:MaterialExpressionMultiply_2'")
+    .Metallic=(UseConstant=True)
+    .Specular=(UseConstant=True)
+    .Roughness=(UseConstant=True)
+    .Anisotropy=(UseConstant=True)
+    .Normal=(Constant=(X=0.000000,Y=0.000000,Z=0.000000),Expression="/Script/Engine.MaterialExpressionAppendVector'PuddleSplash_Particle:MaterialExpressionAppendVector_1'")
+    .Tangent=(UseConstant=True)
+    .EmissiveColor=(Expression="/Script/Engine.MaterialExpressionShadingPathSwitch'PuddleSplash_Particle:MaterialExpressionShadingPathSwitch_0'")
+    .Opacity=(Expression="/Script/Engine.MaterialExpressionMultiply'PuddleSplash_Particle:MaterialExpressionMultiply_1'")
+    .OpacityMask=(UseConstant=True,OutputIndex=1,Mask=1,MaskR=1)
+    .WorldPositionOffset=(UseConstant=True)
+    .Displacement=(UseConstant=True)
+    .SubsurfaceColor=(UseConstant=True)
+    .ClearCoat=(UseConstant=True)
+    .ClearCoatRoughness=(UseConstant=True)
+    .AmbientOcclusion=(UseConstant=True)
+    .Refraction=(Constant=0.000000,Expression="/Script/Engine.MaterialExpressionShadingPathSwitch'PuddleSplash_Particle:MaterialExpressionShadingPathSwitch_5'")
+    .CustomizedUVs(0)=(UseConstant=True)
+    .CustomizedUVs(1)=(UseConstant=True)
+    .CustomizedUVs(2)=(UseConstant=True)
+    .CustomizedUVs(3)=(UseConstant=True)
+    .CustomizedUVs(4)=(UseConstant=True)
+    .CustomizedUVs(5)=(UseConstant=True)
+    .CustomizedUVs(6)=(UseConstant=True)
+    .CustomizedUVs(7)=(UseConstant=True)
+    .PixelDepthOffset=(UseConstant=True)
+    .SurfaceThickness=(UseConstant=True)
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionMultiply'PuddleSplash_Particle:MaterialExpressionMultiply_2'","/Script/Engine.MaterialExpressionAppendVector'PuddleSplash_Particle:MaterialExpressionAppendVector_1'","/Script/Engine.MaterialExpressionShadingPathSwitch'PuddleSplash_Particle:MaterialExpressionShadingPathSwitch_0'","/Script/Engine.MaterialExpressionMultiply'PuddleSplash_Particle:MaterialExpressionMultiply_1'","/Script/Engine.MaterialExpressionLinearInterpolate'PuddleSplash_Particle:MaterialExpressionLinearInterpolate_0'","/Script/Engine.MaterialExpressionLinearInterpolate'PuddleSplash_Particle:MaterialExpressionLinearInterpolate_5'","/Script/Engine.MaterialExpressionMultiply'PuddleSplash_Particle:MaterialExpressionMultiply_13'","/Script/Engine.MaterialExpressionTextureSample'PuddleSplash_Particle:MaterialExpressionTextureSample_0'","/Script/Engine.MaterialExpressionAppendVector'PuddleSplash_Particle:MaterialExpressionAppendVector_0'","/Script/Engine.MaterialExpressionSubtract'PuddleSplash_Particle:MaterialExpressionSubtract_0'","/Script/Engine.MaterialExpressionMultiply'PuddleSplash_Particle:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionScalarParameter'PuddleSplash_Particle:MaterialExpressionScalarParameter_0'","/Script/Engine.MaterialExpressionSceneColor'PuddleSplash_Particle:MaterialExpressionSceneColor_3'","/Script/Engine.MaterialExpressionScreenPosition'PuddleSplash_Particle:MaterialExpressionScreenPosition_2'","/Script/Engine.MaterialExpressionAdd'PuddleSplash_Particle:MaterialExpressionAdd_4'","/Script/Engine.MaterialExpressionMultiply'PuddleSplash_Particle:MaterialExpressionMultiply_5'","/Script/Engine.MaterialExpressionLength'PuddleSplash_Particle:MaterialExpressionLength_0'","/Script/Engine.MaterialExpressionPower'PuddleSplash_Particle:MaterialExpressionPower_0'","/Script/Engine.MaterialExpressionMultiply'PuddleSplash_Particle:MaterialExpressionMultiply_7'","/Script/Engine.MaterialExpressionMultiply'PuddleSplash_Particle:MaterialExpressionMultiply_8'","/Script/Engine.MaterialExpressionParticleColor'PuddleSplash_Particle:MaterialExpressionParticleColor_1'","/Script/Engine.MaterialExpressionMultiply'PuddleSplash_Particle:MaterialExpressionMultiply_9'","/Script/Engine.MaterialExpressionParticleColor'PuddleSplash_Particle:MaterialExpressionParticleColor_2'","/Script/Engine.MaterialExpressionDynamicParameter'PuddleSplash_Particle:MaterialExpressionDynamicParameter_0'","/Script/Engine.MaterialExpressionDynamicParameter'PuddleSplash_Particle:MaterialExpressionDynamicParameter_1'","/Script/Engine.MaterialExpressionMax'PuddleSplash_Particle:MaterialExpressionMax_0'","/Script/Engine.MaterialExpressionMultiply'PuddleSplash_Particle:MaterialExpressionMultiply_12'","/Script/Engine.MaterialExpressionDepthFade'PuddleSplash_Particle:MaterialExpressionDepthFade_0'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'PuddleSplash_Particle:MaterialExpressionNamedRerouteDeclaration_0'","/Script/Engine.MaterialExpressionNamedRerouteUsage'PuddleSplash_Particle:MaterialExpressionNamedRerouteUsage_0'","/Script/Engine.MaterialExpressionWorldPosition'PuddleSplash_Particle:MaterialExpressionWorldPosition_0'","/Script/Engine.MaterialExpressionComponentMask'PuddleSplash_Particle:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionSubtract'PuddleSplash_Particle:MaterialExpressionSubtract_1'","/Script/Engine.MaterialExpressionSaturate'PuddleSplash_Particle:MaterialExpressionSaturate_0'","/Script/Engine.MaterialExpressionDynamicParameter'PuddleSplash_Particle:MaterialExpressionDynamicParameter_2'","/Script/Engine.MaterialExpressionMultiply'PuddleSplash_Particle:MaterialExpressionMultiply_3'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'PuddleSplash_Particle:MaterialExpressionNamedRerouteDeclaration_1'","/Script/Engine.MaterialExpressionNamedRerouteUsage'PuddleSplash_Particle:MaterialExpressionNamedRerouteUsage_1'","/Script/Engine.MaterialExpressionNamedRerouteUsage'PuddleSplash_Particle:MaterialExpressionNamedRerouteUsage_2'","/Script/Engine.MaterialExpressionNamedRerouteUsage'PuddleSplash_Particle:MaterialExpressionNamedRerouteUsage_3'","/Script/Engine.MaterialExpressionConstant'PuddleSplash_Particle:MaterialExpressionConstant_0'","/Script/Engine.MaterialExpressionParticleColor'PuddleSplash_Particle:MaterialExpressionParticleColor_0'","/Script/Engine.MaterialExpressionMultiply'PuddleSplash_Particle:MaterialExpressionMultiply_4'","/Script/Engine.MaterialExpressionMultiply'PuddleSplash_Particle:MaterialExpressionMultiply_6'","/Script/Engine.MaterialExpressionCollectionParameter'PuddleSplash_Particle:MaterialExpressionCollectionParameter_0'","/Script/Engine.MaterialExpressionComponentMask'PuddleSplash_Particle:MaterialExpressionComponentMask_1'","/Script/Engine.MaterialExpressionShadingPathSwitch'PuddleSplash_Particle:MaterialExpressionShadingPathSwitch_5'","/Script/Engine.MaterialExpressionConstant'PuddleSplash_Particle:MaterialExpressionConstant_1'"),EditorComments=("/Script/Engine.MaterialExpressionComment'PuddleSplash_Particle:MaterialExpressionComment_0'","/Script/Engine.MaterialExpressionComment'PuddleSplash_Particle:MaterialExpressionComment_1'","/Script/Engine.MaterialExpressionComment'PuddleSplash_Particle:MaterialExpressionComment_2'","/Script/Engine.MaterialExpressionComment'PuddleSplash_Particle:MaterialExpressionComment_3'"))
+    .ParameterGroupData(0)=(GroupName="None")
+  MaterialExpressionAdd (MaterialExpressionAdd_4)
+    A                      <- MaterialExpressionScreenPosition
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'PuddleSplash_Particle:MaterialExpressionMultiply_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionScreenPosition'PuddleSplash_Particle:MaterialExpressionScreenPosition_2'")
+    .MaterialExpressionEditorX=-1378
+    .MaterialExpressionEditorY=-674
+    .MaterialExpressionGuid=4233B48C4FEBD3C1711364B24208719F
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_0)
+    A                      <- MaterialExpressionTextureSample
+    B                      <- MaterialExpressionTextureSample
+    .B=(Expression="/Script/Engine.MaterialExpressionTextureSample'PuddleSplash_Particle:MaterialExpressionTextureSample_0'",OutputIndex=3,Mask=1,MaskB=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'PuddleSplash_Particle:MaterialExpressionTextureSample_0'",OutputIndex=2,Mask=1,MaskG=1)
+    .MaterialExpressionEditorX=-1769
+    .MaterialExpressionEditorY=282
+    .MaterialExpressionGuid=1CB850A141484A2B6FC22DA50AB5B8DD
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_1)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    B                      <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'PuddleSplash_Particle:MaterialExpressionConstant_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'PuddleSplash_Particle:MaterialExpressionNamedRerouteUsage_3'")
+    .MaterialExpressionEditorX=1164
+    .MaterialExpressionEditorY=260
+    .MaterialExpressionGuid=5CA027A94B719947A9BD8D98527A7052
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_0)
+    .ParameterName="Ambient Fog Color"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+    .ParameterId=8604E1994A5CD232F1116D94FF84BD2B
+    .MaterialExpressionEditorX=-1212
+    .MaterialExpressionEditorY=-192
+    .MaterialExpressionGuid=2E229CB24458BFADFDF09C9B3AAB85BE
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionComment (MaterialExpressionComment_0)
+    .SizeX=1508
+    .SizeY=812
+    .Text="Refraction + Color Multiply"
+    .CommentColor=(R=0.291590,G=1.000000,B=0.362754,A=1.000000)
+    .MaterialExpressionEditorX=-1796
+    .MaterialExpressionEditorY=-816
+    .MaterialExpressionGuid=2A9E1D694A602A1C326C6CBD8A273F5B
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionComment (MaterialExpressionComment_1)
+    .SizeX=1856
+    .SizeY=848
+    .Text="Opacity"
+    .CommentColor=(R=1.000000,G=0.290978,B=0.320829,A=1.000000)
+    .MaterialExpressionEditorX=-1267
+    .MaterialExpressionEditorY=87
+    .MaterialExpressionGuid=3144CBEA4AA2E1396EA8FB998B4B5933
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionComment (MaterialExpressionComment_2)
+    .SizeX=788
+    .SizeY=372
+    .Text="Splash Texture"
+    .CommentColor=(R=0.292126,G=0.327384,B=1.000000,A=1.000000)
+    .MaterialExpressionEditorX=-2132
+    .MaterialExpressionEditorY=76
+    .MaterialExpressionGuid=BFB12D45400ABB8ECA6E038BD831EC25
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionComment (MaterialExpressionComment_3)
+    .SizeX=624
+    .SizeY=564
+    .Text="Water Color"
+    .CommentColor=(R=0.713961,G=0.447818,B=1.000000,A=1.000000)
+    .MaterialExpressionEditorX=298
+    .MaterialExpressionEditorY=-790
+    .MaterialExpressionGuid=609A57214A03CBDF4D8CC799C1DFA510
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionWorldPosition
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionWorldPosition'PuddleSplash_Particle:MaterialExpressionWorldPosition_0'")
+    .MaterialExpressionEditorX=-120
+    .MaterialExpressionEditorY=596
+    .MaterialExpressionGuid=16283E3B4A8B6E0DAF7D258B1D7DA66C
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_1)
+    Input                  <- MaterialExpressionCollectionParameter
+    .R=True
+    .G=True
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'PuddleSplash_Particle:MaterialExpressionCollectionParameter_0'")
+    .MaterialExpressionEditorX=-952
+    .MaterialExpressionEditorY=-168
+    .MaterialExpressionGuid=1F5372C44D1F4FE19F022694D0208C48
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionConstant (MaterialExpressionConstant_0)
+    .R=1.000000
+    .MaterialExpressionEditorX=964
+    .MaterialExpressionEditorY=316
+    .MaterialExpressionGuid=06FC55F04496A774BE91999FF6653CB2
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionConstant (MaterialExpressionConstant_1)
+    .R=1.000000
+    .MaterialExpressionEditorX=1012
+    .MaterialExpressionEditorY=560
+    .MaterialExpressionGuid=208EA11C445F0FF9FB70A08E8346418D
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionDepthFade (MaterialExpressionDepthFade_0)
+    .MaterialExpressionEditorX=-204
+    .MaterialExpressionEditorY=320
+    .MaterialExpressionGuid=29BE9FE5432976AD2160599BEAAAFEC5
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionDynamicParameter (MaterialExpressionDynamicParameter_0)
+    .DefaultValue=(R=0.000000,G=1.000000,B=1.000000,A=1.000000)
+    .MaterialExpressionEditorX=440
+    .MaterialExpressionEditorY=-496
+    .MaterialExpressionGuid=3F979C264E22DE46B6A0FB9CABE4C30C
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionDynamicParameter (MaterialExpressionDynamicParameter_1)
+    .DefaultValue=(R=0.000000,G=1.000000,B=1.000000,A=1.000000)
+    .MaterialExpressionEditorX=-788
+    .MaterialExpressionEditorY=656
+    .MaterialExpressionGuid=3F979C264E22DE46B6A0FB9CABE4C30C
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionDynamicParameter (MaterialExpressionDynamicParameter_2)
+    .DefaultValue=(R=0.000000,G=1.000000,B=1.000000,A=1.000000)
+    .MaterialExpressionEditorX=-1458
+    .MaterialExpressionEditorY=-498
+    .MaterialExpressionGuid=3F979C264E22DE46B6A0FB9CABE4C30C
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionLength (MaterialExpressionLength_0)
+    Input                  <- MaterialExpressionNamedRerouteUsage
+    .Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'PuddleSplash_Particle:MaterialExpressionNamedRerouteUsage_2'")
+    .MaterialExpressionEditorX=-1000
+    .MaterialExpressionEditorY=532
+    .MaterialExpressionGuid=CB92C8844285A64AB2A9F9AAC4FDA3B8
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_0)
+    Alpha                  <- MaterialExpressionMultiply
+    .ConstA=1.000000
+    .ConstB=0.500000
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionMultiply'PuddleSplash_Particle:MaterialExpressionMultiply_1'")
+    .MaterialExpressionEditorX=824
+    .MaterialExpressionEditorY=476
+    .MaterialExpressionGuid=AC00AC8D413F148EAD8B50977CB8FC52
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_5)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMultiply
+    Alpha                  <- MaterialExpressionDynamicParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'PuddleSplash_Particle:MaterialExpressionMultiply_12'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'PuddleSplash_Particle:MaterialExpressionMultiply_5'")
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionDynamicParameter'PuddleSplash_Particle:MaterialExpressionDynamicParameter_2'",Mask=1,MaskR=1)
+    .MaterialExpressionEditorX=-710
+    .MaterialExpressionEditorY=-674
+    .MaterialExpressionGuid=0168E90B4D445CF6EA9DD6A4B6513E81
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionMax (MaterialExpressionMax_0)
+    A                      <- MaterialExpressionNamedRerouteDeclaration
+    B                      <- MaterialExpressionDynamicParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionDynamicParameter'PuddleSplash_Particle:MaterialExpressionDynamicParameter_1'",Mask=1,MaskR=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'PuddleSplash_Particle:MaterialExpressionNamedRerouteDeclaration_0'")
+    .MaterialExpressionEditorX=-496
+    .MaterialExpressionEditorY=532
+    .MaterialExpressionGuid=5C339DAF4049F3E06D1EB3A396054410
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'PuddleSplash_Particle:MaterialExpressionScalarParameter_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'PuddleSplash_Particle:MaterialExpressionNamedRerouteUsage_1'")
+    .MaterialExpressionEditorX=-1518
+    .MaterialExpressionEditorY=-562
+    .MaterialExpressionGuid=269A4BE948C57DD72ABDE1B1280D44E3
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionSaturate
+    .B=(Expression="/Script/Engine.MaterialExpressionSaturate'PuddleSplash_Particle:MaterialExpressionSaturate_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'PuddleSplash_Particle:MaterialExpressionMultiply_13'")
+    .MaterialExpressionEditorX=392
+    .MaterialExpressionEditorY=176
+    .MaterialExpressionGuid=70AD730B4F67B9216C2CEE85CF92A602
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_12)
+    A                      <- MaterialExpressionSceneColor
+    B                      <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'PuddleSplash_Particle:MaterialExpressionNamedRerouteUsage_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSceneColor'PuddleSplash_Particle:MaterialExpressionSceneColor_3'")
+    .MaterialExpressionEditorX=-926
+    .MaterialExpressionEditorY=-566
+    .MaterialExpressionGuid=C64D4AA8480214AF2383E5A0E08F68F4
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_13)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionDepthFade
+    .B=(Expression="/Script/Engine.MaterialExpressionDepthFade'PuddleSplash_Particle:MaterialExpressionDepthFade_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'PuddleSplash_Particle:MaterialExpressionMultiply_9'")
+    .MaterialExpressionEditorX=124
+    .MaterialExpressionEditorY=176
+    .MaterialExpressionGuid=78898F594AFD03A7FD986EBCC73F511F
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_2)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionDynamicParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionDynamicParameter'PuddleSplash_Particle:MaterialExpressionDynamicParameter_0'",Mask=1,MaskR=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'PuddleSplash_Particle:MaterialExpressionMultiply_3'")
+    .MaterialExpressionEditorX=776
+    .MaterialExpressionEditorY=-564
+    .MaterialExpressionGuid=95EB8DDD4E16E6481ECA438EFB4A38F4
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_3)
+    A                      <- MaterialExpressionParticleColor
+    .A=(Expression="/Script/Engine.MaterialExpressionParticleColor'PuddleSplash_Particle:MaterialExpressionParticleColor_1'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .ConstB=1.700000
+    .MaterialExpressionEditorX=556
+    .MaterialExpressionEditorY=-724
+    .MaterialExpressionGuid=5CCADA8D416FC780D6269C9223C0D774
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_4)
+    A                      <- MaterialExpressionMultiply
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'PuddleSplash_Particle:MaterialExpressionMultiply_6'")
+    .ConstB=2.000000
+    .MaterialExpressionEditorX=-668
+    .MaterialExpressionEditorY=-336
+    .MaterialExpressionGuid=5CCADA8D416FC780D6269C9223C0D774
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_5)
+    A                      <- MaterialExpressionSceneColor
+    .A=(Expression="/Script/Engine.MaterialExpressionSceneColor'PuddleSplash_Particle:MaterialExpressionSceneColor_3'")
+    .ConstB=1.600000
+    .MaterialExpressionEditorX=-958
+    .MaterialExpressionEditorY=-674
+    .MaterialExpressionGuid=E1823AE5451178242C2EB2AD770FBA56
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_6)
+    A                      <- MaterialExpressionParticleColor
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'PuddleSplash_Particle:MaterialExpressionComponentMask_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionParticleColor'PuddleSplash_Particle:MaterialExpressionParticleColor_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .MaterialExpressionEditorX=-790
+    .MaterialExpressionEditorY=-338
+    .MaterialExpressionGuid=771503804C6465C1BF68EDA49512FCF7
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_7)
+    A                      <- MaterialExpressionLength
+    .A=(Expression="/Script/Engine.MaterialExpressionLength'PuddleSplash_Particle:MaterialExpressionLength_0'")
+    .ConstB=2.000000
+    .MaterialExpressionEditorX=-880
+    .MaterialExpressionEditorY=532
+    .MaterialExpressionGuid=4F17FCBE403737F0512B50ADF5529E6F
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_8)
+    A                      <- MaterialExpressionTextureSample
+    B                      <- MaterialExpressionParticleColor
+    .B=(Expression="/Script/Engine.MaterialExpressionParticleColor'PuddleSplash_Particle:MaterialExpressionParticleColor_2'",OutputIndex=4,Mask=1,MaskA=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'PuddleSplash_Particle:MaterialExpressionTextureSample_0'",OutputIndex=1,Mask=1,MaskR=1)
+    .MaterialExpressionEditorX=-412
+    .MaterialExpressionEditorY=176
+    .MaterialExpressionGuid=4C81A9244B1BF644494A94A53ACFA4CE
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_9)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMax
+    .B=(Expression="/Script/Engine.MaterialExpressionMax'PuddleSplash_Particle:MaterialExpressionMax_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'PuddleSplash_Particle:MaterialExpressionMultiply_8'")
+    .MaterialExpressionEditorX=-204
+    .MaterialExpressionEditorY=176
+    .MaterialExpressionGuid=F09C93A640A18B960EC6ED8B8ABCC846
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_0)
+    Input                  <- MaterialExpressionPower
+    .Input=(Expression="/Script/Engine.MaterialExpressionPower'PuddleSplash_Particle:MaterialExpressionPower_0'")
+    .Name="Fresnel"
+    .NodeColor=(R=0.000000,G=1.000000,B=0.343750,A=1.000000)
+    .VariableGuid=6BF12953489B45F603C56EA482608078
+    .MaterialExpressionEditorX=-596
+    .MaterialExpressionEditorY=532
+    .MaterialExpressionGuid=83FAA06F41F1918DCED794B0A11DBBFD
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_1)
+    Input                  <- MaterialExpressionSubtract
+    .Input=(Expression="/Script/Engine.MaterialExpressionSubtract'PuddleSplash_Particle:MaterialExpressionSubtract_0'")
+    .Name="Normal Texture"
+    .NodeColor=(R=1.000000,G=0.000000,B=0.421875,A=1.000000)
+    .VariableGuid=C3CCEB23411417B64CD96297E065F0E0
+    .MaterialExpressionEditorX=-1521
+    .MaterialExpressionEditorY=282
+    .MaterialExpressionGuid=47AA711D4E0E64D5BBBD2B9788F8A3C7
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_0)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'PuddleSplash_Particle:MaterialExpressionNamedRerouteDeclaration_0'"
+    .DeclarationGuid=6BF12953489B45F603C56EA482608078
+    .MaterialExpressionEditorX=-1070
+    .MaterialExpressionEditorY=-490
+    .MaterialExpressionGuid=C9E775204903B434B29C24976D3D8562
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_1)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'PuddleSplash_Particle:MaterialExpressionNamedRerouteDeclaration_1'"
+    .DeclarationGuid=C3CCEB23411417B64CD96297E065F0E0
+    .MaterialExpressionEditorX=-1702
+    .MaterialExpressionEditorY=-562
+    .MaterialExpressionGuid=205F6CDF4150AE1396F46E8D16358EE8
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_2)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'PuddleSplash_Particle:MaterialExpressionNamedRerouteDeclaration_1'"
+    .DeclarationGuid=C3CCEB23411417B64CD96297E065F0E0
+    .MaterialExpressionEditorX=-1156
+    .MaterialExpressionEditorY=532
+    .MaterialExpressionGuid=205F6CDF4150AE1396F46E8D16358EE8
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_3)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'PuddleSplash_Particle:MaterialExpressionNamedRerouteDeclaration_1'"
+    .DeclarationGuid=C3CCEB23411417B64CD96297E065F0E0
+    .MaterialExpressionEditorX=964
+    .MaterialExpressionEditorY=260
+    .MaterialExpressionGuid=0A3193FA4E40661170AB9BAAFBE81D82
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionParticleColor (MaterialExpressionParticleColor_0)
+    .MaterialExpressionEditorX=-948
+    .MaterialExpressionEditorY=-412
+    .MaterialExpressionGuid=EA65E2AE46DD0AF8A06E56AD37A5A2DC
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionParticleColor (MaterialExpressionParticleColor_1)
+    .MaterialExpressionEditorX=348
+    .MaterialExpressionEditorY=-740
+    .MaterialExpressionGuid=EA65E2AE46DD0AF8A06E56AD37A5A2DC
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionParticleColor (MaterialExpressionParticleColor_2)
+    .MaterialExpressionEditorX=-672
+    .MaterialExpressionEditorY=236
+    .MaterialExpressionGuid=EA65E2AE46DD0AF8A06E56AD37A5A2DC
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionPower (MaterialExpressionPower_0)
+    Base                   <- MaterialExpressionMultiply
+    .Base=(Expression="/Script/Engine.MaterialExpressionMultiply'PuddleSplash_Particle:MaterialExpressionMultiply_7'")
+    .MaterialExpressionEditorX=-744
+    .MaterialExpressionEditorY=536
+    .MaterialExpressionGuid=AE86C02D440011E653EFC1B4E63CB778
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_0)
+    Input                  <- MaterialExpressionSubtract
+    .Input=(Expression="/Script/Engine.MaterialExpressionSubtract'PuddleSplash_Particle:MaterialExpressionSubtract_1'")
+    .MaterialExpressionEditorX=216
+    .MaterialExpressionEditorY=660
+    .MaterialExpressionGuid=CABA452F434320112EEEA981C5349A0F
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_0)
+    .ParameterName="Refraction"
+    .DefaultValue=0.750000
+    .ExpressionGUID=908D8F9F4D138EDF4D8280B4C4F80CF9
+    .MaterialExpressionEditorX=-1746
+    .MaterialExpressionEditorY=-478
+    .MaterialExpressionGuid=488D78564D81C885591CA0BBA000A687
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionSceneColor (MaterialExpressionSceneColor_3)
+    Input                  <- MaterialExpressionAdd
+    .Input=(Expression="/Script/Engine.MaterialExpressionAdd'PuddleSplash_Particle:MaterialExpressionAdd_4'")
+    .MaterialExpressionEditorX=-1222
+    .MaterialExpressionEditorY=-690
+    .MaterialExpressionGuid=9C220EF940C979AAA3CDBCB2CDB2218F
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionScreenPosition (MaterialExpressionScreenPosition_2)
+    .MaterialExpressionEditorX=-1558
+    .MaterialExpressionEditorY=-686
+    .MaterialExpressionGuid=71486DDE49F494298F03FA85BBD0D86C
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionShadingPathSwitch (MaterialExpressionShadingPathSwitch_0)
+    Default                <- MaterialExpressionLinearInterpolate
+    Inputs(2)              <- MaterialExpressionMultiply
+    .Default=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'PuddleSplash_Particle:MaterialExpressionLinearInterpolate_5'")
+    .Inputs(2)=(Expression="/Script/Engine.MaterialExpressionMultiply'PuddleSplash_Particle:MaterialExpressionMultiply_4'")
+    .MaterialExpressionEditorX=-506
+    .MaterialExpressionEditorY=-674
+    .MaterialExpressionGuid=9B822E5A47BA04EB33028FA0071BF0C8
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionShadingPathSwitch (MaterialExpressionShadingPathSwitch_5)
+    Default                <- MaterialExpressionLinearInterpolate
+    Inputs(1)              <- MaterialExpressionConstant
+    .Default=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'PuddleSplash_Particle:MaterialExpressionLinearInterpolate_0'")
+    .Inputs(1)=(Expression="/Script/Engine.MaterialExpressionConstant'PuddleSplash_Particle:MaterialExpressionConstant_1'")
+    .MaterialExpressionEditorX=1184
+    .MaterialExpressionEditorY=476
+    .MaterialExpressionGuid=1B05338A4C318405349662A481D3C2E5
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_0)
+    A                      <- MaterialExpressionAppendVector
+    .A=(Expression="/Script/Engine.MaterialExpressionAppendVector'PuddleSplash_Particle:MaterialExpressionAppendVector_0'")
+    .ConstB=0.500000
+    .MaterialExpressionEditorX=-1661
+    .MaterialExpressionEditorY=282
+    .MaterialExpressionGuid=CC121E244CF6828C3BF0EE82550F1AB1
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_1)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionDynamicParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionDynamicParameter'PuddleSplash_Particle:MaterialExpressionDynamicParameter_1'",OutputIndex=1,Mask=1,MaskG=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'PuddleSplash_Particle:MaterialExpressionComponentMask_0'")
+    .MaterialExpressionEditorX=80
+    .MaterialExpressionEditorY=660
+    .MaterialExpressionGuid=BAFE2A0D4117D7FD9AF93FA8CA2BE712
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_0)
+    .SamplerType=SAMPLERTYPE_Masks
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/MaterialFX/T_PuddleSplashParticle.T_PuddleSplashParticle'"
+    .MaterialExpressionEditorX=-2069
+    .MaterialExpressionEditorY=146
+    .MaterialExpressionGuid=4B9891D44D091E414863E0A7636D2469
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"
+  MaterialExpressionWorldPosition (MaterialExpressionWorldPosition_0)
+    .MaterialExpressionEditorX=-336
+    .MaterialExpressionEditorY=580
+    .MaterialExpressionGuid=C559B5614D0FEAC8CA815BB04DA819A5
+    .Material="/Script/Engine.Material'PuddleSplash_Particle'"

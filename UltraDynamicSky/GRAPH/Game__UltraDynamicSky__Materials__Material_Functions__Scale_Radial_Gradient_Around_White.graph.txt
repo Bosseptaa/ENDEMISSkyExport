@@ -1,0 +1,75 @@
+### /Game/UltraDynamicSky/Materials/Material_Functions/Scale_Radial_Gradient_Around_White
+  MaterialFunction (Scale_Radial_Gradient_Around_White)
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'Scale_Radial_Gradient_Around_WhiteEditorOnlyData'"
+    .StateId=A6C1A0AD493423FE84287F97A0BEC733
+    .CombinedInputTypes=15
+    .CombinedOutputTypes=15
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+  MaterialFunctionEditorOnlyData (Scale_Radial_Gradient_Around_WhiteEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'Scale_Radial_Gradient_Around_White:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionFunctionInput'Scale_Radial_Gradient_Around_White:MaterialExpressionFunctionInput_2'","/Script/Engine.MaterialExpressionFunctionInput'Scale_Radial_Gradient_Around_White:MaterialExpressionFunctionInput_3'","/Script/Engine.MaterialExpressionSubtract'Scale_Radial_Gradient_Around_White:MaterialExpressionSubtract_0'","/Script/Engine.MaterialExpressionOneMinus'Scale_Radial_Gradient_Around_White:MaterialExpressionOneMinus_0'","/Script/Engine.MaterialExpressionMultiply'Scale_Radial_Gradient_Around_White:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionDivide'Scale_Radial_Gradient_Around_White:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionSaturate'Scale_Radial_Gradient_Around_White:MaterialExpressionSaturate_1'"))
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Scale_Radial_Gradient_Around_White:MaterialExpressionFunctionInput_3'")
+    .MaterialExpressionEditorX=-664
+    .MaterialExpressionEditorY=384
+    .MaterialExpressionGuid=836854594D8CE06D33A7BE975D212E6C
+    .Function="/Script/Engine.MaterialFunction'Scale_Radial_Gradient_Around_White'"
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_2)
+    .Id=BDA69BBC4246F6F0026EFEA4972FC8A4
+    .InputType=FunctionInput_Scalar
+    .MaterialExpressionEditorX=-1008
+    .MaterialExpressionEditorY=272
+    .MaterialExpressionGuid=0E9FE43741457BF60FD36FA6E1438148
+    .Function="/Script/Engine.MaterialFunction'Scale_Radial_Gradient_Around_White'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_3)
+    .InputName="New Scale"
+    .Id=351133A148C40D0DCA409B95C8AE0E22
+    .InputType=FunctionInput_Scalar
+    .MaterialExpressionEditorX=-1024
+    .MaterialExpressionEditorY=382
+    .MaterialExpressionGuid=0E9FE43741457BF60FD36FA6E1438148
+    .Function="/Script/Engine.MaterialFunction'Scale_Radial_Gradient_Around_White'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionSaturate
+    .A=(Expression="/Script/Engine.MaterialExpressionSaturate'Scale_Radial_Gradient_Around_White:MaterialExpressionSaturate_1'")
+    .bLastPreviewed=True
+    .Id=F94A8BE2453A353D34A44A99EDF62D2D
+    .MaterialExpressionEditorX=-216
+    .MaterialExpressionEditorY=244
+    .MaterialExpressionGuid=D66FB2AD490972FFA2186AADC1E4EB6B
+    .Function="/Script/Engine.MaterialFunction'Scale_Radial_Gradient_Around_White'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionDivide
+    .B=(Expression="/Script/Engine.MaterialExpressionDivide'Scale_Radial_Gradient_Around_White:MaterialExpressionDivide_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'Scale_Radial_Gradient_Around_White:MaterialExpressionSubtract_0'")
+    .MaterialExpressionEditorX=-492
+    .MaterialExpressionEditorY=272
+    .MaterialExpressionGuid=9F3CCDBB433FC54E33029C91B9FD9EC4
+    .Function="/Script/Engine.MaterialFunction'Scale_Radial_Gradient_Around_White'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_0)
+    Input                  <- MaterialExpressionFunctionInput
+    .Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Scale_Radial_Gradient_Around_White:MaterialExpressionFunctionInput_3'")
+    .MaterialExpressionEditorX=-796
+    .MaterialExpressionEditorY=328
+    .MaterialExpressionGuid=E4C1014E41A4893980F5D18F7E235237
+    .Function="/Script/Engine.MaterialFunction'Scale_Radial_Gradient_Around_White'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_1)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Scale_Radial_Gradient_Around_White:MaterialExpressionMultiply_0'")
+    .MaterialExpressionEditorX=-348
+    .MaterialExpressionEditorY=272
+    .MaterialExpressionGuid=603FBA3B49DA08E7356FF88B25D7B677
+    .Function="/Script/Engine.MaterialFunction'Scale_Radial_Gradient_Around_White'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_0)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionOneMinus
+    .B=(Expression="/Script/Engine.MaterialExpressionOneMinus'Scale_Radial_Gradient_Around_White:MaterialExpressionOneMinus_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Scale_Radial_Gradient_Around_White:MaterialExpressionFunctionInput_2'")
+    .MaterialExpressionEditorX=-704
+    .MaterialExpressionEditorY=272
+    .MaterialExpressionGuid=722E0CE0431AA889A097CEB0A0FFF1DB
+    .Function="/Script/Engine.MaterialFunction'Scale_Radial_Gradient_Around_White'"

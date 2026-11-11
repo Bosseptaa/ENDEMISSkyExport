@@ -1,0 +1,961 @@
+### /Game/UltraDynamicSky/Materials/Material_Functions/Caustic_Refraction_Light
+  MaterialFunction (Caustic_Refraction_Light)
+    DependentFunctionExpressionCandidates(0) <- MaterialExpressionMaterialFunctionCall
+    .DependentFunctionExpressionCandidates(0)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_0'"
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'Caustic_Refraction_LightEditorOnlyData'"
+    .StateId=D82CB7B24B85FB4D50020EB7D9EF425B
+    .CombinedInputTypes=527
+    .CombinedOutputTypes=15
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+  MaterialFunctionEditorOnlyData (Caustic_Refraction_LightEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'Caustic_Refraction_Light:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionTextureSample'Caustic_Refraction_Light:MaterialExpressionTextureSample_0'","/Script/Engine.MaterialExpressionPanner'Caustic_Refraction_Light:MaterialExpressionPanner_0'","/Script/Engine.MaterialExpressionTextureSample'Caustic_Refraction_Light:MaterialExpressionTextureSample_2'","/Script/Engine.MaterialExpressionPanner'Caustic_Refraction_Light:MaterialExpressionPanner_2'","/Script/Engine.MaterialExpressionMultiply'Caustic_Refraction_Light:MaterialExpressionMultiply_2'","/Script/Engine.MaterialExpressionTextureSample'Caustic_Refraction_Light:MaterialExpressionTextureSample_4'","/Script/Engine.MaterialExpressionPanner'Caustic_Refraction_Light:MaterialExpressionPanner_4'","/Script/Engine.MaterialExpressionTime'Caustic_Refraction_Light:MaterialExpressionTime_0'","/Script/Engine.MaterialExpressionSine'Caustic_Refraction_Light:MaterialExpressionSine_0'","/Script/Engine.MaterialExpressionAdd'Caustic_Refraction_Light:MaterialExpressionAdd_7'","/Script/Engine.MaterialExpressionDivide'Caustic_Refraction_Light:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionLinearInterpolate'Caustic_Refraction_Light:MaterialExpressionLinearInterpolate_4'","/Script/Engine.MaterialExpressionLinearInterpolate'Caustic_Refraction_Light:MaterialExpressionLinearInterpolate_5'","/Script/Engine.MaterialExpressionSine'Caustic_Refraction_Light:MaterialExpressionSine_1'","/Script/Engine.MaterialExpressionAdd'Caustic_Refraction_Light:MaterialExpressionAdd_8'","/Script/Engine.MaterialExpressionDivide'Caustic_Refraction_Light:MaterialExpressionDivide_1'","/Script/Engine.MaterialExpressionAdd'Caustic_Refraction_Light:MaterialExpressionAdd_9'","/Script/Engine.MaterialExpressionAdd'Caustic_Refraction_Light:MaterialExpressionAdd_10'","/Script/Engine.MaterialExpressionAdd'Caustic_Refraction_Light:MaterialExpressionAdd_12'","/Script/Engine.MaterialExpressionMultiply'Caustic_Refraction_Light:MaterialExpressionMultiply_3'","/Script/Engine.MaterialExpressionDivide'Caustic_Refraction_Light:MaterialExpressionDivide_3'","/Script/Engine.MaterialExpressionScalarParameter'Caustic_Refraction_Light:MaterialExpressionScalarParameter_2'","/Script/Engine.MaterialExpressionScalarParameter'Caustic_Refraction_Light:MaterialExpressionScalarParameter_3'","/Script/Engine.MaterialExpressionDivide'Caustic_Refraction_Light:MaterialExpressionDivide_4'","/Script/Engine.MaterialExpressionSaturate'Caustic_Refraction_Light:MaterialExpressionSaturate_0'","/Script/Engine.MaterialExpressionSaturate'Caustic_Refraction_Light:MaterialExpressionSaturate_1'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Caustic_Refraction_Light:MaterialExpressionNamedRerouteDeclaration_1'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Caustic_Refraction_Light:MaterialExpressionNamedRerouteDeclaration_2'","/Script/Engine.MaterialExpressionLinearInterpolate'Caustic_Refraction_Light:MaterialExpressionLinearInterpolate_6'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Caustic_Refraction_Light:MaterialExpressionNamedRerouteUsage_2'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Caustic_Refraction_Light:MaterialExpressionNamedRerouteUsage_4'","/Script/Engine.MaterialExpressionSaturate'Caustic_Refraction_Light:MaterialExpressionSaturate_2'","/Script/Engine.MaterialExpressionOneMinus'Caustic_Refraction_Light:MaterialExpressionOneMinus_1'","/Script/Engine.MaterialExpressionMultiply'Caustic_Refraction_Light:MaterialExpressionMultiply_12'","/Script/Engine.MaterialExpressionFunctionInput'Caustic_Refraction_Light:MaterialExpressionFunctionInput_0'","/Script/Engine.MaterialExpressionMax'Caustic_Refraction_Light:MaterialExpressionMax_0'","/Script/Engine.MaterialExpressionOneMinus'Caustic_Refraction_Light:MaterialExpressionOneMinus_0'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Caustic_Refraction_Light:MaterialExpressionNamedRerouteDeclaration_5'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Caustic_Refraction_Light:MaterialExpressionNamedRerouteUsage_9'","/Script/Engine.MaterialExpressionMax'Caustic_Refraction_Light:MaterialExpressionMax_4'","/Script/Engine.MaterialExpressionCameraPositionWS'Caustic_Refraction_Light:MaterialExpressionCameraPositionWS_1'","/Script/Engine.MaterialExpressionWorldPosition'Caustic_Refraction_Light:MaterialExpressionWorldPosition_2'","/Script/Engine.MaterialExpressionDistance'Caustic_Refraction_Light:MaterialExpressionDistance_2'","/Script/Engine.MaterialExpressionDivide'Caustic_Refraction_Light:MaterialExpressionDivide_6'","/Script/Engine.MaterialExpressionLinearInterpolate'Caustic_Refraction_Light:MaterialExpressionLinearInterpolate_0'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Caustic_Refraction_Light:MaterialExpressionNamedRerouteDeclaration_0'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Caustic_Refraction_Light:MaterialExpressionNamedRerouteUsage_0'","/Script/Engine.MaterialExpressionPower'Caustic_Refraction_Light:MaterialExpressionPower_0'","/Script/Engine.MaterialExpressionMultiply'Caustic_Refraction_Light:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionScalarParameter'Caustic_Refraction_Light:MaterialExpressionScalarParameter_0'","/Script/Engine.MaterialExpressionScalarParameter'Caustic_Refraction_Light:MaterialExpressionScalarParameter_5'","/Script/Engine.MaterialExpressionMultiply'Caustic_Refraction_Light:MaterialExpressionMultiply_1'","/Script/Engine.MaterialExpressionMultiply'Caustic_Refraction_Light:MaterialExpressionMultiply_5'","/Script/Engine.MaterialExpressionScalarParameter'Caustic_Refraction_Light:MaterialExpressionScalarParameter_6'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Caustic_Refraction_Light:MaterialExpressionNamedRerouteDeclaration_3'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Caustic_Refraction_Light:MaterialExpressionNamedRerouteUsage_3'","/Script/Engine.MaterialExpressionDivide'Caustic_Refraction_Light:MaterialExpressionDivide_2'","/Script/Engine.MaterialExpressionReroute'Caustic_Refraction_Light:MaterialExpressionReroute_0'","/Script/Engine.MaterialExpressionSubtract'Caustic_Refraction_Light:MaterialExpressionSubtract_2'","/Script/Engine.MaterialExpressionComponentMask'Caustic_Refraction_Light:MaterialExpressionComponentMask_6'","/Script/Engine.MaterialExpressionMultiply'Caustic_Refraction_Light:MaterialExpressionMultiply_6'","/Script/Engine.MaterialExpressionDivide'Caustic_Refraction_Light:MaterialExpressionDivide_5'","/Script/Engine.MaterialExpressionSubtract'Caustic_Refraction_Light:MaterialExpressionSubtract_1'","/Script/Engine.MaterialExpressionComponentMask'Caustic_Refraction_Light:MaterialExpressionComponentMask_3'","/Script/Engine.MaterialExpressionSubtract'Caustic_Refraction_Light:MaterialExpressionSubtract_3'","/Script/Engine.MaterialExpressionComponentMask'Caustic_Refraction_Light:MaterialExpressionComponentMask_4'","/Script/Engine.MaterialExpressionComponentMask'Caustic_Refraction_Light:MaterialExpressionComponentMask_5'","/Script/Engine.MaterialExpressionDivide'Caustic_Refraction_Light:MaterialExpressionDivide_7'","/Script/Engine.MaterialExpressionReroute'Caustic_Refraction_Light:MaterialExpressionReroute_1'","/Script/Engine.MaterialExpressionScalarParameter'Caustic_Refraction_Light:MaterialExpressionScalarParameter_9'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Caustic_Refraction_Light:MaterialExpressionNamedRerouteDeclaration_7'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Caustic_Refraction_Light:MaterialExpressionNamedRerouteUsage_5'","/Script/Engine.MaterialExpressionMultiply'Caustic_Refraction_Light:MaterialExpressionMultiply_11'","/Script/Engine.MaterialExpressionMultiply'Caustic_Refraction_Light:MaterialExpressionMultiply_13'","/Script/Engine.MaterialExpressionScalarParameter'Caustic_Refraction_Light:MaterialExpressionScalarParameter_10'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Caustic_Refraction_Light:MaterialExpressionNamedRerouteUsage_13'","/Script/Engine.MaterialExpressionMultiply'Caustic_Refraction_Light:MaterialExpressionMultiply_4'","/Script/Engine.MaterialExpressionAdd'Caustic_Refraction_Light:MaterialExpressionAdd_0'","/Script/Engine.MaterialExpressionConstant2Vector'Caustic_Refraction_Light:MaterialExpressionConstant2Vector_0'","/Script/Engine.MaterialExpressionConstant2Vector'Caustic_Refraction_Light:MaterialExpressionConstant2Vector_1'","/Script/Engine.MaterialExpressionWorldPosition'Caustic_Refraction_Light:MaterialExpressionWorldPosition_0'","/Script/Engine.MaterialExpressionCameraPositionWS'Caustic_Refraction_Light:MaterialExpressionCameraPositionWS_0'","/Script/Engine.MaterialExpressionSaturate'Caustic_Refraction_Light:MaterialExpressionSaturate_3'","/Script/Engine.MaterialExpressionLinearInterpolate'Caustic_Refraction_Light:MaterialExpressionLinearInterpolate_1'","/Script/Engine.MaterialExpressionDistance'Caustic_Refraction_Light:MaterialExpressionDistance_0'","/Script/Engine.MaterialExpressionConstant'Caustic_Refraction_Light:MaterialExpressionConstant_0'","/Script/Engine.MaterialExpressionCollectionParameter'Caustic_Refraction_Light:MaterialExpressionCollectionParameter_1'","/Script/Engine.MaterialExpressionFunctionInput'Caustic_Refraction_Light:MaterialExpressionFunctionInput_1'","/Script/Engine.MaterialExpressionStaticBool'Caustic_Refraction_Light:MaterialExpressionStaticBool_0'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Caustic_Refraction_Light:MaterialExpressionNamedRerouteDeclaration_4'","/Script/Engine.MaterialExpressionStaticSwitch'Caustic_Refraction_Light:MaterialExpressionStaticSwitch_0'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Caustic_Refraction_Light:MaterialExpressionNamedRerouteUsage_1'","/Script/Engine.MaterialExpressionStaticSwitch'Caustic_Refraction_Light:MaterialExpressionStaticSwitch_2'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Caustic_Refraction_Light:MaterialExpressionNamedRerouteUsage_7'","/Script/Engine.MaterialExpressionReroute'Caustic_Refraction_Light:MaterialExpressionReroute_2'","/Script/Engine.MaterialExpressionStaticSwitch'Caustic_Refraction_Light:MaterialExpressionStaticSwitch_3'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Caustic_Refraction_Light:MaterialExpressionNamedRerouteUsage_8'","/Script/Engine.MaterialExpressionReroute'Caustic_Refraction_Light:MaterialExpressionReroute_3'","/Script/Engine.MaterialExpressionStaticSwitch'Caustic_Refraction_Light:MaterialExpressionStaticSwitch_4'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Caustic_Refraction_Light:MaterialExpressionNamedRerouteUsage_10'","/Script/Engine.MaterialExpressionReroute'Caustic_Refraction_Light:MaterialExpressionReroute_4'","/Script/Engine.MaterialExpressionStaticSwitch'Caustic_Refraction_Light:MaterialExpressionStaticSwitch_5'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Caustic_Refraction_Light:MaterialExpressionNamedRerouteUsage_11'","/Script/Engine.MaterialExpressionReroute'Caustic_Refraction_Light:MaterialExpressionReroute_5'","/Script/Engine.MaterialExpressionAdd'Caustic_Refraction_Light:MaterialExpressionAdd_1'","/Script/Engine.MaterialExpressionScalarParameter'Caustic_Refraction_Light:MaterialExpressionScalarParameter_1'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Caustic_Refraction_Light:MaterialExpressionMaterialFunctionCall_0'"),EditorComments=("/Script/Engine.MaterialExpressionComment'Caustic_Refraction_Light:MaterialExpressionComment_1'","/Script/Engine.MaterialExpressionComment'Caustic_Refraction_Light:MaterialExpressionComment_2'","/Script/Engine.MaterialExpressionComment'Caustic_Refraction_Light:MaterialExpressionComment_0'","/Script/Engine.MaterialExpressionComment'Caustic_Refraction_Light:MaterialExpressionComment_3'"))
+  MaterialExpressionAdd (MaterialExpressionAdd_0)
+    A                      <- MaterialExpressionReroute
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Caustic_Refraction_Light:MaterialExpressionMultiply_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionReroute'Caustic_Refraction_Light:MaterialExpressionReroute_2'")
+    .MaterialExpressionEditorX=-2676
+    .MaterialExpressionEditorY=540
+    .MaterialExpressionGuid=A2AC628D43FFA1C600C61CBD4C23A6C3
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionAdd (MaterialExpressionAdd_1)
+    A                      <- MaterialExpressionDivide
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Caustic_Refraction_Light:MaterialExpressionScalarParameter_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'Caustic_Refraction_Light:MaterialExpressionDivide_4'")
+    .MaterialExpressionEditorX=-1180
+    .MaterialExpressionEditorY=1156
+    .MaterialExpressionGuid=279B0C2A4E6A7F292C425A9E7303C386
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionAdd (MaterialExpressionAdd_10)
+    A                      <- MaterialExpressionLinearInterpolate
+    B                      <- MaterialExpressionLinearInterpolate
+    .B=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Caustic_Refraction_Light:MaterialExpressionLinearInterpolate_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Caustic_Refraction_Light:MaterialExpressionLinearInterpolate_4'")
+    .MaterialExpressionEditorX=-650
+    .MaterialExpressionEditorY=390
+    .MaterialExpressionGuid=B654D59E4AA33257F0ED2BB08E39D4D3
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionAdd (MaterialExpressionAdd_12)
+    A                      <- MaterialExpressionReroute
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Caustic_Refraction_Light:MaterialExpressionMultiply_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionReroute'Caustic_Refraction_Light:MaterialExpressionReroute_3'")
+    .MaterialExpressionEditorX=-2624
+    .MaterialExpressionEditorY=268
+    .MaterialExpressionGuid=A2AC628D43FFA1C600C61CBD4C23A6C3
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionAdd (MaterialExpressionAdd_7)
+    A                      <- MaterialExpressionSine
+    .A=(Expression="/Script/Engine.MaterialExpressionSine'Caustic_Refraction_Light:MaterialExpressionSine_0'")
+    .MaterialExpressionEditorX=-1262
+    .MaterialExpressionEditorY=338
+    .MaterialExpressionGuid=0FA426E24327BE18F7420695FC7E99C3
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionAdd (MaterialExpressionAdd_8)
+    A                      <- MaterialExpressionSine
+    .A=(Expression="/Script/Engine.MaterialExpressionSine'Caustic_Refraction_Light:MaterialExpressionSine_1'")
+    .MaterialExpressionEditorX=-1190
+    .MaterialExpressionEditorY=446
+    .MaterialExpressionGuid=0FA426E24327BE18F7420695FC7E99C3
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionAdd (MaterialExpressionAdd_9)
+    A                      <- MaterialExpressionTime
+    .A=(Expression="/Script/Engine.MaterialExpressionTime'Caustic_Refraction_Light:MaterialExpressionTime_0'")
+    .ConstB=0.250000
+    .MaterialExpressionEditorX=-1430
+    .MaterialExpressionEditorY=446
+    .MaterialExpressionGuid=B359BEC344618E6139F3048999A38D44
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionCameraPositionWS (MaterialExpressionCameraPositionWS_0)
+    .MaterialExpressionEditorX=740
+    .MaterialExpressionEditorY=496
+    .MaterialExpressionGuid=028E7A214EFA309F742C648C3D50AB34
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionCameraPositionWS (MaterialExpressionCameraPositionWS_1)
+    .MaterialExpressionEditorX=-3544
+    .MaterialExpressionEditorY=1056
+    .MaterialExpressionGuid=43F1C59640C3F197DC7DC38A6F120AFE
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_1)
+    .ParameterName="Cloud Shadows Light Vector"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Material_Functions/UDS_VolumetricClouds_MPC.UDS_VolumetricClouds_MPC'"
+    .ParameterId=1928D0A24BECAB623CA446A3C08CC5EF
+    .MaterialExpressionEditorX=-5139
+    .MaterialExpressionEditorY=457
+    .MaterialExpressionGuid=D06C19144A2F20226BD20DB49ACA07FA
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionComment (MaterialExpressionComment_0)
+    .SizeX=1508
+    .SizeY=640
+    .Text="Set MIP to blur with depth and cloud shadows"
+    .CommentColor=(R=0.459838,G=0.644189,B=1.000000,A=1.000000)
+    .MaterialExpressionEditorX=-3792
+    .MaterialExpressionEditorY=1008
+    .MaterialExpressionGuid=87529404427D5507F58FF8BD8F37F5D2
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionComment (MaterialExpressionComment_1)
+    .SizeX=3516
+    .SizeY=696
+    .Text="Map Panning Caustic Texture and mix channels using sine waves"
+    .CommentColor=(R=1.000000,G=0.482511,B=0.828374,A=1.000000)
+    .MaterialExpressionEditorX=-3768
+    .MaterialExpressionEditorY=104
+    .MaterialExpressionGuid=366FC2844369BC1AC2F76EB238D1097F
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionComment (MaterialExpressionComment_2)
+    .SizeX=1728
+    .SizeY=536
+    .Text="Mask with Height Relative to Water level"
+    .CommentColor=(R=1.000000,G=0.731412,B=0.349730,A=1.000000)
+    .MaterialExpressionEditorX=-2156
+    .MaterialExpressionEditorY=1024
+    .MaterialExpressionGuid=31E56F1B454506D0D7AAA1BBBAB686BF
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionComment (MaterialExpressionComment_3)
+    .SizeX=1984
+    .SizeY=576
+    .Text=" Caustics UVs"
+    .CommentColor=(R=0.407805,G=0.612217,B=1.000000,A=1.000000)
+    .MaterialExpressionEditorX=-5832
+    .MaterialExpressionEditorY=120
+    .MaterialExpressionGuid=BC17E5D94E32FDFDB0813F8E17C5C286
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_3)
+    Input                  <- MaterialExpressionWorldPosition
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionWorldPosition'Caustic_Refraction_Light:MaterialExpressionWorldPosition_0'")
+    .MaterialExpressionEditorX=-5403
+    .MaterialExpressionEditorY=453
+    .MaterialExpressionGuid=E178BDFB4ED51BABB0F099AC77B6FBB6
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_4)
+    Input                  <- MaterialExpressionCollectionParameter
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Caustic_Refraction_Light:MaterialExpressionCollectionParameter_1'")
+    .MaterialExpressionEditorX=-4885
+    .MaterialExpressionEditorY=483
+    .MaterialExpressionGuid=EB33F6BD45AC3079A9D022B72F109D05
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_5)
+    Input                  <- MaterialExpressionCollectionParameter
+    .R=True
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Caustic_Refraction_Light:MaterialExpressionCollectionParameter_1'")
+    .MaterialExpressionEditorX=-4881
+    .MaterialExpressionEditorY=555
+    .MaterialExpressionGuid=DCEFC17042022028E290F2BB77CB433E
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_6)
+    Input                  <- MaterialExpressionWorldPosition
+    .R=True
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionWorldPosition'Caustic_Refraction_Light:MaterialExpressionWorldPosition_0'")
+    .MaterialExpressionEditorX=-4337
+    .MaterialExpressionEditorY=283
+    .MaterialExpressionGuid=011402A449B17013E853F391A642931D
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionConstant (MaterialExpressionConstant_0)
+    .MaterialExpressionEditorX=782
+    .MaterialExpressionEditorY=603
+    .MaterialExpressionGuid=623E942D44024EFDA8B8669030A54064
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionConstant2Vector (MaterialExpressionConstant2Vector_0)
+    .R=0.010000
+    .G=0.060000
+    .MaterialExpressionEditorX=-3189
+    .MaterialExpressionEditorY=394
+    .MaterialExpressionGuid=EF783F1648BD4C489A54DDAC9E73A07E
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionConstant2Vector (MaterialExpressionConstant2Vector_1)
+    .R=0.020000
+    .G=-0.070000
+    .MaterialExpressionEditorX=-3162
+    .MaterialExpressionEditorY=556
+    .MaterialExpressionGuid=430089F54297516DD386EBB1E050B638
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionDistance (MaterialExpressionDistance_0)
+    A                      <- MaterialExpressionCameraPositionWS
+    B                      <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'Caustic_Refraction_Light:MaterialExpressionConstant_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionCameraPositionWS'Caustic_Refraction_Light:MaterialExpressionCameraPositionWS_0'")
+    .MaterialExpressionEditorX=948
+    .MaterialExpressionEditorY=508
+    .MaterialExpressionGuid=AA924BF9413C3DCF29CD9AB3AC285D37
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionDistance (MaterialExpressionDistance_2)
+    A                      <- MaterialExpressionCameraPositionWS
+    B                      <- MaterialExpressionWorldPosition
+    .B=(Expression="/Script/Engine.MaterialExpressionWorldPosition'Caustic_Refraction_Light:MaterialExpressionWorldPosition_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionCameraPositionWS'Caustic_Refraction_Light:MaterialExpressionCameraPositionWS_1'")
+    .MaterialExpressionEditorX=-3376
+    .MaterialExpressionEditorY=1144
+    .MaterialExpressionGuid=8F6C98964AAB44EFFE774C93ACF3EA54
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionAdd
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Caustic_Refraction_Light:MaterialExpressionAdd_7'")
+    .MaterialExpressionEditorX=-1134
+    .MaterialExpressionEditorY=338
+    .MaterialExpressionGuid=A945E6FC431D4080B9C2A69D9DC67F89
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionDivide (MaterialExpressionDivide_1)
+    A                      <- MaterialExpressionAdd
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Caustic_Refraction_Light:MaterialExpressionAdd_8'")
+    .MaterialExpressionEditorX=-1062
+    .MaterialExpressionEditorY=446
+    .MaterialExpressionGuid=A945E6FC431D4080B9C2A69D9DC67F89
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionDivide (MaterialExpressionDivide_2)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Caustic_Refraction_Light:MaterialExpressionNamedRerouteUsage_3'")
+    .ConstB=-7000.000000
+    .MaterialExpressionEditorX=-3512
+    .MaterialExpressionEditorY=1304
+    .MaterialExpressionGuid=786234DC41AB2D2A6E952CA689D65DE4
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionDivide (MaterialExpressionDivide_3)
+    A                      <- MaterialExpressionNamedRerouteDeclaration
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Caustic_Refraction_Light:MaterialExpressionScalarParameter_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Caustic_Refraction_Light:MaterialExpressionNamedRerouteDeclaration_3'")
+    .MaterialExpressionEditorX=-1216
+    .MaterialExpressionEditorY=1356
+    .MaterialExpressionGuid=EB5E0D024133F64F3B32B8AEC894B4DE
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionDivide (MaterialExpressionDivide_4)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Caustic_Refraction_Light:MaterialExpressionScalarParameter_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Caustic_Refraction_Light:MaterialExpressionMultiply_11'")
+    .MaterialExpressionEditorX=-1412
+    .MaterialExpressionEditorY=1156
+    .MaterialExpressionGuid=EB5E0D024133F64F3B32B8AEC894B4DE
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionDivide (MaterialExpressionDivide_5)
+    A                      <- MaterialExpressionNamedRerouteDeclaration
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Caustic_Refraction_Light:MaterialExpressionComponentMask_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Caustic_Refraction_Light:MaterialExpressionNamedRerouteDeclaration_7'")
+    .MaterialExpressionEditorX=-4695
+    .MaterialExpressionEditorY=373
+    .MaterialExpressionGuid=65CDA8F444FBAF599723C89574468446
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionDivide (MaterialExpressionDivide_6)
+    A                      <- MaterialExpressionDistance
+    .A=(Expression="/Script/Engine.MaterialExpressionDistance'Caustic_Refraction_Light:MaterialExpressionDistance_2'")
+    .ConstB=2000.000000
+    .MaterialExpressionEditorX=-3240
+    .MaterialExpressionEditorY=1144
+    .MaterialExpressionGuid=4606EA564EC034C309D36D9E9B8BABB5
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionDivide (MaterialExpressionDivide_7)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Caustic_Refraction_Light:MaterialExpressionScalarParameter_9'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'Caustic_Refraction_Light:MaterialExpressionSubtract_1'")
+    .MaterialExpressionEditorX=-3989
+    .MaterialExpressionEditorY=283
+    .MaterialExpressionGuid=F7D2944A460A54DD16F788B6F10E98F6
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_0)
+    .InputName="Shadow"
+    .Id=2504CEE5489AE3418B41A2B9EC10904A
+    .InputType=FunctionInput_Scalar
+    .PreviewValue=(X=1.000000,Y=0.000000,Z=0.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .MaterialExpressionEditorX=-3732
+    .MaterialExpressionEditorY=1452
+    .MaterialExpressionGuid=160DC026431B70E0F9C7A88ED4A6F412
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_1)
+    Preview                <- MaterialExpressionStaticBool
+    .Preview=(Expression="/Script/Engine.MaterialExpressionStaticBool'Caustic_Refraction_Light:MaterialExpressionStaticBool_0'")
+    .InputName="Simplified"
+    .Id=073A7FAF4AF6D37403FD8A8D2B7ADFAE
+    .InputType=FunctionInput_StaticBool
+    .bUsePreviewValueAsDefault=True
+    .MaterialExpressionEditorX=-5052
+    .MaterialExpressionEditorY=1204
+    .MaterialExpressionGuid=083ADB1F450724755A7773BA2469CC8F
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionStaticSwitch
+    .A=(Expression="/Script/Engine.MaterialExpressionStaticSwitch'Caustic_Refraction_Light:MaterialExpressionStaticSwitch_5'")
+    .bLastPreviewed=True
+    .Id=E3C8C026448BECBB80BED1B7B07752A6
+    .MaterialExpressionEditorX=1828
+    .MaterialExpressionEditorY=252
+    .MaterialExpressionGuid=F9DC1F0F4471A1B46FC957899C4574E9
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_0)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Caustic_Refraction_Light:MaterialExpressionNamedRerouteUsage_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Caustic_Refraction_Light:MaterialExpressionAdd_10'")
+    .ConstAlpha=0.250000
+    .MaterialExpressionEditorX=-468
+    .MaterialExpressionEditorY=392
+    .MaterialExpressionGuid=8358C2C043BB179ACEB223A5DE89E4D2
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_1)
+    B                      <- MaterialExpressionSaturate
+    Alpha                  <- MaterialExpressionSaturate
+    .B=(Expression="/Script/Engine.MaterialExpressionSaturate'Caustic_Refraction_Light:MaterialExpressionSaturate_2'")
+    .ConstA=1.000000
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionSaturate'Caustic_Refraction_Light:MaterialExpressionSaturate_3'")
+    .MaterialExpressionEditorX=1220
+    .MaterialExpressionEditorY=368
+    .MaterialExpressionGuid=0149E5BB4FDD16FFDF6092A8BE1C9B37
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_4)
+    A                      <- MaterialExpressionTextureSample
+    B                      <- MaterialExpressionTextureSample
+    Alpha                  <- MaterialExpressionDivide
+    .B=(Expression="/Script/Engine.MaterialExpressionTextureSample'Caustic_Refraction_Light:MaterialExpressionTextureSample_4'",OutputIndex=2,Mask=1,MaskG=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'Caustic_Refraction_Light:MaterialExpressionTextureSample_4'",OutputIndex=1,Mask=1,MaskR=1)
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionDivide'Caustic_Refraction_Light:MaterialExpressionDivide_0'")
+    .MaterialExpressionEditorX=-818
+    .MaterialExpressionEditorY=230
+    .MaterialExpressionGuid=8695321D42D6CC66F909559297089AA4
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_5)
+    A                      <- MaterialExpressionTextureSample
+    B                      <- MaterialExpressionTextureSample
+    Alpha                  <- MaterialExpressionDivide
+    .B=(Expression="/Script/Engine.MaterialExpressionTextureSample'Caustic_Refraction_Light:MaterialExpressionTextureSample_0'",OutputIndex=3,Mask=1,MaskB=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'Caustic_Refraction_Light:MaterialExpressionTextureSample_0'",OutputIndex=2,Mask=1,MaskG=1)
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionDivide'Caustic_Refraction_Light:MaterialExpressionDivide_1'")
+    .MaterialExpressionEditorX=-832
+    .MaterialExpressionEditorY=544
+    .MaterialExpressionGuid=8695321D42D6CC66F909559297089AA4
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_6)
+    B                      <- MaterialExpressionLinearInterpolate
+    Alpha                  <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Caustic_Refraction_Light:MaterialExpressionLinearInterpolate_0'")
+    .ConstA=1.000000
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Caustic_Refraction_Light:MaterialExpressionNamedRerouteUsage_2'")
+    .MaterialExpressionEditorX=16
+    .MaterialExpressionEditorY=424
+    .MaterialExpressionGuid=ABDE47214CCCEE0DCECA2D8C004467A0
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_0)
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Water_Level_Local.Water_Level_Local'"
+    .FunctionInputs(0)=(ExpressionInputId=CDB4E7DA4E2E17B40AECDE94BBB5570B,Input=(OutputIndex=1,InputName="Position XY",Mask=1,MaskR=1,MaskG=1))
+    .FunctionOutputs(0)=(ExpressionOutputId=A4D2A93C433A1CA7443B299E4A06180F,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-5436
+    .MaterialExpressionEditorY=376
+    .MaterialExpressionGuid=16CC65A64E7C4F3B275E94B0BD9D6E34
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMax (MaterialExpressionMax_0)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Caustic_Refraction_Light:MaterialExpressionMultiply_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Caustic_Refraction_Light:MaterialExpressionMultiply_0'")
+    .MaterialExpressionEditorX=-2972
+    .MaterialExpressionEditorY=1380
+    .MaterialExpressionGuid=13BE2CDB445C551DF13C489CDAA51A1C
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionMax (MaterialExpressionMax_4)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMax
+    .B=(Expression="/Script/Engine.MaterialExpressionMax'Caustic_Refraction_Light:MaterialExpressionMax_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Caustic_Refraction_Light:MaterialExpressionMultiply_5'")
+    .MaterialExpressionEditorX=-2732
+    .MaterialExpressionEditorY=1260
+    .MaterialExpressionGuid=153B1F7441FDBF3BDFF900B2D869F50E
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionDivide
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Caustic_Refraction_Light:MaterialExpressionScalarParameter_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'Caustic_Refraction_Light:MaterialExpressionDivide_2'")
+    .MaterialExpressionEditorX=-3128
+    .MaterialExpressionEditorY=1304
+    .MaterialExpressionGuid=2987A59D4ED269A9EDADE38527F8F12C
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionPower
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Caustic_Refraction_Light:MaterialExpressionScalarParameter_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionPower'Caustic_Refraction_Light:MaterialExpressionPower_0'")
+    .MaterialExpressionEditorX=-3112
+    .MaterialExpressionEditorY=1452
+    .MaterialExpressionGuid=2987A59D4ED269A9EDADE38527F8F12C
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_11)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Caustic_Refraction_Light:MaterialExpressionNamedRerouteUsage_5'")
+    .ConstB=-1.000000
+    .MaterialExpressionEditorX=-1936
+    .MaterialExpressionEditorY=1156
+    .MaterialExpressionGuid=D0A2B16941D4F623A5F2B18F01667F2A
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_12)
+    A                      <- MaterialExpressionStaticSwitch
+    B                      <- MaterialExpressionOneMinus
+    .B=(Expression="/Script/Engine.MaterialExpressionOneMinus'Caustic_Refraction_Light:MaterialExpressionOneMinus_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionStaticSwitch'Caustic_Refraction_Light:MaterialExpressionStaticSwitch_4'")
+    .MaterialExpressionEditorX=776
+    .MaterialExpressionEditorY=360
+    .MaterialExpressionGuid=B1AECE814FD49296E52DBB8561988ED4
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_13)
+    A                      <- MaterialExpressionSaturate
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Caustic_Refraction_Light:MaterialExpressionScalarParameter_10'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSaturate'Caustic_Refraction_Light:MaterialExpressionSaturate_0'")
+    .MaterialExpressionEditorX=-780
+    .MaterialExpressionEditorY=1160
+    .MaterialExpressionGuid=D1A0541A48C2B2254D7F7892307E20C0
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_2)
+    A                      <- MaterialExpressionTextureSample
+    B                      <- MaterialExpressionConstant2Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'Caustic_Refraction_Light:MaterialExpressionConstant2Vector_0'",Mask=1,MaskR=1,MaskG=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'Caustic_Refraction_Light:MaterialExpressionTextureSample_2'",OutputIndex=4,Mask=1,MaskA=1)
+    .ConstB=0.070000
+    .MaterialExpressionEditorX=-3024
+    .MaterialExpressionEditorY=384
+    .MaterialExpressionGuid=1CC81993446AA0158D2894A879C382FF
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_3)
+    A                      <- MaterialExpressionStaticSwitch
+    .A=(Expression="/Script/Engine.MaterialExpressionStaticSwitch'Caustic_Refraction_Light:MaterialExpressionStaticSwitch_3'")
+    .ConstB=1.400000
+    .MaterialExpressionEditorX=-2290
+    .MaterialExpressionEditorY=198
+    .MaterialExpressionGuid=5823B8504D1D94AB67C7B7B169D050A2
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_4)
+    A                      <- MaterialExpressionTextureSample
+    B                      <- MaterialExpressionConstant2Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'Caustic_Refraction_Light:MaterialExpressionConstant2Vector_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'Caustic_Refraction_Light:MaterialExpressionTextureSample_2'",OutputIndex=4,Mask=1,MaskA=1)
+    .ConstB=0.070000
+    .MaterialExpressionEditorX=-3024
+    .MaterialExpressionEditorY=532
+    .MaterialExpressionGuid=1CC81993446AA0158D2894A879C382FF
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_5)
+    A                      <- MaterialExpressionDivide
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Caustic_Refraction_Light:MaterialExpressionScalarParameter_6'")
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'Caustic_Refraction_Light:MaterialExpressionDivide_6'")
+    .MaterialExpressionEditorX=-2860
+    .MaterialExpressionEditorY=1144
+    .MaterialExpressionGuid=B0C2A8B14BEADA548572518756C38453
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_6)
+    A                      <- MaterialExpressionDivide
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Caustic_Refraction_Light:MaterialExpressionComponentMask_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'Caustic_Refraction_Light:MaterialExpressionDivide_5'")
+    .MaterialExpressionEditorX=-4567
+    .MaterialExpressionEditorY=521
+    .MaterialExpressionGuid=3CCA5B8B400557241D893CAC1F7B7231
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_0)
+    Input                  <- MaterialExpressionTextureSample
+    .Input=(Expression="/Script/Engine.MaterialExpressionTextureSample'Caustic_Refraction_Light:MaterialExpressionTextureSample_2'",OutputIndex=4,Mask=1,MaskA=1)
+    .Name="Panning Alpha"
+    .NodeColor=(R=1.000000,G=0.000000,B=0.398437,A=1.000000)
+    .VariableGuid=B78011E042A814850ED4109F04940DE0
+    .MaterialExpressionEditorX=-3052
+    .MaterialExpressionEditorY=688
+    .MaterialExpressionGuid=7F5D1AF147A8E67C809071B2BEFA77B4
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_1)
+    Input                  <- MaterialExpressionSaturate
+    .Input=(Expression="/Script/Engine.MaterialExpressionSaturate'Caustic_Refraction_Light:MaterialExpressionSaturate_1'")
+    .Name="Deep Mask"
+    .NodeColor=(R=1.000000,G=0.140625,B=0.000000,A=1.000000)
+    .VariableGuid=2A978A734CB6DD4E9F665286D95DDB2B
+    .MaterialExpressionEditorX=-944
+    .MaterialExpressionEditorY=1356
+    .MaterialExpressionGuid=F86F8AE147ECC1A3F9DC459EF9284775
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_2)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Caustic_Refraction_Light:MaterialExpressionMultiply_13'")
+    .Name="Caustic Mask"
+    .NodeColor=(R=1.000000,G=0.000000,B=0.210937,A=1.000000)
+    .VariableGuid=AE09AE7E43A4291775911EB225038ECF
+    .MaterialExpressionEditorX=-656
+    .MaterialExpressionEditorY=1160
+    .MaterialExpressionGuid=CBCFD5C1416F5B242F737FA96440DFA4
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_3)
+    Input                  <- MaterialExpressionSubtract
+    .Input=(Expression="/Script/Engine.MaterialExpressionSubtract'Caustic_Refraction_Light:MaterialExpressionSubtract_2'")
+    .Name="Depth"
+    .NodeColor=(R=0.000000,G=0.132812,B=1.000000,A=1.000000)
+    .VariableGuid=5DF313B74C7007F765F2819522062C08
+    .MaterialExpressionEditorX=-1412
+    .MaterialExpressionEditorY=1356
+    .MaterialExpressionGuid=114DCB2542DE9F9AB72D78BE86B7AEE4
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_4)
+    Input                  <- MaterialExpressionFunctionInput
+    .Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Caustic_Refraction_Light:MaterialExpressionFunctionInput_1'")
+    .Name="Simplified Logic"
+    .NodeColor=(R=0.218750,G=0.000000,B=1.000000,A=1.000000)
+    .VariableGuid=9ABE1ECA43D9190B1DC051915DA85E35
+    .MaterialExpressionEditorX=-4812
+    .MaterialExpressionEditorY=1204
+    .MaterialExpressionGuid=47EBC2624E592DD8417CEF993AD2A3C9
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_5)
+    Input                  <- MaterialExpressionStaticSwitch
+    .Input=(Expression="/Script/Engine.MaterialExpressionStaticSwitch'Caustic_Refraction_Light:MaterialExpressionStaticSwitch_0'")
+    .Name="MIP"
+    .NodeColor=(R=0.000000,G=0.648437,B=1.000000,A=1.000000)
+    .VariableGuid=4B8791884B234761956D52B0EF32DB9E
+    .MaterialExpressionEditorX=-2428
+    .MaterialExpressionEditorY=1344
+    .MaterialExpressionGuid=F689E42B4D7B227A93E90CA821790E36
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_7)
+    Input                  <- MaterialExpressionSubtract
+    .Input=(Expression="/Script/Engine.MaterialExpressionSubtract'Caustic_Refraction_Light:MaterialExpressionSubtract_3'")
+    .Name="Depth Under Water"
+    .NodeColor=(R=0.000000,G=1.000000,B=1.000000,A=1.000000)
+    .VariableGuid=C475E47841B6CEEFC87A0A880846EAF1
+    .MaterialExpressionEditorX=-5011
+    .MaterialExpressionEditorY=373
+    .MaterialExpressionGuid=5649A3144E1BE0F9FB861986DFF97500
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_0)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Caustic_Refraction_Light:MaterialExpressionNamedRerouteDeclaration_0'"
+    .DeclarationGuid=B78011E042A814850ED4109F04940DE0
+    .MaterialExpressionEditorX=-632
+    .MaterialExpressionEditorY=528
+    .MaterialExpressionGuid=24E206EF42BBA3636A731CAF0A71D8EA
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_1)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Caustic_Refraction_Light:MaterialExpressionNamedRerouteDeclaration_4'"
+    .DeclarationGuid=9ABE1ECA43D9190B1DC051915DA85E35
+    .MaterialExpressionEditorX=-2732
+    .MaterialExpressionEditorY=1472
+    .MaterialExpressionGuid=94424BE64223AA72CF39D88E5A4D1C4C
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_10)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Caustic_Refraction_Light:MaterialExpressionNamedRerouteDeclaration_4'"
+    .DeclarationGuid=9ABE1ECA43D9190B1DC051915DA85E35
+    .MaterialExpressionEditorX=180
+    .MaterialExpressionEditorY=504
+    .MaterialExpressionGuid=ACB38E8B43F39F4DA6C78DA2EB4BEBE0
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_11)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Caustic_Refraction_Light:MaterialExpressionNamedRerouteDeclaration_4'"
+    .DeclarationGuid=9ABE1ECA43D9190B1DC051915DA85E35
+    .MaterialExpressionEditorX=1424
+    .MaterialExpressionEditorY=416
+    .MaterialExpressionGuid=79A362DC4C3BAB2810A81FA41D236C59
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_13)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Caustic_Refraction_Light:MaterialExpressionNamedRerouteDeclaration_5'"
+    .DeclarationGuid=4B8791884B234761956D52B0EF32DB9E
+    .MaterialExpressionEditorX=-3572
+    .MaterialExpressionEditorY=640
+    .MaterialExpressionGuid=85FCD1CC48D7D0798CA0C89F9D2264DF
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_2)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Caustic_Refraction_Light:MaterialExpressionNamedRerouteDeclaration_2'"
+    .DeclarationGuid=AE09AE7E43A4291775911EB225038ECF
+    .MaterialExpressionEditorX=-180
+    .MaterialExpressionEditorY=556
+    .MaterialExpressionGuid=BBBFF62045BAFBECBDF874B9262CD91D
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_3)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Caustic_Refraction_Light:MaterialExpressionNamedRerouteDeclaration_3'"
+    .DeclarationGuid=5DF313B74C7007F765F2819522062C08
+    .MaterialExpressionEditorX=-3616
+    .MaterialExpressionEditorY=1304
+    .MaterialExpressionGuid=FD4B696742407F3F0C133FA34D05773A
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_4)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Caustic_Refraction_Light:MaterialExpressionNamedRerouteDeclaration_1'"
+    .DeclarationGuid=2A978A734CB6DD4E9F665286D95DDB2B
+    .MaterialExpressionEditorX=500
+    .MaterialExpressionEditorY=424
+    .MaterialExpressionGuid=6A50978745FA56DEA4672692A645B0D7
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_5)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Caustic_Refraction_Light:MaterialExpressionNamedRerouteDeclaration_7'"
+    .DeclarationGuid=C475E47841B6CEEFC87A0A880846EAF1
+    .MaterialExpressionEditorX=-2120
+    .MaterialExpressionEditorY=1156
+    .MaterialExpressionGuid=11FB129949C8BCE0903644BC1EE3A089
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_7)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Caustic_Refraction_Light:MaterialExpressionNamedRerouteDeclaration_4'"
+    .DeclarationGuid=9ABE1ECA43D9190B1DC051915DA85E35
+    .MaterialExpressionEditorX=-2556
+    .MaterialExpressionEditorY=612
+    .MaterialExpressionGuid=AE65279F4E07D1F5E9253A8581B0C913
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_8)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Caustic_Refraction_Light:MaterialExpressionNamedRerouteDeclaration_4'"
+    .DeclarationGuid=9ABE1ECA43D9190B1DC051915DA85E35
+    .MaterialExpressionEditorX=-2636
+    .MaterialExpressionEditorY=372
+    .MaterialExpressionGuid=9524EBF64F43E99898E03D975666B5E3
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_9)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Caustic_Refraction_Light:MaterialExpressionNamedRerouteDeclaration_5'"
+    .DeclarationGuid=4B8791884B234761956D52B0EF32DB9E
+    .MaterialExpressionEditorX=-2046
+    .MaterialExpressionEditorY=346
+    .MaterialExpressionGuid=85FCD1CC48D7D0798CA0C89F9D2264DF
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_0)
+    Input                  <- MaterialExpressionFunctionInput
+    .Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Caustic_Refraction_Light:MaterialExpressionFunctionInput_0'")
+    .MaterialExpressionEditorX=-3540
+    .MaterialExpressionEditorY=1452
+    .MaterialExpressionGuid=B61820CF4EA46B45B7EDE4A69A5A25DF
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_1)
+    Input                  <- MaterialExpressionNamedRerouteUsage
+    .Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Caustic_Refraction_Light:MaterialExpressionNamedRerouteUsage_4'")
+    .MaterialExpressionEditorX=652
+    .MaterialExpressionEditorY=424
+    .MaterialExpressionGuid=4F7D022E4C362B8635B3E593552B380E
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionPanner (MaterialExpressionPanner_0)
+    Coordinate             <- MaterialExpressionStaticSwitch
+    .Coordinate=(Expression="/Script/Engine.MaterialExpressionStaticSwitch'Caustic_Refraction_Light:MaterialExpressionStaticSwitch_2'")
+    .SpeedX=-0.080000
+    .bFractionalPart=True
+    .MaterialExpressionEditorX=-2190
+    .MaterialExpressionEditorY=478
+    .MaterialExpressionGuid=CE77E5B04493D15B9DDAB2A8B749E8A0
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionPanner (MaterialExpressionPanner_2)
+    Coordinate             <- MaterialExpressionDivide
+    .Coordinate=(Expression="/Script/Engine.MaterialExpressionDivide'Caustic_Refraction_Light:MaterialExpressionDivide_7'")
+    .SpeedX=-0.200000
+    .SpeedY=0.200000
+    .bFractionalPart=True
+    .MaterialExpressionEditorX=-3672
+    .MaterialExpressionEditorY=484
+    .MaterialExpressionGuid=CE77E5B04493D15B9DDAB2A8B749E8A0
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionPanner (MaterialExpressionPanner_4)
+    Coordinate             <- MaterialExpressionMultiply
+    .Coordinate=(Expression="/Script/Engine.MaterialExpressionMultiply'Caustic_Refraction_Light:MaterialExpressionMultiply_3'")
+    .SpeedX=0.100000
+    .bFractionalPart=True
+    .MaterialExpressionEditorX=-2106
+    .MaterialExpressionEditorY=198
+    .MaterialExpressionGuid=CE77E5B04493D15B9DDAB2A8B749E8A0
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionPower (MaterialExpressionPower_0)
+    Base                   <- MaterialExpressionOneMinus
+    .Base=(Expression="/Script/Engine.MaterialExpressionOneMinus'Caustic_Refraction_Light:MaterialExpressionOneMinus_0'")
+    .MaterialExpressionEditorX=-3456
+    .MaterialExpressionEditorY=1452
+    .MaterialExpressionGuid=930209D64ED863EDBD2ECB93FB98B97B
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionReroute (MaterialExpressionReroute_0)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Caustic_Refraction_Light:MaterialExpressionMultiply_11'")
+    .MaterialExpressionEditorX=-1760
+    .MaterialExpressionEditorY=1388
+    .MaterialExpressionGuid=A5C0777746EF97FF2086899E9E6E9C83
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionReroute (MaterialExpressionReroute_1)
+    Input                  <- MaterialExpressionDivide
+    .Input=(Expression="/Script/Engine.MaterialExpressionDivide'Caustic_Refraction_Light:MaterialExpressionDivide_7'")
+    .MaterialExpressionEditorX=-2936
+    .MaterialExpressionEditorY=320
+    .MaterialExpressionGuid=50589FA94BA2A7B5B6B864909BC06DAE
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionReroute (MaterialExpressionReroute_2)
+    Input                  <- MaterialExpressionReroute
+    .Input=(Expression="/Script/Engine.MaterialExpressionReroute'Caustic_Refraction_Light:MaterialExpressionReroute_1'")
+    .MaterialExpressionEditorX=-2768
+    .MaterialExpressionEditorY=512
+    .MaterialExpressionGuid=EEB69A0443C6C5CB0120A493A48A6EDB
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionReroute (MaterialExpressionReroute_3)
+    Input                  <- MaterialExpressionReroute
+    .Input=(Expression="/Script/Engine.MaterialExpressionReroute'Caustic_Refraction_Light:MaterialExpressionReroute_1'")
+    .MaterialExpressionEditorX=-2752
+    .MaterialExpressionEditorY=240
+    .MaterialExpressionGuid=B4C6920F43D772F40D403A8AAFEC29F5
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionReroute (MaterialExpressionReroute_4)
+    Input                  <- MaterialExpressionLinearInterpolate
+    .Input=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Caustic_Refraction_Light:MaterialExpressionLinearInterpolate_0'")
+    .MaterialExpressionEditorX=-28
+    .MaterialExpressionEditorY=392
+    .MaterialExpressionGuid=DBDEBD924576346DD8AD0D96942D3CF0
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionReroute (MaterialExpressionReroute_5)
+    Input                  <- MaterialExpressionSaturate
+    .Input=(Expression="/Script/Engine.MaterialExpressionSaturate'Caustic_Refraction_Light:MaterialExpressionSaturate_2'")
+    .MaterialExpressionEditorX=1208
+    .MaterialExpressionEditorY=316
+    .MaterialExpressionGuid=43C1E6D34A32EAFB9C6644AB18069E9D
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_0)
+    Input                  <- MaterialExpressionAdd
+    .Input=(Expression="/Script/Engine.MaterialExpressionAdd'Caustic_Refraction_Light:MaterialExpressionAdd_1'")
+    .MaterialExpressionEditorX=-940
+    .MaterialExpressionEditorY=1160
+    .MaterialExpressionGuid=FD855A564AA399FF700833AABD3B409F
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_1)
+    Input                  <- MaterialExpressionDivide
+    .Input=(Expression="/Script/Engine.MaterialExpressionDivide'Caustic_Refraction_Light:MaterialExpressionDivide_3'")
+    .MaterialExpressionEditorX=-1076
+    .MaterialExpressionEditorY=1356
+    .MaterialExpressionGuid=FD855A564AA399FF700833AABD3B409F
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_2)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Caustic_Refraction_Light:MaterialExpressionMultiply_12'")
+    .MaterialExpressionEditorX=892
+    .MaterialExpressionEditorY=360
+    .MaterialExpressionGuid=D53405054ED5E00476AF3886D47ACE83
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_3)
+    Input                  <- MaterialExpressionDistance
+    .Input=(Expression="/Script/Engine.MaterialExpressionDistance'Caustic_Refraction_Light:MaterialExpressionDistance_0'")
+    .MaterialExpressionEditorX=1068
+    .MaterialExpressionEditorY=508
+    .MaterialExpressionGuid=AC82814E4FE062E336DF019DB37353BD
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_0)
+    .ParameterName="Blur with Depth"
+    .DefaultValue=5.000000
+    .ExpressionGUID=BE0C98CE4BC17B5676C3079119EBCD30
+    .MaterialExpressionEditorX=-3312
+    .MaterialExpressionEditorY=1360
+    .MaterialExpressionGuid=AA35F0DF432121349EFEBEA44B3873CD
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_1)
+    .ParameterName="Caustic Falloff Offset"
+    .ExpressionGUID=D0195A5641D777F71AF10DB5B904A9AF
+    .MaterialExpressionEditorX=-1404
+    .MaterialExpressionEditorY=1248
+    .MaterialExpressionGuid=A4BBD2724B00CD8E1C642D948F5CD171
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_10)
+    .ParameterName="Caustic Intensity"
+    .DefaultValue=1.000000
+    .ExpressionGUID=379E33BA4804E9788D301CB7596D395D
+    .MaterialExpressionEditorX=-976
+    .MaterialExpressionEditorY=1232
+    .MaterialExpressionGuid=F189F28640D7D16572402DB3899A8499
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_2)
+    .ParameterName="Caustic Falloff"
+    .DefaultValue=-100.000000
+    .ExpressionGUID=211777FA4823D9CF819265A9D0A5CD09
+    .MaterialExpressionEditorX=-1768
+    .MaterialExpressionEditorY=1220
+    .MaterialExpressionGuid=A352D5C348289E4D0B54F28CF48AFED0
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_3)
+    .ParameterName="Deep Falloff"
+    .DefaultValue=-7000.000000
+    .ExpressionGUID=CD06E5FF4B611546D72FE4B010B5E3E9
+    .MaterialExpressionEditorX=-1464
+    .MaterialExpressionEditorY=1440
+    .MaterialExpressionGuid=B891ECC64E996119B325A09EC7028167
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_5)
+    .ParameterName="Blur in Shadow"
+    .DefaultValue=5.000000
+    .ExpressionGUID=7B733E3D4F0ACA3F6F3983AA4890B027
+    .MaterialExpressionEditorX=-3288
+    .MaterialExpressionEditorY=1512
+    .MaterialExpressionGuid=AA35F0DF432121349EFEBEA44B3873CD
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_6)
+    .ParameterName="Blur with Distance"
+    .DefaultValue=1.000000
+    .ExpressionGUID=DB0FBD7343C1160136FC1BBF6AC02938
+    .MaterialExpressionEditorX=-3072
+    .MaterialExpressionEditorY=1204
+    .MaterialExpressionGuid=50EA3C6A40BFEE3931174F9516907688
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_9)
+    .ParameterName="Caustics Scale"
+    .DefaultValue=500.000000
+    .ExpressionGUID=A99FE3784BEFDE9F942256BF938F4B29
+    .MaterialExpressionEditorX=-4191
+    .MaterialExpressionEditorY=417
+    .MaterialExpressionGuid=F22870F745E0E9077F625F9E9CC14CAB
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionSine (MaterialExpressionSine_0)
+    Input                  <- MaterialExpressionTime
+    .Input=(Expression="/Script/Engine.MaterialExpressionTime'Caustic_Refraction_Light:MaterialExpressionTime_0'")
+    .MaterialExpressionEditorX=-1390
+    .MaterialExpressionEditorY=338
+    .MaterialExpressionGuid=876FB8AD4A539DD7C0137BAB484C3D1A
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionSine (MaterialExpressionSine_1)
+    Input                  <- MaterialExpressionAdd
+    .Input=(Expression="/Script/Engine.MaterialExpressionAdd'Caustic_Refraction_Light:MaterialExpressionAdd_9'")
+    .MaterialExpressionEditorX=-1298
+    .MaterialExpressionEditorY=446
+    .MaterialExpressionGuid=876FB8AD4A539DD7C0137BAB484C3D1A
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionStaticBool (MaterialExpressionStaticBool_0)
+    .MaterialExpressionEditorX=-5216
+    .MaterialExpressionEditorY=1188
+    .MaterialExpressionGuid=C18C20AE49BF3CC52DDEB48F8CEF2E56
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionStaticSwitch (MaterialExpressionStaticSwitch_0)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMax
+    Value                  <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionMax'Caustic_Refraction_Light:MaterialExpressionMax_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Caustic_Refraction_Light:MaterialExpressionMultiply_0'")
+    .Value=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Caustic_Refraction_Light:MaterialExpressionNamedRerouteUsage_1'")
+    .MaterialExpressionEditorX=-2556
+    .MaterialExpressionEditorY=1340
+    .MaterialExpressionGuid=1DCFB6B34BEB203B384B14921009A783
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionStaticSwitch (MaterialExpressionStaticSwitch_2)
+    A                      <- MaterialExpressionReroute
+    B                      <- MaterialExpressionAdd
+    Value                  <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionAdd'Caustic_Refraction_Light:MaterialExpressionAdd_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionReroute'Caustic_Refraction_Light:MaterialExpressionReroute_2'")
+    .Value=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Caustic_Refraction_Light:MaterialExpressionNamedRerouteUsage_7'")
+    .MaterialExpressionEditorX=-2388
+    .MaterialExpressionEditorY=480
+    .MaterialExpressionGuid=3848832B42FC6EF7F2146E985DADE067
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionStaticSwitch (MaterialExpressionStaticSwitch_3)
+    A                      <- MaterialExpressionReroute
+    B                      <- MaterialExpressionAdd
+    Value                  <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionAdd'Caustic_Refraction_Light:MaterialExpressionAdd_12'")
+    .A=(Expression="/Script/Engine.MaterialExpressionReroute'Caustic_Refraction_Light:MaterialExpressionReroute_3'")
+    .Value=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Caustic_Refraction_Light:MaterialExpressionNamedRerouteUsage_8'")
+    .MaterialExpressionEditorX=-2456
+    .MaterialExpressionEditorY=208
+    .MaterialExpressionGuid=FB30162A445DC21F08F6A5BCD55A9537
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionStaticSwitch (MaterialExpressionStaticSwitch_4)
+    A                      <- MaterialExpressionReroute
+    B                      <- MaterialExpressionLinearInterpolate
+    Value                  <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Caustic_Refraction_Light:MaterialExpressionLinearInterpolate_6'")
+    .A=(Expression="/Script/Engine.MaterialExpressionReroute'Caustic_Refraction_Light:MaterialExpressionReroute_4'")
+    .Value=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Caustic_Refraction_Light:MaterialExpressionNamedRerouteUsage_10'")
+    .MaterialExpressionEditorX=352
+    .MaterialExpressionEditorY=360
+    .MaterialExpressionGuid=C3AF040B443F1C5543F84B8462C538C0
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionStaticSwitch (MaterialExpressionStaticSwitch_5)
+    A                      <- MaterialExpressionReroute
+    B                      <- MaterialExpressionLinearInterpolate
+    Value                  <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Caustic_Refraction_Light:MaterialExpressionLinearInterpolate_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionReroute'Caustic_Refraction_Light:MaterialExpressionReroute_5'")
+    .Value=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Caustic_Refraction_Light:MaterialExpressionNamedRerouteUsage_11'")
+    .MaterialExpressionEditorX=1652
+    .MaterialExpressionEditorY=280
+    .MaterialExpressionGuid=262E1CD54A679DC3A5E98E9448FE23AD
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_1)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Caustic_Refraction_Light:MaterialExpressionMultiply_6'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Caustic_Refraction_Light:MaterialExpressionComponentMask_6'")
+    .MaterialExpressionEditorX=-4137
+    .MaterialExpressionEditorY=283
+    .MaterialExpressionGuid=B441A1194F08EE99EAA97793D3380B2C
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_2)
+    A                      <- MaterialExpressionReroute
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Caustic_Refraction_Light:MaterialExpressionScalarParameter_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionReroute'Caustic_Refraction_Light:MaterialExpressionReroute_0'")
+    .MaterialExpressionEditorX=-1588
+    .MaterialExpressionEditorY=1356
+    .MaterialExpressionGuid=B99ED64A4B7E44818604DEA2416A174B
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_3)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Caustic_Refraction_Light:MaterialExpressionComponentMask_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Caustic_Refraction_Light:MaterialExpressionMaterialFunctionCall_0'")
+    .MaterialExpressionEditorX=-5219
+    .MaterialExpressionEditorY=373
+    .MaterialExpressionGuid=21E8715245786C5E64D05584B60D26F4
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_0)
+    Coordinates            <- MaterialExpressionPanner
+    MipValue               <- MaterialExpressionNamedRerouteUsage
+    .Texture="/Script/Engine.Texture2D'/Game/UltraDynamicSky/Textures/Sky/Caustic_Pattern.Caustic_Pattern'"
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionPanner'Caustic_Refraction_Light:MaterialExpressionPanner_0'")
+    .MipValue=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Caustic_Refraction_Light:MaterialExpressionNamedRerouteUsage_9'")
+    .MipValueMode=TMVM_MipLevel
+    .SamplerSource=SSM_Wrap_WorldGroupSettings
+    .MaterialExpressionEditorX=-1882
+    .MaterialExpressionEditorY=482
+    .MaterialExpressionGuid=8CE4FAC940F675DE67371A8006C9FAC7
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_2)
+    Coordinates            <- MaterialExpressionPanner
+    MipValue               <- MaterialExpressionNamedRerouteUsage
+    .Texture="/Script/Engine.Texture2D'/Game/UltraDynamicSky/Textures/Sky/Caustic_Pattern.Caustic_Pattern'"
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionPanner'Caustic_Refraction_Light:MaterialExpressionPanner_2'")
+    .MipValue=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Caustic_Refraction_Light:MaterialExpressionNamedRerouteUsage_13'")
+    .MipValueMode=TMVM_MipLevel
+    .SamplerSource=SSM_Wrap_WorldGroupSettings
+    .MaterialExpressionEditorX=-3428
+    .MaterialExpressionEditorY=484
+    .MaterialExpressionGuid=8CE4FAC940F675DE67371A8006C9FAC7
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_4)
+    Coordinates            <- MaterialExpressionPanner
+    MipValue               <- MaterialExpressionNamedRerouteUsage
+    .Texture="/Script/Engine.Texture2D'/Game/UltraDynamicSky/Textures/Sky/Caustic_Pattern.Caustic_Pattern'"
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionPanner'Caustic_Refraction_Light:MaterialExpressionPanner_4'")
+    .MipValue=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Caustic_Refraction_Light:MaterialExpressionNamedRerouteUsage_9'")
+    .MipValueMode=TMVM_MipLevel
+    .SamplerSource=SSM_Wrap_WorldGroupSettings
+    .MaterialExpressionEditorX=-1882
+    .MaterialExpressionEditorY=198
+    .MaterialExpressionGuid=8CE4FAC940F675DE67371A8006C9FAC7
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionTime (MaterialExpressionTime_0)
+    .MaterialExpressionEditorX=-1634
+    .MaterialExpressionEditorY=386
+    .MaterialExpressionGuid=B4BB54D94ACF6C9C827E84B775840DD1
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionWorldPosition (MaterialExpressionWorldPosition_0)
+    .MaterialExpressionEditorX=-5724
+    .MaterialExpressionEditorY=272
+    .MaterialExpressionGuid=6C5B45ED4373995B1FB36597E77F498C
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"
+  MaterialExpressionWorldPosition (MaterialExpressionWorldPosition_2)
+    .MaterialExpressionEditorX=-3592
+    .MaterialExpressionEditorY=1140
+    .MaterialExpressionGuid=6C5B45ED4373995B1FB36597E77F498C
+    .Function="/Script/Engine.MaterialFunction'Caustic_Refraction_Light'"

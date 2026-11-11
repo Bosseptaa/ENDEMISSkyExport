@@ -1,0 +1,485 @@
+### /Game/UltraDynamicSky/Materials/CloudLayerMapBrush
+  Material (CloudLayerMapBrush)
+    .MaterialDomain=MD_UI
+    .BlendMode=BLEND_Translucent
+    .EditorX=-220
+    .EditorY=-56
+    .bCanMaskedBeAssumedOpaque=True
+    .bUseTranslucencyVertexFog=False
+    .StateId=A3E0911B477E4F3A58439D8F4963E18D
+    .EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'CloudLayerMapBrushEditorOnlyData'"
+    .ParameterOverviewExpansion=(("-12Global", True))
+    .LightingGuid=010B22D04A3FC0276A11DEBC4561CE57
+  MaterialEditorOnlyData (CloudLayerMapBrushEditorOnlyData)
+    EmissiveColor          <- MaterialExpressionLinearInterpolate
+    Opacity                <- MaterialExpressionNamedRerouteUsage
+    ExpressionCollection   <- MaterialExpressionLinearInterpolate
+    .BaseColor=(UseConstant=True,Constant=(R=0.501961,G=0.501961,B=0.501961,A=1.000000))
+    .Metallic=(UseConstant=True)
+    .Specular=(UseConstant=True)
+    .Roughness=(UseConstant=True)
+    .Anisotropy=(UseConstant=True)
+    .Normal=(UseConstant=True)
+    .Tangent=(UseConstant=True)
+    .EmissiveColor=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'CloudLayerMapBrush:MaterialExpressionLinearInterpolate_1'")
+    .Opacity=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'CloudLayerMapBrush:MaterialExpressionNamedRerouteUsage_0'")
+    .OpacityMask=(UseConstant=True)
+    .WorldPositionOffset=(UseConstant=True)
+    .Displacement=(UseConstant=True)
+    .SubsurfaceColor=(UseConstant=True)
+    .ClearCoat=(UseConstant=True)
+    .ClearCoatRoughness=(UseConstant=True)
+    .AmbientOcclusion=(UseConstant=True)
+    .Refraction=(UseConstant=True)
+    .CustomizedUVs(0)=(UseConstant=True)
+    .CustomizedUVs(1)=(UseConstant=True)
+    .CustomizedUVs(2)=(UseConstant=True)
+    .CustomizedUVs(3)=(UseConstant=True)
+    .CustomizedUVs(4)=(UseConstant=True)
+    .CustomizedUVs(5)=(UseConstant=True)
+    .CustomizedUVs(6)=(UseConstant=True)
+    .CustomizedUVs(7)=(UseConstant=True)
+    .PixelDepthOffset=(UseConstant=True)
+    .SurfaceThickness=(UseConstant=True)
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionLinearInterpolate'CloudLayerMapBrush:MaterialExpressionLinearInterpolate_1'","/Script/Engine.MaterialExpressionNamedRerouteUsage'CloudLayerMapBrush:MaterialExpressionNamedRerouteUsage_0'","/Script/Engine.MaterialExpressionTextureCoordinate'CloudLayerMapBrush:MaterialExpressionTextureCoordinate_0'","/Script/Engine.MaterialExpressionVectorParameter'CloudLayerMapBrush:MaterialExpressionVectorParameter_0'","/Script/Engine.MaterialExpressionVectorParameter'CloudLayerMapBrush:MaterialExpressionVectorParameter_1'","/Script/Engine.MaterialExpressionVectorParameter'CloudLayerMapBrush:MaterialExpressionVectorParameter_2'","/Script/Engine.MaterialExpressionScalarParameter'CloudLayerMapBrush:MaterialExpressionScalarParameter_0'","/Script/Engine.MaterialExpressionScalarParameter'CloudLayerMapBrush:MaterialExpressionScalarParameter_1'","/Script/Engine.MaterialExpressionComponentMask'CloudLayerMapBrush:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionSubtract'CloudLayerMapBrush:MaterialExpressionSubtract_0'","/Script/Engine.MaterialExpressionOneMinus'CloudLayerMapBrush:MaterialExpressionOneMinus_0'","/Script/Engine.MaterialExpressionDivide'CloudLayerMapBrush:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionSubtract'CloudLayerMapBrush:MaterialExpressionSubtract_1'","/Script/Engine.MaterialExpressionSaturate'CloudLayerMapBrush:MaterialExpressionSaturate_0'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'CloudLayerMapBrush:MaterialExpressionNamedRerouteDeclaration_0'","/Script/Engine.MaterialExpressionScalarParameter'CloudLayerMapBrush:MaterialExpressionScalarParameter_3'","/Script/Engine.MaterialExpressionSubtract'CloudLayerMapBrush:MaterialExpressionSubtract_2'","/Script/Engine.MaterialExpressionDivide'CloudLayerMapBrush:MaterialExpressionDivide_1'","/Script/Engine.MaterialExpressionSubtract'CloudLayerMapBrush:MaterialExpressionSubtract_3'","/Script/Engine.MaterialExpressionSaturate'CloudLayerMapBrush:MaterialExpressionSaturate_1'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'CloudLayerMapBrush:MaterialExpressionNamedRerouteDeclaration_2'","/Script/Engine.MaterialExpressionTextureCoordinate'CloudLayerMapBrush:MaterialExpressionTextureCoordinate_1'","/Script/Engine.MaterialExpressionComponentMask'CloudLayerMapBrush:MaterialExpressionComponentMask_1'","/Script/Engine.MaterialExpressionSubtract'CloudLayerMapBrush:MaterialExpressionSubtract_4'","/Script/Engine.MaterialExpressionSign'CloudLayerMapBrush:MaterialExpressionSign_0'","/Script/Engine.MaterialExpressionSaturate'CloudLayerMapBrush:MaterialExpressionSaturate_2'","/Script/Engine.MaterialExpressionSubtract'CloudLayerMapBrush:MaterialExpressionSubtract_5'","/Script/Engine.MaterialExpressionSign'CloudLayerMapBrush:MaterialExpressionSign_1'","/Script/Engine.MaterialExpressionSaturate'CloudLayerMapBrush:MaterialExpressionSaturate_3'","/Script/Engine.MaterialExpressionComponentMask'CloudLayerMapBrush:MaterialExpressionComponentMask_2'","/Script/Engine.MaterialExpressionAppendVector'CloudLayerMapBrush:MaterialExpressionAppendVector_0'","/Script/Engine.MaterialExpressionNamedRerouteUsage'CloudLayerMapBrush:MaterialExpressionNamedRerouteUsage_1'","/Script/Engine.MaterialExpressionLinearInterpolate'CloudLayerMapBrush:MaterialExpressionLinearInterpolate_0'","/Script/Engine.MaterialExpressionReroute'CloudLayerMapBrush:MaterialExpressionReroute_0'","/Script/Engine.MaterialExpressionReroute'CloudLayerMapBrush:MaterialExpressionReroute_1'","/Script/Engine.MaterialExpressionTextureCoordinate'CloudLayerMapBrush:MaterialExpressionTextureCoordinate_2'","/Script/Engine.MaterialExpressionComponentMask'CloudLayerMapBrush:MaterialExpressionComponentMask_3'","/Script/Engine.MaterialExpressionOneMinus'CloudLayerMapBrush:MaterialExpressionOneMinus_3'","/Script/Engine.MaterialExpressionScalarParameter'CloudLayerMapBrush:MaterialExpressionScalarParameter_2'","/Script/Engine.MaterialExpressionSubtract'CloudLayerMapBrush:MaterialExpressionSubtract_6'","/Script/Engine.MaterialExpressionSubtract'CloudLayerMapBrush:MaterialExpressionSubtract_7'","/Script/Engine.MaterialExpressionSign'CloudLayerMapBrush:MaterialExpressionSign_2'","/Script/Engine.MaterialExpressionSaturate'CloudLayerMapBrush:MaterialExpressionSaturate_4'","/Script/Engine.MaterialExpressionOneMinus'CloudLayerMapBrush:MaterialExpressionOneMinus_4'","/Script/Engine.MaterialExpressionSubtract'CloudLayerMapBrush:MaterialExpressionSubtract_8'","/Script/Engine.MaterialExpressionAdd'CloudLayerMapBrush:MaterialExpressionAdd_0'","/Script/Engine.MaterialExpressionScalarParameter'CloudLayerMapBrush:MaterialExpressionScalarParameter_4'","/Script/Engine.MaterialExpressionAdd'CloudLayerMapBrush:MaterialExpressionAdd_1'","/Script/Engine.MaterialExpressionSubtract'CloudLayerMapBrush:MaterialExpressionSubtract_9'","/Script/Engine.MaterialExpressionSign'CloudLayerMapBrush:MaterialExpressionSign_3'","/Script/Engine.MaterialExpressionSaturate'CloudLayerMapBrush:MaterialExpressionSaturate_5'","/Script/Engine.MaterialExpressionMultiply'CloudLayerMapBrush:MaterialExpressionMultiply_1'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'CloudLayerMapBrush:MaterialExpressionNamedRerouteDeclaration_1'","/Script/Engine.MaterialExpressionMultiply'CloudLayerMapBrush:MaterialExpressionMultiply_2'","/Script/Engine.MaterialExpressionNamedRerouteUsage'CloudLayerMapBrush:MaterialExpressionNamedRerouteUsage_2'"))
+    .ParameterGroupData(0)=(GroupName="None")
+  MaterialExpressionAdd (MaterialExpressionAdd_0)
+    A                      <- MaterialExpressionScalarParameter
+    .A=(Expression="/Script/Engine.MaterialExpressionScalarParameter'CloudLayerMapBrush:MaterialExpressionScalarParameter_0'")
+    .ConstB=0.001000
+    .MaterialExpressionEditorX=-2056
+    .MaterialExpressionEditorY=740
+    .MaterialExpressionGuid=AB2B08384E900F52000FBF9B1DCD7634
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionAdd (MaterialExpressionAdd_1)
+    A                      <- MaterialExpressionScalarParameter
+    .A=(Expression="/Script/Engine.MaterialExpressionScalarParameter'CloudLayerMapBrush:MaterialExpressionScalarParameter_4'")
+    .ConstB=0.002000
+    .MaterialExpressionEditorX=-2512
+    .MaterialExpressionEditorY=-280
+    .MaterialExpressionGuid=F0A7F3D04755AF6B0B1D4BA0F9C38516
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_0)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'CloudLayerMapBrush:MaterialExpressionNamedRerouteUsage_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'CloudLayerMapBrush:MaterialExpressionComponentMask_2'")
+    .MaterialExpressionEditorX=-1908
+    .MaterialExpressionEditorY=-56
+    .MaterialExpressionGuid=9415EA3B42FC1BEC2BEE8CA944131B2A
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionTextureCoordinate
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'CloudLayerMapBrush:MaterialExpressionTextureCoordinate_0'")
+    .MaterialExpressionEditorX=-2200
+    .MaterialExpressionEditorY=624
+    .MaterialExpressionGuid=FB0978E3416A449656C23380E0C3D8F5
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_1)
+    Input                  <- MaterialExpressionTextureCoordinate
+    .R=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'CloudLayerMapBrush:MaterialExpressionTextureCoordinate_1'")
+    .MaterialExpressionEditorX=-2012
+    .MaterialExpressionEditorY=264
+    .MaterialExpressionGuid=0559325E480CDBB1A8661A978A591749
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_2)
+    Input                  <- MaterialExpressionVectorParameter
+    .R=True
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionVectorParameter'CloudLayerMapBrush:MaterialExpressionVectorParameter_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .MaterialExpressionEditorX=-2076
+    .MaterialExpressionEditorY=-56
+    .MaterialExpressionGuid=D519252F4D6CB0BCF92774AE73F1F2BF
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_3)
+    Input                  <- MaterialExpressionTextureCoordinate
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'CloudLayerMapBrush:MaterialExpressionTextureCoordinate_2'")
+    .MaterialExpressionEditorX=-2540
+    .MaterialExpressionEditorY=-584
+    .MaterialExpressionGuid=DA83CF15436DEB2943001390E928DBDF
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionSubtract
+    .B=(Expression="/Script/Engine.MaterialExpressionSubtract'CloudLayerMapBrush:MaterialExpressionSubtract_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'CloudLayerMapBrush:MaterialExpressionSubtract_0'")
+    .MaterialExpressionEditorX=-1452
+    .MaterialExpressionEditorY=724
+    .MaterialExpressionGuid=669951CD482ADB2DF3C8A7B18EA12795
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionDivide (MaterialExpressionDivide_1)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionSubtract
+    .B=(Expression="/Script/Engine.MaterialExpressionSubtract'CloudLayerMapBrush:MaterialExpressionSubtract_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'CloudLayerMapBrush:MaterialExpressionSubtract_2'")
+    .MaterialExpressionEditorX=-1460
+    .MaterialExpressionEditorY=952
+    .MaterialExpressionGuid=9BB3B5914408981B53A105AA5D4A0885
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_0)
+    A                      <- MaterialExpressionAppendVector
+    B                      <- MaterialExpressionMultiply
+    Alpha                  <- MaterialExpressionReroute
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'CloudLayerMapBrush:MaterialExpressionMultiply_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAppendVector'CloudLayerMapBrush:MaterialExpressionAppendVector_0'")
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionReroute'CloudLayerMapBrush:MaterialExpressionReroute_0'")
+    .MaterialExpressionEditorX=-1240
+    .MaterialExpressionEditorY=-56
+    .MaterialExpressionGuid=4DC033704CCBA497C6091E91FEA5F6D8
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_1)
+    A                      <- MaterialExpressionLinearInterpolate
+    B                      <- MaterialExpressionVectorParameter
+    Alpha                  <- MaterialExpressionReroute
+    .B=(Expression="/Script/Engine.MaterialExpressionVectorParameter'CloudLayerMapBrush:MaterialExpressionVectorParameter_2'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'CloudLayerMapBrush:MaterialExpressionLinearInterpolate_0'")
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionReroute'CloudLayerMapBrush:MaterialExpressionReroute_1'")
+    .MaterialExpressionEditorX=-664
+    .MaterialExpressionEditorY=-56
+    .MaterialExpressionGuid=896A2BB34BC5E26A9412F88BA09DC3BB
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionOneMinus
+    B                      <- MaterialExpressionSaturate
+    .B=(Expression="/Script/Engine.MaterialExpressionSaturate'CloudLayerMapBrush:MaterialExpressionSaturate_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionOneMinus'CloudLayerMapBrush:MaterialExpressionOneMinus_4'")
+    .MaterialExpressionEditorX=-1864
+    .MaterialExpressionEditorY=-584
+    .MaterialExpressionGuid=B2C634A24C5CBC55263E078D8ADF2AC9
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_2)
+    A                      <- MaterialExpressionVectorParameter
+    B                      <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'CloudLayerMapBrush:MaterialExpressionNamedRerouteUsage_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionVectorParameter'CloudLayerMapBrush:MaterialExpressionVectorParameter_1'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .MaterialExpressionEditorX=-1436
+    .MaterialExpressionEditorY=28
+    .MaterialExpressionGuid=1A0812F8475B9EC163D339ABF4E7C46A
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_0)
+    Input                  <- MaterialExpressionSaturate
+    .Input=(Expression="/Script/Engine.MaterialExpressionSaturate'CloudLayerMapBrush:MaterialExpressionSaturate_0'")
+    .Name="Altitude Gradient"
+    .NodeColor=(R=1.000000,G=0.000000,B=0.820312,A=1.000000)
+    .VariableGuid=DB07B8EA4817702D481BA5A5AA9DCE88
+    .MaterialExpressionEditorX=-1200
+    .MaterialExpressionEditorY=724
+    .MaterialExpressionGuid=505CB810497051A267A966AC22BE219E
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_1)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'CloudLayerMapBrush:MaterialExpressionMultiply_1'")
+    .Name="Coverage Mask"
+    .NodeColor=(R=0.000000,G=1.000000,B=0.156250,A=1.000000)
+    .VariableGuid=91FF9837407C36B990E01BADF8D2C34B
+    .MaterialExpressionEditorX=-1716
+    .MaterialExpressionEditorY=-584
+    .MaterialExpressionGuid=860782914C0F9D2B277CE89BD470AC82
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_2)
+    Input                  <- MaterialExpressionSaturate
+    .Input=(Expression="/Script/Engine.MaterialExpressionSaturate'CloudLayerMapBrush:MaterialExpressionSaturate_1'")
+    .Name="Blend Gradient"
+    .NodeColor=(R=1.000000,G=0.539062,B=0.000000,A=1.000000)
+    .VariableGuid=9DC318614981664C34617789F6EE7118
+    .MaterialExpressionEditorX=-1216
+    .MaterialExpressionEditorY=952
+    .MaterialExpressionGuid=7D23291B4C0D9C758D4D68ACF3CCAE4E
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_0)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'CloudLayerMapBrush:MaterialExpressionNamedRerouteDeclaration_2'"
+    .DeclarationGuid=9DC318614981664C34617789F6EE7118
+    .MaterialExpressionEditorX=-420
+    .MaterialExpressionEditorY=52
+    .MaterialExpressionGuid=2B93C45447925DFE4BE5638B1163EC2B
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_1)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'CloudLayerMapBrush:MaterialExpressionNamedRerouteDeclaration_0'"
+    .DeclarationGuid=DB07B8EA4817702D481BA5A5AA9DCE88
+    .MaterialExpressionEditorX=-2092
+    .MaterialExpressionEditorY=36
+    .MaterialExpressionGuid=35F2FFC34CA7ED850CD728B4C83318BE
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_2)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'CloudLayerMapBrush:MaterialExpressionNamedRerouteDeclaration_1'"
+    .DeclarationGuid=91FF9837407C36B990E01BADF8D2C34B
+    .MaterialExpressionEditorX=-1592
+    .MaterialExpressionEditorY=88
+    .MaterialExpressionGuid=5831941A49E673AA066935BEAF1F30A0
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_0)
+    Input                  <- MaterialExpressionComponentMask
+    .Input=(Expression="/Script/Engine.MaterialExpressionComponentMask'CloudLayerMapBrush:MaterialExpressionComponentMask_0'")
+    .MaterialExpressionEditorX=-2068
+    .MaterialExpressionEditorY=624
+    .MaterialExpressionGuid=19B95AD5416B4E8820DBBE8AABB0EB50
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_3)
+    Input                  <- MaterialExpressionComponentMask
+    .Input=(Expression="/Script/Engine.MaterialExpressionComponentMask'CloudLayerMapBrush:MaterialExpressionComponentMask_3'")
+    .MaterialExpressionEditorX=-2408
+    .MaterialExpressionEditorY=-584
+    .MaterialExpressionGuid=35ADEB0C461903C62E5E44BA55CDDC60
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_4)
+    Input                  <- MaterialExpressionSaturate
+    .Input=(Expression="/Script/Engine.MaterialExpressionSaturate'CloudLayerMapBrush:MaterialExpressionSaturate_4'")
+    .MaterialExpressionEditorX=-1968
+    .MaterialExpressionEditorY=-584
+    .MaterialExpressionGuid=712626C04B03CF7488A7E2A138704E00
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionReroute (MaterialExpressionReroute_0)
+    Input                  <- MaterialExpressionSaturate
+    .Input=(Expression="/Script/Engine.MaterialExpressionSaturate'CloudLayerMapBrush:MaterialExpressionSaturate_2'")
+    .MaterialExpressionEditorX=-1412
+    .MaterialExpressionEditorY=300
+    .MaterialExpressionGuid=FAE368264B018191B396E0A8AD39CECE
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionReroute (MaterialExpressionReroute_1)
+    Input                  <- MaterialExpressionSaturate
+    .Input=(Expression="/Script/Engine.MaterialExpressionSaturate'CloudLayerMapBrush:MaterialExpressionSaturate_3'")
+    .MaterialExpressionEditorX=-940
+    .MaterialExpressionEditorY=444
+    .MaterialExpressionGuid=CFB7F3C84727D7B363DDDEB516A647F5
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_0)
+    Input                  <- MaterialExpressionDivide
+    .Input=(Expression="/Script/Engine.MaterialExpressionDivide'CloudLayerMapBrush:MaterialExpressionDivide_0'")
+    .MaterialExpressionEditorX=-1336
+    .MaterialExpressionEditorY=724
+    .MaterialExpressionGuid=72317EDA41ECF4ACEB042B8338BB4816
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_1)
+    Input                  <- MaterialExpressionDivide
+    .Input=(Expression="/Script/Engine.MaterialExpressionDivide'CloudLayerMapBrush:MaterialExpressionDivide_1'")
+    .MaterialExpressionEditorX=-1336
+    .MaterialExpressionEditorY=952
+    .MaterialExpressionGuid=49650FE5420C5335AC2835A866677D05
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_2)
+    Input                  <- MaterialExpressionSign
+    .Input=(Expression="/Script/Engine.MaterialExpressionSign'CloudLayerMapBrush:MaterialExpressionSign_0'")
+    .MaterialExpressionEditorX=-1620
+    .MaterialExpressionEditorY=264
+    .MaterialExpressionGuid=B1E0D32744F4077B850C59A73685B050
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_3)
+    Input                  <- MaterialExpressionSign
+    .Input=(Expression="/Script/Engine.MaterialExpressionSign'CloudLayerMapBrush:MaterialExpressionSign_1'")
+    .MaterialExpressionEditorX=-1624
+    .MaterialExpressionEditorY=408
+    .MaterialExpressionGuid=59333B3048A169EFEC646DB7DC63374A
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_4)
+    Input                  <- MaterialExpressionSign
+    .Input=(Expression="/Script/Engine.MaterialExpressionSign'CloudLayerMapBrush:MaterialExpressionSign_2'")
+    .MaterialExpressionEditorX=-2084
+    .MaterialExpressionEditorY=-584
+    .MaterialExpressionGuid=F3292B3F494BC200D140C0A9ADC41AD5
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_5)
+    Input                  <- MaterialExpressionSign
+    .Input=(Expression="/Script/Engine.MaterialExpressionSign'CloudLayerMapBrush:MaterialExpressionSign_3'")
+    .MaterialExpressionEditorX=-2080
+    .MaterialExpressionEditorY=-416
+    .MaterialExpressionGuid=F98E070D47E16C31C5573592BE32D74A
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_0)
+    .ParameterName="Bottom Y"
+    .DefaultValue=0.500000
+    .ExpressionGUID=B58F6C5845B1960B8A5599AB84511637
+    .MaterialExpressionEditorX=-2300
+    .MaterialExpressionEditorY=824
+    .MaterialExpressionGuid=92DFCDB7425A33E9579183A61DE6A6FD
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_1)
+    .ParameterName="Top Y"
+    .DefaultValue=0.700000
+    .ExpressionGUID=D445881D4CD72AA474B957BF381EBDDE
+    .MaterialExpressionEditorX=-2480
+    .MaterialExpressionEditorY=908
+    .MaterialExpressionGuid=D3B7D3A14879BCA52A8B69BEB3890225
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_2)
+    .ParameterName="Top Y"
+    .DefaultValue=0.700000
+    .ExpressionGUID=5D36764441C9F67677DA56B0051B0A3B
+    .MaterialExpressionEditorX=-2736
+    .MaterialExpressionEditorY=-408
+    .MaterialExpressionGuid=08A18924419E6101FA84798A1049FA74
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_3)
+    .ParameterName="Blend Top Y"
+    .DefaultValue=0.550000
+    .ExpressionGUID=3CA55D1D450B285415B1E7959CE22E4F
+    .MaterialExpressionEditorX=-2080
+    .MaterialExpressionEditorY=1044
+    .MaterialExpressionGuid=C95656744F20AE56AA33E491971D6DE9
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_4)
+    .ParameterName="Bottom Y"
+    .DefaultValue=0.500000
+    .ExpressionGUID=1FA42416488F8FA08E3BC392F2B5793E
+    .MaterialExpressionEditorX=-2712
+    .MaterialExpressionEditorY=-292
+    .MaterialExpressionGuid=773D44F4425536C7ED8A8A9B209EA543
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionSign (MaterialExpressionSign_0)
+    Input                  <- MaterialExpressionSubtract
+    .Input=(Expression="/Script/Engine.MaterialExpressionSubtract'CloudLayerMapBrush:MaterialExpressionSubtract_4'")
+    .MaterialExpressionEditorX=-1720
+    .MaterialExpressionEditorY=264
+    .MaterialExpressionGuid=EECC2B0E42672A9290F052B828CD6CCC
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionSign (MaterialExpressionSign_1)
+    Input                  <- MaterialExpressionSubtract
+    .Input=(Expression="/Script/Engine.MaterialExpressionSubtract'CloudLayerMapBrush:MaterialExpressionSubtract_5'")
+    .MaterialExpressionEditorX=-1724
+    .MaterialExpressionEditorY=408
+    .MaterialExpressionGuid=350CD75844AF35D712DC6A8E7025DBAF
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionSign (MaterialExpressionSign_2)
+    Input                  <- MaterialExpressionSubtract
+    .Input=(Expression="/Script/Engine.MaterialExpressionSubtract'CloudLayerMapBrush:MaterialExpressionSubtract_7'")
+    .MaterialExpressionEditorX=-2176
+    .MaterialExpressionEditorY=-584
+    .MaterialExpressionGuid=55B7B94A424EE494CDD47D9668DA0E2B
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionSign (MaterialExpressionSign_3)
+    Input                  <- MaterialExpressionSubtract
+    .Input=(Expression="/Script/Engine.MaterialExpressionSubtract'CloudLayerMapBrush:MaterialExpressionSubtract_9'")
+    .MaterialExpressionEditorX=-2176
+    .MaterialExpressionEditorY=-416
+    .MaterialExpressionGuid=0B3FFECB41986F13A9493394EA486D84
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_0)
+    A                      <- MaterialExpressionOneMinus
+    B                      <- MaterialExpressionAdd
+    .B=(Expression="/Script/Engine.MaterialExpressionAdd'CloudLayerMapBrush:MaterialExpressionAdd_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionOneMinus'CloudLayerMapBrush:MaterialExpressionOneMinus_0'")
+    .MaterialExpressionEditorX=-1624
+    .MaterialExpressionEditorY=624
+    .MaterialExpressionGuid=1F8D529C40AFF19CC478DA8CC12BEB00
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_1)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionAdd
+    .B=(Expression="/Script/Engine.MaterialExpressionAdd'CloudLayerMapBrush:MaterialExpressionAdd_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'CloudLayerMapBrush:MaterialExpressionSubtract_8'")
+    .MaterialExpressionEditorX=-1616
+    .MaterialExpressionEditorY=804
+    .MaterialExpressionGuid=26203BE04EF2767AFFB8048DF5F092E3
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_2)
+    A                      <- MaterialExpressionOneMinus
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'CloudLayerMapBrush:MaterialExpressionScalarParameter_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionOneMinus'CloudLayerMapBrush:MaterialExpressionOneMinus_0'")
+    .MaterialExpressionEditorX=-1624
+    .MaterialExpressionEditorY=916
+    .MaterialExpressionGuid=C87EFF8741536CA53EFE608D0FFF47B2
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_3)
+    A                      <- MaterialExpressionScalarParameter
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'CloudLayerMapBrush:MaterialExpressionScalarParameter_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionScalarParameter'CloudLayerMapBrush:MaterialExpressionScalarParameter_3'")
+    .MaterialExpressionEditorX=-1628
+    .MaterialExpressionEditorY=1060
+    .MaterialExpressionGuid=5087C10340BA39A164939590FAA43E19
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_4)
+    A                      <- MaterialExpressionComponentMask
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'CloudLayerMapBrush:MaterialExpressionComponentMask_1'")
+    .ConstB=0.330000
+    .MaterialExpressionEditorX=-1884
+    .MaterialExpressionEditorY=264
+    .MaterialExpressionGuid=12F7C4D645C165BF41CD3390E72F3044
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_5)
+    A                      <- MaterialExpressionComponentMask
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'CloudLayerMapBrush:MaterialExpressionComponentMask_1'")
+    .ConstB=0.660000
+    .MaterialExpressionEditorX=-1888
+    .MaterialExpressionEditorY=408
+    .MaterialExpressionGuid=5613F28D48DF2BC23C2AC0A6ADDE8772
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_6)
+    A                      <- MaterialExpressionScalarParameter
+    .A=(Expression="/Script/Engine.MaterialExpressionScalarParameter'CloudLayerMapBrush:MaterialExpressionScalarParameter_2'")
+    .ConstB=0.001000
+    .MaterialExpressionEditorX=-2524
+    .MaterialExpressionEditorY=-392
+    .MaterialExpressionGuid=E62827564866B75D5ACB219C513816BF
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_7)
+    A                      <- MaterialExpressionOneMinus
+    B                      <- MaterialExpressionSubtract
+    .B=(Expression="/Script/Engine.MaterialExpressionSubtract'CloudLayerMapBrush:MaterialExpressionSubtract_6'")
+    .A=(Expression="/Script/Engine.MaterialExpressionOneMinus'CloudLayerMapBrush:MaterialExpressionOneMinus_3'")
+    .MaterialExpressionEditorX=-2300
+    .MaterialExpressionEditorY=-584
+    .MaterialExpressionGuid=13B08FA64C69D5D4DD4490BDC86C611B
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_8)
+    A                      <- MaterialExpressionScalarParameter
+    .A=(Expression="/Script/Engine.MaterialExpressionScalarParameter'CloudLayerMapBrush:MaterialExpressionScalarParameter_1'")
+    .ConstB=0.001000
+    .MaterialExpressionEditorX=-2268
+    .MaterialExpressionEditorY=924
+    .MaterialExpressionGuid=B81BA74C4AEB1491631CB3B07C5DACE7
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_9)
+    A                      <- MaterialExpressionOneMinus
+    B                      <- MaterialExpressionAdd
+    .B=(Expression="/Script/Engine.MaterialExpressionAdd'CloudLayerMapBrush:MaterialExpressionAdd_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionOneMinus'CloudLayerMapBrush:MaterialExpressionOneMinus_3'")
+    .MaterialExpressionEditorX=-2300
+    .MaterialExpressionEditorY=-416
+    .MaterialExpressionGuid=F4200604454B4EB0B900FAB8CA64BAC5
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionTextureCoordinate (MaterialExpressionTextureCoordinate_0)
+    .MaterialExpressionEditorX=-2416
+    .MaterialExpressionEditorY=624
+    .MaterialExpressionGuid=0D80C6654D3B7F4D7DEEC5864BC9B98D
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionTextureCoordinate (MaterialExpressionTextureCoordinate_1)
+    .MaterialExpressionEditorX=-2232
+    .MaterialExpressionEditorY=264
+    .MaterialExpressionGuid=A383D26E44EEC71B8FE053862D79EF73
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionTextureCoordinate (MaterialExpressionTextureCoordinate_2)
+    .MaterialExpressionEditorX=-2756
+    .MaterialExpressionEditorY=-584
+    .MaterialExpressionGuid=25C1C21344B05460552185A24DC73826
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionVectorParameter (MaterialExpressionVectorParameter_0)
+    .ParameterName="RGB 1"
+    .DefaultValue=(R=0.122553,G=1.000000,B=0.000000,A=1.000000)
+    .ExpressionGUID=5B713674449D8EF6991331968A5A3734
+    .MaterialExpressionEditorX=-2304
+    .MaterialExpressionEditorY=-72
+    .MaterialExpressionGuid=2F3831914DBAC82E970228BCF7B823BD
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionVectorParameter (MaterialExpressionVectorParameter_1)
+    .ParameterName="RGB 2"
+    .DefaultValue=(R=0.000000,G=0.385502,B=1.000000,A=1.000000)
+    .ExpressionGUID=14F12A6841BA4C221DA648ACAA28A56E
+    .MaterialExpressionEditorX=-1780
+    .MaterialExpressionEditorY=16
+    .MaterialExpressionGuid=86DFCB1949673ED10F5345B0FE01F0D5
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"
+  MaterialExpressionVectorParameter (MaterialExpressionVectorParameter_2)
+    .ParameterName="RGB 3"
+    .DefaultValue=(R=1.000000,G=0.000000,B=0.725520,A=1.000000)
+    .ExpressionGUID=4FB9E20242EBD552F7B789940850CC8F
+    .MaterialExpressionEditorX=-1032
+    .MaterialExpressionEditorY=20
+    .MaterialExpressionGuid=80AF51DD401EE7D32C76A6B620ECF52F
+    .Material="/Script/Engine.Material'CloudLayerMapBrush'"

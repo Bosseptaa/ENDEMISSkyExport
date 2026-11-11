@@ -1,0 +1,86 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_DepthFade
+  MaterialFunction (MF_SC_DepthFade)
+    DependentFunctionExpressionCandidates(0) <- MaterialExpressionMaterialFunctionCall
+    .LibraryCategoriesText(0)=NSLOCTEXT("", "8608C0344231766C91A4CC9B44626599", "Sky Creator")
+    .DependentFunctionExpressionCandidates(0)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_1'"
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'MF_SC_DepthFadeEditorOnlyData'"
+    .StateId=D0B201A14B7D0AF381F328B03E6EFF53
+    .CombinedInputTypes=15
+    .CombinedOutputTypes=15
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+  MaterialFunctionEditorOnlyData (MF_SC_DepthFadeEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'MF_SC_DepthFade:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_DepthFade:MaterialExpressionMaterialFunctionCall_1'","/Script/Engine.MaterialExpressionDepthFade'MF_SC_DepthFade:MaterialExpressionDepthFade_0'","/Script/Engine.MaterialExpressionFunctionInput'MF_SC_DepthFade:MaterialExpressionFunctionInput_0'","/Script/Engine.MaterialExpressionFunctionInput'MF_SC_DepthFade:MaterialExpressionFunctionInput_1'","/Script/Engine.MaterialExpressionFunctionInput'MF_SC_DepthFade:MaterialExpressionFunctionInput_2'","/Script/Engine.MaterialExpressionFunctionOutput'MF_SC_DepthFade:MaterialExpressionFunctionOutput_1'"))
+  MaterialExpressionDepthFade (MaterialExpressionDepthFade_0)
+    InOpacity              <- MaterialExpressionMaterialFunctionCall
+    FadeDistance           <- MaterialExpressionFunctionInput
+    .InOpacity=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_DepthFade:MaterialExpressionMaterialFunctionCall_1'")
+    .FadeDistance=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_DepthFade:MaterialExpressionFunctionInput_1'")
+    .MaterialExpressionEditorX=-384
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=BA520C844A906FC95508AD8F4AC42449
+    .Function="/Script/Engine.MaterialFunction'MF_SC_DepthFade'"
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_0)
+    .InputName="Camera Fade Distance"
+    .Id=970822664A2B82D50341FBBD46BCF4BB
+    .InputType=FunctionInput_Scalar
+    .PreviewValue=(X=100.000000,Y=0.000000,Z=0.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=1
+    .MaterialExpressionEditorX=-1024
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=0B25222040A384FF1113B1979DD2B9F0
+    .Function="/Script/Engine.MaterialFunction'MF_SC_DepthFade'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_1)
+    .InputName="Depth Fade Distance"
+    .Id=40C4151341B2C651264958A9AFA056E2
+    .InputType=FunctionInput_Scalar
+    .PreviewValue=(X=100.000000,Y=0.000000,Z=0.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .MaterialExpressionEditorX=-704
+    .MaterialExpressionEditorY=160
+    .MaterialExpressionGuid=0B25222040A384FF1113B1979DD2B9F0
+    .Function="/Script/Engine.MaterialFunction'MF_SC_DepthFade'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_2)
+    .InputName="Camera Fade Offset"
+    .Id=BE46EB724B391403C264A6B8AE584568
+    .InputType=FunctionInput_Scalar
+    .PreviewValue=(X=50.000000,Y=0.000000,Z=0.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=2
+    .MaterialExpressionEditorX=-1024
+    .MaterialExpressionEditorY=128
+    .MaterialExpressionGuid=0B25222040A384FF1113B1979DD2B9F0
+    .Function="/Script/Engine.MaterialFunction'MF_SC_DepthFade'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionDepthFade
+    .A=(Expression="/Script/Engine.MaterialExpressionDepthFade'MF_SC_DepthFade:MaterialExpressionDepthFade_0'")
+    .bLastPreviewed=True
+    .Id=36E6CAB74F526330BF71D9AA7309F926
+    .MaterialExpressionGuid=2D73A63C4969663ED01B91AEF20BF8F9
+    .Function="/Script/Engine.MaterialFunction'MF_SC_DepthFade'"
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_1)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_DepthFade:MaterialExpressionMaterialFunctionCall_1'")
+    .OutputName="CameraFade"
+    .SortPriority=1
+    .Id=0D7A55CD44B7F3DDFEB425B51901B77C
+    .MaterialExpressionEditorY=256
+    .MaterialExpressionGuid=E680517D4A6243AD4559479BDCB4C27E
+    .Function="/Script/Engine.MaterialFunction'MF_SC_DepthFade'"
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_1)
+    FunctionInputs(0)      <- MaterialExpressionFunctionInput
+    FunctionInputs(1)      <- MaterialExpressionFunctionInput
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Engine/Functions/Engine_MaterialFunctions01/Opacity/CameraDepthFade.CameraDepthFade'"
+    .FunctionInputs(0)=(ExpressionInputId=79FFEA6C4F3A46F51F8E50A349E4BB4B,Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_DepthFade:MaterialExpressionFunctionInput_0'",InputName="Fade Length"))
+    .FunctionInputs(1)=(ExpressionInputId=D5EC0E2F4DB888679BFC2A8B921262ED,Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_DepthFade:MaterialExpressionFunctionInput_2'",InputName="Fade Offset"))
+    .FunctionInputs(2)=(ExpressionInputId=7B4195E6455691CA3782398687468578,Input=(OutputIndex=-1,InputName="For Vertex Shader"))
+    .FunctionOutputs(0)=(ExpressionOutputId=160C00424E845E293F44DCBE13738CEE,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-704
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=68B07C3846C3D59313AD99B3E110DDB4
+    .Function="/Script/Engine.MaterialFunction'MF_SC_DepthFade'"
+    .Outputs(0)=(OutputName="Result")

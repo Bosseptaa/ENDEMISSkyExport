@@ -1,0 +1,338 @@
+### /Game/UltraDynamicSky/Materials/Weather/Weather_Particle_DOF
+  MaterialFunction (Weather_Particle_DOF)
+    DependentFunctionExpressionCandidates(0) <- MaterialExpressionMaterialFunctionCall
+    DependentFunctionExpressionCandidates(1) <- MaterialExpressionMaterialFunctionCall
+    .DependentFunctionExpressionCandidates(0)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_2'"
+    .DependentFunctionExpressionCandidates(1)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_4'"
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'Weather_Particle_DOFEditorOnlyData'"
+    .StateId=711F78AC476BC5E3C742DABE5597ED04
+    .CombinedInputTypes=15
+    .CombinedOutputTypes=15
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+  MaterialFunctionEditorOnlyData (Weather_Particle_DOFEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'Weather_Particle_DOF:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionDepthOfFieldFunction'Weather_Particle_DOF:MaterialExpressionDepthOfFieldFunction_0'","/Script/Engine.MaterialExpressionAbs'Weather_Particle_DOF:MaterialExpressionAbs_0'","/Script/Engine.MaterialExpressionParticleRadius'Weather_Particle_DOF:MaterialExpressionParticleRadius_0'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Weather_Particle_DOF:MaterialExpressionMaterialFunctionCall_2'","/Script/Engine.MaterialExpressionDivide'Weather_Particle_DOF:MaterialExpressionDivide_1'","/Script/Engine.MaterialExpressionSaturate'Weather_Particle_DOF:MaterialExpressionSaturate_0'","/Script/Engine.MaterialExpressionPixelDepth'Weather_Particle_DOF:MaterialExpressionPixelDepth_0'","/Script/Engine.MaterialExpressionFunctionOutput'Weather_Particle_DOF:MaterialExpressionFunctionOutput_1'","/Script/Engine.MaterialExpressionFunctionOutput'Weather_Particle_DOF:MaterialExpressionFunctionOutput_2'","/Script/Engine.MaterialExpressionDivide'Weather_Particle_DOF:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionAdd'Weather_Particle_DOF:MaterialExpressionAdd_0'","/Script/Engine.MaterialExpressionPower'Weather_Particle_DOF:MaterialExpressionPower_0'","/Script/Engine.MaterialExpressionParticlePositionWS'Weather_Particle_DOF:MaterialExpressionParticlePositionWS_1'","/Script/Engine.MaterialExpressionWorldPosition'Weather_Particle_DOF:MaterialExpressionWorldPosition_1'","/Script/Engine.MaterialExpressionSubtract'Weather_Particle_DOF:MaterialExpressionSubtract_2'","/Script/Engine.MaterialExpressionSubtract'Weather_Particle_DOF:MaterialExpressionSubtract_3'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Weather_Particle_DOF:MaterialExpressionMaterialFunctionCall_4'","/Script/Engine.MaterialExpressionMultiply'Weather_Particle_DOF:MaterialExpressionMultiply_44'","/Script/Engine.MaterialExpressionConstant2Vector'Weather_Particle_DOF:MaterialExpressionConstant2Vector_3'","/Script/Engine.MaterialExpressionLinearInterpolate'Weather_Particle_DOF:MaterialExpressionLinearInterpolate_0'","/Script/Engine.MaterialExpressionMultiply'Weather_Particle_DOF:MaterialExpressionMultiply_7'","/Script/Engine.MaterialExpressionMultiply'Weather_Particle_DOF:MaterialExpressionMultiply_8'","/Script/Engine.MaterialExpressionFunctionInput'Weather_Particle_DOF:MaterialExpressionFunctionInput_0'","/Script/Engine.MaterialExpressionMin'Weather_Particle_DOF:MaterialExpressionMin_0'","/Script/Engine.MaterialExpressionShadingPathSwitch'Weather_Particle_DOF:MaterialExpressionShadingPathSwitch_0'","/Script/Engine.MaterialExpressionConstant'Weather_Particle_DOF:MaterialExpressionConstant_0'","/Script/Engine.MaterialExpressionShadingPathSwitch'Weather_Particle_DOF:MaterialExpressionShadingPathSwitch_1'","/Script/Engine.MaterialExpressionConstant'Weather_Particle_DOF:MaterialExpressionConstant_1'","/Script/Engine.MaterialExpressionShadingPathSwitch'Weather_Particle_DOF:MaterialExpressionShadingPathSwitch_2'","/Script/Engine.MaterialExpressionConstant'Weather_Particle_DOF:MaterialExpressionConstant_2'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Weather_Particle_DOF:MaterialExpressionNamedRerouteDeclaration_0'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Weather_Particle_DOF:MaterialExpressionNamedRerouteUsage_0'","/Script/Engine.MaterialExpressionTextureCoordinate'Weather_Particle_DOF:MaterialExpressionTextureCoordinate_0'","/Script/Engine.MaterialExpressionSubtract'Weather_Particle_DOF:MaterialExpressionSubtract_0'","/Script/Engine.MaterialExpressionMultiply'Weather_Particle_DOF:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionDivide'Weather_Particle_DOF:MaterialExpressionDivide_2'","/Script/Engine.MaterialExpressionReroute'Weather_Particle_DOF:MaterialExpressionReroute_1'","/Script/Engine.MaterialExpressionMultiply'Weather_Particle_DOF:MaterialExpressionMultiply_1'","/Script/Engine.MaterialExpressionCollectionParameter'Weather_Particle_DOF:MaterialExpressionCollectionParameter_0'"))
+  MaterialExpressionAbs (MaterialExpressionAbs_0)
+    Input                  <- MaterialExpressionDepthOfFieldFunction
+    .Input=(Expression="/Script/Engine.MaterialExpressionDepthOfFieldFunction'Weather_Particle_DOF:MaterialExpressionDepthOfFieldFunction_0'")
+    .MaterialExpressionEditorX=-1328
+    .MaterialExpressionEditorY=232
+    .MaterialExpressionGuid=AD60F1AC43EF6E3B7439AFB4543776E8
+    .Function="/Script/Engine.MaterialFunction'Weather_Particle_DOF'"
+  MaterialExpressionAdd (MaterialExpressionAdd_0)
+    A                      <- MaterialExpressionDivide
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'Weather_Particle_DOF:MaterialExpressionDivide_2'")
+    .MaterialExpressionEditorX=-164
+    .MaterialExpressionEditorY=232
+    .MaterialExpressionGuid=CD8FB65646E775B9E3FF7CA0D23E28CA
+    .Function="/Script/Engine.MaterialFunction'Weather_Particle_DOF'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_0)
+    .ParameterName="Weather Particle DOF Scale"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Particles/UDW_WeatherParticle_Parameters.UDW_WeatherParticle_Parameters'"
+    .ParameterId=7282F04C431518F58E3B1BB57688DFFC
+    .MaterialExpressionEditorX=-1500
+    .MaterialExpressionEditorY=316
+    .MaterialExpressionGuid=6C593CEA40B906DB2E38418FFDD564C0
+    .Function="/Script/Engine.MaterialFunction'Weather_Particle_DOF'"
+    .bCollapsed=True
+  MaterialExpressionConstant (MaterialExpressionConstant_0)
+    .R=1.000000
+    .MaterialExpressionEditorX=320
+    .MaterialExpressionEditorY=300
+    .MaterialExpressionGuid=7F217208450C41EB1E6DC99A37CD2C10
+    .Function="/Script/Engine.MaterialFunction'Weather_Particle_DOF'"
+  MaterialExpressionConstant (MaterialExpressionConstant_1)
+    .MaterialExpressionEditorX=460
+    .MaterialExpressionEditorY=740
+    .MaterialExpressionGuid=7F217208450C41EB1E6DC99A37CD2C10
+    .Function="/Script/Engine.MaterialFunction'Weather_Particle_DOF'"
+  MaterialExpressionConstant (MaterialExpressionConstant_2)
+    .MaterialExpressionEditorX=464
+    .MaterialExpressionEditorY=1044
+    .MaterialExpressionGuid=7F217208450C41EB1E6DC99A37CD2C10
+    .Function="/Script/Engine.MaterialFunction'Weather_Particle_DOF'"
+  MaterialExpressionConstant2Vector (MaterialExpressionConstant2Vector_3)
+    .R=-2.000000
+    .G=2.000000
+    .MaterialExpressionEditorX=-1160
+    .MaterialExpressionEditorY=860
+    .MaterialExpressionGuid=4B9258244A25405ED7AA0A8FABA237EE
+    .Function="/Script/Engine.MaterialFunction'Weather_Particle_DOF'"
+    .Desc="mirror it that the texture works and no double sided is needed"
+  MaterialExpressionDepthOfFieldFunction (MaterialExpressionDepthOfFieldFunction_0)
+    .FunctionValue=TDOF_CircleOfConfusionRadius
+    .MaterialExpressionEditorX=-1520
+    .MaterialExpressionEditorY=232
+    .MaterialExpressionGuid=806F0E2E477DC855381FB98DD6531E83
+    .Function="/Script/Engine.MaterialFunction'Weather_Particle_DOF'"
+    .bCollapsed=True
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    B                      <- MaterialExpressionAdd
+    .B=(Expression="/Script/Engine.MaterialExpressionAdd'Weather_Particle_DOF:MaterialExpressionAdd_0'")
+    .MaterialExpressionEditorX=-36
+    .MaterialExpressionEditorY=196
+    .MaterialExpressionGuid=8E9739874ED89F6D80B4DE8F7EC84018
+    .Function="/Script/Engine.MaterialFunction'Weather_Particle_DOF'"
+  MaterialExpressionDivide (MaterialExpressionDivide_1)
+    A                      <- MaterialExpressionReroute
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Weather_Particle_DOF:MaterialExpressionMultiply_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionReroute'Weather_Particle_DOF:MaterialExpressionReroute_1'")
+    .MaterialExpressionEditorX=-436
+    .MaterialExpressionEditorY=420
+    .MaterialExpressionGuid=3824C0434B68B65A8E49E2AF070F068B
+    .Function="/Script/Engine.MaterialFunction'Weather_Particle_DOF'"
+  MaterialExpressionDivide (MaterialExpressionDivide_2)
+    A                      <- MaterialExpressionReroute
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Weather_Particle_DOF:MaterialExpressionMaterialFunctionCall_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionReroute'Weather_Particle_DOF:MaterialExpressionReroute_1'")
+    .MaterialExpressionEditorX=-488
+    .MaterialExpressionEditorY=232
+    .MaterialExpressionGuid=3824C0434B68B65A8E49E2AF070F068B
+    .Function="/Script/Engine.MaterialFunction'Weather_Particle_DOF'"
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_0)
+    .InputName="Scale Blur Size"
+    .Id=01A33C774205FC1D2FB2C58ACCD550D8
+    .InputType=FunctionInput_Scalar
+    .PreviewValue=(X=1.000000,Y=0.000000,Z=0.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .MaterialExpressionEditorX=-732
+    .MaterialExpressionEditorY=820
+    .MaterialExpressionGuid=78C2E99647B2BB8DDB186B9E1CA43906
+    .Function="/Script/Engine.MaterialFunction'Weather_Particle_DOF'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionShadingPathSwitch
+    .A=(Expression="/Script/Engine.MaterialExpressionShadingPathSwitch'Weather_Particle_DOF:MaterialExpressionShadingPathSwitch_2'")
+    .OutputName="Texture Alpha"
+    .bLastPreviewed=True
+    .Id=60B21CB0448D724E57542AA8C5492C55
+    .MaterialExpressionEditorX=836
+    .MaterialExpressionEditorY=896
+    .MaterialExpressionGuid=B13FD57B4C163DDD9C6ADAA8066737B3
+    .Function="/Script/Engine.MaterialFunction'Weather_Particle_DOF'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_1)
+    A                      <- MaterialExpressionShadingPathSwitch
+    .A=(Expression="/Script/Engine.MaterialExpressionShadingPathSwitch'Weather_Particle_DOF:MaterialExpressionShadingPathSwitch_1'")
+    .OutputName="World Position Offset"
+    .Id=50F40B70436F46E0F1B409A9422587FC
+    .MaterialExpressionEditorX=828
+    .MaterialExpressionEditorY=636
+    .MaterialExpressionGuid=DC653CDA4F7D4BDB3C31B9A6174956CC
+    .Function="/Script/Engine.MaterialFunction'Weather_Particle_DOF'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_2)
+    A                      <- MaterialExpressionShadingPathSwitch
+    .A=(Expression="/Script/Engine.MaterialExpressionShadingPathSwitch'Weather_Particle_DOF:MaterialExpressionShadingPathSwitch_0'")
+    .OutputName="Opacity Multiplier"
+    .Id=DDADDBDF4195AB7E8F8705901771E852
+    .MaterialExpressionEditorX=700
+    .MaterialExpressionEditorY=196
+    .MaterialExpressionGuid=21375785417003D716FEB0850B7CB86A
+    .Function="/Script/Engine.MaterialFunction'Weather_Particle_DOF'"
+    .bCollapsed=True
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_0)
+    B                      <- MaterialExpressionSubtract
+    Alpha                  <- MaterialExpressionNamedRerouteDeclaration
+    .B=(Expression="/Script/Engine.MaterialExpressionSubtract'Weather_Particle_DOF:MaterialExpressionSubtract_3'")
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Weather_Particle_DOF:MaterialExpressionNamedRerouteDeclaration_0'")
+    .MaterialExpressionEditorX=320
+    .MaterialExpressionEditorY=636
+    .MaterialExpressionGuid=6C9F7C2A4D40B5D7C2949F80B68ED552
+    .Function="/Script/Engine.MaterialFunction'Weather_Particle_DOF'"
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_2)
+    FunctionInputs(0)      <- MaterialExpressionParticleRadius
+    FunctionInputs(1)      <- MaterialExpressionPixelDepth
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Engine/Functions/Engine_MaterialFunctions01/Coordinates/WorldUnitsInPixel.WorldUnitsInPixel'"
+    .FunctionInputs(0)=(ExpressionInputId=F12DB5294E74FCC679179A9EB2498F20,Input=(Expression="/Script/Engine.MaterialExpressionParticleRadius'Weather_Particle_DOF:MaterialExpressionParticleRadius_0'",InputName="WorldUnits"))
+    .FunctionInputs(1)=(ExpressionInputId=2799D48C4C9EBDE0BEB517B9EA378280,Input=(Expression="/Script/Engine.MaterialExpressionPixelDepth'Weather_Particle_DOF:MaterialExpressionPixelDepth_0'",InputName="Depth",Mask=1,MaskR=1))
+    .FunctionOutputs(0)=(ExpressionOutputId=71DCDC054CB980266C56418E47DBEFBB,Output=(OutputName="PIxels"))
+    .MaterialExpressionEditorX=-840
+    .MaterialExpressionEditorY=400
+    .MaterialExpressionGuid=AE69DB07493F8FB4E3C293BB30383C64
+    .Function="/Script/Engine.MaterialFunction'Weather_Particle_DOF'"
+    .Outputs(0)=(OutputName="PIxels")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_4)
+    FunctionInputs(0)      <- MaterialExpressionMultiply
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Engine/Functions/Engine_MaterialFunctions01/Coordinates/PixelInWorldUnits.PixelInWorldUnits'"
+    .FunctionInputs(0)=(ExpressionInputId=418035644E86E55F445D38A0A595FCAC,Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Weather_Particle_DOF:MaterialExpressionMultiply_7'",InputName="Pixel"))
+    .FunctionInputs(1)=(ExpressionInputId=2799D48C4C9EBDE0BEB517B9EA378280,Input=(OutputIndex=-1,InputName="Depth"))
+    .FunctionOutputs(0)=(ExpressionOutputId=C21F674448342E9BE19214BCE1DDCD6A,Output=(OutputName="PixelInWorldUnits"))
+    .MaterialExpressionEditorX=-752
+    .MaterialExpressionEditorY=708
+    .MaterialExpressionGuid=AF7F767A482F84CC369BCCA2B686B593
+    .Function="/Script/Engine.MaterialFunction'Weather_Particle_DOF'"
+    .Outputs(0)=(OutputName="PixelInWorldUnits")
+  MaterialExpressionMin (MaterialExpressionMin_0)
+    A                      <- MaterialExpressionMultiply
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Weather_Particle_DOF:MaterialExpressionMultiply_8'")
+    .ConstB=20.000000
+    .MaterialExpressionEditorX=-264
+    .MaterialExpressionEditorY=708
+    .MaterialExpressionGuid=5D0FED074B937F23EE9F929E5DC31364
+    .Function="/Script/Engine.MaterialFunction'Weather_Particle_DOF'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Weather_Particle_DOF:MaterialExpressionMaterialFunctionCall_2'")
+    .ConstB=4.000000
+    .MaterialExpressionEditorX=-584
+    .MaterialExpressionEditorY=476
+    .MaterialExpressionGuid=F2E7B37F4F3255FDD60AF085CBD007EB
+    .Function="/Script/Engine.MaterialFunction'Weather_Particle_DOF'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionAbs
+    B                      <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Weather_Particle_DOF:MaterialExpressionCollectionParameter_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAbs'Weather_Particle_DOF:MaterialExpressionAbs_0'")
+    .MaterialExpressionEditorX=-1224
+    .MaterialExpressionEditorY=232
+    .MaterialExpressionGuid=16497C0144B664A5AC11A3B5EC182AFD
+    .Function="/Script/Engine.MaterialFunction'Weather_Particle_DOF'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_44)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionConstant2Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'Weather_Particle_DOF:MaterialExpressionConstant2Vector_3'",Mask=1,MaskR=1,MaskG=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'Weather_Particle_DOF:MaterialExpressionSubtract_0'")
+    .ConstB=-2.000000
+    .MaterialExpressionEditorX=-1012
+    .MaterialExpressionEditorY=776
+    .MaterialExpressionGuid=AE2A28104CAE084B3F34AB996C95EC5D
+    .Function="/Script/Engine.MaterialFunction'Weather_Particle_DOF'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_7)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Weather_Particle_DOF:MaterialExpressionMultiply_44'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Weather_Particle_DOF:MaterialExpressionMultiply_1'")
+    .MaterialExpressionEditorX=-864
+    .MaterialExpressionEditorY=704
+    .MaterialExpressionGuid=7BDB524344A298294705DC841CF44839
+    .Function="/Script/Engine.MaterialFunction'Weather_Particle_DOF'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_8)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Weather_Particle_DOF:MaterialExpressionFunctionInput_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Weather_Particle_DOF:MaterialExpressionMaterialFunctionCall_4'")
+    .MaterialExpressionEditorX=-464
+    .MaterialExpressionEditorY=708
+    .MaterialExpressionGuid=F1DF71664D28C89592BC41B14BAC4F29
+    .Function="/Script/Engine.MaterialFunction'Weather_Particle_DOF'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_0)
+    Input                  <- MaterialExpressionSaturate
+    .Input=(Expression="/Script/Engine.MaterialExpressionSaturate'Weather_Particle_DOF:MaterialExpressionSaturate_0'")
+    .Name="Texture Alpha"
+    .NodeColor=(R=1.000000,G=0.140625,B=0.000000,A=1.000000)
+    .VariableGuid=F25DC35149DDF84856BC2C9F87F9DDE9
+    .MaterialExpressionEditorX=32
+    .MaterialExpressionEditorY=568
+    .MaterialExpressionGuid=8276925C4BC9AC087B197AB2AC9D247C
+    .Function="/Script/Engine.MaterialFunction'Weather_Particle_DOF'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_0)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Weather_Particle_DOF:MaterialExpressionNamedRerouteDeclaration_0'"
+    .DeclarationGuid=F25DC35149DDF84856BC2C9F87F9DDE9
+    .MaterialExpressionEditorX=452
+    .MaterialExpressionEditorY=928
+    .MaterialExpressionGuid=87E4EB424D260C52AAC2CF97E5547818
+    .Function="/Script/Engine.MaterialFunction'Weather_Particle_DOF'"
+  MaterialExpressionParticlePositionWS (MaterialExpressionParticlePositionWS_1)
+    .MaterialExpressionEditorX=-456
+    .MaterialExpressionEditorY=1028
+    .MaterialExpressionGuid=C1BEE72746735111AD4132A513DDDA61
+    .Function="/Script/Engine.MaterialFunction'Weather_Particle_DOF'"
+  MaterialExpressionParticleRadius (MaterialExpressionParticleRadius_0)
+    .MaterialExpressionEditorX=-1028
+    .MaterialExpressionEditorY=384
+    .MaterialExpressionGuid=64DAC1074BE430FC33B240B0F8D649DB
+    .Function="/Script/Engine.MaterialFunction'Weather_Particle_DOF'"
+  MaterialExpressionPixelDepth (MaterialExpressionPixelDepth_0)
+    .MaterialExpressionEditorX=-1012
+    .MaterialExpressionEditorY=468
+    .MaterialExpressionGuid=4FAB93FC4C08038DA9655FB1E28D2A24
+    .Function="/Script/Engine.MaterialFunction'Weather_Particle_DOF'"
+  MaterialExpressionPower (MaterialExpressionPower_0)
+    Base                   <- MaterialExpressionDivide
+    .Base=(Expression="/Script/Engine.MaterialExpressionDivide'Weather_Particle_DOF:MaterialExpressionDivide_0'")
+    .ConstExponent=1.500000
+    .MaterialExpressionEditorX=108
+    .MaterialExpressionEditorY=196
+    .MaterialExpressionGuid=6E6B49004006C1AE3C05A5A3CF861B51
+    .Function="/Script/Engine.MaterialFunction'Weather_Particle_DOF'"
+  MaterialExpressionReroute (MaterialExpressionReroute_1)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Weather_Particle_DOF:MaterialExpressionMultiply_1'")
+    .MaterialExpressionEditorX=-652
+    .MaterialExpressionEditorY=268
+    .MaterialExpressionGuid=9F9E3A79475F5CD0F703AE988A701E98
+    .Function="/Script/Engine.MaterialFunction'Weather_Particle_DOF'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_0)
+    Input                  <- MaterialExpressionDivide
+    .Input=(Expression="/Script/Engine.MaterialExpressionDivide'Weather_Particle_DOF:MaterialExpressionDivide_1'")
+    .MaterialExpressionEditorX=-316
+    .MaterialExpressionEditorY=420
+    .MaterialExpressionGuid=85530A89488F03CB5FB39C931BB3DA93
+    .Function="/Script/Engine.MaterialFunction'Weather_Particle_DOF'"
+  MaterialExpressionShadingPathSwitch (MaterialExpressionShadingPathSwitch_0)
+    Default                <- MaterialExpressionPower
+    Inputs(2)              <- MaterialExpressionConstant
+    .Default=(Expression="/Script/Engine.MaterialExpressionPower'Weather_Particle_DOF:MaterialExpressionPower_0'")
+    .Inputs(2)=(Expression="/Script/Engine.MaterialExpressionConstant'Weather_Particle_DOF:MaterialExpressionConstant_0'")
+    .MaterialExpressionEditorX=504
+    .MaterialExpressionEditorY=196
+    .MaterialExpressionGuid=38AB34A04773CAA6E1ACB5B725C7F568
+    .Function="/Script/Engine.MaterialFunction'Weather_Particle_DOF'"
+  MaterialExpressionShadingPathSwitch (MaterialExpressionShadingPathSwitch_1)
+    Default                <- MaterialExpressionLinearInterpolate
+    Inputs(2)              <- MaterialExpressionConstant
+    .Default=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Weather_Particle_DOF:MaterialExpressionLinearInterpolate_0'")
+    .Inputs(2)=(Expression="/Script/Engine.MaterialExpressionConstant'Weather_Particle_DOF:MaterialExpressionConstant_1'")
+    .MaterialExpressionEditorX=612
+    .MaterialExpressionEditorY=636
+    .MaterialExpressionGuid=38AB34A04773CAA6E1ACB5B725C7F568
+    .Function="/Script/Engine.MaterialFunction'Weather_Particle_DOF'"
+  MaterialExpressionShadingPathSwitch (MaterialExpressionShadingPathSwitch_2)
+    Default                <- MaterialExpressionNamedRerouteUsage
+    Inputs(2)              <- MaterialExpressionConstant
+    .Default=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Weather_Particle_DOF:MaterialExpressionNamedRerouteUsage_0'")
+    .Inputs(2)=(Expression="/Script/Engine.MaterialExpressionConstant'Weather_Particle_DOF:MaterialExpressionConstant_2'")
+    .MaterialExpressionEditorX=636
+    .MaterialExpressionEditorY=924
+    .MaterialExpressionGuid=38AB34A04773CAA6E1ACB5B725C7F568
+    .Function="/Script/Engine.MaterialFunction'Weather_Particle_DOF'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_0)
+    A                      <- MaterialExpressionTextureCoordinate
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'Weather_Particle_DOF:MaterialExpressionTextureCoordinate_0'")
+    .ConstB=0.500000
+    .MaterialExpressionEditorX=-1188
+    .MaterialExpressionEditorY=728
+    .MaterialExpressionGuid=A91A452F45ADF143BA9A8AA15691376B
+    .Function="/Script/Engine.MaterialFunction'Weather_Particle_DOF'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_2)
+    A                      <- MaterialExpressionWorldPosition
+    B                      <- MaterialExpressionParticlePositionWS
+    .B=(Expression="/Script/Engine.MaterialExpressionParticlePositionWS'Weather_Particle_DOF:MaterialExpressionParticlePositionWS_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionWorldPosition'Weather_Particle_DOF:MaterialExpressionWorldPosition_1'")
+    .MaterialExpressionEditorX=-200
+    .MaterialExpressionEditorY=872
+    .MaterialExpressionGuid=3DDD7FCE4DDBB79E920C5FAE01DF95A7
+    .Function="/Script/Engine.MaterialFunction'Weather_Particle_DOF'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_3)
+    A                      <- MaterialExpressionMin
+    B                      <- MaterialExpressionSubtract
+    .B=(Expression="/Script/Engine.MaterialExpressionSubtract'Weather_Particle_DOF:MaterialExpressionSubtract_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMin'Weather_Particle_DOF:MaterialExpressionMin_0'")
+    .MaterialExpressionEditorX=-20
+    .MaterialExpressionEditorY=704
+    .MaterialExpressionGuid=4F3D8AF4446239A48A78ACB96AECF35D
+    .Function="/Script/Engine.MaterialFunction'Weather_Particle_DOF'"
+  MaterialExpressionTextureCoordinate (MaterialExpressionTextureCoordinate_0)
+    .MaterialExpressionEditorX=-1404
+    .MaterialExpressionEditorY=728
+    .MaterialExpressionGuid=BE5EEEFD46CD33627D0B8BA626D98C5B
+    .Function="/Script/Engine.MaterialFunction'Weather_Particle_DOF'"
+  MaterialExpressionWorldPosition (MaterialExpressionWorldPosition_1)
+    .MaterialExpressionEditorX=-444
+    .MaterialExpressionEditorY=856
+    .MaterialExpressionGuid=6172AA8C4745D5F4352730A9DE16B110
+    .Function="/Script/Engine.MaterialFunction'Weather_Particle_DOF'"

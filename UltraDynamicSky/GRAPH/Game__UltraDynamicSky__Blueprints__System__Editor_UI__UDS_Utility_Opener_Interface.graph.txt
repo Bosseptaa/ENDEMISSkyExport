@@ -1,0 +1,74 @@
+### /Game/UltraDynamicSky/Blueprints/System/Editor_UI/UDS_Utility_Opener_Interface
+  Blueprint (UDS_Utility_Opener_Interface)
+    .ParentClass="/Script/CoreUObject.Class'/Script/CoreUObject.Interface'"
+    .BlueprintType=BPTYPE_Interface
+    .bDeprecate=True
+    .BlueprintCategory="UltraDynamicSky|Editor"
+    .BlueprintSystemVersion=2
+    .FunctionGraphs(0)="/Script/Engine.EdGraph'Open UDS Readme'"
+    .FunctionGraphs(1)="/Script/Engine.EdGraph'Open UDS Readme Entry Set'"
+    .FunctionGraphs(2)="/Script/Engine.EdGraph'Show Editor Warning Window'"
+    .FunctionGraphs(3)="/Script/Engine.EdGraph'Open UDS Editor Utility'"
+    .FunctionGraphs(4)="/Script/Engine.EdGraph'Run UDS Editor Utility Object'"
+    .CategorySorting(0)=""
+    .CategorySorting(1)="-1"
+    .LastEditedDocuments(0)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/System/Editor_UI/UDS_Utility_Opener_Interface.UDS_Utility_Opener_Interface:Open UDS Editor Utility",SavedViewOffset=(X=-1214.617676,Y=-567.625000),SavedZoomAmount=1.000000)
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfo'SceneThumbnailInfo_0'"
+    .GeneratedClass="/Script/Engine.BlueprintGeneratedClass'UDS_Utility_Opener_Interface_C'"
+    .bLegacyNeedToPurgeSkelRefs=False
+    .BlueprintGuid=D47145154E25E5B4F9526C9CBD6FB2AB
+  EdGraph (Run UDS Editor Utility Object_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=890A464C42A59FEEA42014BCEE300CD1
+  K2Node_FunctionResult (K2Node_FunctionResult_0)
+    .FunctionReference=(MemberName="Open UDS Editor Utility")
+    .bIsEditable=True
+    .NodePosX=256
+    .NodeGuid=5A84847A49B3DE9001057A89DF4D0B20
+  K2Node_FunctionEntry (K2Node_FunctionEntry_0)
+    .ExtraFlags=201457664
+    .FunctionReference=(MemberName="Open UDS Readme")
+    .bIsEditable=True
+    .NodeGuid=1B544A9444F84F5EC727D2B7186F7D11
+    .ErrorType=4
+  EdGraph (Open UDS Editor Utility_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=9455A7074C4119CF09013CAF92EE0BDC
+  EdGraph (Show Editor Warning Window_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .GraphGuid=DBCAC58A4626E4C2C21257B880EC7EE7
+  EdGraph (Open UDS Readme Entry Set_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .GraphGuid=33D4AE474310834D7F6189807DE8B789
+  EdGraph (Open UDS Readme_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .GraphGuid=BD9190364A31595779AA87B65C10EC5B
+  EdGraph (Run UDS Editor Utility Object)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=890A464C42A59FEEA42014BCEE300CD1
+  EdGraph (Open UDS Editor Utility)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=9455A7074C4119CF09013CAF92EE0BDC
+  EdGraph (Show Editor Warning Window)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .GraphGuid=DBCAC58A4626E4C2C21257B880EC7EE7
+  EdGraph (Open UDS Readme Entry Set)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .GraphGuid=33D4AE474310834D7F6189807DE8B789
+  EdGraph (Open UDS Readme)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .GraphGuid=BD9190364A31595779AA87B65C10EC5B

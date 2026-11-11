@@ -1,0 +1,25 @@
+### /Game/UltraDynamicSky/Blueprints/System/UDS_Cloud_Paint_Cell
+  Blueprint (UDS_Cloud_Paint_Cell)
+    .ParentClass="/Script/CoreUObject.Class'/Script/Engine.PrimaryDataAsset'"
+    .BlueprintDescription="Holds data and references a texture asset for a single cell of cloud painting, created by the Volumetric Cloud Painter utility."
+    .BlueprintCategory="UltraDynamicSky|System"
+    .BlueprintSystemVersion=2
+    .UbergraphPages(0)="/Script/Engine.EdGraph'EventGraph'"
+    .NewVariables(0)=(VarName="Painting Array",VarGuid=DB45917246AB5F64DB7C4F955FABE809,VarType=(PinCategory="struct",PinSubCategoryObject="/Script/CoreUObject.ScriptStruct'/Script/CoreUObject.LinearColor'",ContainerType=Array),FriendlyName="Painting Array",Category=NSLOCTEXT("KismetSchema", "Default", "Default"),PropertyFlags=65541,MetaDataArray=((DataKey="MultiLine",DataValue="true")))
+    .NewVariables(1)=(VarName="Texture",VarGuid=781CE8E542C2536A19AFCFB8318AF6DF,VarType=(PinCategory="softobject",PinSubCategoryObject="/Script/CoreUObject.Class'/Script/Engine.Texture2D'"),FriendlyName="Texture",Category=NSLOCTEXT("KismetSchema", "Default", "Default"),PropertyFlags=65541,MetaDataArray=((DataKey="MultiLine",DataValue="true")))
+    .NewVariables(2)=(VarName="Zero Coverage Present",VarGuid=82D6E18946C83CF5E2ECAB9597D4BC2D,VarType=(PinCategory="bool"),FriendlyName="Zero Coverage Present",Category=NSLOCTEXT("KismetSchema", "Default", "Default"),PropertyFlags=65541,MetaDataArray=((DataKey="MultiLine",DataValue="true")))
+    .NewVariables(3)=(VarName="Mid Coverage Present",VarGuid=F71DFBAC41E6267231EC2CBDD2120B49,VarType=(PinCategory="bool"),FriendlyName="Mid Coverage Present",Category=NSLOCTEXT("KismetSchema", "Default", "Default"),PropertyFlags=65541,MetaDataArray=((DataKey="MultiLine",DataValue="true")))
+    .NewVariables(4)=(VarName="Full Coverage Present",VarGuid=BF9498244430901F20FAAB8FB0F9745E,VarType=(PinCategory="bool"),FriendlyName="Full Coverage Present",Category=NSLOCTEXT("KismetSchema", "Default", "Default"),PropertyFlags=65541,MetaDataArray=((DataKey="MultiLine",DataValue="true")))
+    .CategorySorting(0)="Default"
+    .LastEditedDocuments(0)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/System/UDS_Cloud_Paint_Cell.UDS_Cloud_Paint_Cell:EventGraph",SavedZoomAmount=1.000000)
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfo'SceneThumbnailInfo_0'"
+    .GeneratedClass="/Script/Engine.BlueprintGeneratedClass'UDS_Cloud_Paint_Cell_C'"
+    .bLegacyNeedToPurgeSkelRefs=False
+    .BlueprintGuid=0DFC3C7E4CF30AAE607D829079D0D3F2
+  EdGraph (EventGraph)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .bAllowDeletion=False
+    .GraphGuid=3684E83B446805A260FA85AFCE8EEF50
+  EdGraph (ExecuteUbergraph_UDS_Cloud_Paint_Cell)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .GraphGuid=324BC8814E1016ADDE62ABA73D020813

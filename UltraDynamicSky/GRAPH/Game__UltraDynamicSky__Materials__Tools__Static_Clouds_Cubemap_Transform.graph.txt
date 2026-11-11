@@ -1,0 +1,110 @@
+### /Game/UltraDynamicSky/Materials/Tools/Static_Clouds_Cubemap_Transform
+  Material (Static_Clouds_Cubemap_Transform)
+    .MaterialDecalResponse=MDR_None
+    .ShadingModel=MSM_Unlit
+    .ShadingModels=(ShadingModelField=1)
+    .bTangentSpaceNormal=False
+    .EditorX=-740
+    .bCanMaskedBeAssumedOpaque=True
+    .bCastRayTracedShadows=False
+    .PixelDepthOffsetMode=PDOM_Legacy
+    .StateId=69A0F723AF7E87876C53519347F5FB9E
+    .ReferencedTextureGuids(0)=57549A7045832E014B706694F3AF4999
+    .EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'Static_Clouds_Cubemap_TransformEditorOnlyData'"
+    .ReferencedDefaultTextures(0)="/Script/Engine.TextureRenderTargetCube'/Game/UltraDynamicSky/Textures/Tools/Static_Clouds_Authoring_Target.Static_Clouds_Authoring_Target'"
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+    .ParameterOverviewExpansion=(("-12Global", True))
+    .LightingGuid=085919C44CE770C8FDEB8B9FCED9E5B7
+  MaterialEditorOnlyData (Static_Clouds_Cubemap_TransformEditorOnlyData)
+    EmissiveColor          <- MaterialExpressionTextureSampleParameterCube
+    ExpressionCollection   <- MaterialExpressionTextureSampleParameterCube
+    .EmissiveColor=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameterCube'Static_Clouds_Cubemap_Transform:MaterialExpressionTextureSampleParameterCube_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionTextureSampleParameterCube'Static_Clouds_Cubemap_Transform:MaterialExpressionTextureSampleParameterCube_0'","/Script/Engine.MaterialExpressionTextureCoordinate'Static_Clouds_Cubemap_Transform:MaterialExpressionTextureCoordinate_0'","/Script/Engine.MaterialExpressionDistance'Static_Clouds_Cubemap_Transform:MaterialExpressionDistance_0'","/Script/Engine.MaterialExpressionConstant2Vector'Static_Clouds_Cubemap_Transform:MaterialExpressionConstant2Vector_0'","/Script/Engine.MaterialExpressionMultiply'Static_Clouds_Cubemap_Transform:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionOneMinus'Static_Clouds_Cubemap_Transform:MaterialExpressionOneMinus_0'","/Script/Engine.MaterialExpressionAppendVector'Static_Clouds_Cubemap_Transform:MaterialExpressionAppendVector_0'","/Script/Engine.MaterialExpressionSubtract'Static_Clouds_Cubemap_Transform:MaterialExpressionSubtract_0'","/Script/Engine.MaterialExpressionSaturate'Static_Clouds_Cubemap_Transform:MaterialExpressionSaturate_0'","/Script/Engine.MaterialExpressionMultiply'Static_Clouds_Cubemap_Transform:MaterialExpressionMultiply_2'","/Script/Engine.MaterialExpressionConstant2Vector'Static_Clouds_Cubemap_Transform:MaterialExpressionConstant2Vector_1'"))
+    .ParameterGroupData(0)=(GroupName="None")
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_0)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionSaturate
+    .B=(Expression="/Script/Engine.MaterialExpressionSaturate'Static_Clouds_Cubemap_Transform:MaterialExpressionSaturate_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Static_Clouds_Cubemap_Transform:MaterialExpressionMultiply_2'")
+    .MaterialExpressionEditorX=-1284
+    .MaterialExpressionEditorY=148
+    .MaterialExpressionGuid=859216F3475FCE3EBB009AB1BF640F4C
+    .Material="/Script/Engine.Material'Static_Clouds_Cubemap_Transform'"
+  MaterialExpressionConstant2Vector (MaterialExpressionConstant2Vector_0)
+    .R=0.500000
+    .G=0.500000
+    .MaterialExpressionEditorX=-1968
+    .MaterialExpressionEditorY=440
+    .MaterialExpressionGuid=4842548A41FEE9B06E9343B5738AA2D2
+    .Material="/Script/Engine.Material'Static_Clouds_Cubemap_Transform'"
+  MaterialExpressionConstant2Vector (MaterialExpressionConstant2Vector_1)
+    .R=-4.000000
+    .G=4.000000
+    .MaterialExpressionEditorX=-1764
+    .MaterialExpressionEditorY=240
+    .MaterialExpressionGuid=AC18520044F554D75A516988BC81A5CD
+    .Material="/Script/Engine.Material'Static_Clouds_Cubemap_Transform'"
+  MaterialExpressionDistance (MaterialExpressionDistance_0)
+    A                      <- MaterialExpressionTextureCoordinate
+    B                      <- MaterialExpressionConstant2Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'Static_Clouds_Cubemap_Transform:MaterialExpressionConstant2Vector_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'Static_Clouds_Cubemap_Transform:MaterialExpressionTextureCoordinate_0'")
+    .MaterialExpressionEditorX=-1836
+    .MaterialExpressionEditorY=380
+    .MaterialExpressionGuid=2B9AC0804D8363A8B5C5A5A3BEC3FF1C
+    .Material="/Script/Engine.Material'Static_Clouds_Cubemap_Transform'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionDistance
+    .A=(Expression="/Script/Engine.MaterialExpressionDistance'Static_Clouds_Cubemap_Transform:MaterialExpressionDistance_0'")
+    .ConstB=2.000000
+    .MaterialExpressionEditorX=-1688
+    .MaterialExpressionEditorY=380
+    .MaterialExpressionGuid=AF1175FE49C8A11F586DAA8EC2DE190F
+    .Material="/Script/Engine.Material'Static_Clouds_Cubemap_Transform'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_2)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionConstant2Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'Static_Clouds_Cubemap_Transform:MaterialExpressionConstant2Vector_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'Static_Clouds_Cubemap_Transform:MaterialExpressionSubtract_0'")
+    .ConstB=-6.000000
+    .MaterialExpressionEditorX=-1620
+    .MaterialExpressionEditorY=148
+    .MaterialExpressionGuid=156FF90D4B628A6195E5AC89EBD62598
+    .Material="/Script/Engine.Material'Static_Clouds_Cubemap_Transform'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_0)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Static_Clouds_Cubemap_Transform:MaterialExpressionMultiply_0'")
+    .MaterialExpressionEditorX=-1552
+    .MaterialExpressionEditorY=380
+    .MaterialExpressionGuid=A6449E7C477AE42DF7BBA98A3C7253CB
+    .Material="/Script/Engine.Material'Static_Clouds_Cubemap_Transform'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_0)
+    Input                  <- MaterialExpressionOneMinus
+    .Input=(Expression="/Script/Engine.MaterialExpressionOneMinus'Static_Clouds_Cubemap_Transform:MaterialExpressionOneMinus_0'")
+    .MaterialExpressionEditorX=-1468
+    .MaterialExpressionEditorY=380
+    .MaterialExpressionGuid=AA8CD0DD4613591B0EE603BF31AD4519
+    .Material="/Script/Engine.Material'Static_Clouds_Cubemap_Transform'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_0)
+    A                      <- MaterialExpressionTextureCoordinate
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'Static_Clouds_Cubemap_Transform:MaterialExpressionTextureCoordinate_0'")
+    .ConstB=0.500000
+    .MaterialExpressionEditorX=-1920
+    .MaterialExpressionEditorY=148
+    .MaterialExpressionGuid=7A36D7604A098140B42ECBB2BEDC4AC0
+    .Material="/Script/Engine.Material'Static_Clouds_Cubemap_Transform'"
+  MaterialExpressionTextureCoordinate (MaterialExpressionTextureCoordinate_0)
+    .MaterialExpressionEditorX=-2232
+    .MaterialExpressionEditorY=148
+    .MaterialExpressionGuid=B7F8108E4E3AF36E81F4C896620871D9
+    .Material="/Script/Engine.Material'Static_Clouds_Cubemap_Transform'"
+  MaterialExpressionTextureSampleParameterCube (MaterialExpressionTextureSampleParameterCube_0)
+    Coordinates            <- MaterialExpressionAppendVector
+    .ParameterName="Cubemap"
+    .Texture="/Script/Engine.TextureRenderTargetCube'/Game/UltraDynamicSky/Textures/Tools/Static_Clouds_Authoring_Target.Static_Clouds_Authoring_Target'"
+    .ExpressionGUID=913E43EE452020310B9D06B6C3FEDCF3
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionAppendVector'Static_Clouds_Cubemap_Transform:MaterialExpressionAppendVector_0'")
+    .MaterialExpressionEditorX=-1104
+    .MaterialExpressionEditorY=136
+    .MaterialExpressionGuid=19A33D174B950A53D6138B920B238C05
+    .Material="/Script/Engine.Material'Static_Clouds_Cubemap_Transform'"

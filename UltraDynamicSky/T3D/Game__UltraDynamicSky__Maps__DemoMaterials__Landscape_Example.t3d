@@ -1,0 +1,239 @@
+Begin Object Class=/Script/Engine.Material Name="Landscape_Example" ExportPath="/Script/Engine.Material'/Game/UltraDynamicSky/Maps/DemoMaterials/Landscape_Example.Landscape_Example'"
+   Begin Object Class=/Script/Engine.MaterialEditorOnlyData Name="Landscape_ExampleEditorOnlyData" ExportPath="/Script/Engine.MaterialEditorOnlyData'/Game/UltraDynamicSky/Maps/DemoMaterials/Landscape_Example.Landscape_Example:Landscape_ExampleEditorOnlyData'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_0" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Maps/DemoMaterials/Landscape_Example.Landscape_Example:MaterialExpressionComponentMask_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_0" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Maps/DemoMaterials/Landscape_Example.Landscape_Example:MaterialExpressionConstant_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDivide Name="MaterialExpressionDivide_1" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Maps/DemoMaterials/Landscape_Example.Landscape_Example:MaterialExpressionDivide_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_0" ExportPath="/Script/Engine.MaterialExpressionLinearInterpolate'/Game/UltraDynamicSky/Maps/DemoMaterials/Landscape_Example.Landscape_Example:MaterialExpressionLinearInterpolate_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_1" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Maps/DemoMaterials/Landscape_Example.Landscape_Example:MaterialExpressionMaterialFunctionCall_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_2" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Maps/DemoMaterials/Landscape_Example.Landscape_Example:MaterialExpressionMultiply_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionReroute Name="MaterialExpressionReroute_0" ExportPath="/Script/Engine.MaterialExpressionReroute'/Game/UltraDynamicSky/Maps/DemoMaterials/Landscape_Example.Landscape_Example:MaterialExpressionReroute_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSetMaterialAttributes Name="MaterialExpressionSetMaterialAttributes_0" ExportPath="/Script/Engine.MaterialExpressionSetMaterialAttributes'/Game/UltraDynamicSky/Maps/DemoMaterials/Landscape_Example.Landscape_Example:MaterialExpressionSetMaterialAttributes_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionStaticBool Name="MaterialExpressionStaticBool_0" ExportPath="/Script/Engine.MaterialExpressionStaticBool'/Game/UltraDynamicSky/Maps/DemoMaterials/Landscape_Example.Landscape_Example:MaterialExpressionStaticBool_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_1" ExportPath="/Script/Engine.MaterialExpressionTextureSample'/Game/UltraDynamicSky/Maps/DemoMaterials/Landscape_Example.Landscape_Example:MaterialExpressionTextureSample_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_4" ExportPath="/Script/Engine.MaterialExpressionTextureSample'/Game/UltraDynamicSky/Maps/DemoMaterials/Landscape_Example.Landscape_Example:MaterialExpressionTextureSample_4'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionWorldPosition Name="MaterialExpressionWorldPosition_0" ExportPath="/Script/Engine.MaterialExpressionWorldPosition'/Game/UltraDynamicSky/Maps/DemoMaterials/Landscape_Example.Landscape_Example:MaterialExpressionWorldPosition_0'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Maps/DemoMaterials/Landscape_Example.Landscape_Example:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   Begin Object Name="Landscape_ExampleEditorOnlyData" ExportPath="/Script/Engine.MaterialEditorOnlyData'/Game/UltraDynamicSky/Maps/DemoMaterials/Landscape_Example.Landscape_Example:Landscape_ExampleEditorOnlyData'"
+      BaseColor=(UseConstant=True,Constant=(R=0.501961,G=0.501961,B=0.501961,A=1.000000))
+      Metallic=(UseConstant=True,OutputIndex=1)
+      Specular=(UseConstant=True,OutputIndex=2)
+      Roughness=(UseConstant=True,OutputIndex=3)
+      Anisotropy=(UseConstant=True)
+      Normal=(UseConstant=True,Constant=(X=0.000000,Y=0.000000,Z=0.000000),OutputIndex=5)
+      Tangent=(UseConstant=True)
+      EmissiveColor=(UseConstant=True,OutputIndex=4)
+      Opacity=(UseConstant=True)
+      OpacityMask=(UseConstant=True)
+      WorldPositionOffset=(UseConstant=True,OutputIndex=6)
+      Displacement=(UseConstant=True,OutputIndex=8)
+      SubsurfaceColor=(UseConstant=True)
+      ClearCoat=(UseConstant=True)
+      ClearCoatRoughness=(UseConstant=True)
+      AmbientOcclusion=(UseConstant=True)
+      Refraction=(UseConstant=True)
+      CustomizedUVs(0)=(UseConstant=True)
+      CustomizedUVs(1)=(UseConstant=True)
+      CustomizedUVs(2)=(UseConstant=True)
+      CustomizedUVs(3)=(UseConstant=True)
+      CustomizedUVs(4)=(UseConstant=True)
+      CustomizedUVs(5)=(UseConstant=True)
+      CustomizedUVs(6)=(UseConstant=True)
+      CustomizedUVs(7)=(UseConstant=True)
+      MaterialAttributes=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Landscape_Example:MaterialExpressionMaterialFunctionCall_1'")
+      PixelDepthOffset=(UseConstant=True,OutputIndex=7)
+      SurfaceThickness=(UseConstant=True)
+      ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionMaterialFunctionCall'Landscape_Example:MaterialExpressionMaterialFunctionCall_1'","/Script/Engine.MaterialExpressionDivide'Landscape_Example:MaterialExpressionDivide_1'","/Script/Engine.MaterialExpressionLinearInterpolate'Landscape_Example:MaterialExpressionLinearInterpolate_0'","/Script/Engine.MaterialExpressionTextureSample'Landscape_Example:MaterialExpressionTextureSample_4'","/Script/Engine.MaterialExpressionWorldPosition'Landscape_Example:MaterialExpressionWorldPosition_0'","/Script/Engine.MaterialExpressionComponentMask'Landscape_Example:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionStaticBool'Landscape_Example:MaterialExpressionStaticBool_0'","/Script/Engine.MaterialExpressionSetMaterialAttributes'Landscape_Example:MaterialExpressionSetMaterialAttributes_0'","/Script/Engine.MaterialExpressionConstant'Landscape_Example:MaterialExpressionConstant_0'","/Script/Engine.MaterialExpressionReroute'Landscape_Example:MaterialExpressionReroute_0'","/Script/Engine.MaterialExpressionTextureSample'Landscape_Example:MaterialExpressionTextureSample_1'","/Script/Engine.MaterialExpressionMultiply'Landscape_Example:MaterialExpressionMultiply_2'"))
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_0" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Maps/DemoMaterials/Landscape_Example.Landscape_Example:MaterialExpressionComponentMask_0'"
+      Input=(Expression="/Script/Engine.MaterialExpressionWorldPosition'Landscape_Example:MaterialExpressionWorldPosition_0'")
+      R=True
+      G=True
+      MaterialExpressionEditorX=-1472
+      MaterialExpressionEditorY=348
+      MaterialExpressionGuid=5152067E4AA23BF085452E9178173646
+      Material="/Script/Engine.Material'Landscape_Example'"
+   End Object
+   Begin Object Name="MaterialExpressionConstant_0" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Maps/DemoMaterials/Landscape_Example.Landscape_Example:MaterialExpressionConstant_0'"
+      R=0.800000
+      MaterialExpressionEditorX=-840
+      MaterialExpressionEditorY=184
+      MaterialExpressionGuid=3ABEBA8C4C0C1CDF3D8AB1BA89332A17
+      Material="/Script/Engine.Material'Landscape_Example'"
+   End Object
+   Begin Object Name="MaterialExpressionDivide_1" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Maps/DemoMaterials/Landscape_Example.Landscape_Example:MaterialExpressionDivide_1'"
+      A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Landscape_Example:MaterialExpressionComponentMask_0'")
+      ConstB=500.000000
+      MaterialExpressionEditorX=-1340
+      MaterialExpressionEditorY=348
+      MaterialExpressionGuid=F6471A604A834E4A442BC1AE545C78C1
+      Material="/Script/Engine.Material'Landscape_Example'"
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_0" ExportPath="/Script/Engine.MaterialExpressionLinearInterpolate'/Game/UltraDynamicSky/Maps/DemoMaterials/Landscape_Example.Landscape_Example:MaterialExpressionLinearInterpolate_0'"
+      Alpha=(Expression="/Script/Engine.MaterialExpressionTextureSample'Landscape_Example:MaterialExpressionTextureSample_1'",OutputIndex=1,Mask=1,MaskR=1)
+      ConstA=0.110000
+      ConstB=0.090000
+      MaterialExpressionEditorX=-836
+      MaterialExpressionEditorY=36
+      MaterialExpressionGuid=7A6FC621481E23737FFBC49D6F096389
+      Material="/Script/Engine.Material'Landscape_Example'"
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_1" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Maps/DemoMaterials/Landscape_Example.Landscape_Example:MaterialExpressionMaterialFunctionCall_1'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Weather/Dynamic_Landscape_Weather_Effects_V3.Dynamic_Landscape_Weather_Effects_V3'"
+      FunctionInputs(0)=(ExpressionInputId=9F33456F4B6BD1A6868AFA926D094C84,Input=(Expression="/Script/Engine.MaterialExpressionSetMaterialAttributes'Landscape_Example:MaterialExpressionSetMaterialAttributes_0'",InputName="Material Attributes"))
+      FunctionInputs(1)=(ExpressionInputId=FC11F834421618C0C50E7E8909FBE9AB,Input=(OutputIndex=-1,InputName="Offset Coverage"))
+      FunctionInputs(2)=(ExpressionInputId=DD25D20A42A9B265E4B39E86388BEC04,Input=(OutputIndex=-1,InputName="Mask Below Water Level Height"))
+      FunctionInputs(3)=(ExpressionInputId=8CDC57F04D31ACF8F4BE4CB379B11A6F,Input=(Expression="/Script/Engine.MaterialExpressionStaticBool'Landscape_Example:MaterialExpressionStaticBool_0'",InputName="Apply Wetness/Puddles"))
+      FunctionInputs(4)=(ExpressionInputId=59FD6DA04EDDE565DA544DBFC87BB301,Input=(OutputIndex=-1,InputName="Mask Wetness/Puddles"))
+      FunctionInputs(5)=(ExpressionInputId=791EC1534BDF1F91A27D47B4C0E6B9AA,Input=(OutputIndex=-1,InputName="Mask Puddle Wind Ripples"))
+      FunctionInputs(6)=(ExpressionInputId=7418634E405C92CCDB3D35A52A0473A0,Input=(OutputIndex=-1,InputName="Mask Puddle Rain Ripples"))
+      FunctionInputs(7)=(ExpressionInputId=D769C1D747E1C2474A94A3B6C1125032,Input=(OutputIndex=-1,InputName="Puddle Color and Opacity"))
+      FunctionInputs(8)=(ExpressionInputId=5DE4BC824156BD1C5FB2B1893E11CAC7,Input=(Expression="/Script/Engine.MaterialExpressionStaticBool'Landscape_Example:MaterialExpressionStaticBool_0'",InputName="Apply Snow/Dust"))
+      FunctionInputs(9)=(ExpressionInputId=00A9DC0547A3358222AE06AFF7BCA3A0,Input=(InputName="Mask Snow/Dust Coverage"))
+      FunctionInputs(10)=(ExpressionInputId=0430021443C957551454C9A1F170B01A,Input=(OutputIndex=-1,InputName="Snow Color and Alpha"))
+      FunctionInputs(11)=(ExpressionInputId=957801FB4EA5305592D488AD4094C38A,Input=(OutputIndex=-1,InputName="Dust Color and Alpha"))
+      FunctionInputs(12)=(ExpressionInputId=0A7885154DC93ECB3D37A69CB8034BE9,Input=(OutputIndex=-1,InputName="Snow/Dust Roughness"))
+      FunctionInputs(13)=(ExpressionInputId=8E0C656D416CE27D426FEEBC976CAB7E,Input=(OutputIndex=-1,InputName="Snow/Dust Normal Map Intensity"))
+      FunctionInputs(14)=(ExpressionInputId=DDF58BA740D1B8B499085DB76F5CF695,Input=(OutputIndex=-1,InputName="Snow/Dust Windswept Normal Intensity"))
+      FunctionInputs(15)=(ExpressionInputId=099E41CE4025D4D9279A63A5E2203FF2,Input=(InputName="Apply Snow/Dust Trails"))
+      FunctionInputs(16)=(ExpressionInputId=19A0D1F84CEBE90504876BA8D3A2530C,Input=(InputName="Custom Trail Surface Mask"))
+      FunctionInputs(17)=(ExpressionInputId=B1CACE344986E35BFE7CF0BC1BE741E0,Input=(OutputIndex=-1,InputName="Snow/Dust Trail Normal Intensity"))
+      FunctionInputs(18)=(ExpressionInputId=DFCCB25D468DC0894225ED8F989A55DF,Input=(InputName="Render Snow/Dust Depth"))
+      FunctionInputs(19)=(ExpressionInputId=2E721A7E4B88754CF0C792AC89AB2643,Input=(InputName="Enable Snow Sparkle"))
+      FunctionInputs(20)=(ExpressionInputId=8F10541B4A59BAACF336DCAD13CFD836,Input=(OutputIndex=-1,InputName="Snow Sparkle Intensity"))
+      FunctionInputs(21)=(ExpressionInputId=9148C10E40BC1E1A13C8499DE264BFDE,Input=(OutputIndex=-1,InputName="Snow/Dust Depth Falloff Distance"))
+      FunctionInputs(22)=(ExpressionInputId=4A54F95B4E048DDE58C48E813BAFABFD,Input=(InputName="For Nanite Tessellation"))
+      FunctionInputs(23)=(ExpressionInputId=53820BDD4D939949D74C04B37CD11C79,Input=(OutputIndex=-1,InputName="Nanite Tessellation Magnitude"))
+      FunctionInputs(24)=(ExpressionInputId=DCB253BD473B08EF920A0C969BD10BE3,Input=(OutputIndex=-1,InputName="Nanite Tessellation Center"))
+      FunctionInputs(25)=(ExpressionInputId=D6F20F5C4F07BB5FF536C5BFCFE83DEB,Input=(OutputIndex=-1,InputName="Displacement Input is World Scale"))
+      FunctionInputs(26)=(ExpressionInputId=78AFE0B84C39703B81A528819FA5CA9D,Input=(OutputIndex=-1,InputName="Nanite Snow/Dust Depth Variation"))
+      FunctionInputs(27)=(ExpressionInputId=F511218940C9598B75A8D68D8B779E1F,Input=(InputName="Nanite Snow/Dust Depth Disable with Camera Intersection"))
+      FunctionInputs(28)=(ExpressionInputId=A6EFF3DE45B7401A91A04085589D9BD3,Input=(OutputIndex=-1,InputName="Nanite Tessellation Puddle Height"))
+      FunctionOutputs(0)=(ExpressionOutputId=27DF5586411C8B24F72191A7A2838806,Output=(OutputName="Material Attributes"))
+      FunctionOutputs(1)=(ExpressionOutputId=F16BB55C4F020D71AB19C4AB2D6BEF27,Output=(OutputName="Snow/Dust"))
+      FunctionOutputs(2)=(ExpressionOutputId=90460CF346C3E52D46A0A2A6F266B808,Output=(OutputName="Puddles"))
+      MaterialExpressionEditorX=-92
+      MaterialExpressionEditorY=8
+      MaterialExpressionGuid=72D4D3154565ACAE0DAF309DDCE57BF1
+      Material="/Script/Engine.Material'Landscape_Example'"
+      Outputs(0)=(OutputName="Material Attributes")
+      Outputs(1)=(OutputName="Snow/Dust")
+      Outputs(2)=(OutputName="Puddles")
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_2" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Maps/DemoMaterials/Landscape_Example.Landscape_Example:MaterialExpressionMultiply_2'"
+      A=(Expression="/Script/Engine.MaterialExpressionDivide'Landscape_Example:MaterialExpressionDivide_1'")
+      ConstB=2.500000
+      MaterialExpressionEditorX=-1260
+      MaterialExpressionEditorY=76
+      MaterialExpressionGuid=8F72DC1740DFAC79B93C6E9FED10A011
+      Material="/Script/Engine.Material'Landscape_Example'"
+   End Object
+   Begin Object Name="MaterialExpressionReroute_0" ExportPath="/Script/Engine.MaterialExpressionReroute'/Game/UltraDynamicSky/Maps/DemoMaterials/Landscape_Example.Landscape_Example:MaterialExpressionReroute_0'"
+      Input=(Expression="/Script/Engine.MaterialExpressionTextureSample'Landscape_Example:MaterialExpressionTextureSample_4'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      MaterialExpressionEditorX=-700
+      MaterialExpressionEditorY=384
+      MaterialExpressionGuid=EA2C607740ACE7CAF3460B987761BC78
+      Material="/Script/Engine.Material'Landscape_Example'"
+   End Object
+   Begin Object Name="MaterialExpressionSetMaterialAttributes_0" ExportPath="/Script/Engine.MaterialExpressionSetMaterialAttributes'/Game/UltraDynamicSky/Maps/DemoMaterials/Landscape_Example.Landscape_Example:MaterialExpressionSetMaterialAttributes_0'"
+      Inputs(1)=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Landscape_Example:MaterialExpressionLinearInterpolate_0'",InputName="Base Color")
+      Inputs(2)=(Expression="/Script/Engine.MaterialExpressionConstant'Landscape_Example:MaterialExpressionConstant_0'",InputName="Roughness")
+      Inputs(3)=(Expression="/Script/Engine.MaterialExpressionReroute'Landscape_Example:MaterialExpressionReroute_0'",InputName="Normal")
+      AttributeSetTypes(0)=69B8D33616ED4D499AA497292F050F7A
+      AttributeSetTypes(1)=D1DD967C4CAD47D39E6346FB08ECF210
+      AttributeSetTypes(2)=0FA2821A200F4A4AB719B789C1259C64
+      MaterialExpressionEditorX=-584
+      MaterialExpressionEditorY=4
+      MaterialExpressionGuid=DD99649542476DE404592A88BE3905CA
+      Material="/Script/Engine.Material'Landscape_Example'"
+   End Object
+   Begin Object Name="MaterialExpressionStaticBool_0" ExportPath="/Script/Engine.MaterialExpressionStaticBool'/Game/UltraDynamicSky/Maps/DemoMaterials/Landscape_Example.Landscape_Example:MaterialExpressionStaticBool_0'"
+      Value=True
+      MaterialExpressionEditorX=-352
+      MaterialExpressionEditorY=76
+      MaterialExpressionGuid=4D1D76F34FCF4BA17A2A4C852CB5CE5C
+      Material="/Script/Engine.Material'Landscape_Example'"
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_1" ExportPath="/Script/Engine.MaterialExpressionTextureSample'/Game/UltraDynamicSky/Maps/DemoMaterials/Landscape_Example.Landscape_Example:MaterialExpressionTextureSample_1'"
+      Coordinates=(Expression="/Script/Engine.MaterialExpressionMultiply'Landscape_Example:MaterialExpressionMultiply_2'")
+      Texture="/Script/Engine.Texture2D'/Engine/EngineMaterials/Grid.Grid'"
+      MaterialExpressionEditorX=-1108
+      MaterialExpressionEditorY=76
+      MaterialExpressionGuid=E91542924EF55908B94B7E9DC51B5965
+      Material="/Script/Engine.Material'Landscape_Example'"
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_4" ExportPath="/Script/Engine.MaterialExpressionTextureSample'/Game/UltraDynamicSky/Maps/DemoMaterials/Landscape_Example.Landscape_Example:MaterialExpressionTextureSample_4'"
+      Coordinates=(Expression="/Script/Engine.MaterialExpressionDivide'Landscape_Example:MaterialExpressionDivide_1'")
+      Texture="/Script/Engine.Texture2D'/Engine/EngineMaterials/DefaultNormal.DefaultNormal'"
+      SamplerType=SAMPLERTYPE_Normal
+      MaterialExpressionEditorX=-1108
+      MaterialExpressionEditorY=348
+      MaterialExpressionGuid=C314356044B2A9380671FB8250E7E1F2
+      Material="/Script/Engine.Material'Landscape_Example'"
+   End Object
+   Begin Object Name="MaterialExpressionWorldPosition_0" ExportPath="/Script/Engine.MaterialExpressionWorldPosition'/Game/UltraDynamicSky/Maps/DemoMaterials/Landscape_Example.Landscape_Example:MaterialExpressionWorldPosition_0'"
+      MaterialExpressionEditorX=-1676
+      MaterialExpressionEditorY=332
+      MaterialExpressionGuid=7C26781F471CF8337A26F18C633B8213
+      Material="/Script/Engine.Material'Landscape_Example'"
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Maps/DemoMaterials/Landscape_Example.Landscape_Example:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   DisplacementScaling=(Magnitude=1.000000,Center=0.000000)
+   NumCustomizedUVs=1
+   bUsedWithStaticLighting=True
+   bUsedWithNanite=True
+   EditorX=476
+   EditorY=8
+   bUseMaterialAttributes=True
+   PixelDepthOffsetMode=PDOM_Legacy
+   MaxWorldPositionOffsetDisplacement=40.000000
+   StateId=DD1ADDBA4E44BC184DB269ADBD3BB66B
+   ReferencedTextureGuids(0)=3C9868FC412CA5EF29C70C98A29E0B6B
+   ReferencedTextureGuids(1)=2B8E0BE3489D3A2B3FA0C3AF393DD85B
+   ReferencedTextureGuids(2)=5608BDD04C53FC0BB7C046A7695E60E4
+   ReferencedTextureGuids(3)=5033045A45FEAC7C8679B9BF2BC41049
+   ReferencedTextureGuids(4)=3EC3145243CE22A806919AA5FFAE0AF7
+   ReferencedTextureGuids(5)=C220551F495D132038857FBD69DD2933
+   ReferencedTextureGuids(6)=08E514CE46C9586E6401ABBD2E77DFBB
+   ReferencedTextureGuids(7)=AC5828D1402630293058BE96B403CFF1
+   ReferencedTextureGuids(8)=62E8B595485EB50021CD3BA3915C6CC1
+   ReferencedTextureGuids(9)=E04B3A0C49864924BCC7F788F62E15D3
+   ReferencedTextureGuids(10)=F5FF371C441193DF78B711BAECD2202A
+   ReferencedTextureGuids(11)=4843C38C4777FB7156FF67B3B334A901
+   EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'Landscape_ExampleEditorOnlyData'"
+   ReferencedDefaultTextures(0)="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_DLWE_Noise.T_DLWE_Noise'"
+   ReferencedDefaultTextures(1)="/Script/Engine.TextureRenderTarget2D'/Game/UltraDynamicSky/Textures/Sky/WaterLevelTarget.WaterLevelTarget'"
+   ReferencedDefaultTextures(2)=None
+   ReferencedDefaultTextures(3)="/Script/Engine.Texture2D'/Engine/EngineResources/DefaultTexture.DefaultTexture'"
+   ReferencedDefaultTextures(4)="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/MaterialFX/T_PuddleRipples_atlas.T_PuddleRipples_atlas'"
+   ReferencedDefaultTextures(5)="/Script/Engine.TextureRenderTarget2D'/Game/UltraDynamicSky/Textures/Weather/WOV_Material_State_Target.WOV_Material_State_Target'"
+   ReferencedDefaultTextures(6)="/Script/Engine.TextureRenderTarget2D'/Game/UltraDynamicSky/Textures/Weather/Weather_Mask_Brush_Target.Weather_Mask_Brush_Target'"
+   ReferencedDefaultTextures(7)="/Script/Engine.TextureRenderTarget2D'/Game/UltraDynamicSky/Textures/Weather/Weather_Mask_Height_Target.Weather_Mask_Height_Target'"
+   ReferencedDefaultTextures(8)="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/MaterialFX/T_Snow_Normal.T_Snow_Normal'"
+   ReferencedDefaultTextures(9)="/Script/Engine.TextureRenderTarget2D'/Game/UltraDynamicSky/Textures/Weather/DLWE_MaskTarget.DLWE_MaskTarget'"
+   ReferencedDefaultTextures(10)="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_WhiteNoise512.T_WhiteNoise512'"
+   ReferencedDefaultTextures(11)="/Script/Engine.VolumeTexture'/Game/ENDEMIS/Weather/Clouds/3D_Cells_64.3D_Cells_64'"
+   ReferencedDefaultTextures(12)="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/Clouds/T_CloudsAlpha.T_CloudsAlpha'"
+   ReferencedDefaultTextures(13)="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/MaterialFX/T_Rough_Snow.T_Rough_Snow'"
+   ReferencedDefaultTextures(14)="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/MaterialFX/T_Snow_Scatter.T_Snow_Scatter'"
+   ReferencedDefaultTextures(15)="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/MaterialFX/T_Windswept_Snow_Normal.T_Windswept_Snow_Normal'"
+   ReferencedDefaultTextures(16)="/Script/Engine.Texture2D'/Engine/EngineMaterials/DefaultNormal.DefaultNormal'"
+   ReferencedDefaultTextures(17)="/Script/Engine.Texture2D'/Engine/EngineMaterials/Grid.Grid'"
+   ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+   ParameterOverviewExpansion=(("-12Global Dynamic Landscape Weather Effects", True),("-12Global", True),("-12Global Ultra Dynamic Weather", True))
+   LightingGuid=11439F8349E6CDA15D20F4B9C57EAB6D
+End Object

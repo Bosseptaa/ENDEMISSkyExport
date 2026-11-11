@@ -1,0 +1,764 @@
+### /Game/UltraDynamicSky/Blueprints/Utilities/UDS_Client_Controller
+  Blueprint (UDS_Client_Controller)
+    .ParentClass="/Script/CoreUObject.Class'/Script/Engine.ActorComponent'"
+    .BlueprintDescription="Add to your Player Controller class, for clients in a multiplayer context to call changes to time/weather which are sent to the server, on UDS and UDW"
+    .BlueprintCategory="UltraDynamicSky|Utilities"
+    .BlueprintSystemVersion=2
+    .UbergraphPages(0)="/Script/Engine.EdGraph'EventGraph'"
+    .UbergraphPages(1)="/Script/Engine.EdGraph'Sky Events'"
+    .UbergraphPages(2)="/Script/Engine.EdGraph'Weather Events'"
+    .CategorySorting(0)="Tags"
+    .CategorySorting(1)="Replication"
+    .CategorySorting(2)="Component Replication"
+    .CategorySorting(3)="Activation"
+    .CategorySorting(4)="Cooking"
+    .CategorySorting(5)="Components"
+    .CategorySorting(6)="Sky Events"
+    .CategorySorting(7)="Weather Events"
+    .LastEditedDocuments(0)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Utilities/UDS_Client_Controller.UDS_Client_Controller:Weather Events",SavedViewOffset=(X=74.541748,Y=316.490631),SavedZoomAmount=1.000000)
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfo'SceneThumbnailInfo_0'"
+    .GeneratedClass="/Script/Engine.BlueprintGeneratedClass'UDS_Client_Controller_C'"
+    .bLegacyNeedToPurgeSkelRefs=False
+    .BlueprintGuid=1BCDC2294C59C3E1DCE60184896422C5
+  EdGraph (EventGraph)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .bAllowDeletion=False
+    .GraphGuid=0F47BB1A48B08CB91E937EAA330D4879
+  EdGraph (Sky Events)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_1'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_2'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_3'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_4'"
+    .Nodes(7)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_3'"
+    .Nodes(8)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_4'"
+    .Nodes(9)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_1'"
+    .Nodes(10)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_5'"
+    .Nodes(11)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_2'"
+    .Nodes(12)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_7'"
+    .Nodes(13)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_3'"
+    .Nodes(14)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_13'"
+    .Nodes(15)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_4'"
+    .Nodes(16)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_9'"
+    .Nodes(17)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_5'"
+    .Nodes(18)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_6'"
+    .Nodes(19)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_11'"
+    .Nodes(20)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_5'"
+    .Nodes(21)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_17'"
+    .Nodes(22)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_6'"
+    .GraphGuid=4AA0FAEC4B6D55B492CD5E916047E2F9
+  K2Node_CustomEvent (K2Node_CustomEvent_0)
+    .CustomFunctionName="Set Time of Day"
+    .FunctionFlags=203554880
+    .NodePosX=632
+    .NodePosY=532
+    .ErrorType=1
+    .NodeGuid=CBF6B2A64DD4A22B8DC7859EC3232C3A
+  K2Node_VariableSet (K2Node_VariableSet_0)
+    .VariableReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Sky.Ultra_Dynamic_Sky_C'",MemberName="Time of Day",MemberGuid=7A66C3124438ED162EC071B4CEA1D8DF)
+    .SelfContextInfo=NotSelfContext
+    .NodePosX=852
+    .NodePosY=576
+    .NodeGuid=03F57FB647FCEEC06F99AFB3018EB5A8
+  K2Node_CustomEvent (K2Node_CustomEvent_1)
+    .CustomFunctionName="Transition Time of Day"
+    .FunctionFlags=203554880
+    .NodePosX=1204
+    .NodePosY=524
+    .NodeGuid=CD36F41449AB838E08998595338109DA
+    .ErrorType=3
+  K2Node_CallFunction (K2Node_CallFunction_2)
+    .FunctionReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Sky.Ultra_Dynamic_Sky_C'",MemberName="Transition Time of Day",MemberGuid=F7C0D4C8439198D378CFBD9FE8FEE942)
+    .NodePosX=1460
+    .NodePosY=536
+    .NodeGuid=1A783A294FD0285C15B7F181CA308EC4
+  K2Node_CustomEvent (K2Node_CustomEvent_2)
+    .CustomFunctionName="Set Date and Time"
+    .FunctionFlags=203554880
+    .NodePosX=624
+    .NodePosY=884
+    .NodeGuid=594AF7D140E4105E80F5F9B77D748E90
+  K2Node_CallFunction (K2Node_CallFunction_3)
+    .FunctionReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Sky.Ultra_Dynamic_Sky_C'",MemberName="Set Date and Time",MemberGuid=C809A117484E119B21275DAD367413C7)
+    .NodePosX=904
+    .NodePosY=896
+    .NodeGuid=A3A9C1AB46FB324E59EA5C83AC9E8ACD
+  K2Node_CallFunction (K2Node_CallFunction_4)
+    .FunctionReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Sky.Ultra_Dynamic_Sky_C'",MemberName="Set Time with Time Code",MemberGuid=4AD2961E44DF415AF84278AC5CE6365F)
+    .NodePosX=1488
+    .NodePosY=892
+    .NodeGuid=D7CDB5AC4E36846CDDC06388E652C2AC
+  K2Node_CustomEvent (K2Node_CustomEvent_3)
+    .CustomFunctionName="Set Time with Time Code"
+    .FunctionFlags=203554880
+    .NodePosX=1244
+    .NodePosY=880
+    .NodeGuid=9236792F46442961521F439BD66A0958
+  K2Node_CustomEvent (K2Node_CustomEvent_4)
+    .CustomFunctionName="Set Year"
+    .FunctionFlags=203554880
+    .NodePosX=1944
+    .NodePosY=488
+    .ErrorType=3
+    .NodeGuid=F3FDC5664EFC3D28C97C1BB86EEB41FB
+  K2Node_VariableSet (K2Node_VariableSet_1)
+    .VariableReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Sky.Ultra_Dynamic_Sky_C'",MemberName="Year",MemberGuid=BC04B1B74F8BF67DFCBE53989F7F7DEC)
+    .SelfContextInfo=NotSelfContext
+    .NodePosX=2152
+    .NodePosY=532
+    .NodeGuid=5EBCE1794CD933A0ADEE68BDB8306407
+  K2Node_CustomEvent (K2Node_CustomEvent_5)
+    .CustomFunctionName="Set Month"
+    .FunctionFlags=203554880
+    .NodePosX=1948
+    .NodePosY=688
+    .ErrorType=3
+    .NodeGuid=7131CB3B4E0C7C023252CAA3AF44EC79
+  K2Node_VariableSet (K2Node_VariableSet_2)
+    .VariableReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Sky.Ultra_Dynamic_Sky_C'",MemberName="Month",MemberGuid=0599DF354F77EBC1A711DDA1118311AF)
+    .SelfContextInfo=NotSelfContext
+    .NodePosX=2148
+    .NodePosY=732
+    .NodeGuid=C258401E454EFD612C47949472493428
+  K2Node_CustomEvent (K2Node_CustomEvent_7)
+    .CustomFunctionName="Set Day"
+    .FunctionFlags=203554880
+    .NodePosX=1944
+    .NodePosY=880
+    .ErrorType=3
+    .NodeGuid=00935E874B9EC23984C1699414F48F85
+  K2Node_VariableSet (K2Node_VariableSet_3)
+    .VariableReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Sky.Ultra_Dynamic_Sky_C'",MemberName="Day",MemberGuid=0E26DD994A44C8DB33D6FC9E856495FD)
+    .SelfContextInfo=NotSelfContext
+    .NodePosX=2148
+    .NodePosY=924
+    .NodeGuid=AE265062446510A2F7A5C4A8E74A1E81
+  K2Node_CustomEvent (K2Node_CustomEvent_13)
+    .CustomFunctionName="Set Time Zone"
+    .FunctionFlags=203554880
+    .NodePosX=2484
+    .NodePosY=600
+    .ErrorType=3
+    .NodeGuid=826E46AE4BD7551135F603833A4D8FD9
+  K2Node_VariableSet (K2Node_VariableSet_4)
+    .VariableReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Sky.Ultra_Dynamic_Sky_C'",MemberName="Time Zone",MemberGuid=A8A23AA040E021AE489D739D10DCE5E5)
+    .SelfContextInfo=NotSelfContext
+    .NodePosX=2700
+    .NodePosY=648
+    .NodeGuid=F207558B4CF485902AF66594DC8188FF
+  K2Node_CustomEvent (K2Node_CustomEvent_9)
+    .CustomFunctionName="Set Geocoordinate"
+    .FunctionFlags=203554880
+    .NodePosX=2488
+    .NodePosY=856
+    .ErrorType=3
+    .NodeGuid=1F03F4434C0FE1FCB1541BB2CD5AF551
+  K2Node_VariableSet (K2Node_VariableSet_5)
+    .VariableReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Sky.Ultra_Dynamic_Sky_C'",MemberName="Latitude",MemberGuid=D4F1A44541B1D5EBF8F4F2A5670FF7CE)
+    .SelfContextInfo=NotSelfContext
+    .NodePosX=2704
+    .NodePosY=904
+    .NodeGuid=CDEA196F4F8B16ED54F08CAD15B0A773
+  K2Node_VariableSet (K2Node_VariableSet_6)
+    .VariableReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Sky.Ultra_Dynamic_Sky_C'",MemberName="Longitude",MemberGuid=FDAFD8394C12553B1F452F9C9597D809)
+    .SelfContextInfo=NotSelfContext
+    .NodePosX=2892
+    .NodePosY=904
+    .NodeGuid=96FA0EBD49CB6BFEA967B0AA9530D9FD
+  K2Node_CustomEvent (K2Node_CustomEvent_11)
+    .CustomFunctionName="Apply Location Preset"
+    .FunctionFlags=203554880
+    .NodePosX=2488
+    .NodePosY=368
+    .ErrorType=3
+    .NodeGuid=1941C1294671233F52E79DBF01D78F8F
+  K2Node_CallFunction (K2Node_CallFunction_5)
+    .FunctionReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Sky.Ultra_Dynamic_Sky_C'",MemberName="Apply Location Preset",MemberGuid=132EBC0447A9C6D54D5B3BABC306F3EC)
+    .NodePosX=2756
+    .NodePosY=380
+    .NodeGuid=1EB2A11248994DBDA4C5A7A009CF7D1C
+  K2Node_CustomEvent (K2Node_CustomEvent_17)
+    .CustomFunctionName="UDS Hard Reset Cache"
+    .FunctionFlags=203554880
+    .NodePosX=3232
+    .NodePosY=916
+    .NodeGuid=764D39004DC03FC9832A09B84BC31187
+  K2Node_CallFunction (K2Node_CallFunction_6)
+    .FunctionReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Sky.Ultra_Dynamic_Sky_C'",MemberName="Hard Reset Cache",MemberGuid=D32D2508477735FDDC7453BFBC318578)
+    .NodePosX=3444
+    .NodePosY=928
+    .NodeGuid=1328A551453E9F590BE0928F98AB8B7D
+  EdGraph (Weather Events)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_2'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_10'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_15'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_8'"
+    .Nodes(7)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_5'"
+    .Nodes(8)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_1'"
+    .Nodes(9)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_6'"
+    .Nodes(10)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_16'"
+    .Nodes(11)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_16'"
+    .Nodes(12)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_14'"
+    .Nodes(13)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_9'"
+    .Nodes(14)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_6'"
+    .Nodes(15)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_17'"
+    .Nodes(16)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_18'"
+    .Nodes(17)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_11'"
+    .Nodes(18)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_22'"
+    .Nodes(19)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_12'"
+    .Nodes(20)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_12'"
+    .Nodes(21)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_13'"
+    .Nodes(22)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_20'"
+    .Nodes(23)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_14'"
+    .Nodes(24)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_24'"
+    .Nodes(25)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_7'"
+    .Nodes(26)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_8'"
+    .Nodes(27)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_0'"
+    .GraphGuid=4BA30F584450575A72A8E8BAC9EBB515
+  K2Node_CallFunction (K2Node_CallFunction_0)
+    .FunctionReference=(MemberName="ExecuteUbergraph_UDS_Client_Controller",bSelfContext=True)
+    .NodePosX=300
+    .NodePosY=-400
+    .NodeGuid=A9FF9C6821183E7ABE12882362C5ABBD
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_1)
+    .FunctionReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Weather.Ultra_Dynamic_Weather_C'",MemberName="Change to Random Weather Variation",MemberGuid=BA244F074965E36E2971B09232EEBAE2)
+    .NodePosX=1792
+    .NodePosY=452
+    .NodeGuid=705DB98142B2731F0BACACBFBE5C075C
+  K2Node_CustomEvent (K2Node_CustomEvent_10)
+    .CustomFunctionName="Set Manual Rain"
+    .FunctionFlags=203554880
+    .NodePosX=2448
+    .NodePosY=672
+    .ErrorType=3
+    .NodeGuid=C113B4D1415C64C2123202A8E34FB6E8
+  K2Node_VariableSet (K2Node_VariableSet_15)
+    .VariableReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Weather.Ultra_Dynamic_Weather_C'",MemberName="Snow",MemberGuid=0526413A4D33217D898A6085E8FC62FA)
+    .SelfContextInfo=NotSelfContext
+    .NodePosX=2668
+    .NodePosY=908
+    .NodeGuid=DFCA9F0141F244D2135BEF8BC6F91624
+  K2Node_CustomEvent (K2Node_CustomEvent_8)
+    .CustomFunctionName="Set Manual Snow"
+    .FunctionFlags=203554880
+    .NodePosX=2440
+    .NodePosY=864
+    .ErrorType=3
+    .NodeGuid=316C070B463C6BAC329613BE89556A00
+  K2Node_CustomEvent (K2Node_CustomEvent_16)
+    .CustomFunctionName="Set Manual Thunder/Lightning"
+    .FunctionFlags=203554880
+    .NodePosX=2956
+    .NodePosY=456
+    .ErrorType=3
+    .NodeGuid=F178574D4432931A85B1AB835C3DFFF9
+  K2Node_VariableSet (K2Node_VariableSet_16)
+    .VariableReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Weather.Ultra_Dynamic_Weather_C'",MemberName="Thunder/Lightning",MemberGuid=394F3C014BE4BF5868A7138728B0256C)
+    .SelfContextInfo=NotSelfContext
+    .NodePosX=3220
+    .NodePosY=500
+    .NodeGuid=CADDDF0D437F4DACCD1A859F7EE7E218
+  K2Node_CustomEvent (K2Node_CustomEvent_14)
+    .CustomFunctionName="Set Manual Wind Intensity"
+    .FunctionFlags=203554880
+    .NodePosX=2948
+    .NodePosY=680
+    .ErrorType=3
+    .NodeGuid=97F39FE84E39FA77CBDE0AB710144B2E
+  K2Node_VariableSet (K2Node_VariableSet_9)
+    .VariableReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Weather.Ultra_Dynamic_Weather_C'",MemberName="Weather",MemberGuid=87EA293C4FF5A85AEC363F8789D027BB)
+    .SelfContextInfo=NotSelfContext
+    .NodePosX=868
+    .NodePosY=768
+    .NodeGuid=F15D6D2946DA124484F80DB76BA34376
+  K2Node_CustomEvent (K2Node_CustomEvent_6)
+    .CustomFunctionName="Set Manual Fog"
+    .FunctionFlags=203554880
+    .NodePosX=2968
+    .NodePosY=876
+    .ErrorType=3
+    .NodeGuid=57537B4B4A2377F28116238D8CEEDE92
+  K2Node_VariableSet (K2Node_VariableSet_17)
+    .VariableReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Weather.Ultra_Dynamic_Weather_C'",MemberName="Fog",MemberGuid=CCE746A248D0308BAC5ADC90938E38BF)
+    .SelfContextInfo=NotSelfContext
+    .NodePosX=3204
+    .NodePosY=920
+    .NodeGuid=F12AFDA949B22B6E50319BA8C7D6DCC8
+  K2Node_CustomEvent (K2Node_CustomEvent_18)
+    .CustomFunctionName="Set Manual Dust"
+    .FunctionFlags=203554880
+    .NodePosX=3644
+    .NodePosY=460
+    .ErrorType=3
+    .NodeGuid=379FB868454B21C6573D85AB9F2AB32F
+  K2Node_VariableSet (K2Node_VariableSet_11)
+    .VariableReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Weather.Ultra_Dynamic_Weather_C'",MemberName="Dust",MemberGuid=7F1E544B4D3E6B67015A6B9AF268309B)
+    .SelfContextInfo=NotSelfContext
+    .NodePosX=3860
+    .NodePosY=504
+    .NodeGuid=233E490E4543B73E98B9A1B5E7C29017
+  K2Node_CustomEvent (K2Node_CustomEvent_22)
+    .CustomFunctionName="Set Manual Material Wetness"
+    .FunctionFlags=203554880
+    .NodePosX=3620
+    .NodePosY=668
+    .ErrorType=3
+    .NodeGuid=6C738BC043A524BA7556788208F874D3
+  K2Node_VariableSet (K2Node_VariableSet_12)
+    .VariableReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Weather.Ultra_Dynamic_Weather_C'",MemberName="Material Wetness",MemberGuid=57FA8FF347438B0D8551FAA12E6CB50D)
+    .SelfContextInfo=NotSelfContext
+    .NodePosX=3884
+    .NodePosY=712
+    .NodeGuid=ED8ECC6B41AA9A8E0EAA6B818F131D58
+  K2Node_CustomEvent (K2Node_CustomEvent_12)
+    .CustomFunctionName="Set Manual Material Snow Coverage"
+    .FunctionFlags=203554880
+    .NodePosX=3600
+    .NodePosY=876
+    .ErrorType=3
+    .NodeGuid=FF7789DF4F9D56495F121BAA17CE397D
+  K2Node_VariableSet (K2Node_VariableSet_13)
+    .VariableReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Weather.Ultra_Dynamic_Weather_C'",MemberName="Material Snow Coverage",MemberGuid=924B1B874F423ABCEA7AF2A5B137D641)
+    .SelfContextInfo=NotSelfContext
+    .NodePosX=3908
+    .NodePosY=920
+    .NodeGuid=08CA23B94CA5245D7ABDE9804FD77CCA
+  K2Node_CustomEvent (K2Node_CustomEvent_20)
+    .CustomFunctionName="Set Manual Material Dust Coverage"
+    .FunctionFlags=203554880
+    .NodePosX=4232
+    .NodePosY=512
+    .ErrorType=3
+    .NodeGuid=EC1A9A484055B3F66BE6DBB99341AA2A
+  K2Node_VariableSet (K2Node_VariableSet_14)
+    .VariableReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Weather.Ultra_Dynamic_Weather_C'",MemberName="Material Dust Coverage",MemberGuid=B5BDDD26423AA75D715883B2B6F89866)
+    .SelfContextInfo=NotSelfContext
+    .NodePosX=4532
+    .NodePosY=556
+    .NodeGuid=7392DFE347F269E45645229FC5AF4AA4
+  K2Node_CustomEvent (K2Node_CustomEvent_24)
+    .CustomFunctionName="Use Manual Weather State"
+    .FunctionFlags=203554880
+    .NodePosX=628
+    .NodePosY=724
+    .NodeGuid=22F46E0C4F27AB7814CB1EAE37BBB251
+  K2Node_VariableSet (K2Node_VariableSet_7)
+    .VariableReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Weather.Ultra_Dynamic_Weather_C'",MemberName="Random Weather Variation State",MemberGuid=B642B7814870A65C81DFE1B8F9546FC0)
+    .SelfContextInfo=NotSelfContext
+    .NodePosX=1404
+    .NodePosY=768
+    .NodeGuid=8C1DB9AF4CDEDD8C1905C2949CF1942E
+  K2Node_VariableSet (K2Node_VariableSet_8)
+    .VariableReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Weather.Ultra_Dynamic_Weather_C'",MemberName="Transition Active",MemberGuid=5BD6A73B4AD5CF8639875994B4CFA43A)
+    .SelfContextInfo=NotSelfContext
+    .NodePosX=1172
+    .NodePosY=768
+    .NodeGuid=DB484FF94DEA65343682CD8C8B2AE20A
+  EdGraph (ExecuteUbergraph_UDS_Client_Controller)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_6'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_17'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_5'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_11'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_6'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_5'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_9'"
+    .Nodes(7)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_4'"
+    .Nodes(8)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_13'"
+    .Nodes(9)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_3'"
+    .Nodes(10)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_7'"
+    .Nodes(11)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_2'"
+    .Nodes(12)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_5'"
+    .Nodes(13)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_1'"
+    .Nodes(14)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_4'"
+    .Nodes(15)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_3'"
+    .Nodes(16)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_4'"
+    .Nodes(17)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_3'"
+    .Nodes(18)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_2'"
+    .Nodes(19)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .Nodes(20)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_1'"
+    .Nodes(21)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_0'"
+    .Nodes(22)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_0'"
+    .Nodes(23)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_7'"
+    .Nodes(24)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_8'"
+    .Nodes(25)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_9'"
+    .Nodes(26)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_24'"
+    .Nodes(27)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_14'"
+    .Nodes(28)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_20'"
+    .Nodes(29)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_13'"
+    .Nodes(30)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_12'"
+    .Nodes(31)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_12'"
+    .Nodes(32)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_22'"
+    .Nodes(33)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_11'"
+    .Nodes(34)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_18'"
+    .Nodes(35)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_17'"
+    .Nodes(36)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_6'"
+    .Nodes(37)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_10'"
+    .Nodes(38)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_14'"
+    .Nodes(39)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_16'"
+    .Nodes(40)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_16'"
+    .Nodes(41)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_15'"
+    .Nodes(42)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_8'"
+    .Nodes(43)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_18'"
+    .Nodes(44)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_10'"
+    .Nodes(45)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_19'"
+    .Nodes(46)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_15'"
+    .Nodes(47)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(48)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_19'"
+    .Nodes(49)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(50)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_21'"
+    .Nodes(51)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(52)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_7'"
+    .Nodes(53)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_8'"
+    .Nodes(54)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_9'"
+    .Nodes(55)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_10'"
+    .Nodes(56)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_11'"
+    .Nodes(57)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_12'"
+    .Nodes(58)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_13'"
+    .Nodes(59)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_14'"
+    .Nodes(60)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_15'"
+    .Nodes(61)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_16'"
+    .Nodes(62)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_17'"
+    .Nodes(63)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_18'"
+    .Nodes(64)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_19'"
+    .Nodes(65)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_20'"
+    .Nodes(66)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_21'"
+    .Nodes(67)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_22'"
+    .Nodes(68)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_23'"
+    .Nodes(69)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_24'"
+    .Nodes(70)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_25'"
+    .Nodes(71)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_26'"
+    .Nodes(72)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_27'"
+    .Nodes(73)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_28'"
+    .Nodes(74)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_29'"
+    .Nodes(75)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_30'"
+    .Nodes(76)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_31'"
+    .Nodes(77)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_32'"
+    .Nodes(78)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_33'"
+    .Nodes(79)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_34'"
+    .Nodes(80)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_35'"
+    .Nodes(81)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_36'"
+    .Nodes(82)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_37'"
+    .Nodes(83)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_38'"
+    .Nodes(84)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_39'"
+    .Nodes(85)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_40'"
+    .Nodes(86)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_41'"
+    .Nodes(87)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_42'"
+    .Nodes(88)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_43'"
+    .Nodes(89)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_44'"
+    .GraphGuid=B31752B34284E46760879EBAA7C008C5
+  K2Node_CustomEvent (K2Node_CustomEvent_21)
+    .CustomFunctionName="Change Weather"
+    .FunctionFlags=203554880
+    .NodePosX=564
+    .NodePosY=444
+    .NodeGuid=96931B28411957C31D6DAF9A2A8F793D
+  K2Node_CustomEvent (K2Node_CustomEvent_19)
+    .CustomFunctionName="Change to Random Weather Variation"
+    .FunctionFlags=203554880
+    .NodePosX=1432
+    .NodePosY=452
+    .NodeGuid=0446B2BA49822D3E8DBB71A3F4A8097C
+  K2Node_CustomEvent (K2Node_CustomEvent_15)
+    .CustomFunctionName="Set Manual Cloud Coverage"
+    .FunctionFlags=203554880
+    .NodePosX=2408
+    .NodePosY=464
+    .ErrorType=3
+    .NodeGuid=E81A850F406430D815182B98BD3C3DCA
+  K2Node_VariableSet (K2Node_VariableSet_19)
+    .VariableReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Weather.Ultra_Dynamic_Weather_C'",MemberName="Cloud Coverage",MemberGuid=FAF84FBB47E7F304B85A0D84D04903A3)
+    .SelfContextInfo=NotSelfContext
+    .NodePosX=2652
+    .NodePosY=508
+    .NodeGuid=EAE9234D4C586DF88B693383B5CCEFBA
+  K2Node_VariableSet (K2Node_VariableSet_18)
+    .VariableReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Weather.Ultra_Dynamic_Weather_C'",MemberName="Rain",MemberGuid=C215C340421877C1A8DF34B5F20BE44F)
+    .SelfContextInfo=NotSelfContext
+    .NodePosX=2680
+    .NodePosY=716
+    .NodeGuid=578ED4D3482C355027B21CA00A62A055
+  K2Node_VariableSet (K2Node_VariableSet_10)
+    .VariableReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Weather.Ultra_Dynamic_Weather_C'",MemberName="Wind Intensity",MemberGuid=E14570A4407712D67F16A6A0AAE84889)
+    .SelfContextInfo=NotSelfContext
+    .NodePosX=3212
+    .NodePosY=724
+    .NodeGuid=219F2F67483B18DB680B23A01A26472B
+  K2Node_FunctionEntry (K2Node_FunctionEntry_0)
+    .CustomGeneratedFunctionName="Change Weather"
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/CoreUObject.Object'",MemberName="ExecuteUbergraph")
+    .NodePosX=-200
+    .NodePosY=-400
+    .bIsIntermediateNode=True
+    .NodeGuid=974FBA61CF4E3FA692308D73567F5830
+  K2Node_CallFunction (K2Node_CallFunction_7)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.Actor'",MemberName="FlushNetDormancy")
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_8)
+    .FunctionReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Sky.Ultra_Dynamic_Sky_C'",MemberName="OnRep_Day")
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_9)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.NetPushModelHelpers'",MemberName="MarkPropertyDirtyFromRepIndex")
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_10)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.Actor'",MemberName="FlushNetDormancy")
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_11)
+    .FunctionReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Sky.Ultra_Dynamic_Sky_C'",MemberName="OnRep_Month")
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_12)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.NetPushModelHelpers'",MemberName="MarkPropertyDirtyFromRepIndex")
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_13)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.Actor'",MemberName="FlushNetDormancy")
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_14)
+    .FunctionReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Sky.Ultra_Dynamic_Sky_C'",MemberName="OnRep_Year")
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_15)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.NetPushModelHelpers'",MemberName="MarkPropertyDirtyFromRepIndex")
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_16)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.Actor'",MemberName="FlushNetDormancy")
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_17)
+    .FunctionReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Weather.Ultra_Dynamic_Weather_C'",MemberName="OnRep_Random Weather Variation State")
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_18)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.NetPushModelHelpers'",MemberName="MarkPropertyDirtyFromRepIndex")
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_19)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.Actor'",MemberName="FlushNetDormancy")
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_20)
+    .FunctionReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Weather.Ultra_Dynamic_Weather_C'",MemberName="OnRep_Transition Active")
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_21)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.NetPushModelHelpers'",MemberName="MarkPropertyDirtyFromRepIndex")
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_22)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.Actor'",MemberName="FlushNetDormancy")
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_23)
+    .FunctionReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Weather.Ultra_Dynamic_Weather_C'",MemberName="OnRep_Weather")
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_24)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.NetPushModelHelpers'",MemberName="MarkPropertyDirtyFromRepIndex")
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_25)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.Actor'",MemberName="FlushNetDormancy")
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_26)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.NetPushModelHelpers'",MemberName="MarkPropertyDirtyFromRepIndex")
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_27)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.Actor'",MemberName="FlushNetDormancy")
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_28)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.NetPushModelHelpers'",MemberName="MarkPropertyDirtyFromRepIndex")
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_29)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.Actor'",MemberName="FlushNetDormancy")
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_30)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.NetPushModelHelpers'",MemberName="MarkPropertyDirtyFromRepIndex")
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_31)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.Actor'",MemberName="FlushNetDormancy")
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_32)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.NetPushModelHelpers'",MemberName="MarkPropertyDirtyFromRepIndex")
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_33)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.Actor'",MemberName="FlushNetDormancy")
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_34)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.NetPushModelHelpers'",MemberName="MarkPropertyDirtyFromRepIndex")
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_35)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.Actor'",MemberName="FlushNetDormancy")
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_36)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.NetPushModelHelpers'",MemberName="MarkPropertyDirtyFromRepIndex")
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_37)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.Actor'",MemberName="FlushNetDormancy")
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_38)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.NetPushModelHelpers'",MemberName="MarkPropertyDirtyFromRepIndex")
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_39)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.Actor'",MemberName="FlushNetDormancy")
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_40)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.NetPushModelHelpers'",MemberName="MarkPropertyDirtyFromRepIndex")
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_41)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.Actor'",MemberName="FlushNetDormancy")
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_42)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.NetPushModelHelpers'",MemberName="MarkPropertyDirtyFromRepIndex")
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_43)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.Actor'",MemberName="FlushNetDormancy")
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_44)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.NetPushModelHelpers'",MemberName="MarkPropertyDirtyFromRepIndex")
+    .bIsIntermediateNode=True
+  EdGraph (UDS Hard Reset Cache)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_SetVariableOnPersistentFrame'K2Node_SetVariableOnPersistentFrame_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=FB9542DD4AB81CC481B21A9D71BA4F4C
+  K2Node_SetVariableOnPersistentFrame (K2Node_SetVariableOnPersistentFrame_0)
+    .NodePosX=-1280
+    .NodePosY=-400
+    .bIsIntermediateNode=True
+    .NodeGuid=345E03F8C68936AE951C4A38A914594E
+  EdGraph (Apply Location Preset)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_SetVariableOnPersistentFrame'K2Node_SetVariableOnPersistentFrame_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=4A2D4CDD4A5B4D774828CB84914F4D62
+  EdGraph (Set Geocoordinate)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_SetVariableOnPersistentFrame'K2Node_SetVariableOnPersistentFrame_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=7D3F52684C8AD0E2DA221D86C4FCAA90
+  EdGraph (Set Time Zone)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_SetVariableOnPersistentFrame'K2Node_SetVariableOnPersistentFrame_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=5A89B99C48BCEE8A2C9B3FA95C857041
+  EdGraph (Set Day)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_SetVariableOnPersistentFrame'K2Node_SetVariableOnPersistentFrame_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=6A4B88674943022963F393B332A58C0E
+  EdGraph (Set Month)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_SetVariableOnPersistentFrame'K2Node_SetVariableOnPersistentFrame_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=B55760EC4B6D1F509E6272A4BD0E2AB7
+  EdGraph (Set Year)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_SetVariableOnPersistentFrame'K2Node_SetVariableOnPersistentFrame_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=B186F34B4B846D34BB8FFD9D0BD6585A
+  EdGraph (Set Time with Time Code)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_SetVariableOnPersistentFrame'K2Node_SetVariableOnPersistentFrame_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=F35F496941A06EAAEA5046A964BBD7F9
+  EdGraph (Set Date and Time)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_SetVariableOnPersistentFrame'K2Node_SetVariableOnPersistentFrame_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=BB93C52A4082DF4FA789D3BD5656D635
+  EdGraph (Transition Time of Day)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_SetVariableOnPersistentFrame'K2Node_SetVariableOnPersistentFrame_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=20E8741448247FD7F5880A8C244C89F2
+  EdGraph (Set Time of Day)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_SetVariableOnPersistentFrame'K2Node_SetVariableOnPersistentFrame_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=36A34DB64C0407FF0EECD2922A5DDFF5
+  EdGraph (Use Manual Weather State)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_SetVariableOnPersistentFrame'K2Node_SetVariableOnPersistentFrame_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=DB74BFB6458925981201C6802FDC5EBB
+  EdGraph (Set Manual Material Dust Coverage)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_SetVariableOnPersistentFrame'K2Node_SetVariableOnPersistentFrame_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=6C417F17413E613EEBA21E8A480539B1
+  EdGraph (Set Manual Material Snow Coverage)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_SetVariableOnPersistentFrame'K2Node_SetVariableOnPersistentFrame_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=A71F2A734E01F2A6609E78A89002C3D3
+  EdGraph (Set Manual Material Wetness)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_SetVariableOnPersistentFrame'K2Node_SetVariableOnPersistentFrame_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=447027D64B11D2CCCBF897A4C894A1F6
+  EdGraph (Set Manual Dust)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_SetVariableOnPersistentFrame'K2Node_SetVariableOnPersistentFrame_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=1097E1A04C6FC10AA09B52AF018EB4F4
+  EdGraph (Set Manual Fog)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_SetVariableOnPersistentFrame'K2Node_SetVariableOnPersistentFrame_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=EAD2DB0C40A3929D99610A91F60010A1
+  EdGraph (Set Manual Wind Intensity)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_SetVariableOnPersistentFrame'K2Node_SetVariableOnPersistentFrame_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=CB6566EF48DE7EC68A9719B5B801D083
+  EdGraph (Set Manual Thunder/Lightning)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_SetVariableOnPersistentFrame'K2Node_SetVariableOnPersistentFrame_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=DF5B8C88472387871DDD41BE95F97F38
+  EdGraph (Set Manual Snow)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_SetVariableOnPersistentFrame'K2Node_SetVariableOnPersistentFrame_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=400580974ECA919ED99471B415941462
+  EdGraph (Set Manual Rain)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_SetVariableOnPersistentFrame'K2Node_SetVariableOnPersistentFrame_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=5CAF10654704AF92356EF0A5366C4E69
+  EdGraph (Set Manual Cloud Coverage)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_SetVariableOnPersistentFrame'K2Node_SetVariableOnPersistentFrame_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=3A3156AE4224C1576B9A7BAAF8106338
+  EdGraph (Change to Random Weather Variation)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_SetVariableOnPersistentFrame'K2Node_SetVariableOnPersistentFrame_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=4A9383F14D3D3E88A821D0BE7493FACF
+  EdGraph (Change Weather)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_SetVariableOnPersistentFrame'K2Node_SetVariableOnPersistentFrame_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=3A136C5944A29B65518D3CA36F49716D

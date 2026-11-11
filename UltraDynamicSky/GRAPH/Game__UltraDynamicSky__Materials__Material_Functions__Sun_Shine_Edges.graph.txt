@@ -1,0 +1,227 @@
+### /Game/UltraDynamicSky/Materials/Material_Functions/Sun_Shine_Edges
+  MaterialFunction (Sun_Shine_Edges)
+    DependentFunctionExpressionCandidates(0) <- MaterialExpressionMaterialFunctionCall
+    .DependentFunctionExpressionCandidates(0)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_31'"
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'Sun_Shine_EdgesEditorOnlyData'"
+    .StateId=F90381A9495741F7F3131DB24C911010
+    .CombinedInputTypes=15
+    .CombinedOutputTypes=15
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+  MaterialFunctionEditorOnlyData (Sun_Shine_EdgesEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'Sun_Shine_Edges:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionMultiply'Sun_Shine_Edges:MaterialExpressionMultiply_95'","/Script/Engine.MaterialExpressionPower'Sun_Shine_Edges:MaterialExpressionPower_33'","/Script/Engine.MaterialExpressionMultiply'Sun_Shine_Edges:MaterialExpressionMultiply_96'","/Script/Engine.MaterialExpressionMultiply'Sun_Shine_Edges:MaterialExpressionMultiply_97'","/Script/Engine.MaterialExpressionFunctionInput'Sun_Shine_Edges:MaterialExpressionFunctionInput_7'","/Script/Engine.MaterialExpressionMultiply'Sun_Shine_Edges:MaterialExpressionMultiply_21'","/Script/Engine.MaterialExpressionComponentMask'Sun_Shine_Edges:MaterialExpressionComponentMask_3'","/Script/Engine.MaterialExpressionMultiply'Sun_Shine_Edges:MaterialExpressionMultiply_29'","/Script/Engine.MaterialExpressionComponentMask'Sun_Shine_Edges:MaterialExpressionComponentMask_4'","/Script/Engine.MaterialExpressionAdd'Sun_Shine_Edges:MaterialExpressionAdd_11'","/Script/Engine.MaterialExpressionMultiply'Sun_Shine_Edges:MaterialExpressionMultiply_33'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Sun_Shine_Edges:MaterialExpressionMaterialFunctionCall_31'","/Script/Engine.MaterialExpressionAdd'Sun_Shine_Edges:MaterialExpressionAdd_32'","/Script/Engine.MaterialExpressionFunctionInput'Sun_Shine_Edges:MaterialExpressionFunctionInput_0'","/Script/Engine.MaterialExpressionFunctionInput'Sun_Shine_Edges:MaterialExpressionFunctionInput_1'","/Script/Engine.MaterialExpressionScalarParameter'Sun_Shine_Edges:MaterialExpressionScalarParameter_0'","/Script/Engine.MaterialExpressionMultiply'Sun_Shine_Edges:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionMultiply'Sun_Shine_Edges:MaterialExpressionMultiply_1'","/Script/Engine.MaterialExpressionSaturate'Sun_Shine_Edges:MaterialExpressionSaturate_1'","/Script/Engine.MaterialExpressionVertexColor'Sun_Shine_Edges:MaterialExpressionVertexColor_1'"),EditorComments=("/Script/Engine.MaterialExpressionComment'Sun_Shine_Edges:MaterialExpressionComment_0'","/Script/Engine.MaterialExpressionComment'Sun_Shine_Edges:MaterialExpressionComment_1'","/Script/Engine.MaterialExpressionComment'Sun_Shine_Edges:MaterialExpressionComment_2'","/Script/Engine.MaterialExpressionComment'Sun_Shine_Edges:MaterialExpressionComment_3'"))
+  MaterialExpressionAdd (MaterialExpressionAdd_11)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Sun_Shine_Edges:MaterialExpressionMultiply_33'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Sun_Shine_Edges:MaterialExpressionMultiply_96'")
+    .MaterialExpressionEditorX=-884
+    .MaterialExpressionEditorY=-272
+    .MaterialExpressionGuid=30003E704F8FB17E9A5332ABE0A531BB
+    .Function="/Script/Engine.MaterialFunction'Sun_Shine_Edges'"
+  MaterialExpressionAdd (MaterialExpressionAdd_32)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Sun_Shine_Edges:MaterialExpressionMultiply_97'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Sun_Shine_Edges:MaterialExpressionFunctionInput_0'")
+    .MaterialExpressionEditorX=1124
+    .MaterialExpressionEditorY=-300
+    .MaterialExpressionGuid=A2DB2B8B4DAC0C0CAD8A5E8EE7194735
+    .Function="/Script/Engine.MaterialFunction'Sun_Shine_Edges'"
+  MaterialExpressionComment (MaterialExpressionComment_0)
+    .SizeX=1824
+    .SizeY=412
+    .Text="Moon and Sun Edge Shine"
+    .CommentColor=(R=1.000000,G=0.757300,B=0.339465,A=1.000000)
+    .MaterialExpressionEditorX=-2584
+    .MaterialExpressionEditorY=-351
+    .MaterialExpressionGuid=2170A099440F67FEF05D348BE17F309D
+    .Function="/Script/Engine.MaterialFunction'Sun_Shine_Edges'"
+  MaterialExpressionComment (MaterialExpressionComment_1)
+    .SizeX=573
+    .SizeY=211
+    .Text="Add to Input"
+    .CommentColor=(R=0.485349,G=0.536318,B=1.000000,A=1.000000)
+    .MaterialExpressionEditorX=850
+    .MaterialExpressionEditorY=-378
+    .MaterialExpressionGuid=F63C60A240AF8617ED3FD596E7FBE24C
+    .Function="/Script/Engine.MaterialFunction'Sun_Shine_Edges'"
+  MaterialExpressionComment (MaterialExpressionComment_2)
+    .SizeX=674
+    .SizeY=328
+    .Text="Dim Near Horizon"
+    .CommentColor=(R=0.649525,G=1.000000,B=0.499458,A=1.000000)
+    .MaterialExpressionEditorX=-656
+    .MaterialExpressionEditorY=-324
+    .MaterialExpressionGuid=7C5487FB454FDFFB74D5A086B0EC795A
+    .Function="/Script/Engine.MaterialFunction'Sun_Shine_Edges'"
+  MaterialExpressionComment (MaterialExpressionComment_3)
+    .SizeX=740
+    .SizeY=284
+    .Text="Multiply by Light Cloud Color"
+    .CommentColor=(R=0.436633,G=0.970143,B=1.000000,A=1.000000)
+    .MaterialExpressionEditorX=50
+    .MaterialExpressionEditorY=-327
+    .MaterialExpressionGuid=BE10F72141517ACBC92701933AE98F45
+    .Function="/Script/Engine.MaterialFunction'Sun_Shine_Edges'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_3)
+    Input                  <- MaterialExpressionFunctionInput
+    .R=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Sun_Shine_Edges:MaterialExpressionFunctionInput_7'")
+    .MaterialExpressionEditorX=-2088
+    .MaterialExpressionEditorY=-272
+    .MaterialExpressionGuid=43A0D2824E374839841D8BA8A558D65E
+    .Function="/Script/Engine.MaterialFunction'Sun_Shine_Edges'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_4)
+    Input                  <- MaterialExpressionFunctionInput
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Sun_Shine_Edges:MaterialExpressionFunctionInput_7'")
+    .MaterialExpressionEditorX=-2080
+    .MaterialExpressionEditorY=-68
+    .MaterialExpressionGuid=43A0D2824E374839841D8BA8A558D65E
+    .Function="/Script/Engine.MaterialFunction'Sun_Shine_Edges'"
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_0)
+    .Id=62A4908C4B290F4EE2F68E8A6C208F90
+    .SortPriority=3
+    .MaterialExpressionEditorX=900
+    .MaterialExpressionEditorY=-324
+    .MaterialExpressionGuid=D8C2A8724E97D764C0E1B699092A2CB4
+    .Function="/Script/Engine.MaterialFunction'Sun_Shine_Edges'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_1)
+    .InputName="Edge_Gradient"
+    .Id=BD7AE53B418B1FFE2038D8A983DA8528
+    .InputType=FunctionInput_Scalar
+    .MaterialExpressionEditorX=-1908
+    .MaterialExpressionEditorY=-192
+    .MaterialExpressionGuid=C94B13834D54AA2B57F174B0B2145CD0
+    .Function="/Script/Engine.MaterialFunction'Sun_Shine_Edges'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_7)
+    .InputName="Sun_Gradient_shine"
+    .Id=CD73BED240156C3565AF1DB721858A92
+    .InputType=FunctionInput_Vector2
+    .SortPriority=4
+    .MaterialExpressionEditorX=-2536
+    .MaterialExpressionEditorY=-272
+    .MaterialExpressionGuid=2DEF61F04766AADC206142B212327D5A
+    .Function="/Script/Engine.MaterialFunction'Sun_Shine_Edges'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionAdd
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Sun_Shine_Edges:MaterialExpressionAdd_32'")
+    .bLastPreviewed=True
+    .Id=47B58A8946B4D9AD9BAD8E8EDE7C440A
+    .MaterialExpressionEditorX=1240
+    .MaterialExpressionEditorY=-328
+    .MaterialExpressionGuid=EB7B21724A784311C38D9A9B63C6862F
+    .Function="/Script/Engine.MaterialFunction'Sun_Shine_Edges'"
+    .bCollapsed=True
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_31)
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Light_and_Dark_Cloud_Colors.Light_and_Dark_Cloud_Colors'"
+    .FunctionOutputs(0)=(ExpressionOutputId=4BD6C2B94C2DF0FB8F138E917FD26F9F,Output=(OutputName="Dark Cloud Color"))
+    .FunctionOutputs(1)=(ExpressionOutputId=FCCB904D4F81DF1A88CE3EBA384B6AF1,Output=(OutputName="Light Cloud Color"))
+    .MaterialExpressionEditorX=84
+    .MaterialExpressionEditorY=-200
+    .MaterialExpressionGuid=5BDC5AA6436625156EE88F879023B382
+    .Function="/Script/Engine.MaterialFunction'Sun_Shine_Edges'"
+    .Outputs(0)=(OutputName="Dark Cloud Color")
+    .Outputs(1)=(OutputName="Light Cloud Color")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionVertexColor
+    .A=(Expression="/Script/Engine.MaterialExpressionVertexColor'Sun_Shine_Edges:MaterialExpressionVertexColor_1'",OutputIndex=1,Mask=1,MaskR=1)
+    .ConstB=3.000000
+    .MaterialExpressionEditorX=-450
+    .MaterialExpressionEditorY=-186
+    .MaterialExpressionGuid=37F3257242737B52D26F26967239B316
+    .Function="/Script/Engine.MaterialFunction'Sun_Shine_Edges'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionSaturate
+    .B=(Expression="/Script/Engine.MaterialExpressionSaturate'Sun_Shine_Edges:MaterialExpressionSaturate_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Sun_Shine_Edges:MaterialExpressionAdd_11'")
+    .MaterialExpressionEditorX=-130
+    .MaterialExpressionEditorY=-274
+    .MaterialExpressionGuid=FC7DE90242E8C2C548989992887C8BE4
+    .Function="/Script/Engine.MaterialFunction'Sun_Shine_Edges'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_21)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Sun_Shine_Edges:MaterialExpressionMaterialFunctionCall_31'",OutputIndex=1)
+    .ConstB=2.000000
+    .MaterialExpressionEditorX=488
+    .MaterialExpressionEditorY=-176
+    .MaterialExpressionGuid=AF72FE1D41310B0CF925D7A159623AC3
+    .Function="/Script/Engine.MaterialFunction'Sun_Shine_Edges'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_29)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionPower
+    .B=(Expression="/Script/Engine.MaterialExpressionPower'Sun_Shine_Edges:MaterialExpressionPower_33'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Sun_Shine_Edges:MaterialExpressionComponentMask_4'")
+    .MaterialExpressionEditorX=-1372
+    .MaterialExpressionEditorY=-72
+    .MaterialExpressionGuid=FF6958864E44B1ED220BAE97F32FF3B0
+    .Function="/Script/Engine.MaterialFunction'Sun_Shine_Edges'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_33)
+    A                      <- MaterialExpressionMultiply
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Sun_Shine_Edges:MaterialExpressionMultiply_29'")
+    .ConstB=3.500000
+    .MaterialExpressionEditorX=-1236
+    .MaterialExpressionEditorY=-72
+    .MaterialExpressionGuid=F30FF19C4F2E7B613DCF7F83C1F25518
+    .Function="/Script/Engine.MaterialFunction'Sun_Shine_Edges'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_95)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionPower
+    .B=(Expression="/Script/Engine.MaterialExpressionPower'Sun_Shine_Edges:MaterialExpressionPower_33'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Sun_Shine_Edges:MaterialExpressionComponentMask_3'")
+    .MaterialExpressionEditorX=-1460
+    .MaterialExpressionEditorY=-272
+    .MaterialExpressionGuid=6E2AE6584FD103B14D25C8A80FE5B14F
+    .Function="/Script/Engine.MaterialFunction'Sun_Shine_Edges'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_96)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Sun_Shine_Edges:MaterialExpressionScalarParameter_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Sun_Shine_Edges:MaterialExpressionMultiply_95'")
+    .ConstB=5.000000
+    .MaterialExpressionEditorX=-1076
+    .MaterialExpressionEditorY=-272
+    .MaterialExpressionGuid=9F6A54DB4AF6594A6B895FA1C8656F6A
+    .Function="/Script/Engine.MaterialFunction'Sun_Shine_Edges'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_97)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Sun_Shine_Edges:MaterialExpressionMultiply_21'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Sun_Shine_Edges:MaterialExpressionMultiply_1'")
+    .MaterialExpressionEditorX=642
+    .MaterialExpressionEditorY=-274
+    .MaterialExpressionGuid=ABE6921D496C86DD2A7FC9BC3E8EAD7E
+    .Function="/Script/Engine.MaterialFunction'Sun_Shine_Edges'"
+  MaterialExpressionPower (MaterialExpressionPower_33)
+    Base                   <- MaterialExpressionFunctionInput
+    .Base=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Sun_Shine_Edges:MaterialExpressionFunctionInput_1'")
+    .ConstExponent=8.000000
+    .MaterialExpressionEditorX=-1652
+    .MaterialExpressionEditorY=-192
+    .MaterialExpressionGuid=4711471F42ECE722FC19498126696A64
+    .Function="/Script/Engine.MaterialFunction'Sun_Shine_Edges'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_1)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Sun_Shine_Edges:MaterialExpressionMultiply_0'")
+    .MaterialExpressionEditorX=-306
+    .MaterialExpressionEditorY=-186
+    .MaterialExpressionGuid=9EDEEAF64B8070BA6CA0B28E6A08659E
+    .Function="/Script/Engine.MaterialFunction'Sun_Shine_Edges'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_0)
+    .ParameterName="Sun_Highlight_Intensity"
+    .DefaultValue=80.000000
+    .ExpressionGUID=800921D945B2BA05EB59F6B19A35C2F2
+    .MaterialExpressionEditorX=-1324
+    .MaterialExpressionEditorY=-216
+    .MaterialExpressionGuid=1BE1781946C81082BFD918BDEB1E91C9
+    .Function="/Script/Engine.MaterialFunction'Sun_Shine_Edges'"
+  MaterialExpressionVertexColor (MaterialExpressionVertexColor_1)
+    .MaterialExpressionEditorX=-606
+    .MaterialExpressionEditorY=-226
+    .MaterialExpressionGuid=22C062DE4C1B26C7718E75A53962DD63
+    .Function="/Script/Engine.MaterialFunction'Sun_Shine_Edges'"

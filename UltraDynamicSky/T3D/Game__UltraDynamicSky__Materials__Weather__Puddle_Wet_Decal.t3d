@@ -1,0 +1,56 @@
+Begin Object Class=/Script/Engine.Material Name="Puddle_Wet_Decal" ExportPath="/Script/Engine.Material'/Game/UltraDynamicSky/Materials/Weather/Puddle_Wet_Decal.Puddle_Wet_Decal'"
+   Begin Object Class=/Script/Engine.MaterialEditorOnlyData Name="Puddle_Wet_DecalEditorOnlyData" ExportPath="/Script/Engine.MaterialEditorOnlyData'/Game/UltraDynamicSky/Materials/Weather/Puddle_Wet_Decal.Puddle_Wet_Decal:Puddle_Wet_DecalEditorOnlyData'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_3" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Weather/Puddle_Wet_Decal.Puddle_Wet_Decal:MaterialExpressionMaterialFunctionCall_3'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/Weather/Puddle_Wet_Decal.Puddle_Wet_Decal:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   Begin Object Name="Puddle_Wet_DecalEditorOnlyData" ExportPath="/Script/Engine.MaterialEditorOnlyData'/Game/UltraDynamicSky/Materials/Weather/Puddle_Wet_Decal.Puddle_Wet_Decal:Puddle_Wet_DecalEditorOnlyData'"
+      BaseColor=(Constant=(R=0.501961,G=0.501961,B=0.501961,A=1.000000),Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      Metallic=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Puddle_Wet_Decal:MaterialExpressionMaterialFunctionCall_3'",OutputIndex=1)
+      Specular=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Puddle_Wet_Decal:MaterialExpressionMaterialFunctionCall_3'",OutputIndex=2)
+      Roughness=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Puddle_Wet_Decal:MaterialExpressionMaterialFunctionCall_3'",OutputIndex=3)
+      Opacity=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Puddle_Wet_Decal:MaterialExpressionMaterialFunctionCall_3'",OutputIndex=4)
+      WorldPositionOffset=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Puddle_Wet_Decal:MaterialExpressionMaterialFunctionCall_3'",OutputIndex=5)
+      CustomizedUVs(1)=(OutputIndex=6)
+      ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionMaterialFunctionCall'Puddle_Wet_Decal:MaterialExpressionMaterialFunctionCall_3'"))
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_3" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Weather/Puddle_Wet_Decal.Puddle_Wet_Decal:MaterialExpressionMaterialFunctionCall_3'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Puddle_Decal_Attributes.Puddle_Decal_Attributes'"
+      FunctionOutputs(0)=(ExpressionOutputId=4842E8DA4228D7696589898B597824B7,Output=(OutputName="Base Color"))
+      FunctionOutputs(1)=(ExpressionOutputId=C44CB5E04B2C9E3E41F4E59A56356B7A,Output=(OutputName="Metallic"))
+      FunctionOutputs(2)=(ExpressionOutputId=94A49B3945554439748228BAF7578EF4,Output=(OutputName="Specular"))
+      FunctionOutputs(3)=(ExpressionOutputId=4534A2B34C49300C4BEC8E804354F817,Output=(OutputName="Roughness"))
+      FunctionOutputs(4)=(ExpressionOutputId=076AE1554A7755BD91EDE3AD105F8832,Output=(OutputName="Opacity"))
+      FunctionOutputs(5)=(ExpressionOutputId=534E75944041EA0C3FDD189D73539D32,Output=(OutputName="World Position Offset"))
+      MaterialExpressionEditorX=1568
+      MaterialExpressionEditorY=-68
+      MaterialExpressionGuid=6ECDA78F44A1D8E06B673BB774CA64B7
+      Material="/Script/Engine.Material'Puddle_Wet_Decal'"
+      Outputs(0)=(OutputName="Base Color")
+      Outputs(1)=(OutputName="Metallic")
+      Outputs(2)=(OutputName="Specular")
+      Outputs(3)=(OutputName="Roughness")
+      Outputs(4)=(OutputName="Opacity")
+      Outputs(5)=(OutputName="World Position Offset")
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/Weather/Puddle_Wet_Decal.Puddle_Wet_Decal:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   MaterialDomain=MD_DeferredDecal
+   BlendMode=BLEND_Translucent
+   bTangentSpaceNormal=False
+   bUsedWithNiagaraSprites=True
+   bUsedWithNiagaraMeshParticles=True
+   EditorX=1944
+   EditorY=-68
+   bCanMaskedBeAssumedOpaque=True
+   bCastRayTracedShadows=False
+   PixelDepthOffsetMode=PDOM_Legacy
+   StateId=DAA57948A2650D0B42015C8E433AE5EA
+   ReferencedTextureGuids(0)=F28A196D48A319FB88FD3C916F28261C
+   EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'Puddle_Wet_DecalEditorOnlyData'"
+   ReferencedDefaultTextures(0)="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/Clouds/T_CloudsAlpha.T_CloudsAlpha'"
+   ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+   ParameterOverviewExpansion=(("-12Global", True))
+   LightingGuid=03B4C7C54E85052D83F8E69E249F258C
+End Object

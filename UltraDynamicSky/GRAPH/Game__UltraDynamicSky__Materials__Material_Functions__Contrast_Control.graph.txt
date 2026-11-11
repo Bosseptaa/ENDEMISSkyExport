@@ -1,0 +1,124 @@
+### /Game/UltraDynamicSky/Materials/Material_Functions/Contrast_Control
+  MaterialFunction (Contrast_Control)
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'Contrast_ControlEditorOnlyData'"
+    .StateId=DBBE567E45B24230454B65A2BAF486F5
+    .CombinedInputTypes=4
+    .CombinedOutputTypes=15
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+  MaterialFunctionEditorOnlyData (Contrast_ControlEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'Contrast_Control:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionFunctionInput'Contrast_Control:MaterialExpressionFunctionInput_0'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Contrast_Control:MaterialExpressionNamedRerouteDeclaration_0'","/Script/Engine.MaterialExpressionScalarParameter'Contrast_Control:MaterialExpressionScalarParameter_3'","/Script/Engine.MaterialExpressionDivide'Contrast_Control:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionSubtract'Contrast_Control:MaterialExpressionSubtract_2'","/Script/Engine.MaterialExpressionMultiply'Contrast_Control:MaterialExpressionMultiply_2'","/Script/Engine.MaterialExpressionScalarParameter'Contrast_Control:MaterialExpressionScalarParameter_4'","/Script/Engine.MaterialExpressionAdd'Contrast_Control:MaterialExpressionAdd_1'","/Script/Engine.MaterialExpressionMultiply'Contrast_Control:MaterialExpressionMultiply_5'","/Script/Engine.MaterialExpressionMultiply'Contrast_Control:MaterialExpressionMultiply_8'","/Script/Engine.MaterialExpressionScalarParameter'Contrast_Control:MaterialExpressionScalarParameter_5'","/Script/Engine.MaterialExpressionMax'Contrast_Control:MaterialExpressionMax_0'","/Script/Engine.MaterialExpressionMin'Contrast_Control:MaterialExpressionMin_0'"))
+  MaterialExpressionAdd (MaterialExpressionAdd_1)
+    A                      <- MaterialExpressionMultiply
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Contrast_Control:MaterialExpressionMultiply_2'")
+    .MaterialExpressionEditorX=-672
+    .MaterialExpressionEditorY=-204
+    .MaterialExpressionGuid=32A74CCF45163267BD87819EE0589130
+    .Function="/Script/Engine.MaterialFunction'Contrast_Control'"
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionNamedRerouteDeclaration
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Contrast_Control:MaterialExpressionScalarParameter_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Contrast_Control:MaterialExpressionNamedRerouteDeclaration_0'")
+    .MaterialExpressionEditorX=-1424
+    .MaterialExpressionEditorY=-204
+    .MaterialExpressionGuid=C62EA1154E4F16B323FC3E8C78990CCC
+    .Function="/Script/Engine.MaterialFunction'Contrast_Control'"
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_0)
+    .Id=1145F7BD4FDD3A876664FFB09FD1CE68
+    .MaterialExpressionEditorX=-1768
+    .MaterialExpressionEditorY=-308
+    .MaterialExpressionGuid=AF0AE705454DAC79DC18439BD0152FF7
+    .Function="/Script/Engine.MaterialFunction'Contrast_Control'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionMultiply
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Contrast_Control:MaterialExpressionMultiply_8'")
+    .bLastPreviewed=True
+    .Id=0B9BADB941E05AF04330FEB40D80B29A
+    .MaterialExpressionEditorX=288
+    .MaterialExpressionEditorY=-332
+    .MaterialExpressionGuid=29B8F34C4BF1A36C8B7F31A87A46C976
+    .Function="/Script/Engine.MaterialFunction'Contrast_Control'"
+  MaterialExpressionMax (MaterialExpressionMax_0)
+    A                      <- MaterialExpressionAdd
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Contrast_Control:MaterialExpressionAdd_1'")
+    .ConstB=0.000000
+    .MaterialExpressionEditorX=-464
+    .MaterialExpressionEditorY=-204
+    .MaterialExpressionGuid=D0E15C654AAF0D569EC7D5904FD1E367
+    .Function="/Script/Engine.MaterialFunction'Contrast_Control'"
+  MaterialExpressionMin (MaterialExpressionMin_0)
+    A                      <- MaterialExpressionDivide
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'Contrast_Control:MaterialExpressionDivide_0'")
+    .ConstB=3.000000
+    .MaterialExpressionEditorX=-1188
+    .MaterialExpressionEditorY=-204
+    .MaterialExpressionGuid=1B343CAB40D16EB0145881990A7E5E55
+    .Function="/Script/Engine.MaterialFunction'Contrast_Control'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_2)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Contrast_Control:MaterialExpressionScalarParameter_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'Contrast_Control:MaterialExpressionSubtract_2'")
+    .MaterialExpressionEditorX=-800
+    .MaterialExpressionEditorY=-204
+    .MaterialExpressionGuid=A0EEE67F42079FD75CC6ACABD8FDBA24
+    .Function="/Script/Engine.MaterialFunction'Contrast_Control'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_5)
+    A                      <- MaterialExpressionNamedRerouteDeclaration
+    B                      <- MaterialExpressionMax
+    .B=(Expression="/Script/Engine.MaterialExpressionMax'Contrast_Control:MaterialExpressionMax_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Contrast_Control:MaterialExpressionNamedRerouteDeclaration_0'")
+    .MaterialExpressionEditorX=-164
+    .MaterialExpressionEditorY=-304
+    .MaterialExpressionGuid=EB4088334A78F30430C78AA815DEF62B
+    .Function="/Script/Engine.MaterialFunction'Contrast_Control'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_8)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Contrast_Control:MaterialExpressionScalarParameter_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Contrast_Control:MaterialExpressionMultiply_5'")
+    .MaterialExpressionEditorX=96
+    .MaterialExpressionEditorY=-304
+    .MaterialExpressionGuid=6AF19E3945E566B07950428DEC772BBC
+    .Function="/Script/Engine.MaterialFunction'Contrast_Control'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_0)
+    Input                  <- MaterialExpressionFunctionInput
+    .Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Contrast_Control:MaterialExpressionFunctionInput_0'")
+    .Name="Input"
+    .NodeColor=(R=0.000000,G=0.789062,B=1.000000,A=1.000000)
+    .VariableGuid=A48D8A6C42E9DD8D43A7F284853738F3
+    .MaterialExpressionEditorX=-1578
+    .MaterialExpressionEditorY=-308
+    .MaterialExpressionGuid=90E386CC4D41FC813842698A97CDCCBA
+    .Function="/Script/Engine.MaterialFunction'Contrast_Control'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_3)
+    .ParameterName="Contrast Midpoint"
+    .ExpressionGUID=967C79804723AC41AC7F138DFF4C70DC
+    .MaterialExpressionEditorX=-1656
+    .MaterialExpressionEditorY=-116
+    .MaterialExpressionGuid=EE311D294EF67E167326BF8990F1D6C9
+    .Function="/Script/Engine.MaterialFunction'Contrast_Control'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_4)
+    .ParameterName="Extra_Contrast"
+    .ExpressionGUID=31990B774D45D9364F9448B26F2B388C
+    .MaterialExpressionEditorX=-1008
+    .MaterialExpressionEditorY=-88
+    .MaterialExpressionGuid=AF2FA5DB4C1D6B7B736597BABD07A4E9
+    .Function="/Script/Engine.MaterialFunction'Contrast_Control'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_5)
+    .ParameterName="Overall Intensity"
+    .DefaultValue=1.000000
+    .ExpressionGUID=E09936614B4831873EE2FA90124D7DF2
+    .MaterialExpressionEditorX=-176
+    .MaterialExpressionEditorY=-176
+    .MaterialExpressionGuid=1E5120F54B6BA2EDBD0E29A5ECA24FBE
+    .Function="/Script/Engine.MaterialFunction'Contrast_Control'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_2)
+    A                      <- MaterialExpressionMin
+    .A=(Expression="/Script/Engine.MaterialExpressionMin'Contrast_Control:MaterialExpressionMin_0'")
+    .MaterialExpressionEditorX=-952
+    .MaterialExpressionEditorY=-204
+    .MaterialExpressionGuid=8BB14B78453695AFAFC1AA95CF6109E4
+    .Function="/Script/Engine.MaterialFunction'Contrast_Control'"

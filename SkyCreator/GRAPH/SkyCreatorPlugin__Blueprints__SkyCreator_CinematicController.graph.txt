@@ -1,0 +1,147 @@
+### /SkyCreatorPlugin/Blueprints/SkyCreator_CinematicController
+  Blueprint (SkyCreator_CinematicController)
+    .ParentClass="/Script/CoreUObject.Class'/Script/Engine.Actor'"
+    .bRunConstructionScriptInSequencer=True
+    .BlueprintSystemVersion=2
+    .SimpleConstructionScript="/Script/Engine.SimpleConstructionScript'SkyCreator_CinematicController_C:SimpleConstructionScript_0'"
+    .UbergraphPages(0)="/Script/Engine.EdGraph'EventGraph'"
+    .FunctionGraphs(0)="/Script/Engine.EdGraph'UserConstructionScript'"
+    .FunctionGraphs(1)="/Script/Engine.EdGraph'UpdateTimeAndWeather'"
+    .NewVariables(0)=(VarName="SkyCreatorTarget",VarGuid=6CE0333F4F5D2B7A899399889BE436EF,VarType=(PinCategory="object",PinSubCategoryObject="/Script/CoreUObject.Class'/Script/SkyCreatorPlugin.SkyCreator'"),FriendlyName="Sky Creator Target",Category=NSLOCTEXT("KismetSchema", "Default", "Default"),PropertyFlags=2053,MetaDataArray=((DataKey="MultiLine",DataValue="true")))
+    .NewVariables(1)=(VarName="Time",VarGuid=DB12CC0C41BA19DC7DD1B2850463F9CB,VarType=(PinCategory="real",PinSubCategory="double",bSerializeAsSinglePrecisionFloat=True),FriendlyName="Time",Category=NSLOCTEXT("", "95EAFCB442235F651CD9BFAFD96CD0F6", "Time"),PropertyFlags=8589934597,MetaDataArray=((DataKey="MultiLine",DataValue="true"),(DataKey="UIMin",DataValue="0"),(DataKey="UIMax",DataValue="24")))
+    .NewVariables(2)=(VarName="WeatherPresetA",VarGuid=0560B1334A71D91993477DBC62DF8EBF,VarType=(PinCategory="object",PinSubCategoryObject="/Script/CoreUObject.Class'/Script/SkyCreatorPlugin.SkyCreatorWeatherPreset'"),FriendlyName="Weather Preset A",Category=NSLOCTEXT("", "11B4139A4A5DBA42B28B6E83669D73BD", "Weather"),PropertyFlags=5,MetaDataArray=((DataKey="MultiLine",DataValue="true")))
+    .NewVariables(3)=(VarName="WeatherPresetB",VarGuid=C603EC5E462380D8E1C101B3D7C8D9D0,VarType=(PinCategory="object",PinSubCategoryObject="/Script/CoreUObject.Class'/Script/SkyCreatorPlugin.SkyCreatorWeatherPreset'"),FriendlyName="Weather Preset B",Category=INVTEXT("Weather"),PropertyFlags=5,MetaDataArray=((DataKey="MultiLine",DataValue="true")))
+    .NewVariables(4)=(VarName="InterpolationAlpha",VarGuid=DE6410544EBBC0BF31F6B28370914404,VarType=(PinCategory="real",PinSubCategory="double",bSerializeAsSinglePrecisionFloat=True),FriendlyName="Interpolation Alpha",Category=INVTEXT("Weather"),PropertyFlags=8589934597,MetaDataArray=((DataKey="MultiLine",DataValue="true"),(DataKey="UIMin",DataValue="0"),(DataKey="UIMax",DataValue="1")))
+    .CategorySorting(0)="Default"
+    .CategorySorting(1)=""
+    .CategorySorting(2)="Time"
+    .CategorySorting(3)="Weather"
+    .CategorySorting(4)="Event Graph"
+    .LastEditedDocuments(0)=(EditedObjectPath="/SkyCreatorPlugin/Blueprints/SkyCreator_CinematicController.SkyCreator_CinematicController:EventGraph",SavedViewOffset=(X=-297.105835,Y=-605.056030),SavedZoomAmount=0.875000)
+    .LastEditedDocuments(1)=(EditedObjectPath="/SkyCreatorPlugin/Blueprints/SkyCreator_CinematicController.SkyCreator_CinematicController:UserConstructionScript",SavedViewOffset=(X=-492.500214,Y=-669.523560),SavedZoomAmount=0.875000)
+    .LastEditedDocuments(2)=(EditedObjectPath="/SkyCreatorPlugin/Blueprints/SkyCreator_CinematicController.SkyCreator_CinematicController:UpdateTimeAndWeather",SavedViewOffset=(X=67.349976,Y=-286.299988),SavedZoomAmount=1.000000)
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfo'SceneThumbnailInfo_0'"
+    .GeneratedClass="/Script/Engine.BlueprintGeneratedClass'SkyCreator_CinematicController_C'"
+    .bLegacyNeedToPurgeSkelRefs=False
+    .BlueprintGuid=9B9545F54D9764F2D2018BA788DB68BF
+  EdGraph (UpdateTimeAndWeather)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_1'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_MacroInstance'K2Node_MacroInstance_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_10'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_2'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_3'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_6'"
+    .Nodes(7)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(8)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_3'"
+    .Nodes(9)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_5'"
+    .Nodes(10)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_4'"
+    .GraphGuid=9E357D8042E07651395D01B599126923
+  K2Node_FunctionEntry (K2Node_FunctionEntry_0)
+    .ExtraFlags=201457664
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.Actor'",MemberName="ReceiveTick")
+    .bIsEditable=True
+    .NodeGuid=B216864E8BC13A189689380A25AB708E
+    .CustomGeneratedFunctionName="ReceiveTick"
+    .NodePosX=-200
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+  K2Node_VariableGet (K2Node_VariableGet_1)
+    .VariableReference=(MemberName="SkyCreatorTarget",MemberGuid=6CE0333F4F5D2B7A899399889BE436EF,bSelfContext=True)
+    .NodePosX=128
+    .NodePosY=96
+    .NodeGuid=C1975CF54A7FA66EC2753FA350A8301C
+  K2Node_MacroInstance (K2Node_MacroInstance_0)
+    .MacroGraphReference=(MacroGraph="/Script/Engine.EdGraph'/Engine/EditorBlueprintResources/StandardMacros.StandardMacros:IsValid'",GraphBlueprint="/Script/Engine.Blueprint'/Engine/EditorBlueprintResources/StandardMacros.StandardMacros'",GraphGuid=64422BCD430703FF5CAEA8B79A32AA65)
+    .NodePosX=384
+    .NodeGuid=415F990146F6D2738DC7A6AF58C60B8C
+  K2Node_VariableGet (K2Node_VariableGet_10)
+    .VariableReference=(MemberName="SkyCreatorTarget",MemberGuid=6CE0333F4F5D2B7A899399889BE436EF,bSelfContext=True)
+    .NodePosX=1152
+    .NodePosY=64
+    .NodeGuid=8B69C51244C5E6D5E355CABE787F4564
+  K2Node_VariableGet (K2Node_VariableGet_2)
+    .VariableReference=(MemberName="WeatherPresetA",MemberGuid=0560B1334A71D91993477DBC62DF8EBF,bSelfContext=True)
+    .NodePosX=1152
+    .NodePosY=128
+    .NodeGuid=17E065D346E405D218DAF597E5DACAF2
+  K2Node_VariableGet (K2Node_VariableGet_3)
+    .VariableReference=(MemberName="WeatherPresetB",MemberGuid=C603EC5E462380D8E1C101B3D7C8D9D0,bSelfContext=True)
+    .NodePosX=1152
+    .NodePosY=192
+    .NodeGuid=621689D54FCB4420F8066D80E3435334
+  K2Node_VariableGet (K2Node_VariableGet_6)
+    .VariableReference=(MemberName="InterpolationAlpha",MemberGuid=DE6410544EBBC0BF31F6B28370914404,bSelfContext=True)
+    .NodePosX=1152
+    .NodePosY=256
+    .NodeGuid=878A572F41D5256AD630B2B25BB6BF43
+  K2Node_VariableGet (K2Node_VariableGet_0)
+    .VariableReference=(MemberName="SkyCreatorTarget",MemberGuid=6CE0333F4F5D2B7A899399889BE436EF,bSelfContext=True)
+    .NodePosX=704
+    .NodePosY=64
+    .NodeGuid=AA2AA11744C7C0041A18F685E8941A1E
+  K2Node_CallFunction (K2Node_CallFunction_3)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/SkyCreatorPlugin.SkyCreator'",MemberName="SetTime")
+    .NodePosX=896
+    .NodePosY=-16
+    .NodeGuid=A145A4D34A3F8DEB37FCA782DF759AF2
+  K2Node_VariableGet (K2Node_VariableGet_5)
+    .VariableReference=(MemberName="Time",MemberGuid=DB12CC0C41BA19DC7DD1B2850463F9CB,bSelfContext=True)
+    .NodePosX=704
+    .NodePosY=112
+    .NodeGuid=007C830046BFCFE37C04AF92A703B782
+  K2Node_CallFunction (K2Node_CallFunction_4)
+    .FunctionReference=(MemberName="UpdateTimeAndWeather",MemberGuid=9E357D8042E07651395D01B599126923,bSelfContext=True)
+    .NodePosX=896
+    .NodePosY=-16
+    .NodeGuid=1D2E57034EDE498ABE6B8FAD8774267B
+  EdGraph (EventGraph)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_Event'K2Node_Event_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_4'"
+    .Nodes(2)="/Script/UnrealEd.EdGraphNode_Comment'EdGraphNode_Comment_2'"
+    .bAllowDeletion=False
+    .GraphGuid=611BF3BB4CDF17347A3CAFB33215E1BB
+  K2Node_Event (K2Node_Event_0)
+    .EventReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.Actor'",MemberName="ReceiveTick")
+    .bOverrideFunction=True
+    .NodeGuid=335064CB4A9DC851A7CE5F9B7E775338
+  EdGraphNode_Comment (EdGraphNode_Comment_2)
+    .CommentColor=(R=1.000000,G=0.500000,B=0.000000,A=1.000000)
+    .NodePosY=-256
+    .NodeWidth=896
+    .NodeHeight=128
+    .NodeComment="Simple Cinematic Controller"
+    .NodeGuid=3F1A6D3F4E8CCEBB37BDCC82DF1A0812
+  EdGraph (UserConstructionScript)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/UnrealEd.EdGraphNode_Comment'EdGraphNode_Comment_2'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_4'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_0'"
+    .bAllowDeletion=False
+    .GraphGuid=371A1764400B3F85A12D34961ED421DD
+  K2Node_CallFunction (K2Node_CallFunction_0)
+    .FunctionReference=(MemberName="ExecuteUbergraph_SkyCreator_CinematicController",bSelfContext=True)
+    .NodePosX=300
+    .NodeGuid=7AE4544809153F4F889460F58A14EABA
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+  K2Node_VariableSet (K2Node_VariableSet_0)
+    .VariableReference=(MemberName="SkyCreatorTarget",MemberGuid=6CE0333F4F5D2B7A899399889BE436EF,bSelfContext=True)
+    .NodePosX=640
+    .NodePosY=16
+    .NodeGuid=F50DB0764492370D46364BBE8303C689
+  EdGraph (ReceiveTick)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_SetVariableOnPersistentFrame'K2Node_SetVariableOnPersistentFrame_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=5AA2B57345739217DD2BBA99670466A5
+  K2Node_SetVariableOnPersistentFrame (K2Node_SetVariableOnPersistentFrame_0)
+    .NodePosX=-1520
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=B00538FE0C4238D9852F7EBB115FAE0A

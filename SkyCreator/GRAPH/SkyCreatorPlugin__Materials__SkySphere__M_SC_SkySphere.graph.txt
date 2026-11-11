@@ -1,0 +1,977 @@
+### /SkyCreatorPlugin/Materials/SkySphere/M_SC_SkySphere
+  Material (M_SC_SkySphere)
+    .ShadingModel=MSM_Unlit
+    .ShadingModels=(ShadingModelField=1)
+    .bCanMaskedBeAssumedOpaque=True
+    .bIsSky=True
+    .PixelDepthOffsetMode=PDOM_Legacy
+    .StateId=9C60F7784145456D4933AC97FD6C687D
+    .ReferencedTextureGuids(0)=998E203B436E8192ACF96FBC76C1B3C5
+    .ReferencedTextureGuids(1)=6804ED7C42192090BB3776ABDF38760F
+    .ReferencedTextureGuids(2)=E9E3E6D953BF32F29119A3620FF30CBB
+    .ReferencedTextureGuids(3)=7F5BD4BD477DC9AD068A0CA02D6C1256
+    .ReferencedTextureGuids(4)=9F50D9644AE3EF2337DB13BB5440665B
+    .ReferencedTextureGuids(5)=FED3BA2547AB231147661BAD4E3D2476
+    .EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'M_SC_SkySphereEditorOnlyData'"
+    .TextureStreamingDataVersion=1
+    .TextureStreamingData(0)=(SamplingScale=2.000000,UVChannelIndex=0,TextureName="T_SC_StarMap_TwinkleNoise_M",TextureReference="/Game/ENDEMIS/Weather/SkySphere/T_StarMap_TwinkleNoise_M.T_StarMap_TwinkleNoise_M")
+    .ReferencedDefaultTextures(0)=None
+    .ReferencedDefaultTextures(1)="/Script/Engine.Texture2D'/Game/1_Weather/TC_StarMap_4K.TC_StarMap_4K'"
+    .ReferencedDefaultTextures(2)="/Script/Engine.Texture2D'/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/flipbook.flipbook'"
+    .ReferencedDefaultTextures(3)="/Script/Engine.Texture2D'/Game/1_Weather/T_Moon_1K_D.T_Moon_1K_D'"
+    .ReferencedDefaultTextures(4)="/Script/Engine.Texture2D'/Game/1_Weather/T_Moon_1K_N.T_Moon_1K_N'"
+    .ReferencedDefaultTextures(5)="/Script/Engine.CurveLinearColorAtlas'/SkyCreatorPlugin/Materials/Curves/Curve_SC_Atlas.Curve_SC_Atlas'"
+    .ReferencedDefaultTextures(6)="/Script/Engine.Texture2D'/Engine/EngineResources/DefaultTexture.DefaultTexture'"
+    .ReferencedDefaultTextures(7)="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/SkySphere/T_StarMap_TwinkleNoise_M.T_StarMap_TwinkleNoise_M'"
+    .ReferencedDefaultTextures(8)="/Script/Engine.Texture2D'/Game/1_Weather/T_BackgroundClouds_4K.T_BackgroundClouds_4K'"
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+    .ParameterOverviewExpansion=(("-12Global", True),("-12Global Sky", True),("-12Global Fake Sky", True),("-12Global Star Map", True),("-12Global Night Sky", True),("-12Global Sphere Mask", True),("-12Global Moon", True),("-12Global Sky Light", True),("-12Global Background Clouds", True))
+    .LightingGuid=97D579184787BC43158297AB2D7FC1AF
+  MaterialEditorOnlyData (M_SC_SkySphereEditorOnlyData)
+    EmissiveColor          <- MaterialExpressionAdd
+    ExpressionCollection   <- MaterialExpressionAdd
+    .EmissiveColor=(Expression="/Script/Engine.MaterialExpressionAdd'M_SC_SkySphere:MaterialExpressionAdd_1'")
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionAdd'M_SC_SkySphere:MaterialExpressionAdd_1'","/Script/Engine.MaterialExpressionLinearInterpolate'M_SC_SkySphere:MaterialExpressionLinearInterpolate_0'","/Script/Engine.MaterialExpressionAdd'M_SC_SkySphere:MaterialExpressionAdd_5'","/Script/Engine.MaterialExpressionMultiply'M_SC_SkySphere:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionClamp'M_SC_SkySphere:MaterialExpressionClamp_1'","/Script/Engine.MaterialExpressionScalarParameter'M_SC_SkySphere:MaterialExpressionScalarParameter_7'","/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_SkySphere:MaterialExpressionMaterialFunctionCall_9'","/Script/Engine.MaterialExpressionLinearInterpolate'M_SC_SkySphere:MaterialExpressionLinearInterpolate_16'","/Script/Engine.MaterialExpressionConstant'M_SC_SkySphere:MaterialExpressionConstant_4'","/Script/Engine.MaterialExpressionLinearInterpolate'M_SC_SkySphere:MaterialExpressionLinearInterpolate_8'","/Script/Engine.MaterialExpressionLinearInterpolate'M_SC_SkySphere:MaterialExpressionLinearInterpolate_1'","/Script/Engine.MaterialExpressionOneMinus'M_SC_SkySphere:MaterialExpressionOneMinus_2'","/Script/Engine.MaterialExpressionLinearInterpolate'M_SC_SkySphere:MaterialExpressionLinearInterpolate_10'","/Script/Engine.MaterialExpressionScalarParameter'M_SC_SkySphere:MaterialExpressionScalarParameter_16'","/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_SkySphere:MaterialExpressionMaterialFunctionCall_8'","/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_SkySphere:MaterialExpressionMaterialFunctionCall_14'","/Script/Engine.MaterialExpressionConstant'M_SC_SkySphere:MaterialExpressionConstant_3'","/Script/Engine.MaterialExpressionConstant'M_SC_SkySphere:MaterialExpressionConstant_5'","/Script/Engine.MaterialExpressionConstant'M_SC_SkySphere:MaterialExpressionConstant_7'","/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_SkySphere:MaterialExpressionMaterialFunctionCall_15'","/Script/Engine.MaterialExpressionAdd'M_SC_SkySphere:MaterialExpressionAdd_2'","/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_SkySphere:MaterialExpressionMaterialFunctionCall_7'","/Script/Engine.MaterialExpressionDesaturation'M_SC_SkySphere:MaterialExpressionDesaturation_1'","/Script/Engine.MaterialExpressionSkyAtmosphereViewLuminance'M_SC_SkySphere:MaterialExpressionSkyAtmosphereViewLuminance_1'","/Script/Engine.MaterialExpressionNormalize'M_SC_SkySphere:MaterialExpressionNormalize_2'","/Script/Engine.MaterialExpressionNormalize'M_SC_SkySphere:MaterialExpressionNormalize_3'","/Script/Engine.MaterialExpressionSubtract'M_SC_SkySphere:MaterialExpressionSubtract_2'","/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_SkySphere:MaterialExpressionMaterialFunctionCall_22'","/Script/Engine.MaterialExpressionMultiply'M_SC_SkySphere:MaterialExpressionMultiply_1'","/Script/Engine.MaterialExpressionTextureSampleParameter2D'M_SC_SkySphere:MaterialExpressionTextureSampleParameter2D_1'","/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_SkySphere:MaterialExpressionMaterialFunctionCall_12'","/Script/Engine.MaterialExpressionReroute'M_SC_SkySphere:MaterialExpressionReroute_5'","/Script/Engine.MaterialExpressionReroute'M_SC_SkySphere:MaterialExpressionReroute_6'","/Script/Engine.MaterialExpressionDotProduct'M_SC_SkySphere:MaterialExpressionDotProduct_6'","/Script/Engine.MaterialExpressionConstant3Vector'M_SC_SkySphere:MaterialExpressionConstant3Vector_3'","/Script/Engine.MaterialExpressionCameraVectorWS'M_SC_SkySphere:MaterialExpressionCameraVectorWS_5'","/Script/Engine.MaterialExpressionSaturate'M_SC_SkySphere:MaterialExpressionSaturate_0'","/Script/Engine.MaterialExpressionScalarParameter'M_SC_SkySphere:MaterialExpressionScalarParameter_2'","/Script/Engine.MaterialExpressionScalarParameter'M_SC_SkySphere:MaterialExpressionScalarParameter_4'","/Script/Engine.MaterialExpressionOneMinus'M_SC_SkySphere:MaterialExpressionOneMinus_4'","/Script/Engine.MaterialExpressionReroute'M_SC_SkySphere:MaterialExpressionReroute_0'","/Script/Engine.MaterialExpressionReroute'M_SC_SkySphere:MaterialExpressionReroute_1'","/Script/Engine.MaterialExpressionAdd'M_SC_SkySphere:MaterialExpressionAdd_0'","/Script/Engine.MaterialExpressionReroute'M_SC_SkySphere:MaterialExpressionReroute_2'","/Script/Engine.MaterialExpressionReroute'M_SC_SkySphere:MaterialExpressionReroute_7'","/Script/Engine.MaterialExpressionReroute'M_SC_SkySphere:MaterialExpressionReroute_8'","/Script/Engine.MaterialExpressionTextureCoordinate'M_SC_SkySphere:MaterialExpressionTextureCoordinate_0'","/Script/Engine.MaterialExpressionMultiply'M_SC_SkySphere:MaterialExpressionMultiply_5'","/Script/Engine.MaterialExpressionCurveAtlasRowParameter'M_SC_SkySphere:MaterialExpressionCurveAtlasRowParameter_0'","/Script/Engine.MaterialExpressionMultiply'M_SC_SkySphere:MaterialExpressionMultiply_3'","/Script/Engine.MaterialExpressionMultiply'M_SC_SkySphere:MaterialExpressionMultiply_4'","/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_SkySphere:MaterialExpressionMaterialFunctionCall_6'","/Script/Engine.MaterialExpressionConstant'M_SC_SkySphere:MaterialExpressionConstant_11'","/Script/Engine.MaterialExpressionConstant'M_SC_SkySphere:MaterialExpressionConstant_12'","/Script/Engine.MaterialExpressionPower'M_SC_SkySphere:MaterialExpressionPower_0'","/Script/Engine.MaterialExpressionConstant'M_SC_SkySphere:MaterialExpressionConstant_1'","/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_SkySphere:MaterialExpressionMaterialFunctionCall_4'","/Script/Engine.MaterialExpressionTextureObject'M_SC_SkySphere:MaterialExpressionTextureObject_0'","/Script/Engine.MaterialExpressionConstant'M_SC_SkySphere:MaterialExpressionConstant_2'","/Script/Engine.MaterialExpressionAdd'M_SC_SkySphere:MaterialExpressionAdd_6'","/Script/Engine.MaterialExpressionLinearInterpolate'M_SC_SkySphere:MaterialExpressionLinearInterpolate_3'","/Script/Engine.MaterialExpressionClamp'M_SC_SkySphere:MaterialExpressionClamp_0'","/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_SkySphere:MaterialExpressionMaterialFunctionCall_5'","/Script/Engine.MaterialExpressionConstant'M_SC_SkySphere:MaterialExpressionConstant_13'","/Script/Engine.MaterialExpressionConstant'M_SC_SkySphere:MaterialExpressionConstant_14'","/Script/Engine.MaterialExpressionDesaturation'M_SC_SkySphere:MaterialExpressionDesaturation_0'","/Script/Engine.MaterialExpressionOneMinus'M_SC_SkySphere:MaterialExpressionOneMinus_0'","/Script/Engine.MaterialExpressionConstant'M_SC_SkySphere:MaterialExpressionConstant_0'","/Script/Engine.MaterialExpressionReflectionCapturePassSwitch'M_SC_SkySphere:MaterialExpressionReflectionCapturePassSwitch_0'","/Script/Engine.MaterialExpressionReflectionCapturePassSwitch'M_SC_SkySphere:MaterialExpressionReflectionCapturePassSwitch_1'","/Script/Engine.MaterialExpressionMultiply'M_SC_SkySphere:MaterialExpressionMultiply_6'","/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_SkySphere:MaterialExpressionMaterialFunctionCall_2'","/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_SkySphere:MaterialExpressionMaterialFunctionCall_1'","/Script/Engine.MaterialExpressionSaturate'M_SC_SkySphere:MaterialExpressionSaturate_1'","/Script/Engine.MaterialExpressionCollectionParameter'M_SC_SkySphere:MaterialExpressionCollectionParameter_0'","/Script/Engine.MaterialExpressionCollectionParameter'M_SC_SkySphere:MaterialExpressionCollectionParameter_1'","/Script/Engine.MaterialExpressionCollectionParameter'M_SC_SkySphere:MaterialExpressionCollectionParameter_2'","/Script/Engine.MaterialExpressionCollectionParameter'M_SC_SkySphere:MaterialExpressionCollectionParameter_3'","/Script/Engine.MaterialExpressionCollectionParameter'M_SC_SkySphere:MaterialExpressionCollectionParameter_4'","/Script/Engine.MaterialExpressionCollectionParameter'M_SC_SkySphere:MaterialExpressionCollectionParameter_5'","/Script/Engine.MaterialExpressionCollectionParameter'M_SC_SkySphere:MaterialExpressionCollectionParameter_6'","/Script/Engine.MaterialExpressionCollectionParameter'M_SC_SkySphere:MaterialExpressionCollectionParameter_7'","/Script/Engine.MaterialExpressionCollectionParameter'M_SC_SkySphere:MaterialExpressionCollectionParameter_8'","/Script/Engine.MaterialExpressionCollectionParameter'M_SC_SkySphere:MaterialExpressionCollectionParameter_9'","/Script/Engine.MaterialExpressionCollectionParameter'M_SC_SkySphere:MaterialExpressionCollectionParameter_10'","/Script/Engine.MaterialExpressionCollectionParameter'M_SC_SkySphere:MaterialExpressionCollectionParameter_11'","/Script/Engine.MaterialExpressionCollectionParameter'M_SC_SkySphere:MaterialExpressionCollectionParameter_12'","/Script/Engine.MaterialExpressionComponentMask'M_SC_SkySphere:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionCollectionParameter'M_SC_SkySphere:MaterialExpressionCollectionParameter_13'","/Script/Engine.MaterialExpressionCollectionParameter'M_SC_SkySphere:MaterialExpressionCollectionParameter_14'","/Script/Engine.MaterialExpressionCollectionParameter'M_SC_SkySphere:MaterialExpressionCollectionParameter_15'","/Script/Engine.MaterialExpressionCollectionParameter'M_SC_SkySphere:MaterialExpressionCollectionParameter_17'","/Script/Engine.MaterialExpressionCollectionParameter'M_SC_SkySphere:MaterialExpressionCollectionParameter_18'","/Script/Engine.MaterialExpressionCollectionParameter'M_SC_SkySphere:MaterialExpressionCollectionParameter_19'","/Script/Engine.MaterialExpressionCollectionParameter'M_SC_SkySphere:MaterialExpressionCollectionParameter_20'","/Script/Engine.MaterialExpressionComponentMask'M_SC_SkySphere:MaterialExpressionComponentMask_1'","/Script/Engine.MaterialExpressionComponentMask'M_SC_SkySphere:MaterialExpressionComponentMask_2'","/Script/Engine.MaterialExpressionLinearInterpolate'M_SC_SkySphere:MaterialExpressionLinearInterpolate_2'","/Script/Engine.MaterialExpressionCollectionParameter'M_SC_SkySphere:MaterialExpressionCollectionParameter_16'"),EditorComments=("/Script/Engine.MaterialExpressionComment'M_SC_SkySphere:MaterialExpressionComment_1'","/Script/Engine.MaterialExpressionComment'M_SC_SkySphere:MaterialExpressionComment_4'","/Script/Engine.MaterialExpressionComment'M_SC_SkySphere:MaterialExpressionComment_0'","/Script/Engine.MaterialExpressionComment'M_SC_SkySphere:MaterialExpressionComment_2'"))
+    .ParameterGroupData(0)=(GroupName="Star Map")
+    .ParameterGroupData(1)=(GroupName="Sky Light")
+    .ParameterGroupData(2)=(GroupName="Star Map")
+    .ParameterGroupData(3)=(GroupName="Night Sky")
+    .ParameterGroupData(4)=(GroupName="Night Sky")
+    .ParameterGroupData(5)=(GroupName="None")
+  MaterialExpressionAdd (MaterialExpressionAdd_0)
+    A                      <- MaterialExpressionReroute
+    B                      <- MaterialExpressionReroute
+    .B=(Expression="/Script/Engine.MaterialExpressionReroute'M_SC_SkySphere:MaterialExpressionReroute_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionReroute'M_SC_SkySphere:MaterialExpressionReroute_8'")
+    .MaterialExpressionEditorX=-2112
+    .MaterialExpressionEditorY=272
+    .MaterialExpressionGuid=2146768D44A86209BA56A188CDD412ED
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+    .Desc="Atmosphere + Moon"
+    .bCommentBubbleVisible=True
+  MaterialExpressionAdd (MaterialExpressionAdd_1)
+    A                      <- MaterialExpressionLinearInterpolate
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_SkySphere:MaterialExpressionMaterialFunctionCall_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'M_SC_SkySphere:MaterialExpressionLinearInterpolate_0'")
+    .MaterialExpressionEditorX=-512
+    .MaterialExpressionEditorY=128
+    .MaterialExpressionGuid=016762AB40DA7A36C192E1BBEDB8E250
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionAdd (MaterialExpressionAdd_2)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionReroute
+    .B=(Expression="/Script/Engine.MaterialExpressionReroute'M_SC_SkySphere:MaterialExpressionReroute_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_SkySphere:MaterialExpressionMaterialFunctionCall_7'",OutputIndex=1)
+    .MaterialExpressionEditorX=-3200
+    .MaterialExpressionEditorY=128
+    .MaterialExpressionGuid=52BD903447BFF728B256B0AC6ED8FCAF
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionAdd (MaterialExpressionAdd_5)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionLinearInterpolate
+    .B=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'M_SC_SkySphere:MaterialExpressionLinearInterpolate_8'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'M_SC_SkySphere:MaterialExpressionAdd_2'")
+    .MaterialExpressionEditorX=-2112
+    .MaterialExpressionEditorY=128
+    .MaterialExpressionGuid=A4C4D7A643BEB46E81F2FA8C632DE977
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+    .Desc="Atmosphere + Star Map"
+    .bCommentBubbleVisible=True
+  MaterialExpressionAdd (MaterialExpressionAdd_6)
+    A                      <- MaterialExpressionTextureSampleParameter2D
+    B                      <- MaterialExpressionLinearInterpolate
+    .B=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'M_SC_SkySphere:MaterialExpressionLinearInterpolate_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameter2D'M_SC_SkySphere:MaterialExpressionTextureSampleParameter2D_1'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .MaterialExpressionEditorX=-4864
+    .MaterialExpressionEditorY=704
+    .MaterialExpressionGuid=96DCF4444E58DBA31D7F88A7085D5511
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionCameraVectorWS (MaterialExpressionCameraVectorWS_5)
+    .MaterialExpressionEditorX=-3456
+    .MaterialExpressionEditorY=1440
+    .MaterialExpressionGuid=4CB5DE5E45046A79FB401FB14D7AD40D
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionClamp (MaterialExpressionClamp_0)
+    Input                  <- MaterialExpressionCollectionParameter
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'M_SC_SkySphere:MaterialExpressionCollectionParameter_14'")
+    .MaterialExpressionEditorX=-5248
+    .MaterialExpressionEditorY=864
+    .MaterialExpressionGuid=339B996149AF0EC5A0D3E4AB8537E7CB
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionClamp (MaterialExpressionClamp_1)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'M_SC_SkySphere:MaterialExpressionMultiply_1'")
+    .MaterialExpressionEditorX=-4352
+    .MaterialExpressionEditorY=800
+    .MaterialExpressionGuid=F6FCA9174BD9E61A3D4806B062381284
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_0)
+    .ParameterName="Current Sun Elevation"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=2DC4DCE54F54AFD274979CA7654D0441
+    .MaterialExpressionEditorX=-2048
+    .MaterialExpressionEditorY=480
+    .MaterialExpressionGuid=2E8725E948A1F79F8F1A879FD4AF9BA5
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_1)
+    .ParameterName="Night Intensity Transition Start Sun Angle"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=AC569E9D4E34EBBB10B1119F8D1F98C9
+    .MaterialExpressionEditorX=-2048
+    .MaterialExpressionEditorY=576
+    .MaterialExpressionGuid=2E8725E948A1F79F8F1A879FD4AF9BA5
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_10)
+    .ParameterName="Star Map Horizon Threshold"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=785E99924A12578F7B723787663837BD
+    .MaterialExpressionEditorX=-3456
+    .MaterialExpressionEditorY=944
+    .MaterialExpressionGuid=2E8725E948A1F79F8F1A879FD4AF9BA5
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_11)
+    .ParameterName="Star Map Atmosphere Threshold"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=5611F9BD44B85CB5B62F07BB31372255
+    .MaterialExpressionEditorX=-3456
+    .MaterialExpressionEditorY=1328
+    .MaterialExpressionGuid=2E8725E948A1F79F8F1A879FD4AF9BA5
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_12)
+    .ParameterName="Star Map Color Tint"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=E26D20074F5E7C914BFD038F337978DE
+    .MaterialExpressionEditorX=-4672
+    .MaterialExpressionEditorY=896
+    .MaterialExpressionGuid=2E8725E948A1F79F8F1A879FD4AF9BA5
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_13)
+    .ParameterName="Star Map Intensity"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=D530D53443E807DDF37A70A5E917A259
+    .MaterialExpressionEditorX=-4864
+    .MaterialExpressionEditorY=896
+    .MaterialExpressionGuid=2E8725E948A1F79F8F1A879FD4AF9BA5
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_14)
+    .ParameterName="Star Map Twinkle Intensity"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=B912A0204BBAEABDE362E4A0C200DDCD
+    .MaterialExpressionEditorX=-5504
+    .MaterialExpressionEditorY=832
+    .MaterialExpressionGuid=2E8725E948A1F79F8F1A879FD4AF9BA5
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_15)
+    .ParameterName="Star Map Twinkle Saturation"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=F1E63DDB4DB1AC8A357002A32B23A0DD
+    .MaterialExpressionEditorX=-5760
+    .MaterialExpressionEditorY=1312
+    .MaterialExpressionGuid=2E8725E948A1F79F8F1A879FD4AF9BA5
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_16)
+    .ParameterName="Moon Light Direction"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=C36DCFD946B62D4A41DE5FBA446547D0
+    .MaterialExpressionEditorX=-3200
+    .MaterialExpressionEditorY=-448
+    .MaterialExpressionGuid=2E8725E948A1F79F8F1A879FD4AF9BA5
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_17)
+    .ParameterName="Star Map Twinkle Intensity"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=B912A0204BBAEABDE362E4A0C200DDCD
+    .MaterialExpressionEditorX=-6016
+    .MaterialExpressionEditorY=1328
+    .MaterialExpressionGuid=2E8725E948A1F79F8F1A879FD4AF9BA5
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_18)
+    .ParameterName="Star Map Twinkle Speed"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=35E37758465F072D828DD4BB7251CA11
+    .MaterialExpressionEditorX=-7008
+    .MaterialExpressionEditorY=1264
+    .MaterialExpressionGuid=2E8725E948A1F79F8F1A879FD4AF9BA5
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_19)
+    .ParameterName="Star Map Rotation"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=98F595854C4702441A5731ACA285B62D
+    .MaterialExpressionEditorX=-7296
+    .MaterialExpressionEditorY=672
+    .MaterialExpressionGuid=2E8725E948A1F79F8F1A879FD4AF9BA5
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_2)
+    .ParameterName="Night Intensity Transition End Sun Angle"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=51770A7A439454D607C3EDAABDC5CC0C
+    .MaterialExpressionEditorX=-2048
+    .MaterialExpressionEditorY=672
+    .MaterialExpressionGuid=2E8725E948A1F79F8F1A879FD4AF9BA5
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_20)
+    .ParameterName="Star Map Additional Rotation"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=7EF8C5BF482F87C4CEDB0B999163B787
+    .MaterialExpressionEditorX=-7296
+    .MaterialExpressionEditorY=880
+    .MaterialExpressionGuid=2E8725E948A1F79F8F1A879FD4AF9BA5
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_3)
+    .ParameterName="Sky Light Night Intensity"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=C26084C64A964A94BB43838F59E18C58
+    .MaterialExpressionEditorX=-1664
+    .MaterialExpressionEditorY=320
+    .MaterialExpressionGuid=2E8725E948A1F79F8F1A879FD4AF9BA5
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_4)
+    .ParameterName="Moon Color"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=F5152C5F41D888358A3970A13117E1E5
+    .MaterialExpressionEditorX=-3200
+    .MaterialExpressionEditorY=-352
+    .MaterialExpressionGuid=2E8725E948A1F79F8F1A879FD4AF9BA5
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_5)
+    .ParameterName="Moon Rotation"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=56EAB63043B38C7A07328A9245689B94
+    .MaterialExpressionEditorX=-3200
+    .MaterialExpressionEditorY=-256
+    .MaterialExpressionGuid=2E8725E948A1F79F8F1A879FD4AF9BA5
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_6)
+    .ParameterName="Moon Phase"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=FB2C19434F1A3213CDB6539F2BE229DB
+    .MaterialExpressionEditorX=-3200
+    .MaterialExpressionEditorY=-160
+    .MaterialExpressionGuid=2E8725E948A1F79F8F1A879FD4AF9BA5
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_7)
+    .ParameterName="Moon Angular Diameter"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=71CC6C0B4DB87E2F577F87AB66C8726C
+    .MaterialExpressionEditorX=-3200
+    .MaterialExpressionEditorY=-64
+    .MaterialExpressionGuid=2E8725E948A1F79F8F1A879FD4AF9BA5
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_8)
+    .ParameterName="Night Zenith Color"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=9E1A36E1479B00553BAD149211E101FD
+    .MaterialExpressionEditorX=-4736
+    .MaterialExpressionEditorY=128
+    .MaterialExpressionGuid=2E8725E948A1F79F8F1A879FD4AF9BA5
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_9)
+    .ParameterName="Night Horizon Color"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=5FB287FF4E9546E1290A0DB77868B49E
+    .MaterialExpressionEditorX=-4736
+    .MaterialExpressionEditorY=224
+    .MaterialExpressionGuid=2E8725E948A1F79F8F1A879FD4AF9BA5
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+    .bCollapsed=True
+  MaterialExpressionComment (MaterialExpressionComment_0)
+    .SizeX=832
+    .SizeY=448
+    .Text="Night Atmosphere (Fake)"
+    .CommentColor=(R=0.000000,G=0.000000,B=0.000000,A=1.000000)
+    .MaterialExpressionEditorX=-4800
+    .MaterialExpressionEditorY=64
+    .MaterialExpressionGuid=47630B4D4B53C715DAF83DBA60FFF0D4
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionComment (MaterialExpressionComment_1)
+    .SizeX=3456
+    .SizeY=1056
+    .Text="Star Map"
+    .CommentColor=(R=0.000000,G=0.000000,B=0.000000,A=1.000000)
+    .MaterialExpressionEditorX=-7424
+    .MaterialExpressionEditorY=608
+    .MaterialExpressionGuid=565DEB6E4AE27906830DA796A45133D2
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionComment (MaterialExpressionComment_2)
+    .SizeX=832
+    .SizeY=576
+    .Text="Moon"
+    .CommentColor=(R=0.000000,G=0.000000,B=0.000000,A=1.000000)
+    .MaterialExpressionEditorX=-3264
+    .MaterialExpressionEditorY=-512
+    .MaterialExpressionGuid=94554B8543EA1BC3FD29DD9AC7000817
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionComment (MaterialExpressionComment_4)
+    .SizeX=1696
+    .SizeY=1120
+    .Text="Star Map blending"
+    .CommentColor=(R=0.000000,G=0.000000,B=0.000000,A=1.000000)
+    .MaterialExpressionEditorX=-3840
+    .MaterialExpressionEditorY=544
+    .MaterialExpressionGuid=CD89ED9B469090CBE76CE49129E9DCEA
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionCollectionParameter
+    .R=True
+    .G=True
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'M_SC_SkySphere:MaterialExpressionCollectionParameter_12'")
+    .MaterialExpressionEditorX=-4480
+    .MaterialExpressionEditorY=928
+    .MaterialExpressionGuid=025A690F4CA92DDB883EE4ACA6D9DAB0
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_1)
+    Input                  <- MaterialExpressionCollectionParameter
+    .R=True
+    .G=True
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'M_SC_SkySphere:MaterialExpressionCollectionParameter_19'")
+    .MaterialExpressionEditorX=-7040
+    .MaterialExpressionEditorY=704
+    .MaterialExpressionGuid=025A690F4CA92DDB883EE4ACA6D9DAB0
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_2)
+    Input                  <- MaterialExpressionCollectionParameter
+    .R=True
+    .G=True
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'M_SC_SkySphere:MaterialExpressionCollectionParameter_20'")
+    .MaterialExpressionEditorX=-7040
+    .MaterialExpressionEditorY=912
+    .MaterialExpressionGuid=025A690F4CA92DDB883EE4ACA6D9DAB0
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionConstant (MaterialExpressionConstant_0)
+    .MaterialExpressionEditorX=-5136
+    .MaterialExpressionEditorY=768
+    .MaterialExpressionGuid=8CC0937744036281BC23A2AE5006BFB5
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionConstant (MaterialExpressionConstant_1)
+    .R=2.000000
+    .MaterialExpressionEditorX=-7168
+    .MaterialExpressionEditorY=1216
+    .MaterialExpressionGuid=71EF169C48CD2FD11438368E92E1C1EB
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionConstant (MaterialExpressionConstant_11)
+    .R=0.140000
+    .MaterialExpressionEditorX=-6016
+    .MaterialExpressionEditorY=1056
+    .MaterialExpressionGuid=784298B6463C0E775395B6A8273935C3
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionConstant (MaterialExpressionConstant_12)
+    .R=0.100000
+    .MaterialExpressionEditorX=-5632
+    .MaterialExpressionEditorY=1072
+    .MaterialExpressionGuid=575251E0409DAE3DBBDD61A4A693A091
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionConstant (MaterialExpressionConstant_13)
+    .R=8.000000
+    .MaterialExpressionEditorX=-6496
+    .MaterialExpressionEditorY=1280
+    .MaterialExpressionGuid=9DC3BAE940B0FA7C7F73A1A2DC2DB5AF
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionConstant (MaterialExpressionConstant_14)
+    .R=2.000000
+    .MaterialExpressionEditorX=-6496
+    .MaterialExpressionEditorY=1218
+    .MaterialExpressionGuid=166008754FE6BD36984974AF5184245D
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionConstant (MaterialExpressionConstant_2)
+    .R=0.250000
+    .MaterialExpressionEditorX=-7008
+    .MaterialExpressionEditorY=1376
+    .MaterialExpressionGuid=A5125DB846041DC8305AF580F21BE699
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionConstant (MaterialExpressionConstant_3)
+    .MaterialExpressionEditorX=-2944
+    .MaterialExpressionEditorY=672
+    .MaterialExpressionGuid=EC80059A40FFDAE87F6CEDA6307048BC
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionConstant (MaterialExpressionConstant_4)
+    .MaterialExpressionEditorX=-4224
+    .MaterialExpressionEditorY=704
+    .MaterialExpressionGuid=45D4A0BD40E19FB409B375BCA3270894
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionConstant (MaterialExpressionConstant_5)
+    .MaterialExpressionEditorX=-2432
+    .MaterialExpressionEditorY=640
+    .MaterialExpressionGuid=EC80059A40FFDAE87F6CEDA6307048BC
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionConstant (MaterialExpressionConstant_7)
+    .MaterialExpressionEditorX=-2688
+    .MaterialExpressionEditorY=1088
+    .MaterialExpressionGuid=EC80059A40FFDAE87F6CEDA6307048BC
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionConstant3Vector (MaterialExpressionConstant3Vector_3)
+    .Constant=(R=0.000000,G=0.000000,B=-1.000000,A=0.000000)
+    .MaterialExpressionEditorX=-3456
+    .MaterialExpressionEditorY=1520
+    .MaterialExpressionGuid=F8CD253542D442B42F3203BBE9CA28C0
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+    .bCollapsed=True
+  MaterialExpressionCurveAtlasRowParameter (MaterialExpressionCurveAtlasRowParameter_0)
+    InputTime              <- MaterialExpressionMaterialFunctionCall
+    .ParameterName="Curve"
+    .DefaultValue=5.000000
+    .Curve="/Script/Engine.CurveLinearColor'/SkyCreatorPlugin/Materials/Curves/Curve_SC_StarTwinkle_Color.Curve_SC_StarTwinkle_Color'"
+    .Atlas="/Script/Engine.CurveLinearColorAtlas'/SkyCreatorPlugin/Materials/Curves/Curve_SC_Atlas.Curve_SC_Atlas'"
+    .InputTime=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_SkySphere:MaterialExpressionMaterialFunctionCall_5'")
+    .ExpressionGUID=C74599F649581A7272FF7E982C875EA1
+    .MaterialExpressionEditorX=-6016
+    .MaterialExpressionEditorY=1152
+    .MaterialExpressionGuid=51D4FFD1479571302562D8803587DD27
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionDesaturation (MaterialExpressionDesaturation_0)
+    Input                  <- MaterialExpressionMultiply
+    Fraction               <- MaterialExpressionOneMinus
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'M_SC_SkySphere:MaterialExpressionMultiply_3'")
+    .Fraction=(Expression="/Script/Engine.MaterialExpressionOneMinus'M_SC_SkySphere:MaterialExpressionOneMinus_0'")
+    .LuminanceFactors=(R=1.000000,G=1.000000,B=1.000000,A=0.000000)
+    .MaterialExpressionEditorX=-5504
+    .MaterialExpressionEditorY=1152
+    .MaterialExpressionGuid=B6F1A5EE4F8A0C042E9439B5923DB7C9
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionDesaturation (MaterialExpressionDesaturation_1)
+    Input                  <- MaterialExpressionSkyAtmosphereViewLuminance
+    .Input=(Expression="/Script/Engine.MaterialExpressionSkyAtmosphereViewLuminance'M_SC_SkySphere:MaterialExpressionSkyAtmosphereViewLuminance_1'")
+    .LuminanceFactors=(R=1.000000,G=1.000000,B=1.000000,A=0.000000)
+    .MaterialExpressionEditorX=-3456
+    .MaterialExpressionEditorY=1152
+    .MaterialExpressionGuid=F470212742864E4D8F6B8BB69858A25D
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+    .Desc="Greyscale value"
+    .bCommentBubbleVisible=True
+  MaterialExpressionDotProduct (MaterialExpressionDotProduct_6)
+    A                      <- MaterialExpressionCameraVectorWS
+    B                      <- MaterialExpressionConstant3Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant3Vector'M_SC_SkySphere:MaterialExpressionConstant3Vector_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionCameraVectorWS'M_SC_SkySphere:MaterialExpressionCameraVectorWS_5'")
+    .MaterialExpressionEditorX=-3200
+    .MaterialExpressionEditorY=1456
+    .MaterialExpressionGuid=9CCCDFAB46D76C0DA8C3868F6F64CE8A
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_0)
+    A                      <- MaterialExpressionReflectionCapturePassSwitch
+    B                      <- MaterialExpressionAdd
+    Alpha                  <- MaterialExpressionReroute
+    .B=(Expression="/Script/Engine.MaterialExpressionAdd'M_SC_SkySphere:MaterialExpressionAdd_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionReflectionCapturePassSwitch'M_SC_SkySphere:MaterialExpressionReflectionCapturePassSwitch_1'")
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionReroute'M_SC_SkySphere:MaterialExpressionReroute_7'")
+    .MaterialExpressionEditorX=-768
+    .MaterialExpressionEditorY=128
+    .MaterialExpressionGuid=DBE3BC1D41DA57DD5B9867BBA4C4B0B4
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+    .Desc="Moon Mask"
+    .bCommentBubbleVisible=True
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_1)
+    A                      <- MaterialExpressionConstant
+    B                      <- MaterialExpressionOneMinus
+    Alpha                  <- MaterialExpressionSaturate
+    .B=(Expression="/Script/Engine.MaterialExpressionOneMinus'M_SC_SkySphere:MaterialExpressionOneMinus_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionConstant'M_SC_SkySphere:MaterialExpressionConstant_7'")
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionSaturate'M_SC_SkySphere:MaterialExpressionSaturate_0'")
+    .MaterialExpressionEditorX=-2560
+    .MaterialExpressionEditorY=1088
+    .MaterialExpressionGuid=9DDF85474853E61FB60E529E16E8BF48
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_10)
+    A                      <- MaterialExpressionConstant
+    B                      <- MaterialExpressionLinearInterpolate
+    Alpha                  <- MaterialExpressionOneMinus
+    .B=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'M_SC_SkySphere:MaterialExpressionLinearInterpolate_16'")
+    .A=(Expression="/Script/Engine.MaterialExpressionConstant'M_SC_SkySphere:MaterialExpressionConstant_3'")
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionOneMinus'M_SC_SkySphere:MaterialExpressionOneMinus_4'")
+    .MaterialExpressionEditorX=-2816
+    .MaterialExpressionEditorY=672
+    .MaterialExpressionGuid=AADD4C094F8197E2F5F7E5968B6513B7
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_16)
+    A                      <- MaterialExpressionConstant
+    B                      <- MaterialExpressionMultiply
+    Alpha                  <- MaterialExpressionClamp
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'M_SC_SkySphere:MaterialExpressionMultiply_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionConstant'M_SC_SkySphere:MaterialExpressionConstant_4'")
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionClamp'M_SC_SkySphere:MaterialExpressionClamp_1'")
+    .MaterialExpressionEditorX=-4096
+    .MaterialExpressionEditorY=704
+    .MaterialExpressionGuid=1A0753A144009395679EC6B77120B456
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_2)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionMultiply
+    Alpha                  <- MaterialExpressionSaturate
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'M_SC_SkySphere:MaterialExpressionMultiply_6'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'M_SC_SkySphere:MaterialExpressionAdd_5'")
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionSaturate'M_SC_SkySphere:MaterialExpressionSaturate_1'")
+    .MaterialExpressionEditorX=-1280
+    .MaterialExpressionEditorY=192
+    .MaterialExpressionGuid=5FD0CCF54C87159BA316CCB450C66B92
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_3)
+    A                      <- MaterialExpressionConstant
+    B                      <- MaterialExpressionReflectionCapturePassSwitch
+    Alpha                  <- MaterialExpressionClamp
+    .B=(Expression="/Script/Engine.MaterialExpressionReflectionCapturePassSwitch'M_SC_SkySphere:MaterialExpressionReflectionCapturePassSwitch_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionConstant'M_SC_SkySphere:MaterialExpressionConstant_0'")
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionClamp'M_SC_SkySphere:MaterialExpressionClamp_0'")
+    .MaterialExpressionEditorX=-4992
+    .MaterialExpressionEditorY=768
+    .MaterialExpressionGuid=8D69658C4A07427A1A21DB9AD5E77BBF
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_8)
+    A                      <- MaterialExpressionConstant
+    B                      <- MaterialExpressionLinearInterpolate
+    Alpha                  <- MaterialExpressionLinearInterpolate
+    .B=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'M_SC_SkySphere:MaterialExpressionLinearInterpolate_10'")
+    .A=(Expression="/Script/Engine.MaterialExpressionConstant'M_SC_SkySphere:MaterialExpressionConstant_5'")
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'M_SC_SkySphere:MaterialExpressionLinearInterpolate_1'")
+    .MaterialExpressionEditorX=-2304
+    .MaterialExpressionEditorY=640
+    .MaterialExpressionGuid=E63EC9A742DF35A2064F1AA6688E2574
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_1)
+    FunctionInputs(0)      <- MaterialExpressionCollectionParameter
+    FunctionInputs(1)      <- MaterialExpressionCollectionParameter
+    FunctionInputs(2)      <- MaterialExpressionCollectionParameter
+    .MaterialFunction="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_Remap.MF_SC_Remap'"
+    .FunctionInputs(0)=(ExpressionInputId=7815F22649EAE745F122D186BF2036B1,Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'M_SC_SkySphere:MaterialExpressionCollectionParameter_0'",InputName="Input"))
+    .FunctionInputs(1)=(ExpressionInputId=4FB7C1914447359787B142A38BD2115C,Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'M_SC_SkySphere:MaterialExpressionCollectionParameter_1'",InputName="Input Low"))
+    .FunctionInputs(2)=(ExpressionInputId=BDC9833D47571DD88AE3B892BA913AC2,Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'M_SC_SkySphere:MaterialExpressionCollectionParameter_2'",InputName="Input High"))
+    .FunctionInputs(3)=(ExpressionInputId=E518DF3C4CEA08859BCB74A0D4227458,Input=(OutputIndex=-1,InputName="Target Low"))
+    .FunctionInputs(4)=(ExpressionInputId=997106CD4B88D3FF91277EAF5ECF8884,Input=(OutputIndex=-1,InputName="Target High"))
+    .FunctionOutputs(0)=(ExpressionOutputId=6ACB0DF34E8DA8673A435BA9BC99AB24,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-1664
+    .MaterialExpressionEditorY=512
+    .MaterialExpressionGuid=0AF64DE64AEF82682BF728BBC2FACFE2
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_12)
+    FunctionInputs(0)      <- MaterialExpressionCollectionParameter
+    FunctionInputs(1)      <- MaterialExpressionCollectionParameter
+    FunctionInputs(2)      <- MaterialExpressionCollectionParameter
+    FunctionInputs(3)      <- MaterialExpressionCollectionParameter
+    FunctionInputs(4)      <- MaterialExpressionCollectionParameter
+    .MaterialFunction="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_Moon.MF_SC_Moon'"
+    .FunctionInputs(0)=(ExpressionInputId=8BE0BF2446B2C62BBFA500BA723C5564,Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'M_SC_SkySphere:MaterialExpressionCollectionParameter_16'",InputName="Moon Direction"))
+    .FunctionInputs(1)=(ExpressionInputId=7C15E41849D45565FFE978AD8F3BC57E,Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'M_SC_SkySphere:MaterialExpressionCollectionParameter_4'",InputName="Color"))
+    .FunctionInputs(2)=(ExpressionInputId=4AD1A8604FF1AD3AEC036894B650FD3F,Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'M_SC_SkySphere:MaterialExpressionCollectionParameter_5'",InputName="Rotation"))
+    .FunctionInputs(3)=(ExpressionInputId=C13976F34E12186D72676790301337A1,Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'M_SC_SkySphere:MaterialExpressionCollectionParameter_6'",InputName="Phase"))
+    .FunctionInputs(4)=(ExpressionInputId=0A1CC7DF4526D1EEF384D7A3A7C48B73,Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'M_SC_SkySphere:MaterialExpressionCollectionParameter_7'",InputName="Angular Diameter"))
+    .FunctionOutputs(0)=(ExpressionOutputId=8D2E40B749346A0873B0308516A28050,Output=(OutputName="Color"))
+    .FunctionOutputs(1)=(ExpressionOutputId=CF2359D84130BB7B2080C2837F07A3FA,Output=(OutputName="Mask"))
+    .MaterialExpressionEditorX=-2688
+    .MaterialExpressionEditorY=-416
+    .MaterialExpressionGuid=F868A2A24527DC7C65400FBBFB89C2A1
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+    .Outputs(0)=(OutputName="Color")
+    .Outputs(1)=(OutputName="Mask")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_14)
+    FunctionInputs(0)      <- MaterialExpressionReroute
+    FunctionInputs(1)      <- MaterialExpressionScalarParameter
+    FunctionInputs(2)      <- MaterialExpressionCollectionParameter
+    .MaterialFunction="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_PowerMultiply.MF_SC_PowerMultiply'"
+    .FunctionInputs(0)=(ExpressionInputId=DD5A57844A6E6F428F0C9DADDC74316B,Input=(Expression="/Script/Engine.MaterialExpressionReroute'M_SC_SkySphere:MaterialExpressionReroute_1'",InputName="Value"))
+    .FunctionInputs(1)=(ExpressionInputId=1FBA3B1B41BA669A8EB6E1A49E865C0A,Input=(Expression="/Script/Engine.MaterialExpressionScalarParameter'M_SC_SkySphere:MaterialExpressionScalarParameter_16'",InputName="Power"))
+    .FunctionInputs(2)=(ExpressionInputId=EF84BC8549C1E12B0F6F33812011F356,Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'M_SC_SkySphere:MaterialExpressionCollectionParameter_10'",InputName="Multiply"))
+    .FunctionOutputs(0)=(ExpressionOutputId=24D05FA648776ABDE5834D9C920103FD,Output=(OutputName="Result"))
+    .FunctionOutputs(1)=(ExpressionOutputId=937F09BE4916AA91444F4A8A3EE1B546,Output=(OutputName="Unclamped"))
+    .MaterialExpressionEditorX=-3072
+    .MaterialExpressionEditorY=784
+    .MaterialExpressionGuid=9E5DF1C843DE0BE9CC735D869EC71666
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+    .Outputs(0)=(OutputName="Result")
+    .Outputs(1)=(OutputName="Unclamped")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_15)
+    FunctionInputs(0)      <- MaterialExpressionCollectionParameter
+    FunctionInputs(1)      <- MaterialExpressionCollectionParameter
+    FunctionInputs(2)      <- MaterialExpressionScalarParameter
+    FunctionInputs(3)      <- MaterialExpressionScalarParameter
+    .MaterialFunction="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_NightAtmosphere.MF_SC_NightAtmosphere'"
+    .FunctionInputs(0)=(ExpressionInputId=BF8F8DED453107BB905039B5BC34FAAF,Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'M_SC_SkySphere:MaterialExpressionCollectionParameter_8'",InputName="Night_ZenithColor"))
+    .FunctionInputs(1)=(ExpressionInputId=1617251E4DE9C12FADCA4FAC16939165,Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'M_SC_SkySphere:MaterialExpressionCollectionParameter_9'",InputName="Night_HorizonColor"))
+    .FunctionInputs(2)=(ExpressionInputId=2328358C4E35C9C5D845DAB8E60FA33F,Input=(Expression="/Script/Engine.MaterialExpressionScalarParameter'M_SC_SkySphere:MaterialExpressionScalarParameter_2'",InputName="Horizon Falloff"))
+    .FunctionInputs(3)=(ExpressionInputId=79D5DDBE42A915FB0168C2A3EAB47A58,Input=(Expression="/Script/Engine.MaterialExpressionScalarParameter'M_SC_SkySphere:MaterialExpressionScalarParameter_4'",InputName="Horizon Brightness"))
+    .FunctionOutputs(0)=(ExpressionOutputId=01ED226343669A3B1F07FB843C2E77CD,Output=(OutputName="Color"))
+    .FunctionOutputs(1)=(ExpressionOutputId=BE336BDD4FFCA7006019A1B860A5CC88,Output=(OutputName="Horizontal Mask"))
+    .MaterialExpressionEditorX=-4352
+    .MaterialExpressionEditorY=160
+    .MaterialExpressionGuid=BC7D132446A75995F7212590FAB25059
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+    .Outputs(0)=(OutputName="Color")
+    .Outputs(1)=(OutputName="Horizontal Mask")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_2)
+    .MaterialFunction="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_BackgroundClouds.MF_SC_BackgroundClouds'"
+    .FunctionInputs(0)=(ExpressionInputId=4FE21743430403AAE5E1B1BEB4690C9B,Input=(InputName="Sun Mask"))
+    .FunctionOutputs(0)=(ExpressionOutputId=B5EC3C4247AAD9991DF1CFAD47C751B3,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-768
+    .MaterialExpressionEditorY=256
+    .MaterialExpressionGuid=13FAB6F943597E13EA85B5A2B48D03EC
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_22)
+    FunctionInputs(0)      <- MaterialExpressionMaterialFunctionCall
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Engine/Functions/Engine_MaterialFunctions01/Coordinates/LongLatToUV.LongLatToUV'"
+    .FunctionInputs(0)=(ExpressionInputId=150D02534FA6F797DFD995BA692D7801,Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_SkySphere:MaterialExpressionMaterialFunctionCall_9'",InputName="Vector"))
+    .FunctionOutputs(0)=(ExpressionOutputId=0EB334074DD42132558C7EA6C023EC50,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-6320
+    .MaterialExpressionEditorY=704
+    .MaterialExpressionGuid=E32DCC2947E5178B60AE32B80DB5B539
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_4)
+    FunctionInputs(0)      <- MaterialExpressionMultiply
+    FunctionInputs(1)      <- MaterialExpressionCollectionParameter
+    FunctionInputs(2)      <- MaterialExpressionConstant
+    FunctionInputs(3)      <- MaterialExpressionTextureObject
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Engine/Functions/Engine_MaterialFunctions03/ComplexMotion/Motion_4WayChaos.Motion_4WayChaos'"
+    .FunctionInputs(0)=(ExpressionInputId=694A8C7B4818A79CBAB5FCAF787F64AB,Input=(Expression="/Script/Engine.MaterialExpressionMultiply'M_SC_SkySphere:MaterialExpressionMultiply_5'",InputName="Coordinates"))
+    .FunctionInputs(1)=(ExpressionInputId=63E2A1CE4696FA319E81D28F5E41E451,Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'M_SC_SkySphere:MaterialExpressionCollectionParameter_18'",InputName="Speed"))
+    .FunctionInputs(2)=(ExpressionInputId=55386161419E95B577AA499D5EA27E57,Input=(Expression="/Script/Engine.MaterialExpressionConstant'M_SC_SkySphere:MaterialExpressionConstant_2'",InputName="Divisor"))
+    .FunctionInputs(3)=(ExpressionInputId=34D7522A455D90B04EE02E800E1C866D,Input=(Expression="/Script/Engine.MaterialExpressionTextureObject'M_SC_SkySphere:MaterialExpressionTextureObject_0'",InputName="Texture"))
+    .FunctionOutputs(0)=(ExpressionOutputId=86A8532A4D53E96F911B8DA840667EB7,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-6720
+    .MaterialExpressionEditorY=1152
+    .MaterialExpressionGuid=BB20248E4E66DFD303873FAB12ECC5D8
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_5)
+    FunctionInputs(0)      <- MaterialExpressionMaterialFunctionCall
+    FunctionInputs(1)      <- MaterialExpressionConstant
+    FunctionInputs(2)      <- MaterialExpressionConstant
+    .MaterialFunction="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_PowerMultiply.MF_SC_PowerMultiply'"
+    .FunctionInputs(0)=(ExpressionInputId=DD5A57844A6E6F428F0C9DADDC74316B,Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_SkySphere:MaterialExpressionMaterialFunctionCall_4'",InputName="Value"))
+    .FunctionInputs(1)=(ExpressionInputId=1FBA3B1B41BA669A8EB6E1A49E865C0A,Input=(Expression="/Script/Engine.MaterialExpressionConstant'M_SC_SkySphere:MaterialExpressionConstant_14'",InputName="Power"))
+    .FunctionInputs(2)=(ExpressionInputId=EF84BC8549C1E12B0F6F33812011F356,Input=(Expression="/Script/Engine.MaterialExpressionConstant'M_SC_SkySphere:MaterialExpressionConstant_13'",InputName="Multiply"))
+    .FunctionOutputs(0)=(ExpressionOutputId=24D05FA648776ABDE5834D9C920103FD,Output=(OutputName="Result"))
+    .FunctionOutputs(1)=(ExpressionOutputId=937F09BE4916AA91444F4A8A3EE1B546,Output=(OutputName="Unclamped"))
+    .MaterialExpressionEditorX=-6400
+    .MaterialExpressionEditorY=1152
+    .MaterialExpressionGuid=9E5DF1C843DE0BE9CC735D869EC71666
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+    .Outputs(0)=(OutputName="Result")
+    .Outputs(1)=(OutputName="Unclamped")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_6)
+    FunctionInputs(0)      <- MaterialExpressionTextureSampleParameter2D
+    FunctionInputs(1)      <- MaterialExpressionConstant
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Engine/Functions/Engine_MaterialFunctions01/ImageAdjustment/CheapContrast.CheapContrast'"
+    .FunctionInputs(0)=(ExpressionInputId=95C9DA0E48D34168E34AD3A607BAA34E,Input=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameter2D'M_SC_SkySphere:MaterialExpressionTextureSampleParameter2D_1'",InputName="In",Mask=1,MaskR=1,MaskG=1,MaskB=1))
+    .FunctionInputs(1)=(ExpressionInputId=3C3E177E485D8FFFC35D1482F0A20020,Input=(Expression="/Script/Engine.MaterialExpressionConstant'M_SC_SkySphere:MaterialExpressionConstant_11'",InputName="Contrast"))
+    .FunctionOutputs(0)=(ExpressionOutputId=5067ED8C4A2EFE82DB33F99EBE37E80E,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-5888
+    .MaterialExpressionEditorY=992
+    .MaterialExpressionGuid=209FEF8442A4F37E3A7B729EFEDF33E5
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_7)
+    FunctionInputs(0)      <- MaterialExpressionMaterialFunctionCall
+    .MaterialFunction="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_SkyAtmosphere.MF_SC_SkyAtmosphere'"
+    .FunctionInputs(0)=(ExpressionInputId=7624646C49E33469D042739C23959476,Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_SkySphere:MaterialExpressionMaterialFunctionCall_12'",OutputIndex=1,InputName="Moon Mask"))
+    .FunctionOutputs(0)=(ExpressionOutputId=C9D82B14419413B0C15D54B69B666AC6,Output=(OutputName="Color"))
+    .FunctionOutputs(1)=(ExpressionOutputId=5A1346184D893F787F418289DC6776FC,Output=(OutputName="No Moon"))
+    .MaterialExpressionEditorX=-3456
+    .MaterialExpressionEditorY=96
+    .MaterialExpressionGuid=3E22F7BC46A96AD3BEED88A5E1FDA1AB
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+    .Outputs(0)=(OutputName="Color")
+    .Outputs(1)=(OutputName="No Moon")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_8)
+    FunctionInputs(0)      <- MaterialExpressionDesaturation
+    FunctionInputs(1)      <- MaterialExpressionScalarParameter
+    FunctionInputs(2)      <- MaterialExpressionCollectionParameter
+    .MaterialFunction="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_PowerMultiply.MF_SC_PowerMultiply'"
+    .FunctionInputs(0)=(ExpressionInputId=DD5A57844A6E6F428F0C9DADDC74316B,Input=(Expression="/Script/Engine.MaterialExpressionDesaturation'M_SC_SkySphere:MaterialExpressionDesaturation_1'",InputName="Value"))
+    .FunctionInputs(1)=(ExpressionInputId=1FBA3B1B41BA669A8EB6E1A49E865C0A,Input=(Expression="/Script/Engine.MaterialExpressionScalarParameter'M_SC_SkySphere:MaterialExpressionScalarParameter_7'",InputName="Power"))
+    .FunctionInputs(2)=(ExpressionInputId=EF84BC8549C1E12B0F6F33812011F356,Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'M_SC_SkySphere:MaterialExpressionCollectionParameter_11'",InputName="Multiply"))
+    .FunctionOutputs(0)=(ExpressionOutputId=24D05FA648776ABDE5834D9C920103FD,Output=(OutputName="Result"))
+    .FunctionOutputs(1)=(ExpressionOutputId=937F09BE4916AA91444F4A8A3EE1B546,Output=(OutputName="Unclamped"))
+    .MaterialExpressionEditorX=-3072
+    .MaterialExpressionEditorY=1152
+    .MaterialExpressionGuid=9E5DF1C843DE0BE9CC735D869EC71666
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+    .Outputs(0)=(OutputName="Result")
+    .Outputs(1)=(OutputName="Unclamped")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_9)
+    FunctionInputs(0)      <- MaterialExpressionSubtract
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Engine/Functions/Engine_MaterialFunctions02/Utility/CustomReflectionVector.CustomReflectionVector'"
+    .FunctionInputs(0)=(ExpressionInputId=41DFA13C4219BE10B5068D96A0FF40CA,Input=(Expression="/Script/Engine.MaterialExpressionSubtract'M_SC_SkySphere:MaterialExpressionSubtract_2'",InputName="Normal"))
+    .FunctionInputs(1)=(ExpressionInputId=28004D7B4A42C1E4E7DD328B7CE81115,Input=(OutputIndex=-1,InputName="CameraVector"))
+    .FunctionOutputs(0)=(ExpressionOutputId=250DB93F499D65BE37807FBAB01777F8,Output=(OutputName="Reflection Vector"))
+    .MaterialExpressionEditorX=-6592
+    .MaterialExpressionEditorY=704
+    .MaterialExpressionGuid=E5B6A297406B5CB251834A99A4813B71
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+    .Outputs(0)=(OutputName="Reflection Vector")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'M_SC_SkySphere:MaterialExpressionCollectionParameter_13'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'M_SC_SkySphere:MaterialExpressionAdd_6'")
+    .MaterialExpressionEditorX=-4672
+    .MaterialExpressionEditorY=704
+    .MaterialExpressionGuid=E6E3673644DD51A4E460CCB65A0E7EBA
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'M_SC_SkySphere:MaterialExpressionComponentMask_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'M_SC_SkySphere:MaterialExpressionMultiply_0'")
+    .MaterialExpressionEditorX=-4480
+    .MaterialExpressionEditorY=704
+    .MaterialExpressionGuid=7CFD58514706A252A9F884958EC39AE6
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_3)
+    A                      <- MaterialExpressionCurveAtlasRowParameter
+    B                      <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'M_SC_SkySphere:MaterialExpressionCollectionParameter_17'")
+    .A=(Expression="/Script/Engine.MaterialExpressionCurveAtlasRowParameter'M_SC_SkySphere:MaterialExpressionCurveAtlasRowParameter_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .MaterialExpressionEditorX=-5760
+    .MaterialExpressionEditorY=1152
+    .MaterialExpressionGuid=090CF46B45FDB56C97CD21AA4CFBF89C
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_4)
+    A                      <- MaterialExpressionPower
+    B                      <- MaterialExpressionDesaturation
+    .B=(Expression="/Script/Engine.MaterialExpressionDesaturation'M_SC_SkySphere:MaterialExpressionDesaturation_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionPower'M_SC_SkySphere:MaterialExpressionPower_0'")
+    .MaterialExpressionEditorX=-5376
+    .MaterialExpressionEditorY=992
+    .MaterialExpressionGuid=90EC488E48EF1BD47890C9B49D38023F
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_5)
+    A                      <- MaterialExpressionTextureCoordinate
+    B                      <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'M_SC_SkySphere:MaterialExpressionConstant_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'M_SC_SkySphere:MaterialExpressionTextureCoordinate_0'")
+    .MaterialExpressionEditorX=-7008
+    .MaterialExpressionEditorY=1152
+    .MaterialExpressionGuid=6E8E163D47E6957D525CC68DE0A6F4DD
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_6)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'M_SC_SkySphere:MaterialExpressionCollectionParameter_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'M_SC_SkySphere:MaterialExpressionAdd_5'")
+    .MaterialExpressionEditorX=-1408
+    .MaterialExpressionEditorY=256
+    .MaterialExpressionGuid=4462BF45460EFDF4CC9884BD7722D4E7
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionNormalize (MaterialExpressionNormalize_2)
+    VectorInput            <- MaterialExpressionComponentMask
+    .VectorInput=(Expression="/Script/Engine.MaterialExpressionComponentMask'M_SC_SkySphere:MaterialExpressionComponentMask_1'")
+    .MaterialExpressionEditorX=-6912
+    .MaterialExpressionEditorY=704
+    .MaterialExpressionGuid=72A9B4BC450AD16863927A9250D7E938
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionNormalize (MaterialExpressionNormalize_3)
+    VectorInput            <- MaterialExpressionComponentMask
+    .VectorInput=(Expression="/Script/Engine.MaterialExpressionComponentMask'M_SC_SkySphere:MaterialExpressionComponentMask_2'")
+    .MaterialExpressionEditorX=-6912
+    .MaterialExpressionEditorY=912
+    .MaterialExpressionGuid=72A9B4BC450AD16863927A9250D7E938
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_0)
+    Input                  <- MaterialExpressionCollectionParameter
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'M_SC_SkySphere:MaterialExpressionCollectionParameter_15'")
+    .MaterialExpressionEditorX=-5520
+    .MaterialExpressionEditorY=1344
+    .MaterialExpressionGuid=096FB83C4D5ACD82F6B62098BD6BAB6D
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_2)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+    .Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_SkySphere:MaterialExpressionMaterialFunctionCall_8'")
+    .MaterialExpressionEditorX=-2816
+    .MaterialExpressionEditorY=1152
+    .MaterialExpressionGuid=352FB72B49BB9832852BD1AF2973E379
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_4)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+    .Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_SkySphere:MaterialExpressionMaterialFunctionCall_14'")
+    .MaterialExpressionEditorX=-2816
+    .MaterialExpressionEditorY=784
+    .MaterialExpressionGuid=E9E77E734BCD576E22CD89A843B8A799
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionPower (MaterialExpressionPower_0)
+    Base                   <- MaterialExpressionMaterialFunctionCall
+    Exponent               <- MaterialExpressionConstant
+    .Base=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_SkySphere:MaterialExpressionMaterialFunctionCall_6'")
+    .Exponent=(Expression="/Script/Engine.MaterialExpressionConstant'M_SC_SkySphere:MaterialExpressionConstant_12'")
+    .MaterialExpressionEditorX=-5504
+    .MaterialExpressionEditorY=992
+    .MaterialExpressionGuid=7A1EFC994E1BFA95CA782A9F82C8D61A
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionReflectionCapturePassSwitch (MaterialExpressionReflectionCapturePassSwitch_0)
+    Default                <- MaterialExpressionMultiply
+    Reflection             <- MaterialExpressionPower
+    .Default=(Expression="/Script/Engine.MaterialExpressionMultiply'M_SC_SkySphere:MaterialExpressionMultiply_4'")
+    .Reflection=(Expression="/Script/Engine.MaterialExpressionPower'M_SC_SkySphere:MaterialExpressionPower_0'")
+    .MaterialExpressionEditorX=-5248
+    .MaterialExpressionEditorY=992
+    .MaterialExpressionGuid=EC819870426C0474CB1585832161FE55
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionReflectionCapturePassSwitch (MaterialExpressionReflectionCapturePassSwitch_1)
+    Default                <- MaterialExpressionAdd
+    Reflection             <- MaterialExpressionLinearInterpolate
+    .Default=(Expression="/Script/Engine.MaterialExpressionAdd'M_SC_SkySphere:MaterialExpressionAdd_5'")
+    .Reflection=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'M_SC_SkySphere:MaterialExpressionLinearInterpolate_2'")
+    .MaterialExpressionEditorX=-1152
+    .MaterialExpressionEditorY=128
+    .MaterialExpressionGuid=EC819870426C0474CB1585832161FE55
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionReroute (MaterialExpressionReroute_0)
+    Input                  <- MaterialExpressionReroute
+    .Input=(Expression="/Script/Engine.MaterialExpressionReroute'M_SC_SkySphere:MaterialExpressionReroute_5'")
+    .MaterialExpressionEditorX=-3440
+    .MaterialExpressionEditorY=192
+    .MaterialExpressionGuid=9575E2804E2C5C48A04125996A535EB8
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionReroute (MaterialExpressionReroute_1)
+    Input                  <- MaterialExpressionReroute
+    .Input=(Expression="/Script/Engine.MaterialExpressionReroute'M_SC_SkySphere:MaterialExpressionReroute_6'")
+    .MaterialExpressionEditorX=-3440
+    .MaterialExpressionEditorY=816
+    .MaterialExpressionGuid=DA6955B244E3FFBBA1887789DB90BBD3
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionReroute (MaterialExpressionReroute_2)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+    .Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_SkySphere:MaterialExpressionMaterialFunctionCall_12'")
+    .MaterialExpressionEditorX=-2400
+    .MaterialExpressionEditorY=-384
+    .MaterialExpressionGuid=1212D7CC433364AC9A4D24B9AB8B6ED3
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionReroute (MaterialExpressionReroute_5)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+    .Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_SkySphere:MaterialExpressionMaterialFunctionCall_15'")
+    .MaterialExpressionEditorX=-3824
+    .MaterialExpressionEditorY=192
+    .MaterialExpressionGuid=713D1BBD46496CE54B992B85277BED01
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionReroute (MaterialExpressionReroute_6)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+    .Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_SkySphere:MaterialExpressionMaterialFunctionCall_15'",OutputIndex=1)
+    .MaterialExpressionEditorX=-3824
+    .MaterialExpressionEditorY=224
+    .MaterialExpressionGuid=A6C5E1074993EBD3D52837BAC0CF8803
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionReroute (MaterialExpressionReroute_7)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+    .Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_SkySphere:MaterialExpressionMaterialFunctionCall_12'",OutputIndex=1)
+    .MaterialExpressionEditorX=-2080
+    .MaterialExpressionEditorY=-352
+    .MaterialExpressionGuid=C86AFE8B43D7A429E074CDA317E9754D
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionReroute (MaterialExpressionReroute_8)
+    Input                  <- MaterialExpressionAdd
+    .Input=(Expression="/Script/Engine.MaterialExpressionAdd'M_SC_SkySphere:MaterialExpressionAdd_2'")
+    .MaterialExpressionEditorX=-2928
+    .MaterialExpressionEditorY=304
+    .MaterialExpressionGuid=5027422C4EB82C39D867F7B50852EDE8
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_0)
+    Input                  <- MaterialExpressionDotProduct
+    .Input=(Expression="/Script/Engine.MaterialExpressionDotProduct'M_SC_SkySphere:MaterialExpressionDotProduct_6'")
+    .MaterialExpressionEditorX=-3072
+    .MaterialExpressionEditorY=1456
+    .MaterialExpressionGuid=04EB697A425BCE53BED2F2B91A2F3922
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_1)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+    .Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_SkySphere:MaterialExpressionMaterialFunctionCall_1'")
+    .MaterialExpressionEditorX=-1408
+    .MaterialExpressionEditorY=512
+    .MaterialExpressionGuid=25EBD92A4402BD63C64815B58963603B
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_16)
+    .ParameterName="StarMap_HorizontalMask_Power"
+    .DefaultValue=1.000000
+    .ExpressionGUID=CA990EDE432596BCE4492F850023CABE
+    .Group="Sky Light"
+    .MaterialExpressionEditorX=-3456
+    .MaterialExpressionEditorY=864
+    .MaterialExpressionGuid=5E3E2B734A2EB07B704654A265190EA5
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_2)
+    .ParameterName="Night_HorizonFalloff"
+    .DefaultValue=16.000000
+    .ExpressionGUID=CCC852DB400766D6D7E26AAF816BE0C0
+    .Group="Night Sky"
+    .MaterialExpressionEditorX=-4736
+    .MaterialExpressionEditorY=320
+    .MaterialExpressionGuid=50712C0A4746C613322D819FEC73ED04
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_4)
+    .ParameterName="Night_HorizonBrightness"
+    .DefaultValue=1.000000
+    .ExpressionGUID=0A1BC35D42735B49B783D08129B551E5
+    .Group="Night Sky"
+    .MaterialExpressionEditorX=-4736
+    .MaterialExpressionEditorY=400
+    .MaterialExpressionGuid=50712C0A4746C613322D819FEC73ED04
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_7)
+    .ParameterName="StarMap_SkyAtmosphereMask_Power"
+    .DefaultValue=0.250000
+    .SliderMax=1.000000
+    .ExpressionGUID=BCE3328C4AC97E173AF30B8D06B5FFF6
+    .Group="Star Map"
+    .MaterialExpressionEditorX=-3456
+    .MaterialExpressionEditorY=1248
+    .MaterialExpressionGuid=325375F94523CF6DB0300CA4A0EA382D
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionSkyAtmosphereViewLuminance (MaterialExpressionSkyAtmosphereViewLuminance_1)
+    .MaterialExpressionEditorX=-3712
+    .MaterialExpressionEditorY=1152
+    .MaterialExpressionGuid=627471AB47A36A9AF669F592C77BDACB
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_2)
+    A                      <- MaterialExpressionNormalize
+    B                      <- MaterialExpressionNormalize
+    .B=(Expression="/Script/Engine.MaterialExpressionNormalize'M_SC_SkySphere:MaterialExpressionNormalize_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionNormalize'M_SC_SkySphere:MaterialExpressionNormalize_2'")
+    .MaterialExpressionEditorX=-6752
+    .MaterialExpressionEditorY=704
+    .MaterialExpressionGuid=E8B5CA0A452D4B498EC199AE0ECDBA1D
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionTextureCoordinate (MaterialExpressionTextureCoordinate_0)
+    .MaterialExpressionEditorX=-7168
+    .MaterialExpressionEditorY=1152
+    .MaterialExpressionGuid=9D1A5A944B7785590CCA29BB130CBB53
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionTextureObject (MaterialExpressionTextureObject_0)
+    .SamplerType=SAMPLERTYPE_Masks
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/SkySphere/T_StarMap_TwinkleNoise_M.T_StarMap_TwinkleNoise_M'"
+    .MaterialExpressionEditorX=-7008
+    .MaterialExpressionEditorY=1456
+    .MaterialExpressionGuid=E146AFF642E30475E0D6C09A5B4EC526
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"
+  MaterialExpressionTextureSampleParameter2D (MaterialExpressionTextureSampleParameter2D_1)
+    Coordinates            <- MaterialExpressionMaterialFunctionCall
+    .ParameterName="StarMap_Texture"
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.Texture2D'/Game/1_Weather/TC_StarMap_4K.TC_StarMap_4K'"
+    .ExpressionGUID=D806EE3A4F0F50344AC0659EDC4F7682
+    .Group="Star Map"
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_SkySphere:MaterialExpressionMaterialFunctionCall_22'")
+    .MaterialExpressionEditorX=-6144
+    .MaterialExpressionEditorY=688
+    .MaterialExpressionGuid=986E5BE74213F3C71DAB93A62DFCCCBE
+    .Material="/Script/Engine.Material'M_SC_SkySphere'"

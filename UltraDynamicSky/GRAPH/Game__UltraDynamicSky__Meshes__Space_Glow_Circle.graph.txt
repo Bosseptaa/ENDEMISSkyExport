@@ -1,0 +1,27 @@
+### /Game/UltraDynamicSky/Meshes/Space_Glow_Circle
+  StaticMesh (Space_Glow_Circle)
+    .SourceModels(0)=(StaticMeshDescriptionBulkData="/Script/Engine.StaticMeshDescriptionBulkData'StaticMeshDescriptionBulkData_0'",BuildSettings=(bRecomputeNormals=False,bComputeWeightedNormals=True,bRemoveDegenerates=False,bBuildReversedIndexBuffer=False,bGenerateLightmapUVs=False),ScreenSize=(Default=1.000000))
+    .HiResSourceModel=(StaticMeshDescriptionBulkData="HiResMeshDescription")
+    .SectionInfoMap=(Map=((0, (bEnableCollision=False,bCastShadow=False,bVisibleInRayTracing=False))))
+    .OriginalSectionInfoMap=(Map=((0, (bEnableCollision=False,bCastShadow=False,bVisibleInRayTracing=False))))
+    .ImportVersion=1
+    .LightmapUVVersion=9
+    .StaticMaterials(0)=(MaterialInterface="/Script/Engine.Material'/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial'",MaterialSlotName="WorldGridMaterial",ImportedMaterialSlotName="Material",UVChannelData=(bInitialized=True,LocalUVDensities[0]=5000323.000000))
+    .LightmapUVDensity=5000323.000000
+    .LightMapResolution=64
+    .AssetImportData="/Script/UnrealEd.FbxStaticMeshImportData'FbxStaticMeshImportData_0'"
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfo'SceneThumbnailInfo_0'"
+    .PositiveBoundsExtension=(X=2500000.000000,Y=0.000000,Z=0.000000)
+    .NegativeBoundsExtension=(X=2500000.000000,Y=0.000000,Z=0.000000)
+    .ExtendedBounds=(BoxExtent=(X=2500000.445692,Y=2500000.000000,Z=2500000.000000),SphereRadius=4330127.276243)
+  FbxStaticMeshImportData (FbxStaticMeshImportData_0)
+    .VertexColorImportOption=Replace
+    .bRemoveDegenerates=False
+    .bBuildReversedIndexBuffer=False
+    .bGenerateLightmapUVs=False
+    .bAutoGenerateCollision=False
+    .ImportMaterialOriginalNameData(0)="Material"
+    .ImportMaterialOriginalNameData(1)="WorldGridMaterial"
+    .ImportMeshLodData(0)=(SectionOriginalMaterialName=("Material"))
+  BodySetup (BodySetup_0)
+    .DefaultInstance=(ObjectType=ECC_WorldStatic,CollisionEnabled=NoCollision,CollisionProfileName="NoCollision",CollisionResponses=(ResponseArray=((Channel="Visibility",Response=ECR_Ignore),(Channel="Camera",Response=ECR_Ignore))))

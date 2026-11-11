@@ -1,0 +1,47 @@
+Begin Object Class=/Script/Engine.Material Name="Splash_Droplet_Particle" ExportPath="/Script/Engine.Material'/Game/UltraDynamicSky/Materials/Weather/Splash_Droplet_Particle.Splash_Droplet_Particle'"
+   Begin Object Class=/Script/Engine.MaterialEditorOnlyData Name="Splash_Droplet_ParticleEditorOnlyData" ExportPath="/Script/Engine.MaterialEditorOnlyData'/Game/UltraDynamicSky/Materials/Weather/Splash_Droplet_Particle.Splash_Droplet_Particle:Splash_Droplet_ParticleEditorOnlyData'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_0" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Weather/Splash_Droplet_Particle.Splash_Droplet_Particle:MaterialExpressionMaterialFunctionCall_0'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/Weather/Splash_Droplet_Particle.Splash_Droplet_Particle:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   Begin Object Name="Splash_Droplet_ParticleEditorOnlyData" ExportPath="/Script/Engine.MaterialEditorOnlyData'/Game/UltraDynamicSky/Materials/Weather/Splash_Droplet_Particle.Splash_Droplet_Particle:Splash_Droplet_ParticleEditorOnlyData'"
+      BaseColor=(Constant=(R=0.501961,G=0.501961,B=0.501961,A=1.000000),Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Splash_Droplet_Particle:MaterialExpressionMaterialFunctionCall_0'")
+      Opacity=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Splash_Droplet_Particle:MaterialExpressionMaterialFunctionCall_0'",OutputIndex=1)
+      ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionMaterialFunctionCall'Splash_Droplet_Particle:MaterialExpressionMaterialFunctionCall_0'"))
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_0" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Weather/Splash_Droplet_Particle.Splash_Droplet_Particle:MaterialExpressionMaterialFunctionCall_0'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Rain_Splash_Droplet_Sprite.Rain_Splash_Droplet_Sprite'"
+      FunctionOutputs(0)=(ExpressionOutputId=D402AEE14EBE33F41561BE910D011C0C,Output=(OutputName="Base Color"))
+      FunctionOutputs(1)=(ExpressionOutputId=4B977C5049460D918EA5BDB5247DEA23,Output=(OutputName="Opacity"))
+      MaterialExpressionEditorX=2144
+      MaterialExpressionEditorY=-100
+      MaterialExpressionGuid=7EFFBB1047B0C1CC6753D2886975566E
+      Material="/Script/Engine.Material'Splash_Droplet_Particle'"
+      Outputs(0)=(OutputName="Base Color")
+      Outputs(1)=(OutputName="Opacity")
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/Weather/Splash_Droplet_Particle.Splash_Droplet_Particle:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   MaterialDomain=MD_DeferredDecal
+   BlendMode=BLEND_Translucent
+   MaterialDecalResponse=MDR_None
+   bEnableResponsiveAA=True
+   TranslucencyLightingMode=TLM_VolumetricPerVertexDirectional
+   bTangentSpaceNormal=False
+   bUsedWithNiagaraSprites=True
+   FloatPrecisionMode=MFPM_Half
+   bUseLightmapDirectionality=False
+   EditorX=2456
+   EditorY=-100
+   bCanMaskedBeAssumedOpaque=True
+   bCastRayTracedShadows=False
+   PixelDepthOffsetMode=PDOM_Legacy
+   StateId=4D6870CD49A95778B567C2A181FE6F0B
+   ReferencedTextureGuids(0)=E055944A46A9B3F590E00F9BB10BAA44
+   EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'Splash_Droplet_ParticleEditorOnlyData'"
+   ReferencedDefaultTextures(0)="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_RainSnow_Sheet.T_RainSnow_Sheet'"
+   ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+   ParameterOverviewExpansion=(("-12Global", True))
+   LightingGuid=107F77A4436B20512930E29D5B02DA6D
+End Object

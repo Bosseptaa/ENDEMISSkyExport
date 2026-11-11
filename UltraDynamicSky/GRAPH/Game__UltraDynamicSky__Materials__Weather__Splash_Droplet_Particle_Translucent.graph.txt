@@ -1,0 +1,68 @@
+### /Game/UltraDynamicSky/Materials/Weather/Splash_Droplet_Particle_Translucent
+  Material (Splash_Droplet_Particle_Translucent)
+    .BlendMode=BLEND_Translucent
+    .MaterialDecalResponse=MDR_None
+    .bEnableResponsiveAA=True
+    .TranslucencyPass=MTP_BeforeDOF
+    .TranslucencyLightingMode=TLM_VolumetricPerVertexDirectional
+    .bTangentSpaceNormal=False
+    .bUsedWithNiagaraSprites=True
+    .FloatPrecisionMode=MFPM_Half
+    .bUseLightmapDirectionality=False
+    .EditorX=2456
+    .EditorY=-100
+    .bCanMaskedBeAssumedOpaque=True
+    .bCastRayTracedShadows=False
+    .bUseTranslucencyVertexFog=False
+    .PixelDepthOffsetMode=PDOM_Legacy
+    .StateId=598160FF49C1812D350C3CB457EC715E
+    .ReferencedTextureGuids(0)=E055944A46A9B3F590E00F9BB10BAA44
+    .EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'Splash_Droplet_Particle_TranslucentEditorOnlyData'"
+    .TextureStreamingDataVersion=1
+    .TextureStreamingData(0)=(SamplingScale=1.000000,UVChannelIndex=0,TextureName="RainSnow_Sheet",TextureReference="/Game/ENDEMIS/Weather/WeatherFX/T_RainSnow_Sheet.T_RainSnow_Sheet")
+    .ReferencedDefaultTextures(0)="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_RainSnow_Sheet.T_RainSnow_Sheet'"
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+    .ParameterOverviewExpansion=(("-12Global", True))
+    .LightingGuid=E602924042D6F509DAD486AD437A2239
+  MaterialEditorOnlyData (Splash_Droplet_Particle_TranslucentEditorOnlyData)
+    BaseColor              <- MaterialExpressionMaterialFunctionCall
+    Opacity                <- MaterialExpressionMaterialFunctionCall
+    ExpressionCollection   <- MaterialExpressionMaterialFunctionCall
+    .BaseColor=(Constant=(R=0.501961,G=0.501961,B=0.501961,A=1.000000),Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Splash_Droplet_Particle_Translucent:MaterialExpressionMaterialFunctionCall_0'")
+    .Metallic=(UseConstant=True)
+    .Specular=(UseConstant=True)
+    .Roughness=(UseConstant=True)
+    .Anisotropy=(UseConstant=True)
+    .Normal=(UseConstant=True)
+    .Tangent=(UseConstant=True)
+    .EmissiveColor=(UseConstant=True)
+    .Opacity=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Splash_Droplet_Particle_Translucent:MaterialExpressionMaterialFunctionCall_0'",OutputIndex=1)
+    .OpacityMask=(UseConstant=True)
+    .WorldPositionOffset=(UseConstant=True)
+    .Displacement=(UseConstant=True)
+    .SubsurfaceColor=(UseConstant=True)
+    .ClearCoat=(UseConstant=True)
+    .ClearCoatRoughness=(UseConstant=True)
+    .AmbientOcclusion=(UseConstant=True)
+    .Refraction=(UseConstant=True)
+    .CustomizedUVs(0)=(UseConstant=True)
+    .CustomizedUVs(1)=(UseConstant=True)
+    .CustomizedUVs(2)=(UseConstant=True)
+    .CustomizedUVs(3)=(UseConstant=True)
+    .CustomizedUVs(4)=(UseConstant=True)
+    .CustomizedUVs(5)=(UseConstant=True)
+    .CustomizedUVs(6)=(UseConstant=True)
+    .CustomizedUVs(7)=(UseConstant=True)
+    .PixelDepthOffset=(UseConstant=True)
+    .SurfaceThickness=(UseConstant=True)
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionMaterialFunctionCall'Splash_Droplet_Particle_Translucent:MaterialExpressionMaterialFunctionCall_0'"))
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_0)
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Rain_Splash_Droplet_Sprite.Rain_Splash_Droplet_Sprite'"
+    .FunctionOutputs(0)=(ExpressionOutputId=D402AEE14EBE33F41561BE910D011C0C,Output=(OutputName="Base Color"))
+    .FunctionOutputs(1)=(ExpressionOutputId=4B977C5049460D918EA5BDB5247DEA23,Output=(OutputName="Opacity"))
+    .MaterialExpressionEditorX=2112
+    .MaterialExpressionEditorY=-100
+    .MaterialExpressionGuid=7EFFBB1047B0C1CC6753D2886975566E
+    .Material="/Script/Engine.Material'Splash_Droplet_Particle_Translucent'"
+    .Outputs(0)=(OutputName="Base Color")
+    .Outputs(1)=(OutputName="Opacity")

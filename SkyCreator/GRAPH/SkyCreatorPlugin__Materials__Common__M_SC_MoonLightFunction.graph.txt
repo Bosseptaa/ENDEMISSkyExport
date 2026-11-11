@@ -1,0 +1,25 @@
+### /SkyCreatorPlugin/Materials/Common/M_SC_MoonLightFunction
+  Material (M_SC_MoonLightFunction)
+    .MaterialDomain=MD_LightFunction
+    .ShadingModel=MSM_Unlit
+    .ShadingModels=(ShadingModelField=1)
+    .bCanMaskedBeAssumedOpaque=True
+    .PixelDepthOffsetMode=PDOM_Legacy
+    .StateId=9CFE6D784F2EB8809C1505A8173C1BAA
+    .EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'M_SC_MoonLightFunctionEditorOnlyData'"
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+    .ParameterOverviewExpansion=(("-12Global", True))
+    .LightingGuid=5873EF2546D0586E02766CA6ED9561EB
+  MaterialEditorOnlyData (M_SC_MoonLightFunctionEditorOnlyData)
+    EmissiveColor          <- MaterialExpressionCollectionParameter
+    ExpressionCollection   <- MaterialExpressionCollectionParameter
+    .EmissiveColor=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'M_SC_MoonLightFunction:MaterialExpressionCollectionParameter_0'")
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionCollectionParameter'M_SC_MoonLightFunction:MaterialExpressionCollectionParameter_0'"))
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_0)
+    .ParameterName="Moon Surface Brightness"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=762F441B4463886DB9BDCCA37F9416C4
+    .MaterialExpressionEditorX=-512
+    .MaterialExpressionEditorY=96
+    .MaterialExpressionGuid=CF15823F4BC933C60BA330B239B1ADBA
+    .Material="/Script/Engine.Material'M_SC_MoonLightFunction'"

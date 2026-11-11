@@ -1,0 +1,306 @@
+### /Game/UltraDynamicSky/Materials/Material_Functions/Light_and_Dark_Cloud_Colors
+  MaterialFunction (Light_and_Dark_Cloud_Colors)
+    DependentFunctionExpressionCandidates(0) <- MaterialExpressionMaterialFunctionCall
+    DependentFunctionExpressionCandidates(1) <- MaterialExpressionMaterialFunctionCall
+    DependentFunctionExpressionCandidates(2) <- MaterialExpressionMaterialFunctionCall
+    DependentFunctionExpressionCandidates(3) <- MaterialExpressionMaterialFunctionCall
+    DependentFunctionExpressionCandidates(4) <- MaterialExpressionMaterialFunctionCall
+    .DependentFunctionExpressionCandidates(0)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_1'"
+    .DependentFunctionExpressionCandidates(1)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_3'"
+    .DependentFunctionExpressionCandidates(2)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_4'"
+    .DependentFunctionExpressionCandidates(3)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_5'"
+    .DependentFunctionExpressionCandidates(4)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_8'"
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'Light_and_Dark_Cloud_ColorsEditorOnlyData'"
+    .StateId=8E99AFB64DDF45B65113318DAAFFF5B1
+    .CombinedOutputTypes=15
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+  MaterialFunctionEditorOnlyData (Light_and_Dark_Cloud_ColorsEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'Light_and_Dark_Cloud_Colors:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionVectorParameter'Light_and_Dark_Cloud_Colors:MaterialExpressionVectorParameter_8'","/Script/Engine.MaterialExpressionStaticSwitchParameter'Light_and_Dark_Cloud_Colors:MaterialExpressionStaticSwitchParameter_2'","/Script/Engine.MaterialExpressionFunctionOutput'Light_and_Dark_Cloud_Colors:MaterialExpressionFunctionOutput_1'","/Script/Engine.MaterialExpressionMultiply'Light_and_Dark_Cloud_Colors:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionConstant3Vector'Light_and_Dark_Cloud_Colors:MaterialExpressionConstant3Vector_1'","/Script/Engine.MaterialExpressionMultiply'Light_and_Dark_Cloud_Colors:MaterialExpressionMultiply_1'","/Script/Engine.MaterialExpressionMultiply'Light_and_Dark_Cloud_Colors:MaterialExpressionMultiply_8'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Light_and_Dark_Cloud_Colors:MaterialExpressionMaterialFunctionCall_1'","/Script/Engine.MaterialExpressionMultiply'Light_and_Dark_Cloud_Colors:MaterialExpressionMultiply_10'","/Script/Engine.MaterialExpressionVertexColor'Light_and_Dark_Cloud_Colors:MaterialExpressionVertexColor_0'","/Script/Engine.MaterialExpressionLinearInterpolate'Light_and_Dark_Cloud_Colors:MaterialExpressionLinearInterpolate_11'","/Script/Engine.MaterialExpressionScalarParameter'Light_and_Dark_Cloud_Colors:MaterialExpressionScalarParameter_22'","/Script/Engine.MaterialExpressionSubtract'Light_and_Dark_Cloud_Colors:MaterialExpressionSubtract_0'","/Script/Engine.MaterialExpressionSaturate'Light_and_Dark_Cloud_Colors:MaterialExpressionSaturate_0'","/Script/Engine.MaterialExpressionLinearInterpolate'Light_and_Dark_Cloud_Colors:MaterialExpressionLinearInterpolate_2'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Light_and_Dark_Cloud_Colors:MaterialExpressionMaterialFunctionCall_3'","/Script/Engine.MaterialExpressionSkyAtmosphereLightIlluminanceOnGround'Light_and_Dark_Cloud_Colors:MaterialExpressionSkyAtmosphereLightIlluminanceOnGround_0'","/Script/Engine.MaterialExpressionSkyAtmosphereLightIlluminanceOnGround'Light_and_Dark_Cloud_Colors:MaterialExpressionSkyAtmosphereLightIlluminanceOnGround_1'","/Script/Engine.MaterialExpressionAdd'Light_and_Dark_Cloud_Colors:MaterialExpressionAdd_0'","/Script/Engine.MaterialExpressionStaticSwitchParameter'Light_and_Dark_Cloud_Colors:MaterialExpressionStaticSwitchParameter_1'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Light_and_Dark_Cloud_Colors:MaterialExpressionMaterialFunctionCall_4'","/Script/Engine.MaterialExpressionStaticBool'Light_and_Dark_Cloud_Colors:MaterialExpressionStaticBool_0'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Light_and_Dark_Cloud_Colors:MaterialExpressionMaterialFunctionCall_5'","/Script/Engine.MaterialExpressionStaticBool'Light_and_Dark_Cloud_Colors:MaterialExpressionStaticBool_1'","/Script/Engine.MaterialExpressionAdd'Light_and_Dark_Cloud_Colors:MaterialExpressionAdd_1'","/Script/Engine.MaterialExpressionVertexInterpolator'Light_and_Dark_Cloud_Colors:MaterialExpressionVertexInterpolator_1'","/Script/Engine.MaterialExpressionAdd'Light_and_Dark_Cloud_Colors:MaterialExpressionAdd_3'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Light_and_Dark_Cloud_Colors:MaterialExpressionMaterialFunctionCall_8'","/Script/Engine.MaterialExpressionVectorParameter'Light_and_Dark_Cloud_Colors:MaterialExpressionVectorParameter_0'","/Script/Engine.MaterialExpressionMultiply'Light_and_Dark_Cloud_Colors:MaterialExpressionMultiply_2'"),EditorComments=("/Script/Engine.MaterialExpressionComment'Light_and_Dark_Cloud_Colors:MaterialExpressionComment_0'","/Script/Engine.MaterialExpressionComment'Light_and_Dark_Cloud_Colors:MaterialExpressionComment_1'"))
+  MaterialExpressionAdd (MaterialExpressionAdd_0)
+    A                      <- MaterialExpressionSkyAtmosphereLightIlluminanceOnGround
+    B                      <- MaterialExpressionSkyAtmosphereLightIlluminanceOnGround
+    .B=(Expression="/Script/Engine.MaterialExpressionSkyAtmosphereLightIlluminanceOnGround'Light_and_Dark_Cloud_Colors:MaterialExpressionSkyAtmosphereLightIlluminanceOnGround_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSkyAtmosphereLightIlluminanceOnGround'Light_and_Dark_Cloud_Colors:MaterialExpressionSkyAtmosphereLightIlluminanceOnGround_0'")
+    .MaterialExpressionEditorX=-408
+    .MaterialExpressionEditorY=696
+    .MaterialExpressionGuid=B4C2300D42921ED3560C4EB2F99C17A1
+    .Function="/Script/Engine.MaterialFunction'Light_and_Dark_Cloud_Colors'"
+  MaterialExpressionAdd (MaterialExpressionAdd_1)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Light_and_Dark_Cloud_Colors:MaterialExpressionMaterialFunctionCall_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Light_and_Dark_Cloud_Colors:MaterialExpressionMaterialFunctionCall_4'")
+    .MaterialExpressionEditorX=-655
+    .MaterialExpressionEditorY=890
+    .MaterialExpressionGuid=B74777824F5B638E76742EA9643AF6D2
+    .Function="/Script/Engine.MaterialFunction'Light_and_Dark_Cloud_Colors'"
+  MaterialExpressionAdd (MaterialExpressionAdd_3)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Light_and_Dark_Cloud_Colors:MaterialExpressionMaterialFunctionCall_8'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Light_and_Dark_Cloud_Colors:MaterialExpressionMultiply_0'")
+    .MaterialExpressionEditorX=1256
+    .MaterialExpressionEditorY=776
+    .MaterialExpressionGuid=924734004EE2F421B9B32A932091FDE9
+    .Function="/Script/Engine.MaterialFunction'Light_and_Dark_Cloud_Colors'"
+  MaterialExpressionComment (MaterialExpressionComment_0)
+    .SizeX=3232
+    .SizeY=704
+    .Text="Light Cloud Color"
+    .CommentColor=(R=0.375526,G=0.030634,B=1.000000,A=1.000000)
+    .MaterialExpressionEditorX=-1160
+    .MaterialExpressionEditorY=584
+    .MaterialExpressionGuid=92A0590846C297048A7A929456A58CA1
+    .Function="/Script/Engine.MaterialFunction'Light_and_Dark_Cloud_Colors'"
+  MaterialExpressionComment (MaterialExpressionComment_1)
+    .SizeX=1716
+    .SizeY=776
+    .Text="Dark Cloud Color"
+    .CommentColor=(R=1.000000,G=0.547333,B=0.011733,A=1.000000)
+    .MaterialExpressionEditorX=16
+    .MaterialExpressionEditorY=1388
+    .MaterialExpressionGuid=1C3AF9F644ABA4839229A695A72605CC
+    .Function="/Script/Engine.MaterialFunction'Light_and_Dark_Cloud_Colors'"
+  MaterialExpressionConstant3Vector (MaterialExpressionConstant3Vector_1)
+    .Constant=(R=0.375000,G=0.427083,B=0.500000,A=0.000000)
+    .MaterialExpressionEditorX=660
+    .MaterialExpressionEditorY=884
+    .MaterialExpressionGuid=7C644D8A4B97582C11071D8C2D2E6F1C
+    .Function="/Script/Engine.MaterialFunction'Light_and_Dark_Cloud_Colors'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionMultiply
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Light_and_Dark_Cloud_Colors:MaterialExpressionMultiply_10'")
+    .OutputName="Dark Cloud Color"
+    .bLastPreviewed=True
+    .Id=4BD6C2B94C2DF0FB8F138E917FD26F9F
+    .MaterialExpressionEditorX=1300
+    .MaterialExpressionEditorY=1556
+    .MaterialExpressionGuid=1449922A4D332189CA98189A925747A7
+    .Function="/Script/Engine.MaterialFunction'Light_and_Dark_Cloud_Colors'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_1)
+    A                      <- MaterialExpressionAdd
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Light_and_Dark_Cloud_Colors:MaterialExpressionAdd_3'")
+    .OutputName="Light Cloud Color"
+    .SortPriority=1
+    .bLastPreviewed=True
+    .Id=FCCB904D4F81DF1A88CE3EBA384B6AF1
+    .MaterialExpressionEditorX=1360
+    .MaterialExpressionEditorY=772
+    .MaterialExpressionGuid=1449922A4D332189CA98189A925747A7
+    .Function="/Script/Engine.MaterialFunction'Light_and_Dark_Cloud_Colors'"
+    .bCollapsed=True
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_11)
+    Alpha                  <- MaterialExpressionVertexColor
+    .A=(OutputIndex=1,Mask=1,MaskR=1)
+    .ConstA=0.500000
+    .ConstB=1.200000
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionVertexColor'Light_and_Dark_Cloud_Colors:MaterialExpressionVertexColor_0'",OutputIndex=1,Mask=1,MaskR=1)
+    .MaterialExpressionEditorX=904
+    .MaterialExpressionEditorY=1732
+    .MaterialExpressionGuid=5CD1AD874B816DF5C51A28899C71F065
+    .Function="/Script/Engine.MaterialFunction'Light_and_Dark_Cloud_Colors'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_2)
+    Alpha                  <- MaterialExpressionSaturate
+    .ConstA=0.650000
+    .ConstB=3.000000
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionSaturate'Light_and_Dark_Cloud_Colors:MaterialExpressionSaturate_0'")
+    .MaterialExpressionEditorX=324
+    .MaterialExpressionEditorY=956
+    .MaterialExpressionGuid=47942B7F4697F3DDBC561DA919199A3C
+    .Function="/Script/Engine.MaterialFunction'Light_and_Dark_Cloud_Colors'"
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_1)
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Base_Sky_Color.Base_Sky_Color'"
+    .FunctionOutputs(0)=(ExpressionOutputId=C439A1B6425C4A3CDB1B63B8581634AA,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=476
+    .MaterialExpressionEditorY=1560
+    .MaterialExpressionGuid=50B5E7C34A4DCD98E7C1AB8C92F7F9CA
+    .Function="/Script/Engine.MaterialFunction'Light_and_Dark_Cloud_Colors'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_3)
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Base_Sky_Color.Base_Sky_Color'"
+    .FunctionOutputs(0)=(ExpressionOutputId=C439A1B6425C4A3CDB1B63B8581634AA,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=348
+    .MaterialExpressionEditorY=1660
+    .MaterialExpressionGuid=7992ACCB44DF7AD2317413B09DBEA2B8
+    .Function="/Script/Engine.MaterialFunction'Light_and_Dark_Cloud_Colors'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_4)
+    FunctionInputs(0)      <- MaterialExpressionStaticBool
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering'"
+    .FunctionInputs(0)=(ExpressionInputId=5C19C82342B0FF569D420C9E9592A992,Input=(Expression="/Script/Engine.MaterialExpressionStaticBool'Light_and_Dark_Cloud_Colors:MaterialExpressionStaticBool_0'",InputName="Sun or Moon"))
+    .FunctionOutputs(0)=(ExpressionOutputId=3905A7B7497C3F4304480E939A19A34E,Output=(OutputName="Light on Ground"))
+    .FunctionOutputs(1)=(ExpressionOutputId=AFC3D3F640CA1B583A32AF91AD2D1806,Output=(OutputName="Atmosphere Color"))
+    .MaterialExpressionEditorX=-948
+    .MaterialExpressionEditorY=848
+    .MaterialExpressionGuid=BE69EE014EC2BD8AFFF30AB957713945
+    .Function="/Script/Engine.MaterialFunction'Light_and_Dark_Cloud_Colors'"
+    .Outputs(0)=(OutputName="Light on Ground")
+    .Outputs(1)=(OutputName="Atmosphere Color")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_5)
+    FunctionInputs(0)      <- MaterialExpressionStaticBool
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/SC_DirectionalScattering.SC_DirectionalScattering'"
+    .FunctionInputs(0)=(ExpressionInputId=5C19C82342B0FF569D420C9E9592A992,Input=(Expression="/Script/Engine.MaterialExpressionStaticBool'Light_and_Dark_Cloud_Colors:MaterialExpressionStaticBool_1'",InputName="Sun or Moon"))
+    .FunctionOutputs(0)=(ExpressionOutputId=3905A7B7497C3F4304480E939A19A34E,Output=(OutputName="Light on Ground"))
+    .FunctionOutputs(1)=(ExpressionOutputId=AFC3D3F640CA1B583A32AF91AD2D1806,Output=(OutputName="Atmosphere Color"))
+    .MaterialExpressionEditorX=-948
+    .MaterialExpressionEditorY=956
+    .MaterialExpressionGuid=F7EE9D03422E098A998FFCA17527F293
+    .Function="/Script/Engine.MaterialFunction'Light_and_Dark_Cloud_Colors'"
+    .Outputs(0)=(OutputName="Light on Ground")
+    .Outputs(1)=(OutputName="Atmosphere Color")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_8)
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Base_Sky_Color.Base_Sky_Color'"
+    .FunctionOutputs(0)=(ExpressionOutputId=C439A1B6425C4A3CDB1B63B8581634AA,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=1060
+    .MaterialExpressionEditorY=916
+    .MaterialExpressionGuid=70207A1144F5063EB0EB189D20E85D74
+    .Function="/Script/Engine.MaterialFunction'Light_and_Dark_Cloud_Colors'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionConstant3Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant3Vector'Light_and_Dark_Cloud_Colors:MaterialExpressionConstant3Vector_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Light_and_Dark_Cloud_Colors:MaterialExpressionMultiply_8'")
+    .MaterialExpressionEditorX=968
+    .MaterialExpressionEditorY=776
+    .MaterialExpressionGuid=E2C17BAA4B5AC95BE6819F8A315771C3
+    .Function="/Script/Engine.MaterialFunction'Light_and_Dark_Cloud_Colors'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionVectorParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Light_and_Dark_Cloud_Colors:MaterialExpressionVectorParameter_8'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Light_and_Dark_Cloud_Colors:MaterialExpressionMaterialFunctionCall_3'")
+    .MaterialExpressionEditorX=520
+    .MaterialExpressionEditorY=1660
+    .MaterialExpressionGuid=C552F41F49D9FB51005E22BFF69548FD
+    .Function="/Script/Engine.MaterialFunction'Light_and_Dark_Cloud_Colors'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_10)
+    A                      <- MaterialExpressionStaticSwitchParameter
+    B                      <- MaterialExpressionLinearInterpolate
+    .B=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Light_and_Dark_Cloud_Colors:MaterialExpressionLinearInterpolate_11'")
+    .A=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Light_and_Dark_Cloud_Colors:MaterialExpressionStaticSwitchParameter_2'")
+    .ConstB=0.800000
+    .MaterialExpressionEditorX=1088
+    .MaterialExpressionEditorY=1584
+    .MaterialExpressionGuid=82E1B3D34D329C52E39577B130961DF2
+    .Function="/Script/Engine.MaterialFunction'Light_and_Dark_Cloud_Colors'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_2)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionVectorParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Light_and_Dark_Cloud_Colors:MaterialExpressionVectorParameter_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Light_and_Dark_Cloud_Colors:MaterialExpressionAdd_1'")
+    .MaterialExpressionEditorX=-512
+    .MaterialExpressionEditorY=916
+    .MaterialExpressionGuid=459E79F5492AA8F893FD9F83D7A71BD3
+    .Function="/Script/Engine.MaterialFunction'Light_and_Dark_Cloud_Colors'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_8)
+    A                      <- MaterialExpressionStaticSwitchParameter
+    B                      <- MaterialExpressionLinearInterpolate
+    .B=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Light_and_Dark_Cloud_Colors:MaterialExpressionLinearInterpolate_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Light_and_Dark_Cloud_Colors:MaterialExpressionStaticSwitchParameter_1'")
+    .ConstB=0.650000
+    .MaterialExpressionEditorX=531
+    .MaterialExpressionEditorY=778
+    .MaterialExpressionGuid=4D30019C4B9D2A9D3046449F30FF5DEB
+    .Function="/Script/Engine.MaterialFunction'Light_and_Dark_Cloud_Colors'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_0)
+    Input                  <- MaterialExpressionSubtract
+    .Input=(Expression="/Script/Engine.MaterialExpressionSubtract'Light_and_Dark_Cloud_Colors:MaterialExpressionSubtract_0'")
+    .MaterialExpressionEditorX=188
+    .MaterialExpressionEditorY=1032
+    .MaterialExpressionGuid=93B8B3564ABB016565E0B6B0CBEC258C
+    .Function="/Script/Engine.MaterialFunction'Light_and_Dark_Cloud_Colors'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_22)
+    .ParameterName="Cloud Density"
+    .DefaultValue=2.033701
+    .ExpressionGUID=4F6F21424AB1B988A80677B707F36D73
+    .MaterialExpressionEditorX=-164
+    .MaterialExpressionEditorY=1020
+    .MaterialExpressionGuid=FCB3712B44731EA420EFA386C10C6574
+    .Function="/Script/Engine.MaterialFunction'Light_and_Dark_Cloud_Colors'"
+  MaterialExpressionSkyAtmosphereLightIlluminanceOnGround (MaterialExpressionSkyAtmosphereLightIlluminanceOnGround_0)
+    .MaterialExpressionEditorX=-776
+    .MaterialExpressionEditorY=680
+    .MaterialExpressionGuid=AE8730F243DB1281311658B1BE0F8831
+    .Function="/Script/Engine.MaterialFunction'Light_and_Dark_Cloud_Colors'"
+  MaterialExpressionSkyAtmosphereLightIlluminanceOnGround (MaterialExpressionSkyAtmosphereLightIlluminanceOnGround_1)
+    .LightIndex=1
+    .MaterialExpressionEditorX=-772
+    .MaterialExpressionEditorY=764
+    .MaterialExpressionGuid=393A120B4EDD26D764BE81843DBF1D87
+    .Function="/Script/Engine.MaterialFunction'Light_and_Dark_Cloud_Colors'"
+  MaterialExpressionStaticBool (MaterialExpressionStaticBool_0)
+    .Value=True
+    .MaterialExpressionEditorX=-1124
+    .MaterialExpressionEditorY=832
+    .MaterialExpressionGuid=0EEC1C5140AB0595A6D75BBC5213B02C
+    .Function="/Script/Engine.MaterialFunction'Light_and_Dark_Cloud_Colors'"
+  MaterialExpressionStaticBool (MaterialExpressionStaticBool_1)
+    .MaterialExpressionEditorX=-1124
+    .MaterialExpressionEditorY=940
+    .MaterialExpressionGuid=3AEF1426474949CC03532FBA3FAE9CFC
+    .Function="/Script/Engine.MaterialFunction'Light_and_Dark_Cloud_Colors'"
+  MaterialExpressionStaticSwitchParameter (MaterialExpressionStaticSwitchParameter_1)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionVertexInterpolator
+    .ParameterName="SkyAtmo"
+    .DefaultValue=True
+    .B=(Expression="/Script/Engine.MaterialExpressionVertexInterpolator'Light_and_Dark_Cloud_Colors:MaterialExpressionVertexInterpolator_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Light_and_Dark_Cloud_Colors:MaterialExpressionAdd_0'")
+    .ExpressionGUID=457550884074D2E4C0D18EA2C744A70B
+    .MaterialExpressionEditorX=-48
+    .MaterialExpressionEditorY=760
+    .MaterialExpressionGuid=921EB80342B9F1FD44F93696E34FE436
+    .Function="/Script/Engine.MaterialFunction'Light_and_Dark_Cloud_Colors'"
+  MaterialExpressionStaticSwitchParameter (MaterialExpressionStaticSwitchParameter_2)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionMultiply
+    .ParameterName="SkyAtmo"
+    .DefaultValue=True
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Light_and_Dark_Cloud_Colors:MaterialExpressionMultiply_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Light_and_Dark_Cloud_Colors:MaterialExpressionMaterialFunctionCall_1'")
+    .ExpressionGUID=457550884074D2E4C0D18EA2C744A70B
+    .MaterialExpressionEditorX=696
+    .MaterialExpressionEditorY=1568
+    .MaterialExpressionGuid=E81E82B84F3AA43F79DA4EBF4D885A1C
+    .Function="/Script/Engine.MaterialFunction'Light_and_Dark_Cloud_Colors'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_0)
+    A                      <- MaterialExpressionScalarParameter
+    .A=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Light_and_Dark_Cloud_Colors:MaterialExpressionScalarParameter_22'")
+    .ConstB=2.000000
+    .MaterialExpressionEditorX=56
+    .MaterialExpressionEditorY=1032
+    .MaterialExpressionGuid=CE71091B451422AAD673DAB209A62C28
+    .Function="/Script/Engine.MaterialFunction'Light_and_Dark_Cloud_Colors'"
+  MaterialExpressionVectorParameter (MaterialExpressionVectorParameter_0)
+    .ParameterName="Cloud Light Color"
+    .DefaultValue=(R=1.000000,G=1.000000,B=1.000000,A=1.000000)
+    .ExpressionGUID=DEAE24D646013D1D9BA90795AF41AC5C
+    .MaterialExpressionEditorX=-764
+    .MaterialExpressionEditorY=1064
+    .MaterialExpressionGuid=05E60A79463FCA3AA7F6B39A5E3A3651
+    .Function="/Script/Engine.MaterialFunction'Light_and_Dark_Cloud_Colors'"
+    .bCollapsed=True
+  MaterialExpressionVectorParameter (MaterialExpressionVectorParameter_8)
+    .ParameterName="Cloud Dark Color"
+    .DefaultValue=(R=1.000000,G=1.000000,B=1.000000,A=1.000000)
+    .ExpressionGUID=CE9716C141DC37187EF1EDB56AFA8B42
+    .MaterialExpressionEditorX=316
+    .MaterialExpressionEditorY=1736
+    .MaterialExpressionGuid=4694D30F422D656C9F59B1BFC769576F
+    .Function="/Script/Engine.MaterialFunction'Light_and_Dark_Cloud_Colors'"
+  MaterialExpressionVertexColor (MaterialExpressionVertexColor_0)
+    .MaterialExpressionEditorX=732
+    .MaterialExpressionEditorY=1756
+    .MaterialExpressionGuid=3F851E7448E50CBA100FDBB9EAFBC84C
+    .Function="/Script/Engine.MaterialFunction'Light_and_Dark_Cloud_Colors'"
+  MaterialExpressionVertexInterpolator (MaterialExpressionVertexInterpolator_1)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Light_and_Dark_Cloud_Colors:MaterialExpressionMultiply_2'")
+    .MaterialExpressionEditorX=-391
+    .MaterialExpressionEditorY=918
+    .MaterialExpressionGuid=9A88C2B0410CA3BF42DBFCBB4CF2D7C2
+    .Function="/Script/Engine.MaterialFunction'Light_and_Dark_Cloud_Colors'"

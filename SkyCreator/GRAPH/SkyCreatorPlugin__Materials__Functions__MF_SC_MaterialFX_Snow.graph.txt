@@ -1,0 +1,259 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_MaterialFX_Snow
+  MaterialFunction (MF_SC_MaterialFX_Snow)
+    DependentFunctionExpressionCandidates(0) <- MaterialExpressionMaterialFunctionCall
+    .LibraryCategoriesText(0)=NSLOCTEXT("", "9A8FD19E4105FA0764EECC8FD39DD9B4", "Sky Creator")
+    .DependentFunctionExpressionCandidates(0)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_1'"
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'MF_SC_MaterialFX_SnowEditorOnlyData'"
+    .StateId=4FF70DAB41BED930663717B04DEDCD73
+    .CombinedInputTypes=4
+    .CombinedOutputTypes=15
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+  MaterialFunctionEditorOnlyData (MF_SC_MaterialFX_SnowEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'MF_SC_MaterialFX_Snow:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionComponentMask'MF_SC_MaterialFX_Snow:MaterialExpressionComponentMask_12'","/Script/Engine.MaterialExpressionDivide'MF_SC_MaterialFX_Snow:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionTextureSample'MF_SC_MaterialFX_Snow:MaterialExpressionTextureSample_0'","/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_MaterialFX_Snow:MaterialExpressionMaterialFunctionCall_1'","/Script/Engine.MaterialExpressionFunctionOutput'MF_SC_MaterialFX_Snow:MaterialExpressionFunctionOutput_1'","/Script/Engine.MaterialExpressionTextureSample'MF_SC_MaterialFX_Snow:MaterialExpressionTextureSample_1'","/Script/Engine.MaterialExpressionTextureSample'MF_SC_MaterialFX_Snow:MaterialExpressionTextureSample_7'","/Script/Engine.MaterialExpressionCustom'MF_SC_MaterialFX_Snow:MaterialExpressionCustom_2'","/Script/Engine.MaterialExpressionLinearInterpolate'MF_SC_MaterialFX_Snow:MaterialExpressionLinearInterpolate_2'","/Script/Engine.MaterialExpressionLinearInterpolate'MF_SC_MaterialFX_Snow:MaterialExpressionLinearInterpolate_8'","/Script/Engine.MaterialExpressionConstant'MF_SC_MaterialFX_Snow:MaterialExpressionConstant_0'","/Script/Engine.MaterialExpressionFunctionOutput'MF_SC_MaterialFX_Snow:MaterialExpressionFunctionOutput_2'","/Script/Engine.MaterialExpressionDivide'MF_SC_MaterialFX_Snow:MaterialExpressionDivide_1'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_MaterialFX_Snow:MaterialExpressionCollectionParameter_9'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_MaterialFX_Snow:MaterialExpressionCollectionParameter_0'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_MaterialFX_Snow:MaterialExpressionCollectionParameter_1'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_MaterialFX_Snow:MaterialExpressionCollectionParameter_2'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_MaterialFX_Snow:MaterialExpressionCollectionParameter_3'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_MaterialFX_Snow:MaterialExpressionCollectionParameter_4'","/Script/Engine.MaterialExpressionComponentMask'MF_SC_MaterialFX_Snow:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionMakeMaterialAttributes'MF_SC_MaterialFX_Snow:MaterialExpressionMakeMaterialAttributes_0'","/Script/Engine.MaterialExpressionConstant'MF_SC_MaterialFX_Snow:MaterialExpressionConstant_1'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_MaterialFX_Snow:MaterialExpressionCollectionParameter_5'","/Script/Engine.MaterialExpressionFunctionInput'MF_SC_MaterialFX_Snow:MaterialExpressionFunctionInput_15'","/Script/Engine.MaterialExpressionWorldPosition'MF_SC_MaterialFX_Snow:MaterialExpressionWorldPosition_0'"))
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_0)
+    .ParameterName="Snow Sparkles Threshold"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=489291C748AB581571A52EB6814FD431
+    .MaterialExpressionEditorX=-768
+    .MaterialExpressionEditorY=896
+    .MaterialExpressionGuid=C97954C74C3DB891C729A6865178653F
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_Snow'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_1)
+    .ParameterName="Snow Sparkles Roughness"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=319373A94B4067DE28F23B9BE19F1834
+    .MaterialExpressionEditorX=-512
+    .MaterialExpressionEditorY=384
+    .MaterialExpressionGuid=C97954C74C3DB891C729A6865178653F
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_Snow'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_2)
+    .ParameterName="Snow Roughness"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=0792EADF40B809412787E49E7E7382C4
+    .MaterialExpressionEditorX=-768
+    .MaterialExpressionEditorY=256
+    .MaterialExpressionGuid=C97954C74C3DB891C729A6865178653F
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_Snow'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_3)
+    .ParameterName="Snow Intensity"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=58E4BFFF4883AD7589B23A96467962B7
+    .MaterialExpressionEditorX=-1280
+    .MaterialExpressionEditorY=896
+    .MaterialExpressionGuid=C97954C74C3DB891C729A6865178653F
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_Snow'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_4)
+    .ParameterName="Snow Scale"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=07783999419A3620AF0597B95878AB6B
+    .MaterialExpressionEditorX=-2176
+    .MaterialExpressionEditorY=208
+    .MaterialExpressionGuid=C97954C74C3DB891C729A6865178653F
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_Snow'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_5)
+    .ParameterName="Snow Roughness"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=0792EADF40B809412787E49E7E7382C4
+    .MaterialExpressionEditorX=-512
+    .MaterialExpressionEditorY=288
+    .MaterialExpressionGuid=C97954C74C3DB891C729A6865178653F
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_Snow'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_9)
+    .ParameterName="Snow Sparkles Scale"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=C5D859F24B78987180AAEFBB3D1C73C5
+    .MaterialExpressionEditorX=-2176
+    .MaterialExpressionEditorY=464
+    .MaterialExpressionGuid=C97954C74C3DB891C729A6865178653F
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_Snow'"
+    .bCollapsed=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionDivide
+    .R=True
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionDivide'MF_SC_MaterialFX_Snow:MaterialExpressionDivide_1'")
+    .MaterialExpressionEditorX=-1536
+    .MaterialExpressionEditorY=384
+    .MaterialExpressionGuid=76114A024ED6587466ADD2B0A2C9E33D
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_Snow'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_12)
+    Input                  <- MaterialExpressionDivide
+    .R=True
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionDivide'MF_SC_MaterialFX_Snow:MaterialExpressionDivide_0'")
+    .MaterialExpressionEditorX=-1536
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=76114A024ED6587466ADD2B0A2C9E33D
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_Snow'"
+  MaterialExpressionConstant (MaterialExpressionConstant_0)
+    .R=1.000000
+    .MaterialExpressionEditorX=-768
+    .MaterialExpressionEditorY=192
+    .MaterialExpressionGuid=8A7AD49B4CC81DEFE28894AC865DFE03
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_Snow'"
+  MaterialExpressionConstant (MaterialExpressionConstant_1)
+    .MaterialExpressionEditorX=-768
+    .MaterialExpressionEditorY=128
+    .MaterialExpressionGuid=5A9B9FCB4F9A31C715BB3D9C00BE0081
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_Snow'"
+  MaterialExpressionCustom (MaterialExpressionCustom_2)
+    Inputs(0)              <- MaterialExpressionTextureSample
+    Inputs(1)              <- MaterialExpressionCollectionParameter
+    .Code="return (A > B);"
+    .OutputType=CMOT_Float1
+    .Description="If More"
+    .Inputs(0)=(InputName="A",Input=(Expression="/Script/Engine.MaterialExpressionTextureSample'MF_SC_MaterialFX_Snow:MaterialExpressionTextureSample_7'",OutputIndex=1,Mask=1,MaskR=1))
+    .Inputs(1)=(InputName="B",Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_MaterialFX_Snow:MaterialExpressionCollectionParameter_0'"))
+    .MaterialExpressionEditorX=-512
+    .MaterialExpressionEditorY=768
+    .MaterialExpressionGuid=FEA70F5C4D52BDC63B1E1BAA1ACD4A3D
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_Snow'"
+    .bCollapsed=True
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_MaterialFX_Snow:MaterialExpressionCollectionParameter_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_MaterialFX_Snow:MaterialExpressionFunctionInput_15'")
+    .MaterialExpressionEditorX=-1920
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=A61B1BF2410BADF69F96D0BFC02C43A2
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_Snow'"
+  MaterialExpressionDivide (MaterialExpressionDivide_1)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_MaterialFX_Snow:MaterialExpressionCollectionParameter_9'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_MaterialFX_Snow:MaterialExpressionFunctionInput_15'")
+    .MaterialExpressionEditorX=-1920
+    .MaterialExpressionEditorY=384
+    .MaterialExpressionGuid=821E73A241581D3D873EE7B8D455A290
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_Snow'"
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_15)
+    Preview                <- MaterialExpressionWorldPosition
+    .Preview=(Expression="/Script/Engine.MaterialExpressionWorldPosition'MF_SC_MaterialFX_Snow:MaterialExpressionWorldPosition_0'")
+    .InputName="Position"
+    .Description="Display Rain Streaks FX. True by default."
+    .Id=BB5F5C5B4821428C2434AE8D2269EF85
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=9
+    .MaterialExpressionEditorX=-2304
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=D3B7826D4671A12905CEBEA861B044DC
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_Snow'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_MaterialFX_Snow:MaterialExpressionMaterialFunctionCall_1'")
+    .OutputName="Normal"
+    .SortPriority=2
+    .bLastPreviewed=True
+    .Id=19DEAC2345E04EA1C94EEC947A98635A
+    .MaterialExpressionEditorY=592
+    .MaterialExpressionGuid=6567D04A40F17A6E51925D9F47713FCA
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_Snow'"
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_1)
+    A                      <- MaterialExpressionTextureSample
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'MF_SC_MaterialFX_Snow:MaterialExpressionTextureSample_1'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .OutputName="Base Color"
+    .bLastPreviewed=True
+    .Id=EE757B0A46BB3708D25C27A3DD6CC782
+    .MaterialExpressionGuid=0FECF4DD4FAD3DAA07E504B65B3507C7
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_Snow'"
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_2)
+    A                      <- MaterialExpressionLinearInterpolate
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'MF_SC_MaterialFX_Snow:MaterialExpressionLinearInterpolate_2'")
+    .OutputName="Roughness"
+    .SortPriority=1
+    .bLastPreviewed=True
+    .Id=9F9A5F5945C1E4F465C5A682A2E2CB3A
+    .MaterialExpressionEditorY=368
+    .MaterialExpressionGuid=6567D04A40F17A6E51925D9F47713FCA
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_Snow'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_2)
+    A                      <- MaterialExpressionCollectionParameter
+    B                      <- MaterialExpressionCollectionParameter
+    Alpha                  <- MaterialExpressionCustom
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_MaterialFX_Snow:MaterialExpressionCollectionParameter_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_MaterialFX_Snow:MaterialExpressionCollectionParameter_5'")
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionCustom'MF_SC_MaterialFX_Snow:MaterialExpressionCustom_2'")
+    .MaterialExpressionEditorX=-256
+    .MaterialExpressionEditorY=368
+    .MaterialExpressionGuid=9100BCEC4928DFF5F7D1368EF962483A
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_Snow'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_8)
+    A                      <- MaterialExpressionConstant
+    B                      <- MaterialExpressionConstant
+    Alpha                  <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'MF_SC_MaterialFX_Snow:MaterialExpressionConstant_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionConstant'MF_SC_MaterialFX_Snow:MaterialExpressionConstant_1'")
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_MaterialFX_Snow:MaterialExpressionCollectionParameter_2'")
+    .MaterialExpressionEditorX=-512
+    .MaterialExpressionEditorY=128
+    .MaterialExpressionGuid=3B9B326E40C405D3EE9211A1A8FEA035
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_Snow'"
+  MaterialExpressionMakeMaterialAttributes (MaterialExpressionMakeMaterialAttributes_0)
+    BaseColor              <- MaterialExpressionFunctionOutput
+    Roughness              <- MaterialExpressionFunctionOutput
+    Normal                 <- MaterialExpressionFunctionOutput
+    .BaseColor=(Expression="/Script/Engine.MaterialExpressionFunctionOutput'MF_SC_MaterialFX_Snow:MaterialExpressionFunctionOutput_1'")
+    .Roughness=(Expression="/Script/Engine.MaterialExpressionFunctionOutput'MF_SC_MaterialFX_Snow:MaterialExpressionFunctionOutput_2'")
+    .Normal=(Expression="/Script/Engine.MaterialExpressionFunctionOutput'MF_SC_MaterialFX_Snow:MaterialExpressionFunctionOutput_0'")
+    .MaterialExpressionEditorX=256
+    .MaterialExpressionEditorY=-32
+    .MaterialExpressionGuid=59CEDF594ABE3620296881BD97280EB2
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_Snow'"
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_1)
+    FunctionInputs(0)      <- MaterialExpressionTextureSample
+    FunctionInputs(2)      <- MaterialExpressionCollectionParameter
+    .MaterialFunction="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_NormalStrength.MF_SC_NormalStrength'"
+    .FunctionInputs(0)=(ExpressionInputId=8758E70E42E0E81160E74EAAB91268E8,Input=(Expression="/Script/Engine.MaterialExpressionTextureSample'MF_SC_MaterialFX_Snow:MaterialExpressionTextureSample_0'",InputName="Normal",Mask=1,MaskR=1,MaskG=1,MaskB=1))
+    .FunctionInputs(1)=(ExpressionInputId=64BE6392436D73FECF7DE494DE211B4E,Input=(OutputIndex=-1,InputName="Normal + Alpha"))
+    .FunctionInputs(2)=(ExpressionInputId=568EFA084E7B5AD222F231A6F374737D,Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_MaterialFX_Snow:MaterialExpressionCollectionParameter_3'",InputName="Strength"))
+    .FunctionOutputs(0)=(ExpressionOutputId=BEBAA4144C9BEEC689CB93B491900FF5,Output=(OutputName="RGB"))
+    .FunctionOutputs(1)=(ExpressionOutputId=FFC0492A42384EC956B7588CBBD65332,Output=(OutputName="RGBA"))
+    .MaterialExpressionEditorX=-896
+    .MaterialExpressionEditorY=624
+    .MaterialExpressionGuid=2CBC229A4E2CA8B9938416B555E50038
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_Snow'"
+    .Outputs(0)=(OutputName="RGB")
+    .Outputs(1)=(OutputName="RGBA")
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_0)
+    Coordinates            <- MaterialExpressionComponentMask
+    .SamplerType=SAMPLERTYPE_Normal
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/MaterialFX/T_Snow_N.T_Snow_N'"
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_MaterialFX_Snow:MaterialExpressionComponentMask_12'")
+    .SamplerSource=SSM_Wrap_WorldGroupSettings
+    .MaterialExpressionEditorX=-1280
+    .MaterialExpressionEditorY=624
+    .MaterialExpressionGuid=91ACA2E741C5834013B75D98B8D93E45
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_Snow'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_1)
+    Coordinates            <- MaterialExpressionComponentMask
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/MaterialFX/T_Snow_D.T_Snow_D'"
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_MaterialFX_Snow:MaterialExpressionComponentMask_12'")
+    .SamplerSource=SSM_Wrap_WorldGroupSettings
+    .MaterialExpressionEditorX=-1280
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=94A659584846A50454E685B6CE4869B9
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_Snow'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_7)
+    Coordinates            <- MaterialExpressionComponentMask
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/MaterialFX/T_SnowSparkles_M.T_SnowSparkles_M'"
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_MaterialFX_Snow:MaterialExpressionComponentMask_0'")
+    .SamplerSource=SSM_Wrap_WorldGroupSettings
+    .MaterialExpressionEditorX=-1280
+    .MaterialExpressionEditorY=384
+    .MaterialExpressionGuid=E2E9EBD34C84D9A4ABB2BA9D77F7F80D
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_Snow'"
+  MaterialExpressionWorldPosition (MaterialExpressionWorldPosition_0)
+    .MaterialExpressionEditorX=-2560
+    .MaterialExpressionEditorY=16
+    .MaterialExpressionGuid=3139CD9C44A8E7BB405B2A991BE5C508
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_Snow'"

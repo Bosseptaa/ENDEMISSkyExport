@@ -1,0 +1,150 @@
+### /Game/UltraDynamicSky/Materials/Weather/Brush_Visualize_Wireframe
+  Material (Brush_Visualize_Wireframe)
+    .BlendMode=BLEND_Translucent
+    .MaterialDecalResponse=MDR_None
+    .ShadingModel=MSM_Unlit
+    .ShadingModels=(ShadingModelField=1)
+    .TwoSided=True
+    .TranslucencyPass=MTP_AfterMotionBlur
+    .Wireframe=True
+    .bCanMaskedBeAssumedOpaque=True
+    .bCastRayTracedShadows=False
+    .PixelDepthOffsetMode=PDOM_Legacy
+    .StateId=39C7B6594218D8490D4D81A25D425AAB
+    .EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'Brush_Visualize_WireframeEditorOnlyData'"
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+    .LightingGuid=F799BEC74F6772A076A89E955BA31859
+  MaterialEditorOnlyData (Brush_Visualize_WireframeEditorOnlyData)
+    EmissiveColor          <- MaterialExpressionMultiply
+    Opacity                <- MaterialExpressionMultiply
+    ExpressionCollection   <- MaterialExpressionMultiply
+    .BaseColor=(UseConstant=True,Constant=(R=0.501961,G=0.501961,B=0.501961,A=1.000000))
+    .Metallic=(UseConstant=True)
+    .Specular=(UseConstant=True)
+    .Roughness=(UseConstant=True)
+    .Anisotropy=(UseConstant=True)
+    .Normal=(UseConstant=True)
+    .Tangent=(UseConstant=True)
+    .EmissiveColor=(Expression="/Script/Engine.MaterialExpressionMultiply'Brush_Visualize_Wireframe:MaterialExpressionMultiply_0'")
+    .Opacity=(Expression="/Script/Engine.MaterialExpressionMultiply'Brush_Visualize_Wireframe:MaterialExpressionMultiply_1'")
+    .OpacityMask=(UseConstant=True)
+    .WorldPositionOffset=(UseConstant=True)
+    .Displacement=(UseConstant=True)
+    .SubsurfaceColor=(UseConstant=True)
+    .ClearCoat=(UseConstant=True)
+    .ClearCoatRoughness=(UseConstant=True)
+    .AmbientOcclusion=(UseConstant=True)
+    .Refraction=(UseConstant=True)
+    .CustomizedUVs(0)=(UseConstant=True)
+    .CustomizedUVs(1)=(UseConstant=True)
+    .CustomizedUVs(2)=(UseConstant=True)
+    .CustomizedUVs(3)=(UseConstant=True)
+    .CustomizedUVs(4)=(UseConstant=True)
+    .CustomizedUVs(5)=(UseConstant=True)
+    .CustomizedUVs(6)=(UseConstant=True)
+    .CustomizedUVs(7)=(UseConstant=True)
+    .PixelDepthOffset=(UseConstant=True)
+    .SurfaceThickness=(UseConstant=True)
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionMultiply'Brush_Visualize_Wireframe:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionMultiply'Brush_Visualize_Wireframe:MaterialExpressionMultiply_1'","/Script/Engine.MaterialExpressionVectorParameter'Brush_Visualize_Wireframe:MaterialExpressionVectorParameter_0'","/Script/Engine.MaterialExpressionPixelDepth'Brush_Visualize_Wireframe:MaterialExpressionPixelDepth_0'","/Script/Engine.MaterialExpressionSceneDepth'Brush_Visualize_Wireframe:MaterialExpressionSceneDepth_0'","/Script/Engine.MaterialExpressionSubtract'Brush_Visualize_Wireframe:MaterialExpressionSubtract_0'","/Script/Engine.MaterialExpressionDivide'Brush_Visualize_Wireframe:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionSaturate'Brush_Visualize_Wireframe:MaterialExpressionSaturate_0'","/Script/Engine.MaterialExpressionSubtract'Brush_Visualize_Wireframe:MaterialExpressionSubtract_1'","/Script/Engine.MaterialExpressionCollectionParameter'Brush_Visualize_Wireframe:MaterialExpressionCollectionParameter_0'","/Script/Engine.MaterialExpressionComponentMask'Brush_Visualize_Wireframe:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionLength'Brush_Visualize_Wireframe:MaterialExpressionLength_0'","/Script/Engine.MaterialExpressionMultiply'Brush_Visualize_Wireframe:MaterialExpressionMultiply_2'"))
+    .ParameterGroupData(0)=(GroupName="None")
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_0)
+    .ParameterName="Ambient Fog Color"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+    .ParameterId=8604E1994A5CD232F1116D94FF84BD2B
+    .MaterialExpressionEditorX=-1344
+    .MaterialExpressionEditorY=128
+    .MaterialExpressionGuid=21B1562D4FE8F374D5FF2194BE81F0B3
+    .Material="/Script/Engine.Material'Brush_Visualize_Wireframe'"
+    .bCollapsed=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionCollectionParameter
+    .R=True
+    .G=True
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Brush_Visualize_Wireframe:MaterialExpressionCollectionParameter_0'")
+    .MaterialExpressionEditorX=-1076
+    .MaterialExpressionEditorY=156
+    .MaterialExpressionGuid=05D390444AF56140A548A782065EDAB4
+    .Material="/Script/Engine.Material'Brush_Visualize_Wireframe'"
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionSubtract
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'Brush_Visualize_Wireframe:MaterialExpressionSubtract_0'")
+    .ConstB=50.000000
+    .MaterialExpressionEditorX=-596
+    .MaterialExpressionEditorY=328
+    .MaterialExpressionGuid=E045EB7743F0484309AAAD9080430C00
+    .Material="/Script/Engine.Material'Brush_Visualize_Wireframe'"
+  MaterialExpressionLength (MaterialExpressionLength_0)
+    Input                  <- MaterialExpressionComponentMask
+    .Input=(Expression="/Script/Engine.MaterialExpressionComponentMask'Brush_Visualize_Wireframe:MaterialExpressionComponentMask_0'")
+    .MaterialExpressionEditorX=-924
+    .MaterialExpressionEditorY=156
+    .MaterialExpressionGuid=2C4463FB4A10480848FA059FC4C77A9B
+    .Material="/Script/Engine.Material'Brush_Visualize_Wireframe'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionVectorParameter
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Brush_Visualize_Wireframe:MaterialExpressionMultiply_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Brush_Visualize_Wireframe:MaterialExpressionVectorParameter_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .MaterialExpressionEditorX=-596
+    .MaterialExpressionEditorY=77
+    .MaterialExpressionGuid=17EAE8C14B3D53A3B5175B93514BD78A
+    .Material="/Script/Engine.Material'Brush_Visualize_Wireframe'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionSaturate
+    .A=(Expression="/Script/Engine.MaterialExpressionSaturate'Brush_Visualize_Wireframe:MaterialExpressionSaturate_0'")
+    .ConstB=0.100000
+    .MaterialExpressionEditorX=-168
+    .MaterialExpressionEditorY=288
+    .MaterialExpressionGuid=03EA8AE24E26E533520363AD0BA0D514
+    .Material="/Script/Engine.Material'Brush_Visualize_Wireframe'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_2)
+    A                      <- MaterialExpressionLength
+    .A=(Expression="/Script/Engine.MaterialExpressionLength'Brush_Visualize_Wireframe:MaterialExpressionLength_0'")
+    .ConstB=4.000000
+    .MaterialExpressionEditorX=-800
+    .MaterialExpressionEditorY=156
+    .MaterialExpressionGuid=594086F94B770540633A07A7B8829175
+    .Material="/Script/Engine.Material'Brush_Visualize_Wireframe'"
+  MaterialExpressionPixelDepth (MaterialExpressionPixelDepth_0)
+    .MaterialExpressionEditorX=-880
+    .MaterialExpressionEditorY=316
+    .MaterialExpressionGuid=DDBC88C5464CCFC8058EE5821FAEE7A1
+    .Material="/Script/Engine.Material'Brush_Visualize_Wireframe'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_0)
+    Input                  <- MaterialExpressionSubtract
+    .Input=(Expression="/Script/Engine.MaterialExpressionSubtract'Brush_Visualize_Wireframe:MaterialExpressionSubtract_1'")
+    .MaterialExpressionEditorX=-304
+    .MaterialExpressionEditorY=292
+    .MaterialExpressionGuid=F538843746332EEB0468D483DA4E091C
+    .Material="/Script/Engine.Material'Brush_Visualize_Wireframe'"
+  MaterialExpressionSceneDepth (MaterialExpressionSceneDepth_0)
+    .MaterialExpressionEditorX=-960
+    .MaterialExpressionEditorY=404
+    .MaterialExpressionGuid=900E295442EA62299F7D0D89D7DC4AA4
+    .Material="/Script/Engine.Material'Brush_Visualize_Wireframe'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_0)
+    A                      <- MaterialExpressionPixelDepth
+    B                      <- MaterialExpressionSceneDepth
+    .B=(Expression="/Script/Engine.MaterialExpressionSceneDepth'Brush_Visualize_Wireframe:MaterialExpressionSceneDepth_0'",Mask=1,MaskR=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionPixelDepth'Brush_Visualize_Wireframe:MaterialExpressionPixelDepth_0'",Mask=1,MaskR=1)
+    .MaterialExpressionEditorX=-728
+    .MaterialExpressionEditorY=328
+    .MaterialExpressionGuid=55C18BED46B98B39F5A9EF91ACF92750
+    .Material="/Script/Engine.Material'Brush_Visualize_Wireframe'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_1)
+    B                      <- MaterialExpressionDivide
+    .B=(Expression="/Script/Engine.MaterialExpressionDivide'Brush_Visualize_Wireframe:MaterialExpressionDivide_0'")
+    .MaterialExpressionEditorX=-460
+    .MaterialExpressionEditorY=292
+    .MaterialExpressionGuid=62CAEF024E6F61ABBA141B90365C2F65
+    .Material="/Script/Engine.Material'Brush_Visualize_Wireframe'"
+  MaterialExpressionVectorParameter (MaterialExpressionVectorParameter_0)
+    .ParameterName="Color"
+    .DefaultValue=(R=1.000000,G=0.000000,B=0.000000,A=0.000000)
+    .bUseCustomPrimitiveData=True
+    .ExpressionGUID=B8FDC2E44A19FC72F36F428831E92CDB
+    .MaterialExpressionEditorX=-912
+    .MaterialExpressionEditorY=-120
+    .MaterialExpressionGuid=AEBA358E4F6851CE89388CA2058A3D1F
+    .Material="/Script/Engine.Material'Brush_Visualize_Wireframe'"

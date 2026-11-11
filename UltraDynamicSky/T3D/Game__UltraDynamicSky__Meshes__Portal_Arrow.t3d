@@ -1,0 +1,59 @@
+Begin Object Class=/Script/Engine.StaticMesh Name="Portal_Arrow" ExportPath="/Script/Engine.StaticMesh'/Game/UltraDynamicSky/Meshes/Portal_Arrow.Portal_Arrow'"
+   Begin Object Class=/Script/Engine.StaticMeshDescriptionBulkData Name="StaticMeshDescriptionBulkData_3" ExportPath="/Script/Engine.StaticMeshDescriptionBulkData'/Game/UltraDynamicSky/Meshes/Portal_Arrow.Portal_Arrow:StaticMeshDescriptionBulkData_3'"
+      Begin Object Class=/Script/StaticMeshDescription.StaticMeshDescription Name="MeshDescription" Archetype="/Script/StaticMeshDescription.StaticMeshDescription'/Script/Engine.Default__StaticMeshDescriptionBulkData:MeshDescription'" ExportPath="/Script/StaticMeshDescription.StaticMeshDescription'/Game/UltraDynamicSky/Meshes/Portal_Arrow.Portal_Arrow:StaticMeshDescriptionBulkData_3.MeshDescription'"
+      End Object
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfo Name="SceneThumbnailInfo_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfo'/Game/UltraDynamicSky/Meshes/Portal_Arrow.Portal_Arrow:SceneThumbnailInfo_0'"
+   End Object
+   Begin Object Class=/Script/NavigationSystem.NavCollision Name="NavCollision_6" ExportPath="/Script/NavigationSystem.NavCollision'/Game/UltraDynamicSky/Meshes/Portal_Arrow.Portal_Arrow:NavCollision_6'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.FbxStaticMeshImportData Name="FbxStaticMeshImportData_0" ExportPath="/Script/UnrealEd.FbxStaticMeshImportData'/Game/UltraDynamicSky/Meshes/Portal_Arrow.Portal_Arrow:FbxStaticMeshImportData_0'"
+   End Object
+   Begin Object Class=/Script/Engine.BodySetup Name="BodySetup_0" ExportPath="/Script/Engine.BodySetup'/Game/UltraDynamicSky/Meshes/Portal_Arrow.Portal_Arrow:BodySetup_0'"
+   End Object
+   Begin Object Class=/Script/Engine.AssetImportData Name="AssetImportData" ExportPath="/Script/Engine.AssetImportData'/Game/UltraDynamicSky/Meshes/Portal_Arrow.Portal_Arrow:AssetImportData'"
+   End Object
+   Begin Object Class=/Script/Engine.StaticMeshDescriptionBulkData Name="HiResMeshDescription" Archetype="/Script/Engine.StaticMeshDescriptionBulkData'/Script/Engine.Default__StaticMesh:HiResMeshDescription'" ExportPath="/Script/Engine.StaticMeshDescriptionBulkData'/Game/UltraDynamicSky/Meshes/Portal_Arrow.Portal_Arrow:HiResMeshDescription'"
+      Begin Object Class=/Script/StaticMeshDescription.StaticMeshDescription Name="MeshDescription" Archetype="/Script/StaticMeshDescription.StaticMeshDescription'/Script/Engine.Default__StaticMesh:HiResMeshDescription.MeshDescription'" ExportPath="/Script/StaticMeshDescription.StaticMeshDescription'/Game/UltraDynamicSky/Meshes/Portal_Arrow.Portal_Arrow:HiResMeshDescription.MeshDescription'"
+      End Object
+   End Object
+   Begin Object Name="StaticMeshDescriptionBulkData_3" ExportPath="/Script/Engine.StaticMeshDescriptionBulkData'/Game/UltraDynamicSky/Meshes/Portal_Arrow.Portal_Arrow:StaticMeshDescriptionBulkData_3'"
+      Begin Object Name="MeshDescription" ExportPath="/Script/StaticMeshDescription.StaticMeshDescription'/Game/UltraDynamicSky/Meshes/Portal_Arrow.Portal_Arrow:StaticMeshDescriptionBulkData_3.MeshDescription'"
+      End Object
+   End Object
+   Begin Object Name="SceneThumbnailInfo_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfo'/Game/UltraDynamicSky/Meshes/Portal_Arrow.Portal_Arrow:SceneThumbnailInfo_0'"
+   End Object
+   Begin Object Name="NavCollision_6" ExportPath="/Script/NavigationSystem.NavCollision'/Game/UltraDynamicSky/Meshes/Portal_Arrow.Portal_Arrow:NavCollision_6'"
+   End Object
+   Begin Object Name="FbxStaticMeshImportData_0" ExportPath="/Script/UnrealEd.FbxStaticMeshImportData'/Game/UltraDynamicSky/Meshes/Portal_Arrow.Portal_Arrow:FbxStaticMeshImportData_0'"
+      bGenerateLightmapUVs=False
+      bAutoGenerateCollision=False
+      bCombineMeshes=True
+      ImportMaterialOriginalNameData(0)="WorldGridMaterial"
+      ImportMeshLodData(0)=(SectionOriginalMaterialName=("WorldGridMaterial"))
+   End Object
+   Begin Object Name="BodySetup_0" ExportPath="/Script/Engine.BodySetup'/Game/UltraDynamicSky/Meshes/Portal_Arrow.Portal_Arrow:BodySetup_0'"
+      AggGeom=(SphereElems=((Radius=3000.000000,bIsGenerated=True)))
+      DefaultInstance=(CollisionEnabled=QueryOnly,CollisionResponses=(ResponseArray=((Channel="Visibility",Response=ECR_Ignore),(Channel="Camera",Response=ECR_Ignore),(Channel="WorldStatic",Response=ECR_Ignore),(Channel="WorldDynamic",Response=ECR_Ignore),(Channel="Pawn",Response=ECR_Ignore),(Channel="PhysicsBody",Response=ECR_Ignore),(Channel="Vehicle",Response=ECR_Ignore),(Channel="Destructible",Response=ECR_Ignore))))
+   End Object
+   Begin Object Name="AssetImportData" ExportPath="/Script/Engine.AssetImportData'/Game/UltraDynamicSky/Meshes/Portal_Arrow.Portal_Arrow:AssetImportData'"
+   End Object
+   Begin Object Name="HiResMeshDescription" ExportPath="/Script/Engine.StaticMeshDescriptionBulkData'/Game/UltraDynamicSky/Meshes/Portal_Arrow.Portal_Arrow:HiResMeshDescription'"
+      Begin Object Name="MeshDescription" ExportPath="/Script/StaticMeshDescription.StaticMeshDescription'/Game/UltraDynamicSky/Meshes/Portal_Arrow.Portal_Arrow:HiResMeshDescription.MeshDescription'"
+      End Object
+   End Object
+   SourceModels(0)=(StaticMeshDescriptionBulkData="/Script/Engine.StaticMeshDescriptionBulkData'StaticMeshDescriptionBulkData_3'",BuildSettings=(bRecomputeNormals=False,bComputeWeightedNormals=True,bGenerateLightmapUVs=False))
+   HiResSourceModel=(StaticMeshDescriptionBulkData="HiResMeshDescription")
+   SectionInfoMap=(Map=((0, ())))
+   OriginalSectionInfoMap=(Map=((0, ())))
+   ImportVersion=1
+   LightmapUVVersion=9
+   StaticMaterials(0)=(MaterialInterface="/Script/Engine.Material'/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial'",MaterialSlotName="WorldGridMaterial",ImportedMaterialSlotName="WorldGridMaterial",UVChannelData=(bInitialized=True))
+   LightMapResolution=64
+   bAllowCPUAccess=True
+   AssetImportData="/Script/UnrealEd.FbxStaticMeshImportData'FbxStaticMeshImportData_0'"
+   ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfo'SceneThumbnailInfo_0'"
+   EditorCameraPosition=(bIsSet=True,CamOrbitPoint=(X=3349.683973,Y=3577.833042,Z=2080.939070),CamOrbitZoom=(X=155.519316,Y=191.366461,Z=72.809725),CamOrbitRotation=(Pitch=-16.450000,Yaw=-129.100000,Roll=-0.000001))
+   bCustomizedCollision=True
+   ExtendedBounds=(Origin=(X=23.929935,Y=-0.000004,Z=-0.000002),BoxExtent=(X=23.929936,Y=15.074527,Z=15.074527),SphereRadius=25.408641)
+End Object

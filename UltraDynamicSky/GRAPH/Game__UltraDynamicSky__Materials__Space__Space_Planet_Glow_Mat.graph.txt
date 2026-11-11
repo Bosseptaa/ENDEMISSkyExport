@@ -1,0 +1,238 @@
+### /Game/UltraDynamicSky/Materials/Space/Space_Planet_Glow_Mat
+  Material (Space_Planet_Glow_Mat)
+    .MaterialDomain=MD_DeferredDecal
+    .BlendMode=BLEND_Translucent
+    .ShadingModel=MSM_Unlit
+    .ShadingModels=(ShadingModelField=1)
+    .bTangentSpaceNormal=False
+    .EditorX=784
+    .EditorY=-144
+    .bCanMaskedBeAssumedOpaque=True
+    .bCastRayTracedShadows=False
+    .PixelDepthOffsetMode=PDOM_Legacy
+    .StateId=CDAD9F6F41CFA9BB7639949C2CE8F413
+    .ReferencedTextureGuids(0)=307757E1458E615C7D97A39E32219707
+    .EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'Space_Planet_Glow_MatEditorOnlyData'"
+    .ReferencedDefaultTextures(0)="/Script/Engine.Texture2D'/Engine/EngineMaterials/Good64x64TilingNoiseHighFreq.Good64x64TilingNoiseHighFreq'"
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+    .LightingGuid=04DF8FC04EC72A3F0E9295AF43940C16
+  MaterialExpressionWorldPosition (MaterialExpressionWorldPosition_0)
+    .WorldPositionShaderOffset=WPT_CameraRelative
+    .MaterialExpressionEditorX=-1766
+    .MaterialExpressionEditorY=250
+    .MaterialExpressionGuid=7AD1DEF24BDEBA6141FA199E1FDAED0C
+    .Material="/Script/Engine.Material'Space_Planet_Glow_Mat'"
+  MaterialExpressionVertexInterpolator (MaterialExpressionVertexInterpolator_1)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Space_Planet_Glow_Mat:MaterialExpressionMultiply_1'")
+    .MaterialExpressionEditorX=328
+    .MaterialExpressionEditorY=-148
+    .MaterialExpressionGuid=B3A2BAA24D8826F05995929E0A025589
+    .Material="/Script/Engine.Material'Space_Planet_Glow_Mat'"
+  MaterialExpressionVertexColor (MaterialExpressionVertexColor_0)
+    .MaterialExpressionEditorX=24
+    .MaterialExpressionEditorY=232
+    .MaterialExpressionGuid=6D0942194D25090F869213AA94E0505F
+    .Material="/Script/Engine.Material'Space_Planet_Glow_Mat'"
+  MaterialExpressionVectorParameter (MaterialExpressionVectorParameter_2)
+    .ParameterName="Darkside Tint"
+    .DefaultValue=(R=0.017728,G=0.023713,B=0.041667,A=1.000000)
+    .ExpressionGUID=A8295CD74EC6BB1EC0B013A3D95389C3
+    .MaterialExpressionEditorX=-1216
+    .MaterialExpressionEditorY=-156
+    .MaterialExpressionGuid=9D8081B3405D3ACCEADCAFBFF9652654
+    .Material="/Script/Engine.Material'Space_Planet_Glow_Mat'"
+  MaterialExpressionVectorParameter (MaterialExpressionVectorParameter_1)
+    .ParameterName="Lightside Tint"
+    .DefaultValue=(R=1.000000,G=1.000000,B=1.000000,A=1.000000)
+    .ExpressionGUID=37E46A9040B1905F5351E1B0AA64D6FE
+    .MaterialExpressionEditorX=-1170
+    .MaterialExpressionEditorY=-370
+    .MaterialExpressionGuid=CCF278874426F9029E6F6E86C24DCA60
+    .Material="/Script/Engine.Material'Space_Planet_Glow_Mat'"
+  MaterialExpressionVectorParameter (MaterialExpressionVectorParameter_0)
+    .ParameterName="Color"
+    .DefaultValue=(R=0.364242,G=0.629226,B=1.000000,A=0.000000)
+    .ExpressionGUID=BEE77C30453A04CED9F65290C6EC9983
+    .MaterialExpressionEditorX=-200
+    .MaterialExpressionEditorY=-352
+    .MaterialExpressionGuid=50D4CDA44D280D28839A91808835AEA5
+    .Material="/Script/Engine.Material'Space_Planet_Glow_Mat'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_0)
+    .ParameterName="Opacity"
+    .DefaultValue=1.000000
+    .ExpressionGUID=1A4E10F04B67A7C2D73B7F804A2A7774
+    .MaterialExpressionEditorX=296
+    .MaterialExpressionEditorY=176
+    .MaterialExpressionGuid=92CE78144A517778BBDF3B8529B374A8
+    .Material="/Script/Engine.Material'Space_Planet_Glow_Mat'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_0)
+    Input                  <- MaterialExpressionDivide
+    .Input=(Expression="/Script/Engine.MaterialExpressionDivide'Space_Planet_Glow_Mat:MaterialExpressionDivide_0'")
+    .MaterialExpressionEditorX=-993
+    .MaterialExpressionEditorY=48
+    .MaterialExpressionGuid=F28C8E384D571D5FE883309D3A0E986A
+    .Material="/Script/Engine.Material'Space_Planet_Glow_Mat'"
+  MaterialExpressionPower (MaterialExpressionPower_1)
+    Base                   <- MaterialExpressionVertexColor
+    Exponent               <- MaterialExpressionLinearInterpolate
+    .Base=(Expression="/Script/Engine.MaterialExpressionVertexColor'Space_Planet_Glow_Mat:MaterialExpressionVertexColor_0'",OutputIndex=1,Mask=1,MaskR=1)
+    .Exponent=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Space_Planet_Glow_Mat:MaterialExpressionLinearInterpolate_10'")
+    .MaterialExpressionEditorX=308
+    .MaterialExpressionEditorY=272
+    .MaterialExpressionGuid=B8546B824AC10FB2DD193B98A8DF4D8F
+    .Material="/Script/Engine.Material'Space_Planet_Glow_Mat'"
+  MaterialExpressionNormalize (MaterialExpressionNormalize_8)
+    VectorInput            <- MaterialExpressionWorldPosition
+    .VectorInput=(Expression="/Script/Engine.MaterialExpressionWorldPosition'Space_Planet_Glow_Mat:MaterialExpressionWorldPosition_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .MaterialExpressionEditorX=-1506
+    .MaterialExpressionEditorY=266
+    .MaterialExpressionGuid=2ABC8BD646B3E44E76A54480083C8B98
+    .Material="/Script/Engine.Material'Space_Planet_Glow_Mat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_4)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Space_Planet_Glow_Mat:MaterialExpressionMaterialFunctionCall_1'")
+    .ConstB=-1.000000
+    .MaterialExpressionEditorX=-1536
+    .MaterialExpressionEditorY=52
+    .MaterialExpressionGuid=AB0591B541D96DD2633527B479FDCC7C
+    .Material="/Script/Engine.Material'Space_Planet_Glow_Mat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionVectorParameter
+    B                      <- MaterialExpressionLinearInterpolate
+    .B=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Space_Planet_Glow_Mat:MaterialExpressionLinearInterpolate_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Space_Planet_Glow_Mat:MaterialExpressionVectorParameter_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .MaterialExpressionEditorX=136
+    .MaterialExpressionEditorY=-148
+    .MaterialExpressionGuid=C4E937BC43259331CA80EB8EB91BCD2C
+    .Material="/Script/Engine.Material'Space_Planet_Glow_Mat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionScalarParameter
+    B                      <- MaterialExpressionPower
+    .B=(Expression="/Script/Engine.MaterialExpressionPower'Space_Planet_Glow_Mat:MaterialExpressionPower_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Space_Planet_Glow_Mat:MaterialExpressionScalarParameter_0'")
+    .MaterialExpressionEditorX=508
+    .MaterialExpressionEditorY=196
+    .MaterialExpressionGuid=88ED69EB4A98441379C87B9956407414
+    .Material="/Script/Engine.Material'Space_Planet_Glow_Mat'"
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_5)
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Engine/Functions/Engine_MaterialFunctions02/Utility/DitherTemporalAA.DitherTemporalAA'"
+    .FunctionInputs(0)=(ExpressionInputId=982BCAE7401F814CDC0AE2955DEE46F3,Input=(OutputIndex=-1,InputName="Alpha Threshold"))
+    .FunctionInputs(1)=(ExpressionInputId=E8A932AF4299B0D6C16EDB8B1E912796,Input=(OutputIndex=-1,InputName="Random"))
+    .FunctionOutputs(0)=(ExpressionOutputId=9BC32B084665F3D2D59A90AA45CA8A9F,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-192
+    .MaterialExpressionEditorY=468
+    .MaterialExpressionGuid=28EB7DE443B9FC55A56D74BA5877041B
+    .Material="/Script/Engine.Material'Space_Planet_Glow_Mat'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_1)
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Space/SpacePlanet_LightVector.SpacePlanet_LightVector'"
+    .FunctionOutputs(0)=(ExpressionOutputId=62BD3F324B30A27A5999DEB4C10A25B4,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-1738
+    .MaterialExpressionEditorY=54
+    .MaterialExpressionGuid=2C89C13B48400D0962DC9995AA8D1B05
+    .Material="/Script/Engine.Material'Space_Planet_Glow_Mat'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_10)
+    Alpha                  <- MaterialExpressionMaterialFunctionCall
+    .ConstA=1.500000
+    .ConstB=3.500000
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Space_Planet_Glow_Mat:MaterialExpressionMaterialFunctionCall_5'")
+    .MaterialExpressionEditorX=56
+    .MaterialExpressionEditorY=448
+    .MaterialExpressionGuid=D337813247CCFA41D0B4DE8D91F3D21D
+    .Material="/Script/Engine.Material'Space_Planet_Glow_Mat'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_0)
+    A                      <- MaterialExpressionVectorParameter
+    B                      <- MaterialExpressionVectorParameter
+    Alpha                  <- MaterialExpressionSaturate
+    .B=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Space_Planet_Glow_Mat:MaterialExpressionVectorParameter_2'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Space_Planet_Glow_Mat:MaterialExpressionVectorParameter_1'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionSaturate'Space_Planet_Glow_Mat:MaterialExpressionSaturate_0'")
+    .MaterialExpressionEditorX=-720
+    .MaterialExpressionEditorY=-112
+    .MaterialExpressionGuid=440E38394ACDBA14AD75028E39BC14F8
+    .Material="/Script/Engine.Material'Space_Planet_Glow_Mat'"
+  MaterialExpressionDotProduct (MaterialExpressionDotProduct_0)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionNormalize
+    .B=(Expression="/Script/Engine.MaterialExpressionNormalize'Space_Planet_Glow_Mat:MaterialExpressionNormalize_8'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Space_Planet_Glow_Mat:MaterialExpressionMultiply_4'")
+    .MaterialExpressionEditorX=-1356
+    .MaterialExpressionEditorY=52
+    .MaterialExpressionGuid=7F2F6E0F45EF25D299D2AE91FFC619F3
+    .Material="/Script/Engine.Material'Space_Planet_Glow_Mat'"
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionAdd
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Space_Planet_Glow_Mat:MaterialExpressionAdd_0'")
+    .MaterialExpressionEditorX=-1128
+    .MaterialExpressionEditorY=52
+    .MaterialExpressionGuid=9EA367654CB847D226FEA28DFF5B679E
+    .Material="/Script/Engine.Material'Space_Planet_Glow_Mat'"
+  MaterialExpressionComment (MaterialExpressionComment_2)
+    .SizeX=875
+    .SizeY=480
+    .Text="Glow Opacity"
+    .CommentColor=(R=0.395833,G=0.532806,B=1.000000,A=1.000000)
+    .MaterialExpressionEditorX=-222
+    .MaterialExpressionEditorY=126
+    .MaterialExpressionGuid=BEDB3FF64921E6CEF5B70DB98C67A84A
+    .Material="/Script/Engine.Material'Space_Planet_Glow_Mat'"
+  MaterialExpressionComment (MaterialExpressionComment_1)
+    .SizeX=848
+    .SizeY=508
+    .Text="Color to Dbuffer Roughness RGB"
+    .CommentColor=(R=0.640625,G=0.533057,B=0.192329,A=1.000000)
+    .MaterialExpressionEditorX=-264
+    .MaterialExpressionEditorY=-416
+    .MaterialExpressionGuid=E862810446B6FB848C49618E4E2CC827
+    .Material="/Script/Engine.Material'Space_Planet_Glow_Mat'"
+  MaterialExpressionComment (MaterialExpressionComment_0)
+    .SizeX=1488
+    .SizeY=888
+    .Text="Match Planet Shading"
+    .CommentColor=(R=0.427421,G=0.671875,B=0.617930,A=1.000000)
+    .MaterialExpressionEditorX=-1789
+    .MaterialExpressionEditorY=-426
+    .MaterialExpressionGuid=FFEA19894807B9C1E124528D948E5803
+    .Material="/Script/Engine.Material'Space_Planet_Glow_Mat'"
+  MaterialExpressionAdd (MaterialExpressionAdd_0)
+    A                      <- MaterialExpressionDotProduct
+    .A=(Expression="/Script/Engine.MaterialExpressionDotProduct'Space_Planet_Glow_Mat:MaterialExpressionDotProduct_0'")
+    .MaterialExpressionEditorX=-1260
+    .MaterialExpressionEditorY=52
+    .MaterialExpressionGuid=877B4B194706532CB79DB5BF04F14D39
+    .Material="/Script/Engine.Material'Space_Planet_Glow_Mat'"
+  MaterialEditorOnlyData (Space_Planet_Glow_MatEditorOnlyData)
+    BaseColor              <- MaterialExpressionVertexInterpolator
+    Opacity                <- MaterialExpressionMultiply
+    ExpressionCollection   <- MaterialExpressionVertexInterpolator
+    .BaseColor=(Constant=(R=0.501961,G=0.501961,B=0.501961,A=1.000000),Expression="/Script/Engine.MaterialExpressionVertexInterpolator'Space_Planet_Glow_Mat:MaterialExpressionVertexInterpolator_1'")
+    .Metallic=(UseConstant=True)
+    .Specular=(UseConstant=True)
+    .Roughness=(UseConstant=True)
+    .Anisotropy=(UseConstant=True)
+    .Normal=(UseConstant=True)
+    .Tangent=(UseConstant=True)
+    .EmissiveColor=(UseConstant=True)
+    .Opacity=(Expression="/Script/Engine.MaterialExpressionMultiply'Space_Planet_Glow_Mat:MaterialExpressionMultiply_0'")
+    .OpacityMask=(UseConstant=True)
+    .WorldPositionOffset=(UseConstant=True)
+    .Displacement=(UseConstant=True)
+    .SubsurfaceColor=(UseConstant=True)
+    .ClearCoat=(UseConstant=True)
+    .ClearCoatRoughness=(UseConstant=True)
+    .AmbientOcclusion=(UseConstant=True)
+    .Refraction=(UseConstant=True)
+    .CustomizedUVs(0)=(UseConstant=True)
+    .CustomizedUVs(1)=(UseConstant=True)
+    .CustomizedUVs(2)=(UseConstant=True)
+    .CustomizedUVs(3)=(UseConstant=True)
+    .CustomizedUVs(4)=(UseConstant=True)
+    .CustomizedUVs(5)=(UseConstant=True)
+    .CustomizedUVs(6)=(UseConstant=True)
+    .CustomizedUVs(7)=(UseConstant=True)
+    .PixelDepthOffset=(UseConstant=True)
+    .SurfaceThickness=(UseConstant=True)
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionVertexInterpolator'Space_Planet_Glow_Mat:MaterialExpressionVertexInterpolator_1'","/Script/Engine.MaterialExpressionMultiply'Space_Planet_Glow_Mat:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionScalarParameter'Space_Planet_Glow_Mat:MaterialExpressionScalarParameter_0'","/Script/Engine.MaterialExpressionVectorParameter'Space_Planet_Glow_Mat:MaterialExpressionVectorParameter_0'","/Script/Engine.MaterialExpressionVertexColor'Space_Planet_Glow_Mat:MaterialExpressionVertexColor_0'","/Script/Engine.MaterialExpressionPower'Space_Planet_Glow_Mat:MaterialExpressionPower_1'","/Script/Engine.MaterialExpressionVectorParameter'Space_Planet_Glow_Mat:MaterialExpressionVectorParameter_1'","/Script/Engine.MaterialExpressionVectorParameter'Space_Planet_Glow_Mat:MaterialExpressionVectorParameter_2'","/Script/Engine.MaterialExpressionMultiply'Space_Planet_Glow_Mat:MaterialExpressionMultiply_4'","/Script/Engine.MaterialExpressionDotProduct'Space_Planet_Glow_Mat:MaterialExpressionDotProduct_0'","/Script/Engine.MaterialExpressionAdd'Space_Planet_Glow_Mat:MaterialExpressionAdd_0'","/Script/Engine.MaterialExpressionDivide'Space_Planet_Glow_Mat:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionLinearInterpolate'Space_Planet_Glow_Mat:MaterialExpressionLinearInterpolate_0'","/Script/Engine.MaterialExpressionSaturate'Space_Planet_Glow_Mat:MaterialExpressionSaturate_0'","/Script/Engine.MaterialExpressionMultiply'Space_Planet_Glow_Mat:MaterialExpressionMultiply_1'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Space_Planet_Glow_Mat:MaterialExpressionMaterialFunctionCall_5'","/Script/Engine.MaterialExpressionLinearInterpolate'Space_Planet_Glow_Mat:MaterialExpressionLinearInterpolate_10'","/Script/Engine.MaterialExpressionNormalize'Space_Planet_Glow_Mat:MaterialExpressionNormalize_8'","/Script/Engine.MaterialExpressionWorldPosition'Space_Planet_Glow_Mat:MaterialExpressionWorldPosition_0'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Space_Planet_Glow_Mat:MaterialExpressionMaterialFunctionCall_1'"),EditorComments=("/Script/Engine.MaterialExpressionComment'Space_Planet_Glow_Mat:MaterialExpressionComment_0'","/Script/Engine.MaterialExpressionComment'Space_Planet_Glow_Mat:MaterialExpressionComment_1'","/Script/Engine.MaterialExpressionComment'Space_Planet_Glow_Mat:MaterialExpressionComment_2'"))
+    .ParameterGroupData(0)=(GroupName="None")

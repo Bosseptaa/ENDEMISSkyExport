@@ -1,0 +1,101 @@
+### /Game/UltraDynamicSky/Materials/Material_Functions/Scale_Intensity_Around_Sun
+  MaterialFunction (Scale_Intensity_Around_Sun)
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'Scale_Intensity_Around_SunEditorOnlyData'"
+    .StateId=E03B4F284ED20473A4A499893E97B8E4
+    .CombinedOutputTypes=15
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+  MaterialFunctionEditorOnlyData (Scale_Intensity_Around_SunEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'Scale_Intensity_Around_Sun:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionMultiply'Scale_Intensity_Around_Sun:MaterialExpressionMultiply_6'","/Script/Engine.MaterialExpressionAdd'Scale_Intensity_Around_Sun:MaterialExpressionAdd_4'","/Script/Engine.MaterialExpressionMultiply'Scale_Intensity_Around_Sun:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionScalarParameter'Scale_Intensity_Around_Sun:MaterialExpressionScalarParameter_0'","/Script/Engine.MaterialExpressionAdd'Scale_Intensity_Around_Sun:MaterialExpressionAdd_24'","/Script/Engine.MaterialExpressionTextureCoordinate'Scale_Intensity_Around_Sun:MaterialExpressionTextureCoordinate_0'","/Script/Engine.MaterialExpressionComponentMask'Scale_Intensity_Around_Sun:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionComponentMask'Scale_Intensity_Around_Sun:MaterialExpressionComponentMask_1'","/Script/Engine.MaterialExpressionShadingPathSwitch'Scale_Intensity_Around_Sun:MaterialExpressionShadingPathSwitch_0'","/Script/Engine.MaterialExpressionMultiply'Scale_Intensity_Around_Sun:MaterialExpressionMultiply_2'"))
+  MaterialExpressionAdd (MaterialExpressionAdd_24)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Scale_Intensity_Around_Sun:MaterialExpressionComponentMask_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Scale_Intensity_Around_Sun:MaterialExpressionComponentMask_0'")
+    .MaterialExpressionEditorX=-1056
+    .MaterialExpressionEditorY=432
+    .MaterialExpressionGuid=8D9CAD9943810B1E6D87DD983E8D984F
+    .Function="/Script/Engine.MaterialFunction'Scale_Intensity_Around_Sun'"
+  MaterialExpressionAdd (MaterialExpressionAdd_4)
+    A                      <- MaterialExpressionMultiply
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Scale_Intensity_Around_Sun:MaterialExpressionMultiply_6'")
+    .ConstB=2.300000
+    .MaterialExpressionEditorX=-804
+    .MaterialExpressionEditorY=432
+    .MaterialExpressionGuid=DE70F2D0421EE32B170645A425B70A14
+    .Function="/Script/Engine.MaterialFunction'Scale_Intensity_Around_Sun'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionTextureCoordinate
+    .R=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'Scale_Intensity_Around_Sun:MaterialExpressionTextureCoordinate_0'")
+    .MaterialExpressionEditorX=-1192
+    .MaterialExpressionEditorY=432
+    .MaterialExpressionGuid=54C527FB49A01DEAB8EF73BD95154F6D
+    .Function="/Script/Engine.MaterialFunction'Scale_Intensity_Around_Sun'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_1)
+    Input                  <- MaterialExpressionTextureCoordinate
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'Scale_Intensity_Around_Sun:MaterialExpressionTextureCoordinate_0'")
+    .MaterialExpressionEditorX=-1192
+    .MaterialExpressionEditorY=512
+    .MaterialExpressionGuid=54C527FB49A01DEAB8EF73BD95154F6D
+    .Function="/Script/Engine.MaterialFunction'Scale_Intensity_Around_Sun'"
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionShadingPathSwitch
+    .A=(Expression="/Script/Engine.MaterialExpressionShadingPathSwitch'Scale_Intensity_Around_Sun:MaterialExpressionShadingPathSwitch_0'")
+    .bLastPreviewed=True
+    .Id=6F13AEB94B2ED3CAD3944DA5BD6370B0
+    .MaterialExpressionEditorX=-200
+    .MaterialExpressionEditorY=404
+    .MaterialExpressionGuid=6D169ECE4F8FA193CE3DE6908CE8F465
+    .Function="/Script/Engine.MaterialFunction'Scale_Intensity_Around_Sun'"
+    .bCollapsed=True
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Scale_Intensity_Around_Sun:MaterialExpressionScalarParameter_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Scale_Intensity_Around_Sun:MaterialExpressionAdd_4'")
+    .ConstB=3.000000
+    .MaterialExpressionEditorX=-660
+    .MaterialExpressionEditorY=432
+    .MaterialExpressionGuid=9FFAC4D743AE9345ABB477A5933DF937
+    .Function="/Script/Engine.MaterialFunction'Scale_Intensity_Around_Sun'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_2)
+    A                      <- MaterialExpressionScalarParameter
+    .A=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Scale_Intensity_Around_Sun:MaterialExpressionScalarParameter_0'")
+    .ConstB=3.750000
+    .MaterialExpressionEditorX=-584
+    .MaterialExpressionEditorY=560
+    .MaterialExpressionGuid=E35B1A9C40D2478CC632B1BAC91FB2FA
+    .Function="/Script/Engine.MaterialFunction'Scale_Intensity_Around_Sun'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_6)
+    A                      <- MaterialExpressionAdd
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Scale_Intensity_Around_Sun:MaterialExpressionAdd_24'")
+    .ConstB=1.800000
+    .MaterialExpressionEditorX=-948
+    .MaterialExpressionEditorY=432
+    .MaterialExpressionGuid=3F06D2D44E0B324854ED8EB7710D9488
+    .Function="/Script/Engine.MaterialFunction'Scale_Intensity_Around_Sun'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_0)
+    .ParameterName="Lit_Intensity"
+    .DefaultValue=1.000000
+    .ExpressionGUID=19E4D40641A44213B265B5A191B4E139
+    .MaterialExpressionEditorX=-864
+    .MaterialExpressionEditorY=548
+    .MaterialExpressionGuid=68D716F34BF2BECEFB97B4A299653735
+    .Function="/Script/Engine.MaterialFunction'Scale_Intensity_Around_Sun'"
+  MaterialExpressionShadingPathSwitch (MaterialExpressionShadingPathSwitch_0)
+    Default                <- MaterialExpressionMultiply
+    Inputs(2)              <- MaterialExpressionMultiply
+    .Default=(Expression="/Script/Engine.MaterialExpressionMultiply'Scale_Intensity_Around_Sun:MaterialExpressionMultiply_0'")
+    .Inputs(2)=(Expression="/Script/Engine.MaterialExpressionMultiply'Scale_Intensity_Around_Sun:MaterialExpressionMultiply_2'")
+    .MaterialExpressionEditorX=-400
+    .MaterialExpressionEditorY=432
+    .MaterialExpressionGuid=FCE8721B4FE6423D5EB0548D04F70D46
+    .Function="/Script/Engine.MaterialFunction'Scale_Intensity_Around_Sun'"
+  MaterialExpressionTextureCoordinate (MaterialExpressionTextureCoordinate_0)
+    .CoordinateIndex=2
+    .MaterialExpressionEditorX=-1464
+    .MaterialExpressionEditorY=432
+    .MaterialExpressionGuid=5514D4C34E648EF5A1BBC0A0F1EA40AC
+    .Function="/Script/Engine.MaterialFunction'Scale_Intensity_Around_Sun'"

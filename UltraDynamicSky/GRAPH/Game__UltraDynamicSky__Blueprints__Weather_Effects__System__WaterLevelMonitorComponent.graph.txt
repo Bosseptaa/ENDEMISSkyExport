@@ -1,0 +1,176 @@
+### /Game/UltraDynamicSky/Blueprints/Weather_Effects/System/WaterLevelMonitorComponent
+  Blueprint (WaterLevelMonitorComponent)
+    .ParentClass="/Script/CoreUObject.Class'/Script/Niagara.NiagaraComponent'"
+    .BlueprintCategory="UltraDynamicWeather|System"
+    .BlueprintSystemVersion=2
+    .UbergraphPages(0)="/Script/Engine.EdGraph'EventGraph'"
+    .NewVariables(0)=(VarName="Water Level",VarGuid=D04C4EF0406C696F84FF6EB01EFA7B7A,VarType=(PinCategory="real",PinSubCategory="double"),FriendlyName="Water Level",Category=NSLOCTEXT("KismetSchema", "Default", "Default"),PropertyFlags=65541)
+    .NewVariables(1)=(VarName="Report Object",VarGuid=A59B248A493A124D5515BC8E864D9F97,VarType=(PinCategory="object",PinSubCategoryObject="/Script/CoreUObject.Class'/Script/CoreUObject.Object'"),FriendlyName="Report Object",Category=NSLOCTEXT("KismetSchema", "Default", "Default"),PropertyFlags=5,MetaDataArray=((DataKey="ExposeOnSpawn",DataValue="true")))
+    .CategorySorting(0)="Attachment"
+    .CategorySorting(1)="Rendering"
+    .CategorySorting(2)="Niagara"
+    .CategorySorting(3)="LOD"
+    .CategorySorting(4)="Lighting"
+    .CategorySorting(5)="HLOD"
+    .CategorySorting(6)="Collision"
+    .CategorySorting(7)="Texture Streaming"
+    .CategorySorting(8)="Mobile"
+    .CategorySorting(9)="Physics"
+    .CategorySorting(10)="Ray Tracing"
+    .CategorySorting(11)="Virtual Texture"
+    .CategorySorting(12)="Input"
+    .CategorySorting(13)="Transform"
+    .CategorySorting(14)="Mobility"
+    .CategorySorting(15)="Physics Volume"
+    .CategorySorting(16)="Tags"
+    .CategorySorting(17)="Replication"
+    .CategorySorting(18)="Component Replication"
+    .CategorySorting(19)="Activation"
+    .CategorySorting(20)="Cooking"
+    .CategorySorting(21)="Components"
+    .CategorySorting(22)="Event Graph"
+    .CategorySorting(23)="Default"
+    .ImplementedInterfaces(0)=(Interface="/Script/CoreUObject.Class'/Script/Niagara.NiagaraParticleCallbackHandler'")
+    .LastEditedDocuments(0)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/WaterLevelMonitorComponent.WaterLevelMonitorComponent:EventGraph",SavedViewOffset=(X=-247.803940,Y=-266.716278),SavedZoomAmount=0.750000)
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfo'SceneThumbnailInfo_0'"
+    .GeneratedClass="/Script/Engine.BlueprintGeneratedClass'WaterLevelMonitorComponent_C'"
+    .bLegacyNeedToPurgeSkelRefs=False
+    .BlueprintGuid=61C70D4B4BD932CE78B50C8574616C76
+  EdGraph (EventGraph)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_Event'K2Node_Event_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_GetArrayItem'K2Node_GetArrayItem_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_BreakStruct'K2Node_BreakStruct_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_Event'K2Node_Event_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_Self'K2Node_Self_0'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_3'"
+    .Nodes(7)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_0'"
+    .Nodes(8)="/Script/BlueprintGraph.K2Node_Message'K2Node_Message_0'"
+    .Nodes(9)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(10)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_1'"
+    .bAllowDeletion=False
+    .GraphGuid=448830284F6B114D47E180BD8B7B4E9B
+  K2Node_Event (K2Node_Event_0)
+    .EventReference=(MemberParent="/Script/CoreUObject.Class'/Script/Niagara.NiagaraParticleCallbackHandler'",MemberName="ReceiveParticleData")
+    .bOverrideFunction=True
+    .NodePosY=256
+    .NodeGuid=D4F1BB954D8F35AABB8115B7F9CD61A2
+  K2Node_GetArrayItem (K2Node_GetArrayItem_0)
+    .NodePosX=312
+    .NodePosY=368
+    .NodeGuid=1F2808F043613AC06D0D09A94A1D2027
+  K2Node_BreakStruct (K2Node_BreakStruct_0)
+    .bMadeAfterOverridePinRemoval=True
+    .ShowPinForProperties(0)=(PropertyName="Position",PropertyFriendlyName="Position",CategoryName="Particle Data",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(1)=(PropertyName="Size",PropertyFriendlyName="Size",CategoryName="Particle Data",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(2)=(PropertyName="Velocity",PropertyFriendlyName="Velocity",CategoryName="Particle Data",bShowPin=True,bCanToggleVisibility=True)
+    .StructType="/Script/CoreUObject.ScriptStruct'/Script/Niagara.BasicParticleData'"
+    .NodePosX=516
+    .NodePosY=364
+    .NodeGuid=26FAE10545DD879DFE44698AFDD11308
+  K2Node_Event (K2Node_Event_1)
+    .EventReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.ActorComponent'",MemberName="ReceiveBeginPlay")
+    .bOverrideFunction=True
+    .NodePosX=8
+    .NodePosY=-136
+    .NodeGuid=268916EE492248A0C6A211B60FA7305A
+  K2Node_CallFunction (K2Node_CallFunction_2)
+    .FunctionReference=(MemberName="SetVariableObject",bSelfContext=True)
+    .NodePosX=248
+    .NodePosY=-152
+    .NodeGuid=5A82B132414EFE206A855C91AD06099C
+  K2Node_Self (K2Node_Self_0)
+    .NodePosX=32
+    .NodePosY=32
+    .NodeGuid=66BC11254DD259C925B8A883BB200254
+  K2Node_CallFunction (K2Node_CallFunction_3)
+    .FunctionReference=(MemberName="SetVariableFloat",bSelfContext=True)
+    .NodePosX=1184
+    .NodePosY=256
+    .NodeGuid=716F0E07408FCCFD1F770D80981F160C
+  K2Node_VariableSet (K2Node_VariableSet_0)
+    .VariableReference=(MemberName="Water Level",MemberGuid=D04C4EF0406C696F84FF6EB01EFA7B7A,bSelfContext=True)
+    .NodePosX=864
+    .NodePosY=288
+    .NodeGuid=D82931BF43E7442FD25FCD8213D8F939
+  K2Node_Message (K2Node_Message_0)
+    .FunctionReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/WaterLevelReportInterface.WaterLevelReportInterface_C'",MemberName="Report Water Level",MemberGuid=5945658C4C1D5AF7BBC83D8D81AAEF95)
+    .NodePosX=1888
+    .NodePosY=256
+    .NodeGuid=EB119F284C483EE6AB9281A62307592F
+  K2Node_VariableGet (K2Node_VariableGet_0)
+    .VariableReference=(MemberName="Water Level",MemberGuid=D04C4EF0406C696F84FF6EB01EFA7B7A,bSelfContext=True)
+    .NodePosX=1692
+    .NodePosY=400
+    .NodeGuid=6C1FEFBE421377E34F2B52876FF4D477
+  K2Node_VariableGet (K2Node_VariableGet_1)
+    .VariableReference=(MemberName="Report Object",MemberGuid=A59B248A493A124D5515BC8E864D9F97,bSelfContext=True)
+    .NodePosX=1692
+    .NodePosY=344
+    .NodeGuid=36AD857C47732774B55FC3B606829486
+  EdGraph (ExecuteUbergraph_WaterLevelMonitorComponent)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_1'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_2'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_0'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_3'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_Self'K2Node_Self_0'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .Nodes(7)="/Script/BlueprintGraph.K2Node_Event'K2Node_Event_1'"
+    .Nodes(8)="/Script/BlueprintGraph.K2Node_BreakStruct'K2Node_BreakStruct_0'"
+    .Nodes(9)="/Script/BlueprintGraph.K2Node_GetArrayItem'K2Node_GetArrayItem_0'"
+    .Nodes(10)="/Script/BlueprintGraph.K2Node_Event'K2Node_Event_0'"
+    .Nodes(11)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(12)="/Script/BlueprintGraph.K2Node_DynamicCast'K2Node_DynamicCast_0'"
+    .Nodes(13)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(14)="/Script/BlueprintGraph.K2Node_AssignmentStatement'K2Node_AssignmentStatement_0'"
+    .GraphGuid=1905AEA74637F54FD64545966F80726D
+  K2Node_FunctionEntry (K2Node_FunctionEntry_0)
+    .CustomGeneratedFunctionName="ReceiveParticleData"
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Niagara.NiagaraParticleCallbackHandler'",MemberName="ReceiveParticleData")
+    .NodePosX=-200
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=9940D2AFA0A2340C9EF69CEB05DA0C14
+  K2Node_DynamicCast (K2Node_DynamicCast_0)
+    .TargetType="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/WaterLevelReportInterface.WaterLevelReportInterface_C'"
+    .PureState=Impure
+    .NodePosX=-1760
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=26F0D4A76FC03677AF6D2789C07D97CB
+  K2Node_CallFunction (K2Node_CallFunction_0)
+    .FunctionReference=(MemberName="ExecuteUbergraph_WaterLevelMonitorComponent",bSelfContext=True)
+    .NodePosX=300
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=A728D376CAE3335798422ABA855C8791
+  K2Node_AssignmentStatement (K2Node_AssignmentStatement_0)
+    .NodePosX=-1280
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=E522AF47FAC238A09A14047E00858F8A
+  K2Node_VariableGet (K2Node_VariableGet_2)
+    .VariableReference=(MemberName="Water Level",MemberGuid=D04C4EF0406C696F84FF6EB01EFA7B7A,bSelfContext=True)
+    .NodePosX=-1040
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=9CE063BB64AE391FB58EED90EA0DEC05
+  EdGraph (ReceiveBeginPlay)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=2993D6164D8EBE67ED151CA978E4FD7E
+  EdGraph (ReceiveParticleData)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_SetVariableOnPersistentFrame'K2Node_SetVariableOnPersistentFrame_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=C9BAA70A473657E026335F9B44F0874B
+  K2Node_SetVariableOnPersistentFrame (K2Node_SetVariableOnPersistentFrame_0)
+    .NodePosX=-80
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=014095C154F137B9B3DFA4AD3A8DBB75

@@ -1,0 +1,73 @@
+### /Game/UltraDynamicSky/Materials/Material_Functions/DLWE_VariationClouds
+  MaterialFunction (DLWE_VariationClouds)
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'DLWE_VariationCloudsEditorOnlyData'"
+    .StateId=8085D1D648B3D64FB3B52BAE745C68E5
+    .CombinedInputTypes=4
+    .CombinedOutputTypes=15
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+  MaterialFunctionEditorOnlyData (DLWE_VariationCloudsEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'DLWE_VariationClouds:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionWorldPosition'DLWE_VariationClouds:MaterialExpressionWorldPosition_6'","/Script/Engine.MaterialExpressionComponentMask'DLWE_VariationClouds:MaterialExpressionComponentMask_42'","/Script/Engine.MaterialExpressionDivide'DLWE_VariationClouds:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionTextureSample'DLWE_VariationClouds:MaterialExpressionTextureSample_8'","/Script/Engine.MaterialExpressionCollectionParameter'DLWE_VariationClouds:MaterialExpressionCollectionParameter_0'","/Script/Engine.MaterialExpressionFunctionInput'DLWE_VariationClouds:MaterialExpressionFunctionInput_0'"))
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_0)
+    .ParameterName="DLWE_Clouds Scale"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+    .ParameterId=4160FFD545BB123FF41A319EA7B77F62
+    .MaterialExpressionEditorX=-976
+    .MaterialExpressionEditorY=396
+    .MaterialExpressionGuid=B6B8ADA04AA240654FDCCBB33634F603
+    .Function="/Script/Engine.MaterialFunction'DLWE_VariationClouds'"
+    .bCollapsed=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_42)
+    Input                  <- MaterialExpressionFunctionInput
+    .R=True
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'DLWE_VariationClouds:MaterialExpressionFunctionInput_0'")
+    .MaterialExpressionEditorX=-920
+    .MaterialExpressionEditorY=284
+    .MaterialExpressionGuid=4F785F4F4929E43ACF8180AEACAE326F
+    .Function="/Script/Engine.MaterialFunction'DLWE_VariationClouds'"
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'DLWE_VariationClouds:MaterialExpressionCollectionParameter_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'DLWE_VariationClouds:MaterialExpressionComponentMask_42'")
+    .ConstB=2150.000000
+    .MaterialExpressionEditorX=-692
+    .MaterialExpressionEditorY=280
+    .MaterialExpressionGuid=3D4600A248EE31C1C8EC69A141204917
+    .Function="/Script/Engine.MaterialFunction'DLWE_VariationClouds'"
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_0)
+    Preview                <- MaterialExpressionWorldPosition
+    .Preview=(Expression="/Script/Engine.MaterialExpressionWorldPosition'DLWE_VariationClouds:MaterialExpressionWorldPosition_6'")
+    .InputName="Position"
+    .Id=11EA88BA47A460300ECB9194AE4C66D0
+    .bUsePreviewValueAsDefault=True
+    .MaterialExpressionEditorX=-1144
+    .MaterialExpressionEditorY=284
+    .MaterialExpressionGuid=A4CC6B254BC9BC269065ACA9C50E1AB7
+    .Function="/Script/Engine.MaterialFunction'DLWE_VariationClouds'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionTextureSample
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'DLWE_VariationClouds:MaterialExpressionTextureSample_8'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .bLastPreviewed=True
+    .Id=C561DF354B1F8B6113421FA33C06A397
+    .MaterialExpressionEditorX=-332
+    .MaterialExpressionEditorY=252
+    .MaterialExpressionGuid=FB4543B34789A3DD452C2E89D8372328
+    .Function="/Script/Engine.MaterialFunction'DLWE_VariationClouds'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_8)
+    Coordinates            <- MaterialExpressionDivide
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_DLWE_Noise.T_DLWE_Noise'"
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionDivide'DLWE_VariationClouds:MaterialExpressionDivide_0'")
+    .SamplerSource=SSM_Wrap_WorldGroupSettings
+    .MaterialExpressionEditorX=-584
+    .MaterialExpressionEditorY=280
+    .MaterialExpressionGuid=04E7DFCE4D8F63251302C4ADEA1D597B
+    .Function="/Script/Engine.MaterialFunction'DLWE_VariationClouds'"
+  MaterialExpressionWorldPosition (MaterialExpressionWorldPosition_6)
+    .MaterialExpressionEditorX=-1356
+    .MaterialExpressionEditorY=272
+    .MaterialExpressionGuid=3AFA866E448D3B647E3D3D81769516C1
+    .Function="/Script/Engine.MaterialFunction'DLWE_VariationClouds'"

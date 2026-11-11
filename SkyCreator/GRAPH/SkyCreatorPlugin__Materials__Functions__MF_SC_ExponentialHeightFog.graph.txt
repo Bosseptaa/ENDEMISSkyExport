@@ -1,0 +1,151 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_ExponentialHeightFog
+  MaterialFunction (MF_SC_ExponentialHeightFog)
+    .LibraryCategoriesText(0)=NSLOCTEXT("", "7C2FAF1E44543535D1C691BA85DCAE43", "Sky Creator")
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'MF_SC_ExponentialHeightFogEditorOnlyData'"
+    .StateId=D550C0F7421E9CACDBBD5F8121BD74A9
+    .CombinedInputTypes=15
+    .CombinedOutputTypes=15
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+  MaterialFunctionEditorOnlyData (MF_SC_ExponentialHeightFogEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'MF_SC_ExponentialHeightFog:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionMultiply'MF_SC_ExponentialHeightFog:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionFunctionInput'MF_SC_ExponentialHeightFog:MaterialExpressionFunctionInput_0'","/Script/Engine.MaterialExpressionPower'MF_SC_ExponentialHeightFog:MaterialExpressionPower_0'","/Script/Engine.MaterialExpressionFunctionInput'MF_SC_ExponentialHeightFog:MaterialExpressionFunctionInput_1'","/Script/Engine.MaterialExpressionFunctionInput'MF_SC_ExponentialHeightFog:MaterialExpressionFunctionInput_2'","/Script/Engine.MaterialExpressionMultiply'MF_SC_ExponentialHeightFog:MaterialExpressionMultiply_1'","/Script/Engine.MaterialExpressionMultiply'MF_SC_ExponentialHeightFog:MaterialExpressionMultiply_2'","/Script/Engine.MaterialExpressionWorldPosition'MF_SC_ExponentialHeightFog:MaterialExpressionWorldPosition_0'","/Script/Engine.MaterialExpressionComponentMask'MF_SC_ExponentialHeightFog:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionSubtract'MF_SC_ExponentialHeightFog:MaterialExpressionSubtract_0'","/Script/Engine.MaterialExpressionDivide'MF_SC_ExponentialHeightFog:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionConstant'MF_SC_ExponentialHeightFog:MaterialExpressionConstant_0'","/Script/Engine.MaterialExpressionConstant'MF_SC_ExponentialHeightFog:MaterialExpressionConstant_1'","/Script/Engine.MaterialExpressionFunctionInput'MF_SC_ExponentialHeightFog:MaterialExpressionFunctionInput_3'"),EditorComments=("/Script/Engine.MaterialExpressionComment'MF_SC_ExponentialHeightFog:MaterialExpressionComment_0'"))
+  MaterialExpressionComment (MaterialExpressionComment_0)
+    .SizeX=1536
+    .SizeY=96
+    .Text="FogDensity * exp2(-FogHeightFalloff * (CameraWorldPosition.z - FogHeight))"
+    .CommentColor=(R=0.000000,G=0.000000,B=0.000000,A=1.000000)
+    .MaterialExpressionEditorX=-1408
+    .MaterialExpressionEditorY=-256
+    .MaterialExpressionGuid=D81171694647EFDFBE9FCDB5B5C4AB02
+    .Function="/Script/Engine.MaterialFunction'MF_SC_ExponentialHeightFog'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionFunctionInput
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_ExponentialHeightFog:MaterialExpressionFunctionInput_3'")
+    .MaterialExpressionEditorX=-1152
+    .MaterialExpressionEditorY=336
+    .MaterialExpressionGuid=6156D00D4261219EC305ACAF3945E70A
+    .Function="/Script/Engine.MaterialFunction'MF_SC_ExponentialHeightFog'"
+  MaterialExpressionConstant (MaterialExpressionConstant_0)
+    .R=1000.000000
+    .MaterialExpressionEditorX=-1408
+    .MaterialExpressionEditorY=208
+    .MaterialExpressionGuid=9425B95748D6885A4910B8AF3CCAA327
+    .Function="/Script/Engine.MaterialFunction'MF_SC_ExponentialHeightFog'"
+  MaterialExpressionConstant (MaterialExpressionConstant_1)
+    .R=2.000000
+    .MaterialExpressionEditorX=-768
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=ED27BCE64B22590C40532AAE83AF1EB4
+    .Function="/Script/Engine.MaterialFunction'MF_SC_ExponentialHeightFog'"
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'MF_SC_ExponentialHeightFog:MaterialExpressionConstant_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_ExponentialHeightFog:MaterialExpressionFunctionInput_1'")
+    .MaterialExpressionEditorX=-1152
+    .MaterialExpressionEditorY=128
+    .MaterialExpressionGuid=FD1BD32C44D9D4335FDA5593B9D1D244
+    .Function="/Script/Engine.MaterialFunction'MF_SC_ExponentialHeightFog'"
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_0)
+    .InputName="Fog Density"
+    .Id=4EE53E9F449DD47D18DACDB22728319D
+    .InputType=FunctionInput_Scalar
+    .PreviewValue=(X=0.020000,Y=0.000000,Z=0.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .MaterialExpressionEditorX=-512
+    .MaterialExpressionEditorY=128
+    .MaterialExpressionGuid=E792477A4BA28A8F4BCFB280D317939F
+    .Function="/Script/Engine.MaterialFunction'MF_SC_ExponentialHeightFog'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_1)
+    .InputName="Fog Height Falloff"
+    .Id=A6093CFA44E9807408E9F38AAE1AD764
+    .InputType=FunctionInput_Scalar
+    .PreviewValue=(X=0.200000,Y=0.000000,Z=0.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=1
+    .MaterialExpressionEditorX=-1408
+    .MaterialExpressionEditorY=128
+    .MaterialExpressionGuid=E792477A4BA28A8F4BCFB280D317939F
+    .Function="/Script/Engine.MaterialFunction'MF_SC_ExponentialHeightFog'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_2)
+    .InputName="Fog Height"
+    .Id=556AE3B2445A5D3787E7B086A3F1F2D6
+    .InputType=FunctionInput_Scalar
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=2
+    .MaterialExpressionEditorX=-1280
+    .MaterialExpressionEditorY=416
+    .MaterialExpressionGuid=E792477A4BA28A8F4BCFB280D317939F
+    .Function="/Script/Engine.MaterialFunction'MF_SC_ExponentialHeightFog'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_3)
+    Preview                <- MaterialExpressionWorldPosition
+    .Preview=(Expression="/Script/Engine.MaterialExpressionWorldPosition'MF_SC_ExponentialHeightFog:MaterialExpressionWorldPosition_0'")
+    .InputName="Position"
+    .Id=B1B7F662446771BBBAF20FBF767DB516
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=3
+    .MaterialExpressionEditorX=-1408
+    .MaterialExpressionEditorY=336
+    .MaterialExpressionGuid=E792477A4BA28A8F4BCFB280D317939F
+    .Function="/Script/Engine.MaterialFunction'MF_SC_ExponentialHeightFog'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionMultiply
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_ExponentialHeightFog:MaterialExpressionMultiply_0'")
+    .bLastPreviewed=True
+    .Id=38415A7E4C7DD799186A038BAF8A121C
+    .MaterialExpressionGuid=7CFCC75442C373958D6CA981C0C71DEA
+    .Function="/Script/Engine.MaterialFunction'MF_SC_ExponentialHeightFog'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionPower
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_ExponentialHeightFog:MaterialExpressionFunctionInput_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionPower'MF_SC_ExponentialHeightFog:MaterialExpressionPower_0'")
+    .MaterialExpressionEditorX=-256
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=9C20D9854FCF64A4DE6C93A0EEF31E51
+    .Function="/Script/Engine.MaterialFunction'MF_SC_ExponentialHeightFog'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionDivide
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'MF_SC_ExponentialHeightFog:MaterialExpressionDivide_0'")
+    .ConstB=-1.000000
+    .MaterialExpressionEditorX=-1024
+    .MaterialExpressionEditorY=128
+    .MaterialExpressionGuid=C3E946E74F2B3519C10708A19135AC14
+    .Function="/Script/Engine.MaterialFunction'MF_SC_ExponentialHeightFog'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_2)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionSubtract
+    .B=(Expression="/Script/Engine.MaterialExpressionSubtract'MF_SC_ExponentialHeightFog:MaterialExpressionSubtract_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_ExponentialHeightFog:MaterialExpressionMultiply_1'")
+    .MaterialExpressionEditorX=-768
+    .MaterialExpressionEditorY=128
+    .MaterialExpressionGuid=D4A48D164065388C8D5341A17F571B1B
+    .Function="/Script/Engine.MaterialFunction'MF_SC_ExponentialHeightFog'"
+  MaterialExpressionPower (MaterialExpressionPower_0)
+    Base                   <- MaterialExpressionConstant
+    Exponent               <- MaterialExpressionMultiply
+    .Base=(Expression="/Script/Engine.MaterialExpressionConstant'MF_SC_ExponentialHeightFog:MaterialExpressionConstant_1'")
+    .Exponent=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_ExponentialHeightFog:MaterialExpressionMultiply_2'")
+    .MaterialExpressionEditorX=-640
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=8F41075F4725B92D4505A18A56E8FAEC
+    .Function="/Script/Engine.MaterialFunction'MF_SC_ExponentialHeightFog'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_0)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_ExponentialHeightFog:MaterialExpressionFunctionInput_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_ExponentialHeightFog:MaterialExpressionComponentMask_0'")
+    .MaterialExpressionEditorX=-1024
+    .MaterialExpressionEditorY=336
+    .MaterialExpressionGuid=EA47EC0E46193D1E22F051A975E50286
+    .Function="/Script/Engine.MaterialFunction'MF_SC_ExponentialHeightFog'"
+  MaterialExpressionWorldPosition (MaterialExpressionWorldPosition_0)
+    .MaterialExpressionEditorX=-1664
+    .MaterialExpressionEditorY=320
+    .MaterialExpressionGuid=4188FC1841E202F3D82DE2B14017A517
+    .Function="/Script/Engine.MaterialFunction'MF_SC_ExponentialHeightFog'"

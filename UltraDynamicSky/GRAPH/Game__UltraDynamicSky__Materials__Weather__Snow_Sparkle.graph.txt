@@ -1,0 +1,451 @@
+### /Game/UltraDynamicSky/Materials/Weather/Snow_Sparkle
+  MaterialFunction (Snow_Sparkle)
+    DependentFunctionExpressionCandidates(0) <- MaterialExpressionMaterialFunctionCall
+    .DependentFunctionExpressionCandidates(0)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_0'"
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'Snow_SparkleEditorOnlyData'"
+    .StateId=531343A34B18187555CFBA8CBBFBAA02
+    .CombinedInputTypes=2
+    .CombinedOutputTypes=15
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+  MaterialFunctionEditorOnlyData (Snow_SparkleEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'Snow_Sparkle:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionMultiply'Snow_Sparkle:MaterialExpressionMultiply_4'","/Script/Engine.MaterialExpressionSubtract'Snow_Sparkle:MaterialExpressionSubtract_1'","/Script/Engine.MaterialExpressionNormalize'Snow_Sparkle:MaterialExpressionNormalize_0'","/Script/Engine.MaterialExpressionDotProduct'Snow_Sparkle:MaterialExpressionDotProduct_0'","/Script/Engine.MaterialExpressionCameraVectorWS'Snow_Sparkle:MaterialExpressionCameraVectorWS_0'","/Script/Engine.MaterialExpressionMultiply'Snow_Sparkle:MaterialExpressionMultiply_1'","/Script/Engine.MaterialExpressionMultiply'Snow_Sparkle:MaterialExpressionMultiply_3'","/Script/Engine.MaterialExpressionPixelDepth'Snow_Sparkle:MaterialExpressionPixelDepth_0'","/Script/Engine.MaterialExpressionDivide'Snow_Sparkle:MaterialExpressionDivide_3'","/Script/Engine.MaterialExpressionSaturate'Snow_Sparkle:MaterialExpressionSaturate_1'","/Script/Engine.MaterialExpressionOneMinus'Snow_Sparkle:MaterialExpressionOneMinus_0'","/Script/Engine.MaterialExpressionViewProperty'Snow_Sparkle:MaterialExpressionViewProperty_0'","/Script/Engine.MaterialExpressionSubtract'Snow_Sparkle:MaterialExpressionSubtract_3'","/Script/Engine.MaterialExpressionSaturate'Snow_Sparkle:MaterialExpressionSaturate_2'","/Script/Engine.MaterialExpressionLinearInterpolate'Snow_Sparkle:MaterialExpressionLinearInterpolate_1'","/Script/Engine.MaterialExpressionPower'Snow_Sparkle:MaterialExpressionPower_1'","/Script/Engine.MaterialExpressionTextureSample'Snow_Sparkle:MaterialExpressionTextureSample_3'","/Script/Engine.MaterialExpressionFunctionInput'Snow_Sparkle:MaterialExpressionFunctionInput_0'","/Script/Engine.MaterialExpressionSaturate'Snow_Sparkle:MaterialExpressionSaturate_3'","/Script/Engine.MaterialExpressionDivide'Snow_Sparkle:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionSaturate'Snow_Sparkle:MaterialExpressionSaturate_4'","/Script/Engine.MaterialExpressionPower'Snow_Sparkle:MaterialExpressionPower_3'","/Script/Engine.MaterialExpressionMultiply'Snow_Sparkle:MaterialExpressionMultiply_8'","/Script/Engine.MaterialExpressionFresnel'Snow_Sparkle:MaterialExpressionFresnel_0'","/Script/Engine.MaterialExpressionTextureSample'Snow_Sparkle:MaterialExpressionTextureSample_2'","/Script/Engine.MaterialExpressionMultiply'Snow_Sparkle:MaterialExpressionMultiply_11'","/Script/Engine.MaterialExpressionPower'Snow_Sparkle:MaterialExpressionPower_5'","/Script/Engine.MaterialExpressionCameraVectorWS'Snow_Sparkle:MaterialExpressionCameraVectorWS_1'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Snow_Sparkle:MaterialExpressionNamedRerouteDeclaration_0'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Snow_Sparkle:MaterialExpressionNamedRerouteUsage_0'","/Script/Engine.MaterialExpressionPower'Snow_Sparkle:MaterialExpressionPower_6'","/Script/Engine.MaterialExpressionMultiply'Snow_Sparkle:MaterialExpressionMultiply_13'","/Script/Engine.MaterialExpressionMultiply'Snow_Sparkle:MaterialExpressionMultiply_14'","/Script/Engine.MaterialExpressionAdd'Snow_Sparkle:MaterialExpressionAdd_1'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Snow_Sparkle:MaterialExpressionMaterialFunctionCall_0'","/Script/Engine.MaterialExpressionDotProduct'Snow_Sparkle:MaterialExpressionDotProduct_1'","/Script/Engine.MaterialExpressionSaturate'Snow_Sparkle:MaterialExpressionSaturate_5'","/Script/Engine.MaterialExpressionCameraPositionWS'Snow_Sparkle:MaterialExpressionCameraPositionWS_1'","/Script/Engine.MaterialExpressionDivide'Snow_Sparkle:MaterialExpressionDivide_1'","/Script/Engine.MaterialExpressionSubtract'Snow_Sparkle:MaterialExpressionSubtract_2'","/Script/Engine.MaterialExpressionAdd'Snow_Sparkle:MaterialExpressionAdd_4'","/Script/Engine.MaterialExpressionPixelNormalWS'Snow_Sparkle:MaterialExpressionPixelNormalWS_0'","/Script/Engine.MaterialExpressionMultiply'Snow_Sparkle:MaterialExpressionMultiply_18'","/Script/Engine.MaterialExpressionAdd'Snow_Sparkle:MaterialExpressionAdd_5'","/Script/Engine.MaterialExpressionCollectionParameter'Snow_Sparkle:MaterialExpressionCollectionParameter_0'","/Script/Engine.MaterialExpressionSaturate'Snow_Sparkle:MaterialExpressionSaturate_6'","/Script/Engine.MaterialExpressionLinearInterpolate'Snow_Sparkle:MaterialExpressionLinearInterpolate_2'","/Script/Engine.MaterialExpressionSubtract'Snow_Sparkle:MaterialExpressionSubtract_5'","/Script/Engine.MaterialExpressionDivide'Snow_Sparkle:MaterialExpressionDivide_2'","/Script/Engine.MaterialExpressionMultiply'Snow_Sparkle:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionCollectionParameter'Snow_Sparkle:MaterialExpressionCollectionParameter_6'","/Script/Engine.MaterialExpressionComponentMask'Snow_Sparkle:MaterialExpressionComponentMask_4'","/Script/Engine.MaterialExpressionMultiply'Snow_Sparkle:MaterialExpressionMultiply_2'","/Script/Engine.MaterialExpressionMultiply'Snow_Sparkle:MaterialExpressionMultiply_5'"))
+  MaterialExpressionAdd (MaterialExpressionAdd_1)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Snow_Sparkle:MaterialExpressionMultiply_14'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Snow_Sparkle:MaterialExpressionMultiply_0'")
+    .MaterialExpressionEditorX=-968
+    .MaterialExpressionEditorY=1100
+    .MaterialExpressionGuid=0CCB082448A0EE5A7E63E896562139DE
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionAdd (MaterialExpressionAdd_4)
+    A                      <- MaterialExpressionFresnel
+    .A=(Expression="/Script/Engine.MaterialExpressionFresnel'Snow_Sparkle:MaterialExpressionFresnel_0'")
+    .ConstB=0.150000
+    .MaterialExpressionEditorX=-160
+    .MaterialExpressionEditorY=1600
+    .MaterialExpressionGuid=993EE8D844A9B6BB56653D95D539583A
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionAdd (MaterialExpressionAdd_5)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Snow_Sparkle:MaterialExpressionMultiply_18'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'Snow_Sparkle:MaterialExpressionSubtract_2'")
+    .MaterialExpressionEditorX=-1912
+    .MaterialExpressionEditorY=1188
+    .MaterialExpressionGuid=04B81984467BA5C8F3AFCEA01DACEF3C
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionCameraPositionWS (MaterialExpressionCameraPositionWS_1)
+    .MaterialExpressionEditorX=-2568
+    .MaterialExpressionEditorY=1256
+    .MaterialExpressionGuid=7481A67B49A734CE94AC8DBB5878C4CC
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionCameraVectorWS (MaterialExpressionCameraVectorWS_0)
+    .MaterialExpressionEditorX=-3308
+    .MaterialExpressionEditorY=1168
+    .MaterialExpressionGuid=762D2C214DE05C0D7A685BBDB69E5D62
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionCameraVectorWS (MaterialExpressionCameraVectorWS_1)
+    .MaterialExpressionEditorX=-2424
+    .MaterialExpressionEditorY=1172
+    .MaterialExpressionGuid=EE24BFFF453C97A209C2DE936A99DB08
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_0)
+    .ParameterName="Cloud Coverage"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+    .ParameterId=A68BDDB5427946B0BE7CE1A984BAB42B
+    .MaterialExpressionEditorX=-812
+    .MaterialExpressionEditorY=1440
+    .MaterialExpressionGuid=D7FDD3544AF33D5417004CAF5C28141A
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_6)
+    .ParameterName="Ambient Fog Color"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+    .ParameterId=8604E1994A5CD232F1116D94FF84BD2B
+    .MaterialExpressionEditorX=1504
+    .MaterialExpressionEditorY=1200
+    .MaterialExpressionGuid=362FDD204930A585FD3BE78352CD6B7F
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+    .bCollapsed=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_4)
+    Input                  <- MaterialExpressionCollectionParameter
+    .R=True
+    .G=True
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Snow_Sparkle:MaterialExpressionCollectionParameter_6'")
+    .MaterialExpressionEditorX=1772
+    .MaterialExpressionEditorY=1228
+    .MaterialExpressionGuid=823AC7F74A31AB3254D39CAC8658D7AE
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionPixelDepth
+    .A=(Expression="/Script/Engine.MaterialExpressionPixelDepth'Snow_Sparkle:MaterialExpressionPixelDepth_0'",Mask=1,MaskR=1)
+    .ConstB=200.000000
+    .MaterialExpressionEditorX=644
+    .MaterialExpressionEditorY=1364
+    .MaterialExpressionGuid=7FD28E1E487E67EC09017393CD43E14E
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionDivide (MaterialExpressionDivide_1)
+    A                      <- MaterialExpressionCameraPositionWS
+    .A=(Expression="/Script/Engine.MaterialExpressionCameraPositionWS'Snow_Sparkle:MaterialExpressionCameraPositionWS_1'")
+    .ConstB=1000.000000
+    .MaterialExpressionEditorX=-2416
+    .MaterialExpressionEditorY=1272
+    .MaterialExpressionGuid=2B7C19774BD097BAE0558B838357D739
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionDivide (MaterialExpressionDivide_2)
+    A                      <- MaterialExpressionSubtract
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'Snow_Sparkle:MaterialExpressionSubtract_5'")
+    .ConstB=4.000000
+    .MaterialExpressionEditorX=-392
+    .MaterialExpressionEditorY=1468
+    .MaterialExpressionGuid=6D6F628745949A78979DAEAD2DCA3672
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionDivide (MaterialExpressionDivide_3)
+    A                      <- MaterialExpressionPixelDepth
+    .A=(Expression="/Script/Engine.MaterialExpressionPixelDepth'Snow_Sparkle:MaterialExpressionPixelDepth_0'",Mask=1,MaskR=1)
+    .ConstB=4000.000000
+    .MaterialExpressionEditorX=744
+    .MaterialExpressionEditorY=1240
+    .MaterialExpressionGuid=F43663AE47C12A33ED4A8D9B828C9F50
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionDotProduct (MaterialExpressionDotProduct_0)
+    A                      <- MaterialExpressionNormalize
+    B                      <- MaterialExpressionCameraVectorWS
+    .B=(Expression="/Script/Engine.MaterialExpressionCameraVectorWS'Snow_Sparkle:MaterialExpressionCameraVectorWS_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionNormalize'Snow_Sparkle:MaterialExpressionNormalize_0'")
+    .MaterialExpressionEditorX=-3124
+    .MaterialExpressionEditorY=1096
+    .MaterialExpressionGuid=C1BC7CBE447FA57CA91C22955FD085E0
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionDotProduct (MaterialExpressionDotProduct_1)
+    A                      <- MaterialExpressionNormalize
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Snow_Sparkle:MaterialExpressionMaterialFunctionCall_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionNormalize'Snow_Sparkle:MaterialExpressionNormalize_0'")
+    .MaterialExpressionEditorX=-3372
+    .MaterialExpressionEditorY=1312
+    .MaterialExpressionGuid=C1BC7CBE447FA57CA91C22955FD085E0
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionFresnel (MaterialExpressionFresnel_0)
+    .BaseReflectFraction=0.000000
+    .MaterialExpressionEditorX=-368
+    .MaterialExpressionEditorY=1600
+    .MaterialExpressionGuid=1C3312A942C866BA151671A5DBA331A3
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_0)
+    .InputName="UV"
+    .Id=D840206C45DFF44CACE0DE87CF5473C6
+    .InputType=FunctionInput_Vector2
+    .MaterialExpressionEditorX=-4216
+    .MaterialExpressionEditorY=1096
+    .MaterialExpressionGuid=C83E7B99405851E9AD9E38848F8D3D36
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionMultiply
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Snow_Sparkle:MaterialExpressionMultiply_1'")
+    .OutputName="Emissive Color"
+    .bLastPreviewed=True
+    .Id=3A0D457A4F6442C2C363FC8EED75BD65
+    .MaterialExpressionEditorX=2196
+    .MaterialExpressionEditorY=1092
+    .MaterialExpressionGuid=5B4BE49D44C66FFF1C3AFDA4B7127873
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_1)
+    Alpha                  <- MaterialExpressionSaturate
+    .ConstA=20.000000
+    .ConstB=100.000000
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionSaturate'Snow_Sparkle:MaterialExpressionSaturate_2'")
+    .MaterialExpressionEditorX=-308
+    .MaterialExpressionEditorY=1200
+    .MaterialExpressionGuid=6ED309774A6B3222F4AC55A0B80C2C7F
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_2)
+    Alpha                  <- MaterialExpressionSaturate
+    .ConstA=1.000000
+    .ConstB=0.400000
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionSaturate'Snow_Sparkle:MaterialExpressionSaturate_6'")
+    .MaterialExpressionEditorX=-148
+    .MaterialExpressionEditorY=1368
+    .MaterialExpressionGuid=380D36A44665D5491AEFFC8FC440579B
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_0)
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Engine/Functions/Engine_MaterialFunctions02/Utility/CameraDirectionVector.CameraDirectionVector'"
+    .FunctionOutputs(0)=(ExpressionOutputId=B8DC55274CB0C18F86B060A5EED9FCD3,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-3596
+    .MaterialExpressionEditorY=1364
+    .MaterialExpressionGuid=AE54EAE24352FC12FC3333812C959D4C
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionMultiply
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Snow_Sparkle:MaterialExpressionMultiply_11'")
+    .ConstB=2.000000
+    .MaterialExpressionEditorX=-1172
+    .MaterialExpressionEditorY=1100
+    .MaterialExpressionGuid=688CC4734284899A38FAC4BB5F39CF95
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Snow_Sparkle:MaterialExpressionComponentMask_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Snow_Sparkle:MaterialExpressionMultiply_4'")
+    .MaterialExpressionEditorX=1952
+    .MaterialExpressionEditorY=1120
+    .MaterialExpressionGuid=5012532F4FC6904C321B748B03F740B1
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_11)
+    A                      <- MaterialExpressionPower
+    B                      <- MaterialExpressionPower
+    .B=(Expression="/Script/Engine.MaterialExpressionPower'Snow_Sparkle:MaterialExpressionPower_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionPower'Snow_Sparkle:MaterialExpressionPower_1'")
+    .MaterialExpressionEditorX=-1312
+    .MaterialExpressionEditorY=1100
+    .MaterialExpressionGuid=9E7D27D346C8B6905B2D47A61FCDEEC9
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_13)
+    A                      <- MaterialExpressionTextureSample
+    B                      <- MaterialExpressionPower
+    .B=(Expression="/Script/Engine.MaterialExpressionPower'Snow_Sparkle:MaterialExpressionPower_6'")
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'Snow_Sparkle:MaterialExpressionTextureSample_2'",OutputIndex=3,Mask=1,MaskB=1)
+    .MaterialExpressionEditorX=-1376
+    .MaterialExpressionEditorY=1356
+    .MaterialExpressionGuid=238C2FDB4C3937B384FE7A9EB774E77B
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_14)
+    A                      <- MaterialExpressionMultiply
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Snow_Sparkle:MaterialExpressionMultiply_13'")
+    .ConstB=0.020000
+    .MaterialExpressionEditorX=-1240
+    .MaterialExpressionEditorY=1356
+    .MaterialExpressionGuid=6FCC3A114DD4822D714BDF86FF50B98C
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_18)
+    A                      <- MaterialExpressionPixelNormalWS
+    .A=(Expression="/Script/Engine.MaterialExpressionPixelNormalWS'Snow_Sparkle:MaterialExpressionPixelNormalWS_0'")
+    .ConstB=0.300000
+    .MaterialExpressionEditorX=-2076
+    .MaterialExpressionEditorY=1320
+    .MaterialExpressionGuid=4615A27B40E8BC162758D0AC8386D1B6
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_2)
+    A                      <- MaterialExpressionLinearInterpolate
+    B                      <- MaterialExpressionLinearInterpolate
+    .B=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Snow_Sparkle:MaterialExpressionLinearInterpolate_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Snow_Sparkle:MaterialExpressionLinearInterpolate_1'")
+    .MaterialExpressionEditorX=8
+    .MaterialExpressionEditorY=1204
+    .MaterialExpressionGuid=45D8B5304ECB14EACC3186BE38691F12
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_3)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Snow_Sparkle:MaterialExpressionMultiply_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Snow_Sparkle:MaterialExpressionAdd_1'")
+    .ConstB=15.000000
+    .MaterialExpressionEditorX=344
+    .MaterialExpressionEditorY=1112
+    .MaterialExpressionGuid=4987D71B4A1F4FFD16EAF1B9E69AA474
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_4)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Snow_Sparkle:MaterialExpressionMultiply_8'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Snow_Sparkle:MaterialExpressionMultiply_3'")
+    .MaterialExpressionEditorX=1372
+    .MaterialExpressionEditorY=1116
+    .MaterialExpressionGuid=5A083E69428D92F1309D4A9AB234CDC5
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_5)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionAdd
+    .B=(Expression="/Script/Engine.MaterialExpressionAdd'Snow_Sparkle:MaterialExpressionAdd_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Snow_Sparkle:MaterialExpressionMultiply_2'")
+    .MaterialExpressionEditorX=200
+    .MaterialExpressionEditorY=1204
+    .MaterialExpressionGuid=CA20DF084E025DC678118386249ADC09
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_8)
+    A                      <- MaterialExpressionOneMinus
+    B                      <- MaterialExpressionPower
+    .B=(Expression="/Script/Engine.MaterialExpressionPower'Snow_Sparkle:MaterialExpressionPower_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionOneMinus'Snow_Sparkle:MaterialExpressionOneMinus_0'")
+    .MaterialExpressionEditorX=1168
+    .MaterialExpressionEditorY=1240
+    .MaterialExpressionGuid=78DFC04440D0CE7958F64884C97DAE63
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_0)
+    Input                  <- MaterialExpressionSaturate
+    .Input=(Expression="/Script/Engine.MaterialExpressionSaturate'Snow_Sparkle:MaterialExpressionSaturate_5'")
+    .Name="Soft Noise"
+    .NodeColor=(R=0.851563,G=0.000000,B=1.000000,A=1.000000)
+    .VariableGuid=927E29E245B6BDAEC54E6F996E447545
+    .MaterialExpressionEditorX=-3156
+    .MaterialExpressionEditorY=1316
+    .MaterialExpressionGuid=D06973C4485B89D44F64EA85286A02DC
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_0)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Snow_Sparkle:MaterialExpressionNamedRerouteDeclaration_0'"
+    .DeclarationGuid=927E29E245B6BDAEC54E6F996E447545
+    .MaterialExpressionEditorX=-1672
+    .MaterialExpressionEditorY=1484
+    .MaterialExpressionGuid=ADC29A5F44F76A2D49EB1C8F1EFF9EF8
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionNormalize (MaterialExpressionNormalize_0)
+    VectorInput            <- MaterialExpressionSubtract
+    .VectorInput=(Expression="/Script/Engine.MaterialExpressionSubtract'Snow_Sparkle:MaterialExpressionSubtract_1'")
+    .MaterialExpressionEditorX=-3560
+    .MaterialExpressionEditorY=1096
+    .MaterialExpressionGuid=81D5B10A4F70902D28F5D28041754D43
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_0)
+    Input                  <- MaterialExpressionSaturate
+    .Input=(Expression="/Script/Engine.MaterialExpressionSaturate'Snow_Sparkle:MaterialExpressionSaturate_1'")
+    .MaterialExpressionEditorX=1048
+    .MaterialExpressionEditorY=1240
+    .MaterialExpressionGuid=570A37AD48AE6193AF8150A99CD8614E
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionPixelDepth (MaterialExpressionPixelDepth_0)
+    .MaterialExpressionEditorX=460
+    .MaterialExpressionEditorY=1224
+    .MaterialExpressionGuid=9328AD9B47EB390FA65A3580763BB65E
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionPixelNormalWS (MaterialExpressionPixelNormalWS_0)
+    .MaterialExpressionEditorX=-2236
+    .MaterialExpressionEditorY=1308
+    .MaterialExpressionGuid=5DCA20BF4AFF1C22637180BB23CCB429
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionPower (MaterialExpressionPower_1)
+    Base                   <- MaterialExpressionSaturate
+    .Base=(Expression="/Script/Engine.MaterialExpressionSaturate'Snow_Sparkle:MaterialExpressionSaturate_3'")
+    .ConstExponent=220.000000
+    .MaterialExpressionEditorX=-2704
+    .MaterialExpressionEditorY=1096
+    .MaterialExpressionGuid=6874C06740409B60776B9987EF3C3B6C
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionPower (MaterialExpressionPower_3)
+    Base                   <- MaterialExpressionSaturate
+    .Base=(Expression="/Script/Engine.MaterialExpressionSaturate'Snow_Sparkle:MaterialExpressionSaturate_4'")
+    .MaterialExpressionEditorX=992
+    .MaterialExpressionEditorY=1364
+    .MaterialExpressionGuid=E9AC4DE74768303F6AA506A36A18C91A
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionPower (MaterialExpressionPower_5)
+    Base                   <- MaterialExpressionTextureSample
+    .Base=(Expression="/Script/Engine.MaterialExpressionTextureSample'Snow_Sparkle:MaterialExpressionTextureSample_2'",OutputIndex=1,Mask=1,MaskR=1)
+    .ConstExponent=5.000000
+    .MaterialExpressionEditorX=-1504
+    .MaterialExpressionEditorY=1220
+    .MaterialExpressionGuid=29E62C544532BBF87218C68EF611E5FB
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionPower (MaterialExpressionPower_6)
+    Base                   <- MaterialExpressionNamedRerouteUsage
+    .Base=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Snow_Sparkle:MaterialExpressionNamedRerouteUsage_0'")
+    .ConstExponent=15.000000
+    .MaterialExpressionEditorX=-1548
+    .MaterialExpressionEditorY=1484
+    .MaterialExpressionGuid=ED902C994283818E0E8468AEE4E69280
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_1)
+    Input                  <- MaterialExpressionDivide
+    .Input=(Expression="/Script/Engine.MaterialExpressionDivide'Snow_Sparkle:MaterialExpressionDivide_3'")
+    .MaterialExpressionEditorX=896
+    .MaterialExpressionEditorY=1240
+    .MaterialExpressionGuid=05CC108F46260D1A490E308AEDC18FAD
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_2)
+    Input                  <- MaterialExpressionSubtract
+    .Input=(Expression="/Script/Engine.MaterialExpressionSubtract'Snow_Sparkle:MaterialExpressionSubtract_3'")
+    .MaterialExpressionEditorX=-424
+    .MaterialExpressionEditorY=1276
+    .MaterialExpressionGuid=0400CCA64F94DC5B632898A2BF1E7BED
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_3)
+    Input                  <- MaterialExpressionDotProduct
+    .Input=(Expression="/Script/Engine.MaterialExpressionDotProduct'Snow_Sparkle:MaterialExpressionDotProduct_0'")
+    .MaterialExpressionEditorX=-3016
+    .MaterialExpressionEditorY=1096
+    .MaterialExpressionGuid=FA35DA3C482105405F79EEB770EC019F
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_4)
+    Input                  <- MaterialExpressionDivide
+    .Input=(Expression="/Script/Engine.MaterialExpressionDivide'Snow_Sparkle:MaterialExpressionDivide_0'")
+    .MaterialExpressionEditorX=792
+    .MaterialExpressionEditorY=1364
+    .MaterialExpressionGuid=C435709C47B21B81D8337EA654BF1F5B
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_5)
+    Input                  <- MaterialExpressionDotProduct
+    .Input=(Expression="/Script/Engine.MaterialExpressionDotProduct'Snow_Sparkle:MaterialExpressionDotProduct_1'")
+    .MaterialExpressionEditorX=-3272
+    .MaterialExpressionEditorY=1316
+    .MaterialExpressionGuid=FA35DA3C482105405F79EEB770EC019F
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_6)
+    Input                  <- MaterialExpressionDivide
+    .Input=(Expression="/Script/Engine.MaterialExpressionDivide'Snow_Sparkle:MaterialExpressionDivide_2'")
+    .MaterialExpressionEditorX=-268
+    .MaterialExpressionEditorY=1468
+    .MaterialExpressionGuid=87476D8E4513096E5E9AEAA2FFB59F3D
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_1)
+    A                      <- MaterialExpressionTextureSample
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'Snow_Sparkle:MaterialExpressionTextureSample_3'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .ConstB=0.500000
+    .MaterialExpressionEditorX=-3700
+    .MaterialExpressionEditorY=1096
+    .MaterialExpressionGuid=7D0723C64FFE7EE07F8218AEC2653958
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_2)
+    A                      <- MaterialExpressionCameraVectorWS
+    B                      <- MaterialExpressionDivide
+    .B=(Expression="/Script/Engine.MaterialExpressionDivide'Snow_Sparkle:MaterialExpressionDivide_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionCameraVectorWS'Snow_Sparkle:MaterialExpressionCameraVectorWS_1'")
+    .MaterialExpressionEditorX=-2240
+    .MaterialExpressionEditorY=1188
+    .MaterialExpressionGuid=445F6A344D4B019DD9BC8394BBC19B38
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_3)
+    A                      <- MaterialExpressionViewProperty
+    .A=(Expression="/Script/Engine.MaterialExpressionViewProperty'Snow_Sparkle:MaterialExpressionViewProperty_0'")
+    .MaterialExpressionEditorX=-556
+    .MaterialExpressionEditorY=1276
+    .MaterialExpressionGuid=9A4F395A4234B2A44A42828ACDB9D332
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_5)
+    A                      <- MaterialExpressionCollectionParameter
+    .A=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Snow_Sparkle:MaterialExpressionCollectionParameter_0'")
+    .ConstB=3.800000
+    .MaterialExpressionEditorX=-544
+    .MaterialExpressionEditorY=1468
+    .MaterialExpressionGuid=3A2F94E346348D91F4737999668FED65
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_2)
+    Coordinates            <- MaterialExpressionAdd
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.VolumeTexture'/Game/ENDEMIS/Weather/Clouds/3D_Cells_64.3D_Cells_64'"
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionAdd'Snow_Sparkle:MaterialExpressionAdd_5'")
+    .MaterialExpressionEditorX=-1772
+    .MaterialExpressionEditorY=1188
+    .MaterialExpressionGuid=45DBB87A4C77A047429734B32994006C
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_3)
+    Coordinates            <- MaterialExpressionFunctionInput
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_WhiteNoise512.T_WhiteNoise512'"
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Snow_Sparkle:MaterialExpressionFunctionInput_0'")
+    .SamplerSource=SSM_Wrap_WorldGroupSettings
+    .MaterialExpressionEditorX=-3988
+    .MaterialExpressionEditorY=1096
+    .MaterialExpressionGuid=F5450CBB4C9E3188032BE4AE205EFB3C
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"
+  MaterialExpressionViewProperty (MaterialExpressionViewProperty_0)
+    .Property=MEVP_TemporalSampleCount
+    .MaterialExpressionEditorX=-760
+    .MaterialExpressionEditorY=1260
+    .MaterialExpressionGuid=BF4146E44F8DE2FAA50E10A8F2654E67
+    .Function="/Script/Engine.MaterialFunction'Snow_Sparkle'"

@@ -1,0 +1,264 @@
+### /Game/UltraDynamicSky/Materials/Material_Functions/Sun_Disk
+  MaterialFunction (Sun_Disk)
+    DependentFunctionExpressionCandidates(0) <- MaterialExpressionMaterialFunctionCall
+    .DependentFunctionExpressionCandidates(0)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_1'"
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'Sun_DiskEditorOnlyData'"
+    .StateId=CCF5F21D47DC1B490445A09B4955E137
+    .CombinedOutputTypes=15
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+  MaterialFunctionEditorOnlyData (Sun_DiskEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'Sun_Disk:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionCameraVectorWS'Sun_Disk:MaterialExpressionCameraVectorWS_21'","/Script/Engine.MaterialExpressionVectorParameter'Sun_Disk:MaterialExpressionVectorParameter_1'","/Script/Engine.MaterialExpressionMultiply'Sun_Disk:MaterialExpressionMultiply_2'","/Script/Engine.MaterialExpressionDotProduct'Sun_Disk:MaterialExpressionDotProduct_0'","/Script/Engine.MaterialExpressionArccosineFast'Sun_Disk:MaterialExpressionArccosineFast_0'","/Script/Engine.MaterialExpressionDivide'Sun_Disk:MaterialExpressionDivide_2'","/Script/Engine.MaterialExpressionSaturate'Sun_Disk:MaterialExpressionSaturate_4'","/Script/Engine.MaterialExpressionOneMinus'Sun_Disk:MaterialExpressionOneMinus_1'","/Script/Engine.MaterialExpressionSaturate'Sun_Disk:MaterialExpressionSaturate_5'","/Script/Engine.MaterialExpressionPower'Sun_Disk:MaterialExpressionPower_2'","/Script/Engine.MaterialExpressionMultiply'Sun_Disk:MaterialExpressionMultiply_4'","/Script/Engine.MaterialExpressionScalarParameter'Sun_Disk:MaterialExpressionScalarParameter_1'","/Script/Engine.MaterialExpressionReflectionCapturePassSwitch'Sun_Disk:MaterialExpressionReflectionCapturePassSwitch_0'","/Script/Engine.MaterialExpressionCollectionParameter'Sun_Disk:MaterialExpressionCollectionParameter_1'","/Script/Engine.MaterialExpressionComponentMask'Sun_Disk:MaterialExpressionComponentMask_7'","/Script/Engine.MaterialExpressionScalarParameter'Sun_Disk:MaterialExpressionScalarParameter_7'","/Script/Engine.MaterialExpressionMultiply'Sun_Disk:MaterialExpressionMultiply_13'","/Script/Engine.MaterialExpressionScalarParameter'Sun_Disk:MaterialExpressionScalarParameter_0'","/Script/Engine.MaterialExpressionStaticSwitchParameter'Sun_Disk:MaterialExpressionStaticSwitchParameter_1'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Sun_Disk:MaterialExpressionMaterialFunctionCall_1'","/Script/Engine.MaterialExpressionOneMinus'Sun_Disk:MaterialExpressionOneMinus_0'","/Script/Engine.MaterialExpressionPower'Sun_Disk:MaterialExpressionPower_1'","/Script/Engine.MaterialExpressionReroute'Sun_Disk:MaterialExpressionReroute_0'","/Script/Engine.MaterialExpressionReroute'Sun_Disk:MaterialExpressionReroute_1'","/Script/Engine.MaterialExpressionReroute'Sun_Disk:MaterialExpressionReroute_2'"),EditorComments=("/Script/Engine.MaterialExpressionComment'Sun_Disk:MaterialExpressionComment_2'","/Script/Engine.MaterialExpressionComment'Sun_Disk:MaterialExpressionComment_3'","/Script/Engine.MaterialExpressionComment'Sun_Disk:MaterialExpressionComment_0'","/Script/Engine.MaterialExpressionComment'Sun_Disk:MaterialExpressionComment_1'"))
+  MaterialExpressionArccosineFast (MaterialExpressionArccosineFast_0)
+    Input                  <- MaterialExpressionDotProduct
+    .Input=(Expression="/Script/Engine.MaterialExpressionDotProduct'Sun_Disk:MaterialExpressionDotProduct_0'")
+    .MaterialExpressionEditorX=-182
+    .MaterialExpressionEditorY=464
+    .MaterialExpressionGuid=13060BA347A1F31989FFBA967E14DF83
+    .Function="/Script/Engine.MaterialFunction'Sun_Disk'"
+  MaterialExpressionCameraVectorWS (MaterialExpressionCameraVectorWS_21)
+    .MaterialExpressionEditorX=-476
+    .MaterialExpressionEditorY=448
+    .MaterialExpressionGuid=E62315B343293CBEB4EDA2B42CD48FBD
+    .Function="/Script/Engine.MaterialFunction'Sun_Disk'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_1)
+    .ParameterName="Sun Vector"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+    .ParameterId=618AEFCB40106BAF34FCDD876EDC3DCE
+    .MaterialExpressionEditorX=-720
+    .MaterialExpressionEditorY=520
+    .MaterialExpressionGuid=1FB38DB94AAC841EF149AB9C8DDE5BCD
+    .Function="/Script/Engine.MaterialFunction'Sun_Disk'"
+    .bCollapsed=True
+  MaterialExpressionComment (MaterialExpressionComment_0)
+    .SizeX=1100
+    .SizeY=332
+    .Text="2D Dynamic Clouds Mask"
+    .CommentColor=(R=1.000000,G=0.764546,B=0.311790,A=1.000000)
+    .MaterialExpressionEditorX=789
+    .MaterialExpressionEditorY=402
+    .MaterialExpressionGuid=CE6AC9274BD7B4D95A358EBE8B057508
+    .Function="/Script/Engine.MaterialFunction'Sun_Disk'"
+  MaterialExpressionComment (MaterialExpressionComment_1)
+    .SizeX=704
+    .SizeY=311
+    .Text="Intensity in Sky Light"
+    .CommentColor=(R=0.358465,G=0.653573,B=1.000000,A=1.000000)
+    .MaterialExpressionEditorX=1926
+    .MaterialExpressionEditorY=418
+    .MaterialExpressionGuid=0A02A952443C864CC6C9E0B72273D3B1
+    .Function="/Script/Engine.MaterialFunction'Sun_Disk'"
+  MaterialExpressionComment (MaterialExpressionComment_2)
+    .SizeX=1492
+    .SizeY=364
+    .Text="Draw Sun Gradient"
+    .CommentColor=(R=1.000000,G=0.454740,B=0.849615,A=1.000000)
+    .MaterialExpressionEditorX=-752
+    .MaterialExpressionEditorY=352
+    .MaterialExpressionGuid=DCF0E50A45D00896B4E6169AFE048A16
+    .Function="/Script/Engine.MaterialFunction'Sun_Disk'"
+  MaterialExpressionComment (MaterialExpressionComment_3)
+    .SizeX=528
+    .SizeY=424
+    .Text="Scale with Sun Disk Color"
+    .CommentColor=(R=0.565361,G=1.000000,B=0.666987,A=1.000000)
+    .MaterialExpressionEditorX=2756
+    .MaterialExpressionEditorY=388
+    .MaterialExpressionGuid=4D94A93C40E99C3E6EB2FEAC6987AC35
+    .Function="/Script/Engine.MaterialFunction'Sun_Disk'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_7)
+    Input                  <- MaterialExpressionCollectionParameter
+    .R=True
+    .G=True
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Sun_Disk:MaterialExpressionCollectionParameter_1'")
+    .MaterialExpressionEditorX=-474
+    .MaterialExpressionEditorY=548
+    .MaterialExpressionGuid=B97CD9D6402910BB06CDA3AFF52D8EFD
+    .Function="/Script/Engine.MaterialFunction'Sun_Disk'"
+  MaterialExpressionDivide (MaterialExpressionDivide_2)
+    A                      <- MaterialExpressionArccosineFast
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Sun_Disk:MaterialExpressionScalarParameter_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionArccosineFast'Sun_Disk:MaterialExpressionArccosineFast_0'")
+    .MaterialExpressionEditorX=36
+    .MaterialExpressionEditorY=464
+    .MaterialExpressionGuid=0330634E4CB342E6576463B91ACE7835
+    .Function="/Script/Engine.MaterialFunction'Sun_Disk'"
+  MaterialExpressionDotProduct (MaterialExpressionDotProduct_0)
+    A                      <- MaterialExpressionCameraVectorWS
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Sun_Disk:MaterialExpressionComponentMask_7'")
+    .A=(Expression="/Script/Engine.MaterialExpressionCameraVectorWS'Sun_Disk:MaterialExpressionCameraVectorWS_21'")
+    .MaterialExpressionEditorX=-310
+    .MaterialExpressionEditorY=464
+    .MaterialExpressionGuid=B3E443924D7A34074291DAB09BBC3CA1
+    .Function="/Script/Engine.MaterialFunction'Sun_Disk'"
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionMultiply
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Sun_Disk:MaterialExpressionMultiply_2'")
+    .bLastPreviewed=True
+    .Id=BD30180F4FB5FC35E44C21AEF50D693F
+    .MaterialExpressionEditorX=3356
+    .MaterialExpressionEditorY=436
+    .MaterialExpressionGuid=A38FCADF4C2B7B11792E90941E027BDC
+    .Function="/Script/Engine.MaterialFunction'Sun_Disk'"
+    .bCollapsed=True
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_1)
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Composite_Cloud_Layers.Composite_Cloud_Layers'"
+    .FunctionInputs(0)=(ExpressionInputId=CAE42F7343FD156B96E183A6985C8011,Input=(InputName="In"))
+    .FunctionOutputs(0)=(ExpressionOutputId=114DC06046141B21D84F7AA575402CFE,Output=(OutputName="Result"))
+    .FunctionOutputs(1)=(ExpressionOutputId=62EE279843486F1227FE38ADB3D8A4B3,Output=(OutputName="Mask Alpha"))
+    .MaterialExpressionEditorX=944
+    .MaterialExpressionEditorY=520
+    .MaterialExpressionGuid=D9D4A29B477443C23F5D2DB896834095
+    .Function="/Script/Engine.MaterialFunction'Sun_Disk'"
+    .Outputs(0)=(OutputName="Result")
+    .Outputs(1)=(OutputName="Mask Alpha")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_13)
+    A                      <- MaterialExpressionReroute
+    B                      <- MaterialExpressionPower
+    .B=(Expression="/Script/Engine.MaterialExpressionPower'Sun_Disk:MaterialExpressionPower_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionReroute'Sun_Disk:MaterialExpressionReroute_0'")
+    .MaterialExpressionEditorX=1452
+    .MaterialExpressionEditorY=464
+    .MaterialExpressionGuid=3D974487455A36EC8CDFA4A9328429B4
+    .Function="/Script/Engine.MaterialFunction'Sun_Disk'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_2)
+    A                      <- MaterialExpressionReflectionCapturePassSwitch
+    B                      <- MaterialExpressionVectorParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Sun_Disk:MaterialExpressionVectorParameter_1'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionReflectionCapturePassSwitch'Sun_Disk:MaterialExpressionReflectionCapturePassSwitch_0'")
+    .MaterialExpressionEditorX=3104
+    .MaterialExpressionEditorY=464
+    .MaterialExpressionGuid=CBBDD69A46BD8BBFDBF28397BA733659
+    .Function="/Script/Engine.MaterialFunction'Sun_Disk'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_4)
+    A                      <- MaterialExpressionStaticSwitchParameter
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Sun_Disk:MaterialExpressionScalarParameter_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Sun_Disk:MaterialExpressionStaticSwitchParameter_1'")
+    .MaterialExpressionEditorX=2204
+    .MaterialExpressionEditorY=528
+    .MaterialExpressionGuid=51085FCB4BA70D2DD1609A8A49380196
+    .Function="/Script/Engine.MaterialFunction'Sun_Disk'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_0)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+    .Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Sun_Disk:MaterialExpressionMaterialFunctionCall_1'",OutputIndex=1)
+    .MaterialExpressionEditorX=1172
+    .MaterialExpressionEditorY=548
+    .MaterialExpressionGuid=1BA73AAC49626B6011BC0B91D9FC9EB3
+    .Function="/Script/Engine.MaterialFunction'Sun_Disk'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_1)
+    Input                  <- MaterialExpressionSaturate
+    .Input=(Expression="/Script/Engine.MaterialExpressionSaturate'Sun_Disk:MaterialExpressionSaturate_4'")
+    .MaterialExpressionEditorX=280
+    .MaterialExpressionEditorY=464
+    .MaterialExpressionGuid=1370C7F64618152A0F390F9669DF41B3
+    .Function="/Script/Engine.MaterialFunction'Sun_Disk'"
+  MaterialExpressionPower (MaterialExpressionPower_1)
+    Base                   <- MaterialExpressionOneMinus
+    .Base=(Expression="/Script/Engine.MaterialExpressionOneMinus'Sun_Disk:MaterialExpressionOneMinus_0'")
+    .ConstExponent=8.000000
+    .MaterialExpressionEditorX=1284
+    .MaterialExpressionEditorY=548
+    .MaterialExpressionGuid=EDB21E4640D49FDF289EFBB15D96E80D
+    .Function="/Script/Engine.MaterialFunction'Sun_Disk'"
+  MaterialExpressionPower (MaterialExpressionPower_2)
+    Base                   <- MaterialExpressionOneMinus
+    Exponent               <- MaterialExpressionScalarParameter
+    .Base=(Expression="/Script/Engine.MaterialExpressionOneMinus'Sun_Disk:MaterialExpressionOneMinus_1'")
+    .Exponent=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Sun_Disk:MaterialExpressionScalarParameter_7'")
+    .ConstExponent=5.000000
+    .MaterialExpressionEditorX=416
+    .MaterialExpressionEditorY=464
+    .MaterialExpressionGuid=A3F1CC0D45AAEB2A3B9A37953EDCA7F8
+    .Function="/Script/Engine.MaterialFunction'Sun_Disk'"
+  MaterialExpressionReflectionCapturePassSwitch (MaterialExpressionReflectionCapturePassSwitch_0)
+    Default                <- MaterialExpressionStaticSwitchParameter
+    Reflection             <- MaterialExpressionMultiply
+    .Default=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Sun_Disk:MaterialExpressionStaticSwitchParameter_1'")
+    .Reflection=(Expression="/Script/Engine.MaterialExpressionMultiply'Sun_Disk:MaterialExpressionMultiply_4'")
+    .MaterialExpressionEditorX=2348
+    .MaterialExpressionEditorY=468
+    .MaterialExpressionGuid=4BC431524268303E05AD56B90733D87D
+    .Function="/Script/Engine.MaterialFunction'Sun_Disk'"
+  MaterialExpressionReroute (MaterialExpressionReroute_0)
+    Input                  <- MaterialExpressionSaturate
+    .Input=(Expression="/Script/Engine.MaterialExpressionSaturate'Sun_Disk:MaterialExpressionSaturate_5'")
+    .MaterialExpressionEditorX=839
+    .MaterialExpressionEditorY=496
+    .MaterialExpressionGuid=FB9F8F0E43F4ADC5E83653B74D7D172A
+    .Function="/Script/Engine.MaterialFunction'Sun_Disk'"
+  MaterialExpressionReroute (MaterialExpressionReroute_1)
+    Input                  <- MaterialExpressionReroute
+    .Input=(Expression="/Script/Engine.MaterialExpressionReroute'Sun_Disk:MaterialExpressionReroute_2'")
+    .MaterialExpressionEditorX=1544
+    .MaterialExpressionEditorY=660
+    .MaterialExpressionGuid=18A95915490370B3CA3C6EB9E31C72F5
+    .Function="/Script/Engine.MaterialFunction'Sun_Disk'"
+  MaterialExpressionReroute (MaterialExpressionReroute_2)
+    Input                  <- MaterialExpressionReroute
+    .Input=(Expression="/Script/Engine.MaterialExpressionReroute'Sun_Disk:MaterialExpressionReroute_0'")
+    .MaterialExpressionEditorX=932
+    .MaterialExpressionEditorY=656
+    .MaterialExpressionGuid=9536C4D24F206817667737A74C5BFCAA
+    .Function="/Script/Engine.MaterialFunction'Sun_Disk'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_4)
+    Input                  <- MaterialExpressionDivide
+    .Input=(Expression="/Script/Engine.MaterialExpressionDivide'Sun_Disk:MaterialExpressionDivide_2'")
+    .MaterialExpressionEditorX=152
+    .MaterialExpressionEditorY=464
+    .MaterialExpressionGuid=99E36FD6402C172C0ABFF7B49F22DCC1
+    .Function="/Script/Engine.MaterialFunction'Sun_Disk'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_5)
+    Input                  <- MaterialExpressionPower
+    .Input=(Expression="/Script/Engine.MaterialExpressionPower'Sun_Disk:MaterialExpressionPower_2'")
+    .MaterialExpressionEditorX=580
+    .MaterialExpressionEditorY=464
+    .MaterialExpressionGuid=45FDB78341359FE2D6A6C2BB2377F1C9
+    .Function="/Script/Engine.MaterialFunction'Sun_Disk'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_0)
+    .ParameterName="Sun Radius"
+    .DefaultValue=0.000300
+    .ExpressionGUID=AFEA4ABD4B5235FEB975808FF6EC8774
+    .MaterialExpressionEditorX=-200
+    .MaterialExpressionEditorY=548
+    .MaterialExpressionGuid=A416B2AC4C25157F7AEAA39A43D0C0BD
+    .Function="/Script/Engine.MaterialFunction'Sun_Disk'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_1)
+    .ParameterName="Sun Disk Reflection"
+    .DefaultValue=1.000000
+    .ExpressionGUID=1EE8CD9F47B8AF0B3A49ED8BC4BF36E3
+    .MaterialExpressionEditorX=1976
+    .MaterialExpressionEditorY=600
+    .MaterialExpressionGuid=28F76BC44C6CD8C6C46BCD852643D22A
+    .Function="/Script/Engine.MaterialFunction'Sun_Disk'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_7)
+    .ParameterName="Sun Softness"
+    .DefaultValue=4.000000
+    .ExpressionGUID=F7F4C74840079D3ABD3C69B2CF372106
+    .MaterialExpressionEditorX=196
+    .MaterialExpressionEditorY=548
+    .MaterialExpressionGuid=F91D338947213EA8858771ACE56AE8E3
+    .Function="/Script/Engine.MaterialFunction'Sun_Disk'"
+  MaterialExpressionStaticSwitchParameter (MaterialExpressionStaticSwitchParameter_1)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionReroute
+    .ParameterName="Use_Dynamic_Clouds"
+    .B=(Expression="/Script/Engine.MaterialExpressionReroute'Sun_Disk:MaterialExpressionReroute_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Sun_Disk:MaterialExpressionMultiply_13'")
+    .ExpressionGUID=8042E22541F09C141A6881B81E2121AA
+    .SortPriority=4
+    .MaterialExpressionEditorX=1660
+    .MaterialExpressionEditorY=452
+    .MaterialExpressionGuid=E6DD189E462F37F5D8B59090F67D2D02
+    .Function="/Script/Engine.MaterialFunction'Sun_Disk'"
+  MaterialExpressionVectorParameter (MaterialExpressionVectorParameter_1)
+    .ParameterName="Sun Disk Color"
+    .DefaultValue=(R=1.000000,G=1.000000,B=1.000000,A=0.000000)
+    .ExpressionGUID=E46E641346E29D8C32F788B3BAC6A3C8
+    .MaterialExpressionEditorX=2872
+    .MaterialExpressionEditorY=526
+    .MaterialExpressionGuid=0FF8A176412A641EEBDCBDBDB4BB4FD3
+    .Function="/Script/Engine.MaterialFunction'Sun_Disk'"

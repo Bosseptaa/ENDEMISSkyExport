@@ -1,0 +1,515 @@
+### /Game/UltraDynamicSky/Blueprints/Functions/UltraDynamicWeather_Functions
+  Blueprint (UltraDynamicWeather_Functions)
+    .ParentClass="/Script/CoreUObject.Class'/Script/Engine.BlueprintFunctionLibrary'"
+    .BlueprintType=BPTYPE_FunctionLibrary
+    .BlueprintDescription="Contains shortcut functions for sampling and controlling Ultra Dynamic Weather"
+    .BlueprintCategory="UltraDynamicSky"
+    .BlueprintSystemVersion=2
+    .FunctionGraphs(0)="/Script/Engine.EdGraph'Get Ultra Dynamic Weather'"
+    .FunctionGraphs(1)="/Script/Engine.EdGraph'Get Cloud Coverage · 𝖴𝖣𝖶'"
+    .FunctionGraphs(2)="/Script/Engine.EdGraph'Get Wind Intensity · 𝖴𝖣𝖶'"
+    .FunctionGraphs(3)="/Script/Engine.EdGraph'Get Rain Amount · 𝖴𝖣𝖶'"
+    .FunctionGraphs(4)="/Script/Engine.EdGraph'Get Snow Amount · 𝖴𝖣𝖶'"
+    .FunctionGraphs(5)="/Script/Engine.EdGraph'Get Thunder/Lightning · 𝖴𝖣𝖶'"
+    .FunctionGraphs(6)="/Script/Engine.EdGraph'Get Fog · 𝖴𝖣𝖶'"
+    .FunctionGraphs(7)="/Script/Engine.EdGraph'Get Dust/Sand Amount · 𝖴𝖣𝖶'"
+    .FunctionGraphs(8)="/Script/Engine.EdGraph'Get Material Wetness · 𝖴𝖣𝖶'"
+    .FunctionGraphs(9)="/Script/Engine.EdGraph'Get Material Snow Coverage · 𝖴𝖣𝖶'"
+    .FunctionGraphs(10)="/Script/Engine.EdGraph'Get Material Dust Coverage · 𝖴𝖣𝖶'"
+    .FunctionGraphs(11)="/Script/Engine.EdGraph'Get Wind Direction Vector · 𝖴𝖣𝖶'"
+    .FunctionGraphs(12)="/Script/Engine.EdGraph'Get Local Weather State · 𝖴𝖣𝖶'"
+    .FunctionGraphs(13)="/Script/Engine.EdGraph'Get Current Temperature · 𝖴𝖣𝖶'"
+    .FunctionGraphs(14)="/Script/Engine.EdGraph'Get Display Name for Current Weather · 𝖴𝖣𝖶'"
+    .FunctionGraphs(15)="/Script/Engine.EdGraph'Change Weather · 𝖴𝖣𝖶'"
+    .FunctionGraphs(16)="/Script/Engine.EdGraph'Change to Random Weather Variation · 𝖴𝖣𝖶'"
+    .FunctionGraphs(17)="/Script/Engine.EdGraph'Get Season · 𝖴𝖣𝖶'"
+    .FunctionGraphs(18)="/Script/Engine.EdGraph'Flash Lightning · 𝖴𝖣𝖶'"
+    .FunctionGraphs(19)="/Script/Engine.EdGraph'Change Wind Direction · 𝖴𝖣𝖶'"
+    .FunctionGraphs(20)="/Script/Engine.EdGraph'Get Wind Speed in Real Units · 𝖴𝖣𝖶'"
+    .FunctionGraphs(21)="/Script/Engine.EdGraph'Apply Weather Configuration · 𝖴𝖣𝖶'"
+    .FunctionGraphs(22)="/Script/Engine.EdGraph'Set Entire Manual Weather State · 𝖴𝖣𝖶'"
+    .CategorySorting(0)="Ultra Dynamic Weather"
+    .CategorySorting(1)="Utilities"
+    .LastEditedDocuments(0)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Functions/UltraDynamicWeather_Functions.UltraDynamicWeather_Functions:Get Cloud Coverage · 𝖴𝖣𝖶",SavedViewOffset=(X=-327.330566,Y=-379.286163),SavedZoomAmount=1.000000)
+    .LastEditedDocuments(1)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Functions/UltraDynamicWeather_Functions.UltraDynamicWeather_Functions:Apply Weather Configuration · 𝖴𝖣𝖶",SavedViewOffset=(X=-663.900757,Y=-530.005005),SavedZoomAmount=1.000000)
+    .LastEditedDocuments(2)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Functions/UltraDynamicWeather_Functions.UltraDynamicWeather_Functions:Set Entire Manual Weather State · 𝖴𝖣𝖶",SavedViewOffset=(X=-222.600098,Y=-520.625000),SavedZoomAmount=1.000000)
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfo'SceneThumbnailInfo_0'"
+    .GeneratedClass="/Script/Engine.BlueprintGeneratedClass'UltraDynamicWeather_Functions_C'"
+    .bLegacyNeedToPurgeSkelRefs=False
+    .BlueprintGuid=947E2275430680051364A5890EBE39E5
+  EdGraph (Get Ultra Dynamic Weather)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_3'"
+    .GraphGuid=A71A27C24F3FB5E9AD8A42A96BF6C1C3
+  K2Node_FunctionEntry (K2Node_FunctionEntry_0)
+    .MetaData=(ToolTip=NSLOCTEXT("", "8799B8984F7A8EDFC47784B4A945EBA0", "Sets all of the Manual Weather State variables, using values from a weather state structure.\r\nNote this just sets the manual state values. It doesn\'t change to the manual state if it isn\'t in use. To do that as well, after calling this function call Change Weather with no preset selected."),Category=NSLOCTEXT("", "EFE23AB243BFC4E0BD62FB8278D5422F", "Ultra Dynamic Weather"))
+    .ExtraFlags=201465856
+    .FunctionReference=(MemberName="Set Entire Manual Weather State · 𝖴𝖣𝖶")
+    .bIsEditable=True
+    .NodePosX=-4
+    .NodePosY=-36
+    .NodeGuid=1FF9AC5C4C7778C6D130BD9FEECE5315
+  K2Node_CallFunction (K2Node_CallFunction_2)
+    .FunctionReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Weather.Ultra_Dynamic_Weather_C'",MemberName="Set Entire Manual Weather State",MemberGuid=B0C7E6EF4C3632FDB8112BA21731714B)
+    .NodePosX=780
+    .NodePosY=-16
+    .NodeGuid=62658FCC485A0D3A4FDF4496D99A64C7
+    .bDefaultsToPureFunc=True
+  K2Node_FunctionResult (K2Node_FunctionResult_0)
+    .FunctionReference=(MemberName="Get Wind Speed in Real Units · 𝖴𝖣𝖶")
+    .bIsEditable=True
+    .NodePosX=292
+    .NodePosY=264
+    .NodeGuid=8B7E08F0440407400D8E6F9D7B21761A
+  K2Node_CallFunction (K2Node_CallFunction_3)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetSystemLibrary'",MemberName="IsValid")
+    .NodePosX=1684
+    .NodePosY=408
+    .NodeGuid=AE5071414837E72183E7B3A1D8551D67
+  EdGraph (Get Cloud Coverage · 𝖴𝖣𝖶)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_1'"
+    .GraphGuid=5F2A744944C42697906C8EB3A84B4AA7
+  K2Node_FunctionResult (K2Node_FunctionResult_1)
+    .FunctionReference=(MemberName="Get Wind Speed in Real Units · 𝖴𝖣𝖶")
+    .bIsEditable=True
+    .NodePosX=736
+    .NodePosY=12
+    .NodeGuid=85E6DEB14760D9233D812388D55D62D2
+  K2Node_CallFunction (K2Node_CallFunction_0)
+    .FunctionReference=(MemberName="Get Ultra Dynamic Weather",MemberGuid=A71A27C24F3FB5E9AD8A42A96BF6C1C3,bSelfContext=True)
+    .NodePosX=296
+    .NodePosY=-36
+    .NodeGuid=572AC1504A0238D75BFC318D9BF035EF
+  K2Node_IfThenElse (K2Node_IfThenElse_0)
+    .NodePosX=548
+    .NodePosY=-36
+    .NodeGuid=B3A25E28419261DE7A706C90B2D25887
+  K2Node_VariableGet (K2Node_VariableGet_0)
+    .VariableReference=(MemberScope="Apply Weather Configuration · 𝖴𝖣𝖶",MemberName="Configuration")
+    .SelfContextInfo=NotSelfContext
+    .NodePosX=624
+    .NodePosY=116
+    .NodeGuid=72774D42485890BE48C5299BEC587181
+  K2Node_VariableGet (K2Node_VariableGet_1)
+    .VariableReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.UDS_Weather_Settings_C'",MemberName="Material Snow Coverage",MemberGuid=A4F4A38D42110A947084CBAD12BA823A)
+    .SelfContextInfo=NotSelfContext
+    .NodePosX=1044
+    .NodePosY=80
+    .NodeGuid=7B88BE7046E787E0A153C388F378F000
+  EdGraph (Get Current Temperature · 𝖴𝖣𝖶)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .GraphGuid=5B79069142B07540B4E3E8BE82D7C742
+  K2Node_CallFunction (K2Node_CallFunction_1)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Weather.Ultra_Dynamic_Weather_C'",MemberName="Apply Weather Configuration",MemberGuid=7057CC364BFDB72285819593E29C9F8B)
+    .NodePosX=796
+    .NodePosY=-16
+    .ErrorType=1
+    .NodeGuid=367039E2462D751D542A18A3985A7C1B
+  EdGraph (Get Wind Direction Vector · 𝖴𝖣𝖶)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=D9B60D68416E729F9E1B08A89BF20568
+  EdGraph (Change to Random Weather Variation · 𝖴𝖣𝖶)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .GraphGuid=BBFEB61F4EF86B643626FDA4F9010F0E
+  EdGraph (Change Weather · 𝖴𝖣𝖶)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .GraphGuid=99E74E4743002C61F9B29EA14688D7AF
+  EdGraph (Get Display Name for Current Weather · 𝖴𝖣𝖶)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=901F6CFB434D4192BA21CDAA586B97BB
+  EdGraph (Flash Lightning · 𝖴𝖣𝖶)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .GraphGuid=82F02A2A454E75FAC60761ACC509CA67
+  EdGraph (Apply Weather Configuration · 𝖴𝖣𝖶)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .GraphGuid=9EC5BEB6442E734974E5108BE9D047AB
+  EdGraph (Get Wind Intensity · 𝖴𝖣𝖶)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_2'"
+    .GraphGuid=0F58C8CE48F6E0D5F768EB849E6B381C
+  K2Node_VariableGet (K2Node_VariableGet_2)
+    .VariableReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.UDS_Weather_Settings_C'",MemberName="Material Dust Coverage",MemberGuid=7D38B95843B17B8F66F4418F1A7CC010)
+    .SelfContextInfo=NotSelfContext
+    .NodePosX=1048
+    .NodePosY=80
+    .NodeGuid=195757C64C3E6470E650D299D38FDB76
+  EdGraph (Get Rain Amount · 𝖴𝖣𝖶)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_1'"
+    .GraphGuid=A38F02B740768ED31E3C9E9E93F29E12
+  EdGraph (Get Snow Amount · 𝖴𝖣𝖶)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_2'"
+    .GraphGuid=53A3299C46B65E2F4303508F07D8199A
+  EdGraph (Get Thunder/Lightning · 𝖴𝖣𝖶)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_1'"
+    .GraphGuid=9DA78E7541D1F4C8D19C07BF5EF2E5D3
+  EdGraph (Get Fog · 𝖴𝖣𝖶)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_2'"
+    .GraphGuid=BC5C84EE4D2F48EF502E75BEB4CAC0CC
+  EdGraph (Get Dust/Sand Amount · 𝖴𝖣𝖶)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_1'"
+    .GraphGuid=1657139646056F3C2D10F4BB015B0259
+  EdGraph (Get Material Wetness · 𝖴𝖣𝖶)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_2'"
+    .GraphGuid=AAE28BEB4554675D16D7D6B636EDC878
+  EdGraph (Get Material Snow Coverage · 𝖴𝖣𝖶)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_1'"
+    .GraphGuid=62532FCD402DA3EA572F98959A4C62FC
+  EdGraph (Get Material Dust Coverage · 𝖴𝖣𝖶)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_2'"
+    .GraphGuid=CC67DC2F4B741E892D619981772D358B
+  EdGraph (Get Local Weather State · 𝖴𝖣𝖶)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .GraphGuid=0AE3B9C84C80825510921C9949CAA032
+  EdGraph (Get Season · 𝖴𝖣𝖶)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .GraphGuid=D03226ED42CA6F182A90C49EB6AB04B3
+  EdGraph (Change Wind Direction · 𝖴𝖣𝖶)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .GraphGuid=E5BD041A417E2ABF5F1D0BB9E44D11E7
+  EdGraph (Get Wind Speed in Real Units · 𝖴𝖣𝖶)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .GraphGuid=515912244A67CD691DF69AA893AE134B
+  EdGraph (Set Entire Manual Weather State · 𝖴𝖣𝖶)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .GraphGuid=E54D402240627C72764F5BAE21F18FE8
+  EdGraph (Get Ultra Dynamic Weather_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_3'"
+    .GraphGuid=A71A27C24F3FB5E9AD8A42A96BF6C1C3
+  EdGraph (Get Cloud Coverage · 𝖴𝖣𝖶_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_1'"
+    .GraphGuid=5F2A744944C42697906C8EB3A84B4AA7
+  EdGraph (Get Wind Intensity · 𝖴𝖣𝖶_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_2'"
+    .GraphGuid=0F58C8CE48F6E0D5F768EB849E6B381C
+  EdGraph (Get Rain Amount · 𝖴𝖣𝖶_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_1'"
+    .GraphGuid=A38F02B740768ED31E3C9E9E93F29E12
+  EdGraph (Get Snow Amount · 𝖴𝖣𝖶_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_2'"
+    .GraphGuid=53A3299C46B65E2F4303508F07D8199A
+  EdGraph (Get Thunder/Lightning · 𝖴𝖣𝖶_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_1'"
+    .GraphGuid=9DA78E7541D1F4C8D19C07BF5EF2E5D3
+  EdGraph (Get Fog · 𝖴𝖣𝖶_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_2'"
+    .GraphGuid=BC5C84EE4D2F48EF502E75BEB4CAC0CC
+  EdGraph (Get Dust/Sand Amount · 𝖴𝖣𝖶_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_1'"
+    .GraphGuid=1657139646056F3C2D10F4BB015B0259
+  EdGraph (Get Material Wetness · 𝖴𝖣𝖶_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_2'"
+    .GraphGuid=AAE28BEB4554675D16D7D6B636EDC878
+  EdGraph (Get Material Snow Coverage · 𝖴𝖣𝖶_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_1'"
+    .GraphGuid=62532FCD402DA3EA572F98959A4C62FC
+  EdGraph (Get Material Dust Coverage · 𝖴𝖣𝖶_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_2'"
+    .GraphGuid=CC67DC2F4B741E892D619981772D358B
+  EdGraph (Get Wind Direction Vector · 𝖴𝖣𝖶_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=D9B60D68416E729F9E1B08A89BF20568
+  EdGraph (Get Local Weather State · 𝖴𝖣𝖶_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .GraphGuid=0AE3B9C84C80825510921C9949CAA032
+  EdGraph (Get Current Temperature · 𝖴𝖣𝖶_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .GraphGuid=5B79069142B07540B4E3E8BE82D7C742
+  EdGraph (Get Display Name for Current Weather · 𝖴𝖣𝖶_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=901F6CFB434D4192BA21CDAA586B97BB
+  EdGraph (Change Weather · 𝖴𝖣𝖶_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .GraphGuid=99E74E4743002C61F9B29EA14688D7AF
+  EdGraph (Change to Random Weather Variation · 𝖴𝖣𝖶_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .GraphGuid=BBFEB61F4EF86B643626FDA4F9010F0E
+  EdGraph (Get Season · 𝖴𝖣𝖶_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .GraphGuid=D03226ED42CA6F182A90C49EB6AB04B3
+  EdGraph (Flash Lightning · 𝖴𝖣𝖶_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .GraphGuid=82F02A2A454E75FAC60761ACC509CA67
+  EdGraph (Change Wind Direction · 𝖴𝖣𝖶_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .GraphGuid=E5BD041A417E2ABF5F1D0BB9E44D11E7
+  EdGraph (Get Wind Speed in Real Units · 𝖴𝖣𝖶_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .GraphGuid=515912244A67CD691DF69AA893AE134B
+  EdGraph (Apply Weather Configuration · 𝖴𝖣𝖶_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .GraphGuid=9EC5BEB6442E734974E5108BE9D047AB
+  EdGraph (Set Entire Manual Weather State · 𝖴𝖣𝖶_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .GraphGuid=E54D402240627C72764F5BAE21F18FE8

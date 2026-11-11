@@ -1,0 +1,142 @@
+### /Game/UltraDynamicSky/Materials/Material_Functions/FlatOvercast_Texture
+  MaterialFunction (FlatOvercast_Texture)
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'FlatOvercast_TextureEditorOnlyData'"
+    .StateId=E5B75E054AC11B76DFE1A08BA7AB50EB
+    .CombinedInputTypes=4
+    .CombinedOutputTypes=15
+  MaterialFunctionEditorOnlyData (FlatOvercast_TextureEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'FlatOvercast_Texture:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionFunctionInput'FlatOvercast_Texture:MaterialExpressionFunctionInput_0'","/Script/Engine.MaterialExpressionTextureCoordinate'FlatOvercast_Texture:MaterialExpressionTextureCoordinate_0'","/Script/Engine.MaterialExpressionSubtract'FlatOvercast_Texture:MaterialExpressionSubtract_1'","/Script/Engine.MaterialExpressionMultiply'FlatOvercast_Texture:MaterialExpressionMultiply_1'","/Script/Engine.MaterialExpressionScalarParameter'FlatOvercast_Texture:MaterialExpressionScalarParameter_0'","/Script/Engine.MaterialExpressionStaticSwitchParameter'FlatOvercast_Texture:MaterialExpressionStaticSwitchParameter_16'","/Script/Engine.MaterialExpressionReroute'FlatOvercast_Texture:MaterialExpressionReroute_0'","/Script/Engine.MaterialExpressionTextureSampleParameter2D'FlatOvercast_Texture:MaterialExpressionTextureSampleParameter2D_1'","/Script/Engine.MaterialExpressionScalarParameter'FlatOvercast_Texture:MaterialExpressionScalarParameter_1'","/Script/Engine.MaterialExpressionSubtract'FlatOvercast_Texture:MaterialExpressionSubtract_2'","/Script/Engine.MaterialExpressionMultiply'FlatOvercast_Texture:MaterialExpressionMultiply_4'","/Script/Engine.MaterialExpressionSaturate'FlatOvercast_Texture:MaterialExpressionSaturate_0'","/Script/Engine.MaterialExpressionMultiply'FlatOvercast_Texture:MaterialExpressionMultiply_5'","/Script/Engine.MaterialExpressionMultiply'FlatOvercast_Texture:MaterialExpressionMultiply_6'","/Script/Engine.MaterialExpressionAdd'FlatOvercast_Texture:MaterialExpressionAdd_4'"))
+  MaterialExpressionAdd (MaterialExpressionAdd_4)
+    A                      <- MaterialExpressionMultiply
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'FlatOvercast_Texture:MaterialExpressionMultiply_5'")
+    .MaterialExpressionEditorX=-768
+    .MaterialExpressionEditorY=436
+    .MaterialExpressionGuid=18A2F6504B13528761CEB3B8817B1163
+    .Function="/Script/Engine.MaterialFunction'FlatOvercast_Texture'"
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_0)
+    .Id=F9EF1B5E40CB81C89AD72D95ABF10F9D
+    .MaterialExpressionEditorX=-800
+    .MaterialExpressionEditorY=288
+    .MaterialExpressionGuid=B0AE08CE43CB3D6224928781452BBD4D
+    .Function="/Script/Engine.MaterialFunction'FlatOvercast_Texture'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionStaticSwitchParameter
+    .A=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'FlatOvercast_Texture:MaterialExpressionStaticSwitchParameter_16'")
+    .bLastPreviewed=True
+    .Id=6FDA554B42C85A94B36283A4A8E3DFBE
+    .MaterialExpressionEditorX=-144
+    .MaterialExpressionEditorY=264
+    .MaterialExpressionGuid=65AC969B45095E7256734C876E1DD7A3
+    .Function="/Script/Engine.MaterialFunction'FlatOvercast_Texture'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'FlatOvercast_Texture:MaterialExpressionScalarParameter_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'FlatOvercast_Texture:MaterialExpressionSubtract_1'")
+    .MaterialExpressionEditorX=-1084
+    .MaterialExpressionEditorY=328
+    .MaterialExpressionGuid=B668BC06401057A907B9DEB4DE8801E5
+    .Function="/Script/Engine.MaterialFunction'FlatOvercast_Texture'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_4)
+    A                      <- MaterialExpressionSubtract
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'FlatOvercast_Texture:MaterialExpressionSubtract_2'")
+    .ConstB=2.000000
+    .MaterialExpressionEditorX=-1244
+    .MaterialExpressionEditorY=616
+    .MaterialExpressionGuid=1D5E4D284F1427A302A02AAE83610802
+    .Function="/Script/Engine.MaterialFunction'FlatOvercast_Texture'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_5)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionSaturate
+    .B=(Expression="/Script/Engine.MaterialExpressionSaturate'FlatOvercast_Texture:MaterialExpressionSaturate_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'FlatOvercast_Texture:MaterialExpressionMultiply_1'")
+    .MaterialExpressionEditorX=-896
+    .MaterialExpressionEditorY=436
+    .MaterialExpressionGuid=5D0FDCCF49E73FF625C07E995B517489
+    .Function="/Script/Engine.MaterialFunction'FlatOvercast_Texture'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_6)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionAdd
+    .B=(Expression="/Script/Engine.MaterialExpressionAdd'FlatOvercast_Texture:MaterialExpressionAdd_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'FlatOvercast_Texture:MaterialExpressionFunctionInput_0'")
+    .MaterialExpressionEditorX=-560
+    .MaterialExpressionEditorY=288
+    .MaterialExpressionGuid=5AD050DD4C6C62BBEBB85DB46466E352
+    .Function="/Script/Engine.MaterialFunction'FlatOvercast_Texture'"
+  MaterialExpressionReroute (MaterialExpressionReroute_0)
+    Input                  <- MaterialExpressionFunctionInput
+    .Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'FlatOvercast_Texture:MaterialExpressionFunctionInput_0'")
+    .MaterialExpressionEditorX=-444
+    .MaterialExpressionEditorY=404
+    .MaterialExpressionGuid=28D34B4C45052DFAFC4E3E8BEA909F2F
+    .Function="/Script/Engine.MaterialFunction'FlatOvercast_Texture'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_0)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'FlatOvercast_Texture:MaterialExpressionMultiply_4'")
+    .MaterialExpressionEditorX=-1116
+    .MaterialExpressionEditorY=616
+    .MaterialExpressionGuid=4E88F87C4ABAE550BD11098450664AD1
+    .Function="/Script/Engine.MaterialFunction'FlatOvercast_Texture'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_0)
+    .ParameterName="Flat Overcast Strength"
+    .DefaultValue=0.300000
+    .ExpressionGUID=2E7C740247DC529841AF868367DE9D52
+    .MaterialExpressionEditorX=-1284
+    .MaterialExpressionEditorY=440
+    .MaterialExpressionGuid=5A123BCE4A5D303C22E8F98BF76FA459
+    .Function="/Script/Engine.MaterialFunction'FlatOvercast_Texture'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_1)
+    .ParameterName="Cloud Density"
+    .DefaultValue=2.033701
+    .ExpressionGUID=FC5F067E44018A87AACAEEAD7F64DF70
+    .MaterialExpressionEditorX=-1572
+    .MaterialExpressionEditorY=600
+    .MaterialExpressionGuid=9CB5BF1E46930140047118849E1EFCCB
+    .Function="/Script/Engine.MaterialFunction'FlatOvercast_Texture'"
+  MaterialExpressionStaticSwitchParameter (MaterialExpressionStaticSwitchParameter_16)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionReroute
+    .ParameterName="Static Clouds"
+    .B=(Expression="/Script/Engine.MaterialExpressionReroute'FlatOvercast_Texture:MaterialExpressionReroute_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'FlatOvercast_Texture:MaterialExpressionMultiply_6'")
+    .ExpressionGUID=D87EF4184A14C7BD6510FDA9C39F196F
+    .SortPriority=0
+    .MaterialExpressionEditorX=-372
+    .MaterialExpressionEditorY=276
+    .MaterialExpressionGuid=02E3018B4182DB6F6CD1DD89E8111CE8
+    .Function="/Script/Engine.MaterialFunction'FlatOvercast_Texture'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_1)
+    A                      <- MaterialExpressionTextureSampleParameter2D
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameter2D'FlatOvercast_Texture:MaterialExpressionTextureSampleParameter2D_1'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .ConstB=0.500000
+    .MaterialExpressionEditorX=-1264
+    .MaterialExpressionEditorY=328
+    .MaterialExpressionGuid=62C8C5494E5313FF1677A8BE4F11521E
+    .Function="/Script/Engine.MaterialFunction'FlatOvercast_Texture'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_2)
+    A                      <- MaterialExpressionScalarParameter
+    .A=(Expression="/Script/Engine.MaterialExpressionScalarParameter'FlatOvercast_Texture:MaterialExpressionScalarParameter_1'")
+    .ConstB=2.100000
+    .MaterialExpressionEditorX=-1384
+    .MaterialExpressionEditorY=616
+    .MaterialExpressionGuid=3EB45BB74BC064CD41D28F9F54708BD6
+    .Function="/Script/Engine.MaterialFunction'FlatOvercast_Texture'"
+  MaterialExpressionTextureCoordinate (MaterialExpressionTextureCoordinate_0)
+    .MaterialExpressionEditorX=-1760
+    .MaterialExpressionEditorY=332
+    .MaterialExpressionGuid=6D2D35E1458F954C635724AB5B296BBA
+    .Function="/Script/Engine.MaterialFunction'FlatOvercast_Texture'"
+  MaterialExpressionTextureSampleParameter2D (MaterialExpressionTextureSampleParameter2D_1)
+    Coordinates            <- MaterialExpressionTextureCoordinate
+    .ParameterName="Flat Overcast Texture"
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_ParticleClouds.T_ParticleClouds'"
+    .ExpressionGUID=02542B9244EA59625E5013B749C95940
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'FlatOvercast_Texture:MaterialExpressionTextureCoordinate_0'")
+    .SamplerSource=SSM_Clamp_WorldGroupSettings
+    .AutomaticViewMipBias=False
+    .MaterialExpressionEditorX=-1544
+    .MaterialExpressionEditorY=316
+    .MaterialExpressionGuid=2E4683CE4DD5C0BCC3A7118D4CA4A7BF
+    .Function="/Script/Engine.MaterialFunction'FlatOvercast_Texture'"

@@ -1,0 +1,142 @@
+### /SkyCreatorPlugin/Materials/WeatherFX/M_SC_LightningBolt
+  Material (M_SC_LightningBolt)
+    .BlendMode=BLEND_Additive
+    .ShadingModel=MSM_Unlit
+    .ShadingModels=(ShadingModelField=1)
+    .bUsedWithNiagaraRibbons=True
+    .bCanMaskedBeAssumedOpaque=True
+    .bApplyCloudFogging=True
+    .PixelDepthOffsetMode=PDOM_Legacy
+    .StateId=514C959C47046D827CA0C5940B84592F
+    .EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'M_SC_LightningBoltEditorOnlyData'"
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+    .ParameterOverviewExpansion=(("-12Global", True))
+    .LightingGuid=05D37FDF4E9AAB5A2F5C9CBD21FCF30C
+  MaterialEditorOnlyData (M_SC_LightningBoltEditorOnlyData)
+    EmissiveColor          <- MaterialExpressionMultiply
+    Opacity                <- MaterialExpressionMultiply
+    ExpressionCollection   <- MaterialExpressionMultiply
+    .EmissiveColor=(Expression="/Script/Engine.MaterialExpressionMultiply'M_SC_LightningBolt:MaterialExpressionMultiply_0'")
+    .Opacity=(Expression="/Script/Engine.MaterialExpressionMultiply'M_SC_LightningBolt:MaterialExpressionMultiply_5'")
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionMultiply'M_SC_LightningBolt:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionMultiply'M_SC_LightningBolt:MaterialExpressionMultiply_5'","/Script/Engine.MaterialExpressionParticleColor'M_SC_LightningBolt:MaterialExpressionParticleColor_0'","/Script/Engine.MaterialExpressionSphereMask'M_SC_LightningBolt:MaterialExpressionSphereMask_0'","/Script/Engine.MaterialExpressionTextureCoordinate'M_SC_LightningBolt:MaterialExpressionTextureCoordinate_1'","/Script/Engine.MaterialExpressionConstant2Vector'M_SC_LightningBolt:MaterialExpressionConstant2Vector_0'","/Script/Engine.MaterialExpressionConstant'M_SC_LightningBolt:MaterialExpressionConstant_0'","/Script/Engine.MaterialExpressionConstant'M_SC_LightningBolt:MaterialExpressionConstant_1'","/Script/Engine.MaterialExpressionComponentMask'M_SC_LightningBolt:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_LightningBolt:MaterialExpressionMaterialFunctionCall_2'","/Script/Engine.MaterialExpressionSubtract'M_SC_LightningBolt:MaterialExpressionSubtract_0'","/Script/Engine.MaterialExpressionOneMinus'M_SC_LightningBolt:MaterialExpressionOneMinus_0'","/Script/Engine.MaterialExpressionDynamicParameter'M_SC_LightningBolt:MaterialExpressionDynamicParameter_0'","/Script/Engine.MaterialExpressionOneMinus'M_SC_LightningBolt:MaterialExpressionOneMinus_1'","/Script/Engine.MaterialExpressionSaturate'M_SC_LightningBolt:MaterialExpressionSaturate_1'"))
+    .ParameterGroupData(0)=(GroupName="None")
+    .ParameterGroupData(1)=(GroupName="None")
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionTextureCoordinate
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'M_SC_LightningBolt:MaterialExpressionTextureCoordinate_1'")
+    .MaterialExpressionEditorX=-768
+    .MaterialExpressionEditorY=336
+    .MaterialExpressionGuid=936B13FB42119A37D7907BACFE3AF7F4
+    .Material="/Script/Engine.Material'M_SC_LightningBolt'"
+  MaterialExpressionConstant (MaterialExpressionConstant_0)
+    .R=0.500000
+    .MaterialExpressionEditorX=-1024
+    .MaterialExpressionEditorY=560
+    .MaterialExpressionGuid=9FE356AC4B1BC17A7CF9659E450F619D
+    .Material="/Script/Engine.Material'M_SC_LightningBolt'"
+  MaterialExpressionConstant (MaterialExpressionConstant_1)
+    .R=0.500000
+    .MaterialExpressionEditorX=-1024
+    .MaterialExpressionEditorY=640
+    .MaterialExpressionGuid=A8FEF1C944DF7D34DA35E2962848593A
+    .Material="/Script/Engine.Material'M_SC_LightningBolt'"
+  MaterialExpressionConstant2Vector (MaterialExpressionConstant2Vector_0)
+    .R=0.500000
+    .G=0.500000
+    .MaterialExpressionEditorX=-1024
+    .MaterialExpressionEditorY=432
+    .MaterialExpressionGuid=D4C3B7404BE1A7CB03236B8D058387C2
+    .Material="/Script/Engine.Material'M_SC_LightningBolt'"
+  MaterialExpressionDynamicParameter (MaterialExpressionDynamicParameter_0)
+    .ParamNames(0)="Gradient"
+    .MaterialExpressionEditorX=-1152
+    .MaterialExpressionEditorY=896
+    .MaterialExpressionGuid=5335FE374687EF70FC665897AA57E8D1
+    .Material="/Script/Engine.Material'M_SC_LightningBolt'"
+    .Outputs(0)=(OutputName="Gradient")
+    .Outputs(1)=(OutputName="Param2")
+    .Outputs(2)=(OutputName="Param3")
+    .Outputs(3)=(OutputName="Param4")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_2)
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Engine/Functions/Engine_MaterialFunctions01/Gradient/LinearGradient.LinearGradient'"
+    .FunctionInputs(0)=(ExpressionInputId=956846354D2549E665DAC68533EC21EC,Input=(InputName="UV Channel"))
+    .FunctionOutputs(0)=(ExpressionOutputId=0F11154B443B1137CC9914998FC01F5E,Output=(OutputName="UGradient"))
+    .FunctionOutputs(1)=(ExpressionOutputId=D0E9AADC4F9EEDBBFD95F9B3A5165013,Output=(OutputName="VGradient"))
+    .MaterialExpressionEditorX=-1152
+    .MaterialExpressionEditorY=768
+    .MaterialExpressionGuid=E86EE49243D29E80378269AF75C20CD2
+    .Material="/Script/Engine.Material'M_SC_LightningBolt'"
+    .Outputs(0)=(OutputName="UGradient")
+    .Outputs(1)=(OutputName="VGradient")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionParticleColor
+    B                      <- MaterialExpressionSphereMask
+    .B=(Expression="/Script/Engine.MaterialExpressionSphereMask'M_SC_LightningBolt:MaterialExpressionSphereMask_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionParticleColor'M_SC_LightningBolt:MaterialExpressionParticleColor_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .MaterialExpressionEditorX=-256
+    .MaterialExpressionEditorY=48
+    .MaterialExpressionGuid=E2768A734830727FEF98F7A088D64642
+    .Material="/Script/Engine.Material'M_SC_LightningBolt'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_5)
+    A                      <- MaterialExpressionParticleColor
+    B                      <- MaterialExpressionSaturate
+    .B=(Expression="/Script/Engine.MaterialExpressionSaturate'M_SC_LightningBolt:MaterialExpressionSaturate_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionParticleColor'M_SC_LightningBolt:MaterialExpressionParticleColor_0'",OutputIndex=4,Mask=1,MaskA=1)
+    .MaterialExpressionEditorX=-256
+    .MaterialExpressionEditorY=256
+    .MaterialExpressionGuid=BF48E394428F9EECB97D33A3DDF7AF0F
+    .Material="/Script/Engine.Material'M_SC_LightningBolt'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_0)
+    Input                  <- MaterialExpressionDynamicParameter
+    .Input=(Expression="/Script/Engine.MaterialExpressionDynamicParameter'M_SC_LightningBolt:MaterialExpressionDynamicParameter_0'",Mask=1,MaskR=1)
+    .MaterialExpressionEditorX=-896
+    .MaterialExpressionEditorY=912
+    .MaterialExpressionGuid=6371A4D24352983773D1F0A6A53BBC5F
+    .Material="/Script/Engine.Material'M_SC_LightningBolt'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_1)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+    .Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_LightningBolt:MaterialExpressionMaterialFunctionCall_2'")
+    .MaterialExpressionEditorX=-896
+    .MaterialExpressionEditorY=768
+    .MaterialExpressionGuid=6371A4D24352983773D1F0A6A53BBC5F
+    .Material="/Script/Engine.Material'M_SC_LightningBolt'"
+  MaterialExpressionParticleColor (MaterialExpressionParticleColor_0)
+    .MaterialExpressionEditorX=-640
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=3D88AD9F460092666A5C4FB7437975F1
+    .Material="/Script/Engine.Material'M_SC_LightningBolt'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_1)
+    Input                  <- MaterialExpressionSubtract
+    .Input=(Expression="/Script/Engine.MaterialExpressionSubtract'M_SC_LightningBolt:MaterialExpressionSubtract_0'")
+    .MaterialExpressionEditorX=-640
+    .MaterialExpressionEditorY=768
+    .MaterialExpressionGuid=91617F334CC3AFA799DD688256EBBD73
+    .Material="/Script/Engine.Material'M_SC_LightningBolt'"
+  MaterialExpressionSphereMask (MaterialExpressionSphereMask_0)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionConstant2Vector
+    Radius                 <- MaterialExpressionConstant
+    Hardness               <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'M_SC_LightningBolt:MaterialExpressionConstant2Vector_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'M_SC_LightningBolt:MaterialExpressionComponentMask_0'")
+    .Radius=(Expression="/Script/Engine.MaterialExpressionConstant'M_SC_LightningBolt:MaterialExpressionConstant_0'")
+    .Hardness=(Expression="/Script/Engine.MaterialExpressionConstant'M_SC_LightningBolt:MaterialExpressionConstant_1'")
+    .MaterialExpressionEditorX=-640
+    .MaterialExpressionEditorY=336
+    .MaterialExpressionGuid=2E08404049627B9BA329A491625CA6E2
+    .Material="/Script/Engine.Material'M_SC_LightningBolt'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_0)
+    A                      <- MaterialExpressionOneMinus
+    B                      <- MaterialExpressionOneMinus
+    .B=(Expression="/Script/Engine.MaterialExpressionOneMinus'M_SC_LightningBolt:MaterialExpressionOneMinus_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionOneMinus'M_SC_LightningBolt:MaterialExpressionOneMinus_1'")
+    .MaterialExpressionEditorX=-768
+    .MaterialExpressionEditorY=768
+    .MaterialExpressionGuid=DC19719E46FFF96B21D370A0B3432E50
+    .Material="/Script/Engine.Material'M_SC_LightningBolt'"
+  MaterialExpressionTextureCoordinate (MaterialExpressionTextureCoordinate_1)
+    .MaterialExpressionEditorX=-1024
+    .MaterialExpressionEditorY=336
+    .MaterialExpressionGuid=11335C7946D8264E49B5C18F45CF75DD
+    .Material="/Script/Engine.Material'M_SC_LightningBolt'"

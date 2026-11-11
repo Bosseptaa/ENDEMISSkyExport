@@ -1,0 +1,364 @@
+### /Game/UltraDynamicSky/Blueprints/System/Editor_UI/UDS_Glossary_Tooltip
+  WidgetBlueprint (UDS_Glossary_Tooltip)
+    .Animations(0)="/Script/UMG.WidgetAnimation'Fade_In'"
+    .WidgetVariableNameToGuidMap=(("CanvasPanel_40", D42C3453A3C731128C7FF8466530C523),("BG", D029CA96C6AE327F9A313E4E4898331C),("SizeBox_106", CFD0868DC3EE3128A54371B911FE86EB),("HorizontalBox_1", 42823F0A8AAB361894F460B6B85B15CB),("VerticalBox_0", A91F7C65E04D3382A46EB9FE6FB7D29A),("DisplayName", 4C8D16CEF49D3E3ABD37C24671F65C55),("TextBlock_416", F487B777A21C3E7393E49E371DCA70D1),("TypeLabel", 9DCAEE6F4A2330E8A771C11ABEF102D5),("Image_191", 1A29E79296C03997B612C8F273490A62),("Spacer_133", C0C93961C9F539D3A949FDBEEB89FB32),("Spacer_369", 3D09A634BD773E2182B8FDD0B01F997A),("Tooltip_Text", A8E1924FE3BE3A73807739EDBD562298),("Fade_In", 7C6C2315CCF830D7AA3BFFFE64476F35))
+    .PaletteCategory="UDS_Tools"
+    .TickPrediction=WillTick
+    .TickPredictionReason="Native|Anim"
+    .WidgetTree="WidgetTree"
+    .ParentClass="/Script/CoreUObject.Class'/Script/Blutility.EditorUtilityWidget'"
+    .BlueprintCategory="UltraDynamicSky|Editor"
+    .BlueprintSystemVersion=2
+    .UbergraphPages(0)="/Script/Engine.EdGraph'EventGraph'"
+    .NewVariables(0)=(VarName="Glossary Entry",VarGuid=16B316724EC80AA5234443A44A0E1A4A,VarType=(PinCategory="struct",PinSubCategoryObject="/Script/CoreUObject.UserDefinedStruct'/Game/UltraDynamicSky/Blueprints/System/Editor_UI/UDS_Glossary_Entry.UDS_Glossary_Entry'"),FriendlyName="Glossary Entry",Category=NSLOCTEXT("KismetSchema", "Default", "Default"),PropertyFlags=5,MetaDataArray=((DataKey="MultiLine",DataValue="true")))
+    .NewVariables(1)=(VarName="Color",VarGuid=8289A56A4E3287C4B5C6999630DADC16,VarType=(PinCategory="struct",PinSubCategoryObject="/Script/CoreUObject.ScriptStruct'/Script/CoreUObject.LinearColor'"),FriendlyName="Color",Category=NSLOCTEXT("KismetSchema", "Default", "Default"),PropertyFlags=5,MetaDataArray=((DataKey="MultiLine",DataValue="true")))
+    .GeneratedVariables(0)=(VarName="TypeLabel",VarGuid=9DCAEE6F4A2330E8A771C11ABEF102D5,VarType=(PinCategory="object",PinSubCategoryObject="/Script/CoreUObject.Class'/Script/UMG.TextBlock'"),FriendlyName="TypeLabel",PropertyFlags=562952101494812,MetaDataArray=((DataKey="Category",DataValue="UDS_Glossary_Tooltip")))
+    .GeneratedVariables(1)=(VarName="Tooltip_Text",VarGuid=A8E1924FE3BE3A73807739EDBD562298,VarType=(PinCategory="object",PinSubCategoryObject="/Script/CoreUObject.Class'/Script/UMG.TextBlock'"),FriendlyName="Tooltip_Text",PropertyFlags=562952101494812,MetaDataArray=((DataKey="Category",DataValue="UDS_Glossary_Tooltip")))
+    .GeneratedVariables(2)=(VarName="Image_191",VarGuid=1A29E79296C03997B612C8F273490A62,VarType=(PinCategory="object",PinSubCategoryObject="/Script/CoreUObject.Class'/Script/UMG.Image'"),FriendlyName="Image_191",PropertyFlags=562952101494812,MetaDataArray=((DataKey="Category",DataValue="UDS_Glossary_Tooltip")))
+    .GeneratedVariables(3)=(VarName="DisplayName",VarGuid=4C8D16CEF49D3E3ABD37C24671F65C55,VarType=(PinCategory="object",PinSubCategoryObject="/Script/CoreUObject.Class'/Script/UMG.TextBlock'"),FriendlyName="DisplayName",PropertyFlags=562952101494812,MetaDataArray=((DataKey="Category",DataValue="UDS_Glossary_Tooltip")))
+    .GeneratedVariables(4)=(VarName="BG",VarGuid=D029CA96C6AE327F9A313E4E4898331C,VarType=(PinCategory="object",PinSubCategoryObject="/Script/CoreUObject.Class'/Script/UMG.Image'"),FriendlyName="BG",PropertyFlags=562952101494812,MetaDataArray=((DataKey="Category",DataValue="UDS_Glossary_Tooltip")))
+    .GeneratedVariables(5)=(VarName="Fade_In",VarGuid=7C6C2315CCF830D7AA3BFFFE64476F35,VarType=(PinCategory="object",PinSubCategoryObject="/Script/CoreUObject.Class'/Script/UMG.WidgetAnimation'",bIsReference=True),FriendlyName="Fade_In",PropertyFlags=2147491860,MetaDataArray=((DataKey="Category",DataValue="Animations")))
+    .CategorySorting(0)="Appearance"
+    .CategorySorting(1)="Input"
+    .CategorySorting(2)="Interaction"
+    .CategorySorting(3)="Performance"
+    .CategorySorting(4)="Layout"
+    .CategorySorting(5)="Behavior"
+    .CategorySorting(6)="Render Transform"
+    .CategorySorting(7)="Navigation"
+    .CategorySorting(8)="Event Graph"
+    .CategorySorting(9)="UDS Glossary Tooltip"
+    .CategorySorting(10)="Animations"
+    .CategorySorting(11)="Default"
+    .CategorySorting(12)="Config"
+    .CategorySorting(13)="Settings"
+    .LastEditedDocuments(0)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/System/Editor_UI/UDS_Glossary_Tooltip.UDS_Glossary_Tooltip:EventGraph",SavedViewOffset=(X=307.677155,Y=109.758095),SavedZoomAmount=1.000000)
+    .GeneratedClass="/Script/UMG.WidgetBlueprintGeneratedClass'UDS_Glossary_Tooltip_C'"
+    .bLegacyNeedToPurgeSkelRefs=False
+    .BlueprintGuid=B159E183416EDC8D9C63E48D8D560AAC
+  WidgetTree (WidgetTree)
+    .RootWidget="/Script/UMG.CanvasPanel'CanvasPanel_40'"
+  CanvasPanel (CanvasPanel_40)
+    .Slots(0)="/Script/UMG.CanvasPanelSlot'CanvasPanelSlot_7'"
+    .Slots(1)="/Script/UMG.CanvasPanelSlot'CanvasPanelSlot_8'"
+    .bExpandedInDesigner=True
+  Image (BG)
+    .Brush=(TintColor=(SpecifiedColor=(R=0.015686,G=0.015686,B=0.015686,A=1.000000)),DrawAs=RoundedBox,ResourceObject="/Script/Engine.Texture2D'/Game/UltraDynamicSky/Textures/Icons/AmbientSound_TimeWeather.AmbientSound_TimeWeather'",OutlineSettings=(CornerRadii=(X=4.000000,Y=4.000000,Z=4.000000,W=4.000000),Color=(SpecifiedColor=(R=0.890625,G=0.478711,B=0.000000,A=1.000000)),Width=1.000000,RoundingType=FixedRadius))
+    .Slot="/Script/UMG.CanvasPanelSlot'UDS_Glossary_Tooltip:WidgetTree.CanvasPanel_40.CanvasPanelSlot_7'"
+    .DisplayLabel="BG"
+  SizeBox (SizeBox_106)
+    .MinDesiredWidth=120.000000
+    .MinDesiredHeight=40.000000
+    .bOverride_MinDesiredWidth=True
+    .bOverride_MinDesiredHeight=True
+    .Slots(0)="/Script/UMG.SizeBoxSlot'SizeBoxSlot_2'"
+    .Slot="/Script/UMG.CanvasPanelSlot'UDS_Glossary_Tooltip:WidgetTree.CanvasPanel_40.CanvasPanelSlot_8'"
+    .bExpandedInDesigner=True
+  HorizontalBox (HorizontalBox_1)
+    .Slots(0)="/Script/UMG.HorizontalBoxSlot'HorizontalBoxSlot_0'"
+    .Slots(1)="/Script/UMG.HorizontalBoxSlot'HorizontalBoxSlot_1'"
+    .Slots(2)="/Script/UMG.HorizontalBoxSlot'HorizontalBoxSlot_2'"
+    .Slot="/Script/UMG.VerticalBoxSlot'UDS_Glossary_Tooltip:WidgetTree.VerticalBox_0.VerticalBoxSlot_2'"
+    .bExpandedInDesigner=True
+  VerticalBox (VerticalBox_0)
+    .Slots(0)="/Script/UMG.VerticalBoxSlot'VerticalBoxSlot_2'"
+    .Slots(1)="/Script/UMG.VerticalBoxSlot'VerticalBoxSlot_4'"
+    .Slots(2)="/Script/UMG.VerticalBoxSlot'VerticalBoxSlot_5'"
+    .Slots(3)="/Script/UMG.VerticalBoxSlot'VerticalBoxSlot_6'"
+    .Slots(4)="/Script/UMG.VerticalBoxSlot'VerticalBoxSlot_0'"
+    .Slot="/Script/UMG.SizeBoxSlot'UDS_Glossary_Tooltip:WidgetTree.SizeBox_106.SizeBoxSlot_2'"
+    .bExpandedInDesigner=True
+  TextBlock (DisplayName)
+    .Text=NSLOCTEXT("[580B0C2C475DCBDAB8333E9E6D0EC26C]", "E8E14D744FB50D9E0D6FD1A902A29692", "Example")
+    .Font=(Size=14.000000)
+    .Slot="/Script/UMG.HorizontalBoxSlot'UDS_Glossary_Tooltip:WidgetTree.HorizontalBox_1.HorizontalBoxSlot_0'"
+    .bIsVariable=True
+    .DisplayLabel="DisplayName"
+  TextBlock (TextBlock_416)
+    .Text=NSLOCTEXT("[580B0C2C475DCBDAB8333E9E6D0EC26C]", "827484AF4F874F501DB104AF8F9FDF68", "|")
+    .ColorAndOpacity=(SpecifiedColor=(R=0.427083,G=0.427083,B=0.427083,A=0.500000))
+    .Font=(TypefaceFontName="Regular",Size=14.000000)
+    .Slot="/Script/UMG.HorizontalBoxSlot'UDS_Glossary_Tooltip:WidgetTree.HorizontalBox_1.HorizontalBoxSlot_1'"
+  TextBlock (TypeLabel)
+    .Text=NSLOCTEXT("[580B0C2C475DCBDAB8333E9E6D0EC26C]", "DF44312F4C565182093E9CB6B2BA908A", "Float")
+    .ColorAndOpacity=(SpecifiedColor=(R=0.432292,G=0.432292,B=0.432292,A=1.000000))
+    .Font=(TypefaceFontName="Regular",Size=12.000000)
+    .Slot="/Script/UMG.HorizontalBoxSlot'UDS_Glossary_Tooltip:WidgetTree.HorizontalBox_1.HorizontalBoxSlot_2'"
+    .bIsVariable=True
+    .DisplayLabel="TypeLabel"
+  Image (Image_191)
+    .Brush=(TintColor=(SpecifiedColor=(R=1.000000,G=1.000000,B=1.000000,A=0.500000)),ImageSize=(X=32.000000,Y=1.000000))
+    .Slot="/Script/UMG.VerticalBoxSlot'UDS_Glossary_Tooltip:WidgetTree.VerticalBox_0.VerticalBoxSlot_5'"
+  Spacer (Spacer_133)
+    .Size=(X=1.000000,Y=4.000000)
+    .Slot="/Script/UMG.VerticalBoxSlot'UDS_Glossary_Tooltip:WidgetTree.VerticalBox_0.VerticalBoxSlot_4'"
+  Spacer (Spacer_369)
+    .Size=(X=1.000000,Y=8.000000)
+    .Slot="/Script/UMG.VerticalBoxSlot'UDS_Glossary_Tooltip:WidgetTree.VerticalBox_0.VerticalBoxSlot_6'"
+  TextBlock (Tooltip_Text)
+    .Text=NSLOCTEXT("[580B0C2C475DCBDAB8333E9E6D0EC26C]", "363FA35F4C4FC39601CDD18719FC5C1C", "Tooltip Text Example Tooltip Text Example Tooltip Text Example Tooltip Text Example Tooltip Text Example Tooltip Tex")
+    .ColorAndOpacity=(SpecifiedColor=(R=0.848958,G=0.848958,B=0.848958,A=1.000000))
+    .Font=(TypefaceFontName="Regular",Size=14.000000)
+    .WrapTextAt=400.000000
+    .LineHeightPercentage=1.100000
+    .Slot="/Script/UMG.VerticalBoxSlot'UDS_Glossary_Tooltip:WidgetTree.VerticalBox_0.VerticalBoxSlot_0'"
+    .bIsVariable=True
+    .DisplayLabel="Tooltip_Text"
+  WidgetAnimation (Fade_In)
+    .Possessables(0)=(Guid=F11A0AED4624BD60878800919941F894,Name="Tooltip_Text",PossessedObjectClass="/Script/UMG.TextBlock")
+    .ObjectBindings(0)=(ObjectGuid=F11A0AED4624BD60878800919941F894,Tracks=("/Script/MovieSceneTracks.MovieSceneFloatTrack'MovieSceneFloatTrack_0'"),SortingOrder=0)
+    .PlaybackRange=Inclusive:0:Exclusive:30001
+    .DisplayRate=(Numerator=20)
+    .EditorData=()
+    .NodeGroupCollection="NodeGroupCollection"
+    .Signature=D0D1EE5247D1A96648AC32B9E9A92B29
+    .MovieScene="/Script/MovieScene.MovieScene'Fade_In'"
+    .AnimationBindings(0)=(WidgetName="Tooltip_Text",AnimationGuid=F11A0AED4624BD60878800919941F894)
+    .DisplayLabel="Fade_In"
+  EdGraph (EventGraph)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_6'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_MakeStruct'K2Node_MakeStruct_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_MakeStruct'K2Node_MakeStruct_2'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_MakeStruct'K2Node_MakeStruct_3'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_3'"
+    .Nodes(7)="/Script/BlueprintGraph.K2Node_MakeStruct'K2Node_MakeStruct_4'"
+    .Nodes(8)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_7'"
+    .Nodes(9)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_12'"
+    .Nodes(10)="/Script/BlueprintGraph.K2Node_BreakStruct'K2Node_BreakStruct_3'"
+    .Nodes(11)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_9'"
+    .Nodes(12)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_10'"
+    .Nodes(13)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_0'"
+    .Nodes(14)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_4'"
+    .Nodes(15)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_11'"
+    .Nodes(16)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_5'"
+    .Nodes(17)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_14'"
+    .Nodes(18)="/Script/BlueprintGraph.K2Node_BreakStruct'K2Node_BreakStruct_4'"
+    .Nodes(19)="/Script/BlueprintGraph.K2Node_GetEnumeratorNameAsString'K2Node_GetEnumeratorNameAsString_0'"
+    .Nodes(20)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_6'"
+    .Nodes(21)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_13'"
+    .Nodes(22)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_7'"
+    .Nodes(23)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_8'"
+    .Nodes(24)="/Script/BlueprintGraph.K2Node_BreakStruct'K2Node_BreakStruct_2'"
+    .Nodes(25)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_8'"
+    .bAllowDeletion=False
+    .GraphGuid=491CAAD644A93A2068D3B0848CEE9FDD
+  K2Node_VariableGet (K2Node_VariableGet_6)
+    .VariableReference=(MemberName="Fade_In",MemberGuid=7C6C2315CCF830D7AA3BFFFE64476F35,bSelfContext=True)
+    .NodePosX=44
+    .NodePosY=284
+    .NodeGuid=D4D85776421A1D56BDAAF6A015B99B21
+  K2Node_CallFunction (K2Node_CallFunction_2)
+    .FunctionReference=(MemberName="PlayAnimationForward",bSelfContext=True)
+    .NodePosX=216
+    .NodePosY=184
+    .NodeGuid=3F376188489D15041821D0B56095BEF1
+  K2Node_CallFunction (K2Node_CallFunction_0)
+    .FunctionReference=(MemberName="ExecuteUbergraph_UDS_Glossary_Tooltip",bSelfContext=True)
+    .NodePosX=300
+    .NodePosY=-2000
+    .NodeGuid=D2A477E4711B34658AB101B3897D6559
+    .bIsIntermediateNode=True
+  K2Node_MakeStruct (K2Node_MakeStruct_1)
+    .bMadeAfterOverridePinRemoval=True
+    .ShowPinForProperties(0)=(PropertyName="CornerRadii",PropertyFriendlyName="Corner Radii",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "SlateBrushOutlineSettings:CornerRadii", "Radius in Slate Units applied to the outline at each corner. X = Top Left, Y = Top Right, Z = Bottom Right, W = Bottom Left"),CategoryName="Brush",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(1)=(PropertyName="Color",PropertyFriendlyName="Outline",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "SlateBrushOutlineSettings:Color", "Tinting applied to the border outline."),CategoryName="Brush",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(2)=(PropertyName="Width",PropertyFriendlyName="Width",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "SlateBrushOutlineSettings:Width", "Line width in Slate Units applied to the border outline."),CategoryName="Brush",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(3)=(PropertyName="RoundingType",PropertyFriendlyName="Rounding Type",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "SlateBrushOutlineSettings:RoundingType", "The Rounding Type *"),CategoryName="Brush",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(4)=(PropertyName="bUseBrushTransparency",PropertyFriendlyName="Use Brush Transparency",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "SlateBrushOutlineSettings:bUseBrushTransparency", "True if we should use the owning brush\'s transparency as our own *"),CategoryName="Brush",bShowPin=True,bCanToggleVisibility=True)
+    .StructType="/Script/CoreUObject.ScriptStruct'/Script/SlateCore.SlateBrushOutlineSettings'"
+    .NodePosX=1104
+    .NodePosY=600
+    .AdvancedPinDisplay=Shown
+    .NodeGuid=285070A44C201D649D89329ACD78207C
+  K2Node_MakeStruct (K2Node_MakeStruct_2)
+    .bMadeAfterOverridePinRemoval=True
+    .ShowPinForProperties(0)=(PropertyName="SpecifiedColor",PropertyFriendlyName="Specified Color",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "SlateColor:SpecifiedColor", "The current specified color; only meaningful when ColorToUse == UseColor_Specified."),CategoryName="Color",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(1)=(PropertyName="ColorUseRule",PropertyFriendlyName="Color Use Rule",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "SlateColor:ColorUseRule", "The rule for which color to pick."),CategoryName="Color",bShowPin=True,bCanToggleVisibility=True)
+    .StructType="/Script/CoreUObject.ScriptStruct'/Script/SlateCore.SlateColor'"
+    .NodePosX=720
+    .NodePosY=804
+    .NodeGuid=73498DAC4E111ED48365B786C0CAF9C2
+  K2Node_MakeStruct (K2Node_MakeStruct_3)
+    .bMadeAfterOverridePinRemoval=True
+    .ShowPinForProperties(0)=(PropertyName="TintColor",PropertyFriendlyName="Tint",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "SlateBrush:TintColor", "Tinting applied to the image."),CategoryName="Brush",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(1)=(PropertyName="DrawAs",PropertyFriendlyName="Draw As",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "SlateBrush:DrawAs", "How to draw the image"),CategoryName="Brush",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(2)=(PropertyName="Tiling",PropertyFriendlyName="Tiling",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "SlateBrush:Tiling", "How to tile the image in Image mode"),CategoryName="Brush",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(3)=(PropertyName="Mirroring",PropertyFriendlyName="Mirroring",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "SlateBrush:Mirroring", "How to mirror the image in Image mode.  This is normally only used for dynamic image brushes where the source texture\n          comes from a hardware device such as a web camera."),CategoryName="Brush",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(4)=(PropertyName="ImageSize",PropertyFriendlyName="Image Size",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "SlateBrush:ImageSize", "Size of the resource in Slate Units"),CategoryName="Brush",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(5)=(PropertyName="Margin",PropertyFriendlyName="Margin",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "SlateBrush:Margin", "The margin to use in Box and Border modes"),CategoryName="Brush",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(6)=(PropertyName="ResourceObject",PropertyFriendlyName="Image",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "SlateBrush:ResourceObject", "The image to render for this brush, can be a UTexture or UMaterialInterface or an object implementing\nthe AtlasedTextureInterface."),CategoryName="Brush",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(7)=(PropertyName="OutlineSettings",PropertyFriendlyName="Outline Settings",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "SlateBrush:OutlineSettings", "How to draw the outline.  Currently only used for RoundedBox type brushes."),CategoryName="Brush",bShowPin=True,bCanToggleVisibility=True)
+    .StructType="/Script/CoreUObject.ScriptStruct'/Script/SlateCore.SlateBrush'"
+    .NodePosX=1644
+    .NodePosY=432
+    .AdvancedPinDisplay=Shown
+    .NodeGuid=F90711A8431E62D22B5AAEAC7CD67FDB
+  K2Node_CallFunction (K2Node_CallFunction_3)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="MakeVector4")
+    .NodePosX=768
+    .NodePosY=596
+    .NodeGuid=CDF9AB3D43125AD99DC98BA77E8AFBAB
+  K2Node_MakeStruct (K2Node_MakeStruct_4)
+    .bMadeAfterOverridePinRemoval=True
+    .ShowPinForProperties(0)=(PropertyName="SpecifiedColor",PropertyFriendlyName="Specified Color",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "SlateColor:SpecifiedColor", "The current specified color; only meaningful when ColorToUse == UseColor_Specified."),CategoryName="Color",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(1)=(PropertyName="ColorUseRule",PropertyFriendlyName="Color Use Rule",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "SlateColor:ColorUseRule", "The rule for which color to pick."),CategoryName="Color",bShowPin=True,bCanToggleVisibility=True)
+    .StructType="/Script/CoreUObject.ScriptStruct'/Script/SlateCore.SlateColor'"
+    .NodePosX=1184
+    .NodePosY=472
+    .NodeGuid=04491BFC43E146D5AF05B59400617FD8
+  K2Node_VariableGet (K2Node_VariableGet_7)
+    .VariableReference=(MemberName="Tooltip_Text",MemberGuid=A8E1924FE3BE3A73807739EDBD562298,bSelfContext=True)
+    .NodePosX=916
+    .NodePosY=264
+    .NodeGuid=45C281D44AB872D552BED28E45464C24
+  K2Node_VariableGet (K2Node_VariableGet_12)
+    .VariableReference=(MemberName="Glossary Entry",MemberGuid=16B316724EC80AA5234443A44A0E1A4A,bSelfContext=True)
+    .NodePosX=664
+    .NodePosY=344
+    .NodeGuid=DE0CA96F43E210DFDF165990B94A79A7
+  K2Node_BreakStruct (K2Node_BreakStruct_3)
+    .bMadeAfterOverridePinRemoval=True
+    .ShowPinForProperties(0)=(PropertyName="DisplayName_11_E537BB064895E555BC3AB18010A197DB",PropertyFriendlyName="Display Name",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(1)=(PropertyName="Type_8_A31154C34DCB760A0841D788B8505A41",PropertyFriendlyName="Type",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(2)=(PropertyName="GlossaryText_4_3396A7844DAB9E1DDD3E6789F9C5D8A1",PropertyFriendlyName="Glossary Text",bShowPin=True,bCanToggleVisibility=True)
+    .StructType="/Script/CoreUObject.UserDefinedStruct'/Game/UltraDynamicSky/Blueprints/System/Editor_UI/UDS_Glossary_Entry.UDS_Glossary_Entry'"
+    .NodePosX=816
+    .NodePosY=312
+    .NodeGuid=F676FD6D411362C254D7DAAB163AACAE
+  K2Node_VariableGet (K2Node_VariableGet_9)
+    .VariableReference=(MemberName="BG",MemberGuid=D029CA96C6AE327F9A313E4E4898331C,bSelfContext=True)
+    .NodePosX=1812
+    .NodePosY=272
+    .NodeGuid=987DD7554D9EDB68ED16D88AEAB563A3
+  K2Node_VariableGet (K2Node_VariableGet_10)
+    .VariableReference=(MemberName="Color",MemberGuid=8289A56A4E3287C4B5C6999630DADC16,bSelfContext=True)
+    .NodePosX=572
+    .NodePosY=820
+    .NodeGuid=AA2B18F642DD9E2F54F510B37F76F5C5
+  K2Node_CustomEvent (K2Node_CustomEvent_0)
+    .CustomFunctionName="Start"
+    .NodePosX=4
+    .NodePosY=184
+    .NodeGuid=B18B49524BBC176E72EF81B658B7AF11
+  K2Node_CallFunction (K2Node_CallFunction_4)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/UMG.Image'",MemberName="SetBrush")
+    .NodePosX=2084
+    .NodePosY=188
+    .NodeGuid=F62474BD4F5D88B5D475EB85123B3636
+  K2Node_VariableGet (K2Node_VariableGet_11)
+    .VariableReference=(MemberName="TypeLabel",MemberGuid=9DCAEE6F4A2330E8A771C11ABEF102D5,bSelfContext=True)
+    .NodePosX=2860
+    .NodePosY=268
+    .NodeGuid=1D16C3B5409ED55C09E3C9A0D8A4B50A
+  K2Node_CallFunction (K2Node_CallFunction_5)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/UMG.TextBlock'",MemberName="SetText")
+    .NodePosX=3012
+    .NodePosY=192
+    .NodeGuid=95FBEBF349D7C28E07EFB5AC1640C979
+  K2Node_VariableGet (K2Node_VariableGet_14)
+    .VariableReference=(MemberName="Glossary Entry",MemberGuid=16B316724EC80AA5234443A44A0E1A4A,bSelfContext=True)
+    .NodePosX=2184
+    .NodePosY=376
+    .NodeGuid=9F6F1A434C4F6ADC4921A0BBA855B0E9
+  K2Node_BreakStruct (K2Node_BreakStruct_4)
+    .bMadeAfterOverridePinRemoval=True
+    .ShowPinForProperties(0)=(PropertyName="DisplayName_11_E537BB064895E555BC3AB18010A197DB",PropertyFriendlyName="Display Name",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(1)=(PropertyName="Type_8_A31154C34DCB760A0841D788B8505A41",PropertyFriendlyName="Type",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(2)=(PropertyName="GlossaryText_4_3396A7844DAB9E1DDD3E6789F9C5D8A1",PropertyFriendlyName="Glossary Text",bShowPin=True,bCanToggleVisibility=True)
+    .StructType="/Script/CoreUObject.UserDefinedStruct'/Game/UltraDynamicSky/Blueprints/System/Editor_UI/UDS_Glossary_Entry.UDS_Glossary_Entry'"
+    .NodePosX=2336
+    .NodePosY=344
+    .NodeGuid=17F1640E43650A06EF986AA4B9F3AB4E
+  K2Node_GetEnumeratorNameAsString (K2Node_GetEnumeratorNameAsString_0)
+    .NodePosX=2632
+    .NodePosY=392
+    .NodeGuid=1085ADE142569B12FE2AAF884F03376D
+  K2Node_CallFunction (K2Node_CallFunction_6)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetTextLibrary'",MemberName="Conv_StringToText")
+    .NodePosX=2780
+    .NodePosY=372
+    .NodeGuid=4B6206844DB71F244AB441BCAEC0C47A
+  K2Node_VariableGet (K2Node_VariableGet_13)
+    .VariableReference=(MemberName="DisplayName",MemberGuid=4C8D16CEF49D3E3ABD37C24671F65C55,bSelfContext=True)
+    .NodePosX=3672
+    .NodePosY=268
+    .NodeGuid=A47F069C4BDB1A4646A65E9423294ED2
+  K2Node_CallFunction (K2Node_CallFunction_7)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/UMG.TextBlock'",MemberName="SetText")
+    .NodePosX=3824
+    .NodePosY=192
+    .NodeGuid=CAE907C54D16433FDDFC2EA82F5F0A23
+  K2Node_VariableGet (K2Node_VariableGet_8)
+    .VariableReference=(MemberName="Glossary Entry",MemberGuid=16B316724EC80AA5234443A44A0E1A4A,bSelfContext=True)
+    .NodePosX=3128
+    .NodePosY=391
+    .NodeGuid=7BE3BD9043D52763FFFD7A80E7FD09DB
+  K2Node_BreakStruct (K2Node_BreakStruct_2)
+    .bMadeAfterOverridePinRemoval=True
+    .ShowPinForProperties(0)=(PropertyName="DisplayName_11_E537BB064895E555BC3AB18010A197DB",PropertyFriendlyName="Display Name",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(1)=(PropertyName="Type_8_A31154C34DCB760A0841D788B8505A41",PropertyFriendlyName="Type",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(2)=(PropertyName="GlossaryText_4_3396A7844DAB9E1DDD3E6789F9C5D8A1",PropertyFriendlyName="Glossary Text",bShowPin=True,bCanToggleVisibility=True)
+    .StructType="/Script/CoreUObject.UserDefinedStruct'/Game/UltraDynamicSky/Blueprints/System/Editor_UI/UDS_Glossary_Entry.UDS_Glossary_Entry'"
+    .NodePosX=3280
+    .NodePosY=368
+    .NodeGuid=BBCCAFDA4EB8DA1987BB19AA9CE8523B
+  K2Node_CallFunction (K2Node_CallFunction_8)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetTextLibrary'",MemberName="Conv_StringToText")
+    .NodePosX=3580
+    .NodePosY=368
+    .NodeGuid=6BEFC93E401BC872FE6CA3B9D7C18D5A
+  EdGraph (ExecuteUbergraph_UDS_Glossary_Tooltip)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_8'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_BreakStruct'K2Node_BreakStruct_2'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_8'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_7'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_13'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_6'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(7)="/Script/BlueprintGraph.K2Node_BreakStruct'K2Node_BreakStruct_4'"
+    .Nodes(8)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_14'"
+    .Nodes(9)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_5'"
+    .Nodes(10)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_11'"
+    .Nodes(11)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_4'"
+    .Nodes(12)="/Script/BlueprintGraph.K2Node_CustomEvent'K2Node_CustomEvent_0'"
+    .Nodes(13)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_10'"
+    .Nodes(14)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_9'"
+    .Nodes(15)="/Script/BlueprintGraph.K2Node_BreakStruct'K2Node_BreakStruct_3'"
+    .Nodes(16)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_12'"
+    .Nodes(17)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_7'"
+    .Nodes(18)="/Script/BlueprintGraph.K2Node_MakeStruct'K2Node_MakeStruct_4'"
+    .Nodes(19)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_3'"
+    .Nodes(20)="/Script/BlueprintGraph.K2Node_MakeStruct'K2Node_MakeStruct_3'"
+    .Nodes(21)="/Script/BlueprintGraph.K2Node_MakeStruct'K2Node_MakeStruct_2'"
+    .Nodes(22)="/Script/BlueprintGraph.K2Node_MakeStruct'K2Node_MakeStruct_1'"
+    .Nodes(23)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(24)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .Nodes(25)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_6'"
+    .Nodes(26)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .GraphGuid=2FA506404691C3D092FCD18D851540DE
+  K2Node_FunctionEntry (K2Node_FunctionEntry_0)
+    .CustomGeneratedFunctionName="Start"
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/CoreUObject.Object'",MemberName="ExecuteUbergraph")
+    .NodePosX=-200
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=66DE1F4080A034D498EA3863E9289C93
+  K2Node_CallFunction (K2Node_CallFunction_1)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetNodeHelperLibrary'",MemberName="GetEnumeratorUserFriendlyName")
+    .NodePosX=-1760
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=FFCA30EDB4373A51ABF8023EB75D63A4
+  EdGraph (Start)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=5F9F87B346B222E05CF6208D815415A7

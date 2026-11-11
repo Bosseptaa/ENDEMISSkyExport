@@ -1,0 +1,353 @@
+### /Game/UltraDynamicSky/Blueprints/System/Editor_UI/Cloud_Painter/Cloud_Painter_Brush_Mat
+  Material (Cloud_Painter_Brush_Mat)
+    .MaterialDomain=MD_UI
+    .BlendMode=BLEND_Translucent
+    .EditorX=652
+    .EditorY=-80
+    .bCanMaskedBeAssumedOpaque=True
+    .PixelDepthOffsetMode=PDOM_Legacy
+    .StateId=C606AB8747510C39374D6594867228F1
+    .ReferencedTextureGuids(0)=3F0FDBD3483CDBD39AC714A8CA8BEDC3
+    .EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'Cloud_Painter_Brush_MatEditorOnlyData'"
+    .ReferencedDefaultTextures(0)="/Script/Engine.Texture2D'/Game/UltraDynamicSky/Textures/Weather/Mask_Brushes/Brush_Radial.Brush_Radial'"
+    .ReferencedDefaultTextures(1)="/Script/Engine.Texture2D'/Game/UltraDynamicSky/Blueprints/System/Editor_UI/Cloud_Painter/Cloud_Painter_BrushFrame.Cloud_Painter_BrushFrame'"
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+    .ParameterOverviewExpansion=(("-12Global", True))
+    .LightingGuid=6587BAF54A9B891F60F4698C8BDC08AA
+  MaterialEditorOnlyData (Cloud_Painter_Brush_MatEditorOnlyData)
+    EmissiveColor          <- MaterialExpressionStaticSwitchParameter
+    Opacity                <- MaterialExpressionStaticSwitchParameter
+    ExpressionCollection   <- MaterialExpressionStaticSwitchParameter
+    .BaseColor=(UseConstant=True,Constant=(R=0.501961,G=0.501961,B=0.501961,A=1.000000))
+    .Metallic=(UseConstant=True)
+    .Specular=(UseConstant=True)
+    .Roughness=(UseConstant=True)
+    .Anisotropy=(UseConstant=True)
+    .Normal=(UseConstant=True)
+    .Tangent=(UseConstant=True)
+    .EmissiveColor=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Cloud_Painter_Brush_Mat:MaterialExpressionStaticSwitchParameter_2'")
+    .Opacity=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Cloud_Painter_Brush_Mat:MaterialExpressionStaticSwitchParameter_0'")
+    .OpacityMask=(UseConstant=True)
+    .WorldPositionOffset=(UseConstant=True)
+    .Displacement=(UseConstant=True)
+    .SubsurfaceColor=(UseConstant=True)
+    .ClearCoat=(UseConstant=True)
+    .ClearCoatRoughness=(UseConstant=True)
+    .AmbientOcclusion=(UseConstant=True)
+    .Refraction=(UseConstant=True)
+    .CustomizedUVs(0)=(UseConstant=True)
+    .CustomizedUVs(1)=(UseConstant=True)
+    .CustomizedUVs(2)=(UseConstant=True)
+    .CustomizedUVs(3)=(UseConstant=True)
+    .CustomizedUVs(4)=(UseConstant=True)
+    .CustomizedUVs(5)=(UseConstant=True)
+    .CustomizedUVs(6)=(UseConstant=True)
+    .CustomizedUVs(7)=(UseConstant=True)
+    .PixelDepthOffset=(UseConstant=True)
+    .SurfaceThickness=(UseConstant=True)
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionStaticSwitchParameter'Cloud_Painter_Brush_Mat:MaterialExpressionStaticSwitchParameter_2'","/Script/Engine.MaterialExpressionStaticSwitchParameter'Cloud_Painter_Brush_Mat:MaterialExpressionStaticSwitchParameter_0'","/Script/Engine.MaterialExpressionAdd'Cloud_Painter_Brush_Mat:MaterialExpressionAdd_2'","/Script/Engine.MaterialExpressionAdd'Cloud_Painter_Brush_Mat:MaterialExpressionAdd_1'","/Script/Engine.MaterialExpressionVectorParameter'Cloud_Painter_Brush_Mat:MaterialExpressionVectorParameter_0'","/Script/Engine.MaterialExpressionMultiply'Cloud_Painter_Brush_Mat:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionTextureSampleParameter2D'Cloud_Painter_Brush_Mat:MaterialExpressionTextureSampleParameter2D_0'","/Script/Engine.MaterialExpressionDivide'Cloud_Painter_Brush_Mat:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionScalarParameter'Cloud_Painter_Brush_Mat:MaterialExpressionScalarParameter_0'","/Script/Engine.MaterialExpressionSaturate'Cloud_Painter_Brush_Mat:MaterialExpressionSaturate_0'","/Script/Engine.MaterialExpressionScalarParameter'Cloud_Painter_Brush_Mat:MaterialExpressionScalarParameter_1'","/Script/Engine.MaterialExpressionTextureSample'Cloud_Painter_Brush_Mat:MaterialExpressionTextureSample_0'","/Script/Engine.MaterialExpressionMultiply'Cloud_Painter_Brush_Mat:MaterialExpressionMultiply_2'","/Script/Engine.MaterialExpressionReroute'Cloud_Painter_Brush_Mat:MaterialExpressionReroute_0'","/Script/Engine.MaterialExpressionReroute'Cloud_Painter_Brush_Mat:MaterialExpressionReroute_1'","/Script/Engine.MaterialExpressionStaticSwitchParameter'Cloud_Painter_Brush_Mat:MaterialExpressionStaticSwitchParameter_1'","/Script/Engine.MaterialExpressionMultiply'Cloud_Painter_Brush_Mat:MaterialExpressionMultiply_1'","/Script/Engine.MaterialExpressionStaticSwitchParameter'Cloud_Painter_Brush_Mat:MaterialExpressionStaticSwitchParameter_3'","/Script/Engine.MaterialExpressionMultiply'Cloud_Painter_Brush_Mat:MaterialExpressionMultiply_3'","/Script/Engine.MaterialExpressionPower'Cloud_Painter_Brush_Mat:MaterialExpressionPower_0'","/Script/Engine.MaterialExpressionTextureCoordinate'Cloud_Painter_Brush_Mat:MaterialExpressionTextureCoordinate_0'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Cloud_Painter_Brush_Mat:MaterialExpressionMaterialFunctionCall_1'","/Script/Engine.MaterialExpressionScalarParameter'Cloud_Painter_Brush_Mat:MaterialExpressionScalarParameter_2'","/Script/Engine.MaterialExpressionMultiply'Cloud_Painter_Brush_Mat:MaterialExpressionMultiply_4'","/Script/Engine.MaterialExpressionSubtract'Cloud_Painter_Brush_Mat:MaterialExpressionSubtract_0'","/Script/Engine.MaterialExpressionAdd'Cloud_Painter_Brush_Mat:MaterialExpressionAdd_0'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Cloud_Painter_Brush_Mat:MaterialExpressionMaterialFunctionCall_3'","/Script/Engine.MaterialExpressionConstant2Vector'Cloud_Painter_Brush_Mat:MaterialExpressionConstant2Vector_0'","/Script/Engine.MaterialExpressionConstant2Vector'Cloud_Painter_Brush_Mat:MaterialExpressionConstant2Vector_1'","/Script/Engine.MaterialExpressionLength'Cloud_Painter_Brush_Mat:MaterialExpressionLength_0'","/Script/Engine.MaterialExpressionAbs'Cloud_Painter_Brush_Mat:MaterialExpressionAbs_0'","/Script/Engine.MaterialExpressionComponentMask'Cloud_Painter_Brush_Mat:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionComponentMask'Cloud_Painter_Brush_Mat:MaterialExpressionComponentMask_1'","/Script/Engine.MaterialExpressionMax'Cloud_Painter_Brush_Mat:MaterialExpressionMax_0'","/Script/Engine.MaterialExpressionDivide'Cloud_Painter_Brush_Mat:MaterialExpressionDivide_2'","/Script/Engine.MaterialExpressionSaturate'Cloud_Painter_Brush_Mat:MaterialExpressionSaturate_1'"))
+    .ParameterGroupData(0)=(GroupName="None")
+  MaterialExpressionAbs (MaterialExpressionAbs_0)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+    .Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Cloud_Painter_Brush_Mat:MaterialExpressionMaterialFunctionCall_3'")
+    .MaterialExpressionEditorX=-2280
+    .MaterialExpressionEditorY=388
+    .MaterialExpressionGuid=61C9574043725388DF2E02B575D2FED5
+    .Material="/Script/Engine.Material'Cloud_Painter_Brush_Mat'"
+  MaterialExpressionAdd (MaterialExpressionAdd_0)
+    A                      <- MaterialExpressionDivide
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'Cloud_Painter_Brush_Mat:MaterialExpressionDivide_2'")
+    .ConstB=0.500000
+    .MaterialExpressionEditorX=-1664
+    .MaterialExpressionEditorY=40
+    .MaterialExpressionGuid=8A699369461846337FC924B0BC37F906
+    .Material="/Script/Engine.Material'Cloud_Painter_Brush_Mat'"
+  MaterialExpressionAdd (MaterialExpressionAdd_1)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Cloud_Painter_Brush_Mat:MaterialExpressionMultiply_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Cloud_Painter_Brush_Mat:MaterialExpressionMultiply_0'")
+    .MaterialExpressionEditorX=220
+    .MaterialExpressionEditorY=96
+    .MaterialExpressionGuid=6BBF6C694430CB21142261AB339C0A7D
+    .Material="/Script/Engine.Material'Cloud_Painter_Brush_Mat'"
+  MaterialExpressionAdd (MaterialExpressionAdd_2)
+    A                      <- MaterialExpressionStaticSwitchParameter
+    B                      <- MaterialExpressionTextureSample
+    .B=(Expression="/Script/Engine.MaterialExpressionTextureSample'Cloud_Painter_Brush_Mat:MaterialExpressionTextureSample_0'",OutputIndex=1,Mask=1,MaskR=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Cloud_Painter_Brush_Mat:MaterialExpressionStaticSwitchParameter_3'")
+    .MaterialExpressionEditorX=208
+    .MaterialExpressionEditorY=-84
+    .MaterialExpressionGuid=24846C84425A4F18B45963A90E6086D2
+    .Material="/Script/Engine.Material'Cloud_Painter_Brush_Mat'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionAbs
+    .R=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionAbs'Cloud_Painter_Brush_Mat:MaterialExpressionAbs_0'")
+    .MaterialExpressionEditorX=-2148
+    .MaterialExpressionEditorY=336
+    .MaterialExpressionGuid=3E9A8D644C19E3B956B16EB8EA5B51D3
+    .Material="/Script/Engine.Material'Cloud_Painter_Brush_Mat'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_1)
+    Input                  <- MaterialExpressionAbs
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionAbs'Cloud_Painter_Brush_Mat:MaterialExpressionAbs_0'")
+    .MaterialExpressionEditorX=-2148
+    .MaterialExpressionEditorY=432
+    .MaterialExpressionGuid=3E9A8D644C19E3B956B16EB8EA5B51D3
+    .Material="/Script/Engine.Material'Cloud_Painter_Brush_Mat'"
+  MaterialExpressionConstant2Vector (MaterialExpressionConstant2Vector_0)
+    .R=1.000000
+    .MaterialExpressionEditorX=-2788
+    .MaterialExpressionEditorY=256
+    .MaterialExpressionGuid=1A57BA884577533E9A221681517D8BB3
+    .Material="/Script/Engine.Material'Cloud_Painter_Brush_Mat'"
+  MaterialExpressionConstant2Vector (MaterialExpressionConstant2Vector_1)
+    .MaterialExpressionEditorX=-2788
+    .MaterialExpressionEditorY=396
+    .MaterialExpressionGuid=88203F8148C444280BBAB6B32AA788FE
+    .Material="/Script/Engine.Material'Cloud_Painter_Brush_Mat'"
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionPower
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Cloud_Painter_Brush_Mat:MaterialExpressionScalarParameter_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionPower'Cloud_Painter_Brush_Mat:MaterialExpressionPower_0'")
+    .MaterialExpressionEditorX=-804
+    .MaterialExpressionEditorY=68
+    .MaterialExpressionGuid=E1AC4D8A4513497FD388C19524F21CE2
+    .Material="/Script/Engine.Material'Cloud_Painter_Brush_Mat'"
+  MaterialExpressionDivide (MaterialExpressionDivide_2)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionMax
+    .B=(Expression="/Script/Engine.MaterialExpressionMax'Cloud_Painter_Brush_Mat:MaterialExpressionMax_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'Cloud_Painter_Brush_Mat:MaterialExpressionSubtract_0'")
+    .MaterialExpressionEditorX=-1812
+    .MaterialExpressionEditorY=40
+    .MaterialExpressionGuid=80C8D9ED458C7BEA5B541C9218D19AAC
+    .Material="/Script/Engine.Material'Cloud_Painter_Brush_Mat'"
+  MaterialExpressionLength (MaterialExpressionLength_0)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+    .Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Cloud_Painter_Brush_Mat:MaterialExpressionMaterialFunctionCall_3'")
+    .MaterialExpressionEditorX=-2280
+    .MaterialExpressionEditorY=324
+    .MaterialExpressionGuid=D09AEFF64FD7A54268BBA589710DBA56
+    .Material="/Script/Engine.Material'Cloud_Painter_Brush_Mat'"
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_1)
+    FunctionInputs(0)      <- MaterialExpressionTextureCoordinate
+    FunctionInputs(2)      <- MaterialExpressionMultiply
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Engine/Functions/Engine_MaterialFunctions02/Texturing/CustomRotator.CustomRotator'"
+    .FunctionInputs(0)=(ExpressionInputId=45DE7CC04BCC975C664A2AA5DA134FEF,Input=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'Cloud_Painter_Brush_Mat:MaterialExpressionTextureCoordinate_0'",InputName="UVs"))
+    .FunctionInputs(1)=(ExpressionInputId=9B6953874136DCE4D8E4E8878152CCCE,Input=(OutputIndex=-1,InputName="Rotation Center"))
+    .FunctionInputs(2)=(ExpressionInputId=D58F67D84CFD4C9D289810AEE4A3EBC8,Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Cloud_Painter_Brush_Mat:MaterialExpressionMultiply_4'",InputName="Rotation Angle (0-1)"))
+    .FunctionOutputs(0)=(ExpressionOutputId=35E8F8F94CC8CE3D65F114A234D0BD5E,Output=(OutputName="Rotated Values"))
+    .MaterialExpressionEditorX=-2608
+    .MaterialExpressionEditorY=40
+    .MaterialExpressionGuid=C770AC564AFBC61F25162E8A2CA77D82
+    .Material="/Script/Engine.Material'Cloud_Painter_Brush_Mat'"
+    .Outputs(0)=(OutputName="Rotated Values")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_3)
+    FunctionInputs(0)      <- MaterialExpressionConstant2Vector
+    FunctionInputs(1)      <- MaterialExpressionConstant2Vector
+    FunctionInputs(2)      <- MaterialExpressionScalarParameter
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Engine/Functions/Engine_MaterialFunctions02/Texturing/CustomRotator.CustomRotator'"
+    .FunctionInputs(0)=(ExpressionInputId=45DE7CC04BCC975C664A2AA5DA134FEF,Input=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'Cloud_Painter_Brush_Mat:MaterialExpressionConstant2Vector_0'",InputName="UVs",Mask=1,MaskR=1,MaskG=1))
+    .FunctionInputs(1)=(ExpressionInputId=9B6953874136DCE4D8E4E8878152CCCE,Input=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'Cloud_Painter_Brush_Mat:MaterialExpressionConstant2Vector_1'",InputName="Rotation Center",Mask=1,MaskR=1,MaskG=1))
+    .FunctionInputs(2)=(ExpressionInputId=D58F67D84CFD4C9D289810AEE4A3EBC8,Input=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Cloud_Painter_Brush_Mat:MaterialExpressionScalarParameter_2'",InputName="Rotation Angle (0-1)"))
+    .FunctionOutputs(0)=(ExpressionOutputId=35E8F8F94CC8CE3D65F114A234D0BD5E,Output=(OutputName="Rotated Values"))
+    .MaterialExpressionEditorX=-2596
+    .MaterialExpressionEditorY=324
+    .MaterialExpressionGuid=C770AC564AFBC61F25162E8A2CA77D82
+    .Material="/Script/Engine.Material'Cloud_Painter_Brush_Mat'"
+    .Outputs(0)=(OutputName="Rotated Values")
+  MaterialExpressionMax (MaterialExpressionMax_0)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Cloud_Painter_Brush_Mat:MaterialExpressionComponentMask_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Cloud_Painter_Brush_Mat:MaterialExpressionComponentMask_0'")
+    .MaterialExpressionEditorX=-2008
+    .MaterialExpressionEditorY=372
+    .MaterialExpressionGuid=47BCF594414B7610180A2CBA066EECE1
+    .Material="/Script/Engine.Material'Cloud_Painter_Brush_Mat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionSaturate
+    B                      <- MaterialExpressionStaticSwitchParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Cloud_Painter_Brush_Mat:MaterialExpressionStaticSwitchParameter_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSaturate'Cloud_Painter_Brush_Mat:MaterialExpressionSaturate_0'")
+    .MaterialExpressionEditorX=-252
+    .MaterialExpressionEditorY=76
+    .MaterialExpressionGuid=E062EAD84F8367CC02AA4383ED587426
+    .Material="/Script/Engine.Material'Cloud_Painter_Brush_Mat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionScalarParameter
+    .A=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Cloud_Painter_Brush_Mat:MaterialExpressionScalarParameter_1'")
+    .ConstB=0.850000
+    .MaterialExpressionEditorX=-610
+    .MaterialExpressionEditorY=213
+    .MaterialExpressionGuid=8326ADDA4CBF19C314968E83BFDE5442
+    .Material="/Script/Engine.Material'Cloud_Painter_Brush_Mat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_2)
+    A                      <- MaterialExpressionTextureSample
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'Cloud_Painter_Brush_Mat:MaterialExpressionTextureSample_0'",OutputIndex=1,Mask=1,MaskR=1)
+    .ConstB=0.250000
+    .MaterialExpressionEditorX=-20
+    .MaterialExpressionEditorY=408
+    .MaterialExpressionGuid=A67803A04867A59EDF5FB59A44FB900B
+    .Material="/Script/Engine.Material'Cloud_Painter_Brush_Mat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_3)
+    A                      <- MaterialExpressionVectorParameter
+    .A=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Cloud_Painter_Brush_Mat:MaterialExpressionVectorParameter_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .ConstB=0.600000
+    .MaterialExpressionEditorX=-344
+    .MaterialExpressionEditorY=-268
+    .MaterialExpressionGuid=2CE51DB143EF0CC74ADD0C9F238FA8E6
+    .Material="/Script/Engine.Material'Cloud_Painter_Brush_Mat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_4)
+    A                      <- MaterialExpressionScalarParameter
+    .A=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Cloud_Painter_Brush_Mat:MaterialExpressionScalarParameter_2'")
+    .ConstB=-1.000000
+    .MaterialExpressionEditorX=-2756
+    .MaterialExpressionEditorY=132
+    .MaterialExpressionGuid=773E48124195FC35001159BE225665F9
+    .Material="/Script/Engine.Material'Cloud_Painter_Brush_Mat'"
+  MaterialExpressionPower (MaterialExpressionPower_0)
+    Base                   <- MaterialExpressionTextureSampleParameter2D
+    .Base=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameter2D'Cloud_Painter_Brush_Mat:MaterialExpressionTextureSampleParameter2D_0'",OutputIndex=1,Mask=1,MaskR=1)
+    .MaterialExpressionEditorX=-1044
+    .MaterialExpressionEditorY=68
+    .MaterialExpressionGuid=26A8B44A45C457185F4EB7A320DD9E82
+    .Material="/Script/Engine.Material'Cloud_Painter_Brush_Mat'"
+  MaterialExpressionReroute (MaterialExpressionReroute_0)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Cloud_Painter_Brush_Mat:MaterialExpressionMultiply_0'")
+    .MaterialExpressionEditorX=252
+    .MaterialExpressionEditorY=192
+    .MaterialExpressionGuid=2019777242140896E14D01B98E507CCF
+    .Material="/Script/Engine.Material'Cloud_Painter_Brush_Mat'"
+  MaterialExpressionReroute (MaterialExpressionReroute_1)
+    Input                  <- MaterialExpressionStaticSwitchParameter
+    .Input=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Cloud_Painter_Brush_Mat:MaterialExpressionStaticSwitchParameter_3'")
+    .MaterialExpressionEditorX=232
+    .MaterialExpressionEditorY=20
+    .MaterialExpressionGuid=A995DECB47D76D817BF71B862D772031
+    .Material="/Script/Engine.Material'Cloud_Painter_Brush_Mat'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_0)
+    Input                  <- MaterialExpressionDivide
+    .Input=(Expression="/Script/Engine.MaterialExpressionDivide'Cloud_Painter_Brush_Mat:MaterialExpressionDivide_0'")
+    .MaterialExpressionEditorX=-620
+    .MaterialExpressionEditorY=68
+    .MaterialExpressionGuid=3EADDD284F46F8A9F0D53EA77BF9D332
+    .Material="/Script/Engine.Material'Cloud_Painter_Brush_Mat'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_1)
+    Input                  <- MaterialExpressionAdd
+    .Input=(Expression="/Script/Engine.MaterialExpressionAdd'Cloud_Painter_Brush_Mat:MaterialExpressionAdd_0'")
+    .MaterialExpressionEditorX=-1515
+    .MaterialExpressionEditorY=41
+    .MaterialExpressionGuid=E4EA07324CBF99806736C9894393C2DD
+    .Material="/Script/Engine.Material'Cloud_Painter_Brush_Mat'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_0)
+    .ParameterName="Falloff"
+    .DefaultValue=1.000000
+    .ExpressionGUID=BD60F65848AAC925D17525AD979224BA
+    .MaterialExpressionEditorX=-1032
+    .MaterialExpressionEditorY=200
+    .MaterialExpressionGuid=A88A4F5E40C44A62135E999926C99901
+    .Material="/Script/Engine.Material'Cloud_Painter_Brush_Mat'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_1)
+    .ParameterName="Strength"
+    .DefaultValue=1.000000
+    .ExpressionGUID=9B26191B4DC445062ABB2B9E7E3D3A8B
+    .MaterialExpressionEditorX=-756
+    .MaterialExpressionEditorY=232
+    .MaterialExpressionGuid=73D9AB9E4EF54510010590AA5788A12D
+    .Material="/Script/Engine.Material'Cloud_Painter_Brush_Mat'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_2)
+    .ParameterName="Angle"
+    .ExpressionGUID=4793BDA040B5694FF89AE4B94D7DB2C0
+    .MaterialExpressionEditorX=-3116
+    .MaterialExpressionEditorY=220
+    .MaterialExpressionGuid=1410BD33460239C165BCCDA0CD1FEF95
+    .Material="/Script/Engine.Material'Cloud_Painter_Brush_Mat'"
+  MaterialExpressionStaticSwitchParameter (MaterialExpressionStaticSwitchParameter_0)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionReroute
+    .ParameterName="Cursor"
+    .B=(Expression="/Script/Engine.MaterialExpressionReroute'Cloud_Painter_Brush_Mat:MaterialExpressionReroute_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Cloud_Painter_Brush_Mat:MaterialExpressionAdd_1'")
+    .ExpressionGUID=FE002FC74E5BF39470A0ABBDC514DE8D
+    .MaterialExpressionEditorX=400
+    .MaterialExpressionEditorY=84
+    .MaterialExpressionGuid=0A989D2A488E6C28B4380F8A4DDB4B52
+    .Material="/Script/Engine.Material'Cloud_Painter_Brush_Mat'"
+  MaterialExpressionStaticSwitchParameter (MaterialExpressionStaticSwitchParameter_1)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionScalarParameter
+    .ParameterName="Cursor"
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Cloud_Painter_Brush_Mat:MaterialExpressionScalarParameter_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Cloud_Painter_Brush_Mat:MaterialExpressionMultiply_1'")
+    .ExpressionGUID=0F683E504F64369B42FCF8BFF5B32075
+    .MaterialExpressionEditorX=-456
+    .MaterialExpressionEditorY=204
+    .MaterialExpressionGuid=0A989D2A488E6C28B4380F8A4DDB4B52
+    .Material="/Script/Engine.Material'Cloud_Painter_Brush_Mat'"
+  MaterialExpressionStaticSwitchParameter (MaterialExpressionStaticSwitchParameter_2)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionReroute
+    .ParameterName="Cursor"
+    .B=(Expression="/Script/Engine.MaterialExpressionReroute'Cloud_Painter_Brush_Mat:MaterialExpressionReroute_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Cloud_Painter_Brush_Mat:MaterialExpressionAdd_2'")
+    .ExpressionGUID=7E2C0D0B4F135A79F50DF8B7438EC41E
+    .MaterialExpressionEditorX=372
+    .MaterialExpressionEditorY=-96
+    .MaterialExpressionGuid=0A989D2A488E6C28B4380F8A4DDB4B52
+    .Material="/Script/Engine.Material'Cloud_Painter_Brush_Mat'"
+  MaterialExpressionStaticSwitchParameter (MaterialExpressionStaticSwitchParameter_3)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionVectorParameter
+    .ParameterName="Cursor"
+    .B=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Cloud_Painter_Brush_Mat:MaterialExpressionVectorParameter_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Cloud_Painter_Brush_Mat:MaterialExpressionMultiply_3'")
+    .ExpressionGUID=458F78A44C660128E48DB397FD020105
+    .MaterialExpressionEditorX=-132
+    .MaterialExpressionEditorY=-284
+    .MaterialExpressionGuid=0A989D2A488E6C28B4380F8A4DDB4B52
+    .Material="/Script/Engine.Material'Cloud_Painter_Brush_Mat'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_0)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Cloud_Painter_Brush_Mat:MaterialExpressionMaterialFunctionCall_1'")
+    .ConstB=0.500000
+    .MaterialExpressionEditorX=-2264
+    .MaterialExpressionEditorY=36
+    .MaterialExpressionGuid=E041249A4AD098AD06AF05846D7B84FF
+    .Material="/Script/Engine.Material'Cloud_Painter_Brush_Mat'"
+  MaterialExpressionTextureCoordinate (MaterialExpressionTextureCoordinate_0)
+    .MaterialExpressionEditorX=-2824
+    .MaterialExpressionEditorY=36
+    .MaterialExpressionGuid=520F793B47369F33DDBEC196DF9E4BC2
+    .Material="/Script/Engine.Material'Cloud_Painter_Brush_Mat'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_0)
+    .SamplerType=SAMPLERTYPE_Alpha
+    .Texture="/Script/Engine.Texture2D'/Game/UltraDynamicSky/Blueprints/System/Editor_UI/Cloud_Painter/Cloud_Painter_BrushFrame.Cloud_Painter_BrushFrame'"
+    .MaterialExpressionEditorX=-544
+    .MaterialExpressionEditorY=384
+    .MaterialExpressionGuid=38FBB2EC4EA0FA651092E085E44D2079
+    .Material="/Script/Engine.Material'Cloud_Painter_Brush_Mat'"
+  MaterialExpressionTextureSampleParameter2D (MaterialExpressionTextureSampleParameter2D_0)
+    Coordinates            <- MaterialExpressionSaturate
+    .ParameterName="Brush"
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.Texture2D'/Game/UltraDynamicSky/Textures/Weather/Mask_Brushes/Brush_Radial.Brush_Radial'"
+    .ExpressionGUID=F173A7A041A06FBB93EB5A9ECB27209E
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionSaturate'Cloud_Painter_Brush_Mat:MaterialExpressionSaturate_1'")
+    .SamplerSource=SSM_Clamp_WorldGroupSettings
+    .MaterialExpressionEditorX=-1356
+    .MaterialExpressionEditorY=28
+    .MaterialExpressionGuid=C654327A4FA03E901BECBE8965A5B60D
+    .Material="/Script/Engine.Material'Cloud_Painter_Brush_Mat'"
+  MaterialExpressionVectorParameter (MaterialExpressionVectorParameter_0)
+    .ParameterName="Color"
+    .DefaultValue=(R=1.000000,G=0.000000,B=0.000000,A=0.000000)
+    .ExpressionGUID=782AE5E4481975492D03AAA6B8CCEFD5
+    .MaterialExpressionEditorX=-528
+    .MaterialExpressionEditorY=-256
+    .MaterialExpressionGuid=3C993AA44E7CC36B3552C482A3C911E3
+    .Material="/Script/Engine.Material'Cloud_Painter_Brush_Mat'"

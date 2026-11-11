@@ -1,0 +1,364 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_Occlusion_VogelDisk
+  MaterialFunction (MF_SC_Occlusion_VogelDisk)
+    DependentFunctionExpressionCandidates(0) <- MaterialExpressionMaterialFunctionCall
+    .Description="High Quality Occlusion Sampling"
+    .bExposeToLibrary=True
+    .LibraryCategoriesText(0)=NSLOCTEXT("", "F10EF2F548A9F8E647DC02B79D532F97", "Sky Creator")
+    .DependentFunctionExpressionCandidates(0)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_2'"
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'MF_SC_Occlusion_VogelDiskEditorOnlyData'"
+    .StateId=830A2679470F001DB15E3DA6E6698737
+    .CombinedInputTypes=31
+    .CombinedOutputTypes=15
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+  MaterialFunctionEditorOnlyData (MF_SC_Occlusion_VogelDiskEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'MF_SC_Occlusion_VogelDisk:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionWorldPosition'MF_SC_Occlusion_VogelDisk:MaterialExpressionWorldPosition_1'","/Script/Engine.MaterialExpressionSubtract'MF_SC_Occlusion_VogelDisk:MaterialExpressionSubtract_0'","/Script/Engine.MaterialExpressionComponentMask'MF_SC_Occlusion_VogelDisk:MaterialExpressionComponentMask_1'","/Script/Engine.MaterialExpressionDivide'MF_SC_Occlusion_VogelDisk:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionFunctionInput'MF_SC_Occlusion_VogelDisk:MaterialExpressionFunctionInput_1'","/Script/Engine.MaterialExpressionTextureObject'MF_SC_Occlusion_VogelDisk:MaterialExpressionTextureObject_0'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_Occlusion_VogelDisk:MaterialExpressionCollectionParameter_2'","/Script/Engine.MaterialExpressionFunctionInput'MF_SC_Occlusion_VogelDisk:MaterialExpressionFunctionInput_0'","/Script/Engine.MaterialExpressionScreenPosition'MF_SC_Occlusion_VogelDisk:MaterialExpressionScreenPosition_0'","/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_Occlusion_VogelDisk:MaterialExpressionMaterialFunctionCall_2'","/Script/Engine.MaterialExpressionMultiply'MF_SC_Occlusion_VogelDisk:MaterialExpressionMultiply_1'","/Script/Engine.MaterialExpressionCustom'MF_SC_Occlusion_VogelDisk:MaterialExpressionCustom_1'","/Script/Engine.MaterialExpressionWorldPosition'MF_SC_Occlusion_VogelDisk:MaterialExpressionWorldPosition_0'","/Script/Engine.MaterialExpressionComponentMask'MF_SC_Occlusion_VogelDisk:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionSubtract'MF_SC_Occlusion_VogelDisk:MaterialExpressionSubtract_1'","/Script/Engine.MaterialExpressionSubtract'MF_SC_Occlusion_VogelDisk:MaterialExpressionSubtract_2'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_Occlusion_VogelDisk:MaterialExpressionCollectionParameter_4'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_Occlusion_VogelDisk:MaterialExpressionCollectionParameter_6'","/Script/Engine.MaterialExpressionComponentMask'MF_SC_Occlusion_VogelDisk:MaterialExpressionComponentMask_3'","/Script/Engine.MaterialExpressionFunctionInput'MF_SC_Occlusion_VogelDisk:MaterialExpressionFunctionInput_2'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'MF_SC_Occlusion_VogelDisk:MaterialExpressionNamedRerouteDeclaration_0'","/Script/Engine.MaterialExpressionNamedRerouteUsage'MF_SC_Occlusion_VogelDisk:MaterialExpressionNamedRerouteUsage_1'","/Script/Engine.MaterialExpressionComponentMask'MF_SC_Occlusion_VogelDisk:MaterialExpressionComponentMask_4'","/Script/Engine.MaterialExpressionNamedRerouteUsage'MF_SC_Occlusion_VogelDisk:MaterialExpressionNamedRerouteUsage_0'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_Occlusion_VogelDisk:MaterialExpressionCollectionParameter_7'","/Script/Engine.MaterialExpressionFunctionInput'MF_SC_Occlusion_VogelDisk:MaterialExpressionFunctionInput_3'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_Occlusion_VogelDisk:MaterialExpressionCollectionParameter_1'","/Script/Engine.MaterialExpressionDivide'MF_SC_Occlusion_VogelDisk:MaterialExpressionDivide_1'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'MF_SC_Occlusion_VogelDisk:MaterialExpressionNamedRerouteDeclaration_1'","/Script/Engine.MaterialExpressionNamedRerouteUsage'MF_SC_Occlusion_VogelDisk:MaterialExpressionNamedRerouteUsage_2'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'MF_SC_Occlusion_VogelDisk:MaterialExpressionNamedRerouteDeclaration_2'","/Script/Engine.MaterialExpressionNamedRerouteUsage'MF_SC_Occlusion_VogelDisk:MaterialExpressionNamedRerouteUsage_3'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'MF_SC_Occlusion_VogelDisk:MaterialExpressionNamedRerouteDeclaration_3'","/Script/Engine.MaterialExpressionNamedRerouteUsage'MF_SC_Occlusion_VogelDisk:MaterialExpressionNamedRerouteUsage_4'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'MF_SC_Occlusion_VogelDisk:MaterialExpressionNamedRerouteDeclaration_4'","/Script/Engine.MaterialExpressionNamedRerouteUsage'MF_SC_Occlusion_VogelDisk:MaterialExpressionNamedRerouteUsage_5'","/Script/Engine.MaterialExpressionNamedRerouteUsage'MF_SC_Occlusion_VogelDisk:MaterialExpressionNamedRerouteUsage_6'"))
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_1)
+    .ParameterName="Occlusion Blur Distance"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=B800A93B47F36BD80362B6BB5AD88C72
+    .MaterialExpressionEditorX=-1024
+    .MaterialExpressionEditorY=320
+    .MaterialExpressionGuid=83C224214DD91134232C36B25049F609
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion_VogelDisk'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_2)
+    .ParameterName="Occlusion Blur Samples"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=A4AB0D904D991DB567B876B5C61AE70E
+    .MaterialExpressionEditorX=-1024
+    .MaterialExpressionEditorY=192
+    .MaterialExpressionGuid=83C224214DD91134232C36B25049F609
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion_VogelDisk'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_4)
+    .ParameterName="Occlusion Bias"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=E64EE7FD47812C0E51BC2F818CB4B7D2
+    .MaterialExpressionEditorX=-384
+    .MaterialExpressionEditorY=-960
+    .MaterialExpressionGuid=83C224214DD91134232C36B25049F609
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion_VogelDisk'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_6)
+    .ParameterName="Occlusion Capture Position"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=02CBD58941F575EF766DC5BB72391FF1
+    .MaterialExpressionEditorX=-768
+    .MaterialExpressionEditorY=-1568
+    .MaterialExpressionGuid=83C224214DD91134232C36B25049F609
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion_VogelDisk'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_7)
+    .ParameterName="Occlusion Capture Width"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=E7F6961C4832280CF29C91B5D977A9F9
+    .MaterialExpressionEditorX=-768
+    .MaterialExpressionEditorY=-1312
+    .MaterialExpressionGuid=83C224214DD91134232C36B25049F609
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion_VogelDisk'"
+    .bCollapsed=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionWorldPosition
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionWorldPosition'MF_SC_Occlusion_VogelDisk:MaterialExpressionWorldPosition_0'")
+    .MaterialExpressionEditorX=-640
+    .MaterialExpressionEditorY=-912
+    .MaterialExpressionGuid=372B18574132A8CF4C6992A40E80B076
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion_VogelDisk'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_1)
+    Input                  <- MaterialExpressionDivide
+    .R=True
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionDivide'MF_SC_Occlusion_VogelDisk:MaterialExpressionDivide_0'")
+    .MaterialExpressionEditorX=-128
+    .MaterialExpressionEditorY=-640
+    .MaterialExpressionGuid=5E5748694CF1D2045F059FB7C6689DAE
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion_VogelDisk'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_3)
+    Input                  <- MaterialExpressionFunctionInput
+    .R=True
+    .G=True
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_Occlusion_VogelDisk:MaterialExpressionFunctionInput_2'")
+    .MaterialExpressionEditorX=-192
+    .MaterialExpressionEditorY=-1536
+    .MaterialExpressionGuid=DCAE33E7463F219E177349B831EC38AF
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion_VogelDisk'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_4)
+    Input                  <- MaterialExpressionNamedRerouteUsage
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'MF_SC_Occlusion_VogelDisk:MaterialExpressionNamedRerouteUsage_1'")
+    .MaterialExpressionEditorX=-640
+    .MaterialExpressionEditorY=-1024
+    .MaterialExpressionGuid=372B18574132A8CF4C6992A40E80B076
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion_VogelDisk'"
+  MaterialExpressionCustom (MaterialExpressionCustom_1)
+    Inputs(0)              <- MaterialExpressionNamedRerouteUsage
+    Inputs(1)              <- MaterialExpressionFunctionInput
+    Inputs(2)              <- MaterialExpressionNamedRerouteUsage
+    Inputs(3)              <- MaterialExpressionFunctionInput
+    Inputs(4)              <- MaterialExpressionDivide
+    Inputs(5)              <- MaterialExpressionNamedRerouteUsage
+    .Code="#define GOLDEN_RATIO (1.6180339887498948482045868343656381f)\r\n#define TWO_PI (6.28318530717f)\r\n\r\nstatic float Occlusion;\r\nstatic float OcclusionWorldHeight;\r\nfloat gradientNoise = TWO_PI * InterleavedGradientNoise(ScreenSize);\r\n\r\nfor (int i = 0; i < Samples; i++){\r\n\r\n    float2 sampleUV = VogelDiskSample(i, Samples, gradientNoise);\r\n\tOcclusionWorldHeight = Texture2DSample(Tex, TexSampler, UV + sampleUV * Offset);\r\n\t\r\n\tOcclusion += WorldHeight > OcclusionWorldHeight ? 0.0 : 1.0;}\r\n\r\nreturn Occlusion/Samples;"
+    .OutputType=CMOT_Float1
+    .Description="Vogel Disk Occlusion Sampling"
+    .Inputs(0)=(InputName="WorldHeight",Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'MF_SC_Occlusion_VogelDisk:MaterialExpressionNamedRerouteUsage_2'"))
+    .Inputs(1)=(InputName="Tex",Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_Occlusion_VogelDisk:MaterialExpressionFunctionInput_1'"))
+    .Inputs(2)=(InputName="UV",Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'MF_SC_Occlusion_VogelDisk:MaterialExpressionNamedRerouteUsage_3'"))
+    .Inputs(3)=(InputName="Samples",Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_Occlusion_VogelDisk:MaterialExpressionFunctionInput_0'"))
+    .Inputs(4)=(InputName="Offset",Input=(Expression="/Script/Engine.MaterialExpressionDivide'MF_SC_Occlusion_VogelDisk:MaterialExpressionDivide_1'"))
+    .Inputs(5)=(InputName="ScreenSize",Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'MF_SC_Occlusion_VogelDisk:MaterialExpressionNamedRerouteUsage_4'"))
+    .IncludeFilePaths(0)="/Plugin/SkyCreatorPlugin/SkyCreatorCommon.ush"
+    .MaterialExpressionEditorX=-384
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=74592AE848D9CD9442FE14845F031F0E
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion_VogelDisk'"
+    .bCollapsed=True
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'MF_SC_Occlusion_VogelDisk:MaterialExpressionNamedRerouteUsage_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'MF_SC_Occlusion_VogelDisk:MaterialExpressionSubtract_0'")
+    .MaterialExpressionEditorX=-384
+    .MaterialExpressionEditorY=-640
+    .MaterialExpressionGuid=43BCEB3C41A8A679FCA0F58B4D9A53F7
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion_VogelDisk'"
+  MaterialExpressionDivide (MaterialExpressionDivide_1)
+    A                      <- MaterialExpressionCollectionParameter
+    B                      <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'MF_SC_Occlusion_VogelDisk:MaterialExpressionNamedRerouteUsage_6'")
+    .A=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_Occlusion_VogelDisk:MaterialExpressionCollectionParameter_1'")
+    .MaterialExpressionEditorX=-768
+    .MaterialExpressionEditorY=352
+    .MaterialExpressionGuid=5FA7C2CC4139049656168885AA7695E1
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion_VogelDisk'"
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_0)
+    Preview                <- MaterialExpressionCollectionParameter
+    .Preview=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_Occlusion_VogelDisk:MaterialExpressionCollectionParameter_2'")
+    .InputName="Blur Samples"
+    .Id=48368E5345E71AA17D9463AC219C95E0
+    .InputType=FunctionInput_Scalar
+    .PreviewValue=(X=12.000000,Y=0.000000,Z=0.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=3
+    .MaterialExpressionEditorX=-768
+    .MaterialExpressionEditorY=224
+    .MaterialExpressionGuid=4CFAC7B34FB28DD78E0A8B890B834071
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion_VogelDisk'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_1)
+    Preview                <- MaterialExpressionTextureObject
+    .Preview=(Expression="/Script/Engine.MaterialExpressionTextureObject'MF_SC_Occlusion_VogelDisk:MaterialExpressionTextureObject_0'")
+    .InputName="Heightmap Texture"
+    .Id=4D009B3C49D81339BD2931B31ECF6407
+    .InputType=FunctionInput_Texture2D
+    .bUsePreviewValueAsDefault=True
+    .MaterialExpressionEditorX=-768
+    .MaterialExpressionEditorY=96
+    .MaterialExpressionGuid=ED6567D6492153570A5CFE827EE0C127
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion_VogelDisk'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_2)
+    Preview                <- MaterialExpressionCollectionParameter
+    .Preview=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_Occlusion_VogelDisk:MaterialExpressionCollectionParameter_6'")
+    .InputName="Occlusion Capture Position"
+    .Id=298564E64EE0DE1096D0578881B7C8DA
+    .InputType=FunctionInput_Vector4
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=1
+    .MaterialExpressionEditorX=-512
+    .MaterialExpressionEditorY=-1536
+    .MaterialExpressionGuid=0CB27FFD4BD61B8F3837508EB2B05471
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion_VogelDisk'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_3)
+    Preview                <- MaterialExpressionCollectionParameter
+    .Preview=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_Occlusion_VogelDisk:MaterialExpressionCollectionParameter_7'")
+    .InputName="Occlusion Capture Width"
+    .Id=DFC41E2541A3CECF8CF131BDB98718E9
+    .InputType=FunctionInput_Scalar
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=2
+    .MaterialExpressionEditorX=-512
+    .MaterialExpressionEditorY=-1280
+    .MaterialExpressionGuid=0CB27FFD4BD61B8F3837508EB2B05471
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion_VogelDisk'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionCustom
+    .A=(Expression="/Script/Engine.MaterialExpressionCustom'MF_SC_Occlusion_VogelDisk:MaterialExpressionCustom_1'")
+    .bLastPreviewed=True
+    .Id=0C5BAE7D4B6E4560D98EE88816252DA8
+    .MaterialExpressionGuid=464C6FF741BB189DDC955AB29652D5A2
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion_VogelDisk'"
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_2)
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Engine/Functions/Engine_MaterialFunctions02/ScreenResolution.ScreenResolution'"
+    .FunctionOutputs(0)=(ExpressionOutputId=D21EB3BE4C1789227FDE70B7A16D9AE8,Output=(OutputName="Visible Resolution"))
+    .FunctionOutputs(1)=(ExpressionOutputId=2ED3DB9D4C40696F0C43FE8FD96180A7,Output=(OutputName="Buffer Resolution"))
+    .MaterialExpressionEditorX=-384
+    .MaterialExpressionEditorY=-288
+    .MaterialExpressionGuid=7EB844C14063DB9A6E8589B78E910B45
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion_VogelDisk'"
+    .Outputs(0)=(OutputName="Visible Resolution")
+    .Outputs(1)=(OutputName="Buffer Resolution")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionScreenPosition
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_Occlusion_VogelDisk:MaterialExpressionMaterialFunctionCall_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionScreenPosition'MF_SC_Occlusion_VogelDisk:MaterialExpressionScreenPosition_0'")
+    .MaterialExpressionEditorX=-128
+    .MaterialExpressionEditorY=-384
+    .MaterialExpressionGuid=7B2902504F2CEB052C95F393A17F1AD6
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion_VogelDisk'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_0)
+    Input                  <- MaterialExpressionComponentMask
+    .Input=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_Occlusion_VogelDisk:MaterialExpressionComponentMask_3'")
+    .Name="Occlusion Capture Position"
+    .NodeColor=(R=1.000000,G=0.500000,B=0.000000,A=1.000000)
+    .VariableGuid=7CFF1E1B4F974DB576B3D681F84A6CFB
+    .MaterialExpressionEditorY=-1536
+    .MaterialExpressionGuid=D2A1FD4D40499E7AACF2018001879BEC
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion_VogelDisk'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_1)
+    Input                  <- MaterialExpressionSubtract
+    .Input=(Expression="/Script/Engine.MaterialExpressionSubtract'MF_SC_Occlusion_VogelDisk:MaterialExpressionSubtract_2'")
+    .Name="World Height"
+    .NodeColor=(R=0.000000,G=0.859375,B=1.000000,A=1.000000)
+    .VariableGuid=3D5268D44D84A98976224187FC5F42EA
+    .MaterialExpressionEditorY=-1024
+    .MaterialExpressionGuid=EE1F44E9479703977086E4A4E130A89F
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion_VogelDisk'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_2)
+    Input                  <- MaterialExpressionComponentMask
+    .Input=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_Occlusion_VogelDisk:MaterialExpressionComponentMask_1'")
+    .Name="UV"
+    .NodeColor=(R=1.000000,G=0.093750,B=0.000000,A=1.000000)
+    .VariableGuid=338618C34F16C56089BF3F97485CCBB8
+    .MaterialExpressionEditorY=-640
+    .MaterialExpressionGuid=01609434474FFDD4373960ABF2878657
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion_VogelDisk'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_3)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_Occlusion_VogelDisk:MaterialExpressionMultiply_1'")
+    .Name="Screen Size"
+    .NodeColor=(R=1.000000,G=0.000000,B=0.937500,A=1.000000)
+    .VariableGuid=F0BCF6064BC71A348EE0EB92C050E447
+    .MaterialExpressionEditorY=-384
+    .MaterialExpressionGuid=5884F44F4C1DCFEDAA210695B48FBB0D
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion_VogelDisk'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_4)
+    Input                  <- MaterialExpressionFunctionInput
+    .Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_Occlusion_VogelDisk:MaterialExpressionFunctionInput_3'")
+    .Name="Occlusion Capture Width"
+    .NodeColor=(R=0.000000,G=1.000000,B=0.812500,A=1.000000)
+    .VariableGuid=B9095E804B2CA4886DB306B40356AA8A
+    .MaterialExpressionEditorY=-1280
+    .MaterialExpressionGuid=30647FB344CA655E004942B750207A27
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion_VogelDisk'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_0)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'MF_SC_Occlusion_VogelDisk:MaterialExpressionNamedRerouteDeclaration_0'"
+    .DeclarationGuid=7CFF1E1B4F974DB576B3D681F84A6CFB
+    .MaterialExpressionEditorX=-1024
+    .MaterialExpressionEditorY=-496
+    .MaterialExpressionGuid=E40778E340625A5BE3BF8BB602E45464
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion_VogelDisk'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_1)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'MF_SC_Occlusion_VogelDisk:MaterialExpressionNamedRerouteDeclaration_0'"
+    .DeclarationGuid=7CFF1E1B4F974DB576B3D681F84A6CFB
+    .MaterialExpressionEditorX=-896
+    .MaterialExpressionEditorY=-1024
+    .MaterialExpressionGuid=E40778E340625A5BE3BF8BB602E45464
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion_VogelDisk'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_2)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'MF_SC_Occlusion_VogelDisk:MaterialExpressionNamedRerouteDeclaration_1'"
+    .DeclarationGuid=3D5268D44D84A98976224187FC5F42EA
+    .MaterialExpressionEditorX=-640
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=B797873E477F5347E74A1DA63FB5C2D3
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion_VogelDisk'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_3)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'MF_SC_Occlusion_VogelDisk:MaterialExpressionNamedRerouteDeclaration_2'"
+    .DeclarationGuid=338618C34F16C56089BF3F97485CCBB8
+    .MaterialExpressionEditorX=-640
+    .MaterialExpressionEditorY=160
+    .MaterialExpressionGuid=FAB790E64F2878CA36299F9314F96738
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion_VogelDisk'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_4)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'MF_SC_Occlusion_VogelDisk:MaterialExpressionNamedRerouteDeclaration_3'"
+    .DeclarationGuid=F0BCF6064BC71A348EE0EB92C050E447
+    .MaterialExpressionEditorX=-1024
+    .MaterialExpressionEditorY=512
+    .MaterialExpressionGuid=DB2327CB45636585594383BBDC0D4843
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion_VogelDisk'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_5)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'MF_SC_Occlusion_VogelDisk:MaterialExpressionNamedRerouteDeclaration_4'"
+    .DeclarationGuid=B9095E804B2CA4886DB306B40356AA8A
+    .MaterialExpressionEditorX=-640
+    .MaterialExpressionEditorY=-496
+    .MaterialExpressionGuid=1151CB62459CA7AF0EE9AD81B6737FB7
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion_VogelDisk'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_6)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'MF_SC_Occlusion_VogelDisk:MaterialExpressionNamedRerouteDeclaration_4'"
+    .DeclarationGuid=B9095E804B2CA4886DB306B40356AA8A
+    .MaterialExpressionEditorX=-1024
+    .MaterialExpressionEditorY=416
+    .MaterialExpressionGuid=1151CB62459CA7AF0EE9AD81B6737FB7
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion_VogelDisk'"
+  MaterialExpressionScreenPosition (MaterialExpressionScreenPosition_0)
+    .MaterialExpressionEditorX=-384
+    .MaterialExpressionEditorY=-400
+    .MaterialExpressionGuid=4DED3238480026E85EA0DEA9B0E44E80
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion_VogelDisk'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_0)
+    A                      <- MaterialExpressionWorldPosition
+    B                      <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'MF_SC_Occlusion_VogelDisk:MaterialExpressionNamedRerouteUsage_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionWorldPosition'MF_SC_Occlusion_VogelDisk:MaterialExpressionWorldPosition_1'")
+    .MaterialExpressionEditorX=-640
+    .MaterialExpressionEditorY=-640
+    .MaterialExpressionGuid=17EE8FE340C408CAD733CF9020517117
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion_VogelDisk'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_1)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_Occlusion_VogelDisk:MaterialExpressionComponentMask_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_Occlusion_VogelDisk:MaterialExpressionComponentMask_4'")
+    .MaterialExpressionEditorX=-512
+    .MaterialExpressionEditorY=-1024
+    .MaterialExpressionGuid=611E3FA0465693966537A4A69DA55D7D
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion_VogelDisk'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_2)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_Occlusion_VogelDisk:MaterialExpressionCollectionParameter_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'MF_SC_Occlusion_VogelDisk:MaterialExpressionSubtract_1'")
+    .MaterialExpressionEditorX=-128
+    .MaterialExpressionEditorY=-1024
+    .MaterialExpressionGuid=C40B712A4F35AE9462C20580D40DEAC0
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion_VogelDisk'"
+  MaterialExpressionTextureObject (MaterialExpressionTextureObject_0)
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.TextureRenderTarget2D'/Game/ENDEMIS/Weather/Occlusion/RT_OcclusionDepth.RT_OcclusionDepth'"
+    .MaterialExpressionEditorX=-1024
+    .MaterialExpressionEditorY=96
+    .MaterialExpressionGuid=CCFFE4D6417997AB9AA7BDAA07BD8767
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion_VogelDisk'"
+    .bCollapsed=True
+  MaterialExpressionWorldPosition (MaterialExpressionWorldPosition_0)
+    .MaterialExpressionEditorX=-896
+    .MaterialExpressionEditorY=-928
+    .MaterialExpressionGuid=CA25978F4EB9D913DFA11293EC8DC9FB
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion_VogelDisk'"
+  MaterialExpressionWorldPosition (MaterialExpressionWorldPosition_1)
+    .MaterialExpressionEditorX=-1024
+    .MaterialExpressionEditorY=-656
+    .MaterialExpressionGuid=B32844884402050B7EB2E28648FF555E
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion_VogelDisk'"

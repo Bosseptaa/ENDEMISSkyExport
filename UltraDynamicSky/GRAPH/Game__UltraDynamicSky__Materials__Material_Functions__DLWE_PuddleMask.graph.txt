@@ -1,0 +1,332 @@
+### /Game/UltraDynamicSky/Materials/Material_Functions/DLWE_PuddleMask
+  MaterialFunction (DLWE_PuddleMask)
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'DLWE_PuddleMaskEditorOnlyData'"
+    .StateId=E19026904288DC8D3D7722B0F0907B47
+    .CombinedInputTypes=15
+    .CombinedOutputTypes=15
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+  MaterialFunctionEditorOnlyData (DLWE_PuddleMaskEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'DLWE_PuddleMask:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionVertexNormalWS'DLWE_PuddleMask:MaterialExpressionVertexNormalWS_4'","/Script/Engine.MaterialExpressionComponentMask'DLWE_PuddleMask:MaterialExpressionComponentMask_25'","/Script/Engine.MaterialExpressionSubtract'DLWE_PuddleMask:MaterialExpressionSubtract_18'","/Script/Engine.MaterialExpressionMultiply'DLWE_PuddleMask:MaterialExpressionMultiply_45'","/Script/Engine.MaterialExpressionSaturate'DLWE_PuddleMask:MaterialExpressionSaturate_6'","/Script/Engine.MaterialExpressionCollectionParameter'DLWE_PuddleMask:MaterialExpressionCollectionParameter_8'","/Script/Engine.MaterialExpressionComponentMask'DLWE_PuddleMask:MaterialExpressionComponentMask_32'","/Script/Engine.MaterialExpressionComponentMask'DLWE_PuddleMask:MaterialExpressionComponentMask_36'","/Script/Engine.MaterialExpressionMultiply'DLWE_PuddleMask:MaterialExpressionMultiply_47'","/Script/Engine.MaterialExpressionSubtract'DLWE_PuddleMask:MaterialExpressionSubtract_20'","/Script/Engine.MaterialExpressionComponentMask'DLWE_PuddleMask:MaterialExpressionComponentMask_31'","/Script/Engine.MaterialExpressionAdd'DLWE_PuddleMask:MaterialExpressionAdd_11'","/Script/Engine.MaterialExpressionCollectionParameter'DLWE_PuddleMask:MaterialExpressionCollectionParameter_25'","/Script/Engine.MaterialExpressionSaturate'DLWE_PuddleMask:MaterialExpressionSaturate_19'","/Script/Engine.MaterialExpressionMultiply'DLWE_PuddleMask:MaterialExpressionMultiply_75'","/Script/Engine.MaterialExpressionCollectionParameter'DLWE_PuddleMask:MaterialExpressionCollectionParameter_24'","/Script/Engine.MaterialExpressionReroute'DLWE_PuddleMask:MaterialExpressionReroute_35'","/Script/Engine.MaterialExpressionAdd'DLWE_PuddleMask:MaterialExpressionAdd_20'","/Script/Engine.MaterialExpressionSaturate'DLWE_PuddleMask:MaterialExpressionSaturate_15'","/Script/Engine.MaterialExpressionFunctionInput'DLWE_PuddleMask:MaterialExpressionFunctionInput_0'","/Script/Engine.MaterialExpressionFunctionInput'DLWE_PuddleMask:MaterialExpressionFunctionInput_1'","/Script/Engine.MaterialExpressionFunctionOutput'DLWE_PuddleMask:MaterialExpressionFunctionOutput_1'","/Script/Engine.MaterialExpressionFunctionInput'DLWE_PuddleMask:MaterialExpressionFunctionInput_2'","/Script/Engine.MaterialExpressionFunctionOutput'DLWE_PuddleMask:MaterialExpressionFunctionOutput_3'","/Script/Engine.MaterialExpressionCollectionParameter'DLWE_PuddleMask:MaterialExpressionCollectionParameter_0'","/Script/Engine.MaterialExpressionMultiply'DLWE_PuddleMask:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionMultiply'DLWE_PuddleMask:MaterialExpressionMultiply_1'","/Script/Engine.MaterialExpressionMultiply'DLWE_PuddleMask:MaterialExpressionMultiply_2'","/Script/Engine.MaterialExpressionSaturate'DLWE_PuddleMask:MaterialExpressionSaturate_0'","/Script/Engine.MaterialExpressionReroute'DLWE_PuddleMask:MaterialExpressionReroute_0'","/Script/Engine.MaterialExpressionFunctionInput'DLWE_PuddleMask:MaterialExpressionFunctionInput_4'","/Script/Engine.MaterialExpressionLinearInterpolate'DLWE_PuddleMask:MaterialExpressionLinearInterpolate_1'","/Script/Engine.MaterialExpressionFunctionOutput'DLWE_PuddleMask:MaterialExpressionFunctionOutput_2'","/Script/Engine.MaterialExpressionSaturate'DLWE_PuddleMask:MaterialExpressionSaturate_1'"),EditorComments=("/Script/Engine.MaterialExpressionComment'DLWE_PuddleMask:MaterialExpressionComment_0'","/Script/Engine.MaterialExpressionComment'DLWE_PuddleMask:MaterialExpressionComment_2'"))
+  MaterialExpressionAdd (MaterialExpressionAdd_11)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'DLWE_PuddleMask:MaterialExpressionFunctionInput_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'DLWE_PuddleMask:MaterialExpressionMultiply_47'")
+    .MaterialExpressionEditorX=-432
+    .MaterialExpressionEditorY=648
+    .MaterialExpressionGuid=B6CC0F064169164E0D0C93A2D40F8493
+    .Function="/Script/Engine.MaterialFunction'DLWE_PuddleMask'"
+  MaterialExpressionAdd (MaterialExpressionAdd_20)
+    A                      <- MaterialExpressionReroute
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'DLWE_PuddleMask:MaterialExpressionMultiply_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionReroute'DLWE_PuddleMask:MaterialExpressionReroute_35'")
+    .MaterialExpressionEditorX=1320
+    .MaterialExpressionEditorY=940
+    .MaterialExpressionGuid=0249D77A4BE0009BE4DD539019434CF5
+    .Function="/Script/Engine.MaterialFunction'DLWE_PuddleMask'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_0)
+    .ParameterName="DLWE_Puddle Coverage"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+    .ParameterId=35EE890B456066E774AB3083D5241E8C
+    .MaterialExpressionEditorX=-1236
+    .MaterialExpressionEditorY=760
+    .MaterialExpressionGuid=B6B8ADA04AA240654FDCCBB33634F603
+    .Function="/Script/Engine.MaterialFunction'DLWE_PuddleMask'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_24)
+    .ParameterName="DLWE Puddle Sharpness"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+    .ParameterId=161CF59746B988A861C7AF899A358D22
+    .MaterialExpressionEditorX=280
+    .MaterialExpressionEditorY=732
+    .MaterialExpressionGuid=B6B8ADA04AA240654FDCCBB33634F603
+    .Function="/Script/Engine.MaterialFunction'DLWE_PuddleMask'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_25)
+    .ParameterName="DLWE_Base Wetness"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+    .ParameterId=0B62AA984D8FA9E709EE308D52D86894
+    .MaterialExpressionEditorX=396
+    .MaterialExpressionEditorY=1300
+    .MaterialExpressionGuid=B6B8ADA04AA240654FDCCBB33634F603
+    .Function="/Script/Engine.MaterialFunction'DLWE_PuddleMask'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_8)
+    .ParameterName="DLWE Cutoff/Falloff"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+    .ParameterId=B5E1B7164FEFB66C5511DCB67F8FF7D7
+    .MaterialExpressionEditorX=-1984
+    .MaterialExpressionEditorY=784
+    .MaterialExpressionGuid=B6B8ADA04AA240654FDCCBB33634F603
+    .Function="/Script/Engine.MaterialFunction'DLWE_PuddleMask'"
+    .bCollapsed=True
+  MaterialExpressionComment (MaterialExpressionComment_0)
+    .SizeX=904
+    .SizeY=344
+    .Text="Base Wetness"
+    .CommentColor=(R=0.453150,G=0.547614,B=1.000000,A=1.000000)
+    .MaterialExpressionEditorX=248
+    .MaterialExpressionEditorY=1236
+    .MaterialExpressionGuid=CDF49DEB4B48AF1EEA6080A43158D8E7
+    .Function="/Script/Engine.MaterialFunction'DLWE_PuddleMask'"
+  MaterialExpressionComment (MaterialExpressionComment_2)
+    .SizeX=3336
+    .SizeY=680
+    .Text="Create Puddle Mask"
+    .CommentColor=(R=0.314945,G=0.567708,B=0.270082,A=1.000000)
+    .MaterialExpressionEditorX=-2178
+    .MaterialExpressionEditorY=530
+    .MaterialExpressionGuid=F1A6528749C62A7A89FEA185B671EDFE
+    .Function="/Script/Engine.MaterialFunction'DLWE_PuddleMask'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_25)
+    Input                  <- MaterialExpressionVertexNormalWS
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionVertexNormalWS'DLWE_PuddleMask:MaterialExpressionVertexNormalWS_4'")
+    .MaterialExpressionEditorX=-1996
+    .MaterialExpressionEditorY=648
+    .MaterialExpressionGuid=D9FAB87D4D4B6AF817DA06A732249746
+    .Function="/Script/Engine.MaterialFunction'DLWE_PuddleMask'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_31)
+    Input                  <- MaterialExpressionFunctionInput
+    .R=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'DLWE_PuddleMask:MaterialExpressionFunctionInput_0'")
+    .MaterialExpressionEditorX=-108
+    .MaterialExpressionEditorY=812
+    .MaterialExpressionGuid=5EED2FB44CB31D352699E1AA6BF0E702
+    .Function="/Script/Engine.MaterialFunction'DLWE_PuddleMask'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_32)
+    Input                  <- MaterialExpressionCollectionParameter
+    .R=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'DLWE_PuddleMask:MaterialExpressionCollectionParameter_8'")
+    .MaterialExpressionEditorX=-1716
+    .MaterialExpressionEditorY=732
+    .MaterialExpressionGuid=0513B2ED4613B8644DD19ABAA6DCDAE9
+    .Function="/Script/Engine.MaterialFunction'DLWE_PuddleMask'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_36)
+    Input                  <- MaterialExpressionCollectionParameter
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'DLWE_PuddleMask:MaterialExpressionCollectionParameter_8'")
+    .MaterialExpressionEditorX=-1536
+    .MaterialExpressionEditorY=812
+    .MaterialExpressionGuid=816E13574624190097FCDE851E4F6C4F
+    .Function="/Script/Engine.MaterialFunction'DLWE_PuddleMask'"
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_0)
+    .InputName="VariationClouds"
+    .Id=3978C43A4E66D022CCB73987766FE0F7
+    .MaterialExpressionEditorX=-376
+    .MaterialExpressionEditorY=812
+    .MaterialExpressionGuid=9D77CD1142B899B5D66194A781C673F2
+    .Function="/Script/Engine.MaterialFunction'DLWE_PuddleMask'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_1)
+    .InputName="Modulate Coverage"
+    .Id=9FF4CB89408F4C6915217A966DEF1338
+    .InputType=FunctionInput_Scalar
+    .bUsePreviewValueAsDefault=True
+    .MaterialExpressionEditorX=-720
+    .MaterialExpressionEditorY=740
+    .MaterialExpressionGuid=2177A88C41812F9128C31480AD16A575
+    .Function="/Script/Engine.MaterialFunction'DLWE_PuddleMask'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_2)
+    Preview                <- MaterialExpressionComponentMask
+    .Preview=(Expression="/Script/Engine.MaterialExpressionComponentMask'DLWE_PuddleMask:MaterialExpressionComponentMask_25'")
+    .InputName="Vertex Z Normal"
+    .Id=57436C2140A2011630CA8DA4D69850E8
+    .InputType=FunctionInput_Scalar
+    .bUsePreviewValueAsDefault=True
+    .MaterialExpressionEditorX=-1868
+    .MaterialExpressionEditorY=648
+    .MaterialExpressionGuid=02F734E34C9EA93C2CCD76803766DB7D
+    .Function="/Script/Engine.MaterialFunction'DLWE_PuddleMask'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_4)
+    .InputName="Material Wetness"
+    .Id=1D50DCFD42E5BFAF2C7D40ADA5C27A10
+    .InputType=FunctionInput_Scalar
+    .MaterialExpressionEditorX=-1252
+    .MaterialExpressionEditorY=884
+    .MaterialExpressionGuid=926B846443EA654749EFE28C667DC729
+    .Function="/Script/Engine.MaterialFunction'DLWE_PuddleMask'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionSaturate
+    .A=(Expression="/Script/Engine.MaterialExpressionSaturate'DLWE_PuddleMask:MaterialExpressionSaturate_19'")
+    .OutputName="Puddles"
+    .bLastPreviewed=True
+    .Id=A632EC7540B0223B0192B6925DB0E076
+    .MaterialExpressionEditorX=904
+    .MaterialExpressionEditorY=732
+    .MaterialExpressionGuid=D6A0A4264AE6EDC0A741C1B54A358B6F
+    .Function="/Script/Engine.MaterialFunction'DLWE_PuddleMask'"
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_1)
+    A                      <- MaterialExpressionSaturate
+    .A=(Expression="/Script/Engine.MaterialExpressionSaturate'DLWE_PuddleMask:MaterialExpressionSaturate_15'")
+    .OutputName="Wetness"
+    .bLastPreviewed=True
+    .Id=4F64ACC94EC64D75BFEAD2978A1D4CBC
+    .MaterialExpressionEditorX=1536
+    .MaterialExpressionEditorY=940
+    .MaterialExpressionGuid=D6A0A4264AE6EDC0A741C1B54A358B6F
+    .Function="/Script/Engine.MaterialFunction'DLWE_PuddleMask'"
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_2)
+    A                      <- MaterialExpressionSaturate
+    .A=(Expression="/Script/Engine.MaterialExpressionSaturate'DLWE_PuddleMask:MaterialExpressionSaturate_1'")
+    .OutputName="Unsharpened Puddles"
+    .SortPriority=1
+    .Id=389602A84A689F14229E3ABDD712BD15
+    .MaterialExpressionEditorX=392
+    .MaterialExpressionEditorY=864
+    .MaterialExpressionGuid=AA8EA2BF49B16405D63342B249EDEB30
+    .Function="/Script/Engine.MaterialFunction'DLWE_PuddleMask'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_3)
+    A                      <- MaterialExpressionMultiply
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'DLWE_PuddleMask:MaterialExpressionMultiply_47'")
+    .OutputName="Unmodulated Coverage"
+    .Id=26E8A2A046F81D6E38609BA717DBA488
+    .MaterialExpressionEditorX=-704
+    .MaterialExpressionEditorY=596
+    .MaterialExpressionGuid=C9B50BC146943241F916C5B9C396A93E
+    .Function="/Script/Engine.MaterialFunction'DLWE_PuddleMask'"
+    .bCollapsed=True
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_1)
+    Alpha                  <- MaterialExpressionComponentMask
+    .ConstA=3.000000
+    .ConstB=0.700000
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionComponentMask'DLWE_PuddleMask:MaterialExpressionComponentMask_31'")
+    .MaterialExpressionEditorX=40
+    .MaterialExpressionEditorY=1024
+    .MaterialExpressionGuid=E10333A243BEF30BAAEFFE8B7DC6ACE7
+    .Function="/Script/Engine.MaterialFunction'DLWE_PuddleMask'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionCollectionParameter
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'DLWE_PuddleMask:MaterialExpressionFunctionInput_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'DLWE_PuddleMask:MaterialExpressionCollectionParameter_0'")
+    .MaterialExpressionEditorX=-972
+    .MaterialExpressionEditorY=788
+    .MaterialExpressionGuid=9892FBD345CFFA35C8429D8420DC279F
+    .Function="/Script/Engine.MaterialFunction'DLWE_PuddleMask'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionCollectionParameter
+    B                      <- MaterialExpressionSaturate
+    .B=(Expression="/Script/Engine.MaterialExpressionSaturate'DLWE_PuddleMask:MaterialExpressionSaturate_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'DLWE_PuddleMask:MaterialExpressionCollectionParameter_25'")
+    .MaterialExpressionEditorX=684
+    .MaterialExpressionEditorY=1376
+    .MaterialExpressionGuid=2ECBCEC44E282DEAE80F92A85D6073D9
+    .Function="/Script/Engine.MaterialFunction'DLWE_PuddleMask'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_2)
+    A                      <- MaterialExpressionReroute
+    B                      <- MaterialExpressionLinearInterpolate
+    .B=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'DLWE_PuddleMask:MaterialExpressionLinearInterpolate_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionReroute'DLWE_PuddleMask:MaterialExpressionReroute_0'")
+    .ConstB=2.000000
+    .MaterialExpressionEditorX=360
+    .MaterialExpressionEditorY=1404
+    .MaterialExpressionGuid=7596E5F649CF5C987ACB899A99A448FC
+    .Function="/Script/Engine.MaterialFunction'DLWE_PuddleMask'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_45)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'DLWE_PuddleMask:MaterialExpressionComponentMask_36'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'DLWE_PuddleMask:MaterialExpressionSubtract_18'")
+    .ConstB=50.000000
+    .MaterialExpressionEditorX=-1392
+    .MaterialExpressionEditorY=648
+    .MaterialExpressionGuid=9E35C3A446780D90A18E69A735ED22E6
+    .Function="/Script/Engine.MaterialFunction'DLWE_PuddleMask'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_47)
+    A                      <- MaterialExpressionSaturate
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'DLWE_PuddleMask:MaterialExpressionMultiply_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSaturate'DLWE_PuddleMask:MaterialExpressionSaturate_6'")
+    .MaterialExpressionEditorX=-840
+    .MaterialExpressionEditorY=648
+    .MaterialExpressionGuid=241A4789479DF2EBB123E99D000F7B3D
+    .Function="/Script/Engine.MaterialFunction'DLWE_PuddleMask'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_75)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'DLWE_PuddleMask:MaterialExpressionCollectionParameter_24'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'DLWE_PuddleMask:MaterialExpressionSubtract_20'")
+    .ConstB=50.000000
+    .MaterialExpressionEditorX=568
+    .MaterialExpressionEditorY=648
+    .MaterialExpressionGuid=534AF89B4E0295975C0B06B0537513AA
+    .Function="/Script/Engine.MaterialFunction'DLWE_PuddleMask'"
+  MaterialExpressionReroute (MaterialExpressionReroute_0)
+    Input                  <- MaterialExpressionFunctionInput
+    .Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'DLWE_PuddleMask:MaterialExpressionFunctionInput_4'")
+    .MaterialExpressionEditorX=-760
+    .MaterialExpressionEditorY=1436
+    .MaterialExpressionGuid=BA55D2A24F2429FB40DF75AC9BE72994
+    .Function="/Script/Engine.MaterialFunction'DLWE_PuddleMask'"
+  MaterialExpressionReroute (MaterialExpressionReroute_35)
+    Input                  <- MaterialExpressionSaturate
+    .Input=(Expression="/Script/Engine.MaterialExpressionSaturate'DLWE_PuddleMask:MaterialExpressionSaturate_19'")
+    .MaterialExpressionEditorX=1044
+    .MaterialExpressionEditorY=684
+    .MaterialExpressionGuid=14C3A7454EEF5470B85439B7CEE638E0
+    .Function="/Script/Engine.MaterialFunction'DLWE_PuddleMask'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_0)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'DLWE_PuddleMask:MaterialExpressionMultiply_2'")
+    .MaterialExpressionEditorX=515
+    .MaterialExpressionEditorY=1405
+    .MaterialExpressionGuid=917B02AF47DD78A082BD61B22CD43B0D
+    .Function="/Script/Engine.MaterialFunction'DLWE_PuddleMask'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_1)
+    Input                  <- MaterialExpressionSubtract
+    .Input=(Expression="/Script/Engine.MaterialExpressionSubtract'DLWE_PuddleMask:MaterialExpressionSubtract_20'")
+    .MaterialExpressionEditorX=271
+    .MaterialExpressionEditorY=865
+    .MaterialExpressionGuid=21BEA6FA41331B097FF2E58DD5866F26
+    .Function="/Script/Engine.MaterialFunction'DLWE_PuddleMask'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_15)
+    Input                  <- MaterialExpressionAdd
+    .Input=(Expression="/Script/Engine.MaterialExpressionAdd'DLWE_PuddleMask:MaterialExpressionAdd_20'")
+    .MaterialExpressionEditorX=1408
+    .MaterialExpressionEditorY=940
+    .MaterialExpressionGuid=1AE70CD743B20A610B89E2937C2AD387
+    .Function="/Script/Engine.MaterialFunction'DLWE_PuddleMask'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_19)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'DLWE_PuddleMask:MaterialExpressionMultiply_75'")
+    .MaterialExpressionEditorX=732
+    .MaterialExpressionEditorY=648
+    .MaterialExpressionGuid=582DCBF441DED675ACDA0A9B6049276E
+    .Function="/Script/Engine.MaterialFunction'DLWE_PuddleMask'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_6)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'DLWE_PuddleMask:MaterialExpressionMultiply_45'")
+    .MaterialExpressionEditorX=-1264
+    .MaterialExpressionEditorY=648
+    .MaterialExpressionGuid=381CC4A346FC9CA5EDF8489DC3B447F7
+    .Function="/Script/Engine.MaterialFunction'DLWE_PuddleMask'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_18)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'DLWE_PuddleMask:MaterialExpressionComponentMask_32'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'DLWE_PuddleMask:MaterialExpressionFunctionInput_2'")
+    .MaterialExpressionEditorX=-1572
+    .MaterialExpressionEditorY=648
+    .MaterialExpressionGuid=F2FE8D1F4BBFF6AE5C489EB4A04AACF1
+    .Function="/Script/Engine.MaterialFunction'DLWE_PuddleMask'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_20)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'DLWE_PuddleMask:MaterialExpressionComponentMask_31'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'DLWE_PuddleMask:MaterialExpressionAdd_11'")
+    .MaterialExpressionEditorX=68
+    .MaterialExpressionEditorY=648
+    .MaterialExpressionGuid=F39C6413408D952B36B0E5B80CEC715E
+    .Function="/Script/Engine.MaterialFunction'DLWE_PuddleMask'"
+  MaterialExpressionVertexNormalWS (MaterialExpressionVertexNormalWS_4)
+    .MaterialExpressionEditorX=-2152
+    .MaterialExpressionEditorY=632
+    .MaterialExpressionGuid=F4DDF5524C4079BD6BD5E789E71960B1
+    .Function="/Script/Engine.MaterialFunction'DLWE_PuddleMask'"

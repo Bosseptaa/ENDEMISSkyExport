@@ -1,0 +1,178 @@
+### /Game/UltraDynamicSky/Blueprints/System/Editor_UI/Editor_Materials/Editor_MoonHandle_Material
+  Material (Editor_MoonHandle_Material)
+    .ShadingModel=MSM_Unlit
+    .ShadingModels=(ShadingModelField=1)
+    .EditorX=348
+    .EditorY=-16
+    .bCanMaskedBeAssumedOpaque=True
+    .StateId=64F225354F4A820BDFCC95BAB3A334C3
+    .EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'Editor_MoonHandle_MaterialEditorOnlyData'"
+    .LightingGuid=AF43E4BC4C0BE4D38D8C44A4053E381C
+  MaterialExpressionViewProperty (MaterialExpressionViewProperty_0)
+    .Property=MEVP_PreExposure
+    .MaterialExpressionEditorX=-408
+    .MaterialExpressionEditorY=348
+    .MaterialExpressionGuid=1C9C358B4FD61B0E20CE2AB0510E6B16
+    .Material="/Script/Engine.Material'Editor_MoonHandle_Material'"
+  MaterialExpressionVertexNormalWS (MaterialExpressionVertexNormalWS_0)
+    .MaterialExpressionEditorX=-1345
+    .MaterialExpressionEditorY=649
+    .MaterialExpressionGuid=A35B924346E36A511C4568ABC91B1AF6
+    .Material="/Script/Engine.Material'Editor_MoonHandle_Material'"
+  MaterialExpressionVectorParameter (MaterialExpressionVectorParameter_1)
+    .ParameterName="Color2"
+    .DefaultValue=(R=0.514648,G=0.576952,B=0.645833,A=1.000000)
+    .ExpressionGUID=C71903F043DB9475C3C07ABE247434C8
+    .MaterialExpressionEditorX=-1140
+    .MaterialExpressionEditorY=228
+    .MaterialExpressionGuid=FCE1636042B901888E07839192F3BE7D
+    .Material="/Script/Engine.Material'Editor_MoonHandle_Material'"
+  MaterialExpressionVectorParameter (MaterialExpressionVectorParameter_0)
+    .ParameterName="Color1"
+    .DefaultValue=(R=0.141520,G=0.161995,B=0.192708,A=1.000000)
+    .ExpressionGUID=EB2EEE0B4B5884797D944E8E1C4E7FBE
+    .MaterialExpressionEditorX=-1152
+    .MaterialExpressionEditorY=12
+    .MaterialExpressionGuid=48DFE13849DCD4B5C297179E8445FC6A
+    .Material="/Script/Engine.Material'Editor_MoonHandle_Material'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_0)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Editor_MoonHandle_Material:MaterialExpressionMultiply_4'")
+    .MaterialExpressionEditorX=-837
+    .MaterialExpressionEditorY=661
+    .MaterialExpressionGuid=5566BB614F15A4C27B8D1AA5D340D21F
+    .Material="/Script/Engine.Material'Editor_MoonHandle_Material'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_4)
+    A                      <- MaterialExpressionDotProduct
+    .A=(Expression="/Script/Engine.MaterialExpressionDotProduct'Editor_MoonHandle_Material:MaterialExpressionDotProduct_0'")
+    .ConstB=-2.000000
+    .MaterialExpressionEditorX=-965
+    .MaterialExpressionEditorY=661
+    .MaterialExpressionGuid=CB44370A4D7F36F2117EC29E97711110
+    .Material="/Script/Engine.Material'Editor_MoonHandle_Material'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionDivide
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'Editor_MoonHandle_Material:MaterialExpressionDivide_0'")
+    .ConstB=0.500000
+    .MaterialExpressionEditorX=-12
+    .MaterialExpressionEditorY=204
+    .MaterialExpressionGuid=8E6DC361403853092E98E79897B0A749
+    .Material="/Script/Engine.Material'Editor_MoonHandle_Material'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionLinearInterpolate
+    B                      <- MaterialExpressionLinearInterpolate
+    .B=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Editor_MoonHandle_Material:MaterialExpressionLinearInterpolate_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Editor_MoonHandle_Material:MaterialExpressionLinearInterpolate_1'")
+    .MaterialExpressionEditorX=-504
+    .MaterialExpressionEditorY=204
+    .MaterialExpressionGuid=B6AE4A3F49F408B9D6D59799D7C2A379
+    .Material="/Script/Engine.Material'Editor_MoonHandle_Material'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_2)
+    Alpha                  <- MaterialExpressionSaturate
+    .ConstA=0.700000
+    .ConstB=4.000000
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionSaturate'Editor_MoonHandle_Material:MaterialExpressionSaturate_0'")
+    .MaterialExpressionEditorX=-684
+    .MaterialExpressionEditorY=592
+    .MaterialExpressionGuid=5BF6053C4396965B28B6118BCFB4472C
+    .Material="/Script/Engine.Material'Editor_MoonHandle_Material'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_1)
+    A                      <- MaterialExpressionVectorParameter
+    B                      <- MaterialExpressionVectorParameter
+    Alpha                  <- MaterialExpressionFresnel
+    .B=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Editor_MoonHandle_Material:MaterialExpressionVectorParameter_1'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Editor_MoonHandle_Material:MaterialExpressionVectorParameter_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionFresnel'Editor_MoonHandle_Material:MaterialExpressionFresnel_0'")
+    .MaterialExpressionEditorX=-752
+    .MaterialExpressionEditorY=204
+    .MaterialExpressionGuid=0551271B4177E72DFF33328890E9A47E
+    .Material="/Script/Engine.Material'Editor_MoonHandle_Material'"
+  MaterialExpressionFresnel (MaterialExpressionFresnel_0)
+    .Exponent=3.000000
+    .MaterialExpressionEditorX=-1128
+    .MaterialExpressionEditorY=464
+    .MaterialExpressionGuid=38C64CEB4375F70A563965A1CC5A08CC
+    .Material="/Script/Engine.Material'Editor_MoonHandle_Material'"
+  MaterialExpressionDotProduct (MaterialExpressionDotProduct_0)
+    A                      <- MaterialExpressionVertexNormalWS
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Editor_MoonHandle_Material:MaterialExpressionComponentMask_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionVertexNormalWS'Editor_MoonHandle_Material:MaterialExpressionVertexNormalWS_0'")
+    .MaterialExpressionEditorX=-1081
+    .MaterialExpressionEditorY=663
+    .MaterialExpressionGuid=6686DA774E485225DA1D2CABE9E3E471
+    .Material="/Script/Engine.Material'Editor_MoonHandle_Material'"
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Editor_MoonHandle_Material:MaterialExpressionComponentMask_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Editor_MoonHandle_Material:MaterialExpressionMultiply_0'")
+    .MaterialExpressionEditorX=-148
+    .MaterialExpressionEditorY=204
+    .MaterialExpressionGuid=B5DC163042BB9BA0C98ED1B5860BE838
+    .Material="/Script/Engine.Material'Editor_MoonHandle_Material'"
+  MaterialExpressionConstant (MaterialExpressionConstant_0)
+    .R=1.000000
+    .MaterialExpressionEditorX=104
+    .MaterialExpressionEditorY=88
+    .MaterialExpressionGuid=45E44F3C4FD2895622FF9E89B4F253FD
+    .Material="/Script/Engine.Material'Editor_MoonHandle_Material'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_1)
+    Input                  <- MaterialExpressionViewProperty
+    .R=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionViewProperty'Editor_MoonHandle_Material:MaterialExpressionViewProperty_0'")
+    .MaterialExpressionEditorX=-268
+    .MaterialExpressionEditorY=364
+    .MaterialExpressionGuid=06DE8E804A44DC0345AF1CA5371DF6ED
+    .Material="/Script/Engine.Material'Editor_MoonHandle_Material'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionCollectionParameter
+    .R=True
+    .G=True
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Editor_MoonHandle_Material:MaterialExpressionCollectionParameter_0'")
+    .MaterialExpressionEditorX=-1333
+    .MaterialExpressionEditorY=765
+    .MaterialExpressionGuid=D911DFD741932B7A56D953A74B696AB4
+    .Material="/Script/Engine.Material'Editor_MoonHandle_Material'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_0)
+    .ParameterName="Sun Vector"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+    .ParameterId=618AEFCB40106BAF34FCDD876EDC3DCE
+    .MaterialExpressionEditorX=-1645
+    .MaterialExpressionEditorY=737
+    .MaterialExpressionGuid=A1FAFA1F44B0BC28B6DD2790258E2AE9
+    .Material="/Script/Engine.Material'Editor_MoonHandle_Material'"
+  MaterialEditorOnlyData (Editor_MoonHandle_MaterialEditorOnlyData)
+    Roughness              <- MaterialExpressionConstant
+    EmissiveColor          <- MaterialExpressionMultiply
+    ExpressionCollection   <- MaterialExpressionConstant
+    .BaseColor=(UseConstant=True,Constant=(R=0.501961,G=0.501961,B=0.501961,A=1.000000))
+    .Metallic=(UseConstant=True)
+    .Specular=(UseConstant=True)
+    .Roughness=(Expression="/Script/Engine.MaterialExpressionConstant'Editor_MoonHandle_Material:MaterialExpressionConstant_0'")
+    .Anisotropy=(UseConstant=True)
+    .Normal=(UseConstant=True)
+    .Tangent=(UseConstant=True)
+    .EmissiveColor=(Expression="/Script/Engine.MaterialExpressionMultiply'Editor_MoonHandle_Material:MaterialExpressionMultiply_1'")
+    .Opacity=(UseConstant=True)
+    .OpacityMask=(UseConstant=True)
+    .WorldPositionOffset=(UseConstant=True)
+    .Displacement=(UseConstant=True)
+    .SubsurfaceColor=(UseConstant=True)
+    .ClearCoat=(UseConstant=True)
+    .ClearCoatRoughness=(UseConstant=True)
+    .AmbientOcclusion=(UseConstant=True)
+    .Refraction=(UseConstant=True)
+    .CustomizedUVs(0)=(UseConstant=True)
+    .CustomizedUVs(1)=(UseConstant=True)
+    .CustomizedUVs(2)=(UseConstant=True)
+    .CustomizedUVs(3)=(UseConstant=True)
+    .CustomizedUVs(4)=(UseConstant=True)
+    .CustomizedUVs(5)=(UseConstant=True)
+    .CustomizedUVs(6)=(UseConstant=True)
+    .CustomizedUVs(7)=(UseConstant=True)
+    .PixelDepthOffset=(UseConstant=True)
+    .SurfaceThickness=(UseConstant=True)
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionConstant'Editor_MoonHandle_Material:MaterialExpressionConstant_0'","/Script/Engine.MaterialExpressionVectorParameter'Editor_MoonHandle_Material:MaterialExpressionVectorParameter_0'","/Script/Engine.MaterialExpressionFresnel'Editor_MoonHandle_Material:MaterialExpressionFresnel_0'","/Script/Engine.MaterialExpressionVectorParameter'Editor_MoonHandle_Material:MaterialExpressionVectorParameter_1'","/Script/Engine.MaterialExpressionLinearInterpolate'Editor_MoonHandle_Material:MaterialExpressionLinearInterpolate_1'","/Script/Engine.MaterialExpressionDotProduct'Editor_MoonHandle_Material:MaterialExpressionDotProduct_0'","/Script/Engine.MaterialExpressionVertexNormalWS'Editor_MoonHandle_Material:MaterialExpressionVertexNormalWS_0'","/Script/Engine.MaterialExpressionCollectionParameter'Editor_MoonHandle_Material:MaterialExpressionCollectionParameter_0'","/Script/Engine.MaterialExpressionComponentMask'Editor_MoonHandle_Material:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionSaturate'Editor_MoonHandle_Material:MaterialExpressionSaturate_0'","/Script/Engine.MaterialExpressionMultiply'Editor_MoonHandle_Material:MaterialExpressionMultiply_4'","/Script/Engine.MaterialExpressionLinearInterpolate'Editor_MoonHandle_Material:MaterialExpressionLinearInterpolate_2'","/Script/Engine.MaterialExpressionMultiply'Editor_MoonHandle_Material:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionViewProperty'Editor_MoonHandle_Material:MaterialExpressionViewProperty_0'","/Script/Engine.MaterialExpressionComponentMask'Editor_MoonHandle_Material:MaterialExpressionComponentMask_1'","/Script/Engine.MaterialExpressionDivide'Editor_MoonHandle_Material:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionMultiply'Editor_MoonHandle_Material:MaterialExpressionMultiply_1'"))
+    .ParameterGroupData(0)=(GroupName="None")

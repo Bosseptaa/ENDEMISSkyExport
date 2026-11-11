@@ -1,0 +1,92 @@
+### /Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Local_Weather_Actor_Interface
+  Blueprint (UDW_Local_Weather_Actor_Interface)
+    .ParentClass="/Script/CoreUObject.Class'/Script/CoreUObject.Interface'"
+    .BlueprintType=BPTYPE_Interface
+    .bDeprecate=True
+    .BlueprintCategory="UltraDynamicWeather|System"
+    .BlueprintSystemVersion=2
+    .FunctionGraphs(0)="/Script/Engine.EdGraph'Bind Local Weather Update Function to UDW'"
+    .FunctionGraphs(1)="/Script/Engine.EdGraph'Get Saved WOV State'"
+    .FunctionGraphs(2)="/Script/Engine.EdGraph'Check to Change Temperature Scale'"
+    .FunctionGraphs(3)="/Script/Engine.EdGraph'Full Reconstruction'"
+    .FunctionGraphs(4)="/Script/Engine.EdGraph'Apply WOV State'"
+    .FunctionGraphs(5)="/Script/Engine.EdGraph'Get WOV Random Weather Forecast'"
+    .CategorySorting(0)="Local Weather Actor"
+    .CategorySorting(1)=""
+    .LastEditedDocuments(0)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Local_Weather_Actor_Interface.UDW_Local_Weather_Actor_Interface:Check to Change Temperature Scale",SavedViewOffset=(X=-1338.147095,Y=-605.625000),SavedZoomAmount=1.000000)
+    .LastEditedDocuments(1)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Local_Weather_Actor_Interface.UDW_Local_Weather_Actor_Interface:Get WOV Random Weather Forecast",SavedViewOffset=(X=-1335.264771,Y=-603.625000),SavedZoomAmount=1.000000)
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfo'SceneThumbnailInfo_0'"
+    .GeneratedClass="/Script/Engine.BlueprintGeneratedClass'UDW_Local_Weather_Actor_Interface_C'"
+    .bLegacyNeedToPurgeSkelRefs=False
+    .BlueprintGuid=E1919E774F75BF0D1886FEABE4DC9B42
+  EdGraph (Bind Local Weather Update Function to UDW)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=9B5F78CB45A4CBABC0CCBD826E34E583
+  K2Node_FunctionResult (K2Node_FunctionResult_0)
+    .FunctionReference=(MemberName="Get WOV Random Weather Forecast")
+    .bIsEditable=True
+    .NodePosX=256
+    .NodeGuid=D86B09314155885647019493C2A7EDDF
+  K2Node_FunctionEntry (K2Node_FunctionEntry_0)
+    .MetaData=(Category=NSLOCTEXT("", "9D082E434A735E84E41517BFAA6DD617", "Local Weather Actor"))
+    .ExtraFlags=201457664
+    .FunctionReference=(MemberName="Get WOV Random Weather Forecast")
+    .bIsEditable=True
+    .NodeGuid=55DEB2664AA2EE82C38B658C70C9A03B
+  EdGraph (Get Saved WOV State)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=F55756B242923FE6E7CB7A98C0854EBD
+  EdGraph (Apply WOV State)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=898EC4D64C12801F746CBE9CD104D08C
+  EdGraph (Check to Change Temperature Scale)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=AD4FC62848997193234689985110EC0C
+  EdGraph (Full Reconstruction)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=7F84BE9C499EEBDBB12B85894757B021
+  EdGraph (Get WOV Random Weather Forecast)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=1051B0564C184F4161FB9B97C3A90206
+  EdGraph (Bind Local Weather Update Function to UDW_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=9B5F78CB45A4CBABC0CCBD826E34E583
+  EdGraph (Get Saved WOV State_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=F55756B242923FE6E7CB7A98C0854EBD
+  EdGraph (Check to Change Temperature Scale_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=AD4FC62848997193234689985110EC0C
+  EdGraph (Full Reconstruction_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=7F84BE9C499EEBDBB12B85894757B021
+  EdGraph (Apply WOV State_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=898EC4D64C12801F746CBE9CD104D08C
+  EdGraph (Get WOV Random Weather Forecast_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=1051B0564C184F4161FB9B97C3A90206

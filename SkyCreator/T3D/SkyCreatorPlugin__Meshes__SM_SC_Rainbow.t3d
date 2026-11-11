@@ -1,0 +1,51 @@
+Begin Object Class=/Script/Engine.StaticMesh Name="SM_SC_Rainbow" ExportPath="/Script/Engine.StaticMesh'/SkyCreatorPlugin/Meshes/SM_SC_Rainbow.SM_SC_Rainbow'"
+   Begin Object Class=/Script/Engine.StaticMeshDescriptionBulkData Name="HiResMeshDescription" Archetype="/Script/Engine.StaticMeshDescriptionBulkData'/Script/Engine.Default__StaticMesh:HiResMeshDescription'" ExportPath="/Script/Engine.StaticMeshDescriptionBulkData'/SkyCreatorPlugin/Meshes/SM_SC_Rainbow.SM_SC_Rainbow:HiResMeshDescription'"
+      Begin Object Class=/Script/StaticMeshDescription.StaticMeshDescription Name="MeshDescription" Archetype="/Script/StaticMeshDescription.StaticMeshDescription'/Script/Engine.Default__StaticMesh:HiResMeshDescription.MeshDescription'" ExportPath="/Script/StaticMeshDescription.StaticMeshDescription'/SkyCreatorPlugin/Meshes/SM_SC_Rainbow.SM_SC_Rainbow:HiResMeshDescription.MeshDescription'"
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.BodySetup Name="BodySetup_0" ExportPath="/Script/Engine.BodySetup'/SkyCreatorPlugin/Meshes/SM_SC_Rainbow.SM_SC_Rainbow:BodySetup_0'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.FbxStaticMeshImportData Name="FbxStaticMeshImportData_0" ExportPath="/Script/UnrealEd.FbxStaticMeshImportData'/SkyCreatorPlugin/Meshes/SM_SC_Rainbow.SM_SC_Rainbow:FbxStaticMeshImportData_0'"
+   End Object
+   Begin Object Class=/Script/NavigationSystem.NavCollision Name="NavCollision_1" ExportPath="/Script/NavigationSystem.NavCollision'/SkyCreatorPlugin/Meshes/SM_SC_Rainbow.SM_SC_Rainbow:NavCollision_1'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfo Name="SceneThumbnailInfo_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfo'/SkyCreatorPlugin/Meshes/SM_SC_Rainbow.SM_SC_Rainbow:SceneThumbnailInfo_0'"
+   End Object
+   Begin Object Class=/Script/Engine.StaticMeshDescriptionBulkData Name="StaticMeshDescriptionBulkData_0" ExportPath="/Script/Engine.StaticMeshDescriptionBulkData'/SkyCreatorPlugin/Meshes/SM_SC_Rainbow.SM_SC_Rainbow:StaticMeshDescriptionBulkData_0'"
+      Begin Object Class=/Script/StaticMeshDescription.StaticMeshDescription Name="MeshDescription" Archetype="/Script/StaticMeshDescription.StaticMeshDescription'/Script/Engine.Default__StaticMeshDescriptionBulkData:MeshDescription'" ExportPath="/Script/StaticMeshDescription.StaticMeshDescription'/SkyCreatorPlugin/Meshes/SM_SC_Rainbow.SM_SC_Rainbow:StaticMeshDescriptionBulkData_0.MeshDescription'"
+      End Object
+   End Object
+   Begin Object Name="HiResMeshDescription" ExportPath="/Script/Engine.StaticMeshDescriptionBulkData'/SkyCreatorPlugin/Meshes/SM_SC_Rainbow.SM_SC_Rainbow:HiResMeshDescription'"
+      Begin Object Name="MeshDescription" ExportPath="/Script/StaticMeshDescription.StaticMeshDescription'/SkyCreatorPlugin/Meshes/SM_SC_Rainbow.SM_SC_Rainbow:HiResMeshDescription.MeshDescription'"
+      End Object
+   End Object
+   Begin Object Name="BodySetup_0" ExportPath="/Script/Engine.BodySetup'/SkyCreatorPlugin/Meshes/SM_SC_Rainbow.SM_SC_Rainbow:BodySetup_0'"
+      DefaultInstance=(ObjectType=ECC_WorldStatic,CollisionProfileName="BlockAll")
+   End Object
+   Begin Object Name="FbxStaticMeshImportData_0" ExportPath="/Script/UnrealEd.FbxStaticMeshImportData'/SkyCreatorPlugin/Meshes/SM_SC_Rainbow.SM_SC_Rainbow:FbxStaticMeshImportData_0'"
+      VertexColorImportOption=Replace
+      ImportMaterialOriginalNameData(0)="Material"
+      ImportMeshLodData(0)=(SectionOriginalMaterialName=("Material"))
+   End Object
+   Begin Object Name="NavCollision_1" ExportPath="/Script/NavigationSystem.NavCollision'/SkyCreatorPlugin/Meshes/SM_SC_Rainbow.SM_SC_Rainbow:NavCollision_1'"
+   End Object
+   Begin Object Name="SceneThumbnailInfo_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfo'/SkyCreatorPlugin/Meshes/SM_SC_Rainbow.SM_SC_Rainbow:SceneThumbnailInfo_0'"
+   End Object
+   Begin Object Name="StaticMeshDescriptionBulkData_0" ExportPath="/Script/Engine.StaticMeshDescriptionBulkData'/SkyCreatorPlugin/Meshes/SM_SC_Rainbow.SM_SC_Rainbow:StaticMeshDescriptionBulkData_0'"
+      Begin Object Name="MeshDescription" ExportPath="/Script/StaticMeshDescription.StaticMeshDescription'/SkyCreatorPlugin/Meshes/SM_SC_Rainbow.SM_SC_Rainbow:StaticMeshDescriptionBulkData_0.MeshDescription'"
+      End Object
+   End Object
+   SourceModels(0)=(StaticMeshDescriptionBulkData="/Script/Engine.StaticMeshDescriptionBulkData'StaticMeshDescriptionBulkData_0'",BuildSettings=(bRecomputeNormals=False,bComputeWeightedNormals=True,bUseBackwardsCompatibleF16TruncUVs=True))
+   HiResSourceModel=(StaticMeshDescriptionBulkData="HiResMeshDescription")
+   SectionInfoMap=(Map=((0, ())))
+   OriginalSectionInfoMap=(Map=((0, ())))
+   ImportVersion=1
+   LightmapUVVersion=9
+   StaticMaterials(0)=(MaterialInterface="/Script/Engine.Material'/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial'",MaterialSlotName="Material",ImportedMaterialSlotName="Material",UVChannelData=(bInitialized=True,LocalUVDensities[0]=4.427991,LocalUVDensities[1]=36.017078))
+   LightmapUVDensity=36.017078
+   LightMapResolution=64
+   LightMapCoordinateIndex=1
+   AssetImportData="/Script/UnrealEd.FbxStaticMeshImportData'FbxStaticMeshImportData_0'"
+   ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfo'SceneThumbnailInfo_0'"
+   ExtendedBounds=(Origin=(X=0.000000,Y=-0.000008,Z=0.000000),BoxExtent=(X=0.000009,Y=101.000381,Z=101.000389),SphereRadius=101.000404)
+End Object

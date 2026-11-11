@@ -1,0 +1,367 @@
+### /Game/UltraDynamicSky/Materials/Material_Functions/Sample_WOV_Target
+  MaterialFunction (Sample_WOV_Target)
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'Sample_WOV_TargetEditorOnlyData'"
+    .StateId=8824B2124B422D44C4F016BDC2D86E6B
+    .CombinedInputTypes=15
+    .CombinedOutputTypes=15
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+  MaterialFunctionEditorOnlyData (Sample_WOV_TargetEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'Sample_WOV_Target:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionTextureSample'Sample_WOV_Target:MaterialExpressionTextureSample_0'","/Script/Engine.MaterialExpressionWorldPosition'Sample_WOV_Target:MaterialExpressionWorldPosition_0'","/Script/Engine.MaterialExpressionComponentMask'Sample_WOV_Target:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionSubtract'Sample_WOV_Target:MaterialExpressionSubtract_0'","/Script/Engine.MaterialExpressionCollectionParameter'Sample_WOV_Target:MaterialExpressionCollectionParameter_0'","/Script/Engine.MaterialExpressionComponentMask'Sample_WOV_Target:MaterialExpressionComponentMask_1'","/Script/Engine.MaterialExpressionDivide'Sample_WOV_Target:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionComponentMask'Sample_WOV_Target:MaterialExpressionComponentMask_2'","/Script/Engine.MaterialExpressionFunctionOutput'Sample_WOV_Target:MaterialExpressionFunctionOutput_2'","/Script/Engine.MaterialExpressionFunctionInput'Sample_WOV_Target:MaterialExpressionFunctionInput_0'","/Script/Engine.MaterialExpressionLinearInterpolate'Sample_WOV_Target:MaterialExpressionLinearInterpolate_0'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Sample_WOV_Target:MaterialExpressionNamedRerouteDeclaration_0'","/Script/Engine.MaterialExpressionComponentMask'Sample_WOV_Target:MaterialExpressionComponentMask_7'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Sample_WOV_Target:MaterialExpressionNamedRerouteUsage_1'","/Script/Engine.MaterialExpressionComponentMask'Sample_WOV_Target:MaterialExpressionComponentMask_8'","/Script/Engine.MaterialExpressionStaticSwitchParameter'Sample_WOV_Target:MaterialExpressionStaticSwitchParameter_1'","/Script/Engine.MaterialExpressionFunctionInput'Sample_WOV_Target:MaterialExpressionFunctionInput_1'","/Script/Engine.MaterialExpressionLinearInterpolate'Sample_WOV_Target:MaterialExpressionLinearInterpolate_1'","/Script/Engine.MaterialExpressionComponentMask'Sample_WOV_Target:MaterialExpressionComponentMask_9'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Sample_WOV_Target:MaterialExpressionNamedRerouteUsage_2'","/Script/Engine.MaterialExpressionComponentMask'Sample_WOV_Target:MaterialExpressionComponentMask_10'","/Script/Engine.MaterialExpressionStaticSwitchParameter'Sample_WOV_Target:MaterialExpressionStaticSwitchParameter_2'","/Script/Engine.MaterialExpressionComponentMask'Sample_WOV_Target:MaterialExpressionComponentMask_3'","/Script/Engine.MaterialExpressionFunctionInput'Sample_WOV_Target:MaterialExpressionFunctionInput_3'","/Script/Engine.MaterialExpressionStaticSwitchParameter'Sample_WOV_Target:MaterialExpressionStaticSwitchParameter_0'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Sample_WOV_Target:MaterialExpressionNamedRerouteUsage_0'","/Script/Engine.MaterialExpressionComponentMask'Sample_WOV_Target:MaterialExpressionComponentMask_4'","/Script/Engine.MaterialExpressionFunctionOutput'Sample_WOV_Target:MaterialExpressionFunctionOutput_1'","/Script/Engine.MaterialExpressionComponentMask'Sample_WOV_Target:MaterialExpressionComponentMask_5'","/Script/Engine.MaterialExpressionMultiply'Sample_WOV_Target:MaterialExpressionMultiply_4'","/Script/Engine.MaterialExpressionLinearInterpolate'Sample_WOV_Target:MaterialExpressionLinearInterpolate_4'","/Script/Engine.MaterialExpressionSaturate'Sample_WOV_Target:MaterialExpressionSaturate_1'","/Script/Engine.MaterialExpressionReroute'Sample_WOV_Target:MaterialExpressionReroute_0'","/Script/Engine.MaterialExpressionMax'Sample_WOV_Target:MaterialExpressionMax_1'","/Script/Engine.MaterialExpressionFunctionInput'Sample_WOV_Target:MaterialExpressionFunctionInput_2'"),EditorComments=("/Script/Engine.MaterialExpressionComment'Sample_WOV_Target:MaterialExpressionComment_0'","/Script/Engine.MaterialExpressionComment'Sample_WOV_Target:MaterialExpressionComment_1'"))
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_0)
+    .ParameterName="WOV Target Mapping"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+    .ParameterId=13A302A547F79395C59C2AAF7EA556E3
+    .MaterialExpressionEditorX=-948
+    .MaterialExpressionEditorY=416
+    .MaterialExpressionGuid=39D4E492409CD03DD9BD1BBA1E87E33E
+    .Function="/Script/Engine.MaterialFunction'Sample_WOV_Target'"
+    .bCollapsed=True
+  MaterialExpressionComment (MaterialExpressionComment_0)
+    .SizeX=1396
+    .SizeY=344
+    .Text="Sample Target"
+    .CommentColor=(R=0.343419,G=0.542752,B=1.000000,A=1.000000)
+    .MaterialExpressionEditorX=-1198
+    .MaterialExpressionEditorY=249
+    .MaterialExpressionGuid=254B30B74A21E5941E7D64A3903CB894
+    .Function="/Script/Engine.MaterialFunction'Sample_WOV_Target'"
+  MaterialExpressionComment (MaterialExpressionComment_1)
+    .SizeX=2128
+    .SizeY=1000
+    .Text="Add WOV Values to Inputs"
+    .CommentColor=(R=1.000000,G=0.426232,B=0.456088,A=1.000000)
+    .MaterialExpressionEditorX=346
+    .MaterialExpressionEditorY=194
+    .MaterialExpressionGuid=E85186A74C6DBA9DA8F3BDB27DEBF1BE
+    .Function="/Script/Engine.MaterialFunction'Sample_WOV_Target'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionFunctionInput
+    .R=True
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Sample_WOV_Target:MaterialExpressionFunctionInput_2'")
+    .MaterialExpressionEditorX=-680
+    .MaterialExpressionEditorY=328
+    .MaterialExpressionGuid=2D51F73B4C14B6EDB3E6C2863D64A186
+    .Function="/Script/Engine.MaterialFunction'Sample_WOV_Target'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_1)
+    Input                  <- MaterialExpressionCollectionParameter
+    .R=True
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Sample_WOV_Target:MaterialExpressionCollectionParameter_0'")
+    .MaterialExpressionEditorX=-680
+    .MaterialExpressionEditorY=424
+    .MaterialExpressionGuid=99502E4744BD5999C6705E91EE6176D7
+    .Function="/Script/Engine.MaterialFunction'Sample_WOV_Target'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_10)
+    Input                  <- MaterialExpressionNamedRerouteUsage
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Sample_WOV_Target:MaterialExpressionNamedRerouteUsage_2'")
+    .MaterialExpressionEditorX=588
+    .MaterialExpressionEditorY=620
+    .MaterialExpressionGuid=9D9FA37F4F9382907BE1408846B00777
+    .Function="/Script/Engine.MaterialFunction'Sample_WOV_Target'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_2)
+    Input                  <- MaterialExpressionCollectionParameter
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Sample_WOV_Target:MaterialExpressionCollectionParameter_0'")
+    .MaterialExpressionEditorX=-676
+    .MaterialExpressionEditorY=488
+    .MaterialExpressionGuid=748DE9314DF67D80537F0A85243A6847
+    .Function="/Script/Engine.MaterialFunction'Sample_WOV_Target'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_3)
+    Input                  <- MaterialExpressionNamedRerouteUsage
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Sample_WOV_Target:MaterialExpressionNamedRerouteUsage_1'")
+    .MaterialExpressionEditorX=572
+    .MaterialExpressionEditorY=328
+    .MaterialExpressionGuid=9D9FA37F4F9382907BE1408846B00777
+    .Function="/Script/Engine.MaterialFunction'Sample_WOV_Target'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_4)
+    Input                  <- MaterialExpressionNamedRerouteUsage
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Sample_WOV_Target:MaterialExpressionNamedRerouteUsage_0'")
+    .MaterialExpressionEditorX=624
+    .MaterialExpressionEditorY=928
+    .MaterialExpressionGuid=9D9FA37F4F9382907BE1408846B00777
+    .Function="/Script/Engine.MaterialFunction'Sample_WOV_Target'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_5)
+    Input                  <- MaterialExpressionNamedRerouteUsage
+    .A=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Sample_WOV_Target:MaterialExpressionNamedRerouteUsage_0'")
+    .MaterialExpressionEditorX=628
+    .MaterialExpressionEditorY=1020
+    .MaterialExpressionGuid=9D9FA37F4F9382907BE1408846B00777
+    .Function="/Script/Engine.MaterialFunction'Sample_WOV_Target'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_7)
+    Input                  <- MaterialExpressionNamedRerouteUsage
+    .A=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Sample_WOV_Target:MaterialExpressionNamedRerouteUsage_1'")
+    .MaterialExpressionEditorX=576
+    .MaterialExpressionEditorY=416
+    .MaterialExpressionGuid=9D9FA37F4F9382907BE1408846B00777
+    .Function="/Script/Engine.MaterialFunction'Sample_WOV_Target'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_8)
+    Input                  <- MaterialExpressionNamedRerouteUsage
+    .R=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Sample_WOV_Target:MaterialExpressionNamedRerouteUsage_1'")
+    .MaterialExpressionEditorX=572
+    .MaterialExpressionEditorY=252
+    .MaterialExpressionGuid=9D9FA37F4F9382907BE1408846B00777
+    .Function="/Script/Engine.MaterialFunction'Sample_WOV_Target'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_9)
+    Input                  <- MaterialExpressionNamedRerouteUsage
+    .A=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Sample_WOV_Target:MaterialExpressionNamedRerouteUsage_2'")
+    .MaterialExpressionEditorX=588
+    .MaterialExpressionEditorY=700
+    .MaterialExpressionGuid=9D9FA37F4F9382907BE1408846B00777
+    .Function="/Script/Engine.MaterialFunction'Sample_WOV_Target'"
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Sample_WOV_Target:MaterialExpressionComponentMask_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'Sample_WOV_Target:MaterialExpressionSubtract_0'")
+    .MaterialExpressionEditorX=-380
+    .MaterialExpressionEditorY=328
+    .MaterialExpressionGuid=DE7FCC83474D9500D0E8D19C79F36C2B
+    .Function="/Script/Engine.MaterialFunction'Sample_WOV_Target'"
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_0)
+    .InputName="Snow"
+    .Id=EDAA8B1F4598345EF068D194B374F611
+    .InputType=FunctionInput_Scalar
+    .MaterialExpressionEditorX=532
+    .MaterialExpressionEditorY=500
+    .MaterialExpressionGuid=AD8636B742A11DDA269780964AB61D52
+    .Function="/Script/Engine.MaterialFunction'Sample_WOV_Target'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_1)
+    .InputName="Wetness"
+    .Id=0084F7FA4BB26CF5EBEB7CB7015EAD98
+    .InputType=FunctionInput_Scalar
+    .SortPriority=1
+    .MaterialExpressionEditorX=520
+    .MaterialExpressionEditorY=804
+    .MaterialExpressionGuid=AD8636B742A11DDA269780964AB61D52
+    .Function="/Script/Engine.MaterialFunction'Sample_WOV_Target'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_2)
+    Preview                <- MaterialExpressionWorldPosition
+    .Preview=(Expression="/Script/Engine.MaterialExpressionWorldPosition'Sample_WOV_Target:MaterialExpressionWorldPosition_0'")
+    .InputName="Sample Position"
+    .Id=097CAB7A4B2402C969E3268C63BAE0ED
+    .bUsePreviewValueAsDefault=True
+    .MaterialExpressionEditorX=-968
+    .MaterialExpressionEditorY=328
+    .MaterialExpressionGuid=AD3D492746CDE9FE91332F8594364879
+    .Function="/Script/Engine.MaterialFunction'Sample_WOV_Target'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_3)
+    .InputName="Dust to Snow Alpha"
+    .Id=832122934535E620CAC5A7B4038270B0
+    .InputType=FunctionInput_Scalar
+    .SortPriority=2
+    .MaterialExpressionEditorX=748
+    .MaterialExpressionEditorY=1096
+    .MaterialExpressionGuid=41CEEC144119AAC77E70BA96A8186EBC
+    .Function="/Script/Engine.MaterialFunction'Sample_WOV_Target'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionStaticSwitchParameter
+    .A=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Sample_WOV_Target:MaterialExpressionStaticSwitchParameter_1'")
+    .OutputName="Snow"
+    .bLastPreviewed=True
+    .Id=234C407B4EDD239A285B4089D40B0AA0
+    .MaterialExpressionEditorX=1348
+    .MaterialExpressionEditorY=308
+    .MaterialExpressionGuid=6C4F244844DCE2DD3BC4CCA40C857F38
+    .Function="/Script/Engine.MaterialFunction'Sample_WOV_Target'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_1)
+    A                      <- MaterialExpressionStaticSwitchParameter
+    .A=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Sample_WOV_Target:MaterialExpressionStaticSwitchParameter_0'")
+    .OutputName="Dust to Snow Alpha"
+    .SortPriority=2
+    .Id=DF3061094B27A6C07D37BAB4FC217DAA
+    .MaterialExpressionEditorX=1772
+    .MaterialExpressionEditorY=932
+    .MaterialExpressionGuid=795C88684FCD3CEA2861BC97CACC36D8
+    .Function="/Script/Engine.MaterialFunction'Sample_WOV_Target'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_2)
+    A                      <- MaterialExpressionStaticSwitchParameter
+    .A=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Sample_WOV_Target:MaterialExpressionStaticSwitchParameter_2'")
+    .OutputName="Wetness"
+    .SortPriority=1
+    .bLastPreviewed=True
+    .Id=4CE2B8B54A163177DFF7068B62D8D598
+    .MaterialExpressionEditorX=1276
+    .MaterialExpressionEditorY=620
+    .MaterialExpressionGuid=6C4F244844DCE2DD3BC4CCA40C857F38
+    .Function="/Script/Engine.MaterialFunction'Sample_WOV_Target'"
+    .bCollapsed=True
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_0)
+    A                      <- MaterialExpressionMax
+    B                      <- MaterialExpressionFunctionInput
+    Alpha                  <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Sample_WOV_Target:MaterialExpressionFunctionInput_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMax'Sample_WOV_Target:MaterialExpressionMax_1'")
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionComponentMask'Sample_WOV_Target:MaterialExpressionComponentMask_7'")
+    .MaterialExpressionEditorX=832
+    .MaterialExpressionEditorY=336
+    .MaterialExpressionGuid=8C74F7504B0BB518458D3595942785DA
+    .Function="/Script/Engine.MaterialFunction'Sample_WOV_Target'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_1)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionFunctionInput
+    Alpha                  <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Sample_WOV_Target:MaterialExpressionFunctionInput_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Sample_WOV_Target:MaterialExpressionComponentMask_10'")
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionComponentMask'Sample_WOV_Target:MaterialExpressionComponentMask_9'")
+    .MaterialExpressionEditorX=756
+    .MaterialExpressionEditorY=620
+    .MaterialExpressionGuid=8C74F7504B0BB518458D3595942785DA
+    .Function="/Script/Engine.MaterialFunction'Sample_WOV_Target'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_4)
+    A                      <- MaterialExpressionSaturate
+    B                      <- MaterialExpressionFunctionInput
+    Alpha                  <- MaterialExpressionReroute
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Sample_WOV_Target:MaterialExpressionFunctionInput_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSaturate'Sample_WOV_Target:MaterialExpressionSaturate_1'")
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionReroute'Sample_WOV_Target:MaterialExpressionReroute_0'")
+    .MaterialExpressionEditorX=1060
+    .MaterialExpressionEditorY=928
+    .MaterialExpressionGuid=CC2950B541A6490219BB369CB9E8A1E1
+    .Function="/Script/Engine.MaterialFunction'Sample_WOV_Target'"
+  MaterialExpressionMax (MaterialExpressionMax_1)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Sample_WOV_Target:MaterialExpressionComponentMask_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Sample_WOV_Target:MaterialExpressionComponentMask_8'")
+    .MaterialExpressionEditorX=708
+    .MaterialExpressionEditorY=268
+    .MaterialExpressionGuid=027EB4F141D8B0DAF85EC2A0F9419BA1
+    .Function="/Script/Engine.MaterialFunction'Sample_WOV_Target'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_4)
+    A                      <- MaterialExpressionComponentMask
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Sample_WOV_Target:MaterialExpressionComponentMask_4'")
+    .ConstB=10.000000
+    .MaterialExpressionEditorX=772
+    .MaterialExpressionEditorY=928
+    .MaterialExpressionGuid=A5643C9D46F81EB76244CCA07A8292D2
+    .Function="/Script/Engine.MaterialFunction'Sample_WOV_Target'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_0)
+    Input                  <- MaterialExpressionTextureSample
+    .Input=(Expression="/Script/Engine.MaterialExpressionTextureSample'Sample_WOV_Target:MaterialExpressionTextureSample_0'",OutputIndex=5,Mask=1,MaskR=1,MaskG=1,MaskB=1,MaskA=1)
+    .Name="Target RGBA"
+    .NodeColor=(R=0.218750,G=0.000000,B=1.000000,A=1.000000)
+    .VariableGuid=9DFA774845D82A1E18615C9829B754F0
+    .MaterialExpressionEditorX=12
+    .MaterialExpressionEditorY=464
+    .MaterialExpressionGuid=B73AA22E44387399A6262793FA11A867
+    .Function="/Script/Engine.MaterialFunction'Sample_WOV_Target'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_0)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Sample_WOV_Target:MaterialExpressionNamedRerouteDeclaration_0'"
+    .DeclarationGuid=9DFA774845D82A1E18615C9829B754F0
+    .MaterialExpressionEditorX=460
+    .MaterialExpressionEditorY=996
+    .MaterialExpressionGuid=BA07FD8B431940BA09908EBD7A30A7B2
+    .Function="/Script/Engine.MaterialFunction'Sample_WOV_Target'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_1)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Sample_WOV_Target:MaterialExpressionNamedRerouteDeclaration_0'"
+    .DeclarationGuid=9DFA774845D82A1E18615C9829B754F0
+    .MaterialExpressionEditorX=416
+    .MaterialExpressionEditorY=332
+    .MaterialExpressionGuid=BA07FD8B431940BA09908EBD7A30A7B2
+    .Function="/Script/Engine.MaterialFunction'Sample_WOV_Target'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_2)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Sample_WOV_Target:MaterialExpressionNamedRerouteDeclaration_0'"
+    .DeclarationGuid=9DFA774845D82A1E18615C9829B754F0
+    .MaterialExpressionEditorX=416
+    .MaterialExpressionEditorY=620
+    .MaterialExpressionGuid=BA07FD8B431940BA09908EBD7A30A7B2
+    .Function="/Script/Engine.MaterialFunction'Sample_WOV_Target'"
+  MaterialExpressionReroute (MaterialExpressionReroute_0)
+    Input                  <- MaterialExpressionComponentMask
+    .Input=(Expression="/Script/Engine.MaterialExpressionComponentMask'Sample_WOV_Target:MaterialExpressionComponentMask_5'")
+    .MaterialExpressionEditorX=988
+    .MaterialExpressionEditorY=1048
+    .MaterialExpressionGuid=2BAF6E5240D792FF261BE98D04316A47
+    .Function="/Script/Engine.MaterialFunction'Sample_WOV_Target'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_1)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Sample_WOV_Target:MaterialExpressionMultiply_4'")
+    .MaterialExpressionEditorX=908
+    .MaterialExpressionEditorY=928
+    .MaterialExpressionGuid=3A5131AA4736A8EF58466D9C3DCE1E4D
+    .Function="/Script/Engine.MaterialFunction'Sample_WOV_Target'"
+  MaterialExpressionStaticSwitchParameter (MaterialExpressionStaticSwitchParameter_0)
+    A                      <- MaterialExpressionLinearInterpolate
+    B                      <- MaterialExpressionFunctionInput
+    .ParameterName="Sample Weather Override Volumes Material State"
+    .DefaultValue=True
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Sample_WOV_Target:MaterialExpressionFunctionInput_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Sample_WOV_Target:MaterialExpressionLinearInterpolate_4'")
+    .ExpressionGUID=F81F70F54F37AC71E065F989483C473F
+    .Group="Ultra Dynamic Weather"
+    .MaterialExpressionEditorX=1424
+    .MaterialExpressionEditorY=916
+    .MaterialExpressionGuid=889580CA4CD4FF68BC726CBDF9B5D32C
+    .Function="/Script/Engine.MaterialFunction'Sample_WOV_Target'"
+    .Desc="Toggle the effect of Weather Override Volumes and Radial Storms having a localized effect on material state sampled by this material."
+  MaterialExpressionStaticSwitchParameter (MaterialExpressionStaticSwitchParameter_1)
+    A                      <- MaterialExpressionLinearInterpolate
+    B                      <- MaterialExpressionFunctionInput
+    .ParameterName="Sample Weather Override Volumes Material State"
+    .DefaultValue=True
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Sample_WOV_Target:MaterialExpressionFunctionInput_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Sample_WOV_Target:MaterialExpressionLinearInterpolate_0'")
+    .ExpressionGUID=F81F70F54F37AC71E065F989483C473F
+    .Group="Ultra Dynamic Weather"
+    .MaterialExpressionEditorX=992
+    .MaterialExpressionEditorY=320
+    .MaterialExpressionGuid=889580CA4CD4FF68BC726CBDF9B5D32C
+    .Function="/Script/Engine.MaterialFunction'Sample_WOV_Target'"
+    .Desc="Toggle the effect of Weather Override Volumes and Radial Storms having a localized effect on material state sampled by this material."
+  MaterialExpressionStaticSwitchParameter (MaterialExpressionStaticSwitchParameter_2)
+    A                      <- MaterialExpressionLinearInterpolate
+    B                      <- MaterialExpressionFunctionInput
+    .ParameterName="Sample Weather Override Volumes Material State"
+    .DefaultValue=True
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Sample_WOV_Target:MaterialExpressionFunctionInput_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Sample_WOV_Target:MaterialExpressionLinearInterpolate_1'")
+    .ExpressionGUID=F81F70F54F37AC71E065F989483C473F
+    .Group="Ultra Dynamic Weather"
+    .MaterialExpressionEditorX=916
+    .MaterialExpressionEditorY=604
+    .MaterialExpressionGuid=889580CA4CD4FF68BC726CBDF9B5D32C
+    .Function="/Script/Engine.MaterialFunction'Sample_WOV_Target'"
+    .Desc="Toggle the effect of Weather Override Volumes and Radial Storms having a localized effect on material state sampled by this material."
+  MaterialExpressionSubtract (MaterialExpressionSubtract_0)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Sample_WOV_Target:MaterialExpressionComponentMask_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Sample_WOV_Target:MaterialExpressionComponentMask_0'")
+    .MaterialExpressionEditorX=-516
+    .MaterialExpressionEditorY=328
+    .MaterialExpressionGuid=9D23F705431C06A73BA8EFAEC2E61B4F
+    .Function="/Script/Engine.MaterialFunction'Sample_WOV_Target'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_0)
+    Coordinates            <- MaterialExpressionDivide
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.TextureRenderTarget2D'/Game/UltraDynamicSky/Textures/Weather/WOV_Material_State_Target.WOV_Material_State_Target'"
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionDivide'Sample_WOV_Target:MaterialExpressionDivide_0'")
+    .SamplerSource=SSM_Clamp_WorldGroupSettings
+    .AutomaticViewMipBias=False
+    .MaterialExpressionEditorX=-216
+    .MaterialExpressionEditorY=328
+    .MaterialExpressionGuid=C5EE61C341A27890791EA5B9E5A9B680
+    .Function="/Script/Engine.MaterialFunction'Sample_WOV_Target'"
+  MaterialExpressionWorldPosition (MaterialExpressionWorldPosition_0)
+    .MaterialExpressionEditorX=-1164
+    .MaterialExpressionEditorY=312
+    .MaterialExpressionGuid=0B2BAA104A04C233BB9F30B697FBB7AB
+    .Function="/Script/Engine.MaterialFunction'Sample_WOV_Target'"

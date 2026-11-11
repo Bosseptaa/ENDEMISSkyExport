@@ -1,0 +1,681 @@
+### /Game/UltraDynamicSky/Materials/Space/Nebula_Layer
+  Material (Nebula_Layer)
+    .MaterialDomain=MD_DeferredDecal
+    .BlendMode=BLEND_Modulate
+    .bTangentSpaceNormal=False
+    .EditorX=2432
+    .EditorY=196
+    .bCanMaskedBeAssumedOpaque=True
+    .bCastRayTracedShadows=False
+    .PixelDepthOffsetMode=PDOM_Legacy
+    .StateId=99EE612EA58B9CEAFDCD3DA24CF4BB68
+    .ReferencedTextureGuids(0)=307757E1458E615C7D97A39E32219707
+    .ReferencedTextureGuids(1)=2DD4F86A440B783775A735A3B25FBAF4
+    .EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'Nebula_LayerEditorOnlyData'"
+    .ReferencedDefaultTextures(0)="/Script/Engine.VolumeTexture'/Game/UltraDynamicSky/Textures/3D_Clouds/3DCells_128.3DCells_128'"
+    .ReferencedDefaultTextures(1)="/Script/Engine.Texture2D'/Engine/EngineMaterials/Good64x64TilingNoiseHighFreq.Good64x64TilingNoiseHighFreq'"
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+    .ParameterOverviewExpansion=(("-12Global", True))
+    .LightingGuid=2C65B6F1448414FB68E2489D68B37C92
+  MaterialEditorOnlyData (Nebula_LayerEditorOnlyData)
+    BaseColor              <- MaterialExpressionAdd
+    Opacity                <- MaterialExpressionSubtract
+    ExpressionCollection   <- MaterialExpressionAdd
+    .BaseColor=(Constant=(R=0.501961,G=0.501961,B=0.501961,A=1.000000),Expression="/Script/Engine.MaterialExpressionAdd'Nebula_Layer:MaterialExpressionAdd_5'")
+    .Opacity=(Expression="/Script/Engine.MaterialExpressionSubtract'Nebula_Layer:MaterialExpressionSubtract_2'")
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionAdd'Nebula_Layer:MaterialExpressionAdd_5'","/Script/Engine.MaterialExpressionSubtract'Nebula_Layer:MaterialExpressionSubtract_2'","/Script/Engine.MaterialExpressionLinearInterpolate'Nebula_Layer:MaterialExpressionLinearInterpolate_4'","/Script/Engine.MaterialExpressionVectorParameter'Nebula_Layer:MaterialExpressionVectorParameter_0'","/Script/Engine.MaterialExpressionTextureSampleParameterVolume'Nebula_Layer:MaterialExpressionTextureSampleParameterVolume_0'","/Script/Engine.MaterialExpressionTextureSampleParameterVolume'Nebula_Layer:MaterialExpressionTextureSampleParameterVolume_1'","/Script/Engine.MaterialExpressionTextureSampleParameterVolume'Nebula_Layer:MaterialExpressionTextureSampleParameterVolume_2'","/Script/Engine.MaterialExpressionDivide'Nebula_Layer:MaterialExpressionDivide_1'","/Script/Engine.MaterialExpressionPower'Nebula_Layer:MaterialExpressionPower_0'","/Script/Engine.MaterialExpressionVertexColor'Nebula_Layer:MaterialExpressionVertexColor_0'","/Script/Engine.MaterialExpressionSubtract'Nebula_Layer:MaterialExpressionSubtract_1'","/Script/Engine.MaterialExpressionMultiply'Nebula_Layer:MaterialExpressionMultiply_9'","/Script/Engine.MaterialExpressionScalarParameter'Nebula_Layer:MaterialExpressionScalarParameter_1'","/Script/Engine.MaterialExpressionAdd'Nebula_Layer:MaterialExpressionAdd_2'","/Script/Engine.MaterialExpressionMultiply'Nebula_Layer:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionDivide'Nebula_Layer:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionAdd'Nebula_Layer:MaterialExpressionAdd_0'","/Script/Engine.MaterialExpressionMultiply'Nebula_Layer:MaterialExpressionMultiply_14'","/Script/Engine.MaterialExpressionAdd'Nebula_Layer:MaterialExpressionAdd_8'","/Script/Engine.MaterialExpressionMultiply'Nebula_Layer:MaterialExpressionMultiply_15'","/Script/Engine.MaterialExpressionTextureSampleParameterVolume'Nebula_Layer:MaterialExpressionTextureSampleParameterVolume_4'","/Script/Engine.MaterialExpressionPower'Nebula_Layer:MaterialExpressionPower_1'","/Script/Engine.MaterialExpressionMultiply'Nebula_Layer:MaterialExpressionMultiply_16'","/Script/Engine.MaterialExpressionDivide'Nebula_Layer:MaterialExpressionDivide_3'","/Script/Engine.MaterialExpressionVectorParameter'Nebula_Layer:MaterialExpressionVectorParameter_1'","/Script/Engine.MaterialExpressionLinearInterpolate'Nebula_Layer:MaterialExpressionLinearInterpolate_5'","/Script/Engine.MaterialExpressionVectorParameter'Nebula_Layer:MaterialExpressionVectorParameter_2'","/Script/Engine.MaterialExpressionScalarParameter'Nebula_Layer:MaterialExpressionScalarParameter_2'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Nebula_Layer:MaterialExpressionMaterialFunctionCall_0'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Nebula_Layer:MaterialExpressionNamedRerouteDeclaration_0'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Nebula_Layer:MaterialExpressionNamedRerouteUsage_0'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Nebula_Layer:MaterialExpressionNamedRerouteDeclaration_1'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Nebula_Layer:MaterialExpressionNamedRerouteUsage_1'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Nebula_Layer:MaterialExpressionNamedRerouteDeclaration_2'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Nebula_Layer:MaterialExpressionNamedRerouteUsage_2'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Nebula_Layer:MaterialExpressionNamedRerouteUsage_3'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Nebula_Layer:MaterialExpressionNamedRerouteUsage_4'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Nebula_Layer:MaterialExpressionNamedRerouteDeclaration_3'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Nebula_Layer:MaterialExpressionNamedRerouteUsage_5'","/Script/Engine.MaterialExpressionScalarParameter'Nebula_Layer:MaterialExpressionScalarParameter_4'","/Script/Engine.MaterialExpressionScalarParameter'Nebula_Layer:MaterialExpressionScalarParameter_5'","/Script/Engine.MaterialExpressionScalarParameter'Nebula_Layer:MaterialExpressionScalarParameter_6'","/Script/Engine.MaterialExpressionScalarParameter'Nebula_Layer:MaterialExpressionScalarParameter_7'","/Script/Engine.MaterialExpressionMultiply'Nebula_Layer:MaterialExpressionMultiply_5'","/Script/Engine.MaterialExpressionScalarParameter'Nebula_Layer:MaterialExpressionScalarParameter_3'","/Script/Engine.MaterialExpressionAdd'Nebula_Layer:MaterialExpressionAdd_4'","/Script/Engine.MaterialExpressionScalarParameter'Nebula_Layer:MaterialExpressionScalarParameter_8'","/Script/Engine.MaterialExpressionSubtract'Nebula_Layer:MaterialExpressionSubtract_0'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Nebula_Layer:MaterialExpressionNamedRerouteDeclaration_4'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Nebula_Layer:MaterialExpressionNamedRerouteUsage_8'","/Script/Engine.MaterialExpressionMultiply'Nebula_Layer:MaterialExpressionMultiply_8'","/Script/Engine.MaterialExpressionAdd'Nebula_Layer:MaterialExpressionAdd_1'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Nebula_Layer:MaterialExpressionNamedRerouteDeclaration_5'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Nebula_Layer:MaterialExpressionNamedRerouteDeclaration_7'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Nebula_Layer:MaterialExpressionNamedRerouteUsage_9'","/Script/Engine.MaterialExpressionPower'Nebula_Layer:MaterialExpressionPower_3'","/Script/Engine.MaterialExpressionMultiply'Nebula_Layer:MaterialExpressionMultiply_6'","/Script/Engine.MaterialExpressionScalarParameter'Nebula_Layer:MaterialExpressionScalarParameter_0'","/Script/Engine.MaterialExpressionMultiply'Nebula_Layer:MaterialExpressionMultiply_7'","/Script/Engine.MaterialExpressionTextureSampleParameterVolume'Nebula_Layer:MaterialExpressionTextureSampleParameterVolume_5'","/Script/Engine.MaterialExpressionAdd'Nebula_Layer:MaterialExpressionAdd_6'","/Script/Engine.MaterialExpressionAdd'Nebula_Layer:MaterialExpressionAdd_7'","/Script/Engine.MaterialExpressionMultiply'Nebula_Layer:MaterialExpressionMultiply_11'","/Script/Engine.MaterialExpressionPower'Nebula_Layer:MaterialExpressionPower_5'","/Script/Engine.MaterialExpressionMultiply'Nebula_Layer:MaterialExpressionMultiply_13'","/Script/Engine.MaterialExpressionMultiply'Nebula_Layer:MaterialExpressionMultiply_17'","/Script/Engine.MaterialExpressionScalarParameter'Nebula_Layer:MaterialExpressionScalarParameter_9'"),EditorComments=("/Script/Engine.MaterialExpressionComment'Nebula_Layer:MaterialExpressionComment_0'","/Script/Engine.MaterialExpressionComment'Nebula_Layer:MaterialExpressionComment_1'","/Script/Engine.MaterialExpressionComment'Nebula_Layer:MaterialExpressionComment_2'","/Script/Engine.MaterialExpressionComment'Nebula_Layer:MaterialExpressionComment_3'"))
+    .ParameterGroupData(0)=(GroupName="None")
+    .ParameterGroupData(1)=(GroupName="None")
+    .ParameterGroupData(2)=(GroupName="None")
+    .ParameterGroupData(3)=(GroupName="None")
+    .ParameterGroupData(4)=(GroupName="None")
+    .ParameterGroupData(5)=(GroupName="None")
+    .ParameterGroupData(6)=(GroupName="None")
+    .ParameterGroupData(7)=(GroupName="None")
+    .ParameterGroupData(8)=(GroupName="None")
+    .ParameterGroupData(9)=(GroupName="None")
+    .ParameterGroupData(10)=(GroupName="None")
+    .ParameterGroupData(11)=(GroupName="None")
+    .ParameterGroupData(12)=(GroupName="None")
+    .ParameterGroupData(13)=(GroupName="None")
+    .ParameterGroupData(14)=(GroupName="None")
+    .ParameterGroupData(15)=(GroupName="None")
+    .ParameterGroupData(16)=(GroupName="None")
+    .ParameterGroupData(17)=(GroupName="None")
+  MaterialExpressionAdd (MaterialExpressionAdd_0)
+    A                      <- MaterialExpressionDivide
+    B                      <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Nebula_Layer:MaterialExpressionNamedRerouteUsage_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'Nebula_Layer:MaterialExpressionDivide_1'")
+    .MaterialExpressionEditorX=-916
+    .MaterialExpressionEditorY=632
+    .MaterialExpressionGuid=78573AA04F389EB8C60B138D5FF928D9
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionAdd (MaterialExpressionAdd_1)
+    A                      <- MaterialExpressionDivide
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'Nebula_Layer:MaterialExpressionDivide_1'")
+    .ConstB=0.010000
+    .MaterialExpressionEditorX=-1084
+    .MaterialExpressionEditorY=912
+    .MaterialExpressionGuid=0FB525B0481FF9EFDD424086C515931D
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionAdd (MaterialExpressionAdd_2)
+    A                      <- MaterialExpressionMultiply
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Nebula_Layer:MaterialExpressionMultiply_0'")
+    .ConstB=0.400000
+    .MaterialExpressionEditorX=-1156
+    .MaterialExpressionEditorY=132
+    .MaterialExpressionGuid=067BF0B24FEDEA9740930F94805E2583
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionAdd (MaterialExpressionAdd_4)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Nebula_Layer:MaterialExpressionScalarParameter_8'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Nebula_Layer:MaterialExpressionMultiply_9'")
+    .MaterialExpressionEditorX=-2260
+    .MaterialExpressionEditorY=224
+    .MaterialExpressionGuid=B415E89A4D559DFE3D22618029472F63
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionAdd (MaterialExpressionAdd_5)
+    A                      <- MaterialExpressionLinearInterpolate
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Nebula_Layer:MaterialExpressionMultiply_6'")
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Nebula_Layer:MaterialExpressionLinearInterpolate_4'")
+    .MaterialExpressionEditorX=1888
+    .MaterialExpressionEditorY=196
+    .MaterialExpressionGuid=52FACA774F28D23DF970FDB69E878A88
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionAdd (MaterialExpressionAdd_6)
+    A                      <- MaterialExpressionDivide
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'Nebula_Layer:MaterialExpressionDivide_1'")
+    .ConstB=0.700000
+    .MaterialExpressionEditorX=-1100
+    .MaterialExpressionEditorY=1188
+    .MaterialExpressionGuid=0FB525B0481FF9EFDD424086C515931D
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionAdd (MaterialExpressionAdd_7)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Nebula_Layer:MaterialExpressionMultiply_11'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Nebula_Layer:MaterialExpressionMultiply_16'")
+    .MaterialExpressionEditorX=176
+    .MaterialExpressionEditorY=980
+    .MaterialExpressionGuid=46906358481EDDE5DC1F399EB45ACED7
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionAdd (MaterialExpressionAdd_8)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Nebula_Layer:MaterialExpressionMultiply_15'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Nebula_Layer:MaterialExpressionMultiply_14'")
+    .MaterialExpressionEditorX=520
+    .MaterialExpressionEditorY=692
+    .MaterialExpressionGuid=6B9E3D48417F6EEAF91702BF30D74FB5
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionComment (MaterialExpressionComment_0)
+    .SizeX=1820
+    .SizeY=628
+    .Text="Distortion Noise"
+    .CommentColor=(R=1.000000,G=0.394189,B=0.294353,A=1.000000)
+    .MaterialExpressionEditorX=-1574
+    .MaterialExpressionEditorY=-226
+    .MaterialExpressionGuid=9870AA45408F4D15D4A663B3BAF4B6C0
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionComment (MaterialExpressionComment_1)
+    .SizeX=2248
+    .SizeY=936
+    .Text="Main Structure"
+    .CommentColor=(R=0.955996,G=1.000000,B=0.231352,A=1.000000)
+    .MaterialExpressionEditorX=-1606
+    .MaterialExpressionEditorY=566
+    .MaterialExpressionGuid=4BF26E6B47CCFEDC62ACC9B002B246A1
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionComment (MaterialExpressionComment_2)
+    .SizeX=1492
+    .SizeY=340
+    .Text="Base Noise UVW"
+    .CommentColor=(R=0.599286,G=0.378307,B=1.000000,A=1.000000)
+    .MaterialExpressionEditorX=-3327
+    .MaterialExpressionEditorY=124
+    .MaterialExpressionGuid=D48070AC4C5CC45CAE9B5FBE832FD3BE
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionComment (MaterialExpressionComment_3)
+    .SizeX=1512
+    .SizeY=720
+    .Text="Color Blending"
+    .CommentColor=(R=0.505894,G=0.544559,B=1.000000,A=1.000000)
+    .MaterialExpressionEditorX=526
+    .MaterialExpressionEditorY=-230
+    .MaterialExpressionGuid=EB7777F8492A15033259449AF411B1F7
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionTextureSampleParameterVolume
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Nebula_Layer:MaterialExpressionScalarParameter_6'")
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameterVolume'Nebula_Layer:MaterialExpressionTextureSampleParameterVolume_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .ConstB=17.000000
+    .MaterialExpressionEditorX=-440
+    .MaterialExpressionEditorY=-160
+    .MaterialExpressionGuid=7353AA9C4E2CF7D13A71DAACEFB9CA2C
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionDivide (MaterialExpressionDivide_1)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Nebula_Layer:MaterialExpressionNamedRerouteUsage_4'")
+    .ConstB=7.000000
+    .MaterialExpressionEditorX=-1380
+    .MaterialExpressionEditorY=632
+    .MaterialExpressionGuid=5E17C25E45C21AA6F881BAAA66154C4D
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionDivide (MaterialExpressionDivide_3)
+    A                      <- MaterialExpressionTextureSampleParameterVolume
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Nebula_Layer:MaterialExpressionScalarParameter_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameterVolume'Nebula_Layer:MaterialExpressionTextureSampleParameterVolume_1'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .ConstB=60.000000
+    .MaterialExpressionEditorX=-452
+    .MaterialExpressionEditorY=132
+    .MaterialExpressionGuid=7353AA9C4E2CF7D13A71DAACEFB9CA2C
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_4)
+    A                      <- MaterialExpressionLinearInterpolate
+    B                      <- MaterialExpressionVectorParameter
+    Alpha                  <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Nebula_Layer:MaterialExpressionVectorParameter_1'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Nebula_Layer:MaterialExpressionLinearInterpolate_5'")
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Nebula_Layer:MaterialExpressionNamedRerouteUsage_5'")
+    .MaterialExpressionEditorX=1252
+    .MaterialExpressionEditorY=196
+    .MaterialExpressionGuid=C9BE2B6C4B424AE77A03C79E226301C7
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_5)
+    A                      <- MaterialExpressionVectorParameter
+    B                      <- MaterialExpressionVectorParameter
+    Alpha                  <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Nebula_Layer:MaterialExpressionVectorParameter_2'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Nebula_Layer:MaterialExpressionVectorParameter_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Nebula_Layer:MaterialExpressionNamedRerouteUsage_1'")
+    .MaterialExpressionEditorX=1028
+    .MaterialExpressionEditorY=16
+    .MaterialExpressionGuid=FC37FE6842F585966041768F81A56062
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_0)
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Engine/Functions/Engine_MaterialFunctions02/Utility/DitherTemporalAA.DitherTemporalAA'"
+    .FunctionInputs(0)=(ExpressionInputId=982BCAE7401F814CDC0AE2955DEE46F3,Input=(OutputIndex=-1,InputName="Alpha Threshold"))
+    .FunctionInputs(1)=(ExpressionInputId=E8A932AF4299B0D6C16EDB8B1E912796,Input=(OutputIndex=-1,InputName="Random"))
+    .FunctionOutputs(0)=(ExpressionOutputId=9BC32B084665F3D2D59A90AA45CA8A9F,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=1440
+    .MaterialExpressionEditorY=812
+    .MaterialExpressionGuid=28EB7DE443B9FC55A56D74BA5877041B
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Nebula_Layer:MaterialExpressionScalarParameter_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Nebula_Layer:MaterialExpressionNamedRerouteUsage_3'")
+    .ConstB=3.000000
+    .MaterialExpressionEditorX=-1316
+    .MaterialExpressionEditorY=132
+    .MaterialExpressionGuid=DF3BBD2D4B8419A1DAFFE5A1A5BBDCF3
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_11)
+    A                      <- MaterialExpressionMultiply
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Nebula_Layer:MaterialExpressionMultiply_13'")
+    .ConstB=0.500000
+    .MaterialExpressionEditorX=-32
+    .MaterialExpressionEditorY=1240
+    .MaterialExpressionGuid=2E85421A44AA626612E625AC5A58E550
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_13)
+    A                      <- MaterialExpressionPower
+    B                      <- MaterialExpressionTextureSampleParameterVolume
+    .B=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameterVolume'Nebula_Layer:MaterialExpressionTextureSampleParameterVolume_5'",OutputIndex=3,Mask=1,MaskB=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionPower'Nebula_Layer:MaterialExpressionPower_5'")
+    .MaterialExpressionEditorX=-164
+    .MaterialExpressionEditorY=1240
+    .MaterialExpressionGuid=A53260D5490B3BD71F5913B40E86FB72
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_14)
+    A                      <- MaterialExpressionPower
+    B                      <- MaterialExpressionNamedRerouteDeclaration
+    .B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Nebula_Layer:MaterialExpressionNamedRerouteDeclaration_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionPower'Nebula_Layer:MaterialExpressionPower_0'")
+    .MaterialExpressionEditorX=12
+    .MaterialExpressionEditorY=692
+    .MaterialExpressionGuid=4FF1A89F460F7D36C340B4B86CC2DB07
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_15)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Nebula_Layer:MaterialExpressionScalarParameter_7'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Nebula_Layer:MaterialExpressionAdd_7'")
+    .ConstB=0.650000
+    .MaterialExpressionEditorX=348
+    .MaterialExpressionEditorY=980
+    .MaterialExpressionGuid=955C42AA47F2E0E3A56BD19F9032C43B
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_16)
+    A                      <- MaterialExpressionPower
+    B                      <- MaterialExpressionTextureSampleParameterVolume
+    .B=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameterVolume'Nebula_Layer:MaterialExpressionTextureSampleParameterVolume_4'",OutputIndex=3,Mask=1,MaskB=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionPower'Nebula_Layer:MaterialExpressionPower_1'")
+    .MaterialExpressionEditorX=-24
+    .MaterialExpressionEditorY=976
+    .MaterialExpressionGuid=4FF1A89F460F7D36C340B4B86CC2DB07
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_17)
+    A                      <- MaterialExpressionScalarParameter
+    .A=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Nebula_Layer:MaterialExpressionScalarParameter_9'")
+    .ConstB=0.650000
+    .MaterialExpressionEditorX=-468
+    .MaterialExpressionEditorY=1140
+    .MaterialExpressionGuid=F21844E84C2038EE8B571A8DCDE61B01
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_5)
+    A                      <- MaterialExpressionNamedRerouteDeclaration
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Nebula_Layer:MaterialExpressionScalarParameter_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Nebula_Layer:MaterialExpressionNamedRerouteDeclaration_7'")
+    .MaterialExpressionEditorX=1324
+    .MaterialExpressionEditorY=692
+    .MaterialExpressionGuid=8FE1A76E418D0BEECC0E028DF7D65C07
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_6)
+    A                      <- MaterialExpressionPower
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Nebula_Layer:MaterialExpressionScalarParameter_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionPower'Nebula_Layer:MaterialExpressionPower_3'")
+    .ConstB=0.500000
+    .MaterialExpressionEditorX=1724
+    .MaterialExpressionEditorY=264
+    .MaterialExpressionGuid=FE5DA0EB49E5362E2346FAB7B34B64E6
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_7)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Nebula_Layer:MaterialExpressionMaterialFunctionCall_0'")
+    .ConstB=0.020000
+    .MaterialExpressionEditorX=1656
+    .MaterialExpressionEditorY=804
+    .MaterialExpressionGuid=B9913FCF4FF1B1A76651F396EA24DC5D
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_8)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Nebula_Layer:MaterialExpressionNamedRerouteUsage_8'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'Nebula_Layer:MaterialExpressionSubtract_0'")
+    .MaterialExpressionEditorX=-76
+    .MaterialExpressionEditorY=96
+    .MaterialExpressionGuid=32F5728345EB5C18CDF882B1A37ACBB9
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_9)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Nebula_Layer:MaterialExpressionScalarParameter_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'Nebula_Layer:MaterialExpressionSubtract_1'")
+    .MaterialExpressionEditorX=-2660
+    .MaterialExpressionEditorY=220
+    .MaterialExpressionGuid=AF28FB164BF4F7EFD19ED8A70E8FE732
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_0)
+    Input                  <- MaterialExpressionAdd
+    .Input=(Expression="/Script/Engine.MaterialExpressionAdd'Nebula_Layer:MaterialExpressionAdd_4'")
+    .Name="Base Noise UVW"
+    .NodeColor=(R=0.000000,G=1.000000,B=0.156250,A=1.000000)
+    .VariableGuid=BDE07ECB409F8A68F119B7BB57473BD6
+    .MaterialExpressionEditorX=-2054
+    .MaterialExpressionEditorY=218
+    .MaterialExpressionGuid=987D851542710EA4900084BD0193B184
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_1)
+    Input                  <- MaterialExpressionTextureSampleParameterVolume
+    .Input=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameterVolume'Nebula_Layer:MaterialExpressionTextureSampleParameterVolume_0'",OutputIndex=1,Mask=1,MaskR=1)
+    .Name="Base Noise R"
+    .NodeColor=(R=0.000000,G=1.000000,B=0.531250,A=1.000000)
+    .VariableGuid=24E5541D49F2F43EF70C718CC2608DB6
+    .MaterialExpressionEditorX=-964
+    .MaterialExpressionEditorY=-72
+    .MaterialExpressionGuid=E78E158F413993E4DC00469681399B74
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_2)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Nebula_Layer:MaterialExpressionMultiply_8'")
+    .Name="Distortion Offset"
+    .NodeColor=(R=0.000000,G=0.742187,B=1.000000,A=1.000000)
+    .VariableGuid=50EB02AA406FAFDDFF7077A8D329A877
+    .MaterialExpressionEditorX=44
+    .MaterialExpressionEditorY=96
+    .MaterialExpressionGuid=E9B85662494D77D119CA1CA722453F48
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_3)
+    Input                  <- MaterialExpressionTextureSampleParameterVolume
+    .Input=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameterVolume'Nebula_Layer:MaterialExpressionTextureSampleParameterVolume_2'",OutputIndex=3,Mask=1,MaskB=1)
+    .Name="Distorted B"
+    .NodeColor=(R=1.000000,G=0.351562,B=0.000000,A=1.000000)
+    .VariableGuid=FEF4E8F2496B73B67DBFFEA65A2332D8
+    .MaterialExpressionEditorX=-508
+    .MaterialExpressionEditorY=724
+    .MaterialExpressionGuid=39E480864D45E69AA7A7FA83406F90B3
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_4)
+    Input                  <- MaterialExpressionTextureSampleParameterVolume
+    .Input=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameterVolume'Nebula_Layer:MaterialExpressionTextureSampleParameterVolume_4'",OutputIndex=1,Mask=1,MaskR=1)
+    .Name="Soft R"
+    .NodeColor=(R=1.000000,G=0.000000,B=0.867187,A=1.000000)
+    .VariableGuid=BE7E16794A4F68C39A6E80921DAE73D1
+    .MaterialExpressionEditorX=-664
+    .MaterialExpressionEditorY=940
+    .MaterialExpressionGuid=A22A80334E84FA9367194D9D0186ABD7
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_5)
+    Input                  <- MaterialExpressionTextureSampleParameterVolume
+    .Input=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameterVolume'Nebula_Layer:MaterialExpressionTextureSampleParameterVolume_2'",OutputIndex=1,Mask=1,MaskR=1)
+    .Name="Distorted R"
+    .NodeColor=(R=1.000000,G=0.609375,B=0.000000,A=1.000000)
+    .VariableGuid=5E87F6F24B0F6C07A1E6AFB67EF09C31
+    .MaterialExpressionEditorX=-508
+    .MaterialExpressionEditorY=632
+    .MaterialExpressionGuid=D27989BE498D33E6B44D39ABD4DE33C2
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_7)
+    Input                  <- MaterialExpressionAdd
+    .Input=(Expression="/Script/Engine.MaterialExpressionAdd'Nebula_Layer:MaterialExpressionAdd_8'")
+    .Name="Unscaled Intensity"
+    .NodeColor=(R=0.000000,G=1.000000,B=0.203125,A=1.000000)
+    .VariableGuid=7D9E95C243CD7A89D325D694CB2043B0
+    .MaterialExpressionEditorX=740
+    .MaterialExpressionEditorY=692
+    .MaterialExpressionGuid=3B87342F43A70069C9BEDEAB6A668145
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_0)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Nebula_Layer:MaterialExpressionNamedRerouteDeclaration_0'"
+    .DeclarationGuid=BDE07ECB409F8A68F119B7BB57473BD6
+    .MaterialExpressionEditorX=-1504
+    .MaterialExpressionEditorY=-160
+    .MaterialExpressionGuid=3FF520C44E083D1275F2DCA2B5B0EEBA
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_1)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Nebula_Layer:MaterialExpressionNamedRerouteDeclaration_1'"
+    .DeclarationGuid=24E5541D49F2F43EF70C718CC2608DB6
+    .MaterialExpressionEditorX=856
+    .MaterialExpressionEditorY=140
+    .MaterialExpressionGuid=50DC2E0145DEA0E23E8B6C81255D4CE0
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_2)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Nebula_Layer:MaterialExpressionNamedRerouteDeclaration_2'"
+    .DeclarationGuid=50EB02AA406FAFDDFF7077A8D329A877
+    .MaterialExpressionEditorX=-1084
+    .MaterialExpressionEditorY=684
+    .MaterialExpressionGuid=FFE8BDC34341E1C3034F07AD5F8ADF3E
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_3)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Nebula_Layer:MaterialExpressionNamedRerouteDeclaration_0'"
+    .DeclarationGuid=BDE07ECB409F8A68F119B7BB57473BD6
+    .MaterialExpressionEditorX=-1476
+    .MaterialExpressionEditorY=132
+    .MaterialExpressionGuid=3FF520C44E083D1275F2DCA2B5B0EEBA
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_4)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Nebula_Layer:MaterialExpressionNamedRerouteDeclaration_0'"
+    .DeclarationGuid=BDE07ECB409F8A68F119B7BB57473BD6
+    .MaterialExpressionEditorX=-1556
+    .MaterialExpressionEditorY=632
+    .MaterialExpressionGuid=3FF520C44E083D1275F2DCA2B5B0EEBA
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_5)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Nebula_Layer:MaterialExpressionNamedRerouteDeclaration_3'"
+    .DeclarationGuid=FEF4E8F2496B73B67DBFFEA65A2332D8
+    .MaterialExpressionEditorX=1028
+    .MaterialExpressionEditorY=304
+    .MaterialExpressionGuid=54CA5CBD4AE7D735C04576801D86C4FA
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_8)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Nebula_Layer:MaterialExpressionNamedRerouteDeclaration_4'"
+    .DeclarationGuid=BE7E16794A4F68C39A6E80921DAE73D1
+    .MaterialExpressionEditorX=-224
+    .MaterialExpressionEditorY=232
+    .MaterialExpressionGuid=9CE1BC50409D69DA53C85D9E70FA4E3E
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_9)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Nebula_Layer:MaterialExpressionNamedRerouteDeclaration_7'"
+    .DeclarationGuid=7D9E95C243CD7A89D325D694CB2043B0
+    .MaterialExpressionEditorX=1388
+    .MaterialExpressionEditorY=264
+    .MaterialExpressionGuid=E4F96C57404E3086761E11B6FD9213ED
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionPower (MaterialExpressionPower_0)
+    Base                   <- MaterialExpressionTextureSampleParameterVolume
+    Exponent               <- MaterialExpressionScalarParameter
+    .Base=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameterVolume'Nebula_Layer:MaterialExpressionTextureSampleParameterVolume_2'",OutputIndex=2,Mask=1,MaskG=1)
+    .Exponent=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Nebula_Layer:MaterialExpressionScalarParameter_2'")
+    .ConstExponent=4.000000
+    .MaterialExpressionEditorX=-172
+    .MaterialExpressionEditorY=692
+    .MaterialExpressionGuid=E4D73B3C48394B0EFF720D8D9D63C26C
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionPower (MaterialExpressionPower_1)
+    Base                   <- MaterialExpressionTextureSampleParameterVolume
+    Exponent               <- MaterialExpressionScalarParameter
+    .Base=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameterVolume'Nebula_Layer:MaterialExpressionTextureSampleParameterVolume_4'",OutputIndex=2,Mask=1,MaskG=1)
+    .Exponent=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Nebula_Layer:MaterialExpressionScalarParameter_2'")
+    .ConstExponent=4.000000
+    .MaterialExpressionEditorX=-144
+    .MaterialExpressionEditorY=932
+    .MaterialExpressionGuid=E4D73B3C48394B0EFF720D8D9D63C26C
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionPower (MaterialExpressionPower_3)
+    Base                   <- MaterialExpressionNamedRerouteUsage
+    .Base=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Nebula_Layer:MaterialExpressionNamedRerouteUsage_9'")
+    .ConstExponent=3.000000
+    .MaterialExpressionEditorX=1584
+    .MaterialExpressionEditorY=264
+    .MaterialExpressionGuid=3A9D47D946E8588487141FB6F5861D07
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionPower (MaterialExpressionPower_5)
+    Base                   <- MaterialExpressionTextureSampleParameterVolume
+    Exponent               <- MaterialExpressionMultiply
+    .Base=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameterVolume'Nebula_Layer:MaterialExpressionTextureSampleParameterVolume_5'",OutputIndex=1,Mask=1,MaskR=1)
+    .Exponent=(Expression="/Script/Engine.MaterialExpressionMultiply'Nebula_Layer:MaterialExpressionMultiply_17'")
+    .MaterialExpressionEditorX=-304
+    .MaterialExpressionEditorY=1212
+    .MaterialExpressionGuid=B0C1A8F142AEE824FCCB84B5746C09AE
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_0)
+    .ParameterName="Core Highlight"
+    .DefaultValue=0.500000
+    .ExpressionGUID=3B24A5644EFF2D45405EBAB1DD899F0F
+    .MaterialExpressionEditorX=1536
+    .MaterialExpressionEditorY=364
+    .MaterialExpressionGuid=B6AA3B854AA857AAFC2D0D90AA1A7D8D
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_1)
+    .ParameterName="3D Noise Scale"
+    .DefaultValue=4.323674
+    .ExpressionGUID=C28169B1423CEB89C9C0109221166F8F
+    .MaterialExpressionEditorX=-2924
+    .MaterialExpressionEditorY=336
+    .MaterialExpressionGuid=86B0ADBF4D9EC8E747A918AB1D239F5A
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_2)
+    .ParameterName="Main Structure Exponent"
+    .DefaultValue=3.500000
+    .ExpressionGUID=EECF4078498140C76F88B2AD9C1AE3B6
+    .MaterialExpressionEditorX=-416
+    .MaterialExpressionEditorY=812
+    .MaterialExpressionGuid=58340DE946FD13F28E4B58A2D137E9CE
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_3)
+    .ParameterName="Intensity"
+    .DefaultValue=1.000000
+    .ExpressionGUID=BACD0910424C51780D8FAEA992EC6007
+    .MaterialExpressionEditorX=1108
+    .MaterialExpressionEditorY=760
+    .MaterialExpressionGuid=A771B923408CAD8099173BB502225088
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_4)
+    .ParameterName="Small Distortion Scale"
+    .DefaultValue=4.000000
+    .ExpressionGUID=3F1BE8D549E6F3DBE6AC6093C11B7C34
+    .MaterialExpressionEditorX=-1512
+    .MaterialExpressionEditorY=208
+    .MaterialExpressionGuid=EE258F3E49BC093BF89896B28F75AA57
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_5)
+    .ParameterName="Small Distortion Factor"
+    .DefaultValue=65.000000
+    .ExpressionGUID=86685D864D1D137BE43709AB70831008
+    .MaterialExpressionEditorX=-712
+    .MaterialExpressionEditorY=236
+    .MaterialExpressionGuid=82ABC5FB48F0CDA00C52CAA27AA81D1A
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_6)
+    .ParameterName="Large Distortion Factor"
+    .DefaultValue=17.000000
+    .ExpressionGUID=16B515094B0E41B41C2E10A979D2CE4B
+    .MaterialExpressionEditorX=-648
+    .MaterialExpressionEditorY=-104
+    .MaterialExpressionGuid=4DEE98D247935C306F568896583E7B57
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_7)
+    .ParameterName="Soft Layer"
+    .DefaultValue=0.500000
+    .ExpressionGUID=A853B2524ABE9484FD4BD08FB21D9D73
+    .MaterialExpressionEditorX=148
+    .MaterialExpressionEditorY=1088
+    .MaterialExpressionGuid=89B9FC0F45E1B051996DF0B6301EAAF0
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_8)
+    .ParameterName="Noise Offset"
+    .ExpressionGUID=DFA869E4466F5023E171AB9ED059BAB8
+    .MaterialExpressionEditorX=-2516
+    .MaterialExpressionEditorY=316
+    .MaterialExpressionGuid=B64892C54BF5EB37B6463C8A40995B9E
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_9)
+    .ParameterName="Main Structure Exponent"
+    .DefaultValue=3.500000
+    .ExpressionGUID=F16A50924EACCA9B7B498CB9F1C12172
+    .MaterialExpressionEditorX=-676
+    .MaterialExpressionEditorY=1124
+    .MaterialExpressionGuid=58340DE946FD13F28E4B58A2D137E9CE
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_0)
+    A                      <- MaterialExpressionDivide
+    B                      <- MaterialExpressionDivide
+    .B=(Expression="/Script/Engine.MaterialExpressionDivide'Nebula_Layer:MaterialExpressionDivide_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'Nebula_Layer:MaterialExpressionDivide_0'")
+    .MaterialExpressionEditorX=-224
+    .MaterialExpressionEditorY=96
+    .MaterialExpressionGuid=51D3225D43672711EA7D7E8B57AA1ED8
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_1)
+    A                      <- MaterialExpressionVertexColor
+    .A=(Expression="/Script/Engine.MaterialExpressionVertexColor'Nebula_Layer:MaterialExpressionVertexColor_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .ConstB=0.500000
+    .MaterialExpressionEditorX=-3076
+    .MaterialExpressionEditorY=220
+    .MaterialExpressionGuid=C6C00D594042696AC0F0FD8495613804
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_2)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Nebula_Layer:MaterialExpressionMultiply_7'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Nebula_Layer:MaterialExpressionMultiply_5'")
+    .MaterialExpressionEditorX=1852
+    .MaterialExpressionEditorY=692
+    .MaterialExpressionGuid=23D1E0AF4A4549E649E51781EA1C14A7
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionTextureSampleParameterVolume (MaterialExpressionTextureSampleParameterVolume_0)
+    Coordinates            <- MaterialExpressionNamedRerouteUsage
+    .ParameterName="3D Clouds"
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.VolumeTexture'/Game/UltraDynamicSky/Textures/3D_Clouds/3DCells_128.3DCells_128'"
+    .ExpressionGUID=D02AB55D4D75933CE636DDBD68F2BC48
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Nebula_Layer:MaterialExpressionNamedRerouteUsage_0'")
+    .MipValueMode=TMVM_MipLevel
+    .AutomaticViewMipBias=False
+    .MaterialExpressionEditorX=-1312
+    .MaterialExpressionEditorY=-176
+    .MaterialExpressionGuid=4F1AC0E4437DD6E6A37494BA2023574C
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionTextureSampleParameterVolume (MaterialExpressionTextureSampleParameterVolume_1)
+    Coordinates            <- MaterialExpressionAdd
+    .ParameterName="3D Clouds"
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.VolumeTexture'/Game/UltraDynamicSky/Textures/3D_Clouds/3DCells_128.3DCells_128'"
+    .ExpressionGUID=1A84FB7A44A2916A86548198017CEAEE
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionAdd'Nebula_Layer:MaterialExpressionAdd_2'")
+    .MaterialExpressionEditorX=-1012
+    .MaterialExpressionEditorY=116
+    .MaterialExpressionGuid=4F1AC0E4437DD6E6A37494BA2023574C
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionTextureSampleParameterVolume (MaterialExpressionTextureSampleParameterVolume_2)
+    Coordinates            <- MaterialExpressionAdd
+    .ParameterName="3D Clouds"
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.VolumeTexture'/Game/UltraDynamicSky/Textures/3D_Clouds/3DCells_128.3DCells_128'"
+    .ExpressionGUID=E082E4424DB7A6517A749FA4AE7F83BE
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionAdd'Nebula_Layer:MaterialExpressionAdd_0'")
+    .MaterialExpressionEditorX=-808
+    .MaterialExpressionEditorY=616
+    .MaterialExpressionGuid=4F1AC0E4437DD6E6A37494BA2023574C
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionTextureSampleParameterVolume (MaterialExpressionTextureSampleParameterVolume_4)
+    Coordinates            <- MaterialExpressionAdd
+    .ParameterName="3D Clouds"
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.VolumeTexture'/Game/UltraDynamicSky/Textures/3D_Clouds/3DCells_128.3DCells_128'"
+    .ExpressionGUID=EB2F35624D4E8447838345AD46C9FBF8
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionAdd'Nebula_Layer:MaterialExpressionAdd_1'")
+    .ConstMipValue=3
+    .MaterialExpressionEditorX=-920
+    .MaterialExpressionEditorY=900
+    .MaterialExpressionGuid=4F1AC0E4437DD6E6A37494BA2023574C
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionTextureSampleParameterVolume (MaterialExpressionTextureSampleParameterVolume_5)
+    Coordinates            <- MaterialExpressionAdd
+    .ParameterName="3D Clouds"
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.VolumeTexture'/Game/UltraDynamicSky/Textures/3D_Clouds/3DCells_128.3DCells_128'"
+    .ExpressionGUID=6448EA3948677165F55638AEC12D9E8A
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionAdd'Nebula_Layer:MaterialExpressionAdd_6'")
+    .ConstMipValue=3
+    .MaterialExpressionEditorX=-920
+    .MaterialExpressionEditorY=1172
+    .MaterialExpressionGuid=4F1AC0E4437DD6E6A37494BA2023574C
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionVectorParameter (MaterialExpressionVectorParameter_0)
+    .ParameterName="Color 1"
+    .DefaultValue=(R=0.304869,G=0.817708,B=0.404305,A=0.000000)
+    .ExpressionGUID=211A4ABA489549CC080541AB01F27A11
+    .MaterialExpressionEditorX=576
+    .MaterialExpressionEditorY=-180
+    .MaterialExpressionGuid=8229A3D24D7FE2ADAD536E9063A4BA07
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionVectorParameter (MaterialExpressionVectorParameter_1)
+    .ParameterName="Color 2"
+    .DefaultValue=(R=0.739583,G=0.164173,B=0.023402,A=0.000000)
+    .ExpressionGUID=AE1BF73F4A359FF58CB3F589B3FF1273
+    .MaterialExpressionEditorX=684
+    .MaterialExpressionEditorY=224
+    .MaterialExpressionGuid=8229A3D24D7FE2ADAD536E9063A4BA07
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionVectorParameter (MaterialExpressionVectorParameter_2)
+    .ParameterName="Color 3"
+    .DefaultValue=(R=0.077382,G=0.294970,B=0.536458,A=0.000000)
+    .ExpressionGUID=A2D805094014FF2149A55D86EEB4BEA7
+    .MaterialExpressionEditorX=576
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=8229A3D24D7FE2ADAD536E9063A4BA07
+    .Material="/Script/Engine.Material'Nebula_Layer'"
+  MaterialExpressionVertexColor (MaterialExpressionVertexColor_0)
+    .MaterialExpressionEditorX=-3232
+    .MaterialExpressionEditorY=208
+    .MaterialExpressionGuid=7B6F538041B2EC57D141C88C2FED4FF7
+    .Material="/Script/Engine.Material'Nebula_Layer'"

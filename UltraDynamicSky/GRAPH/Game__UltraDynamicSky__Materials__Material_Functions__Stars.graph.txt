@@ -1,0 +1,852 @@
+### /Game/UltraDynamicSky/Materials/Material_Functions/Stars
+  MaterialFunction (Stars)
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'StarsEditorOnlyData'"
+    .StateId=0F3EEBFD41F8E42B611C1A8DD105933F
+    .CombinedOutputTypes=15
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+  MaterialFunctionEditorOnlyData (StarsEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'Stars:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionTextureCoordinate'Stars:MaterialExpressionTextureCoordinate_3'","/Script/Engine.MaterialExpressionMultiply'Stars:MaterialExpressionMultiply_2'","/Script/Engine.MaterialExpressionVectorParameter'Stars:MaterialExpressionVectorParameter_0'","/Script/Engine.MaterialExpressionTextureSampleParameter2D'Stars:MaterialExpressionTextureSampleParameter2D_1'","/Script/Engine.MaterialExpressionComponentMask'Stars:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionComponentMask'Stars:MaterialExpressionComponentMask_1'","/Script/Engine.MaterialExpressionAdd'Stars:MaterialExpressionAdd_0'","/Script/Engine.MaterialExpressionDivide'Stars:MaterialExpressionDivide_1'","/Script/Engine.MaterialExpressionAppendVector'Stars:MaterialExpressionAppendVector_0'","/Script/Engine.MaterialExpressionComponentMask'Stars:MaterialExpressionComponentMask_2'","/Script/Engine.MaterialExpressionVectorParameter'Stars:MaterialExpressionVectorParameter_1'","/Script/Engine.MaterialExpressionCameraVectorWS'Stars:MaterialExpressionCameraVectorWS_1'","/Script/Engine.MaterialExpressionRotateAboutAxis'Stars:MaterialExpressionRotateAboutAxis_2'","/Script/Engine.MaterialExpressionConstant3Vector'Stars:MaterialExpressionConstant3Vector_0'","/Script/Engine.MaterialExpressionAdd'Stars:MaterialExpressionAdd_2'","/Script/Engine.MaterialExpressionDivide'Stars:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionDivide'Stars:MaterialExpressionDivide_3'","/Script/Engine.MaterialExpressionScalarParameter'Stars:MaterialExpressionScalarParameter_0'","/Script/Engine.MaterialExpressionMultiply'Stars:MaterialExpressionMultiply_6'","/Script/Engine.MaterialExpressionAdd'Stars:MaterialExpressionAdd_1'","/Script/Engine.MaterialExpressionStaticSwitchParameter'Stars:MaterialExpressionStaticSwitchParameter_0'","/Script/Engine.MaterialExpressionFrac'Stars:MaterialExpressionFrac_0'","/Script/Engine.MaterialExpressionPanner'Stars:MaterialExpressionPanner_0'","/Script/Engine.MaterialExpressionMultiply'Stars:MaterialExpressionMultiply_7'","/Script/Engine.MaterialExpressionMultiply'Stars:MaterialExpressionMultiply_18'","/Script/Engine.MaterialExpressionAdd'Stars:MaterialExpressionAdd_10'","/Script/Engine.MaterialExpressionScalarParameter'Stars:MaterialExpressionScalarParameter_1'","/Script/Engine.MaterialExpressionScalarParameter'Stars:MaterialExpressionScalarParameter_3'","/Script/Engine.MaterialExpressionScalarParameter'Stars:MaterialExpressionScalarParameter_4'","/Script/Engine.MaterialExpressionAppendVector'Stars:MaterialExpressionAppendVector_1'","/Script/Engine.MaterialExpressionConstant'Stars:MaterialExpressionConstant_0'","/Script/Engine.MaterialExpressionStaticSwitchParameter'Stars:MaterialExpressionStaticSwitchParameter_1'","/Script/Engine.MaterialExpressionConstant'Stars:MaterialExpressionConstant_1'","/Script/Engine.MaterialExpressionConstant'Stars:MaterialExpressionConstant_2'","/Script/Engine.MaterialExpressionTextureSample'Stars:MaterialExpressionTextureSample_1'","/Script/Engine.MaterialExpressionStaticSwitchParameter'Stars:MaterialExpressionStaticSwitchParameter_14'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Stars:MaterialExpressionNamedRerouteDeclaration_0'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Stars:MaterialExpressionNamedRerouteUsage_0'","/Script/Engine.MaterialExpressionTextureSampleParameter2D'Stars:MaterialExpressionTextureSampleParameter2D_2'","/Script/Engine.MaterialExpressionStaticSwitchParameter'Stars:MaterialExpressionStaticSwitchParameter_2'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Stars:MaterialExpressionNamedRerouteUsage_1'","/Script/Engine.MaterialExpressionTextureSampleParameter2D'Stars:MaterialExpressionTextureSampleParameter2D_3'","/Script/Engine.MaterialExpressionTextureCoordinate'Stars:MaterialExpressionTextureCoordinate_0'","/Script/Engine.MaterialExpressionTextureSampleParameter2D'Stars:MaterialExpressionTextureSampleParameter2D_4'","/Script/Engine.MaterialExpressionTextureCoordinate'Stars:MaterialExpressionTextureCoordinate_1'","/Script/Engine.MaterialExpressionLinearInterpolate'Stars:MaterialExpressionLinearInterpolate_0'","/Script/Engine.MaterialExpressionWorldPosition'Stars:MaterialExpressionWorldPosition_0'","/Script/Engine.MaterialExpressionComponentMask'Stars:MaterialExpressionComponentMask_3'","/Script/Engine.MaterialExpressionMultiply'Stars:MaterialExpressionMultiply_1'","/Script/Engine.MaterialExpressionAdd'Stars:MaterialExpressionAdd_3'","/Script/Engine.MaterialExpressionSaturate'Stars:MaterialExpressionSaturate_1'","/Script/Engine.MaterialExpressionNormalize'Stars:MaterialExpressionNormalize_0'","/Script/Engine.MaterialExpressionTextureSampleParameter2D'Stars:MaterialExpressionTextureSampleParameter2D_5'","/Script/Engine.MaterialExpressionConstant'Stars:MaterialExpressionConstant_3'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Stars:MaterialExpressionNamedRerouteDeclaration_1'","/Script/Engine.MaterialExpressionMultiply'Stars:MaterialExpressionMultiply_3'","/Script/Engine.MaterialExpressionStaticSwitchParameter'Stars:MaterialExpressionStaticSwitchParameter_3'","/Script/Engine.MaterialExpressionDBufferTexture'Stars:MaterialExpressionDBufferTexture_0'","/Script/Engine.MaterialExpressionOneMinus'Stars:MaterialExpressionOneMinus_1'","/Script/Engine.MaterialExpressionMultiply'Stars:MaterialExpressionMultiply_4'","/Script/Engine.MaterialExpressionMultiply'Stars:MaterialExpressionMultiply_5'","/Script/Engine.MaterialExpressionViewProperty'Stars:MaterialExpressionViewProperty_1'","/Script/Engine.MaterialExpressionComponentMask'Stars:MaterialExpressionComponentMask_6'","/Script/Engine.MaterialExpressionSubtract'Stars:MaterialExpressionSubtract_1'","/Script/Engine.MaterialExpressionDivide'Stars:MaterialExpressionDivide_4'","/Script/Engine.MaterialExpressionSaturate'Stars:MaterialExpressionSaturate_2'","/Script/Engine.MaterialExpressionLinearInterpolate'Stars:MaterialExpressionLinearInterpolate_2'","/Script/Engine.MaterialExpressionStaticSwitchParameter'Stars:MaterialExpressionStaticSwitchParameter_4'","/Script/Engine.MaterialExpressionReroute'Stars:MaterialExpressionReroute_2'","/Script/Engine.MaterialExpressionReroute'Stars:MaterialExpressionReroute_4'","/Script/Engine.MaterialExpressionReroute'Stars:MaterialExpressionReroute_5'","/Script/Engine.MaterialExpressionPathTracingQualitySwitch'Stars:MaterialExpressionPathTracingQualitySwitch_0'","/Script/Engine.MaterialExpressionArctangent2'Stars:MaterialExpressionArctangent2_0'","/Script/Engine.MaterialExpressionArccosine'Stars:MaterialExpressionArccosine_1'","/Script/Engine.MaterialExpressionAdd'Stars:MaterialExpressionAdd_4'","/Script/Engine.MaterialExpressionScalarParameter'Stars:MaterialExpressionScalarParameter_5'","/Script/Engine.MaterialExpressionSaturate'Stars:MaterialExpressionSaturate_0'","/Script/Engine.MaterialExpressionStaticSwitchParameter'Stars:MaterialExpressionStaticSwitchParameter_12'","/Script/Engine.MaterialExpressionComponentMask'Stars:MaterialExpressionComponentMask_4'","/Script/Engine.MaterialExpressionAdd'Stars:MaterialExpressionAdd_5'","/Script/Engine.MaterialExpressionMultiply'Stars:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionSubtract'Stars:MaterialExpressionSubtract_0'","/Script/Engine.MaterialExpressionMultiply'Stars:MaterialExpressionMultiply_9'","/Script/Engine.MaterialExpressionSaturate'Stars:MaterialExpressionSaturate_5'","/Script/Engine.MaterialExpressionLinearInterpolate'Stars:MaterialExpressionLinearInterpolate_1'","/Script/Engine.MaterialExpressionMultiply'Stars:MaterialExpressionMultiply_10'","/Script/Engine.MaterialExpressionReroute'Stars:MaterialExpressionReroute_6'","/Script/Engine.MaterialExpressionReroute'Stars:MaterialExpressionReroute_7'","/Script/Engine.MaterialExpressionReroute'Stars:MaterialExpressionReroute_8'","/Script/Engine.MaterialExpressionReroute'Stars:MaterialExpressionReroute_9'","/Script/Engine.MaterialExpressionShadingPathSwitch'Stars:MaterialExpressionShadingPathSwitch_1'","/Script/Engine.MaterialExpressionShadingPathSwitch'Stars:MaterialExpressionShadingPathSwitch_2'","/Script/Engine.MaterialExpressionShadingPathSwitch'Stars:MaterialExpressionShadingPathSwitch_3'"),EditorComments=("/Script/Engine.MaterialExpressionComment'Stars:MaterialExpressionComment_0'","/Script/Engine.MaterialExpressionComment'Stars:MaterialExpressionComment_2'","/Script/Engine.MaterialExpressionComment'Stars:MaterialExpressionComment_4'","/Script/Engine.MaterialExpressionComment'Stars:MaterialExpressionComment_5'","/Script/Engine.MaterialExpressionComment'Stars:MaterialExpressionComment_1'"))
+  MaterialExpressionAdd (MaterialExpressionAdd_0)
+    B                      <- MaterialExpressionDivide
+    .B=(Expression="/Script/Engine.MaterialExpressionDivide'Stars:MaterialExpressionDivide_0'")
+    .ConstA=1.000000
+    .MaterialExpressionEditorX=1139
+    .MaterialExpressionEditorY=-406
+    .MaterialExpressionGuid=AD28C0804C8123BC4CF6E2B73BBBC69E
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionAdd (MaterialExpressionAdd_1)
+    A                      <- MaterialExpressionDivide
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Stars:MaterialExpressionScalarParameter_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'Stars:MaterialExpressionDivide_1'")
+    .MaterialExpressionEditorX=1450
+    .MaterialExpressionEditorY=-405
+    .MaterialExpressionGuid=B6936B4E464B3D444EF65B904EC7A5E4
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionAdd (MaterialExpressionAdd_10)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Stars:MaterialExpressionScalarParameter_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Stars:MaterialExpressionMultiply_18'")
+    .MaterialExpressionEditorX=3216
+    .MaterialExpressionEditorY=1156
+    .MaterialExpressionGuid=0A965F5441B48217CCF5C8AFFBD08AFB
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionAdd (MaterialExpressionAdd_2)
+    A                      <- MaterialExpressionRotateAboutAxis
+    B                      <- MaterialExpressionCameraVectorWS
+    .B=(Expression="/Script/Engine.MaterialExpressionCameraVectorWS'Stars:MaterialExpressionCameraVectorWS_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionRotateAboutAxis'Stars:MaterialExpressionRotateAboutAxis_2'")
+    .MaterialExpressionEditorX=315
+    .MaterialExpressionEditorY=-206
+    .MaterialExpressionGuid=F957B04141F89F787064C0B5A233A237
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionAdd (MaterialExpressionAdd_3)
+    A                      <- MaterialExpressionMultiply
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Stars:MaterialExpressionMultiply_1'")
+    .ConstB=0.500000
+    .MaterialExpressionEditorX=3246
+    .MaterialExpressionEditorY=-128
+    .MaterialExpressionGuid=AE273FCA43F26E6BE16DC68F74C08B21
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionAdd (MaterialExpressionAdd_4)
+    A                      <- MaterialExpressionSaturate
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Stars:MaterialExpressionScalarParameter_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSaturate'Stars:MaterialExpressionSaturate_2'")
+    .MaterialExpressionEditorX=5716
+    .MaterialExpressionEditorY=292
+    .MaterialExpressionGuid=D104C2FF49ED23DAB5C64393B0703346
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionAdd (MaterialExpressionAdd_5)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Stars:MaterialExpressionMultiply_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Stars:MaterialExpressionMultiply_0'")
+    .MaterialExpressionEditorX=5852
+    .MaterialExpressionEditorY=-40
+    .MaterialExpressionGuid=FA4D9318404A10E65BB2EBB1FDFF96E2
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_0)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionDivide
+    .B=(Expression="/Script/Engine.MaterialExpressionDivide'Stars:MaterialExpressionDivide_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Stars:MaterialExpressionAdd_1'")
+    .MaterialExpressionEditorX=1643
+    .MaterialExpressionEditorY=-238
+    .MaterialExpressionGuid=283A97154F89C903C653EB8196753E36
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_1)
+    A                      <- MaterialExpressionScalarParameter
+    B                      <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'Stars:MaterialExpressionConstant_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Stars:MaterialExpressionScalarParameter_4'")
+    .MaterialExpressionEditorX=2136
+    .MaterialExpressionEditorY=1324
+    .MaterialExpressionGuid=09AEA42B4F5156BD9B935EB24640177A
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionArccosine (MaterialExpressionArccosine_1)
+    Input                  <- MaterialExpressionComponentMask
+    .Input=(Expression="/Script/Engine.MaterialExpressionComponentMask'Stars:MaterialExpressionComponentMask_2'")
+    .MaterialExpressionEditorX=1020
+    .MaterialExpressionEditorY=-208
+    .MaterialExpressionGuid=80FE2DAB4A312E382A3BBCA437EFC786
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionArctangent2 (MaterialExpressionArctangent2_0)
+    Y                      <- MaterialExpressionComponentMask
+    X                      <- MaterialExpressionMultiply
+    .Y=(Expression="/Script/Engine.MaterialExpressionComponentMask'Stars:MaterialExpressionComponentMask_1'")
+    .X=(Expression="/Script/Engine.MaterialExpressionMultiply'Stars:MaterialExpressionMultiply_6'")
+    .MaterialExpressionEditorX=800
+    .MaterialExpressionEditorY=-384
+    .MaterialExpressionGuid=E36DC10C4187E2C400697A8EF6E29FC1
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionCameraVectorWS (MaterialExpressionCameraVectorWS_1)
+    .MaterialExpressionEditorX=-232
+    .MaterialExpressionEditorY=-188
+    .MaterialExpressionGuid=53D02D434FB7CF707470CFA6CB90D8F4
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionComment (MaterialExpressionComment_0)
+    .SizeX=2424
+    .SizeY=672
+    .Text="Simulate Real Stars UV mapping"
+    .CommentColor=(R=0.451763,G=0.532443,B=1.000000,A=1.000000)
+    .MaterialExpressionEditorX=-356
+    .MaterialExpressionEditorY=-624
+    .MaterialExpressionGuid=293CD72344B40E2C6AF4A293D7859D36
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionComment (MaterialExpressionComment_1)
+    .SizeX=2680
+    .SizeY=688
+    .Text="Real Stars Fade to Sprites"
+    .CommentColor=(R=1.000000,G=0.548609,B=0.166016,A=1.000000)
+    .MaterialExpressionEditorX=4910
+    .MaterialExpressionEditorY=-110
+    .MaterialExpressionGuid=DBD778E74FC7D7FC5806EA85B19118CE
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionComment (MaterialExpressionComment_2)
+    .SizeX=2928
+    .SizeY=1396
+    .Text="Sample Stars Texture, Adds Twinkling Effect"
+    .CommentColor=(R=0.540366,G=1.000000,B=0.403333,A=1.000000)
+    .MaterialExpressionEditorX=1624
+    .MaterialExpressionEditorY=168
+    .MaterialExpressionGuid=68F4938148E87643DCF625AC4271C41D
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionComment (MaterialExpressionComment_4)
+    .SizeX=488
+    .SizeY=360
+    .Text="Scale with Stars Color"
+    .CommentColor=(R=1.000000,G=0.665858,B=0.408355,A=1.000000)
+    .MaterialExpressionEditorX=7696
+    .MaterialExpressionEditorY=80
+    .MaterialExpressionGuid=6D583CC547BC3B69B679CAA9656E939B
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionComment (MaterialExpressionComment_5)
+    .SizeX=1896
+    .SizeY=748
+    .Text="Space Skymode"
+    .CommentColor=(R=0.450011,G=0.369383,B=1.000000,A=1.000000)
+    .MaterialExpressionEditorX=2476
+    .MaterialExpressionEditorY=-704
+    .MaterialExpressionGuid=5C2AA8CF4BC73F661AA54D9D843818E7
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionAdd
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionAdd'Stars:MaterialExpressionAdd_2'")
+    .MaterialExpressionEditorX=419
+    .MaterialExpressionEditorY=-398
+    .MaterialExpressionGuid=5383B43949AE2FE8BB5E87974B95E7F3
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_1)
+    Input                  <- MaterialExpressionAdd
+    .R=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionAdd'Stars:MaterialExpressionAdd_2'")
+    .MaterialExpressionEditorX=515
+    .MaterialExpressionEditorY=-294
+    .MaterialExpressionGuid=5383B43949AE2FE8BB5E87974B95E7F3
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_2)
+    Input                  <- MaterialExpressionAdd
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionAdd'Stars:MaterialExpressionAdd_2'")
+    .MaterialExpressionEditorX=515
+    .MaterialExpressionEditorY=-206
+    .MaterialExpressionGuid=76493E714B78F8CD1A9C8D961E0D9908
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_3)
+    Input                  <- MaterialExpressionNormalize
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionNormalize'Stars:MaterialExpressionNormalize_0'")
+    .MaterialExpressionEditorX=2930
+    .MaterialExpressionEditorY=-128
+    .MaterialExpressionGuid=F56EE4154E1F3764EEF1699CCC5AF9C3
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_4)
+    Input                  <- MaterialExpressionDBufferTexture
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionDBufferTexture'Stars:MaterialExpressionDBufferTexture_0'",OutputIndex=1,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .MaterialExpressionEditorX=5444
+    .MaterialExpressionEditorY=-40
+    .MaterialExpressionGuid=B87FA74C4F8691B39C5553AB6E025B5F
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_6)
+    Input                  <- MaterialExpressionViewProperty
+    .R=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionViewProperty'Stars:MaterialExpressionViewProperty_1'")
+    .MaterialExpressionEditorX=5144
+    .MaterialExpressionEditorY=288
+    .MaterialExpressionGuid=FA6A17CF442C58ADC90EEBBEFA9F04F1
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionConstant (MaterialExpressionConstant_0)
+    .MaterialExpressionEditorX=1980
+    .MaterialExpressionEditorY=1392
+    .MaterialExpressionGuid=0599D6E643E8366C56713DACE9D90B28
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionConstant (MaterialExpressionConstant_1)
+    .R=4.000000
+    .MaterialExpressionEditorX=1764
+    .MaterialExpressionEditorY=1160
+    .MaterialExpressionGuid=F6EA968B4E18B321341A679DE50B0A4C
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionConstant (MaterialExpressionConstant_2)
+    .R=2.000000
+    .MaterialExpressionEditorX=1760
+    .MaterialExpressionEditorY=1228
+    .MaterialExpressionGuid=6B4F931B41E44A638066AD96E90F933C
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionConstant (MaterialExpressionConstant_3)
+    .R=-0.500000
+    .MaterialExpressionEditorX=2284
+    .MaterialExpressionEditorY=924
+    .MaterialExpressionGuid=490B8FFE4969D14210F04093F98E66BC
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionConstant3Vector (MaterialExpressionConstant3Vector_0)
+    .MaterialExpressionEditorX=-300
+    .MaterialExpressionEditorY=-348
+    .MaterialExpressionGuid=856C64AA49AC420A5F8CEBB68084D346
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+    .bCollapsed=True
+  MaterialExpressionDBufferTexture (MaterialExpressionDBufferTexture_0)
+    .DBufferTextureId=DBT_B
+    .MaterialExpressionEditorX=5156
+    .MaterialExpressionEditorY=-8
+    .MaterialExpressionGuid=B3C901BE4C7E6FDA20A14BA129C2F320
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionArctangent2
+    .A=(Expression="/Script/Engine.MaterialExpressionArctangent2'Stars:MaterialExpressionArctangent2_0'")
+    .ConstB=3.141593
+    .MaterialExpressionEditorX=971
+    .MaterialExpressionEditorY=-382
+    .MaterialExpressionGuid=1EB50BAA490D0994234E078DAE471CCD
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionDivide (MaterialExpressionDivide_1)
+    A                      <- MaterialExpressionAdd
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Stars:MaterialExpressionAdd_0'")
+    .MaterialExpressionEditorX=1259
+    .MaterialExpressionEditorY=-406
+    .MaterialExpressionGuid=914FF56940CBF6BED82094B497647087
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionDivide (MaterialExpressionDivide_3)
+    A                      <- MaterialExpressionArccosine
+    .A=(Expression="/Script/Engine.MaterialExpressionArccosine'Stars:MaterialExpressionArccosine_1'")
+    .ConstB=3.141593
+    .MaterialExpressionEditorX=1235
+    .MaterialExpressionEditorY=-206
+    .MaterialExpressionGuid=1EB50BAA490D0994234E078DAE471CCD
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionDivide (MaterialExpressionDivide_4)
+    A                      <- MaterialExpressionSubtract
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'Stars:MaterialExpressionSubtract_1'")
+    .ConstB=0.500000
+    .MaterialExpressionEditorX=5428
+    .MaterialExpressionEditorY=288
+    .MaterialExpressionGuid=9EC312BE4F4EC8F249EE3DAE92CE5766
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionFrac (MaterialExpressionFrac_0)
+    Input                  <- MaterialExpressionAppendVector
+    .Input=(Expression="/Script/Engine.MaterialExpressionAppendVector'Stars:MaterialExpressionAppendVector_0'")
+    .MaterialExpressionEditorX=1784
+    .MaterialExpressionEditorY=-240
+    .MaterialExpressionGuid=B6988F58495179C944F8BB83CA83DB2E
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionMultiply
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Stars:MaterialExpressionMultiply_2'")
+    .bLastPreviewed=True
+    .Id=C82DBB2148A9AF68882EDF81DD66B969
+    .MaterialExpressionEditorX=8240
+    .MaterialExpressionEditorY=128
+    .MaterialExpressionGuid=0419E7EF41CD9616E4A8A79A9674B8B3
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_0)
+    A                      <- MaterialExpressionTextureSampleParameter2D
+    B                      <- MaterialExpressionTextureSampleParameter2D
+    Alpha                  <- MaterialExpressionSaturate
+    .B=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameter2D'Stars:MaterialExpressionTextureSampleParameter2D_4'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameter2D'Stars:MaterialExpressionTextureSampleParameter2D_3'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionSaturate'Stars:MaterialExpressionSaturate_1'")
+    .MaterialExpressionEditorX=3530
+    .MaterialExpressionEditorY=-356
+    .MaterialExpressionGuid=C669855949F8459AA96843B823732A2F
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_1)
+    B                      <- MaterialExpressionAdd
+    Alpha                  <- MaterialExpressionSaturate
+    .B=(Expression="/Script/Engine.MaterialExpressionAdd'Stars:MaterialExpressionAdd_10'")
+    .ConstA=1.000000
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionSaturate'Stars:MaterialExpressionSaturate_5'")
+    .MaterialExpressionEditorX=3374
+    .MaterialExpressionEditorY=620
+    .MaterialExpressionGuid=1BF41C8348858B77E3E2CAAE242133A2
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_2)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionReroute
+    Alpha                  <- MaterialExpressionSaturate
+    .B=(Expression="/Script/Engine.MaterialExpressionReroute'Stars:MaterialExpressionReroute_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Stars:MaterialExpressionAdd_5'")
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionSaturate'Stars:MaterialExpressionSaturate_0'")
+    .ConstAlpha=0.300000
+    .MaterialExpressionEditorX=5968
+    .MaterialExpressionEditorY=160
+    .MaterialExpressionGuid=F0FE0A194DDA367591BC86B6D3868130
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionComponentMask
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Stars:MaterialExpressionComponentMask_4'")
+    .ConstB=0.600000
+    .MaterialExpressionEditorX=5676
+    .MaterialExpressionEditorY=-40
+    .MaterialExpressionGuid=6E4DCD66454EF32E65F5BD9D16FCE05B
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionComponentMask
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Stars:MaterialExpressionComponentMask_3'")
+    .ConstB=2.000000
+    .MaterialExpressionEditorX=3114
+    .MaterialExpressionEditorY=-128
+    .MaterialExpressionGuid=9C18BCF148B85D3D9675A78F0E4FEE72
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_10)
+    A                      <- MaterialExpressionReroute
+    B                      <- MaterialExpressionLinearInterpolate
+    .B=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Stars:MaterialExpressionLinearInterpolate_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionReroute'Stars:MaterialExpressionReroute_8'")
+    .MaterialExpressionEditorX=3652
+    .MaterialExpressionEditorY=516
+    .MaterialExpressionGuid=A0AF356E42890FD2565510944F3518D6
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_18)
+    A                      <- MaterialExpressionTextureSample
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Stars:MaterialExpressionScalarParameter_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'Stars:MaterialExpressionTextureSample_1'",OutputIndex=1,Mask=1,MaskR=1)
+    .ConstB=3.000000
+    .MaterialExpressionEditorX=2972
+    .MaterialExpressionEditorY=1156
+    .MaterialExpressionGuid=741B882046FDE4EB69B9F8BA1CC24D5B
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_2)
+    A                      <- MaterialExpressionStaticSwitchParameter
+    B                      <- MaterialExpressionVectorParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Stars:MaterialExpressionVectorParameter_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Stars:MaterialExpressionStaticSwitchParameter_12'")
+    .MaterialExpressionEditorX=7999
+    .MaterialExpressionEditorY=156
+    .MaterialExpressionGuid=3E242478478980FF2E3355A14B64B740
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_3)
+    A                      <- MaterialExpressionReroute
+    B                      <- MaterialExpressionAdd
+    .B=(Expression="/Script/Engine.MaterialExpressionAdd'Stars:MaterialExpressionAdd_10'")
+    .A=(Expression="/Script/Engine.MaterialExpressionReroute'Stars:MaterialExpressionReroute_6'")
+    .MaterialExpressionEditorX=3692
+    .MaterialExpressionEditorY=856
+    .MaterialExpressionGuid=4F91233342F8604A006335ADCE8C16A1
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_4)
+    A                      <- MaterialExpressionOneMinus
+    B                      <- MaterialExpressionReroute
+    .B=(Expression="/Script/Engine.MaterialExpressionReroute'Stars:MaterialExpressionReroute_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionOneMinus'Stars:MaterialExpressionOneMinus_1'")
+    .MaterialExpressionEditorX=5564
+    .MaterialExpressionEditorY=68
+    .MaterialExpressionGuid=583C232A470E3B69B269BD98AEE35BDE
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_5)
+    A                      <- MaterialExpressionMultiply
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Stars:MaterialExpressionMultiply_4'")
+    .ConstB=10.000000
+    .MaterialExpressionEditorX=5688
+    .MaterialExpressionEditorY=68
+    .MaterialExpressionGuid=56AC6D1E41EAD5056F7EB5BB968E13A2
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_6)
+    A                      <- MaterialExpressionComponentMask
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Stars:MaterialExpressionComponentMask_0'")
+    .ConstB=-1.000000
+    .MaterialExpressionEditorX=587
+    .MaterialExpressionEditorY=-398
+    .MaterialExpressionGuid=C7170A9E4990BB7E92B8209B26518ED0
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_7)
+    A                      <- MaterialExpressionTextureCoordinate
+    B                      <- MaterialExpressionStaticSwitchParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Stars:MaterialExpressionStaticSwitchParameter_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'Stars:MaterialExpressionTextureCoordinate_3'")
+    .ConstB=4.000000
+    .MaterialExpressionEditorX=2148
+    .MaterialExpressionEditorY=1128
+    .MaterialExpressionGuid=11CFD7224AA56E65188182A0D1A3C62F
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_9)
+    A                      <- MaterialExpressionSubtract
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'Stars:MaterialExpressionSubtract_0'")
+    .ConstB=100.000000
+    .MaterialExpressionEditorX=2918
+    .MaterialExpressionEditorY=684
+    .MaterialExpressionGuid=04F739634F2E231E1F0CBFA3DCEAA075
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_0)
+    Input                  <- MaterialExpressionFrac
+    .Input=(Expression="/Script/Engine.MaterialExpressionFrac'Stars:MaterialExpressionFrac_0'")
+    .Name="Real Stars UVs"
+    .NodeColor=(R=1.000000,G=0.000000,B=0.796875,A=1.000000)
+    .VariableGuid=6D12D96D454A52625A765084978FB55B
+    .MaterialExpressionEditorX=1884
+    .MaterialExpressionEditorY=-240
+    .MaterialExpressionGuid=24CDB08D450FDBFA802F41A7CE53CF0C
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_1)
+    Input                  <- MaterialExpressionStaticSwitchParameter
+    .Input=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Stars:MaterialExpressionStaticSwitchParameter_0'")
+    .Name="Star Texture UVs"
+    .NodeColor=(R=1.000000,G=0.000000,B=0.539062,A=1.000000)
+    .VariableGuid=14E0D4034AB357C02083CF99F504561C
+    .MaterialExpressionEditorX=2247
+    .MaterialExpressionEditorY=518
+    .MaterialExpressionGuid=C6AFEA9141ADD33E4E9A83B44E3D36DF
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_0)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Stars:MaterialExpressionNamedRerouteDeclaration_0'"
+    .DeclarationGuid=6D12D96D454A52625A765084978FB55B
+    .MaterialExpressionEditorX=1767
+    .MaterialExpressionEditorY=514
+    .MaterialExpressionGuid=8AEBE8E441CB2E6E2F90FD98F20B9FF4
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_1)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Stars:MaterialExpressionNamedRerouteDeclaration_0'"
+    .DeclarationGuid=6D12D96D454A52625A765084978FB55B
+    .MaterialExpressionEditorX=3502
+    .MaterialExpressionEditorY=-596
+    .MaterialExpressionGuid=8AEBE8E441CB2E6E2F90FD98F20B9FF4
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionNormalize (MaterialExpressionNormalize_0)
+    VectorInput            <- MaterialExpressionWorldPosition
+    .VectorInput=(Expression="/Script/Engine.MaterialExpressionWorldPosition'Stars:MaterialExpressionWorldPosition_0'")
+    .MaterialExpressionEditorX=2778
+    .MaterialExpressionEditorY=-132
+    .MaterialExpressionGuid=863CDF01430682B7EB5F3AA00F5B1BA0
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_1)
+    Input                  <- MaterialExpressionDBufferTexture
+    .Input=(Expression="/Script/Engine.MaterialExpressionDBufferTexture'Stars:MaterialExpressionDBufferTexture_0'",OutputIndex=2,Mask=1,MaskA=1)
+    .MaterialExpressionEditorX=5408
+    .MaterialExpressionEditorY=68
+    .MaterialExpressionGuid=CD4F60AC48FF60CCF95705815B4A0F00
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionPanner (MaterialExpressionPanner_0)
+    Coordinate             <- MaterialExpressionMultiply
+    Speed                  <- MaterialExpressionAppendVector
+    .Coordinate=(Expression="/Script/Engine.MaterialExpressionMultiply'Stars:MaterialExpressionMultiply_7'")
+    .Speed=(Expression="/Script/Engine.MaterialExpressionAppendVector'Stars:MaterialExpressionAppendVector_1'")
+    .SpeedX=0.025000
+    .MaterialExpressionEditorX=2284
+    .MaterialExpressionEditorY=1128
+    .MaterialExpressionGuid=A14EF6A54608844FCAEC738ADCD43F9B
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionPathTracingQualitySwitch (MaterialExpressionPathTracingQualitySwitch_0)
+    Normal                 <- MaterialExpressionLinearInterpolate
+    PathTraced             <- MaterialExpressionReroute
+    .Normal=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Stars:MaterialExpressionLinearInterpolate_2'")
+    .PathTraced=(Expression="/Script/Engine.MaterialExpressionReroute'Stars:MaterialExpressionReroute_5'")
+    .MaterialExpressionEditorX=6220
+    .MaterialExpressionEditorY=160
+    .MaterialExpressionGuid=8947C83849A3F76E7ACFCDA80FB74400
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionReroute (MaterialExpressionReroute_2)
+    Input                  <- MaterialExpressionStaticSwitchParameter
+    .Input=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Stars:MaterialExpressionStaticSwitchParameter_14'")
+    .MaterialExpressionEditorX=5396
+    .MaterialExpressionEditorY=222
+    .MaterialExpressionGuid=806DEAC740664B789502EBBCB2A4EDC1
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionReroute (MaterialExpressionReroute_4)
+    Input                  <- MaterialExpressionStaticSwitchParameter
+    .Input=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Stars:MaterialExpressionStaticSwitchParameter_14'")
+    .MaterialExpressionEditorX=5016
+    .MaterialExpressionEditorY=496
+    .MaterialExpressionGuid=375E68974DB82B99D4BE958C776ED16E
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionReroute (MaterialExpressionReroute_5)
+    Input                  <- MaterialExpressionReroute
+    .Input=(Expression="/Script/Engine.MaterialExpressionReroute'Stars:MaterialExpressionReroute_4'")
+    .MaterialExpressionEditorX=5948
+    .MaterialExpressionEditorY=500
+    .MaterialExpressionGuid=EC3EADDC4DC517A0050D37B4AFA1BDAB
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionReroute (MaterialExpressionReroute_6)
+    Input                  <- MaterialExpressionTextureSampleParameter2D
+    .Input=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameter2D'Stars:MaterialExpressionTextureSampleParameter2D_1'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .MaterialExpressionEditorX=3508
+    .MaterialExpressionEditorY=888
+    .MaterialExpressionGuid=E7DD97A44BA0FA8BCB3E46B41EB58858
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionReroute (MaterialExpressionReroute_7)
+    Input                  <- MaterialExpressionReroute
+    .Input=(Expression="/Script/Engine.MaterialExpressionReroute'Stars:MaterialExpressionReroute_6'")
+    .MaterialExpressionEditorX=3708
+    .MaterialExpressionEditorY=972
+    .MaterialExpressionGuid=8AB1197C4F1A9F86775A7B870814748F
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionReroute (MaterialExpressionReroute_8)
+    Input                  <- MaterialExpressionTextureSampleParameter2D
+    .Input=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameter2D'Stars:MaterialExpressionTextureSampleParameter2D_5'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .MaterialExpressionEditorX=3500
+    .MaterialExpressionEditorY=548
+    .MaterialExpressionGuid=75DB20CF4260406BC92E4482220FDA91
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionReroute (MaterialExpressionReroute_9)
+    Input                  <- MaterialExpressionReroute
+    .Input=(Expression="/Script/Engine.MaterialExpressionReroute'Stars:MaterialExpressionReroute_8'")
+    .MaterialExpressionEditorX=3684
+    .MaterialExpressionEditorY=640
+    .MaterialExpressionGuid=426465CB4C034968742AAF8265ABE61D
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionRotateAboutAxis (MaterialExpressionRotateAboutAxis_2)
+    NormalizedRotationAxis <- MaterialExpressionVectorParameter
+    RotationAngle          <- MaterialExpressionVectorParameter
+    PivotPoint             <- MaterialExpressionConstant3Vector
+    Position               <- MaterialExpressionCameraVectorWS
+    .NormalizedRotationAxis=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Stars:MaterialExpressionVectorParameter_1'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .RotationAngle=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Stars:MaterialExpressionVectorParameter_1'",OutputIndex=4,Mask=1,MaskA=1)
+    .PivotPoint=(Expression="/Script/Engine.MaterialExpressionConstant3Vector'Stars:MaterialExpressionConstant3Vector_0'")
+    .Position=(Expression="/Script/Engine.MaterialExpressionCameraVectorWS'Stars:MaterialExpressionCameraVectorWS_1'")
+    .MaterialExpressionEditorX=-5
+    .MaterialExpressionEditorY=-430
+    .MaterialExpressionGuid=41043DEA418F451B4E05048F07752272
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_0)
+    Input                  <- MaterialExpressionAdd
+    .Input=(Expression="/Script/Engine.MaterialExpressionAdd'Stars:MaterialExpressionAdd_4'")
+    .MaterialExpressionEditorX=5816
+    .MaterialExpressionEditorY=292
+    .MaterialExpressionGuid=3053721F40DAAD302207F3A22E86F023
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_1)
+    Input                  <- MaterialExpressionAdd
+    .Input=(Expression="/Script/Engine.MaterialExpressionAdd'Stars:MaterialExpressionAdd_3'")
+    .MaterialExpressionEditorX=3370
+    .MaterialExpressionEditorY=-128
+    .MaterialExpressionGuid=B9143495468F617E04FF23A1FE42E50C
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_2)
+    Input                  <- MaterialExpressionDivide
+    .Input=(Expression="/Script/Engine.MaterialExpressionDivide'Stars:MaterialExpressionDivide_4'")
+    .MaterialExpressionEditorX=5592
+    .MaterialExpressionEditorY=288
+    .MaterialExpressionGuid=85EA006F42599AFFB421628609F4B083
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_5)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Stars:MaterialExpressionMultiply_9'")
+    .MaterialExpressionEditorX=3054
+    .MaterialExpressionEditorY=684
+    .MaterialExpressionGuid=AE7E340246CC570849688AA00F64FB3C
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_0)
+    .ParameterName="Stars Orbit"
+    .ExpressionGUID=3D1C79234DEF46E418AA2C873C4C2D93
+    .MaterialExpressionEditorX=1235
+    .MaterialExpressionEditorY=-302
+    .MaterialExpressionGuid=836D9FDE419EE71D0B65DDA22C188F4F
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_1)
+    .ParameterName="Twinkle Floor"
+    .ExpressionGUID=5C8F9A7F4641E511C568DD916A64C62F
+    .MaterialExpressionEditorX=2988
+    .MaterialExpressionEditorY=1264
+    .MaterialExpressionGuid=984D0FB24DD5D68A2074D9AD78D3F285
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_3)
+    .ParameterName="Twinkle Strength"
+    .DefaultValue=0.500000
+    .ExpressionGUID=6E7D367B40B167D36B69BC86780CEF90
+    .MaterialExpressionEditorX=2728
+    .MaterialExpressionEditorY=1244
+    .MaterialExpressionGuid=E8B80D4E478E0FA6F321539B48F771DB
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_4)
+    .ParameterName="Twinkle Speed"
+    .DefaultValue=0.025000
+    .ExpressionGUID=935A763C453ECB720DF970AC6DC5E950
+    .MaterialExpressionEditorX=1916
+    .MaterialExpressionEditorY=1308
+    .MaterialExpressionGuid=0BB2C16A443F492DBFF754BA346A1AC2
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_5)
+    .ParameterName="Disable Real Stars Sprites"
+    .ExpressionGUID=F1B972384C04A0D608D9E9864D7B143E
+    .MaterialExpressionEditorX=5476
+    .MaterialExpressionEditorY=392
+    .MaterialExpressionGuid=D600F9304CEE2618033C8192C5D3165C
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionShadingPathSwitch (MaterialExpressionShadingPathSwitch_1)
+    Default                <- MaterialExpressionMultiply
+    Inputs(2)              <- MaterialExpressionReroute
+    .Default=(Expression="/Script/Engine.MaterialExpressionMultiply'Stars:MaterialExpressionMultiply_10'")
+    .Inputs(2)=(Expression="/Script/Engine.MaterialExpressionReroute'Stars:MaterialExpressionReroute_9'")
+    .MaterialExpressionEditorX=4036
+    .MaterialExpressionEditorY=516
+    .MaterialExpressionGuid=870A3B2F44545DD140E0ECB7110A9C61
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionShadingPathSwitch (MaterialExpressionShadingPathSwitch_2)
+    Default                <- MaterialExpressionMultiply
+    Inputs(2)              <- MaterialExpressionReroute
+    .Default=(Expression="/Script/Engine.MaterialExpressionMultiply'Stars:MaterialExpressionMultiply_3'")
+    .Inputs(2)=(Expression="/Script/Engine.MaterialExpressionReroute'Stars:MaterialExpressionReroute_7'")
+    .MaterialExpressionEditorX=4024
+    .MaterialExpressionEditorY=856
+    .MaterialExpressionGuid=82BE34BD462E24FA40F7BBBA42B27EED
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionShadingPathSwitch (MaterialExpressionShadingPathSwitch_3)
+    Default                <- MaterialExpressionPathTracingQualitySwitch
+    Inputs(2)              <- MaterialExpressionReroute
+    .Default=(Expression="/Script/Engine.MaterialExpressionPathTracingQualitySwitch'Stars:MaterialExpressionPathTracingQualitySwitch_0'")
+    .Inputs(2)=(Expression="/Script/Engine.MaterialExpressionReroute'Stars:MaterialExpressionReroute_5'")
+    .MaterialExpressionEditorX=6508
+    .MaterialExpressionEditorY=160
+    .MaterialExpressionGuid=7DA5F26A4A3C5051EE3877BE46EE8638
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionStaticSwitchParameter (MaterialExpressionStaticSwitchParameter_0)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    B                      <- MaterialExpressionTextureCoordinate
+    .ParameterName="Real Stars"
+    .B=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'Stars:MaterialExpressionTextureCoordinate_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Stars:MaterialExpressionNamedRerouteUsage_0'")
+    .ExpressionGUID=0114BA8043B1DE2D2F15F2A1E01A5070
+    .MaterialExpressionEditorX=1991
+    .MaterialExpressionEditorY=502
+    .MaterialExpressionGuid=563AE19141C610E54F99A19ADB7B94A4
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionStaticSwitchParameter (MaterialExpressionStaticSwitchParameter_1)
+    A                      <- MaterialExpressionConstant
+    B                      <- MaterialExpressionConstant
+    .ParameterName="Real Stars"
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'Stars:MaterialExpressionConstant_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionConstant'Stars:MaterialExpressionConstant_1'")
+    .ExpressionGUID=0114BA8043B1DE2D2F15F2A1E01A5070
+    .MaterialExpressionEditorX=1920
+    .MaterialExpressionEditorY=1144
+    .MaterialExpressionGuid=563AE19141C610E54F99A19ADB7B94A4
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionStaticSwitchParameter (MaterialExpressionStaticSwitchParameter_12)
+    A                      <- MaterialExpressionStaticSwitchParameter
+    B                      <- MaterialExpressionReroute
+    .ParameterName="Use Dbuffer"
+    .DefaultValue=True
+    .B=(Expression="/Script/Engine.MaterialExpressionReroute'Stars:MaterialExpressionReroute_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Stars:MaterialExpressionStaticSwitchParameter_4'")
+    .ExpressionGUID=B9B6E87B4685E3650E86D0B8482F37F8
+    .MaterialExpressionEditorX=7304
+    .MaterialExpressionEditorY=144
+    .MaterialExpressionGuid=DA844B4749F5952FAB8EA5A6D7423350
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionStaticSwitchParameter (MaterialExpressionStaticSwitchParameter_14)
+    A                      <- MaterialExpressionStaticSwitchParameter
+    B                      <- MaterialExpressionStaticSwitchParameter
+    .ParameterName="Space"
+    .B=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Stars:MaterialExpressionStaticSwitchParameter_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Stars:MaterialExpressionStaticSwitchParameter_2'")
+    .ExpressionGUID=F0073AA44827698E1F251FB18E9B4079
+    .MaterialExpressionEditorX=4644
+    .MaterialExpressionEditorY=176
+    .MaterialExpressionGuid=B7093F254307577F5F54CEBCD7BA0581
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionStaticSwitchParameter (MaterialExpressionStaticSwitchParameter_2)
+    A                      <- MaterialExpressionTextureSampleParameter2D
+    B                      <- MaterialExpressionLinearInterpolate
+    .ParameterName="Real Stars"
+    .B=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Stars:MaterialExpressionLinearInterpolate_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameter2D'Stars:MaterialExpressionTextureSampleParameter2D_2'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .ExpressionGUID=0114BA8043B1DE2D2F15F2A1E01A5070
+    .MaterialExpressionEditorX=3986
+    .MaterialExpressionEditorY=-400
+    .MaterialExpressionGuid=563AE19141C610E54F99A19ADB7B94A4
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionStaticSwitchParameter (MaterialExpressionStaticSwitchParameter_3)
+    A                      <- MaterialExpressionShadingPathSwitch
+    B                      <- MaterialExpressionShadingPathSwitch
+    .ParameterName="Real Stars"
+    .B=(Expression="/Script/Engine.MaterialExpressionShadingPathSwitch'Stars:MaterialExpressionShadingPathSwitch_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionShadingPathSwitch'Stars:MaterialExpressionShadingPathSwitch_1'")
+    .ExpressionGUID=4F485EDE43124B366120EC901B6C5932
+    .MaterialExpressionEditorX=4292
+    .MaterialExpressionEditorY=632
+    .MaterialExpressionGuid=CE98F7E241CD69002A4EB38059A7A2EE
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionStaticSwitchParameter (MaterialExpressionStaticSwitchParameter_4)
+    A                      <- MaterialExpressionShadingPathSwitch
+    B                      <- MaterialExpressionReroute
+    .ParameterName="Real Stars"
+    .B=(Expression="/Script/Engine.MaterialExpressionReroute'Stars:MaterialExpressionReroute_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionShadingPathSwitch'Stars:MaterialExpressionShadingPathSwitch_3'")
+    .ExpressionGUID=08FCEE32409D2514B6EA77A307FEE995
+    .MaterialExpressionEditorX=6772
+    .MaterialExpressionEditorY=144
+    .MaterialExpressionGuid=EA0F2C8D4EBB3EB24EA96EB5DE2D7E7A
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_0)
+    A                      <- MaterialExpressionTextureSampleParameter2D
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameter2D'Stars:MaterialExpressionTextureSampleParameter2D_5'",OutputIndex=2,Mask=1,MaskG=1)
+    .ConstB=0.010000
+    .MaterialExpressionEditorX=2774
+    .MaterialExpressionEditorY=684
+    .MaterialExpressionGuid=CDAD8C004CF340E7EFB306860256AE3E
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_1)
+    A                      <- MaterialExpressionComponentMask
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Stars:MaterialExpressionComponentMask_6'")
+    .ConstB=0.400000
+    .MaterialExpressionEditorX=5276
+    .MaterialExpressionEditorY=288
+    .MaterialExpressionGuid=9890B8D644711A5231DEA7A9F9ECB706
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionTextureCoordinate (MaterialExpressionTextureCoordinate_0)
+    .MaterialExpressionEditorX=2894
+    .MaterialExpressionEditorY=-612
+    .MaterialExpressionGuid=F299E796452937CD541222B9AC423C82
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionTextureCoordinate (MaterialExpressionTextureCoordinate_1)
+    .CoordinateIndex=1
+    .MaterialExpressionEditorX=2898
+    .MaterialExpressionEditorY=-368
+    .MaterialExpressionGuid=F299E796452937CD541222B9AC423C82
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionTextureCoordinate (MaterialExpressionTextureCoordinate_3)
+    .CoordinateIndex=1
+    .MaterialExpressionEditorX=1767
+    .MaterialExpressionEditorY=622
+    .MaterialExpressionGuid=C5AB310E4BD4985C2467789AF1326205
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_1)
+    Coordinates            <- MaterialExpressionPanner
+    .SamplerType=SAMPLERTYPE_Alpha
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/SkySphere/T_Stars_Noise.T_Stars_Noise'"
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionPanner'Stars:MaterialExpressionPanner_0'")
+    .MipValueMode=TMVM_MipLevel
+    .SamplerSource=SSM_Wrap_WorldGroupSettings
+    .MaterialExpressionEditorX=2472
+    .MaterialExpressionEditorY=1128
+    .MaterialExpressionGuid=6BABF3484D85EEDF38B58BAE3FBDAD70
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionTextureSampleParameter2D (MaterialExpressionTextureSampleParameter2D_1)
+    Coordinates            <- MaterialExpressionNamedRerouteDeclaration
+    MipValue               <- MaterialExpressionConstant
+    .ParameterName="Stars_Texture"
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_ParticleClouds.T_ParticleClouds'"
+    .ExpressionGUID=B04BD588463384A4EE53C0BB493420D3
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Stars:MaterialExpressionNamedRerouteDeclaration_1'")
+    .MipValue=(Expression="/Script/Engine.MaterialExpressionConstant'Stars:MaterialExpressionConstant_3'")
+    .MipValueMode=TMVM_MipBias
+    .SamplerSource=SSM_Wrap_WorldGroupSettings
+    .MaterialExpressionEditorX=2472
+    .MaterialExpressionEditorY=836
+    .MaterialExpressionGuid=00F593BD4266C1A0CD7BFBA5A7BA5022
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionTextureSampleParameter2D (MaterialExpressionTextureSampleParameter2D_2)
+    Coordinates            <- MaterialExpressionNamedRerouteUsage
+    .ParameterName="Stars_Texture"
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_ParticleClouds.T_ParticleClouds'"
+    .ExpressionGUID=BBB47245461E5E41DB44A0A5BEE2F67D
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Stars:MaterialExpressionNamedRerouteUsage_1'")
+    .MipValueMode=TMVM_MipLevel
+    .SamplerSource=SSM_Wrap_WorldGroupSettings
+    .AutomaticViewMipBias=False
+    .MaterialExpressionEditorX=3686
+    .MaterialExpressionEditorY=-612
+    .MaterialExpressionGuid=00F593BD4266C1A0CD7BFBA5A7BA5022
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionTextureSampleParameter2D (MaterialExpressionTextureSampleParameter2D_3)
+    Coordinates            <- MaterialExpressionTextureCoordinate
+    .ParameterName="Stars_Texture"
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_ParticleClouds.T_ParticleClouds'"
+    .ExpressionGUID=FE4908344CC56D6DD4D00EB0AE72931E
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'Stars:MaterialExpressionTextureCoordinate_0'")
+    .MipValueMode=TMVM_MipLevel
+    .SamplerSource=SSM_Wrap_WorldGroupSettings
+    .AutomaticViewMipBias=False
+    .MaterialExpressionEditorX=3114
+    .MaterialExpressionEditorY=-624
+    .MaterialExpressionGuid=00F593BD4266C1A0CD7BFBA5A7BA5022
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionTextureSampleParameter2D (MaterialExpressionTextureSampleParameter2D_4)
+    Coordinates            <- MaterialExpressionTextureCoordinate
+    .ParameterName="Stars_Texture"
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_ParticleClouds.T_ParticleClouds'"
+    .ExpressionGUID=C8950DAE4940CF8D31076C803111B41A
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'Stars:MaterialExpressionTextureCoordinate_1'")
+    .MipValueMode=TMVM_MipLevel
+    .SamplerSource=SSM_Wrap_WorldGroupSettings
+    .AutomaticViewMipBias=False
+    .MaterialExpressionEditorX=3114
+    .MaterialExpressionEditorY=-380
+    .MaterialExpressionGuid=00F593BD4266C1A0CD7BFBA5A7BA5022
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionTextureSampleParameter2D (MaterialExpressionTextureSampleParameter2D_5)
+    Coordinates            <- MaterialExpressionNamedRerouteDeclaration
+    .ParameterName="Stars_Texture"
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_ParticleClouds.T_ParticleClouds'"
+    .ExpressionGUID=587005B04EC162DBCC68A6AFCC637E8F
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Stars:MaterialExpressionNamedRerouteDeclaration_1'")
+    .MipValueMode=TMVM_MipLevel
+    .SamplerSource=SSM_Wrap_WorldGroupSettings
+    .AutomaticViewMipBias=False
+    .MaterialExpressionEditorX=2476
+    .MaterialExpressionEditorY=500
+    .MaterialExpressionGuid=00F593BD4266C1A0CD7BFBA5A7BA5022
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionVectorParameter (MaterialExpressionVectorParameter_0)
+    .ParameterName="Stars Color"
+    .DefaultValue=(R=0.596078,G=0.705882,B=1.000000,A=0.000000)
+    .ExpressionGUID=C831B9C5408428C2A29A3EB3D399BAFB
+    .MaterialExpressionEditorX=7787
+    .MaterialExpressionEditorY=216
+    .MaterialExpressionGuid=F394F1D64AE75DA56052078294F0FEC6
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionVectorParameter (MaterialExpressionVectorParameter_1)
+    .ParameterName="Stars Orientation"
+    .DefaultValue=(R=1.000000,G=0.000000,B=0.000000,A=0.000000)
+    .ExpressionGUID=F517F6744FCC546438A2F4BBF4311885
+    .MaterialExpressionEditorX=-248
+    .MaterialExpressionEditorY=-552
+    .MaterialExpressionGuid=D2FF522D4DD8A80D5E1F6B81BF6DD61A
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+    .bCollapsed=True
+  MaterialExpressionViewProperty (MaterialExpressionViewProperty_1)
+    .MaterialExpressionEditorX=4984
+    .MaterialExpressionEditorY=272
+    .MaterialExpressionGuid=0BF121D9483380593E778E894695C835
+    .Function="/Script/Engine.MaterialFunction'Stars'"
+  MaterialExpressionWorldPosition (MaterialExpressionWorldPosition_0)
+    .WorldPositionShaderOffset=WPT_CameraRelative
+    .MaterialExpressionEditorX=2526
+    .MaterialExpressionEditorY=-144
+    .MaterialExpressionGuid=0977310946BD564E4B7577A2D44FA8F6
+    .Function="/Script/Engine.MaterialFunction'Stars'"

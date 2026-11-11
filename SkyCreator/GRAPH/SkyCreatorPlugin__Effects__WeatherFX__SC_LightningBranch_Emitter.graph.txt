@@ -1,0 +1,139 @@
+### /SkyCreatorPlugin/Effects/WeatherFX/SC_LightningBranch_Emitter
+  NiagaraEmitter (SC_LightningBranch_Emitter)
+    .ExposedVersion=B7EFFFAF952EB81F1ABBF2E67C58C7D8
+    .VersionData(0)=(Version=(VersionGuid=B7EFFFAF952EB81F1ABBF2E67C58C7D8),EventHandlerScriptProps=((ExecutionMode=SpawnedParticles,SpawnNumber=1,SourceEmitterID=174CC6F24DFE835D9DE0E5876F4CE739,SourceEventName="LocationEvent",bRandomSpawnNumber=True,MinSpawnNumber=1,UpdateAttributeInitialValues=False,Script="/Script/Niagara.NiagaraScript'EventScript_1'",EventReceivers=((Name="LocationEvent")))),Platforms=(QualityLevelMask=31),UpdateScriptProps=(Script="/Script/Niagara.NiagaraScript'UpdateScript'"),SpawnScriptProps=(Script="/Script/Niagara.NiagaraScript'SpawnScript'"),RendererBindings=(),EmitterSpawnScriptProps=(Script="/Script/Niagara.NiagaraScript'EmitterSpawnScript'"),EmitterUpdateScriptProps=(Script="/Script/Niagara.NiagaraScript'EmitterUpdateScript'"),GraphSource="/Script/NiagaraEditor.NiagaraScriptSource'NiagaraScriptSource_0'",ScratchPads="/Script/Niagara.NiagaraScratchPadContainer'NiagaraScratchPadContainer_0'",ParentScratchPads="/Script/Niagara.NiagaraScratchPadContainer'NiagaraScratchPadContainer_1'",RendererProperties=("/Script/Niagara.NiagaraSpriteRendererProperties'NiagaraSpriteRendererProperties_0'"),GPUComputeScript="/Script/Niagara.NiagaraScript'GPUComputeScript'",EditorData="/Script/NiagaraEditor.NiagaraEmitterEditorData'NiagaraEmitterEditorData_0'",EditorParameters="/Script/NiagaraEditor.NiagaraEditorParametersAdapter'NiagaraEditorParametersAdapter_0'")
+    .ThumbnailImage="/Script/Engine.Texture2D'Texture2D_1'"
+    .LibraryVisibility=Library
+    .ChangeId=7DDE6EA442409216853C9B9F46438035
+    .UniqueEmitterName="SC_LightningBranch_Emitter"
+  Texture2D (Texture2D_1)
+    .ImportedSize=(X=512,Y=512)
+    .Source=(Id=31F81781466CF406E509F88176CAC32A,SizeX=512,SizeY=512,NumSlices=1,NumMips=1,CompressionFormat=TSCF_PNG,Format=TSF_BGRA8,BlockDataOffsets=(0))
+    .LightingGuid=EF6A168C48CCFD9956B95CBFE8DE0372
+    .AssetImportData="/Script/Engine.AssetImportData'AssetImportData'"
+    .CompressionNoAlpha=True
+  NiagaraScriptSource (NiagaraScriptSource_0)
+    .NodeGraph="/Script/NiagaraEditor.NiagaraGraph'NiagaraGraph_0'"
+  NiagaraGraph (NiagaraGraph_0)
+    .ChangeId=D74027FC45BAB0E7EBD9BC8632C481FC
+    .LastBuiltTraversalDataChangeId=D74027FC45BAB0E7EBD9BC8632C481FC
+    .LastBuiltScriptVersionId=87C7FB060084C92C80E1A4AB309BA6EA
+    .CachedUsageInfo(0)=(BaseId=A521C35E45C4225C660D7483AC36BC12,UsageType=EmitterSpawnScript,CompileHash=(DataHash=(205,118,243,224,112,4,151,223,20,44,69,254,209,158,235,240,106,164,11,252)),CompileHashFromGraph=(DataHash=(121,151,45,109,48,36,40,132,68,46,85,235,24,83,100,232,65,113,78,217)),ReferenceHashFromGraph=(DataHash=(218,57,163,238,94,107,75,13,50,85,191,239,149,96,24,144,175,216,7,9)),Traversal=("/Script/NiagaraEditor.NiagaraNodeInput'NiagaraNodeInput_2'","/Script/NiagaraEditor.NiagaraNodeOutput'NiagaraNodeOutput_2'"))
+    .CachedUsageInfo(1)=(BaseId=B4C138EC44A3DD7800406B99AC9FE8F4,UsageType=EmitterUpdateScript,CompileHash=(DataHash=(214,175,187,195,85,17,92,187,92,162,14,55,87,86,117,8,56,104,243,8)),CompileHashFromGraph=(DataHash=(205,139,222,160,196,92,72,216,3,189,147,240,8,247,224,66,237,165,220,192)),ReferenceHashFromGraph=(DataHash=(149,121,205,202,123,188,220,161,14,39,52,223,47,92,173,153,73,142,130,63)),Traversal=("/Script/NiagaraEditor.NiagaraNodeInput'NiagaraNodeInput_3'","/Script/NiagaraEditor.NiagaraNodeFunctionCall'NiagaraNodeFunctionCall_6'","/Script/NiagaraEditor.NiagaraNodeOutput'NiagaraNodeOutput_3'"))
+    .CachedUsageInfo(2)=(BaseId=094A33634AB241550CDF5195DA5C2341,UsageType=ParticleSpawnScript,CompileHash=(DataHash=(48,222,135,210,85,15,168,205,224,18,231,171,170,82,69,133,189,90,251,164)),CompileHashFromGraph=(DataHash=(70,43,124,139,247,172,110,79,196,11,85,17,216,26,253,154,232,161,206,241)),ReferenceHashFromGraph=(DataHash=(55,182,194,116,135,111,37,101,230,124,197,52,224,2,214,237,115,23,190,85)),Traversal=("/Script/NiagaraEditor.NiagaraNodeInput'NiagaraNodeInput_4'","/Script/NiagaraEditor.NiagaraNodeParameterMapSet'NiagaraNodeParameterMapSet_3'","/Script/NiagaraEditor.NiagaraNodeFunctionCall'NiagaraNodeFunctionCall_5'","/Script/NiagaraEditor.NiagaraNodeFunctionCall'NiagaraNodeFunctionCall_29'","/Script/NiagaraEditor.NiagaraNodeParameterMapSet'NiagaraNodeParameterMapSet_18'","/Script/NiagaraEditor.NiagaraNodeFunctionCall'NiagaraNodeFunctionCall_28'","/Script/NiagaraEditor.NiagaraNodeInput'NiagaraNodeInput_8'","/Script/NiagaraEditor.NiagaraNodeParameterMapGet'NiagaraNodeParameterMapGet_16'","/Script/NiagaraEditor.NiagaraNodeParameterMapSet'NiagaraNodeParameterMapSet_17'","/Script/NiagaraEditor.NiagaraNodeFunctionCall'NiagaraNodeFunctionCall_27'","/Script/NiagaraEditor.NiagaraNodeFunctionCall'NiagaraNodeFunctionCall_31'","/Script/NiagaraEditor.NiagaraNodeParameterMapSet'NiagaraNodeParameterMapSet_16'","/Script/NiagaraEditor.NiagaraNodeFunctionCall'NiagaraNodeFunctionCall_26'","/Script/NiagaraEditor.NiagaraNodeFunctionCall'NiagaraNodeFunctionCall_30'","/Script/NiagaraEditor.NiagaraNodeParameterMapSet'NiagaraNodeParameterMapSet_15'","/Script/NiagaraEditor.NiagaraNodeFunctionCall'NiagaraNodeFunctionCall_11'","/Script/NiagaraEditor.NiagaraNodeFunctionCall'NiagaraNodeFunctionCall_25'","/Script/NiagaraEditor.NiagaraNodeParameterMapSet'NiagaraNodeParameterMapSet_6'","/Script/NiagaraEditor.NiagaraNodeAssignment'NiagaraNodeAssignment_0'","/Script/NiagaraEditor.NiagaraNodeFunctionCall'NiagaraNodeFunctionCall_12'","/Script/NiagaraEditor.NiagaraNodeOutput'NiagaraNodeOutput_4'"))
+    .CachedUsageInfo(3)=(BaseId=AA92606B46BEB4360DAFCCAD8DD17689,UsageType=ParticleUpdateScript,CompileHash=(DataHash=(77,5,195,24,144,102,133,218,198,6,54,177,244,23,11,35,166,211,2,147)),CompileHashFromGraph=(DataHash=(162,109,35,100,69,116,83,48,243,104,133,200,212,84,182,155,214,128,217,122)),ReferenceHashFromGraph=(DataHash=(177,127,88,198,63,166,134,108,243,162,201,59,188,104,8,22,160,1,182,132)),Traversal=("/Script/NiagaraEditor.NiagaraNodeInput'NiagaraNodeInput_5'","/Script/NiagaraEditor.NiagaraNodeFunctionCall'NiagaraNodeFunctionCall_16'","/Script/NiagaraEditor.NiagaraNodeInput'NiagaraNodeInput_10'","/Script/NiagaraEditor.NiagaraNodeParameterMapSet'NiagaraNodeParameterMapSet_22'","/Script/NiagaraEditor.NiagaraNodeFunctionCall'NiagaraNodeFunctionCall_37'","/Script/NiagaraEditor.NiagaraNodeParameterMapSet'NiagaraNodeParameterMapSet_21'","/Script/NiagaraEditor.NiagaraNodeInput'NiagaraNodeInput_6'","/Script/NiagaraEditor.NiagaraNodeFunctionCall'NiagaraNodeFunctionCall_36'","/Script/NiagaraEditor.NiagaraNodeParameterMapSet'NiagaraNodeParameterMapSet_5'","/Script/NiagaraEditor.NiagaraNodeFunctionCall'NiagaraNodeFunctionCall_2'","/Script/NiagaraEditor.NiagaraNodeFunctionCall'NiagaraNodeFunctionCall_35'","/Script/NiagaraEditor.NiagaraNodeParameterMapSet'NiagaraNodeParameterMapSet_4'","/Script/NiagaraEditor.NiagaraNodeFunctionCall'NiagaraNodeFunctionCall_0'","/Script/NiagaraEditor.NiagaraNodeInput'NiagaraNodeInput_1'","/Script/NiagaraEditor.NiagaraNodeParameterMapSet'NiagaraNodeParameterMapSet_2'","/Script/NiagaraEditor.NiagaraNodeFunctionCall'NiagaraNodeFunctionCall_4'","/Script/NiagaraEditor.NiagaraNodeParameterMapSet'NiagaraNodeParameterMapSet_1'","/Script/NiagaraEditor.NiagaraNodeFunctionCall'NiagaraNodeFunctionCall_3'","/Script/NiagaraEditor.NiagaraNodeOutput'NiagaraNodeOutput_5'"))
+    .CachedUsageInfo(4)=(BaseId=555B4FAC4299DFAF3F07E5B39AC72A4A,UsageType=ParticleEventScript,UsageId=221F251346543D57706950852E87EEF9,CompileHash=(DataHash=(157,114,42,188,80,91,181,168,134,188,72,244,23,198,63,247,31,77,26,164)),CompileHashFromGraph=(DataHash=(218,129,71,27,120,215,37,199,179,95,40,179,61,131,232,103,204,49,151,224)),ReferenceHashFromGraph=(DataHash=(218,57,163,238,94,107,75,13,50,85,191,239,149,96,24,144,175,216,7,9)),Traversal=("/Script/NiagaraEditor.NiagaraNodeInput'NiagaraNodeInput_0'","/Script/NiagaraEditor.NiagaraNodeParameterMapSet'NiagaraNodeParameterMapSet_0'","/Script/NiagaraEditor.NiagaraNodeFunctionCall'NiagaraNodeFunctionCall_1'","/Script/NiagaraEditor.NiagaraNodeOutput'NiagaraNodeOutput_1'"))
+    .CachedUsageInfo(5)=(BaseId=51B22B68400B98F3557464A3696D60E3,UsageType=ParticleGPUComputeScript,CompileHash=(DataHash=(48,222,135,210,85,15,168,205,224,18,231,171,170,82,69,133,189,90,251,164)),CompileHashFromGraph=(DataHash=(70,43,124,139,247,172,110,79,196,11,85,17,216,26,253,154,232,161,206,241)))
+    .ParameterHierarchyRoot="ParameterHierarchyRoot"
+    .bHasValidLastBuiltScriptVersionId=True
+    .Nodes(0)="/Script/NiagaraEditor.NiagaraNodeOutput'NiagaraNodeOutput_2'"
+    .Nodes(1)="/Script/NiagaraEditor.NiagaraNodeInput'NiagaraNodeInput_2'"
+    .Nodes(2)="/Script/NiagaraEditor.NiagaraNodeOutput'NiagaraNodeOutput_3'"
+    .Nodes(3)="/Script/NiagaraEditor.NiagaraNodeInput'NiagaraNodeInput_3'"
+    .Nodes(4)="/Script/NiagaraEditor.NiagaraNodeOutput'NiagaraNodeOutput_4'"
+    .Nodes(5)="/Script/NiagaraEditor.NiagaraNodeInput'NiagaraNodeInput_4'"
+    .Nodes(6)="/Script/NiagaraEditor.NiagaraNodeOutput'NiagaraNodeOutput_5'"
+    .Nodes(7)="/Script/NiagaraEditor.NiagaraNodeInput'NiagaraNodeInput_5'"
+    .Nodes(8)="/Script/NiagaraEditor.NiagaraNodeFunctionCall'NiagaraNodeFunctionCall_16'"
+    .Nodes(9)="/Script/NiagaraEditor.NiagaraNodeFunctionCall'NiagaraNodeFunctionCall_6'"
+    .Nodes(10)="/Script/NiagaraEditor.NiagaraNodeFunctionCall'NiagaraNodeFunctionCall_5'"
+    .Nodes(11)="/Script/NiagaraEditor.NiagaraNodeFunctionCall'NiagaraNodeFunctionCall_0'"
+    .Nodes(12)="/Script/NiagaraEditor.NiagaraNodeParameterMapSet'NiagaraNodeParameterMapSet_4'"
+    .Nodes(13)="/Script/NiagaraEditor.NiagaraNodeFunctionCall'NiagaraNodeFunctionCall_2'"
+    .Nodes(14)="/Script/NiagaraEditor.NiagaraNodeParameterMapSet'NiagaraNodeParameterMapSet_5'"
+    .Nodes(15)="/Script/NiagaraEditor.NiagaraNodeInput'NiagaraNodeInput_6'"
+    .Nodes(16)="/Script/NiagaraEditor.NiagaraNodeOutput'NiagaraNodeOutput_1'"
+    .Nodes(17)="/Script/NiagaraEditor.NiagaraNodeInput'NiagaraNodeInput_0'"
+    .Nodes(18)="/Script/NiagaraEditor.NiagaraNodeFunctionCall'NiagaraNodeFunctionCall_1'"
+    .Nodes(19)="/Script/NiagaraEditor.NiagaraNodeParameterMapSet'NiagaraNodeParameterMapSet_0'"
+    .Nodes(20)="/Script/NiagaraEditor.NiagaraNodeParameterMapSet'NiagaraNodeParameterMapSet_3'"
+    .Nodes(21)="/Script/NiagaraEditor.NiagaraNodeAssignment'NiagaraNodeAssignment_0'"
+    .Nodes(22)="/Script/NiagaraEditor.NiagaraNodeParameterMapSet'NiagaraNodeParameterMapSet_6'"
+    .Nodes(23)="/Script/NiagaraEditor.NiagaraNodeFunctionCall'NiagaraNodeFunctionCall_11'"
+    .Nodes(24)="/Script/NiagaraEditor.NiagaraNodeFunctionCall'NiagaraNodeFunctionCall_12'"
+    .Nodes(25)="/Script/NiagaraEditor.NiagaraNodeFunctionCall'NiagaraNodeFunctionCall_25'"
+    .Nodes(26)="/Script/NiagaraEditor.NiagaraNodeParameterMapSet'NiagaraNodeParameterMapSet_15'"
+    .Nodes(27)="/Script/NiagaraEditor.NiagaraNodeFunctionCall'NiagaraNodeFunctionCall_26'"
+    .Nodes(28)="/Script/NiagaraEditor.NiagaraNodeParameterMapSet'NiagaraNodeParameterMapSet_16'"
+    .Nodes(29)="/Script/NiagaraEditor.NiagaraNodeFunctionCall'NiagaraNodeFunctionCall_27'"
+    .Nodes(30)="/Script/NiagaraEditor.NiagaraNodeParameterMapSet'NiagaraNodeParameterMapSet_17'"
+    .Nodes(31)="/Script/NiagaraEditor.NiagaraNodeFunctionCall'NiagaraNodeFunctionCall_28'"
+    .Nodes(32)="/Script/NiagaraEditor.NiagaraNodeParameterMapSet'NiagaraNodeParameterMapSet_18'"
+    .Nodes(33)="/Script/NiagaraEditor.NiagaraNodeFunctionCall'NiagaraNodeFunctionCall_29'"
+    .Nodes(34)="/Script/NiagaraEditor.NiagaraNodeFunctionCall'NiagaraNodeFunctionCall_30'"
+    .Nodes(35)="/Script/NiagaraEditor.NiagaraNodeFunctionCall'NiagaraNodeFunctionCall_31'"
+    .Nodes(36)="/Script/NiagaraEditor.NiagaraNodeInput'NiagaraNodeInput_8'"
+    .Nodes(37)="/Script/NiagaraEditor.NiagaraNodeParameterMapGet'NiagaraNodeParameterMapGet_16'"
+    .Nodes(38)="/Script/NiagaraEditor.NiagaraNodeFunctionCall'NiagaraNodeFunctionCall_35'"
+    .Nodes(39)="/Script/NiagaraEditor.NiagaraNodeFunctionCall'NiagaraNodeFunctionCall_36'"
+    .Nodes(40)="/Script/NiagaraEditor.NiagaraNodeParameterMapSet'NiagaraNodeParameterMapSet_21'"
+    .Nodes(41)="/Script/NiagaraEditor.NiagaraNodeFunctionCall'NiagaraNodeFunctionCall_37'"
+    .Nodes(42)="/Script/NiagaraEditor.NiagaraNodeParameterMapSet'NiagaraNodeParameterMapSet_22'"
+    .Nodes(43)="/Script/NiagaraEditor.NiagaraNodeInput'NiagaraNodeInput_10'"
+    .Nodes(44)="/Script/NiagaraEditor.NiagaraNodeFunctionCall'NiagaraNodeFunctionCall_3'"
+    .Nodes(45)="/Script/NiagaraEditor.NiagaraNodeParameterMapSet'NiagaraNodeParameterMapSet_1'"
+    .Nodes(46)="/Script/NiagaraEditor.NiagaraNodeFunctionCall'NiagaraNodeFunctionCall_4'"
+    .Nodes(47)="/Script/NiagaraEditor.NiagaraNodeParameterMapSet'NiagaraNodeParameterMapSet_2'"
+    .Nodes(48)="/Script/NiagaraEditor.NiagaraNodeInput'NiagaraNodeInput_1'"
+    .GraphGuid=D79A8093498F1F73DDBBFA81EF418805
+  NiagaraEmitterEditorData (NiagaraEmitterEditorData_0)
+    .StackEditorData="StackEditorData"
+    .PlaybackRangeMax=1.000000
+    .SummaryViewRoot="SummaryViewRoot"
+    .EmitterThumbnail="/Script/Engine.Texture2D'SC_LightningBranch_Emitter:Texture2D_1'"
+  NiagaraStackEditorData (StackEditorData)
+    .DismissedStackIssueIds(0)="96bcaa065d05289397fa03c813ed0cf9"
+  HierarchyRoot (SummaryViewRoot)
+    .Identity=(Guids=(D9EEB0345C843D6E90E9BF45DC8F2524))
+  NiagaraScript (EmitterSpawnScript)
+    .Usage=EmitterSpawnScript
+    .ExposedVersion=FC962E154F12118FB051E2808C9FF769
+    .VersionData(0)=(Version=(VersionGuid=FC962E154F12118FB051E2808C9FF769),LibraryVisibility=Library,Source="/Script/NiagaraEditor.NiagaraScriptSource'SC_LightningBranch_Emitter:NiagaraScriptSource_0'")
+    .RapidIterationParameters=()
+  NiagaraScript (EmitterUpdateScript)
+    .Usage=EmitterUpdateScript
+    .ExposedVersion=AFCCBC3547A777E82F51C0A58C2165B1
+    .VersionData(0)=(Version=(VersionGuid=AFCCBC3547A777E82F51C0A58C2165B1),LibraryVisibility=Library,Source="/Script/NiagaraEditor.NiagaraScriptSource'SC_LightningBranch_Emitter:NiagaraScriptSource_0'")
+    .RapidIterationParameters=(SortedParameterOffsets=((Offset=0,Name="Constants.SC_LightningBranch_Emitter.EmitterState.Loop Delay",TypeDefHandle=(RegisteredTypeIndex=99)),(Offset=4,Name="Constants.SC_LightningBranch_Emitter.EmitterState.Loop Duration",TypeDefHandle=(RegisteredTypeIndex=99)),(Offset=8,Name="Constants.SC_LightningBranch_Emitter.EmitterState.MaxDistance",TypeDefHandle=(RegisteredTypeIndex=99)),(Offset=12,Name="Constants.SC_LightningBranch_Emitter.EmitterState.MinDistance",TypeDefHandle=(RegisteredTypeIndex=99))),ParameterData=(0,0,0,0,0,0,0,64,0,64,156,69,0,0,0,0))
+  NiagaraScript (EventScript_1)
+    .Usage=ParticleEventScript
+    .UsageId=221F251346543D57706950852E87EEF9
+    .ExposedVersion=2AC6F44740A39571814B309138B561BE
+    .VersionData(0)=(Version=(VersionGuid=2AC6F44740A39571814B309138B561BE),Source="/Script/NiagaraEditor.NiagaraScriptSource'SC_LightningBranch_Emitter:NiagaraScriptSource_0'")
+    .RapidIterationParameters=(SortedParameterOffsets=((Offset=0,Name="Constants.SC_LightningBranch_Emitter.ReceiveLocationEvent.Inherited Velocity Scale",TypeDefHandle=(RegisteredTypeIndex=99)),(Offset=4,Name="Constants.SC_LightningBranch_Emitter.ReceiveLocationEvent.SpawnCount",TypeDefHandle=(RegisteredTypeIndex=101))),ParameterData=(0,0,128,63,1,0,0,0))
+  NiagaraScript (GPUComputeScript)
+    .Usage=ParticleGPUComputeScript
+    .ExposedVersion=23CC5A46485E50679BC27E94EA5B0967
+    .VersionData(0)=(Version=(VersionGuid=23CC5A46485E50679BC27E94EA5B0967),LibraryVisibility=Library,Source="/Script/NiagaraEditor.NiagaraScriptSource'SC_LightningBranch_Emitter:NiagaraScriptSource_0'")
+    .RapidIterationParameters=()
+  NiagaraScript (SpawnScript)
+    .Usage=ParticleSpawnScript
+    .ExposedVersion=2A1F81B74392425BF516DABAD7196240
+    .VersionData(0)=(Version=(VersionGuid=2A1F81B74392425BF516DABAD7196240),LibraryVisibility=Library,ParameterDefinitionsSubscriptions=((Definitions="/Script/NiagaraEditor.NiagaraParameterDefinitions'/Niagara/ParameterDefinitions/CoreParameters.CoreParameters'",CachedChangeIdHash=-630998988),(Definitions="/Script/NiagaraEditor.NiagaraParameterDefinitions'/Niagara/ParameterDefinitions/RibbonRenderer.RibbonRenderer'",CachedChangeIdHash=-651688712),(Definitions="/Script/NiagaraEditor.NiagaraParameterDefinitions'/Niagara/ParameterDefinitions/SpriteRenderer.SpriteRenderer'",CachedChangeIdHash=-173698874)),Source="/Script/NiagaraEditor.NiagaraScriptSource'SC_LightningBranch_Emitter:NiagaraScriptSource_0'")
+    .RapidIterationParameters=(SortedParameterOffsets=((Offset=0,Name="Constants.SC_LightningBranch_Emitter.FloatFromCurve.Scale Curve",TypeDefHandle=(RegisteredTypeIndex=99)),(Offset=140,Name="Constants.SC_LightningBranch_Emitter.InitializeParticle.Color",TypeDefHandle=(RegisteredTypeIndex=106)),(Offset=156,Name="Constants.SC_LightningBranch_Emitter.InitializeParticle.Lifetime",TypeDefHandle=(RegisteredTypeIndex=99)),(Offset=4,Name="Constants.SC_LightningBranch_Emitter.InitializeParticle.Lifetime Max",TypeDefHandle=(RegisteredTypeIndex=99)),(Offset=8,Name="Constants.SC_LightningBranch_Emitter.InitializeParticle.Lifetime Min",TypeDefHandle=(RegisteredTypeIndex=99)),(Offset=12,Name="Constants.SC_LightningBranch_Emitter.InitializeParticle.Mass Max",TypeDefHandle=(RegisteredTypeIndex=99)),(Offset=16,Name="Constants.SC_LightningBranch_Emitter.InitializeParticle.Mass Min",TypeDefHandle=(RegisteredTypeIndex=99)),(Offset=20,Name="Constants.SC_LightningBranch_Emitter.InitializeParticle.Position Offset",TypeDefHandle=(RegisteredTypeIndex=104)),(Offset=32,Name="Constants.SC_LightningBranch_Emitter.InitializeParticle.Sprite Rotation Angle",TypeDefHandle=(RegisteredTypeIndex=99)),(Offset=36,Name="Constants.SC_LightningBranch_Emitter.InitializeParticle.Sprite Rotation Angle Max",TypeDefHandle=(RegisteredTypeIndex=99)),(Offset=40,Name="Constants.SC_LightningBranch_Emitter.InitializeParticle.Sprite Rotation Angle Min",TypeDefHandle=(RegisteredTypeIndex=99)),(Offset=44,Name="Constants.SC_LightningBranch_Emitter.InitializeParticle.Sprite Size",TypeDefHandle=(RegisteredTypeIndex=103)),(Offset=52,Name="Constants.SC_LightningBranch_Emitter.InitializeParticle.Sprite Size Max",TypeDefHandle=(RegisteredTypeIndex=103)),(Offset=60,Name="Constants.SC_LightningBranch_Emitter.InitializeParticle.Sprite Size Min",TypeDefHandle=(RegisteredTypeIndex=103)),(Offset=68,Name="Constants.SC_LightningBranch_Emitter.InitializeParticle.Uniform Sprite Size",TypeDefHandle=(RegisteredTypeIndex=99)),(Offset=72,Name="Constants.SC_LightningBranch_Emitter.InitializeParticle.Uniform Sprite Size Max",TypeDefHandle=(RegisteredTypeIndex=99)),(Offset=76,Name="Constants.SC_LightningBranch_Emitter.InitializeParticle.Uniform Sprite Size Min",TypeDefHandle=(RegisteredTypeIndex=99)),(Offset=160,Name="Constants.SC_LightningBranch_Emitter.Multiply_Float.B",TypeDefHandle=(RegisteredTypeIndex=99)),(Offset=80,Name="Constants.SC_LightningBranch_Emitter.Multiply_Vector2001.B",TypeDefHandle=(RegisteredTypeIndex=103)),(Offset=88,Name="Constants.SC_LightningBranch_Emitter.RandomRangeFloat.Maximum",TypeDefHandle=(RegisteredTypeIndex=99)),(Offset=92,Name="Constants.SC_LightningBranch_Emitter.RandomRangeFloat.Minimum",TypeDefHandle=(RegisteredTypeIndex=99)),(Offset=96,Name="Constants.SC_LightningBranch_Emitter.RandomRangeFloat.Random Seed",TypeDefHandle=(RegisteredTypeIndex=101)),(Offset=100,Name="Constants.SC_LightningBranch_Emitter.RandomRangeVector001.Maximum",TypeDefHandle=(RegisteredTypeIndex=104)),(Offset=112,Name="Constants.SC_LightningBranch_Emitter.RandomRangeVector001.Minimum",TypeDefHandle=(RegisteredTypeIndex=104)),(Offset=124,Name="Constants.SC_LightningBranch_Emitter.RandomRangeVector001.Random Seed",TypeDefHandle=(RegisteredTypeIndex=101)),(Offset=128,Name="Constants.SC_LightningBranch_Emitter.SubUVAnimation.End Frame",TypeDefHandle=(RegisteredTypeIndex=101)),(Offset=132,Name="Constants.SC_LightningBranch_Emitter.SubUVAnimation.Start Frame",TypeDefHandle=(RegisteredTypeIndex=101)),(Offset=136,Name="Constants.SC_LightningBranch_Emitter.SubUVAnimation.SubUV Loop Count",TypeDefHandle=(RegisteredTypeIndex=99))),ParameterData=(0,0,128,63,0,0,224,63,51,51,179,63,0,0,160,63,0,0,64,63,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,180,67,0,0,0,0,0,0,72,66,0,0,200,66,0,0,22,68,0,0,22,68,0,0,72,67,0,0,72,67,0,0,72,68,0,0,72,68,0,0,200,67,0,0,0,63,0,0,128,63,0,0,72,68,0,0,200,67,0,0,0,0,0,0,128,63,0,0,128,63,0,0,128,63,0,0,128,191,0,0,128,191,0,0,0,63,0,0,0,0,5,0,0,0,0,0,0,0,0,0,128,63,0,0,128,63,0,0,128,63,0,0,128,63,0,0,128,63,0,0,128,63,0,0,128,63))
+  NiagaraScript (UpdateScript)
+    .Usage=ParticleUpdateScript
+    .ExposedVersion=BEC16C414D0334A76B25949394FC16F9
+    .VersionData(0)=(Version=(VersionGuid=BEC16C414D0334A76B25949394FC16F9),LibraryVisibility=Library,Source="/Script/NiagaraEditor.NiagaraScriptSource'SC_LightningBranch_Emitter:NiagaraScriptSource_0'")
+    .RapidIterationParameters=(SortedParameterOffsets=((Offset=0,Name="Constants.SC_LightningBranch_Emitter.Color.Scale Color",TypeDefHandle=(RegisteredTypeIndex=104)),(Offset=12,Name="Constants.SC_LightningBranch_Emitter.DynamicMaterialParameters.Index 0 Param 2",TypeDefHandle=(RegisteredTypeIndex=99)),(Offset=16,Name="Constants.SC_LightningBranch_Emitter.DynamicMaterialParameters.Index 0 Param 3",TypeDefHandle=(RegisteredTypeIndex=99)),(Offset=20,Name="Constants.SC_LightningBranch_Emitter.DynamicMaterialParameters.Index 0 Param 4",TypeDefHandle=(RegisteredTypeIndex=99)),(Offset=24,Name="Constants.SC_LightningBranch_Emitter.FloatFromCurve001.Scale Curve",TypeDefHandle=(RegisteredTypeIndex=99)),(Offset=48,Name="Constants.SC_LightningBranch_Emitter.FloatFromCurve002.Scale Curve",TypeDefHandle=(RegisteredTypeIndex=99)),(Offset=28,Name="Constants.SC_LightningBranch_Emitter.FloatFromCurve003.Scale Curve",TypeDefHandle=(RegisteredTypeIndex=99)),(Offset=32,Name="Constants.SC_LightningBranch_Emitter.MultiplyLinearColor.Linear Color",TypeDefHandle=(RegisteredTypeIndex=106))),ParameterData=(0,0,128,63,0,0,128,63,0,0,128,63,0,0,0,0,0,0,0,0,0,0,0,0,0,0,128,63,0,0,128,63,0,0,128,63,0,0,128,63,0,0,128,63,0,0,128,63,0,0,128,63))
+  NiagaraSpriteRendererProperties (NiagaraSpriteRendererProperties_0)
+    .Material="/Script/Engine.Material'/SkyCreatorPlugin/Materials/WeatherFX/M_SC_LightningBranch.M_SC_LightningBranch'"
+    .Alignment=CustomAlignment
+    .FacingMode=FaceCamera
+    .PivotInUVSpace=(X=0.500000,Y=0.010000)
+    .SubImageSize=(X=3.000000,Y=2.000000)
+    .bSubImageBlend=False
+    .PositionBinding=(bBindingExistsOnSource=True)
+    .ColorBinding=(bBindingExistsOnSource=True)
+    .VelocityBinding=(bBindingExistsOnSource=True)
+    .SpriteSizeBinding=(bBindingExistsOnSource=True)
+    .SpriteAlignmentBinding=(bBindingExistsOnSource=True)
+    .SubImageIndexBinding=(bBindingExistsOnSource=True)
+    .DynamicMaterialBinding=(bBindingExistsOnSource=True)
+    .UVScaleBinding=(bBindingExistsOnSource=True)
+    .MaterialRandomBinding=(bBindingExistsOnSource=True)
+    .CustomSortingBinding=(RootName="NormalizedAge",ParamMapVariable=(Name="Particles.NormalizedAge"),DataSetName="NormalizedAge",CachedDisplayName="Particles.NormalizedAge",bBindingExistsOnSource=True)
+    .NormalizedAgeBinding=(bBindingExistsOnSource=True)
+    .RendererEnabledBinding=()
+    .OuterEmitterVersion=B7EFFFAF952EB81F1ABBF2E67C58C7D8
+    .MergeId=2914B3FD4A293F6171EEC4AD712CA67F

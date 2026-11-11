@@ -1,0 +1,268 @@
+### /Game/UltraDynamicSky/Materials/Tools/Static_Clouds_Tool_Composite
+  Material (Static_Clouds_Tool_Composite)
+    .BlendMode=BLEND_AlphaComposite
+    .MaterialDecalResponse=MDR_None
+    .ShadingModel=MSM_Unlit
+    .ShadingModels=(ShadingModelField=1)
+    .bTangentSpaceNormal=False
+    .EditorX=1468
+    .EditorY=-280
+    .bCanMaskedBeAssumedOpaque=True
+    .bCastRayTracedShadows=False
+    .PixelDepthOffsetMode=PDOM_Legacy
+    .StateId=66E6ECB948F2AE690F0784B55DF83382
+    .ReferencedTextureGuids(0)=00000000000000000000000000000000
+    .EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'Static_Clouds_Tool_CompositeEditorOnlyData'"
+    .TextureStreamingDataVersion=1
+    .TextureStreamingData(0)=(SamplingScale=1.000000,UVChannelIndex=0,TextureName="DefaultTexture",TextureReference="/Engine/EngineResources/DefaultTexture.DefaultTexture")
+    .ReferencedDefaultTextures(0)="/Script/Engine.Texture2D'/Engine/EngineResources/DefaultTexture.DefaultTexture'"
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+    .LightingGuid=7309027446C960F0E10FA1BE9405CC98
+  MaterialEditorOnlyData (Static_Clouds_Tool_CompositeEditorOnlyData)
+    EmissiveColor          <- MaterialExpressionPower
+    Opacity                <- MaterialExpressionOneMinus
+    ExpressionCollection   <- MaterialExpressionCustom
+    .BaseColor=(UseConstant=True,Constant=(R=0.501961,G=0.501961,B=0.501961,A=1.000000))
+    .Metallic=(UseConstant=True)
+    .Specular=(UseConstant=True)
+    .Roughness=(UseConstant=True)
+    .Anisotropy=(UseConstant=True)
+    .Normal=(UseConstant=True)
+    .Tangent=(UseConstant=True)
+    .EmissiveColor=(Expression="/Script/Engine.MaterialExpressionPower'Static_Clouds_Tool_Composite:MaterialExpressionPower_0'")
+    .Opacity=(Expression="/Script/Engine.MaterialExpressionOneMinus'Static_Clouds_Tool_Composite:MaterialExpressionOneMinus_0'")
+    .OpacityMask=(UseConstant=True)
+    .WorldPositionOffset=(UseConstant=True)
+    .Displacement=(UseConstant=True)
+    .SubsurfaceColor=(UseConstant=True)
+    .ClearCoat=(UseConstant=True)
+    .ClearCoatRoughness=(UseConstant=True)
+    .AmbientOcclusion=(UseConstant=True)
+    .Refraction=(UseConstant=True)
+    .CustomizedUVs(0)=(UseConstant=True)
+    .CustomizedUVs(1)=(UseConstant=True)
+    .CustomizedUVs(2)=(UseConstant=True)
+    .CustomizedUVs(3)=(UseConstant=True)
+    .CustomizedUVs(4)=(UseConstant=True)
+    .CustomizedUVs(5)=(UseConstant=True)
+    .CustomizedUVs(6)=(UseConstant=True)
+    .CustomizedUVs(7)=(UseConstant=True)
+    .PixelDepthOffset=(UseConstant=True)
+    .SurfaceThickness=(UseConstant=True)
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionCustom'Static_Clouds_Tool_Composite:MaterialExpressionCustom_0'","/Script/Engine.MaterialExpressionPower'Static_Clouds_Tool_Composite:MaterialExpressionPower_0'","/Script/Engine.MaterialExpressionOneMinus'Static_Clouds_Tool_Composite:MaterialExpressionOneMinus_0'","/Script/Engine.MaterialExpressionTextureSampleParameter2D'Static_Clouds_Tool_Composite:MaterialExpressionTextureSampleParameter2D_3'","/Script/Engine.MaterialExpressionTextureObjectParameter'Static_Clouds_Tool_Composite:MaterialExpressionTextureObjectParameter_1'","/Script/Engine.MaterialExpressionTextureObjectParameter'Static_Clouds_Tool_Composite:MaterialExpressionTextureObjectParameter_2'","/Script/Engine.MaterialExpressionSaturate'Static_Clouds_Tool_Composite:MaterialExpressionSaturate_0'","/Script/Engine.MaterialExpressionTextureObjectParameter'Static_Clouds_Tool_Composite:MaterialExpressionTextureObjectParameter_4'","/Script/Engine.MaterialExpressionTextureObjectParameter'Static_Clouds_Tool_Composite:MaterialExpressionTextureObjectParameter_5'","/Script/Engine.MaterialExpressionTextureCoordinate'Static_Clouds_Tool_Composite:MaterialExpressionTextureCoordinate_0'","/Script/Engine.MaterialExpressionConstant'Static_Clouds_Tool_Composite:MaterialExpressionConstant_4'","/Script/Engine.MaterialExpressionConstant'Static_Clouds_Tool_Composite:MaterialExpressionConstant_5'","/Script/Engine.MaterialExpressionConstant'Static_Clouds_Tool_Composite:MaterialExpressionConstant_0'","/Script/Engine.MaterialExpressionLinearInterpolate'Static_Clouds_Tool_Composite:MaterialExpressionLinearInterpolate_1'","/Script/Engine.MaterialExpressionPower'Static_Clouds_Tool_Composite:MaterialExpressionPower_4'","/Script/Engine.MaterialExpressionCustom'Static_Clouds_Tool_Composite:MaterialExpressionCustom_1'","/Script/Engine.MaterialExpressionCustom'Static_Clouds_Tool_Composite:MaterialExpressionCustom_2'","/Script/Engine.MaterialExpressionLinearInterpolate'Static_Clouds_Tool_Composite:MaterialExpressionLinearInterpolate_2'","/Script/Engine.MaterialExpressionLinearInterpolate'Static_Clouds_Tool_Composite:MaterialExpressionLinearInterpolate_3'","/Script/Engine.MaterialExpressionAppendVector'Static_Clouds_Tool_Composite:MaterialExpressionAppendVector_4'","/Script/Engine.MaterialExpressionAppendVector'Static_Clouds_Tool_Composite:MaterialExpressionAppendVector_5'"))
+    .ParameterGroupData(0)=(GroupName="None")
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_4)
+    A                      <- MaterialExpressionLinearInterpolate
+    B                      <- MaterialExpressionLinearInterpolate
+    .B=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Static_Clouds_Tool_Composite:MaterialExpressionLinearInterpolate_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Static_Clouds_Tool_Composite:MaterialExpressionLinearInterpolate_1'")
+    .MaterialExpressionEditorX=828
+    .MaterialExpressionEditorY=-1007
+    .MaterialExpressionGuid=911D078B417BD7037C16E5AA2EBD23F2
+    .Material="/Script/Engine.Material'Static_Clouds_Tool_Composite'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_5)
+    A                      <- MaterialExpressionAppendVector
+    B                      <- MaterialExpressionLinearInterpolate
+    .B=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Static_Clouds_Tool_Composite:MaterialExpressionLinearInterpolate_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAppendVector'Static_Clouds_Tool_Composite:MaterialExpressionAppendVector_4'")
+    .MaterialExpressionEditorX=968
+    .MaterialExpressionEditorY=-688
+    .MaterialExpressionGuid=873DBB344BA98EA172B4B3B14B7324E7
+    .Material="/Script/Engine.Material'Static_Clouds_Tool_Composite'"
+  MaterialExpressionConstant (MaterialExpressionConstant_0)
+    .R=6.000000
+    .MaterialExpressionEditorX=-304
+    .MaterialExpressionEditorY=-908
+    .MaterialExpressionGuid=29AEA1C0440780F63A3711A3096F69AD
+    .Material="/Script/Engine.Material'Static_Clouds_Tool_Composite'"
+  MaterialExpressionConstant (MaterialExpressionConstant_4)
+    .R=0.002500
+    .MaterialExpressionEditorX=-320
+    .MaterialExpressionEditorY=-1092
+    .MaterialExpressionGuid=64EFA8A5446A465F83A361B6D582A6E2
+    .Material="/Script/Engine.Material'Static_Clouds_Tool_Composite'"
+  MaterialExpressionConstant (MaterialExpressionConstant_5)
+    .R=32.000000
+    .MaterialExpressionEditorX=-320
+    .MaterialExpressionEditorY=-1016
+    .MaterialExpressionGuid=E9681C1242F1C9DE256545BB45E408C5
+    .Material="/Script/Engine.Material'Static_Clouds_Tool_Composite'"
+  MaterialExpressionCustom (MaterialExpressionCustom_0)
+    Inputs(0)              <- MaterialExpressionTextureObjectParameter
+    Inputs(1)              <- MaterialExpressionTextureObjectParameter
+    Inputs(2)              <- MaterialExpressionTextureCoordinate
+    Inputs(3)              <- MaterialExpressionConstant
+    Inputs(4)              <- MaterialExpressionConstant
+    Inputs(5)              <- MaterialExpressionConstant
+    .Code="float Index = 0;\r\nfloat RingIndex = 0;\r\nfloat LightSample = 0;\r\nfloat AlphaSample = 0;\r\nfloat2 Offset = 0;\r\nfloat TwoPi = 6.283185;\r\n\r\nfloat Total = Tex.SampleGrad(TexSampler,UV, 0, 0).x;\r\nfloat MaxAlpha = AlphaTex.SampleGrad(AlphaTexSampler, UV, 0, 0).x;\r\nNoOffset = Total;\r\n\r\nwhile (RingIndex < Steps) {\r\n\r\nIndex = 0;\r\n\r\nwhile (Index < Steps) { \r\n\r\nOffset.x = cos(TwoPi*(Index / Steps));\r\nOffset.y = sin(TwoPi*(Index / Steps));\r\nOffset *= CircleDistance;\r\n\r\nLightSample =  Tex.SampleGrad(TexSampler,UV + Offset, 0, 0).x;\r\nAlphaSample = AlphaTex.SampleGrad(AlphaTexSampler, UV + Offset, 0, 0).x;\r\n\r\nif (AlphaSample > MaxAlpha){\r\nTotal = LightSample;\r\nMaxAlpha = AlphaSample;\r\n}\r\n\r\nIndex = Index + 1;\r\n}\r\n\r\nCircleDistance *= 0.8;\r\nRingIndex += 1;\r\n\r\n}\r\n\r\nreturn Total;"
+    .OutputType=CMOT_Float1
+    .Description="Dilate"
+    .Inputs(0)=(InputName="Tex",Input=(Expression="/Script/Engine.MaterialExpressionTextureObjectParameter'Static_Clouds_Tool_Composite:MaterialExpressionTextureObjectParameter_4'"))
+    .Inputs(1)=(InputName="AlphaTex",Input=(Expression="/Script/Engine.MaterialExpressionTextureObjectParameter'Static_Clouds_Tool_Composite:MaterialExpressionTextureObjectParameter_5'"))
+    .Inputs(2)=(InputName="UV",Input=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'Static_Clouds_Tool_Composite:MaterialExpressionTextureCoordinate_0'"))
+    .Inputs(3)=(InputName="CircleDistance",Input=(Expression="/Script/Engine.MaterialExpressionConstant'Static_Clouds_Tool_Composite:MaterialExpressionConstant_4'"))
+    .Inputs(4)=(InputName="Steps",Input=(Expression="/Script/Engine.MaterialExpressionConstant'Static_Clouds_Tool_Composite:MaterialExpressionConstant_5'"))
+    .Inputs(5)=(InputName="Rings",Input=(Expression="/Script/Engine.MaterialExpressionConstant'Static_Clouds_Tool_Composite:MaterialExpressionConstant_0'"))
+    .AdditionalOutputs(0)=(OutputName="NoOffset")
+    .MaterialExpressionEditorX=4
+    .MaterialExpressionEditorY=-1212
+    .MaterialExpressionGuid=443FA5AF4B055CA13FB3DFB3B7FE95F9
+    .Material="/Script/Engine.Material'Static_Clouds_Tool_Composite'"
+    .bShowOutputNameOnPin=True
+    .Outputs(0)=(OutputName="return")
+    .Outputs(1)=(OutputName="NoOffset")
+  MaterialExpressionCustom (MaterialExpressionCustom_1)
+    Inputs(0)              <- MaterialExpressionTextureObjectParameter
+    Inputs(1)              <- MaterialExpressionTextureObjectParameter
+    Inputs(2)              <- MaterialExpressionTextureCoordinate
+    Inputs(3)              <- MaterialExpressionConstant
+    Inputs(4)              <- MaterialExpressionConstant
+    Inputs(5)              <- MaterialExpressionConstant
+    .Code="float Index = 0;\r\nfloat RingIndex = 0;\r\nfloat LightSample = 0;\r\nfloat AlphaSample = 0;\r\nfloat2 Offset = 0;\r\nfloat TwoPi = 6.283185;\r\n\r\nfloat Total = Tex.SampleGrad(TexSampler,UV, 0, 0).x;\r\nfloat MaxAlpha = AlphaTex.SampleGrad(AlphaTexSampler, UV, 0, 0).x;\r\nNoOffset = Total;\r\n\r\nwhile (RingIndex < Steps) {\r\n\r\nIndex = 0;\r\n\r\nwhile (Index < Steps) { \r\n\r\nOffset.x = cos(TwoPi*(Index / Steps));\r\nOffset.y = sin(TwoPi*(Index / Steps));\r\nOffset *= CircleDistance;\r\n\r\nLightSample =  Tex.SampleGrad(TexSampler,UV + Offset, 0, 0).x;\r\nAlphaSample = AlphaTex.SampleGrad(AlphaTexSampler, UV + Offset, 0, 0).x;\r\n\r\nif (AlphaSample > MaxAlpha){\r\nTotal = LightSample;\r\nMaxAlpha = AlphaSample;\r\n}\r\n\r\nIndex = Index + 1;\r\n}\r\n\r\nCircleDistance *= 0.8;\r\nRingIndex += 1;\r\n\r\n}\r\n\r\nreturn Total;"
+    .OutputType=CMOT_Float1
+    .Description="Dilate"
+    .Inputs(0)=(InputName="Tex",Input=(Expression="/Script/Engine.MaterialExpressionTextureObjectParameter'Static_Clouds_Tool_Composite:MaterialExpressionTextureObjectParameter_1'"))
+    .Inputs(1)=(InputName="AlphaTex",Input=(Expression="/Script/Engine.MaterialExpressionTextureObjectParameter'Static_Clouds_Tool_Composite:MaterialExpressionTextureObjectParameter_5'"))
+    .Inputs(2)=(InputName="UV",Input=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'Static_Clouds_Tool_Composite:MaterialExpressionTextureCoordinate_0'"))
+    .Inputs(3)=(InputName="CircleDistance",Input=(Expression="/Script/Engine.MaterialExpressionConstant'Static_Clouds_Tool_Composite:MaterialExpressionConstant_4'"))
+    .Inputs(4)=(InputName="Steps",Input=(Expression="/Script/Engine.MaterialExpressionConstant'Static_Clouds_Tool_Composite:MaterialExpressionConstant_5'"))
+    .Inputs(5)=(InputName="Rings",Input=(Expression="/Script/Engine.MaterialExpressionConstant'Static_Clouds_Tool_Composite:MaterialExpressionConstant_0'"))
+    .AdditionalOutputs(0)=(OutputName="NoOffset")
+    .MaterialExpressionEditorX=16
+    .MaterialExpressionEditorY=-904
+    .MaterialExpressionGuid=B41CED294C6A52FB808EF59F201C1855
+    .Material="/Script/Engine.Material'Static_Clouds_Tool_Composite'"
+    .bShowOutputNameOnPin=True
+    .Outputs(0)=(OutputName="return")
+    .Outputs(1)=(OutputName="NoOffset")
+  MaterialExpressionCustom (MaterialExpressionCustom_2)
+    Inputs(0)              <- MaterialExpressionTextureObjectParameter
+    Inputs(1)              <- MaterialExpressionTextureObjectParameter
+    Inputs(2)              <- MaterialExpressionTextureCoordinate
+    Inputs(3)              <- MaterialExpressionConstant
+    Inputs(4)              <- MaterialExpressionConstant
+    Inputs(5)              <- MaterialExpressionConstant
+    .Code="float Index = 0;\r\nfloat RingIndex = 0;\r\nfloat LightSample = 0;\r\nfloat AlphaSample = 0;\r\nfloat2 Offset = 0;\r\nfloat TwoPi = 6.283185;\r\n\r\nfloat Total = Tex.SampleGrad(TexSampler,UV, 0, 0).x;\r\nfloat MaxAlpha = AlphaTex.SampleGrad(AlphaTexSampler, UV, 0, 0).x;\r\nNoOffset = Total;\r\n\r\nwhile (RingIndex < Steps) {\r\n\r\nIndex = 0;\r\n\r\nwhile (Index < Steps) { \r\n\r\nOffset.x = cos(TwoPi*(Index / Steps));\r\nOffset.y = sin(TwoPi*(Index / Steps));\r\nOffset *= CircleDistance;\r\n\r\nLightSample =  Tex.SampleGrad(TexSampler,UV + Offset, 0, 0).x;\r\nAlphaSample = AlphaTex.SampleGrad(AlphaTexSampler, UV + Offset, 0, 0).x;\r\n\r\nif (AlphaSample > MaxAlpha){\r\nTotal = LightSample;\r\nMaxAlpha = AlphaSample;\r\n}\r\n\r\nIndex = Index + 1;\r\n}\r\n\r\nCircleDistance *= 0.8;\r\nRingIndex += 1;\r\n\r\n}\r\n\r\nreturn Total;"
+    .OutputType=CMOT_Float1
+    .Description="Dilate"
+    .Inputs(0)=(InputName="Tex",Input=(Expression="/Script/Engine.MaterialExpressionTextureObjectParameter'Static_Clouds_Tool_Composite:MaterialExpressionTextureObjectParameter_2'"))
+    .Inputs(1)=(InputName="AlphaTex",Input=(Expression="/Script/Engine.MaterialExpressionTextureObjectParameter'Static_Clouds_Tool_Composite:MaterialExpressionTextureObjectParameter_5'"))
+    .Inputs(2)=(InputName="UV",Input=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'Static_Clouds_Tool_Composite:MaterialExpressionTextureCoordinate_0'"))
+    .Inputs(3)=(InputName="CircleDistance",Input=(Expression="/Script/Engine.MaterialExpressionConstant'Static_Clouds_Tool_Composite:MaterialExpressionConstant_4'"))
+    .Inputs(4)=(InputName="Steps",Input=(Expression="/Script/Engine.MaterialExpressionConstant'Static_Clouds_Tool_Composite:MaterialExpressionConstant_5'"))
+    .Inputs(5)=(InputName="Rings",Input=(Expression="/Script/Engine.MaterialExpressionConstant'Static_Clouds_Tool_Composite:MaterialExpressionConstant_0'"))
+    .AdditionalOutputs(0)=(OutputName="NoOffset")
+    .MaterialExpressionEditorX=-4
+    .MaterialExpressionEditorY=-632
+    .MaterialExpressionGuid=5ACD448C40E930B68364F9B0D60E5B66
+    .Material="/Script/Engine.Material'Static_Clouds_Tool_Composite'"
+    .bShowOutputNameOnPin=True
+    .Outputs(0)=(OutputName="return")
+    .Outputs(1)=(OutputName="NoOffset")
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_1)
+    A                      <- MaterialExpressionCustom
+    B                      <- MaterialExpressionCustom
+    Alpha                  <- MaterialExpressionPower
+    .B=(Expression="/Script/Engine.MaterialExpressionCustom'Static_Clouds_Tool_Composite:MaterialExpressionCustom_0'",OutputIndex=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionCustom'Static_Clouds_Tool_Composite:MaterialExpressionCustom_0'")
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionPower'Static_Clouds_Tool_Composite:MaterialExpressionPower_4'")
+    .MaterialExpressionEditorX=620
+    .MaterialExpressionEditorY=-1212
+    .MaterialExpressionGuid=10BB43FE4F34BD8A3459B181E6870EBB
+    .Material="/Script/Engine.Material'Static_Clouds_Tool_Composite'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_2)
+    A                      <- MaterialExpressionCustom
+    B                      <- MaterialExpressionCustom
+    Alpha                  <- MaterialExpressionPower
+    .B=(Expression="/Script/Engine.MaterialExpressionCustom'Static_Clouds_Tool_Composite:MaterialExpressionCustom_1'",OutputIndex=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionCustom'Static_Clouds_Tool_Composite:MaterialExpressionCustom_1'")
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionPower'Static_Clouds_Tool_Composite:MaterialExpressionPower_4'")
+    .MaterialExpressionEditorX=612
+    .MaterialExpressionEditorY=-916
+    .MaterialExpressionGuid=D01524B542F7CEA6C48A6B8EE22A17CC
+    .Material="/Script/Engine.Material'Static_Clouds_Tool_Composite'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_3)
+    A                      <- MaterialExpressionCustom
+    B                      <- MaterialExpressionCustom
+    Alpha                  <- MaterialExpressionPower
+    .B=(Expression="/Script/Engine.MaterialExpressionCustom'Static_Clouds_Tool_Composite:MaterialExpressionCustom_2'",OutputIndex=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionCustom'Static_Clouds_Tool_Composite:MaterialExpressionCustom_2'")
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionPower'Static_Clouds_Tool_Composite:MaterialExpressionPower_4'")
+    .MaterialExpressionEditorX=592
+    .MaterialExpressionEditorY=-636
+    .MaterialExpressionGuid=84DF57C74B785913CC92BDBB60308941
+    .Material="/Script/Engine.Material'Static_Clouds_Tool_Composite'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_0)
+    Input                  <- MaterialExpressionSaturate
+    .Input=(Expression="/Script/Engine.MaterialExpressionSaturate'Static_Clouds_Tool_Composite:MaterialExpressionSaturate_0'")
+    .MaterialExpressionEditorX=444
+    .MaterialExpressionEditorY=-104
+    .MaterialExpressionGuid=8C83682E42C673801190428ED8ACE84C
+    .Material="/Script/Engine.Material'Static_Clouds_Tool_Composite'"
+  MaterialExpressionPower (MaterialExpressionPower_0)
+    Base                   <- MaterialExpressionAppendVector
+    .Base=(Expression="/Script/Engine.MaterialExpressionAppendVector'Static_Clouds_Tool_Composite:MaterialExpressionAppendVector_5'")
+    .ConstExponent=0.750000
+    .MaterialExpressionEditorX=1096
+    .MaterialExpressionEditorY=-396
+    .MaterialExpressionGuid=23B9EAC246100121C2A21EA3BDA94D6A
+    .Material="/Script/Engine.Material'Static_Clouds_Tool_Composite'"
+  MaterialExpressionPower (MaterialExpressionPower_4)
+    Base                   <- MaterialExpressionSaturate
+    .Base=(Expression="/Script/Engine.MaterialExpressionSaturate'Static_Clouds_Tool_Composite:MaterialExpressionSaturate_0'")
+    .MaterialExpressionEditorX=220
+    .MaterialExpressionEditorY=-332
+    .MaterialExpressionGuid=ECA02DDE47F2C41732B3C0B52151D5D3
+    .Material="/Script/Engine.Material'Static_Clouds_Tool_Composite'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_0)
+    Input                  <- MaterialExpressionTextureSampleParameter2D
+    .Input=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameter2D'Static_Clouds_Tool_Composite:MaterialExpressionTextureSampleParameter2D_3'",OutputIndex=1,Mask=1,MaskR=1)
+    .MaterialExpressionEditorX=-128
+    .MaterialExpressionEditorY=-156
+    .MaterialExpressionGuid=B1796C8648DC384B451D03AD2983CAE9
+    .Material="/Script/Engine.Material'Static_Clouds_Tool_Composite'"
+  MaterialExpressionTextureCoordinate (MaterialExpressionTextureCoordinate_0)
+    .MaterialExpressionEditorX=-356
+    .MaterialExpressionEditorY=-1188
+    .MaterialExpressionGuid=46780CB44F579F78A1AE72ABE0D4EFC9
+    .Material="/Script/Engine.Material'Static_Clouds_Tool_Composite'"
+  MaterialExpressionTextureObjectParameter (MaterialExpressionTextureObjectParameter_1)
+    .ParameterName="Light G"
+    .ExpressionGUID=057B1D974DA27CF56775F291FF82CFAA
+    .MaterialExpressionEditorX=-352
+    .MaterialExpressionEditorY=-812
+    .MaterialExpressionGuid=CAE5DD1B45F5CA7E1CE427AFA80D1034
+    .Material="/Script/Engine.Material'Static_Clouds_Tool_Composite'"
+    .bCollapsed=True
+  MaterialExpressionTextureObjectParameter (MaterialExpressionTextureObjectParameter_2)
+    .ParameterName="Light B"
+    .ExpressionGUID=90059E7240BBCEEBD290219182C096C5
+    .MaterialExpressionEditorX=-356
+    .MaterialExpressionEditorY=-636
+    .MaterialExpressionGuid=4C453F6D4736851A2AB160AAA0BB837A
+    .Material="/Script/Engine.Material'Static_Clouds_Tool_Composite'"
+    .bCollapsed=True
+  MaterialExpressionTextureObjectParameter (MaterialExpressionTextureObjectParameter_4)
+    .ParameterName="Light R"
+    .ExpressionGUID=C8AE14B24DD10157C375B49CDDA08F4E
+    .MaterialExpressionEditorX=-356
+    .MaterialExpressionEditorY=-1472
+    .MaterialExpressionGuid=12744205453C9A3070B68B87243C92B7
+    .Material="/Script/Engine.Material'Static_Clouds_Tool_Composite'"
+    .bCollapsed=True
+  MaterialExpressionTextureObjectParameter (MaterialExpressionTextureObjectParameter_5)
+    .ParameterName="Mask Alpha"
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .ExpressionGUID=76F1443544758AAF5C6ED8AC5A96E7A0
+    .MaterialExpressionEditorX=-352
+    .MaterialExpressionEditorY=-1336
+    .MaterialExpressionGuid=11E4355D498D50900F26C6B3EC329FB9
+    .Material="/Script/Engine.Material'Static_Clouds_Tool_Composite'"
+    .bCollapsed=True
+  MaterialExpressionTextureSampleParameter2D (MaterialExpressionTextureSampleParameter2D_3)
+    .ParameterName="Mask Alpha"
+    .ExpressionGUID=8FE66A0B41D27BB19D26A4A7454649B5
+    .MaterialExpressionEditorX=-396
+    .MaterialExpressionEditorY=-200
+    .MaterialExpressionGuid=559AA7264F0A3748E0B8709720808693
+    .Material="/Script/Engine.Material'Static_Clouds_Tool_Composite'"

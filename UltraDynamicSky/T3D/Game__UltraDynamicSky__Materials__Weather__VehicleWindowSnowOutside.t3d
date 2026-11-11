@@ -1,0 +1,185 @@
+Begin Object Class=/Script/Engine.Material Name="VehicleWindowSnowOutside" ExportPath="/Script/Engine.Material'/Game/UltraDynamicSky/Materials/Weather/VehicleWindowSnowOutside.VehicleWindowSnowOutside'"
+   Begin Object Class=/Script/Engine.MaterialEditorOnlyData Name="VehicleWindowSnowOutsideEditorOnlyData" ExportPath="/Script/Engine.MaterialEditorOnlyData'/Game/UltraDynamicSky/Materials/Weather/VehicleWindowSnowOutside.VehicleWindowSnowOutside:VehicleWindowSnowOutsideEditorOnlyData'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAdd Name="MaterialExpressionAdd_0" ExportPath="/Script/Engine.MaterialExpressionAdd'/Game/UltraDynamicSky/Materials/Weather/VehicleWindowSnowOutside.VehicleWindowSnowOutside:MaterialExpressionAdd_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAppendVector Name="MaterialExpressionAppendVector_0" ExportPath="/Script/Engine.MaterialExpressionAppendVector'/Game/UltraDynamicSky/Materials/Weather/VehicleWindowSnowOutside.VehicleWindowSnowOutside:MaterialExpressionAppendVector_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionCollectionParameter Name="MaterialExpressionCollectionParameter_0" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/Game/UltraDynamicSky/Materials/Weather/VehicleWindowSnowOutside.VehicleWindowSnowOutside:MaterialExpressionCollectionParameter_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_0" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Weather/VehicleWindowSnowOutside.VehicleWindowSnowOutside:MaterialExpressionComponentMask_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDivide Name="MaterialExpressionDivide_0" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/Weather/VehicleWindowSnowOutside.VehicleWindowSnowOutside:MaterialExpressionDivide_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDynamicParameter Name="MaterialExpressionDynamicParameter_0" ExportPath="/Script/Engine.MaterialExpressionDynamicParameter'/Game/UltraDynamicSky/Materials/Weather/VehicleWindowSnowOutside.VehicleWindowSnowOutside:MaterialExpressionDynamicParameter_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_0" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Weather/VehicleWindowSnowOutside.VehicleWindowSnowOutside:MaterialExpressionMultiply_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_1" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Weather/VehicleWindowSnowOutside.VehicleWindowSnowOutside:MaterialExpressionMultiply_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionParticleColor Name="MaterialExpressionParticleColor_0" ExportPath="/Script/Engine.MaterialExpressionParticleColor'/Game/UltraDynamicSky/Materials/Weather/VehicleWindowSnowOutside.VehicleWindowSnowOutside:MaterialExpressionParticleColor_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionParticleColor Name="MaterialExpressionParticleColor_2" ExportPath="/Script/Engine.MaterialExpressionParticleColor'/Game/UltraDynamicSky/Materials/Weather/VehicleWindowSnowOutside.VehicleWindowSnowOutside:MaterialExpressionParticleColor_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureCoordinate Name="MaterialExpressionTextureCoordinate_0" ExportPath="/Script/Engine.MaterialExpressionTextureCoordinate'/Game/UltraDynamicSky/Materials/Weather/VehicleWindowSnowOutside.VehicleWindowSnowOutside:MaterialExpressionTextureCoordinate_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_0" ExportPath="/Script/Engine.MaterialExpressionTextureSample'/Game/UltraDynamicSky/Materials/Weather/VehicleWindowSnowOutside.VehicleWindowSnowOutside:MaterialExpressionTextureSample_0'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/Weather/VehicleWindowSnowOutside.VehicleWindowSnowOutside:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   Begin Object Name="VehicleWindowSnowOutsideEditorOnlyData" ExportPath="/Script/Engine.MaterialEditorOnlyData'/Game/UltraDynamicSky/Materials/Weather/VehicleWindowSnowOutside.VehicleWindowSnowOutside:VehicleWindowSnowOutsideEditorOnlyData'"
+      BaseColor=(Constant=(R=0.501961,G=0.501961,B=0.501961,A=1.000000),Expression="/Script/Engine.MaterialExpressionMultiply'VehicleWindowSnowOutside:MaterialExpressionMultiply_1'")
+      Metallic=(UseConstant=True)
+      Specular=(UseConstant=True)
+      Roughness=(UseConstant=True)
+      Anisotropy=(UseConstant=True)
+      Normal=(UseConstant=True)
+      Tangent=(UseConstant=True)
+      EmissiveColor=(UseConstant=True)
+      Opacity=(Expression="/Script/Engine.MaterialExpressionMultiply'VehicleWindowSnowOutside:MaterialExpressionMultiply_0'")
+      OpacityMask=(UseConstant=True)
+      WorldPositionOffset=(UseConstant=True)
+      Displacement=(UseConstant=True)
+      SubsurfaceColor=(UseConstant=True)
+      ClearCoat=(UseConstant=True)
+      ClearCoatRoughness=(UseConstant=True)
+      AmbientOcclusion=(UseConstant=True)
+      Refraction=(UseConstant=True)
+      CustomizedUVs(0)=(UseConstant=True)
+      CustomizedUVs(1)=(UseConstant=True)
+      CustomizedUVs(2)=(UseConstant=True)
+      CustomizedUVs(3)=(UseConstant=True)
+      CustomizedUVs(4)=(UseConstant=True)
+      CustomizedUVs(5)=(UseConstant=True)
+      CustomizedUVs(6)=(UseConstant=True)
+      CustomizedUVs(7)=(UseConstant=True)
+      PixelDepthOffset=(UseConstant=True)
+      SurfaceThickness=(UseConstant=True)
+      ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionMultiply'VehicleWindowSnowOutside:MaterialExpressionMultiply_1'","/Script/Engine.MaterialExpressionParticleColor'VehicleWindowSnowOutside:MaterialExpressionParticleColor_0'","/Script/Engine.MaterialExpressionMultiply'VehicleWindowSnowOutside:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionTextureSample'VehicleWindowSnowOutside:MaterialExpressionTextureSample_0'","/Script/Engine.MaterialExpressionParticleColor'VehicleWindowSnowOutside:MaterialExpressionParticleColor_2'","/Script/Engine.MaterialExpressionTextureCoordinate'VehicleWindowSnowOutside:MaterialExpressionTextureCoordinate_0'","/Script/Engine.MaterialExpressionAdd'VehicleWindowSnowOutside:MaterialExpressionAdd_0'","/Script/Engine.MaterialExpressionDynamicParameter'VehicleWindowSnowOutside:MaterialExpressionDynamicParameter_0'","/Script/Engine.MaterialExpressionAppendVector'VehicleWindowSnowOutside:MaterialExpressionAppendVector_0'","/Script/Engine.MaterialExpressionDivide'VehicleWindowSnowOutside:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionCollectionParameter'VehicleWindowSnowOutside:MaterialExpressionCollectionParameter_0'","/Script/Engine.MaterialExpressionComponentMask'VehicleWindowSnowOutside:MaterialExpressionComponentMask_0'"))
+   End Object
+   Begin Object Name="MaterialExpressionAdd_0" ExportPath="/Script/Engine.MaterialExpressionAdd'/Game/UltraDynamicSky/Materials/Weather/VehicleWindowSnowOutside.VehicleWindowSnowOutside:MaterialExpressionAdd_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionDivide'VehicleWindowSnowOutside:MaterialExpressionDivide_0'")
+      B=(Expression="/Script/Engine.MaterialExpressionAppendVector'VehicleWindowSnowOutside:MaterialExpressionAppendVector_0'")
+      MaterialExpressionEditorX=1440
+      MaterialExpressionEditorY=112
+      MaterialExpressionGuid=B5EC57014D96EB78CA765097B2163DB8
+      Material="/Script/Engine.Material'VehicleWindowSnowOutside'"
+   End Object
+   Begin Object Name="MaterialExpressionAppendVector_0" ExportPath="/Script/Engine.MaterialExpressionAppendVector'/Game/UltraDynamicSky/Materials/Weather/VehicleWindowSnowOutside.VehicleWindowSnowOutside:MaterialExpressionAppendVector_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionDynamicParameter'VehicleWindowSnowOutside:MaterialExpressionDynamicParameter_0'",OutputIndex=2,Mask=1,MaskB=1)
+      B=(Expression="/Script/Engine.MaterialExpressionDynamicParameter'VehicleWindowSnowOutside:MaterialExpressionDynamicParameter_0'",OutputIndex=3,Mask=1,MaskA=1)
+      MaterialExpressionEditorX=1276
+      MaterialExpressionEditorY=308
+      MaterialExpressionGuid=25DDE843414AFD168C6F23923142B3D0
+      Material="/Script/Engine.Material'VehicleWindowSnowOutside'"
+   End Object
+   Begin Object Name="MaterialExpressionCollectionParameter_0" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/Game/UltraDynamicSky/Materials/Weather/VehicleWindowSnowOutside.VehicleWindowSnowOutside:MaterialExpressionCollectionParameter_0'"
+      Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Particles/UDW_WeatherParticle_Parameters.UDW_WeatherParticle_Parameters'"
+      ParameterName="Snow Color"
+      ParameterId=9AC6799C4B81040794575D8FC84D0E55
+      MaterialExpressionEditorX=1704
+      MaterialExpressionEditorY=-56
+      MaterialExpressionGuid=BD19494544938CF479DAFE910725047B
+      Material="/Script/Engine.Material'VehicleWindowSnowOutside'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_0" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Weather/VehicleWindowSnowOutside.VehicleWindowSnowOutside:MaterialExpressionComponentMask_0'"
+      Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'VehicleWindowSnowOutside:MaterialExpressionCollectionParameter_0'")
+      R=True
+      G=True
+      B=True
+      MaterialExpressionEditorX=1980
+      MaterialExpressionEditorY=-28
+      MaterialExpressionGuid=FE69C91145E106C55142B09AB140D28E
+      Material="/Script/Engine.Material'VehicleWindowSnowOutside'"
+   End Object
+   Begin Object Name="MaterialExpressionDivide_0" ExportPath="/Script/Engine.MaterialExpressionDivide'/Game/UltraDynamicSky/Materials/Weather/VehicleWindowSnowOutside.VehicleWindowSnowOutside:MaterialExpressionDivide_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'VehicleWindowSnowOutside:MaterialExpressionTextureCoordinate_0'")
+      MaterialExpressionEditorX=1272
+      MaterialExpressionEditorY=112
+      MaterialExpressionGuid=91A928AF4097588AE8B7DCB3C531CE57
+      Material="/Script/Engine.Material'VehicleWindowSnowOutside'"
+   End Object
+   Begin Object Name="MaterialExpressionDynamicParameter_0" ExportPath="/Script/Engine.MaterialExpressionDynamicParameter'/Game/UltraDynamicSky/Materials/Weather/VehicleWindowSnowOutside.VehicleWindowSnowOutside:MaterialExpressionDynamicParameter_0'"
+      ParameterIndex=1
+      MaterialExpressionEditorX=1036
+      MaterialExpressionEditorY=232
+      MaterialExpressionGuid=4DB89BD146BF67A5321F0189195BEAF9
+      Material="/Script/Engine.Material'VehicleWindowSnowOutside'"
+      Outputs(0)=(OutputName="Param1")
+      Outputs(1)=(OutputName="Param2")
+      Outputs(2)=(OutputName="Param3")
+      Outputs(3)=(OutputName="Param4")
+      Outputs.RemoveIndex(5)
+      Outputs.RemoveIndex(4)
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_0" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Weather/VehicleWindowSnowOutside.VehicleWindowSnowOutside:MaterialExpressionMultiply_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionTextureSample'VehicleWindowSnowOutside:MaterialExpressionTextureSample_0'",OutputIndex=2,Mask=1,MaskG=1)
+      B=(Expression="/Script/Engine.MaterialExpressionParticleColor'VehicleWindowSnowOutside:MaterialExpressionParticleColor_2'",OutputIndex=4,Mask=1,MaskA=1)
+      MaterialExpressionEditorX=2164
+      MaterialExpressionEditorY=176
+      MaterialExpressionGuid=6E10823D464008698584819784348B62
+      Material="/Script/Engine.Material'VehicleWindowSnowOutside'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_1" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Weather/VehicleWindowSnowOutside.VehicleWindowSnowOutside:MaterialExpressionMultiply_1'"
+      A=(Expression="/Script/Engine.MaterialExpressionParticleColor'VehicleWindowSnowOutside:MaterialExpressionParticleColor_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      B=(Expression="/Script/Engine.MaterialExpressionComponentMask'VehicleWindowSnowOutside:MaterialExpressionComponentMask_0'")
+      MaterialExpressionEditorX=2156
+      MaterialExpressionEditorY=-288
+      MaterialExpressionGuid=F1C9C07D48D9CEC8A44058A2A41CBF1B
+      Material="/Script/Engine.Material'VehicleWindowSnowOutside'"
+   End Object
+   Begin Object Name="MaterialExpressionParticleColor_0" ExportPath="/Script/Engine.MaterialExpressionParticleColor'/Game/UltraDynamicSky/Materials/Weather/VehicleWindowSnowOutside.VehicleWindowSnowOutside:MaterialExpressionParticleColor_0'"
+      MaterialExpressionEditorX=1836
+      MaterialExpressionEditorY=-304
+      MaterialExpressionGuid=F44C550447319417F395319508BA5B93
+      Material="/Script/Engine.Material'VehicleWindowSnowOutside'"
+   End Object
+   Begin Object Name="MaterialExpressionParticleColor_2" ExportPath="/Script/Engine.MaterialExpressionParticleColor'/Game/UltraDynamicSky/Materials/Weather/VehicleWindowSnowOutside.VehicleWindowSnowOutside:MaterialExpressionParticleColor_2'"
+      MaterialExpressionEditorX=1872
+      MaterialExpressionEditorY=236
+      MaterialExpressionGuid=F44C550447319417F395319508BA5B93
+      Material="/Script/Engine.Material'VehicleWindowSnowOutside'"
+   End Object
+   Begin Object Name="MaterialExpressionTextureCoordinate_0" ExportPath="/Script/Engine.MaterialExpressionTextureCoordinate'/Game/UltraDynamicSky/Materials/Weather/VehicleWindowSnowOutside.VehicleWindowSnowOutside:MaterialExpressionTextureCoordinate_0'"
+      MaterialExpressionEditorX=1024
+      MaterialExpressionEditorY=112
+      MaterialExpressionGuid=A69C2BA643E20D38CD3A38B7EF1E671B
+      Material="/Script/Engine.Material'VehicleWindowSnowOutside'"
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_0" ExportPath="/Script/Engine.MaterialExpressionTextureSample'/Game/UltraDynamicSky/Materials/Weather/VehicleWindowSnowOutside.VehicleWindowSnowOutside:MaterialExpressionTextureSample_0'"
+      Coordinates=(Expression="/Script/Engine.MaterialExpressionAdd'VehicleWindowSnowOutside:MaterialExpressionAdd_0'")
+      CoordinatesDY=(Mask=1,MaskR=1)
+      Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_RainSnow_Sheet.T_RainSnow_Sheet'"
+      SamplerType=SAMPLERTYPE_LinearColor
+      MaterialExpressionEditorX=1568
+      MaterialExpressionEditorY=112
+      MaterialExpressionGuid=DAD4117D41DE8D2AD286BFA882F044A6
+      Material="/Script/Engine.Material'VehicleWindowSnowOutside'"
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/Weather/VehicleWindowSnowOutside.VehicleWindowSnowOutside:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   BlendMode=BLEND_Translucent
+   MaterialDecalResponse=MDR_None
+   TranslucencyPass=MTP_BeforeDOF
+   bTangentSpaceNormal=False
+   bUsedWithNiagaraSprites=True
+   FloatPrecisionMode=MFPM_Half
+   bUseLightmapDirectionality=False
+   bAllowFrontLayerTranslucency=False
+   EditorX=2348
+   EditorY=-120
+   bCanMaskedBeAssumedOpaque=True
+   bCastRayTracedShadows=False
+   bUseTranslucencyVertexFog=False
+   PixelDepthOffsetMode=PDOM_Legacy
+   StateId=E9E630FD40E2CCD455A0C1B1D8698777
+   ReferencedTextureGuids(0)=E055944A46A9B3F590E00F9BB10BAA44
+   EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'VehicleWindowSnowOutsideEditorOnlyData'"
+   TextureStreamingDataVersion=1
+   TextureStreamingData(0)=(SamplingScale=0.500000,UVChannelIndex=0,TextureName="RainSnow_Sheet",TextureReference="/Game/ENDEMIS/Weather/WeatherFX/T_RainSnow_Sheet.T_RainSnow_Sheet")
+   ReferencedDefaultTextures(0)="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_RainSnow_Sheet.T_RainSnow_Sheet'"
+   ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+   ParameterOverviewExpansion=(("-12Global", True))
+   LightingGuid=AD0CCD9E4F3AECEAC8D0AD89E5EC5016
+End Object

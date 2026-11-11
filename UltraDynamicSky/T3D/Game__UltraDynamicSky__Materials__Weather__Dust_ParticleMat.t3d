@@ -1,0 +1,214 @@
+Begin Object Class=/Script/Engine.Material Name="Dust_ParticleMat" ExportPath="/Script/Engine.Material'/Game/UltraDynamicSky/Materials/Weather/Dust_ParticleMat.Dust_ParticleMat'"
+   Begin Object Class=/Script/Engine.MaterialEditorOnlyData Name="Dust_ParticleMatEditorOnlyData" ExportPath="/Script/Engine.MaterialEditorOnlyData'/Game/UltraDynamicSky/Materials/Weather/Dust_ParticleMat.Dust_ParticleMat:Dust_ParticleMatEditorOnlyData'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionCollectionParameter Name="MaterialExpressionCollectionParameter_1" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/Game/UltraDynamicSky/Materials/Weather/Dust_ParticleMat.Dust_ParticleMat:MaterialExpressionCollectionParameter_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_0" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Weather/Dust_ParticleMat.Dust_ParticleMat:MaterialExpressionComment_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_1" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Weather/Dust_ParticleMat.Dust_ParticleMat:MaterialExpressionComment_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_1" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Weather/Dust_ParticleMat.Dust_ParticleMat:MaterialExpressionComponentMask_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDepthFade Name="MaterialExpressionDepthFade_0" ExportPath="/Script/Engine.MaterialExpressionDepthFade'/Game/UltraDynamicSky/Materials/Weather/Dust_ParticleMat.Dust_ParticleMat:MaterialExpressionDepthFade_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_0" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Weather/Dust_ParticleMat.Dust_ParticleMat:MaterialExpressionMaterialFunctionCall_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_0" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Weather/Dust_ParticleMat.Dust_ParticleMat:MaterialExpressionMultiply_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_2" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Weather/Dust_ParticleMat.Dust_ParticleMat:MaterialExpressionMultiply_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_5" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Weather/Dust_ParticleMat.Dust_ParticleMat:MaterialExpressionMultiply_5'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_6" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Weather/Dust_ParticleMat.Dust_ParticleMat:MaterialExpressionMultiply_6'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionParticleColor Name="MaterialExpressionParticleColor_0" ExportPath="/Script/Engine.MaterialExpressionParticleColor'/Game/UltraDynamicSky/Materials/Weather/Dust_ParticleMat.Dust_ParticleMat:MaterialExpressionParticleColor_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionParticleColor Name="MaterialExpressionParticleColor_1" ExportPath="/Script/Engine.MaterialExpressionParticleColor'/Game/UltraDynamicSky/Materials/Weather/Dust_ParticleMat.Dust_ParticleMat:MaterialExpressionParticleColor_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionShadingPathSwitch Name="MaterialExpressionShadingPathSwitch_0" ExportPath="/Script/Engine.MaterialExpressionShadingPathSwitch'/Game/UltraDynamicSky/Materials/Weather/Dust_ParticleMat.Dust_ParticleMat:MaterialExpressionShadingPathSwitch_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSampleParameter2D Name="MaterialExpressionTextureSampleParameter2D_0" ExportPath="/Script/Engine.MaterialExpressionTextureSampleParameter2D'/Game/UltraDynamicSky/Materials/Weather/Dust_ParticleMat.Dust_ParticleMat:MaterialExpressionTextureSampleParameter2D_0'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/Weather/Dust_ParticleMat.Dust_ParticleMat:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   Begin Object Name="Dust_ParticleMatEditorOnlyData" ExportPath="/Script/Engine.MaterialEditorOnlyData'/Game/UltraDynamicSky/Materials/Weather/Dust_ParticleMat.Dust_ParticleMat:Dust_ParticleMatEditorOnlyData'"
+      BaseColor=(UseConstant=True,Constant=(R=0.501961,G=0.501961,B=0.501961,A=1.000000))
+      Metallic=(UseConstant=True)
+      Specular=(UseConstant=True)
+      Roughness=(UseConstant=True)
+      Anisotropy=(UseConstant=True)
+      Normal=(UseConstant=True)
+      Tangent=(UseConstant=True)
+      EmissiveColor=(Expression="/Script/Engine.MaterialExpressionMultiply'Dust_ParticleMat:MaterialExpressionMultiply_2'")
+      Opacity=(Expression="/Script/Engine.MaterialExpressionMultiply'Dust_ParticleMat:MaterialExpressionMultiply_6'")
+      OpacityMask=(UseConstant=True)
+      WorldPositionOffset=(UseConstant=True)
+      Displacement=(UseConstant=True)
+      SubsurfaceColor=(UseConstant=True)
+      ClearCoat=(UseConstant=True)
+      ClearCoatRoughness=(UseConstant=True)
+      AmbientOcclusion=(UseConstant=True)
+      Refraction=(UseConstant=True)
+      CustomizedUVs(0)=(UseConstant=True)
+      CustomizedUVs(1)=(UseConstant=True)
+      CustomizedUVs(2)=(UseConstant=True)
+      CustomizedUVs(3)=(UseConstant=True)
+      CustomizedUVs(4)=(UseConstant=True)
+      CustomizedUVs(5)=(UseConstant=True)
+      CustomizedUVs(6)=(UseConstant=True)
+      CustomizedUVs(7)=(UseConstant=True)
+      PixelDepthOffset=(UseConstant=True)
+      SurfaceThickness=(UseConstant=True)
+      ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionMultiply'Dust_ParticleMat:MaterialExpressionMultiply_2'","/Script/Engine.MaterialExpressionMultiply'Dust_ParticleMat:MaterialExpressionMultiply_6'","/Script/Engine.MaterialExpressionMultiply'Dust_ParticleMat:MaterialExpressionMultiply_5'","/Script/Engine.MaterialExpressionShadingPathSwitch'Dust_ParticleMat:MaterialExpressionShadingPathSwitch_0'","/Script/Engine.MaterialExpressionParticleColor'Dust_ParticleMat:MaterialExpressionParticleColor_0'","/Script/Engine.MaterialExpressionMultiply'Dust_ParticleMat:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionCollectionParameter'Dust_ParticleMat:MaterialExpressionCollectionParameter_1'","/Script/Engine.MaterialExpressionComponentMask'Dust_ParticleMat:MaterialExpressionComponentMask_1'","/Script/Engine.MaterialExpressionParticleColor'Dust_ParticleMat:MaterialExpressionParticleColor_1'","/Script/Engine.MaterialExpressionDepthFade'Dust_ParticleMat:MaterialExpressionDepthFade_0'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Dust_ParticleMat:MaterialExpressionMaterialFunctionCall_0'","/Script/Engine.MaterialExpressionTextureSampleParameter2D'Dust_ParticleMat:MaterialExpressionTextureSampleParameter2D_0'"),EditorComments=("/Script/Engine.MaterialExpressionComment'Dust_ParticleMat:MaterialExpressionComment_0'","/Script/Engine.MaterialExpressionComment'Dust_ParticleMat:MaterialExpressionComment_1'"))
+      ParameterGroupData(0)=(GroupName="None")
+   End Object
+   Begin Object Name="MaterialExpressionCollectionParameter_1" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/Game/UltraDynamicSky/Materials/Weather/Dust_ParticleMat.Dust_ParticleMat:MaterialExpressionCollectionParameter_1'"
+      Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+      ParameterName="Ambient Fog Color"
+      ParameterId=8604E1994A5CD232F1116D94FF84BD2B
+      MaterialExpressionEditorX=212
+      MaterialExpressionEditorY=-380
+      MaterialExpressionGuid=D456C4F0487C3777CC5977A333D99232
+      Material="/Script/Engine.Material'Dust_ParticleMat'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionComment_0" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Weather/Dust_ParticleMat.Dust_ParticleMat:MaterialExpressionComment_0'"
+      SizeX=596
+      SizeY=460
+      Text="Color"
+      CommentColor=(R=0.494945,G=0.464275,B=1.000000,A=1.000000)
+      MaterialExpressionEditorX=190
+      MaterialExpressionEditorY=-458
+      MaterialExpressionGuid=0508D63146AFB7835D6FCA93F285617D
+      Material="/Script/Engine.Material'Dust_ParticleMat'"
+   End Object
+   Begin Object Name="MaterialExpressionComment_1" ExportPath="/Script/Engine.MaterialExpressionComment'/Game/UltraDynamicSky/Materials/Weather/Dust_ParticleMat.Dust_ParticleMat:MaterialExpressionComment_1'"
+      SizeX=1420
+      SizeY=648
+      Text="Opacity"
+      CommentColor=(R=0.512549,G=1.000000,B=0.478230,A=1.000000)
+      MaterialExpressionEditorX=-388
+      MaterialExpressionEditorY=48
+      MaterialExpressionGuid=050987604B114B5EC3F556880D310E9A
+      Material="/Script/Engine.Material'Dust_ParticleMat'"
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_1" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Weather/Dust_ParticleMat.Dust_ParticleMat:MaterialExpressionComponentMask_1'"
+      Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Dust_ParticleMat:MaterialExpressionCollectionParameter_1'")
+      R=True
+      G=True
+      B=True
+      MaterialExpressionEditorX=468
+      MaterialExpressionEditorY=-353
+      MaterialExpressionGuid=8E21DC814464883C52283591869E9F5C
+      Material="/Script/Engine.Material'Dust_ParticleMat'"
+   End Object
+   Begin Object Name="MaterialExpressionDepthFade_0" ExportPath="/Script/Engine.MaterialExpressionDepthFade'/Game/UltraDynamicSky/Materials/Weather/Dust_ParticleMat.Dust_ParticleMat:MaterialExpressionDepthFade_0'"
+      MaterialExpressionEditorX=400
+      MaterialExpressionEditorY=360
+      MaterialExpressionGuid=F664970C406B53F04BA8BCB4E22B888B
+      Material="/Script/Engine.Material'Dust_ParticleMat'"
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_0" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Weather/Dust_ParticleMat.Dust_ParticleMat:MaterialExpressionMaterialFunctionCall_0'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Weather/Weather_Particle_DOF.Weather_Particle_DOF'"
+      FunctionInputs(0)=(ExpressionInputId=01A33C774205FC1D2FB2C58ACCD550D8,Input=(OutputIndex=-1,InputName="Scale Blur Size"))
+      FunctionOutputs(0)=(ExpressionOutputId=50F40B70436F46E0F1B409A9422587FC,Output=(OutputName="World Position Offset"))
+      FunctionOutputs(1)=(ExpressionOutputId=DDADDBDF4195AB7E8F8705901771E852,Output=(OutputName="Opacity Multiplier"))
+      FunctionOutputs(2)=(ExpressionOutputId=60B21CB0448D724E57542AA8C5492C55,Output=(OutputName="Texture Alpha"))
+      MaterialExpressionEditorX=448
+      MaterialExpressionEditorY=544
+      MaterialExpressionGuid=A8A394DA4FD4087874186AA19BC8C2A0
+      Material="/Script/Engine.Material'Dust_ParticleMat'"
+      Outputs(0)=(OutputName="World Position Offset")
+      Outputs(1)=(OutputName="Opacity Multiplier")
+      Outputs(2)=(OutputName="Texture Alpha")
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_0" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Weather/Dust_ParticleMat.Dust_ParticleMat:MaterialExpressionMultiply_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameter2D'Dust_ParticleMat:MaterialExpressionTextureSampleParameter2D_0'",OutputIndex=2,Mask=1,MaskG=1)
+      B=(Expression="/Script/Engine.MaterialExpressionParticleColor'Dust_ParticleMat:MaterialExpressionParticleColor_0'",OutputIndex=4,Mask=1,MaskA=1)
+      MaterialExpressionEditorX=98
+      MaterialExpressionEditorY=182
+      MaterialExpressionGuid=6E10823D464008698584819784348B62
+      Material="/Script/Engine.Material'Dust_ParticleMat'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_2" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Weather/Dust_ParticleMat.Dust_ParticleMat:MaterialExpressionMultiply_2'"
+      A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Dust_ParticleMat:MaterialExpressionComponentMask_1'")
+      B=(Expression="/Script/Engine.MaterialExpressionParticleColor'Dust_ParticleMat:MaterialExpressionParticleColor_1'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      MaterialExpressionEditorX=640
+      MaterialExpressionEditorY=-352
+      MaterialExpressionGuid=FFA5D335481B78C60FE8B7954CD31593
+      Material="/Script/Engine.Material'Dust_ParticleMat'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_5" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Weather/Dust_ParticleMat.Dust_ParticleMat:MaterialExpressionMultiply_5'"
+      A=(Expression="/Script/Engine.MaterialExpressionShadingPathSwitch'Dust_ParticleMat:MaterialExpressionShadingPathSwitch_0'")
+      B=(Expression="/Script/Engine.MaterialExpressionDepthFade'Dust_ParticleMat:MaterialExpressionDepthFade_0'")
+      MaterialExpressionEditorX=692
+      MaterialExpressionEditorY=180
+      MaterialExpressionGuid=699BC2FB4F8B3AB305BCC1B0D0F7EC84
+      Material="/Script/Engine.Material'Dust_ParticleMat'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_6" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Weather/Dust_ParticleMat.Dust_ParticleMat:MaterialExpressionMultiply_6'"
+      A=(Expression="/Script/Engine.MaterialExpressionMultiply'Dust_ParticleMat:MaterialExpressionMultiply_5'")
+      B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Dust_ParticleMat:MaterialExpressionMaterialFunctionCall_0'",OutputIndex=1)
+      MaterialExpressionEditorX=876
+      MaterialExpressionEditorY=176
+      MaterialExpressionGuid=6BAEC01C479B3F416434098895FDFF5C
+      Material="/Script/Engine.Material'Dust_ParticleMat'"
+   End Object
+   Begin Object Name="MaterialExpressionParticleColor_0" ExportPath="/Script/Engine.MaterialExpressionParticleColor'/Game/UltraDynamicSky/Materials/Weather/Dust_ParticleMat.Dust_ParticleMat:MaterialExpressionParticleColor_0'"
+      MaterialExpressionEditorX=-88
+      MaterialExpressionEditorY=316
+      MaterialExpressionGuid=F44C550447319417F395319508BA5B93
+      Material="/Script/Engine.Material'Dust_ParticleMat'"
+   End Object
+   Begin Object Name="MaterialExpressionParticleColor_1" ExportPath="/Script/Engine.MaterialExpressionParticleColor'/Game/UltraDynamicSky/Materials/Weather/Dust_ParticleMat.Dust_ParticleMat:MaterialExpressionParticleColor_1'"
+      MaterialExpressionEditorX=472
+      MaterialExpressionEditorY=-244
+      MaterialExpressionGuid=F44C550447319417F395319508BA5B93
+      Material="/Script/Engine.Material'Dust_ParticleMat'"
+   End Object
+   Begin Object Name="MaterialExpressionShadingPathSwitch_0" ExportPath="/Script/Engine.MaterialExpressionShadingPathSwitch'/Game/UltraDynamicSky/Materials/Weather/Dust_ParticleMat.Dust_ParticleMat:MaterialExpressionShadingPathSwitch_0'"
+      Default=(Expression="/Script/Engine.MaterialExpressionMultiply'Dust_ParticleMat:MaterialExpressionMultiply_0'")
+      Inputs(2)=(Expression="/Script/Engine.MaterialExpressionMultiply'Dust_ParticleMat:MaterialExpressionMultiply_0'")
+      MaterialExpressionEditorX=426
+      MaterialExpressionEditorY=182
+      MaterialExpressionGuid=B529330040DDB73AB5B1DF8B1AB706F2
+      Material="/Script/Engine.Material'Dust_ParticleMat'"
+   End Object
+   Begin Object Name="MaterialExpressionTextureSampleParameter2D_0" ExportPath="/Script/Engine.MaterialExpressionTextureSampleParameter2D'/Game/UltraDynamicSky/Materials/Weather/Dust_ParticleMat.Dust_ParticleMat:MaterialExpressionTextureSampleParameter2D_0'"
+      ParameterName="Dust Sheet"
+      ExpressionGUID=49D5DBD54B2B09EA18688EB035C7714C
+      Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_ParticleClouds.T_ParticleClouds'"
+      MaterialExpressionEditorX=-348
+      MaterialExpressionEditorY=112
+      MaterialExpressionGuid=2C70A10F42370DEC72B76A8727A532B3
+      Material="/Script/Engine.Material'Dust_ParticleMat'"
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/Weather/Dust_ParticleMat.Dust_ParticleMat:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   BlendMode=BLEND_Translucent
+   MaterialDecalResponse=MDR_None
+   ShadingModel=MSM_Unlit
+   ShadingModels=(ShadingModelField=1)
+   bAllowNegativeEmissiveColor=True
+   TranslucencyLightingMode=TLM_VolumetricPerVertexNonDirectional
+   TranslucencyDirectionalLightingIntensity=0.100000
+   bTangentSpaceNormal=False
+   bUsedWithNiagaraSprites=True
+   bFullyRough=True
+   bUseLightmapDirectionality=False
+   EditorX=1192
+   EditorY=-160
+   bCanMaskedBeAssumedOpaque=True
+   bCastRayTracedShadows=False
+   bUseTranslucencyVertexFog=False
+   PixelDepthOffsetMode=PDOM_Legacy
+   StateId=D257E29246F826A127A8E280BFC94ADB
+   ReferencedTextureGuids(0)=9080AA1E47B0FE7B95E79A93A36D2556
+   EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'Dust_ParticleMatEditorOnlyData'"
+   TextureStreamingDataVersion=1
+   TextureStreamingData(0)=(SamplingScale=1.000000,UVChannelIndex=0,TextureName="ParticleClouds",TextureReference="/Game/ENDEMIS/Weather/WeatherFX/T_ParticleClouds.T_ParticleClouds")
+   ReferencedDefaultTextures(0)="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_ParticleClouds.T_ParticleClouds'"
+   ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+   ParameterOverviewExpansion=(("-12Global", True))
+   LightingGuid=80A37BBF48369614AC69B4B641990148
+End Object

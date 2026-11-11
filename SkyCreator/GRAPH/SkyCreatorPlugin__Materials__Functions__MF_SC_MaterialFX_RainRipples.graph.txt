@@ -1,0 +1,88 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_MaterialFX_RainRipples
+  MaterialFunction (MF_SC_MaterialFX_RainRipples)
+    .Description="Rain Ripples FX"
+    .bExposeToLibrary=True
+    .LibraryCategoriesText(0)=NSLOCTEXT("", "0DBFE46949FCD154CA8297B27214DE70", "Sky Creator")
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'MF_SC_MaterialFX_RainRipplesEditorOnlyData'"
+    .StateId=BD98E03E40249673E98197BE01D3E084
+    .CombinedInputTypes=15
+    .CombinedOutputTypes=15
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+  MaterialFunctionEditorOnlyData (MF_SC_MaterialFX_RainRipplesEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'MF_SC_MaterialFX_RainRipples:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionComponentMask'MF_SC_MaterialFX_RainRipples:MaterialExpressionComponentMask_12'","/Script/Engine.MaterialExpressionDivide'MF_SC_MaterialFX_RainRipples:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionWorldPosition'MF_SC_MaterialFX_RainRipples:MaterialExpressionWorldPosition_2'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_MaterialFX_RainRipples:MaterialExpressionCollectionParameter_3'","/Script/Engine.MaterialExpressionFunctionInput'MF_SC_MaterialFX_RainRipples:MaterialExpressionFunctionInput_2'","/Script/Engine.MaterialExpressionTextureSample'MF_SC_MaterialFX_RainRipples:MaterialExpressionTextureSample_1'","/Script/Engine.MaterialExpressionFunctionInput'MF_SC_MaterialFX_RainRipples:MaterialExpressionFunctionInput_0'"))
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_3)
+    .ParameterName="Rain Ripples Scale"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=25CB0B924F06DC6C1D6D4286EEB13D4B
+    .MaterialExpressionEditorX=-1152
+    .MaterialExpressionEditorY=224
+    .MaterialExpressionGuid=C97954C74C3DB891C729A6865178653F
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_RainRipples'"
+    .bCollapsed=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_12)
+    Input                  <- MaterialExpressionDivide
+    .R=True
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionDivide'MF_SC_MaterialFX_RainRipples:MaterialExpressionDivide_0'")
+    .MaterialExpressionEditorX=-512
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=76114A024ED6587466ADD2B0A2C9E33D
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_RainRipples'"
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_MaterialFX_RainRipples:MaterialExpressionFunctionInput_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_MaterialFX_RainRipples:MaterialExpressionFunctionInput_2'")
+    .MaterialExpressionEditorX=-640
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=A61B1BF2410BADF69F96D0BFC02C43A2
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_RainRipples'"
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_0)
+    Preview                <- MaterialExpressionCollectionParameter
+    .Preview=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_MaterialFX_RainRipples:MaterialExpressionCollectionParameter_3'")
+    .InputName="Custom Scale"
+    .Id=1F73437A4723BCF0D1664F912215596C
+    .InputType=FunctionInput_Scalar
+    .PreviewValue=(X=150.000000,Y=0.000000,Z=0.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=1
+    .MaterialExpressionEditorX=-896
+    .MaterialExpressionEditorY=256
+    .MaterialExpressionGuid=8AE5674649B0A853BDAE5191F6510EA6
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_RainRipples'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_2)
+    Preview                <- MaterialExpressionWorldPosition
+    .Preview=(Expression="/Script/Engine.MaterialExpressionWorldPosition'MF_SC_MaterialFX_RainRipples:MaterialExpressionWorldPosition_2'")
+    .InputName="Position"
+    .Id=E168B5CC4BF4E847D6BE1EAA02AB0F5E
+    .bUsePreviewValueAsDefault=True
+    .MaterialExpressionEditorX=-896
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=A76BC2514B94B5F67718AFB16705107C
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_RainRipples'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionTextureSample
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'MF_SC_MaterialFX_RainRipples:MaterialExpressionTextureSample_1'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .OutputName="Normal"
+    .bLastPreviewed=True
+    .Id=19DEAC2345E04EA1C94EEC947A98635A
+    .MaterialExpressionGuid=6567D04A40F17A6E51925D9F47713FCA
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_RainRipples'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_1)
+    Coordinates            <- MaterialExpressionComponentMask
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.TextureRenderTarget2D'/SkyCreatorPlugin/Textures/MaterialFX/RT_SC_RainRipples.RT_SC_RainRipples'"
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_MaterialFX_RainRipples:MaterialExpressionComponentMask_12'")
+    .SamplerSource=SSM_Wrap_WorldGroupSettings
+    .MaterialExpressionEditorX=-256
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=3784943343616EBAA3DFD5BFA0CE068D
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_RainRipples'"
+  MaterialExpressionWorldPosition (MaterialExpressionWorldPosition_2)
+    .MaterialExpressionEditorX=-1152
+    .MaterialExpressionEditorY=16
+    .MaterialExpressionGuid=69F34EB54AFC480CC2F9B39EDF0A3802
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_RainRipples'"

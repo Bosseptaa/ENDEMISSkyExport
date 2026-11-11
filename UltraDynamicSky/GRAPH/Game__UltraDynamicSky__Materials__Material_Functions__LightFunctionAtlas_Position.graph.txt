@@ -1,0 +1,195 @@
+### /Game/UltraDynamicSky/Materials/Material_Functions/LightFunctionAtlas_Position
+  MaterialFunction (LightFunctionAtlas_Position)
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'LightFunctionAtlas_PositionEditorOnlyData'"
+    .StateId=693C0910499E12BF7707C79949C1F416
+    .CombinedOutputTypes=15
+  MaterialFunctionEditorOnlyData (LightFunctionAtlas_PositionEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionVectorParameter
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionVectorParameter'LightFunctionAtlas_Position:MaterialExpressionVectorParameter_4'","/Script/Engine.MaterialExpressionLength'LightFunctionAtlas_Position:MaterialExpressionLength_0'","/Script/Engine.MaterialExpressionIf'LightFunctionAtlas_Position:MaterialExpressionIf_1'","/Script/Engine.MaterialExpressionWorldPosition'LightFunctionAtlas_Position:MaterialExpressionWorldPosition_0'","/Script/Engine.MaterialExpressionTextureCoordinate'LightFunctionAtlas_Position:MaterialExpressionTextureCoordinate_0'","/Script/Engine.MaterialExpressionSubtract'LightFunctionAtlas_Position:MaterialExpressionSubtract_0'","/Script/Engine.MaterialExpressionMultiply'LightFunctionAtlas_Position:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionScalarParameter'LightFunctionAtlas_Position:MaterialExpressionScalarParameter_0'","/Script/Engine.MaterialExpressionComponentMask'LightFunctionAtlas_Position:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionMultiply'LightFunctionAtlas_Position:MaterialExpressionMultiply_1'","/Script/Engine.MaterialExpressionVectorParameter'LightFunctionAtlas_Position:MaterialExpressionVectorParameter_0'","/Script/Engine.MaterialExpressionComponentMask'LightFunctionAtlas_Position:MaterialExpressionComponentMask_1'","/Script/Engine.MaterialExpressionMultiply'LightFunctionAtlas_Position:MaterialExpressionMultiply_2'","/Script/Engine.MaterialExpressionVectorParameter'LightFunctionAtlas_Position:MaterialExpressionVectorParameter_1'","/Script/Engine.MaterialExpressionAdd'LightFunctionAtlas_Position:MaterialExpressionAdd_0'","/Script/Engine.MaterialExpressionAdd'LightFunctionAtlas_Position:MaterialExpressionAdd_1'","/Script/Engine.MaterialExpressionComponentMask'LightFunctionAtlas_Position:MaterialExpressionComponentMask_2'","/Script/Engine.MaterialExpressionDivide'LightFunctionAtlas_Position:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionVectorParameter'LightFunctionAtlas_Position:MaterialExpressionVectorParameter_2'","/Script/Engine.MaterialExpressionAbs'LightFunctionAtlas_Position:MaterialExpressionAbs_0'","/Script/Engine.MaterialExpressionMultiply'LightFunctionAtlas_Position:MaterialExpressionMultiply_3'","/Script/Engine.MaterialExpressionAdd'LightFunctionAtlas_Position:MaterialExpressionAdd_2'","/Script/Engine.MaterialExpressionFunctionOutput'LightFunctionAtlas_Position:MaterialExpressionFunctionOutput_0'"))
+  MaterialExpressionAbs (MaterialExpressionAbs_0)
+    Input                  <- MaterialExpressionVectorParameter
+    .Input=(Expression="/Script/Engine.MaterialExpressionVectorParameter'LightFunctionAtlas_Position:MaterialExpressionVectorParameter_2'",OutputIndex=3,Mask=1,MaskB=1)
+    .MaterialExpressionEditorX=-532
+    .MaterialExpressionEditorY=888
+    .MaterialExpressionGuid=9D9A7AE947CF07B0051355A7FE4D4D4A
+    .Function="/Script/Engine.MaterialFunction'LightFunctionAtlas_Position'"
+  MaterialExpressionAdd (MaterialExpressionAdd_0)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'LightFunctionAtlas_Position:MaterialExpressionMultiply_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'LightFunctionAtlas_Position:MaterialExpressionMultiply_1'")
+    .MaterialExpressionEditorX=-1052
+    .MaterialExpressionEditorY=516
+    .MaterialExpressionGuid=1FB473964AF2CE7903A430AE2CC712A5
+    .Function="/Script/Engine.MaterialFunction'LightFunctionAtlas_Position'"
+  MaterialExpressionAdd (MaterialExpressionAdd_1)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionVectorParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionVectorParameter'LightFunctionAtlas_Position:MaterialExpressionVectorParameter_4'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'LightFunctionAtlas_Position:MaterialExpressionAdd_0'")
+    .MaterialExpressionEditorX=-816
+    .MaterialExpressionEditorY=516
+    .MaterialExpressionGuid=FEBCA3C347E0A8568246208B80ADAEFC
+    .Function="/Script/Engine.MaterialFunction'LightFunctionAtlas_Position'"
+  MaterialExpressionAdd (MaterialExpressionAdd_2)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'LightFunctionAtlas_Position:MaterialExpressionMultiply_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'LightFunctionAtlas_Position:MaterialExpressionAdd_1'")
+    .MaterialExpressionEditorX=16
+    .MaterialExpressionEditorY=516
+    .MaterialExpressionGuid=E93A91DB4D9F225BF79FEBB9FA04D616
+    .Function="/Script/Engine.MaterialFunction'LightFunctionAtlas_Position'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionMultiply
+    .R=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'LightFunctionAtlas_Position:MaterialExpressionMultiply_0'")
+    .MaterialExpressionEditorX=-1488
+    .MaterialExpressionEditorY=512
+    .MaterialExpressionGuid=C807B5CC4C7D9EF2C8ECCF823B8D675B
+    .Function="/Script/Engine.MaterialFunction'LightFunctionAtlas_Position'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_1)
+    Input                  <- MaterialExpressionMultiply
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'LightFunctionAtlas_Position:MaterialExpressionMultiply_0'")
+    .MaterialExpressionEditorX=-1528
+    .MaterialExpressionEditorY=828
+    .MaterialExpressionGuid=D7E615A748F3B10371243C8A4D29F84B
+    .Function="/Script/Engine.MaterialFunction'LightFunctionAtlas_Position'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_2)
+    Input                  <- MaterialExpressionAdd
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionAdd'LightFunctionAtlas_Position:MaterialExpressionAdd_1'")
+    .MaterialExpressionEditorX=-652
+    .MaterialExpressionEditorY=676
+    .MaterialExpressionGuid=E1768FD14E6D3D20788AEEBC9BD6847D
+    .Function="/Script/Engine.MaterialFunction'LightFunctionAtlas_Position'"
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionAbs
+    .B=(Expression="/Script/Engine.MaterialExpressionAbs'LightFunctionAtlas_Position:MaterialExpressionAbs_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'LightFunctionAtlas_Position:MaterialExpressionComponentMask_2'")
+    .MaterialExpressionEditorX=-360
+    .MaterialExpressionEditorY=676
+    .MaterialExpressionGuid=4478C2D74D7F315AB85AF6A0BBF9344F
+    .Function="/Script/Engine.MaterialFunction'LightFunctionAtlas_Position'"
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionIf
+    .A=(Expression="/Script/Engine.MaterialExpressionIf'LightFunctionAtlas_Position:MaterialExpressionIf_1'")
+    .OutputName="Position"
+    .bLastPreviewed=True
+    .Id=00B83FDE477F010F7AAA7ABE5B0D0D8B
+    .MaterialExpressionEditorX=564
+    .MaterialExpressionEditorY=228
+    .MaterialExpressionGuid=52D719754F7301DC7BC4AF8E9C69923B
+    .Function="/Script/Engine.MaterialFunction'LightFunctionAtlas_Position'"
+  MaterialExpressionIf (MaterialExpressionIf_1)
+    A                      <- MaterialExpressionLength
+    AGreaterThanB          <- MaterialExpressionWorldPosition
+    AEqualsB               <- MaterialExpressionAdd
+    ALessThanB             <- MaterialExpressionAdd
+    .A=(Expression="/Script/Engine.MaterialExpressionLength'LightFunctionAtlas_Position:MaterialExpressionLength_0'")
+    .AGreaterThanB=(Expression="/Script/Engine.MaterialExpressionWorldPosition'LightFunctionAtlas_Position:MaterialExpressionWorldPosition_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .AEqualsB=(Expression="/Script/Engine.MaterialExpressionAdd'LightFunctionAtlas_Position:MaterialExpressionAdd_2'")
+    .ALessThanB=(Expression="/Script/Engine.MaterialExpressionAdd'LightFunctionAtlas_Position:MaterialExpressionAdd_2'")
+    .MaterialExpressionEditorX=368
+    .MaterialExpressionEditorY=260
+    .MaterialExpressionGuid=D8AED6B74B70F83A96C442B952DC5385
+    .Function="/Script/Engine.MaterialFunction'LightFunctionAtlas_Position'"
+  MaterialExpressionLength (MaterialExpressionLength_0)
+    Input                  <- MaterialExpressionWorldPosition
+    .Input=(Expression="/Script/Engine.MaterialExpressionWorldPosition'LightFunctionAtlas_Position:MaterialExpressionWorldPosition_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .MaterialExpressionEditorX=236
+    .MaterialExpressionEditorY=260
+    .MaterialExpressionGuid=1A54D17649F1B91F3BAF929689774E17
+    .Function="/Script/Engine.MaterialFunction'LightFunctionAtlas_Position'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'LightFunctionAtlas_Position:MaterialExpressionScalarParameter_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'LightFunctionAtlas_Position:MaterialExpressionSubtract_0'")
+    .MaterialExpressionEditorX=-1728
+    .MaterialExpressionEditorY=516
+    .MaterialExpressionGuid=935FAD4A45CE14DA180D399D9EE43E13
+    .Function="/Script/Engine.MaterialFunction'LightFunctionAtlas_Position'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionVectorParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionVectorParameter'LightFunctionAtlas_Position:MaterialExpressionVectorParameter_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'LightFunctionAtlas_Position:MaterialExpressionComponentMask_0'")
+    .MaterialExpressionEditorX=-1220
+    .MaterialExpressionEditorY=512
+    .MaterialExpressionGuid=D64C537046CFBDDA6C6CC4AE6D2E5DDB
+    .Function="/Script/Engine.MaterialFunction'LightFunctionAtlas_Position'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_2)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionVectorParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionVectorParameter'LightFunctionAtlas_Position:MaterialExpressionVectorParameter_1'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'LightFunctionAtlas_Position:MaterialExpressionComponentMask_1'")
+    .MaterialExpressionEditorX=-1268
+    .MaterialExpressionEditorY=828
+    .MaterialExpressionGuid=83A25A6E4D5EECC01142C79EAFA14EBA
+    .Function="/Script/Engine.MaterialFunction'LightFunctionAtlas_Position'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_3)
+    A                      <- MaterialExpressionDivide
+    B                      <- MaterialExpressionVectorParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionVectorParameter'LightFunctionAtlas_Position:MaterialExpressionVectorParameter_2'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'LightFunctionAtlas_Position:MaterialExpressionDivide_0'")
+    .MaterialExpressionEditorX=-204
+    .MaterialExpressionEditorY=780
+    .MaterialExpressionGuid=BE1136E54356490F4690BAB2A9FDCBD6
+    .Function="/Script/Engine.MaterialFunction'LightFunctionAtlas_Position'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_0)
+    .ParameterName="Atlas Scale"
+    .DefaultValue=1200000.000000
+    .ExpressionGUID=6B0A0EDE4B464EA8397D32BEAEC1669E
+    .MaterialExpressionEditorX=-1984
+    .MaterialExpressionEditorY=628
+    .MaterialExpressionGuid=AD2F146A4EC255938CC5B29BAE4B6928
+    .Function="/Script/Engine.MaterialFunction'LightFunctionAtlas_Position'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_0)
+    A                      <- MaterialExpressionTextureCoordinate
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'LightFunctionAtlas_Position:MaterialExpressionTextureCoordinate_0'")
+    .ConstB=0.500000
+    .MaterialExpressionEditorX=-1944
+    .MaterialExpressionEditorY=516
+    .MaterialExpressionGuid=27DEEFAE42E057B463E370A9DB3121AD
+    .Function="/Script/Engine.MaterialFunction'LightFunctionAtlas_Position'"
+  MaterialExpressionTextureCoordinate (MaterialExpressionTextureCoordinate_0)
+    .MaterialExpressionEditorX=-2232
+    .MaterialExpressionEditorY=516
+    .MaterialExpressionGuid=545BA5B0483A1FC72393208E902EAB62
+    .Function="/Script/Engine.MaterialFunction'LightFunctionAtlas_Position'"
+  MaterialExpressionVectorParameter (MaterialExpressionVectorParameter_0)
+    .ParameterName="Atlas Light Up"
+    .ExpressionGUID=9D77671F441F5065696D56AAF563F287
+    .MaterialExpressionEditorX=-1508
+    .MaterialExpressionEditorY=600
+    .MaterialExpressionGuid=F6BEE1E44713F2E1EB51B29358A1A4C3
+    .Function="/Script/Engine.MaterialFunction'LightFunctionAtlas_Position'"
+  MaterialExpressionVectorParameter (MaterialExpressionVectorParameter_1)
+    .ParameterName="Atlas Light Right"
+    .ExpressionGUID=5334173540066EB3929799A33F7A6796
+    .MaterialExpressionEditorX=-1568
+    .MaterialExpressionEditorY=928
+    .MaterialExpressionGuid=03D57902413822DEE20D36B145A15208
+    .Function="/Script/Engine.MaterialFunction'LightFunctionAtlas_Position'"
+  MaterialExpressionVectorParameter (MaterialExpressionVectorParameter_2)
+    .ParameterName="Atlas Light Forward"
+    .ExpressionGUID=36EEB11043C3CC63AB939782E4A95D45
+    .MaterialExpressionEditorX=-728
+    .MaterialExpressionEditorY=796
+    .MaterialExpressionGuid=584F91044F64402A714391A6BFE410CE
+    .Function="/Script/Engine.MaterialFunction'LightFunctionAtlas_Position'"
+  MaterialExpressionVectorParameter (MaterialExpressionVectorParameter_4)
+    .ParameterName="Atlas Center"
+    .ExpressionGUID=BC06F7B046F225C9609849AEAD6843DD
+    .MaterialExpressionEditorX=-1040
+    .MaterialExpressionEditorY=636
+    .MaterialExpressionGuid=B4AAE498409138597EB977AD013AD6F0
+    .Function="/Script/Engine.MaterialFunction'LightFunctionAtlas_Position'"
+  MaterialExpressionWorldPosition (MaterialExpressionWorldPosition_0)
+    .MaterialExpressionEditorX=20
+    .MaterialExpressionEditorY=312
+    .MaterialExpressionGuid=CA551F7F493D0D8EC4F77AB6FEAEA8C9
+    .Function="/Script/Engine.MaterialFunction'LightFunctionAtlas_Position'"

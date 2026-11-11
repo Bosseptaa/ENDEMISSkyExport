@@ -1,0 +1,818 @@
+### /Game/UltraDynamicSky/Blueprints/Weather_Effects/Wind_Physics_Force
+  Blueprint (Wind_Physics_Force)
+    .ParentClass="/Script/CoreUObject.Class'/Script/Engine.SceneComponent'"
+    .BlueprintDisplayName="Wind Physics Force"
+    .BlueprintDescription="Applies a physics force which changes with the state of the wind on Ultra Dynamic Weather. Add this component to your actor, as a child of a primitive component which simulates physics. The force will be applied to the parent component."
+    .BlueprintCategory="UltraDynamicWeather|Wind"
+    .HideCategories(0)="Rendering"
+    .HideCategories(1)="Cooking"
+    .HideCategories(2)="Physics"
+    .HideCategories(3)="LOD"
+    .HideCategories(4)="Asset User Data"
+    .HideCategories(5)="Collision"
+    .BlueprintSystemVersion=2
+    .UbergraphPages(0)="/Script/Engine.EdGraph'EventGraph'"
+    .FunctionGraphs(0)="/Script/Engine.EdGraph'Update Force Vector'"
+    .FunctionGraphs(1)="/Script/Engine.EdGraph'Apply Force'"
+    .FunctionGraphs(2)="/Script/Engine.EdGraph'Activated'"
+    .FunctionGraphs(3)="/Script/Engine.EdGraph'Deactivated'"
+    .FunctionGraphs(4)="/Script/Engine.EdGraph'Startup Timers'"
+    .NewVariables(0)=(VarName="Physics Component",VarGuid=F4D1E7064DC873D06444B3B6B0EBF483,VarType=(PinCategory="object",PinSubCategoryObject="/Script/CoreUObject.Class'/Script/Engine.PrimitiveComponent'"),FriendlyName="Physics Component",Category=NSLOCTEXT("KismetSchema", "Default", "Default"),PropertyFlags=65541,MetaDataArray=((DataKey="MultiLine",DataValue="true")))
+    .NewVariables(1)=(VarName="Max Wind Force",VarGuid=28D0925F42D26480520261A18581B728,VarType=(PinCategory="real",PinSubCategory="double"),FriendlyName="Max Wind Force",Category=NSLOCTEXT("", "50DF0CA94799BF636F8AA9B4C281D2A1", "Force Settings"),PropertyFlags=5,MetaDataArray=((DataKey="MultiLine",DataValue="true"),(DataKey="tooltip",DataValue="The force applied if an object is fully exposed to max wind intensity. This value is in force per square meter, scaled using the component\'s bounds."),(DataKey="UIMin",DataValue="100"),(DataKey="UIMax",DataValue="20000")))
+    .NewVariables(2)=(VarName="Apply Force at Component Location",VarGuid=78731A694B82BF92642494B39862AABA,VarType=(PinCategory="bool"),FriendlyName="Apply Force At Component Location",Category=NSLOCTEXT("", "FA31CC6C484522C6B4FD1597656DF0FF", "Force Settings"),PropertyFlags=5,MetaDataArray=((DataKey="MultiLine",DataValue="true"),(DataKey="tooltip",DataValue="If true, the force will be applied at the location of this component, allowing for wind which affects a certain part of an object more than others.")))
+    .NewVariables(3)=(VarName="Wind Intensity to Force Exponent",VarGuid=14E4B92C465744EA0F0681A6611650F9,VarType=(PinCategory="real",PinSubCategory="double"),FriendlyName="Wind Intensity To Force Exponent",Category=NSLOCTEXT("", "224C71CF4B6E9E7A61A4DC9E743D195F", "Force Settings"),PropertyFlags=5,MetaDataArray=((DataKey="MultiLine",DataValue="true"),(DataKey="tooltip",DataValue="Defines the curve of how wind intensity (0-1) maps to the force applied. Higher values will push middle intensities force values lower."),(DataKey="UIMin",DataValue="1"),(DataKey="UIMax",DataValue="10")))
+    .NewVariables(4)=(VarName="Update Force Period",VarGuid=64CB2BB441053F9562F39190C2E05AA3,VarType=(PinCategory="real",PinSubCategory="double"),FriendlyName="Update Force Period",Category=NSLOCTEXT("", "B4495FE745449054D133E599023689D1", "Force Settings"),PropertyFlags=5,MetaDataArray=((DataKey="MultiLine",DataValue="true"),(DataKey="tooltip",DataValue="How often to update the wind force applied to the object, based on UDW\'s wind state and if the object is exposed to wind. This value is in seconds."),(DataKey="UIMin",DataValue="0.1"),(DataKey="UIMax",DataValue="10")))
+    .NewVariables(5)=(VarName="Randomize Wind Angle Each Update",VarGuid=14A73D384D937BD3003F69AE8BC06F42,VarType=(PinCategory="real",PinSubCategory="double"),FriendlyName="Randomize Wind Angle Each Update",Category=NSLOCTEXT("", "F4931FF0407BC1564CB6E8A42CB951DA", "Force Settings"),PropertyFlags=5,MetaDataArray=((DataKey="MultiLine",DataValue="true"),(DataKey="tooltip",DataValue="Randomizes the direction of the wind force each time its updated. This value determines the half angle of a cone, the random value will be within that cone.")))
+    .NewVariables(6)=(VarName="Wind Force Vector",VarGuid=C90851DC40E60214C0C7998C48C5F1BC,VarType=(PinCategory="struct",PinSubCategoryObject="/Script/CoreUObject.ScriptStruct'/Script/CoreUObject.Vector'"),FriendlyName="Wind Force Vector",Category=NSLOCTEXT("", "59DF36A44288780861CD828F69B1D7EC", "System"),PropertyFlags=65541,MetaDataArray=((DataKey="MultiLine",DataValue="true")))
+    .NewVariables(7)=(VarName="Bone Name",VarGuid=CF59D6264F38B1AF1E17738A19E68BEA,VarType=(PinCategory="name"),FriendlyName="Bone Name",Category=NSLOCTEXT("", "3FEFB590419A5F9E9D92178D764C2879", "Force Settings"),PropertyFlags=4398046511109,MetaDataArray=((DataKey="tooltip",DataValue="If the parent component is a skeletal mesh, use this to define the bone to apply force to.")))
+    .NewVariables(8)=(VarName="Test for Collision Blocking Wind",VarGuid=1FFD151F474D0EF8B3D166BBF28C2D30,VarType=(PinCategory="bool"),FriendlyName="Test For Collision Blocking Wind",Category=INVTEXT("Force Settings"),PropertyFlags=5,MetaDataArray=((DataKey="tooltip",DataValue="If true, a line trace will be used to check if the wind is blocked from hitting this component.")))
+    .NewVariables(9)=(VarName="Wind Exposure Test Trace Channel",VarGuid=CB61792A4FF44C8520C585952FB48186,VarType=(PinCategory="byte",PinSubCategoryObject="/Script/CoreUObject.Enum'/Script/Engine.ETraceTypeQuery'"),FriendlyName="Wind Exposure Test Trace Channel",Category=NSLOCTEXT("", "967C39D1409B351ECF55B69FE6EB6104", "Force Settings"),PropertyFlags=4398046511109,MetaDataArray=((DataKey="tooltip",DataValue="The trace channel the component will trace against to see if wind is blocked by collision")))
+    .NewVariables(10)=(VarName="Max Trace Distance",VarGuid=60628DC743B69798D65FE38D1714F6FE,VarType=(PinCategory="real",PinSubCategory="double"),FriendlyName="Max Trace Distance",Category=INVTEXT("Force Settings"),PropertyFlags=5,MetaDataArray=((DataKey="tooltip",DataValue="When tracing collision for wind exposure, this is the length of the line trace"),(DataKey="ForceUnits",DataValue="Centimeters")))
+    .NewVariables(11)=(VarName="Update Timer",VarGuid=635E8B3147252CE5FFA7DF85D37DFBFA,VarType=(PinCategory="struct",PinSubCategoryObject="/Script/CoreUObject.ScriptStruct'/Script/Engine.TimerHandle'"),FriendlyName="Update Timer",Category=NSLOCTEXT("", "CF56CE8F43A7A5C6FFECBE8833934681", "System"),PropertyFlags=65541,MetaDataArray=((DataKey="BlueprintPrivate",DataValue="true")))
+    .NewVariables(12)=(VarName="Apply Timer",VarGuid=259BDC084E77CE8D22D70B936BFDC7C6,VarType=(PinCategory="struct",PinSubCategoryObject="/Script/CoreUObject.ScriptStruct'/Script/Engine.TimerHandle'"),FriendlyName="Apply Timer",Category=NSLOCTEXT("", "FD9D0E3F4DCA3344CC79E59B1100C489", "System"),PropertyFlags=65541,MetaDataArray=((DataKey="BlueprintPrivate",DataValue="true")))
+    .CategorySorting(0)="Force Settings"
+    .CategorySorting(1)="Transform"
+    .CategorySorting(2)="Rendering"
+    .CategorySorting(3)="Physics"
+    .CategorySorting(4)="Mobility"
+    .CategorySorting(5)="LOD"
+    .CategorySorting(6)="Physics Volume"
+    .CategorySorting(7)="Activation"
+    .CategorySorting(8)="Tags"
+    .CategorySorting(9)="Component Replication"
+    .CategorySorting(10)="Cooking"
+    .CategorySorting(11)="Components"
+    .CategorySorting(12)="Event Graph"
+    .CategorySorting(13)="Default"
+    .CategorySorting(14)=""
+    .CategorySorting(15)="System"
+    .CategorySorting(16)="Replication"
+    .LastEditedDocuments(0)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Weather_Effects/Wind_Physics_Force.Wind_Physics_Force:Apply Force",SavedViewOffset=(X=-170.636841,Y=-256.504974),SavedZoomAmount=1.000000)
+    .LastEditedDocuments(1)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Weather_Effects/Wind_Physics_Force.Wind_Physics_Force:Update Force Vector",SavedViewOffset=(X=-831.739624,Y=-1092.918579),SavedZoomAmount=0.500000)
+    .LastEditedDocuments(2)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Weather_Effects/Wind_Physics_Force.Wind_Physics_Force:Activated",SavedViewOffset=(X=-667.646851,Y=-409.155396),SavedZoomAmount=1.000000)
+    .LastEditedDocuments(3)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Weather_Effects/Wind_Physics_Force.Wind_Physics_Force:Deactivated",SavedViewOffset=(X=-910.503967,Y=-464.476837),SavedZoomAmount=0.875000)
+    .LastEditedDocuments(4)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Weather_Effects/Wind_Physics_Force.Wind_Physics_Force:EventGraph",SavedViewOffset=(X=-4110.291504,Y=-2718.822754),SavedZoomAmount=0.750000)
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfo'SceneThumbnailInfo_0'"
+    .GeneratedClass="/Script/Engine.BlueprintGeneratedClass'Wind_Physics_Force_C'"
+    .bLegacyNeedToPurgeSkelRefs=False
+    .BlueprintGuid=071A03694AC9689F21C350B55F69A045
+  EdGraph (Update Force Vector)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_PromotableOperator'K2Node_PromotableOperator_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_PromotableOperator'K2Node_PromotableOperator_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_2'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_6'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_3'"
+    .Nodes(7)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_7'"
+    .Nodes(8)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_5'"
+    .Nodes(9)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_6'"
+    .Nodes(10)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(11)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_8'"
+    .Nodes(12)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_9'"
+    .Nodes(13)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_10'"
+    .Nodes(14)="/Script/BlueprintGraph.K2Node_PromotableOperator'K2Node_PromotableOperator_4'"
+    .Nodes(15)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_11'"
+    .Nodes(16)="/Script/BlueprintGraph.K2Node_PromotableOperator'K2Node_PromotableOperator_7'"
+    .Nodes(17)="/Script/BlueprintGraph.K2Node_PromotableOperator'K2Node_PromotableOperator_6'"
+    .Nodes(18)="/Script/BlueprintGraph.K2Node_PromotableOperator'K2Node_PromotableOperator_8'"
+    .Nodes(19)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_16'"
+    .Nodes(20)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_19'"
+    .Nodes(21)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_18'"
+    .Nodes(22)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_17'"
+    .Nodes(23)="/Script/BlueprintGraph.K2Node_CallMaterialParameterCollectionFunction'K2Node_CallMaterialParameterCollectionFunction_0'"
+    .Nodes(24)="/Script/BlueprintGraph.K2Node_BreakStruct'K2Node_BreakStruct_0'"
+    .Nodes(25)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .Nodes(26)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_5'"
+    .Nodes(27)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_2'"
+    .Nodes(28)="/Script/BlueprintGraph.K2Node_CallMaterialParameterCollectionFunction'K2Node_CallMaterialParameterCollectionFunction_1'"
+    .Nodes(29)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_3'"
+    .Nodes(30)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_8'"
+    .Nodes(31)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_9'"
+    .Nodes(32)="/Script/BlueprintGraph.K2Node_ExecutionSequence'K2Node_ExecutionSequence_0'"
+    .Nodes(33)="/Script/BlueprintGraph.K2Node_Knot'K2Node_Knot_0'"
+    .Nodes(34)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_10'"
+    .Nodes(35)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(36)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_4'"
+    .Nodes(37)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_17'"
+    .Nodes(38)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_12'"
+    .Nodes(39)="/Script/BlueprintGraph.K2Node_PromotableOperator'K2Node_PromotableOperator_2'"
+    .Nodes(40)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_12'"
+    .Nodes(41)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_13'"
+    .Nodes(42)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_16'"
+    .Nodes(43)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_14'"
+    .Nodes(44)="/Script/BlueprintGraph.K2Node_PromotableOperator'K2Node_PromotableOperator_3'"
+    .Nodes(45)="/Script/BlueprintGraph.K2Node_PromotableOperator'K2Node_PromotableOperator_5'"
+    .Nodes(46)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_14'"
+    .Nodes(47)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_15'"
+    .Nodes(48)="/Script/BlueprintGraph.K2Node_MakeArray'K2Node_MakeArray_0'"
+    .Nodes(49)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_13'"
+    .Nodes(50)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_15'"
+    .Nodes(51)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_1'"
+    .Nodes(52)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_5'"
+    .Nodes(53)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_11'"
+    .Nodes(54)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_1'"
+    .Nodes(55)="/Script/BlueprintGraph.K2Node_PromotableOperator'K2Node_PromotableOperator_9'"
+    .GraphGuid=4949C6E9440ADAEA67572AA85A5100CD
+  K2Node_FunctionEntry (K2Node_FunctionEntry_0)
+    .LocalVariables(0)=(VarName="Wind Direction",VarGuid=D53E4320495755FD504D1E9DE5AAE682,VarType=(PinCategory="struct",PinSubCategoryObject="/Script/CoreUObject.ScriptStruct'/Script/CoreUObject.Vector'"),FriendlyName="Wind Direction",Category=NSLOCTEXT("KismetSchema", "Default", "Default"),PropertyFlags=5,DefaultValue="0.000000,0.000000,0.000000")
+    .LocalVariables(1)=(VarName="Wind Intensity",VarGuid=5D409C4442C795D77F721683575D74F8,VarType=(PinCategory="real",PinSubCategory="float"),FriendlyName="Wind Intensity",Category=NSLOCTEXT("KismetSchema", "Default", "Default"),PropertyFlags=5,DefaultValue="0.000000")
+    .LocalVariables(2)=(VarName="Wind Exposure",VarGuid=29EBA47043862E99EA540D94F5C5B189,VarType=(PinCategory="real",PinSubCategory="double"),FriendlyName="Wind Exposure",Category=NSLOCTEXT("KismetSchema", "Default", "Default"),PropertyFlags=5)
+    .ExtraFlags=201850880
+    .FunctionReference=(MemberName="Startup Timers")
+    .bIsEditable=True
+    .NodePosX=-2344
+    .NodePosY=-136
+    .NodeGuid=D70E2901473B3E51062BBE816DFEC88C
+    .CustomGeneratedFunctionName="ReceiveBeginPlay"
+    .bIsIntermediateNode=True
+  K2Node_PromotableOperator (K2Node_PromotableOperator_0)
+    .OperationName="Divide"
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Divide_DoubleDouble")
+    .NodePosX=828
+    .NodePosY=160
+    .NodeGuid=532D80D2426201D08234BC97E8D1549F
+  K2Node_VariableSet (K2Node_VariableSet_0)
+    .VariableReference=(MemberName="Update Timer",MemberGuid=635E8B3147252CE5FFA7DF85D37DFBFA,bSelfContext=True)
+    .NodePosX=776
+    .NodePosY=16
+    .NodeGuid=408701644AB0B2152E29C69B9C731FFA
+  K2Node_PromotableOperator (K2Node_PromotableOperator_1)
+    .OperationName="Multiply"
+    .NumAdditionalInputs=1
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Multiply_VectorVector")
+    .NodePosX=1008
+    .NodePosY=108
+    .NodeGuid=76531D0C472687551CC921B4F1C6A0EC
+  K2Node_VariableGet (K2Node_VariableGet_2)
+    .VariableReference=(MemberName="Apply Timer",MemberGuid=259BDC084E77CE8D22D70B936BFDC7C6,bSelfContext=True)
+    .NodePosX=376
+    .NodePosY=148
+    .NodeGuid=2A5F8FED427707A10F93A89A28F00B5A
+  K2Node_CallFunction (K2Node_CallFunction_6)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Conv_DoubleToVector")
+    .NodePosX=1012
+    .NodePosY=108
+    .NodeGuid=A69A870441B828B9195883BFA9C5F147
+    .bIsIntermediateNode=True
+  K2Node_VariableGet (K2Node_VariableGet_3)
+    .VariableReference=(MemberName="Physics Component",MemberGuid=F4D1E7064DC873D06444B3B6B0EBF483,bSelfContext=True)
+    .NodePosX=1308
+    .NodePosY=392
+    .NodeGuid=70089E9D4CE9098A00449EB69797F876
+  K2Node_CallFunction (K2Node_CallFunction_7)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="RandomUnitVectorInConeInDegrees")
+    .NodePosX=-536
+    .NodePosY=276
+    .NodeGuid=F61CAAAB40D6088708BB63A6E8D908AC
+  K2Node_VariableGet (K2Node_VariableGet_5)
+    .VariableReference=(MemberName="Bone Name",MemberGuid=CF59D6264F38B1AF1E17738A19E68BEA,bSelfContext=True)
+    .NodePosX=1388
+    .NodePosY=60
+    .NodeGuid=3E6FCF8C412FBEC8EA9E1FBAB9B5A05C
+  K2Node_VariableGet (K2Node_VariableGet_6)
+    .VariableReference=(MemberName="Physics Component",MemberGuid=F4D1E7064DC873D06444B3B6B0EBF483,bSelfContext=True)
+    .NodePosX=-1256
+    .NodePosY=548
+    .NodeGuid=9260F9514162DC87DB698B838BB4212F
+  K2Node_CallFunction (K2Node_CallFunction_1)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberName="Update Force Vector",MemberGuid=4949C6E9440ADAEA67572AA85A5100CD,bSelfContext=True)
+    .NodePosX=180
+    .NodePosY=-16
+    .NodeGuid=C8C523704D18D2E87F7487B6EF2264F9
+  K2Node_CallFunction (K2Node_CallFunction_8)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="BreakVector")
+    .NodePosX=-796
+    .NodePosY=552
+    .NodeGuid=8FF36093476854BE01A37F92425FF343
+  K2Node_CallFunction (K2Node_CallFunction_9)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Conv_VectorToVector2D")
+    .NodePosX=-988
+    .NodePosY=404
+    .NodeGuid=1BC07A954DAFEB78F0DB48B5C768EC43
+  K2Node_CallFunction (K2Node_CallFunction_10)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Conv_VectorToVector2D")
+    .NodePosX=-796
+    .NodePosY=500
+    .NodeGuid=19E1956A406D583FE45A1CB8B989B67E
+  K2Node_PromotableOperator (K2Node_PromotableOperator_4)
+    .OperationName="Multiply"
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Multiply_Vector2DVector2D")
+    .NodePosX=-236
+    .NodePosY=472
+    .NodeGuid=D0F12AF741C93E3004F6768D3D759DFF
+  K2Node_CallFunction (K2Node_CallFunction_11)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="VSize2D")
+    .NodePosX=-12
+    .NodePosY=448
+    .NodeGuid=5F48AD85422832F257FF7EABF3D9BC6E
+  K2Node_PromotableOperator (K2Node_PromotableOperator_7)
+    .OperationName="Divide"
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Divide_DoubleDouble")
+    .NodePosX=172
+    .NodePosY=468
+    .NodeGuid=8B71879A49B7240D0E26D28BDEED870C
+  K2Node_PromotableOperator (K2Node_PromotableOperator_6)
+    .OperationName="Divide"
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Divide_DoubleDouble")
+    .NodePosX=164
+    .NodePosY=628
+    .NodeGuid=D6423F244CBDD220CDD226942A4A4445
+  K2Node_PromotableOperator (K2Node_PromotableOperator_8)
+    .OperationName="Multiply"
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Multiply_DoubleDouble")
+    .NodePosX=380
+    .NodePosY=468
+    .NodeGuid=567F0D0B42B15C062E20258B429D8037
+  K2Node_CallFunction (K2Node_CallFunction_16)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="BreakVector2D")
+    .NodePosX=-852
+    .NodePosY=384
+    .NodeGuid=EC006E924CDEA1D82846C59D00E78805
+  K2Node_CallFunction (K2Node_CallFunction_19)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Abs")
+    .NodePosX=-680
+    .NodePosY=404
+    .NodeGuid=84824A494931FC1DF1B0F1A3DFFEDA92
+  K2Node_CallFunction (K2Node_CallFunction_18)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="MakeVector2D")
+    .NodePosX=-480
+    .NodePosY=388
+    .NodeGuid=CC6359E2492C142F77C365A8CDCCE457
+  K2Node_CallFunction (K2Node_CallFunction_17)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Abs")
+    .NodePosX=-680
+    .NodePosY=448
+    .NodeGuid=11709C1D4B3A99B82FEC2AA1B248274A
+  K2Node_CallMaterialParameterCollectionFunction (K2Node_CallMaterialParameterCollectionFunction_0)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMaterialLibrary'",MemberName="GetVectorParameterValue")
+    .NodePosX=-2144
+    .NodePosY=-136
+    .NodeGuid=7FD97DEB440B466BC1F4159D8F066BD1
+  K2Node_BreakStruct (K2Node_BreakStruct_0)
+    .bMadeAfterOverridePinRemoval=True
+    .ShowPinForProperties(0)=(PropertyName="R",PropertyFriendlyName="R",CategoryName="LinearColor",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(1)=(PropertyName="G",PropertyFriendlyName="G",CategoryName="LinearColor",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(2)=(PropertyName="B",PropertyFriendlyName="B",CategoryName="LinearColor",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(3)=(PropertyName="A",PropertyFriendlyName="A",CategoryName="LinearColor",bShowPin=True,bCanToggleVisibility=True)
+    .StructType="/Script/CoreUObject.ScriptStruct'/Script/CoreUObject.LinearColor'"
+    .NodePosX=-1800
+    .NodePosY=-44
+    .NodeGuid=B5AE5D854E0DEAF7A343979168DFA08D
+  K2Node_CallFunction (K2Node_CallFunction_2)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetSystemLibrary'",MemberName="K2_ClearAndInvalidateTimerHandle")
+    .NodePosX=552
+    .NodePosY=-148
+    .NodeGuid=F700724B4C3D1D3332CC08B901A75CB7
+  K2Node_CallFunction (K2Node_CallFunction_5)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.GameplayStatics'",MemberName="GetWorldDeltaSeconds")
+    .NodePosX=620
+    .NodePosY=180
+    .NodeGuid=07C5982C4FF2FE1C848B6491E8F3ED44
+  K2Node_VariableSet (K2Node_VariableSet_2)
+    .VariableReference=(MemberScope="Update Force Vector",MemberName="Wind Direction",MemberGuid=D53E4320495755FD504D1E9DE5AAE682)
+    .NodePosX=-1116
+    .NodePosY=-116
+    .NodeGuid=1C1D596E4E66E0C7588A0082D4493454
+  K2Node_CallMaterialParameterCollectionFunction (K2Node_CallMaterialParameterCollectionFunction_1)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMaterialLibrary'",MemberName="GetScalarParameterValue")
+    .NodePosX=-904
+    .NodePosY=-132
+    .NodeGuid=FB9F335745ACE3DD883057AD36AC0A11
+  K2Node_VariableSet (K2Node_VariableSet_3)
+    .VariableReference=(MemberScope="Update Force Vector",MemberName="Wind Intensity",MemberGuid=5D409C4442C795D77F721683575D74F8)
+    .NodePosX=-564
+    .NodePosY=-116
+    .NodeGuid=DB347E584FCACE718AB824BB8584666E
+  K2Node_VariableGet (K2Node_VariableGet_8)
+    .VariableReference=(MemberScope="Update Force Vector",MemberName="Wind Direction",MemberGuid=D53E4320495755FD504D1E9DE5AAE682)
+    .NodePosX=-1156
+    .NodePosY=296
+    .NodeGuid=0DF68ED44BF28D07A0B0D0B48270E12B
+  K2Node_VariableGet (K2Node_VariableGet_9)
+    .VariableReference=(MemberScope="Update Force Vector",MemberName="Wind Exposure",MemberGuid=29EBA47043862E99EA540D94F5C5B189)
+    .NodePosX=-260
+    .NodePosY=168
+    .NodeGuid=7543214E4FB64DF7B387C3981CAB4EDD
+  K2Node_ExecutionSequence (K2Node_ExecutionSequence_0)
+    .NodePosX=528
+    .NodePosY=-132
+    .NodeGuid=B2DC78FB49030E06F1A89A9C50ED2B57
+    .bIsIntermediateNode=True
+  K2Node_Knot (K2Node_Knot_0)
+    .NodePosX=556
+    .NodePosY=-100
+    .NodeGuid=B7BF2751468780E4A0603BAA5E8C24BB
+  K2Node_VariableGet (K2Node_VariableGet_10)
+    .VariableReference=(MemberName="Test for Collision Blocking Wind",MemberGuid=1FFD151F474D0EF8B3D166BBF28C2D30,bSelfContext=True)
+    .NodePosX=888
+    .NodePosY=-56
+    .NodeGuid=1DCC279645C2B061353F88BECFD224F0
+  K2Node_IfThenElse (K2Node_IfThenElse_0)
+    .NodePosX=196
+    .NodePosY=-132
+    .NodeGuid=4327C20348867F90C66B0D84B34A2375
+  K2Node_VariableSet (K2Node_VariableSet_4)
+    .VariableReference=(MemberScope="Update Force Vector",MemberName="Wind Exposure",MemberGuid=29EBA47043862E99EA540D94F5C5B189)
+    .NodePosX=1412
+    .NodePosY=28
+    .NodeGuid=8D244C234C8F28CA54A8958357E215D0
+  K2Node_VariableGet (K2Node_VariableGet_17)
+    .VariableReference=(MemberScope="Update Force Vector",MemberName="Wind Intensity",MemberGuid=5D409C4442C795D77F721683575D74F8)
+    .NodePosX=1224
+    .NodePosY=72
+    .NodeGuid=70265F994600D65A122D7FA870972DFC
+  K2Node_VariableGet (K2Node_VariableGet_12)
+    .VariableReference=(MemberScope="Update Force Vector",MemberName="Wind Direction",MemberGuid=D53E4320495755FD504D1E9DE5AAE682)
+    .NodePosX=1748
+    .NodePosY=124
+    .NodeGuid=CB7DF81A4166013A0C6CD2BF5518DE8F
+  K2Node_PromotableOperator (K2Node_PromotableOperator_2)
+    .OperationName="Add"
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Add_VectorVector")
+    .NodePosX=2044
+    .NodePosY=124
+    .NodeGuid=773E816148AFF93C7C3962AD604AD4C3
+  K2Node_CallFunction (K2Node_CallFunction_12)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Normal")
+    .NodePosX=2308
+    .NodePosY=104
+    .NodeGuid=E32EA537450F55B4367A0F954A4987BA
+  K2Node_CallFunction (K2Node_CallFunction_13)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetSystemLibrary'",MemberName="LineTraceSingle")
+    .NodePosX=3184
+    .NodePosY=-128
+    .AdvancedPinDisplay=Shown
+    .NodeGuid=E418D598472BC33077A4FBB6AE483825
+  K2Node_VariableGet (K2Node_VariableGet_16)
+    .VariableReference=(MemberName="Physics Component",MemberGuid=F4D1E7064DC873D06444B3B6B0EBF483,bSelfContext=True)
+    .NodePosX=1852
+    .NodePosY=-12
+    .NodeGuid=D27B054E4300663043A5408D99E32277
+  K2Node_CallFunction (K2Node_CallFunction_14)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberName="K2_GetComponentLocation",bSelfContext=True)
+    .NodePosX=2048
+    .NodePosY=-52
+    .NodeGuid=BEF1B2EB4FF339A579CD7CA85F2A9D29
+  K2Node_PromotableOperator (K2Node_PromotableOperator_3)
+    .OperationName="Add"
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Add_VectorVector")
+    .NodePosX=2828
+    .NodePosY=12
+    .NodeGuid=E0C466084A0987F012414F8CD8937B17
+  K2Node_PromotableOperator (K2Node_PromotableOperator_5)
+    .OperationName="Multiply"
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Multiply_VectorVector")
+    .NodePosX=2620
+    .NodePosY=128
+    .NodeGuid=89C5353D49D18E291041E5BCD847BF28
+  K2Node_VariableGet (K2Node_VariableGet_14)
+    .VariableReference=(MemberName="Max Trace Distance",MemberGuid=60628DC743B69798D65FE38D1714F6FE,bSelfContext=True)
+    .NodePosX=2428
+    .NodePosY=216
+    .NodeGuid=98A8643C475F01AF74D8539761F93327
+  K2Node_VariableGet (K2Node_VariableGet_15)
+    .VariableReference=(MemberName="Wind Exposure Test Trace Channel",MemberGuid=CB61792A4FF44C8520C585952FB48186,bSelfContext=True)
+    .NodePosX=2836
+    .NodePosY=96
+    .NodeGuid=735C917F422B5D82E4F8B6A7F186DB16
+  K2Node_MakeArray (K2Node_MakeArray_0)
+    .NodePosX=2980
+    .NodePosY=232
+    .NodeGuid=EE97ACB642C1D6AC2455258D573B060E
+  K2Node_VariableGet (K2Node_VariableGet_13)
+    .VariableReference=(MemberName="Physics Component",MemberGuid=F4D1E7064DC873D06444B3B6B0EBF483,bSelfContext=True)
+    .NodePosX=2544
+    .NodePosY=256
+    .NodeGuid=41C387894764B26BA6A4EEB09D943A6E
+  K2Node_CallFunction (K2Node_CallFunction_15)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberName="GetOwner",bSelfContext=True)
+    .NodePosX=2748
+    .NodePosY=216
+    .NodeGuid=0C6948E843BAEA38C15AC8A5594FFA69
+  K2Node_IfThenElse (K2Node_IfThenElse_1)
+    .NodePosX=3584
+    .NodePosY=-128
+    .NodeGuid=3C5EA0F9475D57258DFB249E392FA6C3
+  K2Node_VariableSet (K2Node_VariableSet_5)
+    .VariableReference=(MemberScope="Update Force Vector",MemberName="Wind Exposure",MemberGuid=29EBA47043862E99EA540D94F5C5B189)
+    .NodePosX=3832
+    .NodePosY=-16
+    .NodeGuid=5E5EDDEE4F2D2247C59AF4BC630D9A0B
+  K2Node_VariableGet (K2Node_VariableGet_11)
+    .VariableReference=(MemberScope="Update Force Vector",MemberName="Wind Intensity",MemberGuid=5D409C4442C795D77F721683575D74F8)
+    .NodePosX=3644
+    .NodePosY=28
+    .NodeGuid=010E1FBD4F85244964700C942BCC97C6
+  K2Node_VariableSet (K2Node_VariableSet_1)
+    .VariableReference=(MemberName="Apply Timer",MemberGuid=259BDC084E77CE8D22D70B936BFDC7C6,bSelfContext=True)
+    .NodePosX=1516
+    .NodePosY=16
+    .NodeGuid=A72E8E8947918C37C77FC38D9D072AF6
+  K2Node_PromotableOperator (K2Node_PromotableOperator_9)
+    .OperationName="Multiply"
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Multiply_VectorVector")
+    .NodePosX=1876
+    .NodePosY=124
+    .NodeGuid=B4116BCF46240180EFDB7B99805B8D42
+  EdGraph (Apply Force)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_3'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .Nodes(7)="/Script/BlueprintGraph.K2Node_Knot'K2Node_Knot_0'"
+    .Nodes(8)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_3'"
+    .Nodes(9)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_2'"
+    .Nodes(10)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_5'"
+    .Nodes(11)="/Script/BlueprintGraph.K2Node_PromotableOperator'K2Node_PromotableOperator_0'"
+    .Nodes(12)="/Script/BlueprintGraph.K2Node_PromotableOperator'K2Node_PromotableOperator_1'"
+    .Nodes(13)="/Script/BlueprintGraph.K2Node_Knot'K2Node_Knot_1'"
+    .Nodes(14)="/Script/BlueprintGraph.K2Node_Knot'K2Node_Knot_2'"
+    .Nodes(15)="/Script/BlueprintGraph.K2Node_Knot'K2Node_Knot_3'"
+    .Nodes(16)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_5'"
+    .Nodes(17)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_4'"
+    .GraphGuid=0BDB7B6A4A45F6BAAA1DFE84754ACAD7
+  K2Node_VariableGet (K2Node_VariableGet_1)
+    .VariableReference=(MemberName="Update Timer",MemberGuid=635E8B3147252CE5FFA7DF85D37DFBFA,bSelfContext=True)
+    .NodePosX=12
+    .NodePosY=144
+    .NodeGuid=16983F5E494C5C9EB10EDD81DED03E3A
+  K2Node_VariableGet (K2Node_VariableGet_0)
+    .VariableReference=(MemberName="Update Force Period",MemberGuid=64CB2BB441053F9562F39190C2E05AA3,bSelfContext=True)
+    .NodePosX=232
+    .NodePosY=236
+    .NodeGuid=2C21E88844D3B3B191C386BE4A43FE86
+  K2Node_CallFunction (K2Node_CallFunction_3)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetSystemLibrary'",MemberName="K2_SetTimerDelegate")
+    .NodePosX=1196
+    .NodePosY=-24
+    .NodeGuid=2023F47A483FD707E840AE9F8DFA54A8
+    .AdvancedPinDisplay=Shown
+    .bIsIntermediateNode=True
+  K2Node_Knot (K2Node_Knot_1)
+    .NodePosX=572
+    .NodePosY=372
+    .NodeGuid=F0E3FBAB420BBDC769805BB8226B21C7
+  K2Node_Knot (K2Node_Knot_2)
+    .NodePosX=1200
+    .NodePosY=428
+    .NodeGuid=A56198804A991C66B7D17FAFC31AE769
+  K2Node_Knot (K2Node_Knot_3)
+    .NodePosX=1176
+    .NodePosY=-44
+    .NodeGuid=74BBC706410816A118CDF49787438EC0
+  K2Node_VariableGet (K2Node_VariableGet_4)
+    .VariableReference=(MemberName="Bone Name",MemberGuid=CF59D6264F38B1AF1E17738A19E68BEA,bSelfContext=True)
+    .NodePosX=1360
+    .NodePosY=460
+    .NodeGuid=7C3305894B8A8F21D0A555958D50133C
+  EdGraph (Activated)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .GraphGuid=C8A991BA469AA594AB07C2B8329CACDD
+  EdGraph (Deactivated)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_1'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_2'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .GraphGuid=4A14FB764D8017D5FA9C19ABE493FF00
+  EdGraph (Startup Timers)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_4'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CreateDelegate'K2Node_CreateDelegate_0'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_3'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_CreateDelegate'K2Node_CreateDelegate_1'"
+    .Nodes(7)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_0'"
+    .Nodes(8)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_1'"
+    .GraphGuid=FDC1D0D145BF5F1AB539F0A514EA01D1
+  K2Node_CallFunction (K2Node_CallFunction_4)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetSystemLibrary'",MemberName="K2_SetTimerDelegate")
+    .NodePosX=460
+    .AdvancedPinDisplay=Shown
+    .NodeGuid=AC3D7AB9458A99E688133BAB3C30B1B2
+    .bDefaultsToPureFunc=True
+    .NodePosY=158
+    .bIsIntermediateNode=True
+  K2Node_CreateDelegate (K2Node_CreateDelegate_0)
+    .SelectedFunctionName="Update Force Vector"
+    .SelectedFunctionGuid=4949C6E9440ADAEA67572AA85A5100CD
+    .NodePosX=196
+    .NodePosY=108
+    .NodeGuid=4D8CE39D446E5C797BB0349C45FD6BA7
+  K2Node_CreateDelegate (K2Node_CreateDelegate_1)
+    .SelectedFunctionName="Apply Force"
+    .SelectedFunctionGuid=0BDB7B6A4A45F6BAAA1DFE84754ACAD7
+    .NodePosX=964
+    .NodePosY=64
+    .NodeGuid=BD25CDE443D0CFDE0048BB865D39650F
+  EdGraph (EventGraph)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_Event'K2Node_Event_2'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_AddDelegate'K2Node_AddDelegate_2'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CreateDelegate'K2Node_CreateDelegate_2'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_AddDelegate'K2Node_AddDelegate_3'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_CreateDelegate'K2Node_CreateDelegate_3'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_1'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_2'"
+    .Nodes(7)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_7'"
+    .Nodes(8)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(9)="/Script/BlueprintGraph.K2Node_DynamicCast'K2Node_DynamicCast_0'"
+    .Nodes(10)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_1'"
+    .Nodes(11)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_14'"
+    .bAllowDeletion=False
+    .GraphGuid=EFFCAF26416423562243449074345C3B
+  K2Node_Event (K2Node_Event_2)
+    .EventReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.ActorComponent'",MemberName="ReceiveBeginPlay")
+    .bOverrideFunction=True
+    .NodePosX=-3468
+    .NodePosY=-2208
+    .NodeGuid=F6AA81F0453EC4CE9013978673A057DB
+  K2Node_AddDelegate (K2Node_AddDelegate_2)
+    .DelegateReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.ActorComponent'",MemberName="OnComponentActivated")
+    .NodePosX=-2292
+    .NodePosY=-2208
+    .NodeGuid=6B79BEAD4E57D691474184826C1817EA
+  K2Node_CreateDelegate (K2Node_CreateDelegate_2)
+    .SelectedFunctionName="Activated"
+    .SelectedFunctionGuid=C8A991BA469AA594AB07C2B8329CACDD
+    .NodePosX=-2636
+    .NodePosY=-2112
+    .NodeGuid=F01CABE9440A559C0B74BDA30A377246
+  K2Node_AddDelegate (K2Node_AddDelegate_3)
+    .DelegateReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.ActorComponent'",MemberName="OnComponentDeactivated")
+    .NodePosX=-1676
+    .NodePosY=-2208
+    .NodeGuid=4EA0FA0743A30997EA4BDF85EF99ED5E
+  K2Node_CreateDelegate (K2Node_CreateDelegate_3)
+    .SelectedFunctionName="Deactivated"
+    .SelectedFunctionGuid=4A14FB764D8017D5FA9C19ABE493FF00
+    .NodePosX=-1988
+    .NodePosY=-2068
+    .NodeGuid=B7D661CD4987F83BA01687BA467E952A
+  K2Node_DynamicCast (K2Node_DynamicCast_0)
+    .TargetType="/Script/CoreUObject.Class'/Script/Engine.PrimitiveComponent'"
+    .PureState=Impure
+    .NodePosX=-3224
+    .NodePosY=-2208
+    .NodeGuid=2EA55A2F4889409C01583AB19F695833
+  EdGraph (ExecuteUbergraph_Wind_Physics_Force)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_14'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_1'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_DynamicCast'K2Node_DynamicCast_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_7'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_2'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_1'"
+    .Nodes(7)="/Script/BlueprintGraph.K2Node_CreateDelegate'K2Node_CreateDelegate_3'"
+    .Nodes(8)="/Script/BlueprintGraph.K2Node_AddDelegate'K2Node_AddDelegate_3'"
+    .Nodes(9)="/Script/BlueprintGraph.K2Node_CreateDelegate'K2Node_CreateDelegate_2'"
+    .Nodes(10)="/Script/BlueprintGraph.K2Node_AddDelegate'K2Node_AddDelegate_2'"
+    .Nodes(11)="/Script/BlueprintGraph.K2Node_Event'K2Node_Event_2'"
+    .Nodes(12)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(13)="/Script/BlueprintGraph.K2Node_ExecutionSequence'K2Node_ExecutionSequence_0'"
+    .GraphGuid=30290D2F473B440C26BE9BB7C72EF436
+  EdGraph (ReceiveBeginPlay)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=1BB27A2743710703F3B2E2B20659F621
+  K2Node_CallFunction (K2Node_CallFunction_0)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Divide_DoubleDouble")
+    .NodePosX=836
+    .NodePosY=210
+    .bIsIntermediateNode=True
+    .NodeGuid=D8941963118A3DEA9C0DCA07472C8E55
+    .bDefaultsToPureFunc=True
+  EdGraph (Update Force Vector_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_31'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_22'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_2'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_6'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_3'"
+    .Nodes(7)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_7'"
+    .Nodes(8)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_5'"
+    .Nodes(9)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_6'"
+    .Nodes(10)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(11)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_8'"
+    .Nodes(12)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_9'"
+    .Nodes(13)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_10'"
+    .Nodes(14)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_30'"
+    .Nodes(15)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_11'"
+    .Nodes(16)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_29'"
+    .Nodes(17)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_28'"
+    .Nodes(18)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_27'"
+    .Nodes(19)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_16'"
+    .Nodes(20)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_19'"
+    .Nodes(21)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_18'"
+    .Nodes(22)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_17'"
+    .Nodes(23)="/Script/BlueprintGraph.K2Node_CallMaterialParameterCollectionFunction'K2Node_CallMaterialParameterCollectionFunction_0'"
+    .Nodes(24)="/Script/BlueprintGraph.K2Node_BreakStruct'K2Node_BreakStruct_0'"
+    .Nodes(25)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .Nodes(26)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_5'"
+    .Nodes(27)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_2'"
+    .Nodes(28)="/Script/BlueprintGraph.K2Node_CallMaterialParameterCollectionFunction'K2Node_CallMaterialParameterCollectionFunction_1'"
+    .Nodes(29)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_3'"
+    .Nodes(30)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_8'"
+    .Nodes(31)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_9'"
+    .Nodes(32)="/Script/BlueprintGraph.K2Node_ExecutionSequence'K2Node_ExecutionSequence_0'"
+    .Nodes(33)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_26'"
+    .Nodes(34)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_10'"
+    .Nodes(35)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(36)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_4'"
+    .Nodes(37)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_17'"
+    .Nodes(38)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_12'"
+    .Nodes(39)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_25'"
+    .Nodes(40)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_12'"
+    .Nodes(41)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_13'"
+    .Nodes(42)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_16'"
+    .Nodes(43)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_14'"
+    .Nodes(44)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_24'"
+    .Nodes(45)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_21'"
+    .Nodes(46)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_14'"
+    .Nodes(47)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_15'"
+    .Nodes(48)="/Script/BlueprintGraph.K2Node_MakeArray'K2Node_MakeArray_0'"
+    .Nodes(49)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_13'"
+    .Nodes(50)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_15'"
+    .Nodes(51)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_1'"
+    .Nodes(52)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_5'"
+    .Nodes(53)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_11'"
+    .Nodes(54)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_1'"
+    .Nodes(55)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_23'"
+    .Nodes(56)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_6'"
+    .Nodes(57)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_7'"
+    .Nodes(58)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(59)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_3'"
+    .Nodes(60)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_4'"
+    .Nodes(61)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_20'"
+    .GraphGuid=4949C6E9440ADAEA67572AA85A5100CD
+  K2Node_VariableSet (K2Node_VariableSet_6)
+    .VariableReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'Wind_Physics_Force_C'",MemberScope="Update Force Vector",MemberName="Wind Direction",MemberGuid=D53E4320495755FD504D1E9DE5AAE682)
+    .SelfContextInfo=NotSelfContext
+    .NodePosX=-1280
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=892D7D751D573FF5B6313D55D375F47E
+  K2Node_VariableSet (K2Node_VariableSet_7)
+    .VariableReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'Wind_Physics_Force_C'",MemberScope="Update Force Vector",MemberName="Wind Intensity",MemberGuid=5D409C4442C795D77F721683575D74F8)
+    .SelfContextInfo=NotSelfContext
+    .NodePosX=-1040
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=9D82F9FCC3FC3DE2A4398B6B0FC87398
+  K2Node_CallFunction (K2Node_CallFunction_20)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Multiply_VectorVector")
+    .NodePosX=616
+    .NodePosY=276
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_21)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Conv_DoubleToVector")
+    .NodePosX=604
+    .NodePosY=176
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_22)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Multiply_Vector2DVector2D")
+    .NodePosX=-228
+    .NodePosY=522
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_23)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Divide_DoubleDouble")
+    .NodePosX=180
+    .NodePosY=518
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_24)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Divide_DoubleDouble")
+    .NodePosX=172
+    .NodePosY=678
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_25)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Multiply_DoubleDouble")
+    .NodePosX=388
+    .NodePosY=518
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_26)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Add_VectorVector")
+    .NodePosX=2052
+    .NodePosY=174
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_27)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Add_VectorVector")
+    .NodePosX=2836
+    .NodePosY=62
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_28)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Multiply_VectorVector")
+    .NodePosX=2628
+    .NodePosY=178
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_29)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Conv_DoubleToVector")
+    .NodePosX=2624
+    .NodePosY=128
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_30)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Multiply_VectorVector")
+    .NodePosX=1884
+    .NodePosY=174
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_31)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Conv_DoubleToVector")
+    .NodePosX=1880
+    .NodePosY=124
+    .bIsIntermediateNode=True
+  EdGraph (Apply Force_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_3'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .Nodes(7)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_6'"
+    .Nodes(8)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_3'"
+    .Nodes(9)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_2'"
+    .Nodes(10)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_5'"
+    .Nodes(11)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_4'"
+    .Nodes(12)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_5'"
+    .Nodes(13)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(14)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_4'"
+    .GraphGuid=0BDB7B6A4A45F6BAAA1DFE84754ACAD7
+  EdGraph (Activated_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .GraphGuid=C8A991BA469AA594AB07C2B8329CACDD
+  EdGraph (Deactivated_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_1'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_2'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .GraphGuid=4A14FB764D8017D5FA9C19ABE493FF00
+  EdGraph (Startup Timers_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_4'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CreateDelegate'K2Node_CreateDelegate_0'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_3'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_CreateDelegate'K2Node_CreateDelegate_1'"
+    .Nodes(7)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_0'"
+    .Nodes(8)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_1'"
+    .GraphGuid=FDC1D0D145BF5F1AB539F0A514EA01D1

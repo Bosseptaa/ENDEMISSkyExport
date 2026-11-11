@@ -1,0 +1,220 @@
+### /Game/UltraDynamicSky/Materials/Material_Functions/Puddle_SceneDepth
+  MaterialFunction (Puddle_SceneDepth)
+    .PreviewBlendMode=BLEND_Translucent
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'Puddle_SceneDepthEditorOnlyData'"
+    .StateId=A3C87C3F4709D2E4A2B7D1AA96B807D7
+    .CombinedOutputTypes=15
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+  MaterialFunctionEditorOnlyData (Puddle_SceneDepthEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'Puddle_SceneDepth:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionComponentMask'Puddle_SceneDepth:MaterialExpressionComponentMask_6'","/Script/Engine.MaterialExpressionDivide'Puddle_SceneDepth:MaterialExpressionDivide_1'","/Script/Engine.MaterialExpressionTextureSample'Puddle_SceneDepth:MaterialExpressionTextureSample_1'","/Script/Engine.MaterialExpressionMultiply'Puddle_SceneDepth:MaterialExpressionMultiply_5'","/Script/Engine.MaterialExpressionScalarParameter'Puddle_SceneDepth:MaterialExpressionScalarParameter_3'","/Script/Engine.MaterialExpressionSubtract'Puddle_SceneDepth:MaterialExpressionSubtract_2'","/Script/Engine.MaterialExpressionComponentMask'Puddle_SceneDepth:MaterialExpressionComponentMask_11'","/Script/Engine.MaterialExpressionComponentMask'Puddle_SceneDepth:MaterialExpressionComponentMask_12'","/Script/Engine.MaterialExpressionSubtract'Puddle_SceneDepth:MaterialExpressionSubtract_3'","/Script/Engine.MaterialExpressionDivide'Puddle_SceneDepth:MaterialExpressionDivide_33'","/Script/Engine.MaterialExpressionPixelDepth'Puddle_SceneDepth:MaterialExpressionPixelDepth_1'","/Script/Engine.MaterialExpressionMultiply'Puddle_SceneDepth:MaterialExpressionMultiply_33'","/Script/Engine.MaterialExpressionSubtract'Puddle_SceneDepth:MaterialExpressionSubtract_40'","/Script/Engine.MaterialExpressionCameraPositionWS'Puddle_SceneDepth:MaterialExpressionCameraPositionWS_5'","/Script/Engine.MaterialExpressionAdd'Puddle_SceneDepth:MaterialExpressionAdd_38'","/Script/Engine.MaterialExpressionWorldPosition'Puddle_SceneDepth:MaterialExpressionWorldPosition_7'","/Script/Engine.MaterialExpressionSceneDepth'Puddle_SceneDepth:MaterialExpressionSceneDepth_12'","/Script/Engine.MaterialExpressionReroute'Puddle_SceneDepth:MaterialExpressionReroute_1'","/Script/Engine.MaterialExpressionScalarParameter'Puddle_SceneDepth:MaterialExpressionScalarParameter_0'","/Script/Engine.MaterialExpressionScalarParameter'Puddle_SceneDepth:MaterialExpressionScalarParameter_1'","/Script/Engine.MaterialExpressionAppendVector'Puddle_SceneDepth:MaterialExpressionAppendVector_0'","/Script/Engine.MaterialExpressionAdd'Puddle_SceneDepth:MaterialExpressionAdd_0'","/Script/Engine.MaterialExpressionWorldPosition'Puddle_SceneDepth:MaterialExpressionWorldPosition_2'","/Script/Engine.MaterialExpressionScalarParameter'Puddle_SceneDepth:MaterialExpressionScalarParameter_2'","/Script/Engine.MaterialExpressionSubtract'Puddle_SceneDepth:MaterialExpressionSubtract_0'"))
+  MaterialExpressionAdd (MaterialExpressionAdd_0)
+    A                      <- MaterialExpressionDivide
+    B                      <- MaterialExpressionAppendVector
+    .B=(Expression="/Script/Engine.MaterialExpressionAppendVector'Puddle_SceneDepth:MaterialExpressionAppendVector_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'Puddle_SceneDepth:MaterialExpressionDivide_1'")
+    .MaterialExpressionEditorX=-596
+    .MaterialExpressionEditorY=536
+    .MaterialExpressionGuid=20647B0845AD8020EA99B491115A4825
+    .Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+  MaterialExpressionAdd (MaterialExpressionAdd_38)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionReroute
+    .B=(Expression="/Script/Engine.MaterialExpressionReroute'Puddle_SceneDepth:MaterialExpressionReroute_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Puddle_SceneDepth:MaterialExpressionMultiply_33'")
+    .MaterialExpressionEditorX=-1052
+    .MaterialExpressionEditorY=428
+    .MaterialExpressionGuid=2B9A30074BC9EE67AD6613AB28F89797
+    .Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_0)
+    A                      <- MaterialExpressionScalarParameter
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Puddle_SceneDepth:MaterialExpressionScalarParameter_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Puddle_SceneDepth:MaterialExpressionScalarParameter_0'")
+    .MaterialExpressionEditorX=-732
+    .MaterialExpressionEditorY=832
+    .MaterialExpressionGuid=02F413554AD30A55DF4E038BA7C20F33
+    .Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+  MaterialExpressionCameraPositionWS (MaterialExpressionCameraPositionWS_5)
+    .MaterialExpressionEditorX=-1624
+    .MaterialExpressionEditorY=588
+    .MaterialExpressionGuid=E72D8B294CC20023ACBB928FDB36699C
+    .Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_11)
+    Input                  <- MaterialExpressionAdd
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionAdd'Puddle_SceneDepth:MaterialExpressionAdd_38'")
+    .MaterialExpressionEditorX=-640
+    .MaterialExpressionEditorY=428
+    .MaterialExpressionGuid=310C75A448F80C30C210EEBCC2DCB414
+    .Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_12)
+    Input                  <- MaterialExpressionWorldPosition
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionWorldPosition'Puddle_SceneDepth:MaterialExpressionWorldPosition_2'")
+    .MaterialExpressionEditorX=-640
+    .MaterialExpressionEditorY=312
+    .MaterialExpressionGuid=38F45E054C4D1683D0F7BE8D1B620D66
+    .Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_6)
+    Input                  <- MaterialExpressionAdd
+    .R=True
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionAdd'Puddle_SceneDepth:MaterialExpressionAdd_38'")
+    .MaterialExpressionEditorX=-912
+    .MaterialExpressionEditorY=536
+    .MaterialExpressionGuid=F809BBC94B1EAC6739C1D1B1FC5DD6F1
+    .Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+  MaterialExpressionDivide (MaterialExpressionDivide_1)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Puddle_SceneDepth:MaterialExpressionScalarParameter_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Puddle_SceneDepth:MaterialExpressionComponentMask_6'")
+    .ConstB=300.000000
+    .MaterialExpressionEditorX=-776
+    .MaterialExpressionEditorY=536
+    .MaterialExpressionGuid=01356EC64AC6AEE9BD9EA39A590D8E49
+    .Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+  MaterialExpressionDivide (MaterialExpressionDivide_33)
+    A                      <- MaterialExpressionSceneDepth
+    B                      <- MaterialExpressionPixelDepth
+    .B=(Expression="/Script/Engine.MaterialExpressionPixelDepth'Puddle_SceneDepth:MaterialExpressionPixelDepth_1'",Mask=1,MaskR=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionSceneDepth'Puddle_SceneDepth:MaterialExpressionSceneDepth_12'",Mask=1,MaskR=1)
+    .MaterialExpressionEditorX=-1408
+    .MaterialExpressionEditorY=332
+    .MaterialExpressionGuid=138F09DA44EDC41B5B420392092DEFFF
+    .Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionSubtract
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'Puddle_SceneDepth:MaterialExpressionSubtract_2'")
+    .bLastPreviewed=True
+    .Id=FA38150842BD943C81F26482697479B1
+    .MaterialExpressionEditorX=316
+    .MaterialExpressionEditorY=288
+    .MaterialExpressionGuid=F2DE1079494765DE240C8FB2369063A6
+    .Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_33)
+    A                      <- MaterialExpressionDivide
+    B                      <- MaterialExpressionSubtract
+    .B=(Expression="/Script/Engine.MaterialExpressionSubtract'Puddle_SceneDepth:MaterialExpressionSubtract_40'")
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'Puddle_SceneDepth:MaterialExpressionDivide_33'")
+    .MaterialExpressionEditorX=-1264
+    .MaterialExpressionEditorY=428
+    .MaterialExpressionGuid=6DC218E1408141B1D4AD68B810EBBFE2
+    .Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_5)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Puddle_SceneDepth:MaterialExpressionScalarParameter_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'Puddle_SceneDepth:MaterialExpressionSubtract_0'")
+    .MaterialExpressionEditorX=-24
+    .MaterialExpressionEditorY=564
+    .MaterialExpressionGuid=B55B700F4EF1F2405464AA96F2C635CE
+    .Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+  MaterialExpressionPixelDepth (MaterialExpressionPixelDepth_1)
+    .MaterialExpressionEditorX=-1560
+    .MaterialExpressionEditorY=384
+    .MaterialExpressionGuid=69C542EE450EF702622AC1AF51D9397F
+    .Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+  MaterialExpressionReroute (MaterialExpressionReroute_1)
+    Input                  <- MaterialExpressionCameraPositionWS
+    .Input=(Expression="/Script/Engine.MaterialExpressionCameraPositionWS'Puddle_SceneDepth:MaterialExpressionCameraPositionWS_5'")
+    .MaterialExpressionEditorX=-1136
+    .MaterialExpressionEditorY=636
+    .MaterialExpressionGuid=98F7E9604181EAF4370FF2A33F42E202
+    .Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_0)
+    .ParameterName="NoiseOffset X"
+    .bUseCustomPrimitiveData=True
+    .PrimitiveDataIndex=14
+    .ExpressionGUID=119F4C764C7148F574F61592C2535712
+    .MaterialExpressionEditorX=-960
+    .MaterialExpressionEditorY=804
+    .MaterialExpressionGuid=D6F2EB8842F10BFB364A53ADC9826751
+    .Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_1)
+    .ParameterName="NoiseOffset Y"
+    .bUseCustomPrimitiveData=True
+    .PrimitiveDataIndex=15
+    .ExpressionGUID=74A80D004D6916C3D57E1BA27CECE9C3
+    .MaterialExpressionEditorX=-972
+    .MaterialExpressionEditorY=904
+    .MaterialExpressionGuid=D6F2EB8842F10BFB364A53ADC9826751
+    .Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_2)
+    .ParameterName="Small Clouds Scale"
+    .DefaultValue=500.000000
+    .ExpressionGUID=40D120AB402F62CC16951696D117414F
+    .MaterialExpressionEditorX=-992
+    .MaterialExpressionEditorY=644
+    .MaterialExpressionGuid=FFF5734A4443EDE46ED99DBAA329A418
+    .Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_3)
+    .ParameterName="Depth Clouds"
+    .DefaultValue=7.500000
+    .bUseCustomPrimitiveData=True
+    .PrimitiveDataIndex=6
+    .ExpressionGUID=637656424FF0DE2DB72B528D89259625
+    .MaterialExpressionEditorX=-252
+    .MaterialExpressionEditorY=740
+    .MaterialExpressionGuid=12C453C94A65C55647A5FC83AFEA8109
+    .Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+  MaterialExpressionSceneDepth (MaterialExpressionSceneDepth_12)
+    .MaterialExpressionEditorX=-1636
+    .MaterialExpressionEditorY=276
+    .MaterialExpressionGuid=2BB654AF4BA8AC56B0A341AAE1D9B706
+    .Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_0)
+    A                      <- MaterialExpressionTextureSample
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'Puddle_SceneDepth:MaterialExpressionTextureSample_1'",OutputIndex=1,Mask=1,MaskR=1)
+    .ConstB=0.300000
+    .MaterialExpressionEditorX=-212
+    .MaterialExpressionEditorY=564
+    .MaterialExpressionGuid=25F5DF8A4E5D1A189ACA18BDFA63075F
+    .Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_2)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Puddle_SceneDepth:MaterialExpressionMultiply_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'Puddle_SceneDepth:MaterialExpressionSubtract_3'")
+    .MaterialExpressionEditorX=156
+    .MaterialExpressionEditorY=312
+    .MaterialExpressionGuid=2DC55521408FA9289A23DD91CFD053C6
+    .Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_3)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Puddle_SceneDepth:MaterialExpressionComponentMask_11'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Puddle_SceneDepth:MaterialExpressionComponentMask_12'")
+    .MaterialExpressionEditorX=-496
+    .MaterialExpressionEditorY=312
+    .MaterialExpressionGuid=EED49E564D85ACD851BF41A6890705D2
+    .Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_40)
+    A                      <- MaterialExpressionWorldPosition
+    B                      <- MaterialExpressionCameraPositionWS
+    .B=(Expression="/Script/Engine.MaterialExpressionCameraPositionWS'Puddle_SceneDepth:MaterialExpressionCameraPositionWS_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionWorldPosition'Puddle_SceneDepth:MaterialExpressionWorldPosition_7'")
+    .MaterialExpressionEditorX=-1416
+    .MaterialExpressionEditorY=528
+    .MaterialExpressionGuid=38797C95446748F71C1F569F377F83F6
+    .Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_1)
+    Coordinates            <- MaterialExpressionAdd
+    .SamplerType=SAMPLERTYPE_Alpha
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/Clouds/T_CloudsAlpha.T_CloudsAlpha'"
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionAdd'Puddle_SceneDepth:MaterialExpressionAdd_0'")
+    .MaterialExpressionEditorX=-488
+    .MaterialExpressionEditorY=536
+    .MaterialExpressionGuid=2AE3325346E23543452FCA9C18DDA6F5
+    .Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+  MaterialExpressionWorldPosition (MaterialExpressionWorldPosition_2)
+    .MaterialExpressionEditorX=-852
+    .MaterialExpressionEditorY=296
+    .MaterialExpressionGuid=3C2CBEE14D17D9C49D95328F6C83356E
+    .Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"
+  MaterialExpressionWorldPosition (MaterialExpressionWorldPosition_7)
+    .MaterialExpressionEditorX=-1664
+    .MaterialExpressionEditorY=480
+    .MaterialExpressionGuid=FD2E4F334946B7420B9E46B3E274F1B4
+    .Function="/Script/Engine.MaterialFunction'Puddle_SceneDepth'"

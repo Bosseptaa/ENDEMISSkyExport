@@ -1,0 +1,217 @@
+### /Game/UltraDynamicSky/Materials/Material_Functions/Heat_Distortion_Sample
+  MaterialFunction (Heat_Distortion_Sample)
+    DependentFunctionExpressionCandidates(0) <- MaterialExpressionMaterialFunctionCall
+    .DependentFunctionExpressionCandidates(0)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_0'"
+    .PreviewBlendMode=BLEND_Translucent
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'Heat_Distortion_SampleEditorOnlyData'"
+    .StateId=2E821F8E4E5C14C6E8C695A5FCD4F446
+    .CombinedInputTypes=15
+    .CombinedOutputTypes=15
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+  MaterialFunctionEditorOnlyData (Heat_Distortion_SampleEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'Heat_Distortion_Sample:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionFunctionInput'Heat_Distortion_Sample:MaterialExpressionFunctionInput_0'","/Script/Engine.MaterialExpressionFunctionInput'Heat_Distortion_Sample:MaterialExpressionFunctionInput_1'","/Script/Engine.MaterialExpressionFunctionInput'Heat_Distortion_Sample:MaterialExpressionFunctionInput_2'","/Script/Engine.MaterialExpressionMultiply'Heat_Distortion_Sample:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionAdd'Heat_Distortion_Sample:MaterialExpressionAdd_0'","/Script/Engine.MaterialExpressionTextureCoordinate'Heat_Distortion_Sample:MaterialExpressionTextureCoordinate_0'","/Script/Engine.MaterialExpressionSceneTexture'Heat_Distortion_Sample:MaterialExpressionSceneTexture_2'","/Script/Engine.MaterialExpressionSceneTexture'Heat_Distortion_Sample:MaterialExpressionSceneTexture_3'","/Script/Engine.MaterialExpressionComponentMask'Heat_Distortion_Sample:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionLinearInterpolate'Heat_Distortion_Sample:MaterialExpressionLinearInterpolate_0'","/Script/Engine.MaterialExpressionSaturate'Heat_Distortion_Sample:MaterialExpressionSaturate_0'","/Script/Engine.MaterialExpressionComponentMask'Heat_Distortion_Sample:MaterialExpressionComponentMask_1'","/Script/Engine.MaterialExpressionSubtract'Heat_Distortion_Sample:MaterialExpressionSubtract_2'","/Script/Engine.MaterialExpressionDivide'Heat_Distortion_Sample:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionFunctionInput'Heat_Distortion_Sample:MaterialExpressionFunctionInput_3'","/Script/Engine.MaterialExpressionFunctionInput'Heat_Distortion_Sample:MaterialExpressionFunctionInput_4'","/Script/Engine.MaterialExpressionViewProperty'Heat_Distortion_Sample:MaterialExpressionViewProperty_0'","/Script/Engine.MaterialExpressionDivide'Heat_Distortion_Sample:MaterialExpressionDivide_1'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Heat_Distortion_Sample:MaterialExpressionMaterialFunctionCall_0'","/Script/Engine.MaterialExpressionMultiply'Heat_Distortion_Sample:MaterialExpressionMultiply_1'","/Script/Engine.MaterialExpressionLinearInterpolate'Heat_Distortion_Sample:MaterialExpressionLinearInterpolate_1'","/Script/Engine.MaterialExpressionScalarParameter'Heat_Distortion_Sample:MaterialExpressionScalarParameter_0'"))
+  MaterialExpressionAdd (MaterialExpressionAdd_0)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionTextureCoordinate
+    .B=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'Heat_Distortion_Sample:MaterialExpressionTextureCoordinate_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Heat_Distortion_Sample:MaterialExpressionMultiply_0'")
+    .MaterialExpressionEditorX=-780
+    .MaterialExpressionEditorY=660
+    .MaterialExpressionGuid=C2051EC74FA0C406CA7E8E8C290E8F98
+    .Function="/Script/Engine.MaterialFunction'Heat_Distortion_Sample'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionSceneTexture
+    .R=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionSceneTexture'Heat_Distortion_Sample:MaterialExpressionSceneTexture_3'",Mask=1,MaskR=1,MaskG=1,MaskB=1,MaskA=1)
+    .MaterialExpressionEditorX=-232
+    .MaterialExpressionEditorY=864
+    .MaterialExpressionGuid=E0284477412FA4444088C096316A890A
+    .Function="/Script/Engine.MaterialFunction'Heat_Distortion_Sample'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_1)
+    Input                  <- MaterialExpressionSceneTexture
+    .R=True
+    .G=True
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionSceneTexture'Heat_Distortion_Sample:MaterialExpressionSceneTexture_2'",Mask=1,MaskR=1,MaskG=1,MaskB=1,MaskA=1)
+    .MaterialExpressionEditorX=-144
+    .MaterialExpressionEditorY=660
+    .MaterialExpressionGuid=64D72F8D44AD2D7986B6AEBB17B015F6
+    .Function="/Script/Engine.MaterialFunction'Heat_Distortion_Sample'"
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Heat_Distortion_Sample:MaterialExpressionFunctionInput_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'Heat_Distortion_Sample:MaterialExpressionSubtract_2'")
+    .MaterialExpressionEditorX=192
+    .MaterialExpressionEditorY=864
+    .MaterialExpressionGuid=4C1581E341409B826655A7882B1850EA
+    .Function="/Script/Engine.MaterialFunction'Heat_Distortion_Sample'"
+  MaterialExpressionDivide (MaterialExpressionDivide_1)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionViewProperty
+    .B=(Expression="/Script/Engine.MaterialExpressionViewProperty'Heat_Distortion_Sample:MaterialExpressionViewProperty_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Heat_Distortion_Sample:MaterialExpressionFunctionInput_2'")
+    .MaterialExpressionEditorX=-1216
+    .MaterialExpressionEditorY=744
+    .MaterialExpressionGuid=894B17154F38CA8AC8A63B9A619C7CC3
+    .Function="/Script/Engine.MaterialFunction'Heat_Distortion_Sample'"
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_0)
+    .InputName="Scale Distort"
+    .Id=064B95A1483EA15DEFD329846C0E5F84
+    .InputType=FunctionInput_Scalar
+    .PreviewValue=(X=1.000000,Y=0.000000,Z=0.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=1
+    .MaterialExpressionEditorX=-1688
+    .MaterialExpressionEditorY=628
+    .MaterialExpressionGuid=4F17F9184CEFBB65DB921CBE86BA64DD
+    .Function="/Script/Engine.MaterialFunction'Heat_Distortion_Sample'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_1)
+    .InputName="Undistorted Color"
+    .Id=EB707C374D58C5DB44C6BA8D875163BF
+    .MaterialExpressionEditorX=36
+    .MaterialExpressionEditorY=576
+    .MaterialExpressionGuid=231EC16342490A3E2CC7DFADAFD5D8F5
+    .Function="/Script/Engine.MaterialFunction'Heat_Distortion_Sample'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_2)
+    .InputName="Distort Vector"
+    .Id=7C77190144369396BEDC988A7C6612A3
+    .InputType=FunctionInput_Vector2
+    .SortPriority=2
+    .MaterialExpressionEditorX=-1528
+    .MaterialExpressionEditorY=744
+    .MaterialExpressionGuid=DAC6629444FD782A1C9D7192804540C3
+    .Function="/Script/Engine.MaterialFunction'Heat_Distortion_Sample'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_3)
+    .InputName="Distance"
+    .Id=0B96E7C14A6B00635F7A42AF57112C5F
+    .InputType=FunctionInput_Scalar
+    .SortPriority=5
+    .MaterialExpressionEditorX=-348
+    .MaterialExpressionEditorY=1048
+    .MaterialExpressionGuid=29DDF9FA4340A489DF75DC90446699DF
+    .Function="/Script/Engine.MaterialFunction'Heat_Distortion_Sample'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_4)
+    .InputName="Falloff"
+    .Id=35B9ABF34280A4C71AD52C8E601D3233
+    .InputType=FunctionInput_Scalar
+    .PreviewValue=(X=1000.000000,Y=0.000000,Z=0.000000,W=1.000000)
+    .SortPriority=6
+    .MaterialExpressionEditorX=-88
+    .MaterialExpressionEditorY=1052
+    .MaterialExpressionGuid=3BF89A804AA2CB4D8F27C694DFBC977E
+    .Function="/Script/Engine.MaterialFunction'Heat_Distortion_Sample'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionLinearInterpolate
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Heat_Distortion_Sample:MaterialExpressionLinearInterpolate_0'")
+    .bLastPreviewed=True
+    .Id=6DCCE0A448336C5FEB12628C5026E3A0
+    .MaterialExpressionEditorX=772
+    .MaterialExpressionEditorY=604
+    .MaterialExpressionGuid=4B0A8CCC4EEB5911E284D49FD1ACC3FC
+    .Function="/Script/Engine.MaterialFunction'Heat_Distortion_Sample'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_0)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionComponentMask
+    Alpha                  <- MaterialExpressionSaturate
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Heat_Distortion_Sample:MaterialExpressionComponentMask_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Heat_Distortion_Sample:MaterialExpressionFunctionInput_1'")
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionSaturate'Heat_Distortion_Sample:MaterialExpressionSaturate_0'")
+    .MaterialExpressionEditorX=592
+    .MaterialExpressionEditorY=632
+    .MaterialExpressionGuid=1C18AA2A40FCAB97A4408690722885B2
+    .Function="/Script/Engine.MaterialFunction'Heat_Distortion_Sample'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_1)
+    B                      <- MaterialExpressionMaterialFunctionCall
+    Alpha                  <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Heat_Distortion_Sample:MaterialExpressionMaterialFunctionCall_0'")
+    .ConstA=0.500000
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Heat_Distortion_Sample:MaterialExpressionScalarParameter_0'")
+    .MaterialExpressionEditorX=-1560
+    .MaterialExpressionEditorY=364
+    .MaterialExpressionGuid=FAE4F2CE4C8EDF734998F3A0EF8DF5C8
+    .Function="/Script/Engine.MaterialFunction'Heat_Distortion_Sample'"
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_0)
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Engine/Functions/Engine_MaterialFunctions02/Utility/DitherTemporalAA.DitherTemporalAA'"
+    .FunctionInputs(0)=(ExpressionInputId=982BCAE7401F814CDC0AE2955DEE46F3,Input=(OutputIndex=-1,InputName="Alpha Threshold"))
+    .FunctionInputs(1)=(ExpressionInputId=E8A932AF4299B0D6C16EDB8B1E912796,Input=(OutputIndex=-1,InputName="Random"))
+    .FunctionOutputs(0)=(ExpressionOutputId=9BC32B084665F3D2D59A90AA45CA8A9F,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-1836
+    .MaterialExpressionEditorY=400
+    .MaterialExpressionGuid=22E72A9F4B8AF2788ACEECA298F112A6
+    .Function="/Script/Engine.MaterialFunction'Heat_Distortion_Sample'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionDivide
+    .B=(Expression="/Script/Engine.MaterialExpressionDivide'Heat_Distortion_Sample:MaterialExpressionDivide_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Heat_Distortion_Sample:MaterialExpressionMultiply_1'")
+    .MaterialExpressionEditorX=-1084
+    .MaterialExpressionEditorY=660
+    .MaterialExpressionGuid=C6A1DD5E47C8C354B57FECB7A9A0F941
+    .Function="/Script/Engine.MaterialFunction'Heat_Distortion_Sample'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionLinearInterpolate
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Heat_Distortion_Sample:MaterialExpressionFunctionInput_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Heat_Distortion_Sample:MaterialExpressionLinearInterpolate_1'")
+    .MaterialExpressionEditorX=-1348
+    .MaterialExpressionEditorY=524
+    .MaterialExpressionGuid=D1274CB64C4D3C767B6F87ACB670C155
+    .Function="/Script/Engine.MaterialFunction'Heat_Distortion_Sample'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_0)
+    Input                  <- MaterialExpressionDivide
+    .Input=(Expression="/Script/Engine.MaterialExpressionDivide'Heat_Distortion_Sample:MaterialExpressionDivide_0'")
+    .MaterialExpressionEditorX=312
+    .MaterialExpressionEditorY=864
+    .MaterialExpressionGuid=C7486A294EC55BBCD433ED9C1780ED22
+    .Function="/Script/Engine.MaterialFunction'Heat_Distortion_Sample'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_0)
+    .ParameterName="Dither"
+    .DefaultValue=1.000000
+    .ExpressionGUID=7405BE8F42FD87C52EFA42AAD15934E8
+    .MaterialExpressionEditorX=-1804
+    .MaterialExpressionEditorY=492
+    .MaterialExpressionGuid=064B52744886DECFE9E89BA354C5BE56
+    .Function="/Script/Engine.MaterialFunction'Heat_Distortion_Sample'"
+  MaterialExpressionSceneTexture (MaterialExpressionSceneTexture_2)
+    Coordinates            <- MaterialExpressionAdd
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionAdd'Heat_Distortion_Sample:MaterialExpressionAdd_0'")
+    .SceneTextureId=PPI_PostProcessInput0
+    .MaterialExpressionEditorX=-488
+    .MaterialExpressionEditorY=648
+    .MaterialExpressionGuid=C09EFEA743E4E387EBB344A2AC4DE3C6
+    .Function="/Script/Engine.MaterialFunction'Heat_Distortion_Sample'"
+  MaterialExpressionSceneTexture (MaterialExpressionSceneTexture_3)
+    Coordinates            <- MaterialExpressionAdd
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionAdd'Heat_Distortion_Sample:MaterialExpressionAdd_0'")
+    .SceneTextureId=PPI_SceneDepth
+    .MaterialExpressionEditorX=-488
+    .MaterialExpressionEditorY=848
+    .MaterialExpressionGuid=C09EFEA743E4E387EBB344A2AC4DE3C6
+    .Function="/Script/Engine.MaterialFunction'Heat_Distortion_Sample'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_2)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Heat_Distortion_Sample:MaterialExpressionFunctionInput_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Heat_Distortion_Sample:MaterialExpressionComponentMask_0'")
+    .MaterialExpressionEditorX=-72
+    .MaterialExpressionEditorY=864
+    .MaterialExpressionGuid=16F1655042B2FE509649D38B8ADDC57F
+    .Function="/Script/Engine.MaterialFunction'Heat_Distortion_Sample'"
+  MaterialExpressionTextureCoordinate (MaterialExpressionTextureCoordinate_0)
+    .MaterialExpressionEditorX=-1004
+    .MaterialExpressionEditorY=784
+    .MaterialExpressionGuid=3A8437C84F3EF7532BDAF48EF733E4A9
+    .Function="/Script/Engine.MaterialFunction'Heat_Distortion_Sample'"
+  MaterialExpressionViewProperty (MaterialExpressionViewProperty_0)
+    .MaterialExpressionEditorX=-1424
+    .MaterialExpressionEditorY=860
+    .MaterialExpressionGuid=FA384127408B00890DDA1F974933CDAC
+    .Function="/Script/Engine.MaterialFunction'Heat_Distortion_Sample'"

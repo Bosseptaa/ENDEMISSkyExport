@@ -1,0 +1,268 @@
+### /Game/UltraDynamicSky/Materials/Space/RealStars_Sprite
+  Material (RealStars_Sprite)
+    .MaterialDomain=MD_DeferredDecal
+    .BlendMode=BLEND_Translucent
+    .MaterialDecalResponse=MDR_None
+    .ShadingModel=MSM_Unlit
+    .ShadingModels=(ShadingModelField=1)
+    .TranslucencyPass=MTP_BeforeDOF
+    .bTangentSpaceNormal=False
+    .bUsedWithNiagaraSprites=True
+    .bAllowFrontLayerTranslucency=False
+    .EditorX=4
+    .bCanMaskedBeAssumedOpaque=True
+    .bCastRayTracedShadows=False
+    .bApplyCloudFogging=True
+    .StateId=25F12BFA42729C1EEBC59F96DB270E9D
+    .EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'RealStars_SpriteEditorOnlyData'"
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+    .LightingGuid=36A5AAC142CAF09DD812FEB0B203420A
+  MaterialEditorOnlyData (RealStars_SpriteEditorOnlyData)
+    Normal                 <- MaterialExpressionConstant3Vector
+    Opacity                <- MaterialExpressionMultiply
+    ExpressionCollection   <- MaterialExpressionConstant3Vector
+    .BaseColor=(UseConstant=True,Constant=(R=0.501961,G=0.501961,B=0.501961,A=1.000000))
+    .Metallic=(UseConstant=True,OutputIndex=1,Mask=1,MaskR=1)
+    .Specular=(UseConstant=True,OutputIndex=1,Mask=1,MaskR=1)
+    .Roughness=(UseConstant=True,OutputIndex=1,Mask=1,MaskR=1)
+    .Anisotropy=(UseConstant=True)
+    .Normal=(Expression="/Script/Engine.MaterialExpressionConstant3Vector'RealStars_Sprite:MaterialExpressionConstant3Vector_8'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .Tangent=(UseConstant=True)
+    .EmissiveColor=(UseConstant=True,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .Opacity=(Expression="/Script/Engine.MaterialExpressionMultiply'RealStars_Sprite:MaterialExpressionMultiply_2'")
+    .OpacityMask=(UseConstant=True)
+    .WorldPositionOffset=(UseConstant=True)
+    .Displacement=(UseConstant=True)
+    .SubsurfaceColor=(UseConstant=True)
+    .ClearCoat=(UseConstant=True)
+    .ClearCoatRoughness=(UseConstant=True)
+    .AmbientOcclusion=(UseConstant=True)
+    .Refraction=(UseConstant=True)
+    .CustomizedUVs(0)=(UseConstant=True)
+    .CustomizedUVs(1)=(UseConstant=True)
+    .CustomizedUVs(2)=(UseConstant=True)
+    .CustomizedUVs(3)=(UseConstant=True)
+    .CustomizedUVs(4)=(UseConstant=True)
+    .CustomizedUVs(5)=(UseConstant=True)
+    .CustomizedUVs(6)=(UseConstant=True)
+    .CustomizedUVs(7)=(UseConstant=True)
+    .PixelDepthOffset=(UseConstant=True)
+    .SurfaceThickness=(UseConstant=True)
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionConstant3Vector'RealStars_Sprite:MaterialExpressionConstant3Vector_8'","/Script/Engine.MaterialExpressionMultiply'RealStars_Sprite:MaterialExpressionMultiply_2'","/Script/Engine.MaterialExpressionParticleColor'RealStars_Sprite:MaterialExpressionParticleColor_0'","/Script/Engine.MaterialExpressionTextureCoordinate'RealStars_Sprite:MaterialExpressionTextureCoordinate_0'","/Script/Engine.MaterialExpressionSubtract'RealStars_Sprite:MaterialExpressionSubtract_0'","/Script/Engine.MaterialExpressionMultiply'RealStars_Sprite:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionConstant2Vector'RealStars_Sprite:MaterialExpressionConstant2Vector_0'","/Script/Engine.MaterialExpressionMaterialFunctionCall'RealStars_Sprite:MaterialExpressionMaterialFunctionCall_2'","/Script/Engine.MaterialExpressionConstant'RealStars_Sprite:MaterialExpressionConstant_3'","/Script/Engine.MaterialExpressionMultiply'RealStars_Sprite:MaterialExpressionMultiply_3'","/Script/Engine.MaterialExpressionAdd'RealStars_Sprite:MaterialExpressionAdd_0'","/Script/Engine.MaterialExpressionMultiply'RealStars_Sprite:MaterialExpressionMultiply_4'","/Script/Engine.MaterialExpressionConstant2Vector'RealStars_Sprite:MaterialExpressionConstant2Vector_1'","/Script/Engine.MaterialExpressionAdd'RealStars_Sprite:MaterialExpressionAdd_2'","/Script/Engine.MaterialExpressionMaterialFunctionCall'RealStars_Sprite:MaterialExpressionMaterialFunctionCall_4'","/Script/Engine.MaterialExpressionConstant'RealStars_Sprite:MaterialExpressionConstant_4'","/Script/Engine.MaterialExpressionMultiply'RealStars_Sprite:MaterialExpressionMultiply_5'","/Script/Engine.MaterialExpressionAdd'RealStars_Sprite:MaterialExpressionAdd_3'","/Script/Engine.MaterialExpressionMaterialFunctionCall'RealStars_Sprite:MaterialExpressionMaterialFunctionCall_5'","/Script/Engine.MaterialExpressionConstant'RealStars_Sprite:MaterialExpressionConstant_5'","/Script/Engine.MaterialExpressionConstant'RealStars_Sprite:MaterialExpressionConstant_6'","/Script/Engine.MaterialExpressionAdd'RealStars_Sprite:MaterialExpressionAdd_4'","/Script/Engine.MaterialExpressionMaterialFunctionCall'RealStars_Sprite:MaterialExpressionMaterialFunctionCall_7'","/Script/Engine.MaterialExpressionConstant'RealStars_Sprite:MaterialExpressionConstant_7'","/Script/Engine.MaterialExpressionAdd'RealStars_Sprite:MaterialExpressionAdd_5'","/Script/Engine.MaterialExpressionMultiply'RealStars_Sprite:MaterialExpressionMultiply_6'"))
+  MaterialExpressionAdd (MaterialExpressionAdd_0)
+    A                      <- MaterialExpressionMultiply
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'RealStars_Sprite:MaterialExpressionMultiply_0'")
+    .ConstB=0.500000
+    .MaterialExpressionEditorX=-2392
+    .MaterialExpressionEditorY=200
+    .MaterialExpressionGuid=3AF2C4634CEAC89755B1D583EC577507
+    .Material="/Script/Engine.Material'RealStars_Sprite'"
+  MaterialExpressionAdd (MaterialExpressionAdd_2)
+    A                      <- MaterialExpressionMultiply
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'RealStars_Sprite:MaterialExpressionMultiply_4'")
+    .ConstB=0.500000
+    .MaterialExpressionEditorX=-2404
+    .MaterialExpressionEditorY=420
+    .MaterialExpressionGuid=C27B67C148FD4E9DA54157BF0CAB507F
+    .Material="/Script/Engine.Material'RealStars_Sprite'"
+  MaterialExpressionAdd (MaterialExpressionAdd_3)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'RealStars_Sprite:MaterialExpressionMultiply_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'RealStars_Sprite:MaterialExpressionMultiply_3'")
+    .MaterialExpressionEditorX=-1588
+    .MaterialExpressionEditorY=204
+    .MaterialExpressionGuid=3C7699AF4B9BC602D8272BA8EC4EB406
+    .Material="/Script/Engine.Material'RealStars_Sprite'"
+  MaterialExpressionAdd (MaterialExpressionAdd_4)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'RealStars_Sprite:MaterialExpressionMaterialFunctionCall_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'RealStars_Sprite:MaterialExpressionAdd_5'")
+    .MaterialExpressionEditorX=-840
+    .MaterialExpressionEditorY=204
+    .MaterialExpressionGuid=DA963DCE4B0EFD2A6CACEBB0F5E3E3AC
+    .Material="/Script/Engine.Material'RealStars_Sprite'"
+  MaterialExpressionAdd (MaterialExpressionAdd_5)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'RealStars_Sprite:MaterialExpressionMultiply_6'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'RealStars_Sprite:MaterialExpressionAdd_3'")
+    .MaterialExpressionEditorX=-1284
+    .MaterialExpressionEditorY=204
+    .MaterialExpressionGuid=93CF7F944DAED5756442BDB97B2DA8DE
+    .Material="/Script/Engine.Material'RealStars_Sprite'"
+  MaterialExpressionConstant (MaterialExpressionConstant_3)
+    .R=1.000000
+    .MaterialExpressionEditorX=-2136
+    .MaterialExpressionEditorY=308
+    .MaterialExpressionGuid=3E95E2004050567A658E408A3C577302
+    .Material="/Script/Engine.Material'RealStars_Sprite'"
+  MaterialExpressionConstant (MaterialExpressionConstant_4)
+    .R=1.000000
+    .MaterialExpressionEditorX=-2220
+    .MaterialExpressionEditorY=524
+    .MaterialExpressionGuid=138F78164631CA2F32A3CAA4E987D9E5
+    .Material="/Script/Engine.Material'RealStars_Sprite'"
+  MaterialExpressionConstant (MaterialExpressionConstant_5)
+    .R=2.000000
+    .MaterialExpressionEditorX=-1244
+    .MaterialExpressionEditorY=528
+    .MaterialExpressionGuid=F625A02844A6E73273CD64B7FD6C9E35
+    .Material="/Script/Engine.Material'RealStars_Sprite'"
+  MaterialExpressionConstant (MaterialExpressionConstant_6)
+    .R=0.080000
+    .MaterialExpressionEditorX=-1248
+    .MaterialExpressionEditorY=428
+    .MaterialExpressionGuid=012FBF85435828DCA5FF48A3103C4839
+    .Material="/Script/Engine.Material'RealStars_Sprite'"
+  MaterialExpressionConstant (MaterialExpressionConstant_7)
+    .R=1.000000
+    .MaterialExpressionEditorX=-1872
+    .MaterialExpressionEditorY=620
+    .MaterialExpressionGuid=935D77924581C1913E80F89F6940487A
+    .Material="/Script/Engine.Material'RealStars_Sprite'"
+  MaterialExpressionConstant2Vector (MaterialExpressionConstant2Vector_0)
+    .R=1.000000
+    .G=10.000000
+    .MaterialExpressionEditorX=-2752
+    .MaterialExpressionEditorY=320
+    .MaterialExpressionGuid=FAD9740E4B51EF8C6A17BBA20B87C914
+    .Material="/Script/Engine.Material'RealStars_Sprite'"
+  MaterialExpressionConstant2Vector (MaterialExpressionConstant2Vector_1)
+    .R=10.000000
+    .G=1.000000
+    .MaterialExpressionEditorX=-2760
+    .MaterialExpressionEditorY=540
+    .MaterialExpressionGuid=962E6C924E338E38FE95579BCD5799E6
+    .Material="/Script/Engine.Material'RealStars_Sprite'"
+  MaterialExpressionConstant3Vector (MaterialExpressionConstant3Vector_8)
+    .Constant=(R=1.000000,G=0.000000,B=0.000000,A=0.000000)
+    .MaterialExpressionEditorX=-424
+    .MaterialExpressionEditorY=336
+    .MaterialExpressionGuid=109AFC7E4B27A7631B88F384547B5EB2
+    .Material="/Script/Engine.Material'RealStars_Sprite'"
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_2)
+    FunctionInputs(0)      <- MaterialExpressionAdd
+    FunctionInputs(3)      <- MaterialExpressionConstant
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/RadialGradientBasic.RadialGradientBasic'"
+    .FunctionInputs(0)=(ExpressionInputId=3D670BAB449CC330AF1A0D98994C2A90,Input=(Expression="/Script/Engine.MaterialExpressionAdd'RealStars_Sprite:MaterialExpressionAdd_0'",InputName="UV"))
+    .FunctionInputs(1)=(ExpressionInputId=08954A7C4248905A30D7B0B88B75B62F,Input=(OutputIndex=-1,InputName="Center"))
+    .FunctionInputs(2)=(ExpressionInputId=131CA7274C02CDA166B9749B5EE24A64,Input=(OutputIndex=-1,InputName="Radius"))
+    .FunctionInputs(3)=(ExpressionInputId=3FBB53124DEA3B7CC52CEAA08FF6C9ED,Input=(Expression="/Script/Engine.MaterialExpressionConstant'RealStars_Sprite:MaterialExpressionConstant_3'",InputName="Density"))
+    .FunctionOutputs(0)=(ExpressionOutputId=327E073F424BB1EF2B65E58605E267EE,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-1964
+    .MaterialExpressionEditorY=204
+    .MaterialExpressionGuid=B9DA1C9A4C53B5D1C48CB3A36051FDC2
+    .Material="/Script/Engine.Material'RealStars_Sprite'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_4)
+    FunctionInputs(0)      <- MaterialExpressionAdd
+    FunctionInputs(3)      <- MaterialExpressionConstant
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/RadialGradientBasic.RadialGradientBasic'"
+    .FunctionInputs(0)=(ExpressionInputId=3D670BAB449CC330AF1A0D98994C2A90,Input=(Expression="/Script/Engine.MaterialExpressionAdd'RealStars_Sprite:MaterialExpressionAdd_2'",InputName="UV"))
+    .FunctionInputs(1)=(ExpressionInputId=08954A7C4248905A30D7B0B88B75B62F,Input=(OutputIndex=-1,InputName="Center"))
+    .FunctionInputs(2)=(ExpressionInputId=131CA7274C02CDA166B9749B5EE24A64,Input=(OutputIndex=-1,InputName="Radius"))
+    .FunctionInputs(3)=(ExpressionInputId=3FBB53124DEA3B7CC52CEAA08FF6C9ED,Input=(Expression="/Script/Engine.MaterialExpressionConstant'RealStars_Sprite:MaterialExpressionConstant_4'",InputName="Density"))
+    .FunctionOutputs(0)=(ExpressionOutputId=327E073F424BB1EF2B65E58605E267EE,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-2048
+    .MaterialExpressionEditorY=420
+    .MaterialExpressionGuid=03D135924FF4B7E3D71745B71F09E29B
+    .Material="/Script/Engine.Material'RealStars_Sprite'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_5)
+    FunctionInputs(2)      <- MaterialExpressionConstant
+    FunctionInputs(3)      <- MaterialExpressionConstant
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/RadialGradientBasic.RadialGradientBasic'"
+    .FunctionInputs(0)=(ExpressionInputId=3D670BAB449CC330AF1A0D98994C2A90,Input=(OutputIndex=-1,InputName="UV"))
+    .FunctionInputs(1)=(ExpressionInputId=08954A7C4248905A30D7B0B88B75B62F,Input=(OutputIndex=-1,InputName="Center"))
+    .FunctionInputs(2)=(ExpressionInputId=131CA7274C02CDA166B9749B5EE24A64,Input=(Expression="/Script/Engine.MaterialExpressionConstant'RealStars_Sprite:MaterialExpressionConstant_6'",InputName="Radius"))
+    .FunctionInputs(3)=(ExpressionInputId=3FBB53124DEA3B7CC52CEAA08FF6C9ED,Input=(Expression="/Script/Engine.MaterialExpressionConstant'RealStars_Sprite:MaterialExpressionConstant_5'",InputName="Density"))
+    .FunctionOutputs(0)=(ExpressionOutputId=327E073F424BB1EF2B65E58605E267EE,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-1072
+    .MaterialExpressionEditorY=368
+    .MaterialExpressionGuid=478424DC4994B92CA2CA689A0FE6763A
+    .Material="/Script/Engine.Material'RealStars_Sprite'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_7)
+    FunctionInputs(3)      <- MaterialExpressionConstant
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/RadialGradientBasic.RadialGradientBasic'"
+    .FunctionInputs(0)=(ExpressionInputId=3D670BAB449CC330AF1A0D98994C2A90,Input=(InputName="UV"))
+    .FunctionInputs(1)=(ExpressionInputId=08954A7C4248905A30D7B0B88B75B62F,Input=(OutputIndex=-1,InputName="Center"))
+    .FunctionInputs(2)=(ExpressionInputId=131CA7274C02CDA166B9749B5EE24A64,Input=(OutputIndex=-1,InputName="Radius"))
+    .FunctionInputs(3)=(ExpressionInputId=3FBB53124DEA3B7CC52CEAA08FF6C9ED,Input=(Expression="/Script/Engine.MaterialExpressionConstant'RealStars_Sprite:MaterialExpressionConstant_7'",InputName="Density"))
+    .FunctionOutputs(0)=(ExpressionOutputId=327E073F424BB1EF2B65E58605E267EE,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-1700
+    .MaterialExpressionEditorY=516
+    .MaterialExpressionGuid=3C438F174D0D5DAFA4F2B7A3E7FDF62F
+    .Material="/Script/Engine.Material'RealStars_Sprite'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionConstant2Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'RealStars_Sprite:MaterialExpressionConstant2Vector_0'",Mask=1,MaskR=1,MaskG=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'RealStars_Sprite:MaterialExpressionSubtract_0'")
+    .MaterialExpressionEditorX=-2564
+    .MaterialExpressionEditorY=200
+    .MaterialExpressionGuid=0F5E1C9B42A8F09700F559AD4AFFE8B4
+    .Material="/Script/Engine.Material'RealStars_Sprite'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_2)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionParticleColor
+    .B=(Expression="/Script/Engine.MaterialExpressionParticleColor'RealStars_Sprite:MaterialExpressionParticleColor_0'",OutputIndex=4,Mask=1,MaskA=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'RealStars_Sprite:MaterialExpressionAdd_4'")
+    .MaterialExpressionEditorX=-428
+    .MaterialExpressionEditorY=204
+    .MaterialExpressionGuid=5369D8EE483274808042E585FB1DF7D7
+    .Material="/Script/Engine.Material'RealStars_Sprite'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_3)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'RealStars_Sprite:MaterialExpressionMaterialFunctionCall_2'")
+    .ConstB=0.100000
+    .MaterialExpressionEditorX=-1764
+    .MaterialExpressionEditorY=204
+    .MaterialExpressionGuid=9D6295F0436AB2383A6950A4147AC563
+    .Material="/Script/Engine.Material'RealStars_Sprite'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_4)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionConstant2Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'RealStars_Sprite:MaterialExpressionConstant2Vector_1'",Mask=1,MaskR=1,MaskG=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'RealStars_Sprite:MaterialExpressionSubtract_0'")
+    .MaterialExpressionEditorX=-2572
+    .MaterialExpressionEditorY=420
+    .MaterialExpressionGuid=C7D7A17B43C7DD439C9BCA8C46E5BFFF
+    .Material="/Script/Engine.Material'RealStars_Sprite'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_5)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'RealStars_Sprite:MaterialExpressionMaterialFunctionCall_4'")
+    .ConstB=0.100000
+    .MaterialExpressionEditorX=-1856
+    .MaterialExpressionEditorY=420
+    .MaterialExpressionGuid=F7AD5A744EBF5248136AADA50ACD2B6A
+    .Material="/Script/Engine.Material'RealStars_Sprite'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_6)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'RealStars_Sprite:MaterialExpressionMaterialFunctionCall_7'")
+    .ConstB=0.050000
+    .MaterialExpressionEditorX=-1484
+    .MaterialExpressionEditorY=456
+    .MaterialExpressionGuid=0A046C8B4545FD25D590AC9426BB901A
+    .Material="/Script/Engine.Material'RealStars_Sprite'"
+  MaterialExpressionParticleColor (MaterialExpressionParticleColor_0)
+    .MaterialExpressionEditorX=-708
+    .MaterialExpressionEditorY=332
+    .MaterialExpressionGuid=9D7FC8B049938A8F8DA734BC87DA9C0E
+    .Material="/Script/Engine.Material'RealStars_Sprite'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_0)
+    A                      <- MaterialExpressionTextureCoordinate
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'RealStars_Sprite:MaterialExpressionTextureCoordinate_0'")
+    .ConstB=0.500000
+    .MaterialExpressionEditorX=-2796
+    .MaterialExpressionEditorY=200
+    .MaterialExpressionGuid=E64C795F4C51B6DA702B269F12A3E212
+    .Material="/Script/Engine.Material'RealStars_Sprite'"
+  MaterialExpressionTextureCoordinate (MaterialExpressionTextureCoordinate_0)
+    .MaterialExpressionEditorX=-3024
+    .MaterialExpressionEditorY=200
+    .MaterialExpressionGuid=E61D2FE54F64C018DBAC39B9B829BFB5
+    .Material="/Script/Engine.Material'RealStars_Sprite'"

@@ -1,0 +1,655 @@
+### /Game/UltraDynamicSky/Blueprints/System/Editor_UI/Editor_Materials/UDS_Clock_Material
+  Material (UDS_Clock_Material)
+    .MaterialDecalResponse=MDR_None
+    .ShadingModel=MSM_Unlit
+    .ShadingModels=(ShadingModelField=1)
+    .DitherOpacityMask=True
+    .TranslucencyPass=MTP_BeforeDOF
+    .TranslucencyLightingMode=TLM_Surface
+    .bTangentSpaceNormal=False
+    .EditorX=3176
+    .EditorY=120
+    .bCanMaskedBeAssumedOpaque=True
+    .bCastRayTracedShadows=False
+    .StateId=093AFBFF41E79FD88EC5449FAAD47773
+    .ReferencedTextureGuids(0)=CBB9CA624C13144D17C65DAF608CDE98
+    .EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'UDS_Clock_MaterialEditorOnlyData'"
+    .TextureStreamingDataVersion=1
+    .TextureStreamingData(0)=(SamplingScale=1.000000,UVChannelIndex=0,TextureName="Clock_Face",TextureReference="/Game/UltraDynamicSky/Textures/Widgets/Clock_Face.Clock_Face")
+    .ReferencedDefaultTextures(0)="/Script/Engine.Texture2D'/Game/UltraDynamicSky/Textures/Widgets/Clock_Face.Clock_Face'"
+    .LightingGuid=E555D6494AAF04C5F864CDAD080C0AF0
+  MaterialExpressionWorldPosition (MaterialExpressionWorldPosition_0)
+    .MaterialExpressionEditorX=2128
+    .MaterialExpressionEditorY=684
+    .MaterialExpressionGuid=B15E5D9548E0E92D243FD99B6C6C082E
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionViewProperty (MaterialExpressionViewProperty_1)
+    .Property=MEVP_PreExposure
+    .MaterialExpressionEditorX=2248
+    .MaterialExpressionEditorY=256
+    .MaterialExpressionGuid=11426D0844C398C6CAD4C4A6CF47F702
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_0)
+    Coordinates            <- MaterialExpressionTextureCoordinate
+    .Texture="/Script/Engine.Texture2D'/Game/UltraDynamicSky/Textures/Widgets/Clock_Face.Clock_Face'"
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'UDS_Clock_Material:MaterialExpressionTextureCoordinate_4'")
+    .MaterialExpressionEditorX=520
+    .MaterialExpressionEditorY=80
+    .MaterialExpressionGuid=C8DCE3894D5209CBFA385EB639B11AC8
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionTextureCoordinate (MaterialExpressionTextureCoordinate_4)
+    .MaterialExpressionEditorX=292
+    .MaterialExpressionEditorY=80
+    .MaterialExpressionGuid=0812EA854088F492A6EAE3A054C652AB
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionTextureCoordinate (MaterialExpressionTextureCoordinate_3)
+    .MaterialExpressionEditorX=-1300
+    .MaterialExpressionEditorY=760
+    .MaterialExpressionGuid=031D4DB64D70FC99ECEFDEAA4D70E426
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionTextureCoordinate (MaterialExpressionTextureCoordinate_2)
+    .MaterialExpressionEditorX=956
+    .MaterialExpressionEditorY=360
+    .MaterialExpressionGuid=3560BDE043F1F8B9D249D0AE5F37534E
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionTextureCoordinate (MaterialExpressionTextureCoordinate_1)
+    .MaterialExpressionEditorX=-1316
+    .MaterialExpressionEditorY=396
+    .MaterialExpressionGuid=C9983A7D4DC2ECE30D3B7589CD8E0BFF
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionTextureCoordinate (MaterialExpressionTextureCoordinate_0)
+    .MaterialExpressionEditorX=-532
+    .MaterialExpressionEditorY=1152
+    .MaterialExpressionGuid=DDC0FCB646E4AA17501D02AFBA15DF24
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_7)
+    A                      <- MaterialExpressionDistance
+    .A=(Expression="/Script/Engine.MaterialExpressionDistance'UDS_Clock_Material:MaterialExpressionDistance_2'")
+    .ConstB=0.010000
+    .MaterialExpressionEditorX=-4
+    .MaterialExpressionEditorY=1152
+    .MaterialExpressionGuid=12F572CD48DA98F5A3A5B592E6D46EDA
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_5)
+    A                      <- MaterialExpressionComponentMask
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'UDS_Clock_Material:MaterialExpressionComponentMask_3'")
+    .ConstB=0.510000
+    .MaterialExpressionEditorX=-528
+    .MaterialExpressionEditorY=1008
+    .MaterialExpressionGuid=5236AED340998E3F31E5D1A873438054
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_4)
+    A                      <- MaterialExpressionComponentMask
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'UDS_Clock_Material:MaterialExpressionComponentMask_3'")
+    .ConstB=0.180000
+    .MaterialExpressionEditorX=-524
+    .MaterialExpressionEditorY=896
+    .MaterialExpressionGuid=500CCD82477E50D7546E4B904506672B
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_3)
+    A                      <- MaterialExpressionDistance
+    .A=(Expression="/Script/Engine.MaterialExpressionDistance'UDS_Clock_Material:MaterialExpressionDistance_1'")
+    .ConstB=0.010000
+    .MaterialExpressionEditorX=-276
+    .MaterialExpressionEditorY=764
+    .MaterialExpressionGuid=0131803B456187AD52F8FBAFA41A2EF4
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_2)
+    A                      <- MaterialExpressionComponentMask
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'UDS_Clock_Material:MaterialExpressionComponentMask_1'")
+    .ConstB=0.510000
+    .MaterialExpressionEditorX=-544
+    .MaterialExpressionEditorY=644
+    .MaterialExpressionGuid=248700914D04DEC3CD7C87B8E189A414
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_1)
+    A                      <- MaterialExpressionComponentMask
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'UDS_Clock_Material:MaterialExpressionComponentMask_1'")
+    .ConstB=0.300000
+    .MaterialExpressionEditorX=-540
+    .MaterialExpressionEditorY=532
+    .MaterialExpressionGuid=30D1EB5C46E2E0C3B27B32A5E3AF4335
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_0)
+    A                      <- MaterialExpressionDistance
+    .A=(Expression="/Script/Engine.MaterialExpressionDistance'UDS_Clock_Material:MaterialExpressionDistance_0'")
+    .ConstB=0.010000
+    .MaterialExpressionEditorX=-292
+    .MaterialExpressionEditorY=400
+    .MaterialExpressionGuid=3BAB401E4CD792226AD33A836D6571D6
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_7)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'UDS_Clock_Material:MaterialExpressionMultiply_11'")
+    .MaterialExpressionEditorX=1420
+    .MaterialExpressionEditorY=336
+    .MaterialExpressionGuid=2322DB41494C5C57DD6A23A2423870C2
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_6)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'UDS_Clock_Material:MaterialExpressionMultiply_0'")
+    .MaterialExpressionEditorX=300
+    .MaterialExpressionEditorY=1152
+    .MaterialExpressionGuid=2C45334E40662B4D703E949406961D53
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_5)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'UDS_Clock_Material:MaterialExpressionMultiply_10'")
+    .MaterialExpressionEditorX=-240
+    .MaterialExpressionEditorY=1008
+    .MaterialExpressionGuid=1038CE0B4C62292F584CB9A8700654F7
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_4)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'UDS_Clock_Material:MaterialExpressionMultiply_8'")
+    .MaterialExpressionEditorX=-236
+    .MaterialExpressionEditorY=896
+    .MaterialExpressionGuid=38A5842C40734B61F421818BEFA9B44E
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_3)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'UDS_Clock_Material:MaterialExpressionMultiply_6'")
+    .MaterialExpressionEditorX=24
+    .MaterialExpressionEditorY=764
+    .MaterialExpressionGuid=0CAAE8C543F081A4999316904F0DD5CA
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_2)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'UDS_Clock_Material:MaterialExpressionMultiply_5'")
+    .MaterialExpressionEditorX=-256
+    .MaterialExpressionEditorY=644
+    .MaterialExpressionGuid=A32E1E0747878EC2352F7FB8EB767CE6
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_1)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'UDS_Clock_Material:MaterialExpressionMultiply_3'")
+    .MaterialExpressionEditorX=-252
+    .MaterialExpressionEditorY=532
+    .MaterialExpressionGuid=6F7618D34841F932383BF8AF3AC3B712
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_0)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'UDS_Clock_Material:MaterialExpressionMultiply_1'")
+    .MaterialExpressionEditorX=8
+    .MaterialExpressionEditorY=400
+    .MaterialExpressionGuid=D578B6D64F0FC643C0DA01829B420175
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionPower (MaterialExpressionPower_1)
+    Base                   <- MaterialExpressionMultiply
+    .Base=(Expression="/Script/Engine.MaterialExpressionMultiply'UDS_Clock_Material:MaterialExpressionMultiply_17'")
+    .ConstExponent=1.400000
+    .MaterialExpressionEditorX=2304
+    .MaterialExpressionEditorY=116
+    .MaterialExpressionGuid=5C1B48AC465117B3024DA2B19EECC959
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionPower (MaterialExpressionPower_0)
+    Base                   <- MaterialExpressionSaturate
+    .Base=(Expression="/Script/Engine.MaterialExpressionSaturate'UDS_Clock_Material:MaterialExpressionSaturate_7'")
+    .ConstExponent=3.000000
+    .MaterialExpressionEditorX=1536
+    .MaterialExpressionEditorY=336
+    .MaterialExpressionGuid=0241A6794D58FDE15C912DBA4E41B9F5
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_3)
+    Input                  <- MaterialExpressionSaturate
+    .Input=(Expression="/Script/Engine.MaterialExpressionSaturate'UDS_Clock_Material:MaterialExpressionSaturate_6'")
+    .MaterialExpressionEditorX=408
+    .MaterialExpressionEditorY=1024
+    .MaterialExpressionGuid=3783D9B54E2A8B7DFF2DDC8B33618287
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_2)
+    Input                  <- MaterialExpressionPower
+    .Input=(Expression="/Script/Engine.MaterialExpressionPower'UDS_Clock_Material:MaterialExpressionPower_0'")
+    .MaterialExpressionEditorX=1684
+    .MaterialExpressionEditorY=336
+    .MaterialExpressionGuid=6438A6BE4A1E5884364346ACE4F38356
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_1)
+    Input                  <- MaterialExpressionFrac
+    .Input=(Expression="/Script/Engine.MaterialExpressionFrac'UDS_Clock_Material:MaterialExpressionFrac_1'")
+    .MaterialExpressionEditorX=-1172
+    .MaterialExpressionEditorY=876
+    .MaterialExpressionGuid=B39D6EB34F07F74419B0A091D394DBB1
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_0)
+    Input                  <- MaterialExpressionFrac
+    .Input=(Expression="/Script/Engine.MaterialExpressionFrac'UDS_Clock_Material:MaterialExpressionFrac_0'")
+    .MaterialExpressionEditorX=-1176
+    .MaterialExpressionEditorY=524
+    .MaterialExpressionGuid=33B51C1A4BC79CE275C14E9764FC3115
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_9)
+    A                      <- MaterialExpressionSaturate
+    B                      <- MaterialExpressionSaturate
+    .B=(Expression="/Script/Engine.MaterialExpressionSaturate'UDS_Clock_Material:MaterialExpressionSaturate_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSaturate'UDS_Clock_Material:MaterialExpressionSaturate_4'")
+    .MaterialExpressionEditorX=-100
+    .MaterialExpressionEditorY=916
+    .MaterialExpressionGuid=8798E94D4D59F03DDEA032BF678888B1
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_8)
+    A                      <- MaterialExpressionSubtract
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'UDS_Clock_Material:MaterialExpressionSubtract_4'")
+    .ConstB=100.000000
+    .MaterialExpressionEditorX=-380
+    .MaterialExpressionEditorY=896
+    .MaterialExpressionGuid=4C2787CF4F2A77910CFD0A8788A186CA
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_7)
+    A                      <- MaterialExpressionSaturate
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'UDS_Clock_Material:MaterialExpressionMultiply_9'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSaturate'UDS_Clock_Material:MaterialExpressionSaturate_3'")
+    .MaterialExpressionEditorX=140
+    .MaterialExpressionEditorY=784
+    .MaterialExpressionGuid=C7B607064569B7D8BF772CBCF5DFEB7D
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_6)
+    A                      <- MaterialExpressionSubtract
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'UDS_Clock_Material:MaterialExpressionSubtract_3'")
+    .ConstB=-100.000000
+    .MaterialExpressionEditorX=-128
+    .MaterialExpressionEditorY=764
+    .MaterialExpressionGuid=84B936664B6D0DC975852981F1A07B65
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_5)
+    A                      <- MaterialExpressionSubtract
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'UDS_Clock_Material:MaterialExpressionSubtract_2'")
+    .ConstB=-100.000000
+    .MaterialExpressionEditorX=-400
+    .MaterialExpressionEditorY=644
+    .MaterialExpressionGuid=A28E930446C1F7C3BABCBD8B7C9330E9
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_4)
+    A                      <- MaterialExpressionSaturate
+    B                      <- MaterialExpressionSaturate
+    .B=(Expression="/Script/Engine.MaterialExpressionSaturate'UDS_Clock_Material:MaterialExpressionSaturate_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSaturate'UDS_Clock_Material:MaterialExpressionSaturate_1'")
+    .MaterialExpressionEditorX=-116
+    .MaterialExpressionEditorY=552
+    .MaterialExpressionGuid=B96E21A0429CB3F277D716B2D34D6FE9
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_3)
+    A                      <- MaterialExpressionSubtract
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'UDS_Clock_Material:MaterialExpressionSubtract_1'")
+    .ConstB=100.000000
+    .MaterialExpressionEditorX=-396
+    .MaterialExpressionEditorY=532
+    .MaterialExpressionGuid=5A571BD143448BDBE29B0BBF1698C2AB
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_2)
+    A                      <- MaterialExpressionSaturate
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'UDS_Clock_Material:MaterialExpressionMultiply_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSaturate'UDS_Clock_Material:MaterialExpressionSaturate_0'")
+    .MaterialExpressionEditorX=148
+    .MaterialExpressionEditorY=432
+    .MaterialExpressionGuid=7DF5A69044BDF81D5C010F868C2FAF59
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_17)
+    A                      <- MaterialExpressionAdd
+    .B=(Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'UDS_Clock_Material:MaterialExpressionAdd_0'")
+    .ConstB=3.000000
+    .MaterialExpressionEditorX=2116
+    .MaterialExpressionEditorY=116
+    .MaterialExpressionGuid=BD06B4A8455B03138AE3BA89F3D5F7BB
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_14)
+    A                      <- MaterialExpressionDivide
+    B                      <- MaterialExpressionConstant3Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant3Vector'UDS_Clock_Material:MaterialExpressionConstant3Vector_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'UDS_Clock_Material:MaterialExpressionDivide_2'")
+    .MaterialExpressionEditorX=2896
+    .MaterialExpressionEditorY=120
+    .MaterialExpressionGuid=D0F2E4934A376057D2B6329E1FCA8DBA
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_13)
+    A                      <- MaterialExpressionOneMinus
+    .A=(Expression="/Script/Engine.MaterialExpressionOneMinus'UDS_Clock_Material:MaterialExpressionOneMinus_2'")
+    .ConstB=0.035000
+    .MaterialExpressionEditorX=1792
+    .MaterialExpressionEditorY=336
+    .MaterialExpressionGuid=666580774A51915DA6438CA6CF278564
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_11)
+    A                      <- MaterialExpressionDistance
+    .A=(Expression="/Script/Engine.MaterialExpressionDistance'UDS_Clock_Material:MaterialExpressionDistance_3'")
+    .ConstB=2.000000
+    .MaterialExpressionEditorX=1284
+    .MaterialExpressionEditorY=360
+    .MaterialExpressionGuid=AE1C439841F3ACAB5A063FB167F99FA9
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_10)
+    A                      <- MaterialExpressionSubtract
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'UDS_Clock_Material:MaterialExpressionSubtract_5'")
+    .ConstB=-100.000000
+    .MaterialExpressionEditorX=-384
+    .MaterialExpressionEditorY=1008
+    .MaterialExpressionGuid=0336DED9417BA408A56C89A4746A11A4
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionSubtract
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'UDS_Clock_Material:MaterialExpressionSubtract_0'")
+    .ConstB=-100.000000
+    .MaterialExpressionEditorX=-144
+    .MaterialExpressionEditorY=400
+    .MaterialExpressionGuid=81C98B414FEC88C66AE973BBDECBEA7E
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionSubtract
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'UDS_Clock_Material:MaterialExpressionSubtract_7'")
+    .ConstB=100.000000
+    .MaterialExpressionEditorX=156
+    .MaterialExpressionEditorY=1152
+    .MaterialExpressionGuid=CAF489594AEE4C05A09A8591BE060B6F
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionMax (MaterialExpressionMax_2)
+    A                      <- MaterialExpressionMax
+    B                      <- MaterialExpressionOneMinus
+    .B=(Expression="/Script/Engine.MaterialExpressionOneMinus'UDS_Clock_Material:MaterialExpressionOneMinus_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMax'UDS_Clock_Material:MaterialExpressionMax_0'")
+    .MaterialExpressionEditorX=584
+    .MaterialExpressionEditorY=616
+    .MaterialExpressionGuid=A76499BC4E4308485015AAAD19BE49D5
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionMax (MaterialExpressionMax_0)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'UDS_Clock_Material:MaterialExpressionMultiply_7'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'UDS_Clock_Material:MaterialExpressionMultiply_2'")
+    .MaterialExpressionEditorX=364
+    .MaterialExpressionEditorY=608
+    .MaterialExpressionGuid=A5EF5620404FD2593EBC0594CF868340
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_6)
+    FunctionInputs(0)      <- MaterialExpressionConstant
+    FunctionInputs(2)      <- MaterialExpressionAdd
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Engine/Functions/Engine_MaterialFunctions02/WorldPositionOffset/CameraOffset.CameraOffset'"
+    .FunctionInputs(0)=(ExpressionInputId=1BDBC98D4FC2F621424504BDBAAC5B83,Input=(Expression="/Script/Engine.MaterialExpressionConstant'UDS_Clock_Material:MaterialExpressionConstant_0'",InputName="Offset Amount"))
+    .FunctionInputs(1)=(ExpressionInputId=CDED98C248E0151E80B8428E8715FA48,Input=(OutputIndex=-1,InputName="Clamp Padding"))
+    .FunctionInputs(2)=(ExpressionInputId=701B843847084942D6CF21800A541641,Input=(Expression="/Script/Engine.MaterialExpressionAdd'UDS_Clock_Material:MaterialExpressionAdd_2'",InputName="World Position"))
+    .FunctionOutputs(0)=(ExpressionOutputId=F3A063D641EAACFBA684E2ACC339A3E6,Output=(OutputName="Clamped Camera Offset"))
+    .FunctionOutputs(1)=(ExpressionOutputId=0EBC0BE740D30521130452B90642F307,Output=(OutputName="Camera Offset"))
+    .MaterialExpressionEditorX=2556
+    .MaterialExpressionEditorY=648
+    .MaterialExpressionGuid=866CB2944A20D0D4EB20AEB424FCEDCD
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+    .Outputs(0)=(OutputName="Clamped Camera Offset")
+    .Outputs(1)=(OutputName="Camera Offset")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_4)
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Blueprints/System/Editor_UI/Editor_Materials/Stepped_Mesh_Yaw.Stepped_Mesh_Yaw'"
+    .FunctionOutputs(0)=(ExpressionOutputId=8B71D5BD4185E39DF6942A87DCE73C32,Output=(OutputName="Rotated Normal"))
+    .FunctionOutputs(1)=(ExpressionOutputId=B1FAA2E94D4C0FB55372ADA0F18CE788,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=2148
+    .MaterialExpressionEditorY=860
+    .MaterialExpressionGuid=90AFDCDA4A9A4FA758B60FBEF5D5A127
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+    .Outputs(0)=(OutputName="Rotated Normal")
+    .Outputs(1)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_1)
+    FunctionInputs(0)      <- MaterialExpressionTextureCoordinate
+    FunctionInputs(2)      <- MaterialExpressionOneMinus
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Engine/Functions/Engine_MaterialFunctions02/Texturing/CustomRotator.CustomRotator'"
+    .FunctionInputs(0)=(ExpressionInputId=45DE7CC04BCC975C664A2AA5DA134FEF,Input=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'UDS_Clock_Material:MaterialExpressionTextureCoordinate_3'",InputName="UVs"))
+    .FunctionInputs(1)=(ExpressionInputId=9B6953874136DCE4D8E4E8878152CCCE,Input=(OutputIndex=-1,InputName="Rotation Center"))
+    .FunctionInputs(2)=(ExpressionInputId=D58F67D84CFD4C9D289810AEE4A3EBC8,Input=(Expression="/Script/Engine.MaterialExpressionOneMinus'UDS_Clock_Material:MaterialExpressionOneMinus_1'",InputName="Rotation Angle (0-1)"))
+    .FunctionOutputs(0)=(ExpressionOutputId=35E8F8F94CC8CE3D65F114A234D0BD5E,Output=(OutputName="Rotated Values"))
+    .MaterialExpressionEditorX=-1060
+    .MaterialExpressionEditorY=764
+    .MaterialExpressionGuid=C57139B44B3BFB4D3866718B0D0B4ED4
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+    .Outputs(0)=(OutputName="Rotated Values")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_0)
+    FunctionInputs(0)      <- MaterialExpressionTextureCoordinate
+    FunctionInputs(2)      <- MaterialExpressionOneMinus
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Engine/Functions/Engine_MaterialFunctions02/Texturing/CustomRotator.CustomRotator'"
+    .FunctionInputs(0)=(ExpressionInputId=45DE7CC04BCC975C664A2AA5DA134FEF,Input=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'UDS_Clock_Material:MaterialExpressionTextureCoordinate_1'",InputName="UVs"))
+    .FunctionInputs(1)=(ExpressionInputId=9B6953874136DCE4D8E4E8878152CCCE,Input=(OutputIndex=-1,InputName="Rotation Center"))
+    .FunctionInputs(2)=(ExpressionInputId=D58F67D84CFD4C9D289810AEE4A3EBC8,Input=(Expression="/Script/Engine.MaterialExpressionOneMinus'UDS_Clock_Material:MaterialExpressionOneMinus_0'",InputName="Rotation Angle (0-1)"))
+    .FunctionOutputs(0)=(ExpressionOutputId=35E8F8F94CC8CE3D65F114A234D0BD5E,Output=(OutputName="Rotated Values"))
+    .MaterialExpressionEditorX=-1076
+    .MaterialExpressionEditorY=400
+    .MaterialExpressionGuid=5564B7D141A57EA56E1DED8B4ADA80AE
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+    .Outputs(0)=(OutputName="Rotated Values")
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_0)
+    A                      <- MaterialExpressionTextureSample
+    Alpha                  <- MaterialExpressionMax
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'UDS_Clock_Material:MaterialExpressionTextureSample_0'",OutputIndex=1,Mask=1,MaskR=1)
+    .ConstB=0.300000
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionMax'UDS_Clock_Material:MaterialExpressionMax_2'")
+    .MaterialExpressionEditorX=904
+    .MaterialExpressionEditorY=108
+    .MaterialExpressionGuid=B359900B44BC625002269EB0F7329D66
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionFrac (MaterialExpressionFrac_1)
+    Input                  <- MaterialExpressionDivide
+    .Input=(Expression="/Script/Engine.MaterialExpressionDivide'UDS_Clock_Material:MaterialExpressionDivide_1'")
+    .MaterialExpressionEditorX=-1252
+    .MaterialExpressionEditorY=876
+    .MaterialExpressionGuid=F1DCF91D4F0F582D3A67918764158CB5
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionFrac (MaterialExpressionFrac_0)
+    Input                  <- MaterialExpressionDivide
+    .Input=(Expression="/Script/Engine.MaterialExpressionDivide'UDS_Clock_Material:MaterialExpressionDivide_0'")
+    .MaterialExpressionEditorX=-1264
+    .MaterialExpressionEditorY=528
+    .MaterialExpressionGuid=C087A9D04ECEA0290A89D6B71B5673A9
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionDivide (MaterialExpressionDivide_2)
+    A                      <- MaterialExpressionPower
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'UDS_Clock_Material:MaterialExpressionComponentMask_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionPower'UDS_Clock_Material:MaterialExpressionPower_1'")
+    .MaterialExpressionEditorX=2544
+    .MaterialExpressionEditorY=116
+    .MaterialExpressionGuid=7BC41D464639BAE7C3BFFD88143EE030
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionDivide (MaterialExpressionDivide_1)
+    A                      <- MaterialExpressionCollectionParameter
+    .A=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'UDS_Clock_Material:MaterialExpressionCollectionParameter_1'")
+    .ConstB=100.000000
+    .MaterialExpressionEditorX=-1404
+    .MaterialExpressionEditorY=876
+    .MaterialExpressionGuid=BEED6490467ED5E075DDDAACDD733330
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionCollectionParameter
+    .A=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'UDS_Clock_Material:MaterialExpressionCollectionParameter_0'")
+    .ConstB=1200.000000
+    .MaterialExpressionEditorX=-1416
+    .MaterialExpressionEditorY=528
+    .MaterialExpressionGuid=8E741E1340A58E2F203889B83D2D472E
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionDistance (MaterialExpressionDistance_3)
+    A                      <- MaterialExpressionTextureCoordinate
+    B                      <- MaterialExpressionConstant2Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'UDS_Clock_Material:MaterialExpressionConstant2Vector_1'",Mask=1,MaskR=1,MaskG=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'UDS_Clock_Material:MaterialExpressionTextureCoordinate_2'")
+    .MaterialExpressionEditorX=1168
+    .MaterialExpressionEditorY=360
+    .MaterialExpressionGuid=12DB03CA47B22AD522C94D99DD77EB4E
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionDistance (MaterialExpressionDistance_2)
+    A                      <- MaterialExpressionTextureCoordinate
+    B                      <- MaterialExpressionConstant2Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'UDS_Clock_Material:MaterialExpressionConstant2Vector_0'",Mask=1,MaskR=1,MaskG=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'UDS_Clock_Material:MaterialExpressionTextureCoordinate_0'")
+    .MaterialExpressionEditorX=-156
+    .MaterialExpressionEditorY=1152
+    .MaterialExpressionGuid=0509BFD9499FD9D681E63E977A4B0BBC
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionDistance (MaterialExpressionDistance_1)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'UDS_Clock_Material:MaterialExpressionConstant_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'UDS_Clock_Material:MaterialExpressionComponentMask_2'")
+    .MaterialExpressionEditorX=-396
+    .MaterialExpressionEditorY=764
+    .MaterialExpressionGuid=9F33D5FE400B96A1397A2A93237EEFEB
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionDistance (MaterialExpressionDistance_0)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'UDS_Clock_Material:MaterialExpressionConstant_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'UDS_Clock_Material:MaterialExpressionComponentMask_0'")
+    .MaterialExpressionEditorX=-412
+    .MaterialExpressionEditorY=400
+    .MaterialExpressionGuid=BE95AF4643803D9F97ACE4B637062BF6
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionConstant3Vector (MaterialExpressionConstant3Vector_0)
+    .Constant=(R=0.921875,G=0.947442,B=1.000000,A=1.000000)
+    .MaterialExpressionEditorX=2564
+    .MaterialExpressionEditorY=272
+    .MaterialExpressionGuid=F026768E49CCF41C8A9F59B6CFD268A2
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionConstant2Vector (MaterialExpressionConstant2Vector_1)
+    .R=0.500000
+    .G=0.500000
+    .MaterialExpressionEditorX=1024
+    .MaterialExpressionEditorY=460
+    .MaterialExpressionGuid=12C9F5A54590DF89B3E5D0A1A1D111DC
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionConstant2Vector (MaterialExpressionConstant2Vector_0)
+    .R=0.500000
+    .G=0.500000
+    .MaterialExpressionEditorX=-307
+    .MaterialExpressionEditorY=1218
+    .MaterialExpressionGuid=4A230DB243769499080DEFB42F93EE8D
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionConstant (MaterialExpressionConstant_2)
+    .R=0.500000
+    .MaterialExpressionEditorX=-544
+    .MaterialExpressionEditorY=816
+    .MaterialExpressionGuid=E4DF4C5144AC164273CCC69FC97E5D63
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionConstant (MaterialExpressionConstant_1)
+    .R=0.500000
+    .MaterialExpressionEditorX=-560
+    .MaterialExpressionEditorY=452
+    .MaterialExpressionGuid=B8B8306240521AD8AE1BA8868D9E8ADD
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionConstant (MaterialExpressionConstant_0)
+    .R=10.000000
+    .MaterialExpressionEditorX=2392
+    .MaterialExpressionEditorY=648
+    .MaterialExpressionGuid=2AB2974B4BBE293F798EEFB91751674F
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_4)
+    Input                  <- MaterialExpressionViewProperty
+    .R=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionViewProperty'UDS_Clock_Material:MaterialExpressionViewProperty_1'")
+    .MaterialExpressionEditorX=2388
+    .MaterialExpressionEditorY=272
+    .MaterialExpressionGuid=23675B9B494E7A53065CF1BAE7B66BB0
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_3)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'UDS_Clock_Material:MaterialExpressionMaterialFunctionCall_1'")
+    .MaterialExpressionEditorX=-692
+    .MaterialExpressionEditorY=888
+    .MaterialExpressionGuid=C93A547F4437F5DBF9761DAC54A9E7F7
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_2)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+    .R=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'UDS_Clock_Material:MaterialExpressionMaterialFunctionCall_1'")
+    .MaterialExpressionEditorX=-692
+    .MaterialExpressionEditorY=764
+    .MaterialExpressionGuid=BCC206D3433234A1FDBE1786D3E48621
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_1)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'UDS_Clock_Material:MaterialExpressionMaterialFunctionCall_0'")
+    .MaterialExpressionEditorX=-708
+    .MaterialExpressionEditorY=524
+    .MaterialExpressionGuid=F65BD65943FB40259A589191BE130CD6
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+    .R=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'UDS_Clock_Material:MaterialExpressionMaterialFunctionCall_0'")
+    .MaterialExpressionEditorX=-708
+    .MaterialExpressionEditorY=400
+    .MaterialExpressionGuid=D6EAD2F340EC37EDCB30919336059DA7
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_1)
+    .ParameterName="Time of Day"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+    .ParameterId=22F9E00041B13A116EC14D8D39D4C8B6
+    .MaterialExpressionEditorX=-1664
+    .MaterialExpressionEditorY=848
+    .MaterialExpressionGuid=B67DECD34E6C56D08009C5AF518C92C9
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_0)
+    .ParameterName="Time of Day"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+    .ParameterId=22F9E00041B13A116EC14D8D39D4C8B6
+    .MaterialExpressionEditorX=-1676
+    .MaterialExpressionEditorY=500
+    .MaterialExpressionGuid=66DC4D414252F3591CF14281D1CDA94A
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+    .bCollapsed=True
+  MaterialExpressionAdd (MaterialExpressionAdd_2)
+    A                      <- MaterialExpressionWorldPosition
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'UDS_Clock_Material:MaterialExpressionMaterialFunctionCall_4'",OutputIndex=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionWorldPosition'UDS_Clock_Material:MaterialExpressionWorldPosition_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .MaterialExpressionEditorX=2444
+    .MaterialExpressionEditorY=732
+    .MaterialExpressionGuid=764F6A694446841C9FCAA283FD8F5ACF
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionAdd (MaterialExpressionAdd_1)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'UDS_Clock_Material:MaterialExpressionMaterialFunctionCall_4'",OutputIndex=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'UDS_Clock_Material:MaterialExpressionMaterialFunctionCall_6'")
+    .MaterialExpressionEditorX=2978
+    .MaterialExpressionEditorY=750
+    .MaterialExpressionGuid=EFEA6AC044E0A4139910798FBDD52928
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialExpressionAdd (MaterialExpressionAdd_0)
+    A                      <- MaterialExpressionLinearInterpolate
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'UDS_Clock_Material:MaterialExpressionMultiply_13'")
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'UDS_Clock_Material:MaterialExpressionLinearInterpolate_0'")
+    .MaterialExpressionEditorX=1976
+    .MaterialExpressionEditorY=116
+    .MaterialExpressionGuid=4DB9E26140FA22C58E6444945D083C3D
+    .Material="/Script/Engine.Material'UDS_Clock_Material'"
+  MaterialEditorOnlyData (UDS_Clock_MaterialEditorOnlyData)
+    EmissiveColor          <- MaterialExpressionMultiply
+    WorldPositionOffset    <- MaterialExpressionAdd
+    ExpressionCollection   <- MaterialExpressionAdd
+    .BaseColor=(UseConstant=True,Constant=(R=0.501961,G=0.501961,B=0.501961,A=1.000000))
+    .Metallic=(UseConstant=True,Constant=0.500000)
+    .Specular=(UseConstant=True,Constant=0.400000)
+    .Roughness=(UseConstant=True,Constant=0.300000)
+    .Anisotropy=(UseConstant=True)
+    .Normal=(UseConstant=True)
+    .Tangent=(UseConstant=True)
+    .EmissiveColor=(Expression="/Script/Engine.MaterialExpressionMultiply'UDS_Clock_Material:MaterialExpressionMultiply_14'")
+    .Opacity=(UseConstant=True)
+    .OpacityMask=(UseConstant=True)
+    .WorldPositionOffset=(Expression="/Script/Engine.MaterialExpressionAdd'UDS_Clock_Material:MaterialExpressionAdd_1'")
+    .Displacement=(UseConstant=True)
+    .SubsurfaceColor=(UseConstant=True)
+    .ClearCoat=(UseConstant=True,Constant=0.400000)
+    .ClearCoatRoughness=(UseConstant=True,Constant=0.020000)
+    .AmbientOcclusion=(UseConstant=True)
+    .Refraction=(UseConstant=True)
+    .CustomizedUVs(0)=(UseConstant=True)
+    .CustomizedUVs(1)=(UseConstant=True)
+    .CustomizedUVs(2)=(UseConstant=True)
+    .CustomizedUVs(3)=(UseConstant=True)
+    .CustomizedUVs(4)=(UseConstant=True)
+    .CustomizedUVs(5)=(UseConstant=True)
+    .CustomizedUVs(6)=(UseConstant=True)
+    .CustomizedUVs(7)=(UseConstant=True)
+    .PixelDepthOffset=(UseConstant=True)
+    .SurfaceThickness=(UseConstant=True)
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionAdd'UDS_Clock_Material:MaterialExpressionAdd_1'","/Script/Engine.MaterialExpressionPower'UDS_Clock_Material:MaterialExpressionPower_1'","/Script/Engine.MaterialExpressionMultiply'UDS_Clock_Material:MaterialExpressionMultiply_17'","/Script/Engine.MaterialExpressionMaterialFunctionCall'UDS_Clock_Material:MaterialExpressionMaterialFunctionCall_6'","/Script/Engine.MaterialExpressionTextureSample'UDS_Clock_Material:MaterialExpressionTextureSample_0'","/Script/Engine.MaterialExpressionCollectionParameter'UDS_Clock_Material:MaterialExpressionCollectionParameter_0'","/Script/Engine.MaterialExpressionMaterialFunctionCall'UDS_Clock_Material:MaterialExpressionMaterialFunctionCall_0'","/Script/Engine.MaterialExpressionDivide'UDS_Clock_Material:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionFrac'UDS_Clock_Material:MaterialExpressionFrac_0'","/Script/Engine.MaterialExpressionDistance'UDS_Clock_Material:MaterialExpressionDistance_0'","/Script/Engine.MaterialExpressionComponentMask'UDS_Clock_Material:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionConstant'UDS_Clock_Material:MaterialExpressionConstant_1'","/Script/Engine.MaterialExpressionSubtract'UDS_Clock_Material:MaterialExpressionSubtract_0'","/Script/Engine.MaterialExpressionMultiply'UDS_Clock_Material:MaterialExpressionMultiply_1'","/Script/Engine.MaterialExpressionSaturate'UDS_Clock_Material:MaterialExpressionSaturate_0'","/Script/Engine.MaterialExpressionComponentMask'UDS_Clock_Material:MaterialExpressionComponentMask_1'","/Script/Engine.MaterialExpressionMultiply'UDS_Clock_Material:MaterialExpressionMultiply_2'","/Script/Engine.MaterialExpressionSubtract'UDS_Clock_Material:MaterialExpressionSubtract_1'","/Script/Engine.MaterialExpressionMultiply'UDS_Clock_Material:MaterialExpressionMultiply_3'","/Script/Engine.MaterialExpressionSaturate'UDS_Clock_Material:MaterialExpressionSaturate_1'","/Script/Engine.MaterialExpressionMultiply'UDS_Clock_Material:MaterialExpressionMultiply_4'","/Script/Engine.MaterialExpressionSubtract'UDS_Clock_Material:MaterialExpressionSubtract_2'","/Script/Engine.MaterialExpressionMultiply'UDS_Clock_Material:MaterialExpressionMultiply_5'","/Script/Engine.MaterialExpressionSaturate'UDS_Clock_Material:MaterialExpressionSaturate_2'","/Script/Engine.MaterialExpressionLinearInterpolate'UDS_Clock_Material:MaterialExpressionLinearInterpolate_0'","/Script/Engine.MaterialExpressionOneMinus'UDS_Clock_Material:MaterialExpressionOneMinus_0'","/Script/Engine.MaterialExpressionCollectionParameter'UDS_Clock_Material:MaterialExpressionCollectionParameter_1'","/Script/Engine.MaterialExpressionMaterialFunctionCall'UDS_Clock_Material:MaterialExpressionMaterialFunctionCall_1'","/Script/Engine.MaterialExpressionDivide'UDS_Clock_Material:MaterialExpressionDivide_1'","/Script/Engine.MaterialExpressionFrac'UDS_Clock_Material:MaterialExpressionFrac_1'","/Script/Engine.MaterialExpressionDistance'UDS_Clock_Material:MaterialExpressionDistance_1'","/Script/Engine.MaterialExpressionComponentMask'UDS_Clock_Material:MaterialExpressionComponentMask_2'","/Script/Engine.MaterialExpressionConstant'UDS_Clock_Material:MaterialExpressionConstant_2'","/Script/Engine.MaterialExpressionSubtract'UDS_Clock_Material:MaterialExpressionSubtract_3'","/Script/Engine.MaterialExpressionMultiply'UDS_Clock_Material:MaterialExpressionMultiply_6'","/Script/Engine.MaterialExpressionSaturate'UDS_Clock_Material:MaterialExpressionSaturate_3'","/Script/Engine.MaterialExpressionComponentMask'UDS_Clock_Material:MaterialExpressionComponentMask_3'","/Script/Engine.MaterialExpressionMultiply'UDS_Clock_Material:MaterialExpressionMultiply_7'","/Script/Engine.MaterialExpressionSubtract'UDS_Clock_Material:MaterialExpressionSubtract_4'","/Script/Engine.MaterialExpressionMultiply'UDS_Clock_Material:MaterialExpressionMultiply_8'","/Script/Engine.MaterialExpressionSaturate'UDS_Clock_Material:MaterialExpressionSaturate_4'","/Script/Engine.MaterialExpressionMultiply'UDS_Clock_Material:MaterialExpressionMultiply_9'","/Script/Engine.MaterialExpressionSubtract'UDS_Clock_Material:MaterialExpressionSubtract_5'","/Script/Engine.MaterialExpressionMultiply'UDS_Clock_Material:MaterialExpressionMultiply_10'","/Script/Engine.MaterialExpressionSaturate'UDS_Clock_Material:MaterialExpressionSaturate_5'","/Script/Engine.MaterialExpressionOneMinus'UDS_Clock_Material:MaterialExpressionOneMinus_1'","/Script/Engine.MaterialExpressionMax'UDS_Clock_Material:MaterialExpressionMax_0'","/Script/Engine.MaterialExpressionConstant'UDS_Clock_Material:MaterialExpressionConstant_0'","/Script/Engine.MaterialExpressionTextureCoordinate'UDS_Clock_Material:MaterialExpressionTextureCoordinate_0'","/Script/Engine.MaterialExpressionDistance'UDS_Clock_Material:MaterialExpressionDistance_2'","/Script/Engine.MaterialExpressionConstant2Vector'UDS_Clock_Material:MaterialExpressionConstant2Vector_0'","/Script/Engine.MaterialExpressionSubtract'UDS_Clock_Material:MaterialExpressionSubtract_7'","/Script/Engine.MaterialExpressionMultiply'UDS_Clock_Material:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionSaturate'UDS_Clock_Material:MaterialExpressionSaturate_6'","/Script/Engine.MaterialExpressionOneMinus'UDS_Clock_Material:MaterialExpressionOneMinus_3'","/Script/Engine.MaterialExpressionMax'UDS_Clock_Material:MaterialExpressionMax_2'","/Script/Engine.MaterialExpressionTextureCoordinate'UDS_Clock_Material:MaterialExpressionTextureCoordinate_1'","/Script/Engine.MaterialExpressionTextureCoordinate'UDS_Clock_Material:MaterialExpressionTextureCoordinate_3'","/Script/Engine.MaterialExpressionTextureCoordinate'UDS_Clock_Material:MaterialExpressionTextureCoordinate_4'","/Script/Engine.MaterialExpressionMaterialFunctionCall'UDS_Clock_Material:MaterialExpressionMaterialFunctionCall_4'","/Script/Engine.MaterialExpressionWorldPosition'UDS_Clock_Material:MaterialExpressionWorldPosition_0'","/Script/Engine.MaterialExpressionAdd'UDS_Clock_Material:MaterialExpressionAdd_2'","/Script/Engine.MaterialExpressionTextureCoordinate'UDS_Clock_Material:MaterialExpressionTextureCoordinate_2'","/Script/Engine.MaterialExpressionDistance'UDS_Clock_Material:MaterialExpressionDistance_3'","/Script/Engine.MaterialExpressionConstant2Vector'UDS_Clock_Material:MaterialExpressionConstant2Vector_1'","/Script/Engine.MaterialExpressionMultiply'UDS_Clock_Material:MaterialExpressionMultiply_11'","/Script/Engine.MaterialExpressionSaturate'UDS_Clock_Material:MaterialExpressionSaturate_7'","/Script/Engine.MaterialExpressionPower'UDS_Clock_Material:MaterialExpressionPower_0'","/Script/Engine.MaterialExpressionOneMinus'UDS_Clock_Material:MaterialExpressionOneMinus_2'","/Script/Engine.MaterialExpressionMultiply'UDS_Clock_Material:MaterialExpressionMultiply_13'","/Script/Engine.MaterialExpressionAdd'UDS_Clock_Material:MaterialExpressionAdd_0'","/Script/Engine.MaterialExpressionComponentMask'UDS_Clock_Material:MaterialExpressionComponentMask_4'","/Script/Engine.MaterialExpressionDivide'UDS_Clock_Material:MaterialExpressionDivide_2'","/Script/Engine.MaterialExpressionMultiply'UDS_Clock_Material:MaterialExpressionMultiply_14'","/Script/Engine.MaterialExpressionConstant3Vector'UDS_Clock_Material:MaterialExpressionConstant3Vector_0'","/Script/Engine.MaterialExpressionViewProperty'UDS_Clock_Material:MaterialExpressionViewProperty_1'"))

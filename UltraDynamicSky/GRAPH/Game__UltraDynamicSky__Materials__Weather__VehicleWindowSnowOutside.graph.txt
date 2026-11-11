@@ -1,0 +1,154 @@
+### /Game/UltraDynamicSky/Materials/Weather/VehicleWindowSnowOutside
+  Material (VehicleWindowSnowOutside)
+    .BlendMode=BLEND_Translucent
+    .MaterialDecalResponse=MDR_None
+    .TranslucencyPass=MTP_BeforeDOF
+    .bTangentSpaceNormal=False
+    .bUsedWithNiagaraSprites=True
+    .FloatPrecisionMode=MFPM_Half
+    .bUseLightmapDirectionality=False
+    .bAllowFrontLayerTranslucency=False
+    .EditorX=2348
+    .EditorY=-120
+    .bCanMaskedBeAssumedOpaque=True
+    .bCastRayTracedShadows=False
+    .bUseTranslucencyVertexFog=False
+    .PixelDepthOffsetMode=PDOM_Legacy
+    .StateId=E9E630FD40E2CCD455A0C1B1D8698777
+    .ReferencedTextureGuids(0)=E055944A46A9B3F590E00F9BB10BAA44
+    .EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'VehicleWindowSnowOutsideEditorOnlyData'"
+    .TextureStreamingDataVersion=1
+    .TextureStreamingData(0)=(SamplingScale=0.500000,UVChannelIndex=0,TextureName="RainSnow_Sheet",TextureReference="/Game/ENDEMIS/Weather/WeatherFX/T_RainSnow_Sheet.T_RainSnow_Sheet")
+    .ReferencedDefaultTextures(0)="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_RainSnow_Sheet.T_RainSnow_Sheet'"
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+    .ParameterOverviewExpansion=(("-12Global", True))
+    .LightingGuid=AD0CCD9E4F3AECEAC8D0AD89E5EC5016
+  MaterialEditorOnlyData (VehicleWindowSnowOutsideEditorOnlyData)
+    BaseColor              <- MaterialExpressionMultiply
+    Opacity                <- MaterialExpressionMultiply
+    ExpressionCollection   <- MaterialExpressionMultiply
+    .BaseColor=(Constant=(R=0.501961,G=0.501961,B=0.501961,A=1.000000),Expression="/Script/Engine.MaterialExpressionMultiply'VehicleWindowSnowOutside:MaterialExpressionMultiply_1'")
+    .Metallic=(UseConstant=True)
+    .Specular=(UseConstant=True)
+    .Roughness=(UseConstant=True)
+    .Anisotropy=(UseConstant=True)
+    .Normal=(UseConstant=True)
+    .Tangent=(UseConstant=True)
+    .EmissiveColor=(UseConstant=True)
+    .Opacity=(Expression="/Script/Engine.MaterialExpressionMultiply'VehicleWindowSnowOutside:MaterialExpressionMultiply_0'")
+    .OpacityMask=(UseConstant=True)
+    .WorldPositionOffset=(UseConstant=True)
+    .Displacement=(UseConstant=True)
+    .SubsurfaceColor=(UseConstant=True)
+    .ClearCoat=(UseConstant=True)
+    .ClearCoatRoughness=(UseConstant=True)
+    .AmbientOcclusion=(UseConstant=True)
+    .Refraction=(UseConstant=True)
+    .CustomizedUVs(0)=(UseConstant=True)
+    .CustomizedUVs(1)=(UseConstant=True)
+    .CustomizedUVs(2)=(UseConstant=True)
+    .CustomizedUVs(3)=(UseConstant=True)
+    .CustomizedUVs(4)=(UseConstant=True)
+    .CustomizedUVs(5)=(UseConstant=True)
+    .CustomizedUVs(6)=(UseConstant=True)
+    .CustomizedUVs(7)=(UseConstant=True)
+    .PixelDepthOffset=(UseConstant=True)
+    .SurfaceThickness=(UseConstant=True)
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionMultiply'VehicleWindowSnowOutside:MaterialExpressionMultiply_1'","/Script/Engine.MaterialExpressionParticleColor'VehicleWindowSnowOutside:MaterialExpressionParticleColor_0'","/Script/Engine.MaterialExpressionMultiply'VehicleWindowSnowOutside:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionTextureSample'VehicleWindowSnowOutside:MaterialExpressionTextureSample_0'","/Script/Engine.MaterialExpressionParticleColor'VehicleWindowSnowOutside:MaterialExpressionParticleColor_2'","/Script/Engine.MaterialExpressionTextureCoordinate'VehicleWindowSnowOutside:MaterialExpressionTextureCoordinate_0'","/Script/Engine.MaterialExpressionAdd'VehicleWindowSnowOutside:MaterialExpressionAdd_0'","/Script/Engine.MaterialExpressionDynamicParameter'VehicleWindowSnowOutside:MaterialExpressionDynamicParameter_0'","/Script/Engine.MaterialExpressionAppendVector'VehicleWindowSnowOutside:MaterialExpressionAppendVector_0'","/Script/Engine.MaterialExpressionDivide'VehicleWindowSnowOutside:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionCollectionParameter'VehicleWindowSnowOutside:MaterialExpressionCollectionParameter_0'","/Script/Engine.MaterialExpressionComponentMask'VehicleWindowSnowOutside:MaterialExpressionComponentMask_0'"))
+  MaterialExpressionAdd (MaterialExpressionAdd_0)
+    A                      <- MaterialExpressionDivide
+    B                      <- MaterialExpressionAppendVector
+    .B=(Expression="/Script/Engine.MaterialExpressionAppendVector'VehicleWindowSnowOutside:MaterialExpressionAppendVector_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'VehicleWindowSnowOutside:MaterialExpressionDivide_0'")
+    .MaterialExpressionEditorX=1440
+    .MaterialExpressionEditorY=112
+    .MaterialExpressionGuid=B5EC57014D96EB78CA765097B2163DB8
+    .Material="/Script/Engine.Material'VehicleWindowSnowOutside'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_0)
+    A                      <- MaterialExpressionDynamicParameter
+    B                      <- MaterialExpressionDynamicParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionDynamicParameter'VehicleWindowSnowOutside:MaterialExpressionDynamicParameter_0'",OutputIndex=3,Mask=1,MaskA=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionDynamicParameter'VehicleWindowSnowOutside:MaterialExpressionDynamicParameter_0'",OutputIndex=2,Mask=1,MaskB=1)
+    .MaterialExpressionEditorX=1276
+    .MaterialExpressionEditorY=308
+    .MaterialExpressionGuid=25DDE843414AFD168C6F23923142B3D0
+    .Material="/Script/Engine.Material'VehicleWindowSnowOutside'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_0)
+    .ParameterName="Snow Color"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Particles/UDW_WeatherParticle_Parameters.UDW_WeatherParticle_Parameters'"
+    .ParameterId=9AC6799C4B81040794575D8FC84D0E55
+    .MaterialExpressionEditorX=1704
+    .MaterialExpressionEditorY=-56
+    .MaterialExpressionGuid=BD19494544938CF479DAFE910725047B
+    .Material="/Script/Engine.Material'VehicleWindowSnowOutside'"
+    .bCollapsed=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionCollectionParameter
+    .R=True
+    .G=True
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'VehicleWindowSnowOutside:MaterialExpressionCollectionParameter_0'")
+    .MaterialExpressionEditorX=1980
+    .MaterialExpressionEditorY=-28
+    .MaterialExpressionGuid=FE69C91145E106C55142B09AB140D28E
+    .Material="/Script/Engine.Material'VehicleWindowSnowOutside'"
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionTextureCoordinate
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'VehicleWindowSnowOutside:MaterialExpressionTextureCoordinate_0'")
+    .MaterialExpressionEditorX=1272
+    .MaterialExpressionEditorY=112
+    .MaterialExpressionGuid=91A928AF4097588AE8B7DCB3C531CE57
+    .Material="/Script/Engine.Material'VehicleWindowSnowOutside'"
+  MaterialExpressionDynamicParameter (MaterialExpressionDynamicParameter_0)
+    .ParameterIndex=1
+    .MaterialExpressionEditorX=1036
+    .MaterialExpressionEditorY=232
+    .MaterialExpressionGuid=4DB89BD146BF67A5321F0189195BEAF9
+    .Material="/Script/Engine.Material'VehicleWindowSnowOutside'"
+    .Outputs(0)=(OutputName="Param1")
+    .Outputs(1)=(OutputName="Param2")
+    .Outputs(2)=(OutputName="Param3")
+    .Outputs(3)=(OutputName="Param4")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionTextureSample
+    B                      <- MaterialExpressionParticleColor
+    .B=(Expression="/Script/Engine.MaterialExpressionParticleColor'VehicleWindowSnowOutside:MaterialExpressionParticleColor_2'",OutputIndex=4,Mask=1,MaskA=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'VehicleWindowSnowOutside:MaterialExpressionTextureSample_0'",OutputIndex=2,Mask=1,MaskG=1)
+    .MaterialExpressionEditorX=2164
+    .MaterialExpressionEditorY=176
+    .MaterialExpressionGuid=6E10823D464008698584819784348B62
+    .Material="/Script/Engine.Material'VehicleWindowSnowOutside'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionParticleColor
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'VehicleWindowSnowOutside:MaterialExpressionComponentMask_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionParticleColor'VehicleWindowSnowOutside:MaterialExpressionParticleColor_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .MaterialExpressionEditorX=2156
+    .MaterialExpressionEditorY=-288
+    .MaterialExpressionGuid=F1C9C07D48D9CEC8A44058A2A41CBF1B
+    .Material="/Script/Engine.Material'VehicleWindowSnowOutside'"
+  MaterialExpressionParticleColor (MaterialExpressionParticleColor_0)
+    .MaterialExpressionEditorX=1836
+    .MaterialExpressionEditorY=-304
+    .MaterialExpressionGuid=F44C550447319417F395319508BA5B93
+    .Material="/Script/Engine.Material'VehicleWindowSnowOutside'"
+  MaterialExpressionParticleColor (MaterialExpressionParticleColor_2)
+    .MaterialExpressionEditorX=1872
+    .MaterialExpressionEditorY=236
+    .MaterialExpressionGuid=F44C550447319417F395319508BA5B93
+    .Material="/Script/Engine.Material'VehicleWindowSnowOutside'"
+  MaterialExpressionTextureCoordinate (MaterialExpressionTextureCoordinate_0)
+    .MaterialExpressionEditorX=1024
+    .MaterialExpressionEditorY=112
+    .MaterialExpressionGuid=A69C2BA643E20D38CD3A38B7EF1E671B
+    .Material="/Script/Engine.Material'VehicleWindowSnowOutside'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_0)
+    Coordinates            <- MaterialExpressionAdd
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_RainSnow_Sheet.T_RainSnow_Sheet'"
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionAdd'VehicleWindowSnowOutside:MaterialExpressionAdd_0'")
+    .CoordinatesDY=(Mask=1,MaskR=1)
+    .MaterialExpressionEditorX=1568
+    .MaterialExpressionEditorY=112
+    .MaterialExpressionGuid=DAD4117D41DE8D2AD286BFA882F044A6
+    .Material="/Script/Engine.Material'VehicleWindowSnowOutside'"

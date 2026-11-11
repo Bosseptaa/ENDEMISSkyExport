@@ -1,0 +1,870 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_VolumetricClouds_BaseDensity_HQ
+  MaterialFunction (MF_SC_VolumetricClouds_BaseDensity_HQ)
+    DependentFunctionExpressionCandidates(0) <- MaterialExpressionMaterialFunctionCall
+    DependentFunctionExpressionCandidates(1) <- MaterialExpressionMaterialFunctionCall
+    DependentFunctionExpressionCandidates(2) <- MaterialExpressionMaterialFunctionCall
+    DependentFunctionExpressionCandidates(3) <- MaterialExpressionMaterialFunctionCall
+    DependentFunctionExpressionCandidates(4) <- MaterialExpressionMaterialFunctionCall
+    DependentFunctionExpressionCandidates(5) <- MaterialExpressionMaterialFunctionCall
+    DependentFunctionExpressionCandidates(6) <- MaterialExpressionMaterialFunctionCall
+    DependentFunctionExpressionCandidates(7) <- MaterialExpressionMaterialFunctionCall
+    DependentFunctionExpressionCandidates(8) <- MaterialExpressionMaterialFunctionCall
+    DependentFunctionExpressionCandidates(9) <- MaterialExpressionMaterialFunctionCall
+    DependentFunctionExpressionCandidates(10) <- MaterialExpressionMaterialFunctionCall
+    DependentFunctionExpressionCandidates(11) <- MaterialExpressionMaterialFunctionCall
+    DependentFunctionExpressionCandidates(12) <- MaterialExpressionMaterialFunctionCall
+    DependentFunctionExpressionCandidates(13) <- MaterialExpressionMaterialFunctionCall
+    DependentFunctionExpressionCandidates(14) <- MaterialExpressionMaterialFunctionCall
+    DependentFunctionExpressionCandidates(15) <- MaterialExpressionMaterialFunctionCall
+    DependentFunctionExpressionCandidates(16) <- MaterialExpressionMaterialFunctionCall
+    DependentFunctionExpressionCandidates(17) <- MaterialExpressionMaterialFunctionCall
+    DependentFunctionExpressionCandidates(18) <- MaterialExpressionMaterialFunctionCall
+    .Description="A function nesessary to build base volumetric cloud density."
+    .LibraryCategoriesText(0)=NSLOCTEXT("", "EC53621B41EA7C03E6A635B2B7DFF191", "Sky Creator")
+    .DependentFunctionExpressionCandidates(0)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_2'"
+    .DependentFunctionExpressionCandidates(1)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_25'"
+    .DependentFunctionExpressionCandidates(2)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_26'"
+    .DependentFunctionExpressionCandidates(3)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_27'"
+    .DependentFunctionExpressionCandidates(4)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_28'"
+    .DependentFunctionExpressionCandidates(5)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_29'"
+    .DependentFunctionExpressionCandidates(6)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_31'"
+    .DependentFunctionExpressionCandidates(7)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_32'"
+    .DependentFunctionExpressionCandidates(8)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_33'"
+    .DependentFunctionExpressionCandidates(9)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_34'"
+    .DependentFunctionExpressionCandidates(10)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_0'"
+    .DependentFunctionExpressionCandidates(11)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_1'"
+    .DependentFunctionExpressionCandidates(12)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_3'"
+    .DependentFunctionExpressionCandidates(13)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_4'"
+    .DependentFunctionExpressionCandidates(14)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_5'"
+    .DependentFunctionExpressionCandidates(15)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_6'"
+    .DependentFunctionExpressionCandidates(16)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_7'"
+    .DependentFunctionExpressionCandidates(17)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_8'"
+    .DependentFunctionExpressionCandidates(18)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_9'"
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'MF_SC_VolumetricClouds_BaseDensity_HQEditorOnlyData'"
+    .StateId=152E608E45561F94EDCEC8BE85A88BE7
+    .CombinedInputTypes=4
+    .CombinedOutputTypes=15
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+  MaterialFunctionEditorOnlyData (MF_SC_VolumetricClouds_BaseDensity_HQEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMaterialFunctionCall_2'","/Script/Engine.MaterialExpressionComponentMask'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionComponentMask_5'","/Script/Engine.MaterialExpressionAdd'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionAdd_9'","/Script/Engine.MaterialExpressionTextureSampleParameter2D'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionTextureSampleParameter2D_2'","/Script/Engine.MaterialExpressionSubtract'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionSubtract_4'","/Script/Engine.MaterialExpressionMultiply'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMultiply_28'","/Script/Engine.MaterialExpressionMax'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMax_1'","/Script/Engine.MaterialExpressionSubtract'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionSubtract_5'","/Script/Engine.MaterialExpressionMultiply'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMultiply_29'","/Script/Engine.MaterialExpressionSubtract'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionSubtract_6'","/Script/Engine.MaterialExpressionMultiply'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMultiply_31'","/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMaterialFunctionCall_25'","/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMaterialFunctionCall_26'","/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMaterialFunctionCall_27'","/Script/Engine.MaterialExpressionMax'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMax_3'","/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMaterialFunctionCall_28'","/Script/Engine.MaterialExpressionSubtract'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionSubtract_8'","/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMaterialFunctionCall_29'","/Script/Engine.MaterialExpressionMultiply'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMultiply_44'","/Script/Engine.MaterialExpressionMultiply'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMultiply_45'","/Script/Engine.MaterialExpressionLinearInterpolate'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionLinearInterpolate_19'","/Script/Engine.MaterialExpressionConstant'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionConstant_22'","/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMaterialFunctionCall_31'","/Script/Engine.MaterialExpressionComponentMask'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionComponentMask_8'","/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMaterialFunctionCall_32'","/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMaterialFunctionCall_33'","/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMaterialFunctionCall_34'","/Script/Engine.MaterialExpressionMax'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMax_6'","/Script/Engine.MaterialExpressionTextureSampleParameter2D'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionTextureSampleParameter2D_3'","/Script/Engine.MaterialExpressionMultiply'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMultiply_58'","/Script/Engine.MaterialExpressionMultiply'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMultiply_23'","/Script/Engine.MaterialExpressionComponentMask'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionComponentMask_9'","/Script/Engine.MaterialExpressionCurveAtlasRowParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCurveAtlasRowParameter_4'","/Script/Engine.MaterialExpressionCurveAtlasRowParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCurveAtlasRowParameter_6'","/Script/Engine.MaterialExpressionCurveAtlasRowParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCurveAtlasRowParameter_7'","/Script/Engine.MaterialExpressionCurveAtlasRowParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCurveAtlasRowParameter_8'","/Script/Engine.MaterialExpressionMax'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMax_0'","/Script/Engine.MaterialExpressionMax'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMax_2'","/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMaterialFunctionCall_0'","/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMaterialFunctionCall_1'","/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMaterialFunctionCall_3'","/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMaterialFunctionCall_4'","/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMaterialFunctionCall_5'","/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMaterialFunctionCall_6'","/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMaterialFunctionCall_7'","/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMaterialFunctionCall_8'","/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMaterialFunctionCall_9'","/Script/Engine.MaterialExpressionFunctionInput'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionFunctionInput_0'","/Script/Engine.MaterialExpressionReroute'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionReroute_0'","/Script/Engine.MaterialExpressionReroute'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionReroute_1'","/Script/Engine.MaterialExpressionReroute'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionReroute_2'","/Script/Engine.MaterialExpressionReroute'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionReroute_3'","/Script/Engine.MaterialExpressionReroute'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionReroute_4'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCollectionParameter_0'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCollectionParameter_1'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCollectionParameter_2'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCollectionParameter_3'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCollectionParameter_4'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCollectionParameter_5'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCollectionParameter_6'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCollectionParameter_7'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCollectionParameter_8'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCollectionParameter_9'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCollectionParameter_10'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCollectionParameter_11'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCollectionParameter_12'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCollectionParameter_13'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCollectionParameter_14'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCollectionParameter_15'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCollectionParameter_16'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCollectionParameter_17'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCollectionParameter_18'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCollectionParameter_19'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCollectionParameter_20'","/Script/Engine.MaterialExpressionComponentMask'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionComponentMask'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionComponentMask_1'","/Script/Engine.MaterialExpressionComponentMask'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionComponentMask_2'","/Script/Engine.MaterialExpressionComponentMask'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionComponentMask_3'","/Script/Engine.MaterialExpressionMultiply'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionConstant'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionConstant_0'","/Script/Engine.MaterialExpressionFunctionOutput'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionFunctionOutput_1'","/Script/Engine.MaterialExpressionMax'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMax_4'"))
+  MaterialExpressionAdd (MaterialExpressionAdd_9)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMultiply_58'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionComponentMask_5'")
+    .MaterialExpressionEditorX=-4480
+    .MaterialExpressionEditorY=192
+    .MaterialExpressionGuid=2F7F3F004D117872FCB2F7BAE9CECEAB
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_0)
+    .ParameterName="Cloud Map Scale"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_VolumetricClouds'"
+    .ParameterId=7C35949F46C9B7371C759E8E87AA2682
+    .MaterialExpressionEditorX=-5632
+    .MaterialExpressionEditorY=160
+    .MaterialExpressionGuid=B3254DDF493E0A861C979C9218D285E6
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_1)
+    .ParameterName="Cloud Map Offset"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_VolumetricClouds'"
+    .ParameterId=4654A9824E92FFD148FAF8AA9FBB0C3F
+    .MaterialExpressionEditorX=-5632
+    .MaterialExpressionEditorY=256
+    .MaterialExpressionGuid=B3254DDF493E0A861C979C9218D285E6
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_10)
+    .ParameterName="Stratus Height Variation"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_VolumetricClouds'"
+    .ParameterId=63E37C5F4DF7E591632BD5BEB22036D3
+    .MaterialExpressionEditorX=-2944
+    .MaterialExpressionEditorY=208
+    .MaterialExpressionGuid=B3254DDF493E0A861C979C9218D285E6
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_11)
+    .ParameterName="Stratocumulus Coverage Variation"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_VolumetricClouds'"
+    .ParameterId=4182950748EF84645E8762AB69E4F78F
+    .MaterialExpressionEditorX=-3840
+    .MaterialExpressionEditorY=704
+    .MaterialExpressionGuid=B3254DDF493E0A861C979C9218D285E6
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_12)
+    .ParameterName="Cumulus Coverage Variation"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_VolumetricClouds'"
+    .ParameterId=5B1F4B8A4EB0603784E8CEBA7F1B1E21
+    .MaterialExpressionEditorX=-3840
+    .MaterialExpressionEditorY=1024
+    .MaterialExpressionGuid=B3254DDF493E0A861C979C9218D285E6
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_13)
+    .ParameterName="Cumulonimbus Coverage"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_VolumetricClouds'"
+    .ParameterId=B1FDF80044360E9DE704AE87460F5C2C
+    .MaterialExpressionEditorX=-3840
+    .MaterialExpressionEditorY=1408
+    .MaterialExpressionGuid=B3254DDF493E0A861C979C9218D285E6
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_14)
+    .ParameterName="Stratocumulus Coverage"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_VolumetricClouds'"
+    .ParameterId=F9A6AFEF41236A981BF542A319D09C48
+    .MaterialExpressionEditorX=-2944
+    .MaterialExpressionEditorY=640
+    .MaterialExpressionGuid=B3254DDF493E0A861C979C9218D285E6
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_15)
+    .ParameterName="Stratocumulus Height Variation"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_VolumetricClouds'"
+    .ParameterId=04FF8BC94E49C7977999A292B16EB921
+    .MaterialExpressionEditorX=-2944
+    .MaterialExpressionEditorY=736
+    .MaterialExpressionGuid=B3254DDF493E0A861C979C9218D285E6
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_16)
+    .ParameterName="Cumulus Coverage"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_VolumetricClouds'"
+    .ParameterId=B7FFF4DA4949242D73C92F99C291933F
+    .MaterialExpressionEditorX=-2944
+    .MaterialExpressionEditorY=1024
+    .MaterialExpressionGuid=B3254DDF493E0A861C979C9218D285E6
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_17)
+    .ParameterName="Cumulus Height Variation"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_VolumetricClouds'"
+    .ParameterId=A491167E42BBADB3C8D1F4A6D9E46CAB
+    .MaterialExpressionEditorX=-2944
+    .MaterialExpressionEditorY=1120
+    .MaterialExpressionGuid=B3254DDF493E0A861C979C9218D285E6
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_18)
+    .ParameterName="Cumulonimbus Coverage"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_VolumetricClouds'"
+    .ParameterId=B1FDF80044360E9DE704AE87460F5C2C
+    .MaterialExpressionEditorX=-2944
+    .MaterialExpressionEditorY=1408
+    .MaterialExpressionGuid=B3254DDF493E0A861C979C9218D285E6
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_19)
+    .ParameterName="Cumulonimbus Height Variation"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_VolumetricClouds'"
+    .ParameterId=DB1524AC45EA3CF4125C8D921B4102F2
+    .MaterialExpressionEditorX=-3200
+    .MaterialExpressionEditorY=1536
+    .MaterialExpressionGuid=B3254DDF493E0A861C979C9218D285E6
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_2)
+    .ParameterName="Cloud Map Wind Offset"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_VolumetricClouds'"
+    .ParameterId=AAB939D4481F3783C5D115BFF18ADC4D
+    .MaterialExpressionEditorX=-5632
+    .MaterialExpressionEditorY=352
+    .MaterialExpressionGuid=B3254DDF493E0A861C979C9218D285E6
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_20)
+    .ParameterName="Cumulonimbus Anvil"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_VolumetricClouds'"
+    .ParameterId=4E0514E54B067FB4CD22E6AA49D4FD8E
+    .MaterialExpressionEditorX=-3200
+    .MaterialExpressionEditorY=1696
+    .MaterialExpressionGuid=B3254DDF493E0A861C979C9218D285E6
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_3)
+    .ParameterName="Cloud Map Wind Skew Force"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_VolumetricClouds'"
+    .ParameterId=DDDCE67144EB4C5E350E3592EE2FBBAB
+    .MaterialExpressionEditorX=-5248
+    .MaterialExpressionEditorY=336
+    .MaterialExpressionGuid=B3254DDF493E0A861C979C9218D285E6
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_4)
+    .ParameterName="Cloud Map Wind Skew Direction"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_VolumetricClouds'"
+    .ParameterId=415D040A443678FB24AF9B89D021A977
+    .MaterialExpressionEditorX=-5248
+    .MaterialExpressionEditorY=432
+    .MaterialExpressionGuid=B3254DDF493E0A861C979C9218D285E6
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_5)
+    .ParameterName="Coverage Variation Map Scale"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_VolumetricClouds'"
+    .ParameterId=FEBEDC4D40309FDA203722972EB53737
+    .MaterialExpressionEditorX=-5120
+    .MaterialExpressionEditorY=704
+    .MaterialExpressionGuid=B3254DDF493E0A861C979C9218D285E6
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_6)
+    .ParameterName="Cloud Map Offset"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_VolumetricClouds'"
+    .ParameterId=4654A9824E92FFD148FAF8AA9FBB0C3F
+    .MaterialExpressionEditorX=-5120
+    .MaterialExpressionEditorY=800
+    .MaterialExpressionGuid=B3254DDF493E0A861C979C9218D285E6
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_7)
+    .ParameterName="Cloud Map Wind Offset"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_VolumetricClouds'"
+    .ParameterId=AAB939D4481F3783C5D115BFF18ADC4D
+    .MaterialExpressionEditorX=-5120
+    .MaterialExpressionEditorY=896
+    .MaterialExpressionGuid=B3254DDF493E0A861C979C9218D285E6
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_8)
+    .ParameterName="Stratus Coverage"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_VolumetricClouds'"
+    .ParameterId=658B0E1B41AB31214963FCA59F8403E1
+    .MaterialExpressionEditorX=-2944
+    .MaterialExpressionEditorY=112
+    .MaterialExpressionGuid=B3254DDF493E0A861C979C9218D285E6
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_9)
+    .ParameterName="Stratus Coverage Variation"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_VolumetricClouds'"
+    .ParameterId=377BDEBC43965097D646B9B967293E29
+    .MaterialExpressionEditorX=-3840
+    .MaterialExpressionEditorY=240
+    .MaterialExpressionGuid=B3254DDF493E0A861C979C9218D285E6
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+    .bCollapsed=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionCollectionParameter
+    .R=True
+    .G=True
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCollectionParameter_1'")
+    .MaterialExpressionEditorX=-5408
+    .MaterialExpressionEditorY=288
+    .MaterialExpressionGuid=443E75A64A0944FD45948092384D2B6E
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_1)
+    Input                  <- MaterialExpressionCollectionParameter
+    .R=True
+    .G=True
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCollectionParameter_2'")
+    .MaterialExpressionEditorX=-5408
+    .MaterialExpressionEditorY=384
+    .MaterialExpressionGuid=443E75A64A0944FD45948092384D2B6E
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_2)
+    Input                  <- MaterialExpressionCollectionParameter
+    .R=True
+    .G=True
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCollectionParameter_6'")
+    .MaterialExpressionEditorX=-4896
+    .MaterialExpressionEditorY=832
+    .MaterialExpressionGuid=443E75A64A0944FD45948092384D2B6E
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_3)
+    Input                  <- MaterialExpressionCollectionParameter
+    .R=True
+    .G=True
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCollectionParameter_7'")
+    .MaterialExpressionEditorX=-4896
+    .MaterialExpressionEditorY=928
+    .MaterialExpressionGuid=443E75A64A0944FD45948092384D2B6E
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_5)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+    .R=True
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMaterialFunctionCall_2'")
+    .MaterialExpressionEditorX=-4864
+    .MaterialExpressionEditorY=192
+    .MaterialExpressionGuid=1584A7BC4638C06C52B9A6A82FF60910
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_8)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+    .R=True
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMaterialFunctionCall_31'")
+    .MaterialExpressionEditorX=-4480
+    .MaterialExpressionEditorY=704
+    .MaterialExpressionGuid=1584A7BC4638C06C52B9A6A82FF60910
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_9)
+    Input                  <- MaterialExpressionCollectionParameter
+    .R=True
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCollectionParameter_4'")
+    .MaterialExpressionEditorX=-4992
+    .MaterialExpressionEditorY=464
+    .MaterialExpressionGuid=443E75A64A0944FD45948092384D2B6E
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+  MaterialExpressionConstant (MaterialExpressionConstant_0)
+    .R=2.000000
+    .MaterialExpressionEditorX=-1664
+    .MaterialExpressionEditorY=1232
+    .MaterialExpressionGuid=A9F88969492CCBE50902C6BDAE8C2361
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+  MaterialExpressionConstant (MaterialExpressionConstant_22)
+    .MaterialExpressionEditorX=-3200
+    .MaterialExpressionEditorY=1632
+    .MaterialExpressionGuid=FD2EBFE44A9B7DCDAB0E8FA72843B3CB
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+  MaterialExpressionCurveAtlasRowParameter (MaterialExpressionCurveAtlasRowParameter_4)
+    InputTime              <- MaterialExpressionMaterialFunctionCall
+    .ParameterName="CloudLayerHeights_Curve"
+    .Curve="/Script/Engine.CurveLinearColor'/SkyCreatorPlugin/Materials/Curves/Curve_SC_VolumetricCloud_Layers.Curve_SC_VolumetricCloud_Layers'"
+    .Atlas="/Script/Engine.CurveLinearColorAtlas'/SkyCreatorPlugin/Materials/Curves/Curve_SC_VolumetricClouds_Atlas.Curve_SC_VolumetricClouds_Atlas'"
+    .InputTime=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMaterialFunctionCall_6'")
+    .ExpressionGUID=09F99FC542736DE16A18B0A6C522A14D
+    .Group="Cloud Layers"
+    .MaterialExpressionEditorX=-1792
+    .MaterialExpressionEditorY=176
+    .MaterialExpressionGuid=ADB012D747C0818EF35732AA54AFB097
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+  MaterialExpressionCurveAtlasRowParameter (MaterialExpressionCurveAtlasRowParameter_6)
+    InputTime              <- MaterialExpressionMaterialFunctionCall
+    .ParameterName="CloudLayerHeights_Curve"
+    .Curve="/Script/Engine.CurveLinearColor'/SkyCreatorPlugin/Materials/Curves/Curve_SC_VolumetricCloud_Layers.Curve_SC_VolumetricCloud_Layers'"
+    .Atlas="/Script/Engine.CurveLinearColorAtlas'/SkyCreatorPlugin/Materials/Curves/Curve_SC_VolumetricClouds_Atlas.Curve_SC_VolumetricClouds_Atlas'"
+    .InputTime=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMaterialFunctionCall_7'")
+    .ExpressionGUID=96D22BDC4680F8D72C4CA2BC068CF656
+    .Group="Cloud Layers"
+    .MaterialExpressionEditorX=-1792
+    .MaterialExpressionEditorY=672
+    .MaterialExpressionGuid=ADB012D747C0818EF35732AA54AFB097
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+  MaterialExpressionCurveAtlasRowParameter (MaterialExpressionCurveAtlasRowParameter_7)
+    InputTime              <- MaterialExpressionMaterialFunctionCall
+    .ParameterName="CloudLayerHeights_Curve"
+    .Curve="/Script/Engine.CurveLinearColor'/SkyCreatorPlugin/Materials/Curves/Curve_SC_VolumetricCloud_Layers.Curve_SC_VolumetricCloud_Layers'"
+    .Atlas="/Script/Engine.CurveLinearColorAtlas'/SkyCreatorPlugin/Materials/Curves/Curve_SC_VolumetricClouds_Atlas.Curve_SC_VolumetricClouds_Atlas'"
+    .InputTime=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMaterialFunctionCall_8'")
+    .ExpressionGUID=CE55B71D40E2867FF8A10AA2F04E4C75
+    .Group="Cloud Layers"
+    .MaterialExpressionEditorX=-1792
+    .MaterialExpressionEditorY=1056
+    .MaterialExpressionGuid=ADB012D747C0818EF35732AA54AFB097
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+  MaterialExpressionCurveAtlasRowParameter (MaterialExpressionCurveAtlasRowParameter_8)
+    InputTime              <- MaterialExpressionMaterialFunctionCall
+    .ParameterName="CloudLayerHeights_Curve"
+    .Curve="/Script/Engine.CurveLinearColor'/SkyCreatorPlugin/Materials/Curves/Curve_SC_VolumetricCloud_Layers.Curve_SC_VolumetricCloud_Layers'"
+    .Atlas="/Script/Engine.CurveLinearColorAtlas'/SkyCreatorPlugin/Materials/Curves/Curve_SC_VolumetricClouds_Atlas.Curve_SC_VolumetricClouds_Atlas'"
+    .InputTime=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMaterialFunctionCall_9'")
+    .ExpressionGUID=572A47334BF11B5C71A7178824C0E967
+    .Group="Cloud Layers"
+    .MaterialExpressionEditorX=-1792
+    .MaterialExpressionEditorY=1440
+    .MaterialExpressionGuid=ADB012D747C0818EF35732AA54AFB097
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_0)
+    .InputName="Position"
+    .Id=3585827C4A416429B06AF3AE575731CE
+    .MaterialExpressionEditorX=-6656
+    .MaterialExpressionEditorY=-256
+    .MaterialExpressionGuid=A05AB0AB4A4F4E5A2BF986BD8760D9E3
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMaterialFunctionCall_26'")
+    .bLastPreviewed=True
+    .Id=884ECF83420B3B54C0F2BC9938F7409F
+    .MaterialExpressionGuid=3AD0C76C484CA0703BECEC97331F12E6
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_1)
+    A                      <- MaterialExpressionMax
+    .A=(Expression="/Script/Engine.MaterialExpressionMax'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMax_4'")
+    .OutputName="Coverage"
+    .SortPriority=1
+    .Id=04DA3246410F4AEB28463DB5D983A15B
+    .MaterialExpressionEditorY=256
+    .MaterialExpressionGuid=E8A8760A48DC366E5A3FE39B418E6C66
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_19)
+    A                      <- MaterialExpressionCollectionParameter
+    B                      <- MaterialExpressionConstant
+    Alpha                  <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionConstant_22'")
+    .A=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCollectionParameter_19'")
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCollectionParameter_20'")
+    .MaterialExpressionEditorX=-2944
+    .MaterialExpressionEditorY=1568
+    .MaterialExpressionGuid=5D514B5E4F55BBC139CB958BAAB75F80
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_0)
+    FunctionInputs(0)      <- MaterialExpressionReroute
+    .MaterialFunction="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_VolumetricCloud_NormHeight.MF_SC_VolumetricCloud_NormHeight'"
+    .FunctionInputs(0)=(ExpressionInputId=43F81B15419B29A5A1B01EBF5F8C7987,Input=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionReroute_0'",InputName="Position"))
+    .FunctionOutputs(0)=(ExpressionOutputId=ED0621FF47204A67996B79A1F285C897,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-4992
+    .MaterialExpressionEditorY=528
+    .MaterialExpressionGuid=491D4CBE403B4E392D8297B4C42221CF
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_1)
+    FunctionInputs(0)      <- MaterialExpressionReroute
+    .MaterialFunction="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_VolumetricCloud_NormHeight.MF_SC_VolumetricCloud_NormHeight'"
+    .FunctionInputs(0)=(ExpressionInputId=43F81B15419B29A5A1B01EBF5F8C7987,Input=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionReroute_3'",InputName="Position"))
+    .FunctionOutputs(0)=(ExpressionOutputId=ED0621FF47204A67996B79A1F285C897,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-2944
+    .MaterialExpressionEditorY=320
+    .MaterialExpressionGuid=491D4CBE403B4E392D8297B4C42221CF
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_2)
+    FunctionInputs(0)      <- MaterialExpressionReroute
+    FunctionInputs(1)      <- MaterialExpressionCollectionParameter
+    FunctionInputs(2)      <- MaterialExpressionComponentMask
+    FunctionInputs(3)      <- MaterialExpressionComponentMask
+    .MaterialFunction="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_CloudUV.MF_SC_CloudUV'"
+    .FunctionInputs(0)=(ExpressionInputId=BC2AB06544B5073569DB6680FF1D0AD5,Input=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionReroute_0'",InputName="Position"))
+    .FunctionInputs(1)=(ExpressionInputId=684C7EC94CF2308BD4E7FA8F196E0535,Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCollectionParameter_0'",InputName="Scale"))
+    .FunctionInputs(2)=(ExpressionInputId=67C4B9A343A42D8DFF9196A2FFD76AF8,Input=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionComponentMask_0'",InputName="Initial Offset"))
+    .FunctionInputs(3)=(ExpressionInputId=A83935B2410B379559DE75A03C606991,Input=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionComponentMask_1'",InputName="Wind Offset"))
+    .FunctionOutputs(0)=(ExpressionOutputId=84D0816E49714F8007B29D9840E5C8DE,Output=(OutputName="Result"))
+    .FunctionOutputs(1)=(ExpressionOutputId=C1BB63694FC396723B340F980F5E0AF2,Output=(OutputName="Scale Only"))
+    .MaterialExpressionEditorX=-5248
+    .MaterialExpressionEditorY=192
+    .MaterialExpressionGuid=4BD3B35E4C3FDA68DB3FDE9CB9AFCBDA
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+    .Outputs(0)=(OutputName="Result")
+    .Outputs(1)=(OutputName="Scale Only")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_25)
+    FunctionInputs(0)      <- MaterialExpressionCollectionParameter
+    FunctionInputs(1)      <- MaterialExpressionCollectionParameter
+    FunctionInputs(2)      <- MaterialExpressionMaterialFunctionCall
+    .MaterialFunction="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_VolumetricCloud_HeightVariation.MF_SC_VolumetricCloud_HeightVariation'"
+    .FunctionInputs(0)=(ExpressionInputId=C8634C3E43F619F56BE7F693E6971AC0,Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCollectionParameter_16'",InputName="Layer Coverage"))
+    .FunctionInputs(1)=(ExpressionInputId=3BDB11F9448BD6BF90A229A506F453AE,Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCollectionParameter_17'",InputName="Height Variation"))
+    .FunctionInputs(2)=(ExpressionInputId=F5F29B524A178BF4FA975495027BF6B9,Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMaterialFunctionCall_4'",InputName="Alpha"))
+    .FunctionOutputs(0)=(ExpressionOutputId=31154A884D7172A6DB6CCF95CBCEFFA9,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-2688
+    .MaterialExpressionEditorY=1056
+    .MaterialExpressionGuid=DC5791154325F08743C0DF9CC2A89A55
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_26)
+    FunctionInputs(0)      <- MaterialExpressionMax
+    FunctionInputs(1)      <- MaterialExpressionMax
+    FunctionInputs(2)      <- MaterialExpressionMax
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Engine/Functions/Engine_MaterialFunctions02/Utility/MakeFloat3.MakeFloat3'"
+    .FunctionInputs(0)=(ExpressionInputId=529C1D96441E07EB03A9E59B8A7F67B6,Input=(Expression="/Script/Engine.MaterialExpressionMax'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMax_1'",InputName="X"))
+    .FunctionInputs(1)=(ExpressionInputId=B5BD7D1B494F6928732CCDA1C63D8E15,Input=(Expression="/Script/Engine.MaterialExpressionMax'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMax_2'",InputName="Y"))
+    .FunctionInputs(2)=(ExpressionInputId=050F17B8471570B47A802CB7CAA5A201,Input=(Expression="/Script/Engine.MaterialExpressionMax'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMax_6'",InputName="Z"))
+    .FunctionOutputs(0)=(ExpressionOutputId=0DD6F9954C067C3E5DDBBBA0D6910DD2,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-256
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=EFA737CB496D6D4F7C2F2C89697D20F0
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_27)
+    FunctionInputs(0)      <- MaterialExpressionCollectionParameter
+    FunctionInputs(1)      <- MaterialExpressionCollectionParameter
+    FunctionInputs(2)      <- MaterialExpressionMaterialFunctionCall
+    .MaterialFunction="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_VolumetricCloud_HeightVariation.MF_SC_VolumetricCloud_HeightVariation'"
+    .FunctionInputs(0)=(ExpressionInputId=C8634C3E43F619F56BE7F693E6971AC0,Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCollectionParameter_14'",InputName="Layer Coverage"))
+    .FunctionInputs(1)=(ExpressionInputId=3BDB11F9448BD6BF90A229A506F453AE,Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCollectionParameter_15'",InputName="Height Variation"))
+    .FunctionInputs(2)=(ExpressionInputId=F5F29B524A178BF4FA975495027BF6B9,Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMaterialFunctionCall_3'",InputName="Alpha"))
+    .FunctionOutputs(0)=(ExpressionOutputId=31154A884D7172A6DB6CCF95CBCEFFA9,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-2688
+    .MaterialExpressionEditorY=672
+    .MaterialExpressionGuid=DC5791154325F08743C0DF9CC2A89A55
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_28)
+    FunctionInputs(0)      <- MaterialExpressionCollectionParameter
+    FunctionInputs(1)      <- MaterialExpressionCollectionParameter
+    FunctionInputs(2)      <- MaterialExpressionMaterialFunctionCall
+    .MaterialFunction="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_VolumetricCloud_HeightVariation.MF_SC_VolumetricCloud_HeightVariation'"
+    .FunctionInputs(0)=(ExpressionInputId=C8634C3E43F619F56BE7F693E6971AC0,Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCollectionParameter_8'",InputName="Layer Coverage"))
+    .FunctionInputs(1)=(ExpressionInputId=3BDB11F9448BD6BF90A229A506F453AE,Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCollectionParameter_10'",InputName="Height Variation"))
+    .FunctionInputs(2)=(ExpressionInputId=F5F29B524A178BF4FA975495027BF6B9,Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMaterialFunctionCall_1'",InputName="Alpha"))
+    .FunctionOutputs(0)=(ExpressionOutputId=31154A884D7172A6DB6CCF95CBCEFFA9,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-2688
+    .MaterialExpressionEditorY=144
+    .MaterialExpressionGuid=DC5791154325F08743C0DF9CC2A89A55
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_29)
+    FunctionInputs(0)      <- MaterialExpressionCollectionParameter
+    FunctionInputs(1)      <- MaterialExpressionLinearInterpolate
+    FunctionInputs(2)      <- MaterialExpressionMaterialFunctionCall
+    .MaterialFunction="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_VolumetricCloud_HeightVariation.MF_SC_VolumetricCloud_HeightVariation'"
+    .FunctionInputs(0)=(ExpressionInputId=C8634C3E43F619F56BE7F693E6971AC0,Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCollectionParameter_18'",InputName="Layer Coverage"))
+    .FunctionInputs(1)=(ExpressionInputId=3BDB11F9448BD6BF90A229A506F453AE,Input=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionLinearInterpolate_19'",InputName="Height Variation"))
+    .FunctionInputs(2)=(ExpressionInputId=F5F29B524A178BF4FA975495027BF6B9,Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMaterialFunctionCall_5'",InputName="Alpha"))
+    .FunctionOutputs(0)=(ExpressionOutputId=31154A884D7172A6DB6CCF95CBCEFFA9,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-2688
+    .MaterialExpressionEditorY=1440
+    .MaterialExpressionGuid=DC5791154325F08743C0DF9CC2A89A55
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_3)
+    FunctionInputs(0)      <- MaterialExpressionReroute
+    .MaterialFunction="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_VolumetricCloud_NormHeight.MF_SC_VolumetricCloud_NormHeight'"
+    .FunctionInputs(0)=(ExpressionInputId=43F81B15419B29A5A1B01EBF5F8C7987,Input=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionReroute_3'",InputName="Position"))
+    .FunctionOutputs(0)=(ExpressionOutputId=ED0621FF47204A67996B79A1F285C897,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-2944
+    .MaterialExpressionEditorY=832
+    .MaterialExpressionGuid=491D4CBE403B4E392D8297B4C42221CF
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_31)
+    FunctionInputs(0)      <- MaterialExpressionReroute
+    FunctionInputs(1)      <- MaterialExpressionCollectionParameter
+    FunctionInputs(2)      <- MaterialExpressionComponentMask
+    FunctionInputs(3)      <- MaterialExpressionComponentMask
+    .MaterialFunction="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_CloudUV.MF_SC_CloudUV'"
+    .FunctionInputs(0)=(ExpressionInputId=BC2AB06544B5073569DB6680FF1D0AD5,Input=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionReroute_2'",InputName="Position"))
+    .FunctionInputs(1)=(ExpressionInputId=684C7EC94CF2308BD4E7FA8F196E0535,Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCollectionParameter_5'",InputName="Scale"))
+    .FunctionInputs(2)=(ExpressionInputId=67C4B9A343A42D8DFF9196A2FFD76AF8,Input=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionComponentMask_2'",InputName="Initial Offset"))
+    .FunctionInputs(3)=(ExpressionInputId=A83935B2410B379559DE75A03C606991,Input=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionComponentMask_3'",InputName="Wind Offset"))
+    .FunctionOutputs(0)=(ExpressionOutputId=84D0816E49714F8007B29D9840E5C8DE,Output=(OutputName="Result"))
+    .FunctionOutputs(1)=(ExpressionOutputId=C1BB63694FC396723B340F980F5E0AF2,Output=(OutputName="Scale Only"))
+    .MaterialExpressionEditorX=-4736
+    .MaterialExpressionEditorY=704
+    .MaterialExpressionGuid=4BD3B35E4C3FDA68DB3FDE9CB9AFCBDA
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+    .Outputs(0)=(OutputName="Result")
+    .Outputs(1)=(OutputName="Scale Only")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_32)
+    FunctionInputs(0)      <- MaterialExpressionTextureSampleParameter2D
+    FunctionInputs(1)      <- MaterialExpressionTextureSampleParameter2D
+    FunctionInputs(2)      <- MaterialExpressionCollectionParameter
+    .MaterialFunction="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_VolumetricCloud_CoverageVariation.MF_SC_VolumetricCloud_CoverageVariation'"
+    .FunctionInputs(0)=(ExpressionInputId=0F9719CE496528C045B07C940840326F,Input=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameter2D'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionTextureSampleParameter2D_2'",OutputIndex=1,InputName="In",Mask=1,MaskR=1))
+    .FunctionInputs(1)=(ExpressionInputId=3F3359174661477EBF19519DE2A24EDB,Input=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameter2D'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionTextureSampleParameter2D_3'",OutputIndex=1,InputName="Coverage Variation",Mask=1,MaskR=1))
+    .FunctionInputs(2)=(ExpressionInputId=078FEAC24EC3A23863A2CE94DFE32684,Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCollectionParameter_9'",InputName="Alpha"))
+    .FunctionOutputs(0)=(ExpressionOutputId=31154A884D7172A6DB6CCF95CBCEFFA9,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-3584
+    .MaterialExpressionEditorY=48
+    .MaterialExpressionGuid=6FCB057E4C339A036F44EF8F7DC5F10E
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_33)
+    FunctionInputs(0)      <- MaterialExpressionTextureSampleParameter2D
+    FunctionInputs(1)      <- MaterialExpressionTextureSampleParameter2D
+    FunctionInputs(2)      <- MaterialExpressionCollectionParameter
+    .MaterialFunction="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_VolumetricCloud_CoverageVariation.MF_SC_VolumetricCloud_CoverageVariation'"
+    .FunctionInputs(0)=(ExpressionInputId=0F9719CE496528C045B07C940840326F,Input=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameter2D'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionTextureSampleParameter2D_2'",OutputIndex=2,InputName="In",Mask=1,MaskG=1))
+    .FunctionInputs(1)=(ExpressionInputId=3F3359174661477EBF19519DE2A24EDB,Input=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameter2D'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionTextureSampleParameter2D_3'",OutputIndex=2,InputName="Coverage Variation",Mask=1,MaskG=1))
+    .FunctionInputs(2)=(ExpressionInputId=078FEAC24EC3A23863A2CE94DFE32684,Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCollectionParameter_11'",InputName="Alpha"))
+    .FunctionOutputs(0)=(ExpressionOutputId=31154A884D7172A6DB6CCF95CBCEFFA9,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-3584
+    .MaterialExpressionEditorY=544
+    .MaterialExpressionGuid=6FCB057E4C339A036F44EF8F7DC5F10E
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_34)
+    FunctionInputs(0)      <- MaterialExpressionTextureSampleParameter2D
+    FunctionInputs(1)      <- MaterialExpressionTextureSampleParameter2D
+    FunctionInputs(2)      <- MaterialExpressionCollectionParameter
+    .MaterialFunction="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_VolumetricCloud_CoverageVariation.MF_SC_VolumetricCloud_CoverageVariation'"
+    .FunctionInputs(0)=(ExpressionInputId=0F9719CE496528C045B07C940840326F,Input=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameter2D'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionTextureSampleParameter2D_2'",OutputIndex=3,InputName="In",Mask=1,MaskB=1))
+    .FunctionInputs(1)=(ExpressionInputId=3F3359174661477EBF19519DE2A24EDB,Input=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameter2D'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionTextureSampleParameter2D_3'",OutputIndex=3,InputName="Coverage Variation",Mask=1,MaskB=1))
+    .FunctionInputs(2)=(ExpressionInputId=078FEAC24EC3A23863A2CE94DFE32684,Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCollectionParameter_12'",InputName="Alpha"))
+    .FunctionOutputs(0)=(ExpressionOutputId=31154A884D7172A6DB6CCF95CBCEFFA9,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-3584
+    .MaterialExpressionEditorY=928
+    .MaterialExpressionGuid=6FCB057E4C339A036F44EF8F7DC5F10E
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_4)
+    FunctionInputs(0)      <- MaterialExpressionReroute
+    .MaterialFunction="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_VolumetricCloud_NormHeight.MF_SC_VolumetricCloud_NormHeight'"
+    .FunctionInputs(0)=(ExpressionInputId=43F81B15419B29A5A1B01EBF5F8C7987,Input=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionReroute_3'",InputName="Position"))
+    .FunctionOutputs(0)=(ExpressionOutputId=ED0621FF47204A67996B79A1F285C897,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-2944
+    .MaterialExpressionEditorY=1216
+    .MaterialExpressionGuid=491D4CBE403B4E392D8297B4C42221CF
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_5)
+    FunctionInputs(0)      <- MaterialExpressionReroute
+    .MaterialFunction="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_VolumetricCloud_NormHeight.MF_SC_VolumetricCloud_NormHeight'"
+    .FunctionInputs(0)=(ExpressionInputId=43F81B15419B29A5A1B01EBF5F8C7987,Input=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionReroute_3'",InputName="Position"))
+    .FunctionOutputs(0)=(ExpressionOutputId=ED0621FF47204A67996B79A1F285C897,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-2944
+    .MaterialExpressionEditorY=1696
+    .MaterialExpressionGuid=491D4CBE403B4E392D8297B4C42221CF
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_6)
+    FunctionInputs(0)      <- MaterialExpressionReroute
+    .MaterialFunction="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_VolumetricCloud_NormHeight.MF_SC_VolumetricCloud_NormHeight'"
+    .FunctionInputs(0)=(ExpressionInputId=43F81B15419B29A5A1B01EBF5F8C7987,Input=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionReroute_4'",InputName="Position"))
+    .FunctionOutputs(0)=(ExpressionOutputId=ED0621FF47204A67996B79A1F285C897,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-2176
+    .MaterialExpressionEditorY=176
+    .MaterialExpressionGuid=491D4CBE403B4E392D8297B4C42221CF
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_7)
+    FunctionInputs(0)      <- MaterialExpressionReroute
+    .MaterialFunction="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_VolumetricCloud_NormHeight.MF_SC_VolumetricCloud_NormHeight'"
+    .FunctionInputs(0)=(ExpressionInputId=43F81B15419B29A5A1B01EBF5F8C7987,Input=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionReroute_4'",InputName="Position"))
+    .FunctionOutputs(0)=(ExpressionOutputId=ED0621FF47204A67996B79A1F285C897,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-2176
+    .MaterialExpressionEditorY=688
+    .MaterialExpressionGuid=491D4CBE403B4E392D8297B4C42221CF
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_8)
+    FunctionInputs(0)      <- MaterialExpressionReroute
+    .MaterialFunction="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_VolumetricCloud_NormHeight.MF_SC_VolumetricCloud_NormHeight'"
+    .FunctionInputs(0)=(ExpressionInputId=43F81B15419B29A5A1B01EBF5F8C7987,Input=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionReroute_4'",InputName="Position"))
+    .FunctionOutputs(0)=(ExpressionOutputId=ED0621FF47204A67996B79A1F285C897,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-2176
+    .MaterialExpressionEditorY=1088
+    .MaterialExpressionGuid=491D4CBE403B4E392D8297B4C42221CF
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_9)
+    FunctionInputs(0)      <- MaterialExpressionReroute
+    .MaterialFunction="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_VolumetricCloud_NormHeight.MF_SC_VolumetricCloud_NormHeight'"
+    .FunctionInputs(0)=(ExpressionInputId=43F81B15419B29A5A1B01EBF5F8C7987,Input=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionReroute_4'",InputName="Position"))
+    .FunctionOutputs(0)=(ExpressionOutputId=ED0621FF47204A67996B79A1F285C897,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-2176
+    .MaterialExpressionEditorY=1440
+    .MaterialExpressionGuid=491D4CBE403B4E392D8297B4C42221CF
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMax (MaterialExpressionMax_0)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionSubtract
+    .B=(Expression="/Script/Engine.MaterialExpressionSubtract'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionSubtract_6'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionSubtract_5'")
+    .MaterialExpressionEditorX=-2048
+    .MaterialExpressionEditorY=416
+    .MaterialExpressionGuid=A73AB3CE4D2D5F265DC94EA3178EFE6E
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+  MaterialExpressionMax (MaterialExpressionMax_1)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMax
+    .B=(Expression="/Script/Engine.MaterialExpressionMax'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMax_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMultiply_28'")
+    .MaterialExpressionEditorX=-768
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=A73AB3CE4D2D5F265DC94EA3178EFE6E
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+  MaterialExpressionMax (MaterialExpressionMax_2)
+    A                      <- MaterialExpressionMax
+    B                      <- MaterialExpressionSubtract
+    .B=(Expression="/Script/Engine.MaterialExpressionSubtract'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionSubtract_8'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMax'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMax_0'")
+    .MaterialExpressionEditorX=-1792
+    .MaterialExpressionEditorY=416
+    .MaterialExpressionGuid=A73AB3CE4D2D5F265DC94EA3178EFE6E
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+  MaterialExpressionMax (MaterialExpressionMax_3)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMax
+    .B=(Expression="/Script/Engine.MaterialExpressionMax'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMax_6'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMultiply_29'")
+    .MaterialExpressionEditorX=-1024
+    .MaterialExpressionEditorY=544
+    .MaterialExpressionGuid=A73AB3CE4D2D5F265DC94EA3178EFE6E
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+  MaterialExpressionMax (MaterialExpressionMax_4)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionMax
+    .B=(Expression="/Script/Engine.MaterialExpressionMax'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMax_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionSubtract_4'")
+    .MaterialExpressionEditorX=-256
+    .MaterialExpressionEditorY=256
+    .MaterialExpressionGuid=A47EE2C040027A894932BBBEAFCA0C7D
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+  MaterialExpressionMax (MaterialExpressionMax_6)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMultiply_45'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMultiply_31'")
+    .MaterialExpressionEditorX=-1280
+    .MaterialExpressionEditorY=928
+    .MaterialExpressionGuid=51AC14CF41626A9EC0C030A6AE0158C1
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionCurveAtlasRowParameter
+    B                      <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionConstant_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionCurveAtlasRowParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCurveAtlasRowParameter_7'",OutputIndex=3,Mask=1,MaskB=1)
+    .MaterialExpressionEditorX=-1536
+    .MaterialExpressionEditorY=1136
+    .MaterialExpressionGuid=F9060C624C4AC6C42523EDBFF8ACAF69
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_23)
+    A                      <- MaterialExpressionCollectionParameter
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionComponentMask_9'")
+    .A=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCollectionParameter_3'")
+    .MaterialExpressionEditorX=-4864
+    .MaterialExpressionEditorY=368
+    .MaterialExpressionGuid=29D75DE94C219B2588CC8288E88E3259
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_28)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionCurveAtlasRowParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCurveAtlasRowParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCurveAtlasRowParameter_4'",OutputIndex=1,Mask=1,MaskR=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionSubtract_4'")
+    .MaterialExpressionEditorX=-1536
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=FC9A658C47A4A80100162089FE46563F
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_29)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionCurveAtlasRowParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCurveAtlasRowParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCurveAtlasRowParameter_6'",OutputIndex=2,Mask=1,MaskG=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionSubtract_5'")
+    .MaterialExpressionEditorX=-1536
+    .MaterialExpressionEditorY=544
+    .MaterialExpressionGuid=FC9A658C47A4A80100162089FE46563F
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_31)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionCurveAtlasRowParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCurveAtlasRowParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCurveAtlasRowParameter_7'",OutputIndex=3,Mask=1,MaskB=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionSubtract_6'")
+    .MaterialExpressionEditorX=-1536
+    .MaterialExpressionEditorY=928
+    .MaterialExpressionGuid=FC9A658C47A4A80100162089FE46563F
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_44)
+    A                      <- MaterialExpressionTextureSampleParameter2D
+    B                      <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCollectionParameter_13'")
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameter2D'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionTextureSampleParameter2D_2'",OutputIndex=4,Mask=1,MaskA=1)
+    .MaterialExpressionEditorX=-3584
+    .MaterialExpressionEditorY=1312
+    .MaterialExpressionGuid=966E1CA94CA0643E8FCE95A18F8F6BDF
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_45)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionCurveAtlasRowParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCurveAtlasRowParameter'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionCurveAtlasRowParameter_8'",OutputIndex=4,Mask=1,MaskA=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionSubtract_8'")
+    .MaterialExpressionEditorX=-1536
+    .MaterialExpressionEditorY=1312
+    .MaterialExpressionGuid=39E94D1B44D5C852665D60A1E3CE88CA
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_58)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMaterialFunctionCall_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMultiply_23'")
+    .MaterialExpressionEditorX=-4608
+    .MaterialExpressionEditorY=368
+    .MaterialExpressionGuid=21DC00DD4626B083CE28A8A7CE7E2CE1
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+  MaterialExpressionReroute (MaterialExpressionReroute_0)
+    Input                  <- MaterialExpressionReroute
+    .Input=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionReroute_1'")
+    .MaterialExpressionEditorX=-5504
+    .MaterialExpressionEditorY=-224
+    .MaterialExpressionGuid=D8FF5B2F481C9C6F129E55970E1F5971
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+  MaterialExpressionReroute (MaterialExpressionReroute_1)
+    Input                  <- MaterialExpressionFunctionInput
+    .Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionFunctionInput_0'")
+    .MaterialExpressionEditorX=-6016
+    .MaterialExpressionEditorY=-224
+    .MaterialExpressionGuid=F77ACBC847053A91C352BB835C0E7B60
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+  MaterialExpressionReroute (MaterialExpressionReroute_2)
+    Input                  <- MaterialExpressionReroute
+    .Input=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionReroute_1'")
+    .MaterialExpressionEditorX=-5504
+    .MaterialExpressionEditorY=736
+    .MaterialExpressionGuid=FD0392C14D43D6CA6239209C4787B27A
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+  MaterialExpressionReroute (MaterialExpressionReroute_3)
+    Input                  <- MaterialExpressionReroute
+    .Input=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionReroute_0'")
+    .MaterialExpressionEditorX=-3328
+    .MaterialExpressionEditorY=-224
+    .MaterialExpressionGuid=A971DBA54CCC6532A68D07AC27B5C839
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+  MaterialExpressionReroute (MaterialExpressionReroute_4)
+    Input                  <- MaterialExpressionReroute
+    .Input=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionReroute_3'")
+    .MaterialExpressionEditorX=-2560
+    .MaterialExpressionEditorY=-224
+    .MaterialExpressionGuid=D5292645423F18B05D59908A363B9B3F
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_4)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMaterialFunctionCall_28'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMaterialFunctionCall_32'")
+    .MaterialExpressionEditorX=-2304
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=E7CE304A4CD674243849E1B5DD50377E
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_5)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMaterialFunctionCall_27'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMaterialFunctionCall_33'")
+    .MaterialExpressionEditorX=-2304
+    .MaterialExpressionEditorY=544
+    .MaterialExpressionGuid=E7CE304A4CD674243849E1B5DD50377E
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_6)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMaterialFunctionCall_25'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMaterialFunctionCall_34'")
+    .MaterialExpressionEditorX=-2304
+    .MaterialExpressionEditorY=928
+    .MaterialExpressionGuid=E7CE304A4CD674243849E1B5DD50377E
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_8)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMaterialFunctionCall_29'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionMultiply_44'")
+    .MaterialExpressionEditorX=-2304
+    .MaterialExpressionEditorY=1312
+    .MaterialExpressionGuid=E7CE304A4CD674243849E1B5DD50377E
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+  MaterialExpressionTextureSampleParameter2D (MaterialExpressionTextureSampleParameter2D_2)
+    Coordinates            <- MaterialExpressionAdd
+    .ParameterName="CloudMap_Texture"
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/VolumetricClouds/T_CloudMap_2K.T_CloudMap_2K'"
+    .ExpressionGUID=1AA97AC3439B31247F7A3688D9C02A18
+    .Group="Cloud Map"
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionAdd'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionAdd_9'")
+    .SamplerSource=SSM_Wrap_WorldGroupSettings
+    .MaterialExpressionEditorX=-4352
+    .MaterialExpressionEditorY=176
+    .MaterialExpressionGuid=0F4E27434388B892A72848844F1A8AB9
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"
+  MaterialExpressionTextureSampleParameter2D (MaterialExpressionTextureSampleParameter2D_3)
+    Coordinates            <- MaterialExpressionComponentMask
+    .ParameterName="CoverageVariationMap_Texture"
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/VolumetricClouds/T_CoverageVariationMap.T_CoverageVariationMap'"
+    .ExpressionGUID=7A16A6834208DE47559FBCBF664857C0
+    .Group="Coverage Variation Map"
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_VolumetricClouds_BaseDensity_HQ:MaterialExpressionComponentMask_8'")
+    .SamplerSource=SSM_Wrap_WorldGroupSettings
+    .MaterialExpressionEditorX=-4352
+    .MaterialExpressionEditorY=688
+    .MaterialExpressionGuid=BA11978A47628C0EA960ECB619B8144C
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricClouds_BaseDensity_HQ'"

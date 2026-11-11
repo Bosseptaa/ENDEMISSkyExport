@@ -1,0 +1,44 @@
+### /Game/UltraDynamicSky/Materials/Weather/Radial_Storm_Fog_Particle
+  Material (Radial_Storm_Fog_Particle)
+    .BlendMode=BLEND_Translucent
+    .MaterialDecalResponse=MDR_None
+    .ShadingModel=MSM_Unlit
+    .ShadingModels=(ShadingModelField=1)
+    .TranslucencyPass=MTP_BeforeDOF
+    .TranslucencyLightingMode=TLM_VolumetricPerVertexNonDirectional
+    .TranslucencyDirectionalLightingIntensity=0.100000
+    .bTangentSpaceNormal=False
+    .bUsedWithNiagaraSprites=True
+    .EditorX=1372
+    .EditorY=-304
+    .bCanMaskedBeAssumedOpaque=True
+    .bCastRayTracedShadows=False
+    .PixelDepthOffsetMode=PDOM_Legacy
+    .StateId=971870D04CE315052748DD8F44F9D361
+    .ReferencedTextureGuids(0)=E055944A46A9B3F590E00F9BB10BAA44
+    .ReferencedTextureGuids(1)=2F8AA006438068BC53AB49891FC912D4
+    .EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'Radial_Storm_Fog_ParticleEditorOnlyData'"
+    .TextureStreamingDataVersion=1
+    .TextureStreamingData(0)=(SamplingScale=1.000000,UVChannelIndex=0,TextureName="RainSnow_Sheet",TextureReference="/Game/ENDEMIS/Weather/WeatherFX/T_RainSnow_Sheet.T_RainSnow_Sheet")
+    .ReferencedDefaultTextures(0)="/Script/Engine.VolumeTexture'/Game/ENDEMIS/Weather/Clouds/3D_Cells_64.3D_Cells_64'"
+    .ReferencedDefaultTextures(1)="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_RainSnow_Sheet.T_RainSnow_Sheet'"
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+    .ParameterOverviewExpansion=(("-12Global", True))
+    .LightingGuid=7E9DDCFF4E5317111B9E33A6053D8494
+  MaterialEditorOnlyData (Radial_Storm_Fog_ParticleEditorOnlyData)
+    EmissiveColor          <- MaterialExpressionMaterialFunctionCall
+    Opacity                <- MaterialExpressionMaterialFunctionCall
+    ExpressionCollection   <- MaterialExpressionMaterialFunctionCall
+    .EmissiveColor=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Radial_Storm_Fog_Particle:MaterialExpressionMaterialFunctionCall_0'")
+    .Opacity=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Radial_Storm_Fog_Particle:MaterialExpressionMaterialFunctionCall_0'",OutputIndex=1)
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionMaterialFunctionCall'Radial_Storm_Fog_Particle:MaterialExpressionMaterialFunctionCall_0'"))
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_0)
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Weather/Radial_Storm_Fog_Attributes.Radial_Storm_Fog_Attributes'"
+    .FunctionOutputs(0)=(ExpressionOutputId=905776F44DBAEC56DD2389BE4C2186D4,Output=(OutputName="Color"))
+    .FunctionOutputs(1)=(ExpressionOutputId=7D0449C9482A4B49AD7F93986D0AB4F6,Output=(OutputName="Opacity"))
+    .MaterialExpressionEditorX=1100
+    .MaterialExpressionEditorY=-148
+    .MaterialExpressionGuid=B248C7BC48627DB796509F8A8EF0EDE2
+    .Material="/Script/Engine.Material'Radial_Storm_Fog_Particle'"
+    .Outputs(0)=(OutputName="Color")
+    .Outputs(1)=(OutputName="Opacity")

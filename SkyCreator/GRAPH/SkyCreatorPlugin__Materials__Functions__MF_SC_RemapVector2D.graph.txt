@@ -1,0 +1,142 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_RemapVector2D
+  MaterialFunction (MF_SC_RemapVector2D)
+    .Description="Generalized remapping function to explicitly remap an input range to an output range."
+    .LibraryCategoriesText(0)=NSLOCTEXT("", "2D8FFAAE4DA6E475FC62C5A0579650C4", "Sky Creator")
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'MF_SC_RemapVector2DEditorOnlyData'"
+    .StateId=89D0CD9D4BA708576CAD6F9D43E2F95F
+    .CombinedInputTypes=2
+    .CombinedOutputTypes=15
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+  MaterialFunctionEditorOnlyData (MF_SC_RemapVector2DEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'MF_SC_RemapVector2D:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionFunctionInput'MF_SC_RemapVector2D:MaterialExpressionFunctionInput_0'","/Script/Engine.MaterialExpressionFunctionInput'MF_SC_RemapVector2D:MaterialExpressionFunctionInput_1'","/Script/Engine.MaterialExpressionFunctionInput'MF_SC_RemapVector2D:MaterialExpressionFunctionInput_2'","/Script/Engine.MaterialExpressionFunctionInput'MF_SC_RemapVector2D:MaterialExpressionFunctionInput_3'","/Script/Engine.MaterialExpressionFunctionInput'MF_SC_RemapVector2D:MaterialExpressionFunctionInput_4'","/Script/Engine.MaterialExpressionSubtract'MF_SC_RemapVector2D:MaterialExpressionSubtract_0'","/Script/Engine.MaterialExpressionDivide'MF_SC_RemapVector2D:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionSubtract'MF_SC_RemapVector2D:MaterialExpressionSubtract_1'","/Script/Engine.MaterialExpressionMultiply'MF_SC_RemapVector2D:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionSubtract'MF_SC_RemapVector2D:MaterialExpressionSubtract_2'","/Script/Engine.MaterialExpressionAdd'MF_SC_RemapVector2D:MaterialExpressionAdd_0'","/Script/Engine.MaterialExpressionReroute'MF_SC_RemapVector2D:MaterialExpressionReroute_0'","/Script/Engine.MaterialExpressionReroute'MF_SC_RemapVector2D:MaterialExpressionReroute_1'"))
+  MaterialExpressionAdd (MaterialExpressionAdd_0)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionReroute
+    .B=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_RemapVector2D:MaterialExpressionReroute_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_RemapVector2D:MaterialExpressionMultiply_0'")
+    .MaterialExpressionEditorX=-96
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=8E34DB6F4AF448A3CA240B89F844635A
+    .Function="/Script/Engine.MaterialFunction'MF_SC_RemapVector2D'"
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionSubtract
+    .B=(Expression="/Script/Engine.MaterialExpressionSubtract'MF_SC_RemapVector2D:MaterialExpressionSubtract_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'MF_SC_RemapVector2D:MaterialExpressionSubtract_0'")
+    .MaterialExpressionEditorX=-496
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=1A968E404475608867A062996726E0A3
+    .Function="/Script/Engine.MaterialFunction'MF_SC_RemapVector2D'"
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_0)
+    .InputName="Input"
+    .Id=7815F22649EAE745F122D186BF2036B1
+    .InputType=FunctionInput_Vector2
+    .MaterialExpressionEditorX=-912
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=21B22ECB439AA0CB50F733A2911BF43A
+    .Function="/Script/Engine.MaterialFunction'MF_SC_RemapVector2D'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_1)
+    .InputName="Input Low"
+    .Id=4FB7C1914447359787B142A38BD2115C
+    .InputType=FunctionInput_Vector2
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=1
+    .MaterialExpressionEditorX=-912
+    .MaterialExpressionEditorY=112
+    .MaterialExpressionGuid=21B22ECB439AA0CB50F733A2911BF43A
+    .Function="/Script/Engine.MaterialFunction'MF_SC_RemapVector2D'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_2)
+    .InputName="Input High"
+    .Id=BDC9833D47571DD88AE3B892BA913AC2
+    .InputType=FunctionInput_Vector2
+    .PreviewValue=(X=1.000000,Y=1.000000,Z=0.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=2
+    .MaterialExpressionEditorX=-912
+    .MaterialExpressionEditorY=192
+    .MaterialExpressionGuid=21B22ECB439AA0CB50F733A2911BF43A
+    .Function="/Script/Engine.MaterialFunction'MF_SC_RemapVector2D'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_3)
+    .InputName="Target Low"
+    .Id=E518DF3C4CEA08859BCB74A0D4227458
+    .InputType=FunctionInput_Vector2
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=3
+    .MaterialExpressionEditorX=-912
+    .MaterialExpressionEditorY=288
+    .MaterialExpressionGuid=21B22ECB439AA0CB50F733A2911BF43A
+    .Function="/Script/Engine.MaterialFunction'MF_SC_RemapVector2D'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_4)
+    .InputName="Target High"
+    .Id=997106CD4B88D3FF91277EAF5ECF8884
+    .InputType=FunctionInput_Vector2
+    .PreviewValue=(X=1.000000,Y=1.000000,Z=0.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=4
+    .MaterialExpressionEditorX=-912
+    .MaterialExpressionEditorY=368
+    .MaterialExpressionGuid=21B22ECB439AA0CB50F733A2911BF43A
+    .Function="/Script/Engine.MaterialFunction'MF_SC_RemapVector2D'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionAdd
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'MF_SC_RemapVector2D:MaterialExpressionAdd_0'")
+    .bLastPreviewed=True
+    .Id=6ACB0DF34E8DA8673A435BA9BC99AB24
+    .MaterialExpressionGuid=83A2ADFE409A8F470BCE4AAE21DEC9F5
+    .Function="/Script/Engine.MaterialFunction'MF_SC_RemapVector2D'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionDivide
+    B                      <- MaterialExpressionReroute
+    .B=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_RemapVector2D:MaterialExpressionReroute_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'MF_SC_RemapVector2D:MaterialExpressionDivide_0'")
+    .MaterialExpressionEditorX=-352
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=216F2AA042EC95168EC64E91B0A54BAE
+    .Function="/Script/Engine.MaterialFunction'MF_SC_RemapVector2D'"
+  MaterialExpressionReroute (MaterialExpressionReroute_0)
+    Input                  <- MaterialExpressionFunctionInput
+    .Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_RemapVector2D:MaterialExpressionFunctionInput_3'")
+    .MaterialExpressionEditorX=-256
+    .MaterialExpressionEditorY=320
+    .MaterialExpressionGuid=DD3448FF4BE8CAE46F3F1C9FCDEC7B72
+    .Function="/Script/Engine.MaterialFunction'MF_SC_RemapVector2D'"
+  MaterialExpressionReroute (MaterialExpressionReroute_1)
+    Input                  <- MaterialExpressionSubtract
+    .Input=(Expression="/Script/Engine.MaterialExpressionSubtract'MF_SC_RemapVector2D:MaterialExpressionSubtract_2'")
+    .MaterialExpressionEditorX=-512
+    .MaterialExpressionEditorY=400
+    .MaterialExpressionGuid=CC3010CA419A270101A64AACB442F018
+    .Function="/Script/Engine.MaterialFunction'MF_SC_RemapVector2D'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_0)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_RemapVector2D:MaterialExpressionFunctionInput_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_RemapVector2D:MaterialExpressionFunctionInput_0'")
+    .MaterialExpressionEditorX=-656
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=17C3970040E70A3E79BD09A6EC7E90B0
+    .Function="/Script/Engine.MaterialFunction'MF_SC_RemapVector2D'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_1)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_RemapVector2D:MaterialExpressionFunctionInput_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_RemapVector2D:MaterialExpressionFunctionInput_2'")
+    .MaterialExpressionEditorX=-656
+    .MaterialExpressionEditorY=192
+    .MaterialExpressionGuid=17C3970040E70A3E79BD09A6EC7E90B0
+    .Function="/Script/Engine.MaterialFunction'MF_SC_RemapVector2D'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_2)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_RemapVector2D:MaterialExpressionFunctionInput_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_RemapVector2D:MaterialExpressionFunctionInput_4'")
+    .MaterialExpressionEditorX=-656
+    .MaterialExpressionEditorY=368
+    .MaterialExpressionGuid=AF28FFC847D1CC1FAE8B81903BA287E2
+    .Function="/Script/Engine.MaterialFunction'MF_SC_RemapVector2D'"

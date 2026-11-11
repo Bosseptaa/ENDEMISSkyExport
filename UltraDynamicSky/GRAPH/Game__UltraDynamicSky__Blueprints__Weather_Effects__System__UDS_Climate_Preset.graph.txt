@@ -1,0 +1,277 @@
+### /Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Climate_Preset
+  Blueprint (UDS_Climate_Preset)
+    .ParentClass="/Script/CoreUObject.Class'/Script/Engine.PrimaryDataAsset'"
+    .BlueprintDescription="Contains real world climate data for a location, to be used by the \"Apply Climate Preset\" option on Ultra Dynamic Weather."
+    .BlueprintCategory="UltraDynamicWeather|RandomWeather"
+    .BlueprintSystemVersion=2
+    .UbergraphPages(0)="/Script/Engine.EdGraph'EventGraph'"
+    .FunctionGraphs(0)="/Script/Engine.EdGraph'Return Temperature Range in Scale'"
+    .NewVariables(0)=(VarName="Winter Average High Temp (C)",VarGuid=3ECC5DBA4522508D922076A19193158E,VarType=(PinCategory="real",PinSubCategory="double"),FriendlyName="Winter Average High Temp (C)",Category=NSLOCTEXT("", "CAEC746148F6D4F8AF238EBA81431D45", "Temperature"),PropertyFlags=65541,MetaDataArray=((DataKey="MultiLine",DataValue="true")))
+    .NewVariables(1)=(VarName="Winter Average Low Temp (C)",VarGuid=546A1B8446D6458B6983E19B92CC6AD8,VarType=(PinCategory="real",PinSubCategory="double"),FriendlyName="Winter Average Low Temp (C)",Category=NSLOCTEXT("", "F8094DE243B0CE2D34B63D8C90E8FAD2", "Temperature"),PropertyFlags=65541,MetaDataArray=((DataKey="MultiLine",DataValue="true")))
+    .NewVariables(2)=(VarName="Spring Average High Temp (C)",VarGuid=7B588423472EA183DB4954B443D0BFB5,VarType=(PinCategory="real",PinSubCategory="double"),FriendlyName="Spring Average High Temp (C)",Category=NSLOCTEXT("", "2300FDDC4C67EA5E2B423C85BF0F500D", "Temperature"),PropertyFlags=65541,MetaDataArray=((DataKey="MultiLine",DataValue="true")))
+    .NewVariables(3)=(VarName="Spring Average Low Temp (C)",VarGuid=639863764789D544D7D3FDA1A5D26140,VarType=(PinCategory="real",PinSubCategory="double"),FriendlyName="Spring Average Low Temp (C)",Category=NSLOCTEXT("", "F80312074D1B934D5888C880ABBC4729", "Temperature"),PropertyFlags=65541,MetaDataArray=((DataKey="MultiLine",DataValue="true")))
+    .NewVariables(4)=(VarName="Summer Average High Temp (C)",VarGuid=DCB1299045CDF2DDC176679101D320AA,VarType=(PinCategory="real",PinSubCategory="double"),FriendlyName="Summer Average High Temp (C)",Category=NSLOCTEXT("", "2F6BB8424B31C11506B8598A789A6B01", "Temperature"),PropertyFlags=65541,MetaDataArray=((DataKey="MultiLine",DataValue="true")))
+    .NewVariables(5)=(VarName="Summer Average Low Temp (C)",VarGuid=D252E3AE41F0EC3FF715A3B006BD591E,VarType=(PinCategory="real",PinSubCategory="double"),FriendlyName="Summer Average Low Temp (C)",Category=NSLOCTEXT("", "22F38BDA4A98AAB2BF8674BC24810D26", "Temperature"),PropertyFlags=65541,MetaDataArray=((DataKey="MultiLine",DataValue="true")))
+    .NewVariables(6)=(VarName="Autumn Average High Temp (C)",VarGuid=9250684646B5048992BF1F9583D0B0C6,VarType=(PinCategory="real",PinSubCategory="double"),FriendlyName="Autumn Average High Temp (C)",Category=NSLOCTEXT("", "3E2909434379700EB677CAA41E6E54BF", "Temperature"),PropertyFlags=65541,MetaDataArray=((DataKey="MultiLine",DataValue="true")))
+    .NewVariables(7)=(VarName="Autumn Average Low Temp (C)",VarGuid=3EA046124E2A48C5A99E3998A57D81B9,VarType=(PinCategory="real",PinSubCategory="double"),FriendlyName="Autumn Average Low Temp (C)",Category=NSLOCTEXT("", "7DE43E3C4898275AF7F3B19B35FFC9A3", "Temperature"),PropertyFlags=65541,MetaDataArray=((DataKey="MultiLine",DataValue="true")))
+    .NewVariables(8)=(VarName="Winter Cloudy Percentage",VarGuid=434535484AC89A89E13D24AF5604FF06,VarType=(PinCategory="real",PinSubCategory="double"),FriendlyName="Winter Cloudy Percentage",Category=NSLOCTEXT("", "58B5A7124F84CD02A745C89F81C07329", "Cloudiness"),PropertyFlags=65541,MetaDataArray=((DataKey="MultiLine",DataValue="true")))
+    .NewVariables(9)=(VarName="Spring Cloudy Percentage",VarGuid=EFC573394ABC7BA5CE3F8CA206274F81,VarType=(PinCategory="real",PinSubCategory="double"),FriendlyName="Spring Cloudy Percentage",Category=NSLOCTEXT("", "3C10A3BD42BDBDED04E2B7AE4CBE85F2", "Cloudiness"),PropertyFlags=65541,MetaDataArray=((DataKey="MultiLine",DataValue="true")))
+    .NewVariables(10)=(VarName="Summer Cloudy Percentage",VarGuid=5EAC549348A9FE2302B94E99A6278B52,VarType=(PinCategory="real",PinSubCategory="double"),FriendlyName="Summer Cloudy Percentage",Category=NSLOCTEXT("", "D548270C4B6B0D3378E4CDB2835E9686", "Cloudiness"),PropertyFlags=65541,MetaDataArray=((DataKey="MultiLine",DataValue="true")))
+    .NewVariables(11)=(VarName="Autumn Cloudy Percentage",VarGuid=CD6533FA4833261DA8EA038C8DD28EE0,VarType=(PinCategory="real",PinSubCategory="double"),FriendlyName="Autumn Cloudy Percentage",Category=NSLOCTEXT("", "6A10DE0D4FB30DFCC65E838DE5B0BF1D", "Cloudiness"),PropertyFlags=65541,MetaDataArray=((DataKey="MultiLine",DataValue="true")))
+    .NewVariables(12)=(VarName="Winter Rainfall (mm)",VarGuid=20D8D6DC4AA1E309346E8EAC015E068B,VarType=(PinCategory="real",PinSubCategory="double"),FriendlyName="Winter Rainfall (Mm)",Category=NSLOCTEXT("", "4B598F23477079A96D682DA1ADFDD126", "Rainfall (Monthly Average)"),PropertyFlags=65541,MetaDataArray=((DataKey="MultiLine",DataValue="true")))
+    .NewVariables(13)=(VarName="Spring Rainfall (mm)",VarGuid=BDE63F0E4A440866DE4BC99DB24B552E,VarType=(PinCategory="real",PinSubCategory="double"),FriendlyName="Spring Rainfall (Mm)",Category=NSLOCTEXT("", "4B598F23477079A96D682DA1ADFDD126", "Rainfall (Monthly Average)"),PropertyFlags=65541,MetaDataArray=((DataKey="MultiLine",DataValue="true")))
+    .NewVariables(14)=(VarName="Summer Rainfall (mm)",VarGuid=8AFD3830468D38B6428BD3AC48205065,VarType=(PinCategory="real",PinSubCategory="double"),FriendlyName="Summer Rainfall (Mm)",Category=NSLOCTEXT("", "4B598F23477079A96D682DA1ADFDD126", "Rainfall (Monthly Average)"),PropertyFlags=65541,MetaDataArray=((DataKey="MultiLine",DataValue="true")))
+    .NewVariables(15)=(VarName="Autumn Rainfall (mm)",VarGuid=5B2EB9D04DE4F1D03AD217AC9C41625B,VarType=(PinCategory="real",PinSubCategory="double"),FriendlyName="Autumn Rainfall (Mm)",Category=NSLOCTEXT("", "4B598F23477079A96D682DA1ADFDD126", "Rainfall (Monthly Average)"),PropertyFlags=65541,MetaDataArray=((DataKey="MultiLine",DataValue="true")))
+    .NewVariables(16)=(VarName="Winter Snowfall (mm)",VarGuid=A50024524F82051130DD5E8ECDB3C886,VarType=(PinCategory="real",PinSubCategory="double"),FriendlyName="Winter Snowfall (Mm)",Category=NSLOCTEXT("", "E95223414B4A711E70F04DA7283D1885", "Snowfall (Monthly Average)"),PropertyFlags=65541,MetaDataArray=((DataKey="MultiLine",DataValue="true")))
+    .NewVariables(17)=(VarName="Spring Snowfall (mm)",VarGuid=379CB61F4D41E3F2E02166A2F916B436,VarType=(PinCategory="real",PinSubCategory="double"),FriendlyName="Spring Snowfall (Mm)",Category=NSLOCTEXT("", "E95223414B4A711E70F04DA7283D1885", "Snowfall (Monthly Average)"),PropertyFlags=65541,MetaDataArray=((DataKey="MultiLine",DataValue="true")))
+    .NewVariables(18)=(VarName="Summer Snowfall (mm)",VarGuid=AABEBDBE4C70C2912DEFF89FA92ED293,VarType=(PinCategory="real",PinSubCategory="double"),FriendlyName="Summer Snowfall (Mm)",Category=NSLOCTEXT("", "E95223414B4A711E70F04DA7283D1885", "Snowfall (Monthly Average)"),PropertyFlags=65541,MetaDataArray=((DataKey="MultiLine",DataValue="true")))
+    .NewVariables(19)=(VarName="Autumn Snowfall (mm)",VarGuid=CD51970446FD7EF499546FBDB5225B43,VarType=(PinCategory="real",PinSubCategory="double"),FriendlyName="Autumn Snowfall (Mm)",Category=NSLOCTEXT("", "E95223414B4A711E70F04DA7283D1885", "Snowfall (Monthly Average)"),PropertyFlags=65541,MetaDataArray=((DataKey="MultiLine",DataValue="true")))
+    .NewVariables(20)=(VarName="Dust/Sand Present",VarGuid=AC7C92214E89B0D625BCB49A11893E34,VarType=(PinCategory="real",PinSubCategory="double"),FriendlyName="Dust/ Sand Present",Category=NSLOCTEXT("", "687D26AA495369DACEF56BB4F48A3D49", "Dust"),PropertyFlags=65541,MetaDataArray=((DataKey="MultiLine",DataValue="true")))
+    .NewVariables(21)=(VarName="Data Source",VarGuid=BBF10AD942562D9530B6BDB16DC296F5,VarType=(PinCategory="text"),FriendlyName="Data Source",Category=NSLOCTEXT("KismetSchema", "Default", "Default"),PropertyFlags=65541,MetaDataArray=((DataKey="MultiLine",DataValue="true")))
+    .CategorySorting(0)="Default"
+    .CategorySorting(1)=""
+    .CategorySorting(2)="Temperature"
+    .CategorySorting(3)="Cloudiness"
+    .CategorySorting(4)="Rainfall (Monthly Average)"
+    .CategorySorting(5)="Snowfall (Monthly Average)"
+    .CategorySorting(6)="Dust"
+    .LastEditedDocuments(0)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Climate_Preset.UDS_Climate_Preset:EventGraph",SavedViewOffset=(X=-607.000000,Y=5.000000),SavedZoomAmount=1.000000)
+    .LastEditedDocuments(1)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Climate_Preset.UDS_Climate_Preset:Return Temperature Range in Scale",SavedViewOffset=(X=-1022.569214,Y=-203.404968),SavedZoomAmount=1.000000)
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfo'SceneThumbnailInfo_0'"
+    .GeneratedClass="/Script/Engine.BlueprintGeneratedClass'UDS_Climate_Preset_C'"
+    .bLegacyNeedToPurgeSkelRefs=False
+    .BlueprintGuid=4B90F20E4AA4DD5F4BD67D84684BC38C
+  EdGraph (EventGraph)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .bAllowDeletion=False
+    .GraphGuid=115FCF7848E99C2BE51E96998AA8FED3
+  EdGraph (Return Temperature Range in Scale)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_MakeArray'K2Node_MakeArray_1'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_7'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_8'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_9'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_10'"
+    .Nodes(7)="/Script/BlueprintGraph.K2Node_GetArrayItem'K2Node_GetArrayItem_1'"
+    .Nodes(8)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_11'"
+    .Nodes(9)="/Script/BlueprintGraph.K2Node_CommutativeAssociativeBinaryOperator'K2Node_CommutativeAssociativeBinaryOperator_0'"
+    .Nodes(10)="/Script/BlueprintGraph.K2Node_CommutativeAssociativeBinaryOperator'K2Node_CommutativeAssociativeBinaryOperator_1'"
+    .Nodes(11)="/Script/BlueprintGraph.K2Node_Select'K2Node_Select_1'"
+    .Nodes(12)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_12'"
+    .Nodes(13)="/Script/BlueprintGraph.K2Node_MakeArray'K2Node_MakeArray_0'"
+    .Nodes(14)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_1'"
+    .Nodes(15)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_2'"
+    .Nodes(16)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_3'"
+    .Nodes(17)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_4'"
+    .Nodes(18)="/Script/BlueprintGraph.K2Node_GetArrayItem'K2Node_GetArrayItem_0'"
+    .Nodes(19)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_5'"
+    .Nodes(20)="/Script/BlueprintGraph.K2Node_CommutativeAssociativeBinaryOperator'K2Node_CommutativeAssociativeBinaryOperator_9'"
+    .Nodes(21)="/Script/BlueprintGraph.K2Node_CommutativeAssociativeBinaryOperator'K2Node_CommutativeAssociativeBinaryOperator_10'"
+    .Nodes(22)="/Script/BlueprintGraph.K2Node_Select'K2Node_Select_0'"
+    .Nodes(23)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_6'"
+    .GraphGuid=1D52D2284D4C6DA50A2DD3A532E9E0A1
+  K2Node_FunctionEntry (K2Node_FunctionEntry_0)
+    .ExtraFlags=469893120
+    .FunctionReference=(MemberName="Return Temperature Range in Scale")
+    .bIsEditable=True
+    .NodePosX=-820
+    .NodePosY=-20
+    .NodeGuid=4C4442114B8C3A1BEB64A89F3C581FA9
+  K2Node_FunctionResult (K2Node_FunctionResult_0)
+    .FunctionReference=(MemberName="Return Temperature Range in Scale")
+    .bIsEditable=True
+    .NodePosX=700
+    .NodePosY=-24
+    .NodeGuid=BABFAAD74DDE33AB8B5DD585793FDF5C
+  K2Node_MakeArray (K2Node_MakeArray_1)
+    .NumInputs=4
+    .NodePosX=-492
+    .NodePosY=384
+    .NodeGuid=33FC7C4C42CA16031D37969574705657
+  K2Node_VariableGet (K2Node_VariableGet_7)
+    .VariableReference=(MemberName="Spring Average High Temp (C)",MemberGuid=7B588423472EA183DB4954B443D0BFB5,bSelfContext=True)
+    .NodePosX=-744
+    .NodePosY=408
+    .NodeGuid=F7FF3EB24BBDE9AE150ED591865A2196
+  K2Node_VariableGet (K2Node_VariableGet_8)
+    .VariableReference=(MemberName="Summer Average High Temp (C)",MemberGuid=DCB1299045CDF2DDC176679101D320AA,bSelfContext=True)
+    .NodePosX=-756
+    .NodePosY=448
+    .NodeGuid=984730CF4B8BCABDFE9D7E8CC28F967A
+  K2Node_VariableGet (K2Node_VariableGet_9)
+    .VariableReference=(MemberName="Autumn Average High Temp (C)",MemberGuid=9250684646B5048992BF1F9583D0B0C6,bSelfContext=True)
+    .NodePosX=-752
+    .NodePosY=492
+    .NodeGuid=27E767D844F0ECABD4AE0387776E9137
+  K2Node_VariableGet (K2Node_VariableGet_10)
+    .VariableReference=(MemberName="Winter Average High Temp (C)",MemberGuid=3ECC5DBA4522508D922076A19193158E,bSelfContext=True)
+    .NodePosX=-744
+    .NodePosY=536
+    .NodeGuid=F5C2A7D24AB37A56EFE02D985FC14DB1
+  K2Node_GetArrayItem (K2Node_GetArrayItem_1)
+    .bReturnByRefDesired=False
+    .NodePosX=-280
+    .NodePosY=400
+    .NodeGuid=DBDF100140A62E0435B906956DC2E53C
+  K2Node_VariableGet (K2Node_VariableGet_11)
+    .VariableReference=(MemberScope="Return Temperature Range in Scale",MemberName="Season")
+    .NodePosX=-448
+    .NodePosY=548
+    .NodeGuid=124C484E4A6FD051ACA0EFB2027D5404
+  K2Node_CommutativeAssociativeBinaryOperator (K2Node_CommutativeAssociativeBinaryOperator_0)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Multiply_DoubleDouble")
+    .NodePosX=-56
+    .NodePosY=348
+    .NodeGuid=5F58649F4DBCF11E7A8ED8977C6E71ED
+  K2Node_CommutativeAssociativeBinaryOperator (K2Node_CommutativeAssociativeBinaryOperator_1)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Add_DoubleDouble")
+    .NodePosX=108
+    .NodePosY=348
+    .NodeGuid=EA9EB3814FF6EF2FA4FE2580A864FB2F
+  K2Node_Select (K2Node_Select_1)
+    .IndexPinType=(PinCategory="byte",PinSubCategory="",PinSubCategoryObject="/Script/Engine.UserDefinedEnum'/Game/UltraDynamicSky/Blueprints/Enum/UDS_TemperatureType.UDS_TemperatureType'")
+    .Enum="/Script/Engine.UserDefinedEnum'/Game/UltraDynamicSky/Blueprints/Enum/UDS_TemperatureType.UDS_TemperatureType'"
+    .EnumEntries(0)="NewEnumerator0"
+    .EnumEntries(1)="NewEnumerator1"
+    .NodePosX=348
+    .NodePosY=372
+    .NodeGuid=EE62FAB04F783099E65A32BC1BEADA4C
+  K2Node_VariableGet (K2Node_VariableGet_12)
+    .VariableReference=(MemberScope="Return Temperature Range in Scale",MemberName="Scale")
+    .NodePosX=156
+    .NodePosY=500
+    .NodeGuid=54A01F534BAE93A7BEF532968F5FB417
+  K2Node_MakeArray (K2Node_MakeArray_0)
+    .NumInputs=4
+    .NodePosX=-500
+    .NodePosY=156
+    .NodeGuid=D16C30B54EEF4EEA48E1BBB3EB6A04DE
+  K2Node_VariableGet (K2Node_VariableGet_1)
+    .VariableReference=(MemberName="Spring Average Low Temp (C)",MemberGuid=639863764789D544D7D3FDA1A5D26140,bSelfContext=True)
+    .NodePosX=-752
+    .NodePosY=180
+    .NodeGuid=8057CB55413EA0115EA0D5AE10DFE243
+  K2Node_VariableGet (K2Node_VariableGet_2)
+    .VariableReference=(MemberName="Summer Average Low Temp (C)",MemberGuid=D252E3AE41F0EC3FF715A3B006BD591E,bSelfContext=True)
+    .NodePosX=-764
+    .NodePosY=220
+    .NodeGuid=5EBC708D4ACACBDDE4AE6885D83557B1
+  K2Node_VariableGet (K2Node_VariableGet_3)
+    .VariableReference=(MemberName="Autumn Average Low Temp (C)",MemberGuid=3EA046124E2A48C5A99E3998A57D81B9,bSelfContext=True)
+    .NodePosX=-760
+    .NodePosY=264
+    .NodeGuid=DD9E99AE49731F57C6B2529DE4834E8C
+  K2Node_VariableGet (K2Node_VariableGet_4)
+    .VariableReference=(MemberName="Winter Average Low Temp (C)",MemberGuid=546A1B8446D6458B6983E19B92CC6AD8,bSelfContext=True)
+    .NodePosX=-752
+    .NodePosY=308
+    .NodeGuid=17CE878B4FD9DD35F385458B29AAF811
+  K2Node_GetArrayItem (K2Node_GetArrayItem_0)
+    .bReturnByRefDesired=False
+    .NodePosX=-288
+    .NodePosY=172
+    .NodeGuid=F5C1019B41DDD64BE78DB79FE1A3A1F3
+  K2Node_VariableGet (K2Node_VariableGet_5)
+    .VariableReference=(MemberScope="Return Temperature Range in Scale",MemberName="Season")
+    .NodePosX=-456
+    .NodePosY=320
+    .NodeGuid=6F525C2E4C87F36D26CD1A9AB8097B18
+  K2Node_CommutativeAssociativeBinaryOperator (K2Node_CommutativeAssociativeBinaryOperator_9)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Multiply_DoubleDouble")
+    .NodePosX=-64
+    .NodePosY=120
+    .NodeGuid=4D9CC6EE4BA14EBA5ACAB788C004E25F
+  K2Node_CommutativeAssociativeBinaryOperator (K2Node_CommutativeAssociativeBinaryOperator_10)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Add_DoubleDouble")
+    .NodePosX=100
+    .NodePosY=120
+    .NodeGuid=F1F34BCF47F5CB97CAC0DD91BE9DC41D
+  K2Node_Select (K2Node_Select_0)
+    .IndexPinType=(PinCategory="byte",PinSubCategory="",PinSubCategoryObject="/Script/Engine.UserDefinedEnum'/Game/UltraDynamicSky/Blueprints/Enum/UDS_TemperatureType.UDS_TemperatureType'")
+    .Enum="/Script/Engine.UserDefinedEnum'/Game/UltraDynamicSky/Blueprints/Enum/UDS_TemperatureType.UDS_TemperatureType'"
+    .EnumEntries(0)="NewEnumerator0"
+    .EnumEntries(1)="NewEnumerator1"
+    .NodePosX=344
+    .NodePosY=148
+    .NodeGuid=1B0CC9EA46C78B619BAC6A8F201E5E5F
+  K2Node_VariableGet (K2Node_VariableGet_6)
+    .VariableReference=(MemberScope="Return Temperature Range in Scale",MemberName="Scale")
+    .NodePosX=148
+    .NodePosY=272
+    .NodeGuid=2954D7014E44215B3EEBB29D407899DD
+  EdGraph (ExecuteUbergraph_UDS_Climate_Preset)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .GraphGuid=F2BC47564B1156DD94FDF4A3BA463DAA
+  EdGraph (Return Temperature Range in Scale_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_MakeArray'K2Node_MakeArray_1'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_7'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_8'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_9'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_10'"
+    .Nodes(7)="/Script/BlueprintGraph.K2Node_PureAssignmentStatement'K2Node_PureAssignmentStatement_1'"
+    .Nodes(8)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_11'"
+    .Nodes(9)="/Script/BlueprintGraph.K2Node_CommutativeAssociativeBinaryOperator'K2Node_CommutativeAssociativeBinaryOperator_0'"
+    .Nodes(10)="/Script/BlueprintGraph.K2Node_CommutativeAssociativeBinaryOperator'K2Node_CommutativeAssociativeBinaryOperator_1'"
+    .Nodes(11)="/Script/BlueprintGraph.K2Node_Select'K2Node_Select_1'"
+    .Nodes(12)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_12'"
+    .Nodes(13)="/Script/BlueprintGraph.K2Node_MakeArray'K2Node_MakeArray_0'"
+    .Nodes(14)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_1'"
+    .Nodes(15)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_2'"
+    .Nodes(16)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_3'"
+    .Nodes(17)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_4'"
+    .Nodes(18)="/Script/BlueprintGraph.K2Node_TemporaryVariable'K2Node_TemporaryVariable_1'"
+    .Nodes(19)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_5'"
+    .Nodes(20)="/Script/BlueprintGraph.K2Node_CommutativeAssociativeBinaryOperator'K2Node_CommutativeAssociativeBinaryOperator_9'"
+    .Nodes(21)="/Script/BlueprintGraph.K2Node_CommutativeAssociativeBinaryOperator'K2Node_CommutativeAssociativeBinaryOperator_10'"
+    .Nodes(22)="/Script/BlueprintGraph.K2Node_Select'K2Node_Select_0'"
+    .Nodes(23)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_6'"
+    .Nodes(24)="/Script/BlueprintGraph.K2Node_CallArrayFunction'K2Node_CallArrayFunction_0'"
+    .Nodes(25)="/Script/BlueprintGraph.K2Node_TemporaryVariable'K2Node_TemporaryVariable_0'"
+    .Nodes(26)="/Script/BlueprintGraph.K2Node_PureAssignmentStatement'K2Node_PureAssignmentStatement_0'"
+    .Nodes(27)="/Script/BlueprintGraph.K2Node_CallArrayFunction'K2Node_CallArrayFunction_1'"
+    .GraphGuid=1D52D2284D4C6DA50A2DD3A532E9E0A1
+  K2Node_CallArrayFunction (K2Node_CallArrayFunction_0)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetArrayLibrary'",MemberName="Array_Get")
+    .NodePosX=-2000
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=36903F7653DE323BB81F3695A64A65AC
+  K2Node_TemporaryVariable (K2Node_TemporaryVariable_0)
+    .VariableType=(PinCategory="byte",PinSubCategoryObject="/Script/Engine.UserDefinedEnum'/Game/UltraDynamicSky/Blueprints/Enum/UDS_TemperatureType.UDS_TemperatureType'")
+    .NodePosX=-1760
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=32E0DFE88D323A38AD1C53A13642BDD1
+  K2Node_PureAssignmentStatement (K2Node_PureAssignmentStatement_0)
+    .NodePosX=-1520
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=3C75BFEE4F5631A7BECF65ED4ED71714
+  K2Node_CallArrayFunction (K2Node_CallArrayFunction_1)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetArrayLibrary'",MemberName="Array_Get")
+    .NodePosX=-1280
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=A90D51C3DB7333E7822A3DFDDE25E3E9
+  K2Node_TemporaryVariable (K2Node_TemporaryVariable_1)
+    .VariableType=(PinCategory="byte",PinSubCategoryObject="/Script/Engine.UserDefinedEnum'/Game/UltraDynamicSky/Blueprints/Enum/UDS_TemperatureType.UDS_TemperatureType'")
+    .NodePosX=-1040
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=44ED82FCEBA835B1846FADC7946BE441
+  K2Node_PureAssignmentStatement (K2Node_PureAssignmentStatement_1)
+    .NodePosX=-800
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=D577B5B748A730798C3F74DC49A5609D

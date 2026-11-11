@@ -1,0 +1,1838 @@
+### /Game/UltraDynamicSky/Materials/Lens_Flare
+  Material (Lens_Flare)
+    .MaterialDomain=MD_PostProcess
+    .EditorX=5048
+    .EditorY=1240
+    .bCanMaskedBeAssumedOpaque=True
+    .BlendableOutputAlpha=True
+    .PixelDepthOffsetMode=PDOM_Legacy
+    .StateId=BFFFA35845E9804620B506AB9F0D1763
+    .ReferencedTextureGuids(0)=798D32974779AE938CE94A8727E247C0
+    .ReferencedTextureGuids(1)=1D9FCC4B4DBF9EC4840610A3C2BF2D3B
+    .ReferencedTextureGuids(2)=91AA917E46D3188F09B2CAAD0641EEC5
+    .EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'Lens_FlareEditorOnlyData'"
+    .ReferencedDefaultTextures(0)=None
+    .ReferencedDefaultTextures(1)="/Script/Engine.Texture2D'/Game/UltraDynamicSky/Textures/LensFlares/Rough_Abberated_Bokeh.Rough_Abberated_Bokeh'"
+    .ReferencedDefaultTextures(2)="/Script/Engine.Texture2D'/Game/UltraDynamicSky/Textures/LensFlares/Flare_Line.Flare_Line'"
+    .ReferencedDefaultTextures(3)="/Script/Engine.Texture2D'/Game/UltraDynamicSky/Textures/LensFlares/Star_Flare.Star_Flare'"
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+    .ParameterOverviewExpansion=(("-12Global Element 1", True),("-12Global Element 2", True),("-12Global Element 3", True),("-12Global Element 4", True),("-12Global Flare Line", True),("-12Global Whole Flare", True),("-12Global Element 5", True))
+    .LightingGuid=929826A4494CE940B5AA9C8B7BD46D23
+  MaterialEditorOnlyData (Lens_FlareEditorOnlyData)
+    EmissiveColor          <- MaterialExpressionAdd
+    Opacity                <- MaterialExpressionComponentMask
+    ExpressionCollection   <- MaterialExpressionAdd
+    .BaseColor=(UseConstant=True,Constant=(R=0.501961,G=0.501961,B=0.501961,A=1.000000))
+    .Metallic=(UseConstant=True)
+    .Specular=(UseConstant=True)
+    .Roughness=(UseConstant=True)
+    .Anisotropy=(UseConstant=True)
+    .Normal=(UseConstant=True)
+    .Tangent=(UseConstant=True)
+    .EmissiveColor=(Expression="/Script/Engine.MaterialExpressionAdd'Lens_Flare:MaterialExpressionAdd_10'")
+    .Opacity=(Expression="/Script/Engine.MaterialExpressionComponentMask'Lens_Flare:MaterialExpressionComponentMask_19'")
+    .OpacityMask=(UseConstant=True)
+    .WorldPositionOffset=(UseConstant=True)
+    .Displacement=(UseConstant=True)
+    .SubsurfaceColor=(UseConstant=True)
+    .ClearCoat=(UseConstant=True)
+    .ClearCoatRoughness=(UseConstant=True)
+    .AmbientOcclusion=(UseConstant=True)
+    .Refraction=(UseConstant=True)
+    .CustomizedUVs(0)=(UseConstant=True)
+    .CustomizedUVs(1)=(UseConstant=True)
+    .CustomizedUVs(2)=(UseConstant=True)
+    .CustomizedUVs(3)=(UseConstant=True)
+    .CustomizedUVs(4)=(UseConstant=True)
+    .CustomizedUVs(5)=(UseConstant=True)
+    .CustomizedUVs(6)=(UseConstant=True)
+    .CustomizedUVs(7)=(UseConstant=True)
+    .PixelDepthOffset=(UseConstant=True)
+    .SurfaceThickness=(UseConstant=True)
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionAdd'Lens_Flare:MaterialExpressionAdd_10'","/Script/Engine.MaterialExpressionComponentMask'Lens_Flare:MaterialExpressionComponentMask_19'","/Script/Engine.MaterialExpressionSceneTexture'Lens_Flare:MaterialExpressionSceneTexture_0'","/Script/Engine.MaterialExpressionSubtract'Lens_Flare:MaterialExpressionSubtract_2'","/Script/Engine.MaterialExpressionScalarParameter'Lens_Flare:MaterialExpressionScalarParameter_0'","/Script/Engine.MaterialExpressionCollectionParameter'Lens_Flare:MaterialExpressionCollectionParameter_1'","/Script/Engine.MaterialExpressionComponentMask'Lens_Flare:MaterialExpressionComponentMask_3'","/Script/Engine.MaterialExpressionMultiply'Lens_Flare:MaterialExpressionMultiply_2'","/Script/Engine.MaterialExpressionSceneTexture'Lens_Flare:MaterialExpressionSceneTexture_1'","/Script/Engine.MaterialExpressionComponentMask'Lens_Flare:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionComponentMask'Lens_Flare:MaterialExpressionComponentMask_2'","/Script/Engine.MaterialExpressionDivide'Lens_Flare:MaterialExpressionDivide_1'","/Script/Engine.MaterialExpressionAppendVector'Lens_Flare:MaterialExpressionAppendVector_0'","/Script/Engine.MaterialExpressionConstant'Lens_Flare:MaterialExpressionConstant_1'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Lens_Flare:MaterialExpressionMaterialFunctionCall_3'","/Script/Engine.MaterialExpressionTextureCoordinate'Lens_Flare:MaterialExpressionTextureCoordinate_0'","/Script/Engine.MaterialExpressionSubtract'Lens_Flare:MaterialExpressionSubtract_0'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Lens_Flare:MaterialExpressionMaterialFunctionCall_5'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Lens_Flare:MaterialExpressionMaterialFunctionCall_6'","/Script/Engine.MaterialExpressionMultiply'Lens_Flare:MaterialExpressionMultiply_4'","/Script/Engine.MaterialExpressionTextureSample'Lens_Flare:MaterialExpressionTextureSample_0'","/Script/Engine.MaterialExpressionAdd'Lens_Flare:MaterialExpressionAdd_1'","/Script/Engine.MaterialExpressionConstant2Vector'Lens_Flare:MaterialExpressionConstant2Vector_4'","/Script/Engine.MaterialExpressionSubtract'Lens_Flare:MaterialExpressionSubtract_3'","/Script/Engine.MaterialExpressionSubtract'Lens_Flare:MaterialExpressionSubtract_4'","/Script/Engine.MaterialExpressionDistance'Lens_Flare:MaterialExpressionDistance_0'","/Script/Engine.MaterialExpressionConstant2Vector'Lens_Flare:MaterialExpressionConstant2Vector_6'","/Script/Engine.MaterialExpressionMultiply'Lens_Flare:MaterialExpressionMultiply_7'","/Script/Engine.MaterialExpressionAdd'Lens_Flare:MaterialExpressionAdd_6'","/Script/Engine.MaterialExpressionDivide'Lens_Flare:MaterialExpressionDivide_3'","/Script/Engine.MaterialExpressionMultiply'Lens_Flare:MaterialExpressionMultiply_9'","/Script/Engine.MaterialExpressionMultiply'Lens_Flare:MaterialExpressionMultiply_10'","/Script/Engine.MaterialExpressionMultiply'Lens_Flare:MaterialExpressionMultiply_11'","/Script/Engine.MaterialExpressionPower'Lens_Flare:MaterialExpressionPower_1'","/Script/Engine.MaterialExpressionConstant2Vector'Lens_Flare:MaterialExpressionConstant2Vector_0'","/Script/Engine.MaterialExpressionTextureObjectParameter'Lens_Flare:MaterialExpressionTextureObjectParameter_0'","/Script/Engine.MaterialExpressionScalarParameter'Lens_Flare:MaterialExpressionScalarParameter_2'","/Script/Engine.MaterialExpressionScalarParameter'Lens_Flare:MaterialExpressionScalarParameter_3'","/Script/Engine.MaterialExpressionTextureObjectParameter'Lens_Flare:MaterialExpressionTextureObjectParameter_1'","/Script/Engine.MaterialExpressionVectorParameter'Lens_Flare:MaterialExpressionVectorParameter_0'","/Script/Engine.MaterialExpressionComponentMask'Lens_Flare:MaterialExpressionComponentMask_1'","/Script/Engine.MaterialExpressionAppendVector'Lens_Flare:MaterialExpressionAppendVector_3'","/Script/Engine.MaterialExpressionStaticBoolParameter'Lens_Flare:MaterialExpressionStaticBoolParameter_0'","/Script/Engine.MaterialExpressionScalarParameter'Lens_Flare:MaterialExpressionScalarParameter_7'","/Script/Engine.MaterialExpressionComponentMask'Lens_Flare:MaterialExpressionComponentMask_6'","/Script/Engine.MaterialExpressionSubtract'Lens_Flare:MaterialExpressionSubtract_1'","/Script/Engine.MaterialExpressionAbs'Lens_Flare:MaterialExpressionAbs_0'","/Script/Engine.MaterialExpressionMultiply'Lens_Flare:MaterialExpressionMultiply_12'","/Script/Engine.MaterialExpressionOneMinus'Lens_Flare:MaterialExpressionOneMinus_2'","/Script/Engine.MaterialExpressionMultiply'Lens_Flare:MaterialExpressionMultiply_13'","/Script/Engine.MaterialExpressionComponentMask'Lens_Flare:MaterialExpressionComponentMask_8'","/Script/Engine.MaterialExpressionComponentMask'Lens_Flare:MaterialExpressionComponentMask_12'","/Script/Engine.MaterialExpressionMultiply'Lens_Flare:MaterialExpressionMultiply_14'","/Script/Engine.MaterialExpressionReroute'Lens_Flare:MaterialExpressionReroute_4'","/Script/Engine.MaterialExpressionAdd'Lens_Flare:MaterialExpressionAdd_0'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Lens_Flare:MaterialExpressionMaterialFunctionCall_4'","/Script/Engine.MaterialExpressionTextureObjectParameter'Lens_Flare:MaterialExpressionTextureObjectParameter_2'","/Script/Engine.MaterialExpressionVectorParameter'Lens_Flare:MaterialExpressionVectorParameter_2'","/Script/Engine.MaterialExpressionScalarParameter'Lens_Flare:MaterialExpressionScalarParameter_8'","/Script/Engine.MaterialExpressionComponentMask'Lens_Flare:MaterialExpressionComponentMask_13'","/Script/Engine.MaterialExpressionAppendVector'Lens_Flare:MaterialExpressionAppendVector_4'","/Script/Engine.MaterialExpressionStaticBoolParameter'Lens_Flare:MaterialExpressionStaticBoolParameter_1'","/Script/Engine.MaterialExpressionReroute'Lens_Flare:MaterialExpressionReroute_8'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Lens_Flare:MaterialExpressionMaterialFunctionCall_7'","/Script/Engine.MaterialExpressionTextureObjectParameter'Lens_Flare:MaterialExpressionTextureObjectParameter_3'","/Script/Engine.MaterialExpressionVectorParameter'Lens_Flare:MaterialExpressionVectorParameter_3'","/Script/Engine.MaterialExpressionComponentMask'Lens_Flare:MaterialExpressionComponentMask_14'","/Script/Engine.MaterialExpressionAppendVector'Lens_Flare:MaterialExpressionAppendVector_5'","/Script/Engine.MaterialExpressionStaticBoolParameter'Lens_Flare:MaterialExpressionStaticBoolParameter_2'","/Script/Engine.MaterialExpressionAdd'Lens_Flare:MaterialExpressionAdd_2'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Lens_Flare:MaterialExpressionMaterialFunctionCall_8'","/Script/Engine.MaterialExpressionTextureObjectParameter'Lens_Flare:MaterialExpressionTextureObjectParameter_4'","/Script/Engine.MaterialExpressionVectorParameter'Lens_Flare:MaterialExpressionVectorParameter_4'","/Script/Engine.MaterialExpressionComponentMask'Lens_Flare:MaterialExpressionComponentMask_15'","/Script/Engine.MaterialExpressionAppendVector'Lens_Flare:MaterialExpressionAppendVector_6'","/Script/Engine.MaterialExpressionStaticBoolParameter'Lens_Flare:MaterialExpressionStaticBoolParameter_3'","/Script/Engine.MaterialExpressionAdd'Lens_Flare:MaterialExpressionAdd_4'","/Script/Engine.MaterialExpressionScalarParameter'Lens_Flare:MaterialExpressionScalarParameter_4'","/Script/Engine.MaterialExpressionScalarParameter'Lens_Flare:MaterialExpressionScalarParameter_16'","/Script/Engine.MaterialExpressionScalarParameter'Lens_Flare:MaterialExpressionScalarParameter_17'","/Script/Engine.MaterialExpressionVectorParameter'Lens_Flare:MaterialExpressionVectorParameter_1'","/Script/Engine.MaterialExpressionVectorParameter'Lens_Flare:MaterialExpressionVectorParameter_6'","/Script/Engine.MaterialExpressionVectorParameter'Lens_Flare:MaterialExpressionVectorParameter_7'","/Script/Engine.MaterialExpressionVectorParameter'Lens_Flare:MaterialExpressionVectorParameter_8'","/Script/Engine.MaterialExpressionTextureSample'Lens_Flare:MaterialExpressionTextureSample_1'","/Script/Engine.MaterialExpressionAdd'Lens_Flare:MaterialExpressionAdd_7'","/Script/Engine.MaterialExpressionPanner'Lens_Flare:MaterialExpressionPanner_0'","/Script/Engine.MaterialExpressionMultiply'Lens_Flare:MaterialExpressionMultiply_15'","/Script/Engine.MaterialExpressionAppendVector'Lens_Flare:MaterialExpressionAppendVector_2'","/Script/Engine.MaterialExpressionDistance'Lens_Flare:MaterialExpressionDistance_1'","/Script/Engine.MaterialExpressionConstant'Lens_Flare:MaterialExpressionConstant_0'","/Script/Engine.MaterialExpressionOneMinus'Lens_Flare:MaterialExpressionOneMinus_0'","/Script/Engine.MaterialExpressionSaturate'Lens_Flare:MaterialExpressionSaturate_1'","/Script/Engine.MaterialExpressionMultiply'Lens_Flare:MaterialExpressionMultiply_6'","/Script/Engine.MaterialExpressionReroute'Lens_Flare:MaterialExpressionReroute_3'","/Script/Engine.MaterialExpressionComponentMask'Lens_Flare:MaterialExpressionComponentMask_16'","/Script/Engine.MaterialExpressionDistance'Lens_Flare:MaterialExpressionDistance_2'","/Script/Engine.MaterialExpressionConstant'Lens_Flare:MaterialExpressionConstant_2'","/Script/Engine.MaterialExpressionAppendVector'Lens_Flare:MaterialExpressionAppendVector_1'","/Script/Engine.MaterialExpressionConstant'Lens_Flare:MaterialExpressionConstant_3'","/Script/Engine.MaterialExpressionDivide'Lens_Flare:MaterialExpressionDivide_2'","/Script/Engine.MaterialExpressionCosine'Lens_Flare:MaterialExpressionCosine_0'","/Script/Engine.MaterialExpressionSubtract'Lens_Flare:MaterialExpressionSubtract_11'","/Script/Engine.MaterialExpressionScalarParameter'Lens_Flare:MaterialExpressionScalarParameter_5'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Lens_Flare:MaterialExpressionMaterialFunctionCall_1'","/Script/Engine.MaterialExpressionTextureObjectParameter'Lens_Flare:MaterialExpressionTextureObjectParameter_5'","/Script/Engine.MaterialExpressionVectorParameter'Lens_Flare:MaterialExpressionVectorParameter_5'","/Script/Engine.MaterialExpressionComponentMask'Lens_Flare:MaterialExpressionComponentMask_20'","/Script/Engine.MaterialExpressionAppendVector'Lens_Flare:MaterialExpressionAppendVector_7'","/Script/Engine.MaterialExpressionStaticBoolParameter'Lens_Flare:MaterialExpressionStaticBoolParameter_4'","/Script/Engine.MaterialExpressionAdd'Lens_Flare:MaterialExpressionAdd_5'","/Script/Engine.MaterialExpressionScalarParameter'Lens_Flare:MaterialExpressionScalarParameter_6'","/Script/Engine.MaterialExpressionVectorParameter'Lens_Flare:MaterialExpressionVectorParameter_9'","/Script/Engine.MaterialExpressionComponentMask'Lens_Flare:MaterialExpressionComponentMask_21'","/Script/Engine.MaterialExpressionSubtract'Lens_Flare:MaterialExpressionSubtract_17'","/Script/Engine.MaterialExpressionSaturate'Lens_Flare:MaterialExpressionSaturate_13'","/Script/Engine.MaterialExpressionMultiply'Lens_Flare:MaterialExpressionMultiply_16'","/Script/Engine.MaterialExpressionSaturate'Lens_Flare:MaterialExpressionSaturate_14'","/Script/Engine.MaterialExpressionPower'Lens_Flare:MaterialExpressionPower_0'","/Script/Engine.MaterialExpressionOneMinus'Lens_Flare:MaterialExpressionOneMinus_1'","/Script/Engine.MaterialExpressionDivide'Lens_Flare:MaterialExpressionDivide_10'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Lens_Flare:MaterialExpressionMaterialFunctionCall_0'","/Script/Engine.MaterialExpressionMultiply'Lens_Flare:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionSaturate'Lens_Flare:MaterialExpressionSaturate_0'","/Script/Engine.MaterialExpressionPower'Lens_Flare:MaterialExpressionPower_2'","/Script/Engine.MaterialExpressionMultiply'Lens_Flare:MaterialExpressionMultiply_1'","/Script/Engine.MaterialExpressionVectorParameter'Lens_Flare:MaterialExpressionVectorParameter_10'","/Script/Engine.MaterialExpressionDotProduct'Lens_Flare:MaterialExpressionDotProduct_0'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Lens_Flare:MaterialExpressionMaterialFunctionCall_9'","/Script/Engine.MaterialExpressionSaturate'Lens_Flare:MaterialExpressionSaturate_2'","/Script/Engine.MaterialExpressionMultiply'Lens_Flare:MaterialExpressionMultiply_3'","/Script/Engine.MaterialExpressionMultiply'Lens_Flare:MaterialExpressionMultiply_5'","/Script/Engine.MaterialExpressionMultiply'Lens_Flare:MaterialExpressionMultiply_19'","/Script/Engine.MaterialExpressionMultiply'Lens_Flare:MaterialExpressionMultiply_20'","/Script/Engine.MaterialExpressionDivide'Lens_Flare:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionSceneTexture'Lens_Flare:MaterialExpressionSceneTexture_7'","/Script/Engine.MaterialExpressionAdd'Lens_Flare:MaterialExpressionAdd_3'","/Script/Engine.MaterialExpressionSceneTexture'Lens_Flare:MaterialExpressionSceneTexture_8'","/Script/Engine.MaterialExpressionAdd'Lens_Flare:MaterialExpressionAdd_11'","/Script/Engine.MaterialExpressionSceneTexture'Lens_Flare:MaterialExpressionSceneTexture_9'","/Script/Engine.MaterialExpressionComponentMask'Lens_Flare:MaterialExpressionComponentMask_4'","/Script/Engine.MaterialExpressionComponentMask'Lens_Flare:MaterialExpressionComponentMask_5'","/Script/Engine.MaterialExpressionComponentMask'Lens_Flare:MaterialExpressionComponentMask_7'","/Script/Engine.MaterialExpressionAdd'Lens_Flare:MaterialExpressionAdd_13'","/Script/Engine.MaterialExpressionAdd'Lens_Flare:MaterialExpressionAdd_15'","/Script/Engine.MaterialExpressionAdd'Lens_Flare:MaterialExpressionAdd_18'","/Script/Engine.MaterialExpressionConstant2Vector'Lens_Flare:MaterialExpressionConstant2Vector_1'","/Script/Engine.MaterialExpressionConstant2Vector'Lens_Flare:MaterialExpressionConstant2Vector_2'","/Script/Engine.MaterialExpressionConstant2Vector'Lens_Flare:MaterialExpressionConstant2Vector_3'","/Script/Engine.MaterialExpressionComponentMask'Lens_Flare:MaterialExpressionComponentMask_10'","/Script/Engine.MaterialExpressionAdd'Lens_Flare:MaterialExpressionAdd_8'","/Script/Engine.MaterialExpressionComponentMask'Lens_Flare:MaterialExpressionComponentMask_11'","/Script/Engine.MaterialExpressionComponentMask'Lens_Flare:MaterialExpressionComponentMask_17'","/Script/Engine.MaterialExpressionAdd'Lens_Flare:MaterialExpressionAdd_9'","/Script/Engine.MaterialExpressionViewSize'Lens_Flare:MaterialExpressionViewSize_0'","/Script/Engine.MaterialExpressionSceneTexture'Lens_Flare:MaterialExpressionSceneTexture_2'","/Script/Engine.MaterialExpressionComponentMask'Lens_Flare:MaterialExpressionComponentMask_9'","/Script/Engine.MaterialExpressionSubtract'Lens_Flare:MaterialExpressionSubtract_5'","/Script/Engine.MaterialExpressionSaturate'Lens_Flare:MaterialExpressionSaturate_3'","/Script/Engine.MaterialExpressionSceneTexture'Lens_Flare:MaterialExpressionSceneTexture_3'","/Script/Engine.MaterialExpressionComponentMask'Lens_Flare:MaterialExpressionComponentMask_18'","/Script/Engine.MaterialExpressionSubtract'Lens_Flare:MaterialExpressionSubtract_6'","/Script/Engine.MaterialExpressionSaturate'Lens_Flare:MaterialExpressionSaturate_4'","/Script/Engine.MaterialExpressionAdd'Lens_Flare:MaterialExpressionAdd_12'","/Script/Engine.MaterialExpressionAdd'Lens_Flare:MaterialExpressionAdd_14'","/Script/Engine.MaterialExpressionDivide'Lens_Flare:MaterialExpressionDivide_4'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Lens_Flare:MaterialExpressionNamedRerouteDeclaration_0'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Lens_Flare:MaterialExpressionNamedRerouteUsage_0'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Lens_Flare:MaterialExpressionNamedRerouteDeclaration_1'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Lens_Flare:MaterialExpressionNamedRerouteUsage_1'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Lens_Flare:MaterialExpressionNamedRerouteUsage_2'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Lens_Flare:MaterialExpressionNamedRerouteUsage_3'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Lens_Flare:MaterialExpressionNamedRerouteUsage_4'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Lens_Flare:MaterialExpressionNamedRerouteUsage_5'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Lens_Flare:MaterialExpressionNamedRerouteUsage_6'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Lens_Flare:MaterialExpressionNamedRerouteUsage_7'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Lens_Flare:MaterialExpressionNamedRerouteUsage_8'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Lens_Flare:MaterialExpressionNamedRerouteUsage_9'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Lens_Flare:MaterialExpressionNamedRerouteDeclaration_2'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Lens_Flare:MaterialExpressionNamedRerouteUsage_10'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Lens_Flare:MaterialExpressionNamedRerouteUsage_11'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Lens_Flare:MaterialExpressionNamedRerouteUsage_12'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Lens_Flare:MaterialExpressionNamedRerouteUsage_13'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Lens_Flare:MaterialExpressionNamedRerouteUsage_14'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Lens_Flare:MaterialExpressionNamedRerouteUsage_15'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Lens_Flare:MaterialExpressionNamedRerouteDeclaration_3'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Lens_Flare:MaterialExpressionNamedRerouteDeclaration_4'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Lens_Flare:MaterialExpressionNamedRerouteUsage_16'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Lens_Flare:MaterialExpressionNamedRerouteDeclaration_5'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Lens_Flare:MaterialExpressionNamedRerouteUsage_18'"),EditorComments=("/Script/Engine.MaterialExpressionComment'Lens_Flare:MaterialExpressionComment_0'","/Script/Engine.MaterialExpressionComment'Lens_Flare:MaterialExpressionComment_1'","/Script/Engine.MaterialExpressionComment'Lens_Flare:MaterialExpressionComment_2'","/Script/Engine.MaterialExpressionComment'Lens_Flare:MaterialExpressionComment_3'","/Script/Engine.MaterialExpressionComment'Lens_Flare:MaterialExpressionComment_4'","/Script/Engine.MaterialExpressionComment'Lens_Flare:MaterialExpressionComment_5'","/Script/Engine.MaterialExpressionComment'Lens_Flare:MaterialExpressionComment_6'"))
+    .ParameterGroupData(0)=(GroupName="Whole Flare")
+    .ParameterGroupData(1)=(GroupName="Flare Line")
+    .ParameterGroupData(2)=(GroupName="Element 1")
+    .ParameterGroupData(3)=(GroupName="Element 2")
+    .ParameterGroupData(4)=(GroupName="Element 3")
+    .ParameterGroupData(5)=(GroupName="Element 4")
+    .ParameterGroupData(6)=(GroupName="Element 5")
+  MaterialExpressionAbs (MaterialExpressionAbs_0)
+    Input                  <- MaterialExpressionSubtract
+    .Input=(Expression="/Script/Engine.MaterialExpressionSubtract'Lens_Flare:MaterialExpressionSubtract_1'")
+    .MaterialExpressionEditorX=1656
+    .MaterialExpressionEditorY=1416
+    .MaterialExpressionGuid=C03D1E2F4B1755007D06A4A948F32EA2
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionAdd (MaterialExpressionAdd_0)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionReroute
+    .B=(Expression="/Script/Engine.MaterialExpressionReroute'Lens_Flare:MaterialExpressionReroute_8'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Lens_Flare:MaterialExpressionMaterialFunctionCall_4'")
+    .MaterialExpressionEditorX=-1578
+    .MaterialExpressionEditorY=128
+    .MaterialExpressionGuid=3F1CECA640305F50D94776B71667D195
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionAdd (MaterialExpressionAdd_1)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    B                      <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Lens_Flare:MaterialExpressionNamedRerouteUsage_16'")
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Lens_Flare:MaterialExpressionNamedRerouteUsage_18'")
+    .MaterialExpressionEditorX=3620
+    .MaterialExpressionEditorY=1396
+    .MaterialExpressionGuid=80BB9CCA446970F72944359CC6B44692
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionAdd (MaterialExpressionAdd_10)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionReroute
+    .B=(Expression="/Script/Engine.MaterialExpressionReroute'Lens_Flare:MaterialExpressionReroute_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Lens_Flare:MaterialExpressionComponentMask_6'")
+    .MaterialExpressionEditorX=4864
+    .MaterialExpressionEditorY=1372
+    .MaterialExpressionGuid=74DDDCC448C90F4E21AC5FA7C83E569E
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionAdd (MaterialExpressionAdd_11)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    B                      <- MaterialExpressionConstant2Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'Lens_Flare:MaterialExpressionConstant2Vector_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Lens_Flare:MaterialExpressionNamedRerouteUsage_0'")
+    .MaterialExpressionEditorX=438
+    .MaterialExpressionEditorY=2479
+    .MaterialExpressionGuid=8213F038421EFE3E16F98592E0FCB148
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionAdd (MaterialExpressionAdd_12)
+    A                      <- MaterialExpressionSaturate
+    B                      <- MaterialExpressionSaturate
+    .B=(Expression="/Script/Engine.MaterialExpressionSaturate'Lens_Flare:MaterialExpressionSaturate_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSaturate'Lens_Flare:MaterialExpressionSaturate_13'")
+    .MaterialExpressionEditorX=1394
+    .MaterialExpressionEditorY=1895
+    .MaterialExpressionGuid=9A0148B643CFF1E27C730DB75E151EC1
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionAdd (MaterialExpressionAdd_13)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Lens_Flare:MaterialExpressionComponentMask_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Lens_Flare:MaterialExpressionComponentMask_4'")
+    .MaterialExpressionEditorX=1082
+    .MaterialExpressionEditorY=2311
+    .MaterialExpressionGuid=65A5514F47ECE25C7B94749C0AF59C81
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionAdd (MaterialExpressionAdd_14)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionSaturate
+    .B=(Expression="/Script/Engine.MaterialExpressionSaturate'Lens_Flare:MaterialExpressionSaturate_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Lens_Flare:MaterialExpressionAdd_12'")
+    .MaterialExpressionEditorX=1538
+    .MaterialExpressionEditorY=2063
+    .MaterialExpressionGuid=B1E4C8454D6539DD5EDDAAB4180140E0
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionAdd (MaterialExpressionAdd_15)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Lens_Flare:MaterialExpressionComponentMask_7'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Lens_Flare:MaterialExpressionAdd_13'")
+    .MaterialExpressionEditorX=1178
+    .MaterialExpressionEditorY=2423
+    .MaterialExpressionGuid=0A15B2214390DA81BD944E89954130EE
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionAdd (MaterialExpressionAdd_18)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    B                      <- MaterialExpressionConstant2Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'Lens_Flare:MaterialExpressionConstant2Vector_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Lens_Flare:MaterialExpressionNamedRerouteUsage_0'")
+    .MaterialExpressionEditorX=438
+    .MaterialExpressionEditorY=2239
+    .MaterialExpressionGuid=8213F038421EFE3E16F98592E0FCB148
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionAdd (MaterialExpressionAdd_2)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionAdd
+    .B=(Expression="/Script/Engine.MaterialExpressionAdd'Lens_Flare:MaterialExpressionAdd_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Lens_Flare:MaterialExpressionMaterialFunctionCall_7'")
+    .MaterialExpressionEditorX=-458
+    .MaterialExpressionEditorY=102
+    .MaterialExpressionGuid=FB48A8824FC3AAFE96937E9EC19E790C
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionAdd (MaterialExpressionAdd_3)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    B                      <- MaterialExpressionConstant2Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'Lens_Flare:MaterialExpressionConstant2Vector_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Lens_Flare:MaterialExpressionNamedRerouteUsage_0'")
+    .MaterialExpressionEditorX=430
+    .MaterialExpressionEditorY=2367
+    .MaterialExpressionGuid=8213F038421EFE3E16F98592E0FCB148
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionAdd (MaterialExpressionAdd_4)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionAdd
+    .B=(Expression="/Script/Engine.MaterialExpressionAdd'Lens_Flare:MaterialExpressionAdd_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Lens_Flare:MaterialExpressionMaterialFunctionCall_8'")
+    .MaterialExpressionEditorX=742
+    .MaterialExpressionEditorY=76
+    .MaterialExpressionGuid=94E354DA4FB47918F3DAA6A8B28D4CAE
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionAdd (MaterialExpressionAdd_5)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionAdd
+    .B=(Expression="/Script/Engine.MaterialExpressionAdd'Lens_Flare:MaterialExpressionAdd_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Lens_Flare:MaterialExpressionMaterialFunctionCall_1'")
+    .MaterialExpressionEditorX=1846
+    .MaterialExpressionEditorY=50
+    .MaterialExpressionGuid=94E354DA4FB47918F3DAA6A8B28D4CAE
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionAdd (MaterialExpressionAdd_6)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionConstant2Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'Lens_Flare:MaterialExpressionConstant2Vector_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'Lens_Flare:MaterialExpressionSubtract_11'")
+    .MaterialExpressionEditorX=-84
+    .MaterialExpressionEditorY=680
+    .MaterialExpressionGuid=878849B14EADF245DC5641A77ED93264
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionAdd (MaterialExpressionAdd_7)
+    A                      <- MaterialExpressionConstant2Vector
+    B                      <- MaterialExpressionSubtract
+    .B=(Expression="/Script/Engine.MaterialExpressionSubtract'Lens_Flare:MaterialExpressionSubtract_11'")
+    .A=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'Lens_Flare:MaterialExpressionConstant2Vector_0'")
+    .MaterialExpressionEditorX=-156
+    .MaterialExpressionEditorY=928
+    .MaterialExpressionGuid=A96C8A1C4766C73DCD8CBE9C944E1AF9
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionAdd (MaterialExpressionAdd_8)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Lens_Flare:MaterialExpressionComponentMask_11'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Lens_Flare:MaterialExpressionComponentMask_10'")
+    .MaterialExpressionEditorX=1442
+    .MaterialExpressionEditorY=2351
+    .MaterialExpressionGuid=04DC5A644B6E584A3B6469810214693E
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionAdd (MaterialExpressionAdd_9)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Lens_Flare:MaterialExpressionComponentMask_17'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Lens_Flare:MaterialExpressionAdd_8'")
+    .MaterialExpressionEditorX=1546
+    .MaterialExpressionEditorY=2375
+    .MaterialExpressionGuid=6A3B9E1047D8FC3B70EAA7BE436F0D6D
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_0)
+    A                      <- MaterialExpressionDivide
+    B                      <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'Lens_Flare:MaterialExpressionConstant_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'Lens_Flare:MaterialExpressionDivide_1'")
+    .MaterialExpressionEditorX=-3400
+    .MaterialExpressionEditorY=1120
+    .MaterialExpressionGuid=CDF3AEFB4F7DEDB3EC9B23B6C2DBE667
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_1)
+    A                      <- MaterialExpressionConstant
+    B                      <- MaterialExpressionDivide
+    .B=(Expression="/Script/Engine.MaterialExpressionDivide'Lens_Flare:MaterialExpressionDivide_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionConstant'Lens_Flare:MaterialExpressionConstant_3'")
+    .MaterialExpressionEditorX=-558
+    .MaterialExpressionEditorY=768
+    .MaterialExpressionGuid=7ED2185149F2CE6F6CCCD4BA82B3A2E3
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_2)
+    A                      <- MaterialExpressionScalarParameter
+    B                      <- MaterialExpressionDivide
+    .B=(Expression="/Script/Engine.MaterialExpressionDivide'Lens_Flare:MaterialExpressionDivide_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Lens_Flare:MaterialExpressionScalarParameter_3'")
+    .MaterialExpressionEditorX=-1564
+    .MaterialExpressionEditorY=888
+    .MaterialExpressionGuid=E79CC82C4FE4820B5655C9BCFE017D7E
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_3)
+    A                      <- MaterialExpressionVectorParameter
+    B                      <- MaterialExpressionVectorParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Lens_Flare:MaterialExpressionVectorParameter_0'",OutputIndex=4,Mask=1,MaskA=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Lens_Flare:MaterialExpressionVectorParameter_0'",OutputIndex=3,Mask=1,MaskB=1)
+    .MaterialExpressionEditorX=-3378
+    .MaterialExpressionEditorY=-310
+    .MaterialExpressionGuid=51AE40D94AA44B2F750989AE4164E6FC
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_4)
+    A                      <- MaterialExpressionVectorParameter
+    B                      <- MaterialExpressionVectorParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Lens_Flare:MaterialExpressionVectorParameter_2'",OutputIndex=4,Mask=1,MaskA=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Lens_Flare:MaterialExpressionVectorParameter_2'",OutputIndex=3,Mask=1,MaskB=1)
+    .MaterialExpressionEditorX=-2234
+    .MaterialExpressionEditorY=-298
+    .MaterialExpressionGuid=51AE40D94AA44B2F750989AE4164E6FC
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_5)
+    A                      <- MaterialExpressionVectorParameter
+    B                      <- MaterialExpressionVectorParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Lens_Flare:MaterialExpressionVectorParameter_3'",OutputIndex=4,Mask=1,MaskA=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Lens_Flare:MaterialExpressionVectorParameter_3'",OutputIndex=3,Mask=1,MaskB=1)
+    .MaterialExpressionEditorX=-1074
+    .MaterialExpressionEditorY=-318
+    .MaterialExpressionGuid=51AE40D94AA44B2F750989AE4164E6FC
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_6)
+    A                      <- MaterialExpressionVectorParameter
+    B                      <- MaterialExpressionVectorParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Lens_Flare:MaterialExpressionVectorParameter_4'",OutputIndex=4,Mask=1,MaskA=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Lens_Flare:MaterialExpressionVectorParameter_4'",OutputIndex=3,Mask=1,MaskB=1)
+    .MaterialExpressionEditorX=66
+    .MaterialExpressionEditorY=-334
+    .MaterialExpressionGuid=51AE40D94AA44B2F750989AE4164E6FC
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_7)
+    A                      <- MaterialExpressionVectorParameter
+    B                      <- MaterialExpressionVectorParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Lens_Flare:MaterialExpressionVectorParameter_5'",OutputIndex=4,Mask=1,MaskA=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Lens_Flare:MaterialExpressionVectorParameter_5'",OutputIndex=3,Mask=1,MaskB=1)
+    .MaterialExpressionEditorX=1230
+    .MaterialExpressionEditorY=-298
+    .MaterialExpressionGuid=51AE40D94AA44B2F750989AE4164E6FC
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_1)
+    .ParameterName="Sun Vector"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+    .ParameterId=618AEFCB40106BAF34FCDD876EDC3DCE
+    .MaterialExpressionEditorX=-3708
+    .MaterialExpressionEditorY=1856
+    .MaterialExpressionGuid=16928B02407BB299EE0938A164DD54CD
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionComment (MaterialExpressionComment_0)
+    .SizeX=2736
+    .SizeY=920
+    .Text="Samples Scene Color and Depth to test if the Lens Flare should be visible"
+    .CommentColor=(R=0.518736,G=0.423308,B=1.000000,A=1.000000)
+    .MaterialExpressionEditorX=-48
+    .MaterialExpressionEditorY=1740
+    .MaterialExpressionGuid=CFFB44EF4AB93590196412A0585DB16A
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionComment (MaterialExpressionComment_1)
+    .SizeX=1402
+    .SizeY=400
+    .Text="Scales Intensity of Lens Flare with how close to screen center the sun is"
+    .CommentColor=(R=1.000000,G=0.480267,B=0.400431,A=1.000000)
+    .MaterialExpressionEditorX=1234
+    .MaterialExpressionEditorY=1186
+    .MaterialExpressionGuid=27784D734A59D77F7573E490DD7D6FC7
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionComment (MaterialExpressionComment_2)
+    .SizeX=805
+    .SizeY=511
+    .Text="Samples Scene Color and adds the flare to it"
+    .CommentColor=(R=0.457433,G=0.970142,B=1.000000,A=1.000000)
+    .MaterialExpressionEditorX=4190
+    .MaterialExpressionEditorY=1306
+    .MaterialExpressionGuid=EEC722384E2220479EE74E83621485B4
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionComment (MaterialExpressionComment_3)
+    .SizeX=4860
+    .SizeY=828
+    .Text="Maps Flare \"Line\" Effect, mapping a texture along the line of the flare elements, to add small extra elements"
+    .CommentColor=(R=0.898225,G=0.390380,B=1.000000,A=1.000000)
+    .MaterialExpressionEditorX=-3828
+    .MaterialExpressionEditorY=580
+    .MaterialExpressionGuid=62AE352A4CF25ECE76ABFBA9097515CF
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionComment (MaterialExpressionComment_4)
+    .SizeX=1293
+    .SizeY=276
+    .Text="Sample Sun Vector and find it in Screen Space"
+    .CommentColor=(R=1.000000,G=0.659473,B=0.412866,A=1.000000)
+    .MaterialExpressionEditorX=-3758
+    .MaterialExpressionEditorY=1806
+    .MaterialExpressionGuid=08ACA35B4D5F623FDDFAD7AE7B4EB39B
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionComment (MaterialExpressionComment_5)
+    .SizeX=6120
+    .SizeY=916
+    .Text="Map Lens Flare \"Elements\" The main parts of the flare"
+    .CommentColor=(R=0.270759,G=1.000000,B=0.460103,A=1.000000)
+    .MaterialExpressionEditorX=-3828
+    .MaterialExpressionEditorY=-608
+    .MaterialExpressionGuid=CCC6753A465F315AEFB4CBA7D9F34EE0
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionComment (MaterialExpressionComment_6)
+    .SizeX=700
+    .SizeY=372
+    .Text="Multiplies Flare Color and Intensity"
+    .CommentColor=(R=0.840020,G=0.398714,B=1.000000,A=1.000000)
+    .MaterialExpressionEditorX=3301
+    .MaterialExpressionEditorY=1296
+    .MaterialExpressionGuid=A33AEE94455C2665B6AD2E85D5775EDA
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionViewSize
+    .R=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionViewSize'Lens_Flare:MaterialExpressionViewSize_0'")
+    .MaterialExpressionEditorX=-3648
+    .MaterialExpressionEditorY=1096
+    .MaterialExpressionGuid=F2C8DCF54B530F7841022DB13F6A27B7
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_1)
+    Input                  <- MaterialExpressionVectorParameter
+    .R=True
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Lens_Flare:MaterialExpressionVectorParameter_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .MaterialExpressionEditorX=-3394
+    .MaterialExpressionEditorY=-390
+    .MaterialExpressionGuid=15D8927A4C7FFC58A837CB98CDA1EBE6
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_10)
+    Input                  <- MaterialExpressionAdd
+    .R=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionAdd'Lens_Flare:MaterialExpressionAdd_15'")
+    .MaterialExpressionEditorX=1290
+    .MaterialExpressionEditorY=2327
+    .MaterialExpressionGuid=36AC414F49AF8F80605E1EA777A2447C
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_11)
+    Input                  <- MaterialExpressionAdd
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionAdd'Lens_Flare:MaterialExpressionAdd_15'")
+    .MaterialExpressionEditorX=1290
+    .MaterialExpressionEditorY=2391
+    .MaterialExpressionGuid=1FF804C34C41A8973F1BE9AA61247922
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_12)
+    Input                  <- MaterialExpressionSaturate
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionSaturate'Lens_Flare:MaterialExpressionSaturate_0'")
+    .MaterialExpressionEditorX=2224
+    .MaterialExpressionEditorY=1480
+    .MaterialExpressionGuid=947B3B3D41B76D8EB7F9818E5FB5ACD8
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_13)
+    Input                  <- MaterialExpressionVectorParameter
+    .R=True
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Lens_Flare:MaterialExpressionVectorParameter_2'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .MaterialExpressionEditorX=-2254
+    .MaterialExpressionEditorY=-390
+    .MaterialExpressionGuid=15D8927A4C7FFC58A837CB98CDA1EBE6
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_14)
+    Input                  <- MaterialExpressionVectorParameter
+    .R=True
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Lens_Flare:MaterialExpressionVectorParameter_3'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .MaterialExpressionEditorX=-1090
+    .MaterialExpressionEditorY=-398
+    .MaterialExpressionGuid=15D8927A4C7FFC58A837CB98CDA1EBE6
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_15)
+    Input                  <- MaterialExpressionVectorParameter
+    .R=True
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Lens_Flare:MaterialExpressionVectorParameter_4'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .MaterialExpressionEditorX=50
+    .MaterialExpressionEditorY=-414
+    .MaterialExpressionGuid=15D8927A4C7FFC58A837CB98CDA1EBE6
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_16)
+    Input                  <- MaterialExpressionMultiply
+    .R=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Lens_Flare:MaterialExpressionMultiply_7'")
+    .MaterialExpressionEditorX=-1134
+    .MaterialExpressionEditorY=848
+    .MaterialExpressionGuid=76920A51426B540EED7D65991883AF27
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_17)
+    Input                  <- MaterialExpressionAdd
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionAdd'Lens_Flare:MaterialExpressionAdd_15'")
+    .MaterialExpressionEditorX=1290
+    .MaterialExpressionEditorY=2463
+    .MaterialExpressionGuid=9D5D07264F9F7ADA7E3D6E9D6E555E1C
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_18)
+    Input                  <- MaterialExpressionSceneTexture
+    .R=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionSceneTexture'Lens_Flare:MaterialExpressionSceneTexture_3'",Mask=1,MaskR=1,MaskG=1,MaskB=1,MaskA=1)
+    .MaterialExpressionEditorX=882
+    .MaterialExpressionEditorY=2095
+    .MaterialExpressionGuid=A23798DD4547CE0868B218A22A4B1D58
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_19)
+    Input                  <- MaterialExpressionSceneTexture
+    .A=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionSceneTexture'Lens_Flare:MaterialExpressionSceneTexture_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1,MaskA=1)
+    .MaterialExpressionEditorX=4840
+    .MaterialExpressionEditorY=1596
+    .MaterialExpressionGuid=833FF3F1453973C0F54CDE9B8CF3E9D7
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_2)
+    Input                  <- MaterialExpressionViewSize
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionViewSize'Lens_Flare:MaterialExpressionViewSize_0'")
+    .MaterialExpressionEditorX=-3648
+    .MaterialExpressionEditorY=1184
+    .MaterialExpressionGuid=F2C8DCF54B530F7841022DB13F6A27B7
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_20)
+    Input                  <- MaterialExpressionVectorParameter
+    .R=True
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Lens_Flare:MaterialExpressionVectorParameter_5'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .MaterialExpressionEditorX=1214
+    .MaterialExpressionEditorY=-378
+    .MaterialExpressionGuid=15D8927A4C7FFC58A837CB98CDA1EBE6
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_21)
+    Input                  <- MaterialExpressionSceneTexture
+    .R=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionSceneTexture'Lens_Flare:MaterialExpressionSceneTexture_1'",Mask=1,MaskR=1,MaskG=1,MaskB=1,MaskA=1)
+    .MaterialExpressionEditorX=882
+    .MaterialExpressionEditorY=1839
+    .MaterialExpressionGuid=A23798DD4547CE0868B218A22A4B1D58
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_3)
+    Input                  <- MaterialExpressionCollectionParameter
+    .R=True
+    .G=True
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Lens_Flare:MaterialExpressionCollectionParameter_1'")
+    .MaterialExpressionEditorX=-3444
+    .MaterialExpressionEditorY=1888
+    .MaterialExpressionGuid=AE30989C4EC27654931D57BD7CEEC1C5
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_4)
+    Input                  <- MaterialExpressionSceneTexture
+    .R=True
+    .G=True
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionSceneTexture'Lens_Flare:MaterialExpressionSceneTexture_9'",Mask=1,MaskR=1,MaskG=1,MaskB=1,MaskA=1)
+    .MaterialExpressionEditorX=922
+    .MaterialExpressionEditorY=2239
+    .MaterialExpressionGuid=90701DEC4920DA5CE51D3793B409E4DB
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_5)
+    Input                  <- MaterialExpressionSceneTexture
+    .R=True
+    .G=True
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionSceneTexture'Lens_Flare:MaterialExpressionSceneTexture_7'",Mask=1,MaskR=1,MaskG=1,MaskB=1,MaskA=1)
+    .MaterialExpressionEditorX=922
+    .MaterialExpressionEditorY=2367
+    .MaterialExpressionGuid=90701DEC4920DA5CE51D3793B409E4DB
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_6)
+    Input                  <- MaterialExpressionSceneTexture
+    .R=True
+    .G=True
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionSceneTexture'Lens_Flare:MaterialExpressionSceneTexture_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1,MaskA=1)
+    .MaterialExpressionEditorX=4712
+    .MaterialExpressionEditorY=1372
+    .MaterialExpressionGuid=9EAC7CFB4C6A5FDE2B48C29F27A96B61
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_7)
+    Input                  <- MaterialExpressionSceneTexture
+    .R=True
+    .G=True
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionSceneTexture'Lens_Flare:MaterialExpressionSceneTexture_8'",Mask=1,MaskR=1,MaskG=1,MaskB=1,MaskA=1)
+    .MaterialExpressionEditorX=922
+    .MaterialExpressionEditorY=2503
+    .MaterialExpressionGuid=90701DEC4920DA5CE51D3793B409E4DB
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_8)
+    Input                  <- MaterialExpressionSaturate
+    .R=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionSaturate'Lens_Flare:MaterialExpressionSaturate_0'")
+    .MaterialExpressionEditorX=2224
+    .MaterialExpressionEditorY=1408
+    .MaterialExpressionGuid=947B3B3D41B76D8EB7F9818E5FB5ACD8
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_9)
+    Input                  <- MaterialExpressionSceneTexture
+    .R=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionSceneTexture'Lens_Flare:MaterialExpressionSceneTexture_2'",Mask=1,MaskR=1,MaskG=1,MaskB=1,MaskA=1)
+    .MaterialExpressionEditorX=882
+    .MaterialExpressionEditorY=1967
+    .MaterialExpressionGuid=A23798DD4547CE0868B218A22A4B1D58
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionConstant (MaterialExpressionConstant_0)
+    .R=0.350000
+    .MaterialExpressionEditorX=-620
+    .MaterialExpressionEditorY=1232
+    .MaterialExpressionGuid=A3F494784189FD9A1922DB8AA37203C7
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionConstant (MaterialExpressionConstant_1)
+    .R=1.000000
+    .MaterialExpressionEditorX=-3570
+    .MaterialExpressionEditorY=1288
+    .MaterialExpressionGuid=C8AAFE52423D2C8F4450748BD4D52D8A
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionConstant (MaterialExpressionConstant_2)
+    .MaterialExpressionEditorX=-1172
+    .MaterialExpressionEditorY=952
+    .MaterialExpressionGuid=A3E990DE4FFCB65A01F69B92E7E3E87B
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionConstant (MaterialExpressionConstant_3)
+    .MaterialExpressionEditorX=-756
+    .MaterialExpressionEditorY=752
+    .MaterialExpressionGuid=42ECA9F245E9D103665B5390DD7C20AE
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionConstant2Vector (MaterialExpressionConstant2Vector_0)
+    .R=0.500000
+    .MaterialExpressionEditorX=-276
+    .MaterialExpressionEditorY=752
+    .MaterialExpressionGuid=57B5B29C495555EE4423E18385781F3E
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionConstant2Vector (MaterialExpressionConstant2Vector_1)
+    .G=-0.004500
+    .MaterialExpressionEditorX=262
+    .MaterialExpressionEditorY=2271
+    .MaterialExpressionGuid=0BF0B5634A89C02C80A3A5B3F1228280
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionConstant2Vector (MaterialExpressionConstant2Vector_2)
+    .R=0.003375
+    .G=0.001125
+    .MaterialExpressionEditorX=270
+    .MaterialExpressionEditorY=2407
+    .MaterialExpressionGuid=0BF0B5634A89C02C80A3A5B3F1228280
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionConstant2Vector (MaterialExpressionConstant2Vector_3)
+    .R=-0.003375
+    .G=0.001125
+    .MaterialExpressionEditorX=270
+    .MaterialExpressionEditorY=2519
+    .MaterialExpressionGuid=0BF0B5634A89C02C80A3A5B3F1228280
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionConstant2Vector (MaterialExpressionConstant2Vector_4)
+    .MaterialExpressionEditorX=-2240
+    .MaterialExpressionEditorY=720
+    .MaterialExpressionGuid=5816BD494A2B1ADF4F6124B9EBCC3214
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionConstant2Vector (MaterialExpressionConstant2Vector_6)
+    .MaterialExpressionEditorX=-2340
+    .MaterialExpressionEditorY=1172
+    .MaterialExpressionGuid=56B70B1B4FBA55BB88DD7BA6A3C26933
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionCosine (MaterialExpressionCosine_0)
+    Input                  <- MaterialExpressionDistance
+    .Input=(Expression="/Script/Engine.MaterialExpressionDistance'Lens_Flare:MaterialExpressionDistance_2'")
+    .MaterialExpressionEditorX=-910
+    .MaterialExpressionEditorY=848
+    .MaterialExpressionGuid=4918FE5F45797AA4DB6088AA1957D369
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionDistance (MaterialExpressionDistance_0)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionConstant2Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'Lens_Flare:MaterialExpressionConstant2Vector_6'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Lens_Flare:MaterialExpressionMultiply_20'")
+    .MaterialExpressionEditorX=-2190
+    .MaterialExpressionEditorY=1112
+    .MaterialExpressionGuid=88A9B15E4FA37A6188AE1C99E33456C9
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionDistance (MaterialExpressionDistance_1)
+    A                      <- MaterialExpressionReroute
+    B                      <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'Lens_Flare:MaterialExpressionConstant_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionReroute'Lens_Flare:MaterialExpressionReroute_3'")
+    .MaterialExpressionEditorX=-368
+    .MaterialExpressionEditorY=1168
+    .MaterialExpressionGuid=DDFAEB15453BE0C629D6D49217FFCEC6
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionDistance (MaterialExpressionDistance_2)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'Lens_Flare:MaterialExpressionConstant_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Lens_Flare:MaterialExpressionComponentMask_16'")
+    .MaterialExpressionEditorX=-1022
+    .MaterialExpressionEditorY=848
+    .MaterialExpressionGuid=ECCDDE494AB9412A8FA6BDADA1596427
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionAdd
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Lens_Flare:MaterialExpressionAdd_9'")
+    .ConstB=9.000000
+    .MaterialExpressionEditorX=1666
+    .MaterialExpressionEditorY=2375
+    .MaterialExpressionGuid=A977293749CC2A13D8987EB54D0AFD29
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionDivide (MaterialExpressionDivide_1)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Lens_Flare:MaterialExpressionComponentMask_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Lens_Flare:MaterialExpressionComponentMask_0'")
+    .MaterialExpressionEditorX=-3512
+    .MaterialExpressionEditorY=1120
+    .MaterialExpressionGuid=EC48E04C4900B27BB31F8E82AEB54E26
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionDivide (MaterialExpressionDivide_10)
+    B                      <- MaterialExpressionOneMinus
+    .B=(Expression="/Script/Engine.MaterialExpressionOneMinus'Lens_Flare:MaterialExpressionOneMinus_1'")
+    .MaterialExpressionEditorX=1842
+    .MaterialExpressionEditorY=2519
+    .MaterialExpressionGuid=486A718B41FD74F300A01A8B960345C6
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionDivide (MaterialExpressionDivide_2)
+    A                      <- MaterialExpressionPower
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Lens_Flare:MaterialExpressionScalarParameter_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionPower'Lens_Flare:MaterialExpressionPower_2'")
+    .ConstB=50.000000
+    .MaterialExpressionEditorX=-670
+    .MaterialExpressionEditorY=848
+    .MaterialExpressionGuid=FAD1253A40EDE96CE7FCCCA7BCAD5B8F
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionDivide (MaterialExpressionDivide_3)
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Lens_Flare:MaterialExpressionMultiply_9'")
+    .MaterialExpressionEditorX=-1726
+    .MaterialExpressionEditorY=952
+    .MaterialExpressionGuid=12528D124996676929D22098929570FB
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionDivide (MaterialExpressionDivide_4)
+    A                      <- MaterialExpressionAdd
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Lens_Flare:MaterialExpressionAdd_14'")
+    .ConstB=3.000000
+    .MaterialExpressionEditorX=1649
+    .MaterialExpressionEditorY=2061
+    .MaterialExpressionGuid=8723CFAC4FC8C6893AB356941C027446
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionDotProduct (MaterialExpressionDotProduct_0)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Lens_Flare:MaterialExpressionNamedRerouteUsage_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Lens_Flare:MaterialExpressionMaterialFunctionCall_9'")
+    .MaterialExpressionEditorX=2032
+    .MaterialExpressionEditorY=1244
+    .MaterialExpressionGuid=DB0B878646F4AD490E13FDBAA8F26604
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_0)
+    FunctionInputs(0)      <- MaterialExpressionNamedRerouteDeclaration
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Engine/Functions/Engine_MaterialFunctions02/Math/ManualWorldToScreenUVsTransform.ManualWorldToScreenUVsTransform'"
+    .FunctionInputs(0)=(ExpressionInputId=C2E419E34EB72C13938140BB25D16230,Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Lens_Flare:MaterialExpressionNamedRerouteDeclaration_1'",InputName="Camera Relative Position"))
+    .FunctionInputs(1)=(ExpressionInputId=6EF8978E44852B01D458449054D17090,Input=(OutputIndex=-1,InputName="X Camera to World Vector"))
+    .FunctionInputs(2)=(ExpressionInputId=6490D8954BDE594F5AF4CD80F78DFEB5,Input=(OutputIndex=-1,InputName="Y Camera to World Vector"))
+    .FunctionInputs(3)=(ExpressionInputId=36F9E1794BC5481EC4098E92A609821B,Input=(OutputIndex=-1,InputName="Z Camera to World Vector"))
+    .FunctionInputs(4)=(ExpressionInputId=557BBD59424EAD0FF9F463AD369BFA15,Input=(OutputIndex=-1,InputName="Tan(FOV/2)*[1,Screen Res Y/X]"))
+    .FunctionOutputs(0)=(ExpressionOutputId=031EA8964D13084E2BBF44AB350363FC,Output=(OutputName="Screen UVs"))
+    .MaterialExpressionEditorX=-3056
+    .MaterialExpressionEditorY=1888
+    .MaterialExpressionGuid=0A6AD7824ACECD25783B98B2462BD3B0
+    .Material="/Script/Engine.Material'Lens_Flare'"
+    .Outputs(0)=(OutputName="Screen UVs")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_1)
+    FunctionInputs(0)      <- MaterialExpressionNamedRerouteUsage
+    FunctionInputs(1)      <- MaterialExpressionComponentMask
+    FunctionInputs(2)      <- MaterialExpressionNamedRerouteUsage
+    FunctionInputs(3)      <- MaterialExpressionAppendVector
+    FunctionInputs(4)      <- MaterialExpressionScalarParameter
+    FunctionInputs(5)      <- MaterialExpressionVectorParameter
+    FunctionInputs(6)      <- MaterialExpressionStaticBoolParameter
+    FunctionInputs(7)      <- MaterialExpressionTextureObjectParameter
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Lens_Flare_Element.Lens_Flare_Element'"
+    .FunctionInputs(0)=(ExpressionInputId=7F4E70644072E886812E63B9301AABD8,Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Lens_Flare:MaterialExpressionNamedRerouteUsage_14'",InputName="Aspect Ratio Scale"))
+    .FunctionInputs(1)=(ExpressionInputId=B6C6D9674A84CE1BDEAEB2BD142F9806,Input=(Expression="/Script/Engine.MaterialExpressionComponentMask'Lens_Flare:MaterialExpressionComponentMask_20'",InputName="Element Scale"))
+    .FunctionInputs(2)=(ExpressionInputId=60293B8C44AB506291040B8DF117D1CD,Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Lens_Flare:MaterialExpressionNamedRerouteUsage_9'",InputName="Sun Screen Position"))
+    .FunctionInputs(3)=(ExpressionInputId=9ACEEDD8445AD9B2FCE238BE93940F7F,Input=(Expression="/Script/Engine.MaterialExpressionAppendVector'Lens_Flare:MaterialExpressionAppendVector_7'",InputName="Position Factor"))
+    .FunctionInputs(4)=(ExpressionInputId=FEEB957A4755FC889ED8ECA278CFE1E9,Input=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Lens_Flare:MaterialExpressionScalarParameter_6'",InputName="Lens Distortion"))
+    .FunctionInputs(5)=(ExpressionInputId=E1E90C9047975311253DE59179C4070A,Input=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Lens_Flare:MaterialExpressionVectorParameter_9'",InputName="Color",Mask=1,MaskR=1,MaskG=1,MaskB=1))
+    .FunctionInputs(6)=(ExpressionInputId=910878194C1AFE324DAF78864AFF1690,Input=(Expression="/Script/Engine.MaterialExpressionStaticBoolParameter'Lens_Flare:MaterialExpressionStaticBoolParameter_4'",InputName="Use Distortion"))
+    .FunctionInputs(7)=(ExpressionInputId=BC652FAD4501B93EDC53ADBF896C7BF7,Input=(Expression="/Script/Engine.MaterialExpressionTextureObjectParameter'Lens_Flare:MaterialExpressionTextureObjectParameter_5'",InputName="Element Texture"))
+    .FunctionOutputs(0)=(ExpressionOutputId=F30672164CE719175FB2BDA999FCEBC6,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=1462
+    .MaterialExpressionEditorY=-458
+    .MaterialExpressionGuid=8BABA9C74C202CC2CAF54EBB4824A895
+    .Material="/Script/Engine.Material'Lens_Flare'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_3)
+    FunctionInputs(0)      <- MaterialExpressionNamedRerouteUsage
+    FunctionInputs(1)      <- MaterialExpressionComponentMask
+    FunctionInputs(2)      <- MaterialExpressionNamedRerouteUsage
+    FunctionInputs(3)      <- MaterialExpressionAppendVector
+    FunctionInputs(4)      <- MaterialExpressionScalarParameter
+    FunctionInputs(5)      <- MaterialExpressionVectorParameter
+    FunctionInputs(6)      <- MaterialExpressionStaticBoolParameter
+    FunctionInputs(7)      <- MaterialExpressionTextureObjectParameter
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Lens_Flare_Element.Lens_Flare_Element'"
+    .FunctionInputs(0)=(ExpressionInputId=7F4E70644072E886812E63B9301AABD8,Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Lens_Flare:MaterialExpressionNamedRerouteUsage_10'",InputName="Aspect Ratio Scale"))
+    .FunctionInputs(1)=(ExpressionInputId=B6C6D9674A84CE1BDEAEB2BD142F9806,Input=(Expression="/Script/Engine.MaterialExpressionComponentMask'Lens_Flare:MaterialExpressionComponentMask_1'",InputName="Element Scale"))
+    .FunctionInputs(2)=(ExpressionInputId=60293B8C44AB506291040B8DF117D1CD,Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Lens_Flare:MaterialExpressionNamedRerouteUsage_5'",InputName="Sun Screen Position"))
+    .FunctionInputs(3)=(ExpressionInputId=9ACEEDD8445AD9B2FCE238BE93940F7F,Input=(Expression="/Script/Engine.MaterialExpressionAppendVector'Lens_Flare:MaterialExpressionAppendVector_3'",InputName="Position Factor"))
+    .FunctionInputs(4)=(ExpressionInputId=FEEB957A4755FC889ED8ECA278CFE1E9,Input=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Lens_Flare:MaterialExpressionScalarParameter_4'",InputName="Lens Distortion"))
+    .FunctionInputs(5)=(ExpressionInputId=E1E90C9047975311253DE59179C4070A,Input=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Lens_Flare:MaterialExpressionVectorParameter_1'",InputName="Color",Mask=1,MaskR=1,MaskG=1,MaskB=1))
+    .FunctionInputs(6)=(ExpressionInputId=910878194C1AFE324DAF78864AFF1690,Input=(Expression="/Script/Engine.MaterialExpressionStaticBoolParameter'Lens_Flare:MaterialExpressionStaticBoolParameter_0'",InputName="Use Distortion"))
+    .FunctionInputs(7)=(ExpressionInputId=BC652FAD4501B93EDC53ADBF896C7BF7,Input=(Expression="/Script/Engine.MaterialExpressionTextureObjectParameter'Lens_Flare:MaterialExpressionTextureObjectParameter_1'",InputName="Element Texture"))
+    .FunctionOutputs(0)=(ExpressionOutputId=F30672164CE719175FB2BDA999FCEBC6,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-3162
+    .MaterialExpressionEditorY=-462
+    .MaterialExpressionGuid=8BABA9C74C202CC2CAF54EBB4824A895
+    .Material="/Script/Engine.Material'Lens_Flare'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_4)
+    FunctionInputs(0)      <- MaterialExpressionNamedRerouteUsage
+    FunctionInputs(1)      <- MaterialExpressionComponentMask
+    FunctionInputs(2)      <- MaterialExpressionNamedRerouteUsage
+    FunctionInputs(3)      <- MaterialExpressionAppendVector
+    FunctionInputs(4)      <- MaterialExpressionScalarParameter
+    FunctionInputs(5)      <- MaterialExpressionVectorParameter
+    FunctionInputs(6)      <- MaterialExpressionStaticBoolParameter
+    FunctionInputs(7)      <- MaterialExpressionTextureObjectParameter
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Lens_Flare_Element.Lens_Flare_Element'"
+    .FunctionInputs(0)=(ExpressionInputId=7F4E70644072E886812E63B9301AABD8,Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Lens_Flare:MaterialExpressionNamedRerouteUsage_11'",InputName="Aspect Ratio Scale"))
+    .FunctionInputs(1)=(ExpressionInputId=B6C6D9674A84CE1BDEAEB2BD142F9806,Input=(Expression="/Script/Engine.MaterialExpressionComponentMask'Lens_Flare:MaterialExpressionComponentMask_13'",InputName="Element Scale"))
+    .FunctionInputs(2)=(ExpressionInputId=60293B8C44AB506291040B8DF117D1CD,Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Lens_Flare:MaterialExpressionNamedRerouteUsage_6'",InputName="Sun Screen Position"))
+    .FunctionInputs(3)=(ExpressionInputId=9ACEEDD8445AD9B2FCE238BE93940F7F,Input=(Expression="/Script/Engine.MaterialExpressionAppendVector'Lens_Flare:MaterialExpressionAppendVector_4'",InputName="Position Factor"))
+    .FunctionInputs(4)=(ExpressionInputId=FEEB957A4755FC889ED8ECA278CFE1E9,Input=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Lens_Flare:MaterialExpressionScalarParameter_8'",InputName="Lens Distortion"))
+    .FunctionInputs(5)=(ExpressionInputId=E1E90C9047975311253DE59179C4070A,Input=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Lens_Flare:MaterialExpressionVectorParameter_6'",InputName="Color",Mask=1,MaskR=1,MaskG=1,MaskB=1))
+    .FunctionInputs(6)=(ExpressionInputId=910878194C1AFE324DAF78864AFF1690,Input=(Expression="/Script/Engine.MaterialExpressionStaticBoolParameter'Lens_Flare:MaterialExpressionStaticBoolParameter_1'",InputName="Use Distortion"))
+    .FunctionInputs(7)=(ExpressionInputId=BC652FAD4501B93EDC53ADBF896C7BF7,Input=(Expression="/Script/Engine.MaterialExpressionTextureObjectParameter'Lens_Flare:MaterialExpressionTextureObjectParameter_2'",InputName="Element Texture"))
+    .FunctionOutputs(0)=(ExpressionOutputId=F30672164CE719175FB2BDA999FCEBC6,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-1922
+    .MaterialExpressionEditorY=-450
+    .MaterialExpressionGuid=8BABA9C74C202CC2CAF54EBB4824A895
+    .Material="/Script/Engine.Material'Lens_Flare'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_5)
+    FunctionInputs(0)      <- MaterialExpressionMultiply
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Engine/Functions/Engine_MaterialFunctions02/Utility/VectorToRadialValue.VectorToRadialValue'"
+    .FunctionInputs(0)=(ExpressionInputId=F76C36864101996D4D30F19DE33AE17B,Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Lens_Flare:MaterialExpressionMultiply_20'",InputName="Vector or UVs"))
+    .FunctionInputs(1)=(ExpressionInputId=9D6745D9443E616DF97D4B987DA06F15,Input=(OutputIndex=-1,InputName="Swizzle Coordinate Output"))
+    .FunctionOutputs(0)=(ExpressionOutputId=34B566714F67FBF3D916EBB5CE5BF50D,Output=(OutputName="Radial Coordinates"))
+    .FunctionOutputs(1)=(ExpressionOutputId=3533EC794F30962B3725BB8301E0DD34,Output=(OutputName="Vector Converted to Angle"))
+    .FunctionOutputs(2)=(ExpressionOutputId=98AC11FC46ECEDC0D53818A07F4C8CED,Output=(OutputName="Linear Distance"))
+    .MaterialExpressionEditorX=-2878
+    .MaterialExpressionEditorY=872
+    .MaterialExpressionGuid=2554014B4B84CDDCEF6758A2197D2059
+    .Material="/Script/Engine.Material'Lens_Flare'"
+    .Outputs(0)=(OutputName="Radial Coordinates")
+    .Outputs(1)=(OutputName="Vector Converted to Angle")
+    .Outputs(2)=(OutputName="Linear Distance")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_6)
+    FunctionInputs(0)      <- MaterialExpressionMultiply
+    FunctionInputs(1)      <- MaterialExpressionConstant2Vector
+    FunctionInputs(2)      <- MaterialExpressionSubtract
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Engine/Functions/Engine_MaterialFunctions02/Texturing/CustomRotator.CustomRotator'"
+    .FunctionInputs(0)=(ExpressionInputId=45DE7CC04BCC975C664A2AA5DA134FEF,Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Lens_Flare:MaterialExpressionMultiply_19'",InputName="UVs"))
+    .FunctionInputs(1)=(ExpressionInputId=9B6953874136DCE4D8E4E8878152CCCE,Input=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'Lens_Flare:MaterialExpressionConstant2Vector_4'",InputName="Rotation Center"))
+    .FunctionInputs(2)=(ExpressionInputId=D58F67D84CFD4C9D289810AEE4A3EBC8,Input=(Expression="/Script/Engine.MaterialExpressionSubtract'Lens_Flare:MaterialExpressionSubtract_4'",InputName="Rotation Angle (0-1)"))
+    .FunctionOutputs(0)=(ExpressionOutputId=35E8F8F94CC8CE3D65F114A234D0BD5E,Output=(OutputName="Rotated Values"))
+    .MaterialExpressionEditorX=-2046
+    .MaterialExpressionEditorY=672
+    .MaterialExpressionGuid=43B6C09C4AD63C61A8CE10831B17731C
+    .Material="/Script/Engine.Material'Lens_Flare'"
+    .Outputs(0)=(OutputName="Rotated Values")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_7)
+    FunctionInputs(0)      <- MaterialExpressionNamedRerouteUsage
+    FunctionInputs(1)      <- MaterialExpressionComponentMask
+    FunctionInputs(2)      <- MaterialExpressionNamedRerouteUsage
+    FunctionInputs(3)      <- MaterialExpressionAppendVector
+    FunctionInputs(4)      <- MaterialExpressionScalarParameter
+    FunctionInputs(5)      <- MaterialExpressionVectorParameter
+    FunctionInputs(6)      <- MaterialExpressionStaticBoolParameter
+    FunctionInputs(7)      <- MaterialExpressionTextureObjectParameter
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Lens_Flare_Element.Lens_Flare_Element'"
+    .FunctionInputs(0)=(ExpressionInputId=7F4E70644072E886812E63B9301AABD8,Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Lens_Flare:MaterialExpressionNamedRerouteUsage_12'",InputName="Aspect Ratio Scale"))
+    .FunctionInputs(1)=(ExpressionInputId=B6C6D9674A84CE1BDEAEB2BD142F9806,Input=(Expression="/Script/Engine.MaterialExpressionComponentMask'Lens_Flare:MaterialExpressionComponentMask_14'",InputName="Element Scale"))
+    .FunctionInputs(2)=(ExpressionInputId=60293B8C44AB506291040B8DF117D1CD,Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Lens_Flare:MaterialExpressionNamedRerouteUsage_7'",InputName="Sun Screen Position"))
+    .FunctionInputs(3)=(ExpressionInputId=9ACEEDD8445AD9B2FCE238BE93940F7F,Input=(Expression="/Script/Engine.MaterialExpressionAppendVector'Lens_Flare:MaterialExpressionAppendVector_5'",InputName="Position Factor"))
+    .FunctionInputs(4)=(ExpressionInputId=FEEB957A4755FC889ED8ECA278CFE1E9,Input=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Lens_Flare:MaterialExpressionScalarParameter_16'",InputName="Lens Distortion"))
+    .FunctionInputs(5)=(ExpressionInputId=E1E90C9047975311253DE59179C4070A,Input=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Lens_Flare:MaterialExpressionVectorParameter_7'",InputName="Color",Mask=1,MaskR=1,MaskG=1,MaskB=1))
+    .FunctionInputs(6)=(ExpressionInputId=910878194C1AFE324DAF78864AFF1690,Input=(Expression="/Script/Engine.MaterialExpressionStaticBoolParameter'Lens_Flare:MaterialExpressionStaticBoolParameter_2'",InputName="Use Distortion"))
+    .FunctionInputs(7)=(ExpressionInputId=BC652FAD4501B93EDC53ADBF896C7BF7,Input=(Expression="/Script/Engine.MaterialExpressionTextureObjectParameter'Lens_Flare:MaterialExpressionTextureObjectParameter_3'",InputName="Element Texture"))
+    .FunctionOutputs(0)=(ExpressionOutputId=F30672164CE719175FB2BDA999FCEBC6,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-842
+    .MaterialExpressionEditorY=-462
+    .MaterialExpressionGuid=8BABA9C74C202CC2CAF54EBB4824A895
+    .Material="/Script/Engine.Material'Lens_Flare'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_8)
+    FunctionInputs(0)      <- MaterialExpressionNamedRerouteUsage
+    FunctionInputs(1)      <- MaterialExpressionComponentMask
+    FunctionInputs(2)      <- MaterialExpressionNamedRerouteUsage
+    FunctionInputs(3)      <- MaterialExpressionAppendVector
+    FunctionInputs(4)      <- MaterialExpressionScalarParameter
+    FunctionInputs(5)      <- MaterialExpressionVectorParameter
+    FunctionInputs(6)      <- MaterialExpressionStaticBoolParameter
+    FunctionInputs(7)      <- MaterialExpressionTextureObjectParameter
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Lens_Flare_Element.Lens_Flare_Element'"
+    .FunctionInputs(0)=(ExpressionInputId=7F4E70644072E886812E63B9301AABD8,Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Lens_Flare:MaterialExpressionNamedRerouteUsage_13'",InputName="Aspect Ratio Scale"))
+    .FunctionInputs(1)=(ExpressionInputId=B6C6D9674A84CE1BDEAEB2BD142F9806,Input=(Expression="/Script/Engine.MaterialExpressionComponentMask'Lens_Flare:MaterialExpressionComponentMask_15'",InputName="Element Scale"))
+    .FunctionInputs(2)=(ExpressionInputId=60293B8C44AB506291040B8DF117D1CD,Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Lens_Flare:MaterialExpressionNamedRerouteUsage_8'",InputName="Sun Screen Position"))
+    .FunctionInputs(3)=(ExpressionInputId=9ACEEDD8445AD9B2FCE238BE93940F7F,Input=(Expression="/Script/Engine.MaterialExpressionAppendVector'Lens_Flare:MaterialExpressionAppendVector_6'",InputName="Position Factor"))
+    .FunctionInputs(4)=(ExpressionInputId=FEEB957A4755FC889ED8ECA278CFE1E9,Input=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Lens_Flare:MaterialExpressionScalarParameter_17'",InputName="Lens Distortion"))
+    .FunctionInputs(5)=(ExpressionInputId=E1E90C9047975311253DE59179C4070A,Input=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Lens_Flare:MaterialExpressionVectorParameter_8'",InputName="Color",Mask=1,MaskR=1,MaskG=1,MaskB=1))
+    .FunctionInputs(6)=(ExpressionInputId=910878194C1AFE324DAF78864AFF1690,Input=(Expression="/Script/Engine.MaterialExpressionStaticBoolParameter'Lens_Flare:MaterialExpressionStaticBoolParameter_3'",InputName="Use Distortion"))
+    .FunctionInputs(7)=(ExpressionInputId=BC652FAD4501B93EDC53ADBF896C7BF7,Input=(Expression="/Script/Engine.MaterialExpressionTextureObjectParameter'Lens_Flare:MaterialExpressionTextureObjectParameter_4'",InputName="Element Texture"))
+    .FunctionOutputs(0)=(ExpressionOutputId=F30672164CE719175FB2BDA999FCEBC6,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=298
+    .MaterialExpressionEditorY=-478
+    .MaterialExpressionGuid=8BABA9C74C202CC2CAF54EBB4824A895
+    .Material="/Script/Engine.Material'Lens_Flare'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_9)
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Engine/Functions/Engine_MaterialFunctions02/Utility/CameraDirectionVector.CameraDirectionVector'"
+    .FunctionOutputs(0)=(ExpressionOutputId=B8DC55274CB0C18F86B060A5EED9FCD3,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=1780
+    .MaterialExpressionEditorY=1236
+    .MaterialExpressionGuid=B8F15C454C63BBEAE9DEA483B5F68D6C
+    .Material="/Script/Engine.Material'Lens_Flare'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionOneMinus
+    .A=(Expression="/Script/Engine.MaterialExpressionOneMinus'Lens_Flare:MaterialExpressionOneMinus_2'")
+    .ConstB=12.000000
+    .MaterialExpressionEditorX=1952
+    .MaterialExpressionEditorY=1416
+    .MaterialExpressionGuid=2CCE6B7942E99FD34DBBA691FC6DFD37
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionVectorParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Lens_Flare:MaterialExpressionVectorParameter_10'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Lens_Flare:MaterialExpressionMultiply_2'")
+    .MaterialExpressionEditorX=4416
+    .MaterialExpressionEditorY=1524
+    .MaterialExpressionGuid=141200C944DE04433F233DA715AFA5C5
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_10)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Lens_Flare:MaterialExpressionMultiply_11'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Lens_Flare:MaterialExpressionMultiply_15'")
+    .MaterialExpressionEditorX=748
+    .MaterialExpressionEditorY=856
+    .MaterialExpressionGuid=5410950E4925F02BF8F601AEAD990E75
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_11)
+    A                      <- MaterialExpressionPower
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Lens_Flare:MaterialExpressionScalarParameter_7'")
+    .A=(Expression="/Script/Engine.MaterialExpressionPower'Lens_Flare:MaterialExpressionPower_1'")
+    .ConstB=9.000000
+    .MaterialExpressionEditorX=596
+    .MaterialExpressionEditorY=1168
+    .MaterialExpressionGuid=BCA2A1B54570587B1DCBDE95B19FE022
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_12)
+    A                      <- MaterialExpressionAbs
+    .A=(Expression="/Script/Engine.MaterialExpressionAbs'Lens_Flare:MaterialExpressionAbs_0'")
+    .ConstB=1.950000
+    .MaterialExpressionEditorX=1736
+    .MaterialExpressionEditorY=1416
+    .MaterialExpressionGuid=C6DE071E4AECDB3350883FB1DB7851BB
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_13)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Lens_Flare:MaterialExpressionMultiply_6'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Lens_Flare:MaterialExpressionMultiply_3'")
+    .MaterialExpressionEditorX=2780
+    .MaterialExpressionEditorY=1560
+    .MaterialExpressionGuid=8A03CDB94935C8670531C6A0FF95B281
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_14)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Lens_Flare:MaterialExpressionComponentMask_12'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Lens_Flare:MaterialExpressionComponentMask_8'")
+    .MaterialExpressionEditorX=2360
+    .MaterialExpressionEditorY=1408
+    .MaterialExpressionGuid=3B9C9B2F49C389DE2C6CDC8DC86E6243
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_15)
+    A                      <- MaterialExpressionTextureSample
+    B                      <- MaterialExpressionTextureSample
+    .B=(Expression="/Script/Engine.MaterialExpressionTextureSample'Lens_Flare:MaterialExpressionTextureSample_1'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'Lens_Flare:MaterialExpressionTextureSample_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .MaterialExpressionEditorX=540
+    .MaterialExpressionEditorY=856
+    .MaterialExpressionGuid=0AEEADAF42D6E24BCB193199E01D80FF
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_16)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionDivide
+    .B=(Expression="/Script/Engine.MaterialExpressionDivide'Lens_Flare:MaterialExpressionDivide_10'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'Lens_Flare:MaterialExpressionSubtract_2'")
+    .ConstB=20.000000
+    .MaterialExpressionEditorX=1970
+    .MaterialExpressionEditorY=2375
+    .MaterialExpressionGuid=7D2FF6524B40E236C56023A1C361B28C
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_19)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Lens_Flare:MaterialExpressionNamedRerouteUsage_15'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'Lens_Flare:MaterialExpressionSubtract_3'")
+    .MaterialExpressionEditorX=-2370
+    .MaterialExpressionEditorY=668
+    .MaterialExpressionGuid=689D82154E7DB48F8AA758BDF0E44C53
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_2)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Lens_Flare:MaterialExpressionMultiply_13'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Lens_Flare:MaterialExpressionAdd_1'")
+    .MaterialExpressionEditorX=3856
+    .MaterialExpressionEditorY=1528
+    .MaterialExpressionGuid=C0697F1546FCBE99AF9726B0FC54E199
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_20)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionNamedRerouteDeclaration
+    .B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Lens_Flare:MaterialExpressionNamedRerouteDeclaration_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'Lens_Flare:MaterialExpressionSubtract_0'")
+    .MaterialExpressionEditorX=-3060
+    .MaterialExpressionEditorY=1112
+    .MaterialExpressionGuid=2D575E3F4712C84480E25397819AD07B
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_3)
+    A                      <- MaterialExpressionSaturate
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Lens_Flare:MaterialExpressionMultiply_14'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSaturate'Lens_Flare:MaterialExpressionSaturate_2'")
+    .MaterialExpressionEditorX=2488
+    .MaterialExpressionEditorY=1323
+    .MaterialExpressionGuid=B492B20E455EE7655B03F7BAB94542A8
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_4)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Lens_Flare:MaterialExpressionMaterialFunctionCall_5'",OutputIndex=1)
+    .ConstB=-1.000000
+    .MaterialExpressionEditorX=-2470
+    .MaterialExpressionEditorY=896
+    .MaterialExpressionGuid=D7594E7148DAD6F5F653B69CD10BA7A3
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_5)
+    A                      <- MaterialExpressionDotProduct
+    .A=(Expression="/Script/Engine.MaterialExpressionDotProduct'Lens_Flare:MaterialExpressionDotProduct_0'")
+    .ConstB=-1.000000
+    .MaterialExpressionEditorX=2152
+    .MaterialExpressionEditorY=1244
+    .MaterialExpressionGuid=26F59E2047A759253C8887A55692876E
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_6)
+    A                      <- MaterialExpressionDivide
+    B                      <- MaterialExpressionPower
+    .B=(Expression="/Script/Engine.MaterialExpressionPower'Lens_Flare:MaterialExpressionPower_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'Lens_Flare:MaterialExpressionDivide_4'")
+    .MaterialExpressionEditorX=2506
+    .MaterialExpressionEditorY=2063
+    .MaterialExpressionGuid=82EC4FA34DA58ECB7B327D854DC1EBA3
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_7)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionAppendVector
+    .B=(Expression="/Script/Engine.MaterialExpressionAppendVector'Lens_Flare:MaterialExpressionAppendVector_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Lens_Flare:MaterialExpressionMaterialFunctionCall_6'")
+    .MaterialExpressionEditorX=-1370
+    .MaterialExpressionEditorY=672
+    .MaterialExpressionGuid=9845F3944C238CF60620CC9CEBC13135
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_9)
+    A                      <- MaterialExpressionScalarParameter
+    B                      <- MaterialExpressionDistance
+    .B=(Expression="/Script/Engine.MaterialExpressionDistance'Lens_Flare:MaterialExpressionDistance_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Lens_Flare:MaterialExpressionScalarParameter_2'")
+    .ConstB=3.000000
+    .MaterialExpressionEditorX=-1854
+    .MaterialExpressionEditorY=976
+    .MaterialExpressionGuid=EC6BBF594AFC1CD649BADCB5466FDDBB
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_0)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+    .Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Lens_Flare:MaterialExpressionMaterialFunctionCall_0'")
+    .Name="Sun Screen UV Position"
+    .NodeColor=(R=1.000000,G=0.445312,B=0.000000,A=1.000000)
+    .VariableGuid=9496F0C24168B79E43E9FAACEB168E04
+    .MaterialExpressionEditorX=-2664
+    .MaterialExpressionEditorY=1884
+    .MaterialExpressionGuid=F2E753FF4B656913344CAA8068ED03C3
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_1)
+    Input                  <- MaterialExpressionComponentMask
+    .Input=(Expression="/Script/Engine.MaterialExpressionComponentMask'Lens_Flare:MaterialExpressionComponentMask_3'")
+    .Name="Sun Vector3"
+    .NodeColor=(R=1.000000,G=0.000000,B=0.281250,A=1.000000)
+    .VariableGuid=E20189E248CCB56083B3D9B2759555CC
+    .MaterialExpressionEditorX=-3212
+    .MaterialExpressionEditorY=1888
+    .MaterialExpressionGuid=8CB00B93427BA7B10B7D79A5F4172459
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_2)
+    Input                  <- MaterialExpressionAppendVector
+    .Input=(Expression="/Script/Engine.MaterialExpressionAppendVector'Lens_Flare:MaterialExpressionAppendVector_0'")
+    .Name="Aspect Ratio Scaler"
+    .NodeColor=(R=0.382812,G=1.000000,B=0.000000,A=1.000000)
+    .VariableGuid=58B57A2D4BA5A1243F4091991A3A5085
+    .MaterialExpressionEditorX=-3272
+    .MaterialExpressionEditorY=1116
+    .MaterialExpressionGuid=F9CED31C4CE8F58B10FBF2ABA3EC5DCF
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_3)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+    .Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Lens_Flare:MaterialExpressionMaterialFunctionCall_3'")
+    .Name="Primary Element"
+    .NodeColor=(R=0.000000,G=1.000000,B=0.625000,A=1.000000)
+    .VariableGuid=CA5CEE7B4E2BFFBEB11CFE98D2E52C2B
+    .MaterialExpressionEditorX=-2894
+    .MaterialExpressionEditorY=-462
+    .MaterialExpressionGuid=3D87D1354ADD439D32652D9310A8967F
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_4)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Lens_Flare:MaterialExpressionMultiply_10'")
+    .Name="Flare Line"
+    .NodeColor=(R=0.687500,G=1.000000,B=0.000000,A=1.000000)
+    .VariableGuid=0F374EF74D5CBAA899D317B9E1B8DCEA
+    .MaterialExpressionEditorX=852
+    .MaterialExpressionEditorY=856
+    .MaterialExpressionGuid=26B47FF64800088B7F4FA18C3B5966B6
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_5)
+    Input                  <- MaterialExpressionAdd
+    .Input=(Expression="/Script/Engine.MaterialExpressionAdd'Lens_Flare:MaterialExpressionAdd_5'")
+    .Name="Combined Flare Elements"
+    .NodeColor=(R=0.000000,G=0.671875,B=1.000000,A=1.000000)
+    .VariableGuid=7ABB25D041A0AFFB051F11B0C39F297B
+    .MaterialExpressionEditorX=2018
+    .MaterialExpressionEditorY=50
+    .MaterialExpressionGuid=936722F842D372A7CE6217881F9D49A0
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_0)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Lens_Flare:MaterialExpressionNamedRerouteDeclaration_0'"
+    .DeclarationGuid=9496F0C24168B79E43E9FAACEB168E04
+    .MaterialExpressionEditorX=2
+    .MaterialExpressionEditorY=2363
+    .MaterialExpressionGuid=453177F74A83CC74B832AE85F70D0FDF
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_1)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Lens_Flare:MaterialExpressionNamedRerouteDeclaration_1'"
+    .DeclarationGuid=E20189E248CCB56083B3D9B2759555CC
+    .MaterialExpressionEditorX=1844
+    .MaterialExpressionEditorY=1300
+    .MaterialExpressionGuid=05A3DA894DDF9264BC86B487B29333D7
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_10)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Lens_Flare:MaterialExpressionNamedRerouteDeclaration_2'"
+    .DeclarationGuid=58B57A2D4BA5A1243F4091991A3A5085
+    .MaterialExpressionEditorX=-3454
+    .MaterialExpressionEditorY=-518
+    .MaterialExpressionGuid=76EB8B4B49E8212F192318A67989DB03
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_11)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Lens_Flare:MaterialExpressionNamedRerouteDeclaration_2'"
+    .DeclarationGuid=58B57A2D4BA5A1243F4091991A3A5085
+    .MaterialExpressionEditorX=-2246
+    .MaterialExpressionEditorY=-518
+    .MaterialExpressionGuid=76EB8B4B49E8212F192318A67989DB03
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_12)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Lens_Flare:MaterialExpressionNamedRerouteDeclaration_2'"
+    .DeclarationGuid=58B57A2D4BA5A1243F4091991A3A5085
+    .MaterialExpressionEditorX=-1138
+    .MaterialExpressionEditorY=-534
+    .MaterialExpressionGuid=76EB8B4B49E8212F192318A67989DB03
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_13)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Lens_Flare:MaterialExpressionNamedRerouteDeclaration_2'"
+    .DeclarationGuid=58B57A2D4BA5A1243F4091991A3A5085
+    .MaterialExpressionEditorX=10
+    .MaterialExpressionEditorY=-558
+    .MaterialExpressionGuid=76EB8B4B49E8212F192318A67989DB03
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_14)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Lens_Flare:MaterialExpressionNamedRerouteDeclaration_2'"
+    .DeclarationGuid=58B57A2D4BA5A1243F4091991A3A5085
+    .MaterialExpressionEditorX=1166
+    .MaterialExpressionEditorY=-514
+    .MaterialExpressionGuid=76EB8B4B49E8212F192318A67989DB03
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_15)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Lens_Flare:MaterialExpressionNamedRerouteDeclaration_2'"
+    .DeclarationGuid=58B57A2D4BA5A1243F4091991A3A5085
+    .MaterialExpressionEditorX=-2556
+    .MaterialExpressionEditorY=720
+    .MaterialExpressionGuid=8E3E311340A2A11BB88C6FBFED72FCA2
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_16)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Lens_Flare:MaterialExpressionNamedRerouteDeclaration_4'"
+    .DeclarationGuid=0F374EF74D5CBAA899D317B9E1B8DCEA
+    .MaterialExpressionEditorX=3460
+    .MaterialExpressionEditorY=1480
+    .MaterialExpressionGuid=C2963FFA4EFF645CABA560AB23E2166F
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_18)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Lens_Flare:MaterialExpressionNamedRerouteDeclaration_5'"
+    .DeclarationGuid=7ABB25D041A0AFFB051F11B0C39F297B
+    .MaterialExpressionEditorX=3380
+    .MaterialExpressionEditorY=1400
+    .MaterialExpressionGuid=6932E63E41361D0DA8BF649A6C121139
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_2)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Lens_Flare:MaterialExpressionNamedRerouteDeclaration_0'"
+    .DeclarationGuid=9496F0C24168B79E43E9FAACEB168E04
+    .MaterialExpressionEditorX=1284
+    .MaterialExpressionEditorY=1416
+    .MaterialExpressionGuid=60EEE5574C8003BAD92A73AE966DA971
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_3)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Lens_Flare:MaterialExpressionNamedRerouteDeclaration_0'"
+    .DeclarationGuid=9496F0C24168B79E43E9FAACEB168E04
+    .MaterialExpressionEditorX=-3468
+    .MaterialExpressionEditorY=964
+    .MaterialExpressionGuid=029E11274A0EF7ECCE265BA11706756D
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_4)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Lens_Flare:MaterialExpressionNamedRerouteDeclaration_0'"
+    .DeclarationGuid=9496F0C24168B79E43E9FAACEB168E04
+    .MaterialExpressionEditorX=-2896
+    .MaterialExpressionEditorY=748
+    .MaterialExpressionGuid=029E11274A0EF7ECCE265BA11706756D
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_5)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Lens_Flare:MaterialExpressionNamedRerouteDeclaration_0'"
+    .DeclarationGuid=9496F0C24168B79E43E9FAACEB168E04
+    .MaterialExpressionEditorX=-3462
+    .MaterialExpressionEditorY=-450
+    .MaterialExpressionGuid=029E11274A0EF7ECCE265BA11706756D
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_6)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Lens_Flare:MaterialExpressionNamedRerouteDeclaration_0'"
+    .DeclarationGuid=9496F0C24168B79E43E9FAACEB168E04
+    .MaterialExpressionEditorX=-2242
+    .MaterialExpressionEditorY=-458
+    .MaterialExpressionGuid=029E11274A0EF7ECCE265BA11706756D
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_7)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Lens_Flare:MaterialExpressionNamedRerouteDeclaration_0'"
+    .DeclarationGuid=9496F0C24168B79E43E9FAACEB168E04
+    .MaterialExpressionEditorX=-1166
+    .MaterialExpressionEditorY=-470
+    .MaterialExpressionGuid=029E11274A0EF7ECCE265BA11706756D
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_8)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Lens_Flare:MaterialExpressionNamedRerouteDeclaration_0'"
+    .DeclarationGuid=9496F0C24168B79E43E9FAACEB168E04
+    .MaterialExpressionEditorX=-6
+    .MaterialExpressionEditorY=-486
+    .MaterialExpressionGuid=029E11274A0EF7ECCE265BA11706756D
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_9)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Lens_Flare:MaterialExpressionNamedRerouteDeclaration_0'"
+    .DeclarationGuid=9496F0C24168B79E43E9FAACEB168E04
+    .MaterialExpressionEditorX=1146
+    .MaterialExpressionEditorY=-450
+    .MaterialExpressionGuid=029E11274A0EF7ECCE265BA11706756D
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_0)
+    Input                  <- MaterialExpressionDistance
+    .Input=(Expression="/Script/Engine.MaterialExpressionDistance'Lens_Flare:MaterialExpressionDistance_1'")
+    .MaterialExpressionEditorX=-92
+    .MaterialExpressionEditorY=1168
+    .MaterialExpressionGuid=0FDCD3974B119121AAEFE8A434FC3B83
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_1)
+    Input                  <- MaterialExpressionScalarParameter
+    .Input=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Lens_Flare:MaterialExpressionScalarParameter_0'")
+    .MaterialExpressionEditorX=1738
+    .MaterialExpressionEditorY=2551
+    .MaterialExpressionGuid=B64AEEC147F7731B5E56EEA17CFE8DE4
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_2)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Lens_Flare:MaterialExpressionMultiply_12'")
+    .MaterialExpressionEditorX=1872
+    .MaterialExpressionEditorY=1416
+    .MaterialExpressionGuid=8A00363440A91FD7A1A070A5AB5DDA4C
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionPanner (MaterialExpressionPanner_0)
+    Coordinate             <- MaterialExpressionAdd
+    Time                   <- MaterialExpressionReroute
+    .Coordinate=(Expression="/Script/Engine.MaterialExpressionAdd'Lens_Flare:MaterialExpressionAdd_7'")
+    .Time=(Expression="/Script/Engine.MaterialExpressionReroute'Lens_Flare:MaterialExpressionReroute_3'")
+    .SpeedY=0.200000
+    .bFractionalPart=True
+    .MaterialExpressionEditorX=-34
+    .MaterialExpressionEditorY=928
+    .MaterialExpressionGuid=232F74204CBBE0569B53C7965340A207
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionPower (MaterialExpressionPower_0)
+    Base                   <- MaterialExpressionSaturate
+    .Base=(Expression="/Script/Engine.MaterialExpressionSaturate'Lens_Flare:MaterialExpressionSaturate_14'")
+    .ConstExponent=3.000000
+    .MaterialExpressionEditorX=2258
+    .MaterialExpressionEditorY=2375
+    .MaterialExpressionGuid=2A75BAD04A5B0B9FBE480A953BD00C99
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionPower (MaterialExpressionPower_1)
+    Base                   <- MaterialExpressionSaturate
+    .Base=(Expression="/Script/Engine.MaterialExpressionSaturate'Lens_Flare:MaterialExpressionSaturate_1'")
+    .ConstExponent=10.000000
+    .MaterialExpressionEditorX=220
+    .MaterialExpressionEditorY=1168
+    .MaterialExpressionGuid=CBF09ADC46B63127706B558232D0A385
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionPower (MaterialExpressionPower_2)
+    Base                   <- MaterialExpressionCosine
+    .Base=(Expression="/Script/Engine.MaterialExpressionCosine'Lens_Flare:MaterialExpressionCosine_0'")
+    .ConstExponent=0.700000
+    .MaterialExpressionEditorX=-814
+    .MaterialExpressionEditorY=848
+    .MaterialExpressionGuid=33DA366A42D35F153202569C50B8D5FE
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionReroute (MaterialExpressionReroute_3)
+    Input                  <- MaterialExpressionDistance
+    .Input=(Expression="/Script/Engine.MaterialExpressionDistance'Lens_Flare:MaterialExpressionDistance_0'")
+    .MaterialExpressionEditorX=-1142
+    .MaterialExpressionEditorY=1152
+    .MaterialExpressionGuid=3D87AFB24EAA3C610553A787C06F8F6D
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionReroute (MaterialExpressionReroute_4)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Lens_Flare:MaterialExpressionMultiply_1'")
+    .MaterialExpressionEditorX=4776
+    .MaterialExpressionEditorY=1556
+    .MaterialExpressionGuid=D20EFFDE45BAF19E1D9805BDEA41BE59
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionReroute (MaterialExpressionReroute_8)
+    Input                  <- MaterialExpressionNamedRerouteDeclaration
+    .Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Lens_Flare:MaterialExpressionNamedRerouteDeclaration_3'")
+    .MaterialExpressionEditorX=-2586
+    .MaterialExpressionEditorY=188
+    .MaterialExpressionGuid=CB2ADA914504E081F27C9C856ACB87C0
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_0)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Lens_Flare:MaterialExpressionMultiply_0'")
+    .MaterialExpressionEditorX=2080
+    .MaterialExpressionEditorY=1416
+    .MaterialExpressionGuid=8676180D493307920B37458DE3604CB5
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_1)
+    Input                  <- MaterialExpressionOneMinus
+    .Input=(Expression="/Script/Engine.MaterialExpressionOneMinus'Lens_Flare:MaterialExpressionOneMinus_0'")
+    .MaterialExpressionEditorX=4
+    .MaterialExpressionEditorY=1168
+    .MaterialExpressionGuid=5617B05B4BDBD0B22B87F8969504C049
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_13)
+    Input                  <- MaterialExpressionSubtract
+    .Input=(Expression="/Script/Engine.MaterialExpressionSubtract'Lens_Flare:MaterialExpressionSubtract_17'")
+    .MaterialExpressionEditorX=1226
+    .MaterialExpressionEditorY=1839
+    .MaterialExpressionGuid=BA2E62084725FF7EA9DEE9B12DE75CD0
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_14)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Lens_Flare:MaterialExpressionMultiply_16'")
+    .MaterialExpressionEditorX=2122
+    .MaterialExpressionEditorY=2375
+    .MaterialExpressionGuid=19A1208743CEBEFB760A96A5658CADFD
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_2)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Lens_Flare:MaterialExpressionMultiply_5'")
+    .MaterialExpressionEditorX=2360
+    .MaterialExpressionEditorY=1244
+    .MaterialExpressionGuid=55A5622A4EDFABA1834F118EFD962D91
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_3)
+    Input                  <- MaterialExpressionSubtract
+    .Input=(Expression="/Script/Engine.MaterialExpressionSubtract'Lens_Flare:MaterialExpressionSubtract_5'")
+    .MaterialExpressionEditorX=1226
+    .MaterialExpressionEditorY=1967
+    .MaterialExpressionGuid=BA2E62084725FF7EA9DEE9B12DE75CD0
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_4)
+    Input                  <- MaterialExpressionSubtract
+    .Input=(Expression="/Script/Engine.MaterialExpressionSubtract'Lens_Flare:MaterialExpressionSubtract_6'")
+    .MaterialExpressionEditorX=1226
+    .MaterialExpressionEditorY=2095
+    .MaterialExpressionGuid=BA2E62084725FF7EA9DEE9B12DE75CD0
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_0)
+    .ParameterName="Brightness Threshold"
+    .DefaultValue=0.950000
+    .ExpressionGUID=F16A2E4C4845F23E3ED5DB9F2E45A822
+    .Group="Whole Flare"
+    .SortPriority=0
+    .MaterialExpressionEditorX=1514
+    .MaterialExpressionEditorY=2503
+    .MaterialExpressionGuid=52C74BF643E6DC32D186C58689F8DC71
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_16)
+    .ParameterName="Lens Distortion"
+    .ExpressionGUID=3A79A5FC42FF61B9DDD68F892C6CD2A5
+    .Group="Whole Flare"
+    .SortPriority=3
+    .MaterialExpressionEditorX=-1126
+    .MaterialExpressionEditorY=-130
+    .MaterialExpressionGuid=EDF725454C5818880E16829D8E2970D8
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_17)
+    .ParameterName="Lens Distortion"
+    .ExpressionGUID=6862CAE442C60C929EB074ABABB7292E
+    .Group="Whole Flare"
+    .SortPriority=3
+    .MaterialExpressionEditorX=18
+    .MaterialExpressionEditorY=-134
+    .MaterialExpressionGuid=EDF725454C5818880E16829D8E2970D8
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_2)
+    .ParameterName="Flare Line Length"
+    .DefaultValue=3.000000
+    .ExpressionGUID=E16135F64E5D2CB57CB1B4B1F7A43BC2
+    .Group="Flare Line"
+    .SortPriority=1
+    .MaterialExpressionEditorX=-2070
+    .MaterialExpressionEditorY=952
+    .MaterialExpressionGuid=0CE8C51F40B0749921F5A7AF068EB6C9
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_3)
+    .ParameterName="Flare Line Width"
+    .DefaultValue=5.000000
+    .ExpressionGUID=B3993C6848416BB3893193BC690CB923
+    .Group="Flare Line"
+    .SortPriority=1
+    .MaterialExpressionEditorX=-1796
+    .MaterialExpressionEditorY=844
+    .MaterialExpressionGuid=BCD4CCEF4870909CAF9B40BC179FAC86
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_4)
+    .ParameterName="Lens Distortion"
+    .ExpressionGUID=E814976B46B190450922B6B28C027C75
+    .Group="Whole Flare"
+    .SortPriority=3
+    .MaterialExpressionEditorX=-3430
+    .MaterialExpressionEditorY=-226
+    .MaterialExpressionGuid=EDF725454C5818880E16829D8E2970D8
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_5)
+    .ParameterName="Flare Line Curve"
+    .DefaultValue=50.000000
+    .ExpressionGUID=C25CA18A4A1C173DD454F381A3452B2A
+    .Group="Flare Line"
+    .MaterialExpressionEditorX=-888
+    .MaterialExpressionEditorY=964
+    .MaterialExpressionGuid=8140D2A24381A70BFBCD438BD012E3DC
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_6)
+    .ParameterName="Lens Distortion"
+    .ExpressionGUID=ACF4E29C41581A4763394CA38233D7B1
+    .Group="Whole Flare"
+    .SortPriority=3
+    .MaterialExpressionEditorX=1182
+    .MaterialExpressionEditorY=-178
+    .MaterialExpressionGuid=EDF725454C5818880E16829D8E2970D8
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_7)
+    .ParameterName="Flare Line Intensity"
+    .DefaultValue=9.000000
+    .ExpressionGUID=1A2D3E124AC8F5C44CB5B480B449ACD2
+    .Group="Flare Line"
+    .SortPriority=1
+    .MaterialExpressionEditorX=364
+    .MaterialExpressionEditorY=1280
+    .MaterialExpressionGuid=D8727EC74FBAB8F6920EF185F6FE16D9
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_8)
+    .ParameterName="Lens Distortion"
+    .ExpressionGUID=F588E3344A7E4E288AD0EE8D5481FCB1
+    .Group="Whole Flare"
+    .SortPriority=3
+    .MaterialExpressionEditorX=-2202
+    .MaterialExpressionEditorY=-166
+    .MaterialExpressionGuid=EDF725454C5818880E16829D8E2970D8
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionSceneTexture (MaterialExpressionSceneTexture_0)
+    .SceneTextureId=PPI_PostProcessInput0
+    .MaterialExpressionEditorX=4392
+    .MaterialExpressionEditorY=1356
+    .MaterialExpressionGuid=ECC0797745A496971F91EBB25200278F
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionSceneTexture (MaterialExpressionSceneTexture_1)
+    Coordinates            <- MaterialExpressionAdd
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionAdd'Lens_Flare:MaterialExpressionAdd_18'")
+    .SceneTextureId=PPI_SceneDepth
+    .MaterialExpressionEditorX=658
+    .MaterialExpressionEditorY=1823
+    .MaterialExpressionGuid=ECC0797745A496971F91EBB25200278F
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionSceneTexture (MaterialExpressionSceneTexture_2)
+    Coordinates            <- MaterialExpressionAdd
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionAdd'Lens_Flare:MaterialExpressionAdd_3'")
+    .SceneTextureId=PPI_SceneDepth
+    .MaterialExpressionEditorX=658
+    .MaterialExpressionEditorY=1951
+    .MaterialExpressionGuid=ECC0797745A496971F91EBB25200278F
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionSceneTexture (MaterialExpressionSceneTexture_3)
+    Coordinates            <- MaterialExpressionAdd
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionAdd'Lens_Flare:MaterialExpressionAdd_11'")
+    .SceneTextureId=PPI_SceneDepth
+    .MaterialExpressionEditorX=658
+    .MaterialExpressionEditorY=2079
+    .MaterialExpressionGuid=ECC0797745A496971F91EBB25200278F
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionSceneTexture (MaterialExpressionSceneTexture_7)
+    Coordinates            <- MaterialExpressionAdd
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionAdd'Lens_Flare:MaterialExpressionAdd_3'")
+    .SceneTextureId=PPI_PostProcessInput0
+    .bFiltered=True
+    .MaterialExpressionEditorX=642
+    .MaterialExpressionEditorY=2351
+    .MaterialExpressionGuid=1005864A4869A20392203A8EE4058B28
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionSceneTexture (MaterialExpressionSceneTexture_8)
+    Coordinates            <- MaterialExpressionAdd
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionAdd'Lens_Flare:MaterialExpressionAdd_11'")
+    .SceneTextureId=PPI_PostProcessInput0
+    .bFiltered=True
+    .MaterialExpressionEditorX=642
+    .MaterialExpressionEditorY=2487
+    .MaterialExpressionGuid=1005864A4869A20392203A8EE4058B28
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionSceneTexture (MaterialExpressionSceneTexture_9)
+    Coordinates            <- MaterialExpressionAdd
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionAdd'Lens_Flare:MaterialExpressionAdd_18'")
+    .SceneTextureId=PPI_PostProcessInput0
+    .bFiltered=True
+    .MaterialExpressionEditorX=642
+    .MaterialExpressionEditorY=2223
+    .MaterialExpressionGuid=1005864A4869A20392203A8EE4058B28
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionStaticBoolParameter (MaterialExpressionStaticBoolParameter_0)
+    .ParameterName="Element 1 Use Distortion"
+    .ExpressionGUID=62ED380140F45EF93BE36A89E11B26DD
+    .Group="Element 1"
+    .SortPriority=2
+    .MaterialExpressionEditorX=-3458
+    .MaterialExpressionEditorY=110
+    .MaterialExpressionGuid=53CCCF444B053A59D20A6F8B70BB9D8C
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionStaticBoolParameter (MaterialExpressionStaticBoolParameter_1)
+    .ParameterName="Element 2 Use Distortion"
+    .ExpressionGUID=F608CFCD47B07C4560F2368B031370A5
+    .Group="Element 2"
+    .SortPriority=3
+    .MaterialExpressionEditorX=-2246
+    .MaterialExpressionEditorY=6
+    .MaterialExpressionGuid=53CCCF444B053A59D20A6F8B70BB9D8C
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionStaticBoolParameter (MaterialExpressionStaticBoolParameter_2)
+    .ParameterName="Element 3 Use Distortion"
+    .ExpressionGUID=CCA017A44E39A67010E388B1B733063D
+    .Group="Element 3"
+    .SortPriority=4
+    .MaterialExpressionEditorX=-1178
+    .MaterialExpressionEditorY=42
+    .MaterialExpressionGuid=53CCCF444B053A59D20A6F8B70BB9D8C
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionStaticBoolParameter (MaterialExpressionStaticBoolParameter_3)
+    .ParameterName="Element 4 Use Distortion"
+    .ExpressionGUID=16A911C1467330143C1D338EA0D1EA73
+    .Group="Element 4"
+    .SortPriority=5
+    .MaterialExpressionEditorX=-30
+    .MaterialExpressionEditorY=26
+    .MaterialExpressionGuid=53CCCF444B053A59D20A6F8B70BB9D8C
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionStaticBoolParameter (MaterialExpressionStaticBoolParameter_4)
+    .ParameterName="Element 5 Use Distortion"
+    .ExpressionGUID=490F7DE64FBA062924E450BFA94E56EB
+    .Group="Element 5"
+    .SortPriority=5
+    .MaterialExpressionEditorX=1142
+    .MaterialExpressionEditorY=-2
+    .MaterialExpressionGuid=53CCCF444B053A59D20A6F8B70BB9D8C
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_0)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Lens_Flare:MaterialExpressionNamedRerouteUsage_3'")
+    .ConstB=0.500000
+    .MaterialExpressionEditorX=-3232
+    .MaterialExpressionEditorY=960
+    .MaterialExpressionGuid=8F8A94024CF80D5E0729D781DC4544C4
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_1)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Lens_Flare:MaterialExpressionNamedRerouteUsage_2'")
+    .ConstB=0.500000
+    .MaterialExpressionEditorX=1504
+    .MaterialExpressionEditorY=1416
+    .MaterialExpressionGuid=15610E7E40C4F017D3C5818CB65CD895
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_11)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionAppendVector
+    .B=(Expression="/Script/Engine.MaterialExpressionAppendVector'Lens_Flare:MaterialExpressionAppendVector_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Lens_Flare:MaterialExpressionMultiply_7'")
+    .MaterialExpressionEditorX=-422
+    .MaterialExpressionEditorY=680
+    .MaterialExpressionGuid=FF7846134992F76AABC59496839CE89B
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_17)
+    A                      <- MaterialExpressionComponentMask
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Lens_Flare:MaterialExpressionComponentMask_21'")
+    .ConstB=3000000.000000
+    .MaterialExpressionEditorX=1034
+    .MaterialExpressionEditorY=1839
+    .MaterialExpressionGuid=47B786A24FE3F99EF0DDDA97F4C7CF80
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_2)
+    A                      <- MaterialExpressionDivide
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Lens_Flare:MaterialExpressionScalarParameter_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'Lens_Flare:MaterialExpressionDivide_0'")
+    .MaterialExpressionEditorX=1834
+    .MaterialExpressionEditorY=2375
+    .MaterialExpressionGuid=621587A041B2AD6235EF4784DEA5F8A8
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_3)
+    A                      <- MaterialExpressionTextureCoordinate
+    B                      <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Lens_Flare:MaterialExpressionNamedRerouteUsage_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'Lens_Flare:MaterialExpressionTextureCoordinate_0'")
+    .MaterialExpressionEditorX=-2706
+    .MaterialExpressionEditorY=668
+    .MaterialExpressionGuid=31EC204F46EA4AF08CD1B493A92BAF7C
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_4)
+    A                      <- MaterialExpressionMultiply
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Lens_Flare:MaterialExpressionMultiply_4'")
+    .ConstB=0.250000
+    .MaterialExpressionEditorX=-2326
+    .MaterialExpressionEditorY=896
+    .MaterialExpressionGuid=045B5D9E40024A3731AD388660544DA9
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_5)
+    A                      <- MaterialExpressionComponentMask
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Lens_Flare:MaterialExpressionComponentMask_9'")
+    .ConstB=3000000.000000
+    .MaterialExpressionEditorX=1034
+    .MaterialExpressionEditorY=1967
+    .MaterialExpressionGuid=47B786A24FE3F99EF0DDDA97F4C7CF80
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_6)
+    A                      <- MaterialExpressionComponentMask
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Lens_Flare:MaterialExpressionComponentMask_18'")
+    .ConstB=3000000.000000
+    .MaterialExpressionEditorX=1034
+    .MaterialExpressionEditorY=2095
+    .MaterialExpressionGuid=47B786A24FE3F99EF0DDDA97F4C7CF80
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionTextureCoordinate (MaterialExpressionTextureCoordinate_0)
+    .MaterialExpressionEditorX=-2916
+    .MaterialExpressionEditorY=648
+    .MaterialExpressionGuid=F17A06BF4A2FC30327EAC2A08F38E64C
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionTextureObjectParameter (MaterialExpressionTextureObjectParameter_0)
+    .ParameterName="Flare Line Texture"
+    .Texture="/Script/Engine.Texture2D'/Game/UltraDynamicSky/Textures/LensFlares/Flare_Line.Flare_Line'"
+    .ExpressionGUID=168806974AE4E3B2EDBFBBB81E180C56
+    .Group="Flare Line"
+    .SortPriority=1
+    .MaterialExpressionEditorX=8
+    .MaterialExpressionEditorY=760
+    .MaterialExpressionGuid=0C78809E4510E547F3AA53BE8FDFDD97
+    .Material="/Script/Engine.Material'Lens_Flare'"
+    .bCollapsed=True
+  MaterialExpressionTextureObjectParameter (MaterialExpressionTextureObjectParameter_1)
+    .ParameterName="Element 1 Texture"
+    .Texture="/Script/Engine.Texture2D'/Game/UltraDynamicSky/Textures/LensFlares/Star_Flare.Star_Flare'"
+    .ExpressionGUID=46E53F9A4D5E166EED4CF798691FFA22
+    .Group="Element 1"
+    .SortPriority=2
+    .MaterialExpressionEditorX=-3442
+    .MaterialExpressionEditorY=38
+    .MaterialExpressionGuid=AB0CCE2A4478811636E44294717B591B
+    .Material="/Script/Engine.Material'Lens_Flare'"
+    .bCollapsed=True
+  MaterialExpressionTextureObjectParameter (MaterialExpressionTextureObjectParameter_2)
+    .ParameterName="Element 2 Texture"
+    .Texture="/Script/Engine.Texture2D'/Game/UltraDynamicSky/Textures/LensFlares/Rough_Abberated_Bokeh.Rough_Abberated_Bokeh'"
+    .ExpressionGUID=6F2B58994AF4AE2BBA1E029DC1FE32D8
+    .Group="Element 2"
+    .SortPriority=3
+    .MaterialExpressionEditorX=-2222
+    .MaterialExpressionEditorY=-82
+    .MaterialExpressionGuid=AB0CCE2A4478811636E44294717B591B
+    .Material="/Script/Engine.Material'Lens_Flare'"
+    .bCollapsed=True
+  MaterialExpressionTextureObjectParameter (MaterialExpressionTextureObjectParameter_3)
+    .ParameterName="Element 3 Texture"
+    .Texture="/Script/Engine.Texture2D'/Game/UltraDynamicSky/Textures/LensFlares/Rough_Abberated_Bokeh.Rough_Abberated_Bokeh'"
+    .ExpressionGUID=533696A34CBEE918218EC6A92FDB59D0
+    .Group="Element 3"
+    .SortPriority=4
+    .MaterialExpressionEditorX=-1154
+    .MaterialExpressionEditorY=-46
+    .MaterialExpressionGuid=AB0CCE2A4478811636E44294717B591B
+    .Material="/Script/Engine.Material'Lens_Flare'"
+    .bCollapsed=True
+  MaterialExpressionTextureObjectParameter (MaterialExpressionTextureObjectParameter_4)
+    .ParameterName="Element 4 Texture"
+    .Texture="/Script/Engine.Texture2D'/Game/UltraDynamicSky/Textures/LensFlares/Rough_Abberated_Bokeh.Rough_Abberated_Bokeh'"
+    .ExpressionGUID=A29159EC481CEA67D6026FAAB7F9DF0C
+    .Group="Element 4"
+    .SortPriority=5
+    .MaterialExpressionEditorX=6
+    .MaterialExpressionEditorY=-54
+    .MaterialExpressionGuid=AB0CCE2A4478811636E44294717B591B
+    .Material="/Script/Engine.Material'Lens_Flare'"
+    .bCollapsed=True
+  MaterialExpressionTextureObjectParameter (MaterialExpressionTextureObjectParameter_5)
+    .ParameterName="Element 5 Texture"
+    .Texture="/Script/Engine.Texture2D'/Game/UltraDynamicSky/Textures/LensFlares/Rough_Abberated_Bokeh.Rough_Abberated_Bokeh'"
+    .ExpressionGUID=92FDB5BB4286A6A4375E31A42C180E8A
+    .Group="Element 5"
+    .SortPriority=5
+    .MaterialExpressionEditorX=1166
+    .MaterialExpressionEditorY=-90
+    .MaterialExpressionGuid=AB0CCE2A4478811636E44294717B591B
+    .Material="/Script/Engine.Material'Lens_Flare'"
+    .bCollapsed=True
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_0)
+    Coordinates            <- MaterialExpressionAdd
+    TextureObject          <- MaterialExpressionTextureObjectParameter
+    .Texture="/Script/Engine.Texture2D'/Game/UltraDynamicSky/Textures/LensFlares/Flare_Line.Flare_Line'"
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionAdd'Lens_Flare:MaterialExpressionAdd_6'")
+    .TextureObject=(Expression="/Script/Engine.MaterialExpressionTextureObjectParameter'Lens_Flare:MaterialExpressionTextureObjectParameter_0'")
+    .SamplerSource=SSM_Clamp_WorldGroupSettings
+    .MaterialExpressionEditorX=228
+    .MaterialExpressionEditorY=680
+    .MaterialExpressionGuid=61F9CD034ECAF0B78D125182CF008393
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_1)
+    Coordinates            <- MaterialExpressionPanner
+    TextureObject          <- MaterialExpressionTextureObjectParameter
+    .Texture="/Script/Engine.Texture2D'/Game/UltraDynamicSky/Textures/LensFlares/Flare_Line.Flare_Line'"
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionPanner'Lens_Flare:MaterialExpressionPanner_0'")
+    .TextureObject=(Expression="/Script/Engine.MaterialExpressionTextureObjectParameter'Lens_Flare:MaterialExpressionTextureObjectParameter_0'")
+    .SamplerSource=SSM_Clamp_WorldGroupSettings
+    .MaterialExpressionEditorX=220
+    .MaterialExpressionEditorY=896
+    .MaterialExpressionGuid=61F9CD034ECAF0B78D125182CF008393
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionVectorParameter (MaterialExpressionVectorParameter_0)
+    .ParameterName="Element 1 Scale and Position"
+    .DefaultValue=(R=3.000000,G=3.000000,B=1.000000,A=1.000000)
+    .ExpressionGUID=286527554D22655E026127AEA54D530D
+    .Group="Element 1"
+    .SortPriority=2
+    .MaterialExpressionEditorX=-3778
+    .MaterialExpressionEditorY=-406
+    .MaterialExpressionGuid=843FEDA143A284FAD96B289E0752F164
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionVectorParameter (MaterialExpressionVectorParameter_1)
+    .ParameterName="Element 1 Color"
+    .DefaultValue=(R=1.000000,G=1.000000,B=1.000000,A=1.000000)
+    .ExpressionGUID=B08B50174C190406957AFCB8C79DCFAD
+    .Group="Element 1"
+    .MaterialExpressionEditorX=-3434
+    .MaterialExpressionEditorY=-146
+    .MaterialExpressionGuid=7175077B43838EBFECA793A59D2351F3
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionVectorParameter (MaterialExpressionVectorParameter_10)
+    .ParameterName="Color"
+    .DefaultValue=(R=1.000000,G=1.000000,B=1.000000,A=0.000000)
+    .ExpressionGUID=E4665D2F465B0CED02698FAE4854DA56
+    .Group="Whole Flare"
+    .MaterialExpressionEditorX=4240
+    .MaterialExpressionEditorY=1588
+    .MaterialExpressionGuid=6F04B4874D5784E402E0EF98EFCA82D8
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionVectorParameter (MaterialExpressionVectorParameter_2)
+    .ParameterName="Element 2 Scale and Position"
+    .DefaultValue=(R=12.000000,G=12.000000,B=0.800000,A=0.800000)
+    .ExpressionGUID=A2D681F34C497D12AFAC0791FE29BA2E
+    .Group="Element 2"
+    .SortPriority=3
+    .MaterialExpressionEditorX=-2554
+    .MaterialExpressionEditorY=-402
+    .MaterialExpressionGuid=843FEDA143A284FAD96B289E0752F164
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionVectorParameter (MaterialExpressionVectorParameter_3)
+    .ParameterName="Element 3 Scale and Position"
+    .DefaultValue=(R=20.000000,G=20.000000,B=0.500000,A=0.500000)
+    .ExpressionGUID=90D3E1114D9BF8439038DBBFD0247762
+    .Group="Element 3"
+    .SortPriority=4
+    .MaterialExpressionEditorX=-1474
+    .MaterialExpressionEditorY=-414
+    .MaterialExpressionGuid=843FEDA143A284FAD96B289E0752F164
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionVectorParameter (MaterialExpressionVectorParameter_4)
+    .ParameterName="Element 4 Scale and Position"
+    .DefaultValue=(R=18.000000,G=18.000000,B=0.200000,A=0.200000)
+    .ExpressionGUID=2704641F474FEC60B85309BC02BA51B1
+    .Group="Element 4"
+    .SortPriority=5
+    .MaterialExpressionEditorX=-326
+    .MaterialExpressionEditorY=-430
+    .MaterialExpressionGuid=843FEDA143A284FAD96B289E0752F164
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionVectorParameter (MaterialExpressionVectorParameter_5)
+    .ParameterName="Element 5 Scale and Position"
+    .DefaultValue=(R=18.000000,G=18.000000,B=0.200000,A=0.200000)
+    .ExpressionGUID=A660CBCA4D9FD5C946953899B3140498
+    .Group="Element 5"
+    .SortPriority=5
+    .MaterialExpressionEditorX=838
+    .MaterialExpressionEditorY=-394
+    .MaterialExpressionGuid=843FEDA143A284FAD96B289E0752F164
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionVectorParameter (MaterialExpressionVectorParameter_6)
+    .ParameterName="Element 2 Color"
+    .DefaultValue=(R=0.000000,G=0.000000,B=0.000000,A=1.000000)
+    .ExpressionGUID=8B0A8BDF4A0D6A422FB76D80936974AF
+    .Group="Element 2"
+    .MaterialExpressionEditorX=-2478
+    .MaterialExpressionEditorY=-206
+    .MaterialExpressionGuid=7175077B43838EBFECA793A59D2351F3
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionVectorParameter (MaterialExpressionVectorParameter_7)
+    .ParameterName="Element 3 Color"
+    .DefaultValue=(R=0.000000,G=0.000000,B=0.000000,A=1.000000)
+    .ExpressionGUID=C5FD37424FD210DE27777B8A0466B22B
+    .Group="Element 3"
+    .MaterialExpressionEditorX=-1350
+    .MaterialExpressionEditorY=-210
+    .MaterialExpressionGuid=7175077B43838EBFECA793A59D2351F3
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionVectorParameter (MaterialExpressionVectorParameter_8)
+    .ParameterName="Element 4 Color"
+    .DefaultValue=(R=0.000000,G=0.000000,B=0.000000,A=1.000000)
+    .ExpressionGUID=68DC8983435D3455A552C29E23253D21
+    .Group="Element 4"
+    .MaterialExpressionEditorX=-170
+    .MaterialExpressionEditorY=-242
+    .MaterialExpressionGuid=7175077B43838EBFECA793A59D2351F3
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionVectorParameter (MaterialExpressionVectorParameter_9)
+    .ParameterName="Element 5 Color"
+    .DefaultValue=(R=0.000000,G=0.000000,B=0.000000,A=1.000000)
+    .ExpressionGUID=551EF83246879ECBC95D10B9E9A09F2A
+    .Group="Element 5"
+    .MaterialExpressionEditorX=918
+    .MaterialExpressionEditorY=-202
+    .MaterialExpressionGuid=7175077B43838EBFECA793A59D2351F3
+    .Material="/Script/Engine.Material'Lens_Flare'"
+  MaterialExpressionViewSize (MaterialExpressionViewSize_0)
+    .MaterialExpressionEditorX=-3776
+    .MaterialExpressionEditorY=1136
+    .MaterialExpressionGuid=D2B031784A7610E4B830FBB402094666
+    .Material="/Script/Engine.Material'Lens_Flare'"

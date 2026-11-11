@@ -1,0 +1,228 @@
+### /SkyCreatorPlugin/Blueprints/SkyCreator_CaptureDistantOcclusion
+  Blueprint (SkyCreator_CaptureDistantOcclusion)
+    .ParentClass="/Script/CoreUObject.Class'/Script/Engine.Actor'"
+    .BlueprintSystemVersion=2
+    .SimpleConstructionScript="/Script/Engine.SimpleConstructionScript'SkyCreator_CaptureDistantOcclusion_C:SimpleConstructionScript_0'"
+    .UbergraphPages(0)="/Script/Engine.EdGraph'EventGraph'"
+    .FunctionGraphs(0)="/Script/Engine.EdGraph'UserConstructionScript'"
+    .FunctionGraphs(1)="/Script/Engine.EdGraph'CaptureHeightmap'"
+    .FunctionGraphs(2)="/Script/Engine.EdGraph'SetParameterCollectionValues'"
+    .NewVariables(0)=(VarName="CaptureWidth",VarGuid=08E4462345A28B7736595CA4B14F00B5,VarType=(PinCategory="real",PinSubCategory="double",bSerializeAsSinglePrecisionFloat=True),FriendlyName="Capture Width",Category=NSLOCTEXT("", "784C4F4C41AEDE2E95FE8C846D854D8F", "Sky Creator"),PropertyFlags=5,MetaDataArray=((DataKey="MultiLine",DataValue="true")))
+    .NewVariables(1)=(VarName="CapturePosition",VarGuid=5D7E249A42BF4D43F5A3F8944420BACB,VarType=(PinCategory="struct",PinSubCategoryObject="/Script/CoreUObject.ScriptStruct'/Script/CoreUObject.Vector'"),FriendlyName="Capture Position",Category=INVTEXT("Sky Creator"),PropertyFlags=65541,MetaDataArray=((DataKey="MultiLine",DataValue="true")))
+    .NewVariables(2)=(VarName="CaptureCenterPosition",VarGuid=4EB0220E47A1E740126EB4AFC52D7C11,VarType=(PinCategory="struct",PinSubCategoryObject="/Script/CoreUObject.ScriptStruct'/Script/CoreUObject.Vector'"),FriendlyName="Capture Center Position",Category=INVTEXT("Sky Creator"),PropertyFlags=65541,MetaDataArray=((DataKey="MultiLine",DataValue="true")))
+    .NewVariables(3)=(VarName="RenderTarget",VarGuid=CBA9B20C420712576D3FEAB543D10719,VarType=(PinCategory="object",PinSubCategoryObject="/Script/CoreUObject.Class'/Script/Engine.TextureRenderTarget2D'"),FriendlyName="Render Target",Category=INVTEXT("Sky Creator"),PropertyFlags=5,MetaDataArray=((DataKey="MultiLine",DataValue="true")))
+    .CategorySorting(0)="Default"
+    .CategorySorting(1)=""
+    .CategorySorting(2)="Event Graph"
+    .CategorySorting(3)="Sky Creator"
+    .LastEditedDocuments(0)=(EditedObjectPath="/SkyCreatorPlugin/Blueprints/SkyCreator_CaptureDistantOcclusion.SkyCreator_CaptureDistantOcclusion:UserConstructionScript",SavedViewOffset=(X=1553.432251,Y=-505.860138),SavedZoomAmount=0.875000)
+    .LastEditedDocuments(1)=(EditedObjectPath="/SkyCreatorPlugin/Blueprints/SkyCreator_CaptureDistantOcclusion.SkyCreator_CaptureDistantOcclusion:EventGraph",SavedViewOffset=(X=-409.786133,Y=-594.741394),SavedZoomAmount=0.875000)
+    .LastEditedDocuments(2)=(EditedObjectPath="/SkyCreatorPlugin/Blueprints/SkyCreator_CaptureDistantOcclusion.SkyCreator_CaptureDistantOcclusion:SetParameterCollectionValues",SavedViewOffset=(X=-139.304779,Y=-511.930939),SavedZoomAmount=0.875000)
+    .LastEditedDocuments(3)=(EditedObjectPath="/SkyCreatorPlugin/Blueprints/SkyCreator_CaptureDistantOcclusion.SkyCreator_CaptureDistantOcclusion:CaptureHeightmap",SavedViewOffset=(X=-200.653061,Y=-468.056519),SavedZoomAmount=1.000000)
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfo'SceneThumbnailInfo_0'"
+    .GeneratedClass="/Script/Engine.BlueprintGeneratedClass'SkyCreator_CaptureDistantOcclusion_C'"
+    .bLegacyNeedToPurgeSkelRefs=False
+    .BlueprintGuid=33726BB84CA88B16A320C5A1105A122B
+  EdGraph (EventGraph)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_Event'K2Node_Event_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_9'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .bAllowDeletion=False
+    .GraphGuid=675E318A434E35258DF1CF9E6A24933E
+  K2Node_Event (K2Node_Event_0)
+    .EventReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.Actor'",MemberName="ReceiveBeginPlay")
+    .bOverrideFunction=True
+    .bCommentBubblePinned=True
+    .NodeGuid=50EF7C2B49273CB616FCEFBADB7F9C0D
+  K2Node_CallFunction (K2Node_CallFunction_9)
+    .FunctionReference=(MemberName="CaptureHeightmap",MemberGuid=1882107F44B7C1497FA47FBA71C0D1FA,bSelfContext=True)
+    .NodePosX=3456
+    .NodePosY=-16
+    .NodeGuid=779396914FBD04CB35120B82D2C69786
+  K2Node_CallFunction (K2Node_CallFunction_1)
+    .FunctionReference=(MemberName="SetParameterCollectionValues",MemberGuid=F7AFA7F04B5B394D00E99A93727D632E,bSelfContext=True)
+    .NodePosX=3072
+    .NodePosY=-16
+    .NodeGuid=9671C3264D82DF1129B9A799CB9145BE
+  EdGraph (UserConstructionScript)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_3'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_1'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_0'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_2'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_5'"
+    .Nodes(7)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_4'"
+    .Nodes(8)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .Nodes(9)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_6'"
+    .Nodes(10)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_4'"
+    .Nodes(11)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_17'"
+    .Nodes(12)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_5'"
+    .Nodes(13)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(14)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_9'"
+    .Nodes(15)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_1'"
+    .Nodes(16)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(17)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_2'"
+    .Nodes(18)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_3'"
+    .bAllowDeletion=False
+    .GraphGuid=79AED4C2415354CBC44549997D8C82C5
+  K2Node_FunctionEntry (K2Node_FunctionEntry_0)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.Actor'",MemberName="ReceiveBeginPlay")
+    .NodeGuid=69AE764B14B93E1993719E3247CC865D
+    .MetaData=(Category=INVTEXT("Sky Creator"),bCallInEditor=True)
+    .ExtraFlags=201457664
+    .bIsEditable=True
+    .CustomGeneratedFunctionName="ReceiveBeginPlay"
+    .NodePosX=-200
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+  K2Node_VariableGet (K2Node_VariableGet_3)
+    .VariableReference=(MemberName="CaptureWidth",MemberGuid=08E4462345A28B7736595CA4B14F00B5,bSelfContext=True)
+    .NodePosX=768
+    .NodePosY=64
+    .NodeGuid=F0A42AF045D3E4DABEFF438FF371DDBA
+  K2Node_VariableGet (K2Node_VariableGet_1)
+    .VariableReference=(MemberName="OcclusionDistantCapture",bSelfContext=True)
+    .NodePosX=768
+    .NodePosY=112
+    .NodeGuid=F6A875B94514EA11695D94A2EAB1B4D2
+  K2Node_VariableSet (K2Node_VariableSet_0)
+    .VariableReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.SceneCaptureComponent2D'",MemberName="OrthoWidth")
+    .SelfContextInfo=NotSelfContext
+    .NodePosX=1024
+    .NodePosY=16
+    .NodeGuid=506EE6AE4F07B8B67F7DF9AEE3AEC4D1
+  K2Node_VariableGet (K2Node_VariableGet_2)
+    .VariableReference=(MemberName="Box",bSelfContext=True)
+    .NodePosX=1408
+    .NodePosY=64
+    .NodeGuid=C1CF9DB9409A9BDF6BE10A899EF0D1D6
+  K2Node_CallFunction (K2Node_CallFunction_0)
+    .FunctionReference=(MemberName="ExecuteUbergraph_SkyCreator_CaptureDistantOcclusion",bSelfContext=True)
+    .NodePosX=300
+    .NodePosY=-2000
+    .NodeGuid=88981A3B536E300991808574AEA7BAF4
+    .bDefaultsToPureFunc=True
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_5)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="MakeVector")
+    .NodePosX=1408
+    .NodePosY=128
+    .NodeGuid=9E4AD42A4383037D85E73FBB9EE91AD4
+  K2Node_VariableGet (K2Node_VariableGet_4)
+    .VariableReference=(MemberName="CaptureWidth",MemberGuid=08E4462345A28B7736595CA4B14F00B5,bSelfContext=True)
+    .NodePosX=1024
+    .NodePosY=144
+    .NodeGuid=C3D206B24DC09FAC962481BB0B563417
+  K2Node_CallFunction (K2Node_CallFunction_2)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Divide_DoubleDouble")
+    .NodePosX=1184
+    .NodePosY=144
+    .NodeGuid=5B794DFA4D477A21A722E399F60AC319
+  K2Node_CallFunction (K2Node_CallFunction_6)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.SceneCaptureComponent2D'",MemberName="CaptureScene")
+    .NodePosX=384
+    .NodePosY=-16
+    .NodeGuid=3FCDC7DA4DF5CA878A3CC4B12E56D57E
+  K2Node_CallFunction (K2Node_CallFunction_4)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Subtract_VectorVector")
+    .NodePosX=2240
+    .NodePosY=144
+    .NodeGuid=C9F629AC492D350B864B1486F545C013
+  K2Node_VariableGet (K2Node_VariableGet_17)
+    .VariableReference=(MemberName="OcclusionDistantCapture",bSelfContext=True)
+    .NodePosX=256
+    .NodePosY=112
+    .NodeGuid=F15DA7894D0C2CC32EFBCE86D7DB2AF8
+  K2Node_VariableSet (K2Node_VariableSet_5)
+    .VariableReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.SceneCaptureComponent2D'",MemberName="TextureTarget")
+    .SelfContextInfo=NotSelfContext
+    .NodePosX=512
+    .NodePosY=16
+    .NodeGuid=8D536EE94E9E3C07557A81A3F6386A0B
+  K2Node_VariableGet (K2Node_VariableGet_0)
+    .VariableReference=(MemberName="CapturePosition",MemberGuid=5D7E249A42BF4D43F5A3F8944420BACB,bSelfContext=True)
+    .NodePosX=256
+    .NodePosY=144
+    .NodeGuid=A05A645B45BCBD027D6717A875B58907
+  K2Node_VariableSet (K2Node_VariableSet_1)
+    .VariableReference=(MemberName="CapturePosition",MemberGuid=5D7E249A42BF4D43F5A3F8944420BACB,bSelfContext=True)
+    .NodePosX=2432
+    .NodePosY=16
+    .NodeGuid=69D011004877D499223110B6EAFCF7AE
+  K2Node_VariableSet (K2Node_VariableSet_2)
+    .VariableReference=(MemberName="CaptureCenterPosition",MemberGuid=4EB0220E47A1E740126EB4AFC52D7C11,bSelfContext=True)
+    .NodePosX=2816
+    .NodePosY=16
+    .NodeGuid=E008A93C49E3F627AE7E32818BF1B1BA
+  K2Node_CallFunction (K2Node_CallFunction_3)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberName="K2_GetActorLocation",bSelfContext=True)
+    .NodePosX=2432
+    .NodePosY=128
+    .NodeGuid=27E6D7A44DBC1033634329BAED269B0D
+  EdGraph (CaptureHeightmap)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_9'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_6'"
+    .GraphGuid=1882107F44B7C1497FA47FBA71C0D1FA
+  K2Node_VariableGet (K2Node_VariableGet_9)
+    .VariableReference=(MemberName="OcclusionDistantCapture",bSelfContext=True)
+    .NodePosX=256
+    .NodePosY=128
+    .NodeGuid=ED7F7DED4D3CA414FFFB8DA36BA6E0A9
+  EdGraph (SetParameterCollectionValues)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallMaterialParameterCollectionFunction'K2Node_CallMaterialParameterCollectionFunction_1'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallMaterialParameterCollectionFunction'K2Node_CallMaterialParameterCollectionFunction_2'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_13'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_CallMaterialParameterCollectionFunction'K2Node_CallMaterialParameterCollectionFunction_0'"
+    .Nodes(7)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_7'"
+    .Nodes(8)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_5'"
+    .GraphGuid=F7AFA7F04B5B394D00E99A93727D632E
+  K2Node_CallMaterialParameterCollectionFunction (K2Node_CallMaterialParameterCollectionFunction_1)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMaterialLibrary'",MemberName="SetVectorParameterValue")
+    .NodePosX=384
+    .ErrorType=1
+    .NodeGuid=B72359D642DE343D9D2D55981DA900DB
+  K2Node_CallMaterialParameterCollectionFunction (K2Node_CallMaterialParameterCollectionFunction_2)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMaterialLibrary'",MemberName="SetScalarParameterValue")
+    .NodePosX=1792
+    .ErrorType=1
+    .NodeGuid=939BB51B4F678766C18CC48C19328F0E
+  K2Node_VariableGet (K2Node_VariableGet_13)
+    .VariableReference=(MemberName="CaptureWidth",MemberGuid=08E4462345A28B7736595CA4B14F00B5,bSelfContext=True)
+    .NodePosX=1600
+    .NodePosY=144
+    .NodeGuid=4A00352A4CB1DE150A619686D3A973C9
+  K2Node_CallMaterialParameterCollectionFunction (K2Node_CallMaterialParameterCollectionFunction_0)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMaterialLibrary'",MemberName="SetVectorParameterValue")
+    .NodePosX=1152
+    .ErrorType=1
+    .NodeGuid=B781BC214F71635E87EDAFB72896125A
+  K2Node_CallFunction (K2Node_CallFunction_7)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Conv_VectorToLinearColor")
+    .NodePosX=960
+    .NodePosY=144
+    .NodeGuid=E6E160874D0F128069907FAFFB429803
+  K2Node_VariableGet (K2Node_VariableGet_5)
+    .VariableReference=(MemberName="CaptureCenterPosition",MemberGuid=4EB0220E47A1E740126EB4AFC52D7C11,bSelfContext=True)
+    .NodePosX=768
+    .NodePosY=144
+    .NodeGuid=FF024EFA4C6449F8E0800BA1CAD7F94C
+  EdGraph (ReceiveBeginPlay)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=9042DCED470A828316654F8DF0A5C2C6

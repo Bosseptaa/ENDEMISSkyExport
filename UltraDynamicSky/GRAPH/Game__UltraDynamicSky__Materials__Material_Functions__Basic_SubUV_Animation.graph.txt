@@ -1,0 +1,420 @@
+### /Game/UltraDynamicSky/Materials/Material_Functions/Basic_SubUV_Animation
+  MaterialFunction (Basic_SubUV_Animation)
+    .Description="Basic SubUV Without Frame Blending, with Mip Derivative for seamless tiling"
+    .bExposeToLibrary=True
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'Basic_SubUV_AnimationEditorOnlyData'"
+    .StateId=EA8DB3F74F6C82A5F73E6FA98AC417F7
+    .CombinedInputTypes=31
+    .CombinedOutputTypes=15
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+  MaterialFunctionEditorOnlyData (Basic_SubUV_AnimationEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionInput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionInput'Basic_SubUV_Animation:MaterialExpressionFunctionInput_0'","/Script/Engine.MaterialExpressionFunctionInput'Basic_SubUV_Animation:MaterialExpressionFunctionInput_1'","/Script/Engine.MaterialExpressionFunctionInput'Basic_SubUV_Animation:MaterialExpressionFunctionInput_2'","/Script/Engine.MaterialExpressionFunctionInput'Basic_SubUV_Animation:MaterialExpressionFunctionInput_3'","/Script/Engine.MaterialExpressionTextureCoordinate'Basic_SubUV_Animation:MaterialExpressionTextureCoordinate_0'","/Script/Engine.MaterialExpressionFrac'Basic_SubUV_Animation:MaterialExpressionFrac_2'","/Script/Engine.MaterialExpressionAdd'Basic_SubUV_Animation:MaterialExpressionAdd_1'","/Script/Engine.MaterialExpressionTextureSample'Basic_SubUV_Animation:MaterialExpressionTextureSample_0'","/Script/Engine.MaterialExpressionDivide'Basic_SubUV_Animation:MaterialExpressionDivide_4'","/Script/Engine.MaterialExpressionTime'Basic_SubUV_Animation:MaterialExpressionTime_0'","/Script/Engine.MaterialExpressionMultiply'Basic_SubUV_Animation:MaterialExpressionMultiply_1'","/Script/Engine.MaterialExpressionFmod'Basic_SubUV_Animation:MaterialExpressionFmod_0'","/Script/Engine.MaterialExpressionAppendVector'Basic_SubUV_Animation:MaterialExpressionAppendVector_3'","/Script/Engine.MaterialExpressionFloor'Basic_SubUV_Animation:MaterialExpressionFloor_0'","/Script/Engine.MaterialExpressionFloor'Basic_SubUV_Animation:MaterialExpressionFloor_1'","/Script/Engine.MaterialExpressionFmod'Basic_SubUV_Animation:MaterialExpressionFmod_1'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Basic_SubUV_Animation:MaterialExpressionNamedRerouteDeclaration_1'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Basic_SubUV_Animation:MaterialExpressionNamedRerouteUsage_0'","/Script/Engine.MaterialExpressionComponentMask'Basic_SubUV_Animation:MaterialExpressionComponentMask_1'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Basic_SubUV_Animation:MaterialExpressionNamedRerouteUsage_1'","/Script/Engine.MaterialExpressionComponentMask'Basic_SubUV_Animation:MaterialExpressionComponentMask_2'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Basic_SubUV_Animation:MaterialExpressionNamedRerouteUsage_2'","/Script/Engine.MaterialExpressionFunctionOutput'Basic_SubUV_Animation:MaterialExpressionFunctionOutput_1'","/Script/Engine.MaterialExpressionFunctionOutput'Basic_SubUV_Animation:MaterialExpressionFunctionOutput_2'","/Script/Engine.MaterialExpressionFunctionOutput'Basic_SubUV_Animation:MaterialExpressionFunctionOutput_3'","/Script/Engine.MaterialExpressionFunctionOutput'Basic_SubUV_Animation:MaterialExpressionFunctionOutput_4'","/Script/Engine.MaterialExpressionFunctionOutput'Basic_SubUV_Animation:MaterialExpressionFunctionOutput_5'","/Script/Engine.MaterialExpressionFunctionOutput'Basic_SubUV_Animation:MaterialExpressionFunctionOutput_6'","/Script/Engine.MaterialExpressionDivide'Basic_SubUV_Animation:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Basic_SubUV_Animation:MaterialExpressionNamedRerouteUsage_4'","/Script/Engine.MaterialExpressionComponentMask'Basic_SubUV_Animation:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionTextureObject'Basic_SubUV_Animation:MaterialExpressionTextureObject_0'","/Script/Engine.MaterialExpressionDDX'Basic_SubUV_Animation:MaterialExpressionDDX_1'","/Script/Engine.MaterialExpressionDDY'Basic_SubUV_Animation:MaterialExpressionDDY_1'","/Script/Engine.MaterialExpressionDivide'Basic_SubUV_Animation:MaterialExpressionDivide_1'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Basic_SubUV_Animation:MaterialExpressionNamedRerouteUsage_5'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Basic_SubUV_Animation:MaterialExpressionNamedRerouteUsage_3'","/Script/Engine.MaterialExpressionComponentMask'Basic_SubUV_Animation:MaterialExpressionComponentMask_3'","/Script/Engine.MaterialExpressionComponentMask'Basic_SubUV_Animation:MaterialExpressionComponentMask_4'","/Script/Engine.MaterialExpressionMultiply'Basic_SubUV_Animation:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionDivide'Basic_SubUV_Animation:MaterialExpressionDivide_3'","/Script/Engine.MaterialExpressionMultiply'Basic_SubUV_Animation:MaterialExpressionMultiply_2'","/Script/Engine.MaterialExpressionDivide'Basic_SubUV_Animation:MaterialExpressionDivide_5'","/Script/Engine.MaterialExpressionFloor'Basic_SubUV_Animation:MaterialExpressionFloor_2'","/Script/Engine.MaterialExpressionSubtract'Basic_SubUV_Animation:MaterialExpressionSubtract_0'"))
+  MaterialExpressionAdd (MaterialExpressionAdd_1)
+    A                      <- MaterialExpressionAppendVector
+    B                      <- MaterialExpressionFrac
+    .B=(Expression="/Script/Engine.MaterialExpressionFrac'Basic_SubUV_Animation:MaterialExpressionFrac_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAppendVector'Basic_SubUV_Animation:MaterialExpressionAppendVector_3'")
+    .MaterialExpressionEditorX=252
+    .MaterialExpressionEditorY=1216
+    .MaterialExpressionGuid=97439C904C4AD219D44D6DA978AE89B2
+    .Function="/Script/Engine.MaterialFunction'Basic_SubUV_Animation'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_3)
+    A                      <- MaterialExpressionFmod
+    B                      <- MaterialExpressionFmod
+    .B=(Expression="/Script/Engine.MaterialExpressionFmod'Basic_SubUV_Animation:MaterialExpressionFmod_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFmod'Basic_SubUV_Animation:MaterialExpressionFmod_0'")
+    .MaterialExpressionEditorX=-576
+    .MaterialExpressionEditorY=1212
+    .MaterialExpressionGuid=6F3E5546404DEFB6679095B181600D16
+    .Function="/Script/Engine.MaterialFunction'Basic_SubUV_Animation'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionNamedRerouteUsage
+    .R=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Basic_SubUV_Animation:MaterialExpressionNamedRerouteUsage_4'")
+    .MaterialExpressionEditorX=-1520
+    .MaterialExpressionEditorY=1392
+    .MaterialExpressionGuid=70030CDC4885BC555F9FB4BBD227A48C
+    .Function="/Script/Engine.MaterialFunction'Basic_SubUV_Animation'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_1)
+    Input                  <- MaterialExpressionNamedRerouteUsage
+    .R=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Basic_SubUV_Animation:MaterialExpressionNamedRerouteUsage_0'")
+    .MaterialExpressionEditorX=-864
+    .MaterialExpressionEditorY=1264
+    .MaterialExpressionGuid=70030CDC4885BC555F9FB4BBD227A48C
+    .Function="/Script/Engine.MaterialFunction'Basic_SubUV_Animation'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_2)
+    Input                  <- MaterialExpressionNamedRerouteUsage
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Basic_SubUV_Animation:MaterialExpressionNamedRerouteUsage_1'")
+    .MaterialExpressionEditorX=-872
+    .MaterialExpressionEditorY=1404
+    .MaterialExpressionGuid=70030CDC4885BC555F9FB4BBD227A48C
+    .Function="/Script/Engine.MaterialFunction'Basic_SubUV_Animation'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_3)
+    Input                  <- MaterialExpressionNamedRerouteUsage
+    .R=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Basic_SubUV_Animation:MaterialExpressionNamedRerouteUsage_3'")
+    .MaterialExpressionEditorX=-2732
+    .MaterialExpressionEditorY=1080
+    .MaterialExpressionGuid=D17DA456490C90798355FDA52B131055
+    .Function="/Script/Engine.MaterialFunction'Basic_SubUV_Animation'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_4)
+    Input                  <- MaterialExpressionNamedRerouteUsage
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Basic_SubUV_Animation:MaterialExpressionNamedRerouteUsage_3'")
+    .MaterialExpressionEditorX=-2732
+    .MaterialExpressionEditorY=1168
+    .MaterialExpressionGuid=E9320EEC447B4658BA6701BD4F6C0929
+    .Function="/Script/Engine.MaterialFunction'Basic_SubUV_Animation'"
+  MaterialExpressionDDX (MaterialExpressionDDX_1)
+    Value                  <- MaterialExpressionDivide
+    .Value=(Expression="/Script/Engine.MaterialExpressionDivide'Basic_SubUV_Animation:MaterialExpressionDivide_1'")
+    .MaterialExpressionEditorX=260
+    .MaterialExpressionEditorY=1368
+    .MaterialExpressionGuid=E680354F41995C0B0BC11593F2ECC964
+    .Function="/Script/Engine.MaterialFunction'Basic_SubUV_Animation'"
+  MaterialExpressionDDY (MaterialExpressionDDY_1)
+    Value                  <- MaterialExpressionDivide
+    .Value=(Expression="/Script/Engine.MaterialExpressionDivide'Basic_SubUV_Animation:MaterialExpressionDivide_1'")
+    .MaterialExpressionEditorX=256
+    .MaterialExpressionEditorY=1444
+    .MaterialExpressionGuid=36DD78B549FC8CD19B300B93286D04CB
+    .Function="/Script/Engine.MaterialFunction'Basic_SubUV_Animation'"
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionFloor
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Basic_SubUV_Animation:MaterialExpressionComponentMask_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFloor'Basic_SubUV_Animation:MaterialExpressionFloor_1'")
+    .MaterialExpressionEditorX=-1336
+    .MaterialExpressionEditorY=1324
+    .MaterialExpressionGuid=1EBE699940AC0BA5182F1DB40E24A176
+    .Function="/Script/Engine.MaterialFunction'Basic_SubUV_Animation'"
+  MaterialExpressionDivide (MaterialExpressionDivide_1)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Basic_SubUV_Animation:MaterialExpressionNamedRerouteUsage_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Basic_SubUV_Animation:MaterialExpressionFunctionInput_3'")
+    .ConstB=4.000000
+    .MaterialExpressionEditorX=84
+    .MaterialExpressionEditorY=1400
+    .MaterialExpressionGuid=C6738A55424610EA00BFDCAB0C179092
+    .Function="/Script/Engine.MaterialFunction'Basic_SubUV_Animation'"
+  MaterialExpressionDivide (MaterialExpressionDivide_3)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Basic_SubUV_Animation:MaterialExpressionFunctionInput_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Basic_SubUV_Animation:MaterialExpressionMultiply_0'")
+    .MaterialExpressionEditorX=-2416
+    .MaterialExpressionEditorY=1184
+    .MaterialExpressionGuid=15FE075647391640CBCAFA8BE53E07D4
+    .Function="/Script/Engine.MaterialFunction'Basic_SubUV_Animation'"
+  MaterialExpressionDivide (MaterialExpressionDivide_4)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Basic_SubUV_Animation:MaterialExpressionNamedRerouteUsage_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Basic_SubUV_Animation:MaterialExpressionAdd_1'")
+    .ConstB=4.000000
+    .MaterialExpressionEditorX=540
+    .MaterialExpressionEditorY=1216
+    .MaterialExpressionGuid=C6738A55424610EA00BFDCAB0C179092
+    .Function="/Script/Engine.MaterialFunction'Basic_SubUV_Animation'"
+  MaterialExpressionDivide (MaterialExpressionDivide_5)
+    A                      <- MaterialExpressionTime
+    B                      <- MaterialExpressionDivide
+    .B=(Expression="/Script/Engine.MaterialExpressionDivide'Basic_SubUV_Animation:MaterialExpressionDivide_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionTime'Basic_SubUV_Animation:MaterialExpressionTime_0'")
+    .MaterialExpressionEditorX=-2236
+    .MaterialExpressionEditorY=1124
+    .MaterialExpressionGuid=6F2E7AB041366C9761CC7EAA56DAABEB
+    .Function="/Script/Engine.MaterialFunction'Basic_SubUV_Animation'"
+  MaterialExpressionFloor (MaterialExpressionFloor_0)
+    Input                  <- MaterialExpressionDivide
+    .Input=(Expression="/Script/Engine.MaterialExpressionDivide'Basic_SubUV_Animation:MaterialExpressionDivide_0'")
+    .MaterialExpressionEditorX=-1192
+    .MaterialExpressionEditorY=1324
+    .MaterialExpressionGuid=278CF21E478CDC63085B0596A6AD35BA
+    .Function="/Script/Engine.MaterialFunction'Basic_SubUV_Animation'"
+  MaterialExpressionFloor (MaterialExpressionFloor_1)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Basic_SubUV_Animation:MaterialExpressionMultiply_1'")
+    .MaterialExpressionEditorX=-1472
+    .MaterialExpressionEditorY=1212
+    .MaterialExpressionGuid=0AD0F7CA49FA3F8D91C53582BFA8E33C
+    .Function="/Script/Engine.MaterialFunction'Basic_SubUV_Animation'"
+  MaterialExpressionFloor (MaterialExpressionFloor_2)
+    Input                  <- MaterialExpressionDivide
+    .Input=(Expression="/Script/Engine.MaterialExpressionDivide'Basic_SubUV_Animation:MaterialExpressionDivide_5'")
+    .MaterialExpressionEditorX=-2060
+    .MaterialExpressionEditorY=1124
+    .MaterialExpressionGuid=39F26AF14FD093A8E61CCFA978056013
+    .Function="/Script/Engine.MaterialFunction'Basic_SubUV_Animation'"
+  MaterialExpressionFmod (MaterialExpressionFmod_0)
+    A                      <- MaterialExpressionFloor
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Basic_SubUV_Animation:MaterialExpressionComponentMask_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFloor'Basic_SubUV_Animation:MaterialExpressionFloor_1'")
+    .MaterialExpressionEditorX=-688
+    .MaterialExpressionEditorY=1212
+    .MaterialExpressionGuid=E72057464A5B193030A234A2AEDDF895
+    .Function="/Script/Engine.MaterialFunction'Basic_SubUV_Animation'"
+  MaterialExpressionFmod (MaterialExpressionFmod_1)
+    A                      <- MaterialExpressionFloor
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Basic_SubUV_Animation:MaterialExpressionComponentMask_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFloor'Basic_SubUV_Animation:MaterialExpressionFloor_0'")
+    .MaterialExpressionEditorX=-688
+    .MaterialExpressionEditorY=1324
+    .MaterialExpressionGuid=E72057464A5B193030A234A2AEDDF895
+    .Function="/Script/Engine.MaterialFunction'Basic_SubUV_Animation'"
+  MaterialExpressionFrac (MaterialExpressionFrac_2)
+    Input                  <- MaterialExpressionFunctionInput
+    .Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Basic_SubUV_Animation:MaterialExpressionFunctionInput_3'")
+    .MaterialExpressionEditorX=84
+    .MaterialExpressionEditorY=1280
+    .MaterialExpressionGuid=93C380A64F5B8DFDCEC191BE4A7EA866
+    .Function="/Script/Engine.MaterialFunction'Basic_SubUV_Animation'"
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_0)
+    Preview                <- MaterialExpressionTextureObject
+    .Preview=(Expression="/Script/Engine.MaterialExpressionTextureObject'Basic_SubUV_Animation:MaterialExpressionTextureObject_0'")
+    .InputName="Texture"
+    .Id=4E5B9E0043D6E292522F4B9F55D4C256
+    .InputType=FunctionInput_Texture2D
+    .MaterialExpressionEditorX=388
+    .MaterialExpressionEditorY=1564
+    .MaterialExpressionGuid=2ADA109B411AD5116A179BAF97AE4672
+    .Function="/Script/Engine.MaterialFunction'Basic_SubUV_Animation'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_1)
+    .InputName="Cells"
+    .Id=7E3FD9E2402842D0A13DC0AC3F350BC3
+    .InputType=FunctionInput_Vector2
+    .PreviewValue=(X=4.000000,Y=4.000000,Z=0.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=1
+    .MaterialExpressionEditorX=-1532
+    .MaterialExpressionEditorY=1556
+    .MaterialExpressionGuid=0102D97E44D6E2B43D26A6B39AC64357
+    .Function="/Script/Engine.MaterialFunction'Basic_SubUV_Animation'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_2)
+    .InputName="Frames Per Second"
+    .Id=834B96324E00F4DEEA2D09B6FEF94D79
+    .InputType=FunctionInput_Scalar
+    .PreviewValue=(X=30.000000,Y=0.000000,Z=0.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=2
+    .MaterialExpressionEditorX=-2724
+    .MaterialExpressionEditorY=1304
+    .MaterialExpressionGuid=44ADF28D4DDBF61368277DA866E2D710
+    .Function="/Script/Engine.MaterialFunction'Basic_SubUV_Animation'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_3)
+    Preview                <- MaterialExpressionTextureCoordinate
+    .Preview=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'Basic_SubUV_Animation:MaterialExpressionTextureCoordinate_0'")
+    .InputName="UV"
+    .Id=5ACF297C4609CFB3D6D37DAD7B2C68CA
+    .InputType=FunctionInput_Vector2
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=3
+    .MaterialExpressionEditorX=-240
+    .MaterialExpressionEditorY=1316
+    .MaterialExpressionGuid=A0D39D864381F522657938A75E6F345B
+    .Function="/Script/Engine.MaterialFunction'Basic_SubUV_Animation'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_1)
+    A                      <- MaterialExpressionTextureSample
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'Basic_SubUV_Animation:MaterialExpressionTextureSample_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .OutputName="RGB"
+    .bLastPreviewed=True
+    .Id=C64B4FA5477B6D290B2E4BACF3D4546E
+    .MaterialExpressionEditorX=1052
+    .MaterialExpressionEditorY=1184
+    .MaterialExpressionGuid=8FAC7899433D90D87BAFDC9DEF2DB7D4
+    .Function="/Script/Engine.MaterialFunction'Basic_SubUV_Animation'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_2)
+    A                      <- MaterialExpressionTextureSample
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'Basic_SubUV_Animation:MaterialExpressionTextureSample_0'",OutputIndex=1,Mask=1,MaskR=1)
+    .OutputName="R"
+    .SortPriority=1
+    .Id=FCDB90C040B76F38E10BADB5E258408E
+    .MaterialExpressionEditorX=1052
+    .MaterialExpressionEditorY=1260
+    .MaterialExpressionGuid=8FAC7899433D90D87BAFDC9DEF2DB7D4
+    .Function="/Script/Engine.MaterialFunction'Basic_SubUV_Animation'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_3)
+    A                      <- MaterialExpressionTextureSample
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'Basic_SubUV_Animation:MaterialExpressionTextureSample_0'",OutputIndex=2,Mask=1,MaskG=1)
+    .OutputName="G"
+    .SortPriority=2
+    .Id=5C3633324578331E301901B4D10890CD
+    .MaterialExpressionEditorX=1056
+    .MaterialExpressionEditorY=1324
+    .MaterialExpressionGuid=8FAC7899433D90D87BAFDC9DEF2DB7D4
+    .Function="/Script/Engine.MaterialFunction'Basic_SubUV_Animation'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_4)
+    A                      <- MaterialExpressionTextureSample
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'Basic_SubUV_Animation:MaterialExpressionTextureSample_0'",OutputIndex=3,Mask=1,MaskB=1)
+    .OutputName="B"
+    .SortPriority=3
+    .Id=171EFBA94EB22213047FA7A35F25057B
+    .MaterialExpressionEditorX=1060
+    .MaterialExpressionEditorY=1396
+    .MaterialExpressionGuid=8FAC7899433D90D87BAFDC9DEF2DB7D4
+    .Function="/Script/Engine.MaterialFunction'Basic_SubUV_Animation'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_5)
+    A                      <- MaterialExpressionTextureSample
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'Basic_SubUV_Animation:MaterialExpressionTextureSample_0'",OutputIndex=4,Mask=1,MaskA=1)
+    .OutputName="A"
+    .SortPriority=4
+    .Id=2E7BA58642E61CEFBE8A1893EA772ED1
+    .MaterialExpressionEditorX=1060
+    .MaterialExpressionEditorY=1468
+    .MaterialExpressionGuid=8FAC7899433D90D87BAFDC9DEF2DB7D4
+    .Function="/Script/Engine.MaterialFunction'Basic_SubUV_Animation'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_6)
+    A                      <- MaterialExpressionTextureSample
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'Basic_SubUV_Animation:MaterialExpressionTextureSample_0'",OutputIndex=5,Mask=1,MaskR=1,MaskG=1,MaskB=1,MaskA=1)
+    .OutputName="RGBA"
+    .SortPriority=5
+    .Id=46E2DCBD413D25AB8934879212957A6F
+    .MaterialExpressionEditorX=1060
+    .MaterialExpressionEditorY=1536
+    .MaterialExpressionGuid=8FAC7899433D90D87BAFDC9DEF2DB7D4
+    .Function="/Script/Engine.MaterialFunction'Basic_SubUV_Animation'"
+    .bCollapsed=True
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Basic_SubUV_Animation:MaterialExpressionComponentMask_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Basic_SubUV_Animation:MaterialExpressionComponentMask_3'")
+    .MaterialExpressionEditorX=-2600
+    .MaterialExpressionEditorY=1080
+    .MaterialExpressionGuid=FDD07A734EB2C4842E98A1A126014EC2
+    .Function="/Script/Engine.MaterialFunction'Basic_SubUV_Animation'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Basic_SubUV_Animation:MaterialExpressionFunctionInput_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'Basic_SubUV_Animation:MaterialExpressionSubtract_0'")
+    .ConstB=30.000000
+    .MaterialExpressionEditorX=-1616
+    .MaterialExpressionEditorY=1212
+    .MaterialExpressionGuid=BB663186421FF0D3B0F3E3BC5CF11D79
+    .Function="/Script/Engine.MaterialFunction'Basic_SubUV_Animation'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_2)
+    A                      <- MaterialExpressionDivide
+    B                      <- MaterialExpressionFloor
+    .B=(Expression="/Script/Engine.MaterialExpressionFloor'Basic_SubUV_Animation:MaterialExpressionFloor_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'Basic_SubUV_Animation:MaterialExpressionDivide_3'")
+    .MaterialExpressionEditorX=-1924
+    .MaterialExpressionEditorY=1176
+    .MaterialExpressionGuid=44639AE24DC6189978BA2C9C3F511C06
+    .Function="/Script/Engine.MaterialFunction'Basic_SubUV_Animation'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_1)
+    Input                  <- MaterialExpressionFunctionInput
+    .Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Basic_SubUV_Animation:MaterialExpressionFunctionInput_1'")
+    .Name="Atlas Cells"
+    .NodeColor=(R=1.000000,G=0.773438,B=0.000000,A=1.000000)
+    .VariableGuid=A028EFFC47F564B93C031F84D3025AD6
+    .MaterialExpressionEditorX=-1352
+    .MaterialExpressionEditorY=1560
+    .MaterialExpressionGuid=55A2A93342FF6B0EB0DEB3A0DCAC7C68
+    .Function="/Script/Engine.MaterialFunction'Basic_SubUV_Animation'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_0)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Basic_SubUV_Animation:MaterialExpressionNamedRerouteDeclaration_1'"
+    .DeclarationGuid=A028EFFC47F564B93C031F84D3025AD6
+    .MaterialExpressionEditorX=-992
+    .MaterialExpressionEditorY=1268
+    .MaterialExpressionGuid=7E59DB874CB6ED19DA8F438A4F519EF9
+    .Function="/Script/Engine.MaterialFunction'Basic_SubUV_Animation'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_1)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Basic_SubUV_Animation:MaterialExpressionNamedRerouteDeclaration_1'"
+    .DeclarationGuid=A028EFFC47F564B93C031F84D3025AD6
+    .MaterialExpressionEditorX=-984
+    .MaterialExpressionEditorY=1408
+    .MaterialExpressionGuid=7E59DB874CB6ED19DA8F438A4F519EF9
+    .Function="/Script/Engine.MaterialFunction'Basic_SubUV_Animation'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_2)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Basic_SubUV_Animation:MaterialExpressionNamedRerouteDeclaration_1'"
+    .DeclarationGuid=A028EFFC47F564B93C031F84D3025AD6
+    .MaterialExpressionEditorX=364
+    .MaterialExpressionEditorY=1272
+    .MaterialExpressionGuid=7E59DB874CB6ED19DA8F438A4F519EF9
+    .Function="/Script/Engine.MaterialFunction'Basic_SubUV_Animation'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_3)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Basic_SubUV_Animation:MaterialExpressionNamedRerouteDeclaration_1'"
+    .DeclarationGuid=A028EFFC47F564B93C031F84D3025AD6
+    .MaterialExpressionEditorX=-2904
+    .MaterialExpressionEditorY=1104
+    .MaterialExpressionGuid=543EA8F74DB36D07ECDCA0A89F1D84F8
+    .Function="/Script/Engine.MaterialFunction'Basic_SubUV_Animation'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_4)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Basic_SubUV_Animation:MaterialExpressionNamedRerouteDeclaration_1'"
+    .DeclarationGuid=A028EFFC47F564B93C031F84D3025AD6
+    .MaterialExpressionEditorX=-1632
+    .MaterialExpressionEditorY=1396
+    .MaterialExpressionGuid=7E59DB874CB6ED19DA8F438A4F519EF9
+    .Function="/Script/Engine.MaterialFunction'Basic_SubUV_Animation'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_5)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Basic_SubUV_Animation:MaterialExpressionNamedRerouteDeclaration_1'"
+    .DeclarationGuid=A028EFFC47F564B93C031F84D3025AD6
+    .MaterialExpressionEditorX=-84
+    .MaterialExpressionEditorY=1468
+    .MaterialExpressionGuid=7E59DB874CB6ED19DA8F438A4F519EF9
+    .Function="/Script/Engine.MaterialFunction'Basic_SubUV_Animation'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_0)
+    A                      <- MaterialExpressionTime
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Basic_SubUV_Animation:MaterialExpressionMultiply_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionTime'Basic_SubUV_Animation:MaterialExpressionTime_0'")
+    .MaterialExpressionEditorX=-1804
+    .MaterialExpressionEditorY=1060
+    .MaterialExpressionGuid=8F1094344B8C4735C14509ADCA890E35
+    .Function="/Script/Engine.MaterialFunction'Basic_SubUV_Animation'"
+  MaterialExpressionTextureCoordinate (MaterialExpressionTextureCoordinate_0)
+    .MaterialExpressionEditorX=-468
+    .MaterialExpressionEditorY=1316
+    .MaterialExpressionGuid=327C6B9E45204C910D9841AE701401EB
+    .Function="/Script/Engine.MaterialFunction'Basic_SubUV_Animation'"
+  MaterialExpressionTextureObject (MaterialExpressionTextureObject_0)
+    .MaterialExpressionEditorX=204
+    .MaterialExpressionEditorY=1560
+    .MaterialExpressionGuid=182E863A4568A3FC16C8A98700140A52
+    .Function="/Script/Engine.MaterialFunction'Basic_SubUV_Animation'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_0)
+    Coordinates            <- MaterialExpressionDivide
+    TextureObject          <- MaterialExpressionFunctionInput
+    CoordinatesDX          <- MaterialExpressionDDX
+    CoordinatesDY          <- MaterialExpressionDDY
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionDivide'Basic_SubUV_Animation:MaterialExpressionDivide_4'")
+    .TextureObject=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Basic_SubUV_Animation:MaterialExpressionFunctionInput_0'")
+    .CoordinatesDX=(Expression="/Script/Engine.MaterialExpressionDDX'Basic_SubUV_Animation:MaterialExpressionDDX_1'")
+    .CoordinatesDY=(Expression="/Script/Engine.MaterialExpressionDDY'Basic_SubUV_Animation:MaterialExpressionDDY_1'")
+    .MipValueMode=TMVM_Derivative
+    .SamplerSource=SSM_Wrap_WorldGroupSettings
+    .AutomaticViewMipBias=False
+    .ConstMipValue=0
+    .MaterialExpressionEditorX=764
+    .MaterialExpressionEditorY=1216
+    .MaterialExpressionGuid=6CB9F2724DD5EC893E9BCCB7122EE515
+    .Function="/Script/Engine.MaterialFunction'Basic_SubUV_Animation'"
+  MaterialExpressionTime (MaterialExpressionTime_0)
+    .Period=10.000000
+    .MaterialExpressionEditorX=-2416
+    .MaterialExpressionEditorY=1052
+    .MaterialExpressionGuid=B9AAC9AA4865CE91386CE1A1D052B499
+    .Function="/Script/Engine.MaterialFunction'Basic_SubUV_Animation'"

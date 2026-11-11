@@ -1,0 +1,627 @@
+### /Game/UltraDynamicSky/Materials/Material_Functions/DLWE_Parallax
+  MaterialFunction (DLWE_Parallax)
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'DLWE_ParallaxEditorOnlyData'"
+    .StateId=25DA1E2146789FDEDC0AD099AC7AB3F1
+    .CombinedInputTypes=31
+    .CombinedOutputTypes=15
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+  MaterialFunctionEditorOnlyData (DLWE_ParallaxEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'DLWE_Parallax:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionCustom'DLWE_Parallax:MaterialExpressionCustom_20'","/Script/Engine.MaterialExpressionFunctionInput'DLWE_Parallax:MaterialExpressionFunctionInput_1'","/Script/Engine.MaterialExpressionFunctionOutput'DLWE_Parallax:MaterialExpressionFunctionOutput_1'","/Script/Engine.MaterialExpressionMultiply'DLWE_Parallax:MaterialExpressionMultiply_19'","/Script/Engine.MaterialExpressionDivide'DLWE_Parallax:MaterialExpressionDivide_9'","/Script/Engine.MaterialExpressionComponentMask'DLWE_Parallax:MaterialExpressionComponentMask_8'","/Script/Engine.MaterialExpressionCameraVectorWS'DLWE_Parallax:MaterialExpressionCameraVectorWS_9'","/Script/Engine.MaterialExpressionTextureObject'DLWE_Parallax:MaterialExpressionTextureObject_1'","/Script/Engine.MaterialExpressionConstant'DLWE_Parallax:MaterialExpressionConstant_16'","/Script/Engine.MaterialExpressionConstant'DLWE_Parallax:MaterialExpressionConstant_2'","/Script/Engine.MaterialExpressionStaticSwitchParameter'DLWE_Parallax:MaterialExpressionStaticSwitchParameter_18'","/Script/Engine.MaterialExpressionStaticSwitchParameter'DLWE_Parallax:MaterialExpressionStaticSwitchParameter_0'","/Script/Engine.MaterialExpressionFunctionInput'DLWE_Parallax:MaterialExpressionFunctionInput_6'","/Script/Engine.MaterialExpressionMultiply'DLWE_Parallax:MaterialExpressionMultiply_8'","/Script/Engine.MaterialExpressionMultiply'DLWE_Parallax:MaterialExpressionMultiply_7'","/Script/Engine.MaterialExpressionVertexNormalWS'DLWE_Parallax:MaterialExpressionVertexNormalWS_1'","/Script/Engine.MaterialExpressionDotProduct'DLWE_Parallax:MaterialExpressionDotProduct_0'","/Script/Engine.MaterialExpressionAdd'DLWE_Parallax:MaterialExpressionAdd_2'","/Script/Engine.MaterialExpressionSaturate'DLWE_Parallax:MaterialExpressionSaturate_1'","/Script/Engine.MaterialExpressionMultiply'DLWE_Parallax:MaterialExpressionMultiply_22'","/Script/Engine.MaterialExpressionShadingPathSwitch'DLWE_Parallax:MaterialExpressionShadingPathSwitch_0'","/Script/Engine.MaterialExpressionConstant'DLWE_Parallax:MaterialExpressionConstant_0'","/Script/Engine.MaterialExpressionShadingPathSwitch'DLWE_Parallax:MaterialExpressionShadingPathSwitch_1'","/Script/Engine.MaterialExpressionConstant'DLWE_Parallax:MaterialExpressionConstant_1'","/Script/Engine.MaterialExpressionFunctionInput'DLWE_Parallax:MaterialExpressionFunctionInput_2'","/Script/Engine.MaterialExpressionDivide'DLWE_Parallax:MaterialExpressionDivide_1'","/Script/Engine.MaterialExpressionReroute'DLWE_Parallax:MaterialExpressionReroute_0'","/Script/Engine.MaterialExpressionDivide'DLWE_Parallax:MaterialExpressionDivide_3'","/Script/Engine.MaterialExpressionWorldPosition'DLWE_Parallax:MaterialExpressionWorldPosition_1'","/Script/Engine.MaterialExpressionComponentMask'DLWE_Parallax:MaterialExpressionComponentMask_2'","/Script/Engine.MaterialExpressionSubtract'DLWE_Parallax:MaterialExpressionSubtract_16'","/Script/Engine.MaterialExpressionCollectionParameter'DLWE_Parallax:MaterialExpressionCollectionParameter_0'","/Script/Engine.MaterialExpressionComponentMask'DLWE_Parallax:MaterialExpressionComponentMask_34'","/Script/Engine.MaterialExpressionComponentMask'DLWE_Parallax:MaterialExpressionComponentMask_35'","/Script/Engine.MaterialExpressionMultiply'DLWE_Parallax:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionMultiply'DLWE_Parallax:MaterialExpressionMultiply_14'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'DLWE_Parallax:MaterialExpressionNamedRerouteDeclaration_0'","/Script/Engine.MaterialExpressionNamedRerouteUsage'DLWE_Parallax:MaterialExpressionNamedRerouteUsage_0'","/Script/Engine.MaterialExpressionFunctionOutput'DLWE_Parallax:MaterialExpressionFunctionOutput_3'","/Script/Engine.MaterialExpressionMax'DLWE_Parallax:MaterialExpressionMax_0'","/Script/Engine.MaterialExpressionCollectionParameter'DLWE_Parallax:MaterialExpressionCollectionParameter_1'","/Script/Engine.MaterialExpressionMultiply'DLWE_Parallax:MaterialExpressionMultiply_1'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'DLWE_Parallax:MaterialExpressionNamedRerouteDeclaration_1'","/Script/Engine.MaterialExpressionSubtract'DLWE_Parallax:MaterialExpressionSubtract_0'","/Script/Engine.MaterialExpressionDivide'DLWE_Parallax:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'DLWE_Parallax:MaterialExpressionNamedRerouteDeclaration_2'","/Script/Engine.MaterialExpressionCollectionParameter'DLWE_Parallax:MaterialExpressionCollectionParameter_3'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'DLWE_Parallax:MaterialExpressionNamedRerouteDeclaration_3'","/Script/Engine.MaterialExpressionCollectionParameter'DLWE_Parallax:MaterialExpressionCollectionParameter_5'","/Script/Engine.MaterialExpressionComponentMask'DLWE_Parallax:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionDivide'DLWE_Parallax:MaterialExpressionDivide_2'","/Script/Engine.MaterialExpressionDivide'DLWE_Parallax:MaterialExpressionDivide_4'","/Script/Engine.MaterialExpressionMultiply'DLWE_Parallax:MaterialExpressionMultiply_3'","/Script/Engine.MaterialExpressionMultiply'DLWE_Parallax:MaterialExpressionMultiply_4'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'DLWE_Parallax:MaterialExpressionNamedRerouteDeclaration_4'","/Script/Engine.MaterialExpressionNamedRerouteUsage'DLWE_Parallax:MaterialExpressionNamedRerouteUsage_2'","/Script/Engine.MaterialExpressionNamedRerouteUsage'DLWE_Parallax:MaterialExpressionNamedRerouteUsage_3'","/Script/Engine.MaterialExpressionNamedRerouteUsage'DLWE_Parallax:MaterialExpressionNamedRerouteUsage_4'","/Script/Engine.MaterialExpressionCollectionParameter'DLWE_Parallax:MaterialExpressionCollectionParameter_6'","/Script/Engine.MaterialExpressionCollectionParameter'DLWE_Parallax:MaterialExpressionCollectionParameter_2'","/Script/Engine.MaterialExpressionMax'DLWE_Parallax:MaterialExpressionMax_1'","/Script/Engine.MaterialExpressionFunctionInput'DLWE_Parallax:MaterialExpressionFunctionInput_3'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'DLWE_Parallax:MaterialExpressionNamedRerouteDeclaration_5'","/Script/Engine.MaterialExpressionNamedRerouteUsage'DLWE_Parallax:MaterialExpressionNamedRerouteUsage_5'"),EditorComments=("/Script/Engine.MaterialExpressionComment'DLWE_Parallax:MaterialExpressionComment_0'","/Script/Engine.MaterialExpressionComment'DLWE_Parallax:MaterialExpressionComment_1'","/Script/Engine.MaterialExpressionComment'DLWE_Parallax:MaterialExpressionComment_2'","/Script/Engine.MaterialExpressionComment'DLWE_Parallax:MaterialExpressionComment_3'","/Script/Engine.MaterialExpressionComment'DLWE_Parallax:MaterialExpressionComment_4'"))
+  MaterialExpressionAdd (MaterialExpressionAdd_2)
+    A                      <- MaterialExpressionSaturate
+    .A=(Expression="/Script/Engine.MaterialExpressionSaturate'DLWE_Parallax:MaterialExpressionSaturate_1'")
+    .ConstB=0.080000
+    .MaterialExpressionEditorX=-680
+    .MaterialExpressionEditorY=696
+    .MaterialExpressionGuid=32E52C3349772FEE3D58B8976F8F70FA
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionCameraVectorWS (MaterialExpressionCameraVectorWS_9)
+    .MaterialExpressionEditorX=-1196
+    .MaterialExpressionEditorY=564
+    .MaterialExpressionGuid=AE2564C14E5AD1E55F6521B7DD55FE53
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_0)
+    .ParameterName="DLWE_Render Target Mapping"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+    .ParameterId=D88ABE3B4B0695382525D6936A055ABE
+    .MaterialExpressionEditorX=-88
+    .MaterialExpressionEditorY=188
+    .MaterialExpressionGuid=B6B8ADA04AA240654FDCCBB33634F603
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_1)
+    .ParameterName="DLWE_Parallax Sample Scale"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+    .ParameterId=1D79F954450A068BC7F153A511296AAF
+    .MaterialExpressionEditorX=-1828
+    .MaterialExpressionEditorY=-20
+    .MaterialExpressionGuid=35624F154BA76400484C4B90F50E4526
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_2)
+    .ParameterName="DLWE_Dust Depth"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+    .ParameterId=F1FDEC0A4FCA2C4A07B48DB59598CC41
+    .MaterialExpressionEditorX=-2448
+    .MaterialExpressionEditorY=-96
+    .MaterialExpressionGuid=C6CC41FF44D9DC901478AEA616E2A7A8
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_3)
+    .ParameterName="Snow/Dust Interaction Depth"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+    .ParameterId=5FC83F634BF4342AA34D7D99398DE0C7
+    .MaterialExpressionEditorX=-1216
+    .MaterialExpressionEditorY=28
+    .MaterialExpressionGuid=68627AFB4AC93C1FD9DB2D9BBD9C8AE4
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_5)
+    .ParameterName="DLWE_Render Target Mapping"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+    .ParameterId=D88ABE3B4B0695382525D6936A055ABE
+    .MaterialExpressionEditorX=-1448
+    .MaterialExpressionEditorY=116
+    .MaterialExpressionGuid=4FDE2C9648E49B16B700BCA76E62D933
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_6)
+    .ParameterName="DLWE_Snow Depth"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+    .ParameterId=B3617A2A43C91CF3324F24A50C504873
+    .MaterialExpressionEditorX=-2444
+    .MaterialExpressionEditorY=-196
+    .MaterialExpressionGuid=B37FC9114D90BB8A1B2282B26247F3BF
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+    .bCollapsed=True
+  MaterialExpressionComment (MaterialExpressionComment_0)
+    .SizeX=960
+    .SizeY=372
+    .Text="Approximate Camera Relative Normal"
+    .CommentColor=(R=1.000000,G=0.407073,B=0.589249,A=1.000000)
+    .MaterialExpressionEditorX=-1251
+    .MaterialExpressionEditorY=498
+    .MaterialExpressionGuid=879E2C7244E03168BF2712BC7C090087
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionComment (MaterialExpressionComment_1)
+    .SizeX=1460
+    .SizeY=936
+    .Text="Parallax Sampling of Render Target Height channel"
+    .CommentColor=(R=0.304729,G=0.552083,B=0.479557,A=1.000000)
+    .MaterialExpressionEditorX=-246
+    .MaterialExpressionEditorY=-86
+    .MaterialExpressionGuid=A6C4673141A351DCFD12EE86F9F7E03E
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionComment (MaterialExpressionComment_2)
+    .SizeX=808
+    .SizeY=296
+    .Text="Disable if no dynamic trails or on mobile"
+    .CommentColor=(R=0.651042,G=0.329160,B=0.223796,A=1.000000)
+    .MaterialExpressionEditorX=1488
+    .MaterialExpressionEditorY=-92
+    .MaterialExpressionGuid=74D269A7446B4C5EC30A228383D71253
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionComment (MaterialExpressionComment_3)
+    .SizeX=2188
+    .SizeY=424
+    .Text="Pixel Depth Offset"
+    .CommentColor=(R=1.000000,G=0.773609,B=0.319799,A=1.000000)
+    .MaterialExpressionEditorX=-244
+    .MaterialExpressionEditorY=1104
+    .MaterialExpressionGuid=3651CA144D611F429117BD96A5B3D74E
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionComment (MaterialExpressionComment_4)
+    .SizeX=2168
+    .SizeY=664
+    .Text="Parallax Sample Values"
+    .MaterialExpressionEditorX=-2512
+    .MaterialExpressionEditorY=-276
+    .MaterialExpressionGuid=E7C942A54A5BB10CD1DDEDAC72ECADA0
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionCollectionParameter
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'DLWE_Parallax:MaterialExpressionCollectionParameter_5'")
+    .MaterialExpressionEditorX=-1200
+    .MaterialExpressionEditorY=144
+    .MaterialExpressionGuid=A119E51F4DC8FF8EC7037781456D7744
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_2)
+    Input                  <- MaterialExpressionWorldPosition
+    .R=True
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionWorldPosition'DLWE_Parallax:MaterialExpressionWorldPosition_1'")
+    .MaterialExpressionEditorX=180
+    .MaterialExpressionEditorY=76
+    .MaterialExpressionGuid=278467D3463181103EB121A484114DC7
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_34)
+    Input                  <- MaterialExpressionCollectionParameter
+    .R=True
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'DLWE_Parallax:MaterialExpressionCollectionParameter_0'")
+    .MaterialExpressionEditorX=180
+    .MaterialExpressionEditorY=164
+    .MaterialExpressionGuid=9AC0149747369A3EE1DF0A8C194156A3
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_35)
+    Input                  <- MaterialExpressionCollectionParameter
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'DLWE_Parallax:MaterialExpressionCollectionParameter_0'")
+    .MaterialExpressionEditorX=328
+    .MaterialExpressionEditorY=216
+    .MaterialExpressionGuid=B7229CE7498E0D8ECD1A8BAD3B327A9F
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_8)
+    Input                  <- MaterialExpressionMultiply
+    .R=True
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'DLWE_Parallax:MaterialExpressionMultiply_7'")
+    .MaterialExpressionEditorX=-756
+    .MaterialExpressionEditorY=580
+    .MaterialExpressionGuid=2803DD6B445CD339E8EA63ACC98A4C08
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionConstant (MaterialExpressionConstant_0)
+    .MaterialExpressionEditorX=1902
+    .MaterialExpressionEditorY=113
+    .MaterialExpressionGuid=3FB48A1B43B2339FC9047EAEB6AABD74
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionConstant (MaterialExpressionConstant_1)
+    .MaterialExpressionEditorX=1154
+    .MaterialExpressionEditorY=1399
+    .MaterialExpressionGuid=3FB48A1B43B2339FC9047EAEB6AABD74
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionConstant (MaterialExpressionConstant_16)
+    .MaterialExpressionEditorX=1514
+    .MaterialExpressionEditorY=73
+    .MaterialExpressionGuid=595A51944FEDC961737D1CA5E454297D
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionConstant (MaterialExpressionConstant_2)
+    .MaterialExpressionEditorX=750
+    .MaterialExpressionEditorY=1367
+    .MaterialExpressionGuid=616F34BD442AAADE3F6A29A2BD62B819
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionCustom (MaterialExpressionCustom_20)
+    Inputs(0)              <- MaterialExpressionFunctionInput
+    Inputs(1)              <- MaterialExpressionDivide
+    Inputs(2)              <- MaterialExpressionNamedRerouteUsage
+    Inputs(3)              <- MaterialExpressionNamedRerouteUsage
+    Inputs(4)              <- MaterialExpressionMultiply
+    .Code="float rayheight=0.749;\r\nfloat oldray=1;\r\nfloat2 offset = 0;\r\nfloat oldtex=0;\r\nfloat xintersect;\r\nfloat i = 0;\r\nfloat Mask = 0.75;\r\nCurrentUV = UV;\r\n\r\nwhile (i<MaxSteps)\r\n{\r\nCurrentUV = UV+offset;\r\nMask = Tex.SampleGrad(TexSampler,CurrentUV, 0, 0).x;\r\nif (rayheight <= Mask)\r\n{\r\nxintersect= (Mask - rayheight) / ((oldray-oldtex) + (Mask - rayheight));\r\noffset-=(xintersect*UVDist);\r\nbreak;\r\n}\r\noldray=rayheight;\r\nrayheight-=stepsize;\r\noffset+=UVDist;\r\noldtex=Mask;\r\n\r\ni++;\r\n}\r\nreturn offset;"
+    .OutputType=CMOT_Float2
+    .Description="Parallax Mapping"
+    .Inputs(0)=(InputName="Tex",Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'DLWE_Parallax:MaterialExpressionFunctionInput_1'"))
+    .Inputs(1)=(InputName="UV",Input=(Expression="/Script/Engine.MaterialExpressionDivide'DLWE_Parallax:MaterialExpressionDivide_3'"))
+    .Inputs(2)=(InputName="MaxSteps",Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'DLWE_Parallax:MaterialExpressionNamedRerouteUsage_4'"))
+    .Inputs(3)=(InputName="stepsize",Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'DLWE_Parallax:MaterialExpressionNamedRerouteUsage_3'"))
+    .Inputs(4)=(InputName="UVDist",Input=(Expression="/Script/Engine.MaterialExpressionMultiply'DLWE_Parallax:MaterialExpressionMultiply_22'"))
+    .AdditionalOutputs(0)=(OutputName="CurrentUV",OutputType=CMOT_Float2)
+    .MaterialExpressionEditorX=984
+    .MaterialExpressionEditorY=-16
+    .MaterialExpressionGuid=DC87119C4C026BA942E14CAB4130F280
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+    .bShowOutputNameOnPin=True
+    .Outputs(0)=(OutputName="return")
+    .Outputs(1)=(OutputName="CurrentUV")
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    B                      <- MaterialExpressionSubtract
+    .B=(Expression="/Script/Engine.MaterialExpressionSubtract'DLWE_Parallax:MaterialExpressionSubtract_0'")
+    .ConstA=0.750000
+    .MaterialExpressionEditorX=-1016
+    .MaterialExpressionEditorY=-168
+    .MaterialExpressionGuid=F85C0D664C0ACEB5BDED758696D9764A
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionDivide (MaterialExpressionDivide_1)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionReroute
+    .B=(Expression="/Script/Engine.MaterialExpressionReroute'DLWE_Parallax:MaterialExpressionReroute_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'DLWE_Parallax:MaterialExpressionFunctionInput_2'")
+    .MaterialExpressionEditorX=144
+    .MaterialExpressionEditorY=1248
+    .MaterialExpressionGuid=C56E915E40EBF717AEEBDBA9DA6B5B5E
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionDivide (MaterialExpressionDivide_2)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'DLWE_Parallax:MaterialExpressionNamedRerouteUsage_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'DLWE_Parallax:MaterialExpressionComponentMask_0'")
+    .MaterialExpressionEditorX=-1064
+    .MaterialExpressionEditorY=144
+    .MaterialExpressionGuid=8F00AFA24A117FAD92204DA5F3F011A5
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionDivide (MaterialExpressionDivide_3)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'DLWE_Parallax:MaterialExpressionComponentMask_35'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'DLWE_Parallax:MaterialExpressionSubtract_16'")
+    .MaterialExpressionEditorX=508
+    .MaterialExpressionEditorY=76
+    .MaterialExpressionGuid=41E062724297D947523B319431DBD66F
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionDivide (MaterialExpressionDivide_4)
+    A                      <- MaterialExpressionCollectionParameter
+    B                      <- MaterialExpressionDivide
+    .B=(Expression="/Script/Engine.MaterialExpressionDivide'DLWE_Parallax:MaterialExpressionDivide_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'DLWE_Parallax:MaterialExpressionCollectionParameter_3'")
+    .MaterialExpressionEditorX=-948
+    .MaterialExpressionEditorY=56
+    .MaterialExpressionGuid=69F7834E473879785F017889B00D5BB4
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionDivide (MaterialExpressionDivide_9)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionAdd
+    .B=(Expression="/Script/Engine.MaterialExpressionAdd'DLWE_Parallax:MaterialExpressionAdd_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'DLWE_Parallax:MaterialExpressionComponentMask_8'")
+    .ConstB=1.000000
+    .MaterialExpressionEditorX=-428
+    .MaterialExpressionEditorY=668
+    .MaterialExpressionGuid=B490B4AA41DF6570DA3DC69D1B04458C
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionDotProduct (MaterialExpressionDotProduct_0)
+    A                      <- MaterialExpressionCameraVectorWS
+    B                      <- MaterialExpressionVertexNormalWS
+    .B=(Expression="/Script/Engine.MaterialExpressionVertexNormalWS'DLWE_Parallax:MaterialExpressionVertexNormalWS_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionCameraVectorWS'DLWE_Parallax:MaterialExpressionCameraVectorWS_9'")
+    .MaterialExpressionEditorX=-968
+    .MaterialExpressionEditorY=692
+    .MaterialExpressionGuid=39221B0A4883C498CE0F049AF60775F9
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_1)
+    Preview                <- MaterialExpressionTextureObject
+    .Preview=(Expression="/Script/Engine.MaterialExpressionTextureObject'DLWE_Parallax:MaterialExpressionTextureObject_1'")
+    .InputName="Texture"
+    .Id=008CE1E3402113B28F764A905FF5074F
+    .InputType=FunctionInput_Texture2D
+    .MaterialExpressionEditorX=376
+    .MaterialExpressionEditorY=-12
+    .MaterialExpressionGuid=9EF4CB114BB64D6E1CB71D8BDD368CCF
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_2)
+    .InputName="Blue Mask Channel"
+    .Id=C7DEDA4542E73D880E306EB9A1B7BFA7
+    .InputType=FunctionInput_Scalar
+    .MaterialExpressionEditorX=-144
+    .MaterialExpressionEditorY=1200
+    .MaterialExpressionGuid=817B810548F436DC507EA8BAF1D19783
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_3)
+    .InputName="Active Snow/Dust Depth"
+    .Id=35D5208A409F0AC017C19C93AC0A52C6
+    .InputType=FunctionInput_Scalar
+    .MaterialExpressionEditorX=24
+    .MaterialExpressionEditorY=1416
+    .MaterialExpressionGuid=BEB0636849C98FE5D76B69A65D0FD8AC
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_6)
+    .InputName="Snow Mask"
+    .Id=6DF0E2834B18B8199E63B0AE3090D356
+    .InputType=FunctionInput_Scalar
+    .MaterialExpressionEditorX=92
+    .MaterialExpressionEditorY=596
+    .MaterialExpressionGuid=6A2FA39643E6AC2B84F9F3BFE7895028
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionShadingPathSwitch
+    .A=(Expression="/Script/Engine.MaterialExpressionShadingPathSwitch'DLWE_Parallax:MaterialExpressionShadingPathSwitch_0'")
+    .OutputName="Parallax UV Offset"
+    .bLastPreviewed=True
+    .Id=35C448134F34ECE3DD1D028B8AD41B30
+    .MaterialExpressionEditorX=2366
+    .MaterialExpressionEditorY=-51
+    .MaterialExpressionGuid=A8A73B3F4F9EFC24A6FB2EABF759AEBA
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_1)
+    A                      <- MaterialExpressionShadingPathSwitch
+    .A=(Expression="/Script/Engine.MaterialExpressionShadingPathSwitch'DLWE_Parallax:MaterialExpressionShadingPathSwitch_1'")
+    .OutputName="Pixel Depth Offset"
+    .bLastPreviewed=True
+    .Id=CDEA2AC54E157128255E09AA156E4DD5
+    .MaterialExpressionEditorX=1546
+    .MaterialExpressionEditorY=1243
+    .MaterialExpressionGuid=A8A73B3F4F9EFC24A6FB2EABF759AEBA
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_3)
+    A                      <- MaterialExpressionCustom
+    .A=(Expression="/Script/Engine.MaterialExpressionCustom'DLWE_Parallax:MaterialExpressionCustom_20'",OutputIndex=1)
+    .OutputName="MaskUV"
+    .Id=05831C354B1CA8052D2D09965BD5C110
+    .MaterialExpressionEditorX=1292
+    .MaterialExpressionEditorY=244
+    .MaterialExpressionGuid=F814A9D74BAB0BAA63D170858EB46D24
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+    .bCollapsed=True
+  MaterialExpressionMax (MaterialExpressionMax_0)
+    A                      <- MaterialExpressionNamedRerouteDeclaration
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'DLWE_Parallax:MaterialExpressionNamedRerouteDeclaration_3'")
+    .MaterialExpressionEditorX=-1772
+    .MaterialExpressionEditorY=-168
+    .MaterialExpressionGuid=8ED7D38545205F20F4122A84AB82C0F3
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionMax (MaterialExpressionMax_1)
+    A                      <- MaterialExpressionCollectionParameter
+    B                      <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'DLWE_Parallax:MaterialExpressionCollectionParameter_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'DLWE_Parallax:MaterialExpressionCollectionParameter_6'")
+    .MaterialExpressionEditorX=-2116
+    .MaterialExpressionEditorY=-168
+    .MaterialExpressionGuid=D616167745318614A26B5196554A94BA
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionDivide
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'DLWE_Parallax:MaterialExpressionMultiply_14'")
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'DLWE_Parallax:MaterialExpressionDivide_1'")
+    .MaterialExpressionEditorX=684
+    .MaterialExpressionEditorY=1246
+    .MaterialExpressionGuid=923A20DC4AF19C6E80555DB1E1773E64
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionMax
+    B                      <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'DLWE_Parallax:MaterialExpressionCollectionParameter_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMax'DLWE_Parallax:MaterialExpressionMax_0'")
+    .MaterialExpressionEditorX=-1508
+    .MaterialExpressionEditorY=-168
+    .MaterialExpressionGuid=B51CC8B7447CA3F28AA465AC2DE9068A
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_14)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    B                      <- MaterialExpressionNamedRerouteDeclaration
+    .B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'DLWE_Parallax:MaterialExpressionNamedRerouteDeclaration_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'DLWE_Parallax:MaterialExpressionNamedRerouteUsage_0'")
+    .MaterialExpressionEditorX=547
+    .MaterialExpressionEditorY=1331
+    .MaterialExpressionGuid=E59A5F484AA07F74850BE2898BC0B84E
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_19)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    B                      <- MaterialExpressionNamedRerouteDeclaration
+    .B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'DLWE_Parallax:MaterialExpressionNamedRerouteDeclaration_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'DLWE_Parallax:MaterialExpressionNamedRerouteUsage_2'")
+    .MaterialExpressionEditorX=600
+    .MaterialExpressionEditorY=536
+    .MaterialExpressionGuid=2DAC62864CEED314F2594DAC203CFA4E
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_22)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'DLWE_Parallax:MaterialExpressionMultiply_8'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'DLWE_Parallax:MaterialExpressionMultiply_19'")
+    .MaterialExpressionEditorX=816
+    .MaterialExpressionEditorY=536
+    .MaterialExpressionGuid=4865E54541F96186EDC3D8B3F39B88DE
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_3)
+    A                      <- MaterialExpressionDivide
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'DLWE_Parallax:MaterialExpressionDivide_4'")
+    .ConstB=1.500000
+    .MaterialExpressionEditorX=-832
+    .MaterialExpressionEditorY=56
+    .MaterialExpressionGuid=369336F84DBF0CE71F8553A69606CE6B
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_4)
+    A                      <- MaterialExpressionNamedRerouteDeclaration
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'DLWE_Parallax:MaterialExpressionMultiply_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'DLWE_Parallax:MaterialExpressionNamedRerouteDeclaration_2'")
+    .MaterialExpressionEditorX=-660
+    .MaterialExpressionEditorY=-168
+    .MaterialExpressionGuid=529671684E5735ABA5C6D78BCC8DE6CD
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_7)
+    A                      <- MaterialExpressionCameraVectorWS
+    .A=(Expression="/Script/Engine.MaterialExpressionCameraVectorWS'DLWE_Parallax:MaterialExpressionCameraVectorWS_9'")
+    .ConstB=-1.000000
+    .MaterialExpressionEditorX=-884
+    .MaterialExpressionEditorY=580
+    .MaterialExpressionGuid=C93DA93E4B3BBFBA88C69DBB271CA63D
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_8)
+    A                      <- MaterialExpressionDivide
+    B                      <- MaterialExpressionNamedRerouteDeclaration
+    .B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'DLWE_Parallax:MaterialExpressionNamedRerouteDeclaration_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'DLWE_Parallax:MaterialExpressionDivide_9'")
+    .ConstB=0.002000
+    .MaterialExpressionEditorX=604
+    .MaterialExpressionEditorY=668
+    .MaterialExpressionGuid=B7EEC75E4C622BD902FBBDAF8D3CF8A5
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_0)
+    Input                  <- MaterialExpressionFunctionInput
+    .Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'DLWE_Parallax:MaterialExpressionFunctionInput_6'")
+    .Name="Snow Mask Input"
+    .NodeColor=(R=0.921875,G=0.000000,B=1.000000,A=1.000000)
+    .VariableGuid=DC9632924A06C0EE621134BD04B690FE
+    .MaterialExpressionEditorX=316
+    .MaterialExpressionEditorY=596
+    .MaterialExpressionGuid=E29C09B6420A40C77A0C8BBD8DB8D4C0
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_1)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'DLWE_Parallax:MaterialExpressionMultiply_1'")
+    .Name="Max Steps"
+    .NodeColor=(R=1.000000,G=0.070312,B=0.000000,A=1.000000)
+    .VariableGuid=B4A5223C4C2DE93B960F42A0E35C93CC
+    .MaterialExpressionEditorX=-1320
+    .MaterialExpressionEditorY=-168
+    .MaterialExpressionGuid=8B904BEB44320000B1715F8046CE4FE9
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_2)
+    Input                  <- MaterialExpressionDivide
+    .Input=(Expression="/Script/Engine.MaterialExpressionDivide'DLWE_Parallax:MaterialExpressionDivide_0'")
+    .Name="Step Size"
+    .NodeColor=(R=0.000000,G=0.250000,B=1.000000,A=1.000000)
+    .VariableGuid=CBB596EC4531D4A474530A96D3DF10CE
+    .MaterialExpressionEditorX=-876
+    .MaterialExpressionEditorY=-168
+    .MaterialExpressionGuid=AA676B76498E0B032C29D6851CE47584
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_3)
+    Input                  <- MaterialExpressionMax
+    .Input=(Expression="/Script/Engine.MaterialExpressionMax'DLWE_Parallax:MaterialExpressionMax_1'")
+    .Name="Max Depth"
+    .NodeColor=(R=0.570312,G=1.000000,B=0.000000,A=1.000000)
+    .VariableGuid=CFE6ED10438BA9B994942CA973287D2E
+    .MaterialExpressionEditorX=-1908
+    .MaterialExpressionEditorY=-168
+    .MaterialExpressionGuid=638BC466470E097E4BA883B86A71E14F
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_4)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'DLWE_Parallax:MaterialExpressionMultiply_4'")
+    .Name="Height Ratio"
+    .NodeColor=(R=1.000000,G=0.000000,B=0.890625,A=1.000000)
+    .VariableGuid=A5601E724DEE3D80111D169469B6852E
+    .MaterialExpressionEditorX=-516
+    .MaterialExpressionEditorY=-168
+    .MaterialExpressionGuid=F1FE8CCF4B32FC5ADB38AB8D4DBF0A19
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_5)
+    Input                  <- MaterialExpressionFunctionInput
+    .Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'DLWE_Parallax:MaterialExpressionFunctionInput_3'")
+    .Name="Snow Depth"
+    .NodeColor=(R=0.000000,G=0.390625,B=1.000000,A=1.000000)
+    .VariableGuid=ED7A7E414D949D04BA928BA45359A91A
+    .MaterialExpressionEditorX=372
+    .MaterialExpressionEditorY=1416
+    .MaterialExpressionGuid=EC93B98249D148CAB473479B171C9BF5
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_0)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'DLWE_Parallax:MaterialExpressionNamedRerouteDeclaration_0'"
+    .DeclarationGuid=DC9632924A06C0EE621134BD04B690FE
+    .MaterialExpressionEditorX=368
+    .MaterialExpressionEditorY=1332
+    .MaterialExpressionGuid=839F89FE416076C6797557952E7970BA
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_2)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'DLWE_Parallax:MaterialExpressionNamedRerouteDeclaration_4'"
+    .DeclarationGuid=A5601E724DEE3D80111D169469B6852E
+    .MaterialExpressionEditorX=312
+    .MaterialExpressionEditorY=508
+    .MaterialExpressionGuid=498B5E5C4BB75F6F78F936A3EFC785B0
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_3)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'DLWE_Parallax:MaterialExpressionNamedRerouteDeclaration_2'"
+    .DeclarationGuid=CBB596EC4531D4A474530A96D3DF10CE
+    .MaterialExpressionEditorX=604
+    .MaterialExpressionEditorY=264
+    .MaterialExpressionGuid=4777B2084B9A7FC1F45269A9950F43B6
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_4)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'DLWE_Parallax:MaterialExpressionNamedRerouteDeclaration_1'"
+    .DeclarationGuid=B4A5223C4C2DE93B960F42A0E35C93CC
+    .MaterialExpressionEditorX=596
+    .MaterialExpressionEditorY=192
+    .MaterialExpressionGuid=806FBE93439F94D0154B978D95CF2BDB
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_5)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'DLWE_Parallax:MaterialExpressionNamedRerouteDeclaration_5'"
+    .DeclarationGuid=ED7A7E414D949D04BA928BA45359A91A
+    .MaterialExpressionEditorX=-1216
+    .MaterialExpressionEditorY=244
+    .MaterialExpressionGuid=4057A81F43A3DED887E2239AAEA28ACB
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionReroute (MaterialExpressionReroute_0)
+    Input                  <- MaterialExpressionAdd
+    .Input=(Expression="/Script/Engine.MaterialExpressionAdd'DLWE_Parallax:MaterialExpressionAdd_2'")
+    .MaterialExpressionEditorX=-220
+    .MaterialExpressionEditorY=1312
+    .MaterialExpressionGuid=E559A070495B39DADF177097165DB2EA
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_1)
+    Input                  <- MaterialExpressionDotProduct
+    .Input=(Expression="/Script/Engine.MaterialExpressionDotProduct'DLWE_Parallax:MaterialExpressionDotProduct_0'")
+    .MaterialExpressionEditorX=-848
+    .MaterialExpressionEditorY=696
+    .MaterialExpressionGuid=2427D4C34A7CA96AA8A3E5BD049D20CE
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionShadingPathSwitch (MaterialExpressionShadingPathSwitch_0)
+    Default                <- MaterialExpressionStaticSwitchParameter
+    Inputs(2)              <- MaterialExpressionConstant
+    .Default=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'DLWE_Parallax:MaterialExpressionStaticSwitchParameter_18'")
+    .Inputs(2)=(Expression="/Script/Engine.MaterialExpressionConstant'DLWE_Parallax:MaterialExpressionConstant_0'")
+    .MaterialExpressionEditorX=2086
+    .MaterialExpressionEditorY=-19
+    .MaterialExpressionGuid=9958DF1D4E0CCCDE65A8629694DEA498
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionShadingPathSwitch (MaterialExpressionShadingPathSwitch_1)
+    Default                <- MaterialExpressionStaticSwitchParameter
+    Inputs(2)              <- MaterialExpressionConstant
+    .Default=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'DLWE_Parallax:MaterialExpressionStaticSwitchParameter_0'")
+    .Inputs(2)=(Expression="/Script/Engine.MaterialExpressionConstant'DLWE_Parallax:MaterialExpressionConstant_1'")
+    .MaterialExpressionEditorX=1338
+    .MaterialExpressionEditorY=1243
+    .MaterialExpressionGuid=9958DF1D4E0CCCDE65A8629694DEA498
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionStaticSwitchParameter (MaterialExpressionStaticSwitchParameter_0)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionConstant
+    .ParameterName="Apply Dynamic Trails to Snow/Dust"
+    .DefaultValue=True
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'DLWE_Parallax:MaterialExpressionConstant_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'DLWE_Parallax:MaterialExpressionMultiply_0'")
+    .ExpressionGUID=04BE7DA24840005F9C5B69BF2FCEFBC3
+    .Group="Dynamic Landscape Weather Effects"
+    .SortPriority=35
+    .MaterialExpressionEditorX=928
+    .MaterialExpressionEditorY=1228
+    .MaterialExpressionGuid=AD025E6C4C2142CCF7B545AF27ABC4FD
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionStaticSwitchParameter (MaterialExpressionStaticSwitchParameter_18)
+    A                      <- MaterialExpressionCustom
+    B                      <- MaterialExpressionConstant
+    .ParameterName="Apply Dynamic Trails to Snow/Dust"
+    .DefaultValue=True
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'DLWE_Parallax:MaterialExpressionConstant_16'")
+    .A=(Expression="/Script/Engine.MaterialExpressionCustom'DLWE_Parallax:MaterialExpressionCustom_20'")
+    .ExpressionGUID=04BE7DA24840005F9C5B69BF2FCEFBC3
+    .Group="Dynamic Landscape Weather Effects"
+    .SortPriority=35
+    .MaterialExpressionEditorX=1670
+    .MaterialExpressionEditorY=-35
+    .MaterialExpressionGuid=AD025E6C4C2142CCF7B545AF27ABC4FD
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_0)
+    A                      <- MaterialExpressionNamedRerouteDeclaration
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'DLWE_Parallax:MaterialExpressionNamedRerouteDeclaration_1'")
+    .MaterialExpressionEditorX=-1176
+    .MaterialExpressionEditorY=-168
+    .MaterialExpressionGuid=8C266DC247853FEAFC27098255B04BD6
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_16)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'DLWE_Parallax:MaterialExpressionComponentMask_34'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'DLWE_Parallax:MaterialExpressionComponentMask_2'")
+    .MaterialExpressionEditorX=340
+    .MaterialExpressionEditorY=76
+    .MaterialExpressionGuid=5BD8BCCA42EA9464DEBE8980B6C6BA0F
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionTextureObject (MaterialExpressionTextureObject_1)
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.TextureRenderTarget2D'/Game/UltraDynamicSky/Textures/Weather/DLWE_MaskTarget.DLWE_MaskTarget'"
+    .MaterialExpressionEditorX=196
+    .MaterialExpressionEditorY=-12
+    .MaterialExpressionGuid=5D8267F542850DE4D3E390BAEE610728
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+    .bCollapsed=True
+  MaterialExpressionVertexNormalWS (MaterialExpressionVertexNormalWS_1)
+    .MaterialExpressionEditorX=-1204
+    .MaterialExpressionEditorY=724
+    .MaterialExpressionGuid=6CA1A4A34E81E87D5D9F3B94C0BD7648
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"
+  MaterialExpressionWorldPosition (MaterialExpressionWorldPosition_1)
+    .MaterialExpressionEditorX=-56
+    .MaterialExpressionEditorY=60
+    .MaterialExpressionGuid=B31686094687C4040AEEF996D9100CE9
+    .Function="/Script/Engine.MaterialFunction'DLWE_Parallax'"

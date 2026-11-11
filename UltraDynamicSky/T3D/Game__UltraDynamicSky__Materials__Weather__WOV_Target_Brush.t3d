@@ -1,0 +1,57 @@
+Begin Object Class=/Script/Engine.Material Name="WOV_Target_Brush" ExportPath="/Script/Engine.Material'/Game/UltraDynamicSky/Materials/Weather/WOV_Target_Brush.WOV_Target_Brush'"
+   Begin Object Class=/Script/Engine.MaterialEditorOnlyData Name="WOV_Target_BrushEditorOnlyData" ExportPath="/Script/Engine.MaterialEditorOnlyData'/Game/UltraDynamicSky/Materials/Weather/WOV_Target_Brush.WOV_Target_Brush:WOV_Target_BrushEditorOnlyData'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_0" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Weather/WOV_Target_Brush.WOV_Target_Brush:MaterialExpressionMultiply_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_0" ExportPath="/Script/Engine.MaterialExpressionVectorParameter'/Game/UltraDynamicSky/Materials/Weather/WOV_Target_Brush.WOV_Target_Brush:MaterialExpressionVectorParameter_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVertexColor Name="MaterialExpressionVertexColor_0" ExportPath="/Script/Engine.MaterialExpressionVertexColor'/Game/UltraDynamicSky/Materials/Weather/WOV_Target_Brush.WOV_Target_Brush:MaterialExpressionVertexColor_0'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/Weather/WOV_Target_Brush.WOV_Target_Brush:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   Begin Object Name="WOV_Target_BrushEditorOnlyData" ExportPath="/Script/Engine.MaterialEditorOnlyData'/Game/UltraDynamicSky/Materials/Weather/WOV_Target_Brush.WOV_Target_Brush:WOV_Target_BrushEditorOnlyData'"
+      EmissiveColor=(Expression="/Script/Engine.MaterialExpressionVectorParameter'WOV_Target_Brush:MaterialExpressionVectorParameter_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      Opacity=(Expression="/Script/Engine.MaterialExpressionMultiply'WOV_Target_Brush:MaterialExpressionMultiply_0'")
+      ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionVectorParameter'WOV_Target_Brush:MaterialExpressionVectorParameter_0'","/Script/Engine.MaterialExpressionVertexColor'WOV_Target_Brush:MaterialExpressionVertexColor_0'","/Script/Engine.MaterialExpressionMultiply'WOV_Target_Brush:MaterialExpressionMultiply_0'"))
+      ParameterGroupData(0)=(GroupName="None")
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_0" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Weather/WOV_Target_Brush.WOV_Target_Brush:MaterialExpressionMultiply_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionVectorParameter'WOV_Target_Brush:MaterialExpressionVectorParameter_0'",OutputIndex=4,Mask=1,MaskA=1)
+      B=(Expression="/Script/Engine.MaterialExpressionVertexColor'WOV_Target_Brush:MaterialExpressionVertexColor_0'",OutputIndex=4,Mask=1,MaskA=1)
+      MaterialExpressionEditorX=-608
+      MaterialExpressionEditorY=188
+      MaterialExpressionGuid=A0D1581641A05B3FF0C3ADBD6B37C5F9
+      Material="/Script/Engine.Material'WOV_Target_Brush'"
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_0" ExportPath="/Script/Engine.MaterialExpressionVectorParameter'/Game/UltraDynamicSky/Materials/Weather/WOV_Target_Brush.WOV_Target_Brush:MaterialExpressionVectorParameter_0'"
+      DefaultValue=(R=1.000000,G=1.000000,B=1.000000,A=1.000000)
+      ParameterName="Color"
+      ExpressionGUID=8813146345CA33378143329FA3F99590
+      MaterialExpressionEditorX=-848
+      MaterialExpressionEditorY=72
+      MaterialExpressionGuid=91CC2E5341ADCDC7DE3EC49CFF6A8FEB
+      Material="/Script/Engine.Material'WOV_Target_Brush'"
+   End Object
+   Begin Object Name="MaterialExpressionVertexColor_0" ExportPath="/Script/Engine.MaterialExpressionVertexColor'/Game/UltraDynamicSky/Materials/Weather/WOV_Target_Brush.WOV_Target_Brush:MaterialExpressionVertexColor_0'"
+      MaterialExpressionEditorX=-836
+      MaterialExpressionEditorY=260
+      MaterialExpressionGuid=676B158145E924DF1810A9B85AC6010F
+      Material="/Script/Engine.Material'WOV_Target_Brush'"
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/Weather/WOV_Target_Brush.WOV_Target_Brush:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   BlendMode=BLEND_AlphaComposite
+   ShadingModel=MSM_Unlit
+   ShadingModels=(ShadingModelField=1)
+   bTangentSpaceNormal=False
+   EditorX=-276
+   EditorY=8
+   bCanMaskedBeAssumedOpaque=True
+   bCastRayTracedShadows=False
+   bUseTranslucencyVertexFog=False
+   PixelDepthOffsetMode=PDOM_Legacy
+   StateId=53273576A0B0AFCB2AD8B699419DA63D
+   EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'WOV_Target_BrushEditorOnlyData'"
+   ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+   LightingGuid=8181FC214F8500C870667AA5C84D961B
+End Object

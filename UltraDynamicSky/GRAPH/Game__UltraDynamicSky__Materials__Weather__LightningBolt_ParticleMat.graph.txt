@@ -1,0 +1,845 @@
+### /Game/UltraDynamicSky/Materials/Weather/LightningBolt_ParticleMat
+  Material (LightningBolt_ParticleMat)
+    .BlendMode=BLEND_Additive
+    .MaterialDecalResponse=MDR_None
+    .ShadingModel=MSM_Unlit
+    .ShadingModels=(ShadingModelField=1)
+    .OpacityMaskClipValue=0.050000
+    .TranslucencyPass=MTP_BeforeDOF
+    .bTangentSpaceNormal=False
+    .bUsedWithNiagaraSprites=True
+    .bUsedWithNiagaraRibbons=True
+    .EditorX=3344
+    .EditorY=-41
+    .bCanMaskedBeAssumedOpaque=True
+    .bCastRayTracedShadows=False
+    .bUseTranslucencyVertexFog=False
+    .PixelDepthOffsetMode=PDOM_Legacy
+    .StateId=B49C0B2F4015F3ADEBFBDB81633D14D2
+    .ReferencedTextureGuids(0)=9080AA1E47B0FE7B95E79A93A36D2556
+    .ReferencedTextureGuids(1)=3AA5B0EB4B70EABD919D26896508BC7D
+    .ReferencedTextureGuids(2)=2F8AA006438068BC53AB49891FC912D4
+    .EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'LightningBolt_ParticleMatEditorOnlyData'"
+    .ReferencedDefaultTextures(0)="/Script/Engine.VolumeTexture'/Game/ENDEMIS/Weather/Clouds/3D_Cells_64.3D_Cells_64'"
+    .ReferencedDefaultTextures(1)="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_ParticleClouds.T_ParticleClouds'"
+    .ReferencedDefaultTextures(2)="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_WhiteNoise512.T_WhiteNoise512'"
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+    .ParameterOverviewExpansion=(("-12Global", True))
+    .LightingGuid=991899A04EE2B49D2C7BBF8F0A6284FB
+  MaterialEditorOnlyData (LightningBolt_ParticleMatEditorOnlyData)
+    EmissiveColor          <- MaterialExpressionMultiply
+    Opacity                <- MaterialExpressionShadingPathSwitch
+    ExpressionCollection   <- MaterialExpressionMultiply
+    .BaseColor=(UseConstant=True,Constant=(R=0.501961,G=0.501961,B=0.501961,A=1.000000))
+    .Metallic=(UseConstant=True)
+    .Specular=(UseConstant=True)
+    .Roughness=(UseConstant=True)
+    .Anisotropy=(UseConstant=True)
+    .Normal=(UseConstant=True)
+    .Tangent=(UseConstant=True)
+    .EmissiveColor=(Expression="/Script/Engine.MaterialExpressionMultiply'LightningBolt_ParticleMat:MaterialExpressionMultiply_2'")
+    .Opacity=(Expression="/Script/Engine.MaterialExpressionShadingPathSwitch'LightningBolt_ParticleMat:MaterialExpressionShadingPathSwitch_1'")
+    .OpacityMask=(UseConstant=True)
+    .WorldPositionOffset=(UseConstant=True)
+    .Displacement=(UseConstant=True)
+    .SubsurfaceColor=(UseConstant=True)
+    .ClearCoat=(UseConstant=True)
+    .ClearCoatRoughness=(UseConstant=True)
+    .AmbientOcclusion=(UseConstant=True)
+    .Refraction=(UseConstant=True)
+    .CustomizedUVs(0)=(UseConstant=True)
+    .CustomizedUVs(1)=(UseConstant=True)
+    .CustomizedUVs(2)=(UseConstant=True)
+    .CustomizedUVs(3)=(UseConstant=True)
+    .CustomizedUVs(4)=(UseConstant=True)
+    .CustomizedUVs(5)=(UseConstant=True)
+    .CustomizedUVs(6)=(UseConstant=True)
+    .CustomizedUVs(7)=(UseConstant=True)
+    .PixelDepthOffset=(UseConstant=True)
+    .SurfaceThickness=(UseConstant=True)
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionMultiply'LightningBolt_ParticleMat:MaterialExpressionMultiply_2'","/Script/Engine.MaterialExpressionShadingPathSwitch'LightningBolt_ParticleMat:MaterialExpressionShadingPathSwitch_1'","/Script/Engine.MaterialExpressionMultiply'LightningBolt_ParticleMat:MaterialExpressionMultiply_15'","/Script/Engine.MaterialExpressionMultiply'LightningBolt_ParticleMat:MaterialExpressionMultiply_5'","/Script/Engine.MaterialExpressionMultiply'LightningBolt_ParticleMat:MaterialExpressionMultiply_7'","/Script/Engine.MaterialExpressionPower'LightningBolt_ParticleMat:MaterialExpressionPower_1'","/Script/Engine.MaterialExpressionMaterialFunctionCall'LightningBolt_ParticleMat:MaterialExpressionMaterialFunctionCall_1'","/Script/Engine.MaterialExpressionDepthFade'LightningBolt_ParticleMat:MaterialExpressionDepthFade_0'","/Script/Engine.MaterialExpressionConstant'LightningBolt_ParticleMat:MaterialExpressionConstant_2'","/Script/Engine.MaterialExpressionFeatureLevelSwitch'LightningBolt_ParticleMat:MaterialExpressionFeatureLevelSwitch_0'","/Script/Engine.MaterialExpressionConstant'LightningBolt_ParticleMat:MaterialExpressionConstant_3'","/Script/Engine.MaterialExpressionTextureCoordinate'LightningBolt_ParticleMat:MaterialExpressionTextureCoordinate_2'","/Script/Engine.MaterialExpressionAdd'LightningBolt_ParticleMat:MaterialExpressionAdd_1'","/Script/Engine.MaterialExpressionMultiply'LightningBolt_ParticleMat:MaterialExpressionMultiply_6'","/Script/Engine.MaterialExpressionSaturate'LightningBolt_ParticleMat:MaterialExpressionSaturate_0'","/Script/Engine.MaterialExpressionTextureSample'LightningBolt_ParticleMat:MaterialExpressionTextureSample_1'","/Script/Engine.MaterialExpressionSubtract'LightningBolt_ParticleMat:MaterialExpressionSubtract_2'","/Script/Engine.MaterialExpressionAdd'LightningBolt_ParticleMat:MaterialExpressionAdd_2'","/Script/Engine.MaterialExpressionAdd'LightningBolt_ParticleMat:MaterialExpressionAdd_3'","/Script/Engine.MaterialExpressionSubtract'LightningBolt_ParticleMat:MaterialExpressionSubtract_3'","/Script/Engine.MaterialExpressionAbs'LightningBolt_ParticleMat:MaterialExpressionAbs_1'","/Script/Engine.MaterialExpressionMultiply'LightningBolt_ParticleMat:MaterialExpressionMultiply_11'","/Script/Engine.MaterialExpressionTextureCoordinate'LightningBolt_ParticleMat:MaterialExpressionTextureCoordinate_4'","/Script/Engine.MaterialExpressionComponentMask'LightningBolt_ParticleMat:MaterialExpressionComponentMask_4'","/Script/Engine.MaterialExpressionParticleRandom'LightningBolt_ParticleMat:MaterialExpressionParticleRandom_1'","/Script/Engine.MaterialExpressionTextureCoordinate'LightningBolt_ParticleMat:MaterialExpressionTextureCoordinate_5'","/Script/Engine.MaterialExpressionComponentMask'LightningBolt_ParticleMat:MaterialExpressionComponentMask_5'","/Script/Engine.MaterialExpressionMultiply'LightningBolt_ParticleMat:MaterialExpressionMultiply_12'","/Script/Engine.MaterialExpressionOneMinus'LightningBolt_ParticleMat:MaterialExpressionOneMinus_2'","/Script/Engine.MaterialExpressionTextureCoordinate'LightningBolt_ParticleMat:MaterialExpressionTextureCoordinate_6'","/Script/Engine.MaterialExpressionComponentMask'LightningBolt_ParticleMat:MaterialExpressionComponentMask_6'","/Script/Engine.MaterialExpressionSubtract'LightningBolt_ParticleMat:MaterialExpressionSubtract_4'","/Script/Engine.MaterialExpressionAbs'LightningBolt_ParticleMat:MaterialExpressionAbs_2'","/Script/Engine.MaterialExpressionSubtract'LightningBolt_ParticleMat:MaterialExpressionSubtract_5'","/Script/Engine.MaterialExpressionMultiply'LightningBolt_ParticleMat:MaterialExpressionMultiply_13'","/Script/Engine.MaterialExpressionPower'LightningBolt_ParticleMat:MaterialExpressionPower_3'","/Script/Engine.MaterialExpressionOneMinus'LightningBolt_ParticleMat:MaterialExpressionOneMinus_3'","/Script/Engine.MaterialExpressionParticleColor'LightningBolt_ParticleMat:MaterialExpressionParticleColor_1'","/Script/Engine.MaterialExpressionPower'LightningBolt_ParticleMat:MaterialExpressionPower_4'","/Script/Engine.MaterialExpressionParticleRelativeTime'LightningBolt_ParticleMat:MaterialExpressionParticleRelativeTime_0'","/Script/Engine.MaterialExpressionAdd'LightningBolt_ParticleMat:MaterialExpressionAdd_4'","/Script/Engine.MaterialExpressionMultiply'LightningBolt_ParticleMat:MaterialExpressionMultiply_16'","/Script/Engine.MaterialExpressionParticleSize'LightningBolt_ParticleMat:MaterialExpressionParticleSize_0'","/Script/Engine.MaterialExpressionComponentMask'LightningBolt_ParticleMat:MaterialExpressionComponentMask_7'","/Script/Engine.MaterialExpressionDivide'LightningBolt_ParticleMat:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionMultiply'LightningBolt_ParticleMat:MaterialExpressionMultiply_18'","/Script/Engine.MaterialExpressionSaturate'LightningBolt_ParticleMat:MaterialExpressionSaturate_2'","/Script/Engine.MaterialExpressionOneMinus'LightningBolt_ParticleMat:MaterialExpressionOneMinus_4'","/Script/Engine.MaterialExpressionMultiply'LightningBolt_ParticleMat:MaterialExpressionMultiply_19'","/Script/Engine.MaterialExpressionAppendVector'LightningBolt_ParticleMat:MaterialExpressionAppendVector_3'","/Script/Engine.MaterialExpressionParticleSize'LightningBolt_ParticleMat:MaterialExpressionParticleSize_1'","/Script/Engine.MaterialExpressionComponentMask'LightningBolt_ParticleMat:MaterialExpressionComponentMask_8'","/Script/Engine.MaterialExpressionDivide'LightningBolt_ParticleMat:MaterialExpressionDivide_1'","/Script/Engine.MaterialExpressionConstant'LightningBolt_ParticleMat:MaterialExpressionConstant_7'","/Script/Engine.MaterialExpressionDivide'LightningBolt_ParticleMat:MaterialExpressionDivide_2'","/Script/Engine.MaterialExpressionDDY'LightningBolt_ParticleMat:MaterialExpressionDDY_1'","/Script/Engine.MaterialExpressionAbs'LightningBolt_ParticleMat:MaterialExpressionAbs_5'","/Script/Engine.MaterialExpressionLinearInterpolate'LightningBolt_ParticleMat:MaterialExpressionLinearInterpolate_1'","/Script/Engine.MaterialExpressionMultiply'LightningBolt_ParticleMat:MaterialExpressionMultiply_21'","/Script/Engine.MaterialExpressionSaturate'LightningBolt_ParticleMat:MaterialExpressionSaturate_3'","/Script/Engine.MaterialExpressionMultiply'LightningBolt_ParticleMat:MaterialExpressionMultiply_22'","/Script/Engine.MaterialExpressionDynamicParameter'LightningBolt_ParticleMat:MaterialExpressionDynamicParameter_0'","/Script/Engine.MaterialExpressionWorldPosition'LightningBolt_ParticleMat:MaterialExpressionWorldPosition_0'","/Script/Engine.MaterialExpressionCameraPositionWS'LightningBolt_ParticleMat:MaterialExpressionCameraPositionWS_0'","/Script/Engine.MaterialExpressionDistance'LightningBolt_ParticleMat:MaterialExpressionDistance_1'","/Script/Engine.MaterialExpressionDivide'LightningBolt_ParticleMat:MaterialExpressionDivide_4'","/Script/Engine.MaterialExpressionSaturate'LightningBolt_ParticleMat:MaterialExpressionSaturate_7'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'LightningBolt_ParticleMat:MaterialExpressionNamedRerouteDeclaration_0'","/Script/Engine.MaterialExpressionOneMinus'LightningBolt_ParticleMat:MaterialExpressionOneMinus_7'","/Script/Engine.MaterialExpressionNamedRerouteUsage'LightningBolt_ParticleMat:MaterialExpressionNamedRerouteUsage_0'","/Script/Engine.MaterialExpressionLinearInterpolate'LightningBolt_ParticleMat:MaterialExpressionLinearInterpolate_3'","/Script/Engine.MaterialExpressionNamedRerouteUsage'LightningBolt_ParticleMat:MaterialExpressionNamedRerouteUsage_1'","/Script/Engine.MaterialExpressionLinearInterpolate'LightningBolt_ParticleMat:MaterialExpressionLinearInterpolate_4'","/Script/Engine.MaterialExpressionTextureSample'LightningBolt_ParticleMat:MaterialExpressionTextureSample_2'","/Script/Engine.MaterialExpressionTextureCoordinate'LightningBolt_ParticleMat:MaterialExpressionTextureCoordinate_10'","/Script/Engine.MaterialExpressionMultiply'LightningBolt_ParticleMat:MaterialExpressionMultiply_31'","/Script/Engine.MaterialExpressionParticleSize'LightningBolt_ParticleMat:MaterialExpressionParticleSize_3'","/Script/Engine.MaterialExpressionComponentMask'LightningBolt_ParticleMat:MaterialExpressionComponentMask_14'","/Script/Engine.MaterialExpressionComponentMask'LightningBolt_ParticleMat:MaterialExpressionComponentMask_15'","/Script/Engine.MaterialExpressionDivide'LightningBolt_ParticleMat:MaterialExpressionDivide_5'","/Script/Engine.MaterialExpressionAppendVector'LightningBolt_ParticleMat:MaterialExpressionAppendVector_5'","/Script/Engine.MaterialExpressionConstant'LightningBolt_ParticleMat:MaterialExpressionConstant_9'","/Script/Engine.MaterialExpressionLinearInterpolate'LightningBolt_ParticleMat:MaterialExpressionLinearInterpolate_5'","/Script/Engine.MaterialExpressionAdd'LightningBolt_ParticleMat:MaterialExpressionAdd_8'","/Script/Engine.MaterialExpressionParticleRelativeTime'LightningBolt_ParticleMat:MaterialExpressionParticleRelativeTime_1'","/Script/Engine.MaterialExpressionMultiply'LightningBolt_ParticleMat:MaterialExpressionMultiply_34'","/Script/Engine.MaterialExpressionParticleRelativeTime'LightningBolt_ParticleMat:MaterialExpressionParticleRelativeTime_2'","/Script/Engine.MaterialExpressionMultiply'LightningBolt_ParticleMat:MaterialExpressionMultiply_35'","/Script/Engine.MaterialExpressionSaturate'LightningBolt_ParticleMat:MaterialExpressionSaturate_8'","/Script/Engine.MaterialExpressionOneMinus'LightningBolt_ParticleMat:MaterialExpressionOneMinus_8'","/Script/Engine.MaterialExpressionReroute'LightningBolt_ParticleMat:MaterialExpressionReroute_0'","/Script/Engine.MaterialExpressionMaterialFunctionCall'LightningBolt_ParticleMat:MaterialExpressionMaterialFunctionCall_0'","/Script/Engine.MaterialExpressionMultiply'LightningBolt_ParticleMat:MaterialExpressionMultiply_3'","/Script/Engine.MaterialExpressionParticleColor'LightningBolt_ParticleMat:MaterialExpressionParticleColor_2'","/Script/Engine.MaterialExpressionDynamicParameter'LightningBolt_ParticleMat:MaterialExpressionDynamicParameter_1'","/Script/Engine.MaterialExpressionDivide'LightningBolt_ParticleMat:MaterialExpressionDivide_3'"),EditorComments=("/Script/Engine.MaterialExpressionComment'LightningBolt_ParticleMat:MaterialExpressionComment_1'","/Script/Engine.MaterialExpressionComment'LightningBolt_ParticleMat:MaterialExpressionComment_0'","/Script/Engine.MaterialExpressionComment'LightningBolt_ParticleMat:MaterialExpressionComment_3'","/Script/Engine.MaterialExpressionComment'LightningBolt_ParticleMat:MaterialExpressionComment_2'","/Script/Engine.MaterialExpressionComment'LightningBolt_ParticleMat:MaterialExpressionComment_4'"))
+  MaterialExpressionAbs (MaterialExpressionAbs_1)
+    Input                  <- MaterialExpressionSubtract
+    .Input=(Expression="/Script/Engine.MaterialExpressionSubtract'LightningBolt_ParticleMat:MaterialExpressionSubtract_3'")
+    .MaterialExpressionEditorX=152
+    .MaterialExpressionEditorY=-100
+    .MaterialExpressionGuid=463A8FDD4A5935EB59F910B241EDB577
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionAbs (MaterialExpressionAbs_2)
+    Input                  <- MaterialExpressionSubtract
+    .Input=(Expression="/Script/Engine.MaterialExpressionSubtract'LightningBolt_ParticleMat:MaterialExpressionSubtract_4'")
+    .MaterialExpressionEditorX=-1738
+    .MaterialExpressionEditorY=61
+    .MaterialExpressionGuid=AB64ADF14BBBF82274A324AF86DE48C3
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionAbs (MaterialExpressionAbs_5)
+    Input                  <- MaterialExpressionDDY
+    .Input=(Expression="/Script/Engine.MaterialExpressionDDY'LightningBolt_ParticleMat:MaterialExpressionDDY_1'")
+    .MaterialExpressionEditorX=-716
+    .MaterialExpressionEditorY=-288
+    .MaterialExpressionGuid=1C0D77CD4299B1BD229530BB671185C3
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionAdd (MaterialExpressionAdd_1)
+    A                      <- MaterialExpressionTextureCoordinate
+    B                      <- MaterialExpressionParticleRandom
+    .B=(Expression="/Script/Engine.MaterialExpressionParticleRandom'LightningBolt_ParticleMat:MaterialExpressionParticleRandom_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'LightningBolt_ParticleMat:MaterialExpressionTextureCoordinate_2'")
+    .MaterialExpressionEditorX=-2886
+    .MaterialExpressionEditorY=-355
+    .MaterialExpressionGuid=557369AD4A68DA517DF5DDA3EC5FA25D
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionAdd (MaterialExpressionAdd_2)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionAppendVector
+    .B=(Expression="/Script/Engine.MaterialExpressionAppendVector'LightningBolt_ParticleMat:MaterialExpressionAppendVector_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'LightningBolt_ParticleMat:MaterialExpressionAdd_4'")
+    .MaterialExpressionEditorX=-1614
+    .MaterialExpressionEditorY=-351
+    .MaterialExpressionGuid=622A64584F2B6685FAC23690872BA55D
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionAdd (MaterialExpressionAdd_3)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'LightningBolt_ParticleMat:MaterialExpressionComponentMask_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'LightningBolt_ParticleMat:MaterialExpressionMultiply_11'")
+    .MaterialExpressionEditorX=-112
+    .MaterialExpressionEditorY=-100
+    .MaterialExpressionGuid=0D0E966A4489D16AEFAF30AE093DF79D
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionAdd (MaterialExpressionAdd_4)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'LightningBolt_ParticleMat:MaterialExpressionMultiply_16'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'LightningBolt_ParticleMat:MaterialExpressionAdd_1'")
+    .MaterialExpressionEditorX=-2312
+    .MaterialExpressionEditorY=-356
+    .MaterialExpressionGuid=2F95991C4F58D4F916A8058369AE6DB3
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionAdd (MaterialExpressionAdd_8)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'LightningBolt_ParticleMat:MaterialExpressionMultiply_34'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'LightningBolt_ParticleMat:MaterialExpressionMultiply_31'")
+    .MaterialExpressionEditorX=-854
+    .MaterialExpressionEditorY=-1150
+    .MaterialExpressionGuid=8A855120412099F527A518BB88873799
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_3)
+    A                      <- MaterialExpressionConstant
+    B                      <- MaterialExpressionDivide
+    .B=(Expression="/Script/Engine.MaterialExpressionDivide'LightningBolt_ParticleMat:MaterialExpressionDivide_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionConstant'LightningBolt_ParticleMat:MaterialExpressionConstant_7'")
+    .MaterialExpressionEditorX=-1750
+    .MaterialExpressionEditorY=-223
+    .MaterialExpressionGuid=12D0CDA24828972D1D61F3B2B19F5AD3
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_5)
+    A                      <- MaterialExpressionConstant
+    B                      <- MaterialExpressionDivide
+    .B=(Expression="/Script/Engine.MaterialExpressionDivide'LightningBolt_ParticleMat:MaterialExpressionDivide_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionConstant'LightningBolt_ParticleMat:MaterialExpressionConstant_9'")
+    .MaterialExpressionEditorX=-1466
+    .MaterialExpressionEditorY=-1030
+    .MaterialExpressionGuid=55D32940442AB893E59D79B0ACDE74DB
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionCameraPositionWS (MaterialExpressionCameraPositionWS_0)
+    .MaterialExpressionEditorX=-745
+    .MaterialExpressionEditorY=504
+    .MaterialExpressionGuid=C98B957F4B917D76112AFDA07AABF75B
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionComment (MaterialExpressionComment_0)
+    .SizeX=1116
+    .SizeY=336
+    .Text="Close Fade"
+    .MaterialExpressionEditorX=-840
+    .MaterialExpressionEditorY=296
+    .MaterialExpressionGuid=B9D6E8C64A9C167B31AFCC8966973D3A
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionComment (MaterialExpressionComment_1)
+    .SizeX=1104
+    .SizeY=508
+    .Text="Opacity"
+    .CommentColor=(R=0.352824,G=1.000000,B=0.960184,A=1.000000)
+    .MaterialExpressionEditorX=2020
+    .MaterialExpressionEditorY=251
+    .MaterialExpressionGuid=C8F37A304C98CC60F386FB9803C467FD
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionComment (MaterialExpressionComment_2)
+    .SizeX=1776
+    .SizeY=532
+    .Text="Scale Color"
+    .MaterialExpressionEditorX=1256
+    .MaterialExpressionEditorY=-332
+    .MaterialExpressionGuid=2CB3CE5846AB52DA18DD6C87847F5D0C
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionComment (MaterialExpressionComment_3)
+    .SizeX=1920
+    .SizeY=467
+    .Text="Close High Frequency Noise"
+    .MaterialExpressionEditorX=-2104
+    .MaterialExpressionEditorY=-1212
+    .MaterialExpressionGuid=0A8871C24CFECBF1D91B6782D07994DA
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionComment (MaterialExpressionComment_4)
+    .SizeX=4344
+    .SizeY=780
+    .Text="Bolt Shape"
+    .MaterialExpressionEditorX=-3170
+    .MaterialExpressionEditorY=-574
+    .MaterialExpressionGuid=4C60224344DF2202ED75ED8B0DAF1E45
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_14)
+    Input                  <- MaterialExpressionParticleSize
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionParticleSize'LightningBolt_ParticleMat:MaterialExpressionParticleSize_3'")
+    .MaterialExpressionEditorX=-1878
+    .MaterialExpressionEditorY=-974
+    .MaterialExpressionGuid=E6F69B0D49CCA22E31D5FFBC33BB52DB
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_15)
+    Input                  <- MaterialExpressionParticleSize
+    .R=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionParticleSize'LightningBolt_ParticleMat:MaterialExpressionParticleSize_3'")
+    .MaterialExpressionEditorX=-1878
+    .MaterialExpressionEditorY=-874
+    .MaterialExpressionGuid=EDD29960418EA6E4F15705B9AC18DF05
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_4)
+    Input                  <- MaterialExpressionTextureCoordinate
+    .R=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'LightningBolt_ParticleMat:MaterialExpressionTextureCoordinate_4'")
+    .MaterialExpressionEditorX=-284
+    .MaterialExpressionEditorY=12
+    .MaterialExpressionGuid=166CB36645A5F606AA5496823F3D2A77
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_5)
+    Input                  <- MaterialExpressionTextureCoordinate
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'LightningBolt_ParticleMat:MaterialExpressionTextureCoordinate_5'")
+    .MaterialExpressionEditorX=1516
+    .MaterialExpressionEditorY=-141
+    .MaterialExpressionGuid=8D64496B4A4682A2A143349BB97FB94E
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_6)
+    Input                  <- MaterialExpressionTextureCoordinate
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'LightningBolt_ParticleMat:MaterialExpressionTextureCoordinate_6'")
+    .MaterialExpressionEditorX=-2066
+    .MaterialExpressionEditorY=57
+    .MaterialExpressionGuid=274BCE534F27A2B232C27CB39DAF53EF
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_7)
+    Input                  <- MaterialExpressionParticleSize
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionParticleSize'LightningBolt_ParticleMat:MaterialExpressionParticleSize_0'")
+    .MaterialExpressionEditorX=536
+    .MaterialExpressionEditorY=-512
+    .MaterialExpressionGuid=7B6FC14447421BA30AD115B20A5EE970
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_8)
+    Input                  <- MaterialExpressionParticleSize
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionParticleSize'LightningBolt_ParticleMat:MaterialExpressionParticleSize_1'")
+    .MaterialExpressionEditorX=-2324
+    .MaterialExpressionEditorY=-104
+    .MaterialExpressionGuid=BE8D742D49E7AE3A4CBEEB87493DAE9E
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionConstant (MaterialExpressionConstant_2)
+    .R=1.000000
+    .MaterialExpressionEditorX=2756
+    .MaterialExpressionEditorY=455
+    .MaterialExpressionGuid=B045CED1455368F9553C7CA486DCCAE0
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionConstant (MaterialExpressionConstant_3)
+    .R=1.000000
+    .MaterialExpressionEditorX=2256
+    .MaterialExpressionEditorY=639
+    .MaterialExpressionGuid=3B34B8B24282E349C42083B372AE92BB
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionConstant (MaterialExpressionConstant_7)
+    .MaterialExpressionEditorX=-1974
+    .MaterialExpressionEditorY=-243
+    .MaterialExpressionGuid=4B5007EB4D768CC0AB92C2B3FB41E895
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionConstant (MaterialExpressionConstant_9)
+    .R=1.000000
+    .MaterialExpressionEditorX=-1718
+    .MaterialExpressionEditorY=-1056
+    .MaterialExpressionGuid=C2362D224A1B9F9C2D8594820417B112
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionDDY (MaterialExpressionDDY_1)
+    Value                  <- MaterialExpressionMultiply
+    .Value=(Expression="/Script/Engine.MaterialExpressionMultiply'LightningBolt_ParticleMat:MaterialExpressionMultiply_22'")
+    .MaterialExpressionEditorX=-832
+    .MaterialExpressionEditorY=-288
+    .MaterialExpressionGuid=860A4DA9486FDE5D138A20B2B704B907
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionDepthFade (MaterialExpressionDepthFade_0)
+    .MaterialExpressionEditorX=2200
+    .MaterialExpressionEditorY=519
+    .MaterialExpressionGuid=2B78972145AD1B3BA5CA1D8B079AE407
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+    .bCollapsed=True
+  MaterialExpressionDistance (MaterialExpressionDistance_1)
+    A                      <- MaterialExpressionWorldPosition
+    B                      <- MaterialExpressionCameraPositionWS
+    .B=(Expression="/Script/Engine.MaterialExpressionCameraPositionWS'LightningBolt_ParticleMat:MaterialExpressionCameraPositionWS_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionWorldPosition'LightningBolt_ParticleMat:MaterialExpressionWorldPosition_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .MaterialExpressionEditorX=-456
+    .MaterialExpressionEditorY=486
+    .MaterialExpressionGuid=9281713F476846125EC131B31DF4FCD2
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionComponentMask
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'LightningBolt_ParticleMat:MaterialExpressionComponentMask_7'")
+    .ConstB=75000.000000
+    .MaterialExpressionEditorX=648
+    .MaterialExpressionEditorY=-512
+    .MaterialExpressionGuid=96189C7F409A969F89BBF2A2C2A5FA45
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionDivide (MaterialExpressionDivide_1)
+    A                      <- MaterialExpressionComponentMask
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'LightningBolt_ParticleMat:MaterialExpressionComponentMask_8'")
+    .ConstB=75000.000000
+    .MaterialExpressionEditorX=-2204
+    .MaterialExpressionEditorY=-100
+    .MaterialExpressionGuid=865A3936430F8D22F9B98D8D1897371D
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionDivide (MaterialExpressionDivide_2)
+    B                      <- MaterialExpressionDivide
+    .B=(Expression="/Script/Engine.MaterialExpressionDivide'LightningBolt_ParticleMat:MaterialExpressionDivide_1'")
+    .ConstA=0.004000
+    .MaterialExpressionEditorX=-1972
+    .MaterialExpressionEditorY=-168
+    .MaterialExpressionGuid=7C1011454B339EDF4FD3F283D16B0806
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionDivide (MaterialExpressionDivide_3)
+    A                      <- MaterialExpressionLinearInterpolate
+    B                      <- MaterialExpressionDynamicParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionDynamicParameter'LightningBolt_ParticleMat:MaterialExpressionDynamicParameter_1'",OutputIndex=1,Mask=1,MaskG=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'LightningBolt_ParticleMat:MaterialExpressionLinearInterpolate_4'")
+    .MaterialExpressionEditorX=660
+    .MaterialExpressionEditorY=-380
+    .MaterialExpressionGuid=A1C07735490DCC090D9CF69016E30A66
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionDivide (MaterialExpressionDivide_4)
+    A                      <- MaterialExpressionDistance
+    .A=(Expression="/Script/Engine.MaterialExpressionDistance'LightningBolt_ParticleMat:MaterialExpressionDistance_1'")
+    .ConstB=20000.000000
+    .MaterialExpressionEditorX=-322
+    .MaterialExpressionEditorY=482
+    .MaterialExpressionGuid=D717A8E1479CA35E37C9C99A3E7B80C6
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionDivide (MaterialExpressionDivide_5)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'LightningBolt_ParticleMat:MaterialExpressionComponentMask_15'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'LightningBolt_ParticleMat:MaterialExpressionComponentMask_14'")
+    .MaterialExpressionEditorX=-1726
+    .MaterialExpressionEditorY=-974
+    .MaterialExpressionGuid=5B87D1A44095F7E4C2A3F7A73D55CCE8
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionDynamicParameter (MaterialExpressionDynamicParameter_0)
+    .MaterialExpressionEditorX=-2780
+    .MaterialExpressionEditorY=-200
+    .MaterialExpressionGuid=69C7B3D54B853879DB90BDA66474F6FE
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+    .Outputs(0)=(OutputName="Param1")
+    .Outputs(1)=(OutputName="Param2")
+    .Outputs(2)=(OutputName="Param3")
+    .Outputs(3)=(OutputName="Param4")
+  MaterialExpressionDynamicParameter (MaterialExpressionDynamicParameter_1)
+    .MaterialExpressionEditorX=236
+    .MaterialExpressionEditorY=-392
+    .MaterialExpressionGuid=8F593B7C42F1CCEEF4F119AF0D9DD43B
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+    .Outputs(0)=(OutputName="Param1")
+    .Outputs(1)=(OutputName="Param2")
+    .Outputs(2)=(OutputName="Param3")
+    .Outputs(3)=(OutputName="Param4")
+  MaterialExpressionFeatureLevelSwitch (MaterialExpressionFeatureLevelSwitch_0)
+    Default                <- MaterialExpressionDepthFade
+    Inputs(3)              <- MaterialExpressionConstant
+    .Default=(Expression="/Script/Engine.MaterialExpressionDepthFade'LightningBolt_ParticleMat:MaterialExpressionDepthFade_0'")
+    .Inputs(3)=(Expression="/Script/Engine.MaterialExpressionConstant'LightningBolt_ParticleMat:MaterialExpressionConstant_3'")
+    .MaterialExpressionEditorX=2444
+    .MaterialExpressionEditorY=519
+    .MaterialExpressionGuid=251431D043E45C1DCFBB5F8F6C34A4EC
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_1)
+    Alpha                  <- MaterialExpressionSaturate
+    .ConstA=50.000000
+    .ConstB=15.000000
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionSaturate'LightningBolt_ParticleMat:MaterialExpressionSaturate_3'")
+    .MaterialExpressionEditorX=-260
+    .MaterialExpressionEditorY=-360
+    .MaterialExpressionGuid=2471B56C47B3EF0A47F9E08C7CE69CA7
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_3)
+    A                      <- MaterialExpressionPower
+    B                      <- MaterialExpressionOneMinus
+    Alpha                  <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionOneMinus'LightningBolt_ParticleMat:MaterialExpressionOneMinus_8'")
+    .A=(Expression="/Script/Engine.MaterialExpressionPower'LightningBolt_ParticleMat:MaterialExpressionPower_4'")
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'LightningBolt_ParticleMat:MaterialExpressionNamedRerouteUsage_0'")
+    .MaterialExpressionEditorX=1900
+    .MaterialExpressionEditorY=-141
+    .MaterialExpressionGuid=A9B2607C4C4643DCE8834C9BAEE1AC08
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_4)
+    A                      <- MaterialExpressionLinearInterpolate
+    B                      <- MaterialExpressionLinearInterpolate
+    Alpha                  <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'LightningBolt_ParticleMat:MaterialExpressionLinearInterpolate_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'LightningBolt_ParticleMat:MaterialExpressionLinearInterpolate_1'")
+    .ConstA=50.000000
+    .ConstB=1500.000000
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'LightningBolt_ParticleMat:MaterialExpressionNamedRerouteUsage_1'")
+    .MaterialExpressionEditorX=-36
+    .MaterialExpressionEditorY=-380
+    .MaterialExpressionGuid=E7D846C74B6176680654A482777E4A8A
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_5)
+    Alpha                  <- MaterialExpressionTextureSample
+    .ConstA=500.000000
+    .ConstB=4000.000000
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionTextureSample'LightningBolt_ParticleMat:MaterialExpressionTextureSample_2'",OutputIndex=1,Mask=1,MaskR=1)
+    .MaterialExpressionEditorX=-382
+    .MaterialExpressionEditorY=-1162
+    .MaterialExpressionGuid=2D8C2E8B432B4299014E79B87AEF5C81
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_0)
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Weather/Lightning_Color_Scaled.Lightning_Color_Scaled'"
+    .FunctionOutputs(0)=(ExpressionOutputId=4048706146C36846109D53A6C62D3BD0,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=2512
+    .MaterialExpressionEditorY=-153
+    .MaterialExpressionGuid=23E5B61741DEACA6F009BE9C25651820
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_1)
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Weather/Cloud_Altitude_Mask.Cloud_Altitude_Mask'"
+    .FunctionInputs(0)=(ExpressionInputId=BB9870694BEF03C828A4F081F443256D,Input=(OutputIndex=-1,InputName="Use 3D Noise"))
+    .FunctionInputs(1)=(ExpressionInputId=9B89FAA845AF5AE0FCCDA8B862A19776,Input=(OutputIndex=-1,InputName="Mask Height"))
+    .FunctionOutputs(0)=(ExpressionOutputId=DAE960F144FA0FEB145A918E86889CBA,Output=(OutputName="Glow"))
+    .FunctionOutputs(1)=(ExpressionOutputId=8B3E30724ED623931D33F99AA56B69BE,Output=(OutputName="CameraMask"))
+    .FunctionOutputs(2)=(ExpressionOutputId=EE35806C429635943C4256BF2223EAD5,Output=(OutputName="Opacity"))
+    .MaterialExpressionEditorX=2076
+    .MaterialExpressionEditorY=311
+    .MaterialExpressionGuid=23449F45454D909A73901A9C2D8032D7
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+    .Outputs(0)=(OutputName="Glow")
+    .Outputs(1)=(OutputName="CameraMask")
+    .Outputs(2)=(OutputName="Opacity")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_11)
+    A                      <- MaterialExpressionReroute
+    .A=(Expression="/Script/Engine.MaterialExpressionReroute'LightningBolt_ParticleMat:MaterialExpressionReroute_0'")
+    .ConstB=0.800000
+    .MaterialExpressionEditorX=-340
+    .MaterialExpressionEditorY=-100
+    .MaterialExpressionGuid=14C65CD747B63768773F3596375AECCF
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_12)
+    A                      <- MaterialExpressionOneMinus
+    B                      <- MaterialExpressionLinearInterpolate
+    .B=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'LightningBolt_ParticleMat:MaterialExpressionLinearInterpolate_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionOneMinus'LightningBolt_ParticleMat:MaterialExpressionOneMinus_4'")
+    .MaterialExpressionEditorX=2056
+    .MaterialExpressionEditorY=-253
+    .MaterialExpressionGuid=5BDC225F480C0C14DF0A9887526EF09C
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_13)
+    A                      <- MaterialExpressionSubtract
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'LightningBolt_ParticleMat:MaterialExpressionSubtract_5'")
+    .ConstB=4.000000
+    .MaterialExpressionEditorX=-1486
+    .MaterialExpressionEditorY=61
+    .MaterialExpressionGuid=3D1FD5C54445945473BECBA9EDD4D3B0
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_15)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionParticleColor
+    .B=(Expression="/Script/Engine.MaterialExpressionParticleColor'LightningBolt_ParticleMat:MaterialExpressionParticleColor_1'",OutputIndex=4,Mask=1,MaskA=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'LightningBolt_ParticleMat:MaterialExpressionMultiply_12'")
+    .MaterialExpressionEditorX=2352
+    .MaterialExpressionEditorY=-253
+    .MaterialExpressionGuid=9D3674C14D770C2079B17F945B16B3E4
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_16)
+    A                      <- MaterialExpressionParticleRelativeTime
+    B                      <- MaterialExpressionDynamicParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionDynamicParameter'LightningBolt_ParticleMat:MaterialExpressionDynamicParameter_0'",Mask=1,MaskR=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionParticleRelativeTime'LightningBolt_ParticleMat:MaterialExpressionParticleRelativeTime_0'")
+    .ConstB=0.005000
+    .MaterialExpressionEditorX=-2518
+    .MaterialExpressionEditorY=-269
+    .MaterialExpressionGuid=C6754A2842367B3B17C14BA076AA0FF6
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_18)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionSaturate
+    .B=(Expression="/Script/Engine.MaterialExpressionSaturate'LightningBolt_ParticleMat:MaterialExpressionSaturate_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'LightningBolt_ParticleMat:MaterialExpressionMultiply_19'")
+    .ConstB=25.000000
+    .MaterialExpressionEditorX=1004
+    .MaterialExpressionEditorY=-256
+    .MaterialExpressionGuid=06F3A1274F7742AE37DDD1A7EC6CE584
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_19)
+    A                      <- MaterialExpressionDivide
+    B                      <- MaterialExpressionDivide
+    .B=(Expression="/Script/Engine.MaterialExpressionDivide'LightningBolt_ParticleMat:MaterialExpressionDivide_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'LightningBolt_ParticleMat:MaterialExpressionDivide_0'")
+    .ConstB=40.000000
+    .MaterialExpressionEditorX=832
+    .MaterialExpressionEditorY=-412
+    .MaterialExpressionGuid=8A0BB19D4CE0C6F4CC3E8E98386B24F0
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_2)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'LightningBolt_ParticleMat:MaterialExpressionMultiply_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'LightningBolt_ParticleMat:MaterialExpressionMultiply_15'")
+    .MaterialExpressionEditorX=2884
+    .MaterialExpressionEditorY=-253
+    .MaterialExpressionGuid=341ECD0F4BC58D6D0C3944A25913FE8E
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_21)
+    A                      <- MaterialExpressionAbs
+    .A=(Expression="/Script/Engine.MaterialExpressionAbs'LightningBolt_ParticleMat:MaterialExpressionAbs_5'")
+    .ConstB=25.000000
+    .MaterialExpressionEditorX=-620
+    .MaterialExpressionEditorY=-288
+    .MaterialExpressionGuid=25149FB346923F85EE2F0396BC645FB4
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_22)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionOneMinus
+    .B=(Expression="/Script/Engine.MaterialExpressionOneMinus'LightningBolt_ParticleMat:MaterialExpressionOneMinus_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'LightningBolt_ParticleMat:MaterialExpressionSubtract_2'")
+    .MaterialExpressionEditorX=-986
+    .MaterialExpressionEditorY=-287
+    .MaterialExpressionGuid=54122F0E446D6B9851497FB207818DD2
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_3)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionParticleColor
+    .B=(Expression="/Script/Engine.MaterialExpressionParticleColor'LightningBolt_ParticleMat:MaterialExpressionParticleColor_2'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'LightningBolt_ParticleMat:MaterialExpressionMaterialFunctionCall_0'")
+    .MaterialExpressionEditorX=2732
+    .MaterialExpressionEditorY=-157
+    .MaterialExpressionGuid=233D271D40FC6E29066B08A9506F1BDD
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_31)
+    A                      <- MaterialExpressionTextureCoordinate
+    B                      <- MaterialExpressionAppendVector
+    .B=(Expression="/Script/Engine.MaterialExpressionAppendVector'LightningBolt_ParticleMat:MaterialExpressionAppendVector_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'LightningBolt_ParticleMat:MaterialExpressionTextureCoordinate_10'")
+    .MaterialExpressionEditorX=-1326
+    .MaterialExpressionEditorY=-1150
+    .MaterialExpressionGuid=2BDFEE7C454EB7E76DB5148933D219C4
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_34)
+    A                      <- MaterialExpressionParticleRelativeTime
+    .A=(Expression="/Script/Engine.MaterialExpressionParticleRelativeTime'LightningBolt_ParticleMat:MaterialExpressionParticleRelativeTime_1'")
+    .ConstB=0.100000
+    .MaterialExpressionEditorX=-1036
+    .MaterialExpressionEditorY=-1063
+    .MaterialExpressionGuid=1300229F47FDDC4302A233AFF179F3D7
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_35)
+    A                      <- MaterialExpressionParticleRelativeTime
+    .A=(Expression="/Script/Engine.MaterialExpressionParticleRelativeTime'LightningBolt_ParticleMat:MaterialExpressionParticleRelativeTime_2'")
+    .ConstB=3.000000
+    .MaterialExpressionEditorX=1524
+    .MaterialExpressionEditorY=-1
+    .MaterialExpressionGuid=443BDB12493DD39291DA4DAC41460FB2
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_5)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionFeatureLevelSwitch
+    .B=(Expression="/Script/Engine.MaterialExpressionFeatureLevelSwitch'LightningBolt_ParticleMat:MaterialExpressionFeatureLevelSwitch_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'LightningBolt_ParticleMat:MaterialExpressionMultiply_7'")
+    .MaterialExpressionEditorX=2636
+    .MaterialExpressionEditorY=343
+    .MaterialExpressionGuid=A37A56424793EF7E9165CC9D7BC0BF51
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_6)
+    A                      <- MaterialExpressionAbs
+    .A=(Expression="/Script/Engine.MaterialExpressionAbs'LightningBolt_ParticleMat:MaterialExpressionAbs_1'")
+    .ConstB=2.000000
+    .MaterialExpressionEditorX=240
+    .MaterialExpressionEditorY=-100
+    .MaterialExpressionGuid=0FBF42594D698D9C7F8D0F8560068705
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_7)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionPower
+    .B=(Expression="/Script/Engine.MaterialExpressionPower'LightningBolt_ParticleMat:MaterialExpressionPower_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'LightningBolt_ParticleMat:MaterialExpressionMaterialFunctionCall_1'",OutputIndex=1)
+    .MaterialExpressionEditorX=2484
+    .MaterialExpressionEditorY=343
+    .MaterialExpressionGuid=41B782C94359F44A28757AA779285016
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_0)
+    Input                  <- MaterialExpressionOneMinus
+    .Input=(Expression="/Script/Engine.MaterialExpressionOneMinus'LightningBolt_ParticleMat:MaterialExpressionOneMinus_7'")
+    .Name="Close Fade"
+    .NodeColor=(R=0.781250,G=1.000000,B=0.000000,A=1.000000)
+    .VariableGuid=2BD795954DD4F2B977EFA0BEBD59C76F
+    .MaterialExpressionEditorX=110
+    .MaterialExpressionEditorY=478
+    .MaterialExpressionGuid=59200D28490E3C604D1AD78B04DBF1EF
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_0)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'LightningBolt_ParticleMat:MaterialExpressionNamedRerouteDeclaration_0'"
+    .DeclarationGuid=2BD795954DD4F2B977EFA0BEBD59C76F
+    .MaterialExpressionEditorX=1740
+    .MaterialExpressionEditorY=71
+    .MaterialExpressionGuid=2C149B1C464E2F810F0596826DF0936A
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_1)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'LightningBolt_ParticleMat:MaterialExpressionNamedRerouteDeclaration_0'"
+    .DeclarationGuid=2BD795954DD4F2B977EFA0BEBD59C76F
+    .MaterialExpressionEditorX=-252
+    .MaterialExpressionEditorY=-216
+    .MaterialExpressionGuid=C4DEE94641BE1930AD55B3A565241BA1
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_2)
+    Input                  <- MaterialExpressionComponentMask
+    .Input=(Expression="/Script/Engine.MaterialExpressionComponentMask'LightningBolt_ParticleMat:MaterialExpressionComponentMask_5'")
+    .MaterialExpressionEditorX=1632
+    .MaterialExpressionEditorY=-141
+    .MaterialExpressionGuid=977EA2FF495BAC399862D48C1E68139A
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_3)
+    Input                  <- MaterialExpressionPower
+    .Input=(Expression="/Script/Engine.MaterialExpressionPower'LightningBolt_ParticleMat:MaterialExpressionPower_3'")
+    .MaterialExpressionEditorX=-1198
+    .MaterialExpressionEditorY=61
+    .MaterialExpressionGuid=5F070CAC4867DF53C74295AF5EC43782
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_4)
+    Input                  <- MaterialExpressionSaturate
+    .Input=(Expression="/Script/Engine.MaterialExpressionSaturate'LightningBolt_ParticleMat:MaterialExpressionSaturate_2'")
+    .MaterialExpressionEditorX=1604
+    .MaterialExpressionEditorY=-257
+    .MaterialExpressionGuid=CE16CF2740BA27BA57A9CFB075F2EA1F
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_7)
+    Input                  <- MaterialExpressionSaturate
+    .Input=(Expression="/Script/Engine.MaterialExpressionSaturate'LightningBolt_ParticleMat:MaterialExpressionSaturate_7'")
+    .MaterialExpressionEditorX=-14
+    .MaterialExpressionEditorY=482
+    .MaterialExpressionGuid=105E3FB84503283C76D9CA833E7EB2F2
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_8)
+    Input                  <- MaterialExpressionSaturate
+    .Input=(Expression="/Script/Engine.MaterialExpressionSaturate'LightningBolt_ParticleMat:MaterialExpressionSaturate_8'")
+    .MaterialExpressionEditorX=1775
+    .MaterialExpressionEditorY=-5
+    .MaterialExpressionGuid=1661745A4CFEA45B43FDEC96F5AC8FB5
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionParticleColor (MaterialExpressionParticleColor_1)
+    .MaterialExpressionEditorX=2076
+    .MaterialExpressionEditorY=-129
+    .MaterialExpressionGuid=B18E30E64D95BFDA5CA7269D7EA8E5BC
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionParticleColor (MaterialExpressionParticleColor_2)
+    .MaterialExpressionEditorX=2560
+    .MaterialExpressionEditorY=-81
+    .MaterialExpressionGuid=92CCF29A48BB2FBF6F118B9277ED0A4D
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionParticleRandom (MaterialExpressionParticleRandom_1)
+    .MaterialExpressionEditorX=-3114
+    .MaterialExpressionEditorY=-259
+    .MaterialExpressionGuid=F0C81DB44E6EE269A5A2D5BA07124D55
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionParticleRelativeTime (MaterialExpressionParticleRelativeTime_0)
+    .MaterialExpressionEditorX=-2716
+    .MaterialExpressionEditorY=-284
+    .MaterialExpressionGuid=BA0FB5ED4B7AF2E6783EDFB1A977BDAA
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionParticleRelativeTime (MaterialExpressionParticleRelativeTime_1)
+    .MaterialExpressionEditorX=-1282
+    .MaterialExpressionEditorY=-1002
+    .MaterialExpressionGuid=5ED794CA46B8E7C288F79CA7AF0234A6
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionParticleRelativeTime (MaterialExpressionParticleRelativeTime_2)
+    .MaterialExpressionEditorX=1340
+    .MaterialExpressionEditorY=-17
+    .MaterialExpressionGuid=4009AE7B4CF5EE52032758B671E547F6
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionParticleSize (MaterialExpressionParticleSize_0)
+    .MaterialExpressionEditorX=392
+    .MaterialExpressionEditorY=-524
+    .MaterialExpressionGuid=237441A948822B6E46844E8D9AD5B882
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionParticleSize (MaterialExpressionParticleSize_1)
+    .MaterialExpressionEditorX=-2484
+    .MaterialExpressionEditorY=-120
+    .MaterialExpressionGuid=C15CB8044D129B7F3BAB23AB6DAD7A4D
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionParticleSize (MaterialExpressionParticleSize_3)
+    .MaterialExpressionEditorX=-2054
+    .MaterialExpressionEditorY=-938
+    .MaterialExpressionGuid=0AD367C1426D3A7F2EE5FCBB83C1517A
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionPower (MaterialExpressionPower_1)
+    Base                   <- MaterialExpressionMaterialFunctionCall
+    .Base=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'LightningBolt_ParticleMat:MaterialExpressionMaterialFunctionCall_1'",OutputIndex=2)
+    .ConstExponent=5.000000
+    .MaterialExpressionEditorX=2332
+    .MaterialExpressionEditorY=399
+    .MaterialExpressionGuid=64C3539D4B93AF0CAB54999387B6BD44
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionPower (MaterialExpressionPower_3)
+    Base                   <- MaterialExpressionMultiply
+    .Base=(Expression="/Script/Engine.MaterialExpressionMultiply'LightningBolt_ParticleMat:MaterialExpressionMultiply_13'")
+    .ConstExponent=3.000000
+    .MaterialExpressionEditorX=-1354
+    .MaterialExpressionEditorY=61
+    .MaterialExpressionGuid=3BAEA92E49A4D919B081B3812A3EE80E
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionPower (MaterialExpressionPower_4)
+    Base                   <- MaterialExpressionOneMinus
+    .Base=(Expression="/Script/Engine.MaterialExpressionOneMinus'LightningBolt_ParticleMat:MaterialExpressionOneMinus_2'")
+    .MaterialExpressionEditorX=1728
+    .MaterialExpressionEditorY=-141
+    .MaterialExpressionGuid=3B3764D54742DD83E3EA05B223AC3106
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionReroute (MaterialExpressionReroute_0)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'LightningBolt_ParticleMat:MaterialExpressionMultiply_22'")
+    .MaterialExpressionEditorX=-848
+    .MaterialExpressionEditorY=-68
+    .MaterialExpressionGuid=B4F811D343B16AC29E24E9BC909F03F1
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_0)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'LightningBolt_ParticleMat:MaterialExpressionMultiply_6'")
+    .MaterialExpressionEditorX=380
+    .MaterialExpressionEditorY=-128
+    .MaterialExpressionGuid=762334904D1D261222759C9DF73F4012
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_2)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'LightningBolt_ParticleMat:MaterialExpressionMultiply_18'")
+    .MaterialExpressionEditorX=1464
+    .MaterialExpressionEditorY=-257
+    .MaterialExpressionGuid=951EF36E41B71C6E0BEEEF9FB95E18CB
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_3)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'LightningBolt_ParticleMat:MaterialExpressionMultiply_21'")
+    .MaterialExpressionEditorX=-476
+    .MaterialExpressionEditorY=-288
+    .MaterialExpressionGuid=077B24CC4318C6A69251E5A8CEB62F90
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_7)
+    Input                  <- MaterialExpressionDivide
+    .Input=(Expression="/Script/Engine.MaterialExpressionDivide'LightningBolt_ParticleMat:MaterialExpressionDivide_4'")
+    .MaterialExpressionEditorX=-142
+    .MaterialExpressionEditorY=482
+    .MaterialExpressionGuid=46F62AB74CAB3E697A1AB988358FBB9D
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_8)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'LightningBolt_ParticleMat:MaterialExpressionMultiply_35'")
+    .MaterialExpressionEditorX=1652
+    .MaterialExpressionEditorY=-1
+    .MaterialExpressionGuid=381A3C6B46C6AA3DCB93D1A926B541B5
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionShadingPathSwitch (MaterialExpressionShadingPathSwitch_1)
+    Default                <- MaterialExpressionMultiply
+    Inputs(2)              <- MaterialExpressionConstant
+    .Default=(Expression="/Script/Engine.MaterialExpressionMultiply'LightningBolt_ParticleMat:MaterialExpressionMultiply_5'")
+    .Inputs(2)=(Expression="/Script/Engine.MaterialExpressionConstant'LightningBolt_ParticleMat:MaterialExpressionConstant_2'")
+    .MaterialExpressionEditorX=2908
+    .MaterialExpressionEditorY=343
+    .MaterialExpressionGuid=88B4704D4D297DAAC29A6AB1BC1F798B
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_2)
+    A                      <- MaterialExpressionTextureSample
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'LightningBolt_ParticleMat:MaterialExpressionTextureSample_1'",OutputIndex=2,Mask=1,MaskG=1)
+    .ConstB=0.300000
+    .MaterialExpressionEditorX=-1190
+    .MaterialExpressionEditorY=-287
+    .MaterialExpressionGuid=E99351704ED8CDEFAF65BAA7B7725B3B
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_3)
+    A                      <- MaterialExpressionAdd
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'LightningBolt_ParticleMat:MaterialExpressionAdd_3'")
+    .ConstB=0.500000
+    .MaterialExpressionEditorX=4
+    .MaterialExpressionEditorY=-100
+    .MaterialExpressionGuid=46C1C6424CF4A395FFDEE49BA92DCA1A
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_4)
+    A                      <- MaterialExpressionComponentMask
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'LightningBolt_ParticleMat:MaterialExpressionComponentMask_6'")
+    .ConstB=0.500000
+    .MaterialExpressionEditorX=-1890
+    .MaterialExpressionEditorY=61
+    .MaterialExpressionGuid=3C2FD84042BFAC0C805EBFB8E710EEC3
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_5)
+    A                      <- MaterialExpressionAbs
+    .A=(Expression="/Script/Engine.MaterialExpressionAbs'LightningBolt_ParticleMat:MaterialExpressionAbs_2'")
+    .ConstB=0.250000
+    .MaterialExpressionEditorX=-1646
+    .MaterialExpressionEditorY=61
+    .MaterialExpressionGuid=216218C64E525EA58CDC3D8D894EA8DE
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionTextureCoordinate (MaterialExpressionTextureCoordinate_10)
+    .UTiling=15.000000
+    .VTiling=15.000000
+    .MaterialExpressionEditorX=-1926
+    .MaterialExpressionEditorY=-1150
+    .MaterialExpressionGuid=987F5EE94985C5AEA095F7A39F7034B8
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionTextureCoordinate (MaterialExpressionTextureCoordinate_2)
+    .UTiling=0.050000
+    .VTiling=0.700000
+    .MaterialExpressionEditorX=-3120
+    .MaterialExpressionEditorY=-356
+    .MaterialExpressionGuid=C62B9FB54FDADA2D423274A0685DC607
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionTextureCoordinate (MaterialExpressionTextureCoordinate_4)
+    .MaterialExpressionEditorX=-492
+    .MaterialExpressionEditorY=12
+    .MaterialExpressionGuid=1CDAD0B24A673B13406CF0963267C66F
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionTextureCoordinate (MaterialExpressionTextureCoordinate_5)
+    .MaterialExpressionEditorX=1308
+    .MaterialExpressionEditorY=-145
+    .MaterialExpressionGuid=917E8F69430C84AC979C86B7F84491C0
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionTextureCoordinate (MaterialExpressionTextureCoordinate_6)
+    .MaterialExpressionEditorX=-2278
+    .MaterialExpressionEditorY=57
+    .MaterialExpressionGuid=CA51EEF74A302ECF5BFE17AD14974A29
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_1)
+    Coordinates            <- MaterialExpressionAdd
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_ParticleClouds.T_ParticleClouds'"
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionAdd'LightningBolt_ParticleMat:MaterialExpressionAdd_2'")
+    .MaterialExpressionEditorX=-1462
+    .MaterialExpressionEditorY=-351
+    .MaterialExpressionGuid=4D0959D54AD913940794678C184C7729
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_2)
+    Coordinates            <- MaterialExpressionAdd
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_WhiteNoise512.T_WhiteNoise512'"
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionAdd'LightningBolt_ParticleMat:MaterialExpressionAdd_8'")
+    .MaterialExpressionEditorX=-646
+    .MaterialExpressionEditorY=-1146
+    .MaterialExpressionGuid=BB4F66914665822224DCA2BE01C4B95D
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"
+  MaterialExpressionWorldPosition (MaterialExpressionWorldPosition_0)
+    .MaterialExpressionEditorX=-790
+    .MaterialExpressionEditorY=346
+    .MaterialExpressionGuid=2A03EFD74B3762BCD93B559932672795
+    .Material="/Script/Engine.Material'LightningBolt_ParticleMat'"

@@ -1,0 +1,110 @@
+### /Game/UltraDynamicSky/Materials/Weather/WeatherMaskHeightDraw
+  Material (WeatherMaskHeightDraw)
+    .MaterialDomain=MD_UI
+    .ShadingModel=MSM_Unlit
+    .ShadingModels=(ShadingModelField=1)
+    .bAllowNegativeEmissiveColor=True
+    .EditorX=60
+    .EditorY=-84
+    .bCanMaskedBeAssumedOpaque=True
+    .StateId=564D2B81433242CA29CE28884FA2299A
+    .ReferencedTextureGuids(0)=3EC3145243CE22A806919AA5FFAE0AF7
+    .EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'WeatherMaskHeightDrawEditorOnlyData'"
+    .ReferencedDefaultTextures(0)="/Script/Engine.TextureRenderTarget2D'/Game/UltraDynamicSky/Textures/Weather/Weather_Mask_Height_Target.Weather_Mask_Height_Target'"
+    .LightingGuid=8E278F6440A919D058B403965C507E2A
+  MaterialEditorOnlyData (WeatherMaskHeightDrawEditorOnlyData)
+    EmissiveColor          <- MaterialExpressionAppendVector
+    ExpressionCollection   <- MaterialExpressionFeatureLevelSwitch
+    .BaseColor=(UseConstant=True,Constant=(R=0.501961,G=0.501961,B=0.501961,A=1.000000))
+    .Metallic=(UseConstant=True)
+    .Specular=(UseConstant=True)
+    .Roughness=(UseConstant=True)
+    .Anisotropy=(UseConstant=True)
+    .Normal=(UseConstant=True)
+    .Tangent=(UseConstant=True)
+    .EmissiveColor=(Expression="/Script/Engine.MaterialExpressionAppendVector'WeatherMaskHeightDraw:MaterialExpressionAppendVector_0'")
+    .Opacity=(UseConstant=True)
+    .OpacityMask=(UseConstant=True)
+    .WorldPositionOffset=(UseConstant=True)
+    .Displacement=(UseConstant=True)
+    .SubsurfaceColor=(UseConstant=True)
+    .ClearCoat=(UseConstant=True)
+    .ClearCoatRoughness=(UseConstant=True)
+    .AmbientOcclusion=(UseConstant=True)
+    .Refraction=(UseConstant=True)
+    .CustomizedUVs(0)=(UseConstant=True)
+    .CustomizedUVs(1)=(UseConstant=True)
+    .CustomizedUVs(2)=(UseConstant=True)
+    .CustomizedUVs(3)=(UseConstant=True)
+    .CustomizedUVs(4)=(UseConstant=True)
+    .CustomizedUVs(5)=(UseConstant=True)
+    .CustomizedUVs(6)=(UseConstant=True)
+    .CustomizedUVs(7)=(UseConstant=True)
+    .PixelDepthOffset=(UseConstant=True)
+    .SurfaceThickness=(UseConstant=True)
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFeatureLevelSwitch'WeatherMaskHeightDraw:MaterialExpressionFeatureLevelSwitch_0'","/Script/Engine.MaterialExpressionTextureSample'WeatherMaskHeightDraw:MaterialExpressionTextureSample_0'","/Script/Engine.MaterialExpressionScalarParameter'WeatherMaskHeightDraw:MaterialExpressionScalarParameter_0'","/Script/Engine.MaterialExpressionScreenPosition'WeatherMaskHeightDraw:MaterialExpressionScreenPosition_0'","/Script/Engine.MaterialExpressionMin'WeatherMaskHeightDraw:MaterialExpressionMin_0'","/Script/Engine.MaterialExpressionScalarParameter'WeatherMaskHeightDraw:MaterialExpressionScalarParameter_1'","/Script/Engine.MaterialExpressionAppendVector'WeatherMaskHeightDraw:MaterialExpressionAppendVector_0'","/Script/Engine.MaterialExpressionConstant'WeatherMaskHeightDraw:MaterialExpressionConstant_1'"))
+    .ParameterGroupData(0)=(GroupName="None")
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_0)
+    A                      <- MaterialExpressionFeatureLevelSwitch
+    B                      <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'WeatherMaskHeightDraw:MaterialExpressionConstant_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFeatureLevelSwitch'WeatherMaskHeightDraw:MaterialExpressionFeatureLevelSwitch_0'")
+    .MaterialExpressionEditorX=-160
+    .MaterialExpressionEditorY=76
+    .MaterialExpressionGuid=817057E341B51A9E2C13FBA7512A125C
+    .Material="/Script/Engine.Material'WeatherMaskHeightDraw'"
+  MaterialExpressionConstant (MaterialExpressionConstant_1)
+    .MaterialExpressionEditorX=-396
+    .MaterialExpressionEditorY=184
+    .MaterialExpressionGuid=0CED45DC44E140C3BDA96D8041AA13C5
+    .Material="/Script/Engine.Material'WeatherMaskHeightDraw'"
+  MaterialExpressionFeatureLevelSwitch (MaterialExpressionFeatureLevelSwitch_0)
+    Default                <- MaterialExpressionMin
+    Inputs(3)              <- MaterialExpressionScalarParameter
+    .Default=(Expression="/Script/Engine.MaterialExpressionMin'WeatherMaskHeightDraw:MaterialExpressionMin_0'")
+    .Inputs(3)=(Expression="/Script/Engine.MaterialExpressionScalarParameter'WeatherMaskHeightDraw:MaterialExpressionScalarParameter_1'")
+    .MaterialExpressionEditorX=-656
+    .MaterialExpressionEditorY=76
+    .MaterialExpressionGuid=C30B92BA417731C44E565AA57433985D
+    .Material="/Script/Engine.Material'WeatherMaskHeightDraw'"
+  MaterialExpressionMin (MaterialExpressionMin_0)
+    A                      <- MaterialExpressionScalarParameter
+    B                      <- MaterialExpressionTextureSample
+    .B=(Expression="/Script/Engine.MaterialExpressionTextureSample'WeatherMaskHeightDraw:MaterialExpressionTextureSample_0'",OutputIndex=1,Mask=1,MaskR=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionScalarParameter'WeatherMaskHeightDraw:MaterialExpressionScalarParameter_0'")
+    .MaterialExpressionEditorX=-1044
+    .MaterialExpressionEditorY=76
+    .MaterialExpressionGuid=8C4D51E444DED4F5C96BBD88E0206BAC
+    .Material="/Script/Engine.Material'WeatherMaskHeightDraw'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_0)
+    .ParameterName="Height"
+    .DefaultValue=1.000000
+    .ExpressionGUID=B272BEF64BFFF8CF6E27A4816D3C967D
+    .MaterialExpressionEditorX=-1272
+    .MaterialExpressionEditorY=-36
+    .MaterialExpressionGuid=2CF04EF24DF4E1A1F6A588908520E733
+    .Material="/Script/Engine.Material'WeatherMaskHeightDraw'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_1)
+    .ParameterName="Height"
+    .DefaultValue=1.000000
+    .ExpressionGUID=D7057DDD4FEAE3334E88D6835F0DE3F5
+    .MaterialExpressionEditorX=-892
+    .MaterialExpressionEditorY=260
+    .MaterialExpressionGuid=BBC83EA944C75A66A8B5E189E71CA17D
+    .Material="/Script/Engine.Material'WeatherMaskHeightDraw'"
+  MaterialExpressionScreenPosition (MaterialExpressionScreenPosition_0)
+    .MaterialExpressionEditorX=-1476
+    .MaterialExpressionEditorY=96
+    .MaterialExpressionGuid=57F9EBAF4624BE49C95B33ADF3063BBB
+    .Material="/Script/Engine.Material'WeatherMaskHeightDraw'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_0)
+    Coordinates            <- MaterialExpressionScreenPosition
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.TextureRenderTarget2D'/Game/UltraDynamicSky/Textures/Weather/Weather_Mask_Height_Target.Weather_Mask_Height_Target'"
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionScreenPosition'WeatherMaskHeightDraw:MaterialExpressionScreenPosition_0'")
+    .SamplerSource=SSM_Wrap_WorldGroupSettings
+    .AutomaticViewMipBias=False
+    .MaterialExpressionEditorX=-1312
+    .MaterialExpressionEditorY=108
+    .MaterialExpressionGuid=2F1BAD3B4CDCD81A65FE41A9EC899B25
+    .Material="/Script/Engine.Material'WeatherMaskHeightDraw'"

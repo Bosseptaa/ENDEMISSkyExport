@@ -1,0 +1,505 @@
+### /Game/UltraDynamicSky/Materials/Material_Functions/2D_Cloud_Shadows_MF
+  MaterialFunction (2D_Cloud_Shadows_MF)
+    DependentFunctionExpressionCandidates(0) <- MaterialExpressionMaterialFunctionCall
+    DependentFunctionExpressionCandidates(1) <- MaterialExpressionMaterialFunctionCall
+    .DependentFunctionExpressionCandidates(0)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_9'"
+    .DependentFunctionExpressionCandidates(1)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_0'"
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'2D_Cloud_Shadows_MFEditorOnlyData'"
+    .StateId=3CA69AAB4047326048DC41AC65DF28E0
+    .CombinedInputTypes=4
+    .CombinedOutputTypes=15
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+  MaterialFunctionEditorOnlyData (2D_Cloud_Shadows_MFEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'2D_Cloud_Shadows_MF:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionSaturate'2D_Cloud_Shadows_MF:MaterialExpressionSaturate_0'","/Script/Engine.MaterialExpressionDivide'2D_Cloud_Shadows_MF:MaterialExpressionDivide_2'","/Script/Engine.MaterialExpressionOneMinus'2D_Cloud_Shadows_MF:MaterialExpressionOneMinus_9'","/Script/Engine.MaterialExpressionSubtract'2D_Cloud_Shadows_MF:MaterialExpressionSubtract_2'","/Script/Engine.MaterialExpressionPower'2D_Cloud_Shadows_MF:MaterialExpressionPower_2'","/Script/Engine.MaterialExpressionScalarParameter'2D_Cloud_Shadows_MF:MaterialExpressionScalarParameter_13'","/Script/Engine.MaterialExpressionPanner'2D_Cloud_Shadows_MF:MaterialExpressionPanner_9'","/Script/Engine.MaterialExpressionMaterialFunctionCall'2D_Cloud_Shadows_MF:MaterialExpressionMaterialFunctionCall_9'","/Script/Engine.MaterialExpressionMultiply'2D_Cloud_Shadows_MF:MaterialExpressionMultiply_3'","/Script/Engine.MaterialExpressionOneMinus'2D_Cloud_Shadows_MF:MaterialExpressionOneMinus_12'","/Script/Engine.MaterialExpressionMultiply'2D_Cloud_Shadows_MF:MaterialExpressionMultiply_18'","/Script/Engine.MaterialExpressionMultiply'2D_Cloud_Shadows_MF:MaterialExpressionMultiply_19'","/Script/Engine.MaterialExpressionWorldPosition'2D_Cloud_Shadows_MF:MaterialExpressionWorldPosition_4'","/Script/Engine.MaterialExpressionDivide'2D_Cloud_Shadows_MF:MaterialExpressionDivide_4'","/Script/Engine.MaterialExpressionScalarParameter'2D_Cloud_Shadows_MF:MaterialExpressionScalarParameter_14'","/Script/Engine.MaterialExpressionTextureSampleParameter2D'2D_Cloud_Shadows_MF:MaterialExpressionTextureSampleParameter2D_32'","/Script/Engine.MaterialExpressionTextureSampleParameter2D'2D_Cloud_Shadows_MF:MaterialExpressionTextureSampleParameter2D_33'","/Script/Engine.MaterialExpressionMultiply'2D_Cloud_Shadows_MF:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionScalarParameter'2D_Cloud_Shadows_MF:MaterialExpressionScalarParameter_4'","/Script/Engine.MaterialExpressionAdd'2D_Cloud_Shadows_MF:MaterialExpressionAdd_3'","/Script/Engine.MaterialExpressionConstant'2D_Cloud_Shadows_MF:MaterialExpressionConstant_0'","/Script/Engine.MaterialExpressionLinearInterpolate'2D_Cloud_Shadows_MF:MaterialExpressionLinearInterpolate_0'","/Script/Engine.MaterialExpressionMultiply'2D_Cloud_Shadows_MF:MaterialExpressionMultiply_6'","/Script/Engine.MaterialExpressionAdd'2D_Cloud_Shadows_MF:MaterialExpressionAdd_4'","/Script/Engine.MaterialExpressionConstant2Vector'2D_Cloud_Shadows_MF:MaterialExpressionConstant2Vector_0'","/Script/Engine.MaterialExpressionFunctionInput'2D_Cloud_Shadows_MF:MaterialExpressionFunctionInput_0'","/Script/Engine.MaterialExpressionScalarParameter'2D_Cloud_Shadows_MF:MaterialExpressionScalarParameter_0'","/Script/Engine.MaterialExpressionCollectionParameter'2D_Cloud_Shadows_MF:MaterialExpressionCollectionParameter_1'","/Script/Engine.MaterialExpressionMultiply'2D_Cloud_Shadows_MF:MaterialExpressionMultiply_2'","/Script/Engine.MaterialExpressionComponentMask'2D_Cloud_Shadows_MF:MaterialExpressionComponentMask_1'","/Script/Engine.MaterialExpressionCollectionParameter'2D_Cloud_Shadows_MF:MaterialExpressionCollectionParameter_4'","/Script/Engine.MaterialExpressionCollectionParameter'2D_Cloud_Shadows_MF:MaterialExpressionCollectionParameter_6'","/Script/Engine.MaterialExpressionDivide'2D_Cloud_Shadows_MF:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionMultiply'2D_Cloud_Shadows_MF:MaterialExpressionMultiply_1'","/Script/Engine.MaterialExpressionCollectionParameter'2D_Cloud_Shadows_MF:MaterialExpressionCollectionParameter_5'","/Script/Engine.MaterialExpressionScalarParameter'2D_Cloud_Shadows_MF:MaterialExpressionScalarParameter_1'","/Script/Engine.MaterialExpressionSaturate'2D_Cloud_Shadows_MF:MaterialExpressionSaturate_1'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'2D_Cloud_Shadows_MF:MaterialExpressionNamedRerouteDeclaration_0'","/Script/Engine.MaterialExpressionScalarParameter'2D_Cloud_Shadows_MF:MaterialExpressionScalarParameter_2'","/Script/Engine.MaterialExpressionScalarParameter'2D_Cloud_Shadows_MF:MaterialExpressionScalarParameter_6'","/Script/Engine.MaterialExpressionLinearInterpolate'2D_Cloud_Shadows_MF:MaterialExpressionLinearInterpolate_5'","/Script/Engine.MaterialExpressionLinearInterpolate'2D_Cloud_Shadows_MF:MaterialExpressionLinearInterpolate_6'","/Script/Engine.MaterialExpressionScalarParameter'2D_Cloud_Shadows_MF:MaterialExpressionScalarParameter_7'","/Script/Engine.MaterialExpressionScalarParameter'2D_Cloud_Shadows_MF:MaterialExpressionScalarParameter_8'","/Script/Engine.MaterialExpressionNamedRerouteUsage'2D_Cloud_Shadows_MF:MaterialExpressionNamedRerouteUsage_0'","/Script/Engine.MaterialExpressionNamedRerouteUsage'2D_Cloud_Shadows_MF:MaterialExpressionNamedRerouteUsage_3'","/Script/Engine.MaterialExpressionSubtract'2D_Cloud_Shadows_MF:MaterialExpressionSubtract_0'","/Script/Engine.MaterialExpressionDivide'2D_Cloud_Shadows_MF:MaterialExpressionDivide_1'","/Script/Engine.MaterialExpressionMaterialFunctionCall'2D_Cloud_Shadows_MF:MaterialExpressionMaterialFunctionCall_0'","/Script/Engine.MaterialExpressionScalarParameter'2D_Cloud_Shadows_MF:MaterialExpressionScalarParameter_3'"),EditorComments=("/Script/Engine.MaterialExpressionComment'2D_Cloud_Shadows_MF:MaterialExpressionComment_0'","/Script/Engine.MaterialExpressionComment'2D_Cloud_Shadows_MF:MaterialExpressionComment_1'","/Script/Engine.MaterialExpressionComment'2D_Cloud_Shadows_MF:MaterialExpressionComment_2'","/Script/Engine.MaterialExpressionComment'2D_Cloud_Shadows_MF:MaterialExpressionComment_3'","/Script/Engine.MaterialExpressionComment'2D_Cloud_Shadows_MF:MaterialExpressionComment_4'"))
+  MaterialExpressionAdd (MaterialExpressionAdd_3)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'2D_Cloud_Shadows_MF:MaterialExpressionConstant_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'2D_Cloud_Shadows_MF:MaterialExpressionMultiply_3'")
+    .MaterialExpressionEditorX=-2544
+    .MaterialExpressionEditorY=748
+    .MaterialExpressionGuid=677BF39E4783E20A2080CFBBFB965EC5
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionAdd (MaterialExpressionAdd_4)
+    A                      <- MaterialExpressionDivide
+    B                      <- MaterialExpressionDivide
+    .B=(Expression="/Script/Engine.MaterialExpressionDivide'2D_Cloud_Shadows_MF:MaterialExpressionDivide_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'2D_Cloud_Shadows_MF:MaterialExpressionDivide_4'")
+    .MaterialExpressionEditorX=-4012
+    .MaterialExpressionEditorY=616
+    .MaterialExpressionGuid=B37A08BD41272F1F10F46884E2C94DD0
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_1)
+    .ParameterName="Clouds Position"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Material_Functions/UDS_VolumetricClouds_MPC.UDS_VolumetricClouds_MPC'"
+    .ParameterId=8A83161843DC7881FAF0C4A0D0DC0D57
+    .MaterialExpressionEditorX=-4792
+    .MaterialExpressionEditorY=828
+    .MaterialExpressionGuid=037E7EAF483FED3CF9F39BA361F99A8F
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_4)
+    .ParameterName="Clouds B Time"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Material_Functions/UDS_VolumetricClouds_MPC.UDS_VolumetricClouds_MPC'"
+    .ParameterId=1576AF5B47829DA20BAF45B5D3A76F24
+    .MaterialExpressionEditorX=-3708
+    .MaterialExpressionEditorY=944
+    .MaterialExpressionGuid=313441AD471DBE7C0193998D99FDC113
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_5)
+    .ParameterName="Clouds B Speed"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Material_Functions/UDS_VolumetricClouds_MPC.UDS_VolumetricClouds_MPC'"
+    .ParameterId=C25413D048A293A2D8D5C9BFF64BE09C
+    .MaterialExpressionEditorX=-3700
+    .MaterialExpressionEditorY=1068
+    .MaterialExpressionGuid=313441AD471DBE7C0193998D99FDC113
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_6)
+    .ParameterName="Cloud Shadows Cancel"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Material_Functions/UDS_VolumetricClouds_MPC.UDS_VolumetricClouds_MPC'"
+    .ParameterId=06386B2A41236A8B7898EF9EC741217D
+    .MaterialExpressionEditorX=-356
+    .MaterialExpressionEditorY=788
+    .MaterialExpressionGuid=7B14EE054B199721B2B518A541D8FBAC
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+    .bCollapsed=True
+  MaterialExpressionComment (MaterialExpressionComment_0)
+    .SizeX=1332
+    .SizeY=808
+    .Text="Root Cloud Movement"
+    .CommentColor=(R=0.841940,G=0.523900,B=1.000000,A=1.000000)
+    .MaterialExpressionEditorX=-5190
+    .MaterialExpressionEditorY=522
+    .MaterialExpressionGuid=31604A6D49ED4263C5BE43A00992ADAC
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionComment (MaterialExpressionComment_1)
+    .SizeX=1316
+    .SizeY=644
+    .Text="Map Cloud Textures"
+    .CommentColor=(R=1.000000,G=0.371883,B=0.431665,A=1.000000)
+    .MaterialExpressionEditorX=-3737
+    .MaterialExpressionEditorY=554
+    .MaterialExpressionGuid=E857B8824C1E9E8CCC5DADAD40C6A8AF
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionComment (MaterialExpressionComment_2)
+    .SizeX=1368
+    .SizeY=584
+    .Text="Filter Clouds with Current Density"
+    .CommentColor=(R=0.512304,G=1.000000,B=0.837572,A=1.000000)
+    .MaterialExpressionEditorX=-2364
+    .MaterialExpressionEditorY=264
+    .MaterialExpressionGuid=A06410534E48CFA0DEC6E98ABF88A3A0
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionComment (MaterialExpressionComment_3)
+    .SizeX=1092
+    .SizeY=448
+    .Text="Shadows Intensity"
+    .CommentColor=(R=0.414627,G=0.412127,B=1.000000,A=1.000000)
+    .MaterialExpressionEditorX=-884
+    .MaterialExpressionEditorY=580
+    .MaterialExpressionGuid=8BE7166C4145C03F2E5333BDEE9042A3
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionComment (MaterialExpressionComment_4)
+    .SizeX=920
+    .SizeY=340
+    .Text="Overcast Density Alpha"
+    .MaterialExpressionEditorX=-3366
+    .MaterialExpressionEditorY=162
+    .MaterialExpressionGuid=DDCF5E08418463E1018AC19B21E71F94
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_1)
+    Input                  <- MaterialExpressionCollectionParameter
+    .R=True
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'2D_Cloud_Shadows_MF:MaterialExpressionCollectionParameter_1'")
+    .MaterialExpressionEditorX=-4572
+    .MaterialExpressionEditorY=856
+    .MaterialExpressionGuid=688CC1ED43EC08DDE2CF66955D3BD907
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionConstant (MaterialExpressionConstant_0)
+    .R=0.120000
+    .MaterialExpressionEditorX=-2668
+    .MaterialExpressionEditorY=844
+    .MaterialExpressionGuid=960AB76A40BA6AA96AE0EDA6F055A9D4
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionConstant2Vector (MaterialExpressionConstant2Vector_0)
+    .G=0.004000
+    .MaterialExpressionEditorX=-3320
+    .MaterialExpressionEditorY=1020
+    .MaterialExpressionGuid=FE9780C24023B4022D22418EB2BE183F
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionMultiply
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'2D_Cloud_Shadows_MF:MaterialExpressionMultiply_2'")
+    .ConstB=2443162.000000
+    .MaterialExpressionEditorX=-4232
+    .MaterialExpressionEditorY=856
+    .MaterialExpressionGuid=005C6ECF4C33E4980D6056957F64D16C
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionDivide (MaterialExpressionDivide_1)
+    A                      <- MaterialExpressionSubtract
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'2D_Cloud_Shadows_MF:MaterialExpressionSubtract_0'")
+    .ConstB=1.650000
+    .MaterialExpressionEditorX=-2920
+    .MaterialExpressionEditorY=248
+    .MaterialExpressionGuid=E8F195804A7A3605279CA3815FDFD447
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionDivide (MaterialExpressionDivide_2)
+    A                      <- MaterialExpressionScalarParameter
+    .A=(Expression="/Script/Engine.MaterialExpressionScalarParameter'2D_Cloud_Shadows_MF:MaterialExpressionScalarParameter_13'")
+    .ConstB=6.500000
+    .MaterialExpressionEditorX=-2074
+    .MaterialExpressionEditorY=386
+    .MaterialExpressionGuid=84BAB24F4563C34F842AA5A570EB657C
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionDivide (MaterialExpressionDivide_4)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'2D_Cloud_Shadows_MF:MaterialExpressionScalarParameter_14'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'2D_Cloud_Shadows_MF:MaterialExpressionMaterialFunctionCall_0'")
+    .ConstB=120000.000000
+    .MaterialExpressionEditorX=-4188
+    .MaterialExpressionEditorY=616
+    .MaterialExpressionGuid=86450D624A661B54D2FE3EBDC94831F8
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_0)
+    Preview                <- MaterialExpressionWorldPosition
+    .Preview=(Expression="/Script/Engine.MaterialExpressionWorldPosition'2D_Cloud_Shadows_MF:MaterialExpressionWorldPosition_4'")
+    .InputName="Position"
+    .Id=B802C0E24C8C6813C655348103FE7B32
+    .bUsePreviewValueAsDefault=True
+    .MaterialExpressionEditorX=-4952
+    .MaterialExpressionEditorY=616
+    .MaterialExpressionGuid=7EC25F1F43B41C2C88EDD5BC52184BBD
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionSaturate
+    .A=(Expression="/Script/Engine.MaterialExpressionSaturate'2D_Cloud_Shadows_MF:MaterialExpressionSaturate_0'")
+    .bLastPreviewed=True
+    .Id=66DEF9504928650076EE629FB23D7B33
+    .MaterialExpressionEditorX=294
+    .MaterialExpressionEditorY=600
+    .MaterialExpressionGuid=58357C674E6D03EB65C368A91EB27320
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_0)
+    B                      <- MaterialExpressionOneMinus
+    Alpha                  <- MaterialExpressionLinearInterpolate
+    .B=(Expression="/Script/Engine.MaterialExpressionOneMinus'2D_Cloud_Shadows_MF:MaterialExpressionOneMinus_12'")
+    .ConstA=1.000000
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'2D_Cloud_Shadows_MF:MaterialExpressionLinearInterpolate_6'")
+    .MaterialExpressionEditorX=-378
+    .MaterialExpressionEditorY=628
+    .MaterialExpressionGuid=167E2364400E5AEC89FFE7A333EA90A3
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_5)
+    A                      <- MaterialExpressionScalarParameter
+    B                      <- MaterialExpressionScalarParameter
+    Alpha                  <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'2D_Cloud_Shadows_MF:MaterialExpressionScalarParameter_6'")
+    .A=(Expression="/Script/Engine.MaterialExpressionScalarParameter'2D_Cloud_Shadows_MF:MaterialExpressionScalarParameter_2'")
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'2D_Cloud_Shadows_MF:MaterialExpressionNamedRerouteUsage_3'")
+    .MaterialExpressionEditorX=-1976
+    .MaterialExpressionEditorY=544
+    .MaterialExpressionGuid=BCAEFF3D43036B2B3B59D6BEA5BF2446
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_6)
+    A                      <- MaterialExpressionScalarParameter
+    B                      <- MaterialExpressionScalarParameter
+    Alpha                  <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'2D_Cloud_Shadows_MF:MaterialExpressionScalarParameter_8'")
+    .A=(Expression="/Script/Engine.MaterialExpressionScalarParameter'2D_Cloud_Shadows_MF:MaterialExpressionScalarParameter_7'")
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'2D_Cloud_Shadows_MF:MaterialExpressionNamedRerouteUsage_0'")
+    .MaterialExpressionEditorX=-548
+    .MaterialExpressionEditorY=808
+    .MaterialExpressionGuid=95D2621E4B3C0F27A6147DB40ECAFBB5
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_0)
+    FunctionInputs(0)      <- MaterialExpressionFunctionInput
+    FunctionInputs(1)      <- MaterialExpressionScalarParameter
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Cloud_Shadow_Light_Angle_Offset.Cloud_Shadow_Light_Angle_Offset'"
+    .FunctionInputs(0)=(ExpressionInputId=9491E457471C76B19DB80FAA96F063E9,Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'2D_Cloud_Shadows_MF:MaterialExpressionFunctionInput_0'",InputName="Position"))
+    .FunctionInputs(1)=(ExpressionInputId=0BFBEEF94F7C3FB8E8843CA29527D73B,Input=(Expression="/Script/Engine.MaterialExpressionScalarParameter'2D_Cloud_Shadows_MF:MaterialExpressionScalarParameter_3'",InputName="Scale Angle Offset"))
+    .FunctionOutputs(0)=(ExpressionOutputId=EFC2E3FE454E443CBCE2AC90C6A7C6DD,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-4724
+    .MaterialExpressionEditorY=616
+    .MaterialExpressionGuid=402A76214B0E69C7463C57991D7DFA7D
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_9)
+    FunctionInputs(0)      <- MaterialExpressionSubtract
+    FunctionInputs(1)      <- MaterialExpressionLinearInterpolate
+    FunctionInputs(2)      <- MaterialExpressionScalarParameter
+    FunctionInputs(3)      <- MaterialExpressionAdd
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Filter_Clouds.Filter_Clouds'"
+    .FunctionInputs(0)=(ExpressionInputId=955F71B04A50A2B9765A569868832125,Input=(Expression="/Script/Engine.MaterialExpressionSubtract'2D_Cloud_Shadows_MF:MaterialExpressionSubtract_2'",InputName="middle_threshold"))
+    .FunctionInputs(1)=(ExpressionInputId=A0E0E74C4743D00B9B028089034F8F56,Input=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'2D_Cloud_Shadows_MF:MaterialExpressionLinearInterpolate_5'",InputName="Gradient Width"))
+    .FunctionInputs(2)=(ExpressionInputId=64BF9B104842B0C117E20AAD82D0D255,Input=(Expression="/Script/Engine.MaterialExpressionScalarParameter'2D_Cloud_Shadows_MF:MaterialExpressionScalarParameter_4'",InputName="Soften"))
+    .FunctionInputs(3)=(ExpressionInputId=644DB8264CF13A6982F55582A6116D55,Input=(Expression="/Script/Engine.MaterialExpressionAdd'2D_Cloud_Shadows_MF:MaterialExpressionAdd_3'",InputName="In"))
+    .FunctionOutputs(0)=(ExpressionOutputId=C9CAF83A455C77CD6D9002BA1703F24D,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-1414
+    .MaterialExpressionEditorY=666
+    .MaterialExpressionGuid=81F2EBFE44C3AD504EB8D6A954AC2D73
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionLinearInterpolate
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'2D_Cloud_Shadows_MF:MaterialExpressionLinearInterpolate_5'")
+    .ConstB=0.650000
+    .MaterialExpressionEditorX=-1808
+    .MaterialExpressionEditorY=508
+    .MaterialExpressionGuid=5F80DEC54EED14B8E12CAFA28D827BEF
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionCollectionParameter
+    B                      <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'2D_Cloud_Shadows_MF:MaterialExpressionCollectionParameter_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'2D_Cloud_Shadows_MF:MaterialExpressionCollectionParameter_4'")
+    .MaterialExpressionEditorX=-3464
+    .MaterialExpressionEditorY=972
+    .MaterialExpressionGuid=16EF23F5459119D74D1E85AB84A382DE
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_18)
+    A                      <- MaterialExpressionAdd
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'2D_Cloud_Shadows_MF:MaterialExpressionAdd_4'")
+    .ConstB=-0.700000
+    .MaterialExpressionEditorX=-3516
+    .MaterialExpressionEditorY=620
+    .MaterialExpressionGuid=D4DF41644E7D526215B0C29A3E7732CF
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_19)
+    A                      <- MaterialExpressionAdd
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'2D_Cloud_Shadows_MF:MaterialExpressionAdd_4'")
+    .ConstB=-0.350000
+    .MaterialExpressionEditorX=-3524
+    .MaterialExpressionEditorY=844
+    .MaterialExpressionGuid=D4DF41644E7D526215B0C29A3E7732CF
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_2)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'2D_Cloud_Shadows_MF:MaterialExpressionScalarParameter_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'2D_Cloud_Shadows_MF:MaterialExpressionComponentMask_1'")
+    .MaterialExpressionEditorX=-4424
+    .MaterialExpressionEditorY=856
+    .MaterialExpressionGuid=8016A6CA4A0EF8DE8849428B2C3BD72C
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_3)
+    A                      <- MaterialExpressionTextureSampleParameter2D
+    B                      <- MaterialExpressionTextureSampleParameter2D
+    .B=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameter2D'2D_Cloud_Shadows_MF:MaterialExpressionTextureSampleParameter2D_33'",OutputIndex=2,Mask=1,MaskG=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameter2D'2D_Cloud_Shadows_MF:MaterialExpressionTextureSampleParameter2D_32'",OutputIndex=1,Mask=1,MaskR=1)
+    .MaterialExpressionEditorX=-2676
+    .MaterialExpressionEditorY=748
+    .MaterialExpressionGuid=546235584FE3C85DA8F44A9E4E5AD464
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_6)
+    A                      <- MaterialExpressionLinearInterpolate
+    B                      <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'2D_Cloud_Shadows_MF:MaterialExpressionCollectionParameter_6'")
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'2D_Cloud_Shadows_MF:MaterialExpressionLinearInterpolate_0'")
+    .MaterialExpressionEditorX=-122
+    .MaterialExpressionEditorY=628
+    .MaterialExpressionGuid=163ADB85405710E330F4839D22AB3E3C
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_0)
+    Input                  <- MaterialExpressionSaturate
+    .Input=(Expression="/Script/Engine.MaterialExpressionSaturate'2D_Cloud_Shadows_MF:MaterialExpressionSaturate_1'")
+    .Name="Overcast Alpha"
+    .NodeColor=(R=0.101562,G=0.000000,B=1.000000,A=1.000000)
+    .VariableGuid=EDBBB92D470F7DA406116CA71ABD4522
+    .MaterialExpressionEditorX=-2636
+    .MaterialExpressionEditorY=248
+    .MaterialExpressionGuid=E110363743B48907CCBB5D83A982A56C
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_0)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'2D_Cloud_Shadows_MF:MaterialExpressionNamedRerouteDeclaration_0'"
+    .DeclarationGuid=EDBBB92D470F7DA406116CA71ABD4522
+    .MaterialExpressionEditorX=-752
+    .MaterialExpressionEditorY=928
+    .MaterialExpressionGuid=2AB782D24F332093FFFCE3897AE8E01F
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_3)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'2D_Cloud_Shadows_MF:MaterialExpressionNamedRerouteDeclaration_0'"
+    .DeclarationGuid=EDBBB92D470F7DA406116CA71ABD4522
+    .MaterialExpressionEditorX=-2212
+    .MaterialExpressionEditorY=708
+    .MaterialExpressionGuid=53D710914D1984F2DA963695A1249FE9
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_12)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+    .Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'2D_Cloud_Shadows_MF:MaterialExpressionMaterialFunctionCall_9'")
+    .MaterialExpressionEditorX=-1166
+    .MaterialExpressionEditorY=662
+    .MaterialExpressionGuid=E3A0BE17427B718ADD6FBEBF86BE262C
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_9)
+    Input                  <- MaterialExpressionDivide
+    .Input=(Expression="/Script/Engine.MaterialExpressionDivide'2D_Cloud_Shadows_MF:MaterialExpressionDivide_2'")
+    .MaterialExpressionEditorX=-1930
+    .MaterialExpressionEditorY=386
+    .MaterialExpressionGuid=65BCA58C44CE266E60DABBA36E88F779
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionPanner (MaterialExpressionPanner_9)
+    Coordinate             <- MaterialExpressionMultiply
+    Time                   <- MaterialExpressionMultiply
+    Speed                  <- MaterialExpressionConstant2Vector
+    .Coordinate=(Expression="/Script/Engine.MaterialExpressionMultiply'2D_Cloud_Shadows_MF:MaterialExpressionMultiply_19'")
+    .Time=(Expression="/Script/Engine.MaterialExpressionMultiply'2D_Cloud_Shadows_MF:MaterialExpressionMultiply_1'")
+    .Speed=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'2D_Cloud_Shadows_MF:MaterialExpressionConstant2Vector_0'")
+    .SpeedX=-0.004000
+    .SpeedY=-0.000500
+    .MaterialExpressionEditorX=-3148
+    .MaterialExpressionEditorY=844
+    .MaterialExpressionGuid=7FA55DC747B1CFC24F78198A0BF00C24
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionPower (MaterialExpressionPower_2)
+    Base                   <- MaterialExpressionOneMinus
+    .Base=(Expression="/Script/Engine.MaterialExpressionOneMinus'2D_Cloud_Shadows_MF:MaterialExpressionOneMinus_9'")
+    .ConstExponent=3.000000
+    .MaterialExpressionEditorX=-1802
+    .MaterialExpressionEditorY=386
+    .MaterialExpressionGuid=805A7772403CFE0583C2E6BCDADDF5AE
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_0)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'2D_Cloud_Shadows_MF:MaterialExpressionMultiply_6'")
+    .MaterialExpressionEditorX=38
+    .MaterialExpressionEditorY=628
+    .MaterialExpressionGuid=7BB1E7884FC7AE6E17865E9C10611286
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_1)
+    Input                  <- MaterialExpressionDivide
+    .Input=(Expression="/Script/Engine.MaterialExpressionDivide'2D_Cloud_Shadows_MF:MaterialExpressionDivide_1'")
+    .MaterialExpressionEditorX=-2768
+    .MaterialExpressionEditorY=248
+    .MaterialExpressionGuid=D4B98F7841A3D56A509CC584A900130C
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_0)
+    .ParameterName="Cloud Position Scale Factor"
+    .ExpressionGUID=FF1FB2864B11639A905809AF482F25D2
+    .MaterialExpressionEditorX=-4652
+    .MaterialExpressionEditorY=936
+    .MaterialExpressionGuid=285710214313F988CC2AFA82A960A3DA
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_1)
+    .ParameterName="Cloud Density"
+    .DefaultValue=1.380000
+    .ExpressionGUID=2C365CCE47FA1CABBE69A6B714F86241
+    .MaterialExpressionEditorX=-3316
+    .MaterialExpressionEditorY=236
+    .MaterialExpressionGuid=FCB3712B44731EA420EFA386C10C6574
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_13)
+    .ParameterName="Cloud Density"
+    .DefaultValue=1.380000
+    .ExpressionGUID=D24353344A0BE02895DDDFB6BD745CB1
+    .MaterialExpressionEditorX=-2292
+    .MaterialExpressionEditorY=368
+    .MaterialExpressionGuid=FCB3712B44731EA420EFA386C10C6574
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_14)
+    .ParameterName="Shadows Scale"
+    .DefaultValue=120000.000000
+    .ExpressionGUID=1E02452C4BD7663BA55E0AA07F6239C6
+    .MaterialExpressionEditorX=-4440
+    .MaterialExpressionEditorY=672
+    .MaterialExpressionGuid=832F1FC843137C5F5902C782F3C25B16
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_2)
+    .ParameterName="Clear Softness"
+    .DefaultValue=0.100000
+    .ExpressionGUID=7D55AABA4664A5668760D9B729C13A49
+    .MaterialExpressionEditorX=-2260
+    .MaterialExpressionEditorY=532
+    .MaterialExpressionGuid=172CCD7F4F89EB76F23093AB00D77D4A
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_3)
+    .ParameterName="Angle Offset Scale"
+    .DefaultValue=1.000000
+    .ExpressionGUID=77D32F9E4EA68C88F5ECD4BFA182FB4E
+    .MaterialExpressionEditorX=-4936
+    .MaterialExpressionEditorY=696
+    .MaterialExpressionGuid=0ADCC53C4F8F0589F3CF5E8D4B5E7E57
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_4)
+    .ParameterName="Soften_Cloud_Layer_1"
+    .DefaultValue=1.000000
+    .ExpressionGUID=58BD15E048B397D15E51BBA071BA625D
+    .MaterialExpressionEditorX=-1664
+    .MaterialExpressionEditorY=712
+    .MaterialExpressionGuid=2CD565664194A404995FA294E7248484
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_6)
+    .ParameterName="Cloudy Softness"
+    .DefaultValue=0.200000
+    .ExpressionGUID=B8552079416BFD661410349103530945
+    .MaterialExpressionEditorX=-2256
+    .MaterialExpressionEditorY=624
+    .MaterialExpressionGuid=172CCD7F4F89EB76F23093AB00D77D4A
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_7)
+    .ParameterName="Clear Intensity"
+    .DefaultValue=0.700000
+    .ExpressionGUID=21B4F90845D3DE544AD8D2A9309F8412
+    .MaterialExpressionEditorX=-812
+    .MaterialExpressionEditorY=732
+    .MaterialExpressionGuid=172CCD7F4F89EB76F23093AB00D77D4A
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_8)
+    .ParameterName="Cloudy Intensity"
+    .DefaultValue=1.000000
+    .ExpressionGUID=57D98DBD41B2EE87AF9D69B2634934A2
+    .MaterialExpressionEditorX=-808
+    .MaterialExpressionEditorY=824
+    .MaterialExpressionGuid=172CCD7F4F89EB76F23093AB00D77D4A
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_0)
+    A                      <- MaterialExpressionScalarParameter
+    .A=(Expression="/Script/Engine.MaterialExpressionScalarParameter'2D_Cloud_Shadows_MF:MaterialExpressionScalarParameter_1'")
+    .ConstB=1.550000
+    .MaterialExpressionEditorX=-3096
+    .MaterialExpressionEditorY=248
+    .MaterialExpressionGuid=EEBDE1704AC00CB7252E948FEA19A3D2
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_2)
+    A                      <- MaterialExpressionPower
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'2D_Cloud_Shadows_MF:MaterialExpressionMultiply_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionPower'2D_Cloud_Shadows_MF:MaterialExpressionPower_2'")
+    .ConstB=0.150000
+    .MaterialExpressionEditorX=-1626
+    .MaterialExpressionEditorY=386
+    .MaterialExpressionGuid=FB20BFD64770A4C8BDD20CBF6309011E
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+    .Desc="This outputs the middle threshhold value taken by the Filter_Clouds function"
+  MaterialExpressionTextureSampleParameter2D (MaterialExpressionTextureSampleParameter2D_32)
+    Coordinates            <- MaterialExpressionMultiply
+    .ParameterName="clouds_basetex"
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_ParticleClouds.T_ParticleClouds'"
+    .ExpressionGUID=DEA93D4E43F0458CD7A92583C9E63808
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionMultiply'2D_Cloud_Shadows_MF:MaterialExpressionMultiply_18'")
+    .MaterialExpressionEditorX=-2932
+    .MaterialExpressionEditorY=604
+    .MaterialExpressionGuid=7672792A448A3005FA02DDBFA2A10995
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionTextureSampleParameter2D (MaterialExpressionTextureSampleParameter2D_33)
+    Coordinates            <- MaterialExpressionPanner
+    .ParameterName="clouds_basetex"
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_ParticleClouds.T_ParticleClouds'"
+    .ExpressionGUID=F510A250414C643FCF738B8B7654355C
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionPanner'2D_Cloud_Shadows_MF:MaterialExpressionPanner_9'")
+    .MaterialExpressionEditorX=-2932
+    .MaterialExpressionEditorY=856
+    .MaterialExpressionGuid=7672792A448A3005FA02DDBFA2A10995
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"
+  MaterialExpressionWorldPosition (MaterialExpressionWorldPosition_4)
+    .MaterialExpressionEditorX=-5160
+    .MaterialExpressionEditorY=600
+    .MaterialExpressionGuid=A01C6F49479B5A161E626F841F896A16
+    .Function="/Script/Engine.MaterialFunction'2D_Cloud_Shadows_MF'"

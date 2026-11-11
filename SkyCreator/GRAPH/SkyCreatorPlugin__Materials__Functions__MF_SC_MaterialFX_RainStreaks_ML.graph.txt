@@ -1,0 +1,300 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_MaterialFX_RainStreaks_ML
+  MaterialFunction (MF_SC_MaterialFX_RainStreaks_ML)
+    DependentFunctionExpressionCandidates(0) <- MaterialExpressionMaterialFunctionCall
+    DependentFunctionExpressionCandidates(1) <- MaterialExpressionMaterialFunctionCall
+    DependentFunctionExpressionCandidates(2) <- MaterialExpressionMaterialFunctionCall
+    DependentFunctionExpressionCandidates(3) <- MaterialExpressionMaterialFunctionCall
+    DependentFunctionExpressionCandidates(4) <- MaterialExpressionMaterialFunctionCall
+    .LibraryCategoriesText(0)=NSLOCTEXT("", "DFBEEF54441F3B245EE4B19D7DDDBE00", "Sky Creator")
+    .DependentFunctionExpressionCandidates(0)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_2'"
+    .DependentFunctionExpressionCandidates(1)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_4'"
+    .DependentFunctionExpressionCandidates(2)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_5'"
+    .DependentFunctionExpressionCandidates(3)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_0'"
+    .DependentFunctionExpressionCandidates(4)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_6'"
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'MF_SC_MaterialFX_RainStreaks_MLEditorOnlyData'"
+    .StateId=5B162B684D86E08D34F53DBB8C7E6AFA
+    .CombinedInputTypes=2063
+    .CombinedOutputTypes=2063
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+  MaterialFunctionEditorOnlyData (MF_SC_MaterialFX_RainStreaks_MLEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionFunctionInput'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionFunctionInput_1'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionCollectionParameter_12'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionCollectionParameter_13'","/Script/Engine.MaterialExpressionBlendMaterialAttributes'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionBlendMaterialAttributes_0'","/Script/Engine.MaterialExpressionSetMaterialAttributes'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionSetMaterialAttributes_0'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionNamedRerouteDeclaration_0'","/Script/Engine.MaterialExpressionNamedRerouteUsage'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionNamedRerouteUsage_1'","/Script/Engine.MaterialExpressionLinearInterpolate'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionLinearInterpolate_0'","/Script/Engine.MaterialExpressionScalarParameter'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionScalarParameter_4'","/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionMaterialFunctionCall_2'","/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionMaterialFunctionCall_4'","/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionMaterialFunctionCall_5'","/Script/Engine.MaterialExpressionConstant3Vector'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionConstant3Vector_0'","/Script/Engine.MaterialExpressionGetMaterialAttributes'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionGetMaterialAttributes_0'","/Script/Engine.MaterialExpressionSaturate'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionSaturate_0'","/Script/Engine.MaterialExpressionMultiply'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionMultiply_1'","/Script/Engine.MaterialExpressionMultiply'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionMultiply_2'","/Script/Engine.MaterialExpressionComponentMask'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionComponentMask_1'","/Script/Engine.MaterialExpressionLinearInterpolate'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionLinearInterpolate_1'","/Script/Engine.MaterialExpressionComponentMask'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionMaterialFunctionCall_0'","/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionMaterialFunctionCall_6'","/Script/Engine.MaterialExpressionFunctionInput'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionFunctionInput_15'","/Script/Engine.MaterialExpressionWorldPosition'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionWorldPosition_2'","/Script/Engine.MaterialExpressionFunctionOutput'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionFunctionOutput_1'","/Script/Engine.MaterialExpressionFunctionInput'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionFunctionInput_4'"))
+  MaterialExpressionBlendMaterialAttributes (MaterialExpressionBlendMaterialAttributes_0)
+    A                      <- MaterialExpressionGetMaterialAttributes
+    B                      <- MaterialExpressionSetMaterialAttributes
+    Alpha                  <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionSetMaterialAttributes'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionSetMaterialAttributes_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionGetMaterialAttributes'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionGetMaterialAttributes_0'")
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionNamedRerouteUsage_1'")
+    .MaterialExpressionEditorX=-384
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=6B53AF784851D8B88E333F8B77C420B9
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_RainStreaks_ML'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_12)
+    .ParameterName="Rain Streaks Slope Angle"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=3572C0844094C36CC92829802BA2A48F
+    .MaterialExpressionEditorX=-2048
+    .MaterialExpressionEditorY=768
+    .MaterialExpressionGuid=C97954C74C3DB891C729A6865178653F
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_RainStreaks_ML'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_13)
+    .ParameterName="Rain Streaks Slope Smoothness"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=5E1E803D4B7C8BF8BD8B8E972E156D69
+    .MaterialExpressionEditorX=-2048
+    .MaterialExpressionEditorY=864
+    .MaterialExpressionGuid=C97954C74C3DB891C729A6865178653F
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_RainStreaks_ML'"
+    .bCollapsed=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+    .R=True
+    .G=True
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionMaterialFunctionCall_0'")
+    .MaterialExpressionEditorX=-1152
+    .MaterialExpressionEditorY=512
+    .MaterialExpressionGuid=EFAF35A7481E4EBAD5595A922C22AA2A
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_RainStreaks_ML'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_1)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+    .A=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionMaterialFunctionCall_2'")
+    .MaterialExpressionEditorX=-1152
+    .MaterialExpressionEditorY=384
+    .MaterialExpressionGuid=17D78FCD4942DCE4C6F341B2D97B124E
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_RainStreaks_ML'"
+  MaterialExpressionConstant3Vector (MaterialExpressionConstant3Vector_0)
+    .Constant=(R=0.000000,G=0.000000,B=-1.000000,A=0.000000)
+    .MaterialExpressionEditorX=-1920
+    .MaterialExpressionEditorY=992
+    .MaterialExpressionGuid=0DD808D246185407989398BB163D5BB7
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_RainStreaks_ML'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_1)
+    .InputName="Material"
+    .Id=C85CF553450B30D2C263C6AE08317D18
+    .InputType=FunctionInput_MaterialAttributes
+    .MaterialExpressionEditorX=-2048
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=97C0E4D04A25DA05618E43A278111ED7
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_RainStreaks_ML'"
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_15)
+    Preview                <- MaterialExpressionWorldPosition
+    .Preview=(Expression="/Script/Engine.MaterialExpressionWorldPosition'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionWorldPosition_2'")
+    .InputName="Position"
+    .Id=52AEF9B64A71C8C59B44129B4940E406
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=1
+    .MaterialExpressionEditorX=-1792
+    .MaterialExpressionEditorY=448
+    .MaterialExpressionGuid=D3B7826D4671A12905CEBEA861B044DC
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_RainStreaks_ML'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_4)
+    .InputName="Noise"
+    .Id=41A3AB4E4755E6F47E671081426C65F2
+    .InputType=FunctionInput_Scalar
+    .PreviewValue=(X=1.000000,Y=0.000000,Z=0.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=2
+    .MaterialExpressionEditorX=-1792
+    .MaterialExpressionEditorY=576
+    .MaterialExpressionGuid=A4110D284DB77DBE582ABCBCB23C0C10
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_RainStreaks_ML'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionBlendMaterialAttributes
+    .A=(Expression="/Script/Engine.MaterialExpressionBlendMaterialAttributes'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionBlendMaterialAttributes_0'")
+    .OutputName="Material"
+    .bLastPreviewed=True
+    .Id=A4800E9F40B011C2991814B820010843
+    .MaterialExpressionGuid=75043E074D15DAC66B8CA4A4691F5F9F
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_RainStreaks_ML'"
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_1)
+    A                      <- MaterialExpressionComponentMask
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionComponentMask_1'")
+    .OutputName="Alpha"
+    .SortPriority=1
+    .bLastPreviewed=True
+    .Id=F1EF536243AC3A22F672C8941C940CCF
+    .MaterialExpressionEditorY=384
+    .MaterialExpressionGuid=75043E074D15DAC66B8CA4A4691F5F9F
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_RainStreaks_ML'"
+  MaterialExpressionGetMaterialAttributes (MaterialExpressionGetMaterialAttributes_0)
+    MaterialAttributes     <- MaterialExpressionFunctionInput
+    .MaterialAttributes=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionFunctionInput_1'")
+    .AttributeGetTypes(0)=D1DD967C4CAD47D39E6346FB08ECF210
+    .AttributeGetTypes(1)=0FA2821A200F4A4AB719B789C1259C64
+    .MaterialExpressionEditorX=-1664
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=C174E9E740191E28767D8DB882E64F12
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_RainStreaks_ML'"
+    .Outputs(1)=(OutputName="Roughness")
+    .Outputs(2)=(OutputName="Normal")
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_0)
+    A                      <- MaterialExpressionGetMaterialAttributes
+    B                      <- MaterialExpressionScalarParameter
+    Alpha                  <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionScalarParameter_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionGetMaterialAttributes'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionGetMaterialAttributes_0'",OutputIndex=1)
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionComponentMask_1'")
+    .MaterialExpressionEditorX=-896
+    .MaterialExpressionEditorY=208
+    .MaterialExpressionGuid=F99D517E4675EA94B2EC8286B3066856
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_RainStreaks_ML'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_1)
+    A                      <- MaterialExpressionGetMaterialAttributes
+    B                      <- MaterialExpressionComponentMask
+    Alpha                  <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionComponentMask_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionGetMaterialAttributes'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionGetMaterialAttributes_0'",OutputIndex=2)
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionComponentMask_1'")
+    .MaterialExpressionEditorX=-896
+    .MaterialExpressionEditorY=512
+    .MaterialExpressionGuid=8A0D26B94E46437DE4A72FAE9C4C08A5
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_RainStreaks_ML'"
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_0)
+    FunctionInputs(0)      <- MaterialExpressionFunctionInput
+    FunctionInputs(2)      <- MaterialExpressionFunctionInput
+    .MaterialFunction="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_MaterialFX_RainStreaks.MF_SC_MaterialFX_RainStreaks'"
+    .FunctionInputs(0)=(ExpressionInputId=47C0F8934247B4B055ECB8A7C2AEEE4D,Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionFunctionInput_15'",InputName="Position"))
+    .FunctionInputs(1)=(ExpressionInputId=3F6C13F742550F88624FB98B49C7C4DE,Input=(OutputIndex=-1,InputName="Custom Scale"))
+    .FunctionInputs(2)=(ExpressionInputId=247DC2CF48B72CF0018864B5DC354E01,Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionFunctionInput_4'",InputName="Noise"))
+    .FunctionOutputs(0)=(ExpressionOutputId=19DEAC2345E04EA1C94EEC947A98635A,Output=(OutputName="Normal"))
+    .MaterialExpressionEditorX=-1408
+    .MaterialExpressionEditorY=512
+    .MaterialExpressionGuid=848D794041011A6611DFF3BF200183D2
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_RainStreaks_ML'"
+    .Outputs(0)=(OutputName="Normal")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_2)
+    FunctionInputs(0)      <- MaterialExpressionFunctionInput
+    FunctionInputs(2)      <- MaterialExpressionFunctionInput
+    .MaterialFunction="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_MaterialFX_RainStreaks.MF_SC_MaterialFX_RainStreaks'"
+    .FunctionInputs(0)=(ExpressionInputId=47C0F8934247B4B055ECB8A7C2AEEE4D,Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionFunctionInput_15'",InputName="Position"))
+    .FunctionInputs(1)=(ExpressionInputId=3F6C13F742550F88624FB98B49C7C4DE,Input=(OutputIndex=-1,InputName="Custom Scale"))
+    .FunctionInputs(2)=(ExpressionInputId=247DC2CF48B72CF0018864B5DC354E01,Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionFunctionInput_4'",InputName="Noise"))
+    .FunctionOutputs(0)=(ExpressionOutputId=19DEAC2345E04EA1C94EEC947A98635A,Output=(OutputName="Normal"))
+    .MaterialExpressionEditorX=-1408
+    .MaterialExpressionEditorY=384
+    .MaterialExpressionGuid=848D794041011A6611DFF3BF200183D2
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_RainStreaks_ML'"
+    .Outputs(0)=(OutputName="Normal")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_4)
+    FunctionInputs(1)      <- MaterialExpressionCollectionParameter
+    FunctionInputs(2)      <- MaterialExpressionCollectionParameter
+    .MaterialFunction="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_SlopeBlend.MF_SC_SlopeBlend'"
+    .FunctionInputs(0)=(ExpressionInputId=61351A884395463BE557EEA50E28B589,Input=(OutputIndex=-1,InputName="World Vector"))
+    .FunctionInputs(1)=(ExpressionInputId=D6C98D6D4D3BEB1E805B23997A3F8451,Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionCollectionParameter_12'",InputName="Slope Angle"))
+    .FunctionInputs(2)=(ExpressionInputId=3972FFE24BE7424FC3319ABA2107ADB4,Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionCollectionParameter_13'",InputName="Slope Smoothness"))
+    .FunctionInputs(3)=(ExpressionInputId=483215A643935C3C5C04C6BE5847AD2F,Input=(InputName="Normal"))
+    .FunctionInputs(4)=(ExpressionInputId=D49F862240FBFE7C2747F7AE4007A296,Input=(OutputIndex=-1,InputName="Normal Strength"))
+    .FunctionOutputs(0)=(ExpressionOutputId=32C494E541773EC95201F9920F13594A,Output=(OutputName="Vertex Slope Mask"))
+    .FunctionOutputs(1)=(ExpressionOutputId=20CA2F774B2083E55DAB25BD1CD45AD4,Output=(OutputName="Normal Slope Mask"))
+    .MaterialExpressionEditorX=-1536
+    .MaterialExpressionEditorY=768
+    .MaterialExpressionGuid=72B0301D4E9AA3882E309C962366F8AA
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_RainStreaks_ML'"
+    .Outputs(0)=(OutputName="Vertex Slope Mask")
+    .Outputs(1)=(OutputName="Normal Slope Mask")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_5)
+    FunctionInputs(0)      <- MaterialExpressionConstant3Vector
+    FunctionInputs(1)      <- MaterialExpressionCollectionParameter
+    FunctionInputs(2)      <- MaterialExpressionCollectionParameter
+    .MaterialFunction="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_SlopeBlend.MF_SC_SlopeBlend'"
+    .FunctionInputs(0)=(ExpressionInputId=61351A884395463BE557EEA50E28B589,Input=(Expression="/Script/Engine.MaterialExpressionConstant3Vector'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionConstant3Vector_0'",InputName="World Vector"))
+    .FunctionInputs(1)=(ExpressionInputId=D6C98D6D4D3BEB1E805B23997A3F8451,Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionCollectionParameter_12'",InputName="Slope Angle"))
+    .FunctionInputs(2)=(ExpressionInputId=3972FFE24BE7424FC3319ABA2107ADB4,Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionCollectionParameter_13'",InputName="Slope Smoothness"))
+    .FunctionInputs(3)=(ExpressionInputId=483215A643935C3C5C04C6BE5847AD2F,Input=(InputName="Normal"))
+    .FunctionInputs(4)=(ExpressionInputId=D49F862240FBFE7C2747F7AE4007A296,Input=(OutputIndex=-1,InputName="Normal Strength"))
+    .FunctionOutputs(0)=(ExpressionOutputId=32C494E541773EC95201F9920F13594A,Output=(OutputName="Vertex Slope Mask"))
+    .FunctionOutputs(1)=(ExpressionOutputId=20CA2F774B2083E55DAB25BD1CD45AD4,Output=(OutputName="Normal Slope Mask"))
+    .MaterialExpressionEditorX=-1536
+    .MaterialExpressionEditorY=976
+    .MaterialExpressionGuid=72B0301D4E9AA3882E309C962366F8AA
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_RainStreaks_ML'"
+    .Outputs(0)=(OutputName="Vertex Slope Mask")
+    .Outputs(1)=(OutputName="Normal Slope Mask")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_6)
+    FunctionInputs(0)      <- MaterialExpressionGetMaterialAttributes
+    FunctionInputs(1)      <- MaterialExpressionComponentMask
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Engine/Functions/Engine_MaterialFunctions02/Utility/BlendAngleCorrectedNormals.BlendAngleCorrectedNormals'"
+    .FunctionInputs(0)=(ExpressionInputId=471965E548C55D27E606D3832C490AD3,Input=(Expression="/Script/Engine.MaterialExpressionGetMaterialAttributes'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionGetMaterialAttributes_0'",OutputIndex=2,InputName="BaseNormal"))
+    .FunctionInputs(1)=(ExpressionInputId=7E2E487F49DE5A67E3A1EFA3FD83D041,Input=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionComponentMask_0'",InputName="AdditionalNormal"))
+    .FunctionOutputs(0)=(ExpressionOutputId=E2F3EA0E41E2637BBAA2A4A0FEF38E6A,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-896
+    .MaterialExpressionEditorY=384
+    .MaterialExpressionGuid=3BDA4511461522DB0E17F4A0D85D1D32
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_RainStreaks_ML'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionMaterialFunctionCall_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionMaterialFunctionCall_4'")
+    .MaterialExpressionEditorX=-1152
+    .MaterialExpressionEditorY=896
+    .MaterialExpressionGuid=FA189E354D54B3E4B1B5F19270A08146
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_RainStreaks_ML'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_2)
+    A                      <- MaterialExpressionMultiply
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionMultiply_1'")
+    .ConstB=2.000000
+    .MaterialExpressionEditorX=-1024
+    .MaterialExpressionEditorY=896
+    .MaterialExpressionGuid=CD5EF2694114F43F74D6279F313E7CD1
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_RainStreaks_ML'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_0)
+    Input                  <- MaterialExpressionSaturate
+    .Input=(Expression="/Script/Engine.MaterialExpressionSaturate'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionSaturate_0'")
+    .Name="Rain Streaks Mask"
+    .NodeColor=(R=0.000000,G=0.000000,B=0.000000,A=1.000000)
+    .VariableGuid=F50863664479075586DAC78FA31C1841
+    .MaterialExpressionEditorX=-640
+    .MaterialExpressionEditorY=896
+    .MaterialExpressionGuid=A705A83D4293F8D20E8849BD589BFEFF
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_RainStreaks_ML'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_1)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionNamedRerouteDeclaration_0'"
+    .DeclarationGuid=F50863664479075586DAC78FA31C1841
+    .MaterialExpressionEditorX=-640
+    .MaterialExpressionEditorY=256
+    .MaterialExpressionGuid=A5BFAD4742F504FD02032FA363D135F6
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_RainStreaks_ML'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_0)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionMultiply_2'")
+    .MaterialExpressionEditorX=-896
+    .MaterialExpressionEditorY=896
+    .MaterialExpressionGuid=7C639E68446837FE5D121A93A9DDCED1
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_RainStreaks_ML'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_4)
+    .ParameterName="Rain Streaks Roughness"
+    .SliderMax=1.000000
+    .ExpressionGUID=EC7C9D8941DCC5A9416016B3697342C1
+    .Group="Sky Creator Material FX"
+    .MaterialExpressionEditorX=-1152
+    .MaterialExpressionEditorY=272
+    .MaterialExpressionGuid=B48D2D524F592E30289AA1A897581E58
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_RainStreaks_ML'"
+  MaterialExpressionSetMaterialAttributes (MaterialExpressionSetMaterialAttributes_0)
+    Inputs(0)              <- MaterialExpressionGetMaterialAttributes
+    Inputs(1)              <- MaterialExpressionLinearInterpolate
+    Inputs(2)              <- MaterialExpressionMaterialFunctionCall
+    .Inputs(0)=(Expression="/Script/Engine.MaterialExpressionGetMaterialAttributes'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionGetMaterialAttributes_0'")
+    .Inputs(1)=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionLinearInterpolate_0'",InputName="Roughness")
+    .Inputs(2)=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_MaterialFX_RainStreaks_ML:MaterialExpressionMaterialFunctionCall_6'",InputName="Normal")
+    .AttributeSetTypes(0)=D1DD967C4CAD47D39E6346FB08ECF210
+    .AttributeSetTypes(1)=0FA2821A200F4A4AB719B789C1259C64
+    .MaterialExpressionEditorX=-640
+    .MaterialExpressionEditorY=128
+    .MaterialExpressionGuid=F390398A4A6F8A6D50996880FB8F9958
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_RainStreaks_ML'"
+  MaterialExpressionWorldPosition (MaterialExpressionWorldPosition_2)
+    .MaterialExpressionEditorX=-2048
+    .MaterialExpressionEditorY=432
+    .MaterialExpressionGuid=69F34EB54AFC480CC2F9B39EDF0A3802
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_RainStreaks_ML'"

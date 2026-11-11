@@ -1,0 +1,186 @@
+Begin Object Class=/Script/Engine.Material Name="Splash_ParticleMat_Translucent" ExportPath="/Script/Engine.Material'/Game/UltraDynamicSky/Materials/Weather/Splash_ParticleMat_Translucent.Splash_ParticleMat_Translucent'"
+   Begin Object Class=/Script/Engine.MaterialEditorOnlyData Name="Splash_ParticleMat_TranslucentEditorOnlyData" ExportPath="/Script/Engine.MaterialEditorOnlyData'/Game/UltraDynamicSky/Materials/Weather/Splash_ParticleMat_Translucent.Splash_ParticleMat_Translucent:Splash_ParticleMat_TranslucentEditorOnlyData'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionCollectionParameter Name="MaterialExpressionCollectionParameter_0" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/Game/UltraDynamicSky/Materials/Weather/Splash_ParticleMat_Translucent.Splash_ParticleMat_Translucent:MaterialExpressionCollectionParameter_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_0" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Weather/Splash_ParticleMat_Translucent.Splash_ParticleMat_Translucent:MaterialExpressionComponentMask_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_0" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Materials/Weather/Splash_ParticleMat_Translucent.Splash_ParticleMat_Translucent:MaterialExpressionConstant_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_1" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Materials/Weather/Splash_ParticleMat_Translucent.Splash_ParticleMat_Translucent:MaterialExpressionConstant_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_2" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Materials/Weather/Splash_ParticleMat_Translucent.Splash_ParticleMat_Translucent:MaterialExpressionConstant_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_0" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Weather/Splash_ParticleMat_Translucent.Splash_ParticleMat_Translucent:MaterialExpressionMaterialFunctionCall_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_0" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Weather/Splash_ParticleMat_Translucent.Splash_ParticleMat_Translucent:MaterialExpressionMultiply_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_1" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Weather/Splash_ParticleMat_Translucent.Splash_ParticleMat_Translucent:MaterialExpressionMultiply_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_2" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Weather/Splash_ParticleMat_Translucent.Splash_ParticleMat_Translucent:MaterialExpressionMultiply_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionShadingPathSwitch Name="MaterialExpressionShadingPathSwitch_0" ExportPath="/Script/Engine.MaterialExpressionShadingPathSwitch'/Game/UltraDynamicSky/Materials/Weather/Splash_ParticleMat_Translucent.Splash_ParticleMat_Translucent:MaterialExpressionShadingPathSwitch_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionShadingPathSwitch Name="MaterialExpressionShadingPathSwitch_2" ExportPath="/Script/Engine.MaterialExpressionShadingPathSwitch'/Game/UltraDynamicSky/Materials/Weather/Splash_ParticleMat_Translucent.Splash_ParticleMat_Translucent:MaterialExpressionShadingPathSwitch_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionShadingPathSwitch Name="MaterialExpressionShadingPathSwitch_3" ExportPath="/Script/Engine.MaterialExpressionShadingPathSwitch'/Game/UltraDynamicSky/Materials/Weather/Splash_ParticleMat_Translucent.Splash_ParticleMat_Translucent:MaterialExpressionShadingPathSwitch_3'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/Weather/Splash_ParticleMat_Translucent.Splash_ParticleMat_Translucent:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   Begin Object Name="Splash_ParticleMat_TranslucentEditorOnlyData" ExportPath="/Script/Engine.MaterialEditorOnlyData'/Game/UltraDynamicSky/Materials/Weather/Splash_ParticleMat_Translucent.Splash_ParticleMat_Translucent:Splash_ParticleMat_TranslucentEditorOnlyData'"
+      BaseColor=(Constant=(R=0.501961,G=0.501961,B=0.501961,A=1.000000),Expression="/Script/Engine.MaterialExpressionShadingPathSwitch'Splash_ParticleMat_Translucent:MaterialExpressionShadingPathSwitch_3'")
+      Metallic=(UseConstant=True)
+      Specular=(UseConstant=True)
+      Roughness=(UseConstant=True)
+      Anisotropy=(UseConstant=True)
+      Normal=(UseConstant=True)
+      Tangent=(UseConstant=True)
+      EmissiveColor=(Expression="/Script/Engine.MaterialExpressionShadingPathSwitch'Splash_ParticleMat_Translucent:MaterialExpressionShadingPathSwitch_2'")
+      Opacity=(Expression="/Script/Engine.MaterialExpressionMultiply'Splash_ParticleMat_Translucent:MaterialExpressionMultiply_0'")
+      OpacityMask=(UseConstant=True)
+      WorldPositionOffset=(UseConstant=True)
+      Displacement=(UseConstant=True)
+      SubsurfaceColor=(UseConstant=True)
+      ClearCoat=(UseConstant=True)
+      ClearCoatRoughness=(UseConstant=True)
+      AmbientOcclusion=(UseConstant=True)
+      Refraction=(UseConstant=True)
+      CustomizedUVs(0)=(UseConstant=True)
+      CustomizedUVs(1)=(UseConstant=True)
+      CustomizedUVs(2)=(UseConstant=True)
+      CustomizedUVs(3)=(UseConstant=True)
+      CustomizedUVs(4)=(UseConstant=True)
+      CustomizedUVs(5)=(UseConstant=True)
+      CustomizedUVs(6)=(UseConstant=True)
+      CustomizedUVs(7)=(UseConstant=True)
+      PixelDepthOffset=(UseConstant=True)
+      SurfaceThickness=(UseConstant=True)
+      ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionShadingPathSwitch'Splash_ParticleMat_Translucent:MaterialExpressionShadingPathSwitch_3'","/Script/Engine.MaterialExpressionShadingPathSwitch'Splash_ParticleMat_Translucent:MaterialExpressionShadingPathSwitch_2'","/Script/Engine.MaterialExpressionMultiply'Splash_ParticleMat_Translucent:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Splash_ParticleMat_Translucent:MaterialExpressionMaterialFunctionCall_0'","/Script/Engine.MaterialExpressionShadingPathSwitch'Splash_ParticleMat_Translucent:MaterialExpressionShadingPathSwitch_0'","/Script/Engine.MaterialExpressionConstant'Splash_ParticleMat_Translucent:MaterialExpressionConstant_0'","/Script/Engine.MaterialExpressionConstant'Splash_ParticleMat_Translucent:MaterialExpressionConstant_1'","/Script/Engine.MaterialExpressionCollectionParameter'Splash_ParticleMat_Translucent:MaterialExpressionCollectionParameter_0'","/Script/Engine.MaterialExpressionMultiply'Splash_ParticleMat_Translucent:MaterialExpressionMultiply_1'","/Script/Engine.MaterialExpressionConstant'Splash_ParticleMat_Translucent:MaterialExpressionConstant_2'","/Script/Engine.MaterialExpressionComponentMask'Splash_ParticleMat_Translucent:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionMultiply'Splash_ParticleMat_Translucent:MaterialExpressionMultiply_2'"))
+   End Object
+   Begin Object Name="MaterialExpressionCollectionParameter_0" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/Game/UltraDynamicSky/Materials/Weather/Splash_ParticleMat_Translucent.Splash_ParticleMat_Translucent:MaterialExpressionCollectionParameter_0'"
+      Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+      ParameterName="Ambient Fog Color"
+      ParameterId=8604E1994A5CD232F1116D94FF84BD2B
+      MaterialExpressionEditorX=3340
+      MaterialExpressionEditorY=284
+      MaterialExpressionGuid=B0401F2B450045DE5946459F8ECED7F0
+      Material="/Script/Engine.Material'Splash_ParticleMat_Translucent'"
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_0" ExportPath="/Script/Engine.MaterialExpressionComponentMask'/Game/UltraDynamicSky/Materials/Weather/Splash_ParticleMat_Translucent.Splash_ParticleMat_Translucent:MaterialExpressionComponentMask_0'"
+      Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Splash_ParticleMat_Translucent:MaterialExpressionCollectionParameter_0'")
+      R=True
+      G=True
+      B=True
+      MaterialExpressionEditorX=3588
+      MaterialExpressionEditorY=308
+      MaterialExpressionGuid=3FFE095848808985D4730ABEC83801B5
+      Material="/Script/Engine.Material'Splash_ParticleMat_Translucent'"
+   End Object
+   Begin Object Name="MaterialExpressionConstant_0" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Materials/Weather/Splash_ParticleMat_Translucent.Splash_ParticleMat_Translucent:MaterialExpressionConstant_0'"
+      R=1.000000
+      MaterialExpressionEditorX=3772
+      MaterialExpressionEditorY=468
+      MaterialExpressionGuid=9103E39E42D75000F22FA5BBBBB0F97B
+      Material="/Script/Engine.Material'Splash_ParticleMat_Translucent'"
+   End Object
+   Begin Object Name="MaterialExpressionConstant_1" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Materials/Weather/Splash_ParticleMat_Translucent.Splash_ParticleMat_Translucent:MaterialExpressionConstant_1'"
+      R=0.500000
+      MaterialExpressionEditorX=3772
+      MaterialExpressionEditorY=560
+      MaterialExpressionGuid=6DE80C194750EA0F5B8E86AD939CC7DD
+      Material="/Script/Engine.Material'Splash_ParticleMat_Translucent'"
+   End Object
+   Begin Object Name="MaterialExpressionConstant_2" ExportPath="/Script/Engine.MaterialExpressionConstant'/Game/UltraDynamicSky/Materials/Weather/Splash_ParticleMat_Translucent.Splash_ParticleMat_Translucent:MaterialExpressionConstant_2'"
+      MaterialExpressionEditorX=3904
+      MaterialExpressionEditorY=164
+      MaterialExpressionGuid=28642BBD485165F1DFDB9393F4A0D647
+      Material="/Script/Engine.Material'Splash_ParticleMat_Translucent'"
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_0" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/Game/UltraDynamicSky/Materials/Weather/Splash_ParticleMat_Translucent.Splash_ParticleMat_Translucent:MaterialExpressionMaterialFunctionCall_0'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/RainSplash_Particle_Sprite.RainSplash_Particle_Sprite'"
+      FunctionOutputs(0)=(ExpressionOutputId=2C1C6504488068722FC597B3739B4556,Output=(OutputName="Base Color"))
+      FunctionOutputs(1)=(ExpressionOutputId=65F146C447C107E171DEF29E0EDE4F07,Output=(OutputName="Opacity"))
+      FunctionOutputs(2)=(ExpressionOutputId=04DC0E344C680FC2953221855C7C2BA3,Output=(OutputName="WPO"))
+      MaterialExpressionEditorX=3468
+      MaterialExpressionEditorY=40
+      MaterialExpressionGuid=C8A3BE5A4CDB8FA50CEC48B35EE7C090
+      Material="/Script/Engine.Material'Splash_ParticleMat_Translucent'"
+      Outputs(0)=(OutputName="Base Color")
+      Outputs(1)=(OutputName="Opacity")
+      Outputs(2)=(OutputName="WPO")
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_0" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Weather/Splash_ParticleMat_Translucent.Splash_ParticleMat_Translucent:MaterialExpressionMultiply_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Splash_ParticleMat_Translucent:MaterialExpressionMaterialFunctionCall_0'",OutputIndex=1)
+      B=(Expression="/Script/Engine.MaterialExpressionShadingPathSwitch'Splash_ParticleMat_Translucent:MaterialExpressionShadingPathSwitch_0'")
+      ConstB=1.500000
+      MaterialExpressionEditorX=4180
+      MaterialExpressionEditorY=376
+      MaterialExpressionGuid=8D96C7D143255B0446E9E6B0F17E260E
+      Material="/Script/Engine.Material'Splash_ParticleMat_Translucent'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_1" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Weather/Splash_ParticleMat_Translucent.Splash_ParticleMat_Translucent:MaterialExpressionMultiply_1'"
+      A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Splash_ParticleMat_Translucent:MaterialExpressionMaterialFunctionCall_0'")
+      B=(Expression="/Script/Engine.MaterialExpressionMultiply'Splash_ParticleMat_Translucent:MaterialExpressionMultiply_2'")
+      MaterialExpressionEditorX=3876
+      MaterialExpressionEditorY=264
+      MaterialExpressionGuid=327EB538460457CC1B5F168436A56056
+      Material="/Script/Engine.Material'Splash_ParticleMat_Translucent'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_2" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Weather/Splash_ParticleMat_Translucent.Splash_ParticleMat_Translucent:MaterialExpressionMultiply_2'"
+      A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Splash_ParticleMat_Translucent:MaterialExpressionComponentMask_0'")
+      ConstB=2.000000
+      MaterialExpressionEditorX=3731
+      MaterialExpressionEditorY=309
+      MaterialExpressionGuid=38EAC56F401B8DD85095D094B9DA41FF
+      Material="/Script/Engine.Material'Splash_ParticleMat_Translucent'"
+   End Object
+   Begin Object Name="MaterialExpressionShadingPathSwitch_0" ExportPath="/Script/Engine.MaterialExpressionShadingPathSwitch'/Game/UltraDynamicSky/Materials/Weather/Splash_ParticleMat_Translucent.Splash_ParticleMat_Translucent:MaterialExpressionShadingPathSwitch_0'"
+      Default=(Expression="/Script/Engine.MaterialExpressionConstant'Splash_ParticleMat_Translucent:MaterialExpressionConstant_0'")
+      Inputs(2)=(Expression="/Script/Engine.MaterialExpressionConstant'Splash_ParticleMat_Translucent:MaterialExpressionConstant_1'")
+      MaterialExpressionEditorX=3948
+      MaterialExpressionEditorY=468
+      MaterialExpressionGuid=55F8C89844A572FEA98F2195588C8BF0
+      Material="/Script/Engine.Material'Splash_ParticleMat_Translucent'"
+   End Object
+   Begin Object Name="MaterialExpressionShadingPathSwitch_2" ExportPath="/Script/Engine.MaterialExpressionShadingPathSwitch'/Game/UltraDynamicSky/Materials/Weather/Splash_ParticleMat_Translucent.Splash_ParticleMat_Translucent:MaterialExpressionShadingPathSwitch_2'"
+      Default=(Expression="/Script/Engine.MaterialExpressionConstant'Splash_ParticleMat_Translucent:MaterialExpressionConstant_2'")
+      Inputs(2)=(Expression="/Script/Engine.MaterialExpressionMultiply'Splash_ParticleMat_Translucent:MaterialExpressionMultiply_1'")
+      MaterialExpressionEditorX=4112
+      MaterialExpressionEditorY=204
+      MaterialExpressionGuid=55F8C89844A572FEA98F2195588C8BF0
+      Material="/Script/Engine.Material'Splash_ParticleMat_Translucent'"
+   End Object
+   Begin Object Name="MaterialExpressionShadingPathSwitch_3" ExportPath="/Script/Engine.MaterialExpressionShadingPathSwitch'/Game/UltraDynamicSky/Materials/Weather/Splash_ParticleMat_Translucent.Splash_ParticleMat_Translucent:MaterialExpressionShadingPathSwitch_3'"
+      Default=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Splash_ParticleMat_Translucent:MaterialExpressionMaterialFunctionCall_0'")
+      Inputs(2)=(Expression="/Script/Engine.MaterialExpressionConstant'Splash_ParticleMat_Translucent:MaterialExpressionConstant_2'")
+      MaterialExpressionEditorX=4112
+      MaterialExpressionEditorY=40
+      MaterialExpressionGuid=55F8C89844A572FEA98F2195588C8BF0
+      Material="/Script/Engine.Material'Splash_ParticleMat_Translucent'"
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/Weather/Splash_ParticleMat_Translucent.Splash_ParticleMat_Translucent:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   BlendMode=BLEND_Translucent
+   MaterialDecalResponse=MDR_None
+   bEnableResponsiveAA=True
+   DitherOpacityMask=True
+   TranslucencyPass=MTP_BeforeDOF
+   TranslucencyLightingMode=TLM_VolumetricPerVertexNonDirectional
+   bTangentSpaceNormal=False
+   bUsedWithNiagaraSprites=True
+   EditorX=4384
+   EditorY=148
+   bCanMaskedBeAssumedOpaque=True
+   bCastRayTracedShadows=False
+   bUseTranslucencyVertexFog=False
+   PixelDepthOffsetMode=PDOM_Legacy
+   StateId=6B2F73FB40405DEFCCEFD1961CDD1F03
+   ReferencedTextureGuids(0)=101885334A77057D490DE3B4ED5FF0C5
+   EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'Splash_ParticleMat_TranslucentEditorOnlyData'"
+   TextureStreamingDataVersion=1
+   TextureStreamingData(0)=(SamplingScale=1.000000,UVChannelIndex=0,TextureName="Splash_Animation",TextureReference="/Game/ENDEMIS/Weather/MaterialFX/T_Splash_Animation.T_Splash_Animation")
+   ReferencedDefaultTextures(0)="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/MaterialFX/T_Splash_Animation.T_Splash_Animation'"
+   ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+   ParameterOverviewExpansion=(("-12Global", True))
+   LightingGuid=136ECA3F460169DE4BCFDCBB1FBA3045
+End Object

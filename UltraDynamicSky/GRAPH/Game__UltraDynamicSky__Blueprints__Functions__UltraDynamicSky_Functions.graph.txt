@@ -1,0 +1,593 @@
+### /Game/UltraDynamicSky/Blueprints/Functions/UltraDynamicSky_Functions
+  Blueprint (UltraDynamicSky_Functions)
+    .ParentClass="/Script/CoreUObject.Class'/Script/Engine.BlueprintFunctionLibrary'"
+    .BlueprintType=BPTYPE_FunctionLibrary
+    .BlueprintDescription="Contains shortcut functions for sampling values and controlling Ultra Dynamic Sky"
+    .BlueprintCategory="UltraDynamicSky"
+    .BlueprintSystemVersion=2
+    .FunctionGraphs(0)="/Script/Engine.EdGraph'Get Ultra Dynamic Sky'"
+    .FunctionGraphs(1)="/Script/Engine.EdGraph'Get Time of Day · 𝖴𝖣𝖲'"
+    .FunctionGraphs(2)="/Script/Engine.EdGraph'Get DateTime · 𝖴𝖣𝖲'"
+    .FunctionGraphs(3)="/Script/Engine.EdGraph'Get TimeCode · 𝖴𝖣𝖲'"
+    .FunctionGraphs(4)="/Script/Engine.EdGraph'Is It Daytime? · 𝖴𝖣𝖲'"
+    .FunctionGraphs(5)="/Script/Engine.EdGraph'Get Day of the Week · 𝖴𝖣𝖲'"
+    .FunctionGraphs(6)="/Script/Engine.EdGraph'Set Time of Day · 𝖴𝖣𝖲'"
+    .FunctionGraphs(7)="/Script/Engine.EdGraph'Set Time with Time Code · 𝖴𝖣𝖲'"
+    .FunctionGraphs(8)="/Script/Engine.EdGraph'Set Date and Time · 𝖴𝖣𝖲'"
+    .FunctionGraphs(9)="/Script/Engine.EdGraph'Transition Time of Day · 𝖴𝖣𝖲'"
+    .FunctionGraphs(10)="/Script/Engine.EdGraph'Random Value in Float Range Structure'"
+    .FunctionGraphs(11)="/Script/Engine.EdGraph'Create UDS and UDW State for Saving · 𝖴𝖣𝖲'"
+    .FunctionGraphs(12)="/Script/Engine.EdGraph'Apply Saved UDS and UDW State · 𝖴𝖣𝖲'"
+    .FunctionGraphs(13)="/Script/Engine.EdGraph'Apply Sky Configuration · 𝖴𝖣𝖲'"
+    .FunctionGraphs(14)="/Script/Engine.EdGraph'Offset Time of Day by Hours · 𝖴𝖣𝖲'"
+    .FunctionGraphs(15)="/Script/Engine.EdGraph'Offset Time by Time Span · 𝖴𝖣𝖲'"
+    .FunctionGraphs(16)="/Script/Engine.EdGraph'Lerp Yaw Angles'"
+    .FunctionGraphs(17)="/Script/Engine.EdGraph'Get Time of Day as String · 𝖴𝖣𝖲'"
+    .FunctionGraphs(18)="/Script/Engine.EdGraph'Set Time of Day with String · 𝖴𝖣𝖲'"
+    .CategorySorting(0)=""
+    .CategorySorting(1)="Ultra Dynamic Sky"
+    .CategorySorting(2)="Utilities"
+    .LastEditedDocuments(0)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Functions/UltraDynamicSky_Functions.UltraDynamicSky_Functions:Get Time of Day · 𝖴𝖣𝖲",SavedViewOffset=(X=-1328.849121,Y=-438.544647),SavedZoomAmount=1.000000)
+    .LastEditedDocuments(1)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Functions/UltraDynamicSky_Functions.UltraDynamicSky_Functions:Apply Sky Configuration · 𝖴𝖣𝖲",SavedViewOffset=(X=-755.900757,Y=-454.004974),SavedZoomAmount=1.000000)
+    .LastEditedDocuments(2)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Functions/UltraDynamicSky_Functions.UltraDynamicSky_Functions:Set Time of Day · 𝖴𝖣𝖲",SavedViewOffset=(X=-1275.458252,Y=-479.004974),SavedZoomAmount=1.000000)
+    .LastEditedDocuments(3)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Functions/UltraDynamicSky_Functions.UltraDynamicSky_Functions:Offset Time of Day by Hours · 𝖴𝖣𝖲",SavedViewOffset=(X=-331.958252,Y=-479.004974),SavedZoomAmount=1.000000)
+    .LastEditedDocuments(4)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Functions/UltraDynamicSky_Functions.UltraDynamicSky_Functions:Offset Time by Time Span · 𝖴𝖣𝖲",SavedViewOffset=(X=-683.958252,Y=-494.004974),SavedZoomAmount=1.000000)
+    .LastEditedDocuments(5)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Functions/UltraDynamicSky_Functions.UltraDynamicSky_Functions:Lerp Yaw Angles",SavedViewOffset=(X=-1180.728394,Y=-189.004974),SavedZoomAmount=1.000000)
+    .LastEditedDocuments(6)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Functions/UltraDynamicSky_Functions.UltraDynamicSky_Functions:Get Time of Day as String · 𝖴𝖣𝖲",SavedViewOffset=(X=-180.100098,Y=-452.204987),SavedZoomAmount=1.000000)
+    .LastEditedDocuments(7)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Functions/UltraDynamicSky_Functions.UltraDynamicSky_Functions:Apply Saved UDS and UDW State · 𝖴𝖣𝖲",SavedViewOffset=(X=-710.100098,Y=-406.204987),SavedZoomAmount=1.000000)
+    .LastEditedDocuments(8)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Functions/UltraDynamicSky_Functions.UltraDynamicSky_Functions:Set Time of Day with String · 𝖴𝖣𝖲",SavedViewOffset=(X=-378.100098,Y=-529.204956),SavedZoomAmount=1.000000)
+    .LastEditedDocuments(9)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Functions/UltraDynamicSky_Functions.UltraDynamicSky_Functions:Create UDS and UDW State for Saving · 𝖴𝖣𝖲",SavedViewOffset=(X=-593.562317,Y=-307.888611),SavedZoomAmount=1.000000)
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfo'SceneThumbnailInfo_0'"
+    .GeneratedClass="/Script/Engine.BlueprintGeneratedClass'UltraDynamicSky_Functions_C'"
+    .bLegacyNeedToPurgeSkelRefs=False
+    .BlueprintGuid=374AAC854E73D897A53B4DBAE946B8E0
+  EdGraph (Get Ultra Dynamic Sky)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=DB414D6A4618CB122849678E52D17B30
+  K2Node_FunctionEntry (K2Node_FunctionEntry_0)
+    .MetaData=(ToolTip=NSLOCTEXT("", "8BB010124207650B9A70F59899986E0D", "Set the Time of Day value using a string which fits a variety of formats which will be auto detected by the function.\r\n     12 Hour Time formats:\r\n12:34 XM\r\n12:34XM\r\n12:34:56 XM\r\n12:34:56XM\r\n12XM\r\n12 XM\r\n     24 Hour Time formats:\r\n12:34\r\n12:34:56\r\n12\r\n\r\nA padding 0 for the hour can be included or left out without issue. AM and PM letters are case insensitive."),Category=NSLOCTEXT("", "AD0BCDFC4381455E95593BA4DCC6AECB", "Ultra Dynamic Sky"))
+    .ExtraFlags=201465856
+    .FunctionReference=(MemberName="Set Time of Day with String · 𝖴𝖣𝖲")
+    .bIsEditable=True
+    .NodePosX=4
+    .NodePosY=28
+    .NodeGuid=A30591AE44F68667686AE681E7BE8C3E
+  K2Node_FunctionResult (K2Node_FunctionResult_1)
+    .FunctionReference=(MemberName="Get Time of Day as String · 𝖴𝖣𝖲")
+    .bIsEditable=True
+    .NodePosX=828
+    .NodePosY=244
+    .NodeGuid=DA594F91494424222E3FD686B78B7B87
+  K2Node_CallFunction (K2Node_CallFunction_1)
+    .FunctionReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Sky.Ultra_Dynamic_Sky_C'",MemberName="Get Time of Day as String",MemberGuid=3E9485B746F2904DFCA927B56CD3F28B)
+    .NodePosX=820
+    .NodePosY=-16
+    .ErrorType=1
+    .NodeGuid=BB8C83744DCF51043E96C8905F441490
+    .bDefaultsToPureFunc=True
+  K2Node_CallFunction (K2Node_CallFunction_0)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberName="Get Ultra Dynamic Sky",MemberGuid=DB414D6A4618CB122849678E52D17B30,bSelfContext=True)
+    .NodePosX=240
+    .NodePosY=372
+    .NodeGuid=E86725C14948AC4F9F7260A0EED69043
+  EdGraph (Get Time of Day · 𝖴𝖣𝖲)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_3'"
+    .GraphGuid=27EA2AA8439513C1905086B3FB45BA11
+  K2Node_VariableGet (K2Node_VariableGet_0)
+    .VariableReference=(MemberScope="Lerp Yaw Angles",MemberName="Angle A")
+    .SelfContextInfo=NotSelfContext
+    .NodePosX=-872
+    .NodePosY=400
+    .NodeGuid=DEF7E12F4DD460AFB29155BB42547297
+  K2Node_IfThenElse (K2Node_IfThenElse_0)
+    .NodePosX=464
+    .NodePosY=28
+    .NodeGuid=6BAE7F404EB629A29D239BB9EAAAAE91
+  K2Node_FunctionResult (K2Node_FunctionResult_0)
+    .FunctionReference=(MemberName="Get Time of Day as String · 𝖴𝖣𝖲")
+    .bIsEditable=True
+    .NodePosX=1052
+    .NodePosY=4
+    .NodeGuid=7F791DBF4A8B89FF25BF5CA55D0B1F61
+  K2Node_CallFunction (K2Node_CallFunction_3)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="SelectFloat")
+    .NodePosX=-228
+    .NodePosY=456
+    .NodeGuid=71FDEF0B445257F3E0B6CB822A81F7D9
+  EdGraph (Get DateTime · 𝖴𝖣𝖲)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_Knot'K2Node_Knot_0'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_Knot'K2Node_Knot_1'"
+    .Nodes(7)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_5'"
+    .GraphGuid=49B7EA6843B22435FC6A85B36C7AB5D5
+  K2Node_Knot (K2Node_Knot_0)
+    .NodePosX=340
+    .NodePosY=208
+    .NodeGuid=F7E26EA34378CB49CDEAFA92A9C65A16
+  K2Node_Knot (K2Node_Knot_1)
+    .NodePosX=344
+    .NodePosY=172
+    .NodeGuid=9C16A480422AC2731E8BADB7EB26C860
+  K2Node_CallFunction (K2Node_CallFunction_5)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Lerp")
+    .NodePosX=-200
+    .NodePosY=68
+    .NodeGuid=F48D57FB4D87FF925A22299715F2EB96
+  EdGraph (Get TimeCode · 𝖴𝖣𝖲)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_Knot'K2Node_Knot_0'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_Knot'K2Node_Knot_1'"
+    .Nodes(7)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .GraphGuid=5D35E93B4A5C13C87448AEB8BDC17C29
+  K2Node_CallFunction (K2Node_CallFunction_2)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Sky.Ultra_Dynamic_Sky_C'",MemberName="Set Time of Day with String",MemberGuid=F709F1874F8679A564EDBB825FE89E7F)
+    .NodePosX=664
+    .NodePosY=-16
+    .NodeGuid=5EFCACB04CE9748EE46CE7AB1329698D
+  EdGraph (Is It Daytime? · 𝖴𝖣𝖲)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_Knot'K2Node_Knot_0'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_Knot'K2Node_Knot_1'"
+    .Nodes(7)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .GraphGuid=FB2F17494F2C70EC36BDC3A46621551A
+  EdGraph (Get Day of the Week · 𝖴𝖣𝖲)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_Knot'K2Node_Knot_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=8994182B41F17C348618E98E820A7F71
+  EdGraph (Set Time of Day · 𝖴𝖣𝖲)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_0'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .GraphGuid=CA793A454DC753C18D6DF2B2192B9AC2
+  K2Node_VariableSet (K2Node_VariableSet_0)
+    .VariableReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Sky.Ultra_Dynamic_Sky_C'",MemberName="Time of Day",MemberGuid=7A66C3124438ED162EC071B4CEA1D8DF)
+    .SelfContextInfo=NotSelfContext
+    .NodePosX=200
+    .NodePosY=-32
+    .NodeGuid=6D9B110440C1FEB0404BFFB5C1AA6C46
+  EdGraph (Set Time with Time Code · 𝖴𝖣𝖲)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .GraphGuid=F02A3EAB4752EF4083B8A1913D3E68C9
+  EdGraph (Set Date and Time · 𝖴𝖣𝖲)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .GraphGuid=730B427648B772BA607655AC74DACDF5
+  EdGraph (Transition Time of Day · 𝖴𝖣𝖲)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .GraphGuid=0787D4A24AD80EDB12A8068CA648E880
+  EdGraph (Random Value in Float Range Structure)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_BreakStruct'K2Node_BreakStruct_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_BreakStruct'K2Node_BreakStruct_1'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_BreakStruct'K2Node_BreakStruct_2'"
+    .GraphGuid=9E277DD846F2BBDBE5BB0B8525809B60
+  K2Node_BreakStruct (K2Node_BreakStruct_0)
+    .bMadeAfterOverridePinRemoval=True
+    .ShowPinForProperties(0)=(PropertyName="LowerBound",PropertyFriendlyName="Lower Bound",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "FloatRange:LowerBound", "Holds the range\'s lower bound."),CategoryName="Range",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(1)=(PropertyName="UpperBound",PropertyFriendlyName="Upper Bound",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "FloatRange:UpperBound", "Holds the range\'s upper bound."),CategoryName="Range",bShowPin=True,bCanToggleVisibility=True)
+    .StructType="/Script/CoreUObject.ScriptStruct'/Script/CoreUObject.FloatRange'"
+    .NodePosX=-348
+    .NodePosY=140
+    .NodeGuid=ABCAA2C846AD8DC4A57F759DA701CEEB
+  K2Node_BreakStruct (K2Node_BreakStruct_1)
+    .bMadeAfterOverridePinRemoval=True
+    .ShowPinForProperties(0)=(PropertyName="Type",PropertyFriendlyName="Type",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "FloatRangeBound:Type", "Holds the type of the bound."),CategoryName="Range",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(1)=(PropertyName="Value",PropertyFriendlyName="Value",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "FloatRangeBound:Value", "Holds the bound\'s value."),CategoryName="Range",bShowPin=True,bCanToggleVisibility=True)
+    .StructType="/Script/CoreUObject.ScriptStruct'/Script/CoreUObject.FloatRangeBound'"
+    .NodePosX=-100
+    .NodePosY=140
+    .NodeGuid=5B4D3A2E4C6A6C6E56B466AC67A9E81C
+  K2Node_BreakStruct (K2Node_BreakStruct_2)
+    .bMadeAfterOverridePinRemoval=True
+    .ShowPinForProperties(0)=(PropertyName="Type",PropertyFriendlyName="Type",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "FloatRangeBound:Type", "Holds the type of the bound."),CategoryName="Range",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(1)=(PropertyName="Value",PropertyFriendlyName="Value",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "FloatRangeBound:Value", "Holds the bound\'s value."),CategoryName="Range",bShowPin=True,bCanToggleVisibility=True)
+    .StructType="/Script/CoreUObject.ScriptStruct'/Script/CoreUObject.FloatRangeBound'"
+    .NodePosX=-96
+    .NodePosY=240
+    .NodeGuid=DFE6866444AB9412DAA2929A6ACE857D
+  EdGraph (Create UDS and UDW State for Saving · 𝖴𝖣𝖲)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_Knot'K2Node_Knot_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=C9CEEA5C49645842575B2BA5D809AE6D
+  EdGraph (Apply Saved UDS and UDW State · 𝖴𝖣𝖲)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .GraphGuid=9200EF7F425AF3976448828B40E40638
+  EdGraph (Apply Sky Configuration · 𝖴𝖣𝖲)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .GraphGuid=7CE568CD4EF6698AC434EC856390931F
+  EdGraph (Offset Time of Day by Hours · 𝖴𝖣𝖲)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .GraphGuid=B5C3ECAB43B7FD5C2E9F1C8215EE6377
+  EdGraph (Offset Time by Time Span · 𝖴𝖣𝖲)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .GraphGuid=3504C51F4FF752A0E5A3F39953965516
+  EdGraph (Lerp Yaw Angles)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_5'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_PromotableOperator'K2Node_PromotableOperator_0'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_PromotableOperator'K2Node_PromotableOperator_2'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .Nodes(7)="/Script/BlueprintGraph.K2Node_PromotableOperator'K2Node_PromotableOperator_3'"
+    .Nodes(8)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_3'"
+    .Nodes(9)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_4'"
+    .Nodes(10)="/Script/BlueprintGraph.K2Node_PromotableOperator'K2Node_PromotableOperator_5'"
+    .Nodes(11)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_4'"
+    .Nodes(12)="/Script/BlueprintGraph.K2Node_PromotableOperator'K2Node_PromotableOperator_4'"
+    .Nodes(13)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_3'"
+    .Nodes(14)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(15)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_2'"
+    .Nodes(16)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_6'"
+    .Nodes(17)="/Script/BlueprintGraph.K2Node_Knot'K2Node_Knot_0'"
+    .Nodes(18)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(19)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_1'"
+    .GraphGuid=BA75681A488017898FD95F83CB9B667C
+  K2Node_PromotableOperator (K2Node_PromotableOperator_0)
+    .OperationName="Subtract"
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Subtract_DoubleDouble")
+    .NodePosX=-512
+    .NodePosY=200
+    .NodeGuid=7C9D7FB842BED67F015374816D63524E
+  K2Node_PromotableOperator (K2Node_PromotableOperator_2)
+    .OperationName="Less"
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Less_DoubleDouble")
+    .NodePosX=-156
+    .NodePosY=196
+    .NodeGuid=2FD33C13430F0D46615D3591F6F3D540
+  K2Node_PromotableOperator (K2Node_PromotableOperator_3)
+    .OperationName="Greater"
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Greater_DoubleDouble")
+    .NodePosX=-672
+    .NodePosY=400
+    .NodeGuid=ABB5978C4E03F44E7CD819AF3AC4CE7B
+  K2Node_VariableGet (K2Node_VariableGet_3)
+    .VariableReference=(MemberScope="Lerp Yaw Angles",MemberName="Angle A")
+    .NodePosX=-604
+    .NodePosY=304
+    .NodeGuid=8E5AE2EB4227EC446E7188856E860D93
+  K2Node_VariableGet (K2Node_VariableGet_4)
+    .VariableReference=(MemberScope="Lerp Yaw Angles",MemberName="Angle B")
+    .NodePosX=-648
+    .NodePosY=504
+    .NodeGuid=16EA1583455B1A6347CAD3897EB29AD1
+  K2Node_PromotableOperator (K2Node_PromotableOperator_5)
+    .OperationName="Add"
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Add_DoubleDouble")
+    .NodePosX=-436
+    .NodePosY=340
+    .NodeGuid=3E0A6F5E42F7543AEA3EFBA0A535E17F
+  K2Node_CallFunction (K2Node_CallFunction_4)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="SelectFloat")
+    .NodePosX=-224
+    .NodePosY=284
+    .NodeGuid=408CD9194975758EE0A067BA9E75DF40
+  K2Node_PromotableOperator (K2Node_PromotableOperator_4)
+    .OperationName="Add"
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Add_DoubleDouble")
+    .NodePosX=-452
+    .NodePosY=468
+    .NodeGuid=67AF45A14F3F0C30DCEB54BD07B357A5
+  K2Node_VariableGet (K2Node_VariableGet_2)
+    .VariableReference=(MemberScope="Lerp Yaw Angles",MemberName="Alpha")
+    .NodePosX=-124
+    .NodePosY=592
+    .NodeGuid=89D10BC44DFD71AE6EF22299C0D08DC7
+  K2Node_CallFunction (K2Node_CallFunction_6)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Percent_FloatFloat")
+    .NodePosX=304
+    .NodePosY=396
+    .NodeGuid=AEE6115B4E179DE9CC3154B9706EEA55
+  K2Node_VariableGet (K2Node_VariableGet_1)
+    .VariableReference=(MemberScope="Lerp Yaw Angles",MemberName="Angle B")
+    .NodePosX=-872
+    .NodePosY=444
+    .NodeGuid=815BC4DC45C005455EAEAAA5EDED08B0
+  EdGraph (Get Time of Day as String · 𝖴𝖣𝖲)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_Knot'K2Node_Knot_0'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_Knot'K2Node_Knot_1'"
+    .Nodes(7)="/Script/BlueprintGraph.K2Node_Knot'K2Node_Knot_2'"
+    .Nodes(8)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=B7D15D91412E081E1AC309A230F6DE6F
+  K2Node_Knot (K2Node_Knot_2)
+    .NodePosX=344
+    .NodePosY=132
+    .NodeGuid=9258D84F428AB56908B0EA8E2C25DD08
+  EdGraph (Set Time of Day with String · 𝖴𝖣𝖲)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .GraphGuid=2202900E4459AD492ADB889133BF2FC5
+  EdGraph (Get Ultra Dynamic Sky_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=DB414D6A4618CB122849678E52D17B30
+  EdGraph (Get Time of Day · 𝖴𝖣𝖲_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_3'"
+    .GraphGuid=27EA2AA8439513C1905086B3FB45BA11
+  EdGraph (Get DateTime · 𝖴𝖣𝖲_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_5'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=49B7EA6843B22435FC6A85B36C7AB5D5
+  EdGraph (Get TimeCode · 𝖴𝖣𝖲_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=5D35E93B4A5C13C87448AEB8BDC17C29
+  EdGraph (Is It Daytime? · 𝖴𝖣𝖲_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=FB2F17494F2C70EC36BDC3A46621551A
+  EdGraph (Get Day of the Week · 𝖴𝖣𝖲_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .GraphGuid=8994182B41F17C348618E98E820A7F71
+  EdGraph (Set Time of Day · 𝖴𝖣𝖲_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_0'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .GraphGuid=CA793A454DC753C18D6DF2B2192B9AC2
+  EdGraph (Set Time with Time Code · 𝖴𝖣𝖲_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .GraphGuid=F02A3EAB4752EF4083B8A1913D3E68C9
+  EdGraph (Set Date and Time · 𝖴𝖣𝖲_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .GraphGuid=730B427648B772BA607655AC74DACDF5
+  EdGraph (Transition Time of Day · 𝖴𝖣𝖲_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .GraphGuid=0787D4A24AD80EDB12A8068CA648E880
+  EdGraph (Random Value in Float Range Structure_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_BreakStruct'K2Node_BreakStruct_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_BreakStruct'K2Node_BreakStruct_1'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_BreakStruct'K2Node_BreakStruct_2'"
+    .GraphGuid=9E277DD846F2BBDBE5BB0B8525809B60
+  EdGraph (Create UDS and UDW State for Saving · 𝖴𝖣𝖲_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .GraphGuid=C9CEEA5C49645842575B2BA5D809AE6D
+  EdGraph (Apply Saved UDS and UDW State · 𝖴𝖣𝖲_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .GraphGuid=9200EF7F425AF3976448828B40E40638
+  EdGraph (Apply Sky Configuration · 𝖴𝖣𝖲_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .GraphGuid=7CE568CD4EF6698AC434EC856390931F
+  EdGraph (Offset Time of Day by Hours · 𝖴𝖣𝖲_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .GraphGuid=B5C3ECAB43B7FD5C2E9F1C8215EE6377
+  EdGraph (Offset Time by Time Span · 𝖴𝖣𝖲_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .GraphGuid=3504C51F4FF752A0E5A3F39953965516
+  EdGraph (Lerp Yaw Angles_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_5'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_11'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_10'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .Nodes(7)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_9'"
+    .Nodes(8)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_3'"
+    .Nodes(9)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_4'"
+    .Nodes(10)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_8'"
+    .Nodes(11)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_4'"
+    .Nodes(12)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_7'"
+    .Nodes(13)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_3'"
+    .Nodes(14)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(15)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_2'"
+    .Nodes(16)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_6'"
+    .Nodes(17)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_1'"
+    .Nodes(18)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .GraphGuid=BA75681A488017898FD95F83CB9B667C
+  K2Node_CallFunction (K2Node_CallFunction_7)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Subtract_DoubleDouble")
+    .NodePosX=-504
+    .NodePosY=250
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_8)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Less_DoubleDouble")
+    .NodePosX=-148
+    .NodePosY=246
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_9)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Greater_DoubleDouble")
+    .NodePosX=-664
+    .NodePosY=450
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_10)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Add_DoubleDouble")
+    .NodePosX=-428
+    .NodePosY=390
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_11)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Add_DoubleDouble")
+    .NodePosX=-444
+    .NodePosY=518
+    .bIsIntermediateNode=True
+  EdGraph (Get Time of Day as String · 𝖴𝖣𝖲_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=B7D15D91412E081E1AC309A230F6DE6F
+  EdGraph (Set Time of Day with String · 𝖴𝖣𝖲_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .GraphGuid=2202900E4459AD492ADB889133BF2FC5

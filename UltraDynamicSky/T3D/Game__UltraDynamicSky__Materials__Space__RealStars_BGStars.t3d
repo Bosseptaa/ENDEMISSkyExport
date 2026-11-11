@@ -1,0 +1,100 @@
+Begin Object Class=/Script/Engine.Material Name="RealStars_BGStars" ExportPath="/Script/Engine.Material'/Game/UltraDynamicSky/Materials/Space/RealStars_BGStars.RealStars_BGStars'"
+   Begin Object Class=/Script/Engine.MaterialEditorOnlyData Name="RealStars_BGStarsEditorOnlyData" ExportPath="/Script/Engine.MaterialEditorOnlyData'/Game/UltraDynamicSky/Materials/Space/RealStars_BGStars.RealStars_BGStars:RealStars_BGStarsEditorOnlyData'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant3Vector Name="MaterialExpressionConstant3Vector_0" ExportPath="/Script/Engine.MaterialExpressionConstant3Vector'/Game/UltraDynamicSky/Materials/Space/RealStars_BGStars.RealStars_BGStars:MaterialExpressionConstant3Vector_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_0" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Space/RealStars_BGStars.RealStars_BGStars:MaterialExpressionMultiply_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionPower Name="MaterialExpressionPower_0" ExportPath="/Script/Engine.MaterialExpressionPower'/Game/UltraDynamicSky/Materials/Space/RealStars_BGStars.RealStars_BGStars:MaterialExpressionPower_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureCoordinate Name="MaterialExpressionTextureCoordinate_0" ExportPath="/Script/Engine.MaterialExpressionTextureCoordinate'/Game/UltraDynamicSky/Materials/Space/RealStars_BGStars.RealStars_BGStars:MaterialExpressionTextureCoordinate_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_0" ExportPath="/Script/Engine.MaterialExpressionTextureSample'/Game/UltraDynamicSky/Materials/Space/RealStars_BGStars.RealStars_BGStars:MaterialExpressionTextureSample_0'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/Space/RealStars_BGStars.RealStars_BGStars:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   Begin Object Name="RealStars_BGStarsEditorOnlyData" ExportPath="/Script/Engine.MaterialEditorOnlyData'/Game/UltraDynamicSky/Materials/Space/RealStars_BGStars.RealStars_BGStars:RealStars_BGStarsEditorOnlyData'"
+      BaseColor=(UseConstant=True,Constant=(R=0.501961,G=0.501961,B=0.501961,A=1.000000))
+      Metallic=(UseConstant=True)
+      Specular=(UseConstant=True)
+      Roughness=(UseConstant=True)
+      Anisotropy=(UseConstant=True)
+      Normal=(Expression="/Script/Engine.MaterialExpressionConstant3Vector'RealStars_BGStars:MaterialExpressionConstant3Vector_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      Tangent=(UseConstant=True)
+      EmissiveColor=(UseConstant=True)
+      Opacity=(Expression="/Script/Engine.MaterialExpressionMultiply'RealStars_BGStars:MaterialExpressionMultiply_0'")
+      OpacityMask=(UseConstant=True)
+      WorldPositionOffset=(UseConstant=True)
+      Displacement=(UseConstant=True)
+      SubsurfaceColor=(UseConstant=True)
+      ClearCoat=(UseConstant=True)
+      ClearCoatRoughness=(UseConstant=True)
+      AmbientOcclusion=(UseConstant=True)
+      Refraction=(UseConstant=True)
+      CustomizedUVs(0)=(UseConstant=True)
+      CustomizedUVs(1)=(UseConstant=True)
+      CustomizedUVs(2)=(UseConstant=True)
+      CustomizedUVs(3)=(UseConstant=True)
+      CustomizedUVs(4)=(UseConstant=True)
+      CustomizedUVs(5)=(UseConstant=True)
+      CustomizedUVs(6)=(UseConstant=True)
+      CustomizedUVs(7)=(UseConstant=True)
+      PixelDepthOffset=(UseConstant=True)
+      SurfaceThickness=(UseConstant=True)
+      ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionConstant3Vector'RealStars_BGStars:MaterialExpressionConstant3Vector_0'","/Script/Engine.MaterialExpressionTextureSample'RealStars_BGStars:MaterialExpressionTextureSample_0'","/Script/Engine.MaterialExpressionTextureCoordinate'RealStars_BGStars:MaterialExpressionTextureCoordinate_0'","/Script/Engine.MaterialExpressionPower'RealStars_BGStars:MaterialExpressionPower_0'","/Script/Engine.MaterialExpressionMultiply'RealStars_BGStars:MaterialExpressionMultiply_0'"))
+   End Object
+   Begin Object Name="MaterialExpressionConstant3Vector_0" ExportPath="/Script/Engine.MaterialExpressionConstant3Vector'/Game/UltraDynamicSky/Materials/Space/RealStars_BGStars.RealStars_BGStars:MaterialExpressionConstant3Vector_0'"
+      Constant=(R=0.000000,G=0.000000,B=1.000000,A=0.000000)
+      MaterialExpressionEditorX=-288
+      MaterialExpressionEditorY=408
+      MaterialExpressionGuid=1BCDE3DD46D97B6D807BAD8E1DA7F643
+      Material="/Script/Engine.Material'RealStars_BGStars'"
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_0" ExportPath="/Script/Engine.MaterialExpressionMultiply'/Game/UltraDynamicSky/Materials/Space/RealStars_BGStars.RealStars_BGStars:MaterialExpressionMultiply_0'"
+      A=(Expression="/Script/Engine.MaterialExpressionPower'RealStars_BGStars:MaterialExpressionPower_0'")
+      ConstB=0.300000
+      MaterialExpressionEditorX=-220
+      MaterialExpressionEditorY=204
+      MaterialExpressionGuid=AE4F5F4A4F11F10F6946AEB87451C59F
+      Material="/Script/Engine.Material'RealStars_BGStars'"
+   End Object
+   Begin Object Name="MaterialExpressionPower_0" ExportPath="/Script/Engine.MaterialExpressionPower'/Game/UltraDynamicSky/Materials/Space/RealStars_BGStars.RealStars_BGStars:MaterialExpressionPower_0'"
+      Base=(Expression="/Script/Engine.MaterialExpressionTextureSample'RealStars_BGStars:MaterialExpressionTextureSample_0'",OutputIndex=1,Mask=1,MaskR=1)
+      ConstExponent=0.750000
+      MaterialExpressionEditorX=-476
+      MaterialExpressionEditorY=204
+      MaterialExpressionGuid=DD9B30DD40815AE431129B8A7C18175C
+      Material="/Script/Engine.Material'RealStars_BGStars'"
+   End Object
+   Begin Object Name="MaterialExpressionTextureCoordinate_0" ExportPath="/Script/Engine.MaterialExpressionTextureCoordinate'/Game/UltraDynamicSky/Materials/Space/RealStars_BGStars.RealStars_BGStars:MaterialExpressionTextureCoordinate_0'"
+      UTiling=15.000000
+      VTiling=15.000000
+      MaterialExpressionEditorX=-928
+      MaterialExpressionEditorY=172
+      MaterialExpressionGuid=D8E62E03465142D8C13F9899FB7446A8
+      Material="/Script/Engine.Material'RealStars_BGStars'"
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_0" ExportPath="/Script/Engine.MaterialExpressionTextureSample'/Game/UltraDynamicSky/Materials/Space/RealStars_BGStars.RealStars_BGStars:MaterialExpressionTextureSample_0'"
+      Coordinates=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'RealStars_BGStars:MaterialExpressionTextureCoordinate_0'")
+      Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/SkySphere/T_Tiling_Stars.T_Tiling_Stars'"
+      MaterialExpressionEditorX=-708
+      MaterialExpressionEditorY=172
+      MaterialExpressionGuid=723C30704BD34CDF8EB943AA438CAFED
+      Material="/Script/Engine.Material'RealStars_BGStars'"
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/Game/UltraDynamicSky/Materials/Space/RealStars_BGStars.RealStars_BGStars:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   MaterialDomain=MD_DeferredDecal
+   BlendMode=BLEND_Translucent
+   bTangentSpaceNormal=False
+   bUsedWithNiagaraMeshParticles=True
+   bAllowFrontLayerTranslucency=False
+   bCanMaskedBeAssumedOpaque=True
+   bCastRayTracedShadows=False
+   StateId=AD9457AB46619FFFD5D8F99F43F001C8
+   ReferencedTextureGuids(0)=C3DC6FC140C898F79449378AB7F410BA
+   EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'RealStars_BGStarsEditorOnlyData'"
+   ReferencedDefaultTextures(0)="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/SkySphere/T_Tiling_Stars.T_Tiling_Stars'"
+   ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+   LightingGuid=51EEFCB64E4898B73999EBA9098581FF
+End Object

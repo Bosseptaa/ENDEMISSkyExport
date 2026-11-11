@@ -1,0 +1,141 @@
+### /SkyCreatorPlugin/Materials/WeatherFX/M_SC_LightningBranch
+  Material (M_SC_LightningBranch)
+    .BlendMode=BLEND_Additive
+    .ShadingModel=MSM_Unlit
+    .ShadingModels=(ShadingModelField=1)
+    .bUsedWithNiagaraSprites=True
+    .bUsedWithNiagaraRibbons=True
+    .bCanMaskedBeAssumedOpaque=True
+    .bApplyCloudFogging=True
+    .PixelDepthOffsetMode=PDOM_Legacy
+    .StateId=EBB8EA7B4056C4FF7FA7CAB2428C25EA
+    .ReferencedTextureGuids(0)=97C1C2084762788A3624E2BEAF3BE507
+    .EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'M_SC_LightningBranchEditorOnlyData'"
+    .ReferencedDefaultTextures(0)="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_LightningBranches.T_LightningBranches'"
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+    .LightingGuid=2F60E16A46D9A5E2767FA1A6A1508BFE
+  MaterialEditorOnlyData (M_SC_LightningBranchEditorOnlyData)
+    EmissiveColor          <- MaterialExpressionMultiply
+    Opacity                <- MaterialExpressionMultiply
+    ExpressionCollection   <- MaterialExpressionMultiply
+    .EmissiveColor=(Expression="/Script/Engine.MaterialExpressionMultiply'M_SC_LightningBranch:MaterialExpressionMultiply_0'")
+    .Opacity=(Expression="/Script/Engine.MaterialExpressionMultiply'M_SC_LightningBranch:MaterialExpressionMultiply_3'")
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionMultiply'M_SC_LightningBranch:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionMultiply'M_SC_LightningBranch:MaterialExpressionMultiply_3'","/Script/Engine.MaterialExpressionMultiply'M_SC_LightningBranch:MaterialExpressionMultiply_1'","/Script/Engine.MaterialExpressionParticleColor'M_SC_LightningBranch:MaterialExpressionParticleColor_0'","/Script/Engine.MaterialExpressionParticleSubUV'M_SC_LightningBranch:MaterialExpressionParticleSubUV_0'","/Script/Engine.MaterialExpressionTextureCoordinate'M_SC_LightningBranch:MaterialExpressionTextureCoordinate_2'","/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_LightningBranch:MaterialExpressionMaterialFunctionCall_2'","/Script/Engine.MaterialExpressionSubtract'M_SC_LightningBranch:MaterialExpressionSubtract_0'","/Script/Engine.MaterialExpressionOneMinus'M_SC_LightningBranch:MaterialExpressionOneMinus_0'","/Script/Engine.MaterialExpressionDynamicParameter'M_SC_LightningBranch:MaterialExpressionDynamicParameter_0'","/Script/Engine.MaterialExpressionOneMinus'M_SC_LightningBranch:MaterialExpressionOneMinus_1'","/Script/Engine.MaterialExpressionSaturate'M_SC_LightningBranch:MaterialExpressionSaturate_1'","/Script/Engine.MaterialExpressionMultiply'M_SC_LightningBranch:MaterialExpressionMultiply_4'","/Script/Engine.MaterialExpressionConstant2Vector'M_SC_LightningBranch:MaterialExpressionConstant2Vector_2'","/Script/Engine.MaterialExpressionFrac'M_SC_LightningBranch:MaterialExpressionFrac_1'"))
+  MaterialExpressionConstant2Vector (MaterialExpressionConstant2Vector_2)
+    .R=3.000000
+    .G=2.000000
+    .MaterialExpressionEditorX=-1664
+    .MaterialExpressionEditorY=736
+    .MaterialExpressionGuid=3D4EA50C43F0E0246A137F803881D677
+    .Material="/Script/Engine.Material'M_SC_LightningBranch'"
+  MaterialExpressionDynamicParameter (MaterialExpressionDynamicParameter_0)
+    .ParamNames(0)="Gradient"
+    .MaterialExpressionEditorX=-1280
+    .MaterialExpressionEditorY=784
+    .MaterialExpressionGuid=5335FE374687EF70FC665897AA57E8D1
+    .Material="/Script/Engine.Material'M_SC_LightningBranch'"
+    .Outputs(0)=(OutputName="Gradient")
+    .Outputs(1)=(OutputName="Param2")
+    .Outputs(2)=(OutputName="Param3")
+    .Outputs(3)=(OutputName="Param4")
+  MaterialExpressionFrac (MaterialExpressionFrac_1)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'M_SC_LightningBranch:MaterialExpressionMultiply_4'")
+    .MaterialExpressionEditorX=-1408
+    .MaterialExpressionEditorY=672
+    .MaterialExpressionGuid=DF80149647B9DD8B3811CD9BB39D2BDD
+    .Material="/Script/Engine.Material'M_SC_LightningBranch'"
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_2)
+    FunctionInputs(0)      <- MaterialExpressionFrac
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Engine/Functions/Engine_MaterialFunctions01/Gradient/LinearGradient.LinearGradient'"
+    .FunctionInputs(0)=(ExpressionInputId=956846354D2549E665DAC68533EC21EC,Input=(Expression="/Script/Engine.MaterialExpressionFrac'M_SC_LightningBranch:MaterialExpressionFrac_1'",InputName="UV Channel"))
+    .FunctionOutputs(0)=(ExpressionOutputId=0F11154B443B1137CC9914998FC01F5E,Output=(OutputName="UGradient"))
+    .FunctionOutputs(1)=(ExpressionOutputId=D0E9AADC4F9EEDBBFD95F9B3A5165013,Output=(OutputName="VGradient"))
+    .MaterialExpressionEditorX=-1280
+    .MaterialExpressionEditorY=672
+    .MaterialExpressionGuid=E86EE49243D29E80378269AF75C20CD2
+    .Material="/Script/Engine.Material'M_SC_LightningBranch'"
+    .Outputs(0)=(OutputName="UGradient")
+    .Outputs(1)=(OutputName="VGradient")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionParticleColor
+    B                      <- MaterialExpressionParticleSubUV
+    .B=(Expression="/Script/Engine.MaterialExpressionParticleSubUV'M_SC_LightningBranch:MaterialExpressionParticleSubUV_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionParticleColor'M_SC_LightningBranch:MaterialExpressionParticleColor_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .MaterialExpressionEditorX=-512
+    .MaterialExpressionEditorY=144
+    .MaterialExpressionGuid=E2768A734830727FEF98F7A088D64642
+    .Material="/Script/Engine.Material'M_SC_LightningBranch'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionParticleColor
+    B                      <- MaterialExpressionParticleSubUV
+    .B=(Expression="/Script/Engine.MaterialExpressionParticleSubUV'M_SC_LightningBranch:MaterialExpressionParticleSubUV_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionParticleColor'M_SC_LightningBranch:MaterialExpressionParticleColor_0'",OutputIndex=4,Mask=1,MaskA=1)
+    .MaterialExpressionEditorX=-512
+    .MaterialExpressionEditorY=320
+    .MaterialExpressionGuid=35B82B6441FC9EBB441D67B11B7AF8FE
+    .Material="/Script/Engine.Material'M_SC_LightningBranch'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_3)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionSaturate
+    .B=(Expression="/Script/Engine.MaterialExpressionSaturate'M_SC_LightningBranch:MaterialExpressionSaturate_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'M_SC_LightningBranch:MaterialExpressionMultiply_1'")
+    .MaterialExpressionEditorX=-368
+    .MaterialExpressionEditorY=320
+    .MaterialExpressionGuid=ECEF336D4E940700AC17E1965F6B1DA5
+    .Material="/Script/Engine.Material'M_SC_LightningBranch'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_4)
+    A                      <- MaterialExpressionTextureCoordinate
+    B                      <- MaterialExpressionConstant2Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'M_SC_LightningBranch:MaterialExpressionConstant2Vector_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'M_SC_LightningBranch:MaterialExpressionTextureCoordinate_2'")
+    .MaterialExpressionEditorX=-1536
+    .MaterialExpressionEditorY=672
+    .MaterialExpressionGuid=8F208237446CCBD0746778A11D499439
+    .Material="/Script/Engine.Material'M_SC_LightningBranch'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_0)
+    Input                  <- MaterialExpressionDynamicParameter
+    .Input=(Expression="/Script/Engine.MaterialExpressionDynamicParameter'M_SC_LightningBranch:MaterialExpressionDynamicParameter_0'",Mask=1,MaskR=1)
+    .MaterialExpressionEditorX=-1024
+    .MaterialExpressionEditorY=800
+    .MaterialExpressionGuid=6371A4D24352983773D1F0A6A53BBC5F
+    .Material="/Script/Engine.Material'M_SC_LightningBranch'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_1)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+    .Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_LightningBranch:MaterialExpressionMaterialFunctionCall_2'",OutputIndex=1)
+    .MaterialExpressionEditorX=-1024
+    .MaterialExpressionEditorY=672
+    .MaterialExpressionGuid=6371A4D24352983773D1F0A6A53BBC5F
+    .Material="/Script/Engine.Material'M_SC_LightningBranch'"
+  MaterialExpressionParticleColor (MaterialExpressionParticleColor_0)
+    .MaterialExpressionEditorX=-896
+    .MaterialExpressionEditorY=128
+    .MaterialExpressionGuid=3D88AD9F460092666A5C4FB7437975F1
+    .Material="/Script/Engine.Material'M_SC_LightningBranch'"
+  MaterialExpressionParticleSubUV (MaterialExpressionParticleSubUV_0)
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_LightningBranches.T_LightningBranches'"
+    .MaterialExpressionEditorX=-896
+    .MaterialExpressionEditorY=384
+    .MaterialExpressionGuid=0186AB51452EA518EC9BFF946E3C6869
+    .Material="/Script/Engine.Material'M_SC_LightningBranch'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_1)
+    Input                  <- MaterialExpressionSubtract
+    .Input=(Expression="/Script/Engine.MaterialExpressionSubtract'M_SC_LightningBranch:MaterialExpressionSubtract_0'")
+    .MaterialExpressionEditorX=-768
+    .MaterialExpressionEditorY=672
+    .MaterialExpressionGuid=91617F334CC3AFA799DD688256EBBD73
+    .Material="/Script/Engine.Material'M_SC_LightningBranch'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_0)
+    A                      <- MaterialExpressionOneMinus
+    B                      <- MaterialExpressionOneMinus
+    .B=(Expression="/Script/Engine.MaterialExpressionOneMinus'M_SC_LightningBranch:MaterialExpressionOneMinus_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionOneMinus'M_SC_LightningBranch:MaterialExpressionOneMinus_1'")
+    .MaterialExpressionEditorX=-896
+    .MaterialExpressionEditorY=672
+    .MaterialExpressionGuid=DC19719E46FFF96B21D370A0B3432E50
+    .Material="/Script/Engine.Material'M_SC_LightningBranch'"
+  MaterialExpressionTextureCoordinate (MaterialExpressionTextureCoordinate_2)
+    .MaterialExpressionEditorX=-1664
+    .MaterialExpressionEditorY=672
+    .MaterialExpressionGuid=4F920BBD4F8007B3BD19E390FF5F368B
+    .Material="/Script/Engine.Material'M_SC_LightningBranch'"

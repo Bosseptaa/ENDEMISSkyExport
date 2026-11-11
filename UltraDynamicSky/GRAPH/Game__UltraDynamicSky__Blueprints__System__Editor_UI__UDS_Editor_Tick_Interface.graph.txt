@@ -1,0 +1,51 @@
+### /Game/UltraDynamicSky/Blueprints/System/Editor_UI/UDS_Editor_Tick_Interface
+  Blueprint (UDS_Editor_Tick_Interface)
+    .ParentClass="/Script/CoreUObject.Class'/Script/CoreUObject.Interface'"
+    .BlueprintType=BPTYPE_Interface
+    .bDeprecate=True
+    .BlueprintCategory="UltraDynamicSky|Editor"
+    .BlueprintSystemVersion=2
+    .FunctionGraphs(0)="/Script/Engine.EdGraph'Start Tick Timer'"
+    .FunctionGraphs(1)="/Script/Engine.EdGraph'Constructed Handler'"
+    .FunctionGraphs(2)="/Script/Engine.EdGraph'Get Viewport Camera Transform'"
+    .CategorySorting(0)=""
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfo'SceneThumbnailInfo_0'"
+    .GeneratedClass="/Script/Engine.BlueprintGeneratedClass'UDS_Editor_Tick_Interface_C'"
+    .bLegacyNeedToPurgeSkelRefs=False
+    .BlueprintGuid=E936570848E5A78593218EA207D60AF7
+  EdGraph (Start Tick Timer)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .GraphGuid=103FB9104D76DF8276E7B68E51023275
+  K2Node_FunctionEntry (K2Node_FunctionEntry_0)
+    .ExtraFlags=201457664
+    .FunctionReference=(MemberName="Get Viewport Camera Transform")
+    .bIsEditable=True
+    .NodeGuid=148FF4EE41B48FFA48E2698C5E8186FF
+  EdGraph (Constructed Handler)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .GraphGuid=30B32B5B48A3BD981E0096B79BD17550
+  EdGraph (Get Viewport Camera Transform)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=B62E88B344820C25406E6E838E650DF2
+  K2Node_FunctionResult (K2Node_FunctionResult_0)
+    .FunctionReference=(MemberName="Get Viewport Camera Transform")
+    .bIsEditable=True
+    .NodePosX=256
+    .NodeGuid=538498DD48299C0FA50A6A97C4747846
+  EdGraph (Start Tick Timer_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .GraphGuid=103FB9104D76DF8276E7B68E51023275
+  EdGraph (Constructed Handler_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .GraphGuid=30B32B5B48A3BD981E0096B79BD17550
+  EdGraph (Get Viewport Camera Transform_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=B62E88B344820C25406E6E838E650DF2

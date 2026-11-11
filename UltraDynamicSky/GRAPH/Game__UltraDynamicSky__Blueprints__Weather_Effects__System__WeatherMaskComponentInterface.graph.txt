@@ -1,0 +1,54 @@
+### /Game/UltraDynamicSky/Blueprints/Weather_Effects/System/WeatherMaskComponentInterface
+  Blueprint (WeatherMaskComponentInterface)
+    .ParentClass="/Script/CoreUObject.Class'/Script/CoreUObject.Interface'"
+    .BlueprintType=BPTYPE_Interface
+    .bDeprecate=True
+    .BlueprintCategory="UltraDynamicWeather|System"
+    .BlueprintSystemVersion=2
+    .FunctionGraphs(0)="/Script/Engine.EdGraph'Draw to Mask Canvas'"
+    .FunctionGraphs(1)="/Script/Engine.EdGraph'Draw to Height Canvas'"
+    .FunctionGraphs(2)="/Script/Engine.EdGraph'Mask Outside of Target'"
+    .CategorySorting(0)=""
+    .LastEditedDocuments(0)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/WeatherMaskComponentInterface.WeatherMaskComponentInterface:Draw to Mask Canvas",SavedViewOffset=(X=-1202.264771,Y=-560.625000),SavedZoomAmount=1.000000)
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfo'SceneThumbnailInfo_0'"
+    .GeneratedClass="/Script/Engine.BlueprintGeneratedClass'WeatherMaskComponentInterface_C'"
+    .bLegacyNeedToPurgeSkelRefs=False
+    .BlueprintGuid=F83CB01E45D26342D4B335A31A49D2DD
+  EdGraph (Draw to Mask Canvas)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=33C81D244065FEC1B0D16AAB6831A2FF
+  K2Node_FunctionEntry (K2Node_FunctionEntry_0)
+    .ExtraFlags=201457664
+    .FunctionReference=(MemberName="Mask Outside of Target")
+    .bIsEditable=True
+    .NodeGuid=BDB6B9EC4386892230F123936794D81B
+  K2Node_FunctionResult (K2Node_FunctionResult_0)
+    .FunctionReference=(MemberName="Draw to Height Canvas")
+    .bIsEditable=True
+    .NodePosX=256
+    .NodeGuid=5003A2FD43B3DFC67BC79D9F223A2E65
+  EdGraph (Draw to Height Canvas)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=95CD7B0B49D891F6494169B243816AA3
+  EdGraph (Mask Outside of Target)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .GraphGuid=B66E81CB4507722B4BD105A0013C4532
+  EdGraph (Draw to Mask Canvas_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=33C81D244065FEC1B0D16AAB6831A2FF
+  EdGraph (Draw to Height Canvas_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=95CD7B0B49D891F6494169B243816AA3
+  EdGraph (Mask Outside of Target_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .GraphGuid=B66E81CB4507722B4BD105A0013C4532

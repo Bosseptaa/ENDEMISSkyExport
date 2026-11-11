@@ -1,0 +1,47 @@
+### /Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_WOVTarget_Draw_Actor_Interface
+  Blueprint (UDW_WOVTarget_Draw_Actor_Interface)
+    .ParentClass="/Script/CoreUObject.Class'/Script/CoreUObject.Interface'"
+    .BlueprintType=BPTYPE_Interface
+    .bDeprecate=True
+    .BlueprintCategory="UltraDynamicWeather|System"
+    .BlueprintSystemVersion=2
+    .FunctionGraphs(0)="/Script/Engine.EdGraph'Draw to WOV Target'"
+    .FunctionGraphs(1)="/Script/Engine.EdGraph'Canvas Space Update'"
+    .CategorySorting(0)="WOV Target Draw Actor"
+    .CategorySorting(1)=""
+    .LastEditedDocuments(0)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_WOVTarget_Draw_Actor_Interface.UDW_WOVTarget_Draw_Actor_Interface:Draw to WOV Target",SavedViewOffset=(X=-1211.735352,Y=-545.625000),SavedZoomAmount=1.000000)
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfo'SceneThumbnailInfo_0'"
+    .GeneratedClass="/Script/Engine.BlueprintGeneratedClass'UDW_WOVTarget_Draw_Actor_Interface_C'"
+    .bLegacyNeedToPurgeSkelRefs=False
+    .BlueprintGuid=8581AC8B41BBFBCB6216DB9E918D8B41
+  EdGraph (Draw to WOV Target)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=9F4E6BF44361624FF571DB9BF594E3D8
+  K2Node_FunctionEntry (K2Node_FunctionEntry_0)
+    .MetaData=(Category=NSLOCTEXT("", "728D584F42D5CFA9122F4B957A1BD23F", "WOV Target Draw Actor"))
+    .ExtraFlags=201457664
+    .FunctionReference=(MemberName="Canvas Space Update")
+    .bIsEditable=True
+    .NodeGuid=BE2E3B8B4A5F1D17FE0C1598E7B37A7F
+  K2Node_FunctionResult (K2Node_FunctionResult_0)
+    .FunctionReference=(MemberName="Canvas Space Update")
+    .bIsEditable=True
+    .NodePosX=256
+    .NodeGuid=F6FA846D4794678A6F6E909238567456
+  EdGraph (Canvas Space Update)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=FB790F6845261DFDDEAB6B8C1DF7848C
+  EdGraph (Draw to WOV Target_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=9F4E6BF44361624FF571DB9BF594E3D8
+  EdGraph (Canvas Space Update_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=FB790F6845261DFDDEAB6B8C1DF7848C

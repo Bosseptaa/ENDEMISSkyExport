@@ -1,0 +1,220 @@
+### /Game/UltraDynamicSky/Blueprints/System/Editor_UI/Editor_Materials/UDS_EditorLabel
+  Material (UDS_EditorLabel)
+    .MaterialDecalResponse=MDR_None
+    .ShadingModel=MSM_Unlit
+    .ShadingModels=(ShadingModelField=1)
+    .bTangentSpaceNormal=False
+    .EditorX=844
+    .EditorY=-40
+    .bCanMaskedBeAssumedOpaque=True
+    .bCastRayTracedShadows=False
+    .StateId=4407616C46C09DA26D4BB2BB7F818142
+    .EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'UDS_EditorLabelEditorOnlyData'"
+    .LightingGuid=1DEECE8D42E1E11727C62A8D7406DC24
+  MaterialExpressionViewProperty (MaterialExpressionViewProperty_1)
+    .Property=MEVP_PreExposure
+    .MaterialExpressionEditorX=-244
+    .MaterialExpressionEditorY=532
+    .MaterialExpressionGuid=530CC31B4F211E6BAC4166920F854EF9
+    .Material="/Script/Engine.Material'UDS_EditorLabel'"
+  MaterialExpressionVertexNormalWS (MaterialExpressionVertexNormalWS_5)
+    .MaterialExpressionEditorX=-712
+    .MaterialExpressionEditorY=-92
+    .MaterialExpressionGuid=6EF5F90644CC38310A21BCBA304C7E67
+    .Material="/Script/Engine.Material'UDS_EditorLabel'"
+  MaterialExpressionVertexNormalWS (MaterialExpressionVertexNormalWS_0)
+    .MaterialExpressionEditorX=-1668
+    .MaterialExpressionEditorY=320
+    .MaterialExpressionGuid=3B3268DE48558BDAD291748C36C2D32F
+    .Material="/Script/Engine.Material'UDS_EditorLabel'"
+  MaterialExpressionVertexColor (MaterialExpressionVertexColor_2)
+    .MaterialExpressionEditorX=276
+    .MaterialExpressionEditorY=78
+    .MaterialExpressionGuid=B1FE3AA546F39ADA4053CA9A1F4CEF5B
+    .Material="/Script/Engine.Material'UDS_EditorLabel'"
+  MaterialExpressionVertexColor (MaterialExpressionVertexColor_0)
+    .MaterialExpressionEditorX=-648
+    .MaterialExpressionEditorY=536
+    .MaterialExpressionGuid=53C609FA48AEE48FAECFB2B75D6D12B1
+    .Material="/Script/Engine.Material'UDS_EditorLabel'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_3)
+    A                      <- MaterialExpressionLinearInterpolate
+    B                      <- MaterialExpressionConstant3Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant3Vector'UDS_EditorLabel:MaterialExpressionConstant3Vector_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'UDS_EditorLabel:MaterialExpressionLinearInterpolate_3'")
+    .MaterialExpressionEditorX=-560
+    .MaterialExpressionEditorY=224
+    .MaterialExpressionGuid=37EA561B429D518A961E2F8B2ADB96F4
+    .Material="/Script/Engine.Material'UDS_EditorLabel'"
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_0)
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Blueprints/System/Editor_UI/Editor_Materials/Stepped_Mesh_Yaw.Stepped_Mesh_Yaw'"
+    .FunctionOutputs(0)=(ExpressionOutputId=8B71D5BD4185E39DF6942A87DCE73C32,Output=(OutputName="Rotated Normal"))
+    .FunctionOutputs(1)=(ExpressionOutputId=B1FAA2E94D4C0FB55372ADA0F18CE788,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=548
+    .MaterialExpressionEditorY=320
+    .MaterialExpressionGuid=A6CBDEC84910EC982E9F768B28561569
+    .Material="/Script/Engine.Material'UDS_EditorLabel'"
+    .Outputs(0)=(OutputName="Rotated Normal")
+    .Outputs(1)=(OutputName="Result")
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_5)
+    Alpha                  <- MaterialExpressionDivide
+    .ConstA=0.500000
+    .ConstB=0.850000
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionDivide'UDS_EditorLabel:MaterialExpressionDivide_0'")
+    .MaterialExpressionEditorX=-96
+    .MaterialExpressionEditorY=-14
+    .MaterialExpressionGuid=BE8FD08D4C4B976B262969AC84234AD5
+    .Material="/Script/Engine.Material'UDS_EditorLabel'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_4)
+    Alpha                  <- MaterialExpressionDivide
+    .ConstA=0.400000
+    .ConstB=0.850000
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionDivide'UDS_EditorLabel:MaterialExpressionDivide_3'")
+    .MaterialExpressionEditorX=-1052
+    .MaterialExpressionEditorY=464
+    .MaterialExpressionGuid=F9AB136743B24A6FDC8E46B50AAFD11D
+    .Material="/Script/Engine.Material'UDS_EditorLabel'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_3)
+    Alpha                  <- MaterialExpressionDivide
+    .ConstA=0.020000
+    .ConstB=0.080000
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionDivide'UDS_EditorLabel:MaterialExpressionDivide_3'")
+    .MaterialExpressionEditorX=-1060
+    .MaterialExpressionEditorY=224
+    .MaterialExpressionGuid=5D42119044FA1452C84AE4ACC397960F
+    .Material="/Script/Engine.Material'UDS_EditorLabel'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_2)
+    Alpha                  <- MaterialExpressionDivide
+    .ConstA=0.020000
+    .ConstB=0.050000
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionDivide'UDS_EditorLabel:MaterialExpressionDivide_0'")
+    .MaterialExpressionEditorX=-104
+    .MaterialExpressionEditorY=-190
+    .MaterialExpressionGuid=20C6A7BC451EA4832E2C888C2702E83E
+    .Material="/Script/Engine.Material'UDS_EditorLabel'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_1)
+    A                      <- MaterialExpressionLinearInterpolate
+    B                      <- MaterialExpressionLinearInterpolate
+    Alpha                  <- MaterialExpressionVertexColor
+    .B=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'UDS_EditorLabel:MaterialExpressionLinearInterpolate_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'UDS_EditorLabel:MaterialExpressionLinearInterpolate_2'")
+    .ConstA=0.150000
+    .ConstB=0.700000
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionVertexColor'UDS_EditorLabel:MaterialExpressionVertexColor_2'",OutputIndex=1,Mask=1,MaskR=1)
+    .MaterialExpressionEditorX=524
+    .MaterialExpressionEditorY=-38
+    .MaterialExpressionGuid=917A4B1949BE145B14B711A1B921DB56
+    .Material="/Script/Engine.Material'UDS_EditorLabel'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_0)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionLinearInterpolate
+    Alpha                  <- MaterialExpressionVertexColor
+    .B=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'UDS_EditorLabel:MaterialExpressionLinearInterpolate_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'UDS_EditorLabel:MaterialExpressionMultiply_3'")
+    .ConstA=0.150000
+    .ConstB=0.700000
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionVertexColor'UDS_EditorLabel:MaterialExpressionVertexColor_0'",OutputIndex=1,Mask=1,MaskR=1)
+    .MaterialExpressionEditorX=-432
+    .MaterialExpressionEditorY=440
+    .MaterialExpressionGuid=AC4E2EE140AFCCB638CF058DC6F9487F
+    .Material="/Script/Engine.Material'UDS_EditorLabel'"
+  MaterialExpressionDivide (MaterialExpressionDivide_3)
+    A                      <- MaterialExpressionAdd
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'UDS_EditorLabel:MaterialExpressionAdd_1'")
+    .MaterialExpressionEditorX=-1244
+    .MaterialExpressionEditorY=348
+    .MaterialExpressionGuid=75560F0243FC5B1FAC820DA278D12B97
+    .Material="/Script/Engine.Material'UDS_EditorLabel'"
+  MaterialExpressionDivide (MaterialExpressionDivide_2)
+    A                      <- MaterialExpressionLinearInterpolate
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'UDS_EditorLabel:MaterialExpressionComponentMask_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'UDS_EditorLabel:MaterialExpressionLinearInterpolate_0'")
+    .MaterialExpressionEditorX=32
+    .MaterialExpressionEditorY=444
+    .MaterialExpressionGuid=08D3C5E44C48DFFD1378F389BB66B73A
+    .Material="/Script/Engine.Material'UDS_EditorLabel'"
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionAdd
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'UDS_EditorLabel:MaterialExpressionAdd_0'")
+    .MaterialExpressionEditorX=-288
+    .MaterialExpressionEditorY=-66
+    .MaterialExpressionGuid=84260B0D4F47B29C70A6BCA252BB22E2
+    .Material="/Script/Engine.Material'UDS_EditorLabel'"
+  MaterialExpressionConstant3Vector (MaterialExpressionConstant3Vector_0)
+    .Constant=(R=0.726575,G=0.816055,B=1.000000,A=1.000000)
+    .MaterialExpressionEditorX=-876
+    .MaterialExpressionEditorY=292
+    .MaterialExpressionGuid=77FE95B247D60571A0B5DEA3EB5D8C78
+    .Material="/Script/Engine.Material'UDS_EditorLabel'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_3)
+    Input                  <- MaterialExpressionVertexNormalWS
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionVertexNormalWS'UDS_EditorLabel:MaterialExpressionVertexNormalWS_0'")
+    .MaterialExpressionEditorX=-1512
+    .MaterialExpressionEditorY=340
+    .MaterialExpressionGuid=F36A3FD144B9F6CEC2C5AA8C3B0F7AAB
+    .Material="/Script/Engine.Material'UDS_EditorLabel'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_2)
+    Input                  <- MaterialExpressionViewProperty
+    .R=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionViewProperty'UDS_EditorLabel:MaterialExpressionViewProperty_1'")
+    .MaterialExpressionEditorX=-104
+    .MaterialExpressionEditorY=548
+    .MaterialExpressionGuid=F3F485EE4695F8ABA31479BDAAA2C400
+    .Material="/Script/Engine.Material'UDS_EditorLabel'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionVertexNormalWS
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionVertexNormalWS'UDS_EditorLabel:MaterialExpressionVertexNormalWS_5'")
+    .MaterialExpressionEditorX=-556
+    .MaterialExpressionEditorY=-72
+    .MaterialExpressionGuid=C08A2C6C49635A2A0F58D3976A1704F4
+    .Material="/Script/Engine.Material'UDS_EditorLabel'"
+  MaterialExpressionAdd (MaterialExpressionAdd_1)
+    A                      <- MaterialExpressionComponentMask
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'UDS_EditorLabel:MaterialExpressionComponentMask_3'")
+    .MaterialExpressionEditorX=-1376
+    .MaterialExpressionEditorY=344
+    .MaterialExpressionGuid=3F25EA1D49480E69FDCDF3842968720C
+    .Material="/Script/Engine.Material'UDS_EditorLabel'"
+  MaterialExpressionAdd (MaterialExpressionAdd_0)
+    A                      <- MaterialExpressionComponentMask
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'UDS_EditorLabel:MaterialExpressionComponentMask_0'")
+    .MaterialExpressionEditorX=-420
+    .MaterialExpressionEditorY=-68
+    .MaterialExpressionGuid=8712112348E50D7206F5AD9E53CB84C9
+    .Material="/Script/Engine.Material'UDS_EditorLabel'"
+  MaterialEditorOnlyData (UDS_EditorLabelEditorOnlyData)
+    BaseColor              <- MaterialExpressionLinearInterpolate
+    EmissiveColor          <- MaterialExpressionDivide
+    WorldPositionOffset    <- MaterialExpressionMaterialFunctionCall
+    ExpressionCollection   <- MaterialExpressionLinearInterpolate
+    .BaseColor=(Constant=(R=0.101961,G=0.101961,B=0.101961,A=1.000000),Expression="/Script/Engine.MaterialExpressionLinearInterpolate'UDS_EditorLabel:MaterialExpressionLinearInterpolate_1'")
+    .Metallic=(UseConstant=True)
+    .Specular=(UseConstant=True,Constant=0.000000)
+    .Roughness=(UseConstant=True)
+    .Anisotropy=(UseConstant=True)
+    .Normal=(UseConstant=True)
+    .Tangent=(UseConstant=True)
+    .EmissiveColor=(Expression="/Script/Engine.MaterialExpressionDivide'UDS_EditorLabel:MaterialExpressionDivide_2'")
+    .Opacity=(UseConstant=True)
+    .OpacityMask=(UseConstant=True)
+    .WorldPositionOffset=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'UDS_EditorLabel:MaterialExpressionMaterialFunctionCall_0'",OutputIndex=1)
+    .Displacement=(UseConstant=True)
+    .SubsurfaceColor=(UseConstant=True)
+    .ClearCoat=(UseConstant=True)
+    .ClearCoatRoughness=(UseConstant=True)
+    .AmbientOcclusion=(UseConstant=True)
+    .Refraction=(UseConstant=True)
+    .CustomizedUVs(0)=(UseConstant=True)
+    .CustomizedUVs(1)=(UseConstant=True)
+    .CustomizedUVs(2)=(UseConstant=True)
+    .CustomizedUVs(3)=(UseConstant=True)
+    .CustomizedUVs(4)=(UseConstant=True)
+    .CustomizedUVs(5)=(UseConstant=True)
+    .CustomizedUVs(6)=(UseConstant=True)
+    .CustomizedUVs(7)=(UseConstant=True)
+    .PixelDepthOffset=(UseConstant=True)
+    .SurfaceThickness=(UseConstant=True)
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionLinearInterpolate'UDS_EditorLabel:MaterialExpressionLinearInterpolate_1'","/Script/Engine.MaterialExpressionMaterialFunctionCall'UDS_EditorLabel:MaterialExpressionMaterialFunctionCall_0'","/Script/Engine.MaterialExpressionVertexColor'UDS_EditorLabel:MaterialExpressionVertexColor_2'","/Script/Engine.MaterialExpressionVertexNormalWS'UDS_EditorLabel:MaterialExpressionVertexNormalWS_5'","/Script/Engine.MaterialExpressionComponentMask'UDS_EditorLabel:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionLinearInterpolate'UDS_EditorLabel:MaterialExpressionLinearInterpolate_2'","/Script/Engine.MaterialExpressionAdd'UDS_EditorLabel:MaterialExpressionAdd_0'","/Script/Engine.MaterialExpressionDivide'UDS_EditorLabel:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionLinearInterpolate'UDS_EditorLabel:MaterialExpressionLinearInterpolate_5'","/Script/Engine.MaterialExpressionViewProperty'UDS_EditorLabel:MaterialExpressionViewProperty_1'","/Script/Engine.MaterialExpressionComponentMask'UDS_EditorLabel:MaterialExpressionComponentMask_2'","/Script/Engine.MaterialExpressionDivide'UDS_EditorLabel:MaterialExpressionDivide_2'","/Script/Engine.MaterialExpressionLinearInterpolate'UDS_EditorLabel:MaterialExpressionLinearInterpolate_0'","/Script/Engine.MaterialExpressionVertexColor'UDS_EditorLabel:MaterialExpressionVertexColor_0'","/Script/Engine.MaterialExpressionVertexNormalWS'UDS_EditorLabel:MaterialExpressionVertexNormalWS_0'","/Script/Engine.MaterialExpressionComponentMask'UDS_EditorLabel:MaterialExpressionComponentMask_3'","/Script/Engine.MaterialExpressionLinearInterpolate'UDS_EditorLabel:MaterialExpressionLinearInterpolate_3'","/Script/Engine.MaterialExpressionAdd'UDS_EditorLabel:MaterialExpressionAdd_1'","/Script/Engine.MaterialExpressionDivide'UDS_EditorLabel:MaterialExpressionDivide_3'","/Script/Engine.MaterialExpressionLinearInterpolate'UDS_EditorLabel:MaterialExpressionLinearInterpolate_4'","/Script/Engine.MaterialExpressionMultiply'UDS_EditorLabel:MaterialExpressionMultiply_3'","/Script/Engine.MaterialExpressionConstant3Vector'UDS_EditorLabel:MaterialExpressionConstant3Vector_0'"))

@@ -1,0 +1,897 @@
+### /Game/UltraDynamicSky/Blueprints/Widgets/UDW_Current_Weather_Display
+  WidgetBlueprint (UDW_Current_Weather_Display)
+    .WidgetVariableNameToGuidMap=(("Border", E552EAFA610335A68C1DE34348468194),("CanvasPanel_0", E8566AF270E23F0280AA4AB695CE9FE0),("CanvasPanel_147", 1C58A5B0F2223280B2794708F9B8E862),("IconImage", AF1B08748ECE3DFF927EAB6E2723D8D5),("LabelText", A0757C19DB47364C8FD3CBF9782BFD68))
+    .PaletteCategory="Ultra Dynamic Sky Widgets"
+    .TickPrediction=OnDemand
+    .TickPredictionReason="Latent"
+    .WidgetTree="WidgetTree"
+    .ParentClass="/Script/CoreUObject.Class'/Script/UMG.UserWidget'"
+    .BlueprintDescription="Displays the current weather state on UDW, either as an image or a text description"
+    .BlueprintCategory="UltraDynamicSky|Widgets"
+    .BlueprintSystemVersion=2
+    .UbergraphPages(0)="/Script/Engine.EdGraph'EventGraph'"
+    .FunctionGraphs(0)="/Script/Engine.EdGraph'Update Current Display'"
+    .NewVariables(0)=(VarName="Show Text Instead of Icon",VarGuid=5335FE8543EE88B1527FD99CECA0E451,VarType=(PinCategory="bool"),FriendlyName="Show Text Instead Of Icon",Category=NSLOCTEXT("", "4A78DC9A4B2073A9B1918BB616417282", "Weather Display Settings"),PropertyFlags=5,MetaDataArray=((DataKey="tooltip",DataValue="If enabled, instead of an icon image, the widget will show a text description of the weather.")))
+    .NewVariables(1)=(VarName="UDW",VarGuid=DA3D4C1E4CC25436323D69A232622DA9,VarType=(PinCategory="object",PinSubCategoryObject="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Weather.Ultra_Dynamic_Weather_C'"),FriendlyName="UDW",Category=NSLOCTEXT("KismetSchema", "Default", "Default"),PropertyFlags=67589)
+    .NewVariables(2)=(VarName="Calculate Displayed Weather Type from State Values",VarGuid=C0925EFB4C3A13F74A4A4383B8478711,VarType=(PinCategory="bool"),FriendlyName="Calculate Displayed Weather Type From State Values",Category=NSLOCTEXT("", "BF49127543D0B2FE92FBF5A6EA611C40", "Weather Display Settings"),PropertyFlags=5,MetaDataArray=((DataKey="tooltip",DataValue="If this is true, the widget will use the function \"Get Display Name for Current Weather\" to get a display name/icon for the weather from the weather state, without it necessarily matching any of the settings assets contributing to state. This is typically best because it handles transitions between states better..\r\nIf this is disabled, the widget will get the weather settings asset which is currently most contributing to the local weather state.")))
+    .NewVariables(3)=(VarName="Icon Size",VarGuid=9E707375422E87BE36DB1FAAFEB8683A,VarType=(PinCategory="real",PinSubCategory="double"),FriendlyName="Icon Size",Category=NSLOCTEXT("", "510559EC4D1AF7AF14C2D49252992B2D", "Weather Display Settings"),PropertyFlags=5,MetaDataArray=((DataKey="MultiLine",DataValue="true"),(DataKey="ClampMin",DataValue="1"),(DataKey="UIMin",DataValue="20"),(DataKey="UIMax",DataValue="200"),(DataKey="tooltip",DataValue="The size of the icon image brush, if using an icon display.")))
+    .NewVariables(4)=(VarName="Weather Icons by Display Name Enum",VarGuid=9E87F4F54FAB55B8ACA80CAB19389FF0,VarType=(PinCategory="byte",PinSubCategoryObject="/Script/Engine.UserDefinedEnum'/Game/UltraDynamicSky/Blueprints/Enum/UDS_Weather_Display_Names.UDS_Weather_Display_Names'",PinValueType=(TerminalCategory="object",TerminalSubCategoryObject="/Script/CoreUObject.Class'/Script/Engine.Texture2D'"),ContainerType=Map),FriendlyName="Weather Icons By Display Name Enum",Category=NSLOCTEXT("", "E2BB4EF3425D92667F9B66A7675C7608", "Weather Display Settings"),PropertyFlags=5,MetaDataArray=((DataKey="tooltip",DataValue="Associates the UDS Weather Display Name enum entries with textures for their icons to be displayed by this widget. Used for the icon image if \"Calculate Displayed Weather Type from State Values\" is true.")))
+    .NewVariables(5)=(VarName="Text Font",VarGuid=86155CFD4FE5474BAE9809B8CC99826D,VarType=(PinCategory="struct",PinSubCategoryObject="/Script/CoreUObject.ScriptStruct'/Script/SlateCore.SlateFontInfo'"),FriendlyName="Text Font",Category=NSLOCTEXT("", "7A2D58434BFD73869CE36DB6A3A05663", "Weather Display Settings"),PropertyFlags=5,MetaDataArray=((DataKey="tooltip",DataValue="Slate font info for the label text, if displayed")))
+    .NewVariables(6)=(VarName="Text Color",VarGuid=0686D0CB4398AD8787B2CBBD6287001B,VarType=(PinCategory="struct",PinSubCategoryObject="/Script/CoreUObject.ScriptStruct'/Script/CoreUObject.LinearColor'"),FriendlyName="Text Color",Category=NSLOCTEXT("", "E7F93ADD4125A0BB791FE48DCC075C6A", "Weather Display Settings"),PropertyFlags=5,MetaDataArray=((DataKey="tooltip",DataValue="Color and Opacity for the label text, if displayed")))
+    .NewVariables(7)=(VarName="Text Min Desired Width",VarGuid=8AEEF19F4FA78F7B9D3BD39B91923EAE,VarType=(PinCategory="real",PinSubCategory="double"),FriendlyName="Text Min Desired Width",Category=NSLOCTEXT("", "1E5C86F34E4191ECCF05879892D209D6", "Weather Display Settings"),PropertyFlags=5,MetaDataArray=((DataKey="UIMin",DataValue="0"),(DataKey="UIMax",DataValue="300"),(DataKey="tooltip",DataValue="Min Desired Width for the label text widget, if displayed. Can be used to keep the widget from changing width as the length of the string changes.")))
+    .NewVariables(8)=(VarName="Show Background",VarGuid=5DA2BE0F4B7CCC654E002E92AA3C366E,VarType=(PinCategory="bool"),FriendlyName="Show Background",Category=NSLOCTEXT("", "39A75CD543ADD0F6BDD4A492E4F898AD", "Weather Display Settings"),PropertyFlags=5,MetaDataArray=((DataKey="tooltip")))
+    .NewVariables(9)=(VarName="Background Color",VarGuid=C56AD8F941289D135836CFAE52C34B3F,VarType=(PinCategory="struct",PinSubCategoryObject="/Script/CoreUObject.ScriptStruct'/Script/CoreUObject.LinearColor'"),FriendlyName="Background Color",Category=NSLOCTEXT("", "B54CFB63459E844395FC27910023376E", "Weather Display Settings"),PropertyFlags=5)
+    .NewVariables(10)=(VarName="Update Display Period",VarGuid=6F39EA6A495DB7068C0560AE87503FAD,VarType=(PinCategory="real",PinSubCategory="double"),FriendlyName="Update Display Period",Category=NSLOCTEXT("", "72720B54425CED59357DB3A8550FB9AF", "Weather Display Settings"),PropertyFlags=5,MetaDataArray=((DataKey="tooltip",DataValue="How often the widget gets the current weather and updates its displayed icon/text. In seconds."),(DataKey="ClampMin",DataValue=".01"),(DataKey="UIMin",DataValue=".1"),(DataKey="UIMax",DataValue="5")))
+    .GeneratedVariables(0)=(VarName="LabelText",VarGuid=A0757C19DB47364C8FD3CBF9782BFD68,VarType=(PinCategory="object",PinSubCategoryObject="/Script/CoreUObject.Class'/Script/UMG.TextBlock'"),FriendlyName="Label Text",PropertyFlags=562952101494812,MetaDataArray=((DataKey="Category",DataValue="UDW_Current_Weather_Display")))
+    .GeneratedVariables(1)=(VarName="IconImage",VarGuid=AF1B08748ECE3DFF927EAB6E2723D8D5,VarType=(PinCategory="object",PinSubCategoryObject="/Script/CoreUObject.Class'/Script/UMG.Image'"),FriendlyName="Icon Image",PropertyFlags=562952101494812,MetaDataArray=((DataKey="Category",DataValue="UDW_Current_Weather_Display")))
+    .GeneratedVariables(2)=(VarName="Border",VarGuid=E552EAFA610335A68C1DE34348468194,VarType=(PinCategory="object",PinSubCategoryObject="/Script/CoreUObject.Class'/Script/UMG.Border'"),FriendlyName="Border",PropertyFlags=562952101494812,MetaDataArray=((DataKey="Category",DataValue="UDW_Current_Weather_Display")))
+    .CategorySorting(0)="Event Graph"
+    .CategorySorting(1)="Default"
+    .CategorySorting(2)=""
+    .CategorySorting(3)="Weather Display Settings"
+    .CategorySorting(4)="UDW Current Weather Display"
+    .LastEditedDocuments(0)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Widgets/UDW_Current_Weather_Display.UDW_Current_Weather_Display:Update Current Display",SavedViewOffset=(X=-1068.603882,Y=-1395.171997),SavedZoomAmount=0.250000)
+    .LastEditedDocuments(1)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Widgets/UDW_Current_Weather_Display.UDW_Current_Weather_Display:EventGraph",SavedViewOffset=(X=1443.678955,Y=330.342621),SavedZoomAmount=1.000000)
+    .GeneratedClass="/Script/UMG.WidgetBlueprintGeneratedClass'UDW_Current_Weather_Display_C'"
+    .bLegacyNeedToPurgeSkelRefs=False
+    .BlueprintGuid=115C082741B550B5A000BD931E52BBFC
+  WidgetTree (WidgetTree)
+    .RootWidget="/Script/UMG.CanvasPanel'CanvasPanel_0'"
+  Border (Border)
+    .Padding=(Left=6.000000,Top=6.000000,Right=6.000000,Bottom=6.000000)
+    .Background=(DrawAs=RoundedBox,ImageSize=(X=10.000000,Y=10.000000),Margin=(Left=0.500000,Top=0.500000,Right=0.500000,Bottom=0.500000),OutlineSettings=(CornerRadii=(X=10.000000,Y=10.000000,Z=10.000000,W=10.000000),RoundingType=FixedRadius))
+    .Slots(0)="/Script/UMG.BorderSlot'BorderSlot_0'"
+    .Slot="/Script/UMG.CanvasPanelSlot'UDW_Current_Weather_Display:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'"
+    .bIsVariable=True
+    .bExpandedInDesigner=True
+    .DisplayLabel="Border"
+  CanvasPanel (CanvasPanel_0)
+    .Slots(0)="/Script/UMG.CanvasPanelSlot'CanvasPanelSlot_0'"
+    .bExpandedInDesigner=True
+  CanvasPanel (CanvasPanel_147)
+    .Slots(0)="/Script/UMG.CanvasPanelSlot'CanvasPanelSlot_0'"
+    .Slots(1)="/Script/UMG.CanvasPanelSlot'CanvasPanelSlot_1'"
+    .Slot="/Script/UMG.BorderSlot'UDW_Current_Weather_Display:WidgetTree.Border.BorderSlot_0'"
+    .bExpandedInDesigner=True
+  Image (IconImage)
+    .Brush=(DrawAs=RoundedBox,ImageType=FullColor,ImageSize=(X=80.000000,Y=80.000000),ResourceObject="/Script/Engine.Texture2D'/Game/UltraDynamicSky/Textures/Icons/Weather/PartlyCloudy.PartlyCloudy'",OutlineSettings=(CornerRadii=(X=4.000000,Y=4.000000,Z=4.000000,W=4.000000),RoundingType=FixedRadius))
+    .Slot="/Script/UMG.CanvasPanelSlot'UDW_Current_Weather_Display:WidgetTree.CanvasPanel_147.CanvasPanelSlot_0'"
+    .Visibility=Collapsed
+    .DisplayLabel="Icon Image"
+  TextBlock (LabelText)
+    .Text=NSLOCTEXT("[ED65BE95AFDA6530B8E85CFF310205E0]", "48308DA4439FC8D80D951F968052994B", "Partly Cloudy")
+    .MinDesiredWidth=164.424637
+    .Font=(TypefaceFontName="Regular",Size=12.000000)
+    .Justification=Center
+    .Margin=(Left=4.000000,Top=4.000000,Right=4.000000,Bottom=4.000000)
+    .Slot="/Script/UMG.CanvasPanelSlot'UDW_Current_Weather_Display:WidgetTree.CanvasPanel_147.CanvasPanelSlot_1'"
+    .bIsVariable=True
+    .bHiddenInDesigner=True
+    .DisplayLabel="Label Text"
+  EdGraph (EventGraph)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_Event'K2Node_Event_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_3'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_Select'K2Node_Select_1'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_1'"
+    .Nodes(7)="/Script/BlueprintGraph.K2Node_Select'K2Node_Select_0'"
+    .Nodes(8)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_4'"
+    .Nodes(9)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_2'"
+    .Nodes(10)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_5'"
+    .Nodes(11)="/Script/BlueprintGraph.K2Node_SetFieldsInStruct'K2Node_SetFieldsInStruct_0'"
+    .Nodes(12)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_3'"
+    .Nodes(13)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_6'"
+    .Nodes(14)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_9'"
+    .Nodes(15)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_4'"
+    .Nodes(16)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_8'"
+    .Nodes(17)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_13'"
+    .Nodes(18)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_5'"
+    .Nodes(19)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_10'"
+    .Nodes(20)="/Script/BlueprintGraph.K2Node_MakeStruct'K2Node_MakeStruct_0'"
+    .Nodes(21)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_19'"
+    .Nodes(22)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_6'"
+    .Nodes(23)="/Script/BlueprintGraph.K2Node_MakeStruct'K2Node_MakeStruct_1'"
+    .Nodes(24)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_20'"
+    .Nodes(25)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_18'"
+    .Nodes(26)="/Script/BlueprintGraph.K2Node_Self'K2Node_Self_0'"
+    .Nodes(27)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_9'"
+    .Nodes(28)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_0'"
+    .Nodes(29)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_7'"
+    .Nodes(30)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_10'"
+    .Nodes(31)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_14'"
+    .Nodes(32)="/Script/BlueprintGraph.K2Node_Event'K2Node_Event_2'"
+    .Nodes(33)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_11'"
+    .Nodes(34)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_15'"
+    .Nodes(35)="/Script/BlueprintGraph.K2Node_MacroInstance'K2Node_MacroInstance_0'"
+    .Nodes(36)="/Script/BlueprintGraph.K2Node_EnumEquality'K2Node_EnumEquality_0'"
+    .Nodes(37)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(38)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_13'"
+    .Nodes(39)="/Script/BlueprintGraph.K2Node_Knot'K2Node_Knot_0'"
+    .Nodes(40)="/Script/BlueprintGraph.K2Node_Knot'K2Node_Knot_1'"
+    .Nodes(41)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_1'"
+    .Nodes(42)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_16'"
+    .Nodes(43)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_14'"
+    .Nodes(44)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_17'"
+    .Nodes(45)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_18'"
+    .Nodes(46)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_16'"
+    .Nodes(47)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_11'"
+    .Nodes(48)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_17'"
+    .Nodes(49)="/Script/BlueprintGraph.K2Node_MakeStruct'K2Node_MakeStruct_2'"
+    .Nodes(50)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_12'"
+    .Nodes(51)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_8'"
+    .Nodes(52)="/Script/BlueprintGraph.K2Node_MacroInstance'K2Node_MacroInstance_1'"
+    .Nodes(53)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .Nodes(54)="/Script/BlueprintGraph.K2Node_CreateDelegate'K2Node_CreateDelegate_0'"
+    .bAllowDeletion=False
+    .GraphGuid=117285754E870B80D08FEFBAC8471588
+  K2Node_Event (K2Node_Event_0)
+    .EventReference=(MemberParent="/Script/CoreUObject.Class'/Script/UMG.UserWidget'",MemberName="PreConstruct")
+    .bOverrideFunction=True
+    .bCommentBubblePinned=True
+    .NodeGuid=667D947C42F7AA73651E77AF8A4A03A1
+  K2Node_VariableGet (K2Node_VariableGet_0)
+    .VariableReference=(MemberName="UDW",MemberGuid=DA3D4C1E4CC25436323D69A232622DA9,bSelfContext=True)
+    .NodePosX=2564
+    .NodePosY=540
+    .NodeGuid=FB16CDC4426249ACB14135AAD529DEB1
+  K2Node_CallFunction (K2Node_CallFunction_1)
+    .FunctionReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Weather.Ultra_Dynamic_Weather_C'",MemberName="Get Display Name for Current Weather",MemberGuid=11D3E5F149B2D8F9447822BFC0DFDA5A)
+    .NodePosX=2460
+    .NodePosY=20
+    .NodeGuid=34960C224D8E4E7FD1FADA8C24E22DD8
+    .bDefaultsToPureFunc=True
+  K2Node_VariableGet (K2Node_VariableGet_3)
+    .VariableReference=(MemberName="UDW",MemberGuid=DA3D4C1E4CC25436323D69A232622DA9,bSelfContext=True)
+    .NodePosX=-1520
+    .NodePosY=-1200
+    .NodeGuid=485474CD17BF311C8DF51C54C799BF36
+    .bIsIntermediateNode=True
+  K2Node_Select (K2Node_Select_1)
+    .IndexPinType=(PinCategory="bool",PinSubCategory="")
+    .NodePosX=248
+    .NodePosY=136
+    .NodeGuid=EE01B51342092959670D64BDBDE6FED9
+  K2Node_CallFunction (K2Node_CallFunction_0)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.GameplayStatics'",MemberName="GetActorOfClass")
+    .NodePosX=-80
+    .NodePosY=64
+    .NodeGuid=F51299594C37B0D3B06776B3319EBF69
+    .bIsIntermediateNode=True
+  K2Node_VariableGet (K2Node_VariableGet_1)
+    .VariableReference=(MemberName="UDW",MemberGuid=DA3D4C1E4CC25436323D69A232622DA9,bSelfContext=True)
+    .NodePosX=-512
+    .NodePosY=36
+    .NodeGuid=A1E8DB184F30F197B3F62EB1F79A0599
+  K2Node_Select (K2Node_Select_0)
+    .IndexPinType=(PinCategory="bool",PinSubCategory="")
+    .NodePosX=876
+    .NodePosY=144
+    .NodeGuid=1E696B564BF8FA2A4656FDB60CD93F05
+  K2Node_VariableGet (K2Node_VariableGet_4)
+    .VariableReference=(MemberName="Weather Icons by Display Name Enum",MemberGuid=9E87F4F54FAB55B8ACA80CAB19389FF0,bSelfContext=True)
+    .NodePosX=2480
+    .NodePosY=148
+    .NodeGuid=6343B251455114600C3B4E9C0823408D
+  K2Node_VariableGet (K2Node_VariableGet_2)
+    .VariableReference=(MemberName="Calculate Displayed Weather Type from State Values",MemberGuid=C0925EFB4C3A13F74A4A4383B8478711,bSelfContext=True)
+    .NodePosX=1664
+    .NodePosY=28
+    .NodeGuid=A926AA4B4B625E5C81BD3E92F074E013
+  K2Node_VariableGet (K2Node_VariableGet_5)
+    .VariableReference=(MemberName="UDW",MemberGuid=DA3D4C1E4CC25436323D69A232622DA9,bSelfContext=True)
+    .SelfContextInfo=NotSelfContext
+    .NodePosX=2324
+    .NodePosY=60
+    .NodeGuid=0603049840ACF3093CF0DE8BC230D0E4
+  K2Node_SetFieldsInStruct (K2Node_SetFieldsInStruct_0)
+    .bMadeAfterOverridePinRemoval=True
+    .ShowPinForProperties(0)=(PropertyName="TintColor",PropertyFriendlyName="Tint",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "SlateBrush:TintColor", "Tinting applied to the image."),CategoryName="Brush",bCanToggleVisibility=True)
+    .ShowPinForProperties(1)=(PropertyName="DrawAs",PropertyFriendlyName="Draw As",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "SlateBrush:DrawAs", "How to draw the image"),CategoryName="Brush",bCanToggleVisibility=True)
+    .ShowPinForProperties(2)=(PropertyName="Tiling",PropertyFriendlyName="Tiling",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "SlateBrush:Tiling", "How to tile the image in Image mode"),CategoryName="Brush",bCanToggleVisibility=True)
+    .ShowPinForProperties(3)=(PropertyName="Mirroring",PropertyFriendlyName="Mirroring",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "SlateBrush:Mirroring", "How to mirror the image in Image mode.  This is normally only used for dynamic image brushes where the source texture\n          comes from a hardware device such as a web camera."),CategoryName="Brush",bCanToggleVisibility=True)
+    .ShowPinForProperties(4)=(PropertyName="ImageSize",PropertyFriendlyName="Image Size",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "SlateBrush:ImageSize", "Size of the resource in Slate Units"),CategoryName="Brush",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(5)=(PropertyName="Margin",PropertyFriendlyName="Margin",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "SlateBrush:Margin", "The margin to use in Box and Border modes"),CategoryName="Brush",bCanToggleVisibility=True)
+    .ShowPinForProperties(6)=(PropertyName="ResourceObject",PropertyFriendlyName="Image",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "SlateBrush:ResourceObject", "The image to render for this brush, can be a UTexture or UMaterialInterface or an object implementing\nthe AtlasedTextureInterface."),CategoryName="Brush",bCanToggleVisibility=True)
+    .ShowPinForProperties(7)=(PropertyName="OutlineSettings",PropertyFriendlyName="Outline Settings",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "SlateBrush:OutlineSettings", "How to draw the outline.  Currently only used for RoundedBox type brushes."),CategoryName="Brush",bCanToggleVisibility=True)
+    .StructType="/Script/CoreUObject.ScriptStruct'/Script/SlateCore.SlateBrush'"
+    .NodePosX=1992
+    .NodeGuid=F447576D47F6D6F8B72034ACAB164F48
+  K2Node_CallFunction (K2Node_CallFunction_3)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Weather.Ultra_Dynamic_Weather_C'",MemberName="Get Weather Presets Used By Local Weather",MemberGuid=D599BBC246B45E736B838D98A216CF33)
+    .NodePosX=2716
+    .NodePosY=500
+    .NodeGuid=A35D2EC0468F5CBB3F0FBC8EAC69F555
+  K2Node_VariableGet (K2Node_VariableGet_6)
+    .VariableReference=(MemberName="UDW",MemberGuid=DA3D4C1E4CC25436323D69A232622DA9,bSelfContext=True)
+    .NodePosX=1788
+    .NodePosY=548
+    .NodeGuid=FFCDA738461C68F426CB889CAD1BC8AF
+  K2Node_VariableGet (K2Node_VariableGet_9)
+    .VariableReference=(MemberScope="Update Current Display",MemberName="Display Text",MemberGuid=13EE601343BFE27D0D2E8197404A933D)
+    .NodePosX=744
+    .NodePosY=784
+    .NodeGuid=167E4A44458006C996289EA2A4C40656
+  K2Node_CallFunction (K2Node_CallFunction_4)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.BlueprintMapLibrary'",MemberName="Map_Values")
+    .NodePosX=2328
+    .NodePosY=452
+    .NodeGuid=DD1EDBA1446C218C1DBF728757EABAC3
+  K2Node_VariableGet (K2Node_VariableGet_8)
+    .VariableReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.UDS_Weather_Settings_C'",MemberName="Icon Texture",MemberGuid=D49DD0664829689E096AEAA24D11B797)
+    .NodePosX=3660
+    .NodePosY=608
+    .NodeGuid=E2B1157F4537C7DE990374AB70283F93
+    .SelfContextInfo=NotSelfContext
+  K2Node_VariableGet (K2Node_VariableGet_13)
+    .VariableReference=(MemberName="LabelText",MemberGuid=A0757C19DB47364C8FD3CBF9782BFD68,bSelfContext=True)
+    .NodePosX=2912
+    .NodePosY=60
+    .NodeGuid=B87103E748EA2E3E27729C83D756E1CC
+  K2Node_CallFunction (K2Node_CallFunction_5)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="MaxOfFloatArray")
+    .NodePosX=2528
+    .NodePosY=600
+    .NodeGuid=D75686A64DB767C65FFBEDB5905C44B4
+    .bDefaultsToPureFunc=True
+  K2Node_VariableGet (K2Node_VariableGet_10)
+    .VariableReference=(MemberName="LabelText",MemberGuid=A0757C19DB47364C8FD3CBF9782BFD68,bSelfContext=True)
+    .NodePosX=744
+    .NodePosY=728
+    .NodeGuid=20A3F2374773ACC6FE02D7B36CEB5B52
+  K2Node_MakeStruct (K2Node_MakeStruct_0)
+    .bMadeAfterOverridePinRemoval=True
+    .ShowPinForProperties(0)=(PropertyName="SpecifiedColor",PropertyFriendlyName="Specified Color",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "SlateColor:SpecifiedColor", "The current specified color; only meaningful when ColorToUse == UseColor_Specified."),CategoryName="Color",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(1)=(PropertyName="ColorUseRule",PropertyFriendlyName="Color Use Rule",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "SlateColor:ColorUseRule", "The rule for which color to pick."),CategoryName="Color",bShowPin=True,bCanToggleVisibility=True)
+    .StructType="/Script/CoreUObject.ScriptStruct'/Script/SlateCore.SlateColor'"
+    .NodePosX=2688
+    .NodePosY=144
+    .NodeGuid=736DE7864AFAC0F30ECB6B8479D0A6AC
+  K2Node_VariableGet (K2Node_VariableGet_19)
+    .VariableReference=(MemberName="Border",MemberGuid=E552EAFA610335A68C1DE34348468194,bSelfContext=True)
+    .NodePosX=4372
+    .NodePosY=56
+    .NodeGuid=4C18748040C0980C8B1064AD8D621AD0
+  K2Node_CallFunction (K2Node_CallFunction_6)
+    .FunctionReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Weather.Ultra_Dynamic_Weather_C'",MemberName="Get Weather Presets Used By Local Weather",MemberGuid=D599BBC246B45E736B838D98A216CF33)
+    .NodePosX=1940
+    .NodePosY=508
+    .NodeGuid=B9C813A44D8CEC54ACE6BDA7DEA467C3
+    .bDefaultsToPureFunc=True
+  K2Node_MakeStruct (K2Node_MakeStruct_1)
+    .bMadeAfterOverridePinRemoval=True
+    .ShowPinForProperties(0)=(PropertyName="R",PropertyFriendlyName="R",CategoryName="LinearColor",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(1)=(PropertyName="G",PropertyFriendlyName="G",CategoryName="LinearColor",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(2)=(PropertyName="B",PropertyFriendlyName="B",CategoryName="LinearColor",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(3)=(PropertyName="A",PropertyFriendlyName="A",CategoryName="LinearColor",bShowPin=True,bCanToggleVisibility=True)
+    .StructType="/Script/CoreUObject.ScriptStruct'/Script/CoreUObject.LinearColor'"
+    .NodePosX=4296
+    .NodePosY=160
+    .NodeGuid=5F15AB30488534FFA40826AF85E5C8EE
+  K2Node_VariableGet (K2Node_VariableGet_20)
+    .VariableReference=(MemberName="Show Background",MemberGuid=5DA2BE0F4B7CCC654E002E92AA3C366E,bSelfContext=True)
+    .NodePosX=3884
+    .NodePosY=388
+    .NodeGuid=98E60B8942190BFCA636D49E5038BB45
+  K2Node_CallFunction (K2Node_CallFunction_18)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="SelectFloat")
+    .NodePosX=4064
+    .NodePosY=284
+    .NodeGuid=D2C1074A4538AFA81E2D289ECCFFD4CA
+  K2Node_Self (K2Node_Self_0)
+    .NodePosX=5556
+    .NodePosY=100
+    .NodeGuid=308037474566A1A5177151987AEA921B
+  K2Node_CallFunction (K2Node_CallFunction_9)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetTextLibrary'",MemberName="Conv_StringToText")
+    .NodePosX=2772
+    .NodePosY=16
+    .NodeGuid=90CA93FA40955E1D85F0B9B83DA1EFF9
+  K2Node_VariableSet (K2Node_VariableSet_0)
+    .VariableReference=(MemberName="UDW",MemberGuid=DA3D4C1E4CC25436323D69A232622DA9,bSelfContext=True)
+    .SelfContextInfo=NotSelfContext
+    .NodePosX=268
+    .NodePosY=80
+    .NodeGuid=998E82E04BF45B9408BDCB94FFDC276C
+  K2Node_VariableGet (K2Node_VariableGet_7)
+    .VariableReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDS_Weather_Settings.UDS_Weather_Settings_C'",MemberName="User Friendly Name",MemberGuid=6B1F33924E6F79A60561AE8C9EA1102E)
+    .NodePosX=3468
+    .NodePosY=528
+    .NodeGuid=2222AC284D7C9B234F979DA77387DA91
+    .SelfContextInfo=NotSelfContext
+  K2Node_CallFunction (K2Node_CallFunction_10)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetSystemLibrary'",MemberName="LoadAsset_Blocking")
+    .NodePosX=4508
+    .NodePosY=436
+    .NodeGuid=3DDFB36D440B3926406FD48CACDB3BA9
+  K2Node_VariableGet (K2Node_VariableGet_14)
+    .VariableReference=(MemberName="Text Min Desired Width",MemberGuid=8AEEF19F4FA78F7B9D3BD39B91923EAE,bSelfContext=True)
+    .NodePosX=3408
+    .NodePosY=124
+    .NodeGuid=50B7D80D4B4B450FF6405DB165A48F39
+  K2Node_Event (K2Node_Event_2)
+    .EventReference=(MemberParent="/Script/CoreUObject.Class'/Script/UMG.UserWidget'",MemberName="Construct")
+    .bOverrideFunction=True
+    .NodePosX=12
+    .NodePosY=768
+    .NodeGuid=0F786D5345120CEF0D0FA4B639A32D87
+  K2Node_CallFunction (K2Node_CallFunction_11)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/UMG.TextBlock'",MemberName="SetText")
+    .NodePosX=968
+    .NodePosY=656
+    .NodeGuid=CE9CBB35480A3C176DAD54968ABFC902
+  K2Node_VariableGet (K2Node_VariableGet_15)
+    .VariableReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Ultra_Dynamic_Weather.Ultra_Dynamic_Weather_C'",MemberName="Run Context",MemberGuid=208375DA468DB3B3BC4A8B9B6F72A873)
+    .SelfContextInfo=NotSelfContext
+    .NodePosX=1032
+    .NodePosY=876
+    .NodeGuid=EBD24A7D48C79B21EBDFFDA5AD3069E4
+  K2Node_MacroInstance (K2Node_MacroInstance_0)
+    .MacroGraphReference=(MacroGraph="/Script/Engine.EdGraph'/Engine/EditorBlueprintResources/StandardMacros.StandardMacros:IsValid'",GraphBlueprint="/Script/Engine.Blueprint'/Engine/EditorBlueprintResources/StandardMacros.StandardMacros'",GraphGuid=64422BCD430703FF5CAEA8B79A32AA65)
+    .NodePosX=-344
+    .NodePosY=-40
+    .NodeGuid=B0302F3F4E87E9EBE7CCFD9B2A362C99
+    .OutputSourceNode="/Script/BlueprintGraph.K2Node_Tunnel'UDW_Current_Weather_Display:Update Current Display_MERGED.K2Node_Tunnel_91'"
+    .InputSinkNode="/Script/BlueprintGraph.K2Node_Tunnel'UDW_Current_Weather_Display:Update Current Display_MERGED.K2Node_Tunnel_90'"
+  K2Node_EnumEquality (K2Node_EnumEquality_0)
+    .NodePosX=1264
+    .NodePosY=880
+    .NodeGuid=9F27BDE8450F9FB642D55FB4E3B1D20B
+  K2Node_IfThenElse (K2Node_IfThenElse_0)
+    .NodePosX=2052
+    .NodePosY=-48
+    .NodeGuid=D7AFEA50447AA66202F9689D35842347
+  K2Node_CallFunction (K2Node_CallFunction_13)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetSystemLibrary'",MemberName="IsValidSoftObjectReference")
+    .NodePosX=3968
+    .NodePosY=504
+    .NodeGuid=BCB117164C203674308736ACA579AEB0
+    .bDefaultsToPureFunc=True
+  K2Node_Knot (K2Node_Knot_0)
+    .NodePosX=684
+    .NodePosY=-12
+    .NodeGuid=10C0CFB7415C957AEB4BB0BF14F094B2
+  K2Node_Knot (K2Node_Knot_1)
+    .NodePosX=4432
+    .NodePosY=616
+    .NodeGuid=0808AD0644B25E0610227DA31C91FB6A
+  K2Node_VariableSet (K2Node_VariableSet_1)
+    .VariableReference=(MemberScope="Update Current Display",MemberName="Display Text",MemberGuid=13EE601343BFE27D0D2E8197404A933D)
+    .NodePosX=3004
+    .NodePosY=-28
+    .NodeGuid=79616DF24725919896B223AEA74F63B4
+  K2Node_VariableGet (K2Node_VariableGet_16)
+    .VariableReference=(MemberName="UDW",MemberGuid=DA3D4C1E4CC25436323D69A232622DA9,bSelfContext=True)
+    .NodePosX=888
+    .NodePosY=876
+    .NodeGuid=024A3DE74FDFB0719256B9902710753E
+  K2Node_CallFunction (K2Node_CallFunction_14)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetSystemLibrary'",MemberName="Conv_SoftObjectReferenceToObject")
+    .NodePosX=-1040
+    .NodePosY=-1200
+    .NodeGuid=8881A2039EE539AA990D1619386FA427
+    .bDefaultsToPureFunc=True
+    .bIsIntermediateNode=True
+  K2Node_VariableGet (K2Node_VariableGet_17)
+    .VariableReference=(MemberName="Update Display Period",MemberGuid=6F39EA6A495DB7068C0560AE87503FAD,bSelfContext=True)
+    .NodePosX=2268
+    .NodePosY=1024
+    .NodeGuid=D5E5C844415D3D7252965B94D30D6D5D
+  K2Node_VariableGet (K2Node_VariableGet_18)
+    .VariableReference=(MemberName="Background Color",MemberGuid=C56AD8F941289D135836CFAE52C34B3F,bSelfContext=True)
+    .NodePosX=3704
+    .NodePosY=180
+    .NodeGuid=BF8729C542505B129AB7D284B012C4F9
+  K2Node_CallFunction (K2Node_CallFunction_16)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="BreakColor")
+    .NodePosX=3880
+    .NodePosY=160
+    .NodeGuid=DEEE3BCC41158DE86A6D5BBA95FB0422
+  K2Node_VariableGet (K2Node_VariableGet_11)
+    .VariableReference=(MemberName="IconImage",MemberGuid=AF1B08748ECE3DFF927EAB6E2723D8D5,bSelfContext=True)
+    .NodePosX=1216
+    .NodePosY=736
+    .NodeGuid=C058F560420B3CD2FB685EB15FAAD5F7
+  K2Node_CallFunction (K2Node_CallFunction_17)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/UMG.Border'",MemberName="SetPadding")
+    .NodePosX=5372
+    .NodePosY=-20
+    .NodeGuid=87B1BDB34E428FCF770CD78CB91B828C
+  K2Node_MakeStruct (K2Node_MakeStruct_2)
+    .bMadeAfterOverridePinRemoval=True
+    .ShowPinForProperties(0)=(PropertyName="Left",PropertyFriendlyName="Left",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "Margin:Left", "Holds the margin to the left."),CategoryName="Appearance",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(1)=(PropertyName="Top",PropertyFriendlyName="Top",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "Margin:Top", "Holds the margin to the top."),CategoryName="Appearance",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(2)=(PropertyName="Right",PropertyFriendlyName="Right",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "Margin:Right", "Holds the margin to the right."),CategoryName="Appearance",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(3)=(PropertyName="Bottom",PropertyFriendlyName="Bottom",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "Margin:Bottom", "Holds the margin to the bottom."),CategoryName="Appearance",bShowPin=True,bCanToggleVisibility=True)
+    .StructType="/Script/CoreUObject.ScriptStruct'/Script/SlateCore.Margin'"
+    .NodePosX=5108
+    .NodePosY=156
+    .NodeGuid=FEE30F86471B1CB2143CA28BD9C027E8
+  K2Node_VariableGet (K2Node_VariableGet_12)
+    .VariableReference=(MemberScope="Update Current Display",MemberName="Display Icon",MemberGuid=BD2B4A984300A74ADB8A319B0C2576AC)
+    .NodePosX=1208
+    .NodePosY=788
+    .NodeGuid=EBDC35354607630108199A9F6A2E8BAC
+  K2Node_CallFunction (K2Node_CallFunction_8)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetSystemLibrary'",MemberName="IsValid")
+    .NodePosX=-304
+    .NodePosY=-208
+    .NodeGuid=A30AA81440C8EAB13D4B33AEB64E9859
+  K2Node_MacroInstance (K2Node_MacroInstance_1)
+    .MacroGraphReference=(MacroGraph="/Script/Engine.EdGraph'/Engine/EditorBlueprintResources/StandardMacros.StandardMacros:IsValid'",GraphBlueprint="/Script/Engine.Blueprint'/Engine/EditorBlueprintResources/StandardMacros.StandardMacros'",GraphGuid=64422BCD430703FF5CAEA8B79A32AA65)
+    .NodePosX=416
+    .NodePosY=64
+    .NodeGuid=597245AA41D1DDDF429CA4A969414AF7
+    .OutputSourceNode="/Script/BlueprintGraph.K2Node_Tunnel'UDW_Current_Weather_Display:Update Current Display_MERGED.K2Node_Tunnel_0'"
+    .InputSinkNode="/Script/BlueprintGraph.K2Node_Tunnel'UDW_Current_Weather_Display:Update Current Display_MERGED.K2Node_Tunnel_1'"
+  K2Node_CallFunction (K2Node_CallFunction_2)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.BlueprintMapLibrary'",MemberName="Map_Find")
+    .NodePosX=2996
+    .NodePosY=84
+    .AdvancedPinDisplay=Hidden
+    .NodeGuid=6447D3914B3E42D4F903DA8BE2F08F2D
+    .bDefaultsToPureFunc=True
+  K2Node_CreateDelegate (K2Node_CreateDelegate_0)
+    .SelectedFunctionName="Update Current Display"
+    .SelectedFunctionGuid=EE44186742481D78772F4AA4425B3824
+    .NodePosX=2240
+    .NodePosY=884
+    .NodeGuid=32E659B94A1C9B48C128019AFF9B4B73
+  EdGraph (Update Current Display)
+    .Schema="/Script/CoreUObject.Class'/Script/UMGEditor.WidgetGraphSchema'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_MacroInstance'K2Node_MacroInstance_0'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_MacroInstance'K2Node_MacroInstance_1'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_Knot'K2Node_Knot_0'"
+    .Nodes(7)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_5'"
+    .Nodes(8)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(9)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_2'"
+    .Nodes(10)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(11)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_1'"
+    .Nodes(12)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_4'"
+    .Nodes(13)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .Nodes(14)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_2'"
+    .Nodes(15)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_6'"
+    .Nodes(16)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_6'"
+    .Nodes(17)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_4'"
+    .Nodes(18)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_5'"
+    .Nodes(19)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(20)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_3'"
+    .Nodes(21)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_7'"
+    .Nodes(22)="/Script/BlueprintGraph.K2Node_GetArrayItem'K2Node_GetArrayItem_0'"
+    .Nodes(23)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_7'"
+    .Nodes(24)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_9'"
+    .Nodes(25)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_3'"
+    .Nodes(26)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_8'"
+    .Nodes(27)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_4'"
+    .Nodes(28)="/Script/BlueprintGraph.K2Node_ConvertAsset'K2Node_ConvertAsset_0'"
+    .Nodes(29)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_10'"
+    .Nodes(30)="/Script/BlueprintGraph.K2Node_ExecutionSequence'K2Node_ExecutionSequence_0'"
+    .Nodes(31)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_9'"
+    .Nodes(32)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_10'"
+    .Nodes(33)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_11'"
+    .Nodes(34)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_11'"
+    .Nodes(35)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_12'"
+    .Nodes(36)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_12'"
+    .Nodes(37)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_13'"
+    .Nodes(38)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_2'"
+    .Nodes(39)="/Script/BlueprintGraph.K2Node_Knot'K2Node_Knot_1'"
+    .GraphGuid=EE44186742481D78772F4AA4425B3824
+  K2Node_FunctionEntry (K2Node_FunctionEntry_0)
+    .LocalVariables(0)=(VarName="Display Text",VarGuid=13EE601343BFE27D0D2E8197404A933D,VarType=(PinCategory="text"),FriendlyName="Display Text",Category=NSLOCTEXT("KismetSchema", "Default", "Default"),PropertyFlags=5)
+    .LocalVariables(1)=(VarName="Display Icon",VarGuid=BD2B4A984300A74ADB8A319B0C2576AC,VarType=(PinCategory="object",PinSubCategoryObject="/Script/CoreUObject.Class'/Script/Engine.Texture2D'"),FriendlyName="Display Icon",Category=NSLOCTEXT("KismetSchema", "Default", "Default"),PropertyFlags=5,DefaultValue="/Script/Engine.Texture2D\'/Game/UltraDynamicSky/Textures/Icons/Weather/Weather_Icon_BG.Weather_Icon_BG\'")
+    .ExtraFlags=201457664
+    .FunctionReference=(MemberName="Update Current Display")
+    .bIsEditable=True
+    .NodePosX=-588
+    .NodePosY=-40
+    .NodeGuid=7646F5EB49276712372F15999A9A3B46
+    .CustomGeneratedFunctionName="PreConstruct"
+    .bIsIntermediateNode=True
+  K2Node_VariableSet (K2Node_VariableSet_2)
+    .VariableReference=(MemberScope="Update Current Display",MemberName="Display Icon",MemberGuid=BD2B4A984300A74ADB8A319B0C2576AC)
+    .NodePosX=3240
+    .NodePosY=-28
+    .NodeGuid=1DE421A3445A4A5C50619DA2BDAFE6B1
+  K2Node_CallFunction (K2Node_CallFunction_7)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.BlueprintMapLibrary'",MemberName="Map_Keys")
+    .NodePosX=3096
+    .NodePosY=452
+    .NodeGuid=77581DD1462E65627CDFAA8DB81FA64C
+    .bDefaultsToPureFunc=True
+  K2Node_GetArrayItem (K2Node_GetArrayItem_0)
+    .bReturnByRefDesired=False
+    .NodePosX=3284
+    .NodePosY=588
+    .NodeGuid=F0F214E94620F0C8DEBE319FD539BC18
+  K2Node_VariableSet (K2Node_VariableSet_3)
+    .VariableReference=(MemberScope="Update Current Display",MemberName="Display Text",MemberGuid=13EE601343BFE27D0D2E8197404A933D)
+    .NodePosX=3752
+    .NodePosY=452
+    .NodeGuid=68811E6A446E668C6456FD89099EEF9C
+  K2Node_VariableSet (K2Node_VariableSet_4)
+    .VariableReference=(MemberScope="Update Current Display",MemberName="Display Icon",MemberGuid=BD2B4A984300A74ADB8A319B0C2576AC)
+    .NodePosX=4768
+    .NodePosY=452
+    .NodeGuid=A42C0BFE48E1DBF4D6D33CA1D8785BFB
+  K2Node_ConvertAsset (K2Node_ConvertAsset_0)
+    .NodePosX=4596
+    .NodePosY=608
+    .NodeGuid=E639CB4D419616A6D79CBCBCE45D8B9C
+  K2Node_ExecutionSequence (K2Node_ExecutionSequence_0)
+    .NodePosX=900
+    .NodePosY=-44
+    .NodeGuid=1BF1C64A499100D3CFDB4C834C4508AC
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_12)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/UMG.Image'",MemberName="SetBrushFromTexture")
+    .NodePosX=1376
+    .NodePosY=656
+    .NodeGuid=8AE20DD2435AD1FCDD9690AA64625656
+    .bDefaultsToPureFunc=True
+    .bIsIntermediateNode=True
+  K2Node_IfThenElse (K2Node_IfThenElse_2)
+    .NodePosX=4304
+    .NodePosY=436
+    .NodeGuid=3EF8415346B8DF3878E4C3920EDE7919
+  EdGraph (EdGraph_0)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_Tunnel'K2Node_Tunnel_90'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_Tunnel'K2Node_Tunnel_91'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_15'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_4347'"
+    .GraphGuid=64422BCD430703FF5CAEA8B79A32AA65
+  K2Node_Tunnel (K2Node_Tunnel_90)
+    .bCanHaveOutputs=True
+    .MetaData=(ToolTip=NSLOCTEXT("", "C2A2C43144F43B04AD0E6EBF3956A75A", "Determines if an object is valid"),Category=NSLOCTEXT("", "A824D3BC4E8FDA956A0FB29E0E653805", "Utilities"))
+    .NodePosX=-496
+    .NodePosY=-272
+    .NodeGuid=AD5E251140C16EF1608BB3AADB3750EF
+    .OutputSourceNode="/Script/BlueprintGraph.K2Node_MacroInstance'UDW_Current_Weather_Display:Update Current Display_MERGED.K2Node_MacroInstance_0'"
+  K2Node_Tunnel (K2Node_Tunnel_91)
+    .bCanHaveInputs=True
+    .NodePosX=288
+    .NodePosY=-272
+    .NodeGuid=25BB8F27486C272CD1228A9D682B1834
+    .InputSinkNode="/Script/BlueprintGraph.K2Node_MacroInstance'UDW_Current_Weather_Display:Update Current Display_MERGED.K2Node_MacroInstance_0'"
+  K2Node_IfThenElse (K2Node_IfThenElse_15)
+    .NodePosX=-16
+    .NodePosY=-272
+    .NodeGuid=4623B8A14B5A39FAEE284A8022D12E15
+  K2Node_CallFunction (K2Node_CallFunction_4347)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetSystemLibrary'",MemberName="IsValid")
+    .NodePosX=-304
+    .NodePosY=-208
+    .NodeGuid=A30AA81440C8EAB13D4B33AEB64E9859
+  EdGraph (EdGraph_1)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_Tunnel'K2Node_Tunnel_90'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_Tunnel'K2Node_Tunnel_91'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_15'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_4347'"
+    .GraphGuid=64422BCD430703FF5CAEA8B79A32AA65
+  EdGraph (EdGraph_2)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_Tunnel'K2Node_Tunnel_90'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_Tunnel'K2Node_Tunnel_91'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_15'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_4347'"
+    .GraphGuid=64422BCD430703FF5CAEA8B79A32AA65
+  EdGraph (EdGraph_3)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_Tunnel'K2Node_Tunnel_90'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_Tunnel'K2Node_Tunnel_91'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_15'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_4347'"
+    .GraphGuid=64422BCD430703FF5CAEA8B79A32AA65
+  EdGraph (ExecuteUbergraph_UDW_Current_Weather_Display)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_CreateDelegate'K2Node_CreateDelegate_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_TunnelBoundary'K2Node_TunnelBoundary_7'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_8'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_12'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_MakeStruct'K2Node_MakeStruct_2'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_17'"
+    .Nodes(7)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_11'"
+    .Nodes(8)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_16'"
+    .Nodes(9)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_18'"
+    .Nodes(10)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_17'"
+    .Nodes(11)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_14'"
+    .Nodes(12)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_16'"
+    .Nodes(13)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_1'"
+    .Nodes(14)="/Script/BlueprintGraph.K2Node_TemporaryVariable'K2Node_TemporaryVariable_4'"
+    .Nodes(15)="/Script/BlueprintGraph.K2Node_PureAssignmentStatement'K2Node_PureAssignmentStatement_3'"
+    .Nodes(16)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_13'"
+    .Nodes(17)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(18)="/Script/BlueprintGraph.K2Node_TemporaryVariable'K2Node_TemporaryVariable_3'"
+    .Nodes(19)="/Script/BlueprintGraph.K2Node_TunnelBoundary'K2Node_TunnelBoundary_6'"
+    .Nodes(20)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_15'"
+    .Nodes(21)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_11'"
+    .Nodes(22)="/Script/BlueprintGraph.K2Node_Event'K2Node_Event_2'"
+    .Nodes(23)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_14'"
+    .Nodes(24)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_10'"
+    .Nodes(25)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_7'"
+    .Nodes(26)="/Script/BlueprintGraph.K2Node_PureAssignmentStatement'K2Node_PureAssignmentStatement_5'"
+    .Nodes(27)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_9'"
+    .Nodes(28)="/Script/BlueprintGraph.K2Node_Self'K2Node_Self_0'"
+    .Nodes(29)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_18'"
+    .Nodes(30)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_20'"
+    .Nodes(31)="/Script/BlueprintGraph.K2Node_MakeStruct'K2Node_MakeStruct_1'"
+    .Nodes(32)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_6'"
+    .Nodes(33)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_19'"
+    .Nodes(34)="/Script/BlueprintGraph.K2Node_MakeStruct'K2Node_MakeStruct_0'"
+    .Nodes(35)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_10'"
+    .Nodes(36)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_5'"
+    .Nodes(37)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_13'"
+    .Nodes(38)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_8'"
+    .Nodes(39)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_4'"
+    .Nodes(40)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_9'"
+    .Nodes(41)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_6'"
+    .Nodes(42)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_3'"
+    .Nodes(43)="/Script/BlueprintGraph.K2Node_SetFieldsInStruct'K2Node_SetFieldsInStruct_0'"
+    .Nodes(44)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_5'"
+    .Nodes(45)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_2'"
+    .Nodes(46)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_4'"
+    .Nodes(47)="/Script/BlueprintGraph.K2Node_Select'K2Node_Select_0'"
+    .Nodes(48)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_1'"
+    .Nodes(49)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(50)="/Script/BlueprintGraph.K2Node_Select'K2Node_Select_1'"
+    .Nodes(51)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_3'"
+    .Nodes(52)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(53)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(54)="/Script/BlueprintGraph.K2Node_Event'K2Node_Event_0'"
+    .Nodes(55)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(56)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_4347'"
+    .Nodes(57)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_15'"
+    .Nodes(58)="/Script/BlueprintGraph.K2Node_TunnelBoundary'K2Node_TunnelBoundary_5'"
+    .Nodes(59)="/Script/BlueprintGraph.K2Node_TemporaryVariable'K2Node_TemporaryVariable_5'"
+    .Nodes(60)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_7'"
+    .Nodes(61)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_1'"
+    .Nodes(62)="/Script/BlueprintGraph.K2Node_TunnelBoundary'K2Node_TunnelBoundary_4'"
+    .Nodes(63)="/Script/BlueprintGraph.K2Node_PureAssignmentStatement'K2Node_PureAssignmentStatement_4'"
+    .Nodes(64)="/Script/BlueprintGraph.K2Node_TunnelBoundary'K2Node_TunnelBoundary_0'"
+    .Nodes(65)="/Script/BlueprintGraph.K2Node_TunnelBoundary'K2Node_TunnelBoundary_1'"
+    .Nodes(66)="/Script/BlueprintGraph.K2Node_TunnelBoundary'K2Node_TunnelBoundary_2'"
+    .Nodes(67)="/Script/BlueprintGraph.K2Node_TunnelBoundary'K2Node_TunnelBoundary_3'"
+    .Nodes(68)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_12'"
+    .Nodes(69)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_15'"
+    .Nodes(70)="/Script/BlueprintGraph.K2Node_TemporaryVariable'K2Node_TemporaryVariable_0'"
+    .Nodes(71)="/Script/BlueprintGraph.K2Node_PureAssignmentStatement'K2Node_PureAssignmentStatement_0'"
+    .Nodes(72)="/Script/BlueprintGraph.K2Node_TemporaryVariable'K2Node_TemporaryVariable_1'"
+    .Nodes(73)="/Script/BlueprintGraph.K2Node_PureAssignmentStatement'K2Node_PureAssignmentStatement_1'"
+    .Nodes(74)="/Script/BlueprintGraph.K2Node_TemporaryVariable'K2Node_TemporaryVariable_2'"
+    .Nodes(75)="/Script/BlueprintGraph.K2Node_PureAssignmentStatement'K2Node_PureAssignmentStatement_2'"
+    .Nodes(76)="/Script/BlueprintGraph.K2Node_ExecutionSequence'K2Node_ExecutionSequence_0'"
+    .GraphGuid=CEA1A1484790CE8A396311ACDF7709D9
+  K2Node_Tunnel (K2Node_Tunnel_1)
+    .OutputSourceNode="/Script/BlueprintGraph.K2Node_MacroInstance'UDW_Current_Weather_Display:Update Current Display_MERGED.K2Node_MacroInstance_1'"
+    .bCanHaveOutputs=True
+    .MetaData=(ToolTip=NSLOCTEXT("", "C2A2C43144F43B04AD0E6EBF3956A75A", "Determines if an object is valid"),Category=NSLOCTEXT("", "A824D3BC4E8FDA956A0FB29E0E653805", "Utilities"))
+    .NodePosX=-496
+    .NodePosY=-272
+    .NodeGuid=AD5E251140C16EF1608BB3AADB3750EF
+  K2Node_Tunnel (K2Node_Tunnel_0)
+    .InputSinkNode="/Script/BlueprintGraph.K2Node_MacroInstance'UDW_Current_Weather_Display:Update Current Display_MERGED.K2Node_MacroInstance_1'"
+    .bCanHaveInputs=True
+    .NodePosX=288
+    .NodePosY=-272
+    .NodeGuid=25BB8F27486C272CD1228A9D682B1834
+  K2Node_IfThenElse (K2Node_IfThenElse_1)
+    .NodePosX=-16
+    .NodePosY=-272
+    .NodeGuid=4623B8A14B5A39FAEE284A8022D12E15
+  K2Node_TunnelBoundary (K2Node_TunnelBoundary_0)
+    .NodePosX=288
+    .NodePosY=-272
+    .bIsIntermediateNode=True
+    .NodeGuid=379BE58C864030B398B490BABE14469F
+  K2Node_TunnelBoundary (K2Node_TunnelBoundary_1)
+    .NodePosX=288
+    .NodePosY=-272
+    .bIsIntermediateNode=True
+    .NodeGuid=0333EE372E0D3A77B86E932ADB39C7CA
+  K2Node_TunnelBoundary (K2Node_TunnelBoundary_2)
+    .NodePosX=-344
+    .NodePosY=-40
+    .bIsIntermediateNode=True
+    .NodeGuid=A1159BCE303B35F2836F47262907D952
+  K2Node_TunnelBoundary (K2Node_TunnelBoundary_3)
+    .NodePosX=-496
+    .NodePosY=-272
+    .bIsIntermediateNode=True
+    .NodeGuid=086D1F730AFF312CBFF87E7E94F7BAC5
+  K2Node_TunnelBoundary (K2Node_TunnelBoundary_4)
+    .NodePosX=288
+    .NodePosY=-272
+    .bIsIntermediateNode=True
+    .NodeGuid=E1ACF14C7F1730349D03D1834BB13EDE
+  K2Node_TunnelBoundary (K2Node_TunnelBoundary_5)
+    .NodePosX=288
+    .NodePosY=-272
+    .bIsIntermediateNode=True
+    .NodeGuid=39C180AD483E329CA8E5BE9F26BF728A
+  K2Node_TunnelBoundary (K2Node_TunnelBoundary_6)
+    .NodePosX=416
+    .NodePosY=64
+    .bIsIntermediateNode=True
+    .NodeGuid=C0769D408A423501B19CED3FD8B895F4
+  K2Node_TunnelBoundary (K2Node_TunnelBoundary_7)
+    .NodePosX=-496
+    .NodePosY=-272
+    .bIsIntermediateNode=True
+    .NodeGuid=1990FD81EA8E3210B89D8493EC4B5D4A
+  K2Node_CallFunction (K2Node_CallFunction_15)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/UMG.CanvasPanelSlot'",MemberName="SetAutoSize")
+    .NodePosX=160
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=B4DE75CE372C3672AAE091CAE6E2D59F
+  K2Node_TemporaryVariable (K2Node_TemporaryVariable_0)
+    .VariableType=(PinCategory="byte",PinSubCategoryObject="/Script/CoreUObject.Enum'/Script/UMG.ESlateVisibility'")
+    .NodePosX=400
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=951B8ADFFFF1343C98B75275C5F6B76F
+  K2Node_PureAssignmentStatement (K2Node_PureAssignmentStatement_0)
+    .NodePosX=640
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=9BE8D0D353B83D0988F8C0125780AB19
+  K2Node_TemporaryVariable (K2Node_TemporaryVariable_1)
+    .VariableType=(PinCategory="byte",PinSubCategoryObject="/Script/CoreUObject.Enum'/Script/UMG.ESlateVisibility'")
+    .NodePosX=880
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=48D34A9CFCFC3D928ED054DAA2F99A3C
+  K2Node_PureAssignmentStatement (K2Node_PureAssignmentStatement_1)
+    .NodePosX=1120
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=21ED9BAB3AD53ECAB44B6064064843BD
+  K2Node_TemporaryVariable (K2Node_TemporaryVariable_2)
+    .VariableType=(PinCategory="bool")
+    .NodePosX=1360
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=96AF43BA7304374CB0CAEB9F81C00C11
+  K2Node_PureAssignmentStatement (K2Node_PureAssignmentStatement_2)
+    .NodePosX=1600
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=1E6E9F43549336F78B7DA2CE47F1EDBE
+  K2Node_TemporaryVariable (K2Node_TemporaryVariable_3)
+    .VariableType=(PinCategory="byte",PinSubCategoryObject="/Script/CoreUObject.Enum'/Script/UMG.ESlateVisibility'")
+    .NodePosX=1840
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=D74E055A3FB93561B89AE8EB15D9B6E3
+  K2Node_PureAssignmentStatement (K2Node_PureAssignmentStatement_3)
+    .NodePosX=-2000
+    .NodePosY=-1600
+    .bIsIntermediateNode=True
+    .NodeGuid=DA17430F3BD93C67B67483824BC3A73A
+  K2Node_TemporaryVariable (K2Node_TemporaryVariable_4)
+    .VariableType=(PinCategory="byte",PinSubCategoryObject="/Script/CoreUObject.Enum'/Script/UMG.ESlateVisibility'")
+    .NodePosX=-1760
+    .NodePosY=-1600
+    .bIsIntermediateNode=True
+    .NodeGuid=BCD774A2D72437AD8B53696FB1075C94
+  K2Node_PureAssignmentStatement (K2Node_PureAssignmentStatement_4)
+    .NodePosX=-1520
+    .NodePosY=-1600
+    .bIsIntermediateNode=True
+    .NodeGuid=68910B94C1A434F0B92FF431AFE0C2BF
+  K2Node_TemporaryVariable (K2Node_TemporaryVariable_5)
+    .VariableType=(PinCategory="bool")
+    .NodePosX=-1280
+    .NodePosY=-1600
+    .bIsIntermediateNode=True
+    .NodeGuid=D566B186DD98394DAD57E51A7A6B718C
+  K2Node_PureAssignmentStatement (K2Node_PureAssignmentStatement_5)
+    .NodePosX=-1040
+    .NodePosY=-1600
+    .bIsIntermediateNode=True
+    .NodeGuid=855E449E44F234B5939C5D153D865ACD
+  EdGraph (Construct)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=FEEEE6FE46F078BE6FB3E6A351CAD499
+  EdGraph (PreConstruct)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_SetVariableOnPersistentFrame'K2Node_SetVariableOnPersistentFrame_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=A0701C0948158D6A2C552CBED594C73E
+  K2Node_SetVariableOnPersistentFrame (K2Node_SetVariableOnPersistentFrame_0)
+    .NodePosX=-80
+    .NodePosY=-1600
+    .bIsIntermediateNode=True
+    .NodeGuid=EC318464E59F37DC9F59CD7F3613BF3C
+  EdGraph (Update Current Display_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/UMGEditor.WidgetGraphSchema'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_TunnelBoundary'K2Node_TunnelBoundary_7'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_TunnelBoundary'K2Node_TunnelBoundary_6'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_CallArrayFunction'K2Node_CallArrayFunction_0'"
+    .Nodes(7)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_5'"
+    .Nodes(8)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(9)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_2'"
+    .Nodes(10)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_0'"
+    .Nodes(11)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_1'"
+    .Nodes(12)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_4'"
+    .Nodes(13)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .Nodes(14)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_2'"
+    .Nodes(15)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_6'"
+    .Nodes(16)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_6'"
+    .Nodes(17)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_4'"
+    .Nodes(18)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_5'"
+    .Nodes(19)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(20)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_3'"
+    .Nodes(21)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_7'"
+    .Nodes(22)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_3'"
+    .Nodes(23)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_7'"
+    .Nodes(24)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_9'"
+    .Nodes(25)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_3'"
+    .Nodes(26)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_8'"
+    .Nodes(27)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_4'"
+    .Nodes(28)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_5'"
+    .Nodes(29)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_10'"
+    .Nodes(30)="/Script/BlueprintGraph.K2Node_ExecutionSequence'K2Node_ExecutionSequence_0'"
+    .Nodes(31)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_9'"
+    .Nodes(32)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_10'"
+    .Nodes(33)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_11'"
+    .Nodes(34)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_11'"
+    .Nodes(35)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_12'"
+    .Nodes(36)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_12'"
+    .Nodes(37)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_13'"
+    .Nodes(38)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_2'"
+    .Nodes(39)="/Script/BlueprintGraph.K2Node_TunnelBoundary'K2Node_TunnelBoundary_3'"
+    .Nodes(40)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_4347'"
+    .Nodes(41)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_15'"
+    .Nodes(42)="/Script/BlueprintGraph.K2Node_TunnelBoundary'K2Node_TunnelBoundary_5'"
+    .Nodes(43)="/Script/BlueprintGraph.K2Node_DynamicCast'K2Node_DynamicCast_0'"
+    .Nodes(44)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_8'"
+    .Nodes(45)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_1'"
+    .Nodes(46)="/Script/BlueprintGraph.K2Node_TunnelBoundary'K2Node_TunnelBoundary_4'"
+    .Nodes(47)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_14'"
+    .Nodes(48)="/Script/BlueprintGraph.K2Node_TunnelBoundary'K2Node_TunnelBoundary_0'"
+    .Nodes(49)="/Script/BlueprintGraph.K2Node_TunnelBoundary'K2Node_TunnelBoundary_1'"
+    .Nodes(50)="/Script/BlueprintGraph.K2Node_TunnelBoundary'K2Node_TunnelBoundary_2'"
+    .GraphGuid=EE44186742481D78772F4AA4425B3824
+  K2Node_VariableSet (K2Node_VariableSet_5)
+    .VariableReference=(MemberParent="/Script/UMG.WidgetBlueprintGeneratedClass'UDW_Current_Weather_Display_C'",MemberScope="Update Current Display",MemberName="Display Icon",MemberGuid=BD2B4A984300A74ADB8A319B0C2576AC)
+    .SelfContextInfo=NotSelfContext
+    .NodePosX=-1760
+    .NodePosY=-1200
+    .bIsIntermediateNode=True
+    .NodeGuid=DAD169369D5A3A1ABC9250863F6DE8CB
+  K2Node_CallArrayFunction (K2Node_CallArrayFunction_0)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetArrayLibrary'",MemberName="Array_Get")
+    .NodePosX=-1280
+    .NodePosY=-1200
+    .bIsIntermediateNode=True
+    .NodeGuid=80039132D4093C98A1A589166655AAB4
+  K2Node_DynamicCast (K2Node_DynamicCast_0)
+    .TargetType="/Script/CoreUObject.Class'/Script/Engine.Texture2D'"
+    .PureState=Pure
+    .NodePosX=-800
+    .NodePosY=-1200
+    .bIsIntermediateNode=True
+    .NodeGuid=45F26B0A73A437AC9B5C75D3A64AD722

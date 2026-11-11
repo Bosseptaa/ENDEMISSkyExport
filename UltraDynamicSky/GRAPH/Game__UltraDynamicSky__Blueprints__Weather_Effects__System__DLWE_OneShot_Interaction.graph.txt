@@ -1,0 +1,132 @@
+### /Game/UltraDynamicSky/Blueprints/Weather_Effects/System/DLWE_OneShot_Interaction
+  Blueprint (DLWE_OneShot_Interaction)
+    .ParentClass="/Script/CoreUObject.Class'/Script/Engine.Actor'"
+    .BlueprintDescription="Can be spawned in at a location to make a single interaction happen for Dynamic Landscape Weather Effects. Will destroy itself when complete."
+    .BlueprintCategory="UltraDynamicWeather|DynamicLandscapeWeatherEffects"
+    .BlueprintSystemVersion=2
+    .SimpleConstructionScript="/Script/Engine.SimpleConstructionScript'DLWE_OneShot_Interaction_C:SimpleConstructionScript_0'"
+    .UbergraphPages(0)="/Script/Engine.EdGraph'EventGraph'"
+    .FunctionGraphs(0)="/Script/Engine.EdGraph'UserConstructionScript'"
+    .CategorySorting(0)="Default"
+    .CategorySorting(1)=""
+    .CategorySorting(2)="Event Graph"
+    .LastEditedDocuments(0)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/DLWE_OneShot_Interaction.DLWE_OneShot_Interaction:EventGraph",SavedViewOffset=(X=-786.962769,Y=-817.047913),SavedZoomAmount=0.750000)
+    .LastEditedDocuments(1)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/DLWE_OneShot_Interaction.DLWE_OneShot_Interaction:UserConstructionScript",SavedViewOffset=(X=-604.114197,Y=-371.202545),SavedZoomAmount=1.000000)
+    .GeneratedClass="/Script/Engine.BlueprintGeneratedClass'DLWE_OneShot_Interaction_C'"
+    .bLegacyNeedToPurgeSkelRefs=False
+    .BlueprintGuid=01ACC3DE48232663B8AB61A23159A5E9
+  EdGraph (UserConstructionScript)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .bAllowDeletion=False
+    .GraphGuid=DEE6FF6E46A56046E53DA8BA86652CD9
+  K2Node_FunctionEntry (K2Node_FunctionEntry_0)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.Actor'",MemberName="UserConstructionScript")
+    .NodeGuid=3D7815444AAE674A0D544FB97A374C0C
+    .CustomGeneratedFunctionName="ReceiveTick"
+    .NodePosX=-200
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+  K2Node_VariableGet (K2Node_VariableGet_0)
+    .VariableReference=(MemberName="DLWE_Interaction",bSelfContext=True)
+    .NodePosX=48
+    .NodePosY=208
+    .NodeGuid=964F112A46669C192F15E695E819506C
+  K2Node_VariableSet (K2Node_VariableSet_0)
+    .VariableReference=(MemberParent="/Script/Engine.BlueprintGeneratedClass'/Game/UltraDynamicSky/Blueprints/Weather_Effects/DLWE_Interaction.DLWE_Interaction_C'",MemberName="Size",MemberGuid=9A53950D40515CA100C34FBA32027ED1)
+    .SelfContextInfo=NotSelfContext
+    .NodePosX=268
+    .NodePosY=16
+    .NodeGuid=EDA948EC4B380D1A0A18C68BA21877CC
+  K2Node_CallFunction (K2Node_CallFunction_0)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberName="GetActorScale3D",bSelfContext=True)
+    .NodePosX=-228
+    .NodePosY=64
+    .NodeGuid=39CEBD044D6BB596AF98B6A4DEBE61AB
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_1)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="BreakVector")
+    .NodePosX=44
+    .NodePosY=80
+    .NodeGuid=40B32C8648EAC1681733989ED985961C
+  EdGraph (EventGraph)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_Event'K2Node_Event_3'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_PromotableOperator'K2Node_PromotableOperator_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_Event'K2Node_Event_4'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .bAllowDeletion=False
+    .GraphGuid=28568621433DDB18BBABA9B39875A84B
+  K2Node_Event (K2Node_Event_3)
+    .EventReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.Actor'",MemberName="ReceiveTick")
+    .bOverrideFunction=True
+    .NodePosX=-124
+    .NodePosY=224
+    .NodeGuid=B2B765A940395AE318D1AEA839F23887
+  K2Node_PromotableOperator (K2Node_PromotableOperator_0)
+    .OperationName="Multiply"
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Multiply_VectorVector")
+    .NodePosX=76
+    .NodePosY=312
+    .NodeGuid=49F9617F4657B68A20CBF39252DA354B
+  K2Node_Event (K2Node_Event_4)
+    .EventReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.Actor'",MemberName="ReceiveBeginPlay")
+    .bOverrideFunction=True
+    .NodePosX=-100
+    .NodePosY=-24
+    .NodeGuid=4029CA3640E4EBAA4052B984A3AA8D26
+  EdGraph (ExecuteUbergraph_DLWE_OneShot_Interaction)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_Event'K2Node_Event_4'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_3'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_Event'K2Node_Event_3'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .GraphGuid=B4DC10534DA73845D138E4924D75AEBD
+  K2Node_CallFunction (K2Node_CallFunction_2)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Multiply_VectorVector")
+    .NodePosX=84
+    .NodePosY=362
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_3)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Conv_DoubleToVector")
+    .NodePosX=80
+    .NodePosY=312
+    .bIsIntermediateNode=True
+  EdGraph (ReceiveBeginPlay)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=DD6FF1E7429A333B21D486A96D34492F
+  EdGraph (ReceiveTick)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_SetVariableOnPersistentFrame'K2Node_SetVariableOnPersistentFrame_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=F656A96547CDDB66F82B70A5CACF4A8A
+  K2Node_SetVariableOnPersistentFrame (K2Node_SetVariableOnPersistentFrame_0)
+    .NodePosX=-1040
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=B4DD6608D8AF3AE8ADBDCDB64083A952
+  EdGraph (UserConstructionScript_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .bAllowDeletion=False
+    .GraphGuid=DEE6FF6E46A56046E53DA8BA86652CD9

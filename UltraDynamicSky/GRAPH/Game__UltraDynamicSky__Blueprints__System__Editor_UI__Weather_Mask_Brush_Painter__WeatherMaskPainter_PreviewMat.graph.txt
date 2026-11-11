@@ -1,0 +1,70 @@
+### /Game/UltraDynamicSky/Blueprints/System/Editor_UI/Weather_Mask_Brush_Painter/WeatherMaskPainter_PreviewMat
+  Material (WeatherMaskPainter_PreviewMat)
+    .MaterialDomain=MD_UI
+    .EditorX=-172
+    .EditorY=52
+    .bCanMaskedBeAssumedOpaque=True
+    .PixelDepthOffsetMode=PDOM_Legacy
+    .StateId=4D4D65CFA8444E0C704105AEA2978EA3
+    .ReferencedTextureGuids(0)=00000000000000000000000000000000
+    .EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'WeatherMaskPainter_PreviewMatEditorOnlyData'"
+    .ReferencedDefaultTextures(0)="/Script/Engine.Texture2D'/Engine/EngineResources/DefaultTexture.DefaultTexture'"
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+    .LightingGuid=4AF750764DE173EBC7840E8461B0E391
+  MaterialEditorOnlyData (WeatherMaskPainter_PreviewMatEditorOnlyData)
+    EmissiveColor          <- MaterialExpressionLinearInterpolate
+    ExpressionCollection   <- MaterialExpressionLinearInterpolate
+    .EmissiveColor=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'WeatherMaskPainter_PreviewMat:MaterialExpressionLinearInterpolate_0'")
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionLinearInterpolate'WeatherMaskPainter_PreviewMat:MaterialExpressionLinearInterpolate_0'","/Script/Engine.MaterialExpressionTextureSampleParameter2D'WeatherMaskPainter_PreviewMat:MaterialExpressionTextureSampleParameter2D_0'","/Script/Engine.MaterialExpressionTextureSampleParameter2D'WeatherMaskPainter_PreviewMat:MaterialExpressionTextureSampleParameter2D_1'","/Script/Engine.MaterialExpressionScalarParameter'WeatherMaskPainter_PreviewMat:MaterialExpressionScalarParameter_0'","/Script/Engine.MaterialExpressionPower'WeatherMaskPainter_PreviewMat:MaterialExpressionPower_0'","/Script/Engine.MaterialExpressionOneMinus'WeatherMaskPainter_PreviewMat:MaterialExpressionOneMinus_0'"))
+    .ParameterGroupData(0)=(GroupName="None")
+    .ParameterGroupData(1)=(GroupName="None")
+    .ParameterGroupData(2)=(GroupName="None")
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_0)
+    A                      <- MaterialExpressionTextureSampleParameter2D
+    B                      <- MaterialExpressionPower
+    Alpha                  <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionPower'WeatherMaskPainter_PreviewMat:MaterialExpressionPower_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameter2D'WeatherMaskPainter_PreviewMat:MaterialExpressionTextureSampleParameter2D_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionScalarParameter'WeatherMaskPainter_PreviewMat:MaterialExpressionScalarParameter_0'")
+    .MaterialExpressionEditorX=-440
+    .MaterialExpressionEditorY=44
+    .MaterialExpressionGuid=A4821ADE4093C16FE7FB87B4F14D05AC
+    .Material="/Script/Engine.Material'WeatherMaskPainter_PreviewMat'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_0)
+    Input                  <- MaterialExpressionTextureSampleParameter2D
+    .Input=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameter2D'WeatherMaskPainter_PreviewMat:MaterialExpressionTextureSampleParameter2D_1'",OutputIndex=1,Mask=1,MaskR=1)
+    .MaterialExpressionEditorX=-876
+    .MaterialExpressionEditorY=72
+    .MaterialExpressionGuid=15CB720840BCF7722E0F53BCB36AAB85
+    .Material="/Script/Engine.Material'WeatherMaskPainter_PreviewMat'"
+  MaterialExpressionPower (MaterialExpressionPower_0)
+    Base                   <- MaterialExpressionOneMinus
+    .Base=(Expression="/Script/Engine.MaterialExpressionOneMinus'WeatherMaskPainter_PreviewMat:MaterialExpressionOneMinus_0'")
+    .MaterialExpressionEditorX=-708
+    .MaterialExpressionEditorY=72
+    .MaterialExpressionGuid=E8A573F2476A585420EE8EAA01E292EB
+    .Material="/Script/Engine.Material'WeatherMaskPainter_PreviewMat'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_0)
+    .ParameterName="Lerp Alpha"
+    .DefaultValue=0.500000
+    .ExpressionGUID=D5ED7B1D404C4D7C7C5189A77B835202
+    .MaterialExpressionEditorX=-740
+    .MaterialExpressionEditorY=184
+    .MaterialExpressionGuid=8FD2D06449D70A13E4BAFD84B3207DBF
+    .Material="/Script/Engine.Material'WeatherMaskPainter_PreviewMat'"
+  MaterialExpressionTextureSampleParameter2D (MaterialExpressionTextureSampleParameter2D_0)
+    .ParameterName="SceneCapture"
+    .ExpressionGUID=C4850B1D464962FEAF7078A6CE0EB5CF
+    .SamplerSource=SSM_Clamp_WorldGroupSettings
+    .MaterialExpressionEditorX=-1056
+    .MaterialExpressionEditorY=-260
+    .MaterialExpressionGuid=A7C1F2104ADFB069A248AE82D6098985
+    .Material="/Script/Engine.Material'WeatherMaskPainter_PreviewMat'"
+  MaterialExpressionTextureSampleParameter2D (MaterialExpressionTextureSampleParameter2D_1)
+    .ParameterName="Brush Target"
+    .ExpressionGUID=535771C54213CB6FE962D38B4401A8E2
+    .SamplerSource=SSM_Clamp_WorldGroupSettings
+    .MaterialExpressionEditorX=-1140
+    .MaterialExpressionEditorY=28
+    .MaterialExpressionGuid=A7C1F2104ADFB069A248AE82D6098985
+    .Material="/Script/Engine.Material'WeatherMaskPainter_PreviewMat'"

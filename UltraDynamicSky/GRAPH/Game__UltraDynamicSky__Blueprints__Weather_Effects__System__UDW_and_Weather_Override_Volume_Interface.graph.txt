@@ -1,0 +1,100 @@
+### /Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface
+  Blueprint (UDW_and_Weather_Override_Volume_Interface)
+    .ParentClass="/Script/CoreUObject.Class'/Script/CoreUObject.Interface'"
+    .BlueprintType=BPTYPE_Interface
+    .bDeprecate=True
+    .BlueprintCategory="UltraDynamicWeather|System"
+    .BlueprintSystemVersion=2
+    .FunctionGraphs(0)="/Script/Engine.EdGraph'Get Season Temperature Ranges'"
+    .FunctionGraphs(1)="/Script/Engine.EdGraph'Get Random Weather Mode'"
+    .FunctionGraphs(2)="/Script/Engine.EdGraph'Get Random Weather Probability Maps'"
+    .FunctionGraphs(3)="/Script/Engine.EdGraph'Check for Material Refresh'"
+    .FunctionGraphs(4)="/Script/Engine.EdGraph'Force WOV Tick'"
+    .FunctionGraphs(5)="/Script/Engine.EdGraph'Get Next Random Weather and Timer Length'"
+    .FunctionGraphs(6)="/Script/Engine.EdGraph'Instant Material State Update'"
+    .CategorySorting(0)="Season"
+    .CategorySorting(1)="Random Weather"
+    .CategorySorting(2)="Material Effects"
+    .CategorySorting(3)="Weather Override Volumes"
+    .CategorySorting(4)=""
+    .LastEditedDocuments(0)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Random Weather Mode",SavedViewOffset=(X=-1407.000000,Y=-631.625000),SavedZoomAmount=1.000000)
+    .LastEditedDocuments(1)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_and_Weather_Override_Volume_Interface.UDW_and_Weather_Override_Volume_Interface:Get Next Random Weather and Timer Length",SavedViewOffset=(X=-1185.764771,Y=-561.125000),SavedZoomAmount=1.000000)
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfo'SceneThumbnailInfo_0'"
+    .GeneratedClass="/Script/Engine.BlueprintGeneratedClass'UDW_and_Weather_Override_Volume_Interface_C'"
+    .bLegacyNeedToPurgeSkelRefs=False
+    .BlueprintGuid=B423203C45BC16A1919929A71F41EC7B
+  EdGraph (Get Random Weather Probability Maps)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=4197717F429F6FEB0B776ABA667B56B7
+  K2Node_FunctionResult (K2Node_FunctionResult_0)
+    .FunctionReference=(MemberName="Get Next Random Weather and Timer Length")
+    .bIsEditable=True
+    .NodePosX=256
+    .NodeGuid=18E88FBE476C59BF69B5EF9232D8813B
+  K2Node_FunctionEntry (K2Node_FunctionEntry_0)
+    .MetaData=(Category=NSLOCTEXT("", "D840EEC946D7DA432F226C806342A095", "Material Effects"))
+    .ExtraFlags=201457664
+    .FunctionReference=(MemberName="Instant Material State Update")
+    .bIsEditable=True
+    .NodeGuid=02BCB9594783E663646858B8066AF4A3
+  EdGraph (Get Season Temperature Ranges)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=300CA6564A75BBB5B93242880E539573
+  EdGraph (Get Random Weather Mode)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=BA6ED0CE49E920EEDD0042A3BC70871B
+  EdGraph (Force WOV Tick)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .GraphGuid=F40868B54BCD1E76EDF7A3BC0F4B0C1D
+  EdGraph (Check for Material Refresh)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .GraphGuid=5457BBF944C07117268CF49649659DD3
+  EdGraph (Get Next Random Weather and Timer Length)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=8092805F447E9A437FBAE3B9CFBD6592
+  EdGraph (Instant Material State Update)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .GraphGuid=1C80BADC4D86D748EDF6C7B7165F876C
+  EdGraph (Get Season Temperature Ranges_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=300CA6564A75BBB5B93242880E539573
+  EdGraph (Get Random Weather Mode_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=BA6ED0CE49E920EEDD0042A3BC70871B
+  EdGraph (Get Random Weather Probability Maps_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=4197717F429F6FEB0B776ABA667B56B7
+  EdGraph (Check for Material Refresh_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .GraphGuid=5457BBF944C07117268CF49649659DD3
+  EdGraph (Force WOV Tick_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .GraphGuid=F40868B54BCD1E76EDF7A3BC0F4B0C1D
+  EdGraph (Get Next Random Weather and Timer Length_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=8092805F447E9A437FBAE3B9CFBD6592
+  EdGraph (Instant Material State Update_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .GraphGuid=1C80BADC4D86D748EDF6C7B7165F876C

@@ -1,0 +1,120 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_VolumetricFog_UV
+  MaterialFunction (MF_SC_VolumetricFog_UV)
+    .LibraryCategoriesText(0)=NSLOCTEXT("", "AA9C814A49D65297A041349950C33F83", "Sky Creator")
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'MF_SC_VolumetricFog_UVEditorOnlyData'"
+    .StateId=8B1A98EA4E98D1620431CA8AB3D46DB6
+    .CombinedInputTypes=15
+    .CombinedOutputTypes=15
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+  MaterialFunctionEditorOnlyData (MF_SC_VolumetricFog_UVEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'MF_SC_VolumetricFog_UV:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionWorldPosition'MF_SC_VolumetricFog_UV:MaterialExpressionWorldPosition_3'","/Script/Engine.MaterialExpressionDivide'MF_SC_VolumetricFog_UV:MaterialExpressionDivide_3'","/Script/Engine.MaterialExpressionAdd'MF_SC_VolumetricFog_UV:MaterialExpressionAdd_3'","/Script/Engine.MaterialExpressionFunctionInput'MF_SC_VolumetricFog_UV:MaterialExpressionFunctionInput_0'","/Script/Engine.MaterialExpressionFunctionInput'MF_SC_VolumetricFog_UV:MaterialExpressionFunctionInput_5'","/Script/Engine.MaterialExpressionDivide'MF_SC_VolumetricFog_UV:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionMultiply'MF_SC_VolumetricFog_UV:MaterialExpressionMultiply_1'","/Script/Engine.MaterialExpressionConstant'MF_SC_VolumetricFog_UV:MaterialExpressionConstant_1'","/Script/Engine.MaterialExpressionReroute'MF_SC_VolumetricFog_UV:MaterialExpressionReroute_0'","/Script/Engine.MaterialExpressionFunctionOutput'MF_SC_VolumetricFog_UV:MaterialExpressionFunctionOutput_1'","/Script/Engine.MaterialExpressionComponentMask'MF_SC_VolumetricFog_UV:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionReroute'MF_SC_VolumetricFog_UV:MaterialExpressionReroute_1'"))
+  MaterialExpressionAdd (MaterialExpressionAdd_3)
+    A                      <- MaterialExpressionDivide
+    B                      <- MaterialExpressionDivide
+    .B=(Expression="/Script/Engine.MaterialExpressionDivide'MF_SC_VolumetricFog_UV:MaterialExpressionDivide_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'MF_SC_VolumetricFog_UV:MaterialExpressionDivide_3'")
+    .MaterialExpressionEditorX=-128
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=10E199794D8CAEA00CE4979403E2DB4A
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricFog_UV'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionWorldPosition
+    .R=True
+    .G=True
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionWorldPosition'MF_SC_VolumetricFog_UV:MaterialExpressionWorldPosition_3'")
+    .MaterialExpressionEditorX=-640
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=FEA855A2490C8371916699AE5A605A3D
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricFog_UV'"
+  MaterialExpressionConstant (MaterialExpressionConstant_1)
+    .R=0.010000
+    .MaterialExpressionEditorX=-640
+    .MaterialExpressionEditorY=432
+    .MaterialExpressionGuid=9BB0FBEB48F955F1EAE37A9C85203FD2
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricFog_UV'"
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_VolumetricFog_UV:MaterialExpressionMultiply_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_VolumetricFog_UV:MaterialExpressionFunctionInput_5'")
+    .MaterialExpressionEditorX=-384
+    .MaterialExpressionEditorY=288
+    .MaterialExpressionGuid=1C036BF4466611DF7A32A4BF242AEDA7
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricFog_UV'"
+  MaterialExpressionDivide (MaterialExpressionDivide_3)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionReroute
+    .B=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_VolumetricFog_UV:MaterialExpressionReroute_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_VolumetricFog_UV:MaterialExpressionComponentMask_0'")
+    .MaterialExpressionEditorX=-384
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=34C9ED914926EBA9E771C4990FADAD7B
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricFog_UV'"
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_0)
+    .InputName="Scale"
+    .Id=684C7EC94CF2308BD4E7FA8F196E0535
+    .InputType=FunctionInput_Scalar
+    .PreviewValue=(X=50.000000,Y=0.000000,Z=0.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .MaterialExpressionEditorX=-896
+    .MaterialExpressionEditorY=128
+    .MaterialExpressionGuid=F57F203149D46E3AC7B77887D25155EB
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricFog_UV'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_5)
+    .InputName="Wind Offset"
+    .Id=A83935B2410B379559DE75A03C606991
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=1
+    .MaterialExpressionEditorX=-640
+    .MaterialExpressionEditorY=288
+    .MaterialExpressionGuid=F57F203149D46E3AC7B77887D25155EB
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricFog_UV'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionAdd
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'MF_SC_VolumetricFog_UV:MaterialExpressionAdd_3'")
+    .bLastPreviewed=True
+    .Id=84D0816E49714F8007B29D9840E5C8DE
+    .MaterialExpressionGuid=3A8982EB43698DF71B1C52A95E3A83E5
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricFog_UV'"
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_1)
+    A                      <- MaterialExpressionDivide
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'MF_SC_VolumetricFog_UV:MaterialExpressionDivide_3'")
+    .OutputName="Scale Only"
+    .SortPriority=1
+    .Id=C1BB63694FC396723B340F980F5E0AF2
+    .MaterialExpressionEditorY=256
+    .MaterialExpressionGuid=18BCB6174C68870DB83D8DB950E34B4A
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricFog_UV'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionReroute
+    B                      <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'MF_SC_VolumetricFog_UV:MaterialExpressionConstant_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_VolumetricFog_UV:MaterialExpressionReroute_0'")
+    .ConstB=100000.000000
+    .MaterialExpressionEditorX=-512
+    .MaterialExpressionEditorY=368
+    .MaterialExpressionGuid=78B714514601E1DEC2F36D818F32F1BD
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricFog_UV'"
+  MaterialExpressionReroute (MaterialExpressionReroute_0)
+    Input                  <- MaterialExpressionFunctionInput
+    .Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_VolumetricFog_UV:MaterialExpressionFunctionInput_0'")
+    .MaterialExpressionEditorX=-656
+    .MaterialExpressionEditorY=400
+    .MaterialExpressionGuid=FE5AA98C484642F86CE1398641841DB3
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricFog_UV'"
+  MaterialExpressionReroute (MaterialExpressionReroute_1)
+    Input                  <- MaterialExpressionFunctionInput
+    .Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_VolumetricFog_UV:MaterialExpressionFunctionInput_0'")
+    .MaterialExpressionEditorX=-544
+    .MaterialExpressionEditorY=160
+    .MaterialExpressionGuid=D6FA319443F2A281E6EB9B9EBC96BC25
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricFog_UV'"
+  MaterialExpressionWorldPosition (MaterialExpressionWorldPosition_3)
+    .MaterialExpressionEditorX=-896
+    .MaterialExpressionEditorY=16
+    .MaterialExpressionGuid=5BCE7FE54CB12C552D1BF8B0CAD8F05D
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricFog_UV'"

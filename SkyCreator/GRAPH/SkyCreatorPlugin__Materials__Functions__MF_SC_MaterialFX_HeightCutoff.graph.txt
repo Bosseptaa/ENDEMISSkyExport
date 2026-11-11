@@ -1,0 +1,73 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_MaterialFX_HeightCutoff
+  MaterialFunction (MF_SC_MaterialFX_HeightCutoff)
+    .LibraryCategoriesText(0)=NSLOCTEXT("", "B76EACE247A9C3D868DD8396279E4AE9", "Sky Creator")
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'MF_SC_MaterialFX_HeightCutoffEditorOnlyData'"
+    .StateId=A5A4F12F40F42A791923698DC0FC2FA2
+    .CombinedOutputTypes=15
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+  MaterialFunctionEditorOnlyData (MF_SC_MaterialFX_HeightCutoffEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'MF_SC_MaterialFX_HeightCutoff:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionWorldPosition'MF_SC_MaterialFX_HeightCutoff:MaterialExpressionWorldPosition_0'","/Script/Engine.MaterialExpressionSaturate'MF_SC_MaterialFX_HeightCutoff:MaterialExpressionSaturate_0'","/Script/Engine.MaterialExpressionDivide'MF_SC_MaterialFX_HeightCutoff:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_MaterialFX_HeightCutoff:MaterialExpressionCollectionParameter_0'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_MaterialFX_HeightCutoff:MaterialExpressionCollectionParameter_1'","/Script/Engine.MaterialExpressionSubtract'MF_SC_MaterialFX_HeightCutoff:MaterialExpressionSubtract_0'","/Script/Engine.MaterialExpressionComponentMask'MF_SC_MaterialFX_HeightCutoff:MaterialExpressionComponentMask_1'"))
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_0)
+    .ParameterName="Material FX Height Cutoff"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=12651D2C4A2376B190D322839234A44E
+    .MaterialExpressionEditorX=-896
+    .MaterialExpressionEditorY=128
+    .MaterialExpressionGuid=51548EAB4F3E95B13C53C1A268FB1B3D
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_HeightCutoff'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_1)
+    .ParameterName="Material FX Cutoff Softness"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=D2AE081C4581C86456452CA4E47E376C
+    .MaterialExpressionEditorX=-640
+    .MaterialExpressionEditorY=128
+    .MaterialExpressionGuid=51548EAB4F3E95B13C53C1A268FB1B3D
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_HeightCutoff'"
+    .bCollapsed=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_1)
+    Input                  <- MaterialExpressionWorldPosition
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionWorldPosition'MF_SC_MaterialFX_HeightCutoff:MaterialExpressionWorldPosition_0'")
+    .MaterialExpressionEditorX=-896
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=7D8A9DFF41FE694EBDFE029BA7316CB3
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_HeightCutoff'"
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_MaterialFX_HeightCutoff:MaterialExpressionCollectionParameter_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'MF_SC_MaterialFX_HeightCutoff:MaterialExpressionSubtract_0'")
+    .MaterialExpressionEditorX=-384
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=7C2A39F2466D1F714CCA5BBA073C95A8
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_HeightCutoff'"
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionSaturate
+    .A=(Expression="/Script/Engine.MaterialExpressionSaturate'MF_SC_MaterialFX_HeightCutoff:MaterialExpressionSaturate_0'")
+    .bLastPreviewed=True
+    .Id=F2390D6F419C13D4FBE4C4B168E79FFC
+    .MaterialExpressionGuid=DAC141F84F06B8E33CB0A982C5C2D537
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_HeightCutoff'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_0)
+    Input                  <- MaterialExpressionDivide
+    .Input=(Expression="/Script/Engine.MaterialExpressionDivide'MF_SC_MaterialFX_HeightCutoff:MaterialExpressionDivide_0'")
+    .MaterialExpressionEditorX=-256
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=095EC4ED4F8F21DCB39FF8B448881DC1
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_HeightCutoff'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_0)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_MaterialFX_HeightCutoff:MaterialExpressionCollectionParameter_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_MaterialFX_HeightCutoff:MaterialExpressionComponentMask_1'")
+    .MaterialExpressionEditorX=-640
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=B04689DD48C326993C70C7B4C2F03D24
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_HeightCutoff'"
+  MaterialExpressionWorldPosition (MaterialExpressionWorldPosition_0)
+    .MaterialExpressionEditorX=-1152
+    .MaterialExpressionEditorY=16
+    .MaterialExpressionGuid=77C8B197473B2ABBA99183A8D4376B06
+    .Function="/Script/Engine.MaterialFunction'MF_SC_MaterialFX_HeightCutoff'"

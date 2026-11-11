@@ -1,0 +1,423 @@
+### /Game/UltraDynamicSky/Materials/Weather/DLWE_Trail_Brush
+  Material (DLWE_Trail_Brush)
+    .MaterialDomain=MD_UI
+    .BlendMode=BLEND_Translucent
+    .MaterialDecalResponse=MDR_None
+    .ShadingModel=MSM_Unlit
+    .ShadingModels=(ShadingModelField=1)
+    .EditorX=3044
+    .EditorY=432
+    .bCanMaskedBeAssumedOpaque=True
+    .bCastRayTracedShadows=False
+    .PixelDepthOffsetMode=PDOM_Legacy
+    .StateId=3749491E4A6E3B611AF7C19690737312
+    .ReferencedTextureGuids(0)=08E514CE46C9586E6401ABBD2E77DFBB
+    .ReferencedTextureGuids(1)=9080AA1E47B0FE7B95E79A93A36D2556
+    .ReferencedTextureGuids(2)=3AA5B0EB4B70EABD919D26896508BC7D
+    .EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'DLWE_Trail_BrushEditorOnlyData'"
+    .ReferencedDefaultTextures(0)="/Script/Engine.TextureRenderTarget2D'/Game/UltraDynamicSky/Textures/Weather/DLWE_MaskTarget.DLWE_MaskTarget'"
+    .ReferencedDefaultTextures(1)="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_WhiteNoise512.T_WhiteNoise512'"
+    .ReferencedDefaultTextures(2)="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_ParticleClouds.T_ParticleClouds'"
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+    .ParameterOverviewExpansion=(("-12Global", True))
+    .LightingGuid=D1F74C3441A367B107B60192E747E9E6
+  MaterialEditorOnlyData (DLWE_Trail_BrushEditorOnlyData)
+    EmissiveColor          <- MaterialExpressionFeatureLevelSwitch
+    Opacity                <- MaterialExpressionMultiply
+    MaterialAttributes     <- MaterialExpressionFeatureLevelSwitch
+    ExpressionCollection   <- MaterialExpressionFeatureLevelSwitch
+    .BaseColor=(UseConstant=True,Constant=(R=0.501961,G=0.501961,B=0.501961,A=1.000000))
+    .Metallic=(UseConstant=True)
+    .Specular=(UseConstant=True)
+    .Roughness=(UseConstant=True)
+    .Anisotropy=(UseConstant=True)
+    .Normal=(UseConstant=True)
+    .Tangent=(UseConstant=True)
+    .EmissiveColor=(Expression="/Script/Engine.MaterialExpressionFeatureLevelSwitch'DLWE_Trail_Brush:MaterialExpressionFeatureLevelSwitch_2'")
+    .Opacity=(Expression="/Script/Engine.MaterialExpressionMultiply'DLWE_Trail_Brush:MaterialExpressionMultiply_6'")
+    .OpacityMask=(UseConstant=True)
+    .WorldPositionOffset=(UseConstant=True)
+    .Displacement=(UseConstant=True)
+    .SubsurfaceColor=(UseConstant=True)
+    .ClearCoat=(UseConstant=True)
+    .ClearCoatRoughness=(UseConstant=True)
+    .AmbientOcclusion=(UseConstant=True)
+    .Refraction=(UseConstant=True)
+    .CustomizedUVs(0)=(UseConstant=True)
+    .CustomizedUVs(1)=(UseConstant=True)
+    .CustomizedUVs(2)=(UseConstant=True)
+    .CustomizedUVs(3)=(UseConstant=True)
+    .CustomizedUVs(4)=(UseConstant=True)
+    .CustomizedUVs(5)=(UseConstant=True)
+    .CustomizedUVs(6)=(UseConstant=True)
+    .CustomizedUVs(7)=(UseConstant=True)
+    .MaterialAttributes=(Expression="/Script/Engine.MaterialExpressionFeatureLevelSwitch'DLWE_Trail_Brush:MaterialExpressionFeatureLevelSwitch_2'")
+    .PixelDepthOffset=(UseConstant=True)
+    .SurfaceThickness=(UseConstant=True)
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFeatureLevelSwitch'DLWE_Trail_Brush:MaterialExpressionFeatureLevelSwitch_2'","/Script/Engine.MaterialExpressionMultiply'DLWE_Trail_Brush:MaterialExpressionMultiply_2'","/Script/Engine.MaterialExpressionMaterialFunctionCall'DLWE_Trail_Brush:MaterialExpressionMaterialFunctionCall_3'","/Script/Engine.MaterialExpressionConstant'DLWE_Trail_Brush:MaterialExpressionConstant_0'","/Script/Engine.MaterialExpressionScalarParameter'DLWE_Trail_Brush:MaterialExpressionScalarParameter_0'","/Script/Engine.MaterialExpressionFeatureLevelSwitch'DLWE_Trail_Brush:MaterialExpressionFeatureLevelSwitch_0'","/Script/Engine.MaterialExpressionSubtract'DLWE_Trail_Brush:MaterialExpressionSubtract_0'","/Script/Engine.MaterialExpressionMultiply'DLWE_Trail_Brush:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionAdd'DLWE_Trail_Brush:MaterialExpressionAdd_3'","/Script/Engine.MaterialExpressionTextureCoordinate'DLWE_Trail_Brush:MaterialExpressionTextureCoordinate_0'","/Script/Engine.MaterialExpressionComponentMask'DLWE_Trail_Brush:MaterialExpressionComponentMask_4'","/Script/Engine.MaterialExpressionComponentMask'DLWE_Trail_Brush:MaterialExpressionComponentMask_5'","/Script/Engine.MaterialExpressionDistance'DLWE_Trail_Brush:MaterialExpressionDistance_1'","/Script/Engine.MaterialExpressionConstant'DLWE_Trail_Brush:MaterialExpressionConstant_1'","/Script/Engine.MaterialExpressionMultiply'DLWE_Trail_Brush:MaterialExpressionMultiply_8'","/Script/Engine.MaterialExpressionOneMinus'DLWE_Trail_Brush:MaterialExpressionOneMinus_1'","/Script/Engine.MaterialExpressionMultiply'DLWE_Trail_Brush:MaterialExpressionMultiply_9'","/Script/Engine.MaterialExpressionSaturate'DLWE_Trail_Brush:MaterialExpressionSaturate_0'","/Script/Engine.MaterialExpressionDivide'DLWE_Trail_Brush:MaterialExpressionDivide_2'","/Script/Engine.MaterialExpressionAppendVector'DLWE_Trail_Brush:MaterialExpressionAppendVector_0'","/Script/Engine.MaterialExpressionScalarParameter'DLWE_Trail_Brush:MaterialExpressionScalarParameter_1'","/Script/Engine.MaterialExpressionTextureSample'DLWE_Trail_Brush:MaterialExpressionTextureSample_3'","/Script/Engine.MaterialExpressionLinearInterpolate'DLWE_Trail_Brush:MaterialExpressionLinearInterpolate_1'","/Script/Engine.MaterialExpressionConstant'DLWE_Trail_Brush:MaterialExpressionConstant_2'","/Script/Engine.MaterialExpressionMaterialFunctionCall'DLWE_Trail_Brush:MaterialExpressionMaterialFunctionCall_1'","/Script/Engine.MaterialExpressionConstant'DLWE_Trail_Brush:MaterialExpressionConstant_4'","/Script/Engine.MaterialExpressionAdd'DLWE_Trail_Brush:MaterialExpressionAdd_4'","/Script/Engine.MaterialExpressionScalarParameter'DLWE_Trail_Brush:MaterialExpressionScalarParameter_4'","/Script/Engine.MaterialExpressionScreenPosition'DLWE_Trail_Brush:MaterialExpressionScreenPosition_2'","/Script/Engine.MaterialExpressionMultiply'DLWE_Trail_Brush:MaterialExpressionMultiply_11'","/Script/Engine.MaterialExpressionCollectionParameter'DLWE_Trail_Brush:MaterialExpressionCollectionParameter_0'","/Script/Engine.MaterialExpressionComponentMask'DLWE_Trail_Brush:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionDivide'DLWE_Trail_Brush:MaterialExpressionDivide_1'","/Script/Engine.MaterialExpressionMultiply'DLWE_Trail_Brush:MaterialExpressionMultiply_1'","/Script/Engine.MaterialExpressionScreenPosition'DLWE_Trail_Brush:MaterialExpressionScreenPosition_0'","/Script/Engine.MaterialExpressionSubtract'DLWE_Trail_Brush:MaterialExpressionSubtract_1'","/Script/Engine.MaterialExpressionAbs'DLWE_Trail_Brush:MaterialExpressionAbs_0'","/Script/Engine.MaterialExpressionMultiply'DLWE_Trail_Brush:MaterialExpressionMultiply_3'","/Script/Engine.MaterialExpressionOneMinus'DLWE_Trail_Brush:MaterialExpressionOneMinus_0'","/Script/Engine.MaterialExpressionMultiply'DLWE_Trail_Brush:MaterialExpressionMultiply_4'","/Script/Engine.MaterialExpressionSaturate'DLWE_Trail_Brush:MaterialExpressionSaturate_1'","/Script/Engine.MaterialExpressionComponentMask'DLWE_Trail_Brush:MaterialExpressionComponentMask_2'","/Script/Engine.MaterialExpressionComponentMask'DLWE_Trail_Brush:MaterialExpressionComponentMask_3'","/Script/Engine.MaterialExpressionMultiply'DLWE_Trail_Brush:MaterialExpressionMultiply_5'","/Script/Engine.MaterialExpressionMultiply'DLWE_Trail_Brush:MaterialExpressionMultiply_6'"),EditorComments=("/Script/Engine.MaterialExpressionComment'DLWE_Trail_Brush:MaterialExpressionComment_0'"))
+    .ParameterGroupData(0)=(GroupName="None")
+  MaterialExpressionAbs (MaterialExpressionAbs_0)
+    Input                  <- MaterialExpressionSubtract
+    .Input=(Expression="/Script/Engine.MaterialExpressionSubtract'DLWE_Trail_Brush:MaterialExpressionSubtract_1'")
+    .MaterialExpressionEditorX=1948
+    .MaterialExpressionEditorY=992
+    .MaterialExpressionGuid=6342C7A54ECE65D0BD0382B55ED4D1A5
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"
+  MaterialExpressionAdd (MaterialExpressionAdd_3)
+    A                      <- MaterialExpressionMultiply
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'DLWE_Trail_Brush:MaterialExpressionMultiply_0'")
+    .ConstB=0.500000
+    .MaterialExpressionEditorX=632
+    .MaterialExpressionEditorY=676
+    .MaterialExpressionGuid=AA07BDA7431ECC692DEB9F946E933A54
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"
+  MaterialExpressionAdd (MaterialExpressionAdd_4)
+    A                      <- MaterialExpressionScreenPosition
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'DLWE_Trail_Brush:MaterialExpressionScalarParameter_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionScreenPosition'DLWE_Trail_Brush:MaterialExpressionScreenPosition_2'")
+    .MaterialExpressionEditorX=56
+    .MaterialExpressionEditorY=848
+    .MaterialExpressionGuid=1DC2FE2643CB67169D099BA045937827
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_0)
+    A                      <- MaterialExpressionDivide
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'DLWE_Trail_Brush:MaterialExpressionComponentMask_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'DLWE_Trail_Brush:MaterialExpressionDivide_2'")
+    .MaterialExpressionEditorX=244
+    .MaterialExpressionEditorY=676
+    .MaterialExpressionGuid=26A7C9784B6EAD9CDDE8F89650E8A080
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_0)
+    .ParameterName="DLWE_Render Target Mapping"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+    .ParameterId=D88ABE3B4B0695382525D6936A055ABE
+    .MaterialExpressionEditorX=-324
+    .MaterialExpressionEditorY=1028
+    .MaterialExpressionGuid=7CBC25674D8F089AF932C38E5AAEFED3
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"
+    .bCollapsed=True
+  MaterialExpressionComment (MaterialExpressionComment_0)
+    .SizeX=2596
+    .SizeY=684
+    .Text="SM5"
+    .MaterialExpressionEditorX=-1148
+    .MaterialExpressionEditorY=524
+    .MaterialExpressionGuid=EADB8A364DF3AB673AE99A8F6EEC8B21
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionCollectionParameter
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'DLWE_Trail_Brush:MaterialExpressionCollectionParameter_0'")
+    .MaterialExpressionEditorX=-56
+    .MaterialExpressionEditorY=1056
+    .MaterialExpressionGuid=DE7F1BCE46A6EB77AB792EAACA929E20
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_2)
+    Input                  <- MaterialExpressionSaturate
+    .R=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionSaturate'DLWE_Trail_Brush:MaterialExpressionSaturate_1'")
+    .MaterialExpressionEditorX=2528
+    .MaterialExpressionEditorY=928
+    .MaterialExpressionGuid=11B84FCD459315A897C065B2CE29EB02
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_3)
+    Input                  <- MaterialExpressionSaturate
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionSaturate'DLWE_Trail_Brush:MaterialExpressionSaturate_1'")
+    .MaterialExpressionEditorX=2528
+    .MaterialExpressionEditorY=1024
+    .MaterialExpressionGuid=F5AAC3E643AAC09D18DAC09C048167FF
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_4)
+    Input                  <- MaterialExpressionTextureCoordinate
+    .R=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'DLWE_Trail_Brush:MaterialExpressionTextureCoordinate_0'")
+    .MaterialExpressionEditorX=-908
+    .MaterialExpressionEditorY=616
+    .MaterialExpressionGuid=137898AB4EA349D4054BD6AFCA38C095
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_5)
+    Input                  <- MaterialExpressionTextureCoordinate
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'DLWE_Trail_Brush:MaterialExpressionTextureCoordinate_0'")
+    .MaterialExpressionEditorX=-908
+    .MaterialExpressionEditorY=712
+    .MaterialExpressionGuid=4E6CDFDB4A33C8992B68B6B8812EE290
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"
+  MaterialExpressionConstant (MaterialExpressionConstant_0)
+    .R=1.000000
+    .MaterialExpressionEditorX=1644
+    .MaterialExpressionEditorY=864
+    .MaterialExpressionGuid=4A0B69D1465C575881EDA7967B0EBF1E
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"
+  MaterialExpressionConstant (MaterialExpressionConstant_1)
+    .R=0.500000
+    .MaterialExpressionEditorX=-756
+    .MaterialExpressionEditorY=672
+    .MaterialExpressionGuid=55A9AE2E4E898B39986965A8EBA20C0B
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"
+  MaterialExpressionConstant (MaterialExpressionConstant_2)
+    .MaterialExpressionEditorX=1620
+    .MaterialExpressionEditorY=432
+    .MaterialExpressionGuid=D0D857674B6850599CC1B39A6734E7E1
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"
+  MaterialExpressionConstant (MaterialExpressionConstant_4)
+    .R=3.000000
+    .MaterialExpressionEditorX=816
+    .MaterialExpressionEditorY=956
+    .MaterialExpressionGuid=B38CE2AF48502ED54A775CBAB929C1AD
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"
+  MaterialExpressionDistance (MaterialExpressionDistance_1)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'DLWE_Trail_Brush:MaterialExpressionConstant_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'DLWE_Trail_Brush:MaterialExpressionComponentMask_4'")
+    .MaterialExpressionEditorX=-596
+    .MaterialExpressionEditorY=616
+    .MaterialExpressionGuid=5BADCCB24AF788C2DE7E2BB5A01D339A
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"
+  MaterialExpressionDivide (MaterialExpressionDivide_1)
+    A                      <- MaterialExpressionComponentMask
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'DLWE_Trail_Brush:MaterialExpressionComponentMask_0'")
+    .ConstB=100.000000
+    .MaterialExpressionEditorX=84
+    .MaterialExpressionEditorY=1052
+    .MaterialExpressionGuid=0C9574DF4D1875EC1A1D0D8630497E06
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"
+  MaterialExpressionDivide (MaterialExpressionDivide_2)
+    A                      <- MaterialExpressionSaturate
+    .A=(Expression="/Script/Engine.MaterialExpressionSaturate'DLWE_Trail_Brush:MaterialExpressionSaturate_0'")
+    .MaterialExpressionEditorX=76
+    .MaterialExpressionEditorY=620
+    .MaterialExpressionGuid=B10C65CD498CB7E6AA753184576A2765
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"
+  MaterialExpressionFeatureLevelSwitch (MaterialExpressionFeatureLevelSwitch_0)
+    Default                <- MaterialExpressionMultiply
+    Inputs(4)              <- MaterialExpressionConstant
+    .Default=(Expression="/Script/Engine.MaterialExpressionMultiply'DLWE_Trail_Brush:MaterialExpressionMultiply_1'")
+    .Inputs(4)=(Expression="/Script/Engine.MaterialExpressionConstant'DLWE_Trail_Brush:MaterialExpressionConstant_0'")
+    .MaterialExpressionEditorX=1816
+    .MaterialExpressionEditorY=676
+    .MaterialExpressionGuid=D51E3D9B402AB249687B4F9127541888
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"
+  MaterialExpressionFeatureLevelSwitch (MaterialExpressionFeatureLevelSwitch_2)
+    Default                <- MaterialExpressionConstant
+    Inputs(4)              <- MaterialExpressionMaterialFunctionCall
+    .Default=(Expression="/Script/Engine.MaterialExpressionConstant'DLWE_Trail_Brush:MaterialExpressionConstant_2'")
+    .Inputs(4)=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'DLWE_Trail_Brush:MaterialExpressionMaterialFunctionCall_3'")
+    .MaterialExpressionEditorX=1816
+    .MaterialExpressionEditorY=432
+    .MaterialExpressionGuid=D51E3D9B402AB249687B4F9127541888
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_1)
+    Alpha                  <- MaterialExpressionTextureSample
+    .A=(OutputIndex=1,Mask=1,MaskR=1)
+    .ConstA=0.350000
+    .ConstB=0.650000
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionTextureSample'DLWE_Trail_Brush:MaterialExpressionTextureSample_3'",OutputIndex=1,Mask=1,MaskR=1)
+    .MaterialExpressionEditorX=712
+    .MaterialExpressionEditorY=808
+    .MaterialExpressionGuid=907917654853132532BA71AED85D5958
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_1)
+    FunctionInputs(0)      <- MaterialExpressionAdd
+    FunctionInputs(2)      <- MaterialExpressionLinearInterpolate
+    FunctionInputs(3)      <- MaterialExpressionConstant
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/RadialGradientBasic.RadialGradientBasic'"
+    .FunctionInputs(0)=(ExpressionInputId=3D670BAB449CC330AF1A0D98994C2A90,Input=(Expression="/Script/Engine.MaterialExpressionAdd'DLWE_Trail_Brush:MaterialExpressionAdd_3'",InputName="UV"))
+    .FunctionInputs(1)=(ExpressionInputId=08954A7C4248905A30D7B0B88B75B62F,Input=(OutputIndex=-1,InputName="Center"))
+    .FunctionInputs(2)=(ExpressionInputId=131CA7274C02CDA166B9749B5EE24A64,Input=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'DLWE_Trail_Brush:MaterialExpressionLinearInterpolate_1'",InputName="Radius"))
+    .FunctionInputs(3)=(ExpressionInputId=3FBB53124DEA3B7CC52CEAA08FF6C9ED,Input=(Expression="/Script/Engine.MaterialExpressionConstant'DLWE_Trail_Brush:MaterialExpressionConstant_4'",InputName="Density"))
+    .FunctionOutputs(0)=(ExpressionOutputId=327E073F424BB1EF2B65E58605E267EE,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=1016
+    .MaterialExpressionEditorY=676
+    .MaterialExpressionGuid=DCAC198D4C0EB27D386E20984834BF63
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_3)
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Weather/DLWE_Trail_Pixel_Operation.DLWE_Trail_Pixel_Operation'"
+    .FunctionOutputs(0)=(ExpressionOutputId=6E2A519D45022BBE96D22A9F2C822FD4,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=1536
+    .MaterialExpressionEditorY=584
+    .MaterialExpressionGuid=2129BB814E827BB999406AB16F9C9B74
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionSubtract
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'DLWE_Trail_Brush:MaterialExpressionSubtract_0'")
+    .ConstB=1.500000
+    .MaterialExpressionEditorX=496
+    .MaterialExpressionEditorY=680
+    .MaterialExpressionGuid=0E8F51084457E9A90CCDC4A34873138F
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'DLWE_Trail_Brush:MaterialExpressionMaterialFunctionCall_1'")
+    .ConstB=0.500000
+    .MaterialExpressionEditorX=1208
+    .MaterialExpressionEditorY=672
+    .MaterialExpressionGuid=4361B54C4755127286508A916D92CBA5
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_11)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionDivide
+    .B=(Expression="/Script/Engine.MaterialExpressionDivide'DLWE_Trail_Brush:MaterialExpressionDivide_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'DLWE_Trail_Brush:MaterialExpressionAdd_4'")
+    .MaterialExpressionEditorX=308
+    .MaterialExpressionEditorY=848
+    .MaterialExpressionGuid=3564044345F3769601326B9F171F4638
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_2)
+    A                      <- MaterialExpressionFeatureLevelSwitch
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'DLWE_Trail_Brush:MaterialExpressionScalarParameter_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFeatureLevelSwitch'DLWE_Trail_Brush:MaterialExpressionFeatureLevelSwitch_0'")
+    .MaterialExpressionEditorX=2256
+    .MaterialExpressionEditorY=676
+    .MaterialExpressionGuid=81BD414E4E5D9997214C829F4D73437B
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_3)
+    A                      <- MaterialExpressionAbs
+    .A=(Expression="/Script/Engine.MaterialExpressionAbs'DLWE_Trail_Brush:MaterialExpressionAbs_0'")
+    .ConstB=2.000000
+    .MaterialExpressionEditorX=2032
+    .MaterialExpressionEditorY=992
+    .MaterialExpressionGuid=BEBD17E6477664EAEAF4F6BE1A77CA5A
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_4)
+    A                      <- MaterialExpressionOneMinus
+    .A=(Expression="/Script/Engine.MaterialExpressionOneMinus'DLWE_Trail_Brush:MaterialExpressionOneMinus_0'")
+    .ConstB=15.000000
+    .MaterialExpressionEditorX=2260
+    .MaterialExpressionEditorY=992
+    .MaterialExpressionGuid=D5E3BDE9411ACA90908E4A9B2AC7A689
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_5)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'DLWE_Trail_Brush:MaterialExpressionComponentMask_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'DLWE_Trail_Brush:MaterialExpressionComponentMask_2'")
+    .MaterialExpressionEditorX=2664
+    .MaterialExpressionEditorY=956
+    .MaterialExpressionGuid=D7AE3EBF44612D780EC271944EBC145D
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_6)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'DLWE_Trail_Brush:MaterialExpressionMultiply_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'DLWE_Trail_Brush:MaterialExpressionMultiply_2'")
+    .MaterialExpressionEditorX=2832
+    .MaterialExpressionEditorY=672
+    .MaterialExpressionGuid=F1D29E11442811327E168BBB68BF39F5
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_8)
+    A                      <- MaterialExpressionDistance
+    .A=(Expression="/Script/Engine.MaterialExpressionDistance'DLWE_Trail_Brush:MaterialExpressionDistance_1'")
+    .ConstB=2.000000
+    .MaterialExpressionEditorX=-472
+    .MaterialExpressionEditorY=616
+    .MaterialExpressionGuid=D57607E8406F7371CEB82AAF7053D4AB
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_9)
+    A                      <- MaterialExpressionOneMinus
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'DLWE_Trail_Brush:MaterialExpressionScalarParameter_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionOneMinus'DLWE_Trail_Brush:MaterialExpressionOneMinus_1'")
+    .ConstB=5.000000
+    .MaterialExpressionEditorX=-248
+    .MaterialExpressionEditorY=620
+    .MaterialExpressionGuid=CF915DE34FA888355B6260935091CDD1
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_0)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'DLWE_Trail_Brush:MaterialExpressionMultiply_3'")
+    .MaterialExpressionEditorX=2168
+    .MaterialExpressionEditorY=992
+    .MaterialExpressionGuid=901633B5495375AA5D95C4AB37B68E66
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_1)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'DLWE_Trail_Brush:MaterialExpressionMultiply_8'")
+    .MaterialExpressionEditorX=-344
+    .MaterialExpressionEditorY=620
+    .MaterialExpressionGuid=ED0376DB4CAF87BE05B1998432F54FB2
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_0)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'DLWE_Trail_Brush:MaterialExpressionMultiply_9'")
+    .MaterialExpressionEditorX=-124
+    .MaterialExpressionEditorY=620
+    .MaterialExpressionGuid=77667C7141A7A94606F2E2AF661BC594
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_1)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'DLWE_Trail_Brush:MaterialExpressionMultiply_4'")
+    .MaterialExpressionEditorX=2396
+    .MaterialExpressionEditorY=992
+    .MaterialExpressionGuid=0DFD982D47582621196507A47F171950
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_0)
+    .ParameterName="Depth Fraction"
+    .DefaultValue=1.000000
+    .ExpressionGUID=5306162C448257B01C1B72BA4D56191C
+    .MaterialExpressionEditorX=2052
+    .MaterialExpressionEditorY=748
+    .MaterialExpressionGuid=C582822E47C6968736E8F5826F347527
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_1)
+    .ParameterName="X Scale"
+    .DefaultValue=1.000000
+    .ExpressionGUID=3FFCC27344CCB840336013AD51A4F4F3
+    .MaterialExpressionEditorX=-496
+    .MaterialExpressionEditorY=748
+    .MaterialExpressionGuid=9505A5D44C97B061FBAB3CACDFFA2B1A
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_4)
+    .ParameterName="Random Noise Offset"
+    .ExpressionGUID=1A31BDCC4A1D3EAC08BCEA907B3A22BE
+    .MaterialExpressionEditorX=-160
+    .MaterialExpressionEditorY=928
+    .MaterialExpressionGuid=042D6CDA405D4D4C8CECAA9EE02B10D4
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"
+  MaterialExpressionScreenPosition (MaterialExpressionScreenPosition_0)
+    .MaterialExpressionEditorX=1636
+    .MaterialExpressionEditorY=976
+    .MaterialExpressionGuid=0FA8C61B44B16B5B4AEEBE9CDC38F83F
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"
+  MaterialExpressionScreenPosition (MaterialExpressionScreenPosition_2)
+    .MaterialExpressionEditorX=-124
+    .MaterialExpressionEditorY=820
+    .MaterialExpressionGuid=F7A0EDDD4841E8B2AEFFFD9D116CB032
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_0)
+    A                      <- MaterialExpressionAppendVector
+    .A=(Expression="/Script/Engine.MaterialExpressionAppendVector'DLWE_Trail_Brush:MaterialExpressionAppendVector_0'")
+    .ConstB=0.500000
+    .MaterialExpressionEditorX=356
+    .MaterialExpressionEditorY=676
+    .MaterialExpressionGuid=658B0CB74C8D3AEE88130D8F63E31931
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_1)
+    A                      <- MaterialExpressionScreenPosition
+    .A=(Expression="/Script/Engine.MaterialExpressionScreenPosition'DLWE_Trail_Brush:MaterialExpressionScreenPosition_0'")
+    .ConstB=0.500000
+    .MaterialExpressionEditorX=1800
+    .MaterialExpressionEditorY=992
+    .MaterialExpressionGuid=F01125B24173D14572D757A32224E556
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"
+  MaterialExpressionTextureCoordinate (MaterialExpressionTextureCoordinate_0)
+    .MaterialExpressionEditorX=-1120
+    .MaterialExpressionEditorY=616
+    .MaterialExpressionGuid=62DFAADE49628F563129F589C033A22C
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_3)
+    Coordinates            <- MaterialExpressionMultiply
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_ParticleClouds.T_ParticleClouds'"
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionMultiply'DLWE_Trail_Brush:MaterialExpressionMultiply_11'")
+    .MipValueMode=TMVM_MipLevel
+    .MaterialExpressionEditorX=448
+    .MaterialExpressionEditorY=848
+    .MaterialExpressionGuid=34F59C054DF20C4705EA8A9BC4DB08D8
+    .Material="/Script/Engine.Material'DLWE_Trail_Brush'"

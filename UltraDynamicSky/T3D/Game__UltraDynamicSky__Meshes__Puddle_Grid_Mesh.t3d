@@ -1,0 +1,57 @@
+Begin Object Class=/Script/Engine.StaticMesh Name="Puddle_Grid_Mesh" ExportPath="/Script/Engine.StaticMesh'/Game/UltraDynamicSky/Meshes/Puddle_Grid_Mesh.Puddle_Grid_Mesh'"
+   Begin Object Class=/Script/Engine.StaticMeshDescriptionBulkData Name="HiResMeshDescription" Archetype="/Script/Engine.StaticMeshDescriptionBulkData'/Script/Engine.Default__StaticMesh:HiResMeshDescription'" ExportPath="/Script/Engine.StaticMeshDescriptionBulkData'/Game/UltraDynamicSky/Meshes/Puddle_Grid_Mesh.Puddle_Grid_Mesh:HiResMeshDescription'"
+      Begin Object Class=/Script/StaticMeshDescription.StaticMeshDescription Name="MeshDescription" Archetype="/Script/StaticMeshDescription.StaticMeshDescription'/Script/Engine.Default__StaticMesh:HiResMeshDescription.MeshDescription'" ExportPath="/Script/StaticMeshDescription.StaticMeshDescription'/Game/UltraDynamicSky/Meshes/Puddle_Grid_Mesh.Puddle_Grid_Mesh:HiResMeshDescription.MeshDescription'"
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.AssetImportData Name="AssetImportData" ExportPath="/Script/Engine.AssetImportData'/Game/UltraDynamicSky/Meshes/Puddle_Grid_Mesh.Puddle_Grid_Mesh:AssetImportData'"
+   End Object
+   Begin Object Class=/Script/Engine.BodySetup Name="BodySetup_0" ExportPath="/Script/Engine.BodySetup'/Game/UltraDynamicSky/Meshes/Puddle_Grid_Mesh.Puddle_Grid_Mesh:BodySetup_0'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.FbxStaticMeshImportData Name="FbxStaticMeshImportData_0" ExportPath="/Script/UnrealEd.FbxStaticMeshImportData'/Game/UltraDynamicSky/Meshes/Puddle_Grid_Mesh.Puddle_Grid_Mesh:FbxStaticMeshImportData_0'"
+   End Object
+   Begin Object Class=/Script/NavigationSystem.NavCollision Name="NavCollision_2" ExportPath="/Script/NavigationSystem.NavCollision'/Game/UltraDynamicSky/Meshes/Puddle_Grid_Mesh.Puddle_Grid_Mesh:NavCollision_2'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfo Name="SceneThumbnailInfo_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfo'/Game/UltraDynamicSky/Meshes/Puddle_Grid_Mesh.Puddle_Grid_Mesh:SceneThumbnailInfo_0'"
+   End Object
+   Begin Object Class=/Script/Engine.StaticMeshDescriptionBulkData Name="StaticMeshDescriptionBulkData_1" ExportPath="/Script/Engine.StaticMeshDescriptionBulkData'/Game/UltraDynamicSky/Meshes/Puddle_Grid_Mesh.Puddle_Grid_Mesh:StaticMeshDescriptionBulkData_1'"
+      Begin Object Class=/Script/StaticMeshDescription.StaticMeshDescription Name="MeshDescription" Archetype="/Script/StaticMeshDescription.StaticMeshDescription'/Script/Engine.Default__StaticMeshDescriptionBulkData:MeshDescription'" ExportPath="/Script/StaticMeshDescription.StaticMeshDescription'/Game/UltraDynamicSky/Meshes/Puddle_Grid_Mesh.Puddle_Grid_Mesh:StaticMeshDescriptionBulkData_1.MeshDescription'"
+      End Object
+   End Object
+   Begin Object Name="HiResMeshDescription" ExportPath="/Script/Engine.StaticMeshDescriptionBulkData'/Game/UltraDynamicSky/Meshes/Puddle_Grid_Mesh.Puddle_Grid_Mesh:HiResMeshDescription'"
+      Begin Object Name="MeshDescription" ExportPath="/Script/StaticMeshDescription.StaticMeshDescription'/Game/UltraDynamicSky/Meshes/Puddle_Grid_Mesh.Puddle_Grid_Mesh:HiResMeshDescription.MeshDescription'"
+      End Object
+   End Object
+   Begin Object Name="AssetImportData" ExportPath="/Script/Engine.AssetImportData'/Game/UltraDynamicSky/Meshes/Puddle_Grid_Mesh.Puddle_Grid_Mesh:AssetImportData'"
+   End Object
+   Begin Object Name="BodySetup_0" ExportPath="/Script/Engine.BodySetup'/Game/UltraDynamicSky/Meshes/Puddle_Grid_Mesh.Puddle_Grid_Mesh:BodySetup_0'"
+      DefaultInstance=(ObjectType=ECC_WorldStatic,CollisionEnabled=NoCollision,CollisionProfileName="NoCollision",CollisionResponses=(ResponseArray=((Channel="Visibility",Response=ECR_Ignore),(Channel="Camera",Response=ECR_Ignore))))
+   End Object
+   Begin Object Name="FbxStaticMeshImportData_0" ExportPath="/Script/UnrealEd.FbxStaticMeshImportData'/Game/UltraDynamicSky/Meshes/Puddle_Grid_Mesh.Puddle_Grid_Mesh:FbxStaticMeshImportData_0'"
+      bAutoGenerateCollision=False
+      ImportMaterialOriginalNameData(0)="WorldGridMaterial"
+      ImportMaterialOriginalNameData(1)="Material_001"
+      ImportMeshLodData(0)=(SectionOriginalMaterialName=("Material_001"))
+   End Object
+   Begin Object Name="NavCollision_2" ExportPath="/Script/NavigationSystem.NavCollision'/Game/UltraDynamicSky/Meshes/Puddle_Grid_Mesh.Puddle_Grid_Mesh:NavCollision_2'"
+   End Object
+   Begin Object Name="SceneThumbnailInfo_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfo'/Game/UltraDynamicSky/Meshes/Puddle_Grid_Mesh.Puddle_Grid_Mesh:SceneThumbnailInfo_0'"
+   End Object
+   Begin Object Name="StaticMeshDescriptionBulkData_1" ExportPath="/Script/Engine.StaticMeshDescriptionBulkData'/Game/UltraDynamicSky/Meshes/Puddle_Grid_Mesh.Puddle_Grid_Mesh:StaticMeshDescriptionBulkData_1'"
+      Begin Object Name="MeshDescription" ExportPath="/Script/StaticMeshDescription.StaticMeshDescription'/Game/UltraDynamicSky/Meshes/Puddle_Grid_Mesh.Puddle_Grid_Mesh:StaticMeshDescriptionBulkData_1.MeshDescription'"
+      End Object
+   End Object
+   SourceModels(0)=(StaticMeshDescriptionBulkData="/Script/Engine.StaticMeshDescriptionBulkData'StaticMeshDescriptionBulkData_1'",BuildSettings=(bRecomputeNormals=False,bComputeWeightedNormals=True))
+   HiResSourceModel=(StaticMeshDescriptionBulkData="HiResMeshDescription")
+   SectionInfoMap=(Map=((0, (bEnableCollision=False,bCastShadow=False,bVisibleInRayTracing=False,bAffectDistanceFieldLighting=False))))
+   OriginalSectionInfoMap=(Map=((0, (MaterialIndex=1,bEnableCollision=False,bCastShadow=False))))
+   ImportVersion=1
+   LightmapUVVersion=9
+   StaticMaterials(0)=(MaterialInterface="/Script/Engine.Material'/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial'",MaterialSlotName="Material_001",ImportedMaterialSlotName="Material_001",UVChannelData=(bInitialized=True,LocalUVDensities[0]=100.000000,LocalUVDensities[1]=101.663239))
+   LightmapUVDensity=101.663239
+   LightMapResolution=64
+   LightMapCoordinateIndex=1
+   AssetImportData="/Script/UnrealEd.FbxStaticMeshImportData'FbxStaticMeshImportData_0'"
+   ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfo'SceneThumbnailInfo_0'"
+   EditorCameraPosition=(bIsSet=True,CamOrbitPoint=(X=-100.834756,Y=-56.779283,Z=-88.430145),CamOrbitZoom=(X=173.261351,Y=146.936299,Z=118.009441),CamOrbitRotation=(Pitch=-27.450000,Yaw=-139.699999,Roll=-0.000002))
+   ExtendedBounds=(BoxExtent=(X=50.000008,Y=50.000008,Z=0.000008),SphereRadius=70.710689)
+End Object

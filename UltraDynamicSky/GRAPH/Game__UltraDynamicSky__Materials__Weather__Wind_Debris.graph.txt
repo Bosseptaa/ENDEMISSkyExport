@@ -1,0 +1,119 @@
+### /Game/UltraDynamicSky/Materials/Weather/Wind_Debris
+  Material (Wind_Debris)
+    .BlendMode=BLEND_Translucent
+    .MaterialDecalResponse=MDR_None
+    .TranslucencyLightingMode=TLM_VolumetricPerVertexDirectional
+    .bTangentSpaceNormal=False
+    .bUsedWithNiagaraSprites=True
+    .EditorX=496
+    .EditorY=8
+    .bCanMaskedBeAssumedOpaque=True
+    .bCastRayTracedShadows=False
+    .PixelDepthOffsetMode=PDOM_Legacy
+    .StateId=22D3B3244363CD056E8E0E98AD43BF6D
+    .ReferencedTextureGuids(0)=9080AA1E47B0FE7B95E79A93A36D2556
+    .EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'Wind_DebrisEditorOnlyData'"
+    .TextureStreamingDataVersion=1
+    .TextureStreamingData(0)=(SamplingScale=1.000000,UVChannelIndex=0,TextureName="ParticleClouds",TextureReference="/Game/ENDEMIS/Weather/WeatherFX/T_ParticleClouds.T_ParticleClouds")
+    .ReferencedDefaultTextures(0)="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_ParticleClouds.T_ParticleClouds'"
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+    .ParameterOverviewExpansion=(("-12Global", True))
+    .LightingGuid=9251950E494CFB30FE82C1993A817C75
+  MaterialEditorOnlyData (Wind_DebrisEditorOnlyData)
+    BaseColor              <- MaterialExpressionTextureSampleParameter2D
+    Normal                 <- MaterialExpressionConstant3Vector
+    Opacity                <- MaterialExpressionMultiply
+    ExpressionCollection   <- MaterialExpressionTextureSampleParameter2D
+    .BaseColor=(Constant=(R=0.501961,G=0.501961,B=0.501961,A=1.000000),Expression="/Script/Engine.MaterialExpressionTextureSampleParameter2D'Wind_Debris:MaterialExpressionTextureSampleParameter2D_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .Metallic=(UseConstant=True)
+    .Specular=(UseConstant=True)
+    .Roughness=(UseConstant=True)
+    .Anisotropy=(UseConstant=True)
+    .Normal=(Constant=(X=0.000000,Y=0.000000,Z=0.000000),Expression="/Script/Engine.MaterialExpressionConstant3Vector'Wind_Debris:MaterialExpressionConstant3Vector_0'")
+    .Tangent=(UseConstant=True)
+    .EmissiveColor=(UseConstant=True)
+    .Opacity=(Expression="/Script/Engine.MaterialExpressionMultiply'Wind_Debris:MaterialExpressionMultiply_2'")
+    .OpacityMask=(UseConstant=True)
+    .WorldPositionOffset=(UseConstant=True)
+    .Displacement=(UseConstant=True)
+    .SubsurfaceColor=(UseConstant=True)
+    .ClearCoat=(UseConstant=True)
+    .ClearCoatRoughness=(UseConstant=True)
+    .AmbientOcclusion=(UseConstant=True)
+    .Refraction=(UseConstant=True)
+    .CustomizedUVs(0)=(UseConstant=True)
+    .CustomizedUVs(1)=(UseConstant=True)
+    .CustomizedUVs(2)=(UseConstant=True)
+    .CustomizedUVs(3)=(UseConstant=True)
+    .CustomizedUVs(4)=(UseConstant=True)
+    .CustomizedUVs(5)=(UseConstant=True)
+    .CustomizedUVs(6)=(UseConstant=True)
+    .CustomizedUVs(7)=(UseConstant=True)
+    .PixelDepthOffset=(UseConstant=True)
+    .SurfaceThickness=(UseConstant=True)
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionTextureSampleParameter2D'Wind_Debris:MaterialExpressionTextureSampleParameter2D_0'","/Script/Engine.MaterialExpressionConstant3Vector'Wind_Debris:MaterialExpressionConstant3Vector_0'","/Script/Engine.MaterialExpressionMultiply'Wind_Debris:MaterialExpressionMultiply_2'","/Script/Engine.MaterialExpressionMultiply'Wind_Debris:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Wind_Debris:MaterialExpressionMaterialFunctionCall_0'","/Script/Engine.MaterialExpressionConstant'Wind_Debris:MaterialExpressionConstant_1'","/Script/Engine.MaterialExpressionStaticBool'Wind_Debris:MaterialExpressionStaticBool_0'","/Script/Engine.MaterialExpressionParticleColor'Wind_Debris:MaterialExpressionParticleColor_0'"))
+    .ParameterGroupData(0)=(GroupName="None")
+  MaterialExpressionConstant (MaterialExpressionConstant_1)
+    .R=50.000000
+    .MaterialExpressionEditorX=-284
+    .MaterialExpressionEditorY=260
+    .MaterialExpressionGuid=7036DD3B412477DDBC6BF9B345E85AB9
+    .Material="/Script/Engine.Material'Wind_Debris'"
+  MaterialExpressionConstant3Vector (MaterialExpressionConstant3Vector_0)
+    .Constant=(R=0.000000,G=0.000000,B=1.000000,A=0.000000)
+    .MaterialExpressionEditorX=232
+    .MaterialExpressionEditorY=296
+    .MaterialExpressionGuid=8A11FC5E481B29E8566D529FD351EB17
+    .Material="/Script/Engine.Material'Wind_Debris'"
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_0)
+    FunctionInputs(0)      <- MaterialExpressionConstant
+    FunctionInputs(1)      <- MaterialExpressionConstant
+    FunctionInputs(2)      <- MaterialExpressionStaticBool
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Engine/Functions/Engine_MaterialFunctions01/Opacity/CameraDepthFade.CameraDepthFade'"
+    .FunctionInputs(0)=(ExpressionInputId=79FFEA6C4F3A46F51F8E50A349E4BB4B,Input=(Expression="/Script/Engine.MaterialExpressionConstant'Wind_Debris:MaterialExpressionConstant_1'",InputName="Fade Length"))
+    .FunctionInputs(1)=(ExpressionInputId=D5EC0E2F4DB888679BFC2A8B921262ED,Input=(Expression="/Script/Engine.MaterialExpressionConstant'Wind_Debris:MaterialExpressionConstant_1'",InputName="Fade Offset"))
+    .FunctionInputs(2)=(ExpressionInputId=7B4195E6455691CA3782398687468578,Input=(Expression="/Script/Engine.MaterialExpressionStaticBool'Wind_Debris:MaterialExpressionStaticBool_0'",InputName="For Vertex Shader"))
+    .FunctionOutputs(0)=(ExpressionOutputId=160C00424E845E293F44DCBE13738CEE,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-108
+    .MaterialExpressionEditorY=256
+    .MaterialExpressionGuid=BF41685040E2386E81276A96EE9A9655
+    .Material="/Script/Engine.Material'Wind_Debris'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionTextureSampleParameter2D
+    B                      <- MaterialExpressionParticleColor
+    .B=(Expression="/Script/Engine.MaterialExpressionParticleColor'Wind_Debris:MaterialExpressionParticleColor_0'",OutputIndex=4,Mask=1,MaskA=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameter2D'Wind_Debris:MaterialExpressionTextureSampleParameter2D_0'",OutputIndex=4,Mask=1,MaskA=1)
+    .ConstB=0.300000
+    .MaterialExpressionEditorX=-360
+    .MaterialExpressionEditorY=160
+    .MaterialExpressionGuid=6D56E1D946D4F290E5A465A6774056B0
+    .Material="/Script/Engine.Material'Wind_Debris'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_2)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Wind_Debris:MaterialExpressionMaterialFunctionCall_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Wind_Debris:MaterialExpressionMultiply_0'")
+    .MaterialExpressionEditorX=184
+    .MaterialExpressionEditorY=160
+    .MaterialExpressionGuid=9E1746554EA433D6A31D7A9684C33581
+    .Material="/Script/Engine.Material'Wind_Debris'"
+  MaterialExpressionParticleColor (MaterialExpressionParticleColor_0)
+    .MaterialExpressionEditorX=-524
+    .MaterialExpressionEditorY=232
+    .MaterialExpressionGuid=1FC7A191449C9D36A85E0CB05C5B1E1C
+    .Material="/Script/Engine.Material'Wind_Debris'"
+  MaterialExpressionStaticBool (MaterialExpressionStaticBool_0)
+    .Value=True
+    .MaterialExpressionEditorX=-284
+    .MaterialExpressionEditorY=328
+    .MaterialExpressionGuid=3CF7A61D4576547F4ADB1288473ADD91
+    .Material="/Script/Engine.Material'Wind_Debris'"
+  MaterialExpressionTextureSampleParameter2D (MaterialExpressionTextureSampleParameter2D_0)
+    .ParameterName="Texture"
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_ParticleClouds.T_ParticleClouds'"
+    .ExpressionGUID=2E07B92C46071DE066D1DD8B3952287A
+    .MaterialExpressionEditorX=-764
+    .MaterialExpressionEditorY=4
+    .MaterialExpressionGuid=EE4767C9464D223D100159943BE9F018
+    .Material="/Script/Engine.Material'Wind_Debris'"

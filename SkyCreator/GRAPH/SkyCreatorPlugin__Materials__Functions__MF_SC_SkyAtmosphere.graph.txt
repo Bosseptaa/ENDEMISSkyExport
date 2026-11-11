@@ -1,0 +1,107 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_SkyAtmosphere
+  MaterialFunction (MF_SC_SkyAtmosphere)
+    .LibraryCategoriesText(0)=NSLOCTEXT("", "3ACBC39640DC095ED2E0A9BC038B3B29", "Sky Creator")
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'MF_SC_SkyAtmosphereEditorOnlyData'"
+    .StateId=EC61C59143D42CD741EC718F82866CBA
+    .CombinedInputTypes=15
+    .CombinedOutputTypes=15
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+  MaterialFunctionEditorOnlyData (MF_SC_SkyAtmosphereEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'MF_SC_SkyAtmosphere:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionAdd'MF_SC_SkyAtmosphere:MaterialExpressionAdd_4'","/Script/Engine.MaterialExpressionSkyAtmosphereViewLuminance'MF_SC_SkyAtmosphere:MaterialExpressionSkyAtmosphereViewLuminance_1'","/Script/Engine.MaterialExpressionSkyAtmosphereLightDiskLuminance'MF_SC_SkyAtmosphere:MaterialExpressionSkyAtmosphereLightDiskLuminance_1'","/Script/Engine.MaterialExpressionAdd'MF_SC_SkyAtmosphere:MaterialExpressionAdd_1'","/Script/Engine.MaterialExpressionSkyAtmosphereLightDiskLuminance'MF_SC_SkyAtmosphere:MaterialExpressionSkyAtmosphereLightDiskLuminance_0'","/Script/Engine.MaterialExpressionFunctionOutput'MF_SC_SkyAtmosphere:MaterialExpressionFunctionOutput_1'","/Script/Engine.MaterialExpressionAdd'MF_SC_SkyAtmosphere:MaterialExpressionAdd_0'","/Script/Engine.MaterialExpressionSkyAtmosphereViewLuminance'MF_SC_SkyAtmosphere:MaterialExpressionSkyAtmosphereViewLuminance_0'","/Script/Engine.MaterialExpressionSkyAtmosphereLightDiskLuminance'MF_SC_SkyAtmosphere:MaterialExpressionSkyAtmosphereLightDiskLuminance_2'","/Script/Engine.MaterialExpressionFunctionInput'MF_SC_SkyAtmosphere:MaterialExpressionFunctionInput_0'","/Script/Engine.MaterialExpressionLinearInterpolate'MF_SC_SkyAtmosphere:MaterialExpressionLinearInterpolate_0'","/Script/Engine.MaterialExpressionSkyAtmosphereLightDiskLuminance'MF_SC_SkyAtmosphere:MaterialExpressionSkyAtmosphereLightDiskLuminance_3'"))
+  MaterialExpressionAdd (MaterialExpressionAdd_0)
+    A                      <- MaterialExpressionSkyAtmosphereViewLuminance
+    B                      <- MaterialExpressionLinearInterpolate
+    .B=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'MF_SC_SkyAtmosphere:MaterialExpressionLinearInterpolate_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSkyAtmosphereViewLuminance'MF_SC_SkyAtmosphere:MaterialExpressionSkyAtmosphereViewLuminance_0'")
+    .MaterialExpressionEditorX=-128
+    .MaterialExpressionEditorY=384
+    .MaterialExpressionGuid=AE4A36F94265CE7B8F1A2CA7D841E252
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SkyAtmosphere'"
+  MaterialExpressionAdd (MaterialExpressionAdd_1)
+    A                      <- MaterialExpressionLinearInterpolate
+    B                      <- MaterialExpressionSkyAtmosphereLightDiskLuminance
+    .B=(Expression="/Script/Engine.MaterialExpressionSkyAtmosphereLightDiskLuminance'MF_SC_SkyAtmosphere:MaterialExpressionSkyAtmosphereLightDiskLuminance_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'MF_SC_SkyAtmosphere:MaterialExpressionLinearInterpolate_0'")
+    .MaterialExpressionEditorX=-256
+    .MaterialExpressionEditorY=96
+    .MaterialExpressionGuid=AE4A36F94265CE7B8F1A2CA7D841E252
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SkyAtmosphere'"
+  MaterialExpressionAdd (MaterialExpressionAdd_4)
+    A                      <- MaterialExpressionSkyAtmosphereViewLuminance
+    B                      <- MaterialExpressionAdd
+    .B=(Expression="/Script/Engine.MaterialExpressionAdd'MF_SC_SkyAtmosphere:MaterialExpressionAdd_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSkyAtmosphereViewLuminance'MF_SC_SkyAtmosphere:MaterialExpressionSkyAtmosphereViewLuminance_1'")
+    .MaterialExpressionEditorX=-128
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=AE4A36F94265CE7B8F1A2CA7D841E252
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SkyAtmosphere'"
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_0)
+    .InputName="Moon Mask"
+    .Id=7624646C49E33469D042739C23959476
+    .InputType=FunctionInput_Scalar
+    .bUsePreviewValueAsDefault=True
+    .MaterialExpressionEditorX=-1280
+    .MaterialExpressionEditorY=272
+    .MaterialExpressionGuid=FFABF81E4389CDAC10970D84E1E0957A
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SkyAtmosphere'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionAdd
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'MF_SC_SkyAtmosphere:MaterialExpressionAdd_4'")
+    .OutputName="Color"
+    .bLastPreviewed=True
+    .Id=C9D82B14419413B0C15D54B69B666AC6
+    .MaterialExpressionGuid=AD8A923E411D20542D5DA0B2DA43A317
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SkyAtmosphere'"
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_1)
+    A                      <- MaterialExpressionAdd
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'MF_SC_SkyAtmosphere:MaterialExpressionAdd_0'")
+    .OutputName="No Moon"
+    .SortPriority=1
+    .Id=5A1346184D893F787F418289DC6776FC
+    .MaterialExpressionEditorY=384
+    .MaterialExpressionGuid=E3C45127484B53EE7EF070A47AAC6975
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SkyAtmosphere'"
+    .bCollapsed=True
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_0)
+    A                      <- MaterialExpressionSkyAtmosphereLightDiskLuminance
+    Alpha                  <- MaterialExpressionFunctionInput
+    .A=(Expression="/Script/Engine.MaterialExpressionSkyAtmosphereLightDiskLuminance'MF_SC_SkyAtmosphere:MaterialExpressionSkyAtmosphereLightDiskLuminance_3'")
+    .ConstB=0.000000
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_SkyAtmosphere:MaterialExpressionFunctionInput_0'")
+    .MaterialExpressionEditorX=-896
+    .MaterialExpressionEditorY=128
+    .MaterialExpressionGuid=697C84DE430FCB12359D5A810F160B0A
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SkyAtmosphere'"
+  MaterialExpressionSkyAtmosphereLightDiskLuminance (MaterialExpressionSkyAtmosphereLightDiskLuminance_0)
+    .LightIndex=1
+    .MaterialExpressionEditorX=-576
+    .MaterialExpressionEditorY=192
+    .MaterialExpressionGuid=012ACF064EC5D56C44ACDDAD12889E87
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SkyAtmosphere'"
+  MaterialExpressionSkyAtmosphereLightDiskLuminance (MaterialExpressionSkyAtmosphereLightDiskLuminance_1)
+    .MaterialExpressionEditorX=-576
+    .MaterialExpressionEditorY=96
+    .MaterialExpressionGuid=012ACF064EC5D56C44ACDDAD12889E87
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SkyAtmosphere'"
+  MaterialExpressionSkyAtmosphereLightDiskLuminance (MaterialExpressionSkyAtmosphereLightDiskLuminance_2)
+    .MaterialExpressionEditorX=-576
+    .MaterialExpressionEditorY=448
+    .MaterialExpressionGuid=012ACF064EC5D56C44ACDDAD12889E87
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SkyAtmosphere'"
+  MaterialExpressionSkyAtmosphereLightDiskLuminance (MaterialExpressionSkyAtmosphereLightDiskLuminance_3)
+    .MaterialExpressionEditorX=-1280
+    .MaterialExpressionEditorY=128
+    .MaterialExpressionGuid=E627591040721917CDC5A6905828C970
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SkyAtmosphere'"
+  MaterialExpressionSkyAtmosphereViewLuminance (MaterialExpressionSkyAtmosphereViewLuminance_0)
+    .MaterialExpressionEditorX=-576
+    .MaterialExpressionEditorY=384
+    .MaterialExpressionGuid=627471AB47A36A9AF669F592C77BDACB
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SkyAtmosphere'"
+  MaterialExpressionSkyAtmosphereViewLuminance (MaterialExpressionSkyAtmosphereViewLuminance_1)
+    .MaterialExpressionEditorX=-576
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=627471AB47A36A9AF669F592C77BDACB
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SkyAtmosphere'"

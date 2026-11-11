@@ -1,0 +1,191 @@
+### /Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface
+  Blueprint (UDS_PlayerOcclusion_Interface)
+    .ParentClass="/Script/CoreUObject.Class'/Script/CoreUObject.Interface'"
+    .BlueprintType=BPTYPE_Interface
+    .bDeprecate=True
+    .BlueprintCategory="UltraDynamicSky|System"
+    .BlueprintSystemVersion=2
+    .FunctionGraphs(0)="/Script/Engine.EdGraph'Get Occlusion Mode'"
+    .FunctionGraphs(1)="/Script/Engine.EdGraph'Finished Occlusion Cycle'"
+    .FunctionGraphs(2)="/Script/Engine.EdGraph'Occlusion Hard Update'"
+    .FunctionGraphs(3)="/Script/Engine.EdGraph'Get Occlusion Update Period'"
+    .FunctionGraphs(4)="/Script/Engine.EdGraph'Get Occlusion Trace Channel'"
+    .FunctionGraphs(5)="/Script/Engine.EdGraph'Get Occlusion Min and Max Fraction'"
+    .FunctionGraphs(6)="/Script/Engine.EdGraph'Get Occlusion Trace Max Distance'"
+    .FunctionGraphs(7)="/Script/Engine.EdGraph'Get Occlusion Trace Steps'"
+    .FunctionGraphs(8)="/Script/Engine.EdGraph'Get Show Trace Debugs'"
+    .FunctionGraphs(9)="/Script/Engine.EdGraph'Get Occlusion Sampling Location'"
+    .FunctionGraphs(10)="/Script/Engine.EdGraph'Get Current Camera Location'"
+    .FunctionGraphs(11)="/Script/Engine.EdGraph'Get Query Occlusion Portals'"
+    .FunctionGraphs(12)="/Script/Engine.EdGraph'Get GPU Distance Field Toggle'"
+    .FunctionGraphs(13)="/Script/Engine.EdGraph'Get GPU DF Sample Count'"
+    .CategorySorting(0)=""
+    .CategorySorting(1)="Player Occlusion"
+    .LastEditedDocuments(0)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Mode",SavedViewOffset=(X=-1072.772827,Y=-584.625000),SavedZoomAmount=1.000000)
+    .LastEditedDocuments(1)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Finished Occlusion Cycle",SavedViewOffset=(X=-1068.102417,Y=-581.625000),SavedZoomAmount=1.000000)
+    .LastEditedDocuments(2)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Occlusion Hard Update",SavedViewOffset=(X=-1068.102417,Y=-581.625000),SavedZoomAmount=1.000000)
+    .LastEditedDocuments(3)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Update Period",SavedViewOffset=(X=-1068.102417,Y=-581.625000),SavedZoomAmount=1.000000)
+    .LastEditedDocuments(4)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Trace Channel",SavedViewOffset=(X=-1068.102417,Y=-581.625000),SavedZoomAmount=1.000000)
+    .LastEditedDocuments(5)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Min and Max Fraction",SavedViewOffset=(X=-1072.772827,Y=-584.625000),SavedZoomAmount=1.000000)
+    .LastEditedDocuments(6)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Trace Max Distance",SavedViewOffset=(X=-1072.772827,Y=-584.625000),SavedZoomAmount=1.000000)
+    .LastEditedDocuments(7)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Trace Steps",SavedViewOffset=(X=-1072.772827,Y=-584.625000),SavedZoomAmount=1.000000)
+    .LastEditedDocuments(8)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Show Trace Debugs",SavedViewOffset=(X=-1072.772827,Y=-584.625000),SavedZoomAmount=1.000000)
+    .LastEditedDocuments(9)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Occlusion Sampling Location",SavedViewOffset=(X=-1072.772827,Y=-584.625000),SavedZoomAmount=1.000000)
+    .LastEditedDocuments(10)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Current Camera Location",SavedViewOffset=(X=-1072.772827,Y=-584.625000),SavedZoomAmount=1.000000)
+    .LastEditedDocuments(11)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get Query Occlusion Portals",SavedViewOffset=(X=-1072.772827,Y=-584.625000),SavedZoomAmount=1.000000)
+    .LastEditedDocuments(12)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get GPU Distance Field Toggle",SavedViewOffset=(X=-1072.772827,Y=-584.625000),SavedZoomAmount=1.000000)
+    .LastEditedDocuments(13)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/System/UDS_PlayerOcclusion_Interface.UDS_PlayerOcclusion_Interface:Get GPU DF Sample Count",SavedViewOffset=(X=-1072.772827,Y=-584.625000),SavedZoomAmount=1.000000)
+    .GeneratedClass="/Script/Engine.BlueprintGeneratedClass'UDS_PlayerOcclusion_Interface_C'"
+    .bLegacyNeedToPurgeSkelRefs=False
+    .BlueprintGuid=FC9A1F0544042BB3FDE6C381FB4EEA1B
+  EdGraph (Get GPU DF Sample Count_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=AE5CD3924C9233201FC9B7BD76EA6A3A
+  K2Node_FunctionResult (K2Node_FunctionResult_0)
+    .FunctionReference=(MemberName="Get Occlusion Mode")
+    .bIsEditable=True
+    .NodePosX=256
+    .NodeGuid=0E22C02043D09924B7F30BBD3C16F1F1
+  K2Node_FunctionEntry (K2Node_FunctionEntry_0)
+    .MetaData=(Category=NSLOCTEXT("", "914D84DF483DAD73EDFF76ACC411AC0C", "Player Occlusion"))
+    .ExtraFlags=201457664
+    .FunctionReference=(MemberName="Get Occlusion Mode")
+    .bIsEditable=True
+    .NodeGuid=048E416146AAE1A8F24B4BB4F928C26B
+  EdGraph (Get GPU Distance Field Toggle_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=D26487E9453024854EE2F7BD4F09F011
+  EdGraph (Get Query Occlusion Portals_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=E68AA1D34963BDC23E99F5A63636D381
+  EdGraph (Get Current Camera Location_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=EB0DCED04E5E8DC2B48055A3D7BFC61E
+  EdGraph (Get Occlusion Sampling Location_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=AB57A5904E769A037CA671BBDC24C2B9
+  EdGraph (Get Show Trace Debugs_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=ED8FC70845F3041E2252C2A32A3B28A5
+  EdGraph (Get Occlusion Trace Steps_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=097537A640CB8200DE5B8DB2A9FCAB1E
+  EdGraph (Get Occlusion Trace Max Distance_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=F5654F4A4427CD22AFFA2CB61BB4DDD0
+  EdGraph (Get Occlusion Min and Max Fraction_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=3D9F40D24FC19457440DFAA4F18E8A63
+  EdGraph (Get Occlusion Trace Channel_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=6256C09B4D9F675254921B876E37FE90
+  EdGraph (Get Occlusion Update Period_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=39EFB1954B89D4C380128284BE784924
+  EdGraph (Occlusion Hard Update_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=D6487EC34F5F3881AA1DFA94B3312CBB
+  EdGraph (Finished Occlusion Cycle_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=2938BC094F29C4A74CB531A012EE8B87
+  EdGraph (Get Occlusion Mode_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=7599953840CCB9098896649E2D64633C
+  EdGraph (Get GPU DF Sample Count)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=AE5CD3924C9233201FC9B7BD76EA6A3A
+  EdGraph (Get GPU Distance Field Toggle)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=D26487E9453024854EE2F7BD4F09F011
+  EdGraph (Get Query Occlusion Portals)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=E68AA1D34963BDC23E99F5A63636D381
+  EdGraph (Get Current Camera Location)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=EB0DCED04E5E8DC2B48055A3D7BFC61E
+  EdGraph (Get Occlusion Sampling Location)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=AB57A5904E769A037CA671BBDC24C2B9
+  EdGraph (Get Show Trace Debugs)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=ED8FC70845F3041E2252C2A32A3B28A5
+  EdGraph (Get Occlusion Trace Steps)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=097537A640CB8200DE5B8DB2A9FCAB1E
+  EdGraph (Get Occlusion Trace Max Distance)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=F5654F4A4427CD22AFFA2CB61BB4DDD0
+  EdGraph (Get Occlusion Min and Max Fraction)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=3D9F40D24FC19457440DFAA4F18E8A63
+  EdGraph (Get Occlusion Trace Channel)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=6256C09B4D9F675254921B876E37FE90
+  EdGraph (Get Occlusion Update Period)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=39EFB1954B89D4C380128284BE784924
+  EdGraph (Occlusion Hard Update)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=D6487EC34F5F3881AA1DFA94B3312CBB
+  EdGraph (Finished Occlusion Cycle)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=2938BC094F29C4A74CB531A012EE8B87
+  EdGraph (Get Occlusion Mode)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=7599953840CCB9098896649E2D64633C

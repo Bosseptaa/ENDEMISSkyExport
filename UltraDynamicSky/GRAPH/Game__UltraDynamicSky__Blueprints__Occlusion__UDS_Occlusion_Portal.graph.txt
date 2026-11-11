@@ -1,0 +1,150 @@
+### /Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Portal
+  Blueprint (UDS_Occlusion_Portal)
+    .ParentClass="/Script/CoreUObject.Class'/Script/Engine.StaticMeshComponent'"
+    .bRunConstructionScriptOnDrag=False
+    .BlueprintDisplayName="UDS Occlusion Portal"
+    .BlueprintDescription="The occlusion system on UDS and UDW (used for Sound Occlusion and Interior Adjustments) can trace against this portal component if any exist in the immediate area. If the trace is unobstructed, the portal can negate directional or global occlusion. For example, you could use an occlusion portal component on an open door or window, to let weather sound enter the space in a more natural way."
+    .BlueprintCategory="UltraDynamicSky|Occlusion"
+    .HideCategories(0)="Component Tick"
+    .HideCategories(1)="Physics"
+    .HideCategories(2)="Tags"
+    .HideCategories(3)="Cooking"
+    .HideCategories(4)="Lighting"
+    .HideCategories(5)="HLOD"
+    .HideCategories(6)="Navigation"
+    .HideCategories(7)="Virtual Texture"
+    .HideCategories(8)="Component Replication"
+    .HideCategories(9)="LOD"
+    .HideCategories(10)="Mobile"
+    .HideCategories(11)="Ray Tracing"
+    .HideCategories(12)="Texture Streaming"
+    .HideCategories(13)="Material Parameters"
+    .HideCategories(14)="Collision"
+    .HideCategories(15)="Materials"
+    .HideCategories(16)="Static Mesh"
+    .HideCategories(17)="Rendering"
+    .HideCategories(18)="Mesh Painting"
+    .HideCategories(19)="Asset User Data"
+    .BlueprintSystemVersion=2
+    .UbergraphPages(0)="/Script/Engine.EdGraph'EventGraph'"
+    .NewVariables(0)=(VarName="Sample Range",VarGuid=9FA0E7034F7865ECE54A8787B9CD41AC,VarType=(PinCategory="real",PinSubCategory="double"),FriendlyName="Sample Range",Category=NSLOCTEXT("", "49CA8D334633F05D49337E9160918EA6", "Settings"),PropertyFlags=5,MetaDataArray=((DataKey="MultiLine",DataValue="true"),(DataKey="UIMin",DataValue="1"),(DataKey="UIMax",DataValue="10000"),(DataKey="ClampMin",DataValue="1"),(DataKey="tooltip",DataValue="The distance from the occlusion sampling location within which this portal will have an effect.")))
+    .NewVariables(1)=(VarName="Distance Falloff Exponent",VarGuid=2F960BB04AC722914733348DBB31DE41,VarType=(PinCategory="real",PinSubCategory="double"),FriendlyName="Distance Falloff Exponent",Category=NSLOCTEXT("", "D30DB6BC4815215E6C43D2B16AB6B3AE", "Settings"),PropertyFlags=5,MetaDataArray=((DataKey="MultiLine",DataValue="true"),(DataKey="UIMin",DataValue=".5"),(DataKey="UIMax",DataValue="5"),(DataKey="tooltip",DataValue="Defines the curve as the effect of this portal falls off with distance, up to the Sample Range.")))
+    .NewVariables(2)=(VarName="Directional Occlusion",VarGuid=82B4690B4933D9F83754E5AC4AD5CFC0,VarType=(PinCategory="real",PinSubCategory="double"),FriendlyName="Directional Occlusion",Category=NSLOCTEXT("", "AED7799D4FA93EC569F438B1A94CBBC1", "Settings"),PropertyFlags=5,MetaDataArray=((DataKey="MultiLine",DataValue="true"),(DataKey="UIMin",DataValue="0"),(DataKey="UIMax",DataValue="1"),(DataKey="ClampMin",DataValue="0"),(DataKey="ClampMax",DataValue="1"),(DataKey="tooltip",DataValue="Scales the amount that this portal will affect directional occlusion for directional sound occlusion (wind and rain)")))
+    .NewVariables(3)=(VarName="Global Occlusion",VarGuid=A140DAC74EF35AD10EB8F39A5E157D74,VarType=(PinCategory="real",PinSubCategory="double"),FriendlyName="Global Occlusion",Category=NSLOCTEXT("", "AED7799D4FA93EC569F438B1A94CBBC1", "Settings"),PropertyFlags=5,MetaDataArray=((DataKey="MultiLine",DataValue="true"),(DataKey="UIMin",DataValue="0"),(DataKey="UIMax",DataValue="1"),(DataKey="ClampMin",DataValue="0"),(DataKey="ClampMax",DataValue="1"),(DataKey="tooltip",DataValue="Scales the amount that this portal will affect global (general) occlusion,")))
+    .CategorySorting(0)="Settings"
+    .CategorySorting(1)="Event Graph"
+    .CategorySorting(2)="LOD"
+    .CategorySorting(3)="Static Mesh"
+    .CategorySorting(4)="Rendering"
+    .CategorySorting(5)="Ray Tracing"
+    .CategorySorting(6)="Texture Streaming"
+    .CategorySorting(7)="Lighting"
+    .CategorySorting(8)="Material Parameters"
+    .CategorySorting(9)="HLOD"
+    .CategorySorting(10)="Collision"
+    .CategorySorting(11)="Mobile"
+    .CategorySorting(12)="Physics"
+    .CategorySorting(13)="Virtual Texture"
+    .CategorySorting(14)="Input"
+    .CategorySorting(15)="Transform"
+    .CategorySorting(16)="Mobility"
+    .CategorySorting(17)="Physics Volume"
+    .CategorySorting(18)="Tags"
+    .CategorySorting(19)="Replication"
+    .CategorySorting(20)="Component Replication"
+    .CategorySorting(21)="Activation"
+    .CategorySorting(22)="Cooking"
+    .CategorySorting(23)="Components"
+    .LastEditedDocuments(0)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Occlusion/UDS_Occlusion_Portal.UDS_Occlusion_Portal:EventGraph",SavedViewOffset=(X=-10539.378906,Y=-11927.637695),SavedZoomAmount=1.000000)
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfo'SceneThumbnailInfo_0'"
+    .GeneratedClass="/Script/Engine.BlueprintGeneratedClass'UDS_Occlusion_Portal_C'"
+    .bLegacyNeedToPurgeSkelRefs=False
+    .BlueprintGuid=41C15FA443025056C576D583F16CD2FB
+  EdGraph (ReceiveBeginPlay)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=F50A088B4BBC3DB256C4C9993C276A52
+  K2Node_CallFunction (K2Node_CallFunction_0)
+    .FunctionReference=(MemberName="SetWorldScale3D",bSelfContext=True)
+    .NodePosX=-9832
+    .NodePosY=-11620
+    .bIsIntermediateNode=True
+    .NodeGuid=1255163347627178DA43F1B00CE36EC4
+  K2Node_FunctionEntry (K2Node_FunctionEntry_0)
+    .CustomGeneratedFunctionName="ExecuteUbergraph_UDS_Occlusion_Portal"
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/CoreUObject.Object'",MemberName="ExecuteUbergraph")
+    .NodePosX=-2000
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=1DA564711CEF3DA5AD62A29870D61772
+  EdGraph (ExecuteUbergraph_UDS_Occlusion_Portal)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_4'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_3'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_Event'K2Node_Event_0'"
+    .Nodes(7)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .GraphGuid=968EE59E4BE4035138B5A898A3AF2999
+  K2Node_CallFunction (K2Node_CallFunction_4)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Multiply_DoubleDouble")
+    .NodePosX=-10352
+    .NodePosY=-11450
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_3)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Divide_DoubleDouble")
+    .NodePosX=-10164
+    .NodePosY=-11446
+    .bIsIntermediateNode=True
+  K2Node_CallFunction (K2Node_CallFunction_2)
+    .FunctionReference=(MemberName="SetCollisionResponseToAllChannels",bSelfContext=True)
+    .NodePosX=-9548
+    .NodePosY=-11620
+    .NodeGuid=CEBA3FB5462466D49C02898409634EED
+  K2Node_CallFunction (K2Node_CallFunction_1)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Conv_DoubleToVector")
+    .NodePosX=-9984
+    .NodePosY=-11496
+    .NodeGuid=15912E994A815B098629F797CEC08A4C
+  K2Node_PromotableOperator (K2Node_PromotableOperator_1)
+    .OperationName="Divide"
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Divide_DoubleDouble")
+    .NodePosX=-10172
+    .NodePosY=-11496
+    .NodeGuid=9D05C5C3474A2A9FA5B48A8679605403
+  K2Node_PromotableOperator (K2Node_PromotableOperator_0)
+    .OperationName="Multiply"
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Multiply_DoubleDouble")
+    .NodePosX=-10360
+    .NodePosY=-11500
+    .NodeGuid=957F9CB149444E08BCAF55B7F3769B36
+  K2Node_VariableGet (K2Node_VariableGet_0)
+    .VariableReference=(MemberName="Sample Range",MemberGuid=9FA0E7034F7865ECE54A8787B9CD41AC,bSelfContext=True)
+    .NodePosX=-10512
+    .NodePosY=-11500
+    .NodeGuid=55CF002E453F9CF83FFC64B30331097A
+  K2Node_Event (K2Node_Event_0)
+    .EventReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.ActorComponent'",MemberName="ReceiveBeginPlay")
+    .bOverrideFunction=True
+    .NodePosX=-10056
+    .NodePosY=-11604
+    .NodeGuid=9FA9C3E34CD70110EBEDF8A353659938
+  EdGraph (EventGraph)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_Event'K2Node_Event_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_PromotableOperator'K2Node_PromotableOperator_0'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_PromotableOperator'K2Node_PromotableOperator_1'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .bAllowDeletion=False
+    .GraphGuid=87A0AC00457FBB0FF740958375FD4E8C

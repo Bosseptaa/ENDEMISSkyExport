@@ -1,0 +1,912 @@
+### /Game/UltraDynamicSky/Materials/Material_Functions/Volumetric_Clouds_Extinction
+  MaterialFunction (Volumetric_Clouds_Extinction)
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'Volumetric_Clouds_ExtinctionEditorOnlyData'"
+    .StateId=0C7E027C410F9BC7AD0E07AB9B293B79
+    .CombinedInputTypes=524
+    .CombinedOutputTypes=15
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+  MaterialFunctionEditorOnlyData (Volumetric_Clouds_ExtinctionEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'Volumetric_Clouds_Extinction:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionDivide'Volumetric_Clouds_Extinction:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionTextureSample'Volumetric_Clouds_Extinction:MaterialExpressionTextureSample_0'","/Script/Engine.MaterialExpressionMultiply'Volumetric_Clouds_Extinction:MaterialExpressionMultiply_15'","/Script/Engine.MaterialExpressionFunctionInput'Volumetric_Clouds_Extinction:MaterialExpressionFunctionInput_2'","/Script/Engine.MaterialExpressionVolumetricAdvancedMaterialInput'Volumetric_Clouds_Extinction:MaterialExpressionVolumetricAdvancedMaterialInput_0'","/Script/Engine.MaterialExpressionStaticSwitchParameter'Volumetric_Clouds_Extinction:MaterialExpressionStaticSwitchParameter_3'","/Script/Engine.MaterialExpressionComponentMask'Volumetric_Clouds_Extinction:MaterialExpressionComponentMask_5'","/Script/Engine.MaterialExpressionAdd'Volumetric_Clouds_Extinction:MaterialExpressionAdd_7'","/Script/Engine.MaterialExpressionFunctionOutput'Volumetric_Clouds_Extinction:MaterialExpressionFunctionOutput_1'","/Script/Engine.MaterialExpressionFunctionInput'Volumetric_Clouds_Extinction:MaterialExpressionFunctionInput_0'","/Script/Engine.MaterialExpressionFunctionInput'Volumetric_Clouds_Extinction:MaterialExpressionFunctionInput_3'","/Script/Engine.MaterialExpressionStaticSwitch'Volumetric_Clouds_Extinction:MaterialExpressionStaticSwitch_0'","/Script/Engine.MaterialExpressionStaticBool'Volumetric_Clouds_Extinction:MaterialExpressionStaticBool_0'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteDeclaration_0'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteDeclaration_1'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteUsage_4'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteUsage_6'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteDeclaration_3'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteDeclaration_4'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteUsage_10'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteUsage_12'","/Script/Engine.MaterialExpressionComponentMask'Volumetric_Clouds_Extinction:MaterialExpressionComponentMask_11'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteDeclaration_5'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteUsage_15'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteDeclaration_7'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteUsage_18'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteDeclaration_10'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteUsage_27'","/Script/Engine.MaterialExpressionCustom'Volumetric_Clouds_Extinction:MaterialExpressionCustom_0'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteUsage_13'","/Script/Engine.MaterialExpressionCameraPositionWS'Volumetric_Clouds_Extinction:MaterialExpressionCameraPositionWS_1'","/Script/Engine.MaterialExpressionWorldPosition'Volumetric_Clouds_Extinction:MaterialExpressionWorldPosition_1'","/Script/Engine.MaterialExpressionDistance'Volumetric_Clouds_Extinction:MaterialExpressionDistance_1'","/Script/Engine.MaterialExpressionMultiply'Volumetric_Clouds_Extinction:MaterialExpressionMultiply_20'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteUsage_14'","/Script/Engine.MaterialExpressionComponentMask'Volumetric_Clouds_Extinction:MaterialExpressionComponentMask_6'","/Script/Engine.MaterialExpressionSubtract'Volumetric_Clouds_Extinction:MaterialExpressionSubtract_3'","/Script/Engine.MaterialExpressionMultiply'Volumetric_Clouds_Extinction:MaterialExpressionMultiply_27'","/Script/Engine.MaterialExpressionPower'Volumetric_Clouds_Extinction:MaterialExpressionPower_0'","/Script/Engine.MaterialExpressionSubtract'Volumetric_Clouds_Extinction:MaterialExpressionSubtract_6'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteUsage_23'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteUsage_31'","/Script/Engine.MaterialExpressionComponentMask'Volumetric_Clouds_Extinction:MaterialExpressionComponentMask_13'","/Script/Engine.MaterialExpressionMultiply'Volumetric_Clouds_Extinction:MaterialExpressionMultiply_28'","/Script/Engine.MaterialExpressionMultiply'Volumetric_Clouds_Extinction:MaterialExpressionMultiply_29'","/Script/Engine.MaterialExpressionAdd'Volumetric_Clouds_Extinction:MaterialExpressionAdd_6'","/Script/Engine.MaterialExpressionMultiply'Volumetric_Clouds_Extinction:MaterialExpressionMultiply_31'","/Script/Engine.MaterialExpressionMultiply'Volumetric_Clouds_Extinction:MaterialExpressionMultiply_34'","/Script/Engine.MaterialExpressionAppendVector'Volumetric_Clouds_Extinction:MaterialExpressionAppendVector_2'","/Script/Engine.MaterialExpressionOneMinus'Volumetric_Clouds_Extinction:MaterialExpressionOneMinus_1'","/Script/Engine.MaterialExpressionMultiply'Volumetric_Clouds_Extinction:MaterialExpressionMultiply_1'","/Script/Engine.MaterialExpressionDivide'Volumetric_Clouds_Extinction:MaterialExpressionDivide_1'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteUsage_36'","/Script/Engine.MaterialExpressionComponentMask'Volumetric_Clouds_Extinction:MaterialExpressionComponentMask_16'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteDeclaration_12'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteUsage_37'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteUsage_40'","/Script/Engine.MaterialExpressionComponentMask'Volumetric_Clouds_Extinction:MaterialExpressionComponentMask_17'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteDeclaration_13'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteUsage_41'","/Script/Engine.MaterialExpressionComponentMask'Volumetric_Clouds_Extinction:MaterialExpressionComponentMask_18'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteUsage_42'","/Script/Engine.MaterialExpressionComponentMask'Volumetric_Clouds_Extinction:MaterialExpressionComponentMask_19'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteUsage_43'","/Script/Engine.MaterialExpressionStaticSwitchParameter'Volumetric_Clouds_Extinction:MaterialExpressionStaticSwitchParameter_4'","/Script/Engine.MaterialExpressionConstant'Volumetric_Clouds_Extinction:MaterialExpressionConstant_1'","/Script/Engine.MaterialExpressionLinearInterpolate'Volumetric_Clouds_Extinction:MaterialExpressionLinearInterpolate_3'","/Script/Engine.MaterialExpressionTextureSampleParameter2D'Volumetric_Clouds_Extinction:MaterialExpressionTextureSampleParameter2D_3'","/Script/Engine.MaterialExpressionPower'Volumetric_Clouds_Extinction:MaterialExpressionPower_2'","/Script/Engine.MaterialExpressionMax'Volumetric_Clouds_Extinction:MaterialExpressionMax_0'","/Script/Engine.MaterialExpressionCollectionParameter'Volumetric_Clouds_Extinction:MaterialExpressionCollectionParameter_19'","/Script/Engine.MaterialExpressionCollectionParameter'Volumetric_Clouds_Extinction:MaterialExpressionCollectionParameter_1'","/Script/Engine.MaterialExpressionComponentMask'Volumetric_Clouds_Extinction:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionCollectionParameter'Volumetric_Clouds_Extinction:MaterialExpressionCollectionParameter_3'","/Script/Engine.MaterialExpressionCollectionParameter'Volumetric_Clouds_Extinction:MaterialExpressionCollectionParameter_5'","/Script/Engine.MaterialExpressionCollectionParameter'Volumetric_Clouds_Extinction:MaterialExpressionCollectionParameter_6'","/Script/Engine.MaterialExpressionCollectionParameter'Volumetric_Clouds_Extinction:MaterialExpressionCollectionParameter_7'","/Script/Engine.MaterialExpressionCollectionParameter'Volumetric_Clouds_Extinction:MaterialExpressionCollectionParameter_8'","/Script/Engine.MaterialExpressionCollectionParameter'Volumetric_Clouds_Extinction:MaterialExpressionCollectionParameter_9'","/Script/Engine.MaterialExpressionCollectionParameter'Volumetric_Clouds_Extinction:MaterialExpressionCollectionParameter_10'","/Script/Engine.MaterialExpressionViewProperty'Volumetric_Clouds_Extinction:MaterialExpressionViewProperty_0'","/Script/Engine.MaterialExpressionComponentMask'Volumetric_Clouds_Extinction:MaterialExpressionComponentMask_2'","/Script/Engine.MaterialExpressionDivide'Volumetric_Clouds_Extinction:MaterialExpressionDivide_4'","/Script/Engine.MaterialExpressionDivide'Volumetric_Clouds_Extinction:MaterialExpressionDivide_5'","/Script/Engine.MaterialExpressionMin'Volumetric_Clouds_Extinction:MaterialExpressionMin_0'","/Script/Engine.MaterialExpressionCollectionParameter'Volumetric_Clouds_Extinction:MaterialExpressionCollectionParameter_4'","/Script/Engine.MaterialExpressionTextureObjectParameter'Volumetric_Clouds_Extinction:MaterialExpressionTextureObjectParameter_3'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteUsage_0'","/Script/Engine.MaterialExpressionComponentMask'Volumetric_Clouds_Extinction:MaterialExpressionComponentMask_1'","/Script/Engine.MaterialExpressionAdd'Volumetric_Clouds_Extinction:MaterialExpressionAdd_0'"),EditorComments=("/Script/Engine.MaterialExpressionComment'Volumetric_Clouds_Extinction:MaterialExpressionComment_0'","/Script/Engine.MaterialExpressionComment'Volumetric_Clouds_Extinction:MaterialExpressionComment_2'","/Script/Engine.MaterialExpressionComment'Volumetric_Clouds_Extinction:MaterialExpressionComment_3'","/Script/Engine.MaterialExpressionComment'Volumetric_Clouds_Extinction:MaterialExpressionComment_5'","/Script/Engine.MaterialExpressionComment'Volumetric_Clouds_Extinction:MaterialExpressionComment_8'","/Script/Engine.MaterialExpressionComment'Volumetric_Clouds_Extinction:MaterialExpressionComment_1'","/Script/Engine.MaterialExpressionComment'Volumetric_Clouds_Extinction:MaterialExpressionComment_6'","/Script/Engine.MaterialExpressionComment'Volumetric_Clouds_Extinction:MaterialExpressionComment_9'","/Script/Engine.MaterialExpressionComment'Volumetric_Clouds_Extinction:MaterialExpressionComment_10'","/Script/Engine.MaterialExpressionComment'Volumetric_Clouds_Extinction:MaterialExpressionComment_11'","/Script/Engine.MaterialExpressionComment'Volumetric_Clouds_Extinction:MaterialExpressionComment_4'"))
+  MaterialExpressionAdd (MaterialExpressionAdd_0)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Volumetric_Clouds_Extinction:MaterialExpressionMultiply_20'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Volumetric_Clouds_Extinction:MaterialExpressionMultiply_15'")
+    .MaterialExpressionEditorX=-5176
+    .MaterialExpressionEditorY=-992
+    .MaterialExpressionGuid=76079BC84A455543273D48AEB4857537
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionAdd (MaterialExpressionAdd_6)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Volumetric_Clouds_Extinction:MaterialExpressionMultiply_29'")
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteUsage_43'")
+    .MaterialExpressionEditorX=-1018
+    .MaterialExpressionEditorY=-210
+    .MaterialExpressionGuid=434F481342827755096AC4B544BB7D80
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionAdd (MaterialExpressionAdd_7)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Volumetric_Clouds_Extinction:MaterialExpressionComponentMask_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Volumetric_Clouds_Extinction:MaterialExpressionFunctionInput_0'")
+    .MaterialExpressionEditorX=-7634
+    .MaterialExpressionEditorY=-270
+    .MaterialExpressionGuid=44AE1C814D22107D27AD648921251097
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_2)
+    A                      <- MaterialExpressionDivide
+    B                      <- MaterialExpressionOneMinus
+    .B=(Expression="/Script/Engine.MaterialExpressionOneMinus'Volumetric_Clouds_Extinction:MaterialExpressionOneMinus_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'Volumetric_Clouds_Extinction:MaterialExpressionDivide_1'")
+    .MaterialExpressionEditorX=-3200
+    .MaterialExpressionEditorY=-688
+    .MaterialExpressionGuid=080945EF46B6B2CA28C05EAAB40FD831
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionCameraPositionWS (MaterialExpressionCameraPositionWS_1)
+    .MaterialExpressionEditorX=-6212
+    .MaterialExpressionEditorY=-636
+    .MaterialExpressionGuid=2BAC5BE14DFD94410EDB10B82E32E338
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_1)
+    .ParameterName="3D Noise Scale"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Material_Functions/UDS_VolumetricClouds_MPC.UDS_VolumetricClouds_MPC'"
+    .ParameterId=8209477A4BC96EB608807EB80BDD37E8
+    .MaterialExpressionEditorX=-7660
+    .MaterialExpressionEditorY=-120
+    .MaterialExpressionGuid=68E10A7D4B0F5AF733AF5A9E543A15FE
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_10)
+    .ParameterName="High Frequency Noise"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Material_Functions/UDS_VolumetricClouds_MPC.UDS_VolumetricClouds_MPC'"
+    .ParameterId=F22A273449377D56E62591A474B3F6BD
+    .MaterialExpressionEditorX=-1600
+    .MaterialExpressionEditorY=-104
+    .MaterialExpressionGuid=68E10A7D4B0F5AF733AF5A9E543A15FE
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_19)
+    .ParameterName="Clouds Position"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Material_Functions/UDS_VolumetricClouds_MPC.UDS_VolumetricClouds_MPC'"
+    .ParameterId=8A83161843DC7881FAF0C4A0D0DC0D57
+    .MaterialExpressionEditorX=-8136
+    .MaterialExpressionEditorY=-188
+    .MaterialExpressionGuid=68E10A7D4B0F5AF733AF5A9E543A15FE
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_3)
+    .ParameterName="HF Octave Zero Distance"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Material_Functions/UDS_VolumetricClouds_MPC.UDS_VolumetricClouds_MPC'"
+    .ParameterId=1B7A03C241AE594243D30EBEAB0EB6AB
+    .MaterialExpressionEditorX=-6216
+    .MaterialExpressionEditorY=-752
+    .MaterialExpressionGuid=68E10A7D4B0F5AF733AF5A9E543A15FE
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_4)
+    .ParameterName="HF Octaves"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Material_Functions/UDS_VolumetricClouds_MPC.UDS_VolumetricClouds_MPC'"
+    .ParameterId=77C24D264040D48AA2662CBD1CC0CF06
+    .MaterialExpressionEditorX=-5400
+    .MaterialExpressionEditorY=-572
+    .MaterialExpressionGuid=68E10A7D4B0F5AF733AF5A9E543A15FE
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_5)
+    .ParameterName="HF Distortion"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Material_Functions/UDS_VolumetricClouds_MPC.UDS_VolumetricClouds_MPC'"
+    .ParameterId=B49BDE8D4DE8F5A1176B9DB7088F2785
+    .MaterialExpressionEditorX=-5940
+    .MaterialExpressionEditorY=-868
+    .MaterialExpressionGuid=68E10A7D4B0F5AF733AF5A9E543A15FE
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_6)
+    .ParameterName="Lerp to Simplified"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Material_Functions/UDS_VolumetricClouds_MPC.UDS_VolumetricClouds_MPC'"
+    .ParameterId=784B52FA423C0EE1C050A9ADCDD58405
+    .MaterialExpressionEditorX=-3812
+    .MaterialExpressionEditorY=-36
+    .MaterialExpressionGuid=68E10A7D4B0F5AF733AF5A9E543A15FE
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_7)
+    .ParameterName="3D Erosion Power"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Material_Functions/UDS_VolumetricClouds_MPC.UDS_VolumetricClouds_MPC'"
+    .ParameterId=85D4DB2A44598457C0AF7DAED090FC9A
+    .MaterialExpressionEditorX=-3344
+    .MaterialExpressionEditorY=-52
+    .MaterialExpressionGuid=68E10A7D4B0F5AF733AF5A9E543A15FE
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_8)
+    .ParameterName="3D Erosion"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Material_Functions/UDS_VolumetricClouds_MPC.UDS_VolumetricClouds_MPC'"
+    .ParameterId=1EBCEBFE40BD12657DC76FBEEC174988
+    .MaterialExpressionEditorX=-2908
+    .MaterialExpressionEditorY=-108
+    .MaterialExpressionGuid=68E10A7D4B0F5AF733AF5A9E543A15FE
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_9)
+    .ParameterName="Minimum Erosion"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Material_Functions/UDS_VolumetricClouds_MPC.UDS_VolumetricClouds_MPC'"
+    .ParameterId=AF3CEBA348AD9D802563F8B8C3BEEF3B
+    .MaterialExpressionEditorX=-3036
+    .MaterialExpressionEditorY=124
+    .MaterialExpressionGuid=68E10A7D4B0F5AF733AF5A9E543A15FE
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+    .bCollapsed=True
+  MaterialExpressionComment (MaterialExpressionComment_0)
+    .SizeX=1468
+    .SizeY=432
+    .Text="Find Main Sample Position"
+    .CommentColor=(R=0.380580,G=0.563581,B=1.000000,A=1.000000)
+    .MaterialExpressionEditorX=-8233
+    .MaterialExpressionEditorY=-362
+    .MaterialExpressionGuid=156D4F0A40765F5D8CE1158E81C85086
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionComment (MaterialExpressionComment_1)
+    .SizeX=984
+    .SizeY=244
+    .Text="Altitude in Layer"
+    .CommentColor=(R=0.437114,G=0.521463,B=1.000000,A=1.000000)
+    .MaterialExpressionEditorX=-4132
+    .MaterialExpressionEditorY=-1172
+    .MaterialExpressionGuid=5B3A386A421AD77E8DAB8AAE73AF4A9F
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionComment (MaterialExpressionComment_10)
+    .SizeX=884
+    .SizeY=584
+    .Text="Scale Extinction"
+    .CommentColor=(R=0.304445,G=0.474398,B=0.651042,A=1.000000)
+    .MaterialExpressionEditorX=-184
+    .MaterialExpressionEditorY=-372
+    .MaterialExpressionGuid=F7D7F2D94216D95B61EFD79D44229708
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionComment (MaterialExpressionComment_11)
+    .SizeX=1476
+    .SizeY=516
+    .Text="Add High Frequency to Base Cloud Shape"
+    .CommentColor=(R=0.456340,G=0.609375,B=0.279053,A=1.000000)
+    .MaterialExpressionEditorX=-1720
+    .MaterialExpressionEditorY=-352
+    .MaterialExpressionGuid=1C9484954D466E8E9B47CF9E654EFEBC
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionComment (MaterialExpressionComment_2)
+    .SizeX=896
+    .SizeY=304
+    .Text="Conservative Density Input"
+    .CommentColor=(R=1.000000,G=0.607159,B=0.382950,A=1.000000)
+    .MaterialExpressionEditorX=-8436
+    .MaterialExpressionEditorY=-888
+    .MaterialExpressionGuid=61A4152E424418FEEE01BDB80786D269
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionComment (MaterialExpressionComment_3)
+    .SizeX=775
+    .SizeY=342
+    .Text="Main 3D Noise Sample"
+    .CommentColor=(R=0.530993,G=0.426799,B=1.000000,A=1.000000)
+    .MaterialExpressionEditorX=-6148
+    .MaterialExpressionEditorY=-120
+    .MaterialExpressionGuid=3A4AFED147BF2DBAC8F66BBE0470394D
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionComment (MaterialExpressionComment_4)
+    .SizeX=525
+    .SizeY=230
+    .Text="3D Noise Texture"
+    .CommentColor=(R=0.494661,G=0.335795,B=1.000000,A=1.000000)
+    .MaterialExpressionEditorX=-7358
+    .MaterialExpressionEditorY=-846
+    .MaterialExpressionGuid=E2CB9D914B2509F5CAB19EAA9DDFEBE9
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionComment (MaterialExpressionComment_5)
+    .SizeX=1968
+    .SizeY=996
+    .Text="High Frequency 3D Noise Texture"
+    .CommentColor=(R=1.000000,G=0.549120,B=0.262768,A=1.000000)
+    .MaterialExpressionEditorX=-6352
+    .MaterialExpressionEditorY=-1204
+    .MaterialExpressionGuid=FFF3F1104FD0D5D7FBF809BD55BCB33F
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionComment (MaterialExpressionComment_6)
+    .SizeX=2048
+    .SizeY=600
+    .Text="Base Cloud Shape - Apply 3D Erosion"
+    .CommentColor=(R=0.876913,G=0.492034,B=1.000000,A=1.000000)
+    .MaterialExpressionEditorX=-4100
+    .MaterialExpressionEditorY=-356
+    .MaterialExpressionGuid=DBB81125488C3B2AD4D3599D7F44F5A9
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionComment (MaterialExpressionComment_8)
+    .SizeX=864
+    .SizeY=312
+    .Text="Allow High Frequency Input"
+    .CommentColor=(R=1.000000,G=0.430789,B=0.758678,A=1.000000)
+    .MaterialExpressionEditorX=-5172
+    .MaterialExpressionEditorY=-80
+    .MaterialExpressionGuid=BB94F6FF4F425E3B8A6E3A9C9DAE8748
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionComment (MaterialExpressionComment_9)
+    .SizeX=1576
+    .SizeY=304
+    .Text="Cloud Profile LUT texture"
+    .CommentColor=(R=1.000000,G=0.461247,B=0.391449,A=1.000000)
+    .MaterialExpressionEditorX=-4136
+    .MaterialExpressionEditorY=-748
+    .MaterialExpressionGuid=0E10E44C40B9FBE9142550955AEABADF
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionCollectionParameter
+    .R=True
+    .G=True
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Volumetric_Clouds_Extinction:MaterialExpressionCollectionParameter_1'")
+    .MaterialExpressionEditorX=-7428
+    .MaterialExpressionEditorY=-92
+    .MaterialExpressionGuid=36F925AB44D70D96157D2EAD18BCC270
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_1)
+    Input                  <- MaterialExpressionNamedRerouteUsage
+    .A=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteUsage_0'")
+    .MaterialExpressionEditorX=144
+    .MaterialExpressionEditorY=-208
+    .MaterialExpressionGuid=AC59C1574AD13778B85748A9EA4EC9FC
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_11)
+    Input                  <- MaterialExpressionNamedRerouteUsage
+    .R=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteUsage_12'")
+    .MaterialExpressionEditorX=-3732
+    .MaterialExpressionEditorY=-136
+    .MaterialExpressionGuid=32370AEE434B4D45380B13B46BC39037
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_13)
+    Input                  <- MaterialExpressionNamedRerouteUsage
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteUsage_31'")
+    .MaterialExpressionEditorX=-1502
+    .MaterialExpressionEditorY=10
+    .MaterialExpressionGuid=0E4F11D643D47845F438AA8EE52D3885
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_16)
+    Input                  <- MaterialExpressionNamedRerouteUsage
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteUsage_36'")
+    .MaterialExpressionEditorX=-3784
+    .MaterialExpressionEditorY=-1076
+    .MaterialExpressionGuid=6E8C914D442E466669793F941D5B0B58
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_17)
+    Input                  <- MaterialExpressionNamedRerouteUsage
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteUsage_40'")
+    .MaterialExpressionEditorX=-3874
+    .MaterialExpressionEditorY=-686
+    .MaterialExpressionGuid=6E8C914D442E466669793F941D5B0B58
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_18)
+    Input                  <- MaterialExpressionNamedRerouteUsage
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteUsage_41'")
+    .MaterialExpressionEditorX=-2936
+    .MaterialExpressionEditorY=23
+    .MaterialExpressionGuid=A95114FD4B2246F99977A3A777DA257B
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_19)
+    Input                  <- MaterialExpressionNamedRerouteUsage
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteUsage_42'")
+    .MaterialExpressionEditorX=-16
+    .MaterialExpressionEditorY=-116
+    .MaterialExpressionGuid=A95114FD4B2246F99977A3A777DA257B
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_2)
+    Input                  <- MaterialExpressionViewProperty
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionViewProperty'Volumetric_Clouds_Extinction:MaterialExpressionViewProperty_0'")
+    .MaterialExpressionEditorX=-5556
+    .MaterialExpressionEditorY=-636
+    .MaterialExpressionGuid=CD79CEA7402C9E24D794DCA65750C96A
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_5)
+    Input                  <- MaterialExpressionCollectionParameter
+    .R=True
+    .G=True
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Volumetric_Clouds_Extinction:MaterialExpressionCollectionParameter_19'")
+    .MaterialExpressionEditorX=-7912
+    .MaterialExpressionEditorY=-160
+    .MaterialExpressionGuid=688CC1ED43EC08DDE2CF66955D3BD907
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_6)
+    Input                  <- MaterialExpressionNamedRerouteUsage
+    .R=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteUsage_14'")
+    .MaterialExpressionEditorX=-2660
+    .MaterialExpressionEditorY=-275
+    .MaterialExpressionGuid=6E8C914D442E466669793F941D5B0B58
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionConstant (MaterialExpressionConstant_1)
+    .R=0.500000
+    .MaterialExpressionEditorX=-3572
+    .MaterialExpressionEditorY=-212
+    .MaterialExpressionGuid=D1F8CF7E4827F22BC83B6599057B1450
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionCustom (MaterialExpressionCustom_0)
+    Inputs(0)              <- MaterialExpressionNamedRerouteUsage
+    Inputs(1)              <- MaterialExpressionAdd
+    Inputs(2)              <- MaterialExpressionMin
+    .Code="float Result = 0.5;\r\nfloat Strength = 1;\r\n\r\nwhile (Octaves > 0.3) {\r\n\r\nResult += (Tex.SampleLevel(TexSampler,frac(UVW),0, 0).x - 0.55) * Strength * saturate(Octaves * 4);\r\n\r\nStrength *= 0.6;\r\n\r\nUVW *= 2;\r\n\r\nOctaves -= 1;\r\n}\r\n\r\nreturn Result;"
+    .OutputType=CMOT_Float1
+    .Description="Sample HF Noise"
+    .Inputs(0)=(InputName="Tex",Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteUsage_13'"))
+    .Inputs(1)=(InputName="UVW",Input=(Expression="/Script/Engine.MaterialExpressionAdd'Volumetric_Clouds_Extinction:MaterialExpressionAdd_0'"))
+    .Inputs(2)=(InputName="Octaves",Input=(Expression="/Script/Engine.MaterialExpressionMin'Volumetric_Clouds_Extinction:MaterialExpressionMin_0'"))
+    .MaterialExpressionEditorX=-4992
+    .MaterialExpressionEditorY=-1024
+    .MaterialExpressionGuid=50337D474E3961138FDA7D8880391053
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionDistance (MaterialExpressionDistance_1)
+    A                      <- MaterialExpressionCameraPositionWS
+    B                      <- MaterialExpressionWorldPosition
+    .B=(Expression="/Script/Engine.MaterialExpressionWorldPosition'Volumetric_Clouds_Extinction:MaterialExpressionWorldPosition_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionCameraPositionWS'Volumetric_Clouds_Extinction:MaterialExpressionCameraPositionWS_1'")
+    .MaterialExpressionEditorX=-6036
+    .MaterialExpressionEditorY=-596
+    .MaterialExpressionGuid=0BCFA9464A921BF8EEE317BC420FFEF7
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Volumetric_Clouds_Extinction:MaterialExpressionComponentMask_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Volumetric_Clouds_Extinction:MaterialExpressionAdd_7'")
+    .MaterialExpressionEditorX=-7218
+    .MaterialExpressionEditorY=-270
+    .MaterialExpressionGuid=CCE28FE34B3B0F440F2A76AFDD371BBB
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionDivide (MaterialExpressionDivide_1)
+    A                      <- MaterialExpressionComponentMask
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Volumetric_Clouds_Extinction:MaterialExpressionComponentMask_17'")
+    .ConstB=3.000000
+    .MaterialExpressionEditorX=-3754
+    .MaterialExpressionEditorY=-686
+    .MaterialExpressionGuid=B777BE054BDC59FFF023538B106F5F34
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionDivide (MaterialExpressionDivide_4)
+    A                      <- MaterialExpressionCollectionParameter
+    B                      <- MaterialExpressionDistance
+    .B=(Expression="/Script/Engine.MaterialExpressionDistance'Volumetric_Clouds_Extinction:MaterialExpressionDistance_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Volumetric_Clouds_Extinction:MaterialExpressionCollectionParameter_3'")
+    .ConstA=10.000000
+    .MaterialExpressionEditorX=-5900
+    .MaterialExpressionEditorY=-724
+    .MaterialExpressionGuid=6DA4980048815D1A3A98D2BB2A1D24EF
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionDivide (MaterialExpressionDivide_5)
+    A                      <- MaterialExpressionDivide
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Volumetric_Clouds_Extinction:MaterialExpressionComponentMask_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'Volumetric_Clouds_Extinction:MaterialExpressionDivide_4'")
+    .MaterialExpressionEditorX=-5352
+    .MaterialExpressionEditorY=-720
+    .MaterialExpressionGuid=6F92BE894B0C6F5796569682271B2EF4
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_0)
+    .InputName="Sample Position"
+    .Id=4774E41849E318B82F3883AD6B88B342
+    .MaterialExpressionEditorX=-8044
+    .MaterialExpressionEditorY=-268
+    .MaterialExpressionGuid=1D2BE91D46182A78C33097B812E427D6
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_2)
+    Preview                <- MaterialExpressionVolumetricAdvancedMaterialInput
+    .Preview=(Expression="/Script/Engine.MaterialExpressionVolumetricAdvancedMaterialInput'Volumetric_Clouds_Extinction:MaterialExpressionVolumetricAdvancedMaterialInput_0'",OutputIndex=1)
+    .InputName="Conservative Density"
+    .Id=F1FA440045ECD335D5A1CB9181D70872
+    .InputType=FunctionInput_Vector4
+    .bUsePreviewValueAsDefault=True
+    .MaterialExpressionEditorX=-8087
+    .MaterialExpressionEditorY=-803
+    .MaterialExpressionGuid=5F5501894AF53EA4DA47328BC1798F1B
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_3)
+    Preview                <- MaterialExpressionStaticBool
+    .Preview=(Expression="/Script/Engine.MaterialExpressionStaticBool'Volumetric_Clouds_Extinction:MaterialExpressionStaticBool_0'")
+    .InputName="Allow High Frequency Layer"
+    .Id=18EE8D574B117B06B2834987A1C0BDC4
+    .InputType=FunctionInput_StaticBool
+    .bUsePreviewValueAsDefault=True
+    .MaterialExpressionEditorX=-4881
+    .MaterialExpressionEditorY=20
+    .MaterialExpressionGuid=D36E05884FFAF9813E9CA7873F0E12A2
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionMultiply
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Volumetric_Clouds_Extinction:MaterialExpressionMultiply_31'")
+    .OutputName="Extinction"
+    .bLastPreviewed=True
+    .Id=F91848C845991472E2EF1DA58B72E2B0
+    .MaterialExpressionEditorX=768
+    .MaterialExpressionEditorY=-316
+    .MaterialExpressionGuid=6BD311164F0CC2870628A29A433B7F93
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_1)
+    A                      <- MaterialExpressionNamedRerouteDeclaration
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteDeclaration_12'")
+    .OutputName="Split Altitude"
+    .Id=99110DBD41A7C4044032CAA0E0BF6557
+    .MaterialExpressionEditorX=-3429
+    .MaterialExpressionEditorY=-1075
+    .MaterialExpressionGuid=72A9B1724BCB3561C9399083FDC80787
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+    .bCollapsed=True
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_3)
+    A                      <- MaterialExpressionComponentMask
+    Alpha                  <- MaterialExpressionCollectionParameter
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Volumetric_Clouds_Extinction:MaterialExpressionComponentMask_11'")
+    .ConstB=0.500000
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Volumetric_Clouds_Extinction:MaterialExpressionCollectionParameter_6'")
+    .MaterialExpressionEditorX=-3540
+    .MaterialExpressionEditorY=-115
+    .MaterialExpressionGuid=E6A08D29477DBD594A4388A8ED56F394
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionMax (MaterialExpressionMax_0)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Volumetric_Clouds_Extinction:MaterialExpressionCollectionParameter_9'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Volumetric_Clouds_Extinction:MaterialExpressionComponentMask_18'")
+    .MaterialExpressionEditorX=-2776
+    .MaterialExpressionEditorY=21
+    .MaterialExpressionGuid=E49462674FEFA6487E66D19BB2113336
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionMin (MaterialExpressionMin_0)
+    A                      <- MaterialExpressionDivide
+    B                      <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Volumetric_Clouds_Extinction:MaterialExpressionCollectionParameter_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'Volumetric_Clouds_Extinction:MaterialExpressionDivide_5'")
+    .ConstB=3.000000
+    .MaterialExpressionEditorX=-5152
+    .MaterialExpressionEditorY=-720
+    .MaterialExpressionGuid=076941B44D40671FF483FB8EE03DDCF7
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionCollectionParameter
+    B                      <- MaterialExpressionMax
+    .B=(Expression="/Script/Engine.MaterialExpressionMax'Volumetric_Clouds_Extinction:MaterialExpressionMax_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Volumetric_Clouds_Extinction:MaterialExpressionCollectionParameter_8'")
+    .MaterialExpressionEditorX=-2668
+    .MaterialExpressionEditorY=-79
+    .MaterialExpressionGuid=364E6D7F4FDD66B9F2FD499C78D5C916
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_15)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteUsage_4'")
+    .ConstB=3.500000
+    .MaterialExpressionEditorX=-5372
+    .MaterialExpressionEditorY=-992
+    .MaterialExpressionGuid=CEE03CC643453B429AB6CF95CBE60B9C
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_20)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    B                      <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Volumetric_Clouds_Extinction:MaterialExpressionCollectionParameter_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteUsage_10'")
+    .MaterialExpressionEditorX=-5408
+    .MaterialExpressionEditorY=-868
+    .MaterialExpressionGuid=461039CF4115697593A426802EB25621
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_27)
+    A                      <- MaterialExpressionPower
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Volumetric_Clouds_Extinction:MaterialExpressionMultiply_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionPower'Volumetric_Clouds_Extinction:MaterialExpressionPower_0'")
+    .MaterialExpressionEditorX=-2548
+    .MaterialExpressionEditorY=-191
+    .MaterialExpressionGuid=A83CADCE47F0DECDBCB314BEE9DA3886
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_28)
+    A                      <- MaterialExpressionCollectionParameter
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Volumetric_Clouds_Extinction:MaterialExpressionComponentMask_13'")
+    .A=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Volumetric_Clouds_Extinction:MaterialExpressionCollectionParameter_10'")
+    .MaterialExpressionEditorX=-1310
+    .MaterialExpressionEditorY=-66
+    .MaterialExpressionGuid=76A0293F4034A0B01F595FA0DCD32BE3
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_29)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Volumetric_Clouds_Extinction:MaterialExpressionMultiply_28'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'Volumetric_Clouds_Extinction:MaterialExpressionSubtract_6'")
+    .MaterialExpressionEditorX=-1146
+    .MaterialExpressionEditorY=-170
+    .MaterialExpressionGuid=EF96605842344E0DD94587A75FF02C3E
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_31)
+    A                      <- MaterialExpressionStaticSwitch
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Volumetric_Clouds_Extinction:MaterialExpressionMultiply_34'")
+    .A=(Expression="/Script/Engine.MaterialExpressionStaticSwitch'Volumetric_Clouds_Extinction:MaterialExpressionStaticSwitch_0'")
+    .MaterialExpressionEditorX=432
+    .MaterialExpressionEditorY=-288
+    .MaterialExpressionGuid=74E8CEB749A5DCA844361299B90A2711
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_34)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionPower
+    .B=(Expression="/Script/Engine.MaterialExpressionPower'Volumetric_Clouds_Extinction:MaterialExpressionPower_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Volumetric_Clouds_Extinction:MaterialExpressionComponentMask_1'")
+    .MaterialExpressionEditorX=292
+    .MaterialExpressionEditorY=-184
+    .MaterialExpressionGuid=26810628469ECB22DE81A9BE1D54DC44
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_0)
+    Input                  <- MaterialExpressionFunctionInput
+    .Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Volumetric_Clouds_Extinction:MaterialExpressionFunctionInput_2'")
+    .Name="Conservative Density"
+    .NodeColor=(R=0.000000,G=0.273437,B=1.000000,A=1.000000)
+    .VariableGuid=20B419C84748B898F2CBF181BEE94377
+    .MaterialExpressionEditorX=-7767
+    .MaterialExpressionEditorY=-803
+    .MaterialExpressionGuid=CCDFBB6A4C300C5F0510D3AD63D593DF
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_1)
+    Input                  <- MaterialExpressionDivide
+    .Input=(Expression="/Script/Engine.MaterialExpressionDivide'Volumetric_Clouds_Extinction:MaterialExpressionDivide_0'")
+    .Name="Base 3D Noise Sample Position"
+    .NodeColor=(R=0.125000,G=1.000000,B=0.000000,A=1.000000)
+    .VariableGuid=24CEDDCD4A4B55968FCEB6919995549F
+    .MaterialExpressionEditorX=-7106
+    .MaterialExpressionEditorY=-270
+    .MaterialExpressionGuid=0EA9A28A458F69008B09FBA3AFB6A5C3
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_10)
+    Input                  <- MaterialExpressionSubtract
+    .Input=(Expression="/Script/Engine.MaterialExpressionSubtract'Volumetric_Clouds_Extinction:MaterialExpressionSubtract_3'")
+    .Name="Base Cloud Shape"
+    .NodeColor=(R=0.218750,G=0.000000,B=1.000000,A=1.000000)
+    .VariableGuid=20D892164315B21C147E288DE8A83356
+    .MaterialExpressionEditorX=-2260
+    .MaterialExpressionEditorY=-275
+    .MaterialExpressionGuid=C8CE055F491C61ECA68AC993BE8246EA
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_12)
+    Input                  <- MaterialExpressionComponentMask
+    .Input=(Expression="/Script/Engine.MaterialExpressionComponentMask'Volumetric_Clouds_Extinction:MaterialExpressionComponentMask_16'")
+    .Name="Floor Variation Level"
+    .NodeColor=(R=1.000000,G=0.773438,B=0.000000,A=1.000000)
+    .VariableGuid=F2CCFAD046F92F2F1295B0904BF5FBF8
+    .MaterialExpressionEditorX=-3645
+    .MaterialExpressionEditorY=-1075
+    .MaterialExpressionGuid=C1C572954AA6BFC54B1654998E6A4071
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_13)
+    Input                  <- MaterialExpressionTextureSampleParameter2D
+    .Input=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameter2D'Volumetric_Clouds_Extinction:MaterialExpressionTextureSampleParameter2D_3'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .Name="Profile Texture"
+    .NodeColor=(R=0.101562,G=0.000000,B=1.000000,A=1.000000)
+    .VariableGuid=83A043FF458A5B11CD897ABFD0FF7D8A
+    .MaterialExpressionEditorX=-2714
+    .MaterialExpressionEditorY=-690
+    .MaterialExpressionGuid=793378AD488B4FE6AE44548A10E118FB
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_3)
+    Input                  <- MaterialExpressionTextureSample
+    .Input=(Expression="/Script/Engine.MaterialExpressionTextureSample'Volumetric_Clouds_Extinction:MaterialExpressionTextureSample_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .Name="Main Sample RGB"
+    .NodeColor=(R=0.000000,G=0.250000,B=1.000000,A=1.000000)
+    .VariableGuid=9932C2C843585A17CD774D84FB80E7CE
+    .MaterialExpressionEditorX=-5578
+    .MaterialExpressionEditorY=-70
+    .MaterialExpressionGuid=F4C218D24A3695BF3606BEA43F94DA3C
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_4)
+    Input                  <- MaterialExpressionCustom
+    .Input=(Expression="/Script/Engine.MaterialExpressionCustom'Volumetric_Clouds_Extinction:MaterialExpressionCustom_0'")
+    .Name="High Frequency Sample R"
+    .NodeColor=(R=0.710937,G=1.000000,B=0.000000,A=1.000000)
+    .VariableGuid=DD35486343B8C3217B24E1930CC329A3
+    .MaterialExpressionEditorX=-4632
+    .MaterialExpressionEditorY=-1024
+    .MaterialExpressionGuid=B0BBF9E745E277D3C6B9E19288B63846
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_5)
+    Input                  <- MaterialExpressionTextureObjectParameter
+    .Input=(Expression="/Script/Engine.MaterialExpressionTextureObjectParameter'Volumetric_Clouds_Extinction:MaterialExpressionTextureObjectParameter_3'")
+    .Name="Main Pass 3D Texture"
+    .NodeColor=(R=1.000000,G=0.000000,B=0.492187,A=1.000000)
+    .VariableGuid=6C5C24E6437944D392342E86E2719358
+    .MaterialExpressionEditorX=-7068
+    .MaterialExpressionEditorY=-780
+    .MaterialExpressionGuid=3896225145D21EE00F5F908EB72C2F70
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_7)
+    Input                  <- MaterialExpressionFunctionInput
+    .Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Volumetric_Clouds_Extinction:MaterialExpressionFunctionInput_3'")
+    .Name="Allow HF Noise Layer"
+    .NodeColor=(R=0.000000,G=1.000000,B=0.320313,A=1.000000)
+    .VariableGuid=1BB31E494F0A0317BEBA57B54E47D35F
+    .MaterialExpressionEditorX=-4533
+    .MaterialExpressionEditorY=20
+    .MaterialExpressionGuid=BEE7BF1E4EFA9AB922556988F3993337
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_0)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteDeclaration_0'"
+    .DeclarationGuid=20B419C84748B898F2CBF181BEE94377
+    .MaterialExpressionEditorX=-40
+    .MaterialExpressionEditorY=-208
+    .MaterialExpressionGuid=0D9035D646B1EBAB1BDC5F95453D5E45
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_10)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteDeclaration_3'"
+    .DeclarationGuid=9932C2C843585A17CD774D84FB80E7CE
+    .MaterialExpressionEditorX=-5632
+    .MaterialExpressionEditorY=-880
+    .MaterialExpressionGuid=FD720DB24A748042C004FA853DB125A9
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_12)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteDeclaration_3'"
+    .DeclarationGuid=9932C2C843585A17CD774D84FB80E7CE
+    .MaterialExpressionEditorX=-3908
+    .MaterialExpressionEditorY=-136
+    .MaterialExpressionGuid=FD720DB24A748042C004FA853DB125A9
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_13)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteDeclaration_5'"
+    .DeclarationGuid=6C5C24E6437944D392342E86E2719358
+    .MaterialExpressionEditorX=-5204
+    .MaterialExpressionEditorY=-1048
+    .MaterialExpressionGuid=66E3512747CECA77CA4C48933F1774F6
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_14)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteDeclaration_0'"
+    .DeclarationGuid=20B419C84748B898F2CBF181BEE94377
+    .MaterialExpressionEditorX=-2872
+    .MaterialExpressionEditorY=-275
+    .MaterialExpressionGuid=DEA3C951494B3A42A2947B8A03E20ABD
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_15)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteDeclaration_5'"
+    .DeclarationGuid=6C5C24E6437944D392342E86E2719358
+    .MaterialExpressionEditorX=-6050
+    .MaterialExpressionEditorY=-6
+    .MaterialExpressionGuid=57317F5D434E35D4F2F503BB62E73C9B
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_18)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteDeclaration_7'"
+    .DeclarationGuid=1BB31E494F0A0317BEBA57B54E47D35F
+    .MaterialExpressionEditorX=-693
+    .MaterialExpressionEditorY=-160
+    .MaterialExpressionGuid=451826F948B1AB8499D09BAA26EFE366
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_23)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteDeclaration_4'"
+    .DeclarationGuid=DD35486343B8C3217B24E1930CC329A3
+    .MaterialExpressionEditorX=-1552
+    .MaterialExpressionEditorY=-200
+    .MaterialExpressionGuid=DF004EC747EEE4B94181509C449A80FD
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_27)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteDeclaration_10'"
+    .DeclarationGuid=20D892164315B21C147E288DE8A83356
+    .MaterialExpressionEditorX=-682
+    .MaterialExpressionEditorY=-222
+    .MaterialExpressionGuid=3862752E43AF1C254B6F80B2E871B432
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_31)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteDeclaration_3'"
+    .DeclarationGuid=9932C2C843585A17CD774D84FB80E7CE
+    .MaterialExpressionEditorX=-1670
+    .MaterialExpressionEditorY=10
+    .MaterialExpressionGuid=FD720DB24A748042C004FA853DB125A9
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_36)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteDeclaration_0'"
+    .DeclarationGuid=20B419C84748B898F2CBF181BEE94377
+    .MaterialExpressionEditorX=-3996
+    .MaterialExpressionEditorY=-1076
+    .MaterialExpressionGuid=DEA3C951494B3A42A2947B8A03E20ABD
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_37)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteDeclaration_12'"
+    .DeclarationGuid=F2CCFAD046F92F2F1295B0904BF5FBF8
+    .MaterialExpressionEditorX=-3600
+    .MaterialExpressionEditorY=-568
+    .MaterialExpressionGuid=D3AE5C184E705D5E43946194829EFE83
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_4)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteDeclaration_1'"
+    .DeclarationGuid=24CEDDCD4A4B55968FCEB6919995549F
+    .MaterialExpressionEditorX=-5644
+    .MaterialExpressionEditorY=-992
+    .MaterialExpressionGuid=439D13AE48CD07BC233D4288FA790E5C
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_40)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteDeclaration_0'"
+    .DeclarationGuid=20B419C84748B898F2CBF181BEE94377
+    .MaterialExpressionEditorX=-4060
+    .MaterialExpressionEditorY=-684
+    .MaterialExpressionGuid=DEA3C951494B3A42A2947B8A03E20ABD
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_41)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteDeclaration_13'"
+    .DeclarationGuid=83A043FF458A5B11CD897ABFD0FF7D8A
+    .MaterialExpressionEditorX=-3096
+    .MaterialExpressionEditorY=20
+    .MaterialExpressionGuid=67B3C84B4C8124CDBD666BA35B848108
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_42)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteDeclaration_13'"
+    .DeclarationGuid=83A043FF458A5B11CD897ABFD0FF7D8A
+    .MaterialExpressionEditorX=-160
+    .MaterialExpressionEditorY=-116
+    .MaterialExpressionGuid=67B3C84B4C8124CDBD666BA35B848108
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_43)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteDeclaration_10'"
+    .DeclarationGuid=20D892164315B21C147E288DE8A83356
+    .MaterialExpressionEditorX=-1206
+    .MaterialExpressionEditorY=-286
+    .MaterialExpressionGuid=3862752E43AF1C254B6F80B2E871B432
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_6)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteDeclaration_1'"
+    .DeclarationGuid=24CEDDCD4A4B55968FCEB6919995549F
+    .MaterialExpressionEditorX=-6098
+    .MaterialExpressionEditorY=-70
+    .MaterialExpressionGuid=439D13AE48CD07BC233D4288FA790E5C
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_1)
+    Input                  <- MaterialExpressionNamedRerouteUsage
+    .Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteUsage_37'")
+    .MaterialExpressionEditorX=-3408
+    .MaterialExpressionEditorY=-568
+    .MaterialExpressionGuid=456E5F8142C351D72CFDD3B0C962E968
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionPower (MaterialExpressionPower_0)
+    Base                   <- MaterialExpressionStaticSwitchParameter
+    Exponent               <- MaterialExpressionCollectionParameter
+    .Base=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Volumetric_Clouds_Extinction:MaterialExpressionStaticSwitchParameter_4'")
+    .Exponent=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Volumetric_Clouds_Extinction:MaterialExpressionCollectionParameter_7'")
+    .MaterialExpressionEditorX=-3064
+    .MaterialExpressionEditorY=-191
+    .MaterialExpressionGuid=1F513C654C0159FC1FF9718B253B75D0
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionPower (MaterialExpressionPower_2)
+    Base                   <- MaterialExpressionComponentMask
+    .Base=(Expression="/Script/Engine.MaterialExpressionComponentMask'Volumetric_Clouds_Extinction:MaterialExpressionComponentMask_19'")
+    .ConstExponent=3.000000
+    .MaterialExpressionEditorX=128
+    .MaterialExpressionEditorY=-116
+    .MaterialExpressionGuid=B0A86BD042CD277686C26E82FF771969
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionStaticBool (MaterialExpressionStaticBool_0)
+    .Value=True
+    .MaterialExpressionEditorX=-5081
+    .MaterialExpressionEditorY=4
+    .MaterialExpressionGuid=B56A657B46D3875A8A400AAC42853B48
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionStaticSwitch (MaterialExpressionStaticSwitch_0)
+    A                      <- MaterialExpressionStaticSwitchParameter
+    B                      <- MaterialExpressionNamedRerouteUsage
+    Value                  <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteUsage_27'")
+    .A=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Volumetric_Clouds_Extinction:MaterialExpressionStaticSwitchParameter_3'")
+    .Value=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteUsage_18'")
+    .MaterialExpressionEditorX=-454
+    .MaterialExpressionEditorY=-286
+    .MaterialExpressionGuid=54F58451433A49AD53198391BA95F551
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionStaticSwitchParameter (MaterialExpressionStaticSwitchParameter_3)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    B                      <- MaterialExpressionAdd
+    .ParameterName="Simplified Extinction"
+    .B=(Expression="/Script/Engine.MaterialExpressionAdd'Volumetric_Clouds_Extinction:MaterialExpressionAdd_6'")
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteUsage_43'")
+    .ExpressionGUID=D5225DAB42E1D684C9BEF3B348C340B8
+    .MaterialExpressionEditorX=-906
+    .MaterialExpressionEditorY=-302
+    .MaterialExpressionGuid=457505A54C56B144728E6E99736BA65C
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionStaticSwitchParameter (MaterialExpressionStaticSwitchParameter_4)
+    A                      <- MaterialExpressionConstant
+    B                      <- MaterialExpressionLinearInterpolate
+    .ParameterName="Simplified Extinction"
+    .B=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Volumetric_Clouds_Extinction:MaterialExpressionLinearInterpolate_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionConstant'Volumetric_Clouds_Extinction:MaterialExpressionConstant_1'")
+    .ExpressionGUID=7FCD899C499F3C242E4147BB3768D11A
+    .MaterialExpressionEditorX=-3396
+    .MaterialExpressionEditorY=-207
+    .MaterialExpressionGuid=457505A54C56B144728E6E99736BA65C
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_3)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Volumetric_Clouds_Extinction:MaterialExpressionMultiply_27'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Volumetric_Clouds_Extinction:MaterialExpressionComponentMask_6'")
+    .MaterialExpressionEditorX=-2404
+    .MaterialExpressionEditorY=-275
+    .MaterialExpressionGuid=834DA66248D2217C61BB60AEA27CA810
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_6)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteUsage_23'")
+    .ConstB=0.550000
+    .MaterialExpressionEditorX=-1348
+    .MaterialExpressionEditorY=-200
+    .MaterialExpressionGuid=FF0EB1224F4A09B78820A091B44DB7DB
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionTextureObjectParameter (MaterialExpressionTextureObjectParameter_3)
+    .ParameterName="3D_Texture"
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.VolumeTexture'/Game/ENDEMIS/Weather/Clouds/3D_Cells_32.3D_Cells_32'"
+    .ExpressionGUID=D6F89BF949BBC7B527AFE4852325D83C
+    .MaterialExpressionEditorX=-7308
+    .MaterialExpressionEditorY=-796
+    .MaterialExpressionGuid=84D4583D4CCED0689C1FAFA3308A4BE9
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+    .bCollapsed=True
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_0)
+    Coordinates            <- MaterialExpressionNamedRerouteUsage
+    TextureObject          <- MaterialExpressionNamedRerouteUsage
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.VolumeTexture'/Game/ENDEMIS/Weather/Clouds/3D_Cells_32.3D_Cells_32'"
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteUsage_6'")
+    .TextureObject=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Volumetric_Clouds_Extinction:MaterialExpressionNamedRerouteUsage_15'")
+    .MipValueMode=TMVM_MipLevel
+    .SamplerSource=SSM_Wrap_WorldGroupSettings
+    .AutomaticViewMipBias=False
+    .MaterialExpressionEditorX=-5814
+    .MaterialExpressionEditorY=-70
+    .MaterialExpressionGuid=5E5847DF49FABF608B88BC90ED6C2791
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionTextureSampleParameter2D (MaterialExpressionTextureSampleParameter2D_3)
+    Coordinates            <- MaterialExpressionAppendVector
+    .ParameterName="Cloud_Profile"
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/VolumetricClouds/T_Cloud_Profile.T_Cloud_Profile'"
+    .ExpressionGUID=782E237141F1BAF92E04B7A5A4B7FDC1
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionAppendVector'Volumetric_Clouds_Extinction:MaterialExpressionAppendVector_2'")
+    .SamplerSource=SSM_Clamp_WorldGroupSettings
+    .MaterialExpressionEditorX=-2958
+    .MaterialExpressionEditorY=-702
+    .MaterialExpressionGuid=3B7509474542D57CF51987B0DB425F52
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionViewProperty (MaterialExpressionViewProperty_0)
+    .MaterialExpressionEditorX=-5696
+    .MaterialExpressionEditorY=-648
+    .MaterialExpressionGuid=26D53715419CBF591F8EB2BC306CD09F
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionVolumetricAdvancedMaterialInput (MaterialExpressionVolumetricAdvancedMaterialInput_0)
+    .MaterialExpressionEditorX=-8336
+    .MaterialExpressionEditorY=-796
+    .MaterialExpressionGuid=02346C25421BBBD68C5B7F9F5EB37538
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"
+  MaterialExpressionWorldPosition (MaterialExpressionWorldPosition_1)
+    .MaterialExpressionEditorX=-6252
+    .MaterialExpressionEditorY=-556
+    .MaterialExpressionGuid=F3EDAD084019E858959796951231C5BD
+    .Function="/Script/Engine.MaterialFunction'Volumetric_Clouds_Extinction'"

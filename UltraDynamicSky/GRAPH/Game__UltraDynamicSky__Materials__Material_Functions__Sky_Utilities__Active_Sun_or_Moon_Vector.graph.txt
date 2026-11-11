@@ -1,0 +1,206 @@
+### /Game/UltraDynamicSky/Materials/Material_Functions/Sky_Utilities/Active_Sun_or_Moon_Vector
+  MaterialFunction (Active_Sun_or_Moon_Vector)
+    .Description="To be used with Ultra Dynamic Sky. Outputs either the Sun or Moon vector, depending on which is active (the moon will be active if the sun is down). Also outputs a 0 to 1 value which goes down to 0 right when the vector changes which light it represents, to be used to mask the changeover with whatever effect this is used for."
+    .UserExposedCaption="Active Sun or Moon Vector"
+    .bExposeToLibrary=True
+    .LibraryCategoriesText(0)=NSLOCTEXT("", "42048088478AC58D73AC778335501FF1", "Ultra Dynamic Sky")
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'Active_Sun_or_Moon_VectorEditorOnlyData'"
+    .StateId=D750522E46D1941C42A38E85DC31D710
+    .CombinedOutputTypes=15
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+  MaterialFunctionEditorOnlyData (Active_Sun_or_Moon_VectorEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'Active_Sun_or_Moon_Vector:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionCollectionParameter'Active_Sun_or_Moon_Vector:MaterialExpressionCollectionParameter_0'","/Script/Engine.MaterialExpressionComponentMask'Active_Sun_or_Moon_Vector:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionCollectionParameter'Active_Sun_or_Moon_Vector:MaterialExpressionCollectionParameter_1'","/Script/Engine.MaterialExpressionComponentMask'Active_Sun_or_Moon_Vector:MaterialExpressionComponentMask_1'","/Script/Engine.MaterialExpressionIf'Active_Sun_or_Moon_Vector:MaterialExpressionIf_0'","/Script/Engine.MaterialExpressionComponentMask'Active_Sun_or_Moon_Vector:MaterialExpressionComponentMask_2'","/Script/Engine.MaterialExpressionFunctionOutput'Active_Sun_or_Moon_Vector:MaterialExpressionFunctionOutput_1'","/Script/Engine.MaterialExpressionComponentMask'Active_Sun_or_Moon_Vector:MaterialExpressionComponentMask_3'","/Script/Engine.MaterialExpressionAbs'Active_Sun_or_Moon_Vector:MaterialExpressionAbs_1'","/Script/Engine.MaterialExpressionMultiply'Active_Sun_or_Moon_Vector:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionSaturate'Active_Sun_or_Moon_Vector:MaterialExpressionSaturate_0'","/Script/Engine.MaterialExpressionMultiply'Active_Sun_or_Moon_Vector:MaterialExpressionMultiply_1'","/Script/Engine.MaterialExpressionCollectionParameter'Active_Sun_or_Moon_Vector:MaterialExpressionCollectionParameter_2'","/Script/Engine.MaterialExpressionCollectionParameter'Active_Sun_or_Moon_Vector:MaterialExpressionCollectionParameter_3'","/Script/Engine.MaterialExpressionComponentMask'Active_Sun_or_Moon_Vector:MaterialExpressionComponentMask_5'","/Script/Engine.MaterialExpressionComponentMask'Active_Sun_or_Moon_Vector:MaterialExpressionComponentMask_6'","/Script/Engine.MaterialExpressionMultiply'Active_Sun_or_Moon_Vector:MaterialExpressionMultiply_3'","/Script/Engine.MaterialExpressionMultiply'Active_Sun_or_Moon_Vector:MaterialExpressionMultiply_4'","/Script/Engine.MaterialExpressionSaturate'Active_Sun_or_Moon_Vector:MaterialExpressionSaturate_2'","/Script/Engine.MaterialExpressionSaturate'Active_Sun_or_Moon_Vector:MaterialExpressionSaturate_3'","/Script/Engine.MaterialExpressionMax'Active_Sun_or_Moon_Vector:MaterialExpressionMax_0'"))
+  MaterialExpressionAbs (MaterialExpressionAbs_1)
+    Input                  <- MaterialExpressionComponentMask
+    .Input=(Expression="/Script/Engine.MaterialExpressionComponentMask'Active_Sun_or_Moon_Vector:MaterialExpressionComponentMask_3'")
+    .MaterialExpressionEditorX=-200
+    .MaterialExpressionEditorY=648
+    .MaterialExpressionGuid=EFF3BA2645ACA564FE868C9F324CF508
+    .Function="/Script/Engine.MaterialFunction'Active_Sun_or_Moon_Vector'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_0)
+    .ParameterName="Sun Vector"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+    .ParameterId=618AEFCB40106BAF34FCDD876EDC3DCE
+    .MaterialExpressionEditorX=-664
+    .MaterialExpressionEditorY=408
+    .MaterialExpressionGuid=0D8F19DC44430FC1AC367FA3EC36CAF1
+    .Function="/Script/Engine.MaterialFunction'Active_Sun_or_Moon_Vector'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_1)
+    .ParameterName="Moon Vector"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+    .ParameterId=8CEA313D47D706F8C060D5BA112E274B
+    .MaterialExpressionEditorX=-664
+    .MaterialExpressionEditorY=508
+    .MaterialExpressionGuid=0D8F19DC44430FC1AC367FA3EC36CAF1
+    .Function="/Script/Engine.MaterialFunction'Active_Sun_or_Moon_Vector'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_2)
+    .ParameterName="Sun Vector"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+    .ParameterId=618AEFCB40106BAF34FCDD876EDC3DCE
+    .MaterialExpressionEditorX=-648
+    .MaterialExpressionEditorY=752
+    .MaterialExpressionGuid=0D8F19DC44430FC1AC367FA3EC36CAF1
+    .Function="/Script/Engine.MaterialFunction'Active_Sun_or_Moon_Vector'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_3)
+    .ParameterName="Moon Vector"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+    .ParameterId=8CEA313D47D706F8C060D5BA112E274B
+    .MaterialExpressionEditorX=-648
+    .MaterialExpressionEditorY=852
+    .MaterialExpressionGuid=0D8F19DC44430FC1AC367FA3EC36CAF1
+    .Function="/Script/Engine.MaterialFunction'Active_Sun_or_Moon_Vector'"
+    .bCollapsed=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionCollectionParameter
+    .R=True
+    .G=True
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Active_Sun_or_Moon_Vector:MaterialExpressionCollectionParameter_0'")
+    .MaterialExpressionEditorX=-332
+    .MaterialExpressionEditorY=436
+    .MaterialExpressionGuid=EA2BE57D494DD97AB53048AAC992AE60
+    .Function="/Script/Engine.MaterialFunction'Active_Sun_or_Moon_Vector'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_1)
+    Input                  <- MaterialExpressionCollectionParameter
+    .R=True
+    .G=True
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Active_Sun_or_Moon_Vector:MaterialExpressionCollectionParameter_1'")
+    .MaterialExpressionEditorX=-336
+    .MaterialExpressionEditorY=536
+    .MaterialExpressionGuid=EA2BE57D494DD97AB53048AAC992AE60
+    .Function="/Script/Engine.MaterialFunction'Active_Sun_or_Moon_Vector'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_2)
+    Input                  <- MaterialExpressionCollectionParameter
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Active_Sun_or_Moon_Vector:MaterialExpressionCollectionParameter_0'")
+    .MaterialExpressionEditorX=-324
+    .MaterialExpressionEditorY=332
+    .MaterialExpressionGuid=EAFE01034E635065822908A579D815A0
+    .Function="/Script/Engine.MaterialFunction'Active_Sun_or_Moon_Vector'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_3)
+    Input                  <- MaterialExpressionCollectionParameter
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Active_Sun_or_Moon_Vector:MaterialExpressionCollectionParameter_0'")
+    .MaterialExpressionEditorX=-324
+    .MaterialExpressionEditorY=648
+    .MaterialExpressionGuid=EAFE01034E635065822908A579D815A0
+    .Function="/Script/Engine.MaterialFunction'Active_Sun_or_Moon_Vector'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_5)
+    Input                  <- MaterialExpressionCollectionParameter
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Active_Sun_or_Moon_Vector:MaterialExpressionCollectionParameter_2'")
+    .MaterialExpressionEditorX=-392
+    .MaterialExpressionEditorY=780
+    .MaterialExpressionGuid=EAFE01034E635065822908A579D815A0
+    .Function="/Script/Engine.MaterialFunction'Active_Sun_or_Moon_Vector'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_6)
+    Input                  <- MaterialExpressionCollectionParameter
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Active_Sun_or_Moon_Vector:MaterialExpressionCollectionParameter_3'")
+    .MaterialExpressionEditorX=-388
+    .MaterialExpressionEditorY=880
+    .MaterialExpressionGuid=EAFE01034E635065822908A579D815A0
+    .Function="/Script/Engine.MaterialFunction'Active_Sun_or_Moon_Vector'"
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionIf
+    .A=(Expression="/Script/Engine.MaterialExpressionIf'Active_Sun_or_Moon_Vector:MaterialExpressionIf_0'")
+    .OutputName="Vector"
+    .Description="The sun or moon vector, depending on which is up. This is the direction the light is pointing. If you need instead the direction to the light source from the surface, invert this vector."
+    .bLastPreviewed=True
+    .Id=005EE48B4CA1B72AD23EE089F1DE4822
+    .MaterialExpressionEditorX=56
+    .MaterialExpressionEditorY=304
+    .MaterialExpressionGuid=79D15CD74C0214F1B41D9FBE1DBB27F1
+    .Function="/Script/Engine.MaterialFunction'Active_Sun_or_Moon_Vector'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_1)
+    A                      <- MaterialExpressionMultiply
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Active_Sun_or_Moon_Vector:MaterialExpressionMultiply_1'")
+    .OutputName="Transition Mask"
+    .Description="1 most of the time, fades down to 0 when the changeover from the sun to the moon happens. Also outputs 0 if neither the sun or moon is above the horizon."
+    .SortPriority=1
+    .Id=54B738904E762695ACF6BF85AEFFF9A5
+    .MaterialExpressionEditorX=260
+    .MaterialExpressionEditorY=648
+    .MaterialExpressionGuid=83C5FB45499E215E4F78089088543B5D
+    .Function="/Script/Engine.MaterialFunction'Active_Sun_or_Moon_Vector'"
+    .bCollapsed=True
+  MaterialExpressionIf (MaterialExpressionIf_0)
+    A                      <- MaterialExpressionComponentMask
+    AGreaterThanB          <- MaterialExpressionComponentMask
+    ALessThanB             <- MaterialExpressionComponentMask
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Active_Sun_or_Moon_Vector:MaterialExpressionComponentMask_2'")
+    .AGreaterThanB=(Expression="/Script/Engine.MaterialExpressionComponentMask'Active_Sun_or_Moon_Vector:MaterialExpressionComponentMask_1'")
+    .ALessThanB=(Expression="/Script/Engine.MaterialExpressionComponentMask'Active_Sun_or_Moon_Vector:MaterialExpressionComponentMask_0'")
+    .MaterialExpressionEditorX=-112
+    .MaterialExpressionEditorY=332
+    .MaterialExpressionGuid=3E95D1B544A59A6A14BA3AADDA0C4FFC
+    .Function="/Script/Engine.MaterialFunction'Active_Sun_or_Moon_Vector'"
+  MaterialExpressionMax (MaterialExpressionMax_0)
+    A                      <- MaterialExpressionSaturate
+    B                      <- MaterialExpressionSaturate
+    .B=(Expression="/Script/Engine.MaterialExpressionSaturate'Active_Sun_or_Moon_Vector:MaterialExpressionSaturate_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSaturate'Active_Sun_or_Moon_Vector:MaterialExpressionSaturate_2'")
+    .MaterialExpressionEditorX=44
+    .MaterialExpressionEditorY=780
+    .MaterialExpressionGuid=C535383D4D81AFB3EDC1659099A4A1D9
+    .Function="/Script/Engine.MaterialFunction'Active_Sun_or_Moon_Vector'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionAbs
+    .A=(Expression="/Script/Engine.MaterialExpressionAbs'Active_Sun_or_Moon_Vector:MaterialExpressionAbs_1'")
+    .ConstB=10.000000
+    .MaterialExpressionEditorX=-108
+    .MaterialExpressionEditorY=648
+    .MaterialExpressionGuid=437454294947290173DE57A778D2BD32
+    .Function="/Script/Engine.MaterialFunction'Active_Sun_or_Moon_Vector'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionSaturate
+    B                      <- MaterialExpressionMax
+    .B=(Expression="/Script/Engine.MaterialExpressionMax'Active_Sun_or_Moon_Vector:MaterialExpressionMax_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSaturate'Active_Sun_or_Moon_Vector:MaterialExpressionSaturate_0'")
+    .MaterialExpressionEditorX=152
+    .MaterialExpressionEditorY=648
+    .MaterialExpressionGuid=85A29CC5482CAE1FF3AEB6A31D47571E
+    .Function="/Script/Engine.MaterialFunction'Active_Sun_or_Moon_Vector'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_3)
+    A                      <- MaterialExpressionComponentMask
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Active_Sun_or_Moon_Vector:MaterialExpressionComponentMask_5'")
+    .ConstB=-10.000000
+    .MaterialExpressionEditorX=-264
+    .MaterialExpressionEditorY=780
+    .MaterialExpressionGuid=CBE7F7D4414ACAE28AD83D89C14F5C2C
+    .Function="/Script/Engine.MaterialFunction'Active_Sun_or_Moon_Vector'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_4)
+    A                      <- MaterialExpressionComponentMask
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Active_Sun_or_Moon_Vector:MaterialExpressionComponentMask_6'")
+    .ConstB=-10.000000
+    .MaterialExpressionEditorX=-264
+    .MaterialExpressionEditorY=884
+    .MaterialExpressionGuid=CBE7F7D4414ACAE28AD83D89C14F5C2C
+    .Function="/Script/Engine.MaterialFunction'Active_Sun_or_Moon_Vector'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_0)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Active_Sun_or_Moon_Vector:MaterialExpressionMultiply_0'")
+    .MaterialExpressionEditorX=24
+    .MaterialExpressionEditorY=648
+    .MaterialExpressionGuid=8BDA7E1446D359E68F0720805E2C28D3
+    .Function="/Script/Engine.MaterialFunction'Active_Sun_or_Moon_Vector'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_2)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Active_Sun_or_Moon_Vector:MaterialExpressionMultiply_3'")
+    .MaterialExpressionEditorX=-108
+    .MaterialExpressionEditorY=780
+    .MaterialExpressionGuid=8BDA7E1446D359E68F0720805E2C28D3
+    .Function="/Script/Engine.MaterialFunction'Active_Sun_or_Moon_Vector'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_3)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Active_Sun_or_Moon_Vector:MaterialExpressionMultiply_4'")
+    .MaterialExpressionEditorX=-104
+    .MaterialExpressionEditorY=884
+    .MaterialExpressionGuid=8BDA7E1446D359E68F0720805E2C28D3
+    .Function="/Script/Engine.MaterialFunction'Active_Sun_or_Moon_Vector'"

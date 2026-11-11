@@ -1,0 +1,130 @@
+### /Game/UltraDynamicSky/Materials/Material_Functions/RadialGradientBasic
+  MaterialFunction (RadialGradientBasic)
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'RadialGradientBasicEditorOnlyData'"
+    .StateId=EBEF33B34758D724E4E55F9FC3D66FBA
+    .CombinedInputTypes=15
+    .CombinedOutputTypes=15
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+  MaterialFunctionEditorOnlyData (RadialGradientBasicEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'RadialGradientBasic:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionFunctionInput'RadialGradientBasic:MaterialExpressionFunctionInput_0'","/Script/Engine.MaterialExpressionTextureCoordinate'RadialGradientBasic:MaterialExpressionTextureCoordinate_0'","/Script/Engine.MaterialExpressionDistance'RadialGradientBasic:MaterialExpressionDistance_0'","/Script/Engine.MaterialExpressionMultiply'RadialGradientBasic:MaterialExpressionMultiply_4'","/Script/Engine.MaterialExpressionOneMinus'RadialGradientBasic:MaterialExpressionOneMinus_0'","/Script/Engine.MaterialExpressionPower'RadialGradientBasic:MaterialExpressionPower_2'","/Script/Engine.MaterialExpressionFunctionInput'RadialGradientBasic:MaterialExpressionFunctionInput_1'","/Script/Engine.MaterialExpressionFunctionInput'RadialGradientBasic:MaterialExpressionFunctionInput_2'","/Script/Engine.MaterialExpressionFunctionInput'RadialGradientBasic:MaterialExpressionFunctionInput_3'","/Script/Engine.MaterialExpressionDivide'RadialGradientBasic:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionSaturate'RadialGradientBasic:MaterialExpressionSaturate_0'","/Script/Engine.MaterialExpressionDivide'RadialGradientBasic:MaterialExpressionDivide_1'"))
+  MaterialExpressionDistance (MaterialExpressionDistance_0)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'RadialGradientBasic:MaterialExpressionFunctionInput_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'RadialGradientBasic:MaterialExpressionFunctionInput_0'")
+    .MaterialExpressionEditorX=-928
+    .MaterialExpressionEditorY=284
+    .MaterialExpressionGuid=6BA8A9394C61E100DF892888FB120096
+    .Function="/Script/Engine.MaterialFunction'RadialGradientBasic'"
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'RadialGradientBasic:MaterialExpressionFunctionInput_3'")
+    .ConstA=2.000000
+    .MaterialExpressionEditorX=-328
+    .MaterialExpressionEditorY=376
+    .MaterialExpressionGuid=947AA4AD41D598E116E81A9460A4346E
+    .Function="/Script/Engine.MaterialFunction'RadialGradientBasic'"
+  MaterialExpressionDivide (MaterialExpressionDivide_1)
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'RadialGradientBasic:MaterialExpressionFunctionInput_2'")
+    .MaterialExpressionEditorX=-756
+    .MaterialExpressionEditorY=388
+    .MaterialExpressionGuid=8620ECC340DBC5FF9031719E3D7F3DD1
+    .Function="/Script/Engine.MaterialFunction'RadialGradientBasic'"
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_0)
+    Preview                <- MaterialExpressionTextureCoordinate
+    .Preview=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'RadialGradientBasic:MaterialExpressionTextureCoordinate_0'")
+    .InputName="UV"
+    .Id=3D670BAB449CC330AF1A0D98994C2A90
+    .InputType=FunctionInput_Vector2
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=1
+    .MaterialExpressionEditorX=-1112
+    .MaterialExpressionEditorY=272
+    .MaterialExpressionGuid=83F8209441995BB4683A1389E45D749D
+    .Function="/Script/Engine.MaterialFunction'RadialGradientBasic'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_1)
+    .InputName="Center"
+    .Id=08954A7C4248905A30D7B0B88B75B62F
+    .InputType=FunctionInput_Vector2
+    .PreviewValue=(X=0.500000,Y=0.500000,Z=0.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=2
+    .MaterialExpressionEditorX=-1136
+    .MaterialExpressionEditorY=344
+    .MaterialExpressionGuid=61F725D445C27E36982622A04FA14F6E
+    .Function="/Script/Engine.MaterialFunction'RadialGradientBasic'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_2)
+    .InputName="Radius"
+    .Id=131CA7274C02CDA166B9749B5EE24A64
+    .InputType=FunctionInput_Scalar
+    .PreviewValue=(X=0.500000,Y=0.000000,Z=0.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=3
+    .MaterialExpressionEditorX=-940
+    .MaterialExpressionEditorY=412
+    .MaterialExpressionGuid=8C10A7504060B728C789CC9115BFE846
+    .Function="/Script/Engine.MaterialFunction'RadialGradientBasic'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_3)
+    .InputName="Density"
+    .Id=3FBB53124DEA3B7CC52CEAA08FF6C9ED
+    .InputType=FunctionInput_Scalar
+    .PreviewValue=(X=1.000000,Y=0.000000,Z=0.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=4
+    .MaterialExpressionEditorX=-552
+    .MaterialExpressionEditorY=408
+    .MaterialExpressionGuid=73946E6D47B21544FEEFBFA61FADF940
+    .Function="/Script/Engine.MaterialFunction'RadialGradientBasic'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionSaturate
+    .A=(Expression="/Script/Engine.MaterialExpressionSaturate'RadialGradientBasic:MaterialExpressionSaturate_0'")
+    .bLastPreviewed=True
+    .Id=327E073F424BB1EF2B65E58605E267EE
+    .MaterialExpressionEditorX=152
+    .MaterialExpressionEditorY=260
+    .MaterialExpressionGuid=24A9A9CE4E0A941FF8E15E8DEA82002B
+    .Function="/Script/Engine.MaterialFunction'RadialGradientBasic'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_4)
+    A                      <- MaterialExpressionDistance
+    B                      <- MaterialExpressionDivide
+    .B=(Expression="/Script/Engine.MaterialExpressionDivide'RadialGradientBasic:MaterialExpressionDivide_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionDistance'RadialGradientBasic:MaterialExpressionDistance_0'")
+    .ConstB=2.000000
+    .MaterialExpressionEditorX=-624
+    .MaterialExpressionEditorY=284
+    .MaterialExpressionGuid=E6B750AC4E7DE01E903592916E33B387
+    .Function="/Script/Engine.MaterialFunction'RadialGradientBasic'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_0)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'RadialGradientBasic:MaterialExpressionMultiply_4'")
+    .MaterialExpressionEditorX=-500
+    .MaterialExpressionEditorY=284
+    .MaterialExpressionGuid=D3AE83F449E45F60AF720F92B74B160D
+    .Function="/Script/Engine.MaterialFunction'RadialGradientBasic'"
+  MaterialExpressionPower (MaterialExpressionPower_2)
+    Base                   <- MaterialExpressionOneMinus
+    Exponent               <- MaterialExpressionDivide
+    .Base=(Expression="/Script/Engine.MaterialExpressionOneMinus'RadialGradientBasic:MaterialExpressionOneMinus_0'")
+    .Exponent=(Expression="/Script/Engine.MaterialExpressionDivide'RadialGradientBasic:MaterialExpressionDivide_0'")
+    .MaterialExpressionEditorX=-172
+    .MaterialExpressionEditorY=284
+    .MaterialExpressionGuid=A3D43BAD4DF21319B822BD8FA0BBE613
+    .Function="/Script/Engine.MaterialFunction'RadialGradientBasic'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_0)
+    Input                  <- MaterialExpressionPower
+    .Input=(Expression="/Script/Engine.MaterialExpressionPower'RadialGradientBasic:MaterialExpressionPower_2'")
+    .MaterialExpressionEditorX=32
+    .MaterialExpressionEditorY=284
+    .MaterialExpressionGuid=7AAB125C4EA6B440A1687FAFCD30C54D
+    .Function="/Script/Engine.MaterialFunction'RadialGradientBasic'"
+  MaterialExpressionTextureCoordinate (MaterialExpressionTextureCoordinate_0)
+    .MaterialExpressionEditorX=-1348
+    .MaterialExpressionEditorY=264
+    .MaterialExpressionGuid=56B9D93543C7D87695FCF293EB666C99
+    .Function="/Script/Engine.MaterialFunction'RadialGradientBasic'"

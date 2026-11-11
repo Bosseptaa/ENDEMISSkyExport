@@ -1,0 +1,120 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_VolumetricCloud_NormHeight
+  MaterialFunction (MF_SC_VolumetricCloud_NormHeight)
+    DependentFunctionExpressionCandidates(0) <- MaterialExpressionMaterialFunctionCall
+    .LibraryCategoriesText(0)=NSLOCTEXT("", "A5A5673B4E51939FC60119A84D2FA58A", "Sky Creator")
+    .DependentFunctionExpressionCandidates(0)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_0'"
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'MF_SC_VolumetricCloud_NormHeightEditorOnlyData'"
+    .StateId=97333C2744C788EC27E019A2D9676333
+    .CombinedInputTypes=4
+    .CombinedOutputTypes=15
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+  MaterialFunctionEditorOnlyData (MF_SC_VolumetricCloud_NormHeightEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'MF_SC_VolumetricCloud_NormHeight:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionSubtract'MF_SC_VolumetricCloud_NormHeight:MaterialExpressionSubtract_0'","/Script/Engine.MaterialExpressionClamp'MF_SC_VolumetricCloud_NormHeight:MaterialExpressionClamp_0'","/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricCloud_NormHeight:MaterialExpressionMaterialFunctionCall_0'","/Script/Engine.MaterialExpressionComponentMask'MF_SC_VolumetricCloud_NormHeight:MaterialExpressionComponentMask_1'","/Script/Engine.MaterialExpressionCloudSampleAttribute'MF_SC_VolumetricCloud_NormHeight:MaterialExpressionCloudSampleAttribute_1'","/Script/Engine.MaterialExpressionStaticSwitchParameter'MF_SC_VolumetricCloud_NormHeight:MaterialExpressionStaticSwitchParameter_0'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricCloud_NormHeight:MaterialExpressionCollectionParameter_1'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricCloud_NormHeight:MaterialExpressionCollectionParameter_2'","/Script/Engine.MaterialExpressionFunctionInput'MF_SC_VolumetricCloud_NormHeight:MaterialExpressionFunctionInput_0'","/Script/Engine.MaterialExpressionWorldPosition'MF_SC_VolumetricCloud_NormHeight:MaterialExpressionWorldPosition_0'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricCloud_NormHeight:MaterialExpressionCollectionParameter_4'"))
+  MaterialExpressionClamp (MaterialExpressionClamp_0)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+    .Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricCloud_NormHeight:MaterialExpressionMaterialFunctionCall_0'")
+    .MaterialExpressionEditorX=-640
+    .MaterialExpressionEditorY=128
+    .MaterialExpressionGuid=52964D584F93699CE85FC98CFF255241
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricCloud_NormHeight'"
+  MaterialExpressionCloudSampleAttribute (MaterialExpressionCloudSampleAttribute_1)
+    .MaterialExpressionEditorX=-640
+    .MaterialExpressionEditorY=-16
+    .MaterialExpressionGuid=70C2D4084D374FCAB649AEBB8D2DC902
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricCloud_NormHeight'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_1)
+    .ParameterName="Sky Atmosphere Planet Top"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_VolumetricClouds'"
+    .ParameterId=73565BCB4E40BF3D7BDC56AF78D542F7
+    .MaterialExpressionEditorX=-1408
+    .MaterialExpressionEditorY=208
+    .MaterialExpressionGuid=8B53684A4D8B949527C115B448CA8DF0
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricCloud_NormHeight'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_2)
+    .ParameterName="Volumetric Cloud Bottom Altitude"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_VolumetricClouds'"
+    .ParameterId=2931DF0E4498672421ABDCA0A8D0CC6E
+    .MaterialExpressionEditorX=-1408
+    .MaterialExpressionEditorY=320
+    .MaterialExpressionGuid=8B53684A4D8B949527C115B448CA8DF0
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricCloud_NormHeight'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_4)
+    .ParameterName="Volumetric Cloud Top Altitude"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_VolumetricClouds'"
+    .ParameterId=6695AF9848A7E2E673312DB7483D873F
+    .MaterialExpressionEditorX=-1408
+    .MaterialExpressionEditorY=432
+    .MaterialExpressionGuid=8B53684A4D8B949527C115B448CA8DF0
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricCloud_NormHeight'"
+    .bCollapsed=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_1)
+    Input                  <- MaterialExpressionFunctionInput
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_VolumetricCloud_NormHeight:MaterialExpressionFunctionInput_0'")
+    .MaterialExpressionEditorX=-1408
+    .MaterialExpressionEditorY=128
+    .MaterialExpressionGuid=EDC4F9BA4750D7378461589503AF1C1A
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricCloud_NormHeight'"
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_0)
+    Preview                <- MaterialExpressionWorldPosition
+    .Preview=(Expression="/Script/Engine.MaterialExpressionWorldPosition'MF_SC_VolumetricCloud_NormHeight:MaterialExpressionWorldPosition_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .InputName="Position"
+    .Id=43F81B15419B29A5A1B01EBF5F8C7987
+    .bUsePreviewValueAsDefault=True
+    .MaterialExpressionEditorX=-1664
+    .MaterialExpressionEditorY=128
+    .MaterialExpressionGuid=CBFF4CD6498F259EF686B4892C0657B7
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricCloud_NormHeight'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionStaticSwitchParameter
+    .A=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'MF_SC_VolumetricCloud_NormHeight:MaterialExpressionStaticSwitchParameter_0'")
+    .bLastPreviewed=True
+    .Id=ED0621FF47204A67996B79A1F285C897
+    .MaterialExpressionGuid=7C48666848801320C64268AC47F3695D
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricCloud_NormHeight'"
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_0)
+    FunctionInputs(0)      <- MaterialExpressionSubtract
+    FunctionInputs(1)      <- MaterialExpressionCollectionParameter
+    FunctionInputs(2)      <- MaterialExpressionCollectionParameter
+    .MaterialFunction="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_Remap.MF_SC_Remap'"
+    .FunctionInputs(0)=(ExpressionInputId=7815F22649EAE745F122D186BF2036B1,Input=(Expression="/Script/Engine.MaterialExpressionSubtract'MF_SC_VolumetricCloud_NormHeight:MaterialExpressionSubtract_0'",InputName="Input"))
+    .FunctionInputs(1)=(ExpressionInputId=4FB7C1914447359787B142A38BD2115C,Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricCloud_NormHeight:MaterialExpressionCollectionParameter_2'",InputName="Input Low"))
+    .FunctionInputs(2)=(ExpressionInputId=BDC9833D47571DD88AE3B892BA913AC2,Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricCloud_NormHeight:MaterialExpressionCollectionParameter_4'",InputName="Input High"))
+    .FunctionInputs(3)=(ExpressionInputId=E518DF3C4CEA08859BCB74A0D4227458,Input=(OutputIndex=-1,InputName="Target Low"))
+    .FunctionInputs(4)=(ExpressionInputId=997106CD4B88D3FF91277EAF5ECF8884,Input=(OutputIndex=-1,InputName="Target High"))
+    .FunctionOutputs(0)=(ExpressionOutputId=6ACB0DF34E8DA8673A435BA9BC99AB24,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-896
+    .MaterialExpressionEditorY=128
+    .MaterialExpressionGuid=E998E6EC4F988C5152DB6EB1A1B07CAC
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricCloud_NormHeight'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionStaticSwitchParameter (MaterialExpressionStaticSwitchParameter_0)
+    A                      <- MaterialExpressionCloudSampleAttribute
+    B                      <- MaterialExpressionClamp
+    .ParameterName="IsVolumetricCloud"
+    .DefaultValue=True
+    .B=(Expression="/Script/Engine.MaterialExpressionClamp'MF_SC_VolumetricCloud_NormHeight:MaterialExpressionClamp_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionCloudSampleAttribute'MF_SC_VolumetricCloud_NormHeight:MaterialExpressionCloudSampleAttribute_1'",OutputIndex=2)
+    .ExpressionGUID=9863600A438A4B287866BC8DBAE2ACE1
+    .MaterialExpressionEditorX=-256
+    .MaterialExpressionEditorY=16
+    .MaterialExpressionGuid=4D37596B46111B41A9A4789A265FE089
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricCloud_NormHeight'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_0)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricCloud_NormHeight:MaterialExpressionCollectionParameter_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_VolumetricCloud_NormHeight:MaterialExpressionComponentMask_1'")
+    .MaterialExpressionEditorX=-1152
+    .MaterialExpressionEditorY=128
+    .MaterialExpressionGuid=F632CA334E5A93C48E95AA9CB5BEDD80
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricCloud_NormHeight'"
+  MaterialExpressionWorldPosition (MaterialExpressionWorldPosition_0)
+    .MaterialExpressionEditorX=-1920
+    .MaterialExpressionEditorY=112
+    .MaterialExpressionGuid=9670D9534B2F59FF4E4FE382773D0678
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricCloud_NormHeight'"

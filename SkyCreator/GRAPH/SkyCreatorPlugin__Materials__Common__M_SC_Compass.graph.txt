@@ -1,0 +1,28 @@
+### /SkyCreatorPlugin/Materials/Common/M_SC_Compass
+  Material (M_SC_Compass)
+    .BlendMode=BLEND_Translucent
+    .TwoSided=True
+    .bUsedWithStaticLighting=True
+    .bCanMaskedBeAssumedOpaque=True
+    .PixelDepthOffsetMode=PDOM_Legacy
+    .StateId=AF503A16A668CFC09DA8A4BA42391D54
+    .ReferencedTextureGuids(0)=5CEBB7924054F0612468EE9A009FD47B
+    .EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'M_SC_CompassEditorOnlyData'"
+    .TextureStreamingDataVersion=1
+    .TextureStreamingData(0)=(SamplingScale=1.000000,UVChannelIndex=0,TextureName="T_SC_Compass",TextureReference="/SkyCreatorPlugin/Textures/Common/T_SC_Compass.T_SC_Compass")
+    .ReferencedDefaultTextures(0)="/Script/Engine.Texture2D'/SkyCreatorPlugin/Textures/Common/T_SC_Compass.T_SC_Compass'"
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+    .LightingGuid=1EDD7F7D4761C06535526B9BAE9C57C8
+  MaterialEditorOnlyData (M_SC_CompassEditorOnlyData)
+    BaseColor              <- MaterialExpressionTextureSample
+    Opacity                <- MaterialExpressionTextureSample
+    ExpressionCollection   <- MaterialExpressionTextureSample
+    .BaseColor=(Constant=(R=0.501961,G=0.501961,B=0.501961,A=1.000000),Expression="/Script/Engine.MaterialExpressionTextureSample'M_SC_Compass:MaterialExpressionTextureSample_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .Opacity=(Expression="/Script/Engine.MaterialExpressionTextureSample'M_SC_Compass:MaterialExpressionTextureSample_0'",OutputIndex=4,Mask=1,MaskA=1)
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionTextureSample'M_SC_Compass:MaterialExpressionTextureSample_0'"))
+    .ParameterGroupData(0)=(GroupName="None")
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_0)
+    .Texture="/Script/Engine.Texture2D'/SkyCreatorPlugin/Textures/Common/T_SC_Compass.T_SC_Compass'"
+    .MaterialExpressionEditorX=-384
+    .MaterialExpressionGuid=9E7B25964C4AD1FDBA52A7A0ACFF1D5C
+    .Material="/Script/Engine.Material'M_SC_Compass'"

@@ -1,0 +1,571 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_Occlusion
+  MaterialFunction (MF_SC_Occlusion)
+    DependentFunctionExpressionCandidates(0) <- MaterialExpressionMaterialFunctionCall
+    DependentFunctionExpressionCandidates(1) <- MaterialExpressionMaterialFunctionCall
+    DependentFunctionExpressionCandidates(2) <- MaterialExpressionMaterialFunctionCall
+    DependentFunctionExpressionCandidates(3) <- MaterialExpressionMaterialFunctionCall
+    DependentFunctionExpressionCandidates(4) <- MaterialExpressionMaterialFunctionCall
+    DependentFunctionExpressionCandidates(5) <- MaterialExpressionMaterialFunctionCall
+    .Description="Occlusion Mask for a number of effects."
+    .bExposeToLibrary=True
+    .LibraryCategoriesText(0)=NSLOCTEXT("", "59D1883C464B9FE1B193779AAC316118", "Sky Creator")
+    .DependentFunctionExpressionCandidates(0)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_3'"
+    .DependentFunctionExpressionCandidates(1)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_4'"
+    .DependentFunctionExpressionCandidates(2)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_5'"
+    .DependentFunctionExpressionCandidates(3)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_2'"
+    .DependentFunctionExpressionCandidates(4)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_6'"
+    .DependentFunctionExpressionCandidates(5)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_7'"
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'MF_SC_OcclusionEditorOnlyData'"
+    .StateId=E978AA424E704CF432FFBD9656F46309
+    .CombinedInputTypes=527
+    .CombinedOutputTypes=15
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+  MaterialFunctionEditorOnlyData (MF_SC_OcclusionEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'MF_SC_Occlusion:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_Occlusion:MaterialExpressionCollectionParameter_3'","/Script/Engine.MaterialExpressionWorldPosition'MF_SC_Occlusion:MaterialExpressionWorldPosition_2'","/Script/Engine.MaterialExpressionSphereMask'MF_SC_Occlusion:MaterialExpressionSphereMask_1'","/Script/Engine.MaterialExpressionCameraPositionWS'MF_SC_Occlusion:MaterialExpressionCameraPositionWS_0'","/Script/Engine.MaterialExpressionComponentMask'MF_SC_Occlusion:MaterialExpressionComponentMask_3'","/Script/Engine.MaterialExpressionAppendVector'MF_SC_Occlusion:MaterialExpressionAppendVector_0'","/Script/Engine.MaterialExpressionConstant'MF_SC_Occlusion:MaterialExpressionConstant_2'","/Script/Engine.MaterialExpressionComponentMask'MF_SC_Occlusion:MaterialExpressionComponentMask_4'","/Script/Engine.MaterialExpressionAppendVector'MF_SC_Occlusion:MaterialExpressionAppendVector_1'","/Script/Engine.MaterialExpressionConstant'MF_SC_Occlusion:MaterialExpressionConstant_3'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_Occlusion:MaterialExpressionCollectionParameter_4'","/Script/Engine.MaterialExpressionVertexNormalWS'MF_SC_Occlusion:MaterialExpressionVertexNormalWS_0'","/Script/Engine.MaterialExpressionComponentMask'MF_SC_Occlusion:MaterialExpressionComponentMask_5'","/Script/Engine.MaterialExpressionMultiply'MF_SC_Occlusion:MaterialExpressionMultiply_2'","/Script/Engine.MaterialExpressionFunctionOutput'MF_SC_Occlusion:MaterialExpressionFunctionOutput_1'","/Script/Engine.MaterialExpressionLinearInterpolate'MF_SC_Occlusion:MaterialExpressionLinearInterpolate_2'","/Script/Engine.MaterialExpressionFunctionInput'MF_SC_Occlusion:MaterialExpressionFunctionInput_2'","/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_Occlusion:MaterialExpressionMaterialFunctionCall_3'","/Script/Engine.MaterialExpressionQualitySwitch'MF_SC_Occlusion:MaterialExpressionQualitySwitch_0'","/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_Occlusion:MaterialExpressionMaterialFunctionCall_4'","/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_Occlusion:MaterialExpressionMaterialFunctionCall_5'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'MF_SC_Occlusion:MaterialExpressionNamedRerouteDeclaration_0'","/Script/Engine.MaterialExpressionNamedRerouteUsage'MF_SC_Occlusion:MaterialExpressionNamedRerouteUsage_0'","/Script/Engine.MaterialExpressionFunctionInput'MF_SC_Occlusion:MaterialExpressionFunctionInput_0'","/Script/Engine.MaterialExpressionStaticBool'MF_SC_Occlusion:MaterialExpressionStaticBool_0'","/Script/Engine.MaterialExpressionStaticSwitch'MF_SC_Occlusion:MaterialExpressionStaticSwitch_0'","/Script/Engine.MaterialExpressionConstant'MF_SC_Occlusion:MaterialExpressionConstant_0'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'MF_SC_Occlusion:MaterialExpressionNamedRerouteDeclaration_1'","/Script/Engine.MaterialExpressionNamedRerouteUsage'MF_SC_Occlusion:MaterialExpressionNamedRerouteUsage_1'","/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_Occlusion:MaterialExpressionMaterialFunctionCall_2'","/Script/Engine.MaterialExpressionQualitySwitch'MF_SC_Occlusion:MaterialExpressionQualitySwitch_1'","/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_Occlusion:MaterialExpressionMaterialFunctionCall_6'","/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_Occlusion:MaterialExpressionMaterialFunctionCall_7'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'MF_SC_Occlusion:MaterialExpressionNamedRerouteDeclaration_2'","/Script/Engine.MaterialExpressionNamedRerouteUsage'MF_SC_Occlusion:MaterialExpressionNamedRerouteUsage_2'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_Occlusion:MaterialExpressionCollectionParameter_6'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_Occlusion:MaterialExpressionCollectionParameter_1'","/Script/Engine.MaterialExpressionTextureObject'MF_SC_Occlusion:MaterialExpressionTextureObject_0'","/Script/Engine.MaterialExpressionFunctionOutput'MF_SC_Occlusion:MaterialExpressionFunctionOutput_2'","/Script/Engine.MaterialExpressionNamedRerouteUsage'MF_SC_Occlusion:MaterialExpressionNamedRerouteUsage_3'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_Occlusion:MaterialExpressionCollectionParameter_2'","/Script/Engine.MaterialExpressionWorldPosition'MF_SC_Occlusion:MaterialExpressionWorldPosition_0'","/Script/Engine.MaterialExpressionSphereMask'MF_SC_Occlusion:MaterialExpressionSphereMask_0'","/Script/Engine.MaterialExpressionCameraPositionWS'MF_SC_Occlusion:MaterialExpressionCameraPositionWS_1'","/Script/Engine.MaterialExpressionComponentMask'MF_SC_Occlusion:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionAppendVector'MF_SC_Occlusion:MaterialExpressionAppendVector_2'","/Script/Engine.MaterialExpressionConstant'MF_SC_Occlusion:MaterialExpressionConstant_1'","/Script/Engine.MaterialExpressionComponentMask'MF_SC_Occlusion:MaterialExpressionComponentMask_1'","/Script/Engine.MaterialExpressionAppendVector'MF_SC_Occlusion:MaterialExpressionAppendVector_3'","/Script/Engine.MaterialExpressionConstant'MF_SC_Occlusion:MaterialExpressionConstant_4'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_Occlusion:MaterialExpressionCollectionParameter_5'","/Script/Engine.MaterialExpressionVertexNormalWS'MF_SC_Occlusion:MaterialExpressionVertexNormalWS_1'","/Script/Engine.MaterialExpressionComponentMask'MF_SC_Occlusion:MaterialExpressionComponentMask_2'","/Script/Engine.MaterialExpressionMultiply'MF_SC_Occlusion:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionOneMinus'MF_SC_Occlusion:MaterialExpressionOneMinus_0'","/Script/Engine.MaterialExpressionFunctionOutput'MF_SC_Occlusion:MaterialExpressionFunctionOutput_3'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'MF_SC_Occlusion:MaterialExpressionNamedRerouteDeclaration_3'","/Script/Engine.MaterialExpressionLinearInterpolate'MF_SC_Occlusion:MaterialExpressionLinearInterpolate_0'","/Script/Engine.MaterialExpressionConstant'MF_SC_Occlusion:MaterialExpressionConstant_5'","/Script/Engine.MaterialExpressionNamedRerouteUsage'MF_SC_Occlusion:MaterialExpressionNamedRerouteUsage_4'"))
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_0)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'MF_SC_Occlusion:MaterialExpressionConstant_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_Occlusion:MaterialExpressionComponentMask_3'")
+    .MaterialExpressionEditorX=-1152
+    .MaterialExpressionEditorY=912
+    .MaterialExpressionGuid=B56C31544F3ED2756E825393667F457F
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_1)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'MF_SC_Occlusion:MaterialExpressionConstant_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_Occlusion:MaterialExpressionComponentMask_4'")
+    .MaterialExpressionEditorX=-1152
+    .MaterialExpressionEditorY=768
+    .MaterialExpressionGuid=B56C31544F3ED2756E825393667F457F
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_2)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'MF_SC_Occlusion:MaterialExpressionConstant_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_Occlusion:MaterialExpressionComponentMask_0'")
+    .MaterialExpressionEditorX=-1152
+    .MaterialExpressionEditorY=1568
+    .MaterialExpressionGuid=B56C31544F3ED2756E825393667F457F
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_3)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'MF_SC_Occlusion:MaterialExpressionConstant_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_Occlusion:MaterialExpressionComponentMask_1'")
+    .MaterialExpressionEditorX=-1152
+    .MaterialExpressionEditorY=1424
+    .MaterialExpressionGuid=B56C31544F3ED2756E825393667F457F
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionCameraPositionWS (MaterialExpressionCameraPositionWS_0)
+    .MaterialExpressionEditorX=-1536
+    .MaterialExpressionEditorY=896
+    .MaterialExpressionGuid=55ED5D49437BFC6FFC8FD29F936570CA
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionCameraPositionWS (MaterialExpressionCameraPositionWS_1)
+    .MaterialExpressionEditorX=-1536
+    .MaterialExpressionEditorY=1552
+    .MaterialExpressionGuid=55ED5D49437BFC6FFC8FD29F936570CA
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_1)
+    .ParameterName="Distant Occlusion Capture Width"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=021B45FF4B703F71D2CBA29A0243917A
+    .MaterialExpressionEditorX=-1024
+    .MaterialExpressionEditorY=-208
+    .MaterialExpressionGuid=83C224214DD91134232C36B25049F609
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_2)
+    .ParameterName="Occlusion Transition Hardness"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=3C1C3B234BAB7E671989BCB17339A1EC
+    .MaterialExpressionEditorX=-1280
+    .MaterialExpressionEditorY=1808
+    .MaterialExpressionGuid=83C224214DD91134232C36B25049F609
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_3)
+    .ParameterName="Occlusion Transition Hardness"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=3C1C3B234BAB7E671989BCB17339A1EC
+    .MaterialExpressionEditorX=-1280
+    .MaterialExpressionEditorY=1152
+    .MaterialExpressionGuid=83C224214DD91134232C36B25049F609
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_4)
+    .ParameterName="Occlusion Mask Radius"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=FBBAD97F4335D2E8E9510394202EB96A
+    .MaterialExpressionEditorX=-1280
+    .MaterialExpressionEditorY=1056
+    .MaterialExpressionGuid=83C224214DD91134232C36B25049F609
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_5)
+    .ParameterName="Distant Occlusion Mask Radius"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=2A9F68414333B8EA97EBD2BE20274018
+    .MaterialExpressionEditorX=-1280
+    .MaterialExpressionEditorY=1712
+    .MaterialExpressionGuid=83C224214DD91134232C36B25049F609
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_6)
+    .ParameterName="Distant Occlusion Capture Position"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=DCBF6BF24B11748EA2B5728ECE3A9499
+    .MaterialExpressionEditorX=-1024
+    .MaterialExpressionEditorY=-320
+    .MaterialExpressionGuid=83C224214DD91134232C36B25049F609
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+    .bCollapsed=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionCameraPositionWS
+    .R=True
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCameraPositionWS'MF_SC_Occlusion:MaterialExpressionCameraPositionWS_1'")
+    .MaterialExpressionEditorX=-1280
+    .MaterialExpressionEditorY=1568
+    .MaterialExpressionGuid=BF90D2F346E7AF8F0AD066AAFE9BE7B5
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_1)
+    Input                  <- MaterialExpressionWorldPosition
+    .R=True
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionWorldPosition'MF_SC_Occlusion:MaterialExpressionWorldPosition_0'")
+    .MaterialExpressionEditorX=-1280
+    .MaterialExpressionEditorY=1424
+    .MaterialExpressionGuid=BF90D2F346E7AF8F0AD066AAFE9BE7B5
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_2)
+    Input                  <- MaterialExpressionVertexNormalWS
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionVertexNormalWS'MF_SC_Occlusion:MaterialExpressionVertexNormalWS_1'")
+    .MaterialExpressionEditorX=-640
+    .MaterialExpressionEditorY=1616
+    .MaterialExpressionGuid=BFFDE9B84A1708166FDE9BB2C0B02B78
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_3)
+    Input                  <- MaterialExpressionCameraPositionWS
+    .R=True
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCameraPositionWS'MF_SC_Occlusion:MaterialExpressionCameraPositionWS_0'")
+    .MaterialExpressionEditorX=-1280
+    .MaterialExpressionEditorY=912
+    .MaterialExpressionGuid=BF90D2F346E7AF8F0AD066AAFE9BE7B5
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_4)
+    Input                  <- MaterialExpressionWorldPosition
+    .R=True
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionWorldPosition'MF_SC_Occlusion:MaterialExpressionWorldPosition_2'")
+    .MaterialExpressionEditorX=-1280
+    .MaterialExpressionEditorY=768
+    .MaterialExpressionGuid=BF90D2F346E7AF8F0AD066AAFE9BE7B5
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_5)
+    Input                  <- MaterialExpressionVertexNormalWS
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionVertexNormalWS'MF_SC_Occlusion:MaterialExpressionVertexNormalWS_0'")
+    .MaterialExpressionEditorX=-640
+    .MaterialExpressionEditorY=960
+    .MaterialExpressionGuid=BFFDE9B84A1708166FDE9BB2C0B02B78
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionConstant (MaterialExpressionConstant_0)
+    .R=1.000000
+    .MaterialExpressionEditorX=-640
+    .MaterialExpressionEditorY=96
+    .MaterialExpressionGuid=0239404F41231AAF523B0A98462CFC4F
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionConstant (MaterialExpressionConstant_1)
+    .MaterialExpressionEditorX=-1280
+    .MaterialExpressionEditorY=1632
+    .MaterialExpressionGuid=4978BD764CC57E9589570C8104177DBE
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionConstant (MaterialExpressionConstant_2)
+    .MaterialExpressionEditorX=-1280
+    .MaterialExpressionEditorY=976
+    .MaterialExpressionGuid=4978BD764CC57E9589570C8104177DBE
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionConstant (MaterialExpressionConstant_3)
+    .MaterialExpressionEditorX=-1280
+    .MaterialExpressionEditorY=832
+    .MaterialExpressionGuid=4978BD764CC57E9589570C8104177DBE
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionConstant (MaterialExpressionConstant_4)
+    .MaterialExpressionEditorX=-1280
+    .MaterialExpressionEditorY=1488
+    .MaterialExpressionGuid=4978BD764CC57E9589570C8104177DBE
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionConstant (MaterialExpressionConstant_5)
+    .R=1.000000
+    .MaterialExpressionEditorX=-1280
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=BCC4C1AE4FB5B74386C6CEB462658B85
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_0)
+    Preview                <- MaterialExpressionStaticBool
+    .Preview=(Expression="/Script/Engine.MaterialExpressionStaticBool'MF_SC_Occlusion:MaterialExpressionStaticBool_0'")
+    .InputName="Use Distant Occlusion"
+    .Id=67525ACC48FFB9708A97DA942DFC5541
+    .InputType=FunctionInput_StaticBool
+    .bUsePreviewValueAsDefault=True
+    .MaterialExpressionEditorX=-768
+    .MaterialExpressionEditorY=176
+    .MaterialExpressionGuid=7B28146F4198BA966713259C6ABAEF4B
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_2)
+    .InputName="Distant Occlusion"
+    .Id=8299878A43EFAA3061EDEFB3C14E1B46
+    .InputType=FunctionInput_Scalar
+    .PreviewValue=(X=1.000000,Y=0.000000,Z=0.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=2
+    .MaterialExpressionEditorX=-1280
+    .MaterialExpressionEditorY=512
+    .MaterialExpressionGuid=158EB84A4741A2B07B1CB59D22246181
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionLinearInterpolate
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'MF_SC_Occlusion:MaterialExpressionLinearInterpolate_2'")
+    .OutputName="Occlusion"
+    .bLastPreviewed=True
+    .Id=E4CF3DCE4079FD0740CA9FBF5A1D638E
+    .MaterialExpressionGuid=A03E0ED34921752722A7EA944FE9D16F
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_1)
+    A                      <- MaterialExpressionNamedRerouteDeclaration
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'MF_SC_Occlusion:MaterialExpressionNamedRerouteDeclaration_0'")
+    .OutputName="Transition Mask"
+    .SortPriority=2
+    .Id=C9AB9DED4A9A9B3E52FBAFA993926FCB
+    .MaterialExpressionEditorY=768
+    .MaterialExpressionGuid=9EF1EFCC4BA2828172336E8FAABB0569
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_2)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'MF_SC_Occlusion:MaterialExpressionNamedRerouteUsage_3'")
+    .OutputName="Distant Occlusion"
+    .SortPriority=1
+    .Id=316F388B4648C94A34A53C8AAD4E9995
+    .MaterialExpressionEditorY=384
+    .MaterialExpressionGuid=00896DE64CE660FD0AC322945D3CBE50
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_3)
+    A                      <- MaterialExpressionNamedRerouteDeclaration
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'MF_SC_Occlusion:MaterialExpressionNamedRerouteDeclaration_3'")
+    .OutputName="Distant Transition Mask"
+    .SortPriority=3
+    .Id=209B9F2445F9EA1791BD9DBB0925988E
+    .MaterialExpressionEditorY=1424
+    .MaterialExpressionGuid=9EF1EFCC4BA2828172336E8FAABB0569
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_0)
+    A                      <- MaterialExpressionConstant
+    B                      <- MaterialExpressionNamedRerouteUsage
+    Alpha                  <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'MF_SC_Occlusion:MaterialExpressionNamedRerouteUsage_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionConstant'MF_SC_Occlusion:MaterialExpressionConstant_5'")
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'MF_SC_Occlusion:MaterialExpressionNamedRerouteUsage_4'")
+    .MaterialExpressionEditorX=-1024
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=753353574D45EAE72A3DAEAE7CED3F8D
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_2)
+    A                      <- MaterialExpressionStaticSwitch
+    B                      <- MaterialExpressionNamedRerouteUsage
+    Alpha                  <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'MF_SC_Occlusion:MaterialExpressionNamedRerouteUsage_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionStaticSwitch'MF_SC_Occlusion:MaterialExpressionStaticSwitch_0'")
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'MF_SC_Occlusion:MaterialExpressionNamedRerouteUsage_0'")
+    .MaterialExpressionEditorX=-128
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=753353574D45EAE72A3DAEAE7CED3F8D
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_2)
+    FunctionInputs(0)      <- MaterialExpressionTextureObject
+    FunctionInputs(1)      <- MaterialExpressionCollectionParameter
+    FunctionInputs(2)      <- MaterialExpressionCollectionParameter
+    .MaterialFunction="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_Occlusion_PoissonDisk.MF_SC_Occlusion_PoissonDisk'"
+    .FunctionInputs(0)=(ExpressionInputId=4D009B3C49D81339BD2931B31ECF6407,Input=(Expression="/Script/Engine.MaterialExpressionTextureObject'MF_SC_Occlusion:MaterialExpressionTextureObject_0'",InputName="Occlusion Texture"))
+    .FunctionInputs(1)=(ExpressionInputId=024A4B96421CC7E00ACD95ABD6ACBFC4,Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_Occlusion:MaterialExpressionCollectionParameter_6'",InputName="Occlusion Capture Position"))
+    .FunctionInputs(2)=(ExpressionInputId=B518883F46419FE3B5A864BE7A39A17E,Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_Occlusion:MaterialExpressionCollectionParameter_1'",InputName="Occlusion Capture Width"))
+    .FunctionInputs(3)=(ExpressionInputId=48368E5345E71AA17D9463AC219C95E0,Input=(OutputIndex=-1,InputName="Blur Samples"))
+    .FunctionOutputs(0)=(ExpressionOutputId=0C5BAE7D4B6E4560D98EE88816252DA8,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-640
+    .MaterialExpressionEditorY=-368
+    .MaterialExpressionGuid=565D1AF54603193D52991EA60F8C312B
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_3)
+    .MaterialFunction="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_Occlusion_PoissonDisk.MF_SC_Occlusion_PoissonDisk'"
+    .FunctionInputs(0)=(ExpressionInputId=4D009B3C49D81339BD2931B31ECF6407,Input=(OutputIndex=-1,InputName="Occlusion Texture"))
+    .FunctionInputs(1)=(ExpressionInputId=024A4B96421CC7E00ACD95ABD6ACBFC4,Input=(OutputIndex=-1,InputName="Occlusion Capture Position"))
+    .FunctionInputs(2)=(ExpressionInputId=B518883F46419FE3B5A864BE7A39A17E,Input=(OutputIndex=-1,InputName="Occlusion Capture Width"))
+    .FunctionInputs(3)=(ExpressionInputId=48368E5345E71AA17D9463AC219C95E0,Input=(OutputIndex=-1,InputName="Blur Samples"))
+    .FunctionOutputs(0)=(ExpressionOutputId=0C5BAE7D4B6E4560D98EE88816252DA8,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-640
+    .MaterialExpressionEditorY=-880
+    .MaterialExpressionGuid=565D1AF54603193D52991EA60F8C312B
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_4)
+    .MaterialFunction="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_Occlusion_VogelDisk.MF_SC_Occlusion_VogelDisk'"
+    .FunctionInputs(0)=(ExpressionInputId=4D009B3C49D81339BD2931B31ECF6407,Input=(OutputIndex=-1,InputName="Heightmap Texture"))
+    .FunctionInputs(1)=(ExpressionInputId=298564E64EE0DE1096D0578881B7C8DA,Input=(OutputIndex=-1,InputName="Occlusion Capture Position"))
+    .FunctionInputs(2)=(ExpressionInputId=DFC41E2541A3CECF8CF131BDB98718E9,Input=(OutputIndex=-1,InputName="Occlusion Capture Width"))
+    .FunctionInputs(3)=(ExpressionInputId=48368E5345E71AA17D9463AC219C95E0,Input=(OutputIndex=-1,InputName="Blur Samples"))
+    .FunctionOutputs(0)=(ExpressionOutputId=0C5BAE7D4B6E4560D98EE88816252DA8,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-640
+    .MaterialExpressionEditorY=-1024
+    .MaterialExpressionGuid=DC43A86B49EE4945AAA7ABB69813068C
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_5)
+    .MaterialFunction="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_Occlusion_NoFiltering.MF_SC_Occlusion_NoFiltering'"
+    .FunctionInputs(0)=(ExpressionInputId=4D009B3C49D81339BD2931B31ECF6407,Input=(OutputIndex=-1,InputName="Occlusion Texture"))
+    .FunctionInputs(1)=(ExpressionInputId=E139B0854DBFDF53F7B3B1AF077BE5B3,Input=(OutputIndex=-1,InputName="Occlusion Capture Position"))
+    .FunctionInputs(2)=(ExpressionInputId=EAE96B464578D5715DA1ADA19215C67E,Input=(OutputIndex=-1,InputName="Occlusion Capture Width"))
+    .FunctionOutputs(0)=(ExpressionOutputId=0C5BAE7D4B6E4560D98EE88816252DA8,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-640
+    .MaterialExpressionEditorY=-736
+    .MaterialExpressionGuid=C64DD9A7425B3B345791EB8D05BD9F32
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_6)
+    FunctionInputs(0)      <- MaterialExpressionTextureObject
+    FunctionInputs(1)      <- MaterialExpressionCollectionParameter
+    FunctionInputs(2)      <- MaterialExpressionCollectionParameter
+    .MaterialFunction="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_Occlusion_VogelDisk.MF_SC_Occlusion_VogelDisk'"
+    .FunctionInputs(0)=(ExpressionInputId=4D009B3C49D81339BD2931B31ECF6407,Input=(Expression="/Script/Engine.MaterialExpressionTextureObject'MF_SC_Occlusion:MaterialExpressionTextureObject_0'",InputName="Heightmap Texture"))
+    .FunctionInputs(1)=(ExpressionInputId=298564E64EE0DE1096D0578881B7C8DA,Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_Occlusion:MaterialExpressionCollectionParameter_6'",InputName="Occlusion Capture Position"))
+    .FunctionInputs(2)=(ExpressionInputId=DFC41E2541A3CECF8CF131BDB98718E9,Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_Occlusion:MaterialExpressionCollectionParameter_1'",InputName="Occlusion Capture Width"))
+    .FunctionInputs(3)=(ExpressionInputId=48368E5345E71AA17D9463AC219C95E0,Input=(OutputIndex=-1,InputName="Blur Samples"))
+    .FunctionOutputs(0)=(ExpressionOutputId=0C5BAE7D4B6E4560D98EE88816252DA8,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-640
+    .MaterialExpressionEditorY=-512
+    .MaterialExpressionGuid=DC43A86B49EE4945AAA7ABB69813068C
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_7)
+    FunctionInputs(0)      <- MaterialExpressionTextureObject
+    FunctionInputs(1)      <- MaterialExpressionCollectionParameter
+    FunctionInputs(2)      <- MaterialExpressionCollectionParameter
+    .MaterialFunction="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_Occlusion_NoFiltering.MF_SC_Occlusion_NoFiltering'"
+    .FunctionInputs(0)=(ExpressionInputId=4D009B3C49D81339BD2931B31ECF6407,Input=(Expression="/Script/Engine.MaterialExpressionTextureObject'MF_SC_Occlusion:MaterialExpressionTextureObject_0'",InputName="Occlusion Texture"))
+    .FunctionInputs(1)=(ExpressionInputId=E139B0854DBFDF53F7B3B1AF077BE5B3,Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_Occlusion:MaterialExpressionCollectionParameter_6'",InputName="Occlusion Capture Position"))
+    .FunctionInputs(2)=(ExpressionInputId=EAE96B464578D5715DA1ADA19215C67E,Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_Occlusion:MaterialExpressionCollectionParameter_1'",InputName="Occlusion Capture Width"))
+    .FunctionOutputs(0)=(ExpressionOutputId=0C5BAE7D4B6E4560D98EE88816252DA8,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-640
+    .MaterialExpressionEditorY=-224
+    .MaterialExpressionGuid=C64DD9A7425B3B345791EB8D05BD9F32
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionSphereMask
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_Occlusion:MaterialExpressionComponentMask_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSphereMask'MF_SC_Occlusion:MaterialExpressionSphereMask_0'")
+    .MaterialExpressionEditorX=-512
+    .MaterialExpressionEditorY=1424
+    .MaterialExpressionGuid=B2B2B3C84EC1A457DE94DA833CF4408A
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_2)
+    A                      <- MaterialExpressionSphereMask
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_Occlusion:MaterialExpressionComponentMask_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSphereMask'MF_SC_Occlusion:MaterialExpressionSphereMask_1'")
+    .MaterialExpressionEditorX=-512
+    .MaterialExpressionEditorY=768
+    .MaterialExpressionGuid=B2B2B3C84EC1A457DE94DA833CF4408A
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_0)
+    Input                  <- MaterialExpressionSphereMask
+    .Input=(Expression="/Script/Engine.MaterialExpressionSphereMask'MF_SC_Occlusion:MaterialExpressionSphereMask_1'")
+    .Name="TransitionMask"
+    .NodeColor=(R=0.031250,G=1.000000,B=0.000000,A=1.000000)
+    .VariableGuid=66C8E04A409FB19788AEEFA61A1C7C6B
+    .MaterialExpressionEditorX=-256
+    .MaterialExpressionEditorY=768
+    .MaterialExpressionGuid=43DE871B4AA8E11597F829AB0EF89BD6
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_1)
+    Input                  <- MaterialExpressionQualitySwitch
+    .Input=(Expression="/Script/Engine.MaterialExpressionQualitySwitch'MF_SC_Occlusion:MaterialExpressionQualitySwitch_0'")
+    .Name="Occlusion"
+    .NodeColor=(R=1.000000,G=1.000000,B=1.000000,A=1.000000)
+    .VariableGuid=C552DC934BF9D9B908261490EB728BE9
+    .MaterialExpressionEditorY=-1024
+    .MaterialExpressionGuid=FFEF7016419A86482F031385CE7826AE
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_2)
+    Input                  <- MaterialExpressionQualitySwitch
+    .Input=(Expression="/Script/Engine.MaterialExpressionQualitySwitch'MF_SC_Occlusion:MaterialExpressionQualitySwitch_1'")
+    .Name="Distant Occlusion"
+    .NodeColor=(R=1.000000,G=1.000000,B=1.000000,A=1.000000)
+    .VariableGuid=FFCB416E4D2BE628D8F4B4984138338E
+    .MaterialExpressionEditorY=-512
+    .MaterialExpressionGuid=FFEF7016419A86482F031385CE7826AE
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_3)
+    Input                  <- MaterialExpressionSphereMask
+    .Input=(Expression="/Script/Engine.MaterialExpressionSphereMask'MF_SC_Occlusion:MaterialExpressionSphereMask_0'")
+    .Name="DistantTransitionMask"
+    .NodeColor=(R=0.031250,G=1.000000,B=0.000000,A=1.000000)
+    .VariableGuid=9792A78548614A15A1A8FC974CB879D4
+    .MaterialExpressionEditorX=-256
+    .MaterialExpressionEditorY=1424
+    .MaterialExpressionGuid=43DE871B4AA8E11597F829AB0EF89BD6
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_0)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'MF_SC_Occlusion:MaterialExpressionNamedRerouteDeclaration_0'"
+    .DeclarationGuid=66C8E04A409FB19788AEEFA61A1C7C6B
+    .MaterialExpressionEditorX=-384
+    .MaterialExpressionEditorY=256
+    .MaterialExpressionGuid=8DA6439542FE7BDD73D6059F97A570C0
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_1)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'MF_SC_Occlusion:MaterialExpressionNamedRerouteDeclaration_1'"
+    .DeclarationGuid=C552DC934BF9D9B908261490EB728BE9
+    .MaterialExpressionEditorX=-384
+    .MaterialExpressionEditorY=176
+    .MaterialExpressionGuid=BF0CD35243319BCF47966C9EFE0D589C
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_2)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'MF_SC_Occlusion:MaterialExpressionNamedRerouteDeclaration_2'"
+    .DeclarationGuid=FFCB416E4D2BE628D8F4B4984138338E
+    .MaterialExpressionEditorX=-1280
+    .MaterialExpressionEditorY=112
+    .MaterialExpressionGuid=CD0871094FD26F00A0178CB0B28DEC87
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_3)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'MF_SC_Occlusion:MaterialExpressionNamedRerouteDeclaration_2'"
+    .DeclarationGuid=FFCB416E4D2BE628D8F4B4984138338E
+    .MaterialExpressionEditorX=-256
+    .MaterialExpressionEditorY=384
+    .MaterialExpressionGuid=CD0871094FD26F00A0178CB0B28DEC87
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_4)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'MF_SC_Occlusion:MaterialExpressionNamedRerouteDeclaration_3'"
+    .DeclarationGuid=9792A78548614A15A1A8FC974CB879D4
+    .MaterialExpressionEditorX=-1280
+    .MaterialExpressionEditorY=192
+    .MaterialExpressionGuid=F3CEB81544DAC4DA6C3F6A97F1B89B6B
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_0)
+    Input                  <- MaterialExpressionSphereMask
+    .Input=(Expression="/Script/Engine.MaterialExpressionSphereMask'MF_SC_Occlusion:MaterialExpressionSphereMask_0'")
+    .MaterialExpressionEditorX=-640
+    .MaterialExpressionEditorY=1376
+    .MaterialExpressionGuid=8D47909A4306A4E16F105C87944329FC
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionQualitySwitch (MaterialExpressionQualitySwitch_0)
+    Default                <- MaterialExpressionMaterialFunctionCall
+    Inputs(0)              <- MaterialExpressionMaterialFunctionCall
+    Inputs(1)              <- MaterialExpressionMaterialFunctionCall
+    Inputs(2)              <- MaterialExpressionMaterialFunctionCall
+    Inputs(3)              <- MaterialExpressionMaterialFunctionCall
+    .Default=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_Occlusion:MaterialExpressionMaterialFunctionCall_4'")
+    .Inputs(0)=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_Occlusion:MaterialExpressionMaterialFunctionCall_5'")
+    .Inputs(1)=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_Occlusion:MaterialExpressionMaterialFunctionCall_4'")
+    .Inputs(2)=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_Occlusion:MaterialExpressionMaterialFunctionCall_3'")
+    .Inputs(3)=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_Occlusion:MaterialExpressionMaterialFunctionCall_4'")
+    .MaterialExpressionEditorX=-256
+    .MaterialExpressionEditorY=-1024
+    .MaterialExpressionGuid=700203844EEF59F50227B5B46560D172
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionQualitySwitch (MaterialExpressionQualitySwitch_1)
+    Default                <- MaterialExpressionMaterialFunctionCall
+    Inputs(0)              <- MaterialExpressionMaterialFunctionCall
+    Inputs(1)              <- MaterialExpressionMaterialFunctionCall
+    Inputs(2)              <- MaterialExpressionMaterialFunctionCall
+    Inputs(3)              <- MaterialExpressionMaterialFunctionCall
+    .Default=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_Occlusion:MaterialExpressionMaterialFunctionCall_6'")
+    .Inputs(0)=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_Occlusion:MaterialExpressionMaterialFunctionCall_7'")
+    .Inputs(1)=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_Occlusion:MaterialExpressionMaterialFunctionCall_6'")
+    .Inputs(2)=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_Occlusion:MaterialExpressionMaterialFunctionCall_2'")
+    .Inputs(3)=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_Occlusion:MaterialExpressionMaterialFunctionCall_6'")
+    .MaterialExpressionEditorX=-256
+    .MaterialExpressionEditorY=-512
+    .MaterialExpressionGuid=700203844EEF59F50227B5B46560D172
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionSphereMask (MaterialExpressionSphereMask_0)
+    A                      <- MaterialExpressionAppendVector
+    B                      <- MaterialExpressionAppendVector
+    Radius                 <- MaterialExpressionCollectionParameter
+    Hardness               <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionAppendVector'MF_SC_Occlusion:MaterialExpressionAppendVector_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAppendVector'MF_SC_Occlusion:MaterialExpressionAppendVector_3'")
+    .Radius=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_Occlusion:MaterialExpressionCollectionParameter_5'")
+    .Hardness=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_Occlusion:MaterialExpressionCollectionParameter_2'")
+    .MaterialExpressionEditorX=-896
+    .MaterialExpressionEditorY=1424
+    .MaterialExpressionGuid=8BC531154D5B6A8567294586759C0265
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionSphereMask (MaterialExpressionSphereMask_1)
+    A                      <- MaterialExpressionAppendVector
+    B                      <- MaterialExpressionAppendVector
+    Radius                 <- MaterialExpressionCollectionParameter
+    Hardness               <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionAppendVector'MF_SC_Occlusion:MaterialExpressionAppendVector_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAppendVector'MF_SC_Occlusion:MaterialExpressionAppendVector_1'")
+    .Radius=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_Occlusion:MaterialExpressionCollectionParameter_4'")
+    .Hardness=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_Occlusion:MaterialExpressionCollectionParameter_3'")
+    .MaterialExpressionEditorX=-896
+    .MaterialExpressionEditorY=768
+    .MaterialExpressionGuid=8BC531154D5B6A8567294586759C0265
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionStaticBool (MaterialExpressionStaticBool_0)
+    .MaterialExpressionEditorX=-1024
+    .MaterialExpressionEditorY=160
+    .MaterialExpressionGuid=BE51EBEF452B90AD22091FB9FF07EE97
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionStaticSwitch (MaterialExpressionStaticSwitch_0)
+    A                      <- MaterialExpressionLinearInterpolate
+    B                      <- MaterialExpressionConstant
+    Value                  <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'MF_SC_Occlusion:MaterialExpressionConstant_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'MF_SC_Occlusion:MaterialExpressionLinearInterpolate_0'")
+    .Value=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_Occlusion:MaterialExpressionFunctionInput_0'")
+    .MaterialExpressionEditorX=-384
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=206A66254AE991D0C7A9A092142059F8
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionTextureObject (MaterialExpressionTextureObject_0)
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.TextureRenderTarget2D'/Game/ENDEMIS/Weather/Occlusion/RT_DistantOcclusionDepth.RT_DistantOcclusionDepth'"
+    .MaterialExpressionEditorX=-1024
+    .MaterialExpressionEditorY=-480
+    .MaterialExpressionGuid=CCFFE4D6417997AB9AA7BDAA07BD8767
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionVertexNormalWS (MaterialExpressionVertexNormalWS_0)
+    .MaterialExpressionEditorX=-896
+    .MaterialExpressionEditorY=944
+    .MaterialExpressionGuid=344EAE8F44CF371CFF24CCA5CC5BC5FC
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionVertexNormalWS (MaterialExpressionVertexNormalWS_1)
+    .MaterialExpressionEditorX=-896
+    .MaterialExpressionEditorY=1600
+    .MaterialExpressionGuid=344EAE8F44CF371CFF24CCA5CC5BC5FC
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionWorldPosition (MaterialExpressionWorldPosition_0)
+    .MaterialExpressionEditorX=-1536
+    .MaterialExpressionEditorY=1408
+    .MaterialExpressionGuid=D57797C1451DC323BE13EEBCDCF3672F
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"
+  MaterialExpressionWorldPosition (MaterialExpressionWorldPosition_2)
+    .MaterialExpressionEditorX=-1536
+    .MaterialExpressionEditorY=752
+    .MaterialExpressionGuid=D57797C1451DC323BE13EEBCDCF3672F
+    .Function="/Script/Engine.MaterialFunction'MF_SC_Occlusion'"

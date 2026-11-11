@@ -1,0 +1,44 @@
+### /Game/UltraDynamicSky/Blueprints/System/UDS_CloudPaintActor_Interface
+  Blueprint (UDS_CloudPaintActor_Interface)
+    .ParentClass="/Script/CoreUObject.Class'/Script/CoreUObject.Interface'"
+    .BlueprintType=BPTYPE_Interface
+    .bDeprecate=True
+    .BlueprintCategory="UltraDynamicSky|System"
+    .BlueprintSystemVersion=2
+    .FunctionGraphs(0)="/Script/Engine.EdGraph'Draw to Cloud Paint Target'"
+    .FunctionGraphs(1)="/Script/Engine.EdGraph'Apply Effect to Cloud Coverage Value'"
+    .CategorySorting(0)=""
+    .LastEditedDocuments(0)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/System/UDS_CloudPaintActor_Interface.UDS_CloudPaintActor_Interface:Draw to Cloud Paint Target",SavedViewOffset=(X=-1340.617676,Y=-608.625000),SavedZoomAmount=1.000000)
+    .GeneratedClass="/Script/Engine.BlueprintGeneratedClass'UDS_CloudPaintActor_Interface_C'"
+    .bLegacyNeedToPurgeSkelRefs=False
+    .BlueprintGuid=30E6761F4D437D58FADB24BF54253E0D
+  EdGraph (Apply Effect to Cloud Coverage Value_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=DEED804E4DF80469937CA5A5C27D560E
+  K2Node_FunctionResult (K2Node_FunctionResult_0)
+    .FunctionReference=(MemberName="Draw to Cloud Paint Target")
+    .bIsEditable=True
+    .NodePosX=256
+    .NodeGuid=6CFED2E149A62267AE29DEAA6DF6A324
+  K2Node_FunctionEntry (K2Node_FunctionEntry_0)
+    .ExtraFlags=201457664
+    .FunctionReference=(MemberName="Draw to Cloud Paint Target")
+    .bIsEditable=True
+    .NodeGuid=A1DC230E4F8044E070EAA1B28E604C3A
+  EdGraph (Draw to Cloud Paint Target_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=2C7208CD405A2807919A9887A40D705C
+  EdGraph (Apply Effect to Cloud Coverage Value)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=DEED804E4DF80469937CA5A5C27D560E
+  EdGraph (Draw to Cloud Paint Target)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=2C7208CD405A2807919A9887A40D705C

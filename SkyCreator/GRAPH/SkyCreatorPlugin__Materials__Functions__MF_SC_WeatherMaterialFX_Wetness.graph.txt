@@ -1,0 +1,210 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_WeatherMaterialFX_Wetness
+  MaterialFunction (MF_SC_WeatherMaterialFX_Wetness)
+    DependentFunctionExpressionCandidates(0) <- MaterialExpressionMaterialFunctionCall
+    .Description="DEPRECATED!"
+    .LibraryCategoriesText(0)=NSLOCTEXT("", "37EBB3BB41DEB2A0E60C4CB5A19005B7", "Sky Creator")
+    .DependentFunctionExpressionCandidates(0)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_7'"
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'MF_SC_WeatherMaterialFX_WetnessEditorOnlyData'"
+    .StateId=12646F8542600E7E49BE6B9AB7F60761
+    .CombinedInputTypes=2048
+    .CombinedOutputTypes=2048
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+  MaterialFunctionEditorOnlyData (MF_SC_WeatherMaterialFX_WetnessEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionMakeMaterialAttributes'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionMakeMaterialAttributes_0'","/Script/Engine.MaterialExpressionScalarParameter'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionScalarParameter_0'","/Script/Engine.MaterialExpressionFunctionInput'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionFunctionInput_1'","/Script/Engine.MaterialExpressionBreakMaterialAttributes'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionBreakMaterialAttributes_0'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionCollectionParameter_12'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionCollectionParameter_13'","/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionMaterialFunctionCall_7'","/Script/Engine.MaterialExpressionLinearInterpolate'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionLinearInterpolate_1'","/Script/Engine.MaterialExpressionLinearInterpolate'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionLinearInterpolate_2'","/Script/Engine.MaterialExpressionMultiply'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionMultiply_3'","/Script/Engine.MaterialExpressionReroute'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionReroute_0'","/Script/Engine.MaterialExpressionReroute'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionReroute_1'","/Script/Engine.MaterialExpressionReroute'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionReroute_2'","/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionCollectionParameter_0'","/Script/Engine.MaterialExpressionComponentMask'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionComponentMask_0'"))
+  MaterialExpressionBreakMaterialAttributes (MaterialExpressionBreakMaterialAttributes_0)
+    MaterialAttributes     <- MaterialExpressionFunctionInput
+    .MaterialAttributes=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionFunctionInput_1'")
+    .MaterialExpressionEditorX=-1536
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=7CF0F1064A361B4A3A64ACAB54FCA955
+    .Function="/Script/Engine.MaterialFunction'MF_SC_WeatherMaterialFX_Wetness'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_0)
+    .ParameterName="Wetness Color"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=6F35F9824B59CB4AD09EE1BF0F79D88F
+    .MaterialExpressionEditorX=-1280
+    .MaterialExpressionEditorY=160
+    .MaterialExpressionGuid=C97954C74C3DB891C729A6865178653F
+    .Function="/Script/Engine.MaterialFunction'MF_SC_WeatherMaterialFX_Wetness'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_12)
+    .ParameterName="Wetness Slope Angle"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=4B0D6F0240604B4E4250079578053ADC
+    .MaterialExpressionEditorX=-1920
+    .MaterialExpressionEditorY=896
+    .MaterialExpressionGuid=C97954C74C3DB891C729A6865178653F
+    .Function="/Script/Engine.MaterialFunction'MF_SC_WeatherMaterialFX_Wetness'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_13)
+    .ParameterName="Wetness Slope Smoothness"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+    .ParameterId=C3E6B4094CEE53022D50AE8F702FB43B
+    .MaterialExpressionEditorX=-1920
+    .MaterialExpressionEditorY=992
+    .MaterialExpressionGuid=C97954C74C3DB891C729A6865178653F
+    .Function="/Script/Engine.MaterialFunction'MF_SC_WeatherMaterialFX_Wetness'"
+    .bCollapsed=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionCollectionParameter
+    .R=True
+    .G=True
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionCollectionParameter_0'")
+    .MaterialExpressionEditorX=-1056
+    .MaterialExpressionEditorY=192
+    .MaterialExpressionGuid=3ECB950D4281AD8D627B62B7CCF81F96
+    .Function="/Script/Engine.MaterialFunction'MF_SC_WeatherMaterialFX_Wetness'"
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_1)
+    .InputName="Material"
+    .Id=C85CF553450B30D2C263C6AE08317D18
+    .InputType=FunctionInput_MaterialAttributes
+    .MaterialExpressionEditorX=-1920
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=97C0E4D04A25DA05618E43A278111ED7
+    .Function="/Script/Engine.MaterialFunction'MF_SC_WeatherMaterialFX_Wetness'"
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionMakeMaterialAttributes
+    .A=(Expression="/Script/Engine.MaterialExpressionMakeMaterialAttributes'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionMakeMaterialAttributes_0'")
+    .OutputName="Material"
+    .bLastPreviewed=True
+    .Id=A4800E9F40B011C2991814B820010843
+    .MaterialExpressionGuid=75043E074D15DAC66B8CA4A4691F5F9F
+    .Function="/Script/Engine.MaterialFunction'MF_SC_WeatherMaterialFX_Wetness'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_1)
+    A                      <- MaterialExpressionReroute
+    B                      <- MaterialExpressionMultiply
+    Alpha                  <- MaterialExpressionReroute
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionMultiply_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionReroute_1'")
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionReroute_0'")
+    .MaterialExpressionEditorX=-640
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=61F30D534FA6040AE239F6A55CFA47A9
+    .Function="/Script/Engine.MaterialFunction'MF_SC_WeatherMaterialFX_Wetness'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_2)
+    A                      <- MaterialExpressionReroute
+    B                      <- MaterialExpressionScalarParameter
+    Alpha                  <- MaterialExpressionReroute
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionScalarParameter_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionReroute_2'")
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionReroute_0'")
+    .MaterialExpressionEditorX=-640
+    .MaterialExpressionEditorY=384
+    .MaterialExpressionGuid=61F30D534FA6040AE239F6A55CFA47A9
+    .Function="/Script/Engine.MaterialFunction'MF_SC_WeatherMaterialFX_Wetness'"
+  MaterialExpressionMakeMaterialAttributes (MaterialExpressionMakeMaterialAttributes_0)
+    BaseColor              <- MaterialExpressionLinearInterpolate
+    Metallic               <- MaterialExpressionBreakMaterialAttributes
+    Specular               <- MaterialExpressionBreakMaterialAttributes
+    Roughness              <- MaterialExpressionLinearInterpolate
+    Anisotropy             <- MaterialExpressionBreakMaterialAttributes
+    EmissiveColor          <- MaterialExpressionBreakMaterialAttributes
+    Opacity                <- MaterialExpressionBreakMaterialAttributes
+    OpacityMask            <- MaterialExpressionBreakMaterialAttributes
+    Normal                 <- MaterialExpressionBreakMaterialAttributes
+    Tangent                <- MaterialExpressionBreakMaterialAttributes
+    WorldPositionOffset    <- MaterialExpressionBreakMaterialAttributes
+    SubsurfaceColor        <- MaterialExpressionBreakMaterialAttributes
+    ClearCoat              <- MaterialExpressionBreakMaterialAttributes
+    ClearCoatRoughness     <- MaterialExpressionBreakMaterialAttributes
+    AmbientOcclusion       <- MaterialExpressionBreakMaterialAttributes
+    Refraction             <- MaterialExpressionBreakMaterialAttributes
+    CustomizedUVs(0)       <- MaterialExpressionBreakMaterialAttributes
+    CustomizedUVs(1)       <- MaterialExpressionBreakMaterialAttributes
+    CustomizedUVs(2)       <- MaterialExpressionBreakMaterialAttributes
+    CustomizedUVs(3)       <- MaterialExpressionBreakMaterialAttributes
+    CustomizedUVs(4)       <- MaterialExpressionBreakMaterialAttributes
+    CustomizedUVs(5)       <- MaterialExpressionBreakMaterialAttributes
+    CustomizedUVs(6)       <- MaterialExpressionBreakMaterialAttributes
+    CustomizedUVs(7)       <- MaterialExpressionBreakMaterialAttributes
+    PixelDepthOffset       <- MaterialExpressionBreakMaterialAttributes
+    ShadingModel           <- MaterialExpressionBreakMaterialAttributes
+    .BaseColor=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionLinearInterpolate_1'")
+    .Metallic=(Expression="/Script/Engine.MaterialExpressionBreakMaterialAttributes'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionBreakMaterialAttributes_0'",OutputIndex=1,Mask=1,MaskR=1)
+    .Specular=(Expression="/Script/Engine.MaterialExpressionBreakMaterialAttributes'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionBreakMaterialAttributes_0'",OutputIndex=2,Mask=1,MaskR=1)
+    .Roughness=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionLinearInterpolate_2'")
+    .Anisotropy=(Expression="/Script/Engine.MaterialExpressionBreakMaterialAttributes'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionBreakMaterialAttributes_0'",OutputIndex=4,Mask=1,MaskR=1)
+    .EmissiveColor=(Expression="/Script/Engine.MaterialExpressionBreakMaterialAttributes'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionBreakMaterialAttributes_0'",OutputIndex=5,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .Opacity=(Expression="/Script/Engine.MaterialExpressionBreakMaterialAttributes'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionBreakMaterialAttributes_0'",OutputIndex=6,Mask=1,MaskR=1)
+    .OpacityMask=(Expression="/Script/Engine.MaterialExpressionBreakMaterialAttributes'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionBreakMaterialAttributes_0'",OutputIndex=7,Mask=1,MaskR=1)
+    .Normal=(Expression="/Script/Engine.MaterialExpressionBreakMaterialAttributes'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionBreakMaterialAttributes_0'",OutputIndex=8,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .Tangent=(Expression="/Script/Engine.MaterialExpressionBreakMaterialAttributes'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionBreakMaterialAttributes_0'",OutputIndex=9,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .WorldPositionOffset=(Expression="/Script/Engine.MaterialExpressionBreakMaterialAttributes'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionBreakMaterialAttributes_0'",OutputIndex=10,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .SubsurfaceColor=(Expression="/Script/Engine.MaterialExpressionBreakMaterialAttributes'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionBreakMaterialAttributes_0'",OutputIndex=11,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .ClearCoat=(Expression="/Script/Engine.MaterialExpressionBreakMaterialAttributes'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionBreakMaterialAttributes_0'",OutputIndex=12,Mask=1,MaskR=1)
+    .ClearCoatRoughness=(Expression="/Script/Engine.MaterialExpressionBreakMaterialAttributes'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionBreakMaterialAttributes_0'",OutputIndex=13,Mask=1,MaskR=1)
+    .AmbientOcclusion=(Expression="/Script/Engine.MaterialExpressionBreakMaterialAttributes'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionBreakMaterialAttributes_0'",OutputIndex=14,Mask=1,MaskR=1)
+    .Refraction=(Expression="/Script/Engine.MaterialExpressionBreakMaterialAttributes'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionBreakMaterialAttributes_0'",OutputIndex=15,Mask=1,MaskR=1,MaskG=1)
+    .CustomizedUVs(0)=(Expression="/Script/Engine.MaterialExpressionBreakMaterialAttributes'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionBreakMaterialAttributes_0'",OutputIndex=16,Mask=1,MaskR=1,MaskG=1)
+    .CustomizedUVs(1)=(Expression="/Script/Engine.MaterialExpressionBreakMaterialAttributes'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionBreakMaterialAttributes_0'",OutputIndex=17,Mask=1,MaskR=1,MaskG=1)
+    .CustomizedUVs(2)=(Expression="/Script/Engine.MaterialExpressionBreakMaterialAttributes'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionBreakMaterialAttributes_0'",OutputIndex=18,Mask=1,MaskR=1,MaskG=1)
+    .CustomizedUVs(3)=(Expression="/Script/Engine.MaterialExpressionBreakMaterialAttributes'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionBreakMaterialAttributes_0'",OutputIndex=19,Mask=1,MaskR=1,MaskG=1)
+    .CustomizedUVs(4)=(Expression="/Script/Engine.MaterialExpressionBreakMaterialAttributes'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionBreakMaterialAttributes_0'",OutputIndex=20,Mask=1,MaskR=1,MaskG=1)
+    .CustomizedUVs(5)=(Expression="/Script/Engine.MaterialExpressionBreakMaterialAttributes'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionBreakMaterialAttributes_0'",OutputIndex=21,Mask=1,MaskR=1,MaskG=1)
+    .CustomizedUVs(6)=(Expression="/Script/Engine.MaterialExpressionBreakMaterialAttributes'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionBreakMaterialAttributes_0'",OutputIndex=22,Mask=1,MaskR=1,MaskG=1)
+    .CustomizedUVs(7)=(Expression="/Script/Engine.MaterialExpressionBreakMaterialAttributes'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionBreakMaterialAttributes_0'",OutputIndex=23,Mask=1,MaskR=1,MaskG=1)
+    .PixelDepthOffset=(Expression="/Script/Engine.MaterialExpressionBreakMaterialAttributes'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionBreakMaterialAttributes_0'",OutputIndex=24,Mask=1,MaskR=1)
+    .ShadingModel=(Expression="/Script/Engine.MaterialExpressionBreakMaterialAttributes'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionBreakMaterialAttributes_0'",OutputIndex=25)
+    .MaterialExpressionEditorX=-384
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=89812B304274515553B8B38FFA4E7BF2
+    .Function="/Script/Engine.MaterialFunction'MF_SC_WeatherMaterialFX_Wetness'"
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_7)
+    FunctionInputs(1)      <- MaterialExpressionCollectionParameter
+    FunctionInputs(2)      <- MaterialExpressionCollectionParameter
+    .MaterialFunction="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_SlopeBlend.MF_SC_SlopeBlend'"
+    .FunctionInputs(0)=(ExpressionInputId=61351A884395463BE557EEA50E28B589,Input=(OutputIndex=-1,InputName="World Vector"))
+    .FunctionInputs(1)=(ExpressionInputId=D6C98D6D4D3BEB1E805B23997A3F8451,Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionCollectionParameter_12'",InputName="Slope Angle"))
+    .FunctionInputs(2)=(ExpressionInputId=3972FFE24BE7424FC3319ABA2107ADB4,Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionCollectionParameter_13'",InputName="Slope Smoothness"))
+    .FunctionInputs(3)=(ExpressionInputId=483215A643935C3C5C04C6BE5847AD2F,Input=(OutputIndex=8,InputName="Normal",Mask=1,MaskR=1,MaskG=1,MaskB=1))
+    .FunctionInputs(4)=(ExpressionInputId=D49F862240FBFE7C2747F7AE4007A296,Input=(OutputIndex=-1,InputName="Normal Strength"))
+    .FunctionOutputs(0)=(ExpressionOutputId=32C494E541773EC95201F9920F13594A,Output=(OutputName="Vertex Slope Mask"))
+    .FunctionOutputs(1)=(ExpressionOutputId=20CA2F774B2083E55DAB25BD1CD45AD4,Output=(OutputName="Normal Slope Mask"))
+    .MaterialExpressionEditorX=-1536
+    .MaterialExpressionEditorY=896
+    .MaterialExpressionGuid=72B0301D4E9AA3882E309C962366F8AA
+    .Function="/Script/Engine.MaterialFunction'MF_SC_WeatherMaterialFX_Wetness'"
+    .Outputs(0)=(OutputName="Vertex Slope Mask")
+    .Outputs(1)=(OutputName="Normal Slope Mask")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_3)
+    A                      <- MaterialExpressionReroute
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionComponentMask_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionReroute_1'")
+    .MaterialExpressionEditorX=-896
+    .MaterialExpressionEditorY=96
+    .MaterialExpressionGuid=0E3F32434A287F67D2668F99416A86F8
+    .Function="/Script/Engine.MaterialFunction'MF_SC_WeatherMaterialFX_Wetness'"
+  MaterialExpressionReroute (MaterialExpressionReroute_0)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+    .Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionMaterialFunctionCall_7'")
+    .MaterialExpressionEditorX=-1024
+    .MaterialExpressionEditorY=928
+    .MaterialExpressionGuid=849FF69140C0518C9581B389C91390F0
+    .Function="/Script/Engine.MaterialFunction'MF_SC_WeatherMaterialFX_Wetness'"
+  MaterialExpressionReroute (MaterialExpressionReroute_1)
+    Input                  <- MaterialExpressionBreakMaterialAttributes
+    .Input=(Expression="/Script/Engine.MaterialExpressionBreakMaterialAttributes'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionBreakMaterialAttributes_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .MaterialExpressionEditorX=-1152
+    .MaterialExpressionEditorY=64
+    .MaterialExpressionGuid=81BE801D466D84AC745CD893D44A7F66
+    .Function="/Script/Engine.MaterialFunction'MF_SC_WeatherMaterialFX_Wetness'"
+  MaterialExpressionReroute (MaterialExpressionReroute_2)
+    Input                  <- MaterialExpressionBreakMaterialAttributes
+    .Input=(Expression="/Script/Engine.MaterialExpressionBreakMaterialAttributes'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionBreakMaterialAttributes_0'",OutputIndex=3,Mask=1,MaskR=1)
+    .MaterialExpressionEditorX=-1152
+    .MaterialExpressionEditorY=416
+    .MaterialExpressionGuid=9CE3642E4D5FAB63A6B572928A7DE783
+    .Function="/Script/Engine.MaterialFunction'MF_SC_WeatherMaterialFX_Wetness'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_0)
+    .ParameterName="Wetness Roughness"
+    .DefaultValue=0.200000
+    .SliderMax=1.000000
+    .ExpressionGUID=7DF1FAFF4F095693B2E2B4BAA2E26838
+    .Group="Weather Material FX"
+    .MaterialExpressionEditorX=-896
+    .MaterialExpressionEditorY=448
+    .MaterialExpressionGuid=B48D2D524F592E30289AA1A897581E58
+    .Function="/Script/Engine.MaterialFunction'MF_SC_WeatherMaterialFX_Wetness'"

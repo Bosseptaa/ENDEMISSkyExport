@@ -1,0 +1,65 @@
+### /Game/UltraDynamicSky/Blueprints/System/UDS_InterfaceActorArray_ManagedActor
+  Blueprint (UDS_InterfaceActorArray_ManagedActor)
+    .ParentClass="/Script/CoreUObject.Class'/Script/CoreUObject.Interface'"
+    .BlueprintType=BPTYPE_Interface
+    .bDeprecate=True
+    .BlueprintCategory="UltraDynamicSky|System"
+    .BlueprintSystemVersion=2
+    .FunctionGraphs(0)="/Script/Engine.EdGraph'Get Priority'"
+    .FunctionGraphs(1)="/Script/Engine.EdGraph'Include in Filtered Array'"
+    .FunctionGraphs(2)="/Script/Engine.EdGraph'Added to List'"
+    .FunctionGraphs(3)="/Script/Engine.EdGraph'Inform of Removal from Filtered Array'"
+    .CategorySorting(0)=""
+    .CategorySorting(1)="Interface Actor Array Managed Actor"
+    .LastEditedDocuments(0)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/System/UDS_InterfaceActorArray_ManagedActor.UDS_InterfaceActorArray_ManagedActor:Get Priority",SavedViewOffset=(X=-1338.558838,Y=-605.625000),SavedZoomAmount=1.000000)
+    .LastEditedDocuments(1)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/System/UDS_InterfaceActorArray_ManagedActor.UDS_InterfaceActorArray_ManagedActor:Include in Filtered Array",SavedViewOffset=(X=-1338.558838,Y=-605.625000),SavedZoomAmount=1.000000)
+    .GeneratedClass="/Script/Engine.BlueprintGeneratedClass'UDS_InterfaceActorArray_ManagedActor_C'"
+    .bLegacyNeedToPurgeSkelRefs=False
+    .BlueprintGuid=32B823914718CD872849388E29CD619B
+  EdGraph (Inform of Removal from Filtered Array_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .GraphGuid=30AC65AB4905FEDC16B0B899F075CC8E
+  K2Node_FunctionEntry (K2Node_FunctionEntry_0)
+    .MetaData=(Category=NSLOCTEXT("", "E9799FED4CA4019B8C3FDA8AAE8C7C23", "Interface Actor Array Managed Actor"))
+    .ExtraFlags=201457664
+    .FunctionReference=(MemberName="Get Priority")
+    .bIsEditable=True
+    .NodeGuid=AACA9E4C4CF5FBC9A6E59C82C99C31A8
+  EdGraph (Added to List_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .GraphGuid=A24EA389459D42F54CB49CAD7E372F6E
+  EdGraph (Include in Filtered Array_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=4C06D629456477D35817148812853FD2
+  K2Node_FunctionResult (K2Node_FunctionResult_0)
+    .FunctionReference=(MemberName="Get Priority")
+    .bIsEditable=True
+    .NodePosX=256
+    .NodeGuid=ADEECE6E45FF94FB911D99A213DD88AC
+  EdGraph (Get Priority_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=BDD47AC849A042F0E310DDAE659B9839
+  EdGraph (Inform of Removal from Filtered Array)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .GraphGuid=30AC65AB4905FEDC16B0B899F075CC8E
+  EdGraph (Added to List)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .GraphGuid=A24EA389459D42F54CB49CAD7E372F6E
+  EdGraph (Include in Filtered Array)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=4C06D629456477D35817148812853FD2
+  EdGraph (Get Priority)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=BDD47AC849A042F0E310DDAE659B9839

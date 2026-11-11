@@ -1,0 +1,44 @@
+### /Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_LightningStrikableActorInterface
+  Blueprint (UDW_LightningStrikableActorInterface)
+    .ParentClass="/Script/CoreUObject.Class'/Script/CoreUObject.Interface'"
+    .BlueprintType=BPTYPE_Interface
+    .BlueprintCategory="UltraDynamicWeather|Lightning"
+    .BlueprintSystemVersion=2
+    .FunctionGraphs(0)="/Script/Engine.EdGraph'Test for Potential Lightning Strike'"
+    .FunctionGraphs(1)="/Script/Engine.EdGraph'Struck By Lightning'"
+    .CategorySorting(0)=""
+    .LastEditedDocuments(0)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_LightningStrikableActorInterface.UDW_LightningStrikableActorInterface:Test for Potential Lightning Strike",SavedViewOffset=(X=-1340.617676,Y=-608.625000),SavedZoomAmount=1.000000)
+    .LastEditedDocuments(1)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_LightningStrikableActorInterface.UDW_LightningStrikableActorInterface:Struck By Lightning",SavedViewOffset=(X=-1340.617676,Y=-608.625000),SavedZoomAmount=1.000000)
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfo'SceneThumbnailInfo_0'"
+    .GeneratedClass="/Script/Engine.BlueprintGeneratedClass'UDW_LightningStrikableActorInterface_C'"
+    .bLegacyNeedToPurgeSkelRefs=False
+    .BlueprintGuid=67A80B2F4EFE7C1690AB689B93A6DD09
+  EdGraph (Test for Potential Lightning Strike)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=155A65CD4319A51B8721C28833DEDAB1
+  K2Node_FunctionEntry (K2Node_FunctionEntry_0)
+    .MetaData=(ToolTip=NSLOCTEXT("", "7EE97A7645CD14EE7E06C08276BE7036", "Called by UDW when this actor is struck by lightning."))
+    .ExtraFlags=201457664
+    .FunctionReference=(MemberName="Struck By Lightning")
+    .bIsEditable=True
+    .NodeGuid=3CD89FBF4923EA2C50552D8256010D82
+  K2Node_FunctionResult (K2Node_FunctionResult_0)
+    .FunctionReference=(MemberName="Test for Potential Lightning Strike")
+    .bIsEditable=True
+    .NodePosX=256
+    .NodeGuid=E9F5864F4D0C5AAB5277FEB240890C51
+  EdGraph (Struck By Lightning)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .GraphGuid=C3CA5F194956C2AEB8C4E1B7E03835CA
+  EdGraph (Test for Potential Lightning Strike_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_FunctionResult'K2Node_FunctionResult_0'"
+    .GraphGuid=155A65CD4319A51B8721C28833DEDAB1
+  EdGraph (Struck By Lightning_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .GraphGuid=C3CA5F194956C2AEB8C4E1B7E03835CA

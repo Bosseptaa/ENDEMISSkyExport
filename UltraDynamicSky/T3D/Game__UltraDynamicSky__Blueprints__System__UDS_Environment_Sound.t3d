@@ -1,0 +1,27 @@
+Begin Object Class=/Script/Engine.Blueprint Name="UDS_Environment_Sound" ExportPath="/Script/Engine.Blueprint'/Game/UltraDynamicSky/Blueprints/System/UDS_Environment_Sound.UDS_Environment_Sound'"
+   Begin Object Class=/Script/Engine.EdGraph Name="EventGraph" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_Environment_Sound.UDS_Environment_Sound:EventGraph'"
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="ExecuteUbergraph_UDS_Environment_Sound" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_Environment_Sound.UDS_Environment_Sound:ExecuteUbergraph_UDS_Environment_Sound'"
+   End Object
+   Begin Object Name="EventGraph" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_Environment_Sound.UDS_Environment_Sound:EventGraph'"
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      bAllowDeletion=False
+      GraphGuid=EC70731C4B3569B527B2DEB792273006
+   End Object
+   Begin Object Name="ExecuteUbergraph_UDS_Environment_Sound" ExportPath="/Script/Engine.EdGraph'/Game/UltraDynamicSky/Blueprints/System/UDS_Environment_Sound.UDS_Environment_Sound:ExecuteUbergraph_UDS_Environment_Sound'"
+      Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+      GraphGuid=878E835D4C4B19D4935E96934BC2174A
+   End Object
+   ParentClass="/Script/CoreUObject.Class'/Script/Engine.PrimaryDataAsset'"
+   BlueprintCategory="UltraDynamicSky|Sound"
+   BlueprintSystemVersion=2
+   UbergraphPages(0)="/Script/Engine.EdGraph'EventGraph'"
+   NewVariables(0)=(VarName="Metasound Source",VarGuid=76CF9E3D4BEEB1979B2F0DB4065D7F7D,VarType=(PinCategory="softobject",PinSubCategoryObject="/Script/CoreUObject.Class'/Script/MetasoundEngine.MetaSoundSource'"),FriendlyName="Metasound Source",Category=NSLOCTEXT("KismetSchema", "Default", "Default"),PropertyFlags=5,MetaDataArray=((DataKey="tooltip",DataValue="The metasound source which will be played and controlled by UDW when this environment sound is active.\r\nThis source needs to be authored with the correct parameters to be controlled by UDW using time and weather. See the documentation on environment sound for details.")))
+   NewVariables(1)=(VarName="Volume",VarGuid=EE4068F4479F332943F165ACAE639427,VarType=(PinCategory="real",PinSubCategory="double"),FriendlyName="Volume",Category=NSLOCTEXT("KismetSchema", "Default", "Default"),PropertyFlags=5,MetaDataArray=((DataKey="tooltip",DataValue="Can be used to scale the volume for this particular environment sound asset.")))
+   NewVariables(2)=(VarName="Parameter Overrides",VarGuid=C50401B4435CE0B14C89A2B3F9A3D33C,VarType=(PinCategory="struct",PinSubCategoryObject="/Script/CoreUObject.ScriptStruct'/Script/AudioExtensions.AudioParameter'",ContainerType=Array),FriendlyName="Parameter Overrides",Category=NSLOCTEXT("KismetSchema", "Default", "Default"),PropertyFlags=5,MetaDataArray=((DataKey="tooltip",DataValue="Allows controlling arbitrary audio parameters from the data asset level. Using this you could have multiple environment sound data assets which configure a single metasound source asset differently.")))
+   CategorySorting(0)="Default"
+   LastEditedDocuments(0)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/System/UDS_Environment_Sound.UDS_Environment_Sound:EventGraph",SavedViewOffset=(X=-176.000000,Y=-364.000000),SavedZoomAmount=1.000000)
+   GeneratedClass="/Script/Engine.BlueprintGeneratedClass'UDS_Environment_Sound_C'"
+   bLegacyNeedToPurgeSkelRefs=False
+   BlueprintGuid=46F042FB46C62982CC624CAC293F493A
+End Object

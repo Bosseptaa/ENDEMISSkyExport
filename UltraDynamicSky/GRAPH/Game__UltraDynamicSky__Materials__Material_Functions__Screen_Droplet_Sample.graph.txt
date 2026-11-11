@@ -1,0 +1,404 @@
+### /Game/UltraDynamicSky/Materials/Material_Functions/Screen_Droplet_Sample
+  MaterialFunction (Screen_Droplet_Sample)
+    DependentFunctionExpressionCandidates(0) <- MaterialExpressionMaterialFunctionCall
+    .DependentFunctionExpressionCandidates(0)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_0'"
+    .PreviewBlendMode=BLEND_Translucent
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'Screen_Droplet_SampleEditorOnlyData'"
+    .StateId=E4804338475209B8A931CCA4255A63C8
+    .CombinedInputTypes=6
+    .CombinedOutputTypes=15
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+  MaterialFunctionEditorOnlyData (Screen_Droplet_SampleEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'Screen_Droplet_Sample:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionTextureSample'Screen_Droplet_Sample:MaterialExpressionTextureSample_0'","/Script/Engine.MaterialExpressionMultiply'Screen_Droplet_Sample:MaterialExpressionMultiply_1'","/Script/Engine.MaterialExpressionAppendVector'Screen_Droplet_Sample:MaterialExpressionAppendVector_0'","/Script/Engine.MaterialExpressionSubtract'Screen_Droplet_Sample:MaterialExpressionSubtract_1'","/Script/Engine.MaterialExpressionTextureCoordinate'Screen_Droplet_Sample:MaterialExpressionTextureCoordinate_0'","/Script/Engine.MaterialExpressionAdd'Screen_Droplet_Sample:MaterialExpressionAdd_0'","/Script/Engine.MaterialExpressionScalarParameter'Screen_Droplet_Sample:MaterialExpressionScalarParameter_2'","/Script/Engine.MaterialExpressionMultiply'Screen_Droplet_Sample:MaterialExpressionMultiply_3'","/Script/Engine.MaterialExpressionTextureCoordinate'Screen_Droplet_Sample:MaterialExpressionTextureCoordinate_2'","/Script/Engine.MaterialExpressionLinearInterpolate'Screen_Droplet_Sample:MaterialExpressionLinearInterpolate_2'","/Script/Engine.MaterialExpressionScalarParameter'Screen_Droplet_Sample:MaterialExpressionScalarParameter_4'","/Script/Engine.MaterialExpressionAdd'Screen_Droplet_Sample:MaterialExpressionAdd_1'","/Script/Engine.MaterialExpressionFrac'Screen_Droplet_Sample:MaterialExpressionFrac_0'","/Script/Engine.MaterialExpressionPower'Screen_Droplet_Sample:MaterialExpressionPower_0'","/Script/Engine.MaterialExpressionOneMinus'Screen_Droplet_Sample:MaterialExpressionOneMinus_1'","/Script/Engine.MaterialExpressionSubtract'Screen_Droplet_Sample:MaterialExpressionSubtract_3'","/Script/Engine.MaterialExpressionAdd'Screen_Droplet_Sample:MaterialExpressionAdd_9'","/Script/Engine.MaterialExpressionMultiply'Screen_Droplet_Sample:MaterialExpressionMultiply_14'","/Script/Engine.MaterialExpressionSubtract'Screen_Droplet_Sample:MaterialExpressionSubtract_5'","/Script/Engine.MaterialExpressionLinearInterpolate'Screen_Droplet_Sample:MaterialExpressionLinearInterpolate_3'","/Script/Engine.MaterialExpressionMultiply'Screen_Droplet_Sample:MaterialExpressionMultiply_16'","/Script/Engine.MaterialExpressionMultiply'Screen_Droplet_Sample:MaterialExpressionMultiply_17'","/Script/Engine.MaterialExpressionScalarParameter'Screen_Droplet_Sample:MaterialExpressionScalarParameter_0'","/Script/Engine.MaterialExpressionMultiply'Screen_Droplet_Sample:MaterialExpressionMultiply_8'","/Script/Engine.MaterialExpressionScalarParameter'Screen_Droplet_Sample:MaterialExpressionScalarParameter_3'","/Script/Engine.MaterialExpressionReroute'Screen_Droplet_Sample:MaterialExpressionReroute_0'","/Script/Engine.MaterialExpressionScalarParameter'Screen_Droplet_Sample:MaterialExpressionScalarParameter_5'","/Script/Engine.MaterialExpressionMultiply'Screen_Droplet_Sample:MaterialExpressionMultiply_10'","/Script/Engine.MaterialExpressionReroute'Screen_Droplet_Sample:MaterialExpressionReroute_1'","/Script/Engine.MaterialExpressionMultiply'Screen_Droplet_Sample:MaterialExpressionMultiply_7'","/Script/Engine.MaterialExpressionSaturate'Screen_Droplet_Sample:MaterialExpressionSaturate_1'","/Script/Engine.MaterialExpressionSceneTexture'Screen_Droplet_Sample:MaterialExpressionSceneTexture_0'","/Script/Engine.MaterialExpressionFunctionInput'Screen_Droplet_Sample:MaterialExpressionFunctionInput_0'","/Script/Engine.MaterialExpressionFunctionInput'Screen_Droplet_Sample:MaterialExpressionFunctionInput_1'","/Script/Engine.MaterialExpressionComponentMask'Screen_Droplet_Sample:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionComponentMask'Screen_Droplet_Sample:MaterialExpressionComponentMask_1'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Screen_Droplet_Sample:MaterialExpressionNamedRerouteDeclaration_0'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Screen_Droplet_Sample:MaterialExpressionNamedRerouteUsage_0'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Screen_Droplet_Sample:MaterialExpressionMaterialFunctionCall_0'","/Script/Engine.MaterialExpressionConstant'Screen_Droplet_Sample:MaterialExpressionConstant_2'","/Script/Engine.MaterialExpressionConstant'Screen_Droplet_Sample:MaterialExpressionConstant_3'","/Script/Engine.MaterialExpressionMultiply'Screen_Droplet_Sample:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionSaturate'Screen_Droplet_Sample:MaterialExpressionSaturate_0'"),EditorComments=("/Script/Engine.MaterialExpressionComment'Screen_Droplet_Sample:MaterialExpressionComment_0'","/Script/Engine.MaterialExpressionComment'Screen_Droplet_Sample:MaterialExpressionComment_1'","/Script/Engine.MaterialExpressionComment'Screen_Droplet_Sample:MaterialExpressionComment_2'"))
+  MaterialExpressionAdd (MaterialExpressionAdd_0)
+    A                      <- MaterialExpressionTextureCoordinate
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Screen_Droplet_Sample:MaterialExpressionMultiply_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'Screen_Droplet_Sample:MaterialExpressionTextureCoordinate_0'")
+    .MaterialExpressionEditorX=644
+    .MaterialExpressionEditorY=304
+    .MaterialExpressionGuid=28603B6B4C6E65217CF61A9FBCACA95C
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+  MaterialExpressionAdd (MaterialExpressionAdd_1)
+    A                      <- MaterialExpressionTextureSample
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Screen_Droplet_Sample:MaterialExpressionScalarParameter_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'Screen_Droplet_Sample:MaterialExpressionTextureSample_0'",OutputIndex=4,Mask=1,MaskA=1)
+    .MaterialExpressionEditorX=-2456
+    .MaterialExpressionEditorY=408
+    .MaterialExpressionGuid=4283FB66436F3F0FDE34EBAEC7CA554B
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+  MaterialExpressionAdd (MaterialExpressionAdd_9)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Screen_Droplet_Sample:MaterialExpressionMultiply_16'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'Screen_Droplet_Sample:MaterialExpressionSubtract_3'")
+    .MaterialExpressionEditorX=-1744
+    .MaterialExpressionEditorY=328
+    .MaterialExpressionGuid=EB44566B4434EC29105898BF080B3A81
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_0)
+    A                      <- MaterialExpressionTextureSample
+    B                      <- MaterialExpressionTextureSample
+    .B=(Expression="/Script/Engine.MaterialExpressionTextureSample'Screen_Droplet_Sample:MaterialExpressionTextureSample_0'",OutputIndex=3,Mask=1,MaskB=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'Screen_Droplet_Sample:MaterialExpressionTextureSample_0'",OutputIndex=2,Mask=1,MaskG=1)
+    .MaterialExpressionEditorX=-2600
+    .MaterialExpressionEditorY=712
+    .MaterialExpressionGuid=D4B9F76A485BD7110A319CB8E68EAECA
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+  MaterialExpressionComment (MaterialExpressionComment_0)
+    .SizeX=632
+    .SizeY=268
+    .Text="Sample Scene Color"
+    .CommentColor=(R=0.584171,G=0.492675,B=1.000000,A=1.000000)
+    .MaterialExpressionEditorX=426
+    .MaterialExpressionEditorY=196
+    .MaterialExpressionGuid=C7201E4142776ECB0D9F5DB61FACD3E7
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+  MaterialExpressionComment (MaterialExpressionComment_1)
+    .SizeX=1108
+    .SizeY=640
+    .Text="Mask Normal with Screen Edge/Center"
+    .CommentColor=(R=1.000000,G=0.368351,B=0.508880,A=1.000000)
+    .MaterialExpressionEditorX=-768
+    .MaterialExpressionEditorY=278
+    .MaterialExpressionGuid=0448BABB4162E6E356D6D6BA9595D897
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+  MaterialExpressionComment (MaterialExpressionComment_2)
+    .SizeX=2912
+    .SizeY=872
+    .Text="Drips and Drops Normals"
+    .CommentColor=(R=0.323383,G=0.713542,B=0.252473,A=1.000000)
+    .MaterialExpressionEditorX=-3806
+    .MaterialExpressionEditorY=218
+    .MaterialExpressionGuid=BD75482D495128C444AF3BAEA2AE1F96
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionNamedRerouteDeclaration
+    .R=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Screen_Droplet_Sample:MaterialExpressionNamedRerouteDeclaration_0'")
+    .MaterialExpressionEditorX=-3380
+    .MaterialExpressionEditorY=860
+    .MaterialExpressionGuid=99D06FDE4DA54E4E9A3A69908B3E5215
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_1)
+    Input                  <- MaterialExpressionNamedRerouteUsage
+    .G=True
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Screen_Droplet_Sample:MaterialExpressionNamedRerouteUsage_0'")
+    .MaterialExpressionEditorX=-1948
+    .MaterialExpressionEditorY=840
+    .MaterialExpressionGuid=99D06FDE4DA54E4E9A3A69908B3E5215
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+  MaterialExpressionConstant (MaterialExpressionConstant_2)
+    .R=1.300000
+    .MaterialExpressionEditorX=-628
+    .MaterialExpressionEditorY=708
+    .MaterialExpressionGuid=6D8B78F1480A6CD5FBA06F844DF31B06
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+  MaterialExpressionConstant (MaterialExpressionConstant_3)
+    .R=2.800000
+    .MaterialExpressionEditorX=-632
+    .MaterialExpressionEditorY=796
+    .MaterialExpressionGuid=79675B9748CF4DF61DC092B11D7BAC32
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+  MaterialExpressionFrac (MaterialExpressionFrac_0)
+    Input                  <- MaterialExpressionAdd
+    .Input=(Expression="/Script/Engine.MaterialExpressionAdd'Screen_Droplet_Sample:MaterialExpressionAdd_1'")
+    .MaterialExpressionEditorX=-2352
+    .MaterialExpressionEditorY=408
+    .MaterialExpressionGuid=DC186BD148D2EAA37AF14081616FC51B
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_0)
+    .InputName="UV"
+    .Id=2FCA4E844968D52351F587AE05B88D5A
+    .InputType=FunctionInput_Vector2
+    .MaterialExpressionEditorX=-3392
+    .MaterialExpressionEditorY=296
+    .MaterialExpressionGuid=179693284D21DD86E5E54F85880F96DF
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_1)
+    .InputName="Drips"
+    .Id=310FFDCF41909CDAF9051CA1714BAD8F
+    .MaterialExpressionEditorX=-3756
+    .MaterialExpressionEditorY=860
+    .MaterialExpressionGuid=42AD550A4C82DE147EA9E1967EC53FC4
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionSceneTexture
+    .A=(Expression="/Script/Engine.MaterialExpressionSceneTexture'Screen_Droplet_Sample:MaterialExpressionSceneTexture_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1,MaskA=1)
+    .bLastPreviewed=True
+    .Id=E8EF171F4A2C23F9F08D7EBF31A136AF
+    .MaterialExpressionEditorX=1166
+    .MaterialExpressionEditorY=278
+    .MaterialExpressionGuid=686B387D48963E8792796E98FA2C1AAD
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_2)
+    A                      <- MaterialExpressionScalarParameter
+    B                      <- MaterialExpressionScalarParameter
+    Alpha                  <- MaterialExpressionSaturate
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Screen_Droplet_Sample:MaterialExpressionScalarParameter_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Screen_Droplet_Sample:MaterialExpressionScalarParameter_2'")
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionSaturate'Screen_Droplet_Sample:MaterialExpressionSaturate_0'")
+    .MaterialExpressionEditorX=52
+    .MaterialExpressionEditorY=504
+    .MaterialExpressionGuid=AD7A122349FF00AEAA0AE0B41B722B5F
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_3)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionSubtract
+    Alpha                  <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionSubtract'Screen_Droplet_Sample:MaterialExpressionSubtract_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'Screen_Droplet_Sample:MaterialExpressionSubtract_1'")
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionMultiply'Screen_Droplet_Sample:MaterialExpressionMultiply_17'")
+    .MaterialExpressionEditorX=-1576
+    .MaterialExpressionEditorY=816
+    .MaterialExpressionGuid=050E15C048A633755A80D09E623FCA9F
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_0)
+    FunctionInputs(0)      <- MaterialExpressionTextureCoordinate
+    FunctionInputs(2)      <- MaterialExpressionConstant
+    FunctionInputs(3)      <- MaterialExpressionConstant
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/RadialGradientBasic.RadialGradientBasic'"
+    .FunctionInputs(0)=(ExpressionInputId=3D670BAB449CC330AF1A0D98994C2A90,Input=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'Screen_Droplet_Sample:MaterialExpressionTextureCoordinate_2'",InputName="UV"))
+    .FunctionInputs(1)=(ExpressionInputId=08954A7C4248905A30D7B0B88B75B62F,Input=(OutputIndex=-1,InputName="Center"))
+    .FunctionInputs(2)=(ExpressionInputId=131CA7274C02CDA166B9749B5EE24A64,Input=(Expression="/Script/Engine.MaterialExpressionConstant'Screen_Droplet_Sample:MaterialExpressionConstant_2'",InputName="Radius"))
+    .FunctionInputs(3)=(ExpressionInputId=3FBB53124DEA3B7CC52CEAA08FF6C9ED,Input=(Expression="/Script/Engine.MaterialExpressionConstant'Screen_Droplet_Sample:MaterialExpressionConstant_3'",InputName="Density"))
+    .FunctionOutputs(0)=(ExpressionOutputId=327E073F424BB1EF2B65E58605E267EE,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-424
+    .MaterialExpressionEditorY=612
+    .MaterialExpressionGuid=68AAAB8F450085BF06CE66B00C49441E
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Screen_Droplet_Sample:MaterialExpressionMaterialFunctionCall_0'")
+    .ConstB=1.200000
+    .MaterialExpressionEditorX=-232
+    .MaterialExpressionEditorY=608
+    .MaterialExpressionGuid=F7BAD5B2403FCEA4DCE41CB44B6EA14B
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionSaturate
+    B                      <- MaterialExpressionLinearInterpolate
+    .B=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Screen_Droplet_Sample:MaterialExpressionLinearInterpolate_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSaturate'Screen_Droplet_Sample:MaterialExpressionSaturate_1'")
+    .MaterialExpressionEditorX=-1040
+    .MaterialExpressionEditorY=328
+    .MaterialExpressionGuid=52D7691B4A4B7BA0B38025B032D7104F
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_10)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Screen_Droplet_Sample:MaterialExpressionScalarParameter_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Screen_Droplet_Sample:MaterialExpressionAdd_9'")
+    .MaterialExpressionEditorX=-1584
+    .MaterialExpressionEditorY=328
+    .MaterialExpressionGuid=BED5447C4DC1CD6420B683B2AA0169D1
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_14)
+    A                      <- MaterialExpressionMultiply
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Screen_Droplet_Sample:MaterialExpressionMultiply_8'")
+    .ConstB=8.000000
+    .MaterialExpressionEditorX=-3144
+    .MaterialExpressionEditorY=384
+    .MaterialExpressionGuid=A85487774990BBB991B434A892530077
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_16)
+    A                      <- MaterialExpressionReroute
+    .A=(Expression="/Script/Engine.MaterialExpressionReroute'Screen_Droplet_Sample:MaterialExpressionReroute_1'")
+    .ConstB=1.500000
+    .MaterialExpressionEditorX=-2032
+    .MaterialExpressionEditorY=560
+    .MaterialExpressionGuid=EB047F8C4E02F63C0551E39CE1562252
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_17)
+    A                      <- MaterialExpressionReroute
+    .A=(Expression="/Script/Engine.MaterialExpressionReroute'Screen_Droplet_Sample:MaterialExpressionReroute_0'")
+    .ConstB=0.750000
+    .MaterialExpressionEditorX=-1832
+    .MaterialExpressionEditorY=960
+    .MaterialExpressionGuid=046944574852FB228CB24A84B87B5F45
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_3)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionLinearInterpolate
+    .B=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Screen_Droplet_Sample:MaterialExpressionLinearInterpolate_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Screen_Droplet_Sample:MaterialExpressionMultiply_1'")
+    .MaterialExpressionEditorX=192
+    .MaterialExpressionEditorY=328
+    .MaterialExpressionGuid=134D6D5146BC7B3A7CEB2F85A456FE5D
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_7)
+    A                      <- MaterialExpressionMultiply
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Screen_Droplet_Sample:MaterialExpressionMultiply_10'")
+    .ConstB=3.000000
+    .MaterialExpressionEditorX=-1440
+    .MaterialExpressionEditorY=328
+    .MaterialExpressionGuid=3C10B33441CECEEF802840A0CDD63B8B
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_8)
+    A                      <- MaterialExpressionScalarParameter
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Screen_Droplet_Sample:MaterialExpressionComponentMask_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Screen_Droplet_Sample:MaterialExpressionScalarParameter_0'")
+    .MaterialExpressionEditorX=-3232
+    .MaterialExpressionEditorY=760
+    .MaterialExpressionGuid=8D6E434F4F8DD2B861A6A5BC633239AF
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_0)
+    Input                  <- MaterialExpressionFunctionInput
+    .Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Screen_Droplet_Sample:MaterialExpressionFunctionInput_1'")
+    .Name="Drips Input RGB"
+    .NodeColor=(R=1.000000,G=0.000000,B=0.328125,A=1.000000)
+    .VariableGuid=A993ED3D4325C13B99B08D8E4B3CA539
+    .MaterialExpressionEditorX=-3532
+    .MaterialExpressionEditorY=860
+    .MaterialExpressionGuid=7C511A8F497A4E831C4BABBBB35C72FF
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_0)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Screen_Droplet_Sample:MaterialExpressionNamedRerouteDeclaration_0'"
+    .DeclarationGuid=A993ED3D4325C13B99B08D8E4B3CA539
+    .MaterialExpressionEditorX=-2120
+    .MaterialExpressionEditorY=840
+    .MaterialExpressionGuid=AE981DB746694559BE37BBB7046693AB
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_1)
+    Input                  <- MaterialExpressionPower
+    .Input=(Expression="/Script/Engine.MaterialExpressionPower'Screen_Droplet_Sample:MaterialExpressionPower_0'")
+    .MaterialExpressionEditorX=-2096
+    .MaterialExpressionEditorY=408
+    .MaterialExpressionGuid=E982A171416FE5C76F93C998D43CD3CB
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+  MaterialExpressionPower (MaterialExpressionPower_0)
+    Base                   <- MaterialExpressionFrac
+    .Base=(Expression="/Script/Engine.MaterialExpressionFrac'Screen_Droplet_Sample:MaterialExpressionFrac_0'")
+    .ConstExponent=4.000000
+    .MaterialExpressionEditorX=-2248
+    .MaterialExpressionEditorY=408
+    .MaterialExpressionGuid=E133246141A430782884BC9949006155
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+  MaterialExpressionReroute (MaterialExpressionReroute_0)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Screen_Droplet_Sample:MaterialExpressionMultiply_8'")
+    .MaterialExpressionEditorX=-3056
+    .MaterialExpressionEditorY=992
+    .MaterialExpressionGuid=17DEA0BD40AE5624A853C284DF0581C9
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+  MaterialExpressionReroute (MaterialExpressionReroute_1)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Screen_Droplet_Sample:MaterialExpressionMultiply_8'")
+    .MaterialExpressionEditorX=-2944
+    .MaterialExpressionEditorY=592
+    .MaterialExpressionGuid=60865BC04E97F5A8609C26B159C786D2
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_0)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Screen_Droplet_Sample:MaterialExpressionMultiply_0'")
+    .MaterialExpressionEditorX=-76
+    .MaterialExpressionEditorY=608
+    .MaterialExpressionGuid=5D2197AE4D69B760D918849887927A2B
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_1)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Screen_Droplet_Sample:MaterialExpressionMultiply_7'")
+    .MaterialExpressionEditorX=-1272
+    .MaterialExpressionEditorY=328
+    .MaterialExpressionGuid=8AC7880E4B9F20492D6145B1030069C2
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_0)
+    .ParameterName="Drips Intensity"
+    .ExpressionGUID=903E5C704B03AB5A85F89690C0E9D2AC
+    .MaterialExpressionEditorX=-3416
+    .MaterialExpressionEditorY=772
+    .MaterialExpressionGuid=5AEBDD9043135EF1FB01199711751A33
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_2)
+    .ParameterName="Outer Strength"
+    .DefaultValue=-1.000000
+    .ExpressionGUID=67B119E14F738DCDCEE2D29A6DED357A
+    .MaterialExpressionEditorX=-244
+    .MaterialExpressionEditorY=396
+    .MaterialExpressionGuid=C1E87B704992678757BBB09B1DF38484
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_3)
+    .ParameterName="Drops Time"
+    .ExpressionGUID=3415FBEF4EB5F7A46755F98C434582D5
+    .MaterialExpressionEditorX=-2616
+    .MaterialExpressionEditorY=448
+    .MaterialExpressionGuid=7F4E7BFA4297C1E91433F4B8CACF6574
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_4)
+    .ParameterName="Inner Strength"
+    .ExpressionGUID=774345104C7E3F9B39C9B68388878A13
+    .MaterialExpressionEditorX=-244
+    .MaterialExpressionEditorY=500
+    .MaterialExpressionGuid=C1E87B704992678757BBB09B1DF38484
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_5)
+    .ParameterName="Drops Intensity"
+    .DefaultValue=1.000000
+    .ExpressionGUID=145C035540FA50DD17945CA3A7D0144E
+    .MaterialExpressionEditorX=-1736
+    .MaterialExpressionEditorY=456
+    .MaterialExpressionGuid=8C8DA316458F508D530E359868DD1498
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+  MaterialExpressionSceneTexture (MaterialExpressionSceneTexture_0)
+    Coordinates            <- MaterialExpressionAdd
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionAdd'Screen_Droplet_Sample:MaterialExpressionAdd_0'")
+    .SceneTextureId=PPI_PostProcessInput0
+    .MaterialExpressionEditorX=732
+    .MaterialExpressionEditorY=288
+    .MaterialExpressionGuid=6A8C6D174EF946DED3BF839218638BCE
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_1)
+    A                      <- MaterialExpressionAppendVector
+    .A=(Expression="/Script/Engine.MaterialExpressionAppendVector'Screen_Droplet_Sample:MaterialExpressionAppendVector_0'")
+    .ConstB=0.500000
+    .MaterialExpressionEditorX=-1848
+    .MaterialExpressionEditorY=712
+    .MaterialExpressionGuid=5E151C0B40A7774079929BA92919E130
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_3)
+    A                      <- MaterialExpressionTextureSample
+    B                      <- MaterialExpressionOneMinus
+    .B=(Expression="/Script/Engine.MaterialExpressionOneMinus'Screen_Droplet_Sample:MaterialExpressionOneMinus_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'Screen_Droplet_Sample:MaterialExpressionTextureSample_0'",OutputIndex=1,Mask=1,MaskR=1)
+    .MaterialExpressionEditorX=-2000
+    .MaterialExpressionEditorY=328
+    .MaterialExpressionGuid=0FBC2012487C13A78608CCB8F72783E5
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_5)
+    A                      <- MaterialExpressionComponentMask
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Screen_Droplet_Sample:MaterialExpressionComponentMask_1'")
+    .ConstB=0.500000
+    .MaterialExpressionEditorX=-1808
+    .MaterialExpressionEditorY=840
+    .MaterialExpressionGuid=0CE9A77E4A93E057C23C819A15E83811
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+  MaterialExpressionTextureCoordinate (MaterialExpressionTextureCoordinate_0)
+    .MaterialExpressionEditorX=432
+    .MaterialExpressionEditorY=248
+    .MaterialExpressionGuid=5DBFE27F47CD773329D2B9BFA420AF3B
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+  MaterialExpressionTextureCoordinate (MaterialExpressionTextureCoordinate_2)
+    .MaterialExpressionEditorX=-676
+    .MaterialExpressionEditorY=608
+    .MaterialExpressionGuid=F8990155411E07E8947B2CA803763541
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"
+    .bCommentBubbleVisible=True
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_0)
+    Coordinates            <- MaterialExpressionFunctionInput
+    MipValue               <- MaterialExpressionMultiply
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.Texture2D'/Game/UltraDynamicSky/Textures/Weather/WaterDroplets_Small.WaterDroplets_Small'"
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionFunctionInput'Screen_Droplet_Sample:MaterialExpressionFunctionInput_0'")
+    .MipValue=(Expression="/Script/Engine.MaterialExpressionMultiply'Screen_Droplet_Sample:MaterialExpressionMultiply_14'")
+    .MipValueMode=TMVM_MipLevel
+    .MaterialExpressionEditorX=-2984
+    .MaterialExpressionEditorY=296
+    .MaterialExpressionGuid=0AAEA7D84B5C09A00A280EBF900087AA
+    .Function="/Script/Engine.MaterialFunction'Screen_Droplet_Sample'"

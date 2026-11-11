@@ -1,0 +1,72 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_VolumetricCloud_CoverageVariation
+  MaterialFunction (MF_SC_VolumetricCloud_CoverageVariation)
+    .LibraryCategoriesText(0)=NSLOCTEXT("", "D180ADC2492DD33A098451B58BF3FBC8", "Sky Creator")
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'MF_SC_VolumetricCloud_CoverageVariationEditorOnlyData'"
+    .StateId=3D7C35C24665D9A95316D4B63AE8A145
+    .CombinedInputTypes=15
+    .CombinedOutputTypes=15
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+  MaterialFunctionEditorOnlyData (MF_SC_VolumetricCloud_CoverageVariationEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'MF_SC_VolumetricCloud_CoverageVariation:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionLinearInterpolate'MF_SC_VolumetricCloud_CoverageVariation:MaterialExpressionLinearInterpolate_20'","/Script/Engine.MaterialExpressionConstant'MF_SC_VolumetricCloud_CoverageVariation:MaterialExpressionConstant_23'","/Script/Engine.MaterialExpressionMultiply'MF_SC_VolumetricCloud_CoverageVariation:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionFunctionInput'MF_SC_VolumetricCloud_CoverageVariation:MaterialExpressionFunctionInput_2'","/Script/Engine.MaterialExpressionFunctionInput'MF_SC_VolumetricCloud_CoverageVariation:MaterialExpressionFunctionInput_3'","/Script/Engine.MaterialExpressionFunctionInput'MF_SC_VolumetricCloud_CoverageVariation:MaterialExpressionFunctionInput_4'"))
+  MaterialExpressionConstant (MaterialExpressionConstant_23)
+    .R=1.000000
+    .MaterialExpressionEditorX=-512
+    .MaterialExpressionEditorY=128
+    .MaterialExpressionGuid=71561CCE40DA1EE3C02EEF85CB98E165
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricCloud_CoverageVariation'"
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_2)
+    .Id=0F9719CE496528C045B07C940840326F
+    .InputType=FunctionInput_Scalar
+    .MaterialExpressionEditorX=-384
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=774602CF4814C63F2E6C8F8B84BB98EC
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricCloud_CoverageVariation'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_3)
+    .InputName="Coverage Variation"
+    .Id=3F3359174661477EBF19519DE2A24EDB
+    .InputType=FunctionInput_Scalar
+    .SortPriority=1
+    .MaterialExpressionEditorX=-768
+    .MaterialExpressionEditorY=208
+    .MaterialExpressionGuid=774602CF4814C63F2E6C8F8B84BB98EC
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricCloud_CoverageVariation'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_4)
+    .InputName="Alpha"
+    .Id=078FEAC24EC3A23863A2CE94DFE32684
+    .InputType=FunctionInput_Scalar
+    .SortPriority=2
+    .MaterialExpressionEditorX=-768
+    .MaterialExpressionEditorY=288
+    .MaterialExpressionGuid=774602CF4814C63F2E6C8F8B84BB98EC
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricCloud_CoverageVariation'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionMultiply
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_VolumetricCloud_CoverageVariation:MaterialExpressionMultiply_0'")
+    .bLastPreviewed=True
+    .Id=31154A884D7172A6DB6CCF95CBCEFFA9
+    .MaterialExpressionGuid=DF777D0D493164E09146CFAE32CA4585
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricCloud_CoverageVariation'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_20)
+    A                      <- MaterialExpressionConstant
+    B                      <- MaterialExpressionFunctionInput
+    Alpha                  <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_VolumetricCloud_CoverageVariation:MaterialExpressionFunctionInput_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionConstant'MF_SC_VolumetricCloud_CoverageVariation:MaterialExpressionConstant_23'")
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_VolumetricCloud_CoverageVariation:MaterialExpressionFunctionInput_4'")
+    .MaterialExpressionEditorX=-384
+    .MaterialExpressionEditorY=128
+    .MaterialExpressionGuid=7381994843E99AFDCC10D89A4B4813A2
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricCloud_CoverageVariation'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionLinearInterpolate
+    .B=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'MF_SC_VolumetricCloud_CoverageVariation:MaterialExpressionLinearInterpolate_20'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_VolumetricCloud_CoverageVariation:MaterialExpressionFunctionInput_2'")
+    .MaterialExpressionEditorX=-128
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=5FCFC48B447AEF1EEEBC58ADC1393A5D
+    .Function="/Script/Engine.MaterialFunction'MF_SC_VolumetricCloud_CoverageVariation'"

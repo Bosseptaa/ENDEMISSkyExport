@@ -1,0 +1,1273 @@
+### /Game/UltraDynamicSky/Materials/Space/Space_Planet_Mat
+  Material (Space_Planet_Mat)
+    .MaterialDomain=MD_DeferredDecal
+    .BlendMode=BLEND_Translucent
+    .ShadingModel=MSM_Unlit
+    .ShadingModels=(ShadingModelField=1)
+    .DitherOpacityMask=True
+    .NumCustomizedUVs=1
+    .bTangentSpaceNormal=False
+    .EditorX=5024
+    .EditorY=-888
+    .bCanMaskedBeAssumedOpaque=True
+    .bCastRayTracedShadows=False
+    .PixelDepthOffsetMode=PDOM_Legacy
+    .StateId=24A9C0C348C82EF135958EA60AE4E547
+    .ReferencedTextureGuids(1)=307757E1458E615C7D97A39E32219707
+    .ReferencedTextureGuids(2)=492515644FFFDDCE596A7BB5E71F058B
+    .EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'Space_Planet_MatEditorOnlyData'"
+    .ReferencedDefaultTextures(0)="/Script/Engine.Texture2D'/Engine/EngineMaterials/Good64x64TilingNoiseHighFreq.Good64x64TilingNoiseHighFreq'"
+    .ReferencedDefaultTextures(1)="/Script/Engine.Texture2D'/Engine/EngineMaterials/FlatNormal.FlatNormal'"
+    .ReferencedDefaultTextures(2)="/Script/Engine.Texture2D'/Engine/EngineResources/WhiteSquareTexture.WhiteSquareTexture'"
+    .ReferencedDefaultTextures(3)="/Script/Engine.Texture2D'/Engine/EngineResources/Black_Low.Black'"
+    .ReferencedDefaultTextures(4)="/Script/Engine.Texture2D'/Game/UltraDynamicSky/Textures/Space/Planets_Moons/Deform_Noise.Deform_Noise'"
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+    .ParameterOverviewExpansion=(("-12Global", True))
+    .LightingGuid=D87E1BC647CC73393A0AFE8AEBA3DB18
+  MaterialEditorOnlyData (Space_Planet_MatEditorOnlyData)
+    BaseColor              <- MaterialExpressionShadingPathSwitch
+    Opacity                <- MaterialExpressionStaticSwitchParameter
+    WorldPositionOffset    <- MaterialExpressionAdd
+    CustomizedUVs(0)       <- MaterialExpressionIf
+    ExpressionCollection   <- MaterialExpressionShadingPathSwitch
+    .BaseColor=(Constant=(R=0.501961,G=0.501961,B=0.501961,A=1.000000),Expression="/Script/Engine.MaterialExpressionShadingPathSwitch'Space_Planet_Mat:MaterialExpressionShadingPathSwitch_0'")
+    .Metallic=(UseConstant=True)
+    .Specular=(UseConstant=True)
+    .Roughness=(UseConstant=True)
+    .Anisotropy=(UseConstant=True)
+    .Normal=(UseConstant=True)
+    .Tangent=(UseConstant=True)
+    .EmissiveColor=(UseConstant=True)
+    .Opacity=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Space_Planet_Mat:MaterialExpressionStaticSwitchParameter_3'")
+    .OpacityMask=(UseConstant=True)
+    .WorldPositionOffset=(Expression="/Script/Engine.MaterialExpressionAdd'Space_Planet_Mat:MaterialExpressionAdd_1'")
+    .Displacement=(UseConstant=True)
+    .SubsurfaceColor=(UseConstant=True)
+    .ClearCoat=(UseConstant=True)
+    .ClearCoatRoughness=(UseConstant=True)
+    .AmbientOcclusion=(UseConstant=True)
+    .Refraction=(UseConstant=True)
+    .CustomizedUVs(0)=(Expression="/Script/Engine.MaterialExpressionIf'Space_Planet_Mat:MaterialExpressionIf_2'")
+    .CustomizedUVs(1)=(UseConstant=True)
+    .CustomizedUVs(2)=(UseConstant=True)
+    .CustomizedUVs(3)=(UseConstant=True)
+    .CustomizedUVs(4)=(UseConstant=True)
+    .CustomizedUVs(5)=(UseConstant=True)
+    .CustomizedUVs(6)=(UseConstant=True)
+    .CustomizedUVs(7)=(UseConstant=True)
+    .PixelDepthOffset=(UseConstant=True)
+    .SurfaceThickness=(UseConstant=True)
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionShadingPathSwitch'Space_Planet_Mat:MaterialExpressionShadingPathSwitch_0'","/Script/Engine.MaterialExpressionStaticSwitchParameter'Space_Planet_Mat:MaterialExpressionStaticSwitchParameter_3'","/Script/Engine.MaterialExpressionAdd'Space_Planet_Mat:MaterialExpressionAdd_1'","/Script/Engine.MaterialExpressionIf'Space_Planet_Mat:MaterialExpressionIf_2'","/Script/Engine.MaterialExpressionMultiply'Space_Planet_Mat:MaterialExpressionMultiply_1'","/Script/Engine.MaterialExpressionMultiply'Space_Planet_Mat:MaterialExpressionMultiply_2'","/Script/Engine.MaterialExpressionLinearInterpolate'Space_Planet_Mat:MaterialExpressionLinearInterpolate_6'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Space_Planet_Mat:MaterialExpressionMaterialFunctionCall_0'","/Script/Engine.MaterialExpressionMultiply'Space_Planet_Mat:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionLinearInterpolate'Space_Planet_Mat:MaterialExpressionLinearInterpolate_0'","/Script/Engine.MaterialExpressionScalarParameter'Space_Planet_Mat:MaterialExpressionScalarParameter_0'","/Script/Engine.MaterialExpressionVertexColor'Space_Planet_Mat:MaterialExpressionVertexColor_0'","/Script/Engine.MaterialExpressionDotProduct'Space_Planet_Mat:MaterialExpressionDotProduct_0'","/Script/Engine.MaterialExpressionSaturate'Space_Planet_Mat:MaterialExpressionSaturate_4'","/Script/Engine.MaterialExpressionTextureSampleParameter2D'Space_Planet_Mat:MaterialExpressionTextureSampleParameter2D_0'","/Script/Engine.MaterialExpressionTextureSampleParameter2D'Space_Planet_Mat:MaterialExpressionTextureSampleParameter2D_1'","/Script/Engine.MaterialExpressionAdd'Space_Planet_Mat:MaterialExpressionAdd_3'","/Script/Engine.MaterialExpressionScalarParameter'Space_Planet_Mat:MaterialExpressionScalarParameter_5'","/Script/Engine.MaterialExpressionMultiply'Space_Planet_Mat:MaterialExpressionMultiply_15'","/Script/Engine.MaterialExpressionLinearInterpolate'Space_Planet_Mat:MaterialExpressionLinearInterpolate_4'","/Script/Engine.MaterialExpressionVectorParameter'Space_Planet_Mat:MaterialExpressionVectorParameter_0'","/Script/Engine.MaterialExpressionVectorParameter'Space_Planet_Mat:MaterialExpressionVectorParameter_1'","/Script/Engine.MaterialExpressionVertexColor'Space_Planet_Mat:MaterialExpressionVertexColor_4'","/Script/Engine.MaterialExpressionMultiply'Space_Planet_Mat:MaterialExpressionMultiply_7'","/Script/Engine.MaterialExpressionScalarParameter'Space_Planet_Mat:MaterialExpressionScalarParameter_4'","/Script/Engine.MaterialExpressionPower'Space_Planet_Mat:MaterialExpressionPower_1'","/Script/Engine.MaterialExpressionVectorParameter'Space_Planet_Mat:MaterialExpressionVectorParameter_2'","/Script/Engine.MaterialExpressionTextureCoordinate'Space_Planet_Mat:MaterialExpressionTextureCoordinate_0'","/Script/Engine.MaterialExpressionDistance'Space_Planet_Mat:MaterialExpressionDistance_0'","/Script/Engine.MaterialExpressionConstant2Vector'Space_Planet_Mat:MaterialExpressionConstant2Vector_0'","/Script/Engine.MaterialExpressionTransform'Space_Planet_Mat:MaterialExpressionTransform_0'","/Script/Engine.MaterialExpressionComponentMask'Space_Planet_Mat:MaterialExpressionComponentMask_3'","/Script/Engine.MaterialExpressionAppendVector'Space_Planet_Mat:MaterialExpressionAppendVector_1'","/Script/Engine.MaterialExpressionMultiply'Space_Planet_Mat:MaterialExpressionMultiply_5'","/Script/Engine.MaterialExpressionSaturate'Space_Planet_Mat:MaterialExpressionSaturate_1'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Space_Planet_Mat:MaterialExpressionNamedRerouteDeclaration_0'","/Script/Engine.MaterialExpressionConstant'Space_Planet_Mat:MaterialExpressionConstant_2'","/Script/Engine.MaterialExpressionMultiply'Space_Planet_Mat:MaterialExpressionMultiply_12'","/Script/Engine.MaterialExpressionScalarParameter'Space_Planet_Mat:MaterialExpressionScalarParameter_2'","/Script/Engine.MaterialExpressionAdd'Space_Planet_Mat:MaterialExpressionAdd_2'","/Script/Engine.MaterialExpressionScalarParameter'Space_Planet_Mat:MaterialExpressionScalarParameter_3'","/Script/Engine.MaterialExpressionPower'Space_Planet_Mat:MaterialExpressionPower_3'","/Script/Engine.MaterialExpressionScalarParameter'Space_Planet_Mat:MaterialExpressionScalarParameter_6'","/Script/Engine.MaterialExpressionLinearInterpolate'Space_Planet_Mat:MaterialExpressionLinearInterpolate_1'","/Script/Engine.MaterialExpressionVectorParameter'Space_Planet_Mat:MaterialExpressionVectorParameter_3'","/Script/Engine.MaterialExpressionLinearInterpolate'Space_Planet_Mat:MaterialExpressionLinearInterpolate_3'","/Script/Engine.MaterialExpressionMultiply'Space_Planet_Mat:MaterialExpressionMultiply_13'","/Script/Engine.MaterialExpressionScalarParameter'Space_Planet_Mat:MaterialExpressionScalarParameter_7'","/Script/Engine.MaterialExpressionAdd'Space_Planet_Mat:MaterialExpressionAdd_4'","/Script/Engine.MaterialExpressionSaturate'Space_Planet_Mat:MaterialExpressionSaturate_2'","/Script/Engine.MaterialExpressionPower'Space_Planet_Mat:MaterialExpressionPower_4'","/Script/Engine.MaterialExpressionTextureSampleParameter2D'Space_Planet_Mat:MaterialExpressionTextureSampleParameter2D_2'","/Script/Engine.MaterialExpressionMultiply'Space_Planet_Mat:MaterialExpressionMultiply_9'","/Script/Engine.MaterialExpressionVectorParameter'Space_Planet_Mat:MaterialExpressionVectorParameter_4'","/Script/Engine.MaterialExpressionAdd'Space_Planet_Mat:MaterialExpressionAdd_5'","/Script/Engine.MaterialExpressionVectorParameter'Space_Planet_Mat:MaterialExpressionVectorParameter_5'","/Script/Engine.MaterialExpressionLinearInterpolate'Space_Planet_Mat:MaterialExpressionLinearInterpolate_2'","/Script/Engine.MaterialExpressionVertexColor'Space_Planet_Mat:MaterialExpressionVertexColor_3'","/Script/Engine.MaterialExpressionMultiply'Space_Planet_Mat:MaterialExpressionMultiply_17'","/Script/Engine.MaterialExpressionOneMinus'Space_Planet_Mat:MaterialExpressionOneMinus_0'","/Script/Engine.MaterialExpressionMultiply'Space_Planet_Mat:MaterialExpressionMultiply_21'","/Script/Engine.MaterialExpressionMultiply'Space_Planet_Mat:MaterialExpressionMultiply_22'","/Script/Engine.MaterialExpressionScalarParameter'Space_Planet_Mat:MaterialExpressionScalarParameter_11'","/Script/Engine.MaterialExpressionVertexColor'Space_Planet_Mat:MaterialExpressionVertexColor_1'","/Script/Engine.MaterialExpressionAdd'Space_Planet_Mat:MaterialExpressionAdd_9'","/Script/Engine.MaterialExpressionAdd'Space_Planet_Mat:MaterialExpressionAdd_10'","/Script/Engine.MaterialExpressionSaturate'Space_Planet_Mat:MaterialExpressionSaturate_3'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Space_Planet_Mat:MaterialExpressionNamedRerouteDeclaration_2'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Space_Planet_Mat:MaterialExpressionNamedRerouteUsage_3'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Space_Planet_Mat:MaterialExpressionNamedRerouteUsage_4'","/Script/Engine.MaterialExpressionVertexNormalWS'Space_Planet_Mat:MaterialExpressionVertexNormalWS_0'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Space_Planet_Mat:MaterialExpressionNamedRerouteDeclaration_1'","/Script/Engine.MaterialExpressionVertexNormalWS'Space_Planet_Mat:MaterialExpressionVertexNormalWS_2'","/Script/Engine.MaterialExpressionNormalize'Space_Planet_Mat:MaterialExpressionNormalize_5'","/Script/Engine.MaterialExpressionSaturate'Space_Planet_Mat:MaterialExpressionSaturate_12'","/Script/Engine.MaterialExpressionMultiply'Space_Planet_Mat:MaterialExpressionMultiply_4'","/Script/Engine.MaterialExpressionMultiply'Space_Planet_Mat:MaterialExpressionMultiply_6'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Space_Planet_Mat:MaterialExpressionNamedRerouteUsage_0'","/Script/Engine.MaterialExpressionMultiply'Space_Planet_Mat:MaterialExpressionMultiply_10'","/Script/Engine.MaterialExpressionOneMinus'Space_Planet_Mat:MaterialExpressionOneMinus_1'","/Script/Engine.MaterialExpressionSaturate'Space_Planet_Mat:MaterialExpressionSaturate_13'","/Script/Engine.MaterialExpressionOneMinus'Space_Planet_Mat:MaterialExpressionOneMinus_3'","/Script/Engine.MaterialExpressionOneMinus'Space_Planet_Mat:MaterialExpressionOneMinus_4'","/Script/Engine.MaterialExpressionAdd'Space_Planet_Mat:MaterialExpressionAdd_11'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Space_Planet_Mat:MaterialExpressionNamedRerouteDeclaration_7'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Space_Planet_Mat:MaterialExpressionNamedRerouteDeclaration_8'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Space_Planet_Mat:MaterialExpressionNamedRerouteUsage_7'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Space_Planet_Mat:MaterialExpressionNamedRerouteUsage_8'","/Script/Engine.MaterialExpressionStaticSwitchParameter'Space_Planet_Mat:MaterialExpressionStaticSwitchParameter_1'","/Script/Engine.MaterialExpressionConstant'Space_Planet_Mat:MaterialExpressionConstant_0'","/Script/Engine.MaterialExpressionStaticSwitchParameter'Space_Planet_Mat:MaterialExpressionStaticSwitchParameter_2'","/Script/Engine.MaterialExpressionReroute'Space_Planet_Mat:MaterialExpressionReroute_4'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Space_Planet_Mat:MaterialExpressionNamedRerouteUsage_12'","/Script/Engine.MaterialExpressionStaticSwitchParameter'Space_Planet_Mat:MaterialExpressionStaticSwitchParameter_7'","/Script/Engine.MaterialExpressionReroute'Space_Planet_Mat:MaterialExpressionReroute_12'","/Script/Engine.MaterialExpressionOneMinus'Space_Planet_Mat:MaterialExpressionOneMinus_5'","/Script/Engine.MaterialExpressionStaticSwitchParameter'Space_Planet_Mat:MaterialExpressionStaticSwitchParameter_6'","/Script/Engine.MaterialExpressionReroute'Space_Planet_Mat:MaterialExpressionReroute_3'","/Script/Engine.MaterialExpressionReroute'Space_Planet_Mat:MaterialExpressionReroute_10'","/Script/Engine.MaterialExpressionTextureCoordinate'Space_Planet_Mat:MaterialExpressionTextureCoordinate_2'","/Script/Engine.MaterialExpressionSubtract'Space_Planet_Mat:MaterialExpressionSubtract_7'","/Script/Engine.MaterialExpressionDistance'Space_Planet_Mat:MaterialExpressionDistance_6'","/Script/Engine.MaterialExpressionConstant2Vector'Space_Planet_Mat:MaterialExpressionConstant2Vector_4'","/Script/Engine.MaterialExpressionNormalize'Space_Planet_Mat:MaterialExpressionNormalize_2'","/Script/Engine.MaterialExpressionAdd'Space_Planet_Mat:MaterialExpressionAdd_15'","/Script/Engine.MaterialExpressionScalarParameter'Space_Planet_Mat:MaterialExpressionScalarParameter_19'","/Script/Engine.MaterialExpressionMultiply'Space_Planet_Mat:MaterialExpressionMultiply_38'","/Script/Engine.MaterialExpressionSaturate'Space_Planet_Mat:MaterialExpressionSaturate_14'","/Script/Engine.MaterialExpressionOneMinus'Space_Planet_Mat:MaterialExpressionOneMinus_10'","/Script/Engine.MaterialExpressionPower'Space_Planet_Mat:MaterialExpressionPower_6'","/Script/Engine.MaterialExpressionOneMinus'Space_Planet_Mat:MaterialExpressionOneMinus_11'","/Script/Engine.MaterialExpressionMultiply'Space_Planet_Mat:MaterialExpressionMultiply_39'","/Script/Engine.MaterialExpressionDivide'Space_Planet_Mat:MaterialExpressionDivide_6'","/Script/Engine.MaterialExpressionOneMinus'Space_Planet_Mat:MaterialExpressionOneMinus_12'","/Script/Engine.MaterialExpressionReroute'Space_Planet_Mat:MaterialExpressionReroute_11'","/Script/Engine.MaterialExpressionConstant2Vector'Space_Planet_Mat:MaterialExpressionConstant2Vector_5'","/Script/Engine.MaterialExpressionVectorParameter'Space_Planet_Mat:MaterialExpressionVectorParameter_14'","/Script/Engine.MaterialExpressionMultiply'Space_Planet_Mat:MaterialExpressionMultiply_23'","/Script/Engine.MaterialExpressionReroute'Space_Planet_Mat:MaterialExpressionReroute_14'","/Script/Engine.MaterialExpressionVertexColor'Space_Planet_Mat:MaterialExpressionVertexColor_5'","/Script/Engine.MaterialExpressionVertexNormalWS'Space_Planet_Mat:MaterialExpressionVertexNormalWS_1'","/Script/Engine.MaterialExpressionMultiply'Space_Planet_Mat:MaterialExpressionMultiply_24'","/Script/Engine.MaterialExpressionScalarParameter'Space_Planet_Mat:MaterialExpressionScalarParameter_8'","/Script/Engine.MaterialExpressionMultiply'Space_Planet_Mat:MaterialExpressionMultiply_32'","/Script/Engine.MaterialExpressionSubtract'Space_Planet_Mat:MaterialExpressionSubtract_4'","/Script/Engine.MaterialExpressionTextureCoordinate'Space_Planet_Mat:MaterialExpressionTextureCoordinate_1'","/Script/Engine.MaterialExpressionDivide'Space_Planet_Mat:MaterialExpressionDivide_0'","/Script/Engine.MaterialExpressionAdd'Space_Planet_Mat:MaterialExpressionAdd_12'","/Script/Engine.MaterialExpressionVectorParameter'Space_Planet_Mat:MaterialExpressionVectorParameter_15'","/Script/Engine.MaterialExpressionComponentMask'Space_Planet_Mat:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionMultiply'Space_Planet_Mat:MaterialExpressionMultiply_36'","/Script/Engine.MaterialExpressionOneMinus'Space_Planet_Mat:MaterialExpressionOneMinus_7'","/Script/Engine.MaterialExpressionTextureSampleParameter2D'Space_Planet_Mat:MaterialExpressionTextureSampleParameter2D_4'","/Script/Engine.MaterialExpressionComponentMask'Space_Planet_Mat:MaterialExpressionComponentMask_1'","/Script/Engine.MaterialExpressionMultiply'Space_Planet_Mat:MaterialExpressionMultiply_37'","/Script/Engine.MaterialExpressionScalarParameter'Space_Planet_Mat:MaterialExpressionScalarParameter_9'","/Script/Engine.MaterialExpressionScalarParameter'Space_Planet_Mat:MaterialExpressionScalarParameter_18'","/Script/Engine.MaterialExpressionReroute'Space_Planet_Mat:MaterialExpressionReroute_0'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Space_Planet_Mat:MaterialExpressionMaterialFunctionCall_1'"),EditorComments=("/Script/Engine.MaterialExpressionComment'Space_Planet_Mat:MaterialExpressionComment_0'","/Script/Engine.MaterialExpressionComment'Space_Planet_Mat:MaterialExpressionComment_1'","/Script/Engine.MaterialExpressionComment'Space_Planet_Mat:MaterialExpressionComment_2'","/Script/Engine.MaterialExpressionComment'Space_Planet_Mat:MaterialExpressionComment_3'","/Script/Engine.MaterialExpressionComment'Space_Planet_Mat:MaterialExpressionComment_4'","/Script/Engine.MaterialExpressionComment'Space_Planet_Mat:MaterialExpressionComment_5'","/Script/Engine.MaterialExpressionComment'Space_Planet_Mat:MaterialExpressionComment_10'","/Script/Engine.MaterialExpressionComment'Space_Planet_Mat:MaterialExpressionComment_6'","/Script/Engine.MaterialExpressionComment'Space_Planet_Mat:MaterialExpressionComment_11'"))
+    .ParameterGroupData(0)=(GroupName="None")
+  MaterialExpressionAdd (MaterialExpressionAdd_1)
+    A                      <- MaterialExpressionStaticSwitchParameter
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Space_Planet_Mat:MaterialExpressionMultiply_24'")
+    .A=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Space_Planet_Mat:MaterialExpressionStaticSwitchParameter_1'")
+    .MaterialExpressionEditorX=4796
+    .MaterialExpressionEditorY=804
+    .MaterialExpressionGuid=D85E87B046601DF195B2BEACE36EF891
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionAdd (MaterialExpressionAdd_10)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionVertexColor
+    .B=(Expression="/Script/Engine.MaterialExpressionVertexColor'Space_Planet_Mat:MaterialExpressionVertexColor_1'",OutputIndex=3,Mask=1,MaskB=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Space_Planet_Mat:MaterialExpressionAdd_9'")
+    .MaterialExpressionEditorX=-2020
+    .MaterialExpressionEditorY=433
+    .MaterialExpressionGuid=6CEB83954FE6F5CA6C48DDB3D6C86C23
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionAdd (MaterialExpressionAdd_11)
+    A                      <- MaterialExpressionScalarParameter
+    .A=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Space_Planet_Mat:MaterialExpressionScalarParameter_3'")
+    .ConstB=0.100000
+    .MaterialExpressionEditorX=-3496
+    .MaterialExpressionEditorY=-364
+    .MaterialExpressionGuid=C5586E174BA814443F04788F71D512CD
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionAdd (MaterialExpressionAdd_12)
+    A                      <- MaterialExpressionDivide
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Space_Planet_Mat:MaterialExpressionComponentMask_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'Space_Planet_Mat:MaterialExpressionDivide_0'")
+    .MaterialExpressionEditorX=3410
+    .MaterialExpressionEditorY=1442
+    .MaterialExpressionGuid=7101670443C1D5458D05EF8E2AD8CED0
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionAdd (MaterialExpressionAdd_15)
+    A                      <- MaterialExpressionMultiply
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Space_Planet_Mat:MaterialExpressionMultiply_39'")
+    .ConstB=0.500000
+    .MaterialExpressionEditorX=4174
+    .MaterialExpressionEditorY=58
+    .MaterialExpressionGuid=466CD34F4A0A64B398BD33ADB0FAA1B4
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionAdd (MaterialExpressionAdd_2)
+    A                      <- MaterialExpressionDotProduct
+    B                      <- MaterialExpressionAdd
+    .B=(Expression="/Script/Engine.MaterialExpressionAdd'Space_Planet_Mat:MaterialExpressionAdd_11'")
+    .A=(Expression="/Script/Engine.MaterialExpressionDotProduct'Space_Planet_Mat:MaterialExpressionDotProduct_0'")
+    .MaterialExpressionEditorX=-3384
+    .MaterialExpressionEditorY=-464
+    .MaterialExpressionGuid=956DE8844605AB9E9356E7A79AFCEFB8
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionAdd (MaterialExpressionAdd_3)
+    A                      <- MaterialExpressionVertexNormalWS
+    B                      <- MaterialExpressionTransform
+    .B=(Expression="/Script/Engine.MaterialExpressionTransform'Space_Planet_Mat:MaterialExpressionTransform_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionVertexNormalWS'Space_Planet_Mat:MaterialExpressionVertexNormalWS_0'")
+    .MaterialExpressionEditorX=-4136
+    .MaterialExpressionEditorY=-464
+    .MaterialExpressionGuid=6D8138EB438C5E42459FB68C823E90BF
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionAdd (MaterialExpressionAdd_4)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Space_Planet_Mat:MaterialExpressionNamedRerouteUsage_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Space_Planet_Mat:MaterialExpressionMultiply_13'")
+    .MaterialExpressionEditorX=-256
+    .MaterialExpressionEditorY=-428
+    .MaterialExpressionGuid=34962A224185AE24FA2EB39316D42852
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionAdd (MaterialExpressionAdd_5)
+    A                      <- MaterialExpressionReroute
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Space_Planet_Mat:MaterialExpressionMultiply_9'")
+    .A=(Expression="/Script/Engine.MaterialExpressionReroute'Space_Planet_Mat:MaterialExpressionReroute_3'")
+    .MaterialExpressionEditorX=2000
+    .MaterialExpressionEditorY=-888
+    .MaterialExpressionGuid=9D2EBEDF4D3A90F155B5F586080C15A1
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionAdd (MaterialExpressionAdd_9)
+    A                      <- MaterialExpressionVertexColor
+    B                      <- MaterialExpressionVertexColor
+    .B=(Expression="/Script/Engine.MaterialExpressionVertexColor'Space_Planet_Mat:MaterialExpressionVertexColor_1'",OutputIndex=2,Mask=1,MaskG=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionVertexColor'Space_Planet_Mat:MaterialExpressionVertexColor_1'",OutputIndex=1,Mask=1,MaskR=1)
+    .MaterialExpressionEditorX=-2128
+    .MaterialExpressionEditorY=385
+    .MaterialExpressionGuid=3862F1B84973DCE29F8D8DAFA7AE2498
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_1)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'Space_Planet_Mat:MaterialExpressionConstant_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Space_Planet_Mat:MaterialExpressionMultiply_15'")
+    .MaterialExpressionEditorX=-4508
+    .MaterialExpressionEditorY=-352
+    .MaterialExpressionGuid=996D0A7C4FA0A0395B7FA9A263147584
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionComment (MaterialExpressionComment_0)
+    .SizeX=3604
+    .SizeY=1132
+    .Text="Shading"
+    .CommentColor=(R=0.547340,G=0.294353,B=1.000000,A=1.000000)
+    .FontSize=35
+    .MaterialExpressionEditorX=-5192
+    .MaterialExpressionEditorY=-972
+    .MaterialExpressionGuid=533BF75240216B988F6416B3E3D0A775
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionComment (MaterialExpressionComment_1)
+    .SizeX=740
+    .SizeY=292
+    .Text="Planet Mask"
+    .CommentColor=(R=0.283670,G=0.512031,B=1.000000,A=1.000000)
+    .MaterialExpressionEditorX=-2348
+    .MaterialExpressionEditorY=296
+    .MaterialExpressionGuid=38F06BA04D46CF362D5B59965E435523
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionComment (MaterialExpressionComment_10)
+    .SizeX=1380
+    .SizeY=484
+    .Text="Atmosphere WPO"
+    .CommentColor=(R=0.568348,G=0.583333,B=0.276250,A=1.000000)
+    .MaterialExpressionEditorX=3000
+    .MaterialExpressionEditorY=584
+    .MaterialExpressionGuid=33B245524EDC85EDDD21B9854916E64F
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionComment (MaterialExpressionComment_11)
+    .SizeX=1537
+    .SizeY=643
+    .Text="Planet Mesh Deform"
+    .CommentColor=(R=0.489150,G=0.406159,B=1.000000,A=1.000000)
+    .MaterialExpressionEditorX=2832
+    .MaterialExpressionEditorY=1176
+    .MaterialExpressionGuid=7520A25141C4A6750AA7CB90A0A366E7
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionComment (MaterialExpressionComment_2)
+    .SizeX=2400
+    .SizeY=768
+    .Text="Planet Color"
+    .CommentColor=(R=0.533583,G=1.000000,B=0.348063,A=1.000000)
+    .MaterialExpressionEditorX=-1482
+    .MaterialExpressionEditorY=-962
+    .MaterialExpressionGuid=27620D9241325346A3851C91631B4AE6
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionComment (MaterialExpressionComment_3)
+    .SizeX=1364
+    .SizeY=776
+    .Text="Add Emissive"
+    .CommentColor=(R=1.000000,G=0.604063,B=0.369383,A=1.000000)
+    .MaterialExpressionEditorX=988
+    .MaterialExpressionEditorY=-974
+    .MaterialExpressionGuid=6EF165A74D79FDDE02362ABAD03412B8
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionComment (MaterialExpressionComment_4)
+    .SizeX=1100
+    .SizeY=468
+    .Text="Planet + Atmo Opacity"
+    .CommentColor=(R=0.538655,G=0.487039,B=1.000000,A=1.000000)
+    .MaterialExpressionEditorX=2408
+    .MaterialExpressionEditorY=-652
+    .MaterialExpressionGuid=532997DA455B480094C157ACF874D5A2
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionComment (MaterialExpressionComment_5)
+    .SizeX=1044
+    .SizeY=308
+    .Text="Dither Color"
+    .CommentColor=(R=0.543089,G=1.000000,B=0.815501,A=1.000000)
+    .MaterialExpressionEditorX=3596
+    .MaterialExpressionEditorY=-952
+    .MaterialExpressionGuid=013A428E4129DA30842469A8EF836BD2
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionComment (MaterialExpressionComment_6)
+    .SizeX=1580
+    .SizeY=560
+    .Text="Planet Texture UVs"
+    .CommentColor=(R=0.270833,G=0.551928,B=1.000000,A=1.000000)
+    .MaterialExpressionEditorX=2956
+    .MaterialExpressionEditorY=-40
+    .MaterialExpressionGuid=168A12BD4D1D0C34C93813A2BCF8FF7D
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionVectorParameter
+    .R=True
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Space_Planet_Mat:MaterialExpressionVectorParameter_15'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .MaterialExpressionEditorX=3090
+    .MaterialExpressionEditorY=1594
+    .MaterialExpressionGuid=04C196C544E869BB9A0188907C9A4F9F
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_1)
+    Input                  <- MaterialExpressionVectorParameter
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Space_Planet_Mat:MaterialExpressionVectorParameter_15'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .MaterialExpressionEditorX=3094
+    .MaterialExpressionEditorY=1506
+    .MaterialExpressionGuid=04C196C544E869BB9A0188907C9A4F9F
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_3)
+    Input                  <- MaterialExpressionTextureSampleParameter2D
+    .R=True
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameter2D'Space_Planet_Mat:MaterialExpressionTextureSampleParameter2D_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .MaterialExpressionEditorX=-4808
+    .MaterialExpressionEditorY=-352
+    .MaterialExpressionGuid=F315806E45D7772079D7C99037D52142
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionConstant (MaterialExpressionConstant_0)
+    .MaterialExpressionEditorX=3932
+    .MaterialExpressionEditorY=912
+    .MaterialExpressionGuid=8F4811E043E65204DEB8B08CEAB73E01
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionConstant (MaterialExpressionConstant_2)
+    .MaterialExpressionEditorX=-4620
+    .MaterialExpressionEditorY=-252
+    .MaterialExpressionGuid=2AA3217B41F2BA8225B8548FDA58C1FA
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionConstant2Vector (MaterialExpressionConstant2Vector_0)
+    .R=0.500000
+    .G=0.500000
+    .MaterialExpressionEditorX=-1380
+    .MaterialExpressionEditorY=-348
+    .MaterialExpressionGuid=D6395E2B47AECD61C988929A4C3AF980
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionConstant2Vector (MaterialExpressionConstant2Vector_4)
+    .MaterialExpressionEditorX=3196
+    .MaterialExpressionEditorY=256
+    .MaterialExpressionGuid=CE8220A8457A2B1FE04E01B047A8F0B2
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionConstant2Vector (MaterialExpressionConstant2Vector_5)
+    .R=0.500000
+    .G=0.500000
+    .MaterialExpressionEditorX=4160
+    .MaterialExpressionEditorY=372
+    .MaterialExpressionGuid=A6FF8EBC45D5162DF89421B674D2D59E
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionDistance (MaterialExpressionDistance_0)
+    A                      <- MaterialExpressionTextureCoordinate
+    B                      <- MaterialExpressionConstant2Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'Space_Planet_Mat:MaterialExpressionConstant2Vector_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'Space_Planet_Mat:MaterialExpressionTextureCoordinate_0'")
+    .MaterialExpressionEditorX=-1224
+    .MaterialExpressionEditorY=-428
+    .MaterialExpressionGuid=DB988DFC4F19F7D43F6AE58BC780A67B
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionDistance (MaterialExpressionDistance_6)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionConstant2Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'Space_Planet_Mat:MaterialExpressionConstant2Vector_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'Space_Planet_Mat:MaterialExpressionSubtract_7'")
+    .MaterialExpressionEditorX=3378
+    .MaterialExpressionEditorY=206
+    .MaterialExpressionGuid=1E54544F4BAC3728F07CE186ADA4E3F3
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionTextureCoordinate
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'Space_Planet_Mat:MaterialExpressionComponentMask_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'Space_Planet_Mat:MaterialExpressionTextureCoordinate_1'")
+    .ConstB=10.000000
+    .MaterialExpressionEditorX=3282
+    .MaterialExpressionEditorY=1442
+    .MaterialExpressionGuid=1E98F51F465DE2A14304F997E6263836
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionDivide (MaterialExpressionDivide_6)
+    A                      <- MaterialExpressionOneMinus
+    .A=(Expression="/Script/Engine.MaterialExpressionOneMinus'Space_Planet_Mat:MaterialExpressionOneMinus_11'")
+    .MaterialExpressionEditorX=3992
+    .MaterialExpressionEditorY=212
+    .MaterialExpressionGuid=23E04AA041D1BDB1232476A17585C9D8
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionDotProduct (MaterialExpressionDotProduct_0)
+    A                      <- MaterialExpressionStaticSwitchParameter
+    B                      <- MaterialExpressionNamedRerouteDeclaration
+    .B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Space_Planet_Mat:MaterialExpressionNamedRerouteDeclaration_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Space_Planet_Mat:MaterialExpressionStaticSwitchParameter_7'")
+    .MaterialExpressionEditorX=-3748
+    .MaterialExpressionEditorY=-464
+    .MaterialExpressionGuid=E21A2427409D8A963ABF78A29DBFE906
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionIf (MaterialExpressionIf_2)
+    A                      <- MaterialExpressionReroute
+    AGreaterThanB          <- MaterialExpressionAdd
+    AEqualsB               <- MaterialExpressionConstant2Vector
+    ALessThanB             <- MaterialExpressionConstant2Vector
+    .A=(Expression="/Script/Engine.MaterialExpressionReroute'Space_Planet_Mat:MaterialExpressionReroute_11'")
+    .AGreaterThanB=(Expression="/Script/Engine.MaterialExpressionAdd'Space_Planet_Mat:MaterialExpressionAdd_15'")
+    .AEqualsB=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'Space_Planet_Mat:MaterialExpressionConstant2Vector_5'")
+    .ALessThanB=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'Space_Planet_Mat:MaterialExpressionConstant2Vector_5'")
+    .MaterialExpressionEditorX=4316
+    .MaterialExpressionEditorY=276
+    .MaterialExpressionGuid=981B8C0248E90BE9D0ACCCB882DBD4D0
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_0)
+    Alpha                  <- MaterialExpressionMaterialFunctionCall
+    .ConstA=0.800000
+    .ConstB=1.200000
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Space_Planet_Mat:MaterialExpressionMaterialFunctionCall_0'")
+    .MaterialExpressionEditorX=3918
+    .MaterialExpressionEditorY=-829
+    .MaterialExpressionGuid=D337813247CCFA41D0B4DE8D91F3D21D
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_1)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionVectorParameter
+    Alpha                  <- MaterialExpressionNamedRerouteDeclaration
+    .B=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Space_Planet_Mat:MaterialExpressionVectorParameter_1'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Space_Planet_Mat:MaterialExpressionMultiply_6'")
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Space_Planet_Mat:MaterialExpressionNamedRerouteDeclaration_8'")
+    .MaterialExpressionEditorX=-2182
+    .MaterialExpressionEditorY=-697
+    .MaterialExpressionGuid=F856C6C84BAA760ED7068D8D7862BFDC
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_2)
+    A                      <- MaterialExpressionVectorParameter
+    B                      <- MaterialExpressionVectorParameter
+    Alpha                  <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Space_Planet_Mat:MaterialExpressionVectorParameter_5'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Space_Planet_Mat:MaterialExpressionVectorParameter_4'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Space_Planet_Mat:MaterialExpressionNamedRerouteUsage_7'")
+    .MaterialExpressionEditorX=1544
+    .MaterialExpressionEditorY=-568
+    .MaterialExpressionGuid=B32D9F434B378731921AD6A36BA53870
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_3)
+    A                      <- MaterialExpressionReroute
+    B                      <- MaterialExpressionVectorParameter
+    Alpha                  <- MaterialExpressionSaturate
+    .B=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Space_Planet_Mat:MaterialExpressionVectorParameter_2'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionReroute'Space_Planet_Mat:MaterialExpressionReroute_14'")
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionSaturate'Space_Planet_Mat:MaterialExpressionSaturate_2'")
+    .MaterialExpressionEditorX=248
+    .MaterialExpressionEditorY=-876
+    .MaterialExpressionGuid=A5DF6D2A48B46BBFB6B1D2A8621213E0
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_4)
+    A                      <- MaterialExpressionVectorParameter
+    B                      <- MaterialExpressionLinearInterpolate
+    Alpha                  <- MaterialExpressionNamedRerouteDeclaration
+    .B=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Space_Planet_Mat:MaterialExpressionLinearInterpolate_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Space_Planet_Mat:MaterialExpressionVectorParameter_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Space_Planet_Mat:MaterialExpressionNamedRerouteDeclaration_8'")
+    .MaterialExpressionEditorX=-1962
+    .MaterialExpressionEditorY=-721
+    .MaterialExpressionGuid=B32D9F434B378731921AD6A36BA53870
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_6)
+    B                      <- MaterialExpressionMultiply
+    Alpha                  <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Space_Planet_Mat:MaterialExpressionMultiply_7'")
+    .ConstA=1.000000
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Space_Planet_Mat:MaterialExpressionNamedRerouteUsage_4'")
+    .MaterialExpressionEditorX=3037
+    .MaterialExpressionEditorY=-554
+    .MaterialExpressionGuid=05D1C6EB46207D893DD57DAC42311820
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_0)
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Engine/Functions/Engine_MaterialFunctions02/Utility/DitherTemporalAA.DitherTemporalAA'"
+    .FunctionInputs(0)=(ExpressionInputId=982BCAE7401F814CDC0AE2955DEE46F3,Input=(OutputIndex=-1,InputName="Alpha Threshold"))
+    .FunctionInputs(1)=(ExpressionInputId=E8A932AF4299B0D6C16EDB8B1E912796,Input=(OutputIndex=-1,InputName="Random"))
+    .FunctionOutputs(0)=(ExpressionOutputId=9BC32B084665F3D2D59A90AA45CA8A9F,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=3670
+    .MaterialExpressionEditorY=-773
+    .MaterialExpressionGuid=28EB7DE443B9FC55A56D74BA5877041B
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_1)
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Space/SpacePlanet_LightVector.SpacePlanet_LightVector'"
+    .FunctionOutputs(0)=(ExpressionOutputId=62BD3F324B30A27A5999DEB4C10A25B4,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=-4372
+    .MaterialExpressionEditorY=-136
+    .MaterialExpressionGuid=C7EDEF1242C2A559739365B27B680812
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionStaticSwitchParameter
+    B                      <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Space_Planet_Mat:MaterialExpressionNamedRerouteUsage_8'")
+    .A=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Space_Planet_Mat:MaterialExpressionStaticSwitchParameter_2'")
+    .MaterialExpressionEditorX=732
+    .MaterialExpressionEditorY=-872
+    .MaterialExpressionGuid=E3C8C5374C2486D9FB119CAF7D26C983
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionReroute
+    B                      <- MaterialExpressionLinearInterpolate
+    .B=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Space_Planet_Mat:MaterialExpressionLinearInterpolate_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionReroute'Space_Planet_Mat:MaterialExpressionReroute_0'")
+    .MaterialExpressionEditorX=4154
+    .MaterialExpressionEditorY=-889
+    .MaterialExpressionGuid=A93B1D474890DC2D1076F3A48FD7E202
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_10)
+    A                      <- MaterialExpressionOneMinus
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Space_Planet_Mat:MaterialExpressionScalarParameter_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionOneMinus'Space_Planet_Mat:MaterialExpressionOneMinus_1'")
+    .MaterialExpressionEditorX=-4808
+    .MaterialExpressionEditorY=-132
+    .MaterialExpressionGuid=EDD9351243E9630992214099EEB089F4
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_12)
+    A                      <- MaterialExpressionSaturate
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Space_Planet_Mat:MaterialExpressionScalarParameter_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSaturate'Space_Planet_Mat:MaterialExpressionSaturate_13'")
+    .MaterialExpressionEditorX=-3120
+    .MaterialExpressionEditorY=-464
+    .MaterialExpressionGuid=49E193384DB59CBE0EC61D9C8FF08916
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_13)
+    A                      <- MaterialExpressionPower
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Space_Planet_Mat:MaterialExpressionScalarParameter_7'")
+    .A=(Expression="/Script/Engine.MaterialExpressionPower'Space_Planet_Mat:MaterialExpressionPower_4'")
+    .MaterialExpressionEditorX=-424
+    .MaterialExpressionEditorY=-428
+    .MaterialExpressionGuid=38CD8C974AE5C0FB70C821A5DA0E413B
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_15)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Space_Planet_Mat:MaterialExpressionMultiply_10'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Space_Planet_Mat:MaterialExpressionComponentMask_3'")
+    .MaterialExpressionEditorX=-4648
+    .MaterialExpressionEditorY=-352
+    .MaterialExpressionGuid=77430C3A4B6828A62712F08B77D6E0E2
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_17)
+    A                      <- MaterialExpressionLinearInterpolate
+    B                      <- MaterialExpressionOneMinus
+    .B=(Expression="/Script/Engine.MaterialExpressionOneMinus'Space_Planet_Mat:MaterialExpressionOneMinus_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Space_Planet_Mat:MaterialExpressionLinearInterpolate_2'")
+    .MaterialExpressionEditorX=1696
+    .MaterialExpressionEditorY=-568
+    .MaterialExpressionGuid=01E7E940444CC77002261C9CFE7ED48B
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_2)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionNormalize
+    .B=(Expression="/Script/Engine.MaterialExpressionNormalize'Space_Planet_Mat:MaterialExpressionNormalize_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Space_Planet_Mat:MaterialExpressionMultiply_21'")
+    .MaterialExpressionEditorX=3866
+    .MaterialExpressionEditorY=802
+    .MaterialExpressionGuid=6899FC8E436A29DF1E416784B07E1155
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_21)
+    A                      <- MaterialExpressionSaturate
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Space_Planet_Mat:MaterialExpressionMultiply_22'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSaturate'Space_Planet_Mat:MaterialExpressionSaturate_12'")
+    .MaterialExpressionEditorX=3386
+    .MaterialExpressionEditorY=798
+    .MaterialExpressionGuid=203634FD42F29AE42D9AB9A53A2AB4FC
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_22)
+    A                      <- MaterialExpressionScalarParameter
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Space_Planet_Mat:MaterialExpressionScalarParameter_11'")
+    .A=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Space_Planet_Mat:MaterialExpressionScalarParameter_0'")
+    .MaterialExpressionEditorX=3258
+    .MaterialExpressionEditorY=886
+    .MaterialExpressionGuid=986E59E34E5FE3922367C3A0DAD53984
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_23)
+    A                      <- MaterialExpressionTextureSampleParameter2D
+    B                      <- MaterialExpressionVectorParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Space_Planet_Mat:MaterialExpressionVectorParameter_14'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameter2D'Space_Planet_Mat:MaterialExpressionTextureSampleParameter2D_1'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .MaterialExpressionEditorX=-616
+    .MaterialExpressionEditorY=-876
+    .MaterialExpressionGuid=18CE240A422C74E6283F148EB52F9FB8
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_24)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Space_Planet_Mat:MaterialExpressionMultiply_32'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Space_Planet_Mat:MaterialExpressionMultiply_36'")
+    .MaterialExpressionEditorX=4218
+    .MaterialExpressionEditorY=1254
+    .MaterialExpressionGuid=45339D244BDE13EBBB1D75A5829F144E
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_32)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Space_Planet_Mat:MaterialExpressionMultiply_37'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'Space_Planet_Mat:MaterialExpressionSubtract_4'")
+    .MaterialExpressionEditorX=4132
+    .MaterialExpressionEditorY=1464
+    .MaterialExpressionGuid=8EF0757E4C17D1F2DD8FB3ADB3FD0526
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_36)
+    A                      <- MaterialExpressionVertexNormalWS
+    B                      <- MaterialExpressionOneMinus
+    .B=(Expression="/Script/Engine.MaterialExpressionOneMinus'Space_Planet_Mat:MaterialExpressionOneMinus_7'")
+    .A=(Expression="/Script/Engine.MaterialExpressionVertexNormalWS'Space_Planet_Mat:MaterialExpressionVertexNormalWS_1'")
+    .MaterialExpressionEditorX=4006
+    .MaterialExpressionEditorY=1254
+    .MaterialExpressionGuid=F196F7B045BA14FC0EC96D9DA8975FCC
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_37)
+    A                      <- MaterialExpressionScalarParameter
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Space_Planet_Mat:MaterialExpressionScalarParameter_9'")
+    .A=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Space_Planet_Mat:MaterialExpressionScalarParameter_8'")
+    .MaterialExpressionEditorX=4040
+    .MaterialExpressionEditorY=1612
+    .MaterialExpressionGuid=6037D6E84EBCA0B90FF1AC8A95C1CAA4
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_38)
+    A                      <- MaterialExpressionDistance
+    .A=(Expression="/Script/Engine.MaterialExpressionDistance'Space_Planet_Mat:MaterialExpressionDistance_6'")
+    .ConstB=2.000000
+    .MaterialExpressionEditorX=3486
+    .MaterialExpressionEditorY=206
+    .MaterialExpressionGuid=4F645E4040B05213FB1E3C9D7E26B4F6
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_39)
+    A                      <- MaterialExpressionNormalize
+    B                      <- MaterialExpressionDivide
+    .B=(Expression="/Script/Engine.MaterialExpressionDivide'Space_Planet_Mat:MaterialExpressionDivide_6'")
+    .A=(Expression="/Script/Engine.MaterialExpressionNormalize'Space_Planet_Mat:MaterialExpressionNormalize_2'")
+    .MaterialExpressionEditorX=4054
+    .MaterialExpressionEditorY=58
+    .MaterialExpressionGuid=F2ED1770497CE914AD7FE5A8BE8427EC
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_4)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Space_Planet_Mat:MaterialExpressionMaterialFunctionCall_1'")
+    .ConstB=-1.000000
+    .MaterialExpressionEditorX=-4156
+    .MaterialExpressionEditorY=-136
+    .MaterialExpressionGuid=AB0591B541D96DD2633527B479FDCC7C
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_5)
+    A                      <- MaterialExpressionDistance
+    .A=(Expression="/Script/Engine.MaterialExpressionDistance'Space_Planet_Mat:MaterialExpressionDistance_0'")
+    .ConstB=2.000000
+    .MaterialExpressionEditorX=-1084
+    .MaterialExpressionEditorY=-428
+    .MaterialExpressionGuid=C60B734042C2EC62604F06A8F31A6776
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_6)
+    A                      <- MaterialExpressionVectorParameter
+    B                      <- MaterialExpressionVectorParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Space_Planet_Mat:MaterialExpressionVectorParameter_1'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .A=(Expression="/Script/Engine.MaterialExpressionVectorParameter'Space_Planet_Mat:MaterialExpressionVectorParameter_3'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .MaterialExpressionEditorX=-2478
+    .MaterialExpressionEditorY=-781
+    .MaterialExpressionGuid=C89A48A4402AB4AA4CE07A81DD65C06C
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_7)
+    A                      <- MaterialExpressionPower
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Space_Planet_Mat:MaterialExpressionScalarParameter_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionPower'Space_Planet_Mat:MaterialExpressionPower_1'")
+    .MaterialExpressionEditorX=2853
+    .MaterialExpressionEditorY=-402
+    .MaterialExpressionGuid=7EE40FE64CA5965614C121812B05B637
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_9)
+    A                      <- MaterialExpressionTextureSampleParameter2D
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Space_Planet_Mat:MaterialExpressionMultiply_17'")
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameter2D'Space_Planet_Mat:MaterialExpressionTextureSampleParameter2D_2'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .MaterialExpressionEditorX=1852
+    .MaterialExpressionEditorY=-784
+    .MaterialExpressionGuid=18DD3C854A33119AB76EA897005351ED
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_0)
+    Input                  <- MaterialExpressionSaturate
+    .Input=(Expression="/Script/Engine.MaterialExpressionSaturate'Space_Planet_Mat:MaterialExpressionSaturate_1'")
+    .Name="Hemisphere Fresnel"
+    .NodeColor=(R=1.000000,G=0.703125,B=0.000000,A=1.000000)
+    .VariableGuid=124D052D4FFF83C72DFCF8BE7B3C4A51
+    .MaterialExpressionEditorX=-816
+    .MaterialExpressionEditorY=-428
+    .MaterialExpressionGuid=C68CAF95458D1E3639C716B89F2401C1
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_1)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Space_Planet_Mat:MaterialExpressionMultiply_4'")
+    .Name="Sun Direction"
+    .NodeColor=(R=0.000000,G=0.250000,B=1.000000,A=1.000000)
+    .VariableGuid=61DC46EC4383AD3DEB39E7B404ECE341
+    .MaterialExpressionEditorX=-4012
+    .MaterialExpressionEditorY=-136
+    .MaterialExpressionGuid=F559C64F405E1FB044E5CBABD3655910
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_2)
+    Input                  <- MaterialExpressionSaturate
+    .Input=(Expression="/Script/Engine.MaterialExpressionSaturate'Space_Planet_Mat:MaterialExpressionSaturate_3'")
+    .Name="Planet Mask"
+    .NodeColor=(R=1.000000,G=0.046875,B=0.000000,A=1.000000)
+    .VariableGuid=F6F9F34E48C58F3E4773378CADD869C2
+    .MaterialExpressionEditorX=-1792
+    .MaterialExpressionEditorY=433
+    .MaterialExpressionGuid=CED138994A1D44B39449A592C9D48ACA
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_7)
+    Input                  <- MaterialExpressionLinearInterpolate
+    .Input=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Space_Planet_Mat:MaterialExpressionLinearInterpolate_4'")
+    .Name="Shading Color Gradient"
+    .NodeColor=(R=0.921875,G=0.000000,B=1.000000,A=1.000000)
+    .VariableGuid=25255AB34BC97C58314D67ABCF2C3536
+    .MaterialExpressionEditorX=-1818
+    .MaterialExpressionEditorY=-721
+    .MaterialExpressionGuid=3C1F0DC64E63CDBD34BDBDA8B8724154
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_8)
+    Input                  <- MaterialExpressionOneMinus
+    .Input=(Expression="/Script/Engine.MaterialExpressionOneMinus'Space_Planet_Mat:MaterialExpressionOneMinus_4'")
+    .Name="Shading 0-1 Alpha"
+    .NodeColor=(R=0.710937,G=1.000000,B=0.000000,A=1.000000)
+    .VariableGuid=50852B364F3F5EE0235C31BC0C406099
+    .MaterialExpressionEditorX=-2548
+    .MaterialExpressionEditorY=-464
+    .MaterialExpressionGuid=B198AE1742F4D816E98D308E8ECADBBF
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_0)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Space_Planet_Mat:MaterialExpressionNamedRerouteDeclaration_2'"
+    .DeclarationGuid=F6F9F34E48C58F3E4773378CADD869C2
+    .MaterialExpressionEditorX=-5088
+    .MaterialExpressionEditorY=-132
+    .MaterialExpressionGuid=FDDD49ED4C6770CCA9321F940AB7451E
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_12)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Space_Planet_Mat:MaterialExpressionNamedRerouteDeclaration_2'"
+    .DeclarationGuid=F6F9F34E48C58F3E4773378CADD869C2
+    .MaterialExpressionEditorX=3016
+    .MaterialExpressionEditorY=-372
+    .MaterialExpressionGuid=D35932EE4DDB92F5B87F2C9AEC390886
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_3)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Space_Planet_Mat:MaterialExpressionNamedRerouteDeclaration_2'"
+    .DeclarationGuid=F6F9F34E48C58F3E4773378CADD869C2
+    .MaterialExpressionEditorX=-432
+    .MaterialExpressionEditorY=-312
+    .MaterialExpressionGuid=7FDB5FB04472FBE07DD9FA98ECA42B02
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_4)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Space_Planet_Mat:MaterialExpressionNamedRerouteDeclaration_2'"
+    .DeclarationGuid=F6F9F34E48C58F3E4773378CADD869C2
+    .MaterialExpressionEditorX=2753
+    .MaterialExpressionEditorY=-518
+    .MaterialExpressionGuid=D35932EE4DDB92F5B87F2C9AEC390886
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_7)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Space_Planet_Mat:MaterialExpressionNamedRerouteDeclaration_8'"
+    .DeclarationGuid=50852B364F3F5EE0235C31BC0C406099
+    .MaterialExpressionEditorX=1164
+    .MaterialExpressionEditorY=-396
+    .MaterialExpressionGuid=3B0B7C3B4B011B06A5FE35ABE142F87C
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_8)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Space_Planet_Mat:MaterialExpressionNamedRerouteDeclaration_7'"
+    .DeclarationGuid=25255AB34BC97C58314D67ABCF2C3536
+    .MaterialExpressionEditorX=440
+    .MaterialExpressionEditorY=-724
+    .MaterialExpressionGuid=14F7B4B249814B12BC4A1F8D56A660B6
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionNormalize (MaterialExpressionNormalize_2)
+    VectorInput            <- MaterialExpressionSubtract
+    .VectorInput=(Expression="/Script/Engine.MaterialExpressionSubtract'Space_Planet_Mat:MaterialExpressionSubtract_7'")
+    .MaterialExpressionEditorX=3546
+    .MaterialExpressionEditorY=58
+    .MaterialExpressionGuid=A18F1B654EBF2475596542B6B8689153
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionNormalize (MaterialExpressionNormalize_5)
+    VectorInput            <- MaterialExpressionVertexNormalWS
+    .VectorInput=(Expression="/Script/Engine.MaterialExpressionVertexNormalWS'Space_Planet_Mat:MaterialExpressionVertexNormalWS_2'")
+    .MaterialExpressionEditorX=3694
+    .MaterialExpressionEditorY=918
+    .MaterialExpressionGuid=12ADF9DC4030BBF4C435849355295B76
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_0)
+    Input                  <- MaterialExpressionVertexColor
+    .Input=(Expression="/Script/Engine.MaterialExpressionVertexColor'Space_Planet_Mat:MaterialExpressionVertexColor_3'",OutputIndex=1,Mask=1,MaskR=1)
+    .MaterialExpressionEditorX=1620
+    .MaterialExpressionEditorY=-384
+    .MaterialExpressionGuid=1DEAA0AF4451D164D2334D8A7B707B35
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_1)
+    Input                  <- MaterialExpressionNamedRerouteUsage
+    .Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Space_Planet_Mat:MaterialExpressionNamedRerouteUsage_0'")
+    .MaterialExpressionEditorX=-4920
+    .MaterialExpressionEditorY=-132
+    .MaterialExpressionGuid=38DE811443465B7A2FA7A28C892D4245
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_10)
+    Input                  <- MaterialExpressionSaturate
+    .Input=(Expression="/Script/Engine.MaterialExpressionSaturate'Space_Planet_Mat:MaterialExpressionSaturate_14'")
+    .MaterialExpressionEditorX=3718
+    .MaterialExpressionEditorY=206
+    .MaterialExpressionGuid=5911A292497E90F3E93958A99568D723
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_11)
+    Input                  <- MaterialExpressionPower
+    .Input=(Expression="/Script/Engine.MaterialExpressionPower'Space_Planet_Mat:MaterialExpressionPower_6'")
+    .MaterialExpressionEditorX=3914
+    .MaterialExpressionEditorY=210
+    .MaterialExpressionGuid=5D9275BD4FB407AC0957B3834CFFF125
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_12)
+    Input                  <- MaterialExpressionScalarParameter
+    .Input=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Space_Planet_Mat:MaterialExpressionScalarParameter_19'")
+    .MaterialExpressionEditorX=3760
+    .MaterialExpressionEditorY=368
+    .MaterialExpressionGuid=3D100BE34C1950271BDC968D7F4163CE
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_3)
+    Input                  <- MaterialExpressionSaturate
+    .Input=(Expression="/Script/Engine.MaterialExpressionSaturate'Space_Planet_Mat:MaterialExpressionSaturate_4'")
+    .MaterialExpressionEditorX=-2884
+    .MaterialExpressionEditorY=-464
+    .MaterialExpressionGuid=F6DF832A4563017FD4439EB07A2B29BF
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_4)
+    Input                  <- MaterialExpressionPower
+    .Input=(Expression="/Script/Engine.MaterialExpressionPower'Space_Planet_Mat:MaterialExpressionPower_3'")
+    .MaterialExpressionEditorX=-2656
+    .MaterialExpressionEditorY=-464
+    .MaterialExpressionGuid=4132318B497F8B1E1436DD8A9758CACA
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_5)
+    Input                  <- MaterialExpressionNamedRerouteUsage
+    .Input=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Space_Planet_Mat:MaterialExpressionNamedRerouteUsage_12'")
+    .MaterialExpressionEditorX=3156
+    .MaterialExpressionEditorY=-372
+    .MaterialExpressionGuid=F43B4392468A2DD13BDE71A8D89B6C16
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_7)
+    Input                  <- MaterialExpressionVertexColor
+    .Input=(Expression="/Script/Engine.MaterialExpressionVertexColor'Space_Planet_Mat:MaterialExpressionVertexColor_5'",OutputIndex=3,Mask=1,MaskB=1)
+    .MaterialExpressionEditorX=3770
+    .MaterialExpressionEditorY=1326
+    .MaterialExpressionGuid=2A4D45D647F13CBDAEE865B56DE41D3E
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionPower (MaterialExpressionPower_1)
+    Base                   <- MaterialExpressionVertexColor
+    .Base=(Expression="/Script/Engine.MaterialExpressionVertexColor'Space_Planet_Mat:MaterialExpressionVertexColor_4'",OutputIndex=1,Mask=1,MaskR=1)
+    .ConstExponent=3.000000
+    .MaterialExpressionEditorX=2668
+    .MaterialExpressionEditorY=-424
+    .MaterialExpressionGuid=C4E5FF7F4A2B48529890EABC205C52B2
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionPower (MaterialExpressionPower_3)
+    Base                   <- MaterialExpressionOneMinus
+    Exponent               <- MaterialExpressionScalarParameter
+    .Base=(Expression="/Script/Engine.MaterialExpressionOneMinus'Space_Planet_Mat:MaterialExpressionOneMinus_3'")
+    .Exponent=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Space_Planet_Mat:MaterialExpressionScalarParameter_6'")
+    .MaterialExpressionEditorX=-2788
+    .MaterialExpressionEditorY=-464
+    .MaterialExpressionGuid=535798B6482B7B127EDDBE80CFD89542
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionPower (MaterialExpressionPower_4)
+    Base                   <- MaterialExpressionNamedRerouteDeclaration
+    .Base=(Expression="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Space_Planet_Mat:MaterialExpressionNamedRerouteDeclaration_0'")
+    .ConstExponent=5.000000
+    .MaterialExpressionEditorX=-620
+    .MaterialExpressionEditorY=-428
+    .MaterialExpressionGuid=E4A9FB534B3E53F0D3EA6280A53A9C39
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionPower (MaterialExpressionPower_6)
+    Base                   <- MaterialExpressionOneMinus
+    Exponent               <- MaterialExpressionOneMinus
+    .Base=(Expression="/Script/Engine.MaterialExpressionOneMinus'Space_Planet_Mat:MaterialExpressionOneMinus_10'")
+    .Exponent=(Expression="/Script/Engine.MaterialExpressionOneMinus'Space_Planet_Mat:MaterialExpressionOneMinus_12'")
+    .ConstExponent=0.200000
+    .MaterialExpressionEditorX=3810
+    .MaterialExpressionEditorY=206
+    .MaterialExpressionGuid=DA3D29B84C805F05404ABF997AA769CB
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionReroute (MaterialExpressionReroute_0)
+    Input                  <- MaterialExpressionStaticSwitchParameter
+    .Input=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Space_Planet_Mat:MaterialExpressionStaticSwitchParameter_6'")
+    .MaterialExpressionEditorX=4044
+    .MaterialExpressionEditorY=-857
+    .MaterialExpressionGuid=6E1CC84D4FBE7F6CE8912A9269C9ABDC
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionReroute (MaterialExpressionReroute_10)
+    Input                  <- MaterialExpressionReroute
+    .Input=(Expression="/Script/Engine.MaterialExpressionReroute'Space_Planet_Mat:MaterialExpressionReroute_3'")
+    .MaterialExpressionEditorX=2020
+    .MaterialExpressionEditorY=-792
+    .MaterialExpressionGuid=1D5BF04E4F10F0AB8C8FD5AF5784A416
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionReroute (MaterialExpressionReroute_11)
+    Input                  <- MaterialExpressionDistance
+    .Input=(Expression="/Script/Engine.MaterialExpressionDistance'Space_Planet_Mat:MaterialExpressionDistance_6'")
+    .MaterialExpressionEditorX=3476
+    .MaterialExpressionEditorY=312
+    .MaterialExpressionGuid=D4C4A511493FD0D023534D977FCAC123
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionReroute (MaterialExpressionReroute_12)
+    Input                  <- MaterialExpressionVertexNormalWS
+    .Input=(Expression="/Script/Engine.MaterialExpressionVertexNormalWS'Space_Planet_Mat:MaterialExpressionVertexNormalWS_0'")
+    .MaterialExpressionEditorX=-4126
+    .MaterialExpressionEditorY=-367
+    .MaterialExpressionGuid=983613394DE0F074919E299CA23B057F
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionReroute (MaterialExpressionReroute_14)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Space_Planet_Mat:MaterialExpressionMultiply_23'")
+    .MaterialExpressionEditorX=116
+    .MaterialExpressionEditorY=-840
+    .MaterialExpressionGuid=F583F4D64DDF6E025D692AA50C52615C
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionReroute (MaterialExpressionReroute_3)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Space_Planet_Mat:MaterialExpressionMultiply_0'")
+    .MaterialExpressionEditorX=1836
+    .MaterialExpressionEditorY=-852
+    .MaterialExpressionGuid=50871F8F4848834DD9E3BC96E9017657
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionReroute (MaterialExpressionReroute_4)
+    Input                  <- MaterialExpressionReroute
+    .Input=(Expression="/Script/Engine.MaterialExpressionReroute'Space_Planet_Mat:MaterialExpressionReroute_14'")
+    .MaterialExpressionEditorX=272
+    .MaterialExpressionEditorY=-744
+    .MaterialExpressionGuid=1FDA93DD416B3BC579ADD3891C5B3C0A
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_1)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Space_Planet_Mat:MaterialExpressionMultiply_5'")
+    .MaterialExpressionEditorX=-948
+    .MaterialExpressionEditorY=-428
+    .MaterialExpressionGuid=24B3FEEC4DF27B4A4B061FB70320C0DE
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_12)
+    Input                  <- MaterialExpressionVertexColor
+    .Input=(Expression="/Script/Engine.MaterialExpressionVertexColor'Space_Planet_Mat:MaterialExpressionVertexColor_0'",OutputIndex=2,Mask=1,MaskG=1)
+    .MaterialExpressionEditorX=3229
+    .MaterialExpressionEditorY=728
+    .MaterialExpressionGuid=6814B5984C5C6C78C116699CB16E0A04
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_13)
+    Input                  <- MaterialExpressionAdd
+    .Input=(Expression="/Script/Engine.MaterialExpressionAdd'Space_Planet_Mat:MaterialExpressionAdd_2'")
+    .MaterialExpressionEditorX=-3264
+    .MaterialExpressionEditorY=-464
+    .MaterialExpressionGuid=BFE5862446B6439230BD95912155ED8E
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_14)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Space_Planet_Mat:MaterialExpressionMultiply_38'")
+    .MaterialExpressionEditorX=3606
+    .MaterialExpressionEditorY=206
+    .MaterialExpressionGuid=46DC04A34BB730E0C44011AFF33B26D2
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_2)
+    Input                  <- MaterialExpressionAdd
+    .Input=(Expression="/Script/Engine.MaterialExpressionAdd'Space_Planet_Mat:MaterialExpressionAdd_4'")
+    .MaterialExpressionEditorX=-160
+    .MaterialExpressionEditorY=-428
+    .MaterialExpressionGuid=CFBF85014BBB2C6859E635B82EF89AF3
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_3)
+    Input                  <- MaterialExpressionAdd
+    .Input=(Expression="/Script/Engine.MaterialExpressionAdd'Space_Planet_Mat:MaterialExpressionAdd_10'")
+    .MaterialExpressionEditorX=-1920
+    .MaterialExpressionEditorY=433
+    .MaterialExpressionGuid=63C2C77E4D9DFFC53EBCB681E5FE2408
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_4)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Space_Planet_Mat:MaterialExpressionMultiply_12'")
+    .MaterialExpressionEditorX=-3008
+    .MaterialExpressionEditorY=-464
+    .MaterialExpressionGuid=6573662048AD4C28A874E89F48737C30
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_0)
+    .ParameterName="Atmosphere Height"
+    .DefaultValue=155599.765625
+    .ExpressionGUID=12A1FC164E04BF900F9590B4167CAC6A
+    .MaterialExpressionEditorX=3050
+    .MaterialExpressionEditorY=870
+    .MaterialExpressionGuid=0759F85945B0F3DF9CA46EB6444DEC6B
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_11)
+    .ParameterName="Size"
+    .DefaultValue=500.000000
+    .ExpressionGUID=2EACDD384F70BA9DDFD2C68E54BCAEAD
+    .MaterialExpressionEditorX=3032
+    .MaterialExpressionEditorY=976
+    .MaterialExpressionGuid=BB40EA1840888FEF2881EE992AC62DD0
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_18)
+    .ParameterName="Deform Center"
+    .DefaultValue=0.500000
+    .ExpressionGUID=649C0E2749987D0B4A47DF85356D53B4
+    .MaterialExpressionEditorX=3552
+    .MaterialExpressionEditorY=1688
+    .MaterialExpressionGuid=DAF04AD94696260EEA365ABC05FF8398
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_19)
+    .ParameterName="Spherize Texture"
+    .ExpressionGUID=CD05DBEB48ACA7A67FD35088343326BC
+    .MaterialExpressionEditorX=3580
+    .MaterialExpressionEditorY=356
+    .MaterialExpressionGuid=4C2AEC62463F821D278A7FB7D11EE690
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_2)
+    .ParameterName="Terminator Thickness"
+    .DefaultValue=2.000000
+    .ExpressionGUID=7AA392BA4D22550A07B2AB9A7E4A29C7
+    .MaterialExpressionEditorX=-3324
+    .MaterialExpressionEditorY=-372
+    .MaterialExpressionGuid=00E63B074A8E646D20EDFA9F03026BC8
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_3)
+    .ParameterName="Terminator Offset"
+    .ExpressionGUID=9C6D4D394527595C8B20B2A39F398617
+    .MaterialExpressionEditorX=-3664
+    .MaterialExpressionEditorY=-376
+    .MaterialExpressionGuid=14FE3FA846D44C4F129D00A3D86F37F6
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_4)
+    .ParameterName="Atmosphere Strength"
+    .DefaultValue=0.500000
+    .ExpressionGUID=71E90ED44DBB14DFCAE934831BD8E875
+    .MaterialExpressionEditorX=2637
+    .MaterialExpressionEditorY=-306
+    .MaterialExpressionGuid=FED6533342AC8586F83AFFB35B3E5C3C
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_5)
+    .ParameterName="Normal Map Intensity"
+    .DefaultValue=1.000000
+    .ExpressionGUID=ACE70C614AE277C556652487A5424D7E
+    .MaterialExpressionEditorX=-5040
+    .MaterialExpressionEditorY=-60
+    .MaterialExpressionGuid=3A49D16943154B530126958ABB12C467
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_6)
+    .ParameterName="Terminator Power"
+    .DefaultValue=2.000000
+    .ExpressionGUID=BA4ACCB340709B48AA4FC0B3E084944A
+    .MaterialExpressionEditorX=-2988
+    .MaterialExpressionEditorY=-356
+    .MaterialExpressionGuid=15C0CDB948738EF58A5D438A2208EAF7
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_7)
+    .ParameterName="Atmosphere Strength"
+    .DefaultValue=0.500000
+    .ExpressionGUID=5E23A29549E94635E5F0EEA66FB84EE5
+    .MaterialExpressionEditorX=-680
+    .MaterialExpressionEditorY=-332
+    .MaterialExpressionGuid=FED6533342AC8586F83AFFB35B3E5C3C
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_8)
+    .ParameterName="Shape Deform"
+    .ExpressionGUID=FEFD690F49D0456385AD6D91C2A3442B
+    .MaterialExpressionEditorX=3828
+    .MaterialExpressionEditorY=1580
+    .MaterialExpressionGuid=97D3D929485FACADEC41F3A09AC9366A
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_9)
+    .ParameterName="Size"
+    .DefaultValue=500.000000
+    .ExpressionGUID=E67C44E1475A0CB60E94628FC4541AAC
+    .MaterialExpressionEditorX=3828
+    .MaterialExpressionEditorY=1672
+    .MaterialExpressionGuid=BB40EA1840888FEF2881EE992AC62DD0
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionShadingPathSwitch (MaterialExpressionShadingPathSwitch_0)
+    Default                <- MaterialExpressionMultiply
+    Inputs(2)              <- MaterialExpressionReroute
+    .Default=(Expression="/Script/Engine.MaterialExpressionMultiply'Space_Planet_Mat:MaterialExpressionMultiply_1'")
+    .Inputs(2)=(Expression="/Script/Engine.MaterialExpressionReroute'Space_Planet_Mat:MaterialExpressionReroute_0'")
+    .MaterialExpressionEditorX=4316
+    .MaterialExpressionEditorY=-888
+    .MaterialExpressionGuid=05CD356B4CD133CA4CB459A8648D81C8
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionStaticSwitchParameter (MaterialExpressionStaticSwitchParameter_1)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionConstant
+    .ParameterName="Atmosphere and Emissive"
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'Space_Planet_Mat:MaterialExpressionConstant_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Space_Planet_Mat:MaterialExpressionMultiply_2'")
+    .ExpressionGUID=97DA9357435BDC6426EB498A7CF642AC
+    .MaterialExpressionEditorX=4114
+    .MaterialExpressionEditorY=786
+    .MaterialExpressionGuid=9053F46E4B703E11A7800484FA5B500A
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionStaticSwitchParameter (MaterialExpressionStaticSwitchParameter_2)
+    A                      <- MaterialExpressionLinearInterpolate
+    B                      <- MaterialExpressionReroute
+    .ParameterName="Atmosphere and Emissive"
+    .B=(Expression="/Script/Engine.MaterialExpressionReroute'Space_Planet_Mat:MaterialExpressionReroute_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Space_Planet_Mat:MaterialExpressionLinearInterpolate_3'")
+    .ExpressionGUID=0ADDAE13409434CAE30A178546AB1F9C
+    .MaterialExpressionEditorX=420
+    .MaterialExpressionEditorY=-888
+    .MaterialExpressionGuid=9053F46E4B703E11A7800484FA5B500A
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionStaticSwitchParameter (MaterialExpressionStaticSwitchParameter_3)
+    A                      <- MaterialExpressionLinearInterpolate
+    B                      <- MaterialExpressionOneMinus
+    .ParameterName="Atmosphere and Emissive"
+    .B=(Expression="/Script/Engine.MaterialExpressionOneMinus'Space_Planet_Mat:MaterialExpressionOneMinus_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Space_Planet_Mat:MaterialExpressionLinearInterpolate_6'")
+    .ExpressionGUID=C581F2C941CDDCFAFF1E249A0247D56E
+    .MaterialExpressionEditorX=3236
+    .MaterialExpressionEditorY=-568
+    .MaterialExpressionGuid=9053F46E4B703E11A7800484FA5B500A
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionStaticSwitchParameter (MaterialExpressionStaticSwitchParameter_6)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionReroute
+    .ParameterName="Atmosphere and Emissive"
+    .B=(Expression="/Script/Engine.MaterialExpressionReroute'Space_Planet_Mat:MaterialExpressionReroute_10'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Space_Planet_Mat:MaterialExpressionAdd_5'")
+    .ExpressionGUID=2D8E94F74225342225B0FAAE679FC57A
+    .MaterialExpressionEditorX=2120
+    .MaterialExpressionEditorY=-900
+    .MaterialExpressionGuid=9053F46E4B703E11A7800484FA5B500A
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionStaticSwitchParameter (MaterialExpressionStaticSwitchParameter_7)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionReroute
+    .ParameterName="Normal Map"
+    .B=(Expression="/Script/Engine.MaterialExpressionReroute'Space_Planet_Mat:MaterialExpressionReroute_12'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'Space_Planet_Mat:MaterialExpressionAdd_3'")
+    .ExpressionGUID=B2A53E324180CE33670655862D1EFAC7
+    .MaterialExpressionEditorX=-4030
+    .MaterialExpressionEditorY=-479
+    .MaterialExpressionGuid=FBA34824468D004579CFC48D13ADA50E
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_4)
+    A                      <- MaterialExpressionTextureSampleParameter2D
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Space_Planet_Mat:MaterialExpressionScalarParameter_18'")
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameter2D'Space_Planet_Mat:MaterialExpressionTextureSampleParameter2D_4'",OutputIndex=1,Mask=1,MaskR=1)
+    .ConstB=0.500000
+    .MaterialExpressionEditorX=3758
+    .MaterialExpressionEditorY=1466
+    .MaterialExpressionGuid=D9B501734B3DFBF69856139216517B75
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_7)
+    A                      <- MaterialExpressionTextureCoordinate
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'Space_Planet_Mat:MaterialExpressionTextureCoordinate_2'")
+    .ConstB=0.500000
+    .MaterialExpressionEditorX=3192
+    .MaterialExpressionEditorY=60
+    .MaterialExpressionGuid=1970DB59492482B742DD1DA60DAB3C5B
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionTextureCoordinate (MaterialExpressionTextureCoordinate_0)
+    .MaterialExpressionEditorX=-1464
+    .MaterialExpressionEditorY=-444
+    .MaterialExpressionGuid=17246D7B4FD50F4A4FC1A89B47C299E7
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionTextureCoordinate (MaterialExpressionTextureCoordinate_1)
+    .MaterialExpressionEditorX=3048
+    .MaterialExpressionEditorY=1416
+    .MaterialExpressionGuid=9747A64C49BAF1CF58BD3FAE78FE3E20
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionTextureCoordinate (MaterialExpressionTextureCoordinate_2)
+    .MaterialExpressionEditorX=2984
+    .MaterialExpressionEditorY=60
+    .MaterialExpressionGuid=8C940C4F427EF4C19BEFACA52B8B1E2C
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionTextureSampleParameter2D (MaterialExpressionTextureSampleParameter2D_0)
+    .ParameterName="Normal Map"
+    .SamplerType=SAMPLERTYPE_Normal
+    .Texture="/Script/Engine.Texture2D'/Engine/EngineMaterials/FlatNormal.FlatNormal'"
+    .ExpressionGUID=71E0250C4D960D721BD09EB29A58C6F3
+    .MaterialExpressionEditorX=-5028
+    .MaterialExpressionEditorY=-368
+    .MaterialExpressionGuid=7E584618496B606D63C56BA557063FB3
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionTextureSampleParameter2D (MaterialExpressionTextureSampleParameter2D_1)
+    .ParameterName="Color Texture"
+    .Texture="/Script/Engine.Texture2D'/Engine/EngineResources/WhiteSquareTexture.WhiteSquareTexture'"
+    .ExpressionGUID=E98BE0D24C32813FF4175AB91FE1EA81
+    .MaterialExpressionEditorX=-1032
+    .MaterialExpressionEditorY=-888
+    .MaterialExpressionGuid=BBCDB91E4BDA0916FC4251B7AB40E726
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionTextureSampleParameter2D (MaterialExpressionTextureSampleParameter2D_2)
+    .ParameterName="Emissive"
+    .Texture="/Script/Engine.Texture2D'/Engine/EngineResources/Black_Low.Black'"
+    .ExpressionGUID=8055BE754EAD739D89048DB2DA96C361
+    .MaterialExpressionEditorX=1584
+    .MaterialExpressionEditorY=-800
+    .MaterialExpressionGuid=2EA536C04A388792D7C8BF835215A671
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionTextureSampleParameter2D (MaterialExpressionTextureSampleParameter2D_4)
+    Coordinates            <- MaterialExpressionAdd
+    .ParameterName="Deform Texture"
+    .SamplerType=SAMPLERTYPE_Alpha
+    .Texture="/Script/Engine.Texture2D'/Game/UltraDynamicSky/Textures/Space/Planets_Moons/Deform_Noise.Deform_Noise'"
+    .ExpressionGUID=2213FC3243BC0B79EC531DAD081EF4B1
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionAdd'Space_Planet_Mat:MaterialExpressionAdd_12'")
+    .MaterialExpressionEditorX=3518
+    .MaterialExpressionEditorY=1430
+    .MaterialExpressionGuid=2A3E49B446A80A7B67BB59B641759914
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionTransform (MaterialExpressionTransform_0)
+    Input                  <- MaterialExpressionAppendVector
+    .Input=(Expression="/Script/Engine.MaterialExpressionAppendVector'Space_Planet_Mat:MaterialExpressionAppendVector_1'")
+    .MaterialExpressionEditorX=-4392
+    .MaterialExpressionEditorY=-364
+    .MaterialExpressionGuid=A122F03C427967C1134181A1C0D47802
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionVectorParameter (MaterialExpressionVectorParameter_0)
+    .ParameterName="Darkside Tint"
+    .DefaultValue=(R=0.017728,G=0.023713,B=0.041667,A=1.000000)
+    .ExpressionGUID=E9451BC9453D7CB07E62F78F08BB7DF8
+    .MaterialExpressionEditorX=-2242
+    .MaterialExpressionEditorY=-889
+    .MaterialExpressionGuid=9D8081B3405D3ACCEADCAFBFF9652654
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionVectorParameter (MaterialExpressionVectorParameter_1)
+    .ParameterName="Lightside Tint"
+    .DefaultValue=(R=1.000000,G=1.000000,B=1.000000,A=1.000000)
+    .ExpressionGUID=C51C7F364CAB94F4AF9EC7AAA11BFCA7
+    .MaterialExpressionEditorX=-2736
+    .MaterialExpressionEditorY=-680
+    .MaterialExpressionGuid=CCF278874426F9029E6F6E86C24DCA60
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionVectorParameter (MaterialExpressionVectorParameter_14)
+    .ParameterName="Texture Tint"
+    .DefaultValue=(R=1.000000,G=1.000000,B=1.000000,A=1.000000)
+    .ExpressionGUID=9BA1769844AC44805A6212B9D3FC216D
+    .MaterialExpressionEditorX=-792
+    .MaterialExpressionEditorY=-808
+    .MaterialExpressionGuid=C159548643DB766EEC0194882EA6F4AD
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionVectorParameter (MaterialExpressionVectorParameter_15)
+    .ParameterName="Deform Offset"
+    .DefaultValue=(R=0.429379,G=0.430593,B=0.000000,A=0.000000)
+    .ExpressionGUID=98ACFFD843340EDFA7E90CA6B1907432
+    .MaterialExpressionEditorX=2882
+    .MaterialExpressionEditorY=1578
+    .MaterialExpressionGuid=7BA2ECCF4AD0F144DA7BC88277F32DDE
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionVectorParameter (MaterialExpressionVectorParameter_2)
+    .ParameterName="Atmosphere Color"
+    .DefaultValue=(R=0.150146,G=0.286404,B=0.640625,A=1.000000)
+    .ExpressionGUID=8E1FE1B4413EA154CEB00A97B5D56B51
+    .MaterialExpressionEditorX=-180
+    .MaterialExpressionEditorY=-812
+    .MaterialExpressionGuid=AF1F64D341AEED03576F709FFC6A9577
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionVectorParameter (MaterialExpressionVectorParameter_3)
+    .ParameterName="Terminator Tint"
+    .DefaultValue=(R=1.000000,G=0.623590,B=0.324521,A=1.000000)
+    .ExpressionGUID=F67C649F41F909F0BF2963933A676767
+    .MaterialExpressionEditorX=-2752
+    .MaterialExpressionEditorY=-880
+    .MaterialExpressionGuid=CCF278874426F9029E6F6E86C24DCA60
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionVectorParameter (MaterialExpressionVectorParameter_4)
+    .ParameterName="Emissive Dark Side"
+    .DefaultValue=(R=0.000000,G=0.000000,B=0.000000,A=1.000000)
+    .ExpressionGUID=DF1903034DAB0E6DBC310C9A0742AB2F
+    .MaterialExpressionEditorX=1160
+    .MaterialExpressionEditorY=-784
+    .MaterialExpressionGuid=EA2534FF4F60474AD94FC3BB1157A38B
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionVectorParameter (MaterialExpressionVectorParameter_5)
+    .ParameterName="Emissive Light Side"
+    .DefaultValue=(R=0.000000,G=0.000000,B=0.000000,A=1.000000)
+    .ExpressionGUID=604E07EC47952C58B89C4E8BE9AA7EBC
+    .MaterialExpressionEditorX=1156
+    .MaterialExpressionEditorY=-592
+    .MaterialExpressionGuid=EA2534FF4F60474AD94FC3BB1157A38B
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionVertexColor (MaterialExpressionVertexColor_0)
+    .MaterialExpressionEditorX=3080
+    .MaterialExpressionEditorY=644
+    .MaterialExpressionGuid=1938AE8A4AA090D8885A5A84C60B6B38
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionVertexColor (MaterialExpressionVertexColor_1)
+    .MaterialExpressionEditorX=-2268
+    .MaterialExpressionEditorY=369
+    .MaterialExpressionGuid=C0152E8440FA69F671C03E89AAC73F02
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionVertexColor (MaterialExpressionVertexColor_3)
+    .MaterialExpressionEditorX=1456
+    .MaterialExpressionEditorY=-428
+    .MaterialExpressionGuid=1938AE8A4AA090D8885A5A84C60B6B38
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionVertexColor (MaterialExpressionVertexColor_4)
+    .MaterialExpressionEditorX=2457
+    .MaterialExpressionEditorY=-466
+    .MaterialExpressionGuid=1938AE8A4AA090D8885A5A84C60B6B38
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionVertexColor (MaterialExpressionVertexColor_5)
+    .MaterialExpressionEditorX=3578
+    .MaterialExpressionEditorY=1226
+    .MaterialExpressionGuid=4855A3C64CA5DBB32B4ED2BB59E4E9A9
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionVertexNormalWS (MaterialExpressionVertexNormalWS_0)
+    .MaterialExpressionEditorX=-4370
+    .MaterialExpressionEditorY=-479
+    .MaterialExpressionGuid=B81C469B46FE10DD66864A8F0A59D4EE
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionVertexNormalWS (MaterialExpressionVertexNormalWS_1)
+    .MaterialExpressionEditorX=3762
+    .MaterialExpressionEditorY=1238
+    .MaterialExpressionGuid=915CD23942A34DC7FC5FCA89A88D8A00
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"
+  MaterialExpressionVertexNormalWS (MaterialExpressionVertexNormalWS_2)
+    .MaterialExpressionEditorX=3526
+    .MaterialExpressionEditorY=906
+    .MaterialExpressionGuid=A74CB12048899FB185ECFCBCFCF00D97
+    .Material="/Script/Engine.Material'Space_Planet_Mat'"

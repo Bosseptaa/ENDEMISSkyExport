@@ -1,0 +1,115 @@
+### /Game/UltraDynamicSky/Materials/Weather/VehicleDropletsMat
+  Material (VehicleDropletsMat)
+    .BlendMode=BLEND_Translucent
+    .MaterialDecalResponse=MDR_None
+    .ShadingModel=MSM_Unlit
+    .ShadingModels=(ShadingModelField=1)
+    .bEnableResponsiveAA=True
+    .TranslucencyPass=MTP_AfterMotionBlur
+    .TranslucencyLightingMode=TLM_VolumetricPerVertexNonDirectional
+    .bTangentSpaceNormal=False
+    .bUsedWithNiagaraSprites=True
+    .bAllowFrontLayerTranslucency=False
+    .EditorX=1280
+    .EditorY=-24
+    .bCanMaskedBeAssumedOpaque=True
+    .bCastRayTracedShadows=False
+    .bUseTranslucencyVertexFog=False
+    .StateId=5B0FF37E4B59FBAB55745F8D1EE7903B
+    .ReferencedTextureGuids(0)=9080AA1E47B0FE7B95E79A93A36D2556
+    .EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'VehicleDropletsMatEditorOnlyData'"
+    .TextureStreamingDataVersion=1
+    .TextureStreamingData(0)=(SamplingScale=0.406250,UVChannelIndex=0,TextureName="ParticleClouds",TextureReference="/Game/ENDEMIS/Weather/WeatherFX/T_ParticleClouds.T_ParticleClouds")
+    .ReferencedDefaultTextures(0)="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_ParticleClouds.T_ParticleClouds'"
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+    .LightingGuid=926E7C8E46F63199E0FFE0B210F31A47
+  MaterialEditorOnlyData (VehicleDropletsMatEditorOnlyData)
+    EmissiveColor          <- MaterialExpressionMaterialFunctionCall
+    Opacity                <- MaterialExpressionMultiply
+    WorldPositionOffset    <- MaterialExpressionMaterialFunctionCall
+    ExpressionCollection   <- MaterialExpressionMaterialFunctionCall
+    .BaseColor=(UseConstant=True,Constant=(R=1.000000,G=1.000000,B=1.000000,A=1.000000))
+    .Metallic=(UseConstant=True,Constant=1.000000)
+    .Specular=(UseConstant=True,Constant=0.100000)
+    .Roughness=(UseConstant=True,Constant=0.000000)
+    .Anisotropy=(UseConstant=True)
+    .Normal=(UseConstant=True)
+    .Tangent=(UseConstant=True)
+    .EmissiveColor=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'VehicleDropletsMat:MaterialExpressionMaterialFunctionCall_3'")
+    .Opacity=(Expression="/Script/Engine.MaterialExpressionMultiply'VehicleDropletsMat:MaterialExpressionMultiply_8'")
+    .OpacityMask=(UseConstant=True)
+    .WorldPositionOffset=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'VehicleDropletsMat:MaterialExpressionMaterialFunctionCall_1'")
+    .Displacement=(UseConstant=True)
+    .SubsurfaceColor=(UseConstant=True,Constant=(R=1.000000,G=1.000000,B=1.000000,A=1.000000))
+    .ClearCoat=(UseConstant=True)
+    .ClearCoatRoughness=(UseConstant=True)
+    .AmbientOcclusion=(UseConstant=True)
+    .Refraction=(UseConstant=True)
+    .CustomizedUVs(0)=(UseConstant=True)
+    .CustomizedUVs(1)=(UseConstant=True)
+    .CustomizedUVs(2)=(UseConstant=True)
+    .CustomizedUVs(3)=(UseConstant=True)
+    .CustomizedUVs(4)=(UseConstant=True)
+    .CustomizedUVs(5)=(UseConstant=True)
+    .CustomizedUVs(6)=(UseConstant=True)
+    .CustomizedUVs(7)=(UseConstant=True)
+    .PixelDepthOffset=(UseConstant=True)
+    .SurfaceThickness=(UseConstant=True)
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionMaterialFunctionCall'VehicleDropletsMat:MaterialExpressionMaterialFunctionCall_3'","/Script/Engine.MaterialExpressionMultiply'VehicleDropletsMat:MaterialExpressionMultiply_9'","/Script/Engine.MaterialExpressionMaterialFunctionCall'VehicleDropletsMat:MaterialExpressionMaterialFunctionCall_1'","/Script/Engine.MaterialExpressionConstant3Vector'VehicleDropletsMat:MaterialExpressionConstant3Vector_0'","/Script/Engine.MaterialExpressionDepthFade'VehicleDropletsMat:MaterialExpressionDepthFade_1'","/Script/Engine.MaterialExpressionPower'VehicleDropletsMat:MaterialExpressionPower_2'","/Script/Engine.MaterialExpressionMultiply'VehicleDropletsMat:MaterialExpressionMultiply_8'"))
+  MaterialExpressionConstant3Vector (MaterialExpressionConstant3Vector_0)
+    .MaterialExpressionEditorX=800
+    .MaterialExpressionEditorY=276
+    .MaterialExpressionGuid=4BDF8AFE4AF9909B2D44CF9D69962D37
+    .Material="/Script/Engine.Material'VehicleDropletsMat'"
+  MaterialExpressionDepthFade (MaterialExpressionDepthFade_1)
+    .InOpacity=(OutputIndex=4,Mask=1,MaskA=1)
+    .FadeDistanceDefault=5.000000
+    .MaterialExpressionEditorX=88
+    .MaterialExpressionEditorY=240
+    .MaterialExpressionGuid=0E5522374300451C18377BB653828FEB
+    .Material="/Script/Engine.Material'VehicleDropletsMat'"
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_1)
+    FunctionInputs(0)      <- MaterialExpressionConstant3Vector
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Weather/WeatherParticle_DepthTest.WeatherParticle_DepthTest'"
+    .FunctionInputs(0)=(ExpressionInputId=D490538245457191F42FFEBD7627D8AC,Input=(Expression="/Script/Engine.MaterialExpressionConstant3Vector'VehicleDropletsMat:MaterialExpressionConstant3Vector_0'",InputName="WPO",Mask=1,MaskR=1,MaskG=1,MaskB=1))
+    .FunctionOutputs(0)=(ExpressionOutputId=97A00A0C4AC21E8307919F895FA804D7,Output=(OutputName="WPO"))
+    .MaterialExpressionEditorX=1036
+    .MaterialExpressionEditorY=276
+    .MaterialExpressionGuid=968EFF3841627542AFE0E083B696C718
+    .Material="/Script/Engine.Material'VehicleDropletsMat'"
+    .Outputs(0)=(OutputName="WPO")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_3)
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Weather/VehicleWindowDroplets_Attributes.VehicleWindowDroplets_Attributes'"
+    .FunctionOutputs(0)=(ExpressionOutputId=CECF15044AF51F371D8B64A5AECCD2B7,Output=(OutputName="Inside Emissive"))
+    .FunctionOutputs(1)=(ExpressionOutputId=F5D70FEC47B4F26B84C57BAAEEAF58F5,Output=(OutputName="Opacity"))
+    .MaterialExpressionEditorX=260
+    .MaterialExpressionEditorY=128
+    .MaterialExpressionGuid=7F7641C14E0C7A0A700622A79EAC5A60
+    .Material="/Script/Engine.Material'VehicleDropletsMat'"
+    .Outputs(0)=(OutputName="Inside Emissive")
+    .Outputs(1)=(OutputName="Opacity")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_8)
+    A                      <- MaterialExpressionMultiply
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'VehicleDropletsMat:MaterialExpressionMultiply_9'")
+    .ConstB=0.700000
+    .MaterialExpressionEditorX=708
+    .MaterialExpressionEditorY=176
+    .MaterialExpressionGuid=6E66657A443E79341FD45B8B641C1F65
+    .Material="/Script/Engine.Material'VehicleDropletsMat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_9)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionPower
+    .B=(Expression="/Script/Engine.MaterialExpressionPower'VehicleDropletsMat:MaterialExpressionPower_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'VehicleDropletsMat:MaterialExpressionMaterialFunctionCall_3'",OutputIndex=1)
+    .MaterialExpressionEditorX=556
+    .MaterialExpressionEditorY=176
+    .MaterialExpressionGuid=B7726F844A58F0ED50C934AFC79D504D
+    .Material="/Script/Engine.Material'VehicleDropletsMat'"
+  MaterialExpressionPower (MaterialExpressionPower_2)
+    Base                   <- MaterialExpressionDepthFade
+    .Base=(Expression="/Script/Engine.MaterialExpressionDepthFade'VehicleDropletsMat:MaterialExpressionDepthFade_1'")
+    .ConstExponent=25.000000
+    .MaterialExpressionEditorX=376
+    .MaterialExpressionEditorY=240
+    .MaterialExpressionGuid=8CA0B34A4BCD24E98BA6C88EA7154C6A
+    .Material="/Script/Engine.Material'VehicleDropletsMat'"

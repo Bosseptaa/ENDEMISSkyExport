@@ -1,0 +1,906 @@
+### /Game/UltraDynamicSky/Blueprints/Widgets/UDS_Digital_Clock
+  WidgetBlueprint (UDS_Digital_Clock)
+    .WidgetVariableNameToGuidMap=(("CanvasPanel_0", B3F728CD90153186B2B8D060B2CB0E03),("CanvasPanel_50", D09B4A46736B3315BF0864CD1B3ABDB4),("HorizontalBox_57", 62083C4887D33EE88F0BD7AA43CD7C28),("Background", F6C922430D9532F7AEF336C8F14CC039),("TimeText", FD2AF838F4E13D30B19670B229A36887))
+    .PaletteCategory="Ultra Dynamic Sky Widgets"
+    .TickPrediction=WillTick
+    .TickPredictionReason="Script"
+    .WidgetTree="WidgetTree"
+    .ParentClass="/Script/CoreUObject.Class'/Script/UMG.UserWidget'"
+    .BlueprintDescription="Gets and displays the current time from Ultra Dynamic Sky"
+    .BlueprintCategory="UltraDynamicSky|Widgets"
+    .BlueprintSystemVersion=2
+    .UbergraphPages(0)="/Script/Engine.EdGraph'EventGraph'"
+    .UbergraphPages(1)="/Script/Engine.EdGraph'Pre Construct Graph'"
+    .FunctionGraphs(0)="/Script/Engine.EdGraph'Update Time'"
+    .MacroGraphs(0)="/Script/Engine.EdGraph'Pad Digits'"
+    .NewVariables(0)=(VarName="24h Time",VarGuid=06771F7D44EBDD6A43ED969CA348A2D6,VarType=(PinCategory="bool"),FriendlyName="24h Time",Category=NSLOCTEXT("", "FB887D4548CB1A98C82F25B5A0EA54E1", "Customize"),PropertyFlags=5,MetaDataArray=((DataKey="MultiLine",DataValue="true"),(DataKey="ExposeOnSpawn",DataValue="true")))
+    .NewVariables(1)=(VarName="Show AM/PM",VarGuid=58B5343D4BDF9D09D368B99A5647E223,VarType=(PinCategory="bool"),FriendlyName="Show AM/PM",Category=NSLOCTEXT("", "A70C869B4480234ACC74FB8A4E53686F", "Customize"),PropertyFlags=5,MetaDataArray=((DataKey="MultiLine",DataValue="true"),(DataKey="ExposeOnSpawn",DataValue="true")))
+    .NewVariables(2)=(VarName="Show Seconds",VarGuid=656DBB784DBBE50F1D188D851E23EA80,VarType=(PinCategory="bool"),FriendlyName="Show Seconds",Category=NSLOCTEXT("", "A70C869B4480234ACC74FB8A4E53686F", "Customize"),PropertyFlags=5,MetaDataArray=((DataKey="MultiLine",DataValue="true"),(DataKey="ExposeOnSpawn",DataValue="true")))
+    .NewVariables(3)=(VarName="Pad Hour with Zero",VarGuid=671C9BA9481368E06B8E8993937278B5,VarType=(PinCategory="bool"),FriendlyName="Pad Hour With Zero",Category=NSLOCTEXT("", "FAC33F39412F04AF94CA75B0FB75366C", "Customize"),PropertyFlags=5,MetaDataArray=((DataKey="MultiLine",DataValue="true"),(DataKey="tooltip")))
+    .NewVariables(4)=(VarName="Font",VarGuid=AD1C0B1848D424D7980F998DEAD4687F,VarType=(PinCategory="object",PinSubCategoryObject="/Script/CoreUObject.Class'/Script/Engine.Font'"),FriendlyName="Font",Category=NSLOCTEXT("", "890D10444543B9203BD0D195E1EAEC44", "Customize"),PropertyFlags=5,MetaDataArray=((DataKey="MultiLine",DataValue="true")))
+    .NewVariables(5)=(VarName="Font Size",VarGuid=C7C03C73407FF9740FA37CABD5527AB3,VarType=(PinCategory="int"),FriendlyName="Font Size",Category=INVTEXT("Customize"),PropertyFlags=5,MetaDataArray=((DataKey="MultiLine",DataValue="true"),(DataKey="ClampMin",DataValue="1"),(DataKey="ClampMax",DataValue="1000")))
+    .NewVariables(6)=(VarName="Digit Spacing",VarGuid=765C0A934722749B4FCCAD8FA7E2700A,VarType=(PinCategory="int"),FriendlyName="Digit Spacing",Category=INVTEXT("Customize"),PropertyFlags=5,MetaDataArray=((DataKey="MultiLine",DataValue="true"),(DataKey="ClampMin",DataValue="-1000"),(DataKey="ClampMax",DataValue="10000")))
+    .NewVariables(7)=(VarName="Text Color",VarGuid=BBBF404C46FA8889DBF022B174CEA9B2,VarType=(PinCategory="struct",PinSubCategoryObject="/Script/CoreUObject.ScriptStruct'/Script/CoreUObject.LinearColor'"),FriendlyName="Text Color",Category=INVTEXT("Customize"),PropertyFlags=5,MetaDataArray=((DataKey="MultiLine",DataValue="true")))
+    .NewVariables(8)=(VarName="Show Background",VarGuid=3A6DA35F42C71458CB3B12BDE1BA9626,VarType=(PinCategory="bool"),FriendlyName="Show Background",Category=NSLOCTEXT("", "C75C3D7943A445423C436FB44EF2621B", "Customize"),PropertyFlags=5,MetaDataArray=((DataKey="MultiLine",DataValue="true")))
+    .NewVariables(9)=(VarName="Background Color",VarGuid=209A7E2641418EA871BC45B34D0A8C06,VarType=(PinCategory="struct",PinSubCategoryObject="/Script/CoreUObject.ScriptStruct'/Script/CoreUObject.LinearColor'"),FriendlyName="Background Color",Category=INVTEXT("Customize"),PropertyFlags=5,MetaDataArray=((DataKey="MultiLine",DataValue="true")))
+    .NewVariables(10)=(VarName="Time Text Padding",VarGuid=F7BACF554ABEA7ACB3EEE49E1FF6C733,VarType=(PinCategory="struct",PinSubCategoryObject="/Script/CoreUObject.ScriptStruct'/Script/SlateCore.Margin'"),FriendlyName="Time Text Padding",Category=INVTEXT("Customize"),PropertyFlags=5,MetaDataArray=((DataKey="MultiLine",DataValue="true")))
+    .NewVariables(11)=(VarName="Time Text Min Desired Width",VarGuid=E6D5588E473143D4BD324BAF05E0269E,VarType=(PinCategory="real",PinSubCategory="float"),FriendlyName="Time Text Min Desired Width",Category=INVTEXT("Customize"),PropertyFlags=5,MetaDataArray=((DataKey="MultiLine",DataValue="true"),(DataKey="UIMin",DataValue="0"),(DataKey="ClampMin",DataValue="0")))
+    .NewVariables(12)=(VarName="Slate Font Info",VarGuid=55DFDB13427A245C957C709AF973AC70,VarType=(PinCategory="struct",PinSubCategoryObject="/Script/CoreUObject.ScriptStruct'/Script/SlateCore.SlateFontInfo'"),FriendlyName="Slate Font Info",Category=INVTEXT("Customize"),PropertyFlags=5,MetaDataArray=((DataKey="tooltip",DataValue="If this has a valid font object, it will be used instead of constructing font info from the Font, Font Size, and Digit Spacing settings, for those who need more control.")))
+    .GeneratedVariables(0)=(VarName="TimeText",VarGuid=FD2AF838F4E13D30B19670B229A36887,VarType=(PinCategory="object",PinSubCategoryObject="/Script/CoreUObject.Class'/Script/UMG.TextBlock'"),FriendlyName="Time Text",PropertyFlags=562952101494812,MetaDataArray=((DataKey="Category",DataValue="UDS_Digital_Clock")))
+    .GeneratedVariables(1)=(VarName="Background",VarGuid=F6C922430D9532F7AEF336C8F14CC039,VarType=(PinCategory="object",PinSubCategoryObject="/Script/CoreUObject.Class'/Script/UMG.Image'"),FriendlyName="Background",PropertyFlags=562952101494812,MetaDataArray=((DataKey="Category",DataValue="UDS_Digital_Clock")))
+    .CategorySorting(0)="Event Graph"
+    .CategorySorting(1)="Pre Construct Graph"
+    .CategorySorting(2)="UDS Digital Clock"
+    .CategorySorting(3)="Customize"
+    .CategorySorting(4)=""
+    .CategorySorting(5)="Appearance"
+    .CategorySorting(6)="Input"
+    .CategorySorting(7)="Interaction"
+    .CategorySorting(8)="Performance"
+    .CategorySorting(9)="Layout"
+    .CategorySorting(10)="Behavior"
+    .CategorySorting(11)="Render Transform"
+    .CategorySorting(12)="Navigation"
+    .CategorySorting(13)="Localization"
+    .CategorySorting(14)="Rendering"
+    .LastEditedDocuments(0)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Widgets/UDS_Digital_Clock.UDS_Digital_Clock:Pad Digits",SavedViewOffset=(X=-990.588135,Y=-468.039978),SavedZoomAmount=1.000000)
+    .LastEditedDocuments(1)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Widgets/UDS_Digital_Clock.UDS_Digital_Clock:Pre Construct Graph",SavedViewOffset=(X=382.543823,Y=73.094147),SavedZoomAmount=1.000000)
+    .LastEditedDocuments(2)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Widgets/UDS_Digital_Clock.UDS_Digital_Clock:Update Time",SavedViewOffset=(X=-1441.677612,Y=-443.690338),SavedZoomAmount=0.750000)
+    .LastEditedDocuments(3)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Widgets/UDS_Digital_Clock.UDS_Digital_Clock:EventGraph",SavedViewOffset=(X=-578.259949,Y=-126.538849),SavedZoomAmount=1.000000)
+    .GeneratedClass="/Script/UMG.WidgetBlueprintGeneratedClass'UDS_Digital_Clock_C'"
+    .bLegacyNeedToPurgeSkelRefs=False
+    .BlueprintGuid=B2FA5FE048AB2DF89D715E97C8BD81C6
+  WidgetTree (WidgetTree)
+    .RootWidget="/Script/UMG.CanvasPanel'CanvasPanel_0'"
+  CanvasPanel (CanvasPanel_0)
+    .Slots(0)="/Script/UMG.CanvasPanelSlot'CanvasPanelSlot_0'"
+    .bExpandedInDesigner=True
+  CanvasPanel (CanvasPanel_50)
+    .Slots(0)="/Script/UMG.CanvasPanelSlot'CanvasPanelSlot_1'"
+    .Slots(1)="/Script/UMG.CanvasPanelSlot'CanvasPanelSlot_0'"
+    .Slot="/Script/UMG.CanvasPanelSlot'UDS_Digital_Clock:WidgetTree.CanvasPanel_0.CanvasPanelSlot_0'"
+    .bExpandedInDesigner=True
+  HorizontalBox (HorizontalBox_57)
+    .Slots(0)="/Script/UMG.HorizontalBoxSlot'HorizontalBoxSlot_0'"
+    .Slot="/Script/UMG.CanvasPanelSlot'UDS_Digital_Clock:WidgetTree.CanvasPanel_50.CanvasPanelSlot_0'"
+    .bExpandedInDesigner=True
+  Image (Background)
+    .Brush=(DrawAs=RoundedBox,ImageSize=(X=10.000000,Y=10.000000),Margin=(Left=0.500000,Top=0.500000,Right=0.500000,Bottom=0.500000),OutlineSettings=(CornerRadii=(X=10.000000,Y=10.000000,Z=10.000000,W=10.000000),RoundingType=FixedRadius))
+    .ColorAndOpacity=(R=0.036458,G=0.036458,B=0.036458,A=1.000000)
+    .Slot="/Script/UMG.CanvasPanelSlot'UDS_Digital_Clock:WidgetTree.CanvasPanel_50.CanvasPanelSlot_1'"
+    .DisplayLabel="Background"
+  TextBlock (TimeText)
+    .Text=NSLOCTEXT("[3F99530E474E5294F5E388A8BB97C9D9]", "F9166B144B1955F917D06BAAAA348105", "11:21 AM")
+    .ColorAndOpacity=(SpecifiedColor=(R=0.671875,G=0.671875,B=0.671875,A=1.000000))
+    .Font=(FontObject="/Script/Engine.Font'/Engine/EngineFonts/DroidSansMono.DroidSansMono'",TypefaceFontName="Default")
+    .Justification=Center
+    .Slot="/Script/UMG.HorizontalBoxSlot'UDS_Digital_Clock:WidgetTree.HorizontalBox_57.HorizontalBoxSlot_0'"
+    .bIsVariable=True
+    .DisplayLabel="Time Text"
+  EdGraph (EventGraph)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_Event'K2Node_Event_2'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_14'"
+    .bAllowDeletion=False
+    .GraphGuid=1F39BFE7481ABA0522B8D090934FE01E
+  K2Node_Event (K2Node_Event_2)
+    .EventReference=(MemberParent="/Script/CoreUObject.Class'/Script/UMG.UserWidget'",MemberName="Tick")
+    .bOverrideFunction=True
+    .NodePosX=80
+    .NodePosY=472
+    .bCommentBubblePinned=True
+    .NodeGuid=02E628014EEE0DD8C851C595B423E03A
+  K2Node_CallFunction (K2Node_CallFunction_14)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="SelectString")
+    .NodePosX=2368
+    .NodePosY=380
+    .NodeGuid=79041EA84240691DF1377889A5AD2915
+    .bDefaultsToPureFunc=True
+  EdGraph (Pad Digits)
+    .Schema="/Script/CoreUObject.Class'/Script/UMGEditor.WidgetGraphSchema'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_Tunnel'K2Node_Tunnel_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_Tunnel'K2Node_Tunnel_1'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CommutativeAssociativeBinaryOperator'K2Node_CommutativeAssociativeBinaryOperator_0'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .GraphGuid=EC8AA3854725CD7B5DB407BFE44502C4
+  K2Node_Tunnel (K2Node_Tunnel_1)
+    .bCanHaveInputs=True
+    .NodePosX=400
+    .NodePosY=32
+    .NodeGuid=D90B78814E95C0AC64EA5F81273F36CA
+    .InputSinkNode="/Script/BlueprintGraph.K2Node_MacroInstance'UDS_Digital_Clock:Update Time_MERGED.K2Node_MacroInstance_5'"
+  K2Node_Tunnel (K2Node_Tunnel_0)
+    .bCanHaveOutputs=True
+    .NodePosX=-580
+    .NodePosY=60
+    .NodeGuid=95B4BA7F4062192F716646A769B2422B
+    .OutputSourceNode="/Script/BlueprintGraph.K2Node_MacroInstance'UDS_Digital_Clock:Update Time_MERGED.K2Node_MacroInstance_5'"
+  K2Node_CallFunction (K2Node_CallFunction_0)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Divide_DoubleDouble")
+    .NodePosX=-632
+    .NodePosY=120
+    .NodeGuid=46CF51554C8C15C16A3EF789BE5BC0B2
+    .bIsIntermediateNode=True
+  K2Node_CommutativeAssociativeBinaryOperator (K2Node_CommutativeAssociativeBinaryOperator_0)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Multiply_DoubleDouble")
+    .NodePosX=-544
+    .NodePosY=296
+    .NodeGuid=478370CC427DE590B49B5685E8E2E887
+  K2Node_CallFunction (K2Node_CallFunction_2)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Fraction")
+    .NodePosX=-752
+    .NodePosY=264
+    .NodeGuid=5221DDAE4992B4706CB2D8ACF4B6B134
+  EdGraph (Update Time)
+    .Schema="/Script/CoreUObject.Class'/Script/UMGEditor.WidgetGraphSchema'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_7'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_16'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_BreakStruct'K2Node_BreakStruct_0'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_3'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_CommutativeAssociativeBinaryOperator'K2Node_CommutativeAssociativeBinaryOperator_1'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_22'"
+    .Nodes(7)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_12'"
+    .Nodes(8)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_3'"
+    .Nodes(9)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_11'"
+    .Nodes(10)="/Script/BlueprintGraph.K2Node_MacroInstance'K2Node_MacroInstance_5'"
+    .Nodes(11)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_7'"
+    .Nodes(12)="/Script/BlueprintGraph.K2Node_MacroInstance'K2Node_MacroInstance_1'"
+    .Nodes(13)="/Script/BlueprintGraph.K2Node_CommutativeAssociativeBinaryOperator'K2Node_CommutativeAssociativeBinaryOperator_3'"
+    .Nodes(14)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_14'"
+    .Nodes(15)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_4'"
+    .Nodes(16)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_20'"
+    .Nodes(17)="/Script/BlueprintGraph.K2Node_MacroInstance'K2Node_MacroInstance_4'"
+    .Nodes(18)="/Script/BlueprintGraph.K2Node_Knot'K2Node_Knot_0'"
+    .Nodes(19)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_18'"
+    .Nodes(20)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_13'"
+    .Nodes(21)="/Script/BlueprintGraph.K2Node_Knot'K2Node_Knot_1'"
+    .Nodes(22)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_10'"
+    .Nodes(23)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_6'"
+    .Nodes(24)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_21'"
+    .Nodes(25)="/Script/BlueprintGraph.K2Node_Knot'K2Node_Knot_4'"
+    .Nodes(26)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_19'"
+    .Nodes(27)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_8'"
+    .Nodes(28)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_1'"
+    .Nodes(29)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(30)="/Script/BlueprintGraph.K2Node_CallMaterialParameterCollectionFunction'K2Node_CallMaterialParameterCollectionFunction_0'"
+    .Nodes(31)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_2'"
+    .Nodes(32)="/Script/BlueprintGraph.K2Node_MakeStruct'K2Node_MakeStruct_0'"
+    .Nodes(33)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_5'"
+    .Nodes(34)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(35)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(36)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .Nodes(37)="/Script/BlueprintGraph.K2Node_CommutativeAssociativeBinaryOperator'K2Node_CommutativeAssociativeBinaryOperator_0'"
+    .Nodes(38)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_5'"
+    .Nodes(39)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_8'"
+    .Nodes(40)="/Script/BlueprintGraph.K2Node_CommutativeAssociativeBinaryOperator'K2Node_CommutativeAssociativeBinaryOperator_2'"
+    .Nodes(41)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_9'"
+    .GraphGuid=A3A5180C4B8E443FE70F0A9F04ADDAED
+  K2Node_FunctionEntry (K2Node_FunctionEntry_0)
+    .LocalVariables(0)=(VarName="Time",VarGuid=62DFF5CD4B255895B383D89401EB1FC5,VarType=(PinCategory="struct",PinSubCategoryObject="/Script/CoreUObject.ScriptStruct'/Script/CoreUObject.Timecode'"),FriendlyName="Time",Category=NSLOCTEXT("KismetSchema", "Default", "Default"),PropertyFlags=5)
+    .LocalVariables(1)=(VarName="Time of Day",VarGuid=8E27E6444CF7387E4BD6E7897A267453,VarType=(PinCategory="real",PinSubCategory="float"),FriendlyName="Time Of Day",Category=NSLOCTEXT("KismetSchema", "Default", "Default"),PropertyFlags=5,DefaultValue="0.000000")
+    .ExtraFlags=201457664
+    .FunctionReference=(MemberName="Update Time")
+    .bIsEditable=True
+    .NodePosX=-1560
+    .NodePosY=4
+    .NodeGuid=9A7CEBC1432E0ABD5794BDAB0867C5AA
+    .CustomGeneratedFunctionName="PreConstruct"
+    .bIsIntermediateNode=True
+  K2Node_VariableGet (K2Node_VariableGet_7)
+    .VariableReference=(MemberName="TimeText",MemberGuid=FD2AF838F4E13D30B19670B229A36887,bSelfContext=True)
+    .NodePosX=3244
+    .NodePosY=60
+    .NodeGuid=22673B0748F68BB4877F71ABA99CD881
+  K2Node_CallFunction (K2Node_CallFunction_16)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/UMG.TextBlock'",MemberName="SetText")
+    .NodePosX=3412
+    .NodePosY=-12
+    .NodeGuid=B50A45B14A11ED84EFDCB58E17DF5BD9
+  K2Node_BreakStruct (K2Node_BreakStruct_0)
+    .bMadeAfterOverridePinRemoval=True
+    .ShowPinForProperties(0)=(PropertyName="Hours",PropertyFriendlyName="Hours",CategoryName="Timecode",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(1)=(PropertyName="Minutes",PropertyFriendlyName="Minutes",CategoryName="Timecode",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(2)=(PropertyName="Seconds",PropertyFriendlyName="Seconds",CategoryName="Timecode",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(3)=(PropertyName="Frames",PropertyFriendlyName="Frames",CategoryName="Timecode",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(4)=(PropertyName="Subframe",PropertyFriendlyName="Subframe",CategoryName="Timecode",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(5)=(PropertyName="bDropFrameFormat",PropertyFriendlyName="Drop Frame Format",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "Timecode:bDropFrameFormat", "If true, this Timecode represents a Drop Frame timecode used to account for fractional frame rates in NTSC play rates."),CategoryName="Timecode",bShowPin=True,bCanToggleVisibility=True)
+    .StructType="/Script/CoreUObject.ScriptStruct'/Script/CoreUObject.Timecode'"
+    .NodePosX=988
+    .NodePosY=136
+    .AdvancedPinDisplay=Hidden
+    .NodeGuid=F4A479014EA990E208F4BBB815D8734F
+    .ShowPinForProperties(6)=(PropertyName="SkewAmount",PropertyFriendlyName="Skew Amount",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "SlateFontInfo:SkewAmount", "A skew amount to apply to the text."),CategoryName="SlateStyleRules",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(7)=(PropertyName="bForceMonospaced",PropertyFriendlyName="Monospacing",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "SlateFontInfo:bForceMonospaced", "Enable pseudo-monospaced font."),CategoryName="SlateStyleRules",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(8)=(PropertyName="bMaterialIsStencil",PropertyFriendlyName="Material Is Stencil",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "SlateFontInfo:bMaterialIsStencil", "When enabled, whole quads are filled by the material without automatically stenciling the text - this needs to be done within the material (using Font Signed Distance node)."),CategoryName="SlateStyleRules",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(9)=(PropertyName="MonospacedWidth",PropertyFriendlyName="Monospaced Width",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "SlateFontInfo:MonospacedWidth", "The uniform width to apply to all characters when bForceMonospaced is enabled, proportional of the font Size."),CategoryName="SlateStyleRules",bShowPin=True,bCanToggleVisibility=True)
+  K2Node_CallFunction (K2Node_CallFunction_3)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetTextLibrary'",MemberName="Conv_StringToText")
+    .NodePosX=3064
+    .NodePosY=192
+    .NodeGuid=6235041D4DE8F3FEF8F3F09B23D86F59
+  K2Node_CommutativeAssociativeBinaryOperator (K2Node_CommutativeAssociativeBinaryOperator_1)
+    .NumAdditionalInputs=3
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetStringLibrary'",MemberName="Concat_StrStr")
+    .NodePosX=2816
+    .NodePosY=192
+    .NodeGuid=6CDFE78A456F596F00FF249936776A01
+  K2Node_CallFunction (K2Node_CallFunction_22)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Percent_IntInt")
+    .NodePosX=1292
+    .NodePosY=196
+    .NodeGuid=23851483482F09383ED6B78ECEA46A5C
+  K2Node_CallFunction (K2Node_CallFunction_12)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="SelectInt")
+    .NodePosX=2044
+    .NodePosY=140
+    .NodeGuid=098416614CE1B1E48C38A8BF52048F44
+  K2Node_VariableGet (K2Node_VariableGet_3)
+    .VariableReference=(MemberName="24h Time",MemberGuid=06771F7D44EBDD6A43ED969CA348A2D6,bSelfContext=True)
+    .NodePosX=1900
+    .NodePosY=260
+    .NodeGuid=BCE6EB004E915B76C7B40B87006B9E6C
+  K2Node_CallFunction (K2Node_CallFunction_11)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetStringLibrary'",MemberName="Conv_IntToString")
+    .NodePosX=2288
+    .NodePosY=160
+    .NodeGuid=EE0AE44F44A47DE6D097078CBB78558B
+  K2Node_MacroInstance (K2Node_MacroInstance_5)
+    .MacroGraphReference=(MacroGraph="/Script/Engine.EdGraph'UDS_Digital_Clock:Pad Digits'",GraphBlueprint="/Script/UMGEditor.WidgetBlueprint'UDS_Digital_Clock'",GraphGuid=EC8AA3854725CD7B5DB407BFE44502C4)
+    .NodePosX=2432
+    .NodePosY=136
+    .NodeGuid=77BC1E7E4625A66CD286DB839D812A81
+    .OutputSourceNode="/Script/BlueprintGraph.K2Node_Tunnel'UDS_Digital_Clock:Update Time_MERGED.K2Node_Tunnel_1'"
+    .InputSinkNode="/Script/BlueprintGraph.K2Node_Tunnel'UDS_Digital_Clock:Update Time_MERGED.K2Node_Tunnel_0'"
+  K2Node_CallFunction (K2Node_CallFunction_7)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetStringLibrary'",MemberName="Conv_IntToString")
+    .NodePosX=2144
+    .NodePosY=308
+    .NodeGuid=594837CA4B4DFB59ECBFCFA9FBCE7F7E
+  K2Node_MacroInstance (K2Node_MacroInstance_1)
+    .MacroGraphReference=(MacroGraph="/Script/Engine.EdGraph'UDS_Digital_Clock:Pad Digits'",GraphBlueprint="/Script/UMGEditor.WidgetBlueprint'UDS_Digital_Clock'",GraphGuid=EC8AA3854725CD7B5DB407BFE44502C4)
+    .NodePosX=2288
+    .NodePosY=284
+    .NodeGuid=8736D3D44295FAE85D9AAEB8CF6A6364
+    .OutputSourceNode="/Script/BlueprintGraph.K2Node_Tunnel'UDS_Digital_Clock:Update Time_MERGED.K2Node_Tunnel_2'"
+    .InputSinkNode="/Script/BlueprintGraph.K2Node_Tunnel'UDS_Digital_Clock:Update Time_MERGED.K2Node_Tunnel_3'"
+  K2Node_CommutativeAssociativeBinaryOperator (K2Node_CommutativeAssociativeBinaryOperator_3)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetStringLibrary'",MemberName="Concat_StrStr")
+    .NodePosX=2144
+    .NodePosY=388
+    .NodeGuid=5FD71B854800F233A9915F85D6B7C917
+  K2Node_VariableGet (K2Node_VariableGet_4)
+    .VariableReference=(MemberName="Show Seconds",MemberGuid=656DBB784DBBE50F1D188D851E23EA80,bSelfContext=True)
+    .NodePosX=2200
+    .NodePosY=508
+    .NodeGuid=B3A238B8420679B56128088D2D771216
+  K2Node_CallFunction (K2Node_CallFunction_20)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetStringLibrary'",MemberName="Conv_IntToString")
+    .NodePosX=1792
+    .NodePosY=444
+    .NodeGuid=1A2E4C6C42C89B622DD28EB86CE0C5E1
+  K2Node_MacroInstance (K2Node_MacroInstance_4)
+    .MacroGraphReference=(MacroGraph="/Script/Engine.EdGraph'UDS_Digital_Clock:Pad Digits'",GraphBlueprint="/Script/UMGEditor.WidgetBlueprint'UDS_Digital_Clock'",GraphGuid=EC8AA3854725CD7B5DB407BFE44502C4)
+    .NodePosX=1936
+    .NodePosY=420
+    .NodeGuid=9A38CC8E445C3A9922CF2B94F92DDA25
+    .OutputSourceNode="/Script/BlueprintGraph.K2Node_Tunnel'UDS_Digital_Clock:Update Time_MERGED.K2Node_Tunnel_4'"
+    .InputSinkNode="/Script/BlueprintGraph.K2Node_Tunnel'UDS_Digital_Clock:Update Time_MERGED.K2Node_Tunnel_5'"
+  K2Node_Knot (K2Node_Knot_0)
+    .NodePosX=1304
+    .NodePosY=316
+    .NodeGuid=3DCD7FED4FF6ED867706FC8108A8A0FA
+  K2Node_CallFunction (K2Node_CallFunction_18)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="SelectInt")
+    .NodePosX=1668
+    .NodePosY=184
+    .NodeGuid=27F6B22D4AE0B8B5FA8888A86A24771C
+  K2Node_CallFunction (K2Node_CallFunction_13)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="EqualEqual_IntInt")
+    .NodePosX=1472
+    .NodePosY=244
+    .NodeGuid=868F09B94550D1503060FBB032DCFDF8
+  K2Node_Knot (K2Node_Knot_1)
+    .NodePosX=1312
+    .NodePosY=452
+    .NodeGuid=51D811F84A4C434C9A675682C5AC8755
+  K2Node_CallFunction (K2Node_CallFunction_10)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="SelectString")
+    .NodePosX=2472
+    .NodePosY=596
+    .NodeGuid=38A48DFC45BA6CDC2915669508A7CBC8
+  K2Node_VariableGet (K2Node_VariableGet_6)
+    .VariableReference=(MemberName="Show AM/PM",MemberGuid=58B5343D4BDF9D09D368B99A5647E223,bSelfContext=True)
+    .NodePosX=2328
+    .NodePosY=740
+    .NodeGuid=5D4985C64AFE545355B5C5BF32FAD39A
+  K2Node_CallFunction (K2Node_CallFunction_21)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Greater_IntInt")
+    .NodePosX=1888
+    .NodePosY=596
+    .NodeGuid=1F7880AC4A2D80B0E76F31B1E9501990
+  K2Node_Knot (K2Node_Knot_4)
+    .NodePosX=1264
+    .NodePosY=604
+    .NodeGuid=E8A7CC3E4CB2A6C1EC2872ACE5481CDD
+  K2Node_CallFunction (K2Node_CallFunction_19)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="SelectString")
+    .NodePosX=2144
+    .NodePosY=596
+    .NodeGuid=92BEB27A4B1F624B8CED0FAE8C97FD57
+  K2Node_VariableGet (K2Node_VariableGet_8)
+    .VariableReference=(MemberName="Pad Hour with Zero",MemberGuid=671C9BA9481368E06B8E8993937278B5,bSelfContext=True)
+    .NodePosX=2284
+    .NodePosY=216
+    .NodeGuid=A9491D2F4811A3677F44F583933A4152
+  K2Node_VariableSet (K2Node_VariableSet_1)
+    .VariableReference=(MemberScope="Update Time",MemberName="Time",MemberGuid=62DFF5CD4B255895B383D89401EB1FC5)
+    .NodePosX=580
+    .NodePosY=20
+    .NodeGuid=90CE2268423AE9BC10F1C4A67FD4E2F2
+  K2Node_VariableGet (K2Node_VariableGet_0)
+    .VariableReference=(MemberScope="Update Time",MemberName="Time",MemberGuid=62DFF5CD4B255895B383D89401EB1FC5)
+    .NodePosX=844
+    .NodePosY=160
+    .NodeGuid=0144518C4DB32652D83972B253A3ED8F
+  K2Node_CallMaterialParameterCollectionFunction (K2Node_CallMaterialParameterCollectionFunction_0)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMaterialLibrary'",MemberName="GetScalarParameterValue")
+    .NodePosX=-1400
+    .NodePosY=4
+    .NodeGuid=733A6CF04620CE0B0CD50EBA31C828AA
+  K2Node_VariableSet (K2Node_VariableSet_2)
+    .VariableReference=(MemberScope="Update Time",MemberName="Time of Day",MemberGuid=8E27E6444CF7387E4BD6E7897A267453)
+    .NodePosX=-1072
+    .NodePosY=20
+    .NodeGuid=2EAE8454414E14DA980DF196FEAA7198
+  K2Node_MakeStruct (K2Node_MakeStruct_0)
+    .bMadeAfterOverridePinRemoval=True
+    .ShowPinForProperties(0)=(PropertyName="Hours",PropertyFriendlyName="Hours",CategoryName="Timecode",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(1)=(PropertyName="Minutes",PropertyFriendlyName="Minutes",CategoryName="Timecode",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(2)=(PropertyName="Seconds",PropertyFriendlyName="Seconds",CategoryName="Timecode",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(3)=(PropertyName="Frames",PropertyFriendlyName="Frames",CategoryName="Timecode",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(4)=(PropertyName="Subframe",PropertyFriendlyName="Subframe",CategoryName="Timecode",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(5)=(PropertyName="bDropFrameFormat",PropertyFriendlyName="Drop Frame Format",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "Timecode:bDropFrameFormat", "If true, this Timecode represents a Drop Frame timecode used to account for fractional frame rates in NTSC play rates."),CategoryName="Timecode",bShowPin=True,bCanToggleVisibility=True)
+    .StructType="/Script/CoreUObject.ScriptStruct'/Script/CoreUObject.Timecode'"
+    .NodePosX=240
+    .NodePosY=112
+    .AdvancedPinDisplay=Shown
+    .NodeGuid=BC52B8FE411F16E27697CEBE008FDE71
+    .ShowPinForProperties(6)=(PropertyName="SkewAmount",PropertyFriendlyName="Skew Amount",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "SlateFontInfo:SkewAmount", "A skew amount to apply to the text."),CategoryName="SlateStyleRules",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(7)=(PropertyName="bForceMonospaced",PropertyFriendlyName="Monospacing",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "SlateFontInfo:bForceMonospaced", "Enable pseudo-monospaced font."),CategoryName="SlateStyleRules",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(8)=(PropertyName="bMaterialIsStencil",PropertyFriendlyName="Material Is Stencil",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "SlateFontInfo:bMaterialIsStencil", "When enabled, whole quads are filled by the material without automatically stenciling the text - this needs to be done within the material (using Font Signed Distance node)."),CategoryName="SlateStyleRules",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(9)=(PropertyName="MonospacedWidth",PropertyFriendlyName="Monospaced Width",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "SlateFontInfo:MonospacedWidth", "The uniform width to apply to all characters when bForceMonospaced is enabled, proportional of the font Size."),CategoryName="SlateStyleRules",bShowPin=True,bCanToggleVisibility=True)
+    .ErrorType=4
+  K2Node_VariableGet (K2Node_VariableGet_5)
+    .VariableReference=(MemberScope="Update Time",MemberName="Time of Day",MemberGuid=8E27E6444CF7387E4BD6E7897A267453)
+    .NodePosX=-820
+    .NodePosY=116
+    .NodeGuid=E0FE56CC4FAF5166F59E68B110B2C863
+  K2Node_CallFunction (K2Node_CallFunction_1)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="FFloor")
+    .NodePosX=-356
+    .NodePosY=112
+    .NodeGuid=37BF3AD8487B3D99329DC6A57D7901AA
+  K2Node_CallFunction (K2Node_CallFunction_5)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="FFloor")
+    .NodePosX=-360
+    .NodePosY=268
+    .NodeGuid=7D78FF3C4C523D9D2DF824A22A6DE830
+  K2Node_CallFunction (K2Node_CallFunction_8)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Fraction")
+    .NodePosX=-364
+    .NodePosY=356
+    .NodeGuid=FFA7CA0840CC8A08C713D0A3DCD68438
+  K2Node_CommutativeAssociativeBinaryOperator (K2Node_CommutativeAssociativeBinaryOperator_2)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="Multiply_DoubleDouble")
+    .NodePosX=-168
+    .NodePosY=380
+    .NodeGuid=C62025CF4ACECD67A54A6DB5C5F8DEB8
+  K2Node_CallFunction (K2Node_CallFunction_9)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="FFloor")
+    .NodePosX=-8
+    .NodePosY=360
+    .NodeGuid=0F92E9464F46D470E59D808A71D49324
+  EdGraph (Pre Construct Graph)
+    .Schema="/Script/CoreUObject.Class'/Script/UMGEditor.WidgetGraphSchema'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_Event'K2Node_Event_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_Self'K2Node_Self_1'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_29'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_30'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_4'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .Nodes(7)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_1'"
+    .Nodes(8)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_2'"
+    .Nodes(9)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_3'"
+    .Nodes(10)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(11)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_3'"
+    .Nodes(12)="/Script/BlueprintGraph.K2Node_MakeStruct'K2Node_MakeStruct_1'"
+    .Nodes(13)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_5'"
+    .Nodes(14)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_6'"
+    .Nodes(15)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_7'"
+    .Nodes(16)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_4'"
+    .Nodes(17)="/Script/BlueprintGraph.K2Node_Select'K2Node_Select_0'"
+    .Nodes(18)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_8'"
+    .Nodes(19)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_5'"
+    .Nodes(20)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_9'"
+    .Nodes(21)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_10'"
+    .Nodes(22)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_7'"
+    .Nodes(23)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_8'"
+    .Nodes(24)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_12'"
+    .Nodes(25)="/Script/BlueprintGraph.K2Node_MacroInstance'K2Node_MacroInstance_0'"
+    .Nodes(26)="/Script/BlueprintGraph.K2Node_Knot'K2Node_Knot_0'"
+    .Nodes(27)="/Script/BlueprintGraph.K2Node_Knot'K2Node_Knot_1'"
+    .Nodes(28)="/Script/BlueprintGraph.K2Node_Knot'K2Node_Knot_2'"
+    .Nodes(29)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_11'"
+    .Nodes(30)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(31)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_13'"
+    .Nodes(32)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_15'"
+    .Nodes(33)="/Script/BlueprintGraph.K2Node_BreakStruct'K2Node_BreakStruct_0'"
+    .Nodes(34)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_6'"
+    .Nodes(35)="/Script/BlueprintGraph.K2Node_Select'K2Node_Select_1'"
+    .Nodes(36)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_14'"
+    .Nodes(37)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_9'"
+    .Nodes(38)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_10'"
+    .GraphGuid=EEF795654E669EC26354E4850DA6C9EC
+  K2Node_Event (K2Node_Event_0)
+    .EventReference=(MemberParent="/Script/CoreUObject.Class'/Script/UMG.UserWidget'",MemberName="PreConstruct")
+    .bOverrideFunction=True
+    .NodePosX=-112
+    .NodePosY=352
+    .NodeGuid=7E136BF34137DF8B3D61F3BC5692A022
+  K2Node_Self (K2Node_Self_1)
+    .NodePosX=-32
+    .NodePosY=496
+    .NodeGuid=237A95F142482FABD59D97BB3D59F044
+  K2Node_CallFunction (K2Node_CallFunction_29)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/UMG.WidgetLayoutLibrary'",MemberName="SlotAsCanvasSlot")
+    .NodePosX=112
+    .NodePosY=472
+    .NodeGuid=984F26004DEEC308065E578FD7407C25
+  K2Node_CallFunction (K2Node_CallFunction_30)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/UMG.CanvasPanelSlot'",MemberName="SetAutoSize")
+    .NodePosX=584
+    .NodePosY=336
+    .NodeGuid=9E5334D84A9D8AB20376A7A20C543D74
+  K2Node_VariableGet (K2Node_VariableGet_1)
+    .VariableReference=(MemberName="Font",MemberGuid=AD1C0B1848D424D7980F998DEAD4687F,bSelfContext=True)
+    .NodePosX=1088
+    .NodePosY=512
+    .NodeGuid=D1B57FF44CE00911E54A879997DC8715
+  K2Node_VariableGet (K2Node_VariableGet_2)
+    .VariableReference=(MemberName="Font Size",MemberGuid=C7C03C73407FF9740FA37CABD5527AB3,bSelfContext=True)
+    .NodePosX=1088
+    .NodePosY=640
+    .ErrorType=4
+    .NodeGuid=A6E4C2AF4E825944EA1BE6B9B6E090D9
+  K2Node_MakeStruct (K2Node_MakeStruct_1)
+    .bMadeAfterOverridePinRemoval=True
+    .ShowPinForProperties(0)=(PropertyName="SpecifiedColor",PropertyFriendlyName="Specified Color",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "SlateColor:SpecifiedColor", "The current specified color; only meaningful when ColorToUse == UseColor_Specified."),CategoryName="Color",bShowPin=True,bCanToggleVisibility=True)
+    .ShowPinForProperties(1)=(PropertyName="ColorUseRule",PropertyFriendlyName="Color Use Rule",PropertyTooltip=NSLOCTEXT("UObjectToolTips", "SlateColor:ColorUseRule", "The rule for which color to pick."),CategoryName="Color",bShowPin=True,bCanToggleVisibility=True)
+    .StructType="/Script/CoreUObject.ScriptStruct'/Script/SlateCore.SlateColor'"
+    .NodePosX=2504
+    .NodePosY=480
+    .NodeGuid=C982F5D340580B6EBBD058B8B41AB95D
+  K2Node_CallFunction (K2Node_CallFunction_4)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetStringLibrary'",MemberName="Right")
+    .NodePosX=136
+    .NodePosY=24
+    .NodeGuid=D40A1CDF4AACA677F7C350A7FB376CC1
+    .bDefaultsToPureFunc=True
+  K2Node_Select (K2Node_Select_0)
+    .IndexPinType=(PinCategory="bool",PinSubCategory="")
+    .NodePosX=3168
+    .NodePosY=456
+    .NodeGuid=0C6C1F3B4E1D15E5C69514B175270730
+  K2Node_VariableGet (K2Node_VariableGet_9)
+    .VariableReference=(MemberName="Background Color",MemberGuid=209A7E2641418EA871BC45B34D0A8C06,bSelfContext=True)
+    .NodePosX=3712
+    .NodePosY=480
+    .NodeGuid=0290446D4731BABD1C58F098E54CBB48
+  K2Node_VariableGet (K2Node_VariableGet_10)
+    .VariableReference=(MemberName="TimeText",MemberGuid=FD2AF838F4E13D30B19670B229A36887,bSelfContext=True)
+    .NodePosX=4080
+    .NodePosY=520
+    .NodeGuid=75940E1E48A65F7D462FAB8918A3F816
+  K2Node_VariableGet (K2Node_VariableGet_12)
+    .VariableReference=(MemberName="Time Text Padding",MemberGuid=F7BACF554ABEA7ACB3EEE49E1FF6C733,bSelfContext=True)
+    .NodePosX=4296
+    .NodePosY=560
+    .NodeGuid=BA84CD264535AA6C6FBFC3B041A88482
+  K2Node_MacroInstance (K2Node_MacroInstance_0)
+    .MacroGraphReference=(MacroGraph="/Script/Engine.EdGraph'/Engine/EditorBlueprintResources/StandardMacros.StandardMacros:IsValid'",GraphBlueprint="/Script/Engine.Blueprint'/Engine/EditorBlueprintResources/StandardMacros.StandardMacros'",GraphGuid=64422BCD430703FF5CAEA8B79A32AA65)
+    .NodePosX=344
+    .NodePosY=352
+    .NodeGuid=A68BB702498F5AEE1BCEB9A49918A9E2
+    .OutputSourceNode="/Script/BlueprintGraph.K2Node_Tunnel'UDS_Digital_Clock:ExecuteUbergraph_UDS_Digital_Clock.K2Node_Tunnel_91'"
+    .InputSinkNode="/Script/BlueprintGraph.K2Node_Tunnel'UDS_Digital_Clock:ExecuteUbergraph_UDS_Digital_Clock.K2Node_Tunnel_90'"
+  K2Node_Knot (K2Node_Knot_2)
+    .NodePosX=760
+    .NodePosY=480
+    .NodeGuid=317669BE4BFC01ED9920A2BD0991F689
+  K2Node_VariableGet (K2Node_VariableGet_11)
+    .VariableReference=(MemberName="TimeText",MemberGuid=FD2AF838F4E13D30B19670B229A36887,bSelfContext=True)
+    .NodePosX=4816
+    .NodePosY=408
+    .NodeGuid=756286834D20CCB0ECD25E89EC76D4F6
+  K2Node_VariableGet (K2Node_VariableGet_13)
+    .VariableReference=(MemberName="Time Text Min Desired Width",MemberGuid=E6D5588E473143D4BD324BAF05E0269E,bSelfContext=True)
+    .NodePosX=4764
+    .NodePosY=472
+    .NodeGuid=C8D734374DB7C47615F4308213B13A92
+  K2Node_VariableGet (K2Node_VariableGet_15)
+    .VariableReference=(MemberName="Slate Font Info",MemberGuid=55DFDB13427A245C957C709AF973AC70,bSelfContext=True)
+    .NodePosX=1260
+    .NodePosY=836
+    .NodeGuid=BF8B8ABC4098160C0DF67E9B19DAB834
+  K2Node_CallFunction (K2Node_CallFunction_6)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="SelectString")
+    .NodePosX=-336
+    .NodePosY=-48
+    .NodeGuid=77F639714891EFEE5F9CFC870BFFE143
+  K2Node_Select (K2Node_Select_1)
+    .IndexPinType=(PinCategory="bool",PinSubCategory="")
+    .NodePosX=1928
+    .NodePosY=488
+    .NodeGuid=630C5D37490DB6E399411DB555B95138
+  K2Node_VariableGet (K2Node_VariableGet_14)
+    .VariableReference=(MemberName="Slate Font Info",MemberGuid=55DFDB13427A245C957C709AF973AC70,bSelfContext=True)
+    .NodePosX=1664
+    .NodePosY=552
+    .NodeGuid=EEBF075F4223FBE3894E1CAA40BFD068
+  EdGraph (EdGraph_0)
+    .Schema="/Script/CoreUObject.Class'/Script/UMGEditor.WidgetGraphSchema'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_Tunnel'K2Node_Tunnel_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_Tunnel'K2Node_Tunnel_1'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CommutativeAssociativeBinaryOperator'K2Node_CommutativeAssociativeBinaryOperator_0'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .GraphGuid=EC8AA3854725CD7B5DB407BFE44502C4
+  EdGraph (EdGraph_1)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_Tunnel'K2Node_Tunnel_90'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_Tunnel'K2Node_Tunnel_91'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_15'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_4347'"
+    .GraphGuid=64422BCD430703FF5CAEA8B79A32AA65
+  K2Node_Tunnel (K2Node_Tunnel_90)
+    .bCanHaveOutputs=True
+    .MetaData=(ToolTip=NSLOCTEXT("", "C2A2C43144F43B04AD0E6EBF3956A75A", "Determines if an object is valid"),Category=NSLOCTEXT("", "A824D3BC4E8FDA956A0FB29E0E653805", "Utilities"))
+    .NodePosX=-496
+    .NodePosY=-272
+    .NodeGuid=AD5E251140C16EF1608BB3AADB3750EF
+    .OutputSourceNode="/Script/BlueprintGraph.K2Node_MacroInstance'UDS_Digital_Clock:ExecuteUbergraph_UDS_Digital_Clock.K2Node_MacroInstance_0'"
+  K2Node_Tunnel (K2Node_Tunnel_91)
+    .bCanHaveInputs=True
+    .NodePosX=288
+    .NodePosY=-272
+    .NodeGuid=25BB8F27486C272CD1228A9D682B1834
+    .InputSinkNode="/Script/BlueprintGraph.K2Node_MacroInstance'UDS_Digital_Clock:ExecuteUbergraph_UDS_Digital_Clock.K2Node_MacroInstance_0'"
+  K2Node_IfThenElse (K2Node_IfThenElse_15)
+    .NodePosX=-16
+    .NodePosY=-272
+    .NodeGuid=4623B8A14B5A39FAEE284A8022D12E15
+  K2Node_CallFunction (K2Node_CallFunction_4347)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetSystemLibrary'",MemberName="IsValid")
+    .NodePosX=-304
+    .NodePosY=-208
+    .NodeGuid=A30AA81440C8EAB13D4B33AEB64E9859
+  EdGraph (EdGraph_2)
+    .Schema="/Script/CoreUObject.Class'/Script/UMGEditor.WidgetGraphSchema'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_Tunnel'K2Node_Tunnel_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_Tunnel'K2Node_Tunnel_1'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CommutativeAssociativeBinaryOperator'K2Node_CommutativeAssociativeBinaryOperator_0'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .GraphGuid=EC8AA3854725CD7B5DB407BFE44502C4
+  EdGraph (EdGraph_3)
+    .Schema="/Script/CoreUObject.Class'/Script/UMGEditor.WidgetGraphSchema'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_Tunnel'K2Node_Tunnel_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_Tunnel'K2Node_Tunnel_1'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CommutativeAssociativeBinaryOperator'K2Node_CommutativeAssociativeBinaryOperator_0'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .GraphGuid=EC8AA3854725CD7B5DB407BFE44502C4
+  EdGraph (ExecuteUbergraph_UDS_Digital_Clock)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_14'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_Event'K2Node_Event_2'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_10'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_9'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_14'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_Select'K2Node_Select_1'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_6'"
+    .Nodes(7)="/Script/BlueprintGraph.K2Node_BreakStruct'K2Node_BreakStruct_0'"
+    .Nodes(8)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_15'"
+    .Nodes(9)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_13'"
+    .Nodes(10)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(11)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_11'"
+    .Nodes(12)="/Script/BlueprintGraph.K2Node_TemporaryVariable'K2Node_TemporaryVariable_3'"
+    .Nodes(13)="/Script/BlueprintGraph.K2Node_PureAssignmentStatement'K2Node_PureAssignmentStatement_2'"
+    .Nodes(14)="/Script/BlueprintGraph.K2Node_TemporaryVariable'K2Node_TemporaryVariable_2'"
+    .Nodes(15)="/Script/BlueprintGraph.K2Node_TunnelBoundary'K2Node_TunnelBoundary_3'"
+    .Nodes(16)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_12'"
+    .Nodes(17)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_8'"
+    .Nodes(18)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_7'"
+    .Nodes(19)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_10'"
+    .Nodes(20)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_9'"
+    .Nodes(21)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_5'"
+    .Nodes(22)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_8'"
+    .Nodes(23)="/Script/BlueprintGraph.K2Node_Select'K2Node_Select_0'"
+    .Nodes(24)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_4'"
+    .Nodes(25)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_7'"
+    .Nodes(26)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_6'"
+    .Nodes(27)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_5'"
+    .Nodes(28)="/Script/BlueprintGraph.K2Node_MakeStruct'K2Node_MakeStruct_1'"
+    .Nodes(29)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_3'"
+    .Nodes(30)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(31)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_3'"
+    .Nodes(32)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_2'"
+    .Nodes(33)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_1'"
+    .Nodes(34)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .Nodes(35)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_4'"
+    .Nodes(36)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(37)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_30'"
+    .Nodes(38)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_29'"
+    .Nodes(39)="/Script/BlueprintGraph.K2Node_Self'K2Node_Self_1'"
+    .Nodes(40)="/Script/BlueprintGraph.K2Node_Event'K2Node_Event_0'"
+    .Nodes(41)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(42)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_4347'"
+    .Nodes(43)="/Script/BlueprintGraph.K2Node_IfThenElse'K2Node_IfThenElse_15'"
+    .Nodes(44)="/Script/BlueprintGraph.K2Node_TunnelBoundary'K2Node_TunnelBoundary_2'"
+    .Nodes(45)="/Script/BlueprintGraph.K2Node_PureAssignmentStatement'K2Node_PureAssignmentStatement_3'"
+    .Nodes(46)="/Script/BlueprintGraph.K2Node_TunnelBoundary'K2Node_TunnelBoundary_0'"
+    .Nodes(47)="/Script/BlueprintGraph.K2Node_TunnelBoundary'K2Node_TunnelBoundary_1'"
+    .Nodes(48)="/Script/BlueprintGraph.K2Node_TemporaryVariable'K2Node_TemporaryVariable_0'"
+    .Nodes(49)="/Script/BlueprintGraph.K2Node_PureAssignmentStatement'K2Node_PureAssignmentStatement_0'"
+    .Nodes(50)="/Script/BlueprintGraph.K2Node_TemporaryVariable'K2Node_TemporaryVariable_1'"
+    .Nodes(51)="/Script/BlueprintGraph.K2Node_PureAssignmentStatement'K2Node_PureAssignmentStatement_1'"
+    .GraphGuid=F0D6271D48ADEC3F7DD061A33CA07184
+  K2Node_TunnelBoundary (K2Node_TunnelBoundary_0)
+    .NodePosX=288
+    .NodePosY=-272
+    .bIsIntermediateNode=True
+    .NodeGuid=8F933A2B279839A6B4A9F911478FFB64
+  K2Node_TunnelBoundary (K2Node_TunnelBoundary_1)
+    .NodePosX=288
+    .NodePosY=-272
+    .bIsIntermediateNode=True
+    .NodeGuid=F0F3022325F333C384FF25153937DC83
+  K2Node_TunnelBoundary (K2Node_TunnelBoundary_2)
+    .NodePosX=344
+    .NodePosY=352
+    .bIsIntermediateNode=True
+    .NodeGuid=4E27A9DAB23D3E54AC3141C8129B7054
+  K2Node_TunnelBoundary (K2Node_TunnelBoundary_3)
+    .NodePosX=-496
+    .NodePosY=-272
+    .bIsIntermediateNode=True
+    .NodeGuid=48E9AEDA99CE38DCAAA4C591162435C6
+  K2Node_TemporaryVariable (K2Node_TemporaryVariable_0)
+    .VariableType=(PinCategory="bool")
+    .NodePosX=-800
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=8A9F2E503610368D8886FBD99EC7C9F0
+  K2Node_PureAssignmentStatement (K2Node_PureAssignmentStatement_0)
+    .NodePosX=-560
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=E8723FC5ECED368DAC84C61D505FB1EC
+  K2Node_TemporaryVariable (K2Node_TemporaryVariable_1)
+    .VariableType=(PinCategory="byte",PinSubCategoryObject="/Script/CoreUObject.Enum'/Script/UMG.ESlateVisibility'")
+    .NodePosX=-320
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=116298CFB985355ABA1B7204A0D13167
+  K2Node_PureAssignmentStatement (K2Node_PureAssignmentStatement_1)
+    .NodePosX=-80
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=50BB2AA22A4A3A0CA628CC96B20369CA
+  K2Node_TemporaryVariable (K2Node_TemporaryVariable_2)
+    .VariableType=(PinCategory="byte",PinSubCategoryObject="/Script/CoreUObject.Enum'/Script/UMG.ESlateVisibility'")
+    .NodePosX=160
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=C9EDE829ED7B351D8BAE454956267745
+  K2Node_PureAssignmentStatement (K2Node_PureAssignmentStatement_2)
+    .NodePosX=400
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=DA35460E99D83202A44E91FECB3ADAFF
+  K2Node_TemporaryVariable (K2Node_TemporaryVariable_3)
+    .VariableType=(PinCategory="bool")
+    .NodePosX=640
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=D2C3FF15462737DFBD480B73F739C4B6
+  K2Node_PureAssignmentStatement (K2Node_PureAssignmentStatement_3)
+    .NodePosX=880
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=8C9880A680A03D77A2388A9DBEEDC7BE
+  EdGraph (Tick)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_SetVariableOnPersistentFrame'K2Node_SetVariableOnPersistentFrame_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=06B9FF4040D59385624BE9AAB655F167
+  K2Node_SetVariableOnPersistentFrame (K2Node_SetVariableOnPersistentFrame_0)
+    .NodePosX=-2000
+    .NodePosY=-1600
+    .bIsIntermediateNode=True
+    .NodeGuid=10D5DE5F5A7F310FA6B9E2779247E36E
+  EdGraph (PreConstruct)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_SetVariableOnPersistentFrame'K2Node_SetVariableOnPersistentFrame_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=5CF80B6B452DA72DB8010C8117DF0A71
+  EdGraph (Update Time_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/UMGEditor.WidgetGraphSchema'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_7'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_16'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_BreakStruct'K2Node_BreakStruct_0'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_3'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_CommutativeAssociativeBinaryOperator'K2Node_CommutativeAssociativeBinaryOperator_7'"
+    .Nodes(6)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_22'"
+    .Nodes(7)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_12'"
+    .Nodes(8)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_3'"
+    .Nodes(9)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_11'"
+    .Nodes(10)="/Script/BlueprintGraph.K2Node_CommutativeAssociativeBinaryOperator'K2Node_CommutativeAssociativeBinaryOperator_10'"
+    .Nodes(11)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_7'"
+    .Nodes(12)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_24'"
+    .Nodes(13)="/Script/BlueprintGraph.K2Node_CommutativeAssociativeBinaryOperator'K2Node_CommutativeAssociativeBinaryOperator_3'"
+    .Nodes(14)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_14'"
+    .Nodes(15)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_4'"
+    .Nodes(16)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_20'"
+    .Nodes(17)="/Script/BlueprintGraph.K2Node_CommutativeAssociativeBinaryOperator'K2Node_CommutativeAssociativeBinaryOperator_6'"
+    .Nodes(18)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_0'"
+    .Nodes(19)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_18'"
+    .Nodes(20)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_13'"
+    .Nodes(21)="/Script/BlueprintGraph.K2Node_CommutativeAssociativeBinaryOperator'K2Node_CommutativeAssociativeBinaryOperator_8'"
+    .Nodes(22)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_10'"
+    .Nodes(23)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_6'"
+    .Nodes(24)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_21'"
+    .Nodes(25)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_17'"
+    .Nodes(26)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_19'"
+    .Nodes(27)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_8'"
+    .Nodes(28)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_1'"
+    .Nodes(29)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(30)="/Script/BlueprintGraph.K2Node_CallMaterialParameterCollectionFunction'K2Node_CallMaterialParameterCollectionFunction_0'"
+    .Nodes(31)="/Script/BlueprintGraph.K2Node_VariableSet'K2Node_VariableSet_2'"
+    .Nodes(32)="/Script/BlueprintGraph.K2Node_MakeStruct'K2Node_MakeStruct_0'"
+    .Nodes(33)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_5'"
+    .Nodes(34)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .Nodes(35)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_1'"
+    .Nodes(36)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_2'"
+    .Nodes(37)="/Script/BlueprintGraph.K2Node_CommutativeAssociativeBinaryOperator'K2Node_CommutativeAssociativeBinaryOperator_0'"
+    .Nodes(38)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_5'"
+    .Nodes(39)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_8'"
+    .Nodes(40)="/Script/BlueprintGraph.K2Node_CommutativeAssociativeBinaryOperator'K2Node_CommutativeAssociativeBinaryOperator_2'"
+    .Nodes(41)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_9'"
+    .Nodes(42)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_4'"
+    .Nodes(43)="/Script/BlueprintGraph.K2Node_CommutativeAssociativeBinaryOperator'K2Node_CommutativeAssociativeBinaryOperator_4'"
+    .Nodes(44)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_6'"
+    .Nodes(45)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_23'"
+    .Nodes(46)="/Script/BlueprintGraph.K2Node_CommutativeAssociativeBinaryOperator'K2Node_CommutativeAssociativeBinaryOperator_9'"
+    .Nodes(47)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_15'"
+    .Nodes(48)="/Script/BlueprintGraph.K2Node_CommutativeAssociativeBinaryOperator'K2Node_CommutativeAssociativeBinaryOperator_5'"
+    .GraphGuid=A3A5180C4B8E443FE70F0A9F04ADDAED
+  K2Node_CommutativeAssociativeBinaryOperator (K2Node_CommutativeAssociativeBinaryOperator_4)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetStringLibrary'",MemberName="Concat_StrStr")
+    .NodePosX=-48
+    .NodePosY=32
+    .NodeGuid=17547CAD436BABF504CB9883DDD75710
+  K2Node_Tunnel (K2Node_Tunnel_3)
+    .OutputSourceNode="/Script/BlueprintGraph.K2Node_MacroInstance'UDS_Digital_Clock:Update Time_MERGED.K2Node_MacroInstance_1'"
+    .bCanHaveOutputs=True
+    .NodePosX=-580
+    .NodePosY=60
+    .NodeGuid=95B4BA7F4062192F716646A769B2422B
+  K2Node_Tunnel (K2Node_Tunnel_2)
+    .InputSinkNode="/Script/BlueprintGraph.K2Node_MacroInstance'UDS_Digital_Clock:Update Time_MERGED.K2Node_MacroInstance_1'"
+    .bCanHaveInputs=True
+    .NodePosX=400
+    .NodePosY=32
+    .NodeGuid=D90B78814E95C0AC64EA5F81273F36CA
+  K2Node_CallFunction (K2Node_CallFunction_17)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="SelectString")
+    .NodePosX=-336
+    .NodePosY=-48
+    .NodeGuid=77F639714891EFEE5F9CFC870BFFE143
+  K2Node_CommutativeAssociativeBinaryOperator (K2Node_CommutativeAssociativeBinaryOperator_5)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetStringLibrary'",MemberName="Concat_StrStr")
+    .NodePosX=-48
+    .NodePosY=32
+    .NodeGuid=17547CAD436BABF504CB9883DDD75710
+  K2Node_CallFunction (K2Node_CallFunction_15)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetStringLibrary'",MemberName="Right")
+    .NodePosX=136
+    .NodePosY=24
+    .NodeGuid=D40A1CDF4AACA677F7C350A7FB376CC1
+  K2Node_Tunnel (K2Node_Tunnel_5)
+    .OutputSourceNode="/Script/BlueprintGraph.K2Node_MacroInstance'UDS_Digital_Clock:Update Time_MERGED.K2Node_MacroInstance_4'"
+    .bCanHaveOutputs=True
+    .NodePosX=-580
+    .NodePosY=60
+    .NodeGuid=95B4BA7F4062192F716646A769B2422B
+  K2Node_Tunnel (K2Node_Tunnel_4)
+    .InputSinkNode="/Script/BlueprintGraph.K2Node_MacroInstance'UDS_Digital_Clock:Update Time_MERGED.K2Node_MacroInstance_4'"
+    .bCanHaveInputs=True
+    .NodePosX=400
+    .NodePosY=32
+    .NodeGuid=D90B78814E95C0AC64EA5F81273F36CA
+  K2Node_CallFunction (K2Node_CallFunction_24)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetMathLibrary'",MemberName="SelectString")
+    .NodePosX=-336
+    .NodePosY=-48
+    .NodeGuid=77F639714891EFEE5F9CFC870BFFE143
+  K2Node_CommutativeAssociativeBinaryOperator (K2Node_CommutativeAssociativeBinaryOperator_6)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetStringLibrary'",MemberName="Concat_StrStr")
+    .NodePosX=-48
+    .NodePosY=32
+    .NodeGuid=17547CAD436BABF504CB9883DDD75710
+  K2Node_CallFunction (K2Node_CallFunction_23)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetStringLibrary'",MemberName="Right")
+    .NodePosX=136
+    .NodePosY=24
+    .NodeGuid=D40A1CDF4AACA677F7C350A7FB376CC1
+  K2Node_VariableSet (K2Node_VariableSet_0)
+    .VariableReference=(MemberParent="/Script/UMG.WidgetBlueprintGeneratedClass'UDS_Digital_Clock_C'",MemberScope="Update Time",MemberName="Time of Day",MemberGuid=8E27E6444CF7387E4BD6E7897A267453)
+    .SelfContextInfo=NotSelfContext
+    .NodePosX=-1520
+    .NodePosY=-1600
+    .bIsIntermediateNode=True
+    .NodeGuid=0BA75786116E3A46A16FE89852456F3E
+  K2Node_CommutativeAssociativeBinaryOperator (K2Node_CommutativeAssociativeBinaryOperator_7)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetStringLibrary'",MemberName="Concat_StrStr")
+    .bIsIntermediateNode=True
+  K2Node_CommutativeAssociativeBinaryOperator (K2Node_CommutativeAssociativeBinaryOperator_8)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetStringLibrary'",MemberName="Concat_StrStr")
+    .bIsIntermediateNode=True
+  K2Node_CommutativeAssociativeBinaryOperator (K2Node_CommutativeAssociativeBinaryOperator_9)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetStringLibrary'",MemberName="Concat_StrStr")
+    .bIsIntermediateNode=True
+  K2Node_CommutativeAssociativeBinaryOperator (K2Node_CommutativeAssociativeBinaryOperator_10)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetStringLibrary'",MemberName="Concat_StrStr")
+    .bIsIntermediateNode=True

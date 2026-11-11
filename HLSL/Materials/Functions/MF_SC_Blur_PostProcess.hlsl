@@ -1,5 +1,0 @@
-#define TWO_PI (6.28318530717f)\r\n\r\nfloat2 UV = GetDefaultSceneTextureUV(Parameters, 14);\r\nfloat3 Color = float3(0, 0, 0);\r\n\r\nfloat gradientNoise = TWO_PI * InterleavedGradientNoise(ScreenSize);\r\n\r\nfor (int i = 0; i < Samples; i++)\r\n{\r\n\tfloat2 Offset = VogelDiskSample(i, Samples, gradientNoise);\r\n\tfloat2 ClampedOffset = ClampSceneTextureUV(UV + Offset * Distance, 14);\r\n\tfloat3 PixelColor = SceneTextureLookup(ClampedOffset, 14, false);\r\n\tColor += PixelColor;\r\n}\r\n\r\nreturn Color / Samples;
-
-// --- NEXT SHADER NODE BLOCK ---
-
-float2 UV = GetDefaultSceneTextureUV(Parameters, 14);\r\nfloat3 Color = float3(0, 0, 0);\r\n\r\nfor (int i = 0; i < Samples; i++)\r\n{\r\n\tfloat2 Offset = UV + PoissonDisk256[i] * Distance;\r\n\tfloat2 ClampedOffset = ClampSceneTextureUV(Offset, 14);\r\n\tfloat3 PixelColor = SceneTextureLookup(ClampedOffset, 14, false);\r\n\tColor += PixelColor;\r\n}\r\n\r\nreturn Color / Samples;

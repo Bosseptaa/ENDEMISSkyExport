@@ -1,0 +1,596 @@
+### /Game/UltraDynamicSky/Materials/Weather/Rainbow_Mat
+  Material (Rainbow_Mat)
+    .BlendMode=BLEND_Additive
+    .ShadingModel=MSM_Unlit
+    .ShadingModels=(ShadingModelField=1)
+    .TranslucencyPass=MTP_BeforeDOF
+    .EditorX=2213
+    .EditorY=72
+    .bCanMaskedBeAssumedOpaque=True
+    .bCastRayTracedShadows=False
+    .PixelDepthOffsetMode=PDOM_Legacy
+    .StateId=AB15C0B04F7BC500224A52B795D7A885
+    .ReferencedTextureGuids(0)=5ADA0646493CCD2F10E547A6FF1BE1EF
+    .EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'Rainbow_MatEditorOnlyData'"
+    .TextureStreamingDataVersion=1
+    .TextureStreamingData(0)=(SamplingScale=1.000000,UVChannelIndex=0,TextureName="Rainbow_gradient",TextureReference="/Game/ENDEMIS/Weather/WeatherFX/T_Rainbow_gradient.T_Rainbow_gradient")
+    .ReferencedDefaultTextures(0)="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_Rainbow_gradient.T_Rainbow_gradient'"
+    .ReferencedDefaultTextures(1)="/Script/Engine.VolumeTexture'/Game/ENDEMIS/Weather/Clouds/3D_Cells_64.3D_Cells_64'"
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+    .ParameterOverviewExpansion=(("-12Global", True))
+    .LightingGuid=44E694304E0F68B17E32C6B20FA81917
+  MaterialEditorOnlyData (Rainbow_MatEditorOnlyData)
+    EmissiveColor          <- MaterialExpressionMultiply
+    Opacity                <- MaterialExpressionMultiply
+    WorldPositionOffset    <- MaterialExpressionIf
+    ExpressionCollection   <- MaterialExpressionMultiply
+    .BaseColor=(UseConstant=True,Constant=(R=0.501961,G=0.501961,B=0.501961,A=1.000000))
+    .Metallic=(UseConstant=True)
+    .Specular=(UseConstant=True)
+    .Roughness=(UseConstant=True)
+    .Anisotropy=(UseConstant=True)
+    .Normal=(UseConstant=True)
+    .Tangent=(UseConstant=True)
+    .EmissiveColor=(Expression="/Script/Engine.MaterialExpressionMultiply'Rainbow_Mat:MaterialExpressionMultiply_5'")
+    .Opacity=(Expression="/Script/Engine.MaterialExpressionMultiply'Rainbow_Mat:MaterialExpressionMultiply_7'")
+    .OpacityMask=(UseConstant=True)
+    .WorldPositionOffset=(Expression="/Script/Engine.MaterialExpressionIf'Rainbow_Mat:MaterialExpressionIf_0'")
+    .Displacement=(UseConstant=True)
+    .SubsurfaceColor=(UseConstant=True)
+    .ClearCoat=(UseConstant=True)
+    .ClearCoatRoughness=(UseConstant=True)
+    .AmbientOcclusion=(UseConstant=True)
+    .Refraction=(UseConstant=True)
+    .CustomizedUVs(0)=(UseConstant=True)
+    .CustomizedUVs(1)=(UseConstant=True)
+    .CustomizedUVs(2)=(UseConstant=True)
+    .CustomizedUVs(3)=(UseConstant=True)
+    .CustomizedUVs(4)=(UseConstant=True)
+    .CustomizedUVs(5)=(UseConstant=True)
+    .CustomizedUVs(6)=(UseConstant=True)
+    .CustomizedUVs(7)=(UseConstant=True)
+    .PixelDepthOffset=(UseConstant=True)
+    .SurfaceThickness=(UseConstant=True)
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionMultiply'Rainbow_Mat:MaterialExpressionMultiply_5'","/Script/Engine.MaterialExpressionMultiply'Rainbow_Mat:MaterialExpressionMultiply_7'","/Script/Engine.MaterialExpressionIf'Rainbow_Mat:MaterialExpressionIf_0'","/Script/Engine.MaterialExpressionAdd'Rainbow_Mat:MaterialExpressionAdd_1'","/Script/Engine.MaterialExpressionMultiply'Rainbow_Mat:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionMultiply'Rainbow_Mat:MaterialExpressionMultiply_9'","/Script/Engine.MaterialExpressionMultiply'Rainbow_Mat:MaterialExpressionMultiply_2'","/Script/Engine.MaterialExpressionCameraPositionWS'Rainbow_Mat:MaterialExpressionCameraPositionWS_0'","/Script/Engine.MaterialExpressionSubtract'Rainbow_Mat:MaterialExpressionSubtract_0'","/Script/Engine.MaterialExpressionActorPositionWS'Rainbow_Mat:MaterialExpressionActorPositionWS_0'","/Script/Engine.MaterialExpressionTextureSample'Rainbow_Mat:MaterialExpressionTextureSample_0'","/Script/Engine.MaterialExpressionScalarParameter'Rainbow_Mat:MaterialExpressionScalarParameter_0'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Rainbow_Mat:MaterialExpressionMaterialFunctionCall_2'","/Script/Engine.MaterialExpressionStaticBool'Rainbow_Mat:MaterialExpressionStaticBool_0'","/Script/Engine.MaterialExpressionLinearInterpolate'Rainbow_Mat:MaterialExpressionLinearInterpolate_0'","/Script/Engine.MaterialExpressionScalarParameter'Rainbow_Mat:MaterialExpressionScalarParameter_1'","/Script/Engine.MaterialExpressionMultiply'Rainbow_Mat:MaterialExpressionMultiply_6'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Rainbow_Mat:MaterialExpressionMaterialFunctionCall_3'","/Script/Engine.MaterialExpressionScalarParameter'Rainbow_Mat:MaterialExpressionScalarParameter_3'","/Script/Engine.MaterialExpressionOneMinus'Rainbow_Mat:MaterialExpressionOneMinus_0'","/Script/Engine.MaterialExpressionLinearInterpolate'Rainbow_Mat:MaterialExpressionLinearInterpolate_1'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Rainbow_Mat:MaterialExpressionNamedRerouteDeclaration_0'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Rainbow_Mat:MaterialExpressionNamedRerouteUsage_0'","/Script/Engine.MaterialExpressionCollectionParameter'Rainbow_Mat:MaterialExpressionCollectionParameter_1'","/Script/Engine.MaterialExpressionComponentMask'Rainbow_Mat:MaterialExpressionComponentMask_1'","/Script/Engine.MaterialExpressionRotateAboutAxis'Rainbow_Mat:MaterialExpressionRotateAboutAxis_0'","/Script/Engine.MaterialExpressionCrossProduct'Rainbow_Mat:MaterialExpressionCrossProduct_0'","/Script/Engine.MaterialExpressionConstant3Vector'Rainbow_Mat:MaterialExpressionConstant3Vector_0'","/Script/Engine.MaterialExpressionDotProduct'Rainbow_Mat:MaterialExpressionDotProduct_0'","/Script/Engine.MaterialExpressionWorldPosition'Rainbow_Mat:MaterialExpressionWorldPosition_0'","/Script/Engine.MaterialExpressionNormalize'Rainbow_Mat:MaterialExpressionNormalize_2'","/Script/Engine.MaterialExpressionNormalize'Rainbow_Mat:MaterialExpressionNormalize_3'","/Script/Engine.MaterialExpressionMultiply'Rainbow_Mat:MaterialExpressionMultiply_14'","/Script/Engine.MaterialExpressionMultiply'Rainbow_Mat:MaterialExpressionMultiply_15'","/Script/Engine.MaterialExpressionArccosineFast'Rainbow_Mat:MaterialExpressionArccosineFast_0'","/Script/Engine.MaterialExpressionActorPositionWS'Rainbow_Mat:MaterialExpressionActorPositionWS_1'","/Script/Engine.MaterialExpressionCollectionParameter'Rainbow_Mat:MaterialExpressionCollectionParameter_2'","/Script/Engine.MaterialExpressionSubtract'Rainbow_Mat:MaterialExpressionSubtract_2'","/Script/Engine.MaterialExpressionMultiply'Rainbow_Mat:MaterialExpressionMultiply_18'","/Script/Engine.MaterialExpressionSaturate'Rainbow_Mat:MaterialExpressionSaturate_2'","/Script/Engine.MaterialExpressionOneMinus'Rainbow_Mat:MaterialExpressionOneMinus_1'","/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Rainbow_Mat:MaterialExpressionNamedRerouteDeclaration_1'","/Script/Engine.MaterialExpressionNamedRerouteUsage'Rainbow_Mat:MaterialExpressionNamedRerouteUsage_1'","/Script/Engine.MaterialExpressionWorldPosition'Rainbow_Mat:MaterialExpressionWorldPosition_1'","/Script/Engine.MaterialExpressionMultiply'Rainbow_Mat:MaterialExpressionMultiply_1'","/Script/Engine.MaterialExpressionDepthFade'Rainbow_Mat:MaterialExpressionDepthFade_0'","/Script/Engine.MaterialExpressionCollectionParameter'Rainbow_Mat:MaterialExpressionCollectionParameter_3'","/Script/Engine.MaterialExpressionCollectionParameter'Rainbow_Mat:MaterialExpressionCollectionParameter_0'","/Script/Engine.MaterialExpressionComponentMask'Rainbow_Mat:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionMultiply'Rainbow_Mat:MaterialExpressionMultiply_3'","/Script/Engine.MaterialExpressionSaturate'Rainbow_Mat:MaterialExpressionSaturate_0'","/Script/Engine.MaterialExpressionMultiply'Rainbow_Mat:MaterialExpressionMultiply_4'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Rainbow_Mat:MaterialExpressionMaterialFunctionCall_0'","/Script/Engine.MaterialExpressionStaticBool'Rainbow_Mat:MaterialExpressionStaticBool_1'","/Script/Engine.MaterialExpressionLinearInterpolate'Rainbow_Mat:MaterialExpressionLinearInterpolate_2'","/Script/Engine.MaterialExpressionAdd'Rainbow_Mat:MaterialExpressionAdd_0'","/Script/Engine.MaterialExpressionScalarParameter'Rainbow_Mat:MaterialExpressionScalarParameter_2'","/Script/Engine.MaterialExpressionSaturate'Rainbow_Mat:MaterialExpressionSaturate_1'"),EditorComments=("/Script/Engine.MaterialExpressionComment'Rainbow_Mat:MaterialExpressionComment_0'","/Script/Engine.MaterialExpressionComment'Rainbow_Mat:MaterialExpressionComment_1'","/Script/Engine.MaterialExpressionComment'Rainbow_Mat:MaterialExpressionComment_2'","/Script/Engine.MaterialExpressionComment'Rainbow_Mat:MaterialExpressionComment_3'","/Script/Engine.MaterialExpressionComment'Rainbow_Mat:MaterialExpressionComment_4'","/Script/Engine.MaterialExpressionComment'Rainbow_Mat:MaterialExpressionComment_5'"))
+    .ParameterGroupData(0)=(GroupName="None")
+  MaterialExpressionActorPositionWS (MaterialExpressionActorPositionWS_0)
+    .MaterialExpressionEditorX=952
+    .MaterialExpressionEditorY=972
+    .MaterialExpressionGuid=0271B3EE487B6C57DE7A54A17BFD504C
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionActorPositionWS (MaterialExpressionActorPositionWS_1)
+    .MaterialExpressionEditorX=1036
+    .MaterialExpressionEditorY=1348
+    .MaterialExpressionGuid=0271B3EE487B6C57DE7A54A17BFD504C
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionAdd (MaterialExpressionAdd_0)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Rainbow_Mat:MaterialExpressionScalarParameter_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Rainbow_Mat:MaterialExpressionMaterialFunctionCall_0'",OutputIndex=1)
+    .MaterialExpressionEditorX=1320
+    .MaterialExpressionEditorY=540
+    .MaterialExpressionGuid=0ED9D2FC4ADC9AFF2A61F899B536AFED
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionAdd (MaterialExpressionAdd_1)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionRotateAboutAxis
+    .B=(Expression="/Script/Engine.MaterialExpressionRotateAboutAxis'Rainbow_Mat:MaterialExpressionRotateAboutAxis_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Rainbow_Mat:MaterialExpressionMultiply_0'")
+    .MaterialExpressionEditorX=1611
+    .MaterialExpressionEditorY=988
+    .MaterialExpressionGuid=BF41DCDD46408FFA7C1F57929B48C015
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionArccosineFast (MaterialExpressionArccosineFast_0)
+    Input                  <- MaterialExpressionDotProduct
+    .Input=(Expression="/Script/Engine.MaterialExpressionDotProduct'Rainbow_Mat:MaterialExpressionDotProduct_0'")
+    .MaterialExpressionEditorX=637
+    .MaterialExpressionEditorY=1442
+    .MaterialExpressionGuid=AF42069241ABA5B7D6C601A70A4B9489
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionCameraPositionWS (MaterialExpressionCameraPositionWS_0)
+    .MaterialExpressionEditorX=997
+    .MaterialExpressionEditorY=1060
+    .MaterialExpressionGuid=823050BC4BEA668F5FB6B2A1D715F266
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_0)
+    .ParameterName="Sun Vector"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+    .ParameterId=618AEFCB40106BAF34FCDD876EDC3DCE
+    .MaterialExpressionEditorX=392
+    .MaterialExpressionEditorY=-180
+    .MaterialExpressionGuid=E7CA257C4A14144E23878BA409D46501
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_1)
+    .ParameterName="Sun Vector"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+    .ParameterId=618AEFCB40106BAF34FCDD876EDC3DCE
+    .MaterialExpressionEditorX=-67
+    .MaterialExpressionEditorY=1266
+    .MaterialExpressionGuid=6621DB5B4EDF134360AE1B9B3FA612B8
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_2)
+    .ParameterName="Cloud Density"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Material_Functions/UDS_VolumetricClouds_MPC.UDS_VolumetricClouds_MPC'"
+    .ParameterId=208CA0B3440F6D9179CADF8941576281
+    .MaterialExpressionEditorX=884
+    .MaterialExpressionEditorY=348
+    .MaterialExpressionGuid=21333F9E44C1F4A9B64B399A360C84EE
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_3)
+    .ParameterName="Water Level"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+    .ParameterId=A4B31C7C48DFFBE15C43DE868540E11B
+    .MaterialExpressionEditorX=-600
+    .MaterialExpressionEditorY=588
+    .MaterialExpressionGuid=6621DB5B4EDF134360AE1B9B3FA612B8
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+    .bCollapsed=True
+  MaterialExpressionComment (MaterialExpressionComment_0)
+    .SizeX=1272
+    .SizeY=676
+    .Text="Color"
+    .CommentColor=(R=0.507632,G=0.444683,B=1.000000,A=1.000000)
+    .MaterialExpressionEditorX=288
+    .MaterialExpressionEditorY=-648
+    .MaterialExpressionGuid=1A3CFD174C8C96D00155F88E4354D89D
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionComment (MaterialExpressionComment_1)
+    .SizeX=568
+    .SizeY=284
+    .Text="Always render in the same position relative to the camera"
+    .CommentColor=(R=1.000000,G=0.742701,B=0.280948,A=1.000000)
+    .MaterialExpressionEditorX=924
+    .MaterialExpressionEditorY=896
+    .MaterialExpressionGuid=8567C681419630CC55E3749D239DA7EF
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionComment (MaterialExpressionComment_2)
+    .SizeX=556
+    .SizeY=304
+    .Text="Mask with Scene Depth"
+    .CommentColor=(R=0.333008,G=1.000000,B=0.429275,A=1.000000)
+    .MaterialExpressionEditorX=-1377
+    .MaterialExpressionEditorY=182
+    .MaterialExpressionGuid=802B0FDC4860B53F5355CCA549B4F4B8
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionComment (MaterialExpressionComment_3)
+    .SizeX=1276
+    .SizeY=640
+    .Text="Mask Above Clouds / Below Water"
+    .CommentColor=(R=1.000000,G=0.641310,B=0.276435,A=1.000000)
+    .MaterialExpressionEditorX=-790
+    .MaterialExpressionEditorY=178
+    .MaterialExpressionGuid=AD7F2BC749A5AFAFE16676B6B260CED7
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionComment (MaterialExpressionComment_4)
+    .SizeX=1180
+    .SizeY=564
+    .Text="Mask with Cloud Density"
+    .CommentColor=(R=1.000000,G=0.594820,B=0.716165,A=1.000000)
+    .MaterialExpressionEditorX=754
+    .MaterialExpressionEditorY=178
+    .MaterialExpressionGuid=B66AF37849FA733A9F78969C13E22C4C
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionComment (MaterialExpressionComment_5)
+    .SizeX=1760
+    .SizeY=524
+    .Text="Rotate Mesh with Sun Vector"
+    .CommentColor=(R=0.428951,G=0.370675,B=1.000000,A=1.000000)
+    .MaterialExpressionEditorX=-117
+    .MaterialExpressionEditorY=1216
+    .MaterialExpressionGuid=478124BC4BD941BC80725687DC9D9613
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionCollectionParameter
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Rainbow_Mat:MaterialExpressionCollectionParameter_0'")
+    .MaterialExpressionEditorX=640
+    .MaterialExpressionEditorY=-156
+    .MaterialExpressionGuid=9DEE31A3462C5CDDB9AA75BE3182B55A
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_1)
+    Input                  <- MaterialExpressionCollectionParameter
+    .R=True
+    .G=True
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Rainbow_Mat:MaterialExpressionCollectionParameter_1'")
+    .MaterialExpressionEditorX=217
+    .MaterialExpressionEditorY=1294
+    .MaterialExpressionGuid=C70CB51D4692BC0BF4003EB5090BD4F8
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionConstant3Vector (MaterialExpressionConstant3Vector_0)
+    .Constant=(R=1.000000,G=0.000000,B=0.000000,A=0.000000)
+    .MaterialExpressionEditorX=305
+    .MaterialExpressionEditorY=1442
+    .MaterialExpressionGuid=17555BA74AF7E6EA4C57408ADA9150BE
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionCrossProduct (MaterialExpressionCrossProduct_0)
+    A                      <- MaterialExpressionNormalize
+    B                      <- MaterialExpressionConstant3Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant3Vector'Rainbow_Mat:MaterialExpressionConstant3Vector_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionNormalize'Rainbow_Mat:MaterialExpressionNormalize_2'")
+    .MaterialExpressionEditorX=597
+    .MaterialExpressionEditorY=1294
+    .MaterialExpressionGuid=CAB09FCD4BFF5FC3EA8F558F986D8A53
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionDepthFade (MaterialExpressionDepthFade_0)
+    .FadeDistanceDefault=216942.218750
+    .MaterialExpressionEditorX=-1280
+    .MaterialExpressionEditorY=304
+    .MaterialExpressionGuid=60EC1122442D28F53482F9A619748DF0
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionDotProduct (MaterialExpressionDotProduct_0)
+    A                      <- MaterialExpressionConstant3Vector
+    B                      <- MaterialExpressionNormalize
+    .B=(Expression="/Script/Engine.MaterialExpressionNormalize'Rainbow_Mat:MaterialExpressionNormalize_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionConstant3Vector'Rainbow_Mat:MaterialExpressionConstant3Vector_0'")
+    .MaterialExpressionEditorX=533
+    .MaterialExpressionEditorY=1442
+    .MaterialExpressionGuid=92CDCE6547725326DE87B0A217168B64
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionIf (MaterialExpressionIf_0)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    AGreaterThanB          <- MaterialExpressionAdd
+    AEqualsB               <- MaterialExpressionMultiply
+    ALessThanB             <- MaterialExpressionMultiply
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Rainbow_Mat:MaterialExpressionNamedRerouteUsage_1'")
+    .AGreaterThanB=(Expression="/Script/Engine.MaterialExpressionAdd'Rainbow_Mat:MaterialExpressionAdd_1'")
+    .AEqualsB=(Expression="/Script/Engine.MaterialExpressionMultiply'Rainbow_Mat:MaterialExpressionMultiply_1'")
+    .ALessThanB=(Expression="/Script/Engine.MaterialExpressionMultiply'Rainbow_Mat:MaterialExpressionMultiply_1'")
+    .MaterialExpressionEditorX=2052
+    .MaterialExpressionEditorY=924
+    .MaterialExpressionGuid=5A1CACEF4A307DFE21BD73893FB9EAC5
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_0)
+    B                      <- MaterialExpressionMaterialFunctionCall
+    Alpha                  <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Rainbow_Mat:MaterialExpressionMaterialFunctionCall_2'",OutputIndex=2)
+    .A=(OutputIndex=2)
+    .ConstA=1.000000
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Rainbow_Mat:MaterialExpressionScalarParameter_1'")
+    .MaterialExpressionEditorX=-28
+    .MaterialExpressionEditorY=344
+    .MaterialExpressionGuid=C98CDB764FAD092F939F0C80FBAB2AFF
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_1)
+    B                      <- MaterialExpressionOneMinus
+    Alpha                  <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionOneMinus'Rainbow_Mat:MaterialExpressionOneMinus_0'")
+    .A=(OutputIndex=2)
+    .ConstA=1.000000
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Rainbow_Mat:MaterialExpressionScalarParameter_3'")
+    .MaterialExpressionEditorX=68
+    .MaterialExpressionEditorY=592
+    .MaterialExpressionGuid=C98CDB764FAD092F939F0C80FBAB2AFF
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_2)
+    B                      <- MaterialExpressionOneMinus
+    Alpha                  <- MaterialExpressionSaturate
+    .B=(Expression="/Script/Engine.MaterialExpressionOneMinus'Rainbow_Mat:MaterialExpressionOneMinus_1'")
+    .ConstA=1.000000
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionSaturate'Rainbow_Mat:MaterialExpressionSaturate_1'")
+    .MaterialExpressionEditorX=1612
+    .MaterialExpressionEditorY=369
+    .MaterialExpressionGuid=0CC76A6A4BEDA4EDBA1E7A879D79E7BC
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_0)
+    FunctionInputs(0)      <- MaterialExpressionStaticBool
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Weather/Cloud_Altitude_Mask.Cloud_Altitude_Mask'"
+    .FunctionInputs(0)=(ExpressionInputId=BB9870694BEF03C828A4F081F443256D,Input=(Expression="/Script/Engine.MaterialExpressionStaticBool'Rainbow_Mat:MaterialExpressionStaticBool_1'",InputName="Use 3D Noise"))
+    .FunctionInputs(1)=(ExpressionInputId=9B89FAA845AF5AE0FCCDA8B862A19776,Input=(OutputIndex=-1,InputName="Mask Height"))
+    .FunctionOutputs(0)=(ExpressionOutputId=DAE960F144FA0FEB145A918E86889CBA,Output=(OutputName="Glow"))
+    .FunctionOutputs(1)=(ExpressionOutputId=8B3E30724ED623931D33F99AA56B69BE,Output=(OutputName="CameraMask"))
+    .FunctionOutputs(2)=(ExpressionOutputId=EE35806C429635943C4256BF2223EAD5,Output=(OutputName="Opacity"))
+    .MaterialExpressionEditorX=1024
+    .MaterialExpressionEditorY=512
+    .MaterialExpressionGuid=E525DB054085539A27C7728A68F59EFE
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+    .Outputs(0)=(OutputName="Glow")
+    .Outputs(1)=(OutputName="CameraMask")
+    .Outputs(2)=(OutputName="Opacity")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_2)
+    FunctionInputs(0)      <- MaterialExpressionStaticBool
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Weather/Cloud_Altitude_Mask.Cloud_Altitude_Mask'"
+    .FunctionInputs(0)=(ExpressionInputId=BB9870694BEF03C828A4F081F443256D,Input=(Expression="/Script/Engine.MaterialExpressionStaticBool'Rainbow_Mat:MaterialExpressionStaticBool_0'",InputName="Use 3D Noise"))
+    .FunctionInputs(1)=(ExpressionInputId=9B89FAA845AF5AE0FCCDA8B862A19776,Input=(OutputIndex=-1,InputName="Mask Height"))
+    .FunctionOutputs(0)=(ExpressionOutputId=DAE960F144FA0FEB145A918E86889CBA,Output=(OutputName="Glow"))
+    .FunctionOutputs(1)=(ExpressionOutputId=8B3E30724ED623931D33F99AA56B69BE,Output=(OutputName="CameraMask"))
+    .FunctionOutputs(2)=(ExpressionOutputId=EE35806C429635943C4256BF2223EAD5,Output=(OutputName="Opacity"))
+    .MaterialExpressionEditorX=-336
+    .MaterialExpressionEditorY=324
+    .MaterialExpressionGuid=86EE5D5B4D5CDA99CFF3A48872EAAB26
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+    .Outputs(0)=(OutputName="Glow")
+    .Outputs(1)=(OutputName="CameraMask")
+    .Outputs(2)=(OutputName="Opacity")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_3)
+    FunctionInputs(0)      <- MaterialExpressionStaticBool
+    FunctionInputs(1)      <- MaterialExpressionCollectionParameter
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Weather/Cloud_Altitude_Mask.Cloud_Altitude_Mask'"
+    .FunctionInputs(0)=(ExpressionInputId=BB9870694BEF03C828A4F081F443256D,Input=(Expression="/Script/Engine.MaterialExpressionStaticBool'Rainbow_Mat:MaterialExpressionStaticBool_0'",InputName="Use 3D Noise"))
+    .FunctionInputs(1)=(ExpressionInputId=9B89FAA845AF5AE0FCCDA8B862A19776,Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Rainbow_Mat:MaterialExpressionCollectionParameter_3'",InputName="Mask Height"))
+    .FunctionOutputs(0)=(ExpressionOutputId=DAE960F144FA0FEB145A918E86889CBA,Output=(OutputName="Glow"))
+    .FunctionOutputs(1)=(ExpressionOutputId=8B3E30724ED623931D33F99AA56B69BE,Output=(OutputName="CameraMask"))
+    .FunctionOutputs(2)=(ExpressionOutputId=EE35806C429635943C4256BF2223EAD5,Output=(OutputName="Opacity"))
+    .MaterialExpressionEditorX=-336
+    .MaterialExpressionEditorY=544
+    .MaterialExpressionGuid=86EE5D5B4D5CDA99CFF3A48872EAAB26
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+    .Outputs(0)=(OutputName="Glow")
+    .Outputs(1)=(OutputName="CameraMask")
+    .Outputs(2)=(OutputName="Opacity")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionSubtract
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'Rainbow_Mat:MaterialExpressionSubtract_0'")
+    .ConstB=-1.000000
+    .MaterialExpressionEditorX=1321
+    .MaterialExpressionEditorY=988
+    .MaterialExpressionGuid=49F81524469C8BB62745E9AEB5A8B77A
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionWorldPosition
+    .A=(Expression="/Script/Engine.MaterialExpressionWorldPosition'Rainbow_Mat:MaterialExpressionWorldPosition_1'")
+    .ConstB=-1.000000
+    .MaterialExpressionEditorX=1880
+    .MaterialExpressionEditorY=1096
+    .MaterialExpressionGuid=AA0B4123461A936C0CBEBFBA940CCD75
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_14)
+    A                      <- MaterialExpressionArccosineFast
+    .A=(Expression="/Script/Engine.MaterialExpressionArccosineFast'Rainbow_Mat:MaterialExpressionArccosineFast_0'")
+    .ConstB=0.159236
+    .MaterialExpressionEditorX=793
+    .MaterialExpressionEditorY=1442
+    .MaterialExpressionGuid=1B0835A24BE7457D3C09CC84F923A7A7
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_15)
+    A                      <- MaterialExpressionNormalize
+    .A=(Expression="/Script/Engine.MaterialExpressionNormalize'Rainbow_Mat:MaterialExpressionNormalize_3'")
+    .ConstB=-1.000000
+    .MaterialExpressionEditorX=857
+    .MaterialExpressionEditorY=1294
+    .MaterialExpressionGuid=3D01B62F4010DC0D494999A3877DD855
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_18)
+    A                      <- MaterialExpressionSubtract
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'Rainbow_Mat:MaterialExpressionSubtract_2'")
+    .ConstB=2.000000
+    .MaterialExpressionEditorX=1252
+    .MaterialExpressionEditorY=376
+    .MaterialExpressionGuid=62A94BBC42FFA2AB515652938365852D
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_2)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    B                      <- MaterialExpressionDepthFade
+    .B=(Expression="/Script/Engine.MaterialExpressionDepthFade'Rainbow_Mat:MaterialExpressionDepthFade_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'Rainbow_Mat:MaterialExpressionNamedRerouteUsage_0'")
+    .MaterialExpressionEditorX=-966
+    .MaterialExpressionEditorY=234
+    .MaterialExpressionGuid=AF27C0B547A4EB38DF7E1E83B1B06026
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_3)
+    A                      <- MaterialExpressionComponentMask
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'Rainbow_Mat:MaterialExpressionComponentMask_0'")
+    .ConstB=-3.000000
+    .MaterialExpressionEditorX=780
+    .MaterialExpressionEditorY=-156
+    .MaterialExpressionGuid=6EFC95BF4E3EC5C72723CA8CDEA91D8B
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_4)
+    A                      <- MaterialExpressionScalarParameter
+    B                      <- MaterialExpressionSaturate
+    .B=(Expression="/Script/Engine.MaterialExpressionSaturate'Rainbow_Mat:MaterialExpressionSaturate_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionScalarParameter'Rainbow_Mat:MaterialExpressionScalarParameter_0'")
+    .MaterialExpressionEditorX=1104
+    .MaterialExpressionEditorY=-252
+    .MaterialExpressionGuid=8FF1942449AF35149D9800A2E061C9B5
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_5)
+    A                      <- MaterialExpressionTextureSample
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Rainbow_Mat:MaterialExpressionMultiply_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'Rainbow_Mat:MaterialExpressionTextureSample_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .MaterialExpressionEditorX=1319
+    .MaterialExpressionEditorY=-566
+    .MaterialExpressionGuid=E3A1DB3843D07ADCFEF339BCEFD19B04
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_6)
+    A                      <- MaterialExpressionLinearInterpolate
+    B                      <- MaterialExpressionLinearInterpolate
+    .B=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Rainbow_Mat:MaterialExpressionLinearInterpolate_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Rainbow_Mat:MaterialExpressionLinearInterpolate_0'")
+    .MaterialExpressionEditorX=184
+    .MaterialExpressionEditorY=344
+    .MaterialExpressionGuid=1B2B7EEB4E9C01A9444DA89F8BBC5B25
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_7)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionLinearInterpolate
+    .B=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'Rainbow_Mat:MaterialExpressionLinearInterpolate_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Rainbow_Mat:MaterialExpressionMultiply_9'")
+    .MaterialExpressionEditorX=1776
+    .MaterialExpressionEditorY=236
+    .MaterialExpressionGuid=6350E784472E04306313A7B60E56BBF3
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_9)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'Rainbow_Mat:MaterialExpressionMultiply_6'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Rainbow_Mat:MaterialExpressionMultiply_2'")
+    .MaterialExpressionEditorX=344
+    .MaterialExpressionEditorY=236
+    .MaterialExpressionGuid=C31717A1467C3BD23914B98D89D1B1E7
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_0)
+    Input                  <- MaterialExpressionTextureSample
+    .Input=(Expression="/Script/Engine.MaterialExpressionTextureSample'Rainbow_Mat:MaterialExpressionTextureSample_0'",OutputIndex=4,Mask=1,MaskA=1)
+    .Name="Texture Alpha"
+    .NodeColor=(R=0.453125,G=0.000000,B=1.000000,A=1.000000)
+    .VariableGuid=405249844C96028ABD8FFA9EC2809C3F
+    .MaterialExpressionEditorX=1019
+    .MaterialExpressionEditorY=-458
+    .MaterialExpressionGuid=207521FE41849840B9D2E7854E44A6BE
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_1)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Rainbow_Mat:MaterialExpressionMultiply_4'")
+    .Name="Mask Value"
+    .NodeColor=(R=0.218750,G=0.000000,B=1.000000,A=1.000000)
+    .VariableGuid=15A43B694F71A5C317BCC880743377D0
+    .MaterialExpressionEditorX=1308
+    .MaterialExpressionEditorY=-224
+    .MaterialExpressionGuid=8A2B5A2043712FDA90084099CCF9B21B
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_0)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Rainbow_Mat:MaterialExpressionNamedRerouteDeclaration_0'"
+    .DeclarationGuid=405249844C96028ABD8FFA9EC2809C3F
+    .MaterialExpressionEditorX=-1178
+    .MaterialExpressionEditorY=234
+    .MaterialExpressionGuid=BCA94C88496CD5568E6324849C8B9CBE
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_1)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+    .Declaration="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'Rainbow_Mat:MaterialExpressionNamedRerouteDeclaration_1'"
+    .DeclarationGuid=15A43B694F71A5C317BCC880743377D0
+    .MaterialExpressionEditorX=1912
+    .MaterialExpressionEditorY=924
+    .MaterialExpressionGuid=6491E98F4E915573CE76668BE8E8485F
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionNormalize (MaterialExpressionNormalize_2)
+    VectorInput            <- MaterialExpressionComponentMask
+    .VectorInput=(Expression="/Script/Engine.MaterialExpressionComponentMask'Rainbow_Mat:MaterialExpressionComponentMask_1'")
+    .MaterialExpressionEditorX=369
+    .MaterialExpressionEditorY=1294
+    .MaterialExpressionGuid=CA1FAAA149F9968F63FFBBB67BECA548
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionNormalize (MaterialExpressionNormalize_3)
+    VectorInput            <- MaterialExpressionCrossProduct
+    .VectorInput=(Expression="/Script/Engine.MaterialExpressionCrossProduct'Rainbow_Mat:MaterialExpressionCrossProduct_0'")
+    .MaterialExpressionEditorX=709
+    .MaterialExpressionEditorY=1294
+    .MaterialExpressionGuid=3DA87AC04B174D387324B4B0F9429CD5
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_0)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+    .Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Rainbow_Mat:MaterialExpressionMaterialFunctionCall_3'",OutputIndex=2)
+    .MaterialExpressionEditorX=-64
+    .MaterialExpressionEditorY=600
+    .MaterialExpressionGuid=CE8897DD4F9C4C8452FFD5B6141E0747
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_1)
+    Input                  <- MaterialExpressionSaturate
+    .Input=(Expression="/Script/Engine.MaterialExpressionSaturate'Rainbow_Mat:MaterialExpressionSaturate_2'")
+    .MaterialExpressionEditorX=1476
+    .MaterialExpressionEditorY=372
+    .MaterialExpressionGuid=F93385F74FE544EE711629B038EB05B3
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionRotateAboutAxis (MaterialExpressionRotateAboutAxis_0)
+    NormalizedRotationAxis <- MaterialExpressionMultiply
+    RotationAngle          <- MaterialExpressionMultiply
+    PivotPoint             <- MaterialExpressionActorPositionWS
+    Position               <- MaterialExpressionWorldPosition
+    .NormalizedRotationAxis=(Expression="/Script/Engine.MaterialExpressionMultiply'Rainbow_Mat:MaterialExpressionMultiply_15'")
+    .RotationAngle=(Expression="/Script/Engine.MaterialExpressionMultiply'Rainbow_Mat:MaterialExpressionMultiply_14'")
+    .PivotPoint=(Expression="/Script/Engine.MaterialExpressionActorPositionWS'Rainbow_Mat:MaterialExpressionActorPositionWS_1'")
+    .Position=(Expression="/Script/Engine.MaterialExpressionWorldPosition'Rainbow_Mat:MaterialExpressionWorldPosition_0'")
+    .MaterialExpressionEditorX=1289
+    .MaterialExpressionEditorY=1294
+    .MaterialExpressionGuid=D3738F504306DEADAF9CF6A3C57D44B2
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_0)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Rainbow_Mat:MaterialExpressionMultiply_3'")
+    .MaterialExpressionEditorX=920
+    .MaterialExpressionEditorY=-156
+    .MaterialExpressionGuid=381FCCB74212C5F074D779BAA66BA021
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_1)
+    Input                  <- MaterialExpressionAdd
+    .Input=(Expression="/Script/Engine.MaterialExpressionAdd'Rainbow_Mat:MaterialExpressionAdd_0'")
+    .MaterialExpressionEditorX=1472
+    .MaterialExpressionEditorY=540
+    .MaterialExpressionGuid=C8A6DE1B42502D6C8BD4A7A2EF1975C2
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_2)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Rainbow_Mat:MaterialExpressionMultiply_18'")
+    .MaterialExpressionEditorX=1372
+    .MaterialExpressionEditorY=376
+    .MaterialExpressionGuid=CC2E72D2481A9D2D78A2C68F094D55A2
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_0)
+    .ParameterName="Intensity"
+    .DefaultValue=0.100000
+    .ExpressionGUID=65FB2388405816BC6F3E4E8BCED457B3
+    .MaterialExpressionEditorX=780
+    .MaterialExpressionEditorY=-272
+    .MaterialExpressionGuid=F4E4CCD24E3856F7D598CC89178E6881
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_1)
+    .ParameterName="Mask Above Clouds"
+    .ExpressionGUID=61D00D9D44DCF4E57AC0AABBA847B31C
+    .MaterialExpressionEditorX=-280
+    .MaterialExpressionEditorY=448
+    .MaterialExpressionGuid=279A959C4A200059680E3FA99B73B0AF
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_2)
+    .ParameterName="2D Clouds"
+    .ExpressionGUID=5B6A2D1A4D27AACD013DDD84D8D93B9F
+    .MaterialExpressionEditorX=1052
+    .MaterialExpressionEditorY=644
+    .MaterialExpressionGuid=3A4819714D584C4D9E34EE946F94C19F
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_3)
+    .ParameterName="Mask Below Water"
+    .ExpressionGUID=4421D0FB4E7159873DD4C384A742D44D
+    .MaterialExpressionEditorX=-148
+    .MaterialExpressionEditorY=692
+    .MaterialExpressionGuid=76A5B31A4D244ED95331E3A624F95A39
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionStaticBool (MaterialExpressionStaticBool_0)
+    .MaterialExpressionEditorX=-564
+    .MaterialExpressionEditorY=308
+    .MaterialExpressionGuid=196FE5464EDA265F053754944333EEAB
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionStaticBool (MaterialExpressionStaticBool_1)
+    .MaterialExpressionEditorX=832
+    .MaterialExpressionEditorY=496
+    .MaterialExpressionGuid=F1AF7F174536F4EF4EA29FB6D41E99D7
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_0)
+    A                      <- MaterialExpressionActorPositionWS
+    B                      <- MaterialExpressionCameraPositionWS
+    .B=(Expression="/Script/Engine.MaterialExpressionCameraPositionWS'Rainbow_Mat:MaterialExpressionCameraPositionWS_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionActorPositionWS'Rainbow_Mat:MaterialExpressionActorPositionWS_0'")
+    .MaterialExpressionEditorX=1169
+    .MaterialExpressionEditorY=988
+    .MaterialExpressionGuid=4203159248BAD42E4DBA8F8BFB0EDF6C
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_2)
+    A                      <- MaterialExpressionCollectionParameter
+    .A=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Rainbow_Mat:MaterialExpressionCollectionParameter_2'")
+    .ConstB=1.400000
+    .MaterialExpressionEditorX=1108
+    .MaterialExpressionEditorY=376
+    .MaterialExpressionGuid=B16D8D6941BE9C02EC5C67BA5CE76042
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_0)
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_Rainbow_gradient.T_Rainbow_gradient'"
+    .MaterialExpressionEditorX=787
+    .MaterialExpressionEditorY=-566
+    .MaterialExpressionGuid=0666D61B4B56B5DC148AB6AC405DF983
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionWorldPosition (MaterialExpressionWorldPosition_0)
+    .MaterialExpressionEditorX=1040
+    .MaterialExpressionEditorY=1452
+    .MaterialExpressionGuid=C60CAC5B4332596DA5FAE1B7652F3966
+    .Material="/Script/Engine.Material'Rainbow_Mat'"
+  MaterialExpressionWorldPosition (MaterialExpressionWorldPosition_1)
+    .MaterialExpressionEditorX=1684
+    .MaterialExpressionEditorY=1084
+    .MaterialExpressionGuid=C60CAC5B4332596DA5FAE1B7652F3966
+    .Material="/Script/Engine.Material'Rainbow_Mat'"

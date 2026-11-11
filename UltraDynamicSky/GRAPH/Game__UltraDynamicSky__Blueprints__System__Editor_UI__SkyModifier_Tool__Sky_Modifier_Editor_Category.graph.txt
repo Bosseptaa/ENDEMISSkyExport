@@ -1,0 +1,126 @@
+### /Game/UltraDynamicSky/Blueprints/System/Editor_UI/SkyModifier_Tool/Sky_Modifier_Editor_Category
+  WidgetBlueprint (Sky_Modifier_Editor_Category)
+    .WidgetVariableNameToGuidMap=(("ExpandableArea_37", AD1CB3E2646E3DE0809F7AF03525290E),("TextBlock_83", CF205099DE9737BD86154948851DA47A),("CategoryVerticalBox", 523B09DFE3FC349384D930623B34FFD6),("VerticalBox_79", CA1C939B02E831329E3C01D7862A0616),("Spacer_144", 89B24C64E6463033BAFA5A550F189D14),("Spacer_77", B78579B9D003374183F445B0FBDC23A3))
+    .PaletteCategory="UDS_Tools"
+    .TickPrediction=WillTick
+    .TickPredictionReason="Native"
+    .WidgetTree="WidgetTree"
+    .ParentClass="/Script/CoreUObject.Class'/Script/Blutility.EditorUtilityWidget'"
+    .BlueprintCategory="UltraDynamicSky|Editor"
+    .BlueprintSystemVersion=2
+    .UbergraphPages(0)="/Script/Engine.EdGraph'EventGraph'"
+    .NewVariables(0)=(VarName="Category Name",VarGuid=E0DF6EC04B441FFD0C1ABC9F76C0AF51,VarType=(PinCategory="string"),FriendlyName="Category Name",Category=NSLOCTEXT("KismetSchema", "Default", "Default"),PropertyFlags=5,MetaDataArray=((DataKey="ExposeOnSpawn",DataValue="true")))
+    .GeneratedVariables(0)=(VarName="TextBlock_83",VarGuid=CF205099DE9737BD86154948851DA47A,VarType=(PinCategory="object",PinSubCategoryObject="/Script/CoreUObject.Class'/Script/UMG.TextBlock'"),FriendlyName="TextBlock_83",PropertyFlags=562952101494812,MetaDataArray=((DataKey="Category",DataValue="Sky_Modifier_Editor_Category")))
+    .GeneratedVariables(1)=(VarName="ExpandableArea_37",VarGuid=AD1CB3E2646E3DE0809F7AF03525290E,VarType=(PinCategory="object",PinSubCategoryObject="/Script/CoreUObject.Class'/Script/UMG.ExpandableArea'"),FriendlyName="ExpandableArea_37",PropertyFlags=562952101494812,MetaDataArray=((DataKey="Category",DataValue="Sky_Modifier_Editor_Category")))
+    .GeneratedVariables(2)=(VarName="CategoryVerticalBox",VarGuid=523B09DFE3FC349384D930623B34FFD6,VarType=(PinCategory="object",PinSubCategoryObject="/Script/CoreUObject.Class'/Script/UMG.VerticalBox'"),FriendlyName="Category Vertical Box",PropertyFlags=562952101494812,MetaDataArray=((DataKey="Category",DataValue="Sky_Modifier_Editor_Category")))
+    .CategorySorting(0)="Appearance"
+    .CategorySorting(1)="Input"
+    .CategorySorting(2)="Interaction"
+    .CategorySorting(3)="Performance"
+    .CategorySorting(4)="Layout"
+    .CategorySorting(5)="Behavior"
+    .CategorySorting(6)="Render Transform"
+    .CategorySorting(7)="Clipping"
+    .CategorySorting(8)="Navigation"
+    .CategorySorting(9)=""
+    .CategorySorting(10)="Default"
+    .CategorySorting(11)="Event Graph"
+    .CategorySorting(12)="Config"
+    .CategorySorting(13)="Settings"
+    .CategorySorting(14)="Sky Modifier Editor Category"
+    .LastEditedDocuments(0)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/System/Editor_UI/SkyModifier_Tool/Sky_Modifier_Editor_Category.Sky_Modifier_Editor_Category:EventGraph",SavedViewOffset=(X=-744.239075,Y=-491.423859),SavedZoomAmount=1.000000)
+    .GeneratedClass="/Script/UMG.WidgetBlueprintGeneratedClass'Sky_Modifier_Editor_Category_C'"
+    .bLegacyNeedToPurgeSkelRefs=False
+    .BlueprintGuid=799ABFBA40A80865DE6EA3BF9DB5FFFB
+  WidgetTree (WidgetTree)
+    .RootWidget="/Script/UMG.VerticalBox'VerticalBox_79'"
+  ExpandableArea (ExpandableArea_37)
+    .BorderBrush=(TintColor=(SpecifiedColor=(R=0.494792,G=0.494792,B=0.494792,A=1.000000)))
+    .HeaderPadding=(Top=4.000000,Bottom=4.000000)
+    .HeaderContent="/Script/UMG.TextBlock'Sky_Modifier_Editor_Category:WidgetTree.TextBlock_83'"
+    .BodyContent="/Script/UMG.VerticalBox'Sky_Modifier_Editor_Category:WidgetTree.CategoryVerticalBox'"
+    .Slot="/Script/UMG.VerticalBoxSlot'Sky_Modifier_Editor_Category:WidgetTree.VerticalBox_79.VerticalBoxSlot_0'"
+    .bExpandedInDesigner=True
+  TextBlock (TextBlock_83)
+    .Text=NSLOCTEXT("[189605A844B9308B33ED269834BFF7F4]", "A9536F904A514F97CCC72CA43172F2A1", "Category Name")
+    .Font=(TypefaceFontName="Regular",Size=10.000000)
+    .Margin=(Left=4.000000,Top=2.000000,Bottom=2.000000)
+    .bIsVariable=True
+  VerticalBox (CategoryVerticalBox)
+    .Slots(0)="/Script/UMG.VerticalBoxSlot'VerticalBoxSlot_1'"
+    .bIsVariable=True
+    .bExpandedInDesigner=True
+    .DisplayLabel="Category Vertical Box"
+  VerticalBox (VerticalBox_79)
+    .Slots(0)="/Script/UMG.VerticalBoxSlot'VerticalBoxSlot_0'"
+    .Slots(1)="/Script/UMG.VerticalBoxSlot'VerticalBoxSlot_1'"
+    .bExpandedInDesigner=True
+  Spacer (Spacer_144)
+    .Size=(X=1.000000,Y=4.000000)
+    .Slot="/Script/UMG.VerticalBoxSlot'Sky_Modifier_Editor_Category:WidgetTree.CategoryVerticalBox.VerticalBoxSlot_1'"
+  Spacer (Spacer_77)
+    .Size=(X=1.000000,Y=4.000000)
+    .Slot="/Script/UMG.VerticalBoxSlot'Sky_Modifier_Editor_Category:WidgetTree.VerticalBox_79.VerticalBoxSlot_1'"
+  EdGraph (EventGraph)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_Event'K2Node_Event_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_1'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_3'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_9'"
+    .bAllowDeletion=False
+    .GraphGuid=B31DF64C42EA8932E48AD0B0751829BE
+  K2Node_Event (K2Node_Event_0)
+    .EventReference=(MemberParent="/Script/CoreUObject.Class'/Script/UMG.UserWidget'",MemberName="Construct")
+    .bOverrideFunction=True
+    .NodePosX=-240
+    .NodePosY=20
+    .NodeGuid=1786005140562F2C650963979DB57FCC
+  K2Node_VariableGet (K2Node_VariableGet_0)
+    .VariableReference=(MemberName="Category Name",MemberGuid=E0DF6EC04B441FFD0C1ABC9F76C0AF51,bSelfContext=True)
+    .NodePosX=-328
+    .NodePosY=164
+    .NodeGuid=6BE1E00E468311574658A2B31B5E40E5
+  K2Node_VariableGet (K2Node_VariableGet_1)
+    .VariableReference=(MemberName="TextBlock_83",MemberGuid=CF205099DE9737BD86154948851DA47A,bSelfContext=True)
+    .NodePosX=-84
+    .NodePosY=92
+    .NodeGuid=E81FC06A410E3BE0745797AC12311C38
+  K2Node_CallFunction (K2Node_CallFunction_3)
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/UMG.TextBlock'",MemberName="SetText")
+    .NodePosX=64
+    .NodePosY=8
+    .NodeGuid=6ED3B0094CC15376376E92808A50FC38
+  K2Node_CallFunction (K2Node_CallFunction_9)
+    .bDefaultsToPureFunc=True
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/Engine.KismetTextLibrary'",MemberName="Conv_StringToText")
+    .NodePosX=-168
+    .NodePosY=144
+    .NodeGuid=F57617184B8CFA75913159AFC389E9BC
+  EdGraph (ExecuteUbergraph_Sky_Modifier_Editor_Category)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_9'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_3'"
+    .Nodes(2)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_1'"
+    .Nodes(3)="/Script/BlueprintGraph.K2Node_VariableGet'K2Node_VariableGet_0'"
+    .Nodes(4)="/Script/BlueprintGraph.K2Node_Event'K2Node_Event_0'"
+    .Nodes(5)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .GraphGuid=8C377A7548AA3BCB79473AB70EFA5CA8
+  K2Node_FunctionEntry (K2Node_FunctionEntry_0)
+    .CustomGeneratedFunctionName="Construct"
+    .FunctionReference=(MemberParent="/Script/CoreUObject.Class'/Script/UMG.UserWidget'",MemberName="Construct")
+    .NodePosX=-200
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=E68ABF732CE53E20A0EFFD29195C9681
+  EdGraph (Construct)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .Nodes(1)="/Script/BlueprintGraph.K2Node_CallFunction'K2Node_CallFunction_0'"
+    .GraphGuid=A9A013FD4E11872D5D5FC7ABA70BE447
+  K2Node_CallFunction (K2Node_CallFunction_0)
+    .FunctionReference=(MemberName="ExecuteUbergraph_Sky_Modifier_Editor_Category",bSelfContext=True)
+    .NodePosX=300
+    .NodePosY=-2000
+    .bIsIntermediateNode=True
+    .NodeGuid=43A458CC5E493EE1BE672C5E3B1420C8

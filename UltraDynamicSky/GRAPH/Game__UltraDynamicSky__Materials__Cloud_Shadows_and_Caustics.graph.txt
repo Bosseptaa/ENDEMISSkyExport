@@ -1,0 +1,211 @@
+### /Game/UltraDynamicSky/Materials/Cloud_Shadows_and_Caustics
+  Material (Cloud_Shadows_and_Caustics)
+    .MaterialDomain=MD_LightFunction
+    .ShadingModel=MSM_Unlit
+    .ShadingModels=(ShadingModelField=1)
+    .bForceCompatibleWithLightFunctionAtlas=True
+    .EditorX=3508
+    .EditorY=96
+    .bCanMaskedBeAssumedOpaque=True
+    .PixelDepthOffsetMode=PDOM_Legacy
+    .StateId=0D57B7CA44E80CCB39D6238B97796FDB
+    .ReferencedTextureGuids(0)=E3460A1B4A13AEBC097F769EA8E670D8
+    .ReferencedTextureGuids(1)=F28A196D48A319FB88FD3C916F28261C
+    .ReferencedTextureGuids(2)=BB4DF9ED448DBD0D9801DDA576518923
+    .EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'Cloud_Shadows_and_CausticsEditorOnlyData'"
+    .ReferencedDefaultTextures(0)="/Script/Engine.TextureRenderTarget2D'/Game/UltraDynamicSky/Textures/Sky/WaterLevelTarget.WaterLevelTarget'"
+    .ReferencedDefaultTextures(1)="/Script/Engine.Texture2D'/Game/UltraDynamicSky/Textures/Sky/Caustic_Pattern.Caustic_Pattern'"
+    .ReferencedDefaultTextures(2)="/Script/Engine.TextureRenderTarget2D'/Game/UltraDynamicSky/Textures/Sky/CloudLayersMap.CloudLayersMap'"
+    .ReferencedDefaultTextures(3)="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/VolumetricClouds/T_Cloud_Profile.T_Cloud_Profile'"
+    .ReferencedDefaultTextures(4)="/Script/Engine.VolumeTexture'/Game/ENDEMIS/Weather/Clouds/3D_Cells_32.3D_Cells_32'"
+    .ReferencedDefaultTextures(5)="/Script/Engine.TextureRenderTarget2D'/Game/UltraDynamicSky/Textures/Sky/CloudPaintTarget.CloudPaintTarget'"
+    .ReferencedDefaultTextures(6)="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/Clouds/T_CloudsAlpha.T_CloudsAlpha'"
+    .ReferencedDefaultTextures(7)="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_ParticleClouds.T_ParticleClouds'"
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+    .ParameterOverviewExpansion=(("-12Global", True))
+    .LightingGuid=D33D5B85480A22A5EF433D9C40184DAF
+  MaterialEditorOnlyData (Cloud_Shadows_and_CausticsEditorOnlyData)
+    EmissiveColor          <- MaterialExpressionStaticSwitchParameter
+    ExpressionCollection   <- MaterialExpressionStaticSwitchParameter
+    .BaseColor=(UseConstant=True,Constant=(R=0.501961,G=0.501961,B=0.501961,A=1.000000))
+    .Metallic=(UseConstant=True)
+    .Specular=(UseConstant=True)
+    .Roughness=(UseConstant=True)
+    .Anisotropy=(UseConstant=True)
+    .Normal=(UseConstant=True)
+    .Tangent=(UseConstant=True)
+    .EmissiveColor=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Cloud_Shadows_and_Caustics:MaterialExpressionStaticSwitchParameter_3'")
+    .Opacity=(UseConstant=True)
+    .OpacityMask=(UseConstant=True)
+    .WorldPositionOffset=(UseConstant=True)
+    .Displacement=(UseConstant=True)
+    .SubsurfaceColor=(UseConstant=True)
+    .ClearCoat=(UseConstant=True)
+    .ClearCoatRoughness=(UseConstant=True)
+    .AmbientOcclusion=(UseConstant=True)
+    .Refraction=(UseConstant=True)
+    .CustomizedUVs(0)=(UseConstant=True)
+    .CustomizedUVs(1)=(UseConstant=True)
+    .CustomizedUVs(2)=(UseConstant=True)
+    .CustomizedUVs(3)=(UseConstant=True)
+    .CustomizedUVs(4)=(UseConstant=True)
+    .CustomizedUVs(5)=(UseConstant=True)
+    .CustomizedUVs(6)=(UseConstant=True)
+    .CustomizedUVs(7)=(UseConstant=True)
+    .PixelDepthOffset=(UseConstant=True)
+    .SurfaceThickness=(UseConstant=True)
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionStaticSwitchParameter'Cloud_Shadows_and_Caustics:MaterialExpressionStaticSwitchParameter_3'","/Script/Engine.MaterialExpressionStaticSwitchParameter'Cloud_Shadows_and_Caustics:MaterialExpressionStaticSwitchParameter_0'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Cloud_Shadows_and_Caustics:MaterialExpressionMaterialFunctionCall_1'","/Script/Engine.MaterialExpressionMultiply'Cloud_Shadows_and_Caustics:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionReroute'Cloud_Shadows_and_Caustics:MaterialExpressionReroute_0'","/Script/Engine.MaterialExpressionStaticSwitchParameter'Cloud_Shadows_and_Caustics:MaterialExpressionStaticSwitchParameter_1'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Cloud_Shadows_and_Caustics:MaterialExpressionMaterialFunctionCall_2'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Cloud_Shadows_and_Caustics:MaterialExpressionMaterialFunctionCall_3'","/Script/Engine.MaterialExpressionCollectionParameter'Cloud_Shadows_and_Caustics:MaterialExpressionCollectionParameter_7'","/Script/Engine.MaterialExpressionStaticSwitchParameter'Cloud_Shadows_and_Caustics:MaterialExpressionStaticSwitchParameter_4'","/Script/Engine.MaterialExpressionSaturate'Cloud_Shadows_and_Caustics:MaterialExpressionSaturate_0'","/Script/Engine.MaterialExpressionMultiply'Cloud_Shadows_and_Caustics:MaterialExpressionMultiply_6'","/Script/Engine.MaterialExpressionCollectionParameter'Cloud_Shadows_and_Caustics:MaterialExpressionCollectionParameter_0'","/Script/Engine.MaterialExpressionStaticSwitchParameter'Cloud_Shadows_and_Caustics:MaterialExpressionStaticSwitchParameter_5'","/Script/Engine.MaterialExpressionConstant'Cloud_Shadows_and_Caustics:MaterialExpressionConstant_0'","/Script/Engine.MaterialExpressionMaterialFunctionCall'Cloud_Shadows_and_Caustics:MaterialExpressionMaterialFunctionCall_4'"))
+    .ParameterGroupData(0)=(GroupName="None")
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_0)
+    .ParameterName="Cloud Shadows Cancel"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Material_Functions/UDS_VolumetricClouds_MPC.UDS_VolumetricClouds_MPC'"
+    .ParameterId=06386B2A41236A8B7898EF9EC741217D
+    .MaterialExpressionEditorX=2448
+    .MaterialExpressionEditorY=544
+    .MaterialExpressionGuid=32F68390422FB0122036109D0B09CC53
+    .Material="/Script/Engine.Material'Cloud_Shadows_and_Caustics'"
+    .bCollapsed=True
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_7)
+    .ParameterName="Cloud Shadows Cancel"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Material_Functions/UDS_VolumetricClouds_MPC.UDS_VolumetricClouds_MPC'"
+    .ParameterId=06386B2A41236A8B7898EF9EC741217D
+    .MaterialExpressionEditorX=2976
+    .MaterialExpressionEditorY=220
+    .MaterialExpressionGuid=7E029A544ACF1D6ADE60B2B3192CFE65
+    .Material="/Script/Engine.Material'Cloud_Shadows_and_Caustics'"
+    .bCollapsed=True
+  MaterialExpressionConstant (MaterialExpressionConstant_0)
+    .R=1.000000
+    .MaterialExpressionEditorX=1524
+    .MaterialExpressionEditorY=548
+    .MaterialExpressionGuid=ACB5F0FC4D2F76F9FB8CE5BF6A844340
+    .Material="/Script/Engine.Material'Cloud_Shadows_and_Caustics'"
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_1)
+    FunctionInputs(1)      <- MaterialExpressionStaticSwitchParameter
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Caustic_Refraction_Light.Caustic_Refraction_Light'"
+    .FunctionInputs(0)=(ExpressionInputId=073A7FAF4AF6D37403FD8A8D2B7ADFAE,Input=(OutputIndex=-1,InputName="Simplified"))
+    .FunctionInputs(1)=(ExpressionInputId=2504CEE5489AE3418B41A2B9EC10904A,Input=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Cloud_Shadows_and_Caustics:MaterialExpressionStaticSwitchParameter_5'",InputName="Shadow"))
+    .FunctionOutputs(0)=(ExpressionOutputId=E3C8C026448BECBB80BED1B7B07752A6,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=2068
+    .MaterialExpressionEditorY=336
+    .MaterialExpressionGuid=5FF928B841D9F900627C1F8B0F6A2624
+    .Material="/Script/Engine.Material'Cloud_Shadows_and_Caustics'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_2)
+    FunctionInputs(0)      <- MaterialExpressionMaterialFunctionCall
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/Volumetric_Cloud_Shadows_MF.Volumetric_Cloud_Shadows_MF'"
+    .FunctionInputs(0)=(ExpressionInputId=D8542B3A4A667030A432B58C1AB87A72,Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Cloud_Shadows_and_Caustics:MaterialExpressionMaterialFunctionCall_4'",InputName="Position"))
+    .FunctionOutputs(0)=(ExpressionOutputId=FB28CFE34D83387D73B5C1A78A5B53F1,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=1156
+    .MaterialExpressionEditorY=404
+    .MaterialExpressionGuid=21545AB9445200FDCAE5D9A55C83885E
+    .Material="/Script/Engine.Material'Cloud_Shadows_and_Caustics'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_3)
+    FunctionInputs(0)      <- MaterialExpressionMaterialFunctionCall
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/2D_Cloud_Shadows_MF.2D_Cloud_Shadows_MF'"
+    .FunctionInputs(0)=(ExpressionInputId=B802C0E24C8C6813C655348103FE7B32,Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Cloud_Shadows_and_Caustics:MaterialExpressionMaterialFunctionCall_4'",InputName="Position"))
+    .FunctionOutputs(0)=(ExpressionOutputId=66DEF9504928650076EE629FB23D7B33,Output=(OutputName="Result"))
+    .MaterialExpressionEditorX=1196
+    .MaterialExpressionEditorY=480
+    .MaterialExpressionGuid=FE861C5B48BEEEB06C4E39823D7D0658
+    .Material="/Script/Engine.Material'Cloud_Shadows_and_Caustics'"
+    .Outputs(0)=(OutputName="Result")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_4)
+    .MaterialFunction="/Script/Engine.MaterialFunction'/Game/UltraDynamicSky/Materials/Material_Functions/LightFunctionAtlas_Position.LightFunctionAtlas_Position'"
+    .FunctionOutputs(0)=(ExpressionOutputId=00B83FDE477F010F7AAA7ABE5B0D0D8B,Output=(OutputName="Position"))
+    .MaterialExpressionEditorX=920
+    .MaterialExpressionEditorY=480
+    .MaterialExpressionGuid=D8736BE549E6569C2B4B0E98F2132467
+    .Material="/Script/Engine.Material'Cloud_Shadows_and_Caustics'"
+    .Outputs(0)=(OutputName="Position")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionReroute
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Cloud_Shadows_and_Caustics:MaterialExpressionMaterialFunctionCall_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionReroute'Cloud_Shadows_and_Caustics:MaterialExpressionReroute_0'")
+    .MaterialExpressionEditorX=2292
+    .MaterialExpressionEditorY=288
+    .MaterialExpressionGuid=FAB0DCBD44E9DB22D649E1A1EFF157FB
+    .Material="/Script/Engine.Material'Cloud_Shadows_and_Caustics'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_6)
+    A                      <- MaterialExpressionStaticSwitchParameter
+    B                      <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Cloud_Shadows_and_Caustics:MaterialExpressionCollectionParameter_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Cloud_Shadows_and_Caustics:MaterialExpressionStaticSwitchParameter_0'")
+    .MaterialExpressionEditorX=2692
+    .MaterialExpressionEditorY=468
+    .MaterialExpressionGuid=AD14331A464E18E91DC31FB6FFED1BF1
+    .Material="/Script/Engine.Material'Cloud_Shadows_and_Caustics'"
+  MaterialExpressionReroute (MaterialExpressionReroute_0)
+    Input                  <- MaterialExpressionStaticSwitchParameter
+    .Input=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Cloud_Shadows_and_Caustics:MaterialExpressionStaticSwitchParameter_5'")
+    .MaterialExpressionEditorX=2020
+    .MaterialExpressionEditorY=320
+    .MaterialExpressionGuid=DC8C027143E6DD04C069CC91C6818AFD
+    .Material="/Script/Engine.Material'Cloud_Shadows_and_Caustics'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_0)
+    Input                  <- MaterialExpressionMultiply
+    .Input=(Expression="/Script/Engine.MaterialExpressionMultiply'Cloud_Shadows_and_Caustics:MaterialExpressionMultiply_6'")
+    .MaterialExpressionEditorX=2852
+    .MaterialExpressionEditorY=468
+    .MaterialExpressionGuid=CD23EDE740DDE6183CA9F1B311199951
+    .Material="/Script/Engine.Material'Cloud_Shadows_and_Caustics'"
+  MaterialExpressionStaticSwitchParameter (MaterialExpressionStaticSwitchParameter_0)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionStaticSwitchParameter
+    .ParameterName="Caustics"
+    .B=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Cloud_Shadows_and_Caustics:MaterialExpressionStaticSwitchParameter_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'Cloud_Shadows_and_Caustics:MaterialExpressionMultiply_0'")
+    .ExpressionGUID=F6086C52400B2B0DEE3A42B546730DB9
+    .MaterialExpressionEditorX=2448
+    .MaterialExpressionEditorY=356
+    .MaterialExpressionGuid=B7A9F0C747FDBA6D163CB3BA9F631D27
+    .Material="/Script/Engine.Material'Cloud_Shadows_and_Caustics'"
+  MaterialExpressionStaticSwitchParameter (MaterialExpressionStaticSwitchParameter_1)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .ParameterName="Volumetric Clouds"
+    .DefaultValue=True
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Cloud_Shadows_and_Caustics:MaterialExpressionMaterialFunctionCall_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'Cloud_Shadows_and_Caustics:MaterialExpressionMaterialFunctionCall_2'")
+    .ExpressionGUID=B6784E044FC4DC46D40A60800719893D
+    .MaterialExpressionEditorX=1456
+    .MaterialExpressionEditorY=388
+    .MaterialExpressionGuid=FC3663DC4E511E2F1ED400BA3CC8F609
+    .Material="/Script/Engine.Material'Cloud_Shadows_and_Caustics'"
+  MaterialExpressionStaticSwitchParameter (MaterialExpressionStaticSwitchParameter_3)
+    A                      <- MaterialExpressionCollectionParameter
+    B                      <- MaterialExpressionStaticSwitchParameter
+    .ParameterName="Basic Value"
+    .B=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Cloud_Shadows_and_Caustics:MaterialExpressionStaticSwitchParameter_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'Cloud_Shadows_and_Caustics:MaterialExpressionCollectionParameter_7'")
+    .ExpressionGUID=91052DF840BE4E2C8B472E92D84B38BC
+    .MaterialExpressionEditorX=3236
+    .MaterialExpressionEditorY=232
+    .MaterialExpressionGuid=647E9BB0402BBE02E88016B1AC73762E
+    .Material="/Script/Engine.Material'Cloud_Shadows_and_Caustics'"
+  MaterialExpressionStaticSwitchParameter (MaterialExpressionStaticSwitchParameter_4)
+    A                      <- MaterialExpressionStaticSwitchParameter
+    B                      <- MaterialExpressionSaturate
+    .ParameterName="Cloud Shadows"
+    .DefaultValue=True
+    .B=(Expression="/Script/Engine.MaterialExpressionSaturate'Cloud_Shadows_and_Caustics:MaterialExpressionSaturate_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Cloud_Shadows_and_Caustics:MaterialExpressionStaticSwitchParameter_0'")
+    .ExpressionGUID=F22A574D41F05E1DF5E9FEBE8469C586
+    .MaterialExpressionEditorX=3012
+    .MaterialExpressionEditorY=356
+    .MaterialExpressionGuid=DBB7C7134A8A5DFC2AB13C8614831236
+    .Material="/Script/Engine.Material'Cloud_Shadows_and_Caustics'"
+  MaterialExpressionStaticSwitchParameter (MaterialExpressionStaticSwitchParameter_5)
+    A                      <- MaterialExpressionStaticSwitchParameter
+    B                      <- MaterialExpressionConstant
+    .ParameterName="Cloud Shadows"
+    .DefaultValue=True
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'Cloud_Shadows_and_Caustics:MaterialExpressionConstant_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionStaticSwitchParameter'Cloud_Shadows_and_Caustics:MaterialExpressionStaticSwitchParameter_1'")
+    .ExpressionGUID=E40DAE29440B8F65622E4DB853378270
+    .MaterialExpressionEditorX=1764
+    .MaterialExpressionEditorY=388
+    .MaterialExpressionGuid=9D25F1B64EAF6D9CF5A59EA1E33AA112
+    .Material="/Script/Engine.Material'Cloud_Shadows_and_Caustics'"

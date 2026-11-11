@@ -1,0 +1,194 @@
+### /Game/UltraDynamicSky/Materials/Material_Functions/VolumetricCloudLayerMapSample
+  MaterialFunction (VolumetricCloudLayerMapSample)
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'VolumetricCloudLayerMapSampleEditorOnlyData'"
+    .StateId=EEBABCE54D7A3188458626A04BC68940
+    .CombinedInputTypes=15
+    .CombinedOutputTypes=15
+  MaterialFunctionEditorOnlyData (VolumetricCloudLayerMapSampleEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'VolumetricCloudLayerMapSample:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionFunctionInput'VolumetricCloudLayerMapSample:MaterialExpressionFunctionInput_0'","/Script/Engine.MaterialExpressionTextureSample'VolumetricCloudLayerMapSample:MaterialExpressionTextureSample_0'","/Script/Engine.MaterialExpressionAppendVector'VolumetricCloudLayerMapSample:MaterialExpressionAppendVector_0'","/Script/Engine.MaterialExpressionOneMinus'VolumetricCloudLayerMapSample:MaterialExpressionOneMinus_0'","/Script/Engine.MaterialExpressionConstant'VolumetricCloudLayerMapSample:MaterialExpressionConstant_0'","/Script/Engine.MaterialExpressionTextureSample'VolumetricCloudLayerMapSample:MaterialExpressionTextureSample_1'","/Script/Engine.MaterialExpressionAppendVector'VolumetricCloudLayerMapSample:MaterialExpressionAppendVector_1'","/Script/Engine.MaterialExpressionConstant'VolumetricCloudLayerMapSample:MaterialExpressionConstant_1'","/Script/Engine.MaterialExpressionAppendVector'VolumetricCloudLayerMapSample:MaterialExpressionAppendVector_2'","/Script/Engine.MaterialExpressionConstant'VolumetricCloudLayerMapSample:MaterialExpressionConstant_2'","/Script/Engine.MaterialExpressionTextureSample'VolumetricCloudLayerMapSample:MaterialExpressionTextureSample_2'","/Script/Engine.MaterialExpressionComponentMask'VolumetricCloudLayerMapSample:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionFunctionOutput'VolumetricCloudLayerMapSample:MaterialExpressionFunctionOutput_1'","/Script/Engine.MaterialExpressionFunctionOutput'VolumetricCloudLayerMapSample:MaterialExpressionFunctionOutput_2'","/Script/Engine.MaterialExpressionFunctionOutput'VolumetricCloudLayerMapSample:MaterialExpressionFunctionOutput_3'","/Script/Engine.MaterialExpressionFunctionOutput'VolumetricCloudLayerMapSample:MaterialExpressionFunctionOutput_4'","/Script/Engine.MaterialExpressionFunctionOutput'VolumetricCloudLayerMapSample:MaterialExpressionFunctionOutput_5'","/Script/Engine.MaterialExpressionFunctionOutput'VolumetricCloudLayerMapSample:MaterialExpressionFunctionOutput_6'","/Script/Engine.MaterialExpressionFunctionOutput'VolumetricCloudLayerMapSample:MaterialExpressionFunctionOutput_7'"))
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_0)
+    A                      <- MaterialExpressionConstant
+    B                      <- MaterialExpressionOneMinus
+    .B=(Expression="/Script/Engine.MaterialExpressionOneMinus'VolumetricCloudLayerMapSample:MaterialExpressionOneMinus_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionConstant'VolumetricCloudLayerMapSample:MaterialExpressionConstant_0'")
+    .MaterialExpressionEditorX=-584
+    .MaterialExpressionEditorY=292
+    .MaterialExpressionGuid=BC06CEA846EEF7EF6C76059B0E102C51
+    .Function="/Script/Engine.MaterialFunction'VolumetricCloudLayerMapSample'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_1)
+    A                      <- MaterialExpressionConstant
+    B                      <- MaterialExpressionOneMinus
+    .B=(Expression="/Script/Engine.MaterialExpressionOneMinus'VolumetricCloudLayerMapSample:MaterialExpressionOneMinus_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionConstant'VolumetricCloudLayerMapSample:MaterialExpressionConstant_1'")
+    .MaterialExpressionEditorX=-588
+    .MaterialExpressionEditorY=588
+    .MaterialExpressionGuid=407DF70845A75F94686B8FAEF66AECE0
+    .Function="/Script/Engine.MaterialFunction'VolumetricCloudLayerMapSample'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_2)
+    A                      <- MaterialExpressionConstant
+    B                      <- MaterialExpressionOneMinus
+    .B=(Expression="/Script/Engine.MaterialExpressionOneMinus'VolumetricCloudLayerMapSample:MaterialExpressionOneMinus_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionConstant'VolumetricCloudLayerMapSample:MaterialExpressionConstant_2'")
+    .MaterialExpressionEditorX=-572
+    .MaterialExpressionEditorY=884
+    .MaterialExpressionGuid=25C11A404DA6C18E8448AD851E5E2E02
+    .Function="/Script/Engine.MaterialFunction'VolumetricCloudLayerMapSample'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionTextureSample
+    .R=True
+    .G=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionTextureSample'VolumetricCloudLayerMapSample:MaterialExpressionTextureSample_0'",Mask=1,MaskR=1,MaskG=1,MaskB=1)
+    .MaterialExpressionEditorX=-56
+    .MaterialExpressionEditorY=296
+    .MaterialExpressionGuid=87171E304F80E3905A4FC59EFA86EF16
+    .Function="/Script/Engine.MaterialFunction'VolumetricCloudLayerMapSample'"
+  MaterialExpressionConstant (MaterialExpressionConstant_0)
+    .R=0.166667
+    .MaterialExpressionEditorX=-880
+    .MaterialExpressionEditorY=292
+    .MaterialExpressionGuid=BBA7B47B4E102E89928AB6BCFC1F4A73
+    .Function="/Script/Engine.MaterialFunction'VolumetricCloudLayerMapSample'"
+  MaterialExpressionConstant (MaterialExpressionConstant_1)
+    .R=0.500000
+    .MaterialExpressionEditorX=-788
+    .MaterialExpressionEditorY=588
+    .MaterialExpressionGuid=6BB67D2B4D4A1670C5DEF7B712C0B429
+    .Function="/Script/Engine.MaterialFunction'VolumetricCloudLayerMapSample'"
+  MaterialExpressionConstant (MaterialExpressionConstant_2)
+    .R=0.833333
+    .MaterialExpressionEditorX=-772
+    .MaterialExpressionEditorY=884
+    .MaterialExpressionGuid=CD29DDA84E7ECB41874741802C799E99
+    .Function="/Script/Engine.MaterialFunction'VolumetricCloudLayerMapSample'"
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_0)
+    .InputName="Normalized Altitude"
+    .Id=56EF7B4B421D031F0241C69C6DBB7461
+    .InputType=FunctionInput_Scalar
+    .MaterialExpressionEditorX=-1251
+    .MaterialExpressionEditorY=695
+    .MaterialExpressionGuid=F0A458DC40F45F58822946B9EE0B8F86
+    .Function="/Script/Engine.MaterialFunction'VolumetricCloudLayerMapSample'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionComponentMask
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'VolumetricCloudLayerMapSample:MaterialExpressionComponentMask_0'")
+    .OutputName="Formation Texture Scale"
+    .bLastPreviewed=True
+    .Id=C33BCB844603F779F5DD53AE2F3807BB
+    .MaterialExpressionEditorX=152
+    .MaterialExpressionEditorY=268
+    .MaterialExpressionGuid=0EFAAA5F4769C364D78E1EA1D751CD27
+    .Function="/Script/Engine.MaterialFunction'VolumetricCloudLayerMapSample'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_1)
+    A                      <- MaterialExpressionTextureSample
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'VolumetricCloudLayerMapSample:MaterialExpressionTextureSample_0'",OutputIndex=3,Mask=1,MaskB=1)
+    .OutputName="Altidue 0-1"
+    .Id=69AAC66F40757DCC632532959BD787F2
+    .MaterialExpressionEditorX=140
+    .MaterialExpressionEditorY=388
+    .MaterialExpressionGuid=6210450845C7AD2CD87F189292FA569A
+    .Function="/Script/Engine.MaterialFunction'VolumetricCloudLayerMapSample'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_2)
+    A                      <- MaterialExpressionTextureSample
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'VolumetricCloudLayerMapSample:MaterialExpressionTextureSample_1'",OutputIndex=1,Mask=1,MaskR=1)
+    .OutputName="Coverage Multiplier"
+    .Id=3B7DC4944E9E777F4C03DFA38EE75E33
+    .MaterialExpressionEditorY=620
+    .MaterialExpressionGuid=921458B04ACAFA39D31696A17CA03711
+    .Function="/Script/Engine.MaterialFunction'VolumetricCloudLayerMapSample'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_3)
+    A                      <- MaterialExpressionTextureSample
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'VolumetricCloudLayerMapSample:MaterialExpressionTextureSample_1'",OutputIndex=2,Mask=1,MaskG=1)
+    .OutputName="Independent Coverage"
+    .Id=D6423E78465780902E3DEDA779DBADA9
+    .MaterialExpressionEditorY=692
+    .MaterialExpressionGuid=0056677D42CD2CF64811198C7CFFA1FB
+    .Function="/Script/Engine.MaterialFunction'VolumetricCloudLayerMapSample'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_4)
+    A                      <- MaterialExpressionTextureSample
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'VolumetricCloudLayerMapSample:MaterialExpressionTextureSample_2'",OutputIndex=1,Mask=1,MaskR=1)
+    .OutputName="Extinction Scale"
+    .Id=B7F1D9FA4B0F12DD983E20B66EA8B83E
+    .MaterialExpressionEditorX=-16
+    .MaterialExpressionEditorY=912
+    .MaterialExpressionGuid=F5E190964E4D15ABD8CC57866C8ED9FC
+    .Function="/Script/Engine.MaterialFunction'VolumetricCloudLayerMapSample'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_5)
+    A                      <- MaterialExpressionTextureSample
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'VolumetricCloudLayerMapSample:MaterialExpressionTextureSample_2'",OutputIndex=2,Mask=1,MaskG=1)
+    .OutputName="Formation Offset"
+    .Id=10B24E1A40A5E08ABC4947A84081EE98
+    .MaterialExpressionEditorX=-12
+    .MaterialExpressionEditorY=984
+    .MaterialExpressionGuid=8AED8D004C383ADB914B8AAAD2B4739C
+    .Function="/Script/Engine.MaterialFunction'VolumetricCloudLayerMapSample'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_6)
+    A                      <- MaterialExpressionTextureSample
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'VolumetricCloudLayerMapSample:MaterialExpressionTextureSample_2'",OutputIndex=3,Mask=1,MaskB=1)
+    .OutputName="Mip Offset"
+    .Id=B3CD6D604FA6B031D50CDD95E021C45D
+    .MaterialExpressionEditorX=-8
+    .MaterialExpressionEditorY=1052
+    .MaterialExpressionGuid=8B3872EB443356C5A85AB8B9075AAB39
+    .Function="/Script/Engine.MaterialFunction'VolumetricCloudLayerMapSample'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_7)
+    A                      <- MaterialExpressionTextureSample
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'VolumetricCloudLayerMapSample:MaterialExpressionTextureSample_1'",OutputIndex=3,Mask=1,MaskB=1)
+    .OutputName="Painted Coverage"
+    .Id=E0E3B8C34F90DF718124BA965123EB5A
+    .MaterialExpressionEditorX=4
+    .MaterialExpressionEditorY=772
+    .MaterialExpressionGuid=93091B2A48129D3C4DA2C6B8C211AB6B
+    .Function="/Script/Engine.MaterialFunction'VolumetricCloudLayerMapSample'"
+    .bCollapsed=True
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_0)
+    Input                  <- MaterialExpressionFunctionInput
+    .Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'VolumetricCloudLayerMapSample:MaterialExpressionFunctionInput_0'")
+    .MaterialExpressionEditorX=-964
+    .MaterialExpressionEditorY=696
+    .MaterialExpressionGuid=37DF98944277406873ECEAA8B64C82A5
+    .Function="/Script/Engine.MaterialFunction'VolumetricCloudLayerMapSample'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_0)
+    Coordinates            <- MaterialExpressionAppendVector
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.TextureRenderTarget2D'/Game/UltraDynamicSky/Textures/Sky/CloudLayersMap.CloudLayersMap'"
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionAppendVector'VolumetricCloudLayerMapSample:MaterialExpressionAppendVector_0'")
+    .MipValueMode=TMVM_MipLevel
+    .SamplerSource=SSM_Clamp_WorldGroupSettings
+    .AutomaticViewMipBias=False
+    .MaterialExpressionEditorX=-416
+    .MaterialExpressionEditorY=292
+    .MaterialExpressionGuid=7A7CCEF74E70D28F4320EA805CFFB5DE
+    .Function="/Script/Engine.MaterialFunction'VolumetricCloudLayerMapSample'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_1)
+    Coordinates            <- MaterialExpressionAppendVector
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.TextureRenderTarget2D'/Game/UltraDynamicSky/Textures/Sky/CloudLayersMap.CloudLayersMap'"
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionAppendVector'VolumetricCloudLayerMapSample:MaterialExpressionAppendVector_1'")
+    .MipValueMode=TMVM_MipLevel
+    .SamplerSource=SSM_Clamp_WorldGroupSettings
+    .AutomaticViewMipBias=False
+    .MaterialExpressionEditorX=-416
+    .MaterialExpressionEditorY=588
+    .MaterialExpressionGuid=A5CB16D44CA3E560CB9D87B1ED6BCAC6
+    .Function="/Script/Engine.MaterialFunction'VolumetricCloudLayerMapSample'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_2)
+    Coordinates            <- MaterialExpressionAppendVector
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.TextureRenderTarget2D'/Game/UltraDynamicSky/Textures/Sky/CloudLayersMap.CloudLayersMap'"
+    .Coordinates=(Expression="/Script/Engine.MaterialExpressionAppendVector'VolumetricCloudLayerMapSample:MaterialExpressionAppendVector_2'")
+    .MipValueMode=TMVM_MipLevel
+    .SamplerSource=SSM_Clamp_WorldGroupSettings
+    .AutomaticViewMipBias=False
+    .MaterialExpressionEditorX=-412
+    .MaterialExpressionEditorY=884
+    .MaterialExpressionGuid=71748BEF40BE9DDFAFDD17A08CE72025
+    .Function="/Script/Engine.MaterialFunction'VolumetricCloudLayerMapSample'"

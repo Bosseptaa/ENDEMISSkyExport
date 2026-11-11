@@ -1,0 +1,60 @@
+Begin Object Class=/Script/Engine.StaticMesh Name="Nebula_Sphere" ExportPath="/Script/Engine.StaticMesh'/Game/UltraDynamicSky/Meshes/Nebula_Sphere.Nebula_Sphere'"
+   Begin Object Class=/Script/Engine.StaticMeshDescriptionBulkData Name="StaticMeshDescriptionBulkData_0" ExportPath="/Script/Engine.StaticMeshDescriptionBulkData'/Game/UltraDynamicSky/Meshes/Nebula_Sphere.Nebula_Sphere:StaticMeshDescriptionBulkData_0'"
+      Begin Object Class=/Script/StaticMeshDescription.StaticMeshDescription Name="MeshDescription" Archetype="/Script/StaticMeshDescription.StaticMeshDescription'/Script/Engine.Default__StaticMeshDescriptionBulkData:MeshDescription'" ExportPath="/Script/StaticMeshDescription.StaticMeshDescription'/Game/UltraDynamicSky/Meshes/Nebula_Sphere.Nebula_Sphere:StaticMeshDescriptionBulkData_0.MeshDescription'"
+      End Object
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfo Name="SceneThumbnailInfo_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfo'/Game/UltraDynamicSky/Meshes/Nebula_Sphere.Nebula_Sphere:SceneThumbnailInfo_0'"
+   End Object
+   Begin Object Class=/Script/NavigationSystem.NavCollision Name="NavCollision_1" ExportPath="/Script/NavigationSystem.NavCollision'/Game/UltraDynamicSky/Meshes/Nebula_Sphere.Nebula_Sphere:NavCollision_1'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.FbxStaticMeshImportData Name="FbxStaticMeshImportData_0" ExportPath="/Script/UnrealEd.FbxStaticMeshImportData'/Game/UltraDynamicSky/Meshes/Nebula_Sphere.Nebula_Sphere:FbxStaticMeshImportData_0'"
+   End Object
+   Begin Object Class=/Script/Engine.BodySetup Name="BodySetup_0" ExportPath="/Script/Engine.BodySetup'/Game/UltraDynamicSky/Meshes/Nebula_Sphere.Nebula_Sphere:BodySetup_0'"
+   End Object
+   Begin Object Class=/Script/Engine.AssetImportData Name="AssetImportData" ExportPath="/Script/Engine.AssetImportData'/Game/UltraDynamicSky/Meshes/Nebula_Sphere.Nebula_Sphere:AssetImportData'"
+   End Object
+   Begin Object Class=/Script/Engine.StaticMeshDescriptionBulkData Name="HiResMeshDescription" Archetype="/Script/Engine.StaticMeshDescriptionBulkData'/Script/Engine.Default__StaticMesh:HiResMeshDescription'" ExportPath="/Script/Engine.StaticMeshDescriptionBulkData'/Game/UltraDynamicSky/Meshes/Nebula_Sphere.Nebula_Sphere:HiResMeshDescription'"
+      Begin Object Class=/Script/StaticMeshDescription.StaticMeshDescription Name="MeshDescription" Archetype="/Script/StaticMeshDescription.StaticMeshDescription'/Script/Engine.Default__StaticMesh:HiResMeshDescription.MeshDescription'" ExportPath="/Script/StaticMeshDescription.StaticMeshDescription'/Game/UltraDynamicSky/Meshes/Nebula_Sphere.Nebula_Sphere:HiResMeshDescription.MeshDescription'"
+      End Object
+   End Object
+   Begin Object Name="StaticMeshDescriptionBulkData_0" ExportPath="/Script/Engine.StaticMeshDescriptionBulkData'/Game/UltraDynamicSky/Meshes/Nebula_Sphere.Nebula_Sphere:StaticMeshDescriptionBulkData_0'"
+      Begin Object Name="MeshDescription" ExportPath="/Script/StaticMeshDescription.StaticMeshDescription'/Game/UltraDynamicSky/Meshes/Nebula_Sphere.Nebula_Sphere:StaticMeshDescriptionBulkData_0.MeshDescription'"
+      End Object
+   End Object
+   Begin Object Name="SceneThumbnailInfo_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfo'/Game/UltraDynamicSky/Meshes/Nebula_Sphere.Nebula_Sphere:SceneThumbnailInfo_0'"
+   End Object
+   Begin Object Name="NavCollision_1" ExportPath="/Script/NavigationSystem.NavCollision'/Game/UltraDynamicSky/Meshes/Nebula_Sphere.Nebula_Sphere:NavCollision_1'"
+   End Object
+   Begin Object Name="FbxStaticMeshImportData_0" ExportPath="/Script/UnrealEd.FbxStaticMeshImportData'/Game/UltraDynamicSky/Meshes/Nebula_Sphere.Nebula_Sphere:FbxStaticMeshImportData_0'"
+      VertexColorImportOption=Replace
+      bRemoveDegenerates=False
+      bBuildReversedIndexBuffer=False
+      bGenerateLightmapUVs=False
+      bAutoGenerateCollision=False
+      ImportMaterialOriginalNameData(0)="Material"
+      ImportMaterialOriginalNameData(1)="WorldGridMaterial"
+      ImportMeshLodData(0)=(SectionOriginalMaterialName=("WorldGridMaterial"))
+   End Object
+   Begin Object Name="BodySetup_0" ExportPath="/Script/Engine.BodySetup'/Game/UltraDynamicSky/Meshes/Nebula_Sphere.Nebula_Sphere:BodySetup_0'"
+      DefaultInstance=(ObjectType=ECC_WorldStatic,CollisionEnabled=NoCollision,CollisionProfileName="NoCollision",CollisionResponses=(ResponseArray=((Channel="Visibility",Response=ECR_Ignore),(Channel="Camera",Response=ECR_Ignore))))
+   End Object
+   Begin Object Name="AssetImportData" ExportPath="/Script/Engine.AssetImportData'/Game/UltraDynamicSky/Meshes/Nebula_Sphere.Nebula_Sphere:AssetImportData'"
+   End Object
+   Begin Object Name="HiResMeshDescription" ExportPath="/Script/Engine.StaticMeshDescriptionBulkData'/Game/UltraDynamicSky/Meshes/Nebula_Sphere.Nebula_Sphere:HiResMeshDescription'"
+      Begin Object Name="MeshDescription" ExportPath="/Script/StaticMeshDescription.StaticMeshDescription'/Game/UltraDynamicSky/Meshes/Nebula_Sphere.Nebula_Sphere:HiResMeshDescription.MeshDescription'"
+      End Object
+   End Object
+   SourceModels(0)=(StaticMeshDescriptionBulkData="/Script/Engine.StaticMeshDescriptionBulkData'StaticMeshDescriptionBulkData_0'",BuildSettings=(bRecomputeNormals=False,bComputeWeightedNormals=True,bRemoveDegenerates=False,bBuildReversedIndexBuffer=False,bGenerateLightmapUVs=False),ScreenSize=(Default=1.000000))
+   HiResSourceModel=(StaticMeshDescriptionBulkData="HiResMeshDescription")
+   SectionInfoMap=(Map=((0, (bEnableCollision=False,bCastShadow=False,bVisibleInRayTracing=False,bAffectDistanceFieldLighting=False))))
+   OriginalSectionInfoMap=(Map=((0, (bEnableCollision=False,bCastShadow=False,bVisibleInRayTracing=False,bAffectDistanceFieldLighting=False))))
+   ImportVersion=1
+   LightmapUVVersion=9
+   StaticMaterials(0)=(MaterialInterface="/Script/Engine.Material'/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial'",MaterialSlotName="WorldGridMaterial",ImportedMaterialSlotName="WorldGridMaterial",UVChannelData=(bInitialized=True,LocalUVDensities[0]=16613426.000000))
+   LightmapUVDensity=16613426.000000
+   LightMapResolution=64
+   bSupportRayTracing=False
+   AssetImportData="/Script/UnrealEd.FbxStaticMeshImportData'FbxStaticMeshImportData_0'"
+   ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfo'SceneThumbnailInfo_0'"
+   ExtendedBounds=(Origin=(X=-0.125000,Y=0.000000,Z=0.000000),BoxExtent=(X=2499999.875000,Y=2500000.000000,Z=2500000.000000),SphereRadius=2500000.470311)
+End Object

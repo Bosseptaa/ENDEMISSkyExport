@@ -1,0 +1,60 @@
+### /Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Dispatcher_Tunnel
+  Blueprint (UDW_Dispatcher_Tunnel)
+    .ParentClass="/Script/CoreUObject.Class'/Script/Engine.PrimaryDataAsset'"
+    .BlueprintCategory="UltraDynamicWeather|System"
+    .BlueprintSystemVersion=2
+    .UbergraphPages(0)="/Script/Engine.EdGraph'EventGraph'"
+    .DelegateSignatureGraphs(0)="/Script/Engine.EdGraph'UDW Starting Up'"
+    .DelegateSignatureGraphs(1)="/Script/Engine.EdGraph'Editor Update'"
+    .DelegateSignatureGraphs(2)="/Script/Engine.EdGraph'Instant Update'"
+    .NewVariables(0)=(VarName="UDW Starting Up",VarGuid=676A04714A5502E563A025A8B17E4B6C,VarType=(PinCategory="mcdelegate"),FriendlyName="UDW Starting Up",Category=NSLOCTEXT("KismetSchema", "Default", "Default"),PropertyFlags=17592454553605)
+    .NewVariables(1)=(VarName="Editor Update",VarGuid=CDF6197D45F61877C7B74A8663E4A33E,VarType=(PinCategory="mcdelegate"),FriendlyName="Editor Update",Category=NSLOCTEXT("KismetSchema", "Default", "Default"),PropertyFlags=17592454553605)
+    .NewVariables(2)=(VarName="Instant Update",VarGuid=868866AA4046101D7C127CABCD092A7A,VarType=(PinCategory="mcdelegate"),FriendlyName="Instant Update",Category=NSLOCTEXT("KismetSchema", "Default", "Default"),PropertyFlags=17592454553605)
+    .CategorySorting(0)="Default"
+    .LastEditedDocuments(0)=(EditedObjectPath="/Game/UltraDynamicSky/Blueprints/Weather_Effects/System/UDW_Dispatcher_Tunnel.UDW_Dispatcher_Tunnel:EventGraph",SavedViewOffset=(X=-465.000000,Y=-366.000000),SavedZoomAmount=1.000000)
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfo'SceneThumbnailInfo_0'"
+    .GeneratedClass="/Script/Engine.BlueprintGeneratedClass'UDW_Dispatcher_Tunnel_C'"
+    .bLegacyNeedToPurgeSkelRefs=False
+    .BlueprintGuid=193F550A4C26C74AC1013A8811FB77C8
+  EdGraph (EventGraph)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .bAllowDeletion=False
+    .GraphGuid=505B3D6D43C56D920EC07499CEF8A54E
+  EdGraph (UDW Starting Up)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .bEditable=False
+    .GraphGuid=230CDA9B442270122E36CC949CAE340B
+  K2Node_FunctionEntry (K2Node_FunctionEntry_0)
+    .ExtraFlags=201457664
+    .FunctionReference=(MemberName="Instant Update")
+    .bIsEditable=True
+    .NodeGuid=8FCFB4DF42434CB0EAD3D3879EA7DF68
+  EdGraph (Editor Update)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .bEditable=False
+    .GraphGuid=04187ACE43D46CA763EE3EB458CB1F1A
+  EdGraph (Instant Update)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .bEditable=False
+    .GraphGuid=584686D74F2493EBF56E97A61DBC3BA4
+  EdGraph (ExecuteUbergraph_UDW_Dispatcher_Tunnel)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .GraphGuid=C4323F2F40E061907188688454AA8515
+  EdGraph (UDW Starting Up_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .bEditable=False
+    .GraphGuid=230CDA9B442270122E36CC949CAE340B
+  EdGraph (Editor Update_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .bEditable=False
+    .GraphGuid=04187ACE43D46CA763EE3EB458CB1F1A
+  EdGraph (Instant Update_MERGED)
+    .Schema="/Script/CoreUObject.Class'/Script/BlueprintGraph.EdGraphSchema_K2'"
+    .Nodes(0)="/Script/BlueprintGraph.K2Node_FunctionEntry'K2Node_FunctionEntry_0'"
+    .bEditable=False
+    .GraphGuid=584686D74F2493EBF56E97A61DBC3BA4

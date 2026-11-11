@@ -1,1 +1,0 @@
-static float Occlusion;\r\nstatic float OcclusionWorldHeight;\r\n\r\nfor (int i = 0; i < Samples; i++){\r\n\tOcclusionWorldHeight =  Texture2DSample(Tex, TexSampler, UV + PoissonDisk256[i] * Offset);\r\n\t\r\n\tOcclusion += WorldHeight > OcclusionWorldHeight ? 0.0 : 1.0;\r\n}\r\n\r\nreturn Occlusion/Samples;

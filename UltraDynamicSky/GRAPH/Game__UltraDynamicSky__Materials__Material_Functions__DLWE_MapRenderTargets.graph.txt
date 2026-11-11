@@ -1,0 +1,158 @@
+### /Game/UltraDynamicSky/Materials/Material_Functions/DLWE_MapRenderTargets
+  MaterialFunction (DLWE_MapRenderTargets)
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'DLWE_MapRenderTargetsEditorOnlyData'"
+    .StateId=7E1CD73341F644D27717A5BD138B685A
+    .CombinedInputTypes=2
+    .CombinedOutputTypes=15
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+  MaterialFunctionEditorOnlyData (DLWE_MapRenderTargetsEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionInput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionInput'DLWE_MapRenderTargets:MaterialExpressionFunctionInput_0'","/Script/Engine.MaterialExpressionCustom'DLWE_MapRenderTargets:MaterialExpressionCustom_0'","/Script/Engine.MaterialExpressionFunctionOutput'DLWE_MapRenderTargets:MaterialExpressionFunctionOutput_1'","/Script/Engine.MaterialExpressionFunctionOutput'DLWE_MapRenderTargets:MaterialExpressionFunctionOutput_2'","/Script/Engine.MaterialExpressionTextureObject'DLWE_MapRenderTargets:MaterialExpressionTextureObject_0'","/Script/Engine.MaterialExpressionAppendVector'DLWE_MapRenderTargets:MaterialExpressionAppendVector_0'","/Script/Engine.MaterialExpressionConstant'DLWE_MapRenderTargets:MaterialExpressionConstant_1'","/Script/Engine.MaterialExpressionAppendVector'DLWE_MapRenderTargets:MaterialExpressionAppendVector_1'","/Script/Engine.MaterialExpressionAppendVector'DLWE_MapRenderTargets:MaterialExpressionAppendVector_2'","/Script/Engine.MaterialExpressionAdd'DLWE_MapRenderTargets:MaterialExpressionAdd_0'","/Script/Engine.MaterialExpressionAdd'DLWE_MapRenderTargets:MaterialExpressionAdd_1'","/Script/Engine.MaterialExpressionDivide'DLWE_MapRenderTargets:MaterialExpressionDivide_2'","/Script/Engine.MaterialExpressionCollectionParameter'DLWE_MapRenderTargets:MaterialExpressionCollectionParameter_0'","/Script/Engine.MaterialExpressionComponentMask'DLWE_MapRenderTargets:MaterialExpressionComponentMask_0'","/Script/Engine.MaterialExpressionDivide'DLWE_MapRenderTargets:MaterialExpressionDivide_0'"))
+  MaterialExpressionAdd (MaterialExpressionAdd_0)
+    A                      <- MaterialExpressionCustom
+    B                      <- MaterialExpressionCustom
+    .B=(Expression="/Script/Engine.MaterialExpressionCustom'DLWE_MapRenderTargets:MaterialExpressionCustom_0'",OutputIndex=3)
+    .A=(Expression="/Script/Engine.MaterialExpressionCustom'DLWE_MapRenderTargets:MaterialExpressionCustom_0'")
+    .MaterialExpressionEditorX=-40
+    .MaterialExpressionEditorY=448
+    .MaterialExpressionGuid=FB7183B548DC53883DE16EBEBD15C96A
+    .Function="/Script/Engine.MaterialFunction'DLWE_MapRenderTargets'"
+  MaterialExpressionAdd (MaterialExpressionAdd_1)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionCustom
+    .B=(Expression="/Script/Engine.MaterialExpressionCustom'DLWE_MapRenderTargets:MaterialExpressionCustom_0'",OutputIndex=4)
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'DLWE_MapRenderTargets:MaterialExpressionAdd_0'")
+    .MaterialExpressionEditorX=76
+    .MaterialExpressionEditorY=448
+    .MaterialExpressionGuid=615E05EE49A79A36DBBE74BB7002EB10
+    .Function="/Script/Engine.MaterialFunction'DLWE_MapRenderTargets'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_0)
+    A                      <- MaterialExpressionDivide
+    B                      <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'DLWE_MapRenderTargets:MaterialExpressionConstant_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'DLWE_MapRenderTargets:MaterialExpressionDivide_0'")
+    .MaterialExpressionEditorX=-764
+    .MaterialExpressionEditorY=608
+    .MaterialExpressionGuid=7D76451846EDC131AC77E4BA8B9C9703
+    .Function="/Script/Engine.MaterialFunction'DLWE_MapRenderTargets'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_1)
+    A                      <- MaterialExpressionConstant
+    B                      <- MaterialExpressionDivide
+    .B=(Expression="/Script/Engine.MaterialExpressionDivide'DLWE_MapRenderTargets:MaterialExpressionDivide_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionConstant'DLWE_MapRenderTargets:MaterialExpressionConstant_1'")
+    .MaterialExpressionEditorX=-764
+    .MaterialExpressionEditorY=704
+    .MaterialExpressionGuid=7C864CA64EE713C04BD7699B4A28C7CA
+    .Function="/Script/Engine.MaterialFunction'DLWE_MapRenderTargets'"
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_2)
+    A                      <- MaterialExpressionCustom
+    B                      <- MaterialExpressionCustom
+    .B=(Expression="/Script/Engine.MaterialExpressionCustom'DLWE_MapRenderTargets:MaterialExpressionCustom_0'",OutputIndex=2)
+    .A=(Expression="/Script/Engine.MaterialExpressionCustom'DLWE_MapRenderTargets:MaterialExpressionCustom_0'",OutputIndex=1)
+    .MaterialExpressionEditorX=4
+    .MaterialExpressionEditorY=612
+    .MaterialExpressionGuid=31934A4644F1F51B222F839CF529972D
+    .Function="/Script/Engine.MaterialFunction'DLWE_MapRenderTargets'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_0)
+    .ParameterName="DLWE_Render Target Mapping"
+    .Collection="/Script/Engine.MaterialParameterCollection'/Game/UltraDynamicSky/Materials/Weather/UltraDynamicWeather_Parameters.UltraDynamicWeather_Parameters'"
+    .ParameterId=D88ABE3B4B0695382525D6936A055ABE
+    .MaterialExpressionEditorX=-1360
+    .MaterialExpressionEditorY=812
+    .MaterialExpressionGuid=84A3ECB3423FFE55B3ED4AA9B44F1214
+    .Function="/Script/Engine.MaterialFunction'DLWE_MapRenderTargets'"
+    .bCollapsed=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionCollectionParameter
+    .B=True
+    .Input=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'DLWE_MapRenderTargets:MaterialExpressionCollectionParameter_0'")
+    .MaterialExpressionEditorX=-1100
+    .MaterialExpressionEditorY=840
+    .MaterialExpressionGuid=B8CBACEB4AA4ABF0FBBA77BDF40DB35C
+    .Function="/Script/Engine.MaterialFunction'DLWE_MapRenderTargets'"
+  MaterialExpressionConstant (MaterialExpressionConstant_1)
+    .MaterialExpressionEditorX=-948
+    .MaterialExpressionEditorY=640
+    .MaterialExpressionGuid=C484D7B64155FECD38B23288E10EA9DC
+    .Function="/Script/Engine.MaterialFunction'DLWE_MapRenderTargets'"
+  MaterialExpressionCustom (MaterialExpressionCustom_0)
+    Inputs(0)              <- MaterialExpressionFunctionInput
+    Inputs(1)              <- MaterialExpressionTextureObject
+    Inputs(2)              <- MaterialExpressionAppendVector
+    Inputs(3)              <- MaterialExpressionAppendVector
+    .Code="float Depth = 1;\r\n\r\nDepth = Tex.SampleGrad(TexSampler,UV, 0, 0).x;\r\n\r\nxSample = Tex.SampleGrad(TexSampler,UV - XOffset, 0, 0).x;\r\n\r\nySample = Tex.SampleGrad(TexSampler,UV - YOffset, 0, 0).x;\r\n\r\nXNormal = xSample - Depth;\r\n\r\nYNormal = ySample - Depth;\r\n\r\nreturn Depth;"
+    .OutputType=CMOT_Float1
+    .Inputs(0)=(InputName="UV",Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'DLWE_MapRenderTargets:MaterialExpressionFunctionInput_0'"))
+    .Inputs(1)=(InputName="Tex",Input=(Expression="/Script/Engine.MaterialExpressionTextureObject'DLWE_MapRenderTargets:MaterialExpressionTextureObject_0'"))
+    .Inputs(2)=(InputName="XOffset",Input=(Expression="/Script/Engine.MaterialExpressionAppendVector'DLWE_MapRenderTargets:MaterialExpressionAppendVector_0'"))
+    .Inputs(3)=(InputName="YOffset",Input=(Expression="/Script/Engine.MaterialExpressionAppendVector'DLWE_MapRenderTargets:MaterialExpressionAppendVector_1'"))
+    .AdditionalOutputs(0)=(OutputName="XNormal")
+    .AdditionalOutputs(1)=(OutputName="YNormal")
+    .AdditionalOutputs(2)=(OutputName="xSample")
+    .AdditionalOutputs(3)=(OutputName="ySample")
+    .ShowCode=True
+    .MaterialExpressionEditorX=-588
+    .MaterialExpressionEditorY=448
+    .MaterialExpressionGuid=BCEFC4F6426AC0F8C04FE0A5AFB7DA14
+    .Function="/Script/Engine.MaterialFunction'DLWE_MapRenderTargets'"
+    .bShowOutputNameOnPin=True
+    .Outputs(0)=(OutputName="return")
+    .Outputs(1)=(OutputName="XNormal")
+    .Outputs(2)=(OutputName="YNormal")
+    .Outputs(3)=(OutputName="xSample")
+    .Outputs(4)=(OutputName="ySample")
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'DLWE_MapRenderTargets:MaterialExpressionComponentMask_0'")
+    .ConstA=3.500000
+    .MaterialExpressionEditorX=-940
+    .MaterialExpressionEditorY=736
+    .MaterialExpressionGuid=F2AF25C8416889F1B24ED191EA84F822
+    .Function="/Script/Engine.MaterialFunction'DLWE_MapRenderTargets'"
+  MaterialExpressionDivide (MaterialExpressionDivide_2)
+    A                      <- MaterialExpressionAdd
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'DLWE_MapRenderTargets:MaterialExpressionAdd_1'")
+    .ConstB=3.000000
+    .MaterialExpressionEditorX=188
+    .MaterialExpressionEditorY=448
+    .MaterialExpressionGuid=637E23DA4A3502032921A5AE6FBB3E46
+    .Function="/Script/Engine.MaterialFunction'DLWE_MapRenderTargets'"
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_0)
+    .InputName="UV"
+    .Id=7EA0E6744B38E91AAB981FBDF242423D
+    .InputType=FunctionInput_Vector2
+    .MaterialExpressionEditorX=-860
+    .MaterialExpressionEditorY=448
+    .MaterialExpressionGuid=4DB19B0A459CBBA9F4E20C9B5435F1F7
+    .Function="/Script/Engine.MaterialFunction'DLWE_MapRenderTargets'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_1)
+    A                      <- MaterialExpressionDivide
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'DLWE_MapRenderTargets:MaterialExpressionDivide_2'")
+    .OutputName="Depth"
+    .bLastPreviewed=True
+    .Id=49747A6449C16607D1242583506E5EDA
+    .MaterialExpressionEditorX=324
+    .MaterialExpressionEditorY=420
+    .MaterialExpressionGuid=1D217E1C4A74AF4DF196E8B278DB0F78
+    .Function="/Script/Engine.MaterialFunction'DLWE_MapRenderTargets'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_2)
+    A                      <- MaterialExpressionAppendVector
+    .A=(Expression="/Script/Engine.MaterialExpressionAppendVector'DLWE_MapRenderTargets:MaterialExpressionAppendVector_2'")
+    .OutputName="Normal"
+    .SortPriority=1
+    .Id=407DC9244966B1B26D74369C438955BF
+    .MaterialExpressionEditorX=128
+    .MaterialExpressionEditorY=612
+    .MaterialExpressionGuid=02AC8F0048980E144CD4409DA89B0122
+    .Function="/Script/Engine.MaterialFunction'DLWE_MapRenderTargets'"
+    .bCollapsed=True
+  MaterialExpressionTextureObject (MaterialExpressionTextureObject_0)
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.TextureRenderTarget2D'/Game/UltraDynamicSky/Textures/Weather/DLWE_MaskTarget.DLWE_MaskTarget'"
+    .MaterialExpressionEditorX=-816
+    .MaterialExpressionEditorY=516
+    .MaterialExpressionGuid=4AA2B96E4D1D5BF8CAB1729599FE4AC4
+    .Function="/Script/Engine.MaterialFunction'DLWE_MapRenderTargets'"
+    .bCollapsed=True

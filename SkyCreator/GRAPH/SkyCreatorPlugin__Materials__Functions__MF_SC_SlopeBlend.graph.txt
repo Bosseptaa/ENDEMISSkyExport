@@ -1,0 +1,350 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_SlopeBlend
+  MaterialFunction (MF_SC_SlopeBlend)
+    DependentFunctionExpressionCandidates(0) <- MaterialExpressionMaterialFunctionCall
+    .LibraryCategoriesText(0)=NSLOCTEXT("", "3E7D0E6B4FA482CB9EF9DC87014C0A2F", "Sky Creator")
+    .DependentFunctionExpressionCandidates(0)="/Script/Engine.MaterialExpressionMaterialFunctionCall'MaterialExpressionMaterialFunctionCall_0'"
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'MF_SC_SlopeBlendEditorOnlyData'"
+    .StateId=078885FF4DE7EBA62B2EF585F18E4401
+    .CombinedInputTypes=15
+    .CombinedOutputTypes=15
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+  MaterialFunctionEditorOnlyData (MF_SC_SlopeBlendEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'MF_SC_SlopeBlend:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionVertexNormalWS'MF_SC_SlopeBlend:MaterialExpressionVertexNormalWS_1'","/Script/Engine.MaterialExpressionSubtract'MF_SC_SlopeBlend:MaterialExpressionSubtract_1'","/Script/Engine.MaterialExpressionSaturate'MF_SC_SlopeBlend:MaterialExpressionSaturate_0'","/Script/Engine.MaterialExpressionOneMinus'MF_SC_SlopeBlend:MaterialExpressionOneMinus_2'","/Script/Engine.MaterialExpressionDivide'MF_SC_SlopeBlend:MaterialExpressionDivide_2'","/Script/Engine.MaterialExpressionMultiply'MF_SC_SlopeBlend:MaterialExpressionMultiply_6'","/Script/Engine.MaterialExpressionPower'MF_SC_SlopeBlend:MaterialExpressionPower_0'","/Script/Engine.MaterialExpressionFunctionInput'MF_SC_SlopeBlend:MaterialExpressionFunctionInput_0'","/Script/Engine.MaterialExpressionDotProduct'MF_SC_SlopeBlend:MaterialExpressionDotProduct_0'","/Script/Engine.MaterialExpressionFunctionInput'MF_SC_SlopeBlend:MaterialExpressionFunctionInput_1'","/Script/Engine.MaterialExpressionFunctionInput'MF_SC_SlopeBlend:MaterialExpressionFunctionInput_2'","/Script/Engine.MaterialExpressionTransform'MF_SC_SlopeBlend:MaterialExpressionTransform_1'","/Script/Engine.MaterialExpressionNormalize'MF_SC_SlopeBlend:MaterialExpressionNormalize_1'","/Script/Engine.MaterialExpressionFunctionInput'MF_SC_SlopeBlend:MaterialExpressionFunctionInput_3'","/Script/Engine.MaterialExpressionSubtract'MF_SC_SlopeBlend:MaterialExpressionSubtract_0'","/Script/Engine.MaterialExpressionSaturate'MF_SC_SlopeBlend:MaterialExpressionSaturate_1'","/Script/Engine.MaterialExpressionOneMinus'MF_SC_SlopeBlend:MaterialExpressionOneMinus_0'","/Script/Engine.MaterialExpressionDivide'MF_SC_SlopeBlend:MaterialExpressionDivide_1'","/Script/Engine.MaterialExpressionMultiply'MF_SC_SlopeBlend:MaterialExpressionMultiply_0'","/Script/Engine.MaterialExpressionPower'MF_SC_SlopeBlend:MaterialExpressionPower_1'","/Script/Engine.MaterialExpressionDotProduct'MF_SC_SlopeBlend:MaterialExpressionDotProduct_1'","/Script/Engine.MaterialExpressionFunctionOutput'MF_SC_SlopeBlend:MaterialExpressionFunctionOutput_1'","/Script/Engine.MaterialExpressionReroute'MF_SC_SlopeBlend:MaterialExpressionReroute_0'","/Script/Engine.MaterialExpressionReroute'MF_SC_SlopeBlend:MaterialExpressionReroute_1'","/Script/Engine.MaterialExpressionReroute'MF_SC_SlopeBlend:MaterialExpressionReroute_2'","/Script/Engine.MaterialExpressionReroute'MF_SC_SlopeBlend:MaterialExpressionReroute_3'","/Script/Engine.MaterialExpressionReroute'MF_SC_SlopeBlend:MaterialExpressionReroute_4'","/Script/Engine.MaterialExpressionReroute'MF_SC_SlopeBlend:MaterialExpressionReroute_5'","/Script/Engine.MaterialExpressionReroute'MF_SC_SlopeBlend:MaterialExpressionReroute_6'","/Script/Engine.MaterialExpressionReroute'MF_SC_SlopeBlend:MaterialExpressionReroute_7'","/Script/Engine.MaterialExpressionReroute'MF_SC_SlopeBlend:MaterialExpressionReroute_8'","/Script/Engine.MaterialExpressionReroute'MF_SC_SlopeBlend:MaterialExpressionReroute_9'","/Script/Engine.MaterialExpressionSaturate'MF_SC_SlopeBlend:MaterialExpressionSaturate_2'","/Script/Engine.MaterialExpressionSaturate'MF_SC_SlopeBlend:MaterialExpressionSaturate_3'","/Script/Engine.MaterialExpressionMultiply'MF_SC_SlopeBlend:MaterialExpressionMultiply_43'","/Script/Engine.MaterialExpressionAdd'MF_SC_SlopeBlend:MaterialExpressionAdd_3'","/Script/Engine.MaterialExpressionConstant'MF_SC_SlopeBlend:MaterialExpressionConstant_5'","/Script/Engine.MaterialExpressionConstant'MF_SC_SlopeBlend:MaterialExpressionConstant_0'","/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_SlopeBlend:MaterialExpressionMaterialFunctionCall_0'","/Script/Engine.MaterialExpressionFunctionInput'MF_SC_SlopeBlend:MaterialExpressionFunctionInput_4'"))
+  MaterialExpressionAdd (MaterialExpressionAdd_3)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'MF_SC_SlopeBlend:MaterialExpressionConstant_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_SlopeBlend:MaterialExpressionMultiply_43'")
+    .MaterialExpressionEditorX=-1024
+    .MaterialExpressionEditorY=512
+    .MaterialExpressionGuid=E29782FE4ABBBA18877C23BD9C5343E2
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SlopeBlend'"
+  MaterialExpressionConstant (MaterialExpressionConstant_0)
+    .R=0.500000
+    .MaterialExpressionEditorX=-1152
+    .MaterialExpressionEditorY=608
+    .MaterialExpressionGuid=B4F61A664D5373BEFD4D818AEA50373A
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SlopeBlend'"
+  MaterialExpressionConstant (MaterialExpressionConstant_5)
+    .R=0.500000
+    .MaterialExpressionEditorX=-1280
+    .MaterialExpressionEditorY=608
+    .MaterialExpressionGuid=B4F61A664D5373BEFD4D818AEA50373A
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SlopeBlend'"
+  MaterialExpressionDivide (MaterialExpressionDivide_1)
+    B                      <- MaterialExpressionOneMinus
+    .B=(Expression="/Script/Engine.MaterialExpressionOneMinus'MF_SC_SlopeBlend:MaterialExpressionOneMinus_0'")
+    .MaterialExpressionEditorX=-640
+    .MaterialExpressionEditorY=656
+    .MaterialExpressionGuid=A75AA4F743046A9870AFC2A515EA8030
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SlopeBlend'"
+  MaterialExpressionDivide (MaterialExpressionDivide_2)
+    B                      <- MaterialExpressionOneMinus
+    .B=(Expression="/Script/Engine.MaterialExpressionOneMinus'MF_SC_SlopeBlend:MaterialExpressionOneMinus_2'")
+    .MaterialExpressionEditorX=-640
+    .MaterialExpressionEditorY=176
+    .MaterialExpressionGuid=A75AA4F743046A9870AFC2A515EA8030
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SlopeBlend'"
+  MaterialExpressionDotProduct (MaterialExpressionDotProduct_0)
+    A                      <- MaterialExpressionVertexNormalWS
+    B                      <- MaterialExpressionReroute
+    .B=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_SlopeBlend:MaterialExpressionReroute_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionVertexNormalWS'MF_SC_SlopeBlend:MaterialExpressionVertexNormalWS_1'")
+    .MaterialExpressionEditorX=-1024
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=072DD01447FCB901C28A35B05D033A91
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SlopeBlend'"
+  MaterialExpressionDotProduct (MaterialExpressionDotProduct_1)
+    A                      <- MaterialExpressionNormalize
+    B                      <- MaterialExpressionReroute
+    .B=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_SlopeBlend:MaterialExpressionReroute_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionNormalize'MF_SC_SlopeBlend:MaterialExpressionNormalize_1'")
+    .MaterialExpressionEditorX=-1280
+    .MaterialExpressionEditorY=512
+    .MaterialExpressionGuid=072DD01447FCB901C28A35B05D033A91
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SlopeBlend'"
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_0)
+    .InputName="World Vector"
+    .Id=61351A884395463BE557EEA50E28B589
+    .PreviewValue=(X=0.000000,Y=0.000000,Z=1.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .MaterialExpressionEditorX=-2560
+    .MaterialExpressionEditorY=64
+    .MaterialExpressionGuid=253FA35F4C62A270D7DB82A89901900D
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SlopeBlend'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_1)
+    .InputName="Slope Angle"
+    .Id=D6C98D6D4D3BEB1E805B23997A3F8451
+    .InputType=FunctionInput_Scalar
+    .PreviewValue=(X=0.500000,Y=0.000000,Z=1.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=1
+    .MaterialExpressionEditorX=-2560
+    .MaterialExpressionEditorY=176
+    .MaterialExpressionGuid=253FA35F4C62A270D7DB82A89901900D
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SlopeBlend'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_2)
+    .InputName="Slope Smoothness"
+    .Id=3972FFE24BE7424FC3319ABA2107ADB4
+    .InputType=FunctionInput_Scalar
+    .PreviewValue=(X=1.000000,Y=0.000000,Z=1.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=2
+    .MaterialExpressionEditorX=-2560
+    .MaterialExpressionEditorY=288
+    .MaterialExpressionGuid=253FA35F4C62A270D7DB82A89901900D
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SlopeBlend'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_3)
+    .InputName="Normal"
+    .Id=483215A643935C3C5C04C6BE5847AD2F
+    .PreviewValue=(X=0.000000,Y=0.000000,Z=1.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=3
+    .MaterialExpressionEditorX=-2304
+    .MaterialExpressionEditorY=512
+    .MaterialExpressionGuid=253FA35F4C62A270D7DB82A89901900D
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SlopeBlend'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_4)
+    .InputName="Normal Strength"
+    .Id=D49F862240FBFE7C2747F7AE4007A296
+    .InputType=FunctionInput_Scalar
+    .PreviewValue=(X=1.000000,Y=0.000000,Z=1.000000,W=1.000000)
+    .bUsePreviewValueAsDefault=True
+    .SortPriority=4
+    .MaterialExpressionEditorX=-2304
+    .MaterialExpressionEditorY=608
+    .MaterialExpressionGuid=253FA35F4C62A270D7DB82A89901900D
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SlopeBlend'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionSaturate
+    .A=(Expression="/Script/Engine.MaterialExpressionSaturate'MF_SC_SlopeBlend:MaterialExpressionSaturate_2'")
+    .OutputName="Vertex Slope Mask"
+    .bLastPreviewed=True
+    .Id=32C494E541773EC95201F9920F13594A
+    .MaterialExpressionGuid=E5E1460D4FC9B3E07DE90BB5B78770AD
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SlopeBlend'"
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_1)
+    A                      <- MaterialExpressionSaturate
+    .A=(Expression="/Script/Engine.MaterialExpressionSaturate'MF_SC_SlopeBlend:MaterialExpressionSaturate_3'")
+    .OutputName="Normal Slope Mask"
+    .SortPriority=1
+    .bLastPreviewed=True
+    .Id=20CA2F774B2083E55DAB25BD1CD45AD4
+    .MaterialExpressionEditorY=512
+    .MaterialExpressionGuid=E5E1460D4FC9B3E07DE90BB5B78770AD
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SlopeBlend'"
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_0)
+    FunctionInputs(0)      <- MaterialExpressionFunctionInput
+    FunctionInputs(2)      <- MaterialExpressionFunctionInput
+    .MaterialFunction="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_NormalStrength.MF_SC_NormalStrength'"
+    .FunctionInputs(0)=(ExpressionInputId=8758E70E42E0E81160E74EAAB91268E8,Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_SlopeBlend:MaterialExpressionFunctionInput_3'",InputName="Normal"))
+    .FunctionInputs(1)=(ExpressionInputId=64BE6392436D73FECF7DE494DE211B4E,Input=(OutputIndex=-1,InputName="Normal + Alpha"))
+    .FunctionInputs(2)=(ExpressionInputId=568EFA084E7B5AD222F231A6F374737D,Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_SlopeBlend:MaterialExpressionFunctionInput_4'",InputName="Strength"))
+    .FunctionOutputs(0)=(ExpressionOutputId=BEBAA4144C9BEEC689CB93B491900FF5,Output=(OutputName="RGB"))
+    .FunctionOutputs(1)=(ExpressionOutputId=FFC0492A42384EC956B7588CBBD65332,Output=(OutputName="RGBA"))
+    .MaterialExpressionEditorX=-2048
+    .MaterialExpressionEditorY=512
+    .MaterialExpressionGuid=DECDC9004E6D383BE722F1832DAEA231
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SlopeBlend'"
+    .Outputs(0)=(OutputName="RGB")
+    .Outputs(1)=(OutputName="RGBA")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionSaturate
+    B                      <- MaterialExpressionDivide
+    .B=(Expression="/Script/Engine.MaterialExpressionDivide'MF_SC_SlopeBlend:MaterialExpressionDivide_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSaturate'MF_SC_SlopeBlend:MaterialExpressionSaturate_1'")
+    .MaterialExpressionEditorX=-512
+    .MaterialExpressionEditorY=512
+    .MaterialExpressionGuid=45A2F962440BA40C275615965B381382
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SlopeBlend'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_43)
+    A                      <- MaterialExpressionDotProduct
+    B                      <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'MF_SC_SlopeBlend:MaterialExpressionConstant_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionDotProduct'MF_SC_SlopeBlend:MaterialExpressionDotProduct_1'")
+    .MaterialExpressionEditorX=-1152
+    .MaterialExpressionEditorY=512
+    .MaterialExpressionGuid=225F9A3F4767848C7F4D6482948EA97F
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SlopeBlend'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_6)
+    A                      <- MaterialExpressionSaturate
+    B                      <- MaterialExpressionDivide
+    .B=(Expression="/Script/Engine.MaterialExpressionDivide'MF_SC_SlopeBlend:MaterialExpressionDivide_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSaturate'MF_SC_SlopeBlend:MaterialExpressionSaturate_0'")
+    .MaterialExpressionEditorX=-512
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=45A2F962440BA40C275615965B381382
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SlopeBlend'"
+  MaterialExpressionNormalize (MaterialExpressionNormalize_1)
+    VectorInput            <- MaterialExpressionTransform
+    .VectorInput=(Expression="/Script/Engine.MaterialExpressionTransform'MF_SC_SlopeBlend:MaterialExpressionTransform_1'")
+    .MaterialExpressionEditorX=-1536
+    .MaterialExpressionEditorY=512
+    .MaterialExpressionGuid=F4FE18D744E801BBFC84EE80EDE3E9C5
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SlopeBlend'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_0)
+    Input                  <- MaterialExpressionReroute
+    .Input=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_SlopeBlend:MaterialExpressionReroute_5'")
+    .MaterialExpressionEditorX=-832
+    .MaterialExpressionEditorY=656
+    .MaterialExpressionGuid=0E00500A4B61054C2C0EA5A677B840E2
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SlopeBlend'"
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_2)
+    Input                  <- MaterialExpressionReroute
+    .Input=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_SlopeBlend:MaterialExpressionReroute_3'")
+    .MaterialExpressionEditorX=-832
+    .MaterialExpressionEditorY=176
+    .MaterialExpressionGuid=0E00500A4B61054C2C0EA5A677B840E2
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SlopeBlend'"
+  MaterialExpressionPower (MaterialExpressionPower_0)
+    Base                   <- MaterialExpressionMultiply
+    Exponent               <- MaterialExpressionReroute
+    .Base=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_SlopeBlend:MaterialExpressionMultiply_6'")
+    .Exponent=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_SlopeBlend:MaterialExpressionReroute_7'")
+    .MaterialExpressionEditorX=-384
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=78737724477C9037B29C3BAD5616238A
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SlopeBlend'"
+  MaterialExpressionPower (MaterialExpressionPower_1)
+    Base                   <- MaterialExpressionMultiply
+    Exponent               <- MaterialExpressionReroute
+    .Base=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_SlopeBlend:MaterialExpressionMultiply_0'")
+    .Exponent=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_SlopeBlend:MaterialExpressionReroute_9'")
+    .MaterialExpressionEditorX=-384
+    .MaterialExpressionEditorY=512
+    .MaterialExpressionGuid=78737724477C9037B29C3BAD5616238A
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SlopeBlend'"
+  MaterialExpressionReroute (MaterialExpressionReroute_0)
+    Input                  <- MaterialExpressionFunctionInput
+    .Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_SlopeBlend:MaterialExpressionFunctionInput_0'")
+    .MaterialExpressionEditorX=-2224
+    .MaterialExpressionEditorY=96
+    .MaterialExpressionGuid=D7C2EB0A42390C267AFB1486C530E0ED
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SlopeBlend'"
+  MaterialExpressionReroute (MaterialExpressionReroute_1)
+    Input                  <- MaterialExpressionReroute
+    .Input=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_SlopeBlend:MaterialExpressionReroute_0'")
+    .MaterialExpressionEditorX=-1792
+    .MaterialExpressionEditorY=576
+    .MaterialExpressionGuid=C53F20CB4755C33876C696AAA1541DF3
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SlopeBlend'"
+  MaterialExpressionReroute (MaterialExpressionReroute_2)
+    Input                  <- MaterialExpressionFunctionInput
+    .Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_SlopeBlend:MaterialExpressionFunctionInput_1'")
+    .MaterialExpressionEditorX=-2224
+    .MaterialExpressionEditorY=208
+    .MaterialExpressionGuid=09EDF8DC47D7F84D41547DB35622B321
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SlopeBlend'"
+  MaterialExpressionReroute (MaterialExpressionReroute_3)
+    Input                  <- MaterialExpressionReroute
+    .Input=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_SlopeBlend:MaterialExpressionReroute_2'")
+    .MaterialExpressionEditorX=-1040
+    .MaterialExpressionEditorY=208
+    .MaterialExpressionGuid=7B558ABF40B10BC355E06A91E00215E5
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SlopeBlend'"
+  MaterialExpressionReroute (MaterialExpressionReroute_4)
+    Input                  <- MaterialExpressionReroute
+    .Input=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_SlopeBlend:MaterialExpressionReroute_2'")
+    .MaterialExpressionEditorX=-1792
+    .MaterialExpressionEditorY=688
+    .MaterialExpressionGuid=12B835DF41E4D70BBF573EAC502C4CEA
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SlopeBlend'"
+  MaterialExpressionReroute (MaterialExpressionReroute_5)
+    Input                  <- MaterialExpressionReroute
+    .Input=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_SlopeBlend:MaterialExpressionReroute_4'")
+    .MaterialExpressionEditorX=-1024
+    .MaterialExpressionEditorY=688
+    .MaterialExpressionGuid=44AA5D6843C2C40F003E11AD2F904B75
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SlopeBlend'"
+  MaterialExpressionReroute (MaterialExpressionReroute_6)
+    Input                  <- MaterialExpressionFunctionInput
+    .Input=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_SlopeBlend:MaterialExpressionFunctionInput_2'")
+    .MaterialExpressionEditorX=-2224
+    .MaterialExpressionEditorY=320
+    .MaterialExpressionGuid=5209A1E6449AC2EBB5EC8F913AAA57B3
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SlopeBlend'"
+  MaterialExpressionReroute (MaterialExpressionReroute_7)
+    Input                  <- MaterialExpressionReroute
+    .Input=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_SlopeBlend:MaterialExpressionReroute_6'")
+    .MaterialExpressionEditorX=-560
+    .MaterialExpressionEditorY=320
+    .MaterialExpressionGuid=E57477EB4AECDCC4F04002B46435F983
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SlopeBlend'"
+  MaterialExpressionReroute (MaterialExpressionReroute_8)
+    Input                  <- MaterialExpressionReroute
+    .Input=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_SlopeBlend:MaterialExpressionReroute_6'")
+    .MaterialExpressionEditorX=-1792
+    .MaterialExpressionEditorY=800
+    .MaterialExpressionGuid=329DF8FD400179678EB10B8A5A7982C8
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SlopeBlend'"
+  MaterialExpressionReroute (MaterialExpressionReroute_9)
+    Input                  <- MaterialExpressionReroute
+    .Input=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_SlopeBlend:MaterialExpressionReroute_8'")
+    .MaterialExpressionEditorX=-560
+    .MaterialExpressionEditorY=800
+    .MaterialExpressionGuid=01934CF94C2BE05524760F90B65F5227
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SlopeBlend'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_0)
+    Input                  <- MaterialExpressionSubtract
+    .Input=(Expression="/Script/Engine.MaterialExpressionSubtract'MF_SC_SlopeBlend:MaterialExpressionSubtract_1'")
+    .MaterialExpressionEditorX=-640
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=48F06AD643BD010C002B7D871D04AF29
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SlopeBlend'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_1)
+    Input                  <- MaterialExpressionSubtract
+    .Input=(Expression="/Script/Engine.MaterialExpressionSubtract'MF_SC_SlopeBlend:MaterialExpressionSubtract_0'")
+    .MaterialExpressionEditorX=-640
+    .MaterialExpressionEditorY=512
+    .MaterialExpressionGuid=48F06AD643BD010C002B7D871D04AF29
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SlopeBlend'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_2)
+    Input                  <- MaterialExpressionPower
+    .Input=(Expression="/Script/Engine.MaterialExpressionPower'MF_SC_SlopeBlend:MaterialExpressionPower_0'")
+    .MaterialExpressionEditorX=-256
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=AEBB00964D3708A00BF655B9ABCCE65E
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SlopeBlend'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_3)
+    Input                  <- MaterialExpressionPower
+    .Input=(Expression="/Script/Engine.MaterialExpressionPower'MF_SC_SlopeBlend:MaterialExpressionPower_1'")
+    .MaterialExpressionEditorX=-256
+    .MaterialExpressionEditorY=512
+    .MaterialExpressionGuid=AEBB00964D3708A00BF655B9ABCCE65E
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SlopeBlend'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_0)
+    A                      <- MaterialExpressionDotProduct
+    B                      <- MaterialExpressionReroute
+    .B=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_SlopeBlend:MaterialExpressionReroute_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionDotProduct'MF_SC_SlopeBlend:MaterialExpressionDotProduct_1'")
+    .MaterialExpressionEditorX=-832
+    .MaterialExpressionEditorY=512
+    .MaterialExpressionGuid=27AB8437477E9283F9D7BB87F1088785
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SlopeBlend'"
+  MaterialExpressionSubtract (MaterialExpressionSubtract_1)
+    A                      <- MaterialExpressionDotProduct
+    B                      <- MaterialExpressionReroute
+    .B=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_SlopeBlend:MaterialExpressionReroute_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionDotProduct'MF_SC_SlopeBlend:MaterialExpressionDotProduct_0'")
+    .MaterialExpressionEditorX=-832
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=27AB8437477E9283F9D7BB87F1088785
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SlopeBlend'"
+  MaterialExpressionTransform (MaterialExpressionTransform_1)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+    .Input=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_SlopeBlend:MaterialExpressionMaterialFunctionCall_0'")
+    .MaterialExpressionEditorX=-1792
+    .MaterialExpressionEditorY=496
+    .MaterialExpressionGuid=9851BC41418D51E5CC8978A0136CB7FC
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SlopeBlend'"
+  MaterialExpressionVertexNormalWS (MaterialExpressionVertexNormalWS_1)
+    .MaterialExpressionEditorX=-1280
+    .MaterialExpressionEditorY=16
+    .MaterialExpressionGuid=84E10E2D497084C2BEEE5093DE967183
+    .Function="/Script/Engine.MaterialFunction'MF_SC_SlopeBlend'"

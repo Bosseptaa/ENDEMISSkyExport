@@ -1,0 +1,67 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_OcclusionFactor
+  MaterialFunction (MF_SC_OcclusionFactor)
+    .LibraryCategoriesText(0)=NSLOCTEXT("", "713CC79843A4CB21E8A2568BF6B0A795", "Sky Creator")
+    .EditorOnlyData="/Script/Engine.MaterialFunctionEditorOnlyData'MF_SC_OcclusionFactorEditorOnlyData'"
+    .StateId=319D2D2448994155E0B79387ECDBAEFE
+    .CombinedInputTypes=15
+    .CombinedOutputTypes=15
+    .ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+  MaterialFunctionEditorOnlyData (MF_SC_OcclusionFactorEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+    .ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionFunctionOutput'MF_SC_OcclusionFactor:MaterialExpressionFunctionOutput_0'","/Script/Engine.MaterialExpressionLinearInterpolate'MF_SC_OcclusionFactor:MaterialExpressionLinearInterpolate_3'","/Script/Engine.MaterialExpressionMultiply'MF_SC_OcclusionFactor:MaterialExpressionMultiply_7'","/Script/Engine.MaterialExpressionFunctionInput'MF_SC_OcclusionFactor:MaterialExpressionFunctionInput_0'","/Script/Engine.MaterialExpressionFunctionInput'MF_SC_OcclusionFactor:MaterialExpressionFunctionInput_1'","/Script/Engine.MaterialExpressionFunctionInput'MF_SC_OcclusionFactor:MaterialExpressionFunctionInput_2'"))
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_0)
+    .InputName="Input"
+    .Id=A4B57AC9473C9F792312218899CECC2E
+    .InputType=FunctionInput_Scalar
+    .MaterialExpressionEditorX=-640
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=F289AFC24F24EC01B568CEAF087D552A
+    .Function="/Script/Engine.MaterialFunction'MF_SC_OcclusionFactor'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_1)
+    .InputName="Occlusion"
+    .Id=959A239F4DDC9F3267CF80B9ABAB1C6D
+    .InputType=FunctionInput_Scalar
+    .SortPriority=1
+    .MaterialExpressionEditorX=-640
+    .MaterialExpressionEditorY=128
+    .MaterialExpressionGuid=CC544C994A5B79C0C49AAA80C0B46F2B
+    .Function="/Script/Engine.MaterialFunction'MF_SC_OcclusionFactor'"
+    .bCollapsed=True
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_2)
+    .InputName="Occlusion Factor"
+    .Id=744CCE554B06DECE201381AE1B6946AD
+    .InputType=FunctionInput_Scalar
+    .SortPriority=2
+    .MaterialExpressionEditorX=-640
+    .MaterialExpressionEditorY=208
+    .MaterialExpressionGuid=CC544C994A5B79C0C49AAA80C0B46F2B
+    .Function="/Script/Engine.MaterialFunction'MF_SC_OcclusionFactor'"
+    .bCollapsed=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionLinearInterpolate
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'MF_SC_OcclusionFactor:MaterialExpressionLinearInterpolate_3'")
+    .bLastPreviewed=True
+    .Id=E91780B340A150FE3C26958C2B893ED4
+    .MaterialExpressionGuid=33C304214038888690E032BC2929FC17
+    .Function="/Script/Engine.MaterialFunction'MF_SC_OcclusionFactor'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_3)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionMultiply
+    Alpha                  <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_OcclusionFactor:MaterialExpressionMultiply_7'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_OcclusionFactor:MaterialExpressionFunctionInput_0'")
+    .Alpha=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_OcclusionFactor:MaterialExpressionFunctionInput_2'")
+    .MaterialExpressionEditorX=-128
+    .MaterialExpressionEditorY=32
+    .MaterialExpressionGuid=A8A9224042A63017A677BDA83376B44A
+    .Function="/Script/Engine.MaterialFunction'MF_SC_OcclusionFactor'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_7)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_OcclusionFactor:MaterialExpressionFunctionInput_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_OcclusionFactor:MaterialExpressionFunctionInput_0'")
+    .MaterialExpressionEditorX=-384
+    .MaterialExpressionEditorY=96
+    .MaterialExpressionGuid=5BFD26A04E4D6DC42B1F0FABCA0B1981
+    .Function="/Script/Engine.MaterialFunction'MF_SC_OcclusionFactor'"
