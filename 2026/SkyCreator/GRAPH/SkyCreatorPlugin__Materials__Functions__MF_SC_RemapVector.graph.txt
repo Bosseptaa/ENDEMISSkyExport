@@ -1,0 +1,40 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_RemapVector
+  MaterialFunctionEditorOnlyData (MF_SC_RemapVectorEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+  MaterialExpressionAdd (MaterialExpressionAdd_0)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionReroute
+    .B=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_RemapVector:MaterialExpressionReroute_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_RemapVector:MaterialExpressionMultiply_0'")
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionSubtract
+    .B=(Expression="/Script/Engine.MaterialExpressionSubtract'MF_SC_RemapVector:MaterialExpressionSubtract_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'MF_SC_RemapVector:MaterialExpressionSubtract_0'")
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionAdd
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'MF_SC_RemapVector:MaterialExpressionAdd_0'")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionDivide
+    B                      <- MaterialExpressionReroute
+    .B=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_RemapVector:MaterialExpressionReroute_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'MF_SC_RemapVector:MaterialExpressionDivide_0'")
+  MaterialExpressionReroute (MaterialExpressionReroute_0)
+    Input                  <- MaterialExpressionFunctionInput
+  MaterialExpressionReroute (MaterialExpressionReroute_1)
+    Input                  <- MaterialExpressionSubtract
+  MaterialExpressionSubtract (MaterialExpressionSubtract_0)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_RemapVector:MaterialExpressionFunctionInput_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_RemapVector:MaterialExpressionFunctionInput_0'")
+  MaterialExpressionSubtract (MaterialExpressionSubtract_1)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_RemapVector:MaterialExpressionFunctionInput_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_RemapVector:MaterialExpressionFunctionInput_2'")
+  MaterialExpressionSubtract (MaterialExpressionSubtract_2)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_RemapVector:MaterialExpressionFunctionInput_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_RemapVector:MaterialExpressionFunctionInput_4'")

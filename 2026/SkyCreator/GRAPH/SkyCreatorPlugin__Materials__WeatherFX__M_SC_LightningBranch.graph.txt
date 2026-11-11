@@ -1,0 +1,45 @@
+### /SkyCreatorPlugin/Materials/WeatherFX/M_SC_LightningBranch
+  MaterialEditorOnlyData (M_SC_LightningBranchEditorOnlyData)
+    EmissiveColor          <- MaterialExpressionMultiply
+    Opacity                <- MaterialExpressionMultiply
+    ExpressionCollection   <- MaterialExpressionMultiply
+  MaterialExpressionConstant2Vector (MaterialExpressionConstant2Vector_2)
+    .R=3.000000
+    .G=2.000000
+  MaterialExpressionFrac (MaterialExpressionFrac_1)
+    Input                  <- MaterialExpressionMultiply
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_2)
+    FunctionInputs(0)      <- MaterialExpressionFrac
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionParticleColor
+    B                      <- MaterialExpressionParticleSubUV
+    .B=(Expression="/Script/Engine.MaterialExpressionParticleSubUV'M_SC_LightningBranch:MaterialExpressionParticleSubUV_0'",Mas
+    .A=(Expression="/Script/Engine.MaterialExpressionParticleColor'M_SC_LightningBranch:MaterialExpressionParticleColor_0'",Mas
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionParticleColor
+    B                      <- MaterialExpressionParticleSubUV
+    .B=(Expression="/Script/Engine.MaterialExpressionParticleSubUV'M_SC_LightningBranch:MaterialExpressionParticleSubUV_0'",Mas
+    .A=(Expression="/Script/Engine.MaterialExpressionParticleColor'M_SC_LightningBranch:MaterialExpressionParticleColor_0'",Out
+  MaterialExpressionMultiply (MaterialExpressionMultiply_3)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionSaturate
+    .B=(Expression="/Script/Engine.MaterialExpressionSaturate'M_SC_LightningBranch:MaterialExpressionSaturate_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'M_SC_LightningBranch:MaterialExpressionMultiply_1'")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_4)
+    A                      <- MaterialExpressionTextureCoordinate
+    B                      <- MaterialExpressionConstant2Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'M_SC_LightningBranch:MaterialExpressionConstant2Vector_2'"
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'M_SC_LightningBranch:MaterialExpressionTextureCoordinate
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_0)
+    Input                  <- MaterialExpressionDynamicParameter
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_1)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+  MaterialExpressionParticleSubUV (MaterialExpressionParticleSubUV_0)
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_LightningBranches.T_LightningBranches'"
+  MaterialExpressionSaturate (MaterialExpressionSaturate_1)
+    Input                  <- MaterialExpressionSubtract
+  MaterialExpressionSubtract (MaterialExpressionSubtract_0)
+    A                      <- MaterialExpressionOneMinus
+    B                      <- MaterialExpressionOneMinus
+    .B=(Expression="/Script/Engine.MaterialExpressionOneMinus'M_SC_LightningBranch:MaterialExpressionOneMinus_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionOneMinus'M_SC_LightningBranch:MaterialExpressionOneMinus_1'")

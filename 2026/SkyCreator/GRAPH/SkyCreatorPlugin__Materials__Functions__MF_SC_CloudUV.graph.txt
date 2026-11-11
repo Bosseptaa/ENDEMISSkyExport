@@ -1,0 +1,55 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_CloudUV
+  MaterialFunctionEditorOnlyData (MF_SC_CloudUVEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+  MaterialExpressionAdd (MaterialExpressionAdd_0)
+    A                      <- MaterialExpressionDivide
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_CloudUV:MaterialExpressionFunctionInput_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'MF_SC_CloudUV:MaterialExpressionDivide_3'")
+  MaterialExpressionAdd (MaterialExpressionAdd_3)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionDivide
+    .B=(Expression="/Script/Engine.MaterialExpressionDivide'MF_SC_CloudUV:MaterialExpressionDivide_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'MF_SC_CloudUV:MaterialExpressionAdd_0'")
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionStaticSwitchParameter
+    .R=True
+    .G=True
+    .B=True
+  MaterialExpressionConstant (MaterialExpressionConstant_1)
+    .R=100.000000
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_CloudUV:MaterialExpressionMultiply_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_CloudUV:MaterialExpressionFunctionInput_5'")
+  MaterialExpressionDivide (MaterialExpressionDivide_3)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_CloudUV:MaterialExpressionMaterialFunctionCall_
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_CloudUV:MaterialExpressionComponentMask_0'")
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_1)
+    Preview                <- MaterialExpressionWorldPosition
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionAdd
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'MF_SC_CloudUV:MaterialExpressionAdd_3'")
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_1)
+    A                      <- MaterialExpressionDivide
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'MF_SC_CloudUV:MaterialExpressionDivide_3'")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_0)
+    FunctionInputs(0)      <- MaterialExpressionFunctionInput
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionReroute
+    B                      <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'MF_SC_CloudUV:MaterialExpressionConstant_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_CloudUV:MaterialExpressionReroute_0'")
+    .ConstB=100000.000000
+  MaterialExpressionReroute (MaterialExpressionReroute_0)
+    Input                  <- MaterialExpressionFunctionInput
+  MaterialExpressionStaticSwitchParameter (MaterialExpressionStaticSwitchParameter_0)
+    A                      <- MaterialExpressionWorldPosition
+    B                      <- MaterialExpressionFunctionInput
+    .ParameterName="IsVolumetricCloud"
+    .DefaultValue=True
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_CloudUV:MaterialExpressionFunctionInput_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionWorldPosition'MF_SC_CloudUV:MaterialExpressionWorldPosition_3'")

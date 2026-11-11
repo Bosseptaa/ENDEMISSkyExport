@@ -1,0 +1,89 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_MaterialFX_Snow
+  MaterialFunctionEditorOnlyData (MF_SC_MaterialFX_SnowEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_0)
+    .ParameterName="Snow Sparkles Threshold"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_1)
+    .ParameterName="Snow Sparkles Roughness"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_2)
+    .ParameterName="Snow Roughness"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_3)
+    .ParameterName="Snow Intensity"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_4)
+    .ParameterName="Snow Scale"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_5)
+    .ParameterName="Snow Roughness"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_9)
+    .ParameterName="Snow Sparkles Scale"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionDivide
+    .R=True
+    .G=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_12)
+    Input                  <- MaterialExpressionDivide
+    .R=True
+    .G=True
+  MaterialExpressionConstant (MaterialExpressionConstant_0)
+    .R=1.000000
+  MaterialExpressionCustom (MaterialExpressionCustom_2)
+    Inputs(0)              <- MaterialExpressionTextureSample
+    Inputs(1)              <- MaterialExpressionCollectionParameter
+    .Code="return (A > B);"
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_MaterialFX_Snow:MaterialExpressionCollectionPara
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_MaterialFX_Snow:MaterialExpressionFunctionInput_15'")
+  MaterialExpressionDivide (MaterialExpressionDivide_1)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_MaterialFX_Snow:MaterialExpressionCollectionPara
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_MaterialFX_Snow:MaterialExpressionFunctionInput_15'")
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_15)
+    Preview                <- MaterialExpressionWorldPosition
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_MaterialFX_Snow:MaterialExpressionMaterialFunct
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_1)
+    A                      <- MaterialExpressionTextureSample
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'MF_SC_MaterialFX_Snow:MaterialExpressionTextureSample_1'",Ma
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_2)
+    A                      <- MaterialExpressionLinearInterpolate
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'MF_SC_MaterialFX_Snow:MaterialExpressionLinearInterpolat
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_2)
+    A                      <- MaterialExpressionCollectionParameter
+    B                      <- MaterialExpressionCollectionParameter
+    Alpha                  <- MaterialExpressionCustom
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_MaterialFX_Snow:MaterialExpressionCollectionPara
+    .A=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_MaterialFX_Snow:MaterialExpressionCollectionPara
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_8)
+    A                      <- MaterialExpressionConstant
+    B                      <- MaterialExpressionConstant
+    Alpha                  <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'MF_SC_MaterialFX_Snow:MaterialExpressionConstant_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionConstant'MF_SC_MaterialFX_Snow:MaterialExpressionConstant_1'")
+  MaterialExpressionMakeMaterialAttributes (MaterialExpressionMakeMaterialAttributes_0)
+    BaseColor              <- MaterialExpressionFunctionOutput
+    Roughness              <- MaterialExpressionFunctionOutput
+    Normal                 <- MaterialExpressionFunctionOutput
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_1)
+    FunctionInputs(0)      <- MaterialExpressionTextureSample
+    FunctionInputs(2)      <- MaterialExpressionCollectionParameter
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_0)
+    Coordinates            <- MaterialExpressionComponentMask
+    .SamplerType=SAMPLERTYPE_Normal
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/MaterialFX/T_Snow_N.T_Snow_N'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_1)
+    Coordinates            <- MaterialExpressionComponentMask
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/MaterialFX/T_Snow_D.T_Snow_D'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_7)
+    Coordinates            <- MaterialExpressionComponentMask
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/MaterialFX/T_SnowSparkles_M.T_SnowSparkles_M'"

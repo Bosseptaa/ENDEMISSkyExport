@@ -1,0 +1,29 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_SkyAtmosphere
+  MaterialFunctionEditorOnlyData (MF_SC_SkyAtmosphereEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+  MaterialExpressionAdd (MaterialExpressionAdd_0)
+    A                      <- MaterialExpressionSkyAtmosphereViewLuminance
+    B                      <- MaterialExpressionLinearInterpolate
+    .B=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'MF_SC_SkyAtmosphere:MaterialExpressionLinearInterpolate_
+    .A=(Expression="/Script/Engine.MaterialExpressionSkyAtmosphereViewLuminance'MF_SC_SkyAtmosphere:MaterialExpressionSkyAtmosp
+  MaterialExpressionAdd (MaterialExpressionAdd_1)
+    A                      <- MaterialExpressionLinearInterpolate
+    B                      <- MaterialExpressionSkyAtmosphereLightDiskLuminance
+    .B=(Expression="/Script/Engine.MaterialExpressionSkyAtmosphereLightDiskLuminance'MF_SC_SkyAtmosphere:MaterialExpressionSkyA
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'MF_SC_SkyAtmosphere:MaterialExpressionLinearInterpolate_
+  MaterialExpressionAdd (MaterialExpressionAdd_4)
+    A                      <- MaterialExpressionSkyAtmosphereViewLuminance
+    B                      <- MaterialExpressionAdd
+    .B=(Expression="/Script/Engine.MaterialExpressionAdd'MF_SC_SkyAtmosphere:MaterialExpressionAdd_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSkyAtmosphereViewLuminance'MF_SC_SkyAtmosphere:MaterialExpressionSkyAtmosp
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionAdd
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'MF_SC_SkyAtmosphere:MaterialExpressionAdd_4'")
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_1)
+    A                      <- MaterialExpressionAdd
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'MF_SC_SkyAtmosphere:MaterialExpressionAdd_0'")
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_0)
+    A                      <- MaterialExpressionSkyAtmosphereLightDiskLuminance
+    Alpha                  <- MaterialExpressionFunctionInput
+    .A=(Expression="/Script/Engine.MaterialExpressionSkyAtmosphereLightDiskLuminance'MF_SC_SkyAtmosphere:MaterialExpressionSkyA
+    .ConstB=0.000000

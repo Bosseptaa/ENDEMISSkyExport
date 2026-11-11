@@ -1,0 +1,101 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_MaterialFX_Snow_ML
+  MaterialFunctionEditorOnlyData (MF_SC_MaterialFX_Snow_MLEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+  MaterialExpressionBlendMaterialAttributes (MaterialExpressionBlendMaterialAttributes_0)
+    A                      <- MaterialExpressionReroute
+    B                      <- MaterialExpressionSetMaterialAttributes
+    Alpha                  <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionSetMaterialAttributes'MF_SC_MaterialFX_Snow_ML:MaterialExpressionSetMateri
+    .A=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_MaterialFX_Snow_ML:MaterialExpressionReroute_3'")
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_0)
+    .ParameterName="Snow Color"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_10)
+    .ParameterName="Snow Slope Angle"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_11)
+    .ParameterName="Snow Slope Smoothness"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_4)
+    .ParameterName="Snow Mask Scale"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_5)
+    .ParameterName="Snow Amount"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionCollectionParameter
+    .R=True
+    .G=True
+    .B=True
+  MaterialExpressionConstant (MaterialExpressionConstant_0)
+    .R=0.250000
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_15)
+    Preview                <- MaterialExpressionWorldPosition
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionBlendMaterialAttributes
+    .A=(Expression="/Script/Engine.MaterialExpressionBlendMaterialAttributes'MF_SC_MaterialFX_Snow_ML:MaterialExpressionBlendMa
+  MaterialExpressionGetMaterialAttributes (MaterialExpressionGetMaterialAttributes_0)
+    MaterialAttributes     <- MaterialExpressionFunctionInput
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_10)
+    A                      <- MaterialExpressionGetMaterialAttributes
+    B                      <- MaterialExpressionMaterialFunctionCall
+    Alpha                  <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_MaterialFX_Snow_ML:MaterialExpressionMaterialFu
+    .A=(Expression="/Script/Engine.MaterialExpressionGetMaterialAttributes'MF_SC_MaterialFX_Snow_ML:MaterialExpressionGetMateri
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_3)
+    A                      <- MaterialExpressionGetMaterialAttributes
+    B                      <- MaterialExpressionMaterialFunctionCall
+    Alpha                  <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_MaterialFX_Snow_ML:MaterialExpressionMaterialFu
+    .A=(Expression="/Script/Engine.MaterialExpressionGetMaterialAttributes'MF_SC_MaterialFX_Snow_ML:MaterialExpressionGetMateri
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_9)
+    A                      <- MaterialExpressionGetMaterialAttributes
+    B                      <- MaterialExpressionMultiply
+    Alpha                  <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_MaterialFX_Snow_ML:MaterialExpressionMultiply_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionGetMaterialAttributes'MF_SC_MaterialFX_Snow_ML:MaterialExpressionGetMateri
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_1)
+    FunctionInputs(0)      <- MaterialExpressionFunctionInput
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_2)
+    FunctionInputs(1)      <- MaterialExpressionCollectionParameter
+    FunctionInputs(2)      <- MaterialExpressionCollectionParameter
+    FunctionInputs(3)      <- MaterialExpressionScalarParameter
+    FunctionInputs(4)      <- MaterialExpressionScalarParameter
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_4)
+    FunctionInputs(1)      <- MaterialExpressionCollectionParameter
+    FunctionInputs(2)      <- MaterialExpressionCollectionParameter
+    FunctionInputs(3)      <- MaterialExpressionGetMaterialAttributes
+    FunctionInputs(4)      <- MaterialExpressionConstant
+  MaterialExpressionMultiply (MaterialExpressionMultiply_2)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_MaterialFX_Snow_ML:MaterialExpressionMaterialFu
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_MaterialFX_Snow_ML:MaterialExpressionMaterialFu
+  MaterialExpressionMultiply (MaterialExpressionMultiply_5)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_MaterialFX_Snow_ML:MaterialExpressionComponentMask_0'"
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_MaterialFX_Snow_ML:MaterialExpressionMaterialFu
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_0)
+    Input                  <- MaterialExpressionMultiply
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_0)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_1)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_2)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_3)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionReroute (MaterialExpressionReroute_3)
+    Input                  <- MaterialExpressionGetMaterialAttributes
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_6)
+    .ParameterName="Snow Coverage Max"
+    .DefaultValue=1.000000
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_9)
+    .ParameterName="Snow Mask Contrast"
+    .DefaultValue=1.000000
+  MaterialExpressionSetMaterialAttributes (MaterialExpressionSetMaterialAttributes_0)
+    Inputs(0)              <- MaterialExpressionReroute
+    Inputs(1)              <- MaterialExpressionLinearInterpolate
+    Inputs(2)              <- MaterialExpressionLinearInterpolate
+    Inputs(3)              <- MaterialExpressionLinearInterpolate

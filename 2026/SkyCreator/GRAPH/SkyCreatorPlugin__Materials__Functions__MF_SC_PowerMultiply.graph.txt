@@ -1,0 +1,19 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_PowerMultiply
+  MaterialFunctionEditorOnlyData (MF_SC_PowerMultiplyEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionSaturate
+    .A=(Expression="/Script/Engine.MaterialExpressionSaturate'MF_SC_PowerMultiply:MaterialExpressionSaturate_0'")
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_1)
+    A                      <- MaterialExpressionMultiply
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_PowerMultiply:MaterialExpressionMultiply_12'")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_12)
+    A                      <- MaterialExpressionPower
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_PowerMultiply:MaterialExpressionFunctionInput_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionPower'MF_SC_PowerMultiply:MaterialExpressionPower_3'")
+  MaterialExpressionPower (MaterialExpressionPower_3)
+    Base                   <- MaterialExpressionFunctionInput
+    Exponent               <- MaterialExpressionFunctionInput
+  MaterialExpressionSaturate (MaterialExpressionSaturate_0)
+    Input                  <- MaterialExpressionMultiply

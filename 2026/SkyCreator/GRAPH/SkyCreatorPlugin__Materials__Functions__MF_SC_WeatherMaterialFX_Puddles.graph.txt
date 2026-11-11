@@ -1,0 +1,131 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_WeatherMaterialFX_Puddles
+  MaterialFunctionEditorOnlyData (MF_SC_WeatherMaterialFX_PuddlesEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+  MaterialExpressionBreakMaterialAttributes (MaterialExpressionBreakMaterialAttributes_0)
+    MaterialAttributes     <- MaterialExpressionFunctionInput
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_0)
+    .ParameterName="Puddles Color"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_1)
+    .ParameterName="Puddles Roughness"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_12)
+    .ParameterName="Puddles Slope Angle"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_13)
+    .ParameterName="Puddles Slope Smoothness"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_7)
+    .ParameterName="Puddles Scale"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_8)
+    .ParameterName="Puddles Amount"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionCollectionParameter
+    .R=True
+    .G=True
+    .B=True
+  MaterialExpressionConstant (MaterialExpressionConstant_0)
+    .R=4.000000
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_2)
+    Preview                <- MaterialExpressionStaticBool
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionMakeMaterialAttributes
+    .A=(Expression="/Script/Engine.MaterialExpressionMakeMaterialAttributes'MF_SC_WeatherMaterialFX_Puddles:MaterialExpressionM
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_0)
+    A                      <- MaterialExpressionReroute
+    B                      <- MaterialExpressionCollectionParameter
+    Alpha                  <- MaterialExpressionReroute
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_WeatherMaterialFX_Puddles:MaterialExpressionColl
+    .A=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_WeatherMaterialFX_Puddles:MaterialExpressionReroute_1'")
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_2)
+    A                      <- MaterialExpressionReroute
+    B                      <- MaterialExpressionMultiply
+    Alpha                  <- MaterialExpressionReroute
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_WeatherMaterialFX_Puddles:MaterialExpressionMultiply_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_WeatherMaterialFX_Puddles:MaterialExpressionReroute_0'")
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_5)
+    A                      <- MaterialExpressionReroute
+    B                      <- MaterialExpressionMaterialFunctionCall
+    Alpha                  <- MaterialExpressionSaturate
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_WeatherMaterialFX_Puddles:MaterialExpressionMat
+    .A=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_WeatherMaterialFX_Puddles:MaterialExpressionReroute_2'")
+    .ConstB=0.500000
+  MaterialExpressionMakeMaterialAttributes (MaterialExpressionMakeMaterialAttributes_0)
+    BaseColor              <- MaterialExpressionLinearInterpolate
+    Metallic               <- MaterialExpressionBreakMaterialAttributes
+    Specular               <- MaterialExpressionBreakMaterialAttributes
+    Roughness              <- MaterialExpressionLinearInterpolate
+    Anisotropy             <- MaterialExpressionBreakMaterialAttributes
+    EmissiveColor          <- MaterialExpressionBreakMaterialAttributes
+    Opacity                <- MaterialExpressionBreakMaterialAttributes
+    OpacityMask            <- MaterialExpressionBreakMaterialAttributes
+    Normal                 <- MaterialExpressionLinearInterpolate
+    Tangent                <- MaterialExpressionBreakMaterialAttributes
+    WorldPositionOffset    <- MaterialExpressionBreakMaterialAttributes
+    SubsurfaceColor        <- MaterialExpressionBreakMaterialAttributes
+    ClearCoat              <- MaterialExpressionBreakMaterialAttributes
+    ClearCoatRoughness     <- MaterialExpressionBreakMaterialAttributes
+    AmbientOcclusion       <- MaterialExpressionBreakMaterialAttributes
+    Refraction             <- MaterialExpressionBreakMaterialAttributes
+    CustomizedUVs(0)       <- MaterialExpressionBreakMaterialAttributes
+    CustomizedUVs(1)       <- MaterialExpressionBreakMaterialAttributes
+    CustomizedUVs(2)       <- MaterialExpressionBreakMaterialAttributes
+    CustomizedUVs(3)       <- MaterialExpressionBreakMaterialAttributes
+    CustomizedUVs(4)       <- MaterialExpressionBreakMaterialAttributes
+    CustomizedUVs(5)       <- MaterialExpressionBreakMaterialAttributes
+    CustomizedUVs(6)       <- MaterialExpressionBreakMaterialAttributes
+    CustomizedUVs(7)       <- MaterialExpressionBreakMaterialAttributes
+    PixelDepthOffset       <- MaterialExpressionBreakMaterialAttributes
+    ShadingModel           <- MaterialExpressionBreakMaterialAttributes
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_6)
+    FunctionInputs(1)      <- MaterialExpressionCollectionParameter
+    FunctionInputs(2)      <- MaterialExpressionCollectionParameter
+    FunctionInputs(3)      <- MaterialExpressionScalarParameter
+    FunctionInputs(4)      <- MaterialExpressionScalarParameter
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_7)
+    FunctionInputs(1)      <- MaterialExpressionCollectionParameter
+    FunctionInputs(2)      <- MaterialExpressionCollectionParameter
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_8)
+    FunctionInputs(2)      <- MaterialExpressionMultiply
+    FunctionInputs(3)      <- MaterialExpressionFunctionInput
+    FunctionInputs(4)      <- MaterialExpressionScalarParameter
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_WeatherMaterialFX_Puddles:MaterialExpressionMat
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_WeatherMaterialFX_Puddles:MaterialExpressionMat
+  MaterialExpressionMultiply (MaterialExpressionMultiply_4)
+    A                      <- MaterialExpressionReroute
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_WeatherMaterialFX_Puddles:MaterialExpressionComponentM
+    .A=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_WeatherMaterialFX_Puddles:MaterialExpressionReroute_0'")
+  MaterialExpressionPower (MaterialExpressionPower_0)
+    Base                   <- MaterialExpressionReroute
+    Exponent               <- MaterialExpressionConstant
+  MaterialExpressionReroute (MaterialExpressionReroute_0)
+    Input                  <- MaterialExpressionBreakMaterialAttributes
+  MaterialExpressionReroute (MaterialExpressionReroute_1)
+    Input                  <- MaterialExpressionBreakMaterialAttributes
+  MaterialExpressionReroute (MaterialExpressionReroute_2)
+    Input                  <- MaterialExpressionBreakMaterialAttributes
+  MaterialExpressionReroute (MaterialExpressionReroute_3)
+    Input                  <- MaterialExpressionStaticSwitch
+  MaterialExpressionSaturate (MaterialExpressionSaturate_0)
+    Input                  <- MaterialExpressionPower
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_2)
+    .ParameterName="Heightmap Contrast"
+    .DefaultValue=0.500000
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_4)
+    .ParameterName="Puddle Amount Max"
+    .DefaultValue=0.400000
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_7)
+    .ParameterName="Puddle Mask Contrast"
+    .DefaultValue=1.000000
+  MaterialExpressionStaticSwitch (MaterialExpressionStaticSwitch_0)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionMultiply
+    Value                  <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_WeatherMaterialFX_Puddles:MaterialExpressionMultiply_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_WeatherMaterialFX_Puddles:MaterialExpressionMat

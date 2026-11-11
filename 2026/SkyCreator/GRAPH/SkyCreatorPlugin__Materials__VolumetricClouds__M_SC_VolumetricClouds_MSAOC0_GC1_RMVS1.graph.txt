@@ -1,0 +1,33 @@
+### /SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC0_GC1_RMVS1
+  MaterialEditorOnlyData (M_SC_VolumetricClouds_MSAOC0_GC1_RMVS1EditorOnlyData)
+    BaseColor              <- MaterialExpressionMaterialFunctionCall
+    EmissiveColor          <- MaterialExpressionMaterialFunctionCall
+    SubsurfaceColor        <- MaterialExpressionMaterialFunctionCall
+    AmbientOcclusion       <- MaterialExpressionMaterialFunctionCall
+    ExpressionCollection   <- MaterialExpressionMaterialFunctionCall
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_0)
+    .ParameterName="Phase G2"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_1)
+    .ParameterName="Phase Blend"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_2)
+    .ParameterName="Multi Scattering Contribution"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_3)
+    .ParameterName="Multi Scattering Occlusion"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_4)
+    .ParameterName="Multi Scattering Eccentricity"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_5)
+    .ParameterName="Phase G"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_
+  MaterialExpressionVolumetricAdvancedMaterialOutput (MaterialExpressionVolumetricAdvancedMaterialOutput_1)
+    PhaseG                 <- MaterialExpressionCollectionParameter
+    PhaseG2                <- MaterialExpressionCollectionParameter
+    PhaseBlend             <- MaterialExpressionCollectionParameter
+    MultiScatteringContribution <- MaterialExpressionCollectionParameter
+    MultiScatteringOcclusion <- MaterialExpressionCollectionParameter
+    MultiScatteringEccentricity <- MaterialExpressionCollectionParameter
+    ConservativeDensity    <- MaterialExpressionMaterialFunctionCall

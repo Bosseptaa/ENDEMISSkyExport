@@ -1,0 +1,175 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_BackgroundClouds
+  MaterialFunctionEditorOnlyData (MF_SC_BackgroundCloudsEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+  MaterialExpressionAdd (MaterialExpressionAdd_0)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_BackgroundClouds:MaterialExpressionMaterialFunc
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_BackgroundClouds:MaterialExpressionMultiply_2'")
+  MaterialExpressionAdd (MaterialExpressionAdd_3)
+    A                      <- MaterialExpressionSkyAtmosphereLightIlluminance
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_BackgroundClouds:MaterialExpressionMultiply_7'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSkyAtmosphereLightIlluminance'MF_SC_BackgroundClouds:MaterialExpressionSky
+  MaterialExpressionAdd (MaterialExpressionAdd_4)
+    A                      <- MaterialExpressionRotateAboutAxis
+    B                      <- MaterialExpressionReflectionVectorWS
+    .B=(Expression="/Script/Engine.MaterialExpressionReflectionVectorWS'MF_SC_BackgroundClouds:MaterialExpressionReflectionVect
+    .A=(Expression="/Script/Engine.MaterialExpressionRotateAboutAxis'MF_SC_BackgroundClouds:MaterialExpressionRotateAboutAxis_1
+  MaterialExpressionAdd (MaterialExpressionAdd_7)
+    A                      <- MaterialExpressionCustom
+    B                      <- MaterialExpressionSkyAtmosphereDistantLightScatteredLuminance
+    .B=(Expression="/Script/Engine.MaterialExpressionSkyAtmosphereDistantLightScatteredLuminance'MF_SC_BackgroundClouds:Materia
+    .A=(Expression="/Script/Engine.MaterialExpressionCustom'MF_SC_BackgroundClouds:MaterialExpressionCustom_9'")
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_0)
+    .ParameterName="Background Clouds Intensity"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_1)
+    .ParameterName="Background Clouds Layer A"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_10)
+    .ParameterName="Background Clouds Rotation"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_16)
+    .ParameterName="Volumetric Cloud Top Altitude"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_2)
+    .ParameterName="Background Clouds Layer B"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_3)
+    .ParameterName="Background Clouds Layer C"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_4)
+    .ParameterName="Sun Surface Brightness"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_5)
+    .ParameterName="Moon Surface Brightness"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_6)
+    .ParameterName="Background Clouds Contrast"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_7)
+    .ParameterName="Background Clouds Reflection Scale"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_8)
+    .ParameterName="Background Clouds Phase"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_9)
+    .ParameterName="Background Clouds Color Tint"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionCollectionParameter
+    .R=True
+    .G=True
+    .B=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_5)
+    Input                  <- MaterialExpressionDesaturation
+    .A=True
+  MaterialExpressionConstant (MaterialExpressionConstant_0)
+    .R=1.000000
+  MaterialExpressionConstant (MaterialExpressionConstant_1)
+    .R=0.250000
+  MaterialExpressionConstant (MaterialExpressionConstant_2)
+    .R=4.000000
+  MaterialExpressionCustom (MaterialExpressionCustom_9)
+    .Code="ResolvedView.AtmosphereLightColorGlobalPostTransmittance[0].rgb + ResolvedView.AtmosphereLightColorGlobalPostTransmitta
+  MaterialExpressionDesaturation (MaterialExpressionDesaturation_1)
+    Input                  <- MaterialExpressionSkyAtmosphereViewLuminance
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_0)
+    Preview                <- MaterialExpressionConstant
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionMultiply
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_BackgroundClouds:MaterialExpressionMultiply_10'")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_14)
+    FunctionInputs(0)      <- MaterialExpressionMultiply
+    FunctionInputs(1)      <- MaterialExpressionCollectionParameter
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_22)
+    FunctionInputs(0)      <- MaterialExpressionMultiply
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_8)
+    FunctionInputs(0)      <- MaterialExpressionComponentMask
+    FunctionInputs(1)      <- MaterialExpressionConstant
+    FunctionInputs(2)      <- MaterialExpressionConstant
+  MaterialExpressionMax (MaterialExpressionMax_0)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_BackgroundClouds:MaterialExpressionMultiply_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_BackgroundClouds:MaterialExpressionMultiply_1'")
+  MaterialExpressionMax (MaterialExpressionMax_1)
+    A                      <- MaterialExpressionMax
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_BackgroundClouds:MaterialExpressionMultiply_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMax'MF_SC_BackgroundClouds:MaterialExpressionMax_0'")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionTextureSampleParameter2D
+    B                      <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_BackgroundClouds:MaterialExpressionCollectionPar
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameter2D'MF_SC_BackgroundClouds:MaterialExpressionTextureS
+  MaterialExpressionMultiply (MaterialExpressionMultiply_10)
+    A                      <- MaterialExpressionReflectionCapturePassSwitch
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_BackgroundClouds:MaterialExpressionComponentMask_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionReflectionCapturePassSwitch'MF_SC_BackgroundClouds:MaterialExpressionRefle
+  MaterialExpressionMultiply (MaterialExpressionMultiply_11)
+    A                      <- MaterialExpressionAdd
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'MF_SC_BackgroundClouds:MaterialExpressionAdd_4'")
+    .ConstB=-1.000000
+  MaterialExpressionMultiply (MaterialExpressionMultiply_2)
+    A                      <- MaterialExpressionPower
+    B                      <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_BackgroundClouds:MaterialExpressionCollectionPar
+    .A=(Expression="/Script/Engine.MaterialExpressionPower'MF_SC_BackgroundClouds:MaterialExpressionPower_0'")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_3)
+    A                      <- MaterialExpressionTextureSampleParameter2D
+    B                      <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_BackgroundClouds:MaterialExpressionCollectionPar
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameter2D'MF_SC_BackgroundClouds:MaterialExpressionTextureS
+  MaterialExpressionMultiply (MaterialExpressionMultiply_4)
+    A                      <- MaterialExpressionTextureSampleParameter2D
+    B                      <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_BackgroundClouds:MaterialExpressionCollectionPar
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameter2D'MF_SC_BackgroundClouds:MaterialExpressionTextureS
+  MaterialExpressionMultiply (MaterialExpressionMultiply_5)
+    A                      <- MaterialExpressionSkyAtmosphereLightIlluminance
+    B                      <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_BackgroundClouds:MaterialExpressionCollectionPar
+    .A=(Expression="/Script/Engine.MaterialExpressionSkyAtmosphereLightIlluminance'MF_SC_BackgroundClouds:MaterialExpressionSky
+  MaterialExpressionMultiply (MaterialExpressionMultiply_6)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_BackgroundClouds:MaterialExpressionMaterialFunc
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'MF_SC_BackgroundClouds:MaterialExpressionAdd_0'")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_7)
+    A                      <- MaterialExpressionSkyAtmosphereLightIlluminance
+    B                      <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_BackgroundClouds:MaterialExpressionCollectionPar
+    .A=(Expression="/Script/Engine.MaterialExpressionSkyAtmosphereLightIlluminance'MF_SC_BackgroundClouds:MaterialExpressionSky
+  MaterialExpressionMultiply (MaterialExpressionMultiply_8)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionAdd
+    .B=(Expression="/Script/Engine.MaterialExpressionAdd'MF_SC_BackgroundClouds:MaterialExpressionAdd_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_BackgroundClouds:MaterialExpressionMultiply_6'")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_9)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_BackgroundClouds:MaterialExpressionCollectionPar
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_BackgroundClouds:MaterialExpressionMultiply_8'")
+  MaterialExpressionPower (MaterialExpressionPower_0)
+    Base                   <- MaterialExpressionMax
+    Exponent               <- MaterialExpressionCollectionParameter
+  MaterialExpressionReflectionCapturePassSwitch (MaterialExpressionReflectionCapturePassSwitch_3)
+    Default                <- MaterialExpressionMultiply
+    Reflection             <- MaterialExpressionMultiply
+  MaterialExpressionRotateAboutAxis (MaterialExpressionRotateAboutAxis_1)
+    NormalizedRotationAxis <- MaterialExpressionConstant3Vector
+    RotationAngle          <- MaterialExpressionCollectionParameter
+    PivotPoint             <- MaterialExpressionConstant
+    Position               <- MaterialExpressionReflectionVectorWS
+  MaterialExpressionSkyAtmosphereLightIlluminance (MaterialExpressionSkyAtmosphereLightIlluminance_0)
+    WorldPosition          <- MaterialExpressionCollectionParameter
+  MaterialExpressionSkyAtmosphereLightIlluminance (MaterialExpressionSkyAtmosphereLightIlluminance_1)
+    WorldPosition          <- MaterialExpressionCollectionParameter
+  MaterialExpressionTextureSampleParameter2D (MaterialExpressionTextureSampleParameter2D_0)
+    Coordinates            <- MaterialExpressionMaterialFunctionCall
+    .ParameterName="BackgroundCloud_Texture"
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.Texture2D'/Game/1_Weather/T_BackgroundClouds_4K.T_BackgroundClouds_4K'"

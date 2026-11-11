@@ -1,0 +1,12 @@
+### /SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricCloud_DensitySample
+  MaterialEditorOnlyData (M_SC_VolumetricCloud_DensitySampleEditorOnlyData)
+    EmissiveColor          <- MaterialExpressionMaterialFunctionCall
+    ExpressionCollection   <- MaterialExpressionMaterialFunctionCall
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_0)
+    .ParameterName="Cloud Density Sample Position"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_16)
+    FunctionInputs(0)      <- MaterialExpressionCollectionParameter
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_17)
+    FunctionInputs(0)      <- MaterialExpressionMaterialFunctionCall
+    FunctionInputs(1)      <- MaterialExpressionCollectionParameter

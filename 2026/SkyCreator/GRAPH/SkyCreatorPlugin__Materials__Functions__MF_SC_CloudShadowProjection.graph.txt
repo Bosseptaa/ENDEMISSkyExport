@@ -1,0 +1,84 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_CloudShadowProjection
+  MaterialFunctionEditorOnlyData (MF_SC_CloudShadowProjectionEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+  MaterialExpressionAdd (MaterialExpressionAdd_0)
+    A                      <- MaterialExpressionDotProduct
+    .A=(Expression="/Script/Engine.MaterialExpressionDotProduct'MF_SC_CloudShadowProjection:MaterialExpressionDotProduct_0'")
+  MaterialExpressionAdd (MaterialExpressionAdd_1)
+    A                      <- MaterialExpressionRotateAboutAxis
+    B                      <- MaterialExpressionAdd
+    .B=(Expression="/Script/Engine.MaterialExpressionAdd'MF_SC_CloudShadowProjection:MaterialExpressionAdd_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionRotateAboutAxis'MF_SC_CloudShadowProjection:MaterialExpressionRotateAboutA
+  MaterialExpressionAdd (MaterialExpressionAdd_3)
+    A                      <- MaterialExpressionWorldPosition
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_CloudShadowProjection:MaterialExpressionMultiply_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionWorldPosition'MF_SC_CloudShadowProjection:MaterialExpressionWorldPosition_
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_0)
+    .ParameterName="Volumetric Cloud Bottom Altitude"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_3)
+    .ParameterName="Volumetric Cloud Bottom Altitude"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCrossProduct (MaterialExpressionCrossProduct_0)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionConstant3Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant3Vector'MF_SC_CloudShadowProjection:MaterialExpressionConstant3Vec
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_CloudShadowProjection:MaterialExpressionMultiply_2'")
+  MaterialExpressionDivide (MaterialExpressionDivide_1)
+    A                      <- MaterialExpressionAdd
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'MF_SC_CloudShadowProjection:MaterialExpressionAdd_0'")
+    .ConstB=4.000000
+  MaterialExpressionDotProduct (MaterialExpressionDotProduct_0)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionConstant3Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant3Vector'MF_SC_CloudShadowProjection:MaterialExpressionConstant3Vec
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_CloudShadowProjection:MaterialExpressionMultiply_2'")
+  MaterialExpressionDotProduct (MaterialExpressionDotProduct_1)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    B                      <- MaterialExpressionConstant3Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant3Vector'MF_SC_CloudShadowProjection:MaterialExpressionConstant3Vec
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'MF_SC_CloudShadowProjection:MaterialExpressionNamedRerou
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_0)
+    Preview                <- MaterialExpressionSkyAtmosphereLightDirection
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionAdd
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'MF_SC_CloudShadowProjection:MaterialExpressionAdd_1'")
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_1)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionCollectionParameter
+    Alpha                  <- MaterialExpressionDotProduct
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_CloudShadowProjection:MaterialExpressionCollecti
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_CloudShadowProjection:MaterialExpressionMultiply_7'")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_2)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    B                      <- MaterialExpressionConstant3Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant3Vector'MF_SC_CloudShadowProjection:MaterialExpressionConstant3Vec
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'MF_SC_CloudShadowProjection:MaterialExpressionNamedRerou
+  MaterialExpressionMultiply (MaterialExpressionMultiply_5)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    B                      <- MaterialExpressionLinearInterpolate
+    .B=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'MF_SC_CloudShadowProjection:MaterialExpressionLinearInte
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'MF_SC_CloudShadowProjection:MaterialExpressionNamedRerou
+  MaterialExpressionMultiply (MaterialExpressionMultiply_7)
+    A                      <- MaterialExpressionCollectionParameter
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_CloudShadowProjection:MaterialExpressionFunctionInput_
+    .A=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_CloudShadowProjection:MaterialExpressionCollecti
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_0)
+    Input                  <- MaterialExpressionFunctionInput
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_0)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_1)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_2)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionNormalize (MaterialExpressionNormalize_0)
+    VectorInput            <- MaterialExpressionCrossProduct
+  MaterialExpressionReroute (MaterialExpressionReroute_0)
+    Input                  <- MaterialExpressionFunctionInput
+  MaterialExpressionRotateAboutAxis (MaterialExpressionRotateAboutAxis_0)
+    NormalizedRotationAxis <- MaterialExpressionNormalize
+    RotationAngle          <- MaterialExpressionDivide
+    PivotPoint             <- MaterialExpressionConstant
+    Position               <- MaterialExpressionWorldPosition

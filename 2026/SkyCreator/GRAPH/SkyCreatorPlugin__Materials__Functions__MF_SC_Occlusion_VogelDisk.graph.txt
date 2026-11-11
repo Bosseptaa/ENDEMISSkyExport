@@ -1,0 +1,109 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_Occlusion_VogelDisk
+  MaterialFunctionEditorOnlyData (MF_SC_Occlusion_VogelDiskEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_1)
+    .ParameterName="Occlusion Blur Distance"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_2)
+    .ParameterName="Occlusion Blur Samples"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_4)
+    .ParameterName="Occlusion Bias"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_6)
+    .ParameterName="Occlusion Capture Position"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_7)
+    .ParameterName="Occlusion Capture Width"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionWorldPosition
+    .B=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_1)
+    Input                  <- MaterialExpressionDivide
+    .R=True
+    .G=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_3)
+    Input                  <- MaterialExpressionFunctionInput
+    .R=True
+    .G=True
+    .B=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_4)
+    Input                  <- MaterialExpressionNamedRerouteUsage
+    .B=True
+  MaterialExpressionCustom (MaterialExpressionCustom_1)
+    Inputs(0)              <- MaterialExpressionNamedRerouteUsage
+    Inputs(1)              <- MaterialExpressionFunctionInput
+    Inputs(2)              <- MaterialExpressionNamedRerouteUsage
+    Inputs(3)              <- MaterialExpressionFunctionInput
+    Inputs(4)              <- MaterialExpressionDivide
+    Inputs(5)              <- MaterialExpressionNamedRerouteUsage
+    .Code="#define GOLDEN_RATIO (1.6180339887498948482045868343656381f)\r\n#define TWO_PI (6.28318530717f)\r\n\r\nstatic float Occ
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'MF_SC_Occlusion_VogelDisk:MaterialExpressionNamedReroute
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'MF_SC_Occlusion_VogelDisk:MaterialExpressionSubtract_0'")
+  MaterialExpressionDivide (MaterialExpressionDivide_1)
+    A                      <- MaterialExpressionCollectionParameter
+    B                      <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'MF_SC_Occlusion_VogelDisk:MaterialExpressionNamedReroute
+    .A=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_Occlusion_VogelDisk:MaterialExpressionCollection
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_0)
+    Preview                <- MaterialExpressionCollectionParameter
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_1)
+    Preview                <- MaterialExpressionTextureObject
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_2)
+    Preview                <- MaterialExpressionCollectionParameter
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_3)
+    Preview                <- MaterialExpressionCollectionParameter
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionCustom
+    .A=(Expression="/Script/Engine.MaterialExpressionCustom'MF_SC_Occlusion_VogelDisk:MaterialExpressionCustom_1'")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionScreenPosition
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_Occlusion_VogelDisk:MaterialExpressionMaterialF
+    .A=(Expression="/Script/Engine.MaterialExpressionScreenPosition'MF_SC_Occlusion_VogelDisk:MaterialExpressionScreenPosition_
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_0)
+    Input                  <- MaterialExpressionComponentMask
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_1)
+    Input                  <- MaterialExpressionSubtract
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_2)
+    Input                  <- MaterialExpressionComponentMask
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_3)
+    Input                  <- MaterialExpressionMultiply
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_4)
+    Input                  <- MaterialExpressionFunctionInput
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_0)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_1)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_2)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_3)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_4)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_5)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_6)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionSubtract (MaterialExpressionSubtract_0)
+    A                      <- MaterialExpressionWorldPosition
+    B                      <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'MF_SC_Occlusion_VogelDisk:MaterialExpressionNamedReroute
+    .A=(Expression="/Script/Engine.MaterialExpressionWorldPosition'MF_SC_Occlusion_VogelDisk:MaterialExpressionWorldPosition_1'
+  MaterialExpressionSubtract (MaterialExpressionSubtract_1)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_Occlusion_VogelDisk:MaterialExpressionComponentMask_0'
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_Occlusion_VogelDisk:MaterialExpressionComponentMask_4'
+  MaterialExpressionSubtract (MaterialExpressionSubtract_2)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_Occlusion_VogelDisk:MaterialExpressionCollection
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'MF_SC_Occlusion_VogelDisk:MaterialExpressionSubtract_1'")
+  MaterialExpressionTextureObject (MaterialExpressionTextureObject_0)
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.TextureRenderTarget2D'/Game/ENDEMIS/Weather/Occlusion/RT_OcclusionDepth.RT_OcclusionDepth'"

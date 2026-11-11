@@ -1,0 +1,156 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_VolumetricClouds
+  MaterialFunctionEditorOnlyData (MF_SC_VolumetricCloudsEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionMultiply
+  MaterialExpressionAdd (MaterialExpressionAdd_0)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_VolumetricClouds:MaterialExpressionMultiply_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_VolumetricClouds:MaterialExpressionMultiply_2'")
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_0)
+    .ParameterName="Beer\'s Powder Depth"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_10)
+    .ParameterName="Albedo"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_4)
+    .ParameterName="Night Emissive"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_5)
+    .ParameterName="Beer\'s Powder Intensity"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_6)
+    .ParameterName="Bottom Occlusion Height"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_7)
+    .ParameterName="Bottom Occlusion"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_10)
+    Input                  <- MaterialExpressionVolumetricAdvancedMaterialInput
+    .B=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_15)
+    Input                  <- MaterialExpressionVolumetricAdvancedMaterialInput
+    .G=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_2)
+    Input                  <- MaterialExpressionCollectionParameter
+    .R=True
+    .G=True
+    .B=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_3)
+    Input                  <- MaterialExpressionCollectionParameter
+    .R=True
+    .G=True
+    .B=True
+  MaterialExpressionConstant (MaterialExpressionConstant_10)
+    .R=8.000000
+  MaterialExpressionConstant (MaterialExpressionConstant_14)
+    .R=60.000000
+  MaterialExpressionConstant (MaterialExpressionConstant_2)
+    .R=0.010000
+  MaterialExpressionConstant (MaterialExpressionConstant_4)
+    .R=1.000000
+  MaterialExpressionConstant (MaterialExpressionConstant_9)
+    .R=4.000000
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'MF_SC_VolumetricClouds:MaterialExpressionConstant_9'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_VolumetricClouds:MaterialExpressionComponentMask_2'")
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_1)
+    A                      <- MaterialExpressionAdd
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'MF_SC_VolumetricClouds:MaterialExpressionAdd_0'")
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_2)
+    A                      <- MaterialExpressionMultiply
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_VolumetricClouds:MaterialExpressionMultiply_5'")
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_3)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds:MaterialExpressionMaterialFunc
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_4)
+    A                      <- MaterialExpressionLinearInterpolate
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'MF_SC_VolumetricClouds:MaterialExpressionLinearInterpola
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_5)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds:MaterialExpressionMaterialFunc
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_0)
+    A                      <- MaterialExpressionSaturate
+    Alpha                  <- MaterialExpressionSaturate
+    .A=(Expression="/Script/Engine.MaterialExpressionSaturate'MF_SC_VolumetricClouds:MaterialExpressionSaturate_5'")
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_1)
+    A                      <- MaterialExpressionDivide
+    B                      <- MaterialExpressionReroute
+    Alpha                  <- MaterialExpressionLinearInterpolate
+    .B=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_VolumetricClouds:MaterialExpressionReroute_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'MF_SC_VolumetricClouds:MaterialExpressionDivide_0'")
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_2)
+    A                      <- MaterialExpressionConstant
+    B                      <- MaterialExpressionSmoothStep
+    Alpha                  <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionSmoothStep'MF_SC_VolumetricClouds:MaterialExpressionSmoothStep_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionConstant'MF_SC_VolumetricClouds:MaterialExpressionConstant_4'")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_17)
+    FunctionInputs(0)      <- MaterialExpressionVolumetricAdvancedMaterialInput
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'MF_SC_VolumetricClouds:MaterialExpressionConstant_10'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds:MaterialExpressionMaterialFunc
+    .ConstB=10.000000
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds:MaterialExpressionMaterialFunc
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_VolumetricClouds:MaterialExpressionComponentMask_3'")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_2)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'MF_SC_VolumetricClouds:MaterialExpressionConstant_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_VolumetricClouds:MaterialExpressionMultiply_1'")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_4)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionSaturate
+    .B=(Expression="/Script/Engine.MaterialExpressionSaturate'MF_SC_VolumetricClouds:MaterialExpressionSaturate_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds:MaterialExpressionMaterialFunc
+  MaterialExpressionMultiply (MaterialExpressionMultiply_41)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds:MaterialExpressionCollectionPar
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds:MaterialExpressionMaterialFunc
+  MaterialExpressionMultiply (MaterialExpressionMultiply_5)
+    A                      <- MaterialExpressionLinearInterpolate
+    B                      <- MaterialExpressionSaturate
+    .B=(Expression="/Script/Engine.MaterialExpressionSaturate'MF_SC_VolumetricClouds:MaterialExpressionSaturate_12'")
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'MF_SC_VolumetricClouds:MaterialExpressionLinearInterpola
+  MaterialExpressionMultiply (MaterialExpressionMultiply_53)
+    A                      <- MaterialExpressionCollectionParameter
+    B                      <- MaterialExpressionSaturate
+    .B=(Expression="/Script/Engine.MaterialExpressionSaturate'MF_SC_VolumetricClouds:MaterialExpressionSaturate_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds:MaterialExpressionCollectionPar
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_0)
+    Input                  <- MaterialExpressionComponentMask
+  MaterialExpressionPower (MaterialExpressionPower_1)
+    Base                   <- MaterialExpressionMaterialFunctionCall
+  MaterialExpressionPower (MaterialExpressionPower_5)
+    Base                   <- MaterialExpressionSaturate
+    Exponent               <- MaterialExpressionCollectionParameter
+  MaterialExpressionReflectionCapturePassSwitch (MaterialExpressionReflectionCapturePassSwitch_0)
+    Default                <- MaterialExpressionConstant
+    Reflection             <- MaterialExpressionMultiply
+  MaterialExpressionReroute (MaterialExpressionReroute_1)
+    Input                  <- MaterialExpressionComponentMask
+  MaterialExpressionReroute (MaterialExpressionReroute_2)
+    Input                  <- MaterialExpressionReroute
+  MaterialExpressionSaturate (MaterialExpressionSaturate_0)
+    Input                  <- MaterialExpressionPower
+  MaterialExpressionSaturate (MaterialExpressionSaturate_1)
+    Input                  <- MaterialExpressionComponentMask
+  MaterialExpressionSaturate (MaterialExpressionSaturate_10)
+    Input                  <- MaterialExpressionMultiply
+  MaterialExpressionSaturate (MaterialExpressionSaturate_12)
+    Input                  <- MaterialExpressionPower
+  MaterialExpressionSaturate (MaterialExpressionSaturate_13)
+    Input                  <- MaterialExpressionMultiply
+  MaterialExpressionSaturate (MaterialExpressionSaturate_5)
+    Input                  <- MaterialExpressionOneMinus
+  MaterialExpressionSmoothStep (MaterialExpressionSmoothStep_1)
+    Min                    <- MaterialExpressionConstant
+    Max                    <- MaterialExpressionMultiply
+    Value                  <- MaterialExpressionMaterialFunctionCall

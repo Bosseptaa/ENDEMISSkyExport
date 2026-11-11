@@ -1,0 +1,43 @@
+### /SkyCreatorPlugin/Materials/WeatherFX/M_SC_LightningBolt
+  MaterialEditorOnlyData (M_SC_LightningBoltEditorOnlyData)
+    EmissiveColor          <- MaterialExpressionMultiply
+    Opacity                <- MaterialExpressionMultiply
+    ExpressionCollection   <- MaterialExpressionMultiply
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionTextureCoordinate
+    .G=True
+  MaterialExpressionConstant (MaterialExpressionConstant_0)
+    .R=0.500000
+  MaterialExpressionConstant (MaterialExpressionConstant_1)
+    .R=0.500000
+  MaterialExpressionConstant2Vector (MaterialExpressionConstant2Vector_0)
+    .R=0.500000
+    .G=0.500000
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionParticleColor
+    B                      <- MaterialExpressionSphereMask
+    .B=(Expression="/Script/Engine.MaterialExpressionSphereMask'M_SC_LightningBolt:MaterialExpressionSphereMask_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionParticleColor'M_SC_LightningBolt:MaterialExpressionParticleColor_0'",Mask=
+  MaterialExpressionMultiply (MaterialExpressionMultiply_5)
+    A                      <- MaterialExpressionParticleColor
+    B                      <- MaterialExpressionSaturate
+    .B=(Expression="/Script/Engine.MaterialExpressionSaturate'M_SC_LightningBolt:MaterialExpressionSaturate_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionParticleColor'M_SC_LightningBolt:MaterialExpressionParticleColor_0'",Outpu
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_0)
+    Input                  <- MaterialExpressionDynamicParameter
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_1)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+  MaterialExpressionSaturate (MaterialExpressionSaturate_1)
+    Input                  <- MaterialExpressionSubtract
+  MaterialExpressionSphereMask (MaterialExpressionSphereMask_0)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionConstant2Vector
+    Radius                 <- MaterialExpressionConstant
+    Hardness               <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'M_SC_LightningBolt:MaterialExpressionConstant2Vector_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'M_SC_LightningBolt:MaterialExpressionComponentMask_0'")
+  MaterialExpressionSubtract (MaterialExpressionSubtract_0)
+    A                      <- MaterialExpressionOneMinus
+    B                      <- MaterialExpressionOneMinus
+    .B=(Expression="/Script/Engine.MaterialExpressionOneMinus'M_SC_LightningBolt:MaterialExpressionOneMinus_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionOneMinus'M_SC_LightningBolt:MaterialExpressionOneMinus_1'")

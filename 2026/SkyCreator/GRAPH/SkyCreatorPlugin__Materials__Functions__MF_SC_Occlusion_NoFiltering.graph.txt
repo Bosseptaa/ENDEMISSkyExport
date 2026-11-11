@@ -1,0 +1,84 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_Occlusion_NoFiltering
+  MaterialFunctionEditorOnlyData (MF_SC_Occlusion_NoFilteringEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+  MaterialExpressionAdd (MaterialExpressionAdd_0)
+    A                      <- MaterialExpressionTextureSample
+    B                      <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_Occlusion_NoFiltering:MaterialExpressionCollecti
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'MF_SC_Occlusion_NoFiltering:MaterialExpressionTextureSample_
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_0)
+    .ParameterName="Occlusion Capture Position"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_1)
+    .ParameterName="Occlusion Capture Width"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_4)
+    .ParameterName="Occlusion Bias"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_9)
+    .ParameterName="Occlusion Bias"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionWorldPosition
+    .B=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_1)
+    Input                  <- MaterialExpressionDivide
+    .R=True
+    .G=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_4)
+    Input                  <- MaterialExpressionNamedRerouteUsage
+    .B=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_5)
+    Input                  <- MaterialExpressionFunctionInput
+    .R=True
+    .G=True
+    .B=True
+  MaterialExpressionCustom (MaterialExpressionCustom_2)
+    Inputs(0)              <- MaterialExpressionSubtract
+    Inputs(1)              <- MaterialExpressionAdd
+    .Code="return (A > B);"
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_Occlusion_NoFiltering:MaterialExpressionFunctionInput_
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'MF_SC_Occlusion_NoFiltering:MaterialExpressionSubtract_0'")
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_0)
+    Preview                <- MaterialExpressionCollectionParameter
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_1)
+    Preview                <- MaterialExpressionTextureObject
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_2)
+    Preview                <- MaterialExpressionCollectionParameter
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionOneMinus
+    .A=(Expression="/Script/Engine.MaterialExpressionOneMinus'MF_SC_Occlusion_NoFiltering:MaterialExpressionOneMinus_0'")
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_0)
+    Input                  <- MaterialExpressionComponentMask
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_0)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_1)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_0)
+    Input                  <- MaterialExpressionCustom
+  MaterialExpressionSubtract (MaterialExpressionSubtract_0)
+    A                      <- MaterialExpressionWorldPosition
+    B                      <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'MF_SC_Occlusion_NoFiltering:MaterialExpressionNamedRerou
+    .A=(Expression="/Script/Engine.MaterialExpressionWorldPosition'MF_SC_Occlusion_NoFiltering:MaterialExpressionWorldPosition_
+  MaterialExpressionSubtract (MaterialExpressionSubtract_1)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_Occlusion_NoFiltering:MaterialExpressionComponentMask_
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_Occlusion_NoFiltering:MaterialExpressionComponentMask_
+  MaterialExpressionSubtract (MaterialExpressionSubtract_2)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_Occlusion_NoFiltering:MaterialExpressionCollecti
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'MF_SC_Occlusion_NoFiltering:MaterialExpressionSubtract_1'")
+  MaterialExpressionTextureObject (MaterialExpressionTextureObject_0)
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.TextureRenderTarget2D'/Game/ENDEMIS/Weather/Occlusion/RT_OcclusionDepth.RT_OcclusionDepth'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_0)
+    Coordinates            <- MaterialExpressionComponentMask
+    TextureObject          <- MaterialExpressionFunctionInput
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.TextureRenderTarget2D'/Game/ENDEMIS/Weather/Occlusion/RT_OcclusionDepth.RT_OcclusionDepth'"

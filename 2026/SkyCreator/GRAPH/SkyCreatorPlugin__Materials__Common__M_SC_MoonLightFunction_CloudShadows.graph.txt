@@ -1,0 +1,38 @@
+### /SkyCreatorPlugin/Materials/Common/M_SC_MoonLightFunction_CloudShadows
+  MaterialEditorOnlyData (M_SC_MoonLightFunction_CloudShadowsEditorOnlyData)
+    EmissiveColor          <- MaterialExpressionLinearInterpolate
+    ExpressionCollection   <- MaterialExpressionCollectionParameter
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_0)
+    .ParameterName="Moon Surface Brightness"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_1)
+    .ParameterName="Moon Cloud Shadow On Surface Strength"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionConstant (MaterialExpressionConstant_4)
+    .R=4.000000
+  MaterialExpressionConstant (MaterialExpressionConstant_6)
+    .R=4.000000
+  MaterialExpressionConstant (MaterialExpressionConstant_7)
+    .R=2.000000
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_0)
+    A                      <- MaterialExpressionConstant
+    B                      <- MaterialExpressionMultiply
+    Alpha                  <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'M_SC_MoonLightFunction_CloudShadows:MaterialExpressionMultiply_1'
+    .A=(Expression="/Script/Engine.MaterialExpressionConstant'M_SC_MoonLightFunction_CloudShadows:MaterialExpressionConstant_0'
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_1)
+    FunctionInputs(0)      <- MaterialExpressionMaterialFunctionCall
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_5)
+    FunctionInputs(0)      <- MaterialExpressionSkyAtmosphereLightDirection
+    FunctionInputs(1)      <- MaterialExpressionConstant
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_7)
+    FunctionInputs(0)      <- MaterialExpressionOneMinus
+    FunctionInputs(1)      <- MaterialExpressionConstant
+    FunctionInputs(2)      <- MaterialExpressionConstant
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'M_SC_MoonLightFunction_CloudShadows:MaterialExpression
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_MoonLightFunction_CloudShadows:MaterialExpressio
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_0)
+    Input                  <- MaterialExpressionMaterialFunctionCall

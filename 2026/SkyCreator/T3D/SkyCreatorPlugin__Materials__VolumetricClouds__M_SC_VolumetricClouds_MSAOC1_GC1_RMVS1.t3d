@@ -1,0 +1,152 @@
+Begin Object Class=/Script/Engine.Material Name="M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1" ExportPath="/Script/Engine.Material'/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1.M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1'"
+   Begin Object Class=/Script/Engine.MaterialEditorOnlyData Name="M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1EditorOnlyData" ExportPath="/Script/Engine.MaterialEditorOnlyData'/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1.M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1:M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1EditorOnlyData'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionCollectionParameter Name="MaterialExpressionCollectionParameter_0" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1.M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1:MaterialExpressionCollectionParameter_0'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionCollectionParameter Name="MaterialExpressionCollectionParameter_1" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1.M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1:MaterialExpressionCollectionParameter_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionCollectionParameter Name="MaterialExpressionCollectionParameter_2" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1.M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1:MaterialExpressionCollectionParameter_2'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionCollectionParameter Name="MaterialExpressionCollectionParameter_3" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1.M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1:MaterialExpressionCollectionParameter_3'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionCollectionParameter Name="MaterialExpressionCollectionParameter_4" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1.M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1:MaterialExpressionCollectionParameter_4'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionCollectionParameter Name="MaterialExpressionCollectionParameter_5" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1.M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1:MaterialExpressionCollectionParameter_5'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_1" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1.M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1:MaterialExpressionMaterialFunctionCall_1'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVolumetricAdvancedMaterialOutput Name="MaterialExpressionVolumetricAdvancedMaterialOutput_1" ExportPath="/Script/Engine.MaterialExpressionVolumetricAdvancedMaterialOutput'/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1.M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1:MaterialExpressionVolumetricAdvancedMaterialOutput_1'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1.M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   Begin Object Name="M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1EditorOnlyData" ExportPath="/Script/Engine.MaterialEditorOnlyData'/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1.M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1:M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1EditorOnlyData'"
+      BaseColor=(Constant=(R=0.501961,G=0.501961,B=0.501961,A=1.000000),Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1:MaterialExpressionMaterialFunctionCall_1'")
+      EmissiveColor=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1:MaterialExpressionMaterialFunctionCall_1'",OutputIndex=1)
+      SubsurfaceColor=(Constant=(R=0.000000,G=0.000000,B=0.000000,A=0.000000),Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1:MaterialExpressionMaterialFunctionCall_1'",OutputIndex=2)
+      AmbientOcclusion=(Constant=0.000000,Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1:MaterialExpressionMaterialFunctionCall_1'",OutputIndex=3)
+      ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1:MaterialExpressionMaterialFunctionCall_1'","/Script/Engine.MaterialExpressionVolumetricAdvancedMaterialOutput'M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1:MaterialExpressionVolumetricAdvancedMaterialOutput_1'","/Script/Engine.MaterialExpressionCollectionParameter'M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1:MaterialExpressionCollectionParameter_5'","/Script/Engine.MaterialExpressionCollectionParameter'M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1:MaterialExpressionCollectionParameter_0'","/Script/Engine.MaterialExpressionCollectionParameter'M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1:MaterialExpressionCollectionParameter_1'","/Script/Engine.MaterialExpressionCollectionParameter'M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1:MaterialExpressionCollectionParameter_2'","/Script/Engine.MaterialExpressionCollectionParameter'M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1:MaterialExpressionCollectionParameter_3'","/Script/Engine.MaterialExpressionCollectionParameter'M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1:MaterialExpressionCollectionParameter_4'"))
+      ParameterGroupData(0)=(GroupName="Lighting")
+      ParameterGroupData(1)=(GroupName="Lighting")
+      ParameterGroupData(2)=(GroupName="Lighting")
+      ParameterGroupData(3)=(GroupName="Lighting")
+      ParameterGroupData(4)=(GroupName="Lighting")
+      ParameterGroupData(5)=(GroupName="Lighting")
+   End Object
+   Begin Object Name="MaterialExpressionCollectionParameter_0" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1.M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1:MaterialExpressionCollectionParameter_0'"
+      Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_VolumetricClouds'"
+      ParameterName="Phase G2"
+      ParameterId=48E8085643916B04924155AF994B2086
+      MaterialExpressionEditorX=-512
+      MaterialExpressionEditorY=848
+      MaterialExpressionGuid=B3254DDF493E0A861C979C9218D285E6
+      Material="/Script/Engine.Material'M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionCollectionParameter_1" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1.M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1:MaterialExpressionCollectionParameter_1'"
+      Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_VolumetricClouds'"
+      ParameterName="Phase Blend"
+      ParameterId=3D18B53F430E1C6C9E6BEB95C0BD98BA
+      MaterialExpressionEditorX=-512
+      MaterialExpressionEditorY=944
+      MaterialExpressionGuid=B3254DDF493E0A861C979C9218D285E6
+      Material="/Script/Engine.Material'M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionCollectionParameter_2" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1.M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1:MaterialExpressionCollectionParameter_2'"
+      Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_VolumetricClouds'"
+      ParameterName="Multi Scattering Contribution"
+      ParameterId=E5CE954449D3ED00602240A6DEFEB6BA
+      MaterialExpressionEditorX=-512
+      MaterialExpressionEditorY=1040
+      MaterialExpressionGuid=B3254DDF493E0A861C979C9218D285E6
+      Material="/Script/Engine.Material'M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionCollectionParameter_3" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1.M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1:MaterialExpressionCollectionParameter_3'"
+      Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_VolumetricClouds'"
+      ParameterName="Multi Scattering Occlusion"
+      ParameterId=9BD5B7444996DA373B447BB5897964E2
+      MaterialExpressionEditorX=-512
+      MaterialExpressionEditorY=1136
+      MaterialExpressionGuid=B3254DDF493E0A861C979C9218D285E6
+      Material="/Script/Engine.Material'M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionCollectionParameter_4" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1.M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1:MaterialExpressionCollectionParameter_4'"
+      Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_VolumetricClouds'"
+      ParameterName="Multi Scattering Eccentricity"
+      ParameterId=D4BD4A32462141A6472122ABA4D84AE4
+      MaterialExpressionEditorX=-512
+      MaterialExpressionEditorY=1232
+      MaterialExpressionGuid=B3254DDF493E0A861C979C9218D285E6
+      Material="/Script/Engine.Material'M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionCollectionParameter_5" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1.M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1:MaterialExpressionCollectionParameter_5'"
+      Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_VolumetricClouds'"
+      ParameterName="Phase G"
+      ParameterId=CA821E3146633C04988BF3AAE66B949E
+      MaterialExpressionEditorX=-512
+      MaterialExpressionEditorY=752
+      MaterialExpressionGuid=B3254DDF493E0A861C979C9218D285E6
+      Material="/Script/Engine.Material'M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1'"
+      bCollapsed=True
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_1" ExportPath="/Script/Engine.MaterialExpressionMaterialFunctionCall'/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1.M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1:MaterialExpressionMaterialFunctionCall_1'"
+      MaterialFunction="/Script/Engine.MaterialFunction'/SkyCreatorPlugin/Materials/Functions/MF_SC_VolumetricClouds.MF_SC_VolumetricClouds'"
+      FunctionOutputs(0)=(ExpressionOutputId=FA0A052D4E49D854E90D57A9EF762EA5,Output=(OutputName="Albedo"))
+      FunctionOutputs(1)=(ExpressionOutputId=02F135E942379255C36406ADFBF5376F,Output=(OutputName="Emission"))
+      FunctionOutputs(2)=(ExpressionOutputId=36E57AF742C43A2AA04A4B90779CB0E0,Output=(OutputName="Extinction"))
+      FunctionOutputs(3)=(ExpressionOutputId=33D1B7114261B6D0096EF5851149ABDE,Output=(OutputName="Ambient Occlusion"))
+      FunctionOutputs(4)=(ExpressionOutputId=0609323046491740EBB8C4A6A5903F75,Output=(OutputName="Conservative Density"))
+      MaterialExpressionEditorX=-512
+      MaterialExpressionGuid=061786AD456E2F76797515825ACBEE47
+      Material="/Script/Engine.Material'M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1'"
+      Outputs(0)=(OutputName="Albedo")
+      Outputs(1)=(OutputName="Emission")
+      Outputs(2)=(OutputName="Extinction")
+      Outputs(3)=(OutputName="Ambient Occlusion")
+      Outputs(4)=(OutputName="Conservative Density")
+   End Object
+   Begin Object Name="MaterialExpressionVolumetricAdvancedMaterialOutput_1" ExportPath="/Script/Engine.MaterialExpressionVolumetricAdvancedMaterialOutput'/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1.M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1:MaterialExpressionVolumetricAdvancedMaterialOutput_1'"
+      PhaseG=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1:MaterialExpressionCollectionParameter_5'")
+      PhaseG2=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1:MaterialExpressionCollectionParameter_0'")
+      PhaseBlend=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1:MaterialExpressionCollectionParameter_1'")
+      MultiScatteringContribution=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1:MaterialExpressionCollectionParameter_2'")
+      MultiScatteringOcclusion=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1:MaterialExpressionCollectionParameter_3'")
+      MultiScatteringEccentricity=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1:MaterialExpressionCollectionParameter_4'")
+      ConservativeDensity=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1:MaterialExpressionMaterialFunctionCall_1'",OutputIndex=4)
+      MultiScatteringApproximationOctaveCount=1
+      bGroundContribution=True
+      MaterialExpressionEditorY=768
+      MaterialExpressionGuid=B831469F4BB89D229B1FB3BF6ACD31BA
+      Material="/Script/Engine.Material'M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1'"
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1.M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   MaterialDomain=MD_Volume
+   BlendMode=BLEND_Additive
+   bUsedWithVolumetricCloud=True
+   bCanMaskedBeAssumedOpaque=True
+   PixelDepthOffsetMode=PDOM_Legacy
+   StateId=12F6C1647EC2C472B0BB3DFD30D4F384
+   ReferencedTextureGuids(0)=8BA0B139DC01365A8A0DCEBFD62C7B38
+   ReferencedTextureGuids(1)=01DE2F6E469AAFD56A2FD68772B4ECAC
+   ReferencedTextureGuids(2)=393D1C8A4F7AA962970F199793575A38
+   ReferencedTextureGuids(3)=C4DBAAA94604965F4B156C902DB16E4C
+   ReferencedTextureGuids(4)=4D976E3F41F11AB3AB32F282B753F82A
+   ReferencedTextureGuids(5)=B08EDF8F4731CBE2A421A5B678B8C8BE
+   ReferencedTextureGuids(6)=F1938B3A4DE2B4DA0A2FE3AD9135A4BE
+   EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1EditorOnlyData'"
+   ReferencedDefaultTextures(0)="/Script/Engine.TextureRenderTarget2D'/Game/ENDEMIS/Weather/WeatherFX/RT_LightningParameters.RT_LightningParameters'"
+   ReferencedDefaultTextures(1)="/Script/Engine.TextureRenderTarget2D'/Game/ENDEMIS/Weather/WeatherFX/RT_LightningFlash.RT_LightningFlash'"
+   ReferencedDefaultTextures(2)="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/VolumetricClouds/T_CloudMap.T_CloudMap'"
+   ReferencedDefaultTextures(3)="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/VolumetricClouds/T_CoverageVariationMap.T_CoverageVariationMap'"
+   ReferencedDefaultTextures(4)="/Script/Engine.CurveLinearColorAtlas'/SkyCreatorPlugin/Materials/Curves/Curve_SC_VolumetricClouds_Atlas.Curve_SC_VolumetricClouds_Atlas'"
+   ReferencedDefaultTextures(5)="/Script/Engine.VolumeTexture'/Game/ENDEMIS/Weather/VolumetricClouds/VT_CloudNoise_Detail_32.VT_CloudNoise_Detail_32'"
+   ReferencedDefaultTextures(6)="/Script/Engine.VolumeTexture'/Game/ENDEMIS/Weather/VolumetricClouds/VT_CloudNoise_Shape_64.VT_CloudNoise_Shape_64'"
+   ReferencedDefaultTextures(7)="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/VolumetricClouds/T_TurbulenceMap.T_TurbulenceMap'"
+   ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+   ParameterOverviewExpansion=(("-12None", True),("-12Global", True),("-12Global Advanced", True),("-12Global Color", True),("-12Global Textures", True),("-12Global Wind", True),("-12Global CloudMap", True),("-12Global CloudNoise", True),("-12Global Cloud Coverage", True),("-12Global Cloud Density", True),("-12Global Volumetric Advanced", True),("-12Global Weather Map", True),("-12Global Cloud Layer Cirrus", True),("-12Global Cloud Layer Cumulus", True),("-12Global Cloud Layer Stratus", True),("-12Global Cloud Noise Detail", True),("-12Global Cloud Noise Shape", True),("-12Global Cloud Darkening", True),("-12Global Cloud Height", True),("-12Global Cloud Low Layer", True),("-12Global Cloud Map", True),("-12Global Cloud Noise Affect Region", True),("-12Global Cloud Noise Shape Add", True),("-12Global Density", True),("-12Global Layer Cirrus", True),("-12Global Layer Cumulus", True),("-12Global Layer Stratus", True),("-12Global Lighting", True),("-12Global Noise Detail", True),("-12Global Noise Shape", True),("-12Global Noise Weight", True),("-12Global High Cloud Map", True),("-12Global Low Cloud Map", True),("-12Global High Cloud Layer", True),("-12Global Low Cloud Layer", True),("-12Global Curve Parameters", True),("-12Global Cloud Noise", True),("-12Global Cloud Layer", True),("-12Global Cloud Layers", True),("-12Global Cloud Parameters", True),("-12Global Coverage Variation Map", True),("-12Global Turbulence Map", True))
+   LightingGuid=8A11A8144B4C7AC0EFE8079C22A2F0C0
+End Object

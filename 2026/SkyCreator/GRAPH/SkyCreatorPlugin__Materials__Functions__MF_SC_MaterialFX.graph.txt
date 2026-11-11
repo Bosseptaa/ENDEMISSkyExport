@@ -1,0 +1,340 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_MaterialFX
+  MaterialFunctionEditorOnlyData (MF_SC_MaterialFXEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionInput
+  MaterialExpressionAdd (MaterialExpressionAdd_0)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_MaterialFX:MaterialExpressionMaterialFunctionCa
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_MaterialFX:MaterialExpressionMaterialFunctionCa
+  MaterialExpressionAdd (MaterialExpressionAdd_1)
+    A                      <- MaterialExpressionMultiply
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_MaterialFX:MaterialExpressionMultiply_7'")
+    .ConstB=150.000000
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_0)
+    .ParameterName="Wetness Amount"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_1)
+    .ParameterName="Variety Noise Scale"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_12)
+    .ParameterName="Rain Splatter Slope Angle"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_13)
+    .ParameterName="Rain Splatter Slope Smoothness"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_15)
+    .ParameterName="Wetness Amount"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_2)
+    .ParameterName="Variety Noise Strength"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionConstant (MaterialExpressionConstant_0)
+    .R=1.000000
+  MaterialExpressionConstant (MaterialExpressionConstant_1)
+    .R=1.000000
+  MaterialExpressionConstant (MaterialExpressionConstant_2)
+    .R=1.000000
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    B                      <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_MaterialFX:MaterialExpressionCollectionParameter
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'MF_SC_MaterialFX:MaterialExpressionNamedRerouteUsage_4'"
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_0)
+    Preview                <- MaterialExpressionStaticBool
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_11)
+    Preview                <- MaterialExpressionMakeMaterialAttributes
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_12)
+    Preview                <- MaterialExpressionStaticBool
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_13)
+    Preview                <- MaterialExpressionStaticBool
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_14)
+    Preview                <- MaterialExpressionStaticBool
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_16)
+    Preview                <- MaterialExpressionStaticBool
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_2)
+    Preview                <- MaterialExpressionStaticBool
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_6)
+    Preview                <- MaterialExpressionStaticBool
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_7)
+    Preview                <- MaterialExpressionStaticBool
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_8)
+    Preview                <- MaterialExpressionStaticBool
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_9)
+    Preview                <- MaterialExpressionStaticBool
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionAdd
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'MF_SC_MaterialFX:MaterialExpressionAdd_0'")
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_1)
+    A                      <- MaterialExpressionGetMaterialAttributes
+    .A=(Expression="/Script/Engine.MaterialExpressionGetMaterialAttributes'MF_SC_MaterialFX:MaterialExpressionGetMaterialAttrib
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_2)
+    A                      <- MaterialExpressionGetMaterialAttributes
+    .A=(Expression="/Script/Engine.MaterialExpressionGetMaterialAttributes'MF_SC_MaterialFX:MaterialExpressionGetMaterialAttrib
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_3)
+    A                      <- MaterialExpressionGetMaterialAttributes
+    .A=(Expression="/Script/Engine.MaterialExpressionGetMaterialAttributes'MF_SC_MaterialFX:MaterialExpressionGetMaterialAttrib
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_7)
+    A                      <- MaterialExpressionGetMaterialAttributes
+    .A=(Expression="/Script/Engine.MaterialExpressionGetMaterialAttributes'MF_SC_MaterialFX:MaterialExpressionGetMaterialAttrib
+  MaterialExpressionGetMaterialAttributes (MaterialExpressionGetMaterialAttributes_0)
+    MaterialAttributes     <- MaterialExpressionStaticSwitch
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_0)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionConstant
+    Alpha                  <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'MF_SC_MaterialFX:MaterialExpressionConstant_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_MaterialFX:MaterialExpressionMultiply_3'")
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_1)
+    A                      <- MaterialExpressionStaticSwitch
+    B                      <- MaterialExpressionConstant
+    Alpha                  <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'MF_SC_MaterialFX:MaterialExpressionConstant_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionStaticSwitch'MF_SC_MaterialFX:MaterialExpressionStaticSwitch_1'")
+  MaterialExpressionMakeMaterialAttributes (MaterialExpressionMakeMaterialAttributes_1)
+    BaseColor              <- MaterialExpressionFunctionInput
+    Roughness              <- MaterialExpressionFunctionInput
+    Normal                 <- MaterialExpressionFunctionInput
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_0)
+    FunctionInputs(0)      <- MaterialExpressionFunctionInput
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_10)
+    FunctionInputs(0)      <- MaterialExpressionOneMinus
+    FunctionInputs(1)      <- MaterialExpressionNamedRerouteUsage
+    FunctionInputs(2)      <- MaterialExpressionScalarParameter
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_11)
+    FunctionInputs(0)      <- MaterialExpressionStaticSwitch
+    FunctionInputs(1)      <- MaterialExpressionNamedRerouteUsage
+    FunctionInputs(2)      <- MaterialExpressionNamedRerouteUsage
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_12)
+    FunctionInputs(0)      <- MaterialExpressionNamedRerouteUsage
+    FunctionInputs(1)      <- MaterialExpressionMaterialFunctionCall
+    FunctionInputs(2)      <- MaterialExpressionMaterialFunctionCall
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_13)
+    FunctionInputs(0)      <- MaterialExpressionStaticSwitch
+    FunctionInputs(1)      <- MaterialExpressionMaterialFunctionCall
+    FunctionInputs(2)      <- MaterialExpressionMaterialFunctionCall
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_14)
+    FunctionInputs(0)      <- MaterialExpressionStaticSwitch
+    FunctionInputs(1)      <- MaterialExpressionMaterialFunctionCall
+    FunctionInputs(2)      <- MaterialExpressionMaterialFunctionCall
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_15)
+    FunctionInputs(0)      <- MaterialExpressionStaticSwitch
+    FunctionInputs(1)      <- MaterialExpressionMaterialFunctionCall
+    FunctionInputs(2)      <- MaterialExpressionNamedRerouteUsage
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_16)
+    FunctionInputs(0)      <- MaterialExpressionStaticSwitch
+    FunctionInputs(1)      <- MaterialExpressionNamedRerouteUsage
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_17)
+    FunctionInputs(0)      <- MaterialExpressionOneMinus
+    FunctionInputs(1)      <- MaterialExpressionNamedRerouteUsage
+    FunctionInputs(2)      <- MaterialExpressionScalarParameter
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_18)
+    FunctionInputs(0)      <- MaterialExpressionTextureSample
+    FunctionInputs(1)      <- MaterialExpressionCollectionParameter
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_20)
+    FunctionInputs(1)      <- MaterialExpressionCollectionParameter
+    FunctionInputs(2)      <- MaterialExpressionCollectionParameter
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_21)
+    FunctionInputs(0)      <- MaterialExpressionNamedRerouteUsage
+    FunctionInputs(2)      <- MaterialExpressionNamedRerouteUsage
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_3)
+    FunctionInputs(0)      <- MaterialExpressionNamedRerouteUsage
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_4)
+    FunctionInputs(0)      <- MaterialExpressionLinearInterpolate
+    FunctionInputs(1)      <- MaterialExpressionNamedRerouteUsage
+    FunctionInputs(2)      <- MaterialExpressionScalarParameter
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_5)
+    FunctionInputs(0)      <- MaterialExpressionNamedRerouteUsage
+    FunctionInputs(1)      <- MaterialExpressionNamedRerouteUsage
+    FunctionInputs(2)      <- MaterialExpressionScalarParameter
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_6)
+    FunctionInputs(0)      <- MaterialExpressionStaticSwitch
+    FunctionInputs(1)      <- MaterialExpressionFunctionInput
+    FunctionInputs(2)      <- MaterialExpressionFunctionInput
+    FunctionInputs(3)      <- MaterialExpressionNamedRerouteUsage
+    FunctionInputs(4)      <- MaterialExpressionNamedRerouteUsage
+    FunctionInputs(5)      <- MaterialExpressionNamedRerouteUsage
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_7)
+    FunctionInputs(4)      <- MaterialExpressionNamedRerouteUsage
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_8)
+    FunctionInputs(0)      <- MaterialExpressionStaticSwitch
+    FunctionInputs(1)      <- MaterialExpressionMaterialFunctionCall
+    FunctionInputs(2)      <- MaterialExpressionMaterialFunctionCall
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_9)
+    FunctionInputs(0)      <- MaterialExpressionStaticSwitch
+    FunctionInputs(1)      <- MaterialExpressionNamedRerouteUsage
+    FunctionInputs(2)      <- MaterialExpressionNamedRerouteUsage
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionStaticSwitch
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_MaterialFX:MaterialExpressionMaterialFunctionCa
+    .A=(Expression="/Script/Engine.MaterialExpressionStaticSwitch'MF_SC_MaterialFX:MaterialExpressionStaticSwitch_0'")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_2)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_MaterialFX:MaterialExpressionMaterialFunctionCa
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_MaterialFX:MaterialExpressionMaterialFunctionCa
+  MaterialExpressionMultiply (MaterialExpressionMultiply_3)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'MF_SC_MaterialFX:MaterialExpressionNamedRerouteUsage_1'"
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_MaterialFX:MaterialExpressionMultiply_2'")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_7)
+    A                      <- MaterialExpressionTransformPosition
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_MaterialFX:MaterialExpressionMaterialFunctionCa
+    .A=(Expression="/Script/Engine.MaterialExpressionTransformPosition'MF_SC_MaterialFX:MaterialExpressionTransformPosition_0'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_0)
+    Input                  <- MaterialExpressionFunctionInput
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_1)
+    Input                  <- MaterialExpressionMultiply
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_2)
+    Input                  <- MaterialExpressionStaticSwitch
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_3)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_4)
+    Input                  <- MaterialExpressionWorldPosition
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_5)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_6)
+    Input                  <- MaterialExpressionStaticSwitch
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_7)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_0)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_1)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_10)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_11)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_12)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_13)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_14)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_15)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_16)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_17)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_18)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_19)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_2)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_20)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_21)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_22)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_24)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_25)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_26)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_3)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_4)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_5)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_6)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_7)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_8)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_9)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_0)
+    Input                  <- MaterialExpressionNamedRerouteUsage
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_1)
+    Input                  <- MaterialExpressionNamedRerouteUsage
+  MaterialExpressionReroute (MaterialExpressionReroute_0)
+    Input                  <- MaterialExpressionStaticSwitch
+  MaterialExpressionReroute (MaterialExpressionReroute_1)
+    Input                  <- MaterialExpressionReroute
+  MaterialExpressionReroute (MaterialExpressionReroute_18)
+    Input                  <- MaterialExpressionStaticSwitch
+  MaterialExpressionReroute (MaterialExpressionReroute_19)
+    Input                  <- MaterialExpressionReroute
+  MaterialExpressionReroute (MaterialExpressionReroute_2)
+    Input                  <- MaterialExpressionStaticSwitch
+  MaterialExpressionReroute (MaterialExpressionReroute_20)
+    Input                  <- MaterialExpressionStaticSwitch
+  MaterialExpressionReroute (MaterialExpressionReroute_21)
+    Input                  <- MaterialExpressionReroute
+  MaterialExpressionReroute (MaterialExpressionReroute_3)
+    Input                  <- MaterialExpressionReroute
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_0)
+    .ParameterName="Occlusion Wetness Factor"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_1)
+    .ParameterName="Occlusion Puddles Factor"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_2)
+    .ParameterName="Occlusion Rain Drops Factor"
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_3)
+    .ParameterName="Occlusion Rain Streaks Factor"
+  MaterialExpressionStaticSwitch (MaterialExpressionStaticSwitch_0)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionConstant
+    Value                  <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'MF_SC_MaterialFX:MaterialExpressionConstant_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_MaterialFX:MaterialExpressionMaterialFunctionCa
+  MaterialExpressionStaticSwitch (MaterialExpressionStaticSwitch_1)
+    A                      <- MaterialExpressionLinearInterpolate
+    B                      <- MaterialExpressionCollectionParameter
+    Value                  <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_MaterialFX:MaterialExpressionCollectionParameter
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'MF_SC_MaterialFX:MaterialExpressionLinearInterpolate_0'"
+  MaterialExpressionStaticSwitch (MaterialExpressionStaticSwitch_10)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionReroute
+    Value                  <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_MaterialFX:MaterialExpressionReroute_21'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_MaterialFX:MaterialExpressionMaterialFunctionCa
+  MaterialExpressionStaticSwitch (MaterialExpressionStaticSwitch_11)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionNamedRerouteUsage
+    Value                  <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'MF_SC_MaterialFX:MaterialExpressionNamedRerouteUsage_7'"
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_MaterialFX:MaterialExpressionMaterialFunctionCa
+  MaterialExpressionStaticSwitch (MaterialExpressionStaticSwitch_2)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionReroute
+    Value                  <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_MaterialFX:MaterialExpressionReroute_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_MaterialFX:MaterialExpressionMaterialFunctionCa
+  MaterialExpressionStaticSwitch (MaterialExpressionStaticSwitch_3)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionReroute
+    Value                  <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_MaterialFX:MaterialExpressionReroute_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_MaterialFX:MaterialExpressionMaterialFunctionCa
+  MaterialExpressionStaticSwitch (MaterialExpressionStaticSwitch_4)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    B                      <- MaterialExpressionConstant
+    Value                  <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'MF_SC_MaterialFX:MaterialExpressionConstant_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'MF_SC_MaterialFX:MaterialExpressionNamedRerouteUsage_22'
+  MaterialExpressionStaticSwitch (MaterialExpressionStaticSwitch_5)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionNamedRerouteDeclaration
+    Value                  <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteDeclaration'MF_SC_MaterialFX:MaterialExpressionNamedRerouteDec
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_MaterialFX:MaterialExpressionMultiply_7'")
+  MaterialExpressionStaticSwitch (MaterialExpressionStaticSwitch_6)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionReroute
+    Value                  <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_MaterialFX:MaterialExpressionReroute_19'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_MaterialFX:MaterialExpressionMaterialFunctionCa
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_0)
+    Coordinates            <- MaterialExpressionDivide
+    .Texture="/Script/Engine.VolumeTexture'/Game/ENDEMIS/Weather/VolumetricClouds/VT_CloudNoise_Detail_32.VT_CloudNoise_Detail_32'"
+  MaterialExpressionTransformPosition (MaterialExpressionTransformPosition_0)
+    Input                  <- MaterialExpressionWorldPosition

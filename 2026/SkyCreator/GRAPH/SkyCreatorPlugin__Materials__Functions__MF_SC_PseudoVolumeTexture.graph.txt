@@ -1,0 +1,116 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_PseudoVolumeTexture
+  MaterialFunctionEditorOnlyData (MF_SC_PseudoVolumeTextureEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+  MaterialExpressionAdd (MaterialExpressionAdd_0)
+    A                      <- MaterialExpressionFloor
+    .A=(Expression="/Script/Engine.MaterialExpressionFloor'MF_SC_PseudoVolumeTexture:MaterialExpressionFloor_0'")
+  MaterialExpressionAdd (MaterialExpressionAdd_32)
+    A                      <- MaterialExpressionDivide
+    B                      <- MaterialExpressionDivide
+    .B=(Expression="/Script/Engine.MaterialExpressionDivide'MF_SC_PseudoVolumeTexture:MaterialExpressionDivide_52'")
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'MF_SC_PseudoVolumeTexture:MaterialExpressionDivide_48'")
+  MaterialExpressionAdd (MaterialExpressionAdd_34)
+    A                      <- MaterialExpressionDivide
+    B                      <- MaterialExpressionDivide
+    .B=(Expression="/Script/Engine.MaterialExpressionDivide'MF_SC_PseudoVolumeTexture:MaterialExpressionDivide_53'")
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'MF_SC_PseudoVolumeTexture:MaterialExpressionDivide_48'")
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_14)
+    Input                  <- MaterialExpressionDivide
+    .B=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_8)
+    Input                  <- MaterialExpressionDivide
+    .R=True
+    .G=True
+  MaterialExpressionDivide (MaterialExpressionDivide_48)
+    A                      <- MaterialExpressionFrac
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_PseudoVolumeTexture:MaterialExpressionMultiply_31'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFrac'MF_SC_PseudoVolumeTexture:MaterialExpressionFrac_24'")
+    .ConstB=12.000000
+  MaterialExpressionDivide (MaterialExpressionDivide_52)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_PseudoVolumeTexture:MaterialExpressionMultiply_31'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_PseudoVolumeTexture:MaterialExpressionMaterialF
+    .ConstB=12.000000
+  MaterialExpressionDivide (MaterialExpressionDivide_53)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_PseudoVolumeTexture:MaterialExpressionMultiply_31'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_PseudoVolumeTexture:MaterialExpressionMaterialF
+    .ConstB=12.000000
+  MaterialExpressionDivide (MaterialExpressionDivide_56)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_PseudoVolumeTexture:MaterialExpressionFunctionInput_6'
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_PseudoVolumeTexture:MaterialExpressionFunctionInput_3'
+  MaterialExpressionFloor (MaterialExpressionFloor_0)
+    Input                  <- MaterialExpressionMultiply
+  MaterialExpressionFrac (MaterialExpressionFrac_24)
+    Input                  <- MaterialExpressionComponentMask
+  MaterialExpressionFrac (MaterialExpressionFrac_26)
+    Input                  <- MaterialExpressionMultiply
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_2)
+    Preview                <- MaterialExpressionTextureObject
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_3)
+    Preview                <- MaterialExpressionWorldPosition
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_1)
+    A                      <- MaterialExpressionLinearInterpolate
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'MF_SC_PseudoVolumeTexture:MaterialExpressionLinearInterp
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_2)
+    A                      <- MaterialExpressionAdd
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'MF_SC_PseudoVolumeTexture:MaterialExpressionAdd_32'")
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_3)
+    A                      <- MaterialExpressionLinearInterpolate
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'MF_SC_PseudoVolumeTexture:MaterialExpressionLinearInterp
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_6)
+    A                      <- MaterialExpressionAdd
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'MF_SC_PseudoVolumeTexture:MaterialExpressionAdd_34'")
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_0)
+    A                      <- MaterialExpressionTextureSample
+    B                      <- MaterialExpressionTextureSample
+    Alpha                  <- MaterialExpressionFrac
+    .B=(Expression="/Script/Engine.MaterialExpressionTextureSample'MF_SC_PseudoVolumeTexture:MaterialExpressionTextureSample_13
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'MF_SC_PseudoVolumeTexture:MaterialExpressionTextureSample_15
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_6)
+    A                      <- MaterialExpressionTextureSample
+    B                      <- MaterialExpressionTextureSample
+    Alpha                  <- MaterialExpressionFrac
+    .B=(Expression="/Script/Engine.MaterialExpressionTextureSample'MF_SC_PseudoVolumeTexture:MaterialExpressionTextureSample_13
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'MF_SC_PseudoVolumeTexture:MaterialExpressionTextureSample_15
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_0)
+    FunctionInputs(0)      <- MaterialExpressionFunctionInput
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_19)
+    FunctionInputs(0)      <- MaterialExpressionFloor
+    FunctionInputs(1)      <- MaterialExpressionMultiply
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_20)
+    FunctionInputs(0)      <- MaterialExpressionAdd
+    FunctionInputs(1)      <- MaterialExpressionMultiply
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_PseudoVolumeTexture:MaterialExpressionMaterialF
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_PseudoVolumeTexture:MaterialExpressionMaterialF
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_PseudoVolumeTexture:MaterialExpressionMultiply_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_PseudoVolumeTexture:MaterialExpressionComponentMask_14
+  MaterialExpressionMultiply (MaterialExpressionMultiply_30)
+    A                      <- MaterialExpressionFunctionInput
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_PseudoVolumeTexture:MaterialExpressionFunctionInput_9'
+  MaterialExpressionMultiply (MaterialExpressionMultiply_31)
+    A                      <- MaterialExpressionMultiply
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_PseudoVolumeTexture:MaterialExpressionMultiply_30'")
+  MaterialExpressionTextureObject (MaterialExpressionTextureObject_0)
+    .Texture="/Script/Engine.Texture2D'/Engine/EngineResources/Black.Black'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_13)
+    Coordinates            <- MaterialExpressionAdd
+    TextureObject          <- MaterialExpressionFunctionInput
+    MipValue               <- MaterialExpressionConstant
+    .SamplerType=SAMPLERTYPE_LinearColor
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_15)
+    Coordinates            <- MaterialExpressionAdd
+    TextureObject          <- MaterialExpressionFunctionInput
+    MipValue               <- MaterialExpressionConstant
+    .SamplerType=SAMPLERTYPE_LinearColor

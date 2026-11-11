@@ -1,0 +1,119 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_MaterialFX_Mask
+  MaterialFunctionEditorOnlyData (MF_SC_MaterialFX_MaskEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+  MaterialExpressionAdd (MaterialExpressionAdd_0)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionSubtract
+    .B=(Expression="/Script/Engine.MaterialExpressionSubtract'MF_SC_MaterialFX_Mask:MaterialExpressionSubtract_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'MF_SC_MaterialFX_Mask:MaterialExpressionAdd_2'")
+  MaterialExpressionAdd (MaterialExpressionAdd_2)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionSubtract
+    .B=(Expression="/Script/Engine.MaterialExpressionSubtract'MF_SC_MaterialFX_Mask:MaterialExpressionSubtract_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'MF_SC_MaterialFX_Mask:MaterialExpressionSubtract_2'")
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionDivide
+    .R=True
+    .G=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_1)
+    Input                  <- MaterialExpressionDivide
+    .R=True
+    .G=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_2)
+    Input                  <- MaterialExpressionDivide
+    .R=True
+    .G=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_3)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+    .R=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_4)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+    .G=True
+  MaterialExpressionConstant (MaterialExpressionConstant_0)
+    .R=3141.592041
+  MaterialExpressionConstant (MaterialExpressionConstant_2)
+    .R=3141.592041
+  MaterialExpressionConstant (MaterialExpressionConstant_3)
+    .R=31415.919922
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_MaterialFX_Mask:MaterialExpressionFunctionInput_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_MaterialFX_Mask:MaterialExpressionFunctionInput_1'")
+  MaterialExpressionDivide (MaterialExpressionDivide_1)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'MF_SC_MaterialFX_Mask:MaterialExpressionConstant_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_MaterialFX_Mask:MaterialExpressionFunctionInput_1'")
+  MaterialExpressionDivide (MaterialExpressionDivide_3)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'MF_SC_MaterialFX_Mask:MaterialExpressionConstant_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_MaterialFX_Mask:MaterialExpressionFunctionInput_1'")
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_1)
+    Preview                <- MaterialExpressionWorldPosition
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionComponentMask
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_MaterialFX_Mask:MaterialExpressionComponentMask_3'")
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_1)
+    A                      <- MaterialExpressionComponentMask
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_MaterialFX_Mask:MaterialExpressionComponentMask_4'")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_0)
+    FunctionInputs(0)      <- MaterialExpressionFunctionInput
+    FunctionInputs(4)      <- MaterialExpressionFunctionInput
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_2)
+    FunctionInputs(0)      <- MaterialExpressionMultiply
+    FunctionInputs(1)      <- MaterialExpressionFunctionInput
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionAdd
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'MF_SC_MaterialFX_Mask:MaterialExpressionAdd_2'")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionSubtract
+    .B=(Expression="/Script/Engine.MaterialExpressionSubtract'MF_SC_MaterialFX_Mask:MaterialExpressionSubtract_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'MF_SC_MaterialFX_Mask:MaterialExpressionAdd_2'")
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_4)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_5)
+    Input                  <- MaterialExpressionFunctionInput
+  MaterialExpressionReroute (MaterialExpressionReroute_0)
+    Input                  <- MaterialExpressionOneMinus
+  MaterialExpressionSaturate (MaterialExpressionSaturate_0)
+    Input                  <- MaterialExpressionMultiply
+  MaterialExpressionSubtract (MaterialExpressionSubtract_0)
+    A                      <- MaterialExpressionTextureSample
+    B                      <- MaterialExpressionReroute
+    .B=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_MaterialFX_Mask:MaterialExpressionReroute_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'MF_SC_MaterialFX_Mask:MaterialExpressionTextureSample_0'",Ma
+  MaterialExpressionSubtract (MaterialExpressionSubtract_1)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionSubtract
+    .B=(Expression="/Script/Engine.MaterialExpressionSubtract'MF_SC_MaterialFX_Mask:MaterialExpressionSubtract_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'MF_SC_MaterialFX_Mask:MaterialExpressionSubtract_2'")
+  MaterialExpressionSubtract (MaterialExpressionSubtract_2)
+    A                      <- MaterialExpressionTextureSample
+    B                      <- MaterialExpressionReroute
+    .B=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_MaterialFX_Mask:MaterialExpressionReroute_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'MF_SC_MaterialFX_Mask:MaterialExpressionTextureSample_3'",Ma
+  MaterialExpressionSubtract (MaterialExpressionSubtract_4)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionOneMinus
+    .B=(Expression="/Script/Engine.MaterialExpressionOneMinus'MF_SC_MaterialFX_Mask:MaterialExpressionOneMinus_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_MaterialFX_Mask:MaterialExpressionFunctionInput_5'")
+  MaterialExpressionSubtract (MaterialExpressionSubtract_5)
+    A                      <- MaterialExpressionTextureSample
+    B                      <- MaterialExpressionReroute
+    .B=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_MaterialFX_Mask:MaterialExpressionReroute_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'MF_SC_MaterialFX_Mask:MaterialExpressionTextureSample_1'",Ma
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_0)
+    Coordinates            <- MaterialExpressionComponentMask
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/MaterialFX/T_MaterialFX_M.T_MaterialFX_M'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_1)
+    Coordinates            <- MaterialExpressionComponentMask
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/MaterialFX/T_MaterialFX_M.T_MaterialFX_M'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_3)
+    Coordinates            <- MaterialExpressionComponentMask
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/MaterialFX/T_MaterialFX_M.T_MaterialFX_M'"

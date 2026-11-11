@@ -1,0 +1,418 @@
+asset,property,value
+/SkyCreatorPlugin/Materials/Functions/MF_SC_VolumetricClouds_LightningFlash,"texture:""/Script/Engine.TextureRenderTarget2D'/Game/ENDEMIS/Weather/WeatherFX/RT_LightningFlash.RT_LightningFlash'""","SAMPLERTYPE_LinearColor | ""/Script/Engine.TextureRenderTarget2D'/Game/ENDEMIS/Weather/WeatherFX/RT_LightningFlash.RT_LightningFlash'"""
+/SkyCreatorPlugin/Materials/Functions/MF_SC_VolumetricClouds_BaseDensity,"texture:""CloudMap_Texture""","SAMPLERTYPE_LinearColor | ""/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/VolumetricClouds/T_CloudMap.T_CloudMap'"""
+/SkyCreatorPlugin/Materials/Functions/MF_SC_VolumetricClouds_BaseDensity,"texture:""CoverageVariationMap_Texture""","SAMPLERTYPE_LinearColor | ""/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/VolumetricClouds/T_CoverageVariationMap.T_CoverageVariationMap'"""
+/SkyCreatorPlugin/Materials/Functions/MF_SC_VolumetricClouds_DetailDensity,"texture:""Turbulence_Texture""","? | ""/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/VolumetricClouds/T_TurbulenceMap.T_TurbulenceMap'"""
+/SkyCreatorPlugin/Materials/Functions/MF_SC_VolumetricClouds_DetailDensity,"texture:""NoiseDetail_Texture""","? | ""/Script/Engine.VolumeTexture'/Game/ENDEMIS/Weather/VolumetricClouds/VT_CloudNoise_Detail_32.VT_CloudNoise_Detail_32'"""
+/SkyCreatorPlugin/Materials/Functions/MF_SC_VolumetricClouds_DetailDensity,"texture:""NoiseShape_Texture""","? | ""/Script/Engine.VolumeTexture'/Game/ENDEMIS/Weather/VolumetricClouds/VT_CloudNoise_Shape_64.VT_CloudNoise_Shape_64'"""
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC0_RMVS1,root:MaterialDomain,MD_Volume
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC0_RMVS1,root:BlendMode,BLEND_Additive
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC0_RMVS1,root:bUsedWithVolumetricCloud,True
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC0_RMVS1,material_domain,<MaterialDomain.MD_VOLUME: 3>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC0_RMVS1,blend_mode,<BlendMode.BLEND_ADDITIVE: 3>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC0_RMVS1,shading_model,<MaterialShadingModel.MSM_DEFAULT_LIT: 1>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC0_RMVS1,two_sided,False
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC0_RMVS1,used_with_volumetric_cloud,True
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC0_RMVS1,blendable_location,<BlendableLocation.BL_SCENE_COLOR_AFTER_TONEMAPPING: 0>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC0_RMVS1,opacity_mask_clip_value,0.33329999446868896
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricCloud_DensitySample,root:ShadingModel,MSM_Unlit
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricCloud_DensitySample,root:bUsedWithVolumetricCloud,True
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricCloud_DensitySample,material_domain,<MaterialDomain.MD_SURFACE: 0>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricCloud_DensitySample,blend_mode,<BlendMode.BLEND_OPAQUE: 0>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricCloud_DensitySample,shading_model,<MaterialShadingModel.MSM_UNLIT: 0>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricCloud_DensitySample,two_sided,False
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricCloud_DensitySample,used_with_volumetric_cloud,True
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricCloud_DensitySample,blendable_location,<BlendableLocation.BL_SCENE_COLOR_AFTER_TONEMAPPING: 0>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricCloud_DensitySample,opacity_mask_clip_value,0.33329999446868896
+/SkyCreatorPlugin/Materials/Functions/MF_SC_SkyImage,"texture:""/Script/Engine.Texture2D'/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/flipbook.flipbook'""","? | ""/Script/Engine.Texture2D'/Engine/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/flipbook.flipbook'"""
+/SkyCreatorPlugin/Materials/Functions/MF_SC_BackgroundClouds,"texture:""BackgroundCloud_Texture""","SAMPLERTYPE_LinearColor | ""/Script/Engine.Texture2D'/Game/1_Weather/T_BackgroundClouds_4K.T_BackgroundClouds_4K'"""
+/SkyCreatorPlugin/Materials/SkySphere/M_SC_SkySphere,root:ShadingModel,MSM_Unlit
+/SkyCreatorPlugin/Materials/SkySphere/M_SC_SkySphere,material_domain,<MaterialDomain.MD_SURFACE: 0>
+/SkyCreatorPlugin/Materials/SkySphere/M_SC_SkySphere,blend_mode,<BlendMode.BLEND_OPAQUE: 0>
+/SkyCreatorPlugin/Materials/SkySphere/M_SC_SkySphere,shading_model,<MaterialShadingModel.MSM_UNLIT: 0>
+/SkyCreatorPlugin/Materials/SkySphere/M_SC_SkySphere,two_sided,False
+/SkyCreatorPlugin/Materials/SkySphere/M_SC_SkySphere,used_with_volumetric_cloud,False
+/SkyCreatorPlugin/Materials/SkySphere/M_SC_SkySphere,blendable_location,<BlendableLocation.BL_SCENE_COLOR_AFTER_TONEMAPPING: 0>
+/SkyCreatorPlugin/Materials/SkySphere/M_SC_SkySphere,opacity_mask_clip_value,0.33329999446868896
+/SkyCreatorPlugin/Materials/SkySphere/M_SC_SkySphere,"texture:""StarMap_Texture""","SAMPLERTYPE_LinearColor | ""/Script/Engine.Texture2D'/Game/1_Weather/TC_StarMap_4K.TC_StarMap_4K'"""
+/SkyCreatorPlugin/Materials/Common/M_SC_SunLightFunction,root:MaterialDomain,MD_LightFunction
+/SkyCreatorPlugin/Materials/Common/M_SC_SunLightFunction,root:ShadingModel,MSM_Unlit
+/SkyCreatorPlugin/Materials/Common/M_SC_SunLightFunction,material_domain,<MaterialDomain.MD_LIGHT_FUNCTION: 2>
+/SkyCreatorPlugin/Materials/Common/M_SC_SunLightFunction,blend_mode,<BlendMode.BLEND_OPAQUE: 0>
+/SkyCreatorPlugin/Materials/Common/M_SC_SunLightFunction,shading_model,<MaterialShadingModel.MSM_UNLIT: 0>
+/SkyCreatorPlugin/Materials/Common/M_SC_SunLightFunction,two_sided,False
+/SkyCreatorPlugin/Materials/Common/M_SC_SunLightFunction,used_with_volumetric_cloud,False
+/SkyCreatorPlugin/Materials/Common/M_SC_SunLightFunction,blendable_location,<BlendableLocation.BL_SCENE_COLOR_AFTER_TONEMAPPING: 0>
+/SkyCreatorPlugin/Materials/Common/M_SC_SunLightFunction,opacity_mask_clip_value,0.33329999446868896
+/SkyCreatorPlugin/Materials/Common/M_SC_MoonLightFunction,root:MaterialDomain,MD_LightFunction
+/SkyCreatorPlugin/Materials/Common/M_SC_MoonLightFunction,root:ShadingModel,MSM_Unlit
+/SkyCreatorPlugin/Materials/Common/M_SC_MoonLightFunction,material_domain,<MaterialDomain.MD_LIGHT_FUNCTION: 2>
+/SkyCreatorPlugin/Materials/Common/M_SC_MoonLightFunction,blend_mode,<BlendMode.BLEND_OPAQUE: 0>
+/SkyCreatorPlugin/Materials/Common/M_SC_MoonLightFunction,shading_model,<MaterialShadingModel.MSM_UNLIT: 0>
+/SkyCreatorPlugin/Materials/Common/M_SC_MoonLightFunction,two_sided,False
+/SkyCreatorPlugin/Materials/Common/M_SC_MoonLightFunction,used_with_volumetric_cloud,False
+/SkyCreatorPlugin/Materials/Common/M_SC_MoonLightFunction,blendable_location,<BlendableLocation.BL_SCENE_COLOR_AFTER_TONEMAPPING: 0>
+/SkyCreatorPlugin/Materials/Common/M_SC_MoonLightFunction,opacity_mask_clip_value,0.33329999446868896
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_LightningFlash_Writer,root:BlendMode,BLEND_Additive
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_LightningFlash_Writer,root:ShadingModel,MSM_Unlit
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_LightningFlash_Writer,material_domain,<MaterialDomain.MD_SURFACE: 0>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_LightningFlash_Writer,blend_mode,<BlendMode.BLEND_ADDITIVE: 3>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_LightningFlash_Writer,shading_model,<MaterialShadingModel.MSM_UNLIT: 0>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_LightningFlash_Writer,two_sided,False
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_LightningFlash_Writer,used_with_volumetric_cloud,False
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_LightningFlash_Writer,blendable_location,<BlendableLocation.BL_SCENE_COLOR_AFTER_TONEMAPPING: 0>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_LightningFlash_Writer,opacity_mask_clip_value,0.33329999446868896
+/SkyCreatorPlugin/Materials/Functions/MF_SC_Occlusion_NoFiltering,"texture:""/Script/Engine.TextureRenderTarget2D'/Game/ENDEMIS/Weather/Occlusion/RT_OcclusionDepth.RT_OcclusionDepth'""","SAMPLERTYPE_LinearColor | ""/Script/Engine.TextureRenderTarget2D'/Game/ENDEMIS/Weather/Occlusion/RT_OcclusionDepth.RT_OcclusionDepth'"""
+/SkyCreatorPlugin/Materials/Occlusion/PP_SC_OcclusionDebug,root:MaterialDomain,MD_PostProcess
+/SkyCreatorPlugin/Materials/Occlusion/PP_SC_OcclusionDebug,root:ShadingModel,MSM_Unlit
+/SkyCreatorPlugin/Materials/Occlusion/PP_SC_OcclusionDebug,root:BlendableLocation,BL_SceneColorAfterDOF
+/SkyCreatorPlugin/Materials/Occlusion/PP_SC_OcclusionDebug,material_domain,<MaterialDomain.MD_POST_PROCESS: 4>
+/SkyCreatorPlugin/Materials/Occlusion/PP_SC_OcclusionDebug,blend_mode,<BlendMode.BLEND_OPAQUE: 0>
+/SkyCreatorPlugin/Materials/Occlusion/PP_SC_OcclusionDebug,shading_model,<MaterialShadingModel.MSM_UNLIT: 0>
+/SkyCreatorPlugin/Materials/Occlusion/PP_SC_OcclusionDebug,two_sided,False
+/SkyCreatorPlugin/Materials/Occlusion/PP_SC_OcclusionDebug,used_with_volumetric_cloud,False
+/SkyCreatorPlugin/Materials/Occlusion/PP_SC_OcclusionDebug,blendable_location,<BlendableLocation.BL_SCENE_COLOR_AFTER_DOF: 1>
+/SkyCreatorPlugin/Materials/Occlusion/PP_SC_OcclusionDebug,opacity_mask_clip_value,0.33329999446868896
+/SkyCreatorPlugin/Materials/Common/M_SC_Compass,root:BlendMode,BLEND_Translucent
+/SkyCreatorPlugin/Materials/Common/M_SC_Compass,root:TwoSided,True
+/SkyCreatorPlugin/Materials/Common/M_SC_Compass,material_domain,<MaterialDomain.MD_SURFACE: 0>
+/SkyCreatorPlugin/Materials/Common/M_SC_Compass,blend_mode,<BlendMode.BLEND_TRANSLUCENT: 2>
+/SkyCreatorPlugin/Materials/Common/M_SC_Compass,shading_model,<MaterialShadingModel.MSM_DEFAULT_LIT: 1>
+/SkyCreatorPlugin/Materials/Common/M_SC_Compass,two_sided,True
+/SkyCreatorPlugin/Materials/Common/M_SC_Compass,used_with_volumetric_cloud,False
+/SkyCreatorPlugin/Materials/Common/M_SC_Compass,blendable_location,<BlendableLocation.BL_SCENE_COLOR_AFTER_TONEMAPPING: 0>
+/SkyCreatorPlugin/Materials/Common/M_SC_Compass,opacity_mask_clip_value,0.33329999446868896
+/SkyCreatorPlugin/Materials/Common/M_SC_Compass,"texture:""/Script/Engine.Texture2D'/SkyCreatorPlugin/Textures/Common/T_SC_Compass.T_SC_Compass'""","? | ""/Script/Engine.Texture2D'/SkyCreatorPlugin/Textures/Common/T_SC_Compass.T_SC_Compass'"""
+/SkyCreatorPlugin/Materials/Common/M_SC_Basic,material_domain,<MaterialDomain.MD_SURFACE: 0>
+/SkyCreatorPlugin/Materials/Common/M_SC_Basic,blend_mode,<BlendMode.BLEND_OPAQUE: 0>
+/SkyCreatorPlugin/Materials/Common/M_SC_Basic,shading_model,<MaterialShadingModel.MSM_DEFAULT_LIT: 1>
+/SkyCreatorPlugin/Materials/Common/M_SC_Basic,two_sided,False
+/SkyCreatorPlugin/Materials/Common/M_SC_Basic,used_with_volumetric_cloud,False
+/SkyCreatorPlugin/Materials/Common/M_SC_Basic,blendable_location,<BlendableLocation.BL_SCENE_COLOR_AFTER_TONEMAPPING: 0>
+/SkyCreatorPlugin/Materials/Common/M_SC_Basic,opacity_mask_clip_value,0.33329999446868896
+/SkyCreatorPlugin/Demo/Materials/M_Demo,material_domain,<MaterialDomain.MD_SURFACE: 0>
+/SkyCreatorPlugin/Demo/Materials/M_Demo,blend_mode,<BlendMode.BLEND_OPAQUE: 0>
+/SkyCreatorPlugin/Demo/Materials/M_Demo,shading_model,<MaterialShadingModel.MSM_DEFAULT_LIT: 1>
+/SkyCreatorPlugin/Demo/Materials/M_Demo,two_sided,False
+/SkyCreatorPlugin/Demo/Materials/M_Demo,used_with_volumetric_cloud,False
+/SkyCreatorPlugin/Demo/Materials/M_Demo,blendable_location,<BlendableLocation.BL_SCENE_COLOR_AFTER_TONEMAPPING: 0>
+/SkyCreatorPlugin/Demo/Materials/M_Demo,opacity_mask_clip_value,0.33329999446868896
+/SkyCreatorPlugin/Demo/Materials/M_Demo,"texture:""Diffuse""","? | ""/Script/Engine.Texture2D'/Engine/EngineMaterials/DefaultDiffuse.DefaultDiffuse'"""
+/SkyCreatorPlugin/Demo/Materials/M_Demo,"texture:""Normal""","SAMPLERTYPE_Normal | ""/Script/Engine.Texture2D'/Engine/EngineMaterials/DefaultNormal.DefaultNormal'"""
+/SkyCreatorPlugin/Demo/Materials/M_Demo,"texture:""Roughness""","? | ""/Script/Engine.Texture2D'/Engine/EngineMaterials/DefaultDiffuse.DefaultDiffuse'"""
+/SkyCreatorPlugin/Demo/Materials/M_Demo,texture:?,? | ?
+/SkyCreatorPlugin/Demo/Materials/M_Demo,texture:?,? | ?
+/SkyCreatorPlugin/Demo/Materials/M_Demo,texture:?,? | ?
+/SkyCreatorPlugin/Demo/Materials/M_Demo_Glass,root:BlendMode,BLEND_Translucent
+/SkyCreatorPlugin/Demo/Materials/M_Demo_Glass,material_domain,<MaterialDomain.MD_SURFACE: 0>
+/SkyCreatorPlugin/Demo/Materials/M_Demo_Glass,blend_mode,<BlendMode.BLEND_TRANSLUCENT: 2>
+/SkyCreatorPlugin/Demo/Materials/M_Demo_Glass,shading_model,<MaterialShadingModel.MSM_DEFAULT_LIT: 1>
+/SkyCreatorPlugin/Demo/Materials/M_Demo_Glass,two_sided,False
+/SkyCreatorPlugin/Demo/Materials/M_Demo_Glass,used_with_volumetric_cloud,False
+/SkyCreatorPlugin/Demo/Materials/M_Demo_Glass,blendable_location,<BlendableLocation.BL_SCENE_COLOR_AFTER_TONEMAPPING: 0>
+/SkyCreatorPlugin/Demo/Materials/M_Demo_Glass,opacity_mask_clip_value,0.33329999446868896
+/SkyCreatorPlugin/Materials/Common/M_SC_MoonLightFunction_CloudShadows,root:MaterialDomain,MD_LightFunction
+/SkyCreatorPlugin/Materials/Common/M_SC_MoonLightFunction_CloudShadows,root:ShadingModel,MSM_Unlit
+/SkyCreatorPlugin/Materials/Common/M_SC_MoonLightFunction_CloudShadows,material_domain,<MaterialDomain.MD_LIGHT_FUNCTION: 2>
+/SkyCreatorPlugin/Materials/Common/M_SC_MoonLightFunction_CloudShadows,blend_mode,<BlendMode.BLEND_OPAQUE: 0>
+/SkyCreatorPlugin/Materials/Common/M_SC_MoonLightFunction_CloudShadows,shading_model,<MaterialShadingModel.MSM_UNLIT: 0>
+/SkyCreatorPlugin/Materials/Common/M_SC_MoonLightFunction_CloudShadows,two_sided,False
+/SkyCreatorPlugin/Materials/Common/M_SC_MoonLightFunction_CloudShadows,used_with_volumetric_cloud,False
+/SkyCreatorPlugin/Materials/Common/M_SC_MoonLightFunction_CloudShadows,blendable_location,<BlendableLocation.BL_SCENE_COLOR_AFTER_TONEMAPPING: 0>
+/SkyCreatorPlugin/Materials/Common/M_SC_MoonLightFunction_CloudShadows,opacity_mask_clip_value,0.33329999446868896
+/SkyCreatorPlugin/Materials/Common/M_SC_SunLightFunction_CloudShadows,root:MaterialDomain,MD_LightFunction
+/SkyCreatorPlugin/Materials/Common/M_SC_SunLightFunction_CloudShadows,root:ShadingModel,MSM_Unlit
+/SkyCreatorPlugin/Materials/Common/M_SC_SunLightFunction_CloudShadows,material_domain,<MaterialDomain.MD_LIGHT_FUNCTION: 2>
+/SkyCreatorPlugin/Materials/Common/M_SC_SunLightFunction_CloudShadows,blend_mode,<BlendMode.BLEND_OPAQUE: 0>
+/SkyCreatorPlugin/Materials/Common/M_SC_SunLightFunction_CloudShadows,shading_model,<MaterialShadingModel.MSM_UNLIT: 0>
+/SkyCreatorPlugin/Materials/Common/M_SC_SunLightFunction_CloudShadows,two_sided,False
+/SkyCreatorPlugin/Materials/Common/M_SC_SunLightFunction_CloudShadows,used_with_volumetric_cloud,False
+/SkyCreatorPlugin/Materials/Common/M_SC_SunLightFunction_CloudShadows,blendable_location,<BlendableLocation.BL_SCENE_COLOR_AFTER_TONEMAPPING: 0>
+/SkyCreatorPlugin/Materials/Common/M_SC_SunLightFunction_CloudShadows,opacity_mask_clip_value,0.33329999446868896
+/SkyCreatorPlugin/Materials/Functions/MF_SC_BlueNoiseDithering,texture:?,SAMPLERTYPE_LinearGrayscale | ?
+/SkyCreatorPlugin/Materials/Functions/MF_SC_MaterialFX,"texture:""/Script/Engine.VolumeTexture'/Game/ENDEMIS/Weather/VolumetricClouds/VT_CloudNoise_Detail_32.VT_CloudNoise_Detail_32'""","? | ""/Script/Engine.VolumeTexture'/Game/ENDEMIS/Weather/VolumetricClouds/VT_CloudNoise_Detail_32.VT_CloudNoise_Detail_32'"""
+/SkyCreatorPlugin/Materials/Functions/MF_SC_MaterialFX_Mask,"texture:""/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/MaterialFX/T_MaterialFX_M.T_MaterialFX_M'""","SAMPLERTYPE_LinearColor | ""/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/MaterialFX/T_MaterialFX_M.T_MaterialFX_M'"""
+/SkyCreatorPlugin/Materials/Functions/MF_SC_MaterialFX_Mask,"texture:""/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/MaterialFX/T_MaterialFX_M.T_MaterialFX_M'""","SAMPLERTYPE_LinearColor | ""/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/MaterialFX/T_MaterialFX_M.T_MaterialFX_M'"""
+/SkyCreatorPlugin/Materials/Functions/MF_SC_MaterialFX_Mask,"texture:""/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/MaterialFX/T_MaterialFX_M.T_MaterialFX_M'""","SAMPLERTYPE_LinearColor | ""/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/MaterialFX/T_MaterialFX_M.T_MaterialFX_M'"""
+/SkyCreatorPlugin/Materials/Functions/MF_SC_MaterialFX_RainRipples,"texture:""/Script/Engine.TextureRenderTarget2D'/SkyCreatorPlugin/Textures/MaterialFX/RT_SC_RainRipples.RT_SC_RainRipples'""","SAMPLERTYPE_LinearColor | ""/Script/Engine.TextureRenderTarget2D'/SkyCreatorPlugin/Textures/MaterialFX/RT_SC_RainRipples.RT_SC_RainRipples'"""
+/SkyCreatorPlugin/Materials/Functions/MF_SC_MaterialFX_RainSplatter,"texture:""/Script/Engine.TextureRenderTarget2D'/SkyCreatorPlugin/Textures/MaterialFX/RT_SC_RainSplatter.RT_SC_RainSplatter'""","SAMPLERTYPE_LinearColor | ""/Script/Engine.TextureRenderTarget2D'/SkyCreatorPlugin/Textures/MaterialFX/RT_SC_RainSplatter.RT_SC_RainSplatter'"""
+/SkyCreatorPlugin/Materials/Functions/MF_SC_MaterialFX_Snow,"texture:""/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/MaterialFX/T_Snow_N.T_Snow_N'""","SAMPLERTYPE_Normal | ""/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/MaterialFX/T_Snow_N.T_Snow_N'"""
+/SkyCreatorPlugin/Materials/Functions/MF_SC_MaterialFX_Snow,"texture:""/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/MaterialFX/T_Snow_D.T_Snow_D'""","? | ""/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/MaterialFX/T_Snow_D.T_Snow_D'"""
+/SkyCreatorPlugin/Materials/Functions/MF_SC_MaterialFX_Snow,"texture:""/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/MaterialFX/T_SnowSparkles_M.T_SnowSparkles_M'""","SAMPLERTYPE_LinearColor | ""/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/MaterialFX/T_SnowSparkles_M.T_SnowSparkles_M'"""
+/SkyCreatorPlugin/Materials/Functions/MF_SC_MaterialFX_WindRipples,"texture:""/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/MaterialFX/T_WindRipples_N.T_WindRipples_N'""","SAMPLERTYPE_Normal | ""/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/MaterialFX/T_WindRipples_N.T_WindRipples_N'"""
+/SkyCreatorPlugin/Materials/Functions/MF_SC_MaterialFX_WindRipples,"texture:""/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/MaterialFX/T_WindRipples_N.T_WindRipples_N'""","SAMPLERTYPE_Normal | ""/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/MaterialFX/T_WindRipples_N.T_WindRipples_N'"""
+/SkyCreatorPlugin/Materials/Functions/MF_SC_PseudoVolumeTexture,texture:?,SAMPLERTYPE_LinearColor | ?
+/SkyCreatorPlugin/Materials/Functions/MF_SC_PseudoVolumeTexture,texture:?,SAMPLERTYPE_LinearColor | ?
+/SkyCreatorPlugin/Materials/Functions/MF_SC_RainRipples_SIngleLayer,"texture:""/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/MaterialFX/T_RainRipples_M.T_RainRipples_M'""","SAMPLERTYPE_LinearColor | ""/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/MaterialFX/T_RainRipples_M.T_RainRipples_M'"""
+/SkyCreatorPlugin/Materials/Functions/MF_SC_Triplanar_Normal,texture:?,? | ?
+/SkyCreatorPlugin/Materials/Functions/MF_SC_Triplanar_Normal,texture:?,? | ?
+/SkyCreatorPlugin/Materials/Functions/MF_SC_Triplanar_Normal,texture:?,? | ?
+/SkyCreatorPlugin/Materials/Functions/MF_SC_VolumetricClouds_BaseDensity_HQ,"texture:""CloudMap_Texture""","SAMPLERTYPE_LinearColor | ""/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/VolumetricClouds/T_CloudMap_2K.T_CloudMap_2K'"""
+/SkyCreatorPlugin/Materials/Functions/MF_SC_VolumetricClouds_BaseDensity_HQ,"texture:""CoverageVariationMap_Texture""","SAMPLERTYPE_LinearColor | ""/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/VolumetricClouds/T_CoverageVariationMap.T_CoverageVariationMap'"""
+/SkyCreatorPlugin/Materials/Functions/MF_SC_WeatherFX_Rain,"texture:""/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_Precipitation_Noise.T_Precipitation_Noise'""","SAMPLERTYPE_LinearColor | ""/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_Precipitation_Noise.T_Precipitation_Noise'"""
+/SkyCreatorPlugin/Materials/Functions/MF_SC_WeatherFX_Snow,"texture:""/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_Precipitation_Noise.T_Precipitation_Noise'""","SAMPLERTYPE_LinearColor | ""/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_Precipitation_Noise.T_Precipitation_Noise'"""
+/SkyCreatorPlugin/Materials/Occlusion/PP_SC_WorldHeight,root:MaterialDomain,MD_PostProcess
+/SkyCreatorPlugin/Materials/Occlusion/PP_SC_WorldHeight,root:ShadingModel,MSM_Unlit
+/SkyCreatorPlugin/Materials/Occlusion/PP_SC_WorldHeight,material_domain,<MaterialDomain.MD_POST_PROCESS: 4>
+/SkyCreatorPlugin/Materials/Occlusion/PP_SC_WorldHeight,blend_mode,<BlendMode.BLEND_OPAQUE: 0>
+/SkyCreatorPlugin/Materials/Occlusion/PP_SC_WorldHeight,shading_model,<MaterialShadingModel.MSM_UNLIT: 0>
+/SkyCreatorPlugin/Materials/Occlusion/PP_SC_WorldHeight,two_sided,False
+/SkyCreatorPlugin/Materials/Occlusion/PP_SC_WorldHeight,used_with_volumetric_cloud,False
+/SkyCreatorPlugin/Materials/Occlusion/PP_SC_WorldHeight,blendable_location,<BlendableLocation.BL_SCENE_COLOR_AFTER_TONEMAPPING: 0>
+/SkyCreatorPlugin/Materials/Occlusion/PP_SC_WorldHeight,opacity_mask_clip_value,0.33329999446868896
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC0_GC0_RMVS0,root:MaterialDomain,MD_Volume
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC0_GC0_RMVS0,root:BlendMode,BLEND_Additive
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC0_GC0_RMVS0,root:bUsedWithVolumetricCloud,True
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC0_GC0_RMVS0,material_domain,<MaterialDomain.MD_VOLUME: 3>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC0_GC0_RMVS0,blend_mode,<BlendMode.BLEND_ADDITIVE: 3>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC0_GC0_RMVS0,shading_model,<MaterialShadingModel.MSM_DEFAULT_LIT: 1>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC0_GC0_RMVS0,two_sided,False
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC0_GC0_RMVS0,used_with_volumetric_cloud,True
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC0_GC0_RMVS0,blendable_location,<BlendableLocation.BL_SCENE_COLOR_AFTER_TONEMAPPING: 0>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC0_GC0_RMVS0,opacity_mask_clip_value,0.33329999446868896
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC0_GC0_RMVS1,root:MaterialDomain,MD_Volume
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC0_GC0_RMVS1,root:BlendMode,BLEND_Additive
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC0_GC0_RMVS1,root:bUsedWithVolumetricCloud,True
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC0_GC0_RMVS1,material_domain,<MaterialDomain.MD_VOLUME: 3>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC0_GC0_RMVS1,blend_mode,<BlendMode.BLEND_ADDITIVE: 3>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC0_GC0_RMVS1,shading_model,<MaterialShadingModel.MSM_DEFAULT_LIT: 1>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC0_GC0_RMVS1,two_sided,False
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC0_GC0_RMVS1,used_with_volumetric_cloud,True
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC0_GC0_RMVS1,blendable_location,<BlendableLocation.BL_SCENE_COLOR_AFTER_TONEMAPPING: 0>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC0_GC0_RMVS1,opacity_mask_clip_value,0.33329999446868896
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC0_GC1_RMVS0,root:MaterialDomain,MD_Volume
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC0_GC1_RMVS0,root:BlendMode,BLEND_Additive
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC0_GC1_RMVS0,root:bUsedWithVolumetricCloud,True
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC0_GC1_RMVS0,material_domain,<MaterialDomain.MD_VOLUME: 3>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC0_GC1_RMVS0,blend_mode,<BlendMode.BLEND_ADDITIVE: 3>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC0_GC1_RMVS0,shading_model,<MaterialShadingModel.MSM_DEFAULT_LIT: 1>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC0_GC1_RMVS0,two_sided,False
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC0_GC1_RMVS0,used_with_volumetric_cloud,True
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC0_GC1_RMVS0,blendable_location,<BlendableLocation.BL_SCENE_COLOR_AFTER_TONEMAPPING: 0>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC0_GC1_RMVS0,opacity_mask_clip_value,0.33329999446868896
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC0_GC1_RMVS1,root:MaterialDomain,MD_Volume
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC0_GC1_RMVS1,root:BlendMode,BLEND_Additive
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC0_GC1_RMVS1,root:bUsedWithVolumetricCloud,True
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC0_GC1_RMVS1,material_domain,<MaterialDomain.MD_VOLUME: 3>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC0_GC1_RMVS1,blend_mode,<BlendMode.BLEND_ADDITIVE: 3>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC0_GC1_RMVS1,shading_model,<MaterialShadingModel.MSM_DEFAULT_LIT: 1>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC0_GC1_RMVS1,two_sided,False
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC0_GC1_RMVS1,used_with_volumetric_cloud,True
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC0_GC1_RMVS1,blendable_location,<BlendableLocation.BL_SCENE_COLOR_AFTER_TONEMAPPING: 0>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC0_GC1_RMVS1,opacity_mask_clip_value,0.33329999446868896
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC0_RMVS0,root:MaterialDomain,MD_Volume
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC0_RMVS0,root:BlendMode,BLEND_Additive
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC0_RMVS0,root:bUsedWithVolumetricCloud,True
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC0_RMVS0,material_domain,<MaterialDomain.MD_VOLUME: 3>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC0_RMVS0,blend_mode,<BlendMode.BLEND_ADDITIVE: 3>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC0_RMVS0,shading_model,<MaterialShadingModel.MSM_DEFAULT_LIT: 1>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC0_RMVS0,two_sided,False
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC0_RMVS0,used_with_volumetric_cloud,True
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC0_RMVS0,blendable_location,<BlendableLocation.BL_SCENE_COLOR_AFTER_TONEMAPPING: 0>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC0_RMVS0,opacity_mask_clip_value,0.33329999446868896
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC1_RMVS0,root:MaterialDomain,MD_Volume
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC1_RMVS0,root:BlendMode,BLEND_Additive
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC1_RMVS0,root:bUsedWithVolumetricCloud,True
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC1_RMVS0,material_domain,<MaterialDomain.MD_VOLUME: 3>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC1_RMVS0,blend_mode,<BlendMode.BLEND_ADDITIVE: 3>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC1_RMVS0,shading_model,<MaterialShadingModel.MSM_DEFAULT_LIT: 1>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC1_RMVS0,two_sided,False
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC1_RMVS0,used_with_volumetric_cloud,True
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC1_RMVS0,blendable_location,<BlendableLocation.BL_SCENE_COLOR_AFTER_TONEMAPPING: 0>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC1_RMVS0,opacity_mask_clip_value,0.33329999446868896
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1,root:MaterialDomain,MD_Volume
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1,root:BlendMode,BLEND_Additive
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1,root:bUsedWithVolumetricCloud,True
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1,material_domain,<MaterialDomain.MD_VOLUME: 3>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1,blend_mode,<BlendMode.BLEND_ADDITIVE: 3>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1,shading_model,<MaterialShadingModel.MSM_DEFAULT_LIT: 1>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1,two_sided,False
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1,used_with_volumetric_cloud,True
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1,blendable_location,<BlendableLocation.BL_SCENE_COLOR_AFTER_TONEMAPPING: 0>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC1_GC1_RMVS1,opacity_mask_clip_value,0.33329999446868896
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC2_GC0_RMVS0,root:MaterialDomain,MD_Volume
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC2_GC0_RMVS0,root:BlendMode,BLEND_Additive
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC2_GC0_RMVS0,root:bUsedWithVolumetricCloud,True
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC2_GC0_RMVS0,material_domain,<MaterialDomain.MD_VOLUME: 3>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC2_GC0_RMVS0,blend_mode,<BlendMode.BLEND_ADDITIVE: 3>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC2_GC0_RMVS0,shading_model,<MaterialShadingModel.MSM_DEFAULT_LIT: 1>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC2_GC0_RMVS0,two_sided,False
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC2_GC0_RMVS0,used_with_volumetric_cloud,True
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC2_GC0_RMVS0,blendable_location,<BlendableLocation.BL_SCENE_COLOR_AFTER_TONEMAPPING: 0>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC2_GC0_RMVS0,opacity_mask_clip_value,0.33329999446868896
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC2_GC0_RMVS1,root:MaterialDomain,MD_Volume
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC2_GC0_RMVS1,root:BlendMode,BLEND_Additive
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC2_GC0_RMVS1,root:bUsedWithVolumetricCloud,True
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC2_GC0_RMVS1,material_domain,<MaterialDomain.MD_VOLUME: 3>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC2_GC0_RMVS1,blend_mode,<BlendMode.BLEND_ADDITIVE: 3>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC2_GC0_RMVS1,shading_model,<MaterialShadingModel.MSM_DEFAULT_LIT: 1>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC2_GC0_RMVS1,two_sided,False
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC2_GC0_RMVS1,used_with_volumetric_cloud,True
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC2_GC0_RMVS1,blendable_location,<BlendableLocation.BL_SCENE_COLOR_AFTER_TONEMAPPING: 0>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC2_GC0_RMVS1,opacity_mask_clip_value,0.33329999446868896
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC2_GC1_RMVS0,root:MaterialDomain,MD_Volume
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC2_GC1_RMVS0,root:BlendMode,BLEND_Additive
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC2_GC1_RMVS0,root:bUsedWithVolumetricCloud,True
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC2_GC1_RMVS0,material_domain,<MaterialDomain.MD_VOLUME: 3>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC2_GC1_RMVS0,blend_mode,<BlendMode.BLEND_ADDITIVE: 3>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC2_GC1_RMVS0,shading_model,<MaterialShadingModel.MSM_DEFAULT_LIT: 1>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC2_GC1_RMVS0,two_sided,False
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC2_GC1_RMVS0,used_with_volumetric_cloud,True
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC2_GC1_RMVS0,blendable_location,<BlendableLocation.BL_SCENE_COLOR_AFTER_TONEMAPPING: 0>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC2_GC1_RMVS0,opacity_mask_clip_value,0.33329999446868896
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC2_GC1_RMVS1,root:MaterialDomain,MD_Volume
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC2_GC1_RMVS1,root:BlendMode,BLEND_Additive
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC2_GC1_RMVS1,root:bUsedWithVolumetricCloud,True
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC2_GC1_RMVS1,material_domain,<MaterialDomain.MD_VOLUME: 3>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC2_GC1_RMVS1,blend_mode,<BlendMode.BLEND_ADDITIVE: 3>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC2_GC1_RMVS1,shading_model,<MaterialShadingModel.MSM_DEFAULT_LIT: 1>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC2_GC1_RMVS1,two_sided,False
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC2_GC1_RMVS1,used_with_volumetric_cloud,True
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC2_GC1_RMVS1,blendable_location,<BlendableLocation.BL_SCENE_COLOR_AFTER_TONEMAPPING: 0>
+/SkyCreatorPlugin/Materials/VolumetricClouds/M_SC_VolumetricClouds_MSAOC2_GC1_RMVS1,opacity_mask_clip_value,0.33329999446868896
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_LightningBolt,root:BlendMode,BLEND_Additive
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_LightningBolt,root:ShadingModel,MSM_Unlit
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_LightningBolt,material_domain,<MaterialDomain.MD_SURFACE: 0>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_LightningBolt,blend_mode,<BlendMode.BLEND_ADDITIVE: 3>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_LightningBolt,shading_model,<MaterialShadingModel.MSM_UNLIT: 0>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_LightningBolt,two_sided,False
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_LightningBolt,used_with_volumetric_cloud,False
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_LightningBolt,blendable_location,<BlendableLocation.BL_SCENE_COLOR_AFTER_TONEMAPPING: 0>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_LightningBolt,opacity_mask_clip_value,0.33329999446868896
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_LightningBranch,root:BlendMode,BLEND_Additive
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_LightningBranch,root:ShadingModel,MSM_Unlit
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_LightningBranch,material_domain,<MaterialDomain.MD_SURFACE: 0>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_LightningBranch,blend_mode,<BlendMode.BLEND_ADDITIVE: 3>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_LightningBranch,shading_model,<MaterialShadingModel.MSM_UNLIT: 0>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_LightningBranch,two_sided,False
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_LightningBranch,used_with_volumetric_cloud,False
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_LightningBranch,blendable_location,<BlendableLocation.BL_SCENE_COLOR_AFTER_TONEMAPPING: 0>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_LightningBranch,opacity_mask_clip_value,0.33329999446868896
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rain,root:BlendMode,BLEND_Translucent
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rain,material_domain,<MaterialDomain.MD_SURFACE: 0>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rain,blend_mode,<BlendMode.BLEND_TRANSLUCENT: 2>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rain,shading_model,<MaterialShadingModel.MSM_DEFAULT_LIT: 1>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rain,two_sided,False
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rain,used_with_volumetric_cloud,False
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rain,blendable_location,<BlendableLocation.BL_SCENE_COLOR_AFTER_TONEMAPPING: 0>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rain,opacity_mask_clip_value,0.33329999446868896
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rain,"texture:""/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_Precipitation_Noise.T_Precipitation_Noise'""","SAMPLERTYPE_LinearColor | ""/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_Precipitation_Noise.T_Precipitation_Noise'"""
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rainbow,root:BlendMode,BLEND_Additive
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rainbow,material_domain,<MaterialDomain.MD_SURFACE: 0>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rainbow,blend_mode,<BlendMode.BLEND_ADDITIVE: 3>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rainbow,shading_model,<MaterialShadingModel.MSM_DEFAULT_LIT: 1>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rainbow,two_sided,False
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rainbow,used_with_volumetric_cloud,False
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rainbow,blendable_location,<BlendableLocation.BL_SCENE_COLOR_AFTER_TONEMAPPING: 0>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rainbow,opacity_mask_clip_value,0.33329999446868896
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_RainSplash,root:BlendMode,BLEND_Translucent
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_RainSplash,material_domain,<MaterialDomain.MD_SURFACE: 0>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_RainSplash,blend_mode,<BlendMode.BLEND_TRANSLUCENT: 2>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_RainSplash,shading_model,<MaterialShadingModel.MSM_DEFAULT_LIT: 1>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_RainSplash,two_sided,False
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_RainSplash,used_with_volumetric_cloud,False
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_RainSplash,blendable_location,<BlendableLocation.BL_SCENE_COLOR_AFTER_TONEMAPPING: 0>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_RainSplash,opacity_mask_clip_value,0.33329999446868896
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rain_MV0_BD0,root:BlendMode,BLEND_Translucent
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rain_MV0_BD0,material_domain,<MaterialDomain.MD_SURFACE: 0>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rain_MV0_BD0,blend_mode,<BlendMode.BLEND_TRANSLUCENT: 2>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rain_MV0_BD0,shading_model,<MaterialShadingModel.MSM_DEFAULT_LIT: 1>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rain_MV0_BD0,two_sided,False
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rain_MV0_BD0,used_with_volumetric_cloud,False
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rain_MV0_BD0,blendable_location,<BlendableLocation.BL_SCENE_COLOR_AFTER_TONEMAPPING: 0>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rain_MV0_BD0,opacity_mask_clip_value,0.33329999446868896
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rain_MV0_BD1,root:BlendMode,BLEND_Translucent
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rain_MV0_BD1,material_domain,<MaterialDomain.MD_SURFACE: 0>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rain_MV0_BD1,blend_mode,<BlendMode.BLEND_TRANSLUCENT: 2>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rain_MV0_BD1,shading_model,<MaterialShadingModel.MSM_DEFAULT_LIT: 1>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rain_MV0_BD1,two_sided,False
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rain_MV0_BD1,used_with_volumetric_cloud,False
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rain_MV0_BD1,blendable_location,<BlendableLocation.BL_SCENE_COLOR_AFTER_TONEMAPPING: 0>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rain_MV0_BD1,opacity_mask_clip_value,0.33329999446868896
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rain_MV1_BD0,root:BlendMode,BLEND_Translucent
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rain_MV1_BD0,material_domain,<MaterialDomain.MD_SURFACE: 0>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rain_MV1_BD0,blend_mode,<BlendMode.BLEND_TRANSLUCENT: 2>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rain_MV1_BD0,shading_model,<MaterialShadingModel.MSM_DEFAULT_LIT: 1>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rain_MV1_BD0,two_sided,False
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rain_MV1_BD0,used_with_volumetric_cloud,False
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rain_MV1_BD0,blendable_location,<BlendableLocation.BL_SCENE_COLOR_AFTER_TONEMAPPING: 0>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rain_MV1_BD0,opacity_mask_clip_value,0.33329999446868896
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rain_MV1_BD1,root:BlendMode,BLEND_Translucent
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rain_MV1_BD1,material_domain,<MaterialDomain.MD_SURFACE: 0>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rain_MV1_BD1,blend_mode,<BlendMode.BLEND_TRANSLUCENT: 2>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rain_MV1_BD1,shading_model,<MaterialShadingModel.MSM_DEFAULT_LIT: 1>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rain_MV1_BD1,two_sided,False
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rain_MV1_BD1,used_with_volumetric_cloud,False
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rain_MV1_BD1,blendable_location,<BlendableLocation.BL_SCENE_COLOR_AFTER_TONEMAPPING: 0>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Rain_MV1_BD1,opacity_mask_clip_value,0.33329999446868896
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Snow,root:BlendMode,BLEND_Translucent
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Snow,material_domain,<MaterialDomain.MD_SURFACE: 0>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Snow,blend_mode,<BlendMode.BLEND_TRANSLUCENT: 2>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Snow,shading_model,<MaterialShadingModel.MSM_DEFAULT_LIT: 1>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Snow,two_sided,False
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Snow,used_with_volumetric_cloud,False
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Snow,blendable_location,<BlendableLocation.BL_SCENE_COLOR_AFTER_TONEMAPPING: 0>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Snow,opacity_mask_clip_value,0.33329999446868896
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Snow,"texture:""/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_Precipitation_Noise.T_Precipitation_Noise'""","SAMPLERTYPE_LinearColor | ""/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_Precipitation_Noise.T_Precipitation_Noise'"""
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Snow_MV0_BD0,root:BlendMode,BLEND_Translucent
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Snow_MV0_BD0,material_domain,<MaterialDomain.MD_SURFACE: 0>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Snow_MV0_BD0,blend_mode,<BlendMode.BLEND_TRANSLUCENT: 2>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Snow_MV0_BD0,shading_model,<MaterialShadingModel.MSM_DEFAULT_LIT: 1>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Snow_MV0_BD0,two_sided,False
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Snow_MV0_BD0,used_with_volumetric_cloud,False
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Snow_MV0_BD0,blendable_location,<BlendableLocation.BL_SCENE_COLOR_AFTER_TONEMAPPING: 0>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Snow_MV0_BD0,opacity_mask_clip_value,0.33329999446868896
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Snow_MV0_BD1,root:BlendMode,BLEND_Translucent
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Snow_MV0_BD1,material_domain,<MaterialDomain.MD_SURFACE: 0>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Snow_MV0_BD1,blend_mode,<BlendMode.BLEND_TRANSLUCENT: 2>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Snow_MV0_BD1,shading_model,<MaterialShadingModel.MSM_DEFAULT_LIT: 1>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Snow_MV0_BD1,two_sided,False
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Snow_MV0_BD1,used_with_volumetric_cloud,False
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Snow_MV0_BD1,blendable_location,<BlendableLocation.BL_SCENE_COLOR_AFTER_TONEMAPPING: 0>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Snow_MV0_BD1,opacity_mask_clip_value,0.33329999446868896
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Snow_MV1_BD0,root:BlendMode,BLEND_Translucent
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Snow_MV1_BD0,material_domain,<MaterialDomain.MD_SURFACE: 0>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Snow_MV1_BD0,blend_mode,<BlendMode.BLEND_TRANSLUCENT: 2>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Snow_MV1_BD0,shading_model,<MaterialShadingModel.MSM_DEFAULT_LIT: 1>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Snow_MV1_BD0,two_sided,False
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Snow_MV1_BD0,used_with_volumetric_cloud,False
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Snow_MV1_BD0,blendable_location,<BlendableLocation.BL_SCENE_COLOR_AFTER_TONEMAPPING: 0>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Snow_MV1_BD0,opacity_mask_clip_value,0.33329999446868896
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Snow_MV1_BD1,root:BlendMode,BLEND_Translucent
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Snow_MV1_BD1,material_domain,<MaterialDomain.MD_SURFACE: 0>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Snow_MV1_BD1,blend_mode,<BlendMode.BLEND_TRANSLUCENT: 2>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Snow_MV1_BD1,shading_model,<MaterialShadingModel.MSM_DEFAULT_LIT: 1>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Snow_MV1_BD1,two_sided,False
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Snow_MV1_BD1,used_with_volumetric_cloud,False
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Snow_MV1_BD1,blendable_location,<BlendableLocation.BL_SCENE_COLOR_AFTER_TONEMAPPING: 0>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_Snow_MV1_BD1,opacity_mask_clip_value,0.33329999446868896
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricMist,root:MaterialDomain,MD_Volume
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricMist,root:BlendMode,BLEND_Additive
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricMist,material_domain,<MaterialDomain.MD_VOLUME: 3>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricMist,blend_mode,<BlendMode.BLEND_ADDITIVE: 3>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricMist,shading_model,<MaterialShadingModel.MSM_DEFAULT_LIT: 1>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricMist,two_sided,False
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricMist,used_with_volumetric_cloud,False
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricMist,blendable_location,<BlendableLocation.BL_SCENE_COLOR_AFTER_TONEMAPPING: 0>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricMist,opacity_mask_clip_value,0.33329999446868896
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricMist,"texture:""/Script/Engine.VolumeTexture'/Game/ENDEMIS/Weather/VolumetricClouds/VT_CloudNoise_Shape_64.VT_CloudNoise_Shape_64'""","? | ""/Script/Engine.VolumeTexture'/Game/ENDEMIS/Weather/VolumetricClouds/VT_CloudNoise_Shape_64.VT_CloudNoise_Shape_64'"""
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricMist,"texture:""/Script/Engine.VolumeTexture'/Game/ENDEMIS/Weather/VolumetricClouds/VT_CloudNoise_Shape_64.VT_CloudNoise_Shape_64'""","? | ""/Script/Engine.VolumeTexture'/Game/ENDEMIS/Weather/VolumetricClouds/VT_CloudNoise_Shape_64.VT_CloudNoise_Shape_64'"""
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricRainSplash,root:MaterialDomain,MD_Volume
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricRainSplash,root:BlendMode,BLEND_Additive
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricRainSplash,material_domain,<MaterialDomain.MD_VOLUME: 3>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricRainSplash,blend_mode,<BlendMode.BLEND_ADDITIVE: 3>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricRainSplash,shading_model,<MaterialShadingModel.MSM_DEFAULT_LIT: 1>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricRainSplash,two_sided,False
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricRainSplash,used_with_volumetric_cloud,False
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricRainSplash,blendable_location,<BlendableLocation.BL_SCENE_COLOR_AFTER_TONEMAPPING: 0>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricRainSplash,opacity_mask_clip_value,0.33329999446868896
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricWind,root:MaterialDomain,MD_Volume
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricWind,root:BlendMode,BLEND_Additive
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricWind,material_domain,<MaterialDomain.MD_VOLUME: 3>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricWind,blend_mode,<BlendMode.BLEND_ADDITIVE: 3>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricWind,shading_model,<MaterialShadingModel.MSM_DEFAULT_LIT: 1>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricWind,two_sided,False
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricWind,used_with_volumetric_cloud,False
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricWind,blendable_location,<BlendableLocation.BL_SCENE_COLOR_AFTER_TONEMAPPING: 0>
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricWind,opacity_mask_clip_value,0.33329999446868896
+/SkyCreatorPlugin/Materials/WeatherFX/M_SC_VolumetricWind,"texture:""/Script/Engine.VolumeTexture'/Game/ENDEMIS/Weather/VolumetricClouds/VT_CloudNoise_Shape_64.VT_CloudNoise_Shape_64'""","? | ""/Script/Engine.VolumeTexture'/Game/ENDEMIS/Weather/VolumetricClouds/VT_CloudNoise_Shape_64.VT_CloudNoise_Shape_64'"""

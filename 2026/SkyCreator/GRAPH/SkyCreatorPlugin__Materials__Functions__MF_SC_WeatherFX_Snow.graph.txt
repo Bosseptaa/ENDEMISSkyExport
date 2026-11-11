@@ -1,0 +1,158 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_WeatherFX_Snow
+  MaterialFunctionEditorOnlyData (MF_SC_WeatherFX_SnowEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+  MaterialExpressionAdd (MaterialExpressionAdd_0)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionLinearInterpolate
+    .B=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'MF_SC_WeatherFX_Snow:MaterialExpressionLinearInterpolate
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_WeatherFX_Snow:MaterialExpressionMultiply_5'")
+  MaterialExpressionClamp (MaterialExpressionClamp_0)
+    Input                  <- MaterialExpressionMultiply
+    Max                    <- MaterialExpressionConstant
+  MaterialExpressionConstant (MaterialExpressionConstant_2)
+    .R=2.000000
+  MaterialExpressionConstant (MaterialExpressionConstant_4)
+    .R=2.000000
+  MaterialExpressionConstant (MaterialExpressionConstant_6)
+    .R=1.000000
+  MaterialExpressionConstant (MaterialExpressionConstant_7)
+    .R=2.000000
+  MaterialExpressionConstant (MaterialExpressionConstant_8)
+    .R=-0.500000
+  MaterialExpressionConstant (MaterialExpressionConstant_9)
+    .R=1.000000
+  MaterialExpressionConstant2Vector (MaterialExpressionConstant2Vector_1)
+    .R=1.000000
+    .G=1.000000
+  MaterialExpressionConstant2Vector (MaterialExpressionConstant2Vector_2)
+    .R=0.500000
+    .G=0.500000
+  MaterialExpressionDistance (MaterialExpressionDistance_0)
+    A                      <- MaterialExpressionFrac
+    B                      <- MaterialExpressionConstant2Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'MF_SC_WeatherFX_Snow:MaterialExpressionConstant2Vector_2'"
+    .A=(Expression="/Script/Engine.MaterialExpressionFrac'MF_SC_WeatherFX_Snow:MaterialExpressionFrac_0'")
+  MaterialExpressionDynamicParameter (MaterialExpressionDynamicParameter_0)
+    .DefaultValue=(R=100.000000,G=100.000000,B=50.000000,A=0.500000)
+  MaterialExpressionDynamicParameter (MaterialExpressionDynamicParameter_2)
+    .DefaultValue=(R=100.000000,G=100.000000,B=50.000000,A=0.500000)
+  MaterialExpressionDynamicParameter (MaterialExpressionDynamicParameter_3)
+    .DefaultValue=(R=0.000000,G=1.000000,B=1.000000,A=1.000000)
+  MaterialExpressionFrac (MaterialExpressionFrac_0)
+    Input                  <- MaterialExpressionClamp
+  MaterialExpressionFresnel (MaterialExpressionFresnel_0)
+    ExponentIn             <- MaterialExpressionConstant
+    BaseReflectFractionIn  <- MaterialExpressionConstant
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionParticleColor
+    .A=(Expression="/Script/Engine.MaterialExpressionParticleColor'MF_SC_WeatherFX_Snow:MaterialExpressionParticleColor_1'",Mas
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_1)
+    A                      <- MaterialExpressionSceneColor
+    .A=(Expression="/Script/Engine.MaterialExpressionSceneColor'MF_SC_WeatherFX_Snow:MaterialExpressionSceneColor_0'")
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_2)
+    A                      <- MaterialExpressionMultiply
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_WeatherFX_Snow:MaterialExpressionMultiply_4'")
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_0)
+    A                      <- MaterialExpressionConstant2Vector
+    B                      <- MaterialExpressionConstant2Vector
+    Alpha                  <- MaterialExpressionParticleRandom
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'MF_SC_WeatherFX_Snow:MaterialExpressionConstant2Vector_1'"
+    .A=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'MF_SC_WeatherFX_Snow:MaterialExpressionConstant2Vector_0'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_1)
+    A                      <- MaterialExpressionNamedRerouteUsage
+    B                      <- MaterialExpressionNamedRerouteUsage
+    Alpha                  <- MaterialExpressionDynamicParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'MF_SC_WeatherFX_Snow:MaterialExpressionNamedRerouteUsage
+    .A=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'MF_SC_WeatherFX_Snow:MaterialExpressionNamedRerouteUsage
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_2)
+    A                      <- MaterialExpressionSaturate
+    B                      <- MaterialExpressionMaterialFunctionCall
+    Alpha                  <- MaterialExpressionDynamicParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_WeatherFX_Snow:MaterialExpressionMaterialFuncti
+    .A=(Expression="/Script/Engine.MaterialExpressionSaturate'MF_SC_WeatherFX_Snow:MaterialExpressionSaturate_1'")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_10)
+    FunctionInputs(0)      <- MaterialExpressionSaturate
+    FunctionInputs(1)      <- MaterialExpressionScalarParameter
+    FunctionInputs(2)      <- MaterialExpressionScalarParameter
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_14)
+    FunctionInputs(0)      <- MaterialExpressionAdd
+    FunctionInputs(2)      <- MaterialExpressionParticleRandom
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_3)
+    FunctionInputs(0)      <- MaterialExpressionDynamicParameter
+    FunctionInputs(1)      <- MaterialExpressionDynamicParameter
+    FunctionInputs(2)      <- MaterialExpressionDynamicParameter
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionRayTracingQualitySwitch
+    .B=(Expression="/Script/Engine.MaterialExpressionRayTracingQualitySwitch'MF_SC_WeatherFX_Snow:MaterialExpressionRayTracingQ
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_WeatherFX_Snow:MaterialExpressionMultiply_1'")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionParticleColor
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_WeatherFX_Snow:MaterialExpressionMultiply_6'")
+    .A=(Expression="/Script/Engine.MaterialExpressionParticleColor'MF_SC_WeatherFX_Snow:MaterialExpressionParticleColor_1'",Out
+  MaterialExpressionMultiply (MaterialExpressionMultiply_2)
+    A                      <- MaterialExpressionTextureCoordinate
+    B                      <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'MF_SC_WeatherFX_Snow:MaterialExpressionConstant_7'")
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'MF_SC_WeatherFX_Snow:MaterialExpressionTextureCoordinate
+  MaterialExpressionMultiply (MaterialExpressionMultiply_4)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_WeatherFX_Snow:MaterialExpressionMaterialFuncti
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_WeatherFX_Snow:MaterialExpressionMultiply_0'")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_5)
+    A                      <- MaterialExpressionTextureCoordinate
+    B                      <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'MF_SC_WeatherFX_Snow:MaterialExpressionConstant_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'MF_SC_WeatherFX_Snow:MaterialExpressionTextureCoordinate
+  MaterialExpressionMultiply (MaterialExpressionMultiply_6)
+    A                      <- MaterialExpressionLinearInterpolate
+    B                      <- MaterialExpressionOneMinus
+    .B=(Expression="/Script/Engine.MaterialExpressionOneMinus'MF_SC_WeatherFX_Snow:MaterialExpressionOneMinus_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'MF_SC_WeatherFX_Snow:MaterialExpressionLinearInterpolate
+  MaterialExpressionMultiply (MaterialExpressionMultiply_7)
+    A                      <- MaterialExpressionTextureSample
+    B                      <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'MF_SC_WeatherFX_Snow:MaterialExpressionNamedRerouteUsage
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'MF_SC_WeatherFX_Snow:MaterialExpressionTextureSample_0'",Out
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_0)
+    Input                  <- MaterialExpressionLinearInterpolate
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_1)
+    Input                  <- MaterialExpressionMultiply
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_2)
+    Input                  <- MaterialExpressionParticleSubUV
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_1)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_2)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_3)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_0)
+    Input                  <- MaterialExpressionFresnel
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_2)
+    Input                  <- MaterialExpressionSubtract
+  MaterialExpressionParticleSubUV (MaterialExpressionParticleSubUV_0)
+    MipValue               <- MaterialExpressionConstant
+    .SamplerType=SAMPLERTYPE_Masks
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_Precipitation_M.T_Precipitation_M'"
+  MaterialExpressionRayTracingQualitySwitch (MaterialExpressionRayTracingQualitySwitch_0)
+    Normal                 <- MaterialExpressionMaterialFunctionCall
+    RayTraced              <- MaterialExpressionConstant
+  MaterialExpressionSaturate (MaterialExpressionSaturate_1)
+    Input                  <- MaterialExpressionOneMinus
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_6)
+    .ParameterName="Mask Power"
+    .DefaultValue=2.000000
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_7)
+    .ParameterName="Mask Multiply"
+    .DefaultValue=16.000000
+  MaterialExpressionSubtract (MaterialExpressionSubtract_1)
+    A                      <- MaterialExpressionDistance
+    B                      <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'MF_SC_WeatherFX_Snow:MaterialExpressionConstant_8'")
+    .A=(Expression="/Script/Engine.MaterialExpressionDistance'MF_SC_WeatherFX_Snow:MaterialExpressionDistance_0'")
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_0)
+    Coordinates            <- MaterialExpressionMaterialFunctionCall
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/WeatherFX/T_Precipitation_Noise.T_Precipitation_Noise'"

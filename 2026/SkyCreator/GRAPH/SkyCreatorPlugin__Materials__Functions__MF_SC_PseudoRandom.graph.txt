@@ -1,0 +1,27 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_PseudoRandom
+  MaterialFunctionEditorOnlyData (MF_SC_PseudoRandomEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+  MaterialExpressionConstant (MaterialExpressionConstant_0)
+    .R=43758.546875
+  MaterialExpressionConstant2Vector (MaterialExpressionConstant2Vector_0)
+    .R=12.989800
+    .G=78.233002
+  MaterialExpressionDotProduct (MaterialExpressionDotProduct_0)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionConstant2Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'MF_SC_PseudoRandom:MaterialExpressionConstant2Vector_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_PseudoRandom:MaterialExpressionFunctionInput_0'")
+  MaterialExpressionFrac (MaterialExpressionFrac_0)
+    Input                  <- MaterialExpressionMultiply
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_0)
+    Preview                <- MaterialExpressionTextureCoordinate
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionFrac
+    .A=(Expression="/Script/Engine.MaterialExpressionFrac'MF_SC_PseudoRandom:MaterialExpressionFrac_0'")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionSine
+    B                      <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'MF_SC_PseudoRandom:MaterialExpressionConstant_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSine'MF_SC_PseudoRandom:MaterialExpressionSine_0'")
+  MaterialExpressionSine (MaterialExpressionSine_0)
+    Input                  <- MaterialExpressionDotProduct

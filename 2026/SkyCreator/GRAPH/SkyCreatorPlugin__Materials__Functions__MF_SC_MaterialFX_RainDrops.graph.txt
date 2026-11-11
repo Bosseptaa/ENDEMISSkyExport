@@ -1,0 +1,23 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_MaterialFX_RainDrops
+  MaterialFunctionEditorOnlyData (MF_SC_MaterialFX_RainDropsEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_3)
+    .ParameterName="Rain Drops Scale"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_1)
+    Preview                <- MaterialExpressionCollectionParameter
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_15)
+    Preview                <- MaterialExpressionWorldPosition
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_MaterialFX_RainDrops:MaterialExpressionMaterial
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_2)
+    FunctionInputs(1)      <- MaterialExpressionMaterialFunctionCall
+    FunctionInputs(2)      <- MaterialExpressionFunctionInput
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_5)
+    FunctionInputs(0)      <- MaterialExpressionTextureObject
+    FunctionInputs(1)      <- MaterialExpressionFunctionInput
+    FunctionInputs(4)      <- MaterialExpressionFunctionInput
+  MaterialExpressionTextureObject (MaterialExpressionTextureObject_0)
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.TextureRenderTarget2D'/SkyCreatorPlugin/Textures/MaterialFX/RT_SC_RainDrops.RT_SC_RainDrops'"

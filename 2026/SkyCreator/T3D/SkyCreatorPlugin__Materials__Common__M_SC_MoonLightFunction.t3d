@@ -1,0 +1,33 @@
+Begin Object Class=/Script/Engine.Material Name="M_SC_MoonLightFunction" ExportPath="/Script/Engine.Material'/SkyCreatorPlugin/Materials/Common/M_SC_MoonLightFunction.M_SC_MoonLightFunction'"
+   Begin Object Class=/Script/Engine.MaterialEditorOnlyData Name="M_SC_MoonLightFunctionEditorOnlyData" ExportPath="/Script/Engine.MaterialEditorOnlyData'/SkyCreatorPlugin/Materials/Common/M_SC_MoonLightFunction.M_SC_MoonLightFunction:M_SC_MoonLightFunctionEditorOnlyData'"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionCollectionParameter Name="MaterialExpressionCollectionParameter_0" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/SkyCreatorPlugin/Materials/Common/M_SC_MoonLightFunction.M_SC_MoonLightFunction:MaterialExpressionCollectionParameter_0'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/SkyCreatorPlugin/Materials/Common/M_SC_MoonLightFunction.M_SC_MoonLightFunction:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   Begin Object Name="M_SC_MoonLightFunctionEditorOnlyData" ExportPath="/Script/Engine.MaterialEditorOnlyData'/SkyCreatorPlugin/Materials/Common/M_SC_MoonLightFunction.M_SC_MoonLightFunction:M_SC_MoonLightFunctionEditorOnlyData'"
+      EmissiveColor=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'M_SC_MoonLightFunction:MaterialExpressionCollectionParameter_0'")
+      ExpressionCollection=(Expressions=("/Script/Engine.MaterialExpressionCollectionParameter'M_SC_MoonLightFunction:MaterialExpressionCollectionParameter_0'"))
+   End Object
+   Begin Object Name="MaterialExpressionCollectionParameter_0" ExportPath="/Script/Engine.MaterialExpressionCollectionParameter'/SkyCreatorPlugin/Materials/Common/M_SC_MoonLightFunction.M_SC_MoonLightFunction:MaterialExpressionCollectionParameter_0'"
+      Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+      ParameterName="Moon Surface Brightness"
+      ParameterId=762F441B4463886DB9BDCCA37F9416C4
+      MaterialExpressionEditorX=-512
+      MaterialExpressionEditorY=96
+      MaterialExpressionGuid=CF15823F4BC933C60BA330B239B1ADBA
+      Material="/Script/Engine.Material'M_SC_MoonLightFunction'"
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'/SkyCreatorPlugin/Materials/Common/M_SC_MoonLightFunction.M_SC_MoonLightFunction:SceneThumbnailInfoWithPrimitive_0'"
+   End Object
+   MaterialDomain=MD_LightFunction
+   ShadingModel=MSM_Unlit
+   ShadingModels=(ShadingModelField=1)
+   bCanMaskedBeAssumedOpaque=True
+   PixelDepthOffsetMode=PDOM_Legacy
+   StateId=9CFE6D784F2EB8809C1505A8173C1BAA
+   EditorOnlyData="/Script/Engine.MaterialEditorOnlyData'M_SC_MoonLightFunctionEditorOnlyData'"
+   ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'"
+   ParameterOverviewExpansion=(("-12Global", True))
+   LightingGuid=5873EF2546D0586E02766CA6ED9561EB
+End Object

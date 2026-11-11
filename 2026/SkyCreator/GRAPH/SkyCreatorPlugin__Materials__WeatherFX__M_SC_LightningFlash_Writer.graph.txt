@@ -1,0 +1,158 @@
+### /SkyCreatorPlugin/Materials/WeatherFX/M_SC_LightningFlash_Writer
+  MaterialEditorOnlyData (M_SC_LightningFlash_WriterEditorOnlyData)
+    EmissiveColor          <- MaterialExpressionMultiply
+    ExpressionCollection   <- MaterialExpressionMultiply
+  MaterialExpressionAdd (MaterialExpressionAdd_0)
+    A                      <- MaterialExpressionTextureCoordinate
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_LightningFlash_Writer:MaterialExpressionMaterial
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureCoordinate'M_SC_LightningFlash_Writer:MaterialExpressionTextureCoor
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_0)
+    .ParameterName="Lightning Position"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_1)
+    .ParameterName="Camera Position"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_3)
+    .ParameterName="Lightning Radius"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_4)
+    .ParameterName="Lightning Color"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_5)
+    .ParameterName="Lightning Flash Buffer Scale"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_6)
+    .ParameterName="Lightning Flash Buffer Scale"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionSubtract
+    .R=True
+    .G=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_3)
+    Input                  <- MaterialExpressionCollectionParameter
+    .R=True
+    .G=True
+    .B=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_4)
+    Input                  <- MaterialExpressionTextureCoordinate
+    .R=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_5)
+    Input                  <- MaterialExpressionTextureCoordinate
+    .G=True
+  MaterialExpressionConstant (MaterialExpressionConstant_2)
+    .R=0.500000
+  MaterialExpressionConstant (MaterialExpressionConstant_3)
+    .R=0.700000
+  MaterialExpressionConstant (MaterialExpressionConstant_5)
+    .R=1.000000
+  MaterialExpressionConstant (MaterialExpressionConstant_7)
+    .R=0.500000
+  MaterialExpressionConstant (MaterialExpressionConstant_8)
+    .R=0.700000
+  MaterialExpressionConstant2Vector (MaterialExpressionConstant2Vector_3)
+    .R=0.500000
+    .G=0.500000
+  MaterialExpressionConstant2Vector (MaterialExpressionConstant2Vector_5)
+    .R=-1.000000
+    .G=-1.000000
+  MaterialExpressionConstant2Vector (MaterialExpressionConstant2Vector_6)
+    .R=0.500000
+    .G=0.500000
+  MaterialExpressionConstant2Vector (MaterialExpressionConstant2Vector_8)
+    .R=0.500000
+    .G=0.500000
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionCollectionParameter
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'M_SC_LightningFlash_Writer:MaterialExpressionMultiply_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'M_SC_LightningFlash_Writer:MaterialExpressionCollectio
+  MaterialExpressionDivide (MaterialExpressionDivide_1)
+    A                      <- MaterialExpressionConstant
+    B                      <- MaterialExpressionDivide
+    .B=(Expression="/Script/Engine.MaterialExpressionDivide'M_SC_LightningFlash_Writer:MaterialExpressionDivide_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionConstant'M_SC_LightningFlash_Writer:MaterialExpressionConstant_5'")
+  MaterialExpressionDivide (MaterialExpressionDivide_4)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_LightningFlash_Writer:MaterialExpressionMaterial
+    .ConstB=1.000000
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_1)
+    FunctionInputs(0)      <- MaterialExpressionMultiply
+    FunctionInputs(1)      <- MaterialExpressionNamedRerouteUsage
+    FunctionInputs(2)      <- MaterialExpressionNamedRerouteUsage
+    FunctionInputs(3)      <- MaterialExpressionConstant2Vector
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_2)
+    FunctionInputs(0)      <- MaterialExpressionCollectionParameter
+    FunctionInputs(1)      <- MaterialExpressionCollectionParameter
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_3)
+    FunctionInputs(0)      <- MaterialExpressionAdd
+    FunctionInputs(1)      <- MaterialExpressionDivide
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionDivide
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'M_SC_LightningFlash_Writer:MaterialExpressionDivide_4'")
+    .ConstB=-1.000000
+  MaterialExpressionMultiply (MaterialExpressionMultiply_2)
+    A                      <- MaterialExpressionCollectionParameter
+    .A=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'M_SC_LightningFlash_Writer:MaterialExpressionCollectio
+    .ConstB=2.000000
+  MaterialExpressionMultiply (MaterialExpressionMultiply_3)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionNamedRerouteUsage
+    .B=(Expression="/Script/Engine.MaterialExpressionNamedRerouteUsage'M_SC_LightningFlash_Writer:MaterialExpressionNamedRerout
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'M_SC_LightningFlash_Writer:MaterialExpressionMultiply_4'")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_4)
+    A                      <- MaterialExpressionSaturate
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'M_SC_LightningFlash_Writer:MaterialExpressionComponentMask_3
+    .A=(Expression="/Script/Engine.MaterialExpressionSaturate'M_SC_LightningFlash_Writer:MaterialExpressionSaturate_2'")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_5)
+    A                      <- MaterialExpressionComponentMask
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'M_SC_LightningFlash_Writer:MaterialExpressionComponentMask_0
+    .ConstB=-1.000000
+  MaterialExpressionMultiply (MaterialExpressionMultiply_6)
+    A                      <- MaterialExpressionSphereMask
+    B                      <- MaterialExpressionSphereMask
+    .B=(Expression="/Script/Engine.MaterialExpressionSphereMask'M_SC_LightningFlash_Writer:MaterialExpressionSphereMask_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSphereMask'M_SC_LightningFlash_Writer:MaterialExpressionSphereMask_1'")
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_0)
+    Input                  <- MaterialExpressionMultiply
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_1)
+    Input                  <- MaterialExpressionReroute
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_2)
+    Input                  <- MaterialExpressionMultiply
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_0)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_1)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_4)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration
+  MaterialExpressionPower (MaterialExpressionPower_0)
+    Base                   <- MaterialExpressionSphereMask
+  MaterialExpressionReroute (MaterialExpressionReroute_0)
+    Input                  <- MaterialExpressionDivide
+  MaterialExpressionSaturate (MaterialExpressionSaturate_2)
+    Input                  <- MaterialExpressionPower
+  MaterialExpressionSphereMask (MaterialExpressionSphereMask_1)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionConstant2Vector
+    Radius                 <- MaterialExpressionConstant
+    Hardness               <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'M_SC_LightningFlash_Writer:MaterialExpressionConstant2Vect
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'M_SC_LightningFlash_Writer:MaterialExpressionComponentMask_4
+  MaterialExpressionSphereMask (MaterialExpressionSphereMask_2)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionConstant2Vector
+    Radius                 <- MaterialExpressionConstant
+    Hardness               <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'M_SC_LightningFlash_Writer:MaterialExpressionConstant2Vect
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'M_SC_LightningFlash_Writer:MaterialExpressionComponentMask_5
+  MaterialExpressionSphereMask (MaterialExpressionSphereMask_3)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionConstant2Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'M_SC_LightningFlash_Writer:MaterialExpressionConstant2Vect
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_LightningFlash_Writer:MaterialExpressionMaterial
+  MaterialExpressionSubtract (MaterialExpressionSubtract_0)
+    A                      <- MaterialExpressionCollectionParameter
+    B                      <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'M_SC_LightningFlash_Writer:MaterialExpressionCollectio
+    .A=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'M_SC_LightningFlash_Writer:MaterialExpressionCollectio

@@ -1,0 +1,24 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_MaterialFX_Ripples
+  MaterialFunctionEditorOnlyData (MF_SC_MaterialFX_RipplesEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_3)
+    Preview                <- MaterialExpressionWorldPosition
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionLinearInterpolate
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'MF_SC_MaterialFX_Ripples:MaterialExpressionLinearInterpo
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_0)
+    A                      <- MaterialExpressionConstant3Vector
+    B                      <- MaterialExpressionMaterialFunctionCall
+    Alpha                  <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_MaterialFX_Ripples:MaterialExpressionMaterialFu
+    .A=(Expression="/Script/Engine.MaterialExpressionConstant3Vector'MF_SC_MaterialFX_Ripples:MaterialExpressionConstant3Vector
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_0)
+    FunctionInputs(0)      <- MaterialExpressionFunctionInput
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_1)
+    FunctionInputs(0)      <- MaterialExpressionFunctionInput
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_2)
+    FunctionInputs(0)      <- MaterialExpressionMaterialFunctionCall
+    FunctionInputs(2)      <- MaterialExpressionFunctionInput
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_3)
+    FunctionInputs(0)      <- MaterialExpressionMaterialFunctionCall
+    FunctionInputs(1)      <- MaterialExpressionMaterialFunctionCall

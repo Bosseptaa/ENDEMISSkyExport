@@ -1,0 +1,46 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_Blur_PostProcess
+  MaterialFunctionEditorOnlyData (MF_SC_Blur_PostProcessEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+  MaterialExpressionConstant (MaterialExpressionConstant_0)
+    .R=1.000000
+  MaterialExpressionCustom (MaterialExpressionCustom_0)
+    Inputs(0)              <- MaterialExpressionSceneTexture
+    Inputs(1)              <- MaterialExpressionNamedRerouteUsage
+    Inputs(2)              <- MaterialExpressionFunctionInput
+    Inputs(3)              <- MaterialExpressionMultiply
+    .Code="#define TWO_PI (6.28318530717f)\r\n\r\nfloat2 UV = GetDefaultSceneTextureUV(Parameters, 14);\r\nfloat3 Color = float3(0
+  MaterialExpressionCustom (MaterialExpressionCustom_25)
+    Inputs(0)              <- MaterialExpressionSceneTexture
+    Inputs(1)              <- MaterialExpressionNamedRerouteUsage
+    Inputs(2)              <- MaterialExpressionFunctionInput
+    .Code="float2 UV = GetDefaultSceneTextureUV(Parameters, 14);\r\nfloat3 Color = float3(0, 0, 0);\r\n\r\nfor (int i = 0; i < Sam
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_Blur_PostProcess:MaterialExpressionMaterialFunc
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_Blur_PostProcess:MaterialExpressionMaterialFunc
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionCustom
+    .A=(Expression="/Script/Engine.MaterialExpressionCustom'MF_SC_Blur_PostProcess:MaterialExpressionCustom_0'")
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_1)
+    A                      <- MaterialExpressionCustom
+    .A=(Expression="/Script/Engine.MaterialExpressionCustom'MF_SC_Blur_PostProcess:MaterialExpressionCustom_25'")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_0)
+    FunctionInputs(0)      <- MaterialExpressionViewSize
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_3)
+    FunctionInputs(0)      <- MaterialExpressionConstant
+    FunctionInputs(1)      <- MaterialExpressionDivide
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_Blur_PostProcess:MaterialExpressionFunctionInput_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_Blur_PostProcess:MaterialExpressionMaterialFunc
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionScreenPosition
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_Blur_PostProcess:MaterialExpressionMaterialFunc
+    .A=(Expression="/Script/Engine.MaterialExpressionScreenPosition'MF_SC_Blur_PostProcess:MaterialExpressionScreenPosition_0'"
+  MaterialExpressionNamedRerouteDeclaration (MaterialExpressionNamedRerouteDeclaration_0)
+    Input                  <- MaterialExpressionMultiply
+  MaterialExpressionNamedRerouteUsage (MaterialExpressionNamedRerouteUsage_0)
+    Declaration            <- MaterialExpressionNamedRerouteDeclaration

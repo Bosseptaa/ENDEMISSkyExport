@@ -1,0 +1,20 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_VolumetricCloud_HeightVariation
+  MaterialFunctionEditorOnlyData (MF_SC_VolumetricCloud_HeightVariationEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_2)
+    Preview                <- MaterialExpressionCloudSampleAttribute
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionOneMinus
+    .A=(Expression="/Script/Engine.MaterialExpressionOneMinus'MF_SC_VolumetricCloud_HeightVariation:MaterialExpressionOneMinus_
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_16)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionOneMinus
+    Alpha                  <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionOneMinus'MF_SC_VolumetricCloud_HeightVariation:MaterialExpressionOneMinus_
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_VolumetricCloud_HeightVariation:MaterialExpressionFunc
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_0)
+    Input                  <- MaterialExpressionLinearInterpolate
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_1)
+    Input                  <- MaterialExpressionFunctionInput
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_2)
+    Input                  <- MaterialExpressionFunctionInput

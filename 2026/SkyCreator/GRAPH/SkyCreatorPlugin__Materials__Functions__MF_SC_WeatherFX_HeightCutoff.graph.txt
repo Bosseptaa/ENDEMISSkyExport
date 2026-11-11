@@ -1,0 +1,27 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_WeatherFX_HeightCutoff
+  MaterialFunctionEditorOnlyData (MF_SC_WeatherFX_HeightCutoffEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_0)
+    .ParameterName="Weather FX Height Cutoff"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_1)
+    .ParameterName="Weather FX Cutoff Softness"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionWorldPosition
+    .B=True
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_WeatherFX_HeightCutoff:MaterialExpressionCollect
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'MF_SC_WeatherFX_HeightCutoff:MaterialExpressionSubtract_0'")
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionSaturate
+    .A=(Expression="/Script/Engine.MaterialExpressionSaturate'MF_SC_WeatherFX_HeightCutoff:MaterialExpressionSaturate_0'")
+  MaterialExpressionSaturate (MaterialExpressionSaturate_0)
+    Input                  <- MaterialExpressionDivide
+  MaterialExpressionSubtract (MaterialExpressionSubtract_0)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_WeatherFX_HeightCutoff:MaterialExpressionCollect
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_WeatherFX_HeightCutoff:MaterialExpressionComponentMask

@@ -1,0 +1,66 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_RainRipples_SIngleLayer
+  MaterialFunctionEditorOnlyData (MF_SC_RainRipples_SingleLayerEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionMaterialFunctionCall
+  MaterialExpressionAdd (MaterialExpressionAdd_2)
+    A                      <- MaterialExpressionTime
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_RainRipples_SingleLayer:MaterialExpressionFunctionInpu
+    .A=(Expression="/Script/Engine.MaterialExpressionTime'MF_SC_RainRipples_SingleLayer:MaterialExpressionTime_2'")
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_0)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'MF_SC_RainRipples_SingleLayer:MaterialExpressionConstant_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_RainRipples_SingleLayer:MaterialExpressionMultiply_4'")
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_2)
+    A                      <- MaterialExpressionTextureSample
+    B                      <- MaterialExpressionTextureSample
+    .B=(Expression="/Script/Engine.MaterialExpressionTextureSample'MF_SC_RainRipples_SingleLayer:MaterialExpressionTextureSampl
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'MF_SC_RainRipples_SingleLayer:MaterialExpressionTextureSampl
+  MaterialExpressionConstant (MaterialExpressionConstant_0)
+    .R=1.000000
+  MaterialExpressionConstant (MaterialExpressionConstant_4)
+    .R=0.100000
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_1)
+    Preview                <- MaterialExpressionTextureCoordinate
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_1)
+    A                      <- MaterialExpressionAppendVector
+    .A=(Expression="/Script/Engine.MaterialExpressionAppendVector'MF_SC_RainRipples_SingleLayer:MaterialExpressionAppendVector_
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_10)
+    FunctionInputs(0)      <- MaterialExpressionConstant
+    FunctionInputs(1)      <- MaterialExpressionConstant
+    FunctionInputs(2)      <- MaterialExpressionTextureSample
+    FunctionInputs(5)      <- MaterialExpressionPanner
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionPower
+    B                      <- MaterialExpressionReroute
+    .B=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_RainRipples_SingleLayer:MaterialExpressionReroute_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionPower'MF_SC_RainRipples_SingleLayer:MaterialExpressionPower_1'")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_2)
+    A                      <- MaterialExpressionAppendVector
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_RainRipples_SingleLayer:MaterialExpressionMultiply_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAppendVector'MF_SC_RainRipples_SingleLayer:MaterialExpressionAppendVector_
+  MaterialExpressionMultiply (MaterialExpressionMultiply_4)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_RainRipples_SingleLayer:MaterialExpressionFunctionInpu
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_RainRipples_SingleLayer:MaterialExpressionMultiply_2'")
+  MaterialExpressionPanner (MaterialExpressionPanner_1)
+    Coordinate             <- MaterialExpressionTextureSample
+    Time                   <- MaterialExpressionAdd
+    Speed                  <- MaterialExpressionFunctionInput
+  MaterialExpressionPower (MaterialExpressionPower_0)
+    Base                   <- MaterialExpressionReroute
+    Exponent               <- MaterialExpressionFunctionInput
+  MaterialExpressionPower (MaterialExpressionPower_1)
+    Base                   <- MaterialExpressionSine
+  MaterialExpressionReroute (MaterialExpressionReroute_0)
+    Input                  <- MaterialExpressionPower
+  MaterialExpressionReroute (MaterialExpressionReroute_1)
+    Input                  <- MaterialExpressionTextureSample
+  MaterialExpressionSine (MaterialExpressionSine_0)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_2)
+    Coordinates            <- MaterialExpressionFunctionInput
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/MaterialFX/T_RainRipples_M.T_RainRipples_M'"

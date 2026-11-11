@@ -1,0 +1,63 @@
+Begin Object Class=/Script/Engine.StaticMesh Name="SM_SC_Compass" ExportPath="/Script/Engine.StaticMesh'/SkyCreatorPlugin/Meshes/SM_SC_Compass.SM_SC_Compass'"
+   Begin Object Class=/Script/Engine.StaticMeshDescriptionBulkData Name="HiResMeshDescription" Archetype="/Script/Engine.StaticMeshDescriptionBulkData'/Script/Engine.Default__StaticMesh:HiResMeshDescription'" ExportPath="/Script/Engine.StaticMeshDescriptionBulkData'/SkyCreatorPlugin/Meshes/SM_SC_Compass.SM_SC_Compass:HiResMeshDescription'"
+      Begin Object Class=/Script/StaticMeshDescription.StaticMeshDescription Name="MeshDescription" Archetype="/Script/StaticMeshDescription.StaticMeshDescription'/Script/Engine.Default__StaticMesh:HiResMeshDescription.MeshDescription'" ExportPath="/Script/StaticMeshDescription.StaticMeshDescription'/SkyCreatorPlugin/Meshes/SM_SC_Compass.SM_SC_Compass:HiResMeshDescription.MeshDescription'"
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.AssetImportData Name="AssetImportData" ExportPath="/Script/Engine.AssetImportData'/SkyCreatorPlugin/Meshes/SM_SC_Compass.SM_SC_Compass:AssetImportData'"
+   End Object
+   Begin Object Class=/Script/Engine.BodySetup Name="BodySetup_0" ExportPath="/Script/Engine.BodySetup'/SkyCreatorPlugin/Meshes/SM_SC_Compass.SM_SC_Compass:BodySetup_0'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.FbxStaticMeshImportData Name="FbxStaticMeshImportData_0" ExportPath="/Script/UnrealEd.FbxStaticMeshImportData'/SkyCreatorPlugin/Meshes/SM_SC_Compass.SM_SC_Compass:FbxStaticMeshImportData_0'"
+   End Object
+   Begin Object Class=/Script/NavigationSystem.NavCollision Name="NavCollision_1" ExportPath="/Script/NavigationSystem.NavCollision'/SkyCreatorPlugin/Meshes/SM_SC_Compass.SM_SC_Compass:NavCollision_1'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfo Name="SceneThumbnailInfo_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfo'/SkyCreatorPlugin/Meshes/SM_SC_Compass.SM_SC_Compass:SceneThumbnailInfo_0'"
+   End Object
+   Begin Object Class=/Script/Engine.StaticMeshDescriptionBulkData Name="StaticMeshDescriptionBulkData_0" ExportPath="/Script/Engine.StaticMeshDescriptionBulkData'/SkyCreatorPlugin/Meshes/SM_SC_Compass.SM_SC_Compass:StaticMeshDescriptionBulkData_0'"
+      Begin Object Class=/Script/StaticMeshDescription.StaticMeshDescription Name="MeshDescription" Archetype="/Script/StaticMeshDescription.StaticMeshDescription'/Script/Engine.Default__StaticMeshDescriptionBulkData:MeshDescription'" ExportPath="/Script/StaticMeshDescription.StaticMeshDescription'/SkyCreatorPlugin/Meshes/SM_SC_Compass.SM_SC_Compass:StaticMeshDescriptionBulkData_0.MeshDescription'"
+      End Object
+   End Object
+   Begin Object Name="HiResMeshDescription" ExportPath="/Script/Engine.StaticMeshDescriptionBulkData'/SkyCreatorPlugin/Meshes/SM_SC_Compass.SM_SC_Compass:HiResMeshDescription'"
+      Begin Object Name="MeshDescription" ExportPath="/Script/StaticMeshDescription.StaticMeshDescription'/SkyCreatorPlugin/Meshes/SM_SC_Compass.SM_SC_Compass:HiResMeshDescription.MeshDescription'"
+      End Object
+   End Object
+   Begin Object Name="AssetImportData" ExportPath="/Script/Engine.AssetImportData'/SkyCreatorPlugin/Meshes/SM_SC_Compass.SM_SC_Compass:AssetImportData'"
+   End Object
+   Begin Object Name="BodySetup_0" ExportPath="/Script/Engine.BodySetup'/SkyCreatorPlugin/Meshes/SM_SC_Compass.SM_SC_Compass:BodySetup_0'"
+      AggGeom=(ConvexElems=((VertexData=((X=-90.033012,Y=-51.591961,Z=10.099999),(X=-90.054482,Y=51.570492,Z=10.099999),(X=-51.531212,Y=90.093758,Z=10.099999),(X=51.531250,Y=90.093750,Z=10.099999),(X=90.111618,Y=51.513378,Z=10.099999),(X=90.075859,Y=-51.549145,Z=10.099999),(X=51.559231,Y=-90.065765,Z=10.099999),(X=-51.559219,Y=-90.065765,Z=10.099999),(X=-100.214012,Y=41.410980,Z=-0.100028),(X=-100.198502,Y=-41.426491,Z=-0.100028),(X=-41.409492,Y=-100.215485,Z=-0.100028),(X=41.409515,Y=-100.215492,Z=-0.100028),(X=100.250000,Y=-41.375008,Z=-0.100028),(X=100.250000,Y=41.374992,Z=-0.100028),(X=41.406261,Y=100.218750,Z=-0.100028),(X=-41.406216,Y=100.218758,Z=-0.100028),(X=51.625004,Y=90.000000,Z=10.125000),(X=-51.624966,Y=90.000000,Z=10.125000),(X=90.031258,Y=51.593750,Z=10.093748),(X=89.999969,Y=-51.625031,Z=10.125000)),IndexData=(0,1,2,0,2,3,0,3,4,0,4,5,0,5,6,0,6,7,8,9,10,8,10,11,8,11,12,8,12,13,8,13,14,8,14,15,16,17,15,16,15,14,7,6,11,7,11,10,13,12,5,13,5,18,1,0,9,1,9,8,18,3,14,18,14,13,0,7,10,0,10,9,6,19,12,6,12,11,17,1,8,17,8,15),ElemBox=(Min=(X=-100.214012,Y=-100.215492,Z=-0.100028),Max=(X=100.250000,Y=100.218758,Z=10.125000),IsValid=True))))
+      DefaultInstance=(ObjectType=ECC_WorldStatic,CollisionProfileName="BlockAll")
+   End Object
+   Begin Object Name="FbxStaticMeshImportData_0" ExportPath="/Script/UnrealEd.FbxStaticMeshImportData'/SkyCreatorPlugin/Meshes/SM_SC_Compass.SM_SC_Compass:FbxStaticMeshImportData_0'"
+      bCombineMeshes=True
+      ImportMaterialOriginalNameData(0)="WorldGridMaterial"
+      ImportMaterialOriginalNameData(1)="Arrows"
+      ImportMaterialOriginalNameData(2)="Compass"
+      ImportMaterialOriginalNameData(3)="ArrowsWhite"
+      ImportMaterialOriginalNameData(4)="ArrowsRed"
+      ImportMeshLodData(0)=(SectionOriginalMaterialName=("ArrowsWhite","ArrowsRed","Compass"))
+   End Object
+   Begin Object Name="NavCollision_1" ExportPath="/Script/NavigationSystem.NavCollision'/SkyCreatorPlugin/Meshes/SM_SC_Compass.SM_SC_Compass:NavCollision_1'"
+   End Object
+   Begin Object Name="SceneThumbnailInfo_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfo'/SkyCreatorPlugin/Meshes/SM_SC_Compass.SM_SC_Compass:SceneThumbnailInfo_0'"
+   End Object
+   Begin Object Name="StaticMeshDescriptionBulkData_0" ExportPath="/Script/Engine.StaticMeshDescriptionBulkData'/SkyCreatorPlugin/Meshes/SM_SC_Compass.SM_SC_Compass:StaticMeshDescriptionBulkData_0'"
+      Begin Object Name="MeshDescription" ExportPath="/Script/StaticMeshDescription.StaticMeshDescription'/SkyCreatorPlugin/Meshes/SM_SC_Compass.SM_SC_Compass:StaticMeshDescriptionBulkData_0.MeshDescription'"
+      End Object
+   End Object
+   SourceModels(0)=(StaticMeshDescriptionBulkData="/Script/Engine.StaticMeshDescriptionBulkData'StaticMeshDescriptionBulkData_0'",BuildSettings=(bRecomputeNormals=False,bComputeWeightedNormals=True,bUseBackwardsCompatibleF16TruncUVs=True))
+   HiResSourceModel=(StaticMeshDescriptionBulkData="HiResMeshDescription")
+   SectionInfoMap=(Map=((0, ()),(1, (MaterialIndex=1)),(2, (MaterialIndex=2))))
+   OriginalSectionInfoMap=(Map=((0, ()),(1, (MaterialIndex=1)),(2, (MaterialIndex=2))))
+   ImportVersion=1
+   LightmapUVVersion=9
+   StaticMaterials(0)=(MaterialInterface="/Script/Engine.MaterialInstanceConstant'/SkyCreatorPlugin/Materials/Common/MI_SC_CompassWhite.MI_SC_CompassWhite'",MaterialSlotName="ArrowsWhite",ImportedMaterialSlotName="ArrowsWhite",UVChannelData=(bInitialized=True,LocalUVDensities[0]=200.798630,LocalUVDensities[1]=323.993164))
+   StaticMaterials(1)=(MaterialInterface="/Script/Engine.MaterialInstanceConstant'/SkyCreatorPlugin/Materials/Common/MI_SC_CompassRed.MI_SC_CompassRed'",MaterialSlotName="ArrowsRed",ImportedMaterialSlotName="ArrowsRed",UVChannelData=(bInitialized=True,LocalUVDensities[0]=210.447418,LocalUVDensities[1]=338.617004))
+   StaticMaterials(2)=(MaterialInterface="/Script/Engine.Material'/SkyCreatorPlugin/Materials/Common/M_SC_Compass.M_SC_Compass'",MaterialSlotName="Compass",ImportedMaterialSlotName="Compass",UVChannelData=(bInitialized=True,LocalUVDensities[0]=200.035690,LocalUVDensities[1]=350.759003))
+   LightmapUVDensity=345.445526
+   LightMapResolution=64
+   LightMapCoordinateIndex=1
+   AssetImportData="/Script/UnrealEd.FbxStaticMeshImportData'FbxStaticMeshImportData_0'"
+   ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfo'SceneThumbnailInfo_0'"
+   EditorCameraPosition=(bIsSet=True,CamOrbitPoint=(X=0.000000,Y=0.000000,Z=4.999991),CamOrbitZoom=(X=-110.209137,Y=55.913017,Z=93.974388),CamOrbitRotation=(Pitch=-37.250309,Yaw=-243.099716,Roll=-0.000012))
+   ExtendedBounds=(Origin=(X=0.000000,Y=0.000000,Z=4.999986),BoxExtent=(X=100.000000,Y=100.000000,Z=5.000013),SphereRadius=100.124931)
+End Object

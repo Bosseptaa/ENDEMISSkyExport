@@ -1,0 +1,41 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_VolumetricFog_UV
+  MaterialFunctionEditorOnlyData (MF_SC_VolumetricFog_UVEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+  MaterialExpressionAdd (MaterialExpressionAdd_3)
+    A                      <- MaterialExpressionDivide
+    B                      <- MaterialExpressionDivide
+    .B=(Expression="/Script/Engine.MaterialExpressionDivide'MF_SC_VolumetricFog_UV:MaterialExpressionDivide_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'MF_SC_VolumetricFog_UV:MaterialExpressionDivide_3'")
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionWorldPosition
+    .R=True
+    .G=True
+    .B=True
+  MaterialExpressionConstant (MaterialExpressionConstant_1)
+    .R=0.010000
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_VolumetricFog_UV:MaterialExpressionMultiply_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_VolumetricFog_UV:MaterialExpressionFunctionInput_5'")
+  MaterialExpressionDivide (MaterialExpressionDivide_3)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionReroute
+    .B=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_VolumetricFog_UV:MaterialExpressionReroute_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_VolumetricFog_UV:MaterialExpressionComponentMask_0'")
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionAdd
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'MF_SC_VolumetricFog_UV:MaterialExpressionAdd_3'")
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_1)
+    A                      <- MaterialExpressionDivide
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'MF_SC_VolumetricFog_UV:MaterialExpressionDivide_3'")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionReroute
+    B                      <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'MF_SC_VolumetricFog_UV:MaterialExpressionConstant_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_VolumetricFog_UV:MaterialExpressionReroute_0'")
+    .ConstB=100000.000000
+  MaterialExpressionReroute (MaterialExpressionReroute_0)
+    Input                  <- MaterialExpressionFunctionInput
+  MaterialExpressionReroute (MaterialExpressionReroute_1)
+    Input                  <- MaterialExpressionFunctionInput

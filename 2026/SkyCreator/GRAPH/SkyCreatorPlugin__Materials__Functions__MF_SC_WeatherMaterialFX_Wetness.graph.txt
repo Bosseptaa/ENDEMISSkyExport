@@ -1,0 +1,78 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_WeatherMaterialFX_Wetness
+  MaterialFunctionEditorOnlyData (MF_SC_WeatherMaterialFX_WetnessEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+  MaterialExpressionBreakMaterialAttributes (MaterialExpressionBreakMaterialAttributes_0)
+    MaterialAttributes     <- MaterialExpressionFunctionInput
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_0)
+    .ParameterName="Wetness Color"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_12)
+    .ParameterName="Wetness Slope Angle"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_13)
+    .ParameterName="Wetness Slope Smoothness"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionCollectionParameter
+    .R=True
+    .G=True
+    .B=True
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionMakeMaterialAttributes
+    .A=(Expression="/Script/Engine.MaterialExpressionMakeMaterialAttributes'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionM
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_1)
+    A                      <- MaterialExpressionReroute
+    B                      <- MaterialExpressionMultiply
+    Alpha                  <- MaterialExpressionReroute
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionMultiply_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionReroute_1'")
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_2)
+    A                      <- MaterialExpressionReroute
+    B                      <- MaterialExpressionScalarParameter
+    Alpha                  <- MaterialExpressionReroute
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionScalarPa
+    .A=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionReroute_2'")
+  MaterialExpressionMakeMaterialAttributes (MaterialExpressionMakeMaterialAttributes_0)
+    BaseColor              <- MaterialExpressionLinearInterpolate
+    Metallic               <- MaterialExpressionBreakMaterialAttributes
+    Specular               <- MaterialExpressionBreakMaterialAttributes
+    Roughness              <- MaterialExpressionLinearInterpolate
+    Anisotropy             <- MaterialExpressionBreakMaterialAttributes
+    EmissiveColor          <- MaterialExpressionBreakMaterialAttributes
+    Opacity                <- MaterialExpressionBreakMaterialAttributes
+    OpacityMask            <- MaterialExpressionBreakMaterialAttributes
+    Normal                 <- MaterialExpressionBreakMaterialAttributes
+    Tangent                <- MaterialExpressionBreakMaterialAttributes
+    WorldPositionOffset    <- MaterialExpressionBreakMaterialAttributes
+    SubsurfaceColor        <- MaterialExpressionBreakMaterialAttributes
+    ClearCoat              <- MaterialExpressionBreakMaterialAttributes
+    ClearCoatRoughness     <- MaterialExpressionBreakMaterialAttributes
+    AmbientOcclusion       <- MaterialExpressionBreakMaterialAttributes
+    Refraction             <- MaterialExpressionBreakMaterialAttributes
+    CustomizedUVs(0)       <- MaterialExpressionBreakMaterialAttributes
+    CustomizedUVs(1)       <- MaterialExpressionBreakMaterialAttributes
+    CustomizedUVs(2)       <- MaterialExpressionBreakMaterialAttributes
+    CustomizedUVs(3)       <- MaterialExpressionBreakMaterialAttributes
+    CustomizedUVs(4)       <- MaterialExpressionBreakMaterialAttributes
+    CustomizedUVs(5)       <- MaterialExpressionBreakMaterialAttributes
+    CustomizedUVs(6)       <- MaterialExpressionBreakMaterialAttributes
+    CustomizedUVs(7)       <- MaterialExpressionBreakMaterialAttributes
+    PixelDepthOffset       <- MaterialExpressionBreakMaterialAttributes
+    ShadingModel           <- MaterialExpressionBreakMaterialAttributes
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_7)
+    FunctionInputs(1)      <- MaterialExpressionCollectionParameter
+    FunctionInputs(2)      <- MaterialExpressionCollectionParameter
+  MaterialExpressionMultiply (MaterialExpressionMultiply_3)
+    A                      <- MaterialExpressionReroute
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionComponentM
+    .A=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_WeatherMaterialFX_Wetness:MaterialExpressionReroute_1'")
+  MaterialExpressionReroute (MaterialExpressionReroute_0)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+  MaterialExpressionReroute (MaterialExpressionReroute_1)
+    Input                  <- MaterialExpressionBreakMaterialAttributes
+  MaterialExpressionReroute (MaterialExpressionReroute_2)
+    Input                  <- MaterialExpressionBreakMaterialAttributes
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_0)
+    .ParameterName="Wetness Roughness"
+    .DefaultValue=0.200000

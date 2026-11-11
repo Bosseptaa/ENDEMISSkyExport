@@ -1,0 +1,138 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_RainRipples_MultipleLayers
+  MaterialFunctionEditorOnlyData (MF_SC_RainRipples_MultipleLayersEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+  MaterialExpressionAdd (MaterialExpressionAdd_0)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionConstant2Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'MF_SC_RainRipples_MultipleLayers:MaterialExpressionConstan
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_RainRipples_MultipleLayers:MaterialExpressionFunctionI
+  MaterialExpressionAdd (MaterialExpressionAdd_4)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionConstant2Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'MF_SC_RainRipples_MultipleLayers:MaterialExpressionConstan
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_RainRipples_MultipleLayers:MaterialExpressionFunctionI
+  MaterialExpressionAdd (MaterialExpressionAdd_5)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionConstant2Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'MF_SC_RainRipples_MultipleLayers:MaterialExpressionConstan
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_RainRipples_MultipleLayers:MaterialExpressionFunctionI
+  MaterialExpressionAdd (MaterialExpressionAdd_7)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_RainRipples_MultipleLayers:MaterialExpressionMultiply_5'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_RainRipples_MultipleLayers:MaterialExpressionMultiply_0'")
+  MaterialExpressionAdd (MaterialExpressionAdd_8)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_RainRipples_MultipleLayers:MaterialExpressionMultiply_6'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'MF_SC_RainRipples_MultipleLayers:MaterialExpressionAdd_7'")
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_0)
+    A                      <- MaterialExpressionAdd
+    B                      <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'MF_SC_RainRipples_MultipleLayers:MaterialExpressionConstant_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionAdd'MF_SC_RainRipples_MultipleLayers:MaterialExpressionAdd_8'")
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionReroute
+    .R=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_1)
+    Input                  <- MaterialExpressionReroute
+    .G=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_2)
+    Input                  <- MaterialExpressionReroute
+    .B=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_25)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+    .R=True
+    .G=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_26)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+    .R=True
+    .G=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_27)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+    .R=True
+    .G=True
+  MaterialExpressionConstant (MaterialExpressionConstant_0)
+    .R=1.000000
+  MaterialExpressionConstant (MaterialExpressionConstant_1)
+    .R=1.000000
+  MaterialExpressionConstant (MaterialExpressionConstant_3)
+    .R=3.000000
+  MaterialExpressionConstant (MaterialExpressionConstant_4)
+    .R=0.600000
+  MaterialExpressionConstant (MaterialExpressionConstant_5)
+    .R=0.200000
+  MaterialExpressionConstant (MaterialExpressionConstant_6)
+    .R=4.000000
+  MaterialExpressionConstant (MaterialExpressionConstant_8)
+    .R=1.000000
+  MaterialExpressionConstant (MaterialExpressionConstant_9)
+    .R=0.500000
+  MaterialExpressionConstant2Vector (MaterialExpressionConstant2Vector_1)
+    .R=0.600000
+    .G=0.350000
+  MaterialExpressionConstant2Vector (MaterialExpressionConstant2Vector_2)
+    .R=0.400000
+    .G=0.650000
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_2)
+    Preview                <- MaterialExpressionTextureCoordinate
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionAppendVector
+    .A=(Expression="/Script/Engine.MaterialExpressionAppendVector'MF_SC_RainRipples_MultipleLayers:MaterialExpressionAppendVect
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_0)
+    FunctionInputs(0)      <- MaterialExpressionAdd
+    FunctionInputs(1)      <- MaterialExpressionReroute
+    FunctionInputs(2)      <- MaterialExpressionReroute
+    FunctionInputs(3)      <- MaterialExpressionConstant
+    FunctionInputs(4)      <- MaterialExpressionReroute
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_1)
+    FunctionInputs(0)      <- MaterialExpressionAdd
+    FunctionInputs(1)      <- MaterialExpressionReroute
+    FunctionInputs(2)      <- MaterialExpressionReroute
+    FunctionInputs(3)      <- MaterialExpressionConstant
+    FunctionInputs(4)      <- MaterialExpressionReroute
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_11)
+    FunctionInputs(0)      <- MaterialExpressionConstant
+    FunctionInputs(1)      <- MaterialExpressionConstant
+    FunctionInputs(2)      <- MaterialExpressionConstant
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_2)
+    FunctionInputs(0)      <- MaterialExpressionAdd
+    FunctionInputs(1)      <- MaterialExpressionReroute
+    FunctionInputs(2)      <- MaterialExpressionReroute
+    FunctionInputs(3)      <- MaterialExpressionConstant
+    FunctionInputs(4)      <- MaterialExpressionReroute
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_RainRipples_MultipleLayers:MaterialExpressionComponent
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_RainRipples_MultipleLayers:MaterialExpressionComponent
+  MaterialExpressionMultiply (MaterialExpressionMultiply_1)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'MF_SC_RainRipples_MultipleLayers:MaterialExpressionConstant_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'MF_SC_RainRipples_MultipleLayers:MaterialExpressionSubtract_1'")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_5)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_RainRipples_MultipleLayers:MaterialExpressionComponent
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_RainRipples_MultipleLayers:MaterialExpressionComponent
+  MaterialExpressionMultiply (MaterialExpressionMultiply_6)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_RainRipples_MultipleLayers:MaterialExpressionComponent
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_RainRipples_MultipleLayers:MaterialExpressionComponent
+  MaterialExpressionReroute (MaterialExpressionReroute_0)
+    Input                  <- MaterialExpressionConstant
+  MaterialExpressionReroute (MaterialExpressionReroute_1)
+    Input                  <- MaterialExpressionConstant
+  MaterialExpressionReroute (MaterialExpressionReroute_2)
+    Input                  <- MaterialExpressionConstant
+  MaterialExpressionReroute (MaterialExpressionReroute_3)
+    Input                  <- MaterialExpressionSaturate
+  MaterialExpressionSaturate (MaterialExpressionSaturate_1)
+    Input                  <- MaterialExpressionMultiply
+  MaterialExpressionSubtract (MaterialExpressionSubtract_1)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionConstant3Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant3Vector'MF_SC_RainRipples_MultipleLayers:MaterialExpressionConstan
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_RainRipples_MultipleLayers:MaterialExpressionMa

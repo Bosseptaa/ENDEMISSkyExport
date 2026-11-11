@@ -1,0 +1,299 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_VolumetricClouds_BaseDensity
+  MaterialFunctionEditorOnlyData (MF_SC_VolumetricClouds_BaseDensityEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+  MaterialExpressionAdd (MaterialExpressionAdd_9)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_VolumetricClouds_BaseDensity:MaterialExpressionMultiply_58'
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_VolumetricClouds_BaseDensity:MaterialExpressionCompone
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_0)
+    .ParameterName="Cloud Map Scale"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_1)
+    .ParameterName="Cloud Map Offset"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_10)
+    .ParameterName="Stratus Height Variation"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_11)
+    .ParameterName="Stratocumulus Coverage Variation"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_12)
+    .ParameterName="Cumulus Coverage Variation"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_13)
+    .ParameterName="Cumulonimbus Coverage"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_14)
+    .ParameterName="Stratocumulus Coverage"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_15)
+    .ParameterName="Stratocumulus Height Variation"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_16)
+    .ParameterName="Cumulus Coverage"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_17)
+    .ParameterName="Cumulus Height Variation"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_18)
+    .ParameterName="Cumulonimbus Coverage"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_19)
+    .ParameterName="Cumulonimbus Height Variation"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_2)
+    .ParameterName="Cloud Map Wind Offset"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_20)
+    .ParameterName="Cumulonimbus Anvil"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_3)
+    .ParameterName="Cloud Map Wind Skew Force"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_4)
+    .ParameterName="Cloud Map Wind Skew Direction"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_5)
+    .ParameterName="Coverage Variation Map Scale"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_6)
+    .ParameterName="Cloud Map Offset"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_7)
+    .ParameterName="Coverage Variation Map Wind Offset"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_8)
+    .ParameterName="Stratus Coverage"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_9)
+    .ParameterName="Stratus Coverage Variation"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/VolumetricClouds/MPC_SC_VolumetricClouds.MPC_SC_
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionCollectionParameter
+    .R=True
+    .G=True
+    .B=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_1)
+    Input                  <- MaterialExpressionCollectionParameter
+    .R=True
+    .G=True
+    .B=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_2)
+    Input                  <- MaterialExpressionCollectionParameter
+    .R=True
+    .G=True
+    .B=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_3)
+    Input                  <- MaterialExpressionCollectionParameter
+    .R=True
+    .G=True
+    .B=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_5)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+    .R=True
+    .G=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_8)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+    .R=True
+    .G=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_9)
+    Input                  <- MaterialExpressionCollectionParameter
+    .R=True
+    .G=True
+  MaterialExpressionConstant (MaterialExpressionConstant_0)
+    .R=2.000000
+  MaterialExpressionCurveAtlasRowParameter (MaterialExpressionCurveAtlasRowParameter_4)
+    InputTime              <- MaterialExpressionMaterialFunctionCall
+    .ParameterName="CloudLayerHeights_Curve"
+  MaterialExpressionCurveAtlasRowParameter (MaterialExpressionCurveAtlasRowParameter_6)
+    InputTime              <- MaterialExpressionMaterialFunctionCall
+    .ParameterName="CloudLayerHeights_Curve"
+  MaterialExpressionCurveAtlasRowParameter (MaterialExpressionCurveAtlasRowParameter_7)
+    InputTime              <- MaterialExpressionMaterialFunctionCall
+    .ParameterName="CloudLayerHeights_Curve"
+  MaterialExpressionCurveAtlasRowParameter (MaterialExpressionCurveAtlasRowParameter_8)
+    InputTime              <- MaterialExpressionMaterialFunctionCall
+    .ParameterName="CloudLayerHeights_Curve"
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity:MaterialExpression
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_1)
+    A                      <- MaterialExpressionMax
+    .A=(Expression="/Script/Engine.MaterialExpressionMax'MF_SC_VolumetricClouds_BaseDensity:MaterialExpressionMax_4'")
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_19)
+    A                      <- MaterialExpressionCollectionParameter
+    B                      <- MaterialExpressionConstant
+    Alpha                  <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'MF_SC_VolumetricClouds_BaseDensity:MaterialExpressionConstant_22'
+    .A=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds_BaseDensity:MaterialExpressionC
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_0)
+    FunctionInputs(0)      <- MaterialExpressionReroute
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_1)
+    FunctionInputs(0)      <- MaterialExpressionReroute
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_2)
+    FunctionInputs(0)      <- MaterialExpressionReroute
+    FunctionInputs(1)      <- MaterialExpressionCollectionParameter
+    FunctionInputs(2)      <- MaterialExpressionComponentMask
+    FunctionInputs(3)      <- MaterialExpressionComponentMask
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_25)
+    FunctionInputs(0)      <- MaterialExpressionCollectionParameter
+    FunctionInputs(1)      <- MaterialExpressionCollectionParameter
+    FunctionInputs(2)      <- MaterialExpressionMaterialFunctionCall
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_26)
+    FunctionInputs(0)      <- MaterialExpressionMax
+    FunctionInputs(1)      <- MaterialExpressionMax
+    FunctionInputs(2)      <- MaterialExpressionMax
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_27)
+    FunctionInputs(0)      <- MaterialExpressionCollectionParameter
+    FunctionInputs(1)      <- MaterialExpressionCollectionParameter
+    FunctionInputs(2)      <- MaterialExpressionMaterialFunctionCall
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_28)
+    FunctionInputs(0)      <- MaterialExpressionCollectionParameter
+    FunctionInputs(1)      <- MaterialExpressionCollectionParameter
+    FunctionInputs(2)      <- MaterialExpressionMaterialFunctionCall
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_29)
+    FunctionInputs(0)      <- MaterialExpressionCollectionParameter
+    FunctionInputs(1)      <- MaterialExpressionLinearInterpolate
+    FunctionInputs(2)      <- MaterialExpressionMaterialFunctionCall
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_3)
+    FunctionInputs(0)      <- MaterialExpressionReroute
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_31)
+    FunctionInputs(0)      <- MaterialExpressionReroute
+    FunctionInputs(1)      <- MaterialExpressionCollectionParameter
+    FunctionInputs(2)      <- MaterialExpressionComponentMask
+    FunctionInputs(3)      <- MaterialExpressionComponentMask
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_32)
+    FunctionInputs(0)      <- MaterialExpressionTextureSampleParameter2D
+    FunctionInputs(1)      <- MaterialExpressionTextureSampleParameter2D
+    FunctionInputs(2)      <- MaterialExpressionCollectionParameter
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_33)
+    FunctionInputs(0)      <- MaterialExpressionTextureSampleParameter2D
+    FunctionInputs(1)      <- MaterialExpressionTextureSampleParameter2D
+    FunctionInputs(2)      <- MaterialExpressionCollectionParameter
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_34)
+    FunctionInputs(0)      <- MaterialExpressionTextureSampleParameter2D
+    FunctionInputs(1)      <- MaterialExpressionTextureSampleParameter2D
+    FunctionInputs(2)      <- MaterialExpressionCollectionParameter
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_4)
+    FunctionInputs(0)      <- MaterialExpressionReroute
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_5)
+    FunctionInputs(0)      <- MaterialExpressionReroute
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_6)
+    FunctionInputs(0)      <- MaterialExpressionReroute
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_7)
+    FunctionInputs(0)      <- MaterialExpressionReroute
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_8)
+    FunctionInputs(0)      <- MaterialExpressionReroute
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_9)
+    FunctionInputs(0)      <- MaterialExpressionReroute
+  MaterialExpressionMax (MaterialExpressionMax_0)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionSubtract
+    .B=(Expression="/Script/Engine.MaterialExpressionSubtract'MF_SC_VolumetricClouds_BaseDensity:MaterialExpressionSubtract_6'"
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'MF_SC_VolumetricClouds_BaseDensity:MaterialExpressionSubtract_5'"
+  MaterialExpressionMax (MaterialExpressionMax_1)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMax
+    .B=(Expression="/Script/Engine.MaterialExpressionMax'MF_SC_VolumetricClouds_BaseDensity:MaterialExpressionMax_3'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_VolumetricClouds_BaseDensity:MaterialExpressionMultiply_28'
+  MaterialExpressionMax (MaterialExpressionMax_2)
+    A                      <- MaterialExpressionMax
+    B                      <- MaterialExpressionSubtract
+    .B=(Expression="/Script/Engine.MaterialExpressionSubtract'MF_SC_VolumetricClouds_BaseDensity:MaterialExpressionSubtract_8'"
+    .A=(Expression="/Script/Engine.MaterialExpressionMax'MF_SC_VolumetricClouds_BaseDensity:MaterialExpressionMax_0'")
+  MaterialExpressionMax (MaterialExpressionMax_3)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMax
+    .B=(Expression="/Script/Engine.MaterialExpressionMax'MF_SC_VolumetricClouds_BaseDensity:MaterialExpressionMax_6'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_VolumetricClouds_BaseDensity:MaterialExpressionMultiply_29'
+  MaterialExpressionMax (MaterialExpressionMax_4)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionMax
+    .B=(Expression="/Script/Engine.MaterialExpressionMax'MF_SC_VolumetricClouds_BaseDensity:MaterialExpressionMax_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'MF_SC_VolumetricClouds_BaseDensity:MaterialExpressionSubtract_4'"
+  MaterialExpressionMax (MaterialExpressionMax_6)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_VolumetricClouds_BaseDensity:MaterialExpressionMultiply_45'
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_VolumetricClouds_BaseDensity:MaterialExpressionMultiply_31'
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionCurveAtlasRowParameter
+    B                      <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'MF_SC_VolumetricClouds_BaseDensity:MaterialExpressionConstant_0'"
+    .A=(Expression="/Script/Engine.MaterialExpressionCurveAtlasRowParameter'MF_SC_VolumetricClouds_BaseDensity:MaterialExpressi
+  MaterialExpressionMultiply (MaterialExpressionMultiply_23)
+    A                      <- MaterialExpressionCollectionParameter
+    B                      <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_VolumetricClouds_BaseDensity:MaterialExpressionCompone
+    .A=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds_BaseDensity:MaterialExpressionC
+  MaterialExpressionMultiply (MaterialExpressionMultiply_28)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionCurveAtlasRowParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCurveAtlasRowParameter'MF_SC_VolumetricClouds_BaseDensity:MaterialExpressi
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'MF_SC_VolumetricClouds_BaseDensity:MaterialExpressionSubtract_4'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_29)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionCurveAtlasRowParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCurveAtlasRowParameter'MF_SC_VolumetricClouds_BaseDensity:MaterialExpressi
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'MF_SC_VolumetricClouds_BaseDensity:MaterialExpressionSubtract_5'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_31)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionCurveAtlasRowParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCurveAtlasRowParameter'MF_SC_VolumetricClouds_BaseDensity:MaterialExpressi
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'MF_SC_VolumetricClouds_BaseDensity:MaterialExpressionSubtract_6'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_44)
+    A                      <- MaterialExpressionTextureSampleParameter2D
+    B                      <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_VolumetricClouds_BaseDensity:MaterialExpressionC
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSampleParameter2D'MF_SC_VolumetricClouds_BaseDensity:MaterialExpres
+  MaterialExpressionMultiply (MaterialExpressionMultiply_45)
+    A                      <- MaterialExpressionSubtract
+    B                      <- MaterialExpressionCurveAtlasRowParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCurveAtlasRowParameter'MF_SC_VolumetricClouds_BaseDensity:MaterialExpressi
+    .A=(Expression="/Script/Engine.MaterialExpressionSubtract'MF_SC_VolumetricClouds_BaseDensity:MaterialExpressionSubtract_8'"
+  MaterialExpressionMultiply (MaterialExpressionMultiply_58)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity:MaterialExpression
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_VolumetricClouds_BaseDensity:MaterialExpressionMultiply_23'
+  MaterialExpressionReroute (MaterialExpressionReroute_0)
+    Input                  <- MaterialExpressionReroute
+  MaterialExpressionReroute (MaterialExpressionReroute_1)
+    Input                  <- MaterialExpressionFunctionInput
+  MaterialExpressionReroute (MaterialExpressionReroute_2)
+    Input                  <- MaterialExpressionReroute
+  MaterialExpressionReroute (MaterialExpressionReroute_3)
+    Input                  <- MaterialExpressionReroute
+  MaterialExpressionReroute (MaterialExpressionReroute_4)
+    Input                  <- MaterialExpressionReroute
+  MaterialExpressionSubtract (MaterialExpressionSubtract_4)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity:MaterialExpression
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity:MaterialExpression
+  MaterialExpressionSubtract (MaterialExpressionSubtract_5)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity:MaterialExpression
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity:MaterialExpression
+  MaterialExpressionSubtract (MaterialExpressionSubtract_6)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity:MaterialExpression
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity:MaterialExpression
+  MaterialExpressionSubtract (MaterialExpressionSubtract_8)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_VolumetricClouds_BaseDensity:MaterialExpression
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_VolumetricClouds_BaseDensity:MaterialExpressionMultiply_44'
+  MaterialExpressionTextureSampleParameter2D (MaterialExpressionTextureSampleParameter2D_2)
+    Coordinates            <- MaterialExpressionAdd
+    .ParameterName="CloudMap_Texture"
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/VolumetricClouds/T_CloudMap.T_CloudMap'"
+  MaterialExpressionTextureSampleParameter2D (MaterialExpressionTextureSampleParameter2D_3)
+    Coordinates            <- MaterialExpressionComponentMask
+    .ParameterName="CoverageVariationMap_Texture"
+    .SamplerType=SAMPLERTYPE_LinearColor
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/VolumetricClouds/T_CoverageVariationMap.T_CoverageVariationMap'"

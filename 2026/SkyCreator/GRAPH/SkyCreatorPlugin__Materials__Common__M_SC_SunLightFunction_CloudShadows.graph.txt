@@ -1,0 +1,50 @@
+### /SkyCreatorPlugin/Materials/Common/M_SC_SunLightFunction_CloudShadows
+  MaterialEditorOnlyData (M_SC_SunLightFunction_CloudShadowsEditorOnlyData)
+    EmissiveColor          <- MaterialExpressionLinearInterpolate
+    ExpressionCollection   <- MaterialExpressionLinearInterpolate
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_0)
+    .ParameterName="Sun Surface Brightness"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_1)
+    .ParameterName="Sun Cloud Shadow On Surface Strength"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_2)
+    .ParameterName="Sun Cloud Shadow Strength"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionConstant (MaterialExpressionConstant_1)
+    .R=1.000000
+  MaterialExpressionConstant (MaterialExpressionConstant_4)
+    .R=4.000000
+  MaterialExpressionConstant (MaterialExpressionConstant_6)
+    .R=4.000000
+  MaterialExpressionConstant (MaterialExpressionConstant_7)
+    .R=2.000000
+  MaterialExpressionDivide (MaterialExpressionDivide_0)
+    A                      <- MaterialExpressionCollectionParameter
+    .A=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'M_SC_SunLightFunction_CloudShadows:MaterialExpressionC
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_0)
+    A                      <- MaterialExpressionConstant
+    B                      <- MaterialExpressionLinearInterpolate
+    Alpha                  <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'M_SC_SunLightFunction_CloudShadows:MaterialExpressionLin
+    .A=(Expression="/Script/Engine.MaterialExpressionConstant'M_SC_SunLightFunction_CloudShadows:MaterialExpressionConstant_0'"
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_1)
+    A                      <- MaterialExpressionConstant
+    B                      <- MaterialExpressionMaterialFunctionCall
+    Alpha                  <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'M_SC_SunLightFunction_CloudShadows:MaterialExpression
+    .A=(Expression="/Script/Engine.MaterialExpressionConstant'M_SC_SunLightFunction_CloudShadows:MaterialExpressionConstant_1'"
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_0)
+    FunctionInputs(0)      <- MaterialExpressionMaterialFunctionCall
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_1)
+    FunctionInputs(0)      <- MaterialExpressionMaterialFunctionCall
+    FunctionInputs(1)      <- MaterialExpressionDivide
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_5)
+    FunctionInputs(0)      <- MaterialExpressionSkyAtmosphereLightDirection
+    FunctionInputs(1)      <- MaterialExpressionConstant
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_7)
+    FunctionInputs(0)      <- MaterialExpressionOneMinus
+    FunctionInputs(1)      <- MaterialExpressionConstant
+    FunctionInputs(2)      <- MaterialExpressionConstant
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_1)
+    Input                  <- MaterialExpressionMaterialFunctionCall

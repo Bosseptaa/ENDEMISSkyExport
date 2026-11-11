@@ -1,0 +1,76 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_NightAtmosphere
+  MaterialFunctionEditorOnlyData (MF_SC_NightAtmosphereEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+  MaterialExpressionClamp (MaterialExpressionClamp_10)
+    Input                  <- MaterialExpressionDotProduct
+  MaterialExpressionClamp (MaterialExpressionClamp_2)
+    Input                  <- MaterialExpressionOneMinus
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_5)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+    .R=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_6)
+    Input                  <- MaterialExpressionClamp
+    .R=True
+  MaterialExpressionConstant (MaterialExpressionConstant_2)
+    .R=0.500000
+  MaterialExpressionConstant (MaterialExpressionConstant_3)
+    .R=10.000000
+  MaterialExpressionConstant (MaterialExpressionConstant_4)
+    .R=0.100000
+  MaterialExpressionDesaturation (MaterialExpressionDesaturation_4)
+    Input                  <- MaterialExpressionSkyAtmosphereViewLuminance
+  MaterialExpressionDotProduct (MaterialExpressionDotProduct_6)
+    A                      <- MaterialExpressionCameraVectorWS
+    B                      <- MaterialExpressionConstant3Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant3Vector'MF_SC_NightAtmosphere:MaterialExpressionConstant3Vector_3'
+    .A=(Expression="/Script/Engine.MaterialExpressionCameraVectorWS'MF_SC_NightAtmosphere:MaterialExpressionCameraVectorWS_5'")
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_0)
+    Preview                <- MaterialExpressionConstant
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_1)
+    Preview                <- MaterialExpressionConstant
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionLinearInterpolate
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'MF_SC_NightAtmosphere:MaterialExpressionLinearInterpolat
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_1)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'MF_SC_NightAtmosphere:MaterialExpressionMaterialFunct
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_2)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionFunctionInput
+    Alpha                  <- MaterialExpressionMaterialFunctionCall
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_NightAtmosphere:MaterialExpressionFunctionInput_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_NightAtmosphere:MaterialExpressionFunctionInput_0'")
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_4)
+    A                      <- MaterialExpressionConstant
+    B                      <- MaterialExpressionReroute
+    Alpha                  <- MaterialExpressionComponentMask
+    .B=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_NightAtmosphere:MaterialExpressionReroute_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionConstant'MF_SC_NightAtmosphere:MaterialExpressionConstant_8'")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_10)
+    FunctionInputs(0)      <- MaterialExpressionOneMinus
+    FunctionInputs(1)      <- MaterialExpressionFunctionInput
+    FunctionInputs(2)      <- MaterialExpressionFunctionInput
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_12)
+    FunctionInputs(0)      <- MaterialExpressionDesaturation
+    FunctionInputs(1)      <- MaterialExpressionConstant
+    FunctionInputs(2)      <- MaterialExpressionConstant
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionReroute
+    B                      <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'MF_SC_NightAtmosphere:MaterialExpressionConstant_4'")
+    .A=(Expression="/Script/Engine.MaterialExpressionReroute'MF_SC_NightAtmosphere:MaterialExpressionReroute_0'")
+    .ConstB=0.100000
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_12)
+    Input                  <- MaterialExpressionClamp
+  MaterialExpressionOneMinus (MaterialExpressionOneMinus_7)
+    Input                  <- MaterialExpressionComponentMask
+  MaterialExpressionReroute (MaterialExpressionReroute_0)
+    Input                  <- MaterialExpressionLinearInterpolate
+  MaterialExpressionReroute (MaterialExpressionReroute_1)
+    Input                  <- MaterialExpressionMultiply
+  MaterialExpressionVectorParameter (MaterialExpressionVectorParameter_16)
+    .ParameterName="NightZenithColor"
+    .DefaultValue=(R=0.001217,G=0.002196,B=0.005000,A=1.000000)
+  MaterialExpressionVectorParameter (MaterialExpressionVectorParameter_17)
+    .ParameterName="NightHorizonColor"
+    .DefaultValue=(R=0.002706,G=0.003491,B=0.005000,A=1.000000)

@@ -1,0 +1,17 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_OcclusionFactor
+  MaterialFunctionEditorOnlyData (MF_SC_OcclusionFactorEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionLinearInterpolate
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'MF_SC_OcclusionFactor:MaterialExpressionLinearInterpolat
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_3)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionMultiply
+    Alpha                  <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_OcclusionFactor:MaterialExpressionMultiply_7'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_OcclusionFactor:MaterialExpressionFunctionInput_0'")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_7)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_OcclusionFactor:MaterialExpressionFunctionInput_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_OcclusionFactor:MaterialExpressionFunctionInput_0'")

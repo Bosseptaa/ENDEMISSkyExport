@@ -1,0 +1,88 @@
+### /SkyCreatorPlugin/Demo/Materials/M_Demo
+  MaterialEditorOnlyData (M_DemoEditorOnlyData)
+    BaseColor              <- MaterialExpressionMaterialFunctionCall
+    Roughness              <- MaterialExpressionMaterialFunctionCall
+    Normal                 <- MaterialExpressionMaterialFunctionCall
+    ExpressionCollection   <- MaterialExpressionMaterialFunctionCall
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionMaterialFunctionCall
+    .R=True
+  MaterialExpressionConstant (MaterialExpressionConstant_2)
+    .R=1.000000
+  MaterialExpressionLinearInterpolate (MaterialExpressionLinearInterpolate_0)
+    A                      <- MaterialExpressionStaticSwitch
+    B                      <- MaterialExpressionConstant
+    Alpha                  <- MaterialExpressionScalarParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'M_Demo:MaterialExpressionConstant_2'")
+    .A=(Expression="/Script/Engine.MaterialExpressionStaticSwitch'M_Demo:MaterialExpressionStaticSwitch_2'")
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_0)
+    FunctionInputs(0)      <- MaterialExpressionTextureObjectParameter
+    FunctionInputs(1)      <- MaterialExpressionScalarParameter
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_1)
+    FunctionInputs(0)      <- MaterialExpressionTextureObjectParameter
+    FunctionInputs(1)      <- MaterialExpressionScalarParameter
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_3)
+    FunctionInputs(0)      <- MaterialExpressionTextureObjectParameter
+    FunctionInputs(1)      <- MaterialExpressionScalarParameter
+  MaterialExpressionMaterialFunctionCall (MaterialExpressionMaterialFunctionCall_5)
+    FunctionInputs(1)      <- MaterialExpressionMultiply
+    FunctionInputs(2)      <- MaterialExpressionStaticSwitchParameter
+    FunctionInputs(3)      <- MaterialExpressionStaticSwitch
+    FunctionInputs(4)      <- MaterialExpressionStaticBool
+    FunctionInputs(5)      <- MaterialExpressionStaticBool
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionStaticSwitch
+    B                      <- MaterialExpressionVectorParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionVectorParameter'M_Demo:MaterialExpressionVectorParameter_0'",Mask=1,MaskR=
+    .A=(Expression="/Script/Engine.MaterialExpressionStaticSwitch'M_Demo:MaterialExpressionStaticSwitch_0'")
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_0)
+    .ParameterName="TextureSize"
+    .DefaultValue=128.000000
+  MaterialExpressionScalarParameter (MaterialExpressionScalarParameter_1)
+    .ParameterName="Roughness"
+    .DefaultValue=0.500000
+  MaterialExpressionStaticBoolParameter (MaterialExpressionStaticBoolParameter_0)
+    .ParameterName="WorldAligned"
+  MaterialExpressionStaticSwitch (MaterialExpressionStaticSwitch_0)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionTextureSample
+    Value                  <- MaterialExpressionStaticBoolParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionTextureSample'M_Demo:MaterialExpressionTextureSample_0'",Mask=1,MaskR=1,Ma
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'M_Demo:MaterialExpressionMaterialFunctionCall_0'",Out
+  MaterialExpressionStaticSwitch (MaterialExpressionStaticSwitch_1)
+    A                      <- MaterialExpressionMaterialFunctionCall
+    B                      <- MaterialExpressionTextureSample
+    Value                  <- MaterialExpressionStaticBoolParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionTextureSample'M_Demo:MaterialExpressionTextureSample_1'",Mask=1,MaskR=1,Ma
+    .A=(Expression="/Script/Engine.MaterialExpressionMaterialFunctionCall'M_Demo:MaterialExpressionMaterialFunctionCall_1'",Out
+  MaterialExpressionStaticSwitch (MaterialExpressionStaticSwitch_2)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionTextureSample
+    Value                  <- MaterialExpressionStaticBoolParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionTextureSample'M_Demo:MaterialExpressionTextureSample_2'",OutputIndex=1,Mas
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'M_Demo:MaterialExpressionComponentMask_0'")
+  MaterialExpressionStaticSwitchParameter (MaterialExpressionStaticSwitchParameter_0)
+    A                      <- MaterialExpressionLinearInterpolate
+    B                      <- MaterialExpressionScalarParameter
+    .ParameterName="RoughnessTexture"
+    .B=(Expression="/Script/Engine.MaterialExpressionScalarParameter'M_Demo:MaterialExpressionScalarParameter_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionLinearInterpolate'M_Demo:MaterialExpressionLinearInterpolate_0'")
+  MaterialExpressionTextureObjectParameter (MaterialExpressionTextureObjectParameter_0)
+    .ParameterName="Diffuse"
+    .Texture="/Script/Engine.Texture2D'/Engine/EngineMaterials/DefaultDiffuse.DefaultDiffuse'"
+  MaterialExpressionTextureObjectParameter (MaterialExpressionTextureObjectParameter_1)
+    .ParameterName="Normal"
+    .SamplerType=SAMPLERTYPE_Normal
+    .Texture="/Script/Engine.Texture2D'/Engine/EngineMaterials/DefaultNormal.DefaultNormal'"
+  MaterialExpressionTextureObjectParameter (MaterialExpressionTextureObjectParameter_2)
+    .ParameterName="Roughness"
+    .Texture="/Script/Engine.Texture2D'/Engine/EngineMaterials/DefaultDiffuse.DefaultDiffuse'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_0)
+    TextureObject          <- MaterialExpressionTextureObjectParameter
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_1)
+    TextureObject          <- MaterialExpressionTextureObjectParameter
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_2)
+    TextureObject          <- MaterialExpressionTextureObjectParameter
+  MaterialExpressionVectorParameter (MaterialExpressionVectorParameter_0)
+    .ParameterName="ColorTint"
+    .DefaultValue=(R=1.000000,G=1.000000,B=1.000000,A=1.000000)

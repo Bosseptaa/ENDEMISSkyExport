@@ -1,0 +1,104 @@
+### /SkyCreatorPlugin/Materials/Functions/MF_SC_MaterialFX_WindRipples
+  MaterialFunctionEditorOnlyData (MF_SC_MaterialFX_WindRipplesEditorOnlyData)
+    ExpressionCollection   <- MaterialExpressionFunctionOutput
+  MaterialExpressionAdd (MaterialExpressionAdd_3)
+    A                      <- MaterialExpressionTextureSample
+    B                      <- MaterialExpressionMultiply
+    .B=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_MaterialFX_WindRipples:MaterialExpressionMultiply_0'")
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'MF_SC_MaterialFX_WindRipples:MaterialExpressionTextureSample
+  MaterialExpressionAppendVector (MaterialExpressionAppendVector_0)
+    A                      <- MaterialExpressionMultiply
+    B                      <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'MF_SC_MaterialFX_WindRipples:MaterialExpressionConstant_1'")
+    .A=(Expression="/Script/Engine.MaterialExpressionMultiply'MF_SC_MaterialFX_WindRipples:MaterialExpressionMultiply_6'")
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_1)
+    .ParameterName="Wind Ripples Speed"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_2)
+    .ParameterName="Wind Ripples Intensity"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_3)
+    .ParameterName="Wind Ripples Speed"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionCollectionParameter (MaterialExpressionCollectionParameter_8)
+    .ParameterName="Wind Ripples Scale"
+    .Collection="/Script/Engine.MaterialParameterCollection'/SkyCreatorPlugin/Materials/Common/MPC_SC_Common.MPC_SC_Common'"
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_0)
+    Input                  <- MaterialExpressionMultiply
+    .R=True
+    .G=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_1)
+    Input                  <- MaterialExpressionAdd
+    .R=True
+    .G=True
+  MaterialExpressionComponentMask (MaterialExpressionComponentMask_2)
+    Input                  <- MaterialExpressionMultiply
+    .R=True
+    .G=True
+  MaterialExpressionConstant (MaterialExpressionConstant_1)
+    .R=1.000000
+  MaterialExpressionConstant (MaterialExpressionConstant_10)
+    .R=1.210000
+  MaterialExpressionConstant (MaterialExpressionConstant_9)
+    .R=1.040000
+  MaterialExpressionConstant2Vector (MaterialExpressionConstant2Vector_1)
+    .R=-0.150000
+    .G=-0.045000
+  MaterialExpressionConstant2Vector (MaterialExpressionConstant2Vector_2)
+    .R=0.150000
+  MaterialExpressionDivide (MaterialExpressionDivide_1)
+    A                      <- MaterialExpressionFunctionInput
+    B                      <- MaterialExpressionFunctionInput
+    .B=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_MaterialFX_WindRipples:MaterialExpressionFunctionInput
+    .A=(Expression="/Script/Engine.MaterialExpressionFunctionInput'MF_SC_MaterialFX_WindRipples:MaterialExpressionFunctionInput
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_0)
+    Preview                <- MaterialExpressionCollectionParameter
+  MaterialExpressionFunctionInput (MaterialExpressionFunctionInput_2)
+    Preview                <- MaterialExpressionWorldPosition
+  MaterialExpressionFunctionOutput (MaterialExpressionFunctionOutput_0)
+    A                      <- MaterialExpressionAppendVector
+    .A=(Expression="/Script/Engine.MaterialExpressionAppendVector'MF_SC_MaterialFX_WindRipples:MaterialExpressionAppendVector_0
+  MaterialExpressionMultiply (MaterialExpressionMultiply_0)
+    A                      <- MaterialExpressionTextureSample
+    B                      <- MaterialExpressionConstant3Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant3Vector'MF_SC_MaterialFX_WindRipples:MaterialExpressionConstant3Ve
+    .A=(Expression="/Script/Engine.MaterialExpressionTextureSample'MF_SC_MaterialFX_WindRipples:MaterialExpressionTextureSample
+  MaterialExpressionMultiply (MaterialExpressionMultiply_4)
+    A                      <- MaterialExpressionCollectionParameter
+    B                      <- MaterialExpressionConstant2Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'MF_SC_MaterialFX_WindRipples:MaterialExpressionConstant2Ve
+    .A=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_MaterialFX_WindRipples:MaterialExpressionCollect
+  MaterialExpressionMultiply (MaterialExpressionMultiply_5)
+    A                      <- MaterialExpressionCollectionParameter
+    B                      <- MaterialExpressionConstant2Vector
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant2Vector'MF_SC_MaterialFX_WindRipples:MaterialExpressionConstant2Ve
+    .A=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_MaterialFX_WindRipples:MaterialExpressionCollect
+  MaterialExpressionMultiply (MaterialExpressionMultiply_6)
+    A                      <- MaterialExpressionComponentMask
+    B                      <- MaterialExpressionCollectionParameter
+    .B=(Expression="/Script/Engine.MaterialExpressionCollectionParameter'MF_SC_MaterialFX_WindRipples:MaterialExpressionCollect
+    .A=(Expression="/Script/Engine.MaterialExpressionComponentMask'MF_SC_MaterialFX_WindRipples:MaterialExpressionComponentMask
+  MaterialExpressionMultiply (MaterialExpressionMultiply_7)
+    A                      <- MaterialExpressionDivide
+    B                      <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'MF_SC_MaterialFX_WindRipples:MaterialExpressionConstant_9'")
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'MF_SC_MaterialFX_WindRipples:MaterialExpressionDivide_1'")
+  MaterialExpressionMultiply (MaterialExpressionMultiply_8)
+    A                      <- MaterialExpressionDivide
+    B                      <- MaterialExpressionConstant
+    .B=(Expression="/Script/Engine.MaterialExpressionConstant'MF_SC_MaterialFX_WindRipples:MaterialExpressionConstant_10'")
+    .A=(Expression="/Script/Engine.MaterialExpressionDivide'MF_SC_MaterialFX_WindRipples:MaterialExpressionDivide_1'")
+  MaterialExpressionPanner (MaterialExpressionPanner_0)
+    Coordinate             <- MaterialExpressionComponentMask
+    Speed                  <- MaterialExpressionMultiply
+  MaterialExpressionPanner (MaterialExpressionPanner_2)
+    Coordinate             <- MaterialExpressionComponentMask
+    Speed                  <- MaterialExpressionMultiply
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_4)
+    Coordinates            <- MaterialExpressionPanner
+    .SamplerType=SAMPLERTYPE_Normal
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/MaterialFX/T_WindRipples_N.T_WindRipples_N'"
+  MaterialExpressionTextureSample (MaterialExpressionTextureSample_5)
+    Coordinates            <- MaterialExpressionPanner
+    .SamplerType=SAMPLERTYPE_Normal
+    .Texture="/Script/Engine.Texture2D'/Game/ENDEMIS/Weather/MaterialFX/T_WindRipples_N.T_WindRipples_N'"
